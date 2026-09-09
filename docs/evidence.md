@@ -573,7 +573,60 @@ Nothing here separates them, and the honest consequence is the same either way:
 
 This is the strongest caution in the repository against the result it is most tempted to believe.
 
-### 6.11 What the tests together say
+### 6.11 Primary-source check: the database label does not identify the estimand
+
+§6.10 left two readings — wrong mapping, or failed hypothesis. Checking the primary sources
+resolves it, and the answer is the first.
+
+**Perkins et al. (2018), *Ecology Letters***, is listed in GLOSSAQUA under
+*Normalized abundance spectrum (linear)*. Its Methods say:
+
+> "M-N relationships were derived after **logarithmic binning** of individual body mass, M. The
+> range of log₁₀ M values for each site was divided into n equal size-bins (on a logarithmic
+> scale), and the **log₁₀ of the total number (N) of all organisms in each size-bin** was regressed
+> against the central value of each bin"
+
+and, decisively:
+
+> "the M-N slope (**equal to the individual size distribution exponent + 1**; Reuman et al. 2009)"
+
+That is counts per **logarithmic** bin, *not* divided by bin width. Biomass per log class is then
+$m \cdot dN/d\ln m \propto m^{1+s}$, so orthopolity predicts **s = −1, not −2**. Under the correct
+mapping Perkins' −0.798 is a departure of **+0.20** — inside one τ of the NBSS result — rather than
+the +1.20 the label implied.
+
+Applying both candidate mappings to all 15 studies in the subset:
+
+| Study | n | median | dep vs −2 | dep vs −1 | Better fit |
+|---|---:|---:|---:|---:|---|
+| Girón 2023 | 2 | −2.016 | **−0.016** | −1.016 | −2 (true normalised) |
+| Arranz et al. 2023 | 1,167 | −1.860 | **+0.140** | −0.860 | −2 (true normalised) |
+| MacGarvey & Kirk 2018 | 12 | −1.742 | +0.258 | −0.742 | −2 |
+| Pomeranz 2023 | 23 | −0.844 | +1.156 | **+0.156** | −1 (M–N) |
+| Perkins et al. 2018 ✔ | 31 | −0.798 | +1.202 | **+0.202** | −1 (M–N, *verified*) |
+| Quintana 2023 | 73 | −0.426 | +1.574 | +0.574 | −1 |
+
+**Eleven of fifteen studies fit the −1 mapping better; four fit −2.** Girón at −2.016 and Perkins at
+−0.798 carry the *same* database label while differing by almost exactly 1 in exponent — the
+signature of two distinct estimands filed under one name.
+
+**What follows, and what deliberately does not.** The subset is **excluded as unusable** pending
+per-study verification. Re-mapping each study to whichever prediction fits it better would
+manufacture agreement and is the retrofitting listed as a dead end in
+[not-worth-pursuing.md](not-worth-pursuing.md); the point of the check is that the label cannot be
+trusted, not that a better label can be inferred from the answer.
+
+Three consequences:
+
+1. **The §6.10 replication failure is explained by a data defect, not by the hypothesis.** It was
+   never a test of (O-ensemble); it was a test of whether a metadata field means one thing.
+2. **The primary NBSS result is not impugned** — but neither is it verified. The same check has not
+   been run on its 16 studies, and it should be before publication.
+3. **The methodological warning is now evidenced rather than suspected.** Compilations of published
+   size-spectrum exponents cannot be pooled on their method labels. This applies to GLOSSAQUA, to
+   this analysis, and to any meta-analysis of scaling exponents that trusts a convention field.
+
+### 6.12 What the tests together say
 
 Neither of the two hypotheses that motivated this analysis survives:
 
@@ -581,9 +634,9 @@ Neither of the two hypotheses that motivated this analysis survives:
   habitats and taxa.
 - **Not an attractor.** Individual systems genuinely differ, with τ ≈ 0.25.
 - **Possibly an averaging effect**, on suggestive but marginal evidence (§6.4).
-- **Not replicated across conventions.** Freshwater τ varies by a factor of two and two of three
-  conventions have E[s] ≠ 0 (§6.10). Either the exponent mapping or the hypothesis fails there, and
-  the data cannot say which.
+- **The failed cross-convention replication was a data defect, not a result** (§6.11). One
+  database label covers at least two estimands differing by 1 in exponent, verified against a
+  primary source. The subset is excluded rather than re-mapped.
 - **A two-moment constraint after all, within class.** The pooled distribution is heavier-tailed
   than the maximum-entropy form (§6.5), but that is a pooling artefact: freshwater alone is
   adequately Gaussian, and a mixture of the fitted habitat τ values reproduces 82% of the pooled

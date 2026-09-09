@@ -31,11 +31,18 @@ platforms (EcoTaxa, EcoPart and instrument-specific IFCB dashboards), needs cred
 them, and processes ~92,000 IFCB samples, ~3,000 UVP profiles and ~2,400 scans. Waiting for Zenodo
 is cheaper than reproducing 98,000 sample ingests to obtain a published table.
 
+**R8 — verify the conventions of the 16 primary NBSS studies against their sources.** The same
+check that dissolved the cross-convention failure has not been applied to the studies the headline
+result rests on. Until it is, that result is unimpugned but unverified. This is now the highest-value
+runnable task, ahead of anything needing new data.
+
 **A partial substitute was run and it failed** ([evidence.md §6.10](evidence.md)): across the three
 published conventions in GLOSSAQUA, whose study sets are disjoint, freshwater τ varies by a factor
 of two and two of three have E[s] ≠ 0. Method and study population are perfectly confounded there,
-so it neither refutes the hypothesis nor supports it — but it means the prohibition remains
-genuinely untested, and it raises a specific doubt about comparing published conventions at all.
+so it neither refutes the hypothesis nor supports it. **Diagnosed** ([evidence.md
+§6.11](evidence.md)): the discrepancy is a labelling defect in the database, verified against
+Perkins et al. (2018), whose reported quantity is the M–N slope rather than a normalised spectrum.
+The subset is excluded as unusable. The prohibition remains genuinely untested.
 
 GLOSSAQUA is 87% freshwater and 80% fish, so the strata that would test generality hardest are the
 smallest. PSSdb (Dugenne et al. 2024) is the obvious next source; its Zenodo record was unreachable

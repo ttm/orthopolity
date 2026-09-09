@@ -95,13 +95,18 @@ half-working — it is one dispersion parameter doing both jobs. *(An internal c
 out-of-sample: τ is fitted to the same slopes. The out-of-sample test is the replication
 prohibition.)*
 
-**⚠️ First replication attempt failed.** Across the two other published conventions in the same
-database — disjoint study sets, so different primary sources — freshwater τ comes out 0.228, 0.462
-and 0.355, with mean departures +0.003, +0.397 and +0.516. Two of three violate E[s] = 0 outright.
-Method and study population are perfectly confounded, so this refutes nothing on its own, but the
-positive result is **not robust to how a size spectrum is reported**, and conventions that should
-differ by exactly 1.0 in exponent appear to differ by 1.4–1.5. See
-[evidence.md §6.10](docs/evidence.md).
+**A replication attempt failed, and the cause was a data defect — not the hypothesis.** Comparing
+across the two other published conventions in the same database gave freshwater τ of 0.228, 0.462
+and 0.355. Checking the primary sources explained why: GLOSSAQUA files Perkins et al. (2018) under
+*Normalized abundance spectrum*, but its Methods regress counts per **logarithmic** bin without
+dividing by bin width — the M–N relationship, predicting **−1, not −2**. Eleven of fifteen studies
+in that subset fit the −1 mapping better. Girón 2023 (−2.016) and Perkins (−0.798) carry the same
+label while differing by almost exactly 1 in exponent.
+
+The subset is **excluded as unusable**, not re-mapped — picking each study's mapping by which answer
+it gives would manufacture the agreement. Two things follow: the primary result is unimpugned but
+**not yet verified the same way** (R8), and compilations of published scaling exponents cannot be
+pooled on their method labels. See [evidence.md §6.11](docs/evidence.md).
 
 **What it forbids:** an independent aquatic dataset must reproduce τ ≈ 0.257; two resources
 satisfying (O) on the same systems must have equal dispersion and perfectly correlated departures;

@@ -142,12 +142,21 @@ primary sources differ — gives freshwater τ of 0.228, 0.462 and 0.355, and me
 +0.003, +0.397 and +0.516 ([evidence.md §6.10](evidence.md)). Two of three violate E[s] = 0
 outright.
 
-Method and study population are perfectly confounded, so this does not by itself refute the
-hypothesis. But it removes any claim that the result is robust to how a size spectrum is reported,
-and it raises a specific doubt about the whole approach: published conventions that should differ by
-exactly 1.0 in exponent appear to differ by 1.4 to 1.5. If "normalised" does not mean the same thing
-across the literature, pooled slope meta-analyses — including this one — are unsafe without checking
-each primary source.
+**Checked against the primary sources, and the cause is a database defect** ([evidence.md
+§6.11](evidence.md)). Perkins et al. (2018) is filed under *Normalized abundance spectrum* but its
+Methods regress counts per *logarithmic* bin without dividing by bin width — the M–N relationship,
+whose orthopolity prediction is −1, not −2. Eleven of the fifteen studies in that subset fit the −1
+mapping better; four fit −2. Girón 2023 at −2.016 and Perkins at −0.798 share a label while
+differing by almost exactly 1 in exponent.
+
+So the replication attempt was never a test of the hypothesis — it was a test of whether a metadata
+field means one thing, and it does not. The subset is excluded rather than re-mapped, since choosing
+each study's mapping by which answer it gives would manufacture the agreement.
+
+**Two things survive as real criticisms.** The primary NBSS result has *not* had the same
+verification applied to its 16 studies, so it is unimpugned but unchecked. And the broader warning is
+now evidenced rather than suspected: compilations of published scaling exponents cannot be pooled on
+their method labels, which bears on this analysis and on any meta-analysis of the kind.
 
 ## 9. The name is a liability
 
