@@ -1,6 +1,7 @@
 import unittest
 import numpy as np
-from meta import random_effects, digit_preference, round_number_excess
+from meta import (random_effects, digit_preference, round_number_excess,
+                  latent_shape, predicted_pass_fraction)
 
 
 class RandomEffects(unittest.TestCase):
@@ -87,3 +88,75 @@ class ReportingArtefacts(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class LatentShape(unittest.TestCase):
+    """The observed spread is latent dispersion convolved with measurement error;
+    these check that the deconvolution recovers the latent shape it was given."""
+
+    def setUp(self):
+        self.rng = np.random.default_rng(0)
+        self.se = np.abs(self.rng.normal(.1, .03, 800)) + .02
+
+    def _obs(self, latent):
+        return latent + self.rng.normal(0, self.se)
+
+    def test_quadrature_converges_to_the_closed_form_gaussian(self):
+        # The Gaussian case is closed form; every other family goes through
+        # quadrature. A Student t tends to a Gaussian as nu grows, so the
+        # quadrature path must converge to the closed form monotonically.
+        from meta import _loglik
+        y = self.rng.normal(-1, .3, 200)
+        se = np.full(200, .12)
+        exact = _loglik(y, se, -1.0, .25, 'gaussian')
+        gaps = [abs(_loglik(y, se, -1.0, .25, 'student_t', nu=nu) - exact)
+                for nu in (10, 50, 400, 5000)]
+        self.assertTrue(all(b < a for a, b in zip(gaps, gaps[1:])),
+                        f'gaps should shrink with nu, got {gaps}')
+        self.assertLess(gaps[-1], abs(exact) * 1e-3)
+
+    def test_gaussian_latent_is_recovered(self):
+        r = latent_shape(self._obs(self.rng.normal(-1, .25, 800)), self.se)
+        self.assertEqual(r['best_family'], 'gaussian')
+        self.assertTrue(r['maxent_consistent'])
+        self.assertAlmostEqual(r['families']['gaussian']['tau'], .25, delta=.04)
+        self.assertAlmostEqual(r['families']['gaussian']['mu'], -1.0, delta=.04)
+        self.assertLess(abs(r['gaussian_standardised_residuals']['excess_kurtosis']), .5)
+
+    def test_heavy_tailed_latent_is_not_called_gaussian(self):
+        lat = -1 + .25 * self.rng.standard_t(3, 800) / np.sqrt(3.)
+        r = latent_shape(self._obs(lat), self.se)
+        self.assertNotEqual(r['best_family'], 'gaussian')
+        self.assertFalse(r['maxent_consistent'])
+        self.assertGreater(r['gaussian_standardised_residuals']['excess_kurtosis'], 1.0)
+
+    def test_laplace_latent_is_recovered(self):
+        lat = -1 + self.rng.laplace(0, .25 / np.sqrt(2.), 800)
+        r = latent_shape(self._obs(lat), self.se)
+        self.assertEqual(r['best_family'], 'laplace')
+
+
+class PassFraction(unittest.TestCase):
+    def test_one_sigma_tolerance_gives_the_normal_68_percent(self):
+        r = predicted_pass_fraction([0.25], tau=0.25)
+        self.assertAlmostEqual(r['mean_predicted_fraction'], 0.6827, places=3)
+
+    def test_two_sigma_tolerance_gives_95_percent(self):
+        r = predicted_pass_fraction([1.96 * 0.25], tau=0.25)
+        self.assertAlmostEqual(r['mean_predicted_fraction'], 0.95, places=3)
+
+    def test_tight_tolerance_predicts_widespread_individual_failure(self):
+        # This is the point: a correct ensemble claim predicts most systems fail.
+        r = predicted_pass_fraction([0.03], tau=0.25)
+        self.assertLess(r['mean_predicted_fraction'], 0.12)
+
+    def test_heavier_tails_put_more_mass_near_the_centre(self):
+        g = predicted_pass_fraction([0.05], tau=0.25, family='gaussian')
+        l = predicted_pass_fraction([0.05], tau=0.25, family='laplace')
+        self.assertGreater(l['mean_predicted_fraction'], g['mean_predicted_fraction'])
+
+    def test_bad_input_is_refused(self):
+        with self.assertRaises(ValueError):
+            predicted_pass_fraction([0.1], tau=0)
+        with self.assertRaises(ValueError):
+            predicted_pass_fraction([0.1], tau=0.2, family='student_t', nu=1.5)

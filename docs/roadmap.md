@@ -5,24 +5,16 @@ was tried is visible alongside what is left.
 
 ## Open
 
-### R1 — Formalise the ensemble claim and predict its shape
-**Theory. High value: this is what makes the result publishable.**
+### R7 — Is the heavy tail a mixture over classes?
+**Analysis. Follows directly from [evidence.md §6.5](evidence.md).**
 
-The surviving claim ([evidence.md §6](evidence.md)) is currently prose. It should be a stated
-hypothesis with a falsification condition:
-
-> **(O-ensemble)** Across systems within a class, the resource-spectrum departure has
-> $E[s] = 0$ and $\mathrm{Var}[s] = \tau^2$, with $\tau$ a property of the class.
-
-Two things follow that are worth developing:
-
-- **A shape prediction.** Maximum entropy subject to a constraint on the mean departure implies a
-  specific distributional form for $s$. The observed histogram of 1,300 slopes can be tested
-  against it. If the dispersion is maxent-shaped, that is a real mechanistic clue; if not, that
-  rules out a family of explanations.
-- **What (O-ensemble) forbids.** A claim that forbids nothing is not scientific. The two-resource
-  constraint ([concept.md §10](concept.md)) is the natural place to look: with $\tau$ now measured,
-  it should be possible to state a quantitative prohibition rather than a qualitative one.
+The latent slope distribution is heavier-tailed than the maximum-entropy two-moment form
+(Student t with ν = 8 beats Gaussian by ΔAIC = −7.4; excess kurtosis +1.13). The natural
+explanation is that pooling freshwater with marine, and fish with plankton, mixes subgroups with
+different τ — and a mixture of Gaussians with unequal variances is heavy-tailed. Estimating τ
+separately per stratum tests this. If it holds, τ is confirmed as a *class* property and the
+heavy tail stops being an anomaly; if a single stratum is still heavy-tailed, there is real
+structure beyond two moments to explain.
 
 ### R2 — Discrete goodness-of-fit for the earthquake catalogue
 **Code. Closes a flagged placeholder.**
@@ -69,4 +61,5 @@ published reconstruction uncertainty ([evidence.md §5](evidence.md)).
 | Independent tests preregistered before computing | `6df364f` |
 | Preregistered tests run: ensemble yes, individual systems no | `a0c9973` |
 | Ensemble result attacked from three directions and survived | `d57a707` |
-| Meta-analysis estimators moved into tested `src/meta.py`; span test; §5.1 theory | *this commit* |
+| Meta-analysis estimators moved into tested `src/meta.py`; span test; §5.1 theory | `ab218dd` |
+| **R1** — (O-ensemble) formalised, latent-shape test, quantitative prohibitions | *this commit* |

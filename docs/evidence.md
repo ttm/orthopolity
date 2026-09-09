@@ -390,7 +390,72 @@ Three reasons to treat it as suggestive rather than established:
 > a spurious certainty. Both numbers are reported in
 > [`results/ensemble.json`](../results/ensemble.json), with the spectrum-level one flagged.
 
-### 6.5 What the tests together say
+### 6.5 The shape: two moments are not enough
+
+(O-ensemble) as stated ([concept.md §3.1](concept.md)) constrains only a mean and a variance, so
+maximum entropy makes the latent slope distribution Gaussian. Fitting each candidate latent shape
+*convolved with the reported measurement errors* (747 spectra with usable errors):
+
+| Latent family | μ | τ | logL | ΔAIC |
+|---|---:|---:|---:|---:|
+| Gaussian | −1.0114 | 0.2553 | −181.5 | 0.0 |
+| Laplace | −1.0167 | 0.2683 | −190.8 | +18.6 |
+| **Student t, ν = 8** | −1.0118 | 0.2566 | −176.8 | **−7.4** |
+
+Standardised residuals under the Gaussian fit have sd 0.997 and skew −0.066 — well centred and
+symmetric — but **excess kurtosis +1.13**. The latent distribution is heavier-tailed than Gaussian.
+
+**So the two-moment maximum-entropy form is not adequate**, on moderate evidence (ΔAIC = −7.4 is
+suggestive, not decisive; the rule of thumb for strong preference is 10). Something beyond a mean
+and a variance is structuring the dispersion.
+
+The natural candidate is consistent with the hypothesis rather than against it: **a mixture over
+classes**. Pooling freshwater with marine, and fish with plankton, mixes subgroups with different
+τ, and a mixture of Gaussians with unequal variances is exactly heavy-tailed. That is testable —
+τ estimated separately per stratum — and is filed as R7.
+
+### 6.6 The claim predicts its own failure rate
+
+This is the sharpest result in the repository.
+
+The apparent tension in §5 — the median lands on −1, yet only 7.8% of spectra pass individually —
+looked like a hypothesis half-working. It is not. Given τ, (O-ensemble) *predicts* the individual
+pass rate, because it says exactly how far systems must scatter.
+
+| Tolerance | Latent | Predicted pass rate | Observed | Ratio |
+|---|---|---:|---:|---:|
+| F = 1.25 | Gaussian | 0.080 | **0.078** | 0.99 |
+| F = 2.00 | Gaussian | 0.237 | **0.238** | 1.01 |
+| F = 1.25 | Student t | 0.088 | 0.078 | 0.89 |
+| F = 2.00 | Student t | 0.259 | 0.238 | 0.92 |
+
+**A single dispersion parameter reproduces the observed failure rate to within 1–2% at both
+tolerances.** The "failure" of individual systems in §5 is not evidence against the ensemble
+claim — it is precisely what the ensemble claim requires.
+
+> **Stated honestly about its status:** this is an internal consistency check, not an out-of-sample
+> prediction. τ was fitted to the same slopes. It is a non-trivial check nonetheless — one number
+> has to reconcile the shape of the departure distribution with a heterogeneous set of per-study
+> tolerances derived from reported size ranges, at two different tolerance factors, and it does.
+> The out-of-sample version is the replication prohibition below, which requires new data.
+
+### 6.7 What the hypothesis now forbids
+
+With τ measured, (O-ensemble) makes three refutable commitments:
+
+1. **Replication.** τ is a class property, so an independent aquatic dataset must reproduce
+   **τ ≈ 0.257**. A materially different value refutes it for that class. This is R4 (PSSdb).
+2. **Two resources at once.** If two resources both satisfy (O) on the same systems, then
+   Var[s₁] = Var[s₂] and corr(s₁, s₂) = 1. Unequal dispersion refutes at least one of them. This is
+   the cleanest decisive test available and needs no new instrument — only two resource definitions
+   on one set of systems.
+3. **Pass rates.** Any dataset whose individual pass rate is inconsistent with its fitted τ refutes
+   the claim.
+
+That is a small theory that forbids specific things, which is the minimum for the work to be
+scientific rather than descriptive.
+
+### 6.8 What the tests together say
 
 Neither of the two hypotheses that motivated this analysis survives:
 
@@ -398,9 +463,13 @@ Neither of the two hypotheses that motivated this analysis survives:
   habitats and taxa.
 - **Not an attractor.** Individual systems genuinely differ, with τ ≈ 0.25.
 - **Possibly an averaging effect**, on suggestive but marginal evidence (§6.4).
+- **Not purely a two-moment constraint** — the latent distribution is heavier-tailed than the
+  maximum-entropy form, most likely because the pool mixes classes with different τ (§6.5).
 
 The random-effects pooled mean is **−1.0113, 95% CI [−1.0329, −0.9897]** — an interval that
-contains the prediction while properly accounting for the heterogeneity.
+contains the prediction while properly accounting for the heterogeneity. And the fitted dispersion
+reproduces the individual failure rate to within 1–2% (§6.6), so the ensemble and individual
+results are one coherent picture rather than two conflicting ones.
 
 > **What is left is a real, reproducible, non-artefactual regularity in the *expected value* of
 > aquatic size spectra, with substantial genuine dispersion around it.** Orthopolity holds in the

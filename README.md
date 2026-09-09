@@ -72,6 +72,33 @@ That centre then survived a deliberate attempt to kill it ([docs/evidence.md §6
 > independently reproducible, and violated by most individual systems. That is testable, modest and
 > defensible — and it is a different claim from a natural law, let alone a cosmological principle.
 
+### The claim predicts its own failure rate
+
+Formalised as **(O-ensemble)** in [concept.md §3.1](docs/concept.md): across systems in a class,
+the departure has E[s] = 0 and Var[s] = τ², with τ a property of the class.
+
+That is not a retreat, because it forbids things. Given τ, it *predicts* how many individual
+systems must fail a tolerance test — and the fitted τ = 0.255 reproduces the observed rate almost
+exactly:
+
+| Tolerance | Predicted pass rate | Observed | Ratio |
+|---|---:|---:|---:|
+| F = 1.25 | 0.080 | **0.078** | 0.99 |
+| F = 2.00 | 0.237 | **0.238** | 1.01 |
+
+So the median landing on −1 while only 7.8% of systems pass individually is not a hypothesis
+half-working — it is one dispersion parameter doing both jobs. *(An internal consistency check, not
+out-of-sample: τ is fitted to the same slopes. The out-of-sample test is the replication
+prohibition.)*
+
+**What it forbids:** an independent aquatic dataset must reproduce τ ≈ 0.257; two resources
+satisfying (O) on the same systems must have equal dispersion and perfectly correlated departures;
+and any dataset's pass rate must match its own fitted τ.
+
+**Where it is already strained:** the latent distribution is heavier-tailed than the two-moment
+maximum-entropy form (Student t, ν = 8, ΔAIC = −7.4), most likely because the pool mixes classes
+with different τ — filed as R7.
+
 Details, caveats and provenance: [docs/evidence.md](docs/evidence.md).
 
 ## Reproduce
@@ -79,7 +106,7 @@ Details, caveats and provenance: [docs/evidence.md](docs/evidence.md).
 ```bash
 python -m pip install -r requirements.txt
 python experiments/fetch_data.py                       # verifies SHA-256 of every raw input
-PYTHONPATH=src python -m unittest discover -s tests -v  # 33 accounting/estimator/GOF/meta checks
+PYTHONPATH=src python -m unittest discover -s tests -v  # 42 accounting/estimator/GOF/meta checks
 python experiments/run_pilot.py                        # regenerates results/
 python experiments/run_gof.py                          # goodness-of-fit + equivalence tests
 python experiments/run_independent.py                  # preregistered independent tests

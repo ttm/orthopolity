@@ -47,6 +47,43 @@ $$\mathcal{O}(k) \;=\; \frac{dR}{du} \;=\; \bar q(k)\,\frac{dN}{du}.$$
 This is the whole claim. Note what it is *not*: it is a statement about the **stock** of resource
 resident at each scale, not about a **flux** through scales. See §8.
 
+### 3.1 The ensemble form
+
+(O) as stated is a claim about a system. The evidence says it is false at that level and true on
+average ([evidence.md §5–6](evidence.md)), which requires a weaker hypothesis stated in its own
+right rather than as a retreat:
+
+> **(O-ensemble)** Across systems within a class, the resource-spectrum departure
+> $s = -\,d\ln\mathcal{O}/d\ln k$ has
+> $$E[s] = 0, \qquad \mathrm{Var}[s] = \tau^2,$$
+> with $\tau$ a property of the class, not of the system.
+
+Three things make this a hypothesis rather than a description.
+
+**It has a shape prediction.** Constraining only a mean and a variance, maximum entropy makes the
+latent distribution of $s$ **Gaussian**. Any heavier tail means the constraint set is richer than
+two moments — which is a finding, not a nuisance. Testing this requires deconvolution: the observed
+spread of published slopes is the latent dispersion *convolved with measurement error*, so the
+comparison is against Gaussian ⊛ reported errors, never against the raw histogram.
+
+**It predicts the individual failure rate.** Given $\tau$ and a per-system tolerance $c$, the
+fraction of systems expected to pass individually is fixed — $2\Phi(c/\tau) - 1$ in the Gaussian
+case. So (O-ensemble) *forbids* particular pass rates. A hypothesis that holds only on average is
+still refutable, because it says exactly how badly individual systems must fail.
+
+**It forbids two resources at once.** Sharpening [§10](#10-two-constraints-that-sharpen-the-hypothesis):
+if two resources both satisfy (O) on the same systems and coordinate, then $s_1 - s_2 = d_2 - d_1$
+is a constant, so
+
+$$\mathrm{Var}[s_1] = \mathrm{Var}[s_2] \quad\text{and}\quad \mathrm{corr}(s_1, s_2) = 1.$$
+
+Measuring two candidate resources on one set of systems and finding unequal $\tau$, or imperfectly
+correlated departures, refutes (O-ensemble) for at least one of them. This is the cleanest available
+route to a decisive test.
+
+**What would refute it.** A class whose $\tau$ does not replicate on independent data; a pass rate
+inconsistent with the fitted $\tau$; two resources with unequal dispersion; or $E[s] \neq 0$.
+
 ## 4. Orthopolity alone does not give a power law
 
 (O) yields $dN/du \propto 1/\bar q(k)$ for **whatever $\bar q$ is**. The power law needs a second,

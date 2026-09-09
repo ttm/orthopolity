@@ -28,7 +28,8 @@ from scipy.stats import spearmanr
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
-from meta import random_effects, digit_preference, round_number_excess   # noqa: E402
+from meta import (random_effects, digit_preference, round_number_excess,  # noqa: E402
+                  latent_shape, predicted_pass_fraction)
 RAW, OUT = ROOT / 'data' / 'raw', ROOT / 'results'
 PRE = json.loads((ROOT / 'configs' / 'prereg_2026-09-09.json').read_text())
 SEED = PRE['common']['seed']
@@ -196,6 +197,39 @@ def span_dependence(d):
                               'than fish studies, so span is partly a proxy for taxon.')
 
 
+def latent_and_prohibition(d):
+    """R1: the shape (O-ensemble) predicts, and the individual failure rate it forbids."""
+    g = [x for x in d if np.isfinite(x['se']) and x['se'] > 0]
+    shape = latent_shape([x['slope'] for x in g], [x['se'] for x in g])
+    tau = shape['families'][shape['best_family']]['tau']
+
+    span = np.array([x['span'] for x in d])
+    dep = np.array([x['slope'] for x in d]) - PREDICTED
+    checks = []
+    for F in (1.25, 2.0):
+        tol = np.log(F) / span
+        obs = float(np.mean(np.abs(dep) <= tol))
+        for fam in ('gaussian', shape['best_family']):
+            nu = shape['families'][fam].get('nu')
+            pr = predicted_pass_fraction(tol, tau=shape['families'][fam]['tau'],
+                                         family=fam, nu=nu)
+            checks.append(dict(tolerance_factor=F, family=fam,
+                               predicted_fraction=pr['mean_predicted_fraction'],
+                               observed_fraction=obs,
+                               ratio=float(obs / pr['mean_predicted_fraction'])))
+    return dict(latent_shape=shape, tau_used=tau, pass_fraction_checks=checks,
+                prohibition=dict(
+                    statement='Two resources measured on the same systems cannot both be '
+                              'orthopolar unless their departures have equal dispersion and '
+                              'are perfectly correlated across systems.',
+                    derivation='If both spectra are flat then s1 - s2 = d2 - d1, a constant, '
+                               'so Var[s1] = Var[s2] and corr(s1,s2) = 1. Unequal tau refutes '
+                               'at least one.',
+                    replication='tau is a property of the class, so an independent aquatic '
+                                f'dataset must reproduce tau = {tau:.3f}. A materially '
+                                'different tau refutes (O-ensemble) for that class.'))
+
+
 def figure(res, d):
     fig, axs = plt.subplots(1, 4, figsize=(17, 4), layout='constrained')
     s = np.array([x['slope'] for x in d])
@@ -259,6 +293,7 @@ def main():
                n=len(d), predicted_slope=PREDICTED,
                heterogeneity=heterogeneity(d), anchoring=anchoring(d),
                span_dependence=span_dependence(d),
+               R1=latent_and_prohibition(d),
                stratification=dict(habitat=stratify(d, 'habitat'),
                                    species=stratify(d, 'species'),
                                    organisation=stratify(d, 'org')))
@@ -313,6 +348,29 @@ def main():
     print(f"  spectrum-level: rho={sp['spectrum_level']['spearman_rho']:+.3f} "
           f"(p={sp['spectrum_level']['spearman_p']:.2g})  [{sp['spectrum_level']['warning']}]")
     print(f"  -> {sp['interpretation']}")
+
+    r1 = res['R1']
+    ls = r1['latent_shape']
+    print(f"\n=== 5. LATENT SHAPE: what (O-ensemble) predicts (n={ls['n']}) ===")
+    print(f"  {'family':<18}{'mu':>9}{'tau':>8}{'nu':>6}{'logL':>11}{'dAIC':>9}")
+    for fam, v in ls['families'].items():
+        print(f"  {fam:<18}{v['mu']:>9.4f}{v['tau']:>8.4f}"
+              f"{(str(v['nu']) if v['nu'] else '-'):>6}{v['loglike']:>11.1f}"
+              f"{ls['delta_aic_vs_gaussian'][fam]:>+9.1f}")
+    rz = ls['gaussian_standardised_residuals']
+    print(f"  gaussian standardised residuals: sd={rz['sd']:.3f} skew={rz['skew']:+.3f} "
+          f"excess kurtosis={rz['excess_kurtosis']:+.3f}")
+    print(f"  best={ls['best_family']}  -> maximum-entropy (two-moment) form "
+          f"{'IS' if ls['maxent_consistent'] else 'is NOT'} adequate")
+
+    print(f"\n=== 6. DOES THE ENSEMBLE CLAIM PREDICT THE INDIVIDUAL FAILURE RATE? ===")
+    print(f"  {'F':>5}{'family':<20}{'predicted':>11}{'observed':>11}{'obs/pred':>10}")
+    for c in r1['pass_fraction_checks']:
+        print(f"  {c['tolerance_factor']:>5.2f}  {c['family']:<18}"
+              f"{c['predicted_fraction']:>11.3f}{c['observed_fraction']:>11.3f}"
+              f"{c['ratio']:>10.2f}")
+    print(f"\n  PROHIBITION: {r1['prohibition']['statement']}")
+    print(f"  REPLICATION: {r1['prohibition']['replication']}")
 
 
 if __name__ == '__main__':

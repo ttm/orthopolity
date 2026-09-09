@@ -332,6 +332,86 @@
     "interpretation": "wider spans sit closer to the prediction, consistent with an averaging effect",
     "confound_note": "Span is not randomly assigned: plankton studies span more decades than fish studies, so span is partly a proxy for taxon."
   },
+  "R1": {
+    "latent_shape": {
+      "n": 747,
+      "families": {
+        "gaussian": {
+          "mu": -1.0114196255268075,
+          "tau": 0.2553275175619164,
+          "nu": null,
+          "loglike": -181.5148162128468,
+          "k_params": 2,
+          "aic": 367.0296324256936
+        },
+        "laplace": {
+          "mu": -1.0167483650680227,
+          "tau": 0.2683116969428504,
+          "nu": null,
+          "loglike": -190.83883992347648,
+          "k_params": 2,
+          "aic": 385.67767984695297
+        },
+        "student_t": {
+          "mu": -1.0118422202438058,
+          "tau": 0.2566301468591917,
+          "nu": 8,
+          "loglike": -176.83521566761942,
+          "k_params": 3,
+          "aic": 359.67043133523885
+        }
+      },
+      "best_family": "student_t",
+      "delta_aic_vs_gaussian": {
+        "gaussian": 0.0,
+        "laplace": 18.648047421259378,
+        "student_t": -7.3592010904547465
+      },
+      "gaussian_standardised_residuals": {
+        "mean": -0.014311811932072155,
+        "sd": 0.9973725853753606,
+        "skew": -0.06579419821879519,
+        "excess_kurtosis": 1.1318672758177017
+      },
+      "maxent_consistent": false
+    },
+    "tau_used": 0.2566301468591917,
+    "pass_fraction_checks": [
+      {
+        "tolerance_factor": 1.25,
+        "family": "gaussian",
+        "predicted_fraction": 0.07953567813205016,
+        "observed_fraction": 0.07846153846153846,
+        "ratio": 0.9864948700289152
+      },
+      {
+        "tolerance_factor": 1.25,
+        "family": "student_t",
+        "predicted_fraction": 0.0883519588520012,
+        "observed_fraction": 0.07846153846153846,
+        "ratio": 0.8880565805334295
+      },
+      {
+        "tolerance_factor": 2.0,
+        "family": "gaussian",
+        "predicted_fraction": 0.23716658730769125,
+        "observed_fraction": 0.23846153846153847,
+        "ratio": 1.0054600910210307
+      },
+      {
+        "tolerance_factor": 2.0,
+        "family": "student_t",
+        "predicted_fraction": 0.2594326670016658,
+        "observed_fraction": 0.23846153846153847,
+        "ratio": 0.9191654282303907
+      }
+    ],
+    "prohibition": {
+      "statement": "Two resources measured on the same systems cannot both be orthopolar unless their departures have equal dispersion and are perfectly correlated across systems.",
+      "derivation": "If both spectra are flat then s1 - s2 = d2 - d1, a constant, so Var[s1] = Var[s2] and corr(s1,s2) = 1. Unequal tau refutes at least one.",
+      "replication": "tau is a property of the class, so an independent aquatic dataset must reproduce tau = 0.257. A materially different tau refutes (O-ensemble) for that class."
+    }
+  },
   "stratification": {
     "habitat": {
       "Freshwater": {
