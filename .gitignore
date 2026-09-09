@@ -11,3 +11,8 @@ venv/
 
 # Interactive viewer scratch output (regenerated on demand)
 results/exploration/
+
+# Packaging build artefacts
+*.egg-info/
+build/
+dist/

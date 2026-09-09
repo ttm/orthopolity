@@ -16,22 +16,6 @@ separately per stratum tests this. If it holds, τ is confirmed as a *class* pro
 heavy tail stops being an anomaly; if a single stratum is still heavy-tailed, there is real
 structure beyond two moments to explain.
 
-### R2 — Discrete goodness-of-fit for the earthquake catalogue
-**Code. Closes a flagged placeholder.**
-
-The continuous KS test is invalid on magnitudes rounded to 0.1 — the energy proxy takes 32 distinct
-values across 6,639 events, and the ties inflate the statistic on their own
-([evidence.md §4](evidence.md)). The Clauset–Shalizi–Newman discrete procedure is needed before
-that row is a result rather than a placeholder. Until then it must not be cited as evidence.
-
-### R3 — Packaging and one-command reproduction
-**Code. Housekeeping; a precondition for anyone else using this.**
-
-Currently four scripts run by hand with `PYTHONPATH=src`. Needs a `pyproject.toml`, an importable
-package, and a single entry point that runs fetch → tests → all analyses. Note that JOSS requires
-more than six months of public development history, so a software paper stays out of scope for now
-([not-worth-pursuing.md B3](not-worth-pursuing.md)).
-
 ### R4 — Extend coverage beyond freshwater fish
 **Data. Determines how far the one positive result generalises.**
 
@@ -62,4 +46,6 @@ published reconstruction uncertainty ([evidence.md §5](evidence.md)).
 | Preregistered tests run: ensemble yes, individual systems no | `a0c9973` |
 | Ensemble result attacked from three directions and survived | `d57a707` |
 | Meta-analysis estimators moved into tested `src/meta.py`; span test; §5.1 theory | `ab218dd` |
-| **R1** — (O-ensemble) formalised, latent-shape test, quantitative prohibitions | *this commit* |
+| **R1** — (O-ensemble) formalised, latent-shape test, quantitative prohibitions | `1494a89` |
+| **R2** — discrete Gutenberg–Richter goodness of fit; GR *not* ruled out at M ≥ 5.5 | *this commit* |
+| **R3** — packaging (`pyproject.toml`) and one-command reproduction (`Makefile`) | *this commit* |

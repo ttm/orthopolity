@@ -32,7 +32,7 @@ Three systems tested. **Two clear failures, one qualified success.**
 
 | System | Prediction | Observation | Verdict |
 |---|---|---|---|
-| Earthquakes (USGS, 6,639 events) | $b = 1.5$ | $b = 0.998$ [0.973, 1.024] | **Decisive failure** |
+| Earthquakes (USGS, 6,639 events) | $b = 1.5$ | $b = 0.998$ [0.973, 1.024] | **Decisive failure** ‡ |
 | Solar flares (NOAA, 10,501 events) | $\alpha = 1.858$ | $\alpha = 2.239$, gap 0.382 [0.125, 0.620] | **Failure** |
 | Ocean, upper 200 m | $\Phi$ flat | 21 of 23 bins unresolvable | **Indeterminate** |
 | Ocean, full water column | $\Phi$ flat | plateau degrades from 1.7× to 4.3× | **Failure to transfer** |
@@ -44,6 +44,10 @@ Formal testing then made the picture *less* favourable, not more:
 - The flare distribution is **ruled out as a power law** by the Clauset–Shalizi–Newman test
   (p = 0.018), and in no tested system can a power law be distinguished from a **lognormal**
   (p = 0.41, p = 0.90). Part of the explanandum has evaporated.
+- ‡ The earthquake catalogue, by contrast, fits Gutenberg–Richter well once tested correctly
+  (discrete KS = 0.0077, p = 0.256; the earlier p = 0.000 was an artefact of magnitudes tied to a
+  0.1 grid). Its distribution is exactly right and orthopolity fails on it anyway — a clean failure
+  of the hypothesis with nothing else to blame.
 - The one positive case is a **post hoc** subrange of a re-expression of someone else's
   model-assisted reconstruction, with no sampling model — and its verdict flips with the declared
   tolerance (passes at factor 2, fails at 1.25).
@@ -104,14 +108,13 @@ Details, caveats and provenance: [docs/evidence.md](docs/evidence.md).
 ## Reproduce
 
 ```bash
-python -m pip install -r requirements.txt
-python experiments/fetch_data.py                       # verifies SHA-256 of every raw input
-PYTHONPATH=src python -m unittest discover -s tests -v  # 42 accounting/estimator/GOF/meta checks
-python experiments/run_pilot.py                        # regenerates results/
-python experiments/run_gof.py                          # goodness-of-fit + equivalence tests
-python experiments/run_independent.py                  # preregistered independent tests
-python experiments/run_ensemble.py                     # is the ensemble result real?
+make install   # editable install, so `import gof` works without PYTHONPATH
+make all       # verify checksums, run 49 tests, run every analysis
 ```
+
+Or individually: `make data` (verify raw inputs), `make test`, `make pilot`, `make gof`,
+`make independent`, `make ensemble`. Analyses read only from the checksummed `data/raw/` and never
+fetch.
 
 Raw snapshots are frozen and checksummed; `fetch_data.py` fails loudly rather than silently
 replacing them if a remote source has changed. The pipeline reproduces every number above to

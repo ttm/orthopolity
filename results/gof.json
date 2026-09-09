@@ -176,6 +176,74 @@
         }
       ]
     },
+    "discrete": {
+      "threshold_5.5": {
+        "n": 6639,
+        "threshold": 5.5,
+        "step": 0.1,
+        "q": 0.7946362286562733,
+        "b": 0.9983163869314696,
+        "ks": 0.0077201686780410395,
+        "p_value": 0.256,
+        "n_boot": 500,
+        "ruled_out": false,
+        "loglike": -16414.505705273215,
+        "aic": 32831.01141054643,
+        "truncated": {
+          "k_max": 36,
+          "m_max": 9.1,
+          "q": 0.7949560332937781,
+          "loglike": -16413.15175560795,
+          "aic": 32830.3035112159
+        },
+        "delta_aic_truncated": -0.7078993305331096,
+        "note": "Geometric on the rounded magnitude grid is exactly the Gutenberg-Richter law; a power law in the magnitude-derived energy proxy is the same hypothesis. p <= 0.1 rules it out."
+      },
+      "threshold_6.0": {
+        "n": 2076,
+        "threshold": 6.0,
+        "step": 0.1,
+        "q": 0.797245824787577,
+        "b": 0.984077464988811,
+        "ks": 0.02047566429343972,
+        "p_value": 0.034,
+        "n_boot": 500,
+        "ruled_out": true,
+        "loglike": -5162.472033305852,
+        "aic": 10326.944066611704,
+        "truncated": {
+          "k_max": 31,
+          "m_max": 9.1,
+          "q": 0.7982109462179616,
+          "loglike": -5160.96997595157,
+          "aic": 10325.93995190314
+        },
+        "delta_aic_truncated": -1.0041147085648845,
+        "note": "Geometric on the rounded magnitude grid is exactly the Gutenberg-Richter law; a power law in the magnitude-derived energy proxy is the same hypothesis. p <= 0.1 rules it out."
+      },
+      "threshold_6.5": {
+        "n": 679,
+        "threshold": 6.5,
+        "step": 0.1,
+        "q": 0.7985760901809552,
+        "b": 0.9768369696903269,
+        "ks": 0.03808011399232225,
+        "p_value": 0.026,
+        "n_boot": 500,
+        "ruled_out": true,
+        "loglike": -1693.4894619033114,
+        "aic": 3388.978923806623,
+        "truncated": {
+          "k_max": 26,
+          "m_max": 9.1,
+          "q": 0.8013131701525747,
+          "loglike": -1691.8502730694424,
+          "aic": 3387.700546138885
+        },
+        "delta_aic_truncated": -1.2783776677379137,
+        "note": "Geometric on the rounded magnitude grid is exactly the Gutenberg-Richter law; a power law in the magnitude-derived energy proxy is the same hypothesis. p <= 0.1 rules it out."
+      }
+    },
     "equivalence": {
       "tolerance_1.25": {
         "tolerance_factor": 1.25,

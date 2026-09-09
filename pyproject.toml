@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orthopolity"
+version = "0.1.0"
+description = "Diagnostics for equal-resource spectra: resource-spectrum accounting, bounded goodness-of-fit, equivalence testing and random-effects meta-analysis"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Renato Fabbri", email = "renato.fabbri@gmail.com"}]
+keywords = ["size spectrum", "power law", "scaling", "equivalence testing", "meta-analysis"]
+classifiers = [
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Physics",
+  "Programming Language :: Python :: 3",
+]
+dependencies = ["numpy>=2.0", "scipy>=1.13"]
+
+[project.optional-dependencies]
+analyses = ["pandas>=2.2", "matplotlib>=3.9"]
+
+[project.urls]
+Repository = "https://github.com/ttm/orthopolity"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["orthopolity", "gof", "meta"]

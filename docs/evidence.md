@@ -179,11 +179,40 @@ lognormal** (flare p = 0.41, earthquake p = 0.90). That is the classic CSN outco
 power law cannot be separated over a bounded range — and it means no claim of the form "this is a
 power law rather than a lognormal" is supportable from these data.
 
-⚠️ **The earthquake goodness-of-fit test should not be read as a result.** Magnitudes are rounded to
-0.1, so the energy proxy takes only **32 distinct values** across 6,639 events. A continuous KS
-statistic on data that heavily tied is inflated by the ties alone, and the small p-value reflects
-discretisation rather than evidence about the underlying law. A discrete CSN treatment would be
-required. The occupancy test below is unaffected and is far stronger evidence.
+⚠️ **The earthquake row above is an artefact, now superseded.** Magnitudes are rounded to 0.1, so
+the energy proxy takes only **32 distinct values** across 6,639 events, and a continuous KS
+statistic on data that heavily tied is inflated by the ties alone. The correct discrete treatment
+follows.
+
+### The discrete test, which reverses that result
+
+On the rounded magnitude grid the Gutenberg–Richter law is *exactly* a geometric distribution: with
+$k = (M - M_0)/\Delta$ an integer, $N(\geq M) \propto 10^{-bM}$ means $P(K=k) = (1-q)q^k$ with
+$q = 10^{-b\Delta}$. A power law in the magnitude-derived energy proxy is the same hypothesis, so
+testing it on $k$ is the valid procedure ([`discrete_gr_gof`](../src/gof.py), CSN with a parametric
+bootstrap).
+
+| Threshold | n | b | KS | p | Verdict |
+|---|---:|---:|---:|---:|---|
+| **M ≥ 5.5** | 6,639 | 0.998 | 0.0077 | **0.256** | **Not ruled out** |
+| M ≥ 6.0 | 2,076 | 0.984 | 0.0205 | 0.034 | ruled out |
+| M ≥ 6.5 | 679 | 0.977 | 0.0381 | 0.026 | ruled out |
+
+At the declared threshold the continuous test's KS of 0.108 becomes **0.0077**, and p goes from
+0.000 to **0.256**. The Gutenberg–Richter law describes this catalogue well; the earlier rejection
+was entirely the ties.
+
+**This strengthens the earthquake negative result rather than weakening it.** The distribution is
+exactly the form it should be, and orthopolity still fails on it by a wide margin (§1). The
+occupancy failure is therefore a clean failure of (O), with no distributional irregularity to
+absorb the blame — which is precisely the situation §5.1 of [concept.md](concept.md) describes as
+the most informative kind of test.
+
+Rejection at the *higher* thresholds, where there is less data and so less power, points to real
+structure in the upper tail rather than to noise. A truncated version with a finite maximum
+magnitude is marginally preferred at every threshold (ΔAIC −0.7 to −1.3), consistent with a finite
+largest earthquake, though the truncation point is a boundary parameter so that comparison is
+descriptive only.
 
 ### Is the spectrum flat?
 
@@ -485,8 +514,6 @@ range over ±0.5?* An account of the mean without an account of the dispersion i
 - **Better-constrained ocean data.** With 21 of 23 bins unresolvable, no ocean verdict is possible
   until the reconstruction uncertainty shrinks. Independently sampled size spectra with real
   sampling models (PSSdb, or the individual-organism sources behind GLOSSAQUA) would be the route.
-- **A discrete goodness-of-fit treatment for the earthquake catalogue.** The continuous KS test is
-  invalid on magnitudes rounded to 0.1; that row of the table is a placeholder, not a finding.
 - **A sampling model for the ocean spectrum**, without which no interval and therefore no
   equivalence verdict is possible for the strongest positive case.
 - **An externally declared tolerance.** The plateau passes at $F = 2$ and fails at $F = 1.25$.

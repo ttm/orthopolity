@@ -27,7 +27,8 @@ from scipy.stats import norm
 
 __all__ = ['fit_powerlaw', 'fit_lognormal', 'fit_exponential', 'fit_weibull',
            'ks_distance', 'powerlaw_gof', 'vuong', 'compare_alternatives',
-           'flatness_equivalence', 'sample_powerlaw']
+           'flatness_equivalence', 'sample_powerlaw',
+           'geometric_mle', 'discrete_ks', 'discrete_gr_gof']
 
 _TINY = 1e-12
 
@@ -375,3 +376,110 @@ def flatness_equivalence(centers, phi, tolerance_factor=1.25, slope_draws=None,
                                  ('+' if (not eq and not dep_ok) else '') +
                                  ('departure' if not dep_ok else '')))
     return out
+
+
+# ---------------------------------------------------------------------------
+# Discrete goodness of fit for catalogues recorded on a fixed grid
+# ---------------------------------------------------------------------------
+#
+# A continuous KS statistic is invalid on heavily tied data: the ties inflate
+# it on their own. Earthquake magnitudes are rounded to 0.1, so the energy
+# proxy takes a few dozen distinct values and the continuous test in
+# powerlaw_gof cannot be applied to it.
+#
+# On that grid the Gutenberg-Richter law is exactly a geometric distribution.
+# With magnitudes rounded to step D and thresholded at M0, k = (M - M0)/D is a
+# non-negative integer and N(>=M) proportional to 10^(-bM) means
+#
+#     P(K = k) = (1 - q) q^k,   q = 10^(-b D),
+#
+# so a power law in the magnitude-derived energy proxy is the same hypothesis
+# as a geometric law in k. Testing it on k is the correct discrete treatment.
+
+
+def _to_grid(magnitudes, threshold, step=0.1):
+    m = np.asarray(magnitudes, float)
+    if not np.all(np.isfinite(m)):
+        raise ValueError('Finite magnitudes required')
+    mr = np.round(m / step) * step
+    k = np.round((mr[mr >= threshold - 1e-8] - threshold) / step).astype(np.int64)
+    if len(k) < 2:
+        raise ValueError('At least two events at or above the threshold required')
+    return k
+
+
+def geometric_mle(k):
+    """MLE of q for P(K=k) = (1-q) q^k on non-negative integers."""
+    k = np.asarray(k, np.int64)
+    if k.min() < 0:
+        raise ValueError('Counts must be non-negative integers')
+    kbar = float(k.mean())
+    if kbar <= 0:
+        raise ValueError('Insufficient variation above the threshold')
+    return kbar / (1.0 + kbar)
+
+
+def discrete_ks(k, q):
+    """KS distance between the empirical and geometric CDFs on the integer grid.
+
+    Both CDFs are supported on the same lattice and jump at the same points, so
+    they are compared only at those points. The left-limit correction used for
+    continuous fits would compare across a jump and inflate the statistic by
+    roughly the size of the largest probability atom.
+    """
+    k = np.asarray(k, np.int64)
+    n = len(k)
+    kmax = int(k.max())
+    obs = np.bincount(k, minlength=kmax + 1)
+    emp = np.cumsum(obs) / n
+    fit = 1.0 - q ** (np.arange(kmax + 1) + 1)
+    return float(np.max(np.abs(emp - fit)))
+
+
+def discrete_gr_gof(magnitudes, threshold, step=0.1, n_boot=500, seed=0):
+    """Discrete Clauset-Shalizi-Newman test of the Gutenberg-Richter law.
+
+    Fits the geometric law on the rounded magnitude grid, measures the discrete
+    KS distance, and obtains a p-value by refitting synthetic catalogues drawn
+    from the fitted model. Following CSN, p <= 0.1 rules the model out and
+    p > 0.1 is non-rejection rather than support.
+
+    Also fits a truncated version with a finite maximum magnitude and reports
+    the AIC difference. The truncation point is a boundary parameter, so this
+    is a descriptive comparison and not a likelihood-ratio test.
+    """
+    k = _to_grid(magnitudes, threshold, step)
+    q = geometric_mle(k)
+    ks = discrete_ks(k, q)
+    n = len(k)
+
+    rng = np.random.default_rng(seed)
+    worse = 0
+    for _ in range(n_boot):
+        ks_syn = rng.geometric(1 - q, size=n) - 1          # numpy counts trials
+        worse += discrete_ks(ks_syn, geometric_mle(ks_syn)) >= ks
+
+    ll = float(n * (np.log1p(-q) + k.mean() * np.log(q)))
+
+    best = None
+    for kmax in range(int(k.max()), int(k.max()) + 40):
+        def nll(qq):
+            qq = min(max(qq, 1e-9), 1 - 1e-9)
+            norm = 1.0 - qq ** (kmax + 1)
+            return -float(n * (np.log1p(-qq) + k.mean() * np.log(qq) - np.log(norm)))
+        r = minimize_scalar(nll, bounds=(1e-6, 1 - 1e-6), method='bounded')
+        cand = dict(k_max=kmax, m_max=float(threshold + kmax * step),
+                    q=float(r.x), loglike=float(-r.fun), aic=float(2 * 2 + 2 * r.fun))
+        if best is None or cand['aic'] < best['aic']:
+            best = cand
+
+    return dict(n=int(n), threshold=float(threshold), step=float(step),
+                q=float(q), b=float(-np.log10(q) / step), ks=ks,
+                p_value=float(worse / n_boot), n_boot=int(n_boot),
+                ruled_out=bool(worse / n_boot <= 0.1),
+                loglike=ll, aic=float(2 * 1 - 2 * ll),
+                truncated=best,
+                delta_aic_truncated=float(best['aic'] - (2 * 1 - 2 * ll)),
+                note='Geometric on the rounded magnitude grid is exactly the '
+                     'Gutenberg-Richter law; a power law in the magnitude-derived '
+                     'energy proxy is the same hypothesis. p <= 0.1 rules it out.')

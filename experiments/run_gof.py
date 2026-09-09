@@ -17,7 +17,8 @@ import matplotlib.pyplot as plt
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
 from orthopolity import resource_spectrum, rounded_gr_b          # noqa: E402
-from gof import compare_alternatives, flatness_equivalence        # noqa: E402
+from gof import (compare_alternatives, flatness_equivalence,      # noqa: E402
+                 discrete_gr_gof)
 
 RAW, OUT = ROOT / 'data' / 'raw', ROOT / 'results'
 SPEC = json.loads((ROOT / 'configs' / 'pilot.json').read_text())
@@ -87,7 +88,11 @@ def usgs():
     draws = np.array([slope_of(resource_spectrum(t.energy_proxy_J, t.energy_proxy_J, edges))
                       for t in (blocks(a, 'year') for _ in range(B))])
     b, n = rounded_gr_b(a.mag, 5.5)
-    return dict(distribution=gof,
+    disc = {f'threshold_{c}': discrete_gr_gof(a.mag.to_numpy(), c,
+                                              SPEC['usgs']['rounding_step'],
+                                              n_boot=N_BOOT_GOF, seed=SPEC['seed'])
+            for c in SPEC['usgs']['fit_thresholds']}
+    return dict(distribution=gof, discrete=disc,
                 equivalence=equivalence_block(s['center'], s['phi'], draws,
                                               'Magnitude-derived energy occupancy'),
                 gutenberg_richter_b=b, n_events=int(n),
@@ -160,6 +165,12 @@ def main():
         for c in g['comparisons']:
             print(f"       vs {c['against']:<22} LR={c['loglike_ratio']:+9.1f} "
                   f"p={c['p_value']:.4f}  favours {c['favours']}")
+
+    print('\n=== DISCRETE GUTENBERG-RICHTER GOF (the valid test for tied magnitudes) ===')
+    for lab, r in res['usgs']['discrete'].items():
+        print(f"  M>={r['threshold']:.1f}  n={r['n']:>5}  b={r['b']:.3f}  KS={r['ks']:.4f}  "
+              f"p={r['p_value']:.3f} -> {'RULED OUT' if r['ruled_out'] else 'not ruled out'}"
+              f"   dAIC(truncated at M={r['truncated']['m_max']:.1f})={r['delta_aic_truncated']:+.1f}")
 
     print('\n=== FLATNESS EQUIVALENCE (tolerance factor 1.25) ===')
     for k, e in (('noaa', res['noaa']['equivalence']), ('usgs', res['usgs']['equivalence']),

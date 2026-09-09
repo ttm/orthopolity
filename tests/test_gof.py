@@ -107,3 +107,65 @@ class Equivalence(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class DiscreteGR(unittest.TestCase):
+    """Magnitudes are recorded on a 0.1 grid, so the continuous KS test is
+    invalid on them; these check the discrete replacement."""
+
+    def test_recovers_a_known_b_value(self):
+        from gof import discrete_gr_gof
+        rng = np.random.default_rng(0)
+        b, step, thr = 1.0, 0.1, 5.5
+        q = 10 ** (-b * step)
+        k = rng.geometric(1 - q, size=20000) - 1
+        r = discrete_gr_gof(thr + k * step, thr, step, n_boot=100, seed=1)
+        # SE(b) is about 0.007 at this n, so allow ~4 standard errors.
+        self.assertAlmostEqual(r['b'], b, delta=0.03)
+
+    def test_true_geometric_is_not_ruled_out(self):
+        from gof import discrete_gr_gof
+        rng = np.random.default_rng(2)
+        q = 10 ** (-1.0 * 0.1)
+        k = rng.geometric(1 - q, size=5000) - 1
+        r = discrete_gr_gof(5.5 + k * 0.1, 5.5, 0.1, n_boot=200, seed=3)
+        self.assertGreater(r['p_value'], 0.1)
+        self.assertFalse(r['ruled_out'])
+
+    def test_a_clearly_non_geometric_catalogue_is_ruled_out(self):
+        from gof import discrete_gr_gof
+        rng = np.random.default_rng(4)
+        # Uniform magnitudes have no geometric tail at all.
+        k = rng.integers(0, 30, size=4000)
+        r = discrete_gr_gof(5.5 + k * 0.1, 5.5, 0.1, n_boot=200, seed=5)
+        self.assertLessEqual(r['p_value'], 0.1)
+        self.assertTrue(r['ruled_out'])
+
+    def test_discrete_ks_is_zero_for_a_perfect_fit(self):
+        from gof import discrete_ks, geometric_mle
+        q = 0.7
+        # Expected counts under the fitted q, scaled up so rounding is negligible.
+        k = np.concatenate([[i] * int(round(200_000 * (1 - q) * q ** i)) for i in range(60)])
+        self.assertLess(discrete_ks(k, geometric_mle(k)), 5e-3)
+
+    def test_discrete_ks_does_not_apply_the_continuous_left_limit_correction(self):
+        # Comparing F_emp(k-1) against F_fit(k) would compare across a jump and
+        # report roughly the largest atom (here 1-q = 0.3) even on a perfect fit.
+        from gof import discrete_ks, geometric_mle
+        q = 0.7
+        k = np.concatenate([[i] * int(round(200_000 * (1 - q) * q ** i)) for i in range(60)])
+        self.assertLess(discrete_ks(k, geometric_mle(k)), 0.5 * (1 - q))
+
+    def test_truncation_is_preferred_when_the_catalogue_is_truncated(self):
+        from gof import discrete_gr_gof
+        rng = np.random.default_rng(6)
+        q = 10 ** (-1.0 * 0.1)
+        k = rng.geometric(1 - q, size=30000) - 1
+        k = k[k <= 20]
+        r = discrete_gr_gof(5.5 + k * 0.1, 5.5, 0.1, n_boot=50, seed=7)
+        self.assertLess(r['delta_aic_truncated'], 0)
+
+    def test_too_few_events_is_refused(self):
+        from gof import discrete_gr_gof
+        with self.assertRaises(ValueError):
+            discrete_gr_gof(np.array([5.6]), 5.5, 0.1)
