@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
 from meta import (random_effects, digit_preference, round_number_excess,
-                  latent_shape, predicted_pass_fraction)
+                  latent_shape, predicted_pass_fraction, variance_components)
 
 
 class RandomEffects(unittest.TestCase):
@@ -160,3 +160,53 @@ class PassFraction(unittest.TestCase):
             predicted_pass_fraction([0.1], tau=0)
         with self.assertRaises(ValueError):
             predicted_pass_fraction([0.1], tau=0.2, family='student_t', nu=1.5)
+
+
+class VarianceComponents(unittest.TestCase):
+    def setUp(self):
+        self.rng = np.random.default_rng(0)
+
+    def _make(self, n_groups, per_group, tb, tw, se_val=0.05):
+        g = np.repeat(np.arange(n_groups), per_group)
+        a = self.rng.normal(0, tb, n_groups)[g]
+        e = self.rng.normal(0, tw, len(g))
+        se = np.full(len(g), se_val)
+        y = -1.0 + a + e + self.rng.normal(0, se)
+        return y, se, g
+
+    def test_recovers_both_components(self):
+        from meta import variance_components
+        y, se, g = self._make(120, 8, tb=0.30, tw=0.15)
+        r = variance_components(y, se, g)
+        self.assertTrue(r['separable'])
+        self.assertAlmostEqual(r['tau_between'], 0.30, delta=0.05)
+        self.assertAlmostEqual(r['tau_within'], 0.15, delta=0.05)
+        self.assertAlmostEqual(r['mu'], -1.0, delta=0.05)
+
+    def test_all_variance_between_is_detected(self):
+        from meta import variance_components
+        y, se, g = self._make(120, 6, tb=0.35, tw=0.001)
+        r = variance_components(y, se, g)
+        self.assertGreater(r['fraction_between'], 0.9)
+
+    def test_all_variance_within_is_detected(self):
+        from meta import variance_components
+        y, se, g = self._make(120, 6, tb=0.001, tw=0.35)
+        r = variance_components(y, se, g)
+        self.assertLess(r['fraction_between'], 0.1)
+
+    def test_singleton_groups_are_reported_as_confounded(self):
+        # Every group seen once: the split is not identified, so refuse to make one.
+        from meta import variance_components
+        y, se, g = self._make(300, 1, tb=0.20, tw=0.20)
+        r = variance_components(y, se, g)
+        self.assertFalse(r['separable'])
+        self.assertIsNone(r['tau_between'])
+        self.assertAlmostEqual(r['total_latent_sd'], np.hypot(0.2, 0.2), delta=0.06)
+
+    def test_measurement_error_is_removed_from_the_total(self):
+        from meta import variance_components
+        y, se, g = self._make(200, 1, tb=0.20, tw=0.0, se_val=0.30)
+        r = variance_components(y, se, g)
+        self.assertAlmostEqual(r['total_latent_sd'], 0.20, delta=0.06)
+        self.assertLess(r['total_latent_sd'], float(np.std(y, ddof=1)))

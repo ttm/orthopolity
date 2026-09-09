@@ -670,17 +670,51 @@ deconvolution removes measurement error, and smaller by about the right amount. 
 anything Arranz published; the agreement is a genuine external check on the random-effects
 machinery.
 
-**A qualification this reading forces on §6.1.** Gaedke's slopes range from −1.23 in early spring to
-−0.82 in late summer **within a single lake across one season** — a spread of 0.41. So the
-heterogeneity measured as I² = 88.4% is not purely *between-system*: for studies reporting repeated
-observations it also contains within-system temporal variation. τ ≈ 0.23 should be read as
-"dispersion of published spectrum estimates within a class", not as "differences between ecosystems".
-Separating those needs a nested model with study, site and occasion, which has not been fitted.
+**A qualification this reading appeared to force — since tested and withdrawn.** Gaedke's slopes
+range from −1.23 to −0.82 **within a single lake**, a spread of 0.37, which looked large enough to
+mean τ was measuring repeat-measurement noise rather than real differences between ecosystems.
+Fitting the decomposition (§6.13) shows otherwise: that *range* over 377 observations corresponds to
+an SD of only **0.067**, against a between-site τ of 0.235. Temporal variation is about **8% of the
+variance**. Inferring a standard deviation from a range was the error; τ does mean what it appeared
+to mean.
 
 *(The two PDFs are not redistributed here; they are paywalled. The quotations above are the
 verification record.)*
 
-### 6.13 What the tests together say
+### 6.13 Where the dispersion actually lives (R9)
+
+The primary subset happens to contain the two designs that isolate each component:
+
+| Component | Study | Design | Estimate |
+|---|---|---|---:|
+| **Between-site** | Arranz et al. 2022 | 639 lakes × 1 occasion | **τ = 0.235** |
+| **Within-site (temporal)** | Gaedke 1993 | 1 lake × 377 occasions, 10 years | **SD = 0.067** |
+
+Arranz's design gives between-site dispersion with measurement error removed (raw SD 0.279, median
+reported SE 0.165 → latent τ 0.235). Gaedke's gives pure temporal variation, and reports no errors,
+so 0.067 is an **upper** bound on it.
+
+> **Temporal variation is at most 8.2% of the variance.** The dispersion is predominantly *between
+> ecosystems*, so τ ≈ 0.23 does mean what §6 took it to mean: lakes genuinely differ from each other
+> in how equally biomass is spread across size classes, and one lake re-measured through a season
+> stays comparatively fixed.
+
+Two studies in the subset have both several sites and repeat visits, and can be fitted jointly as a
+check. Both are small, and both agree on the direction: StudyID_10 (n = 27, 5 sites) gives 74%
+between-site; StudyID_105 (n = 24, 6 sites) gives 81%.
+
+**What this is not.** The two components come from different studies in different ecosystems, so
+these are bounds, not a partition of one variance. Treating Lake Constance's temporal variability as
+representative of 639 Ontario lakes is an assumption. A study measuring many sites *and* repeat
+visits with reported errors would settle it properly; none in this subset is large enough to.
+
+**Consequence for the prohibition.** [concept.md §3.1](concept.md) commits to τ replicating within a
+class. That commitment can now be stated more sharply: what must replicate is the **between-site**
+component, τ ≈ 0.235 for temperate lake fish communities, and a replication attempt must not confound
+it with sampling design — a study visiting few sites many times will find a smaller τ for reasons
+that have nothing to do with the hypothesis.
+
+### 6.14 What the tests together say
 
 Neither of the two hypotheses that motivated this analysis survives:
 

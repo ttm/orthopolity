@@ -1,0 +1,69 @@
+{
+  "status": "EXPLORATORY, not preregistered",
+  "components": {
+    "between_site_arranz": {
+      "source": "Arranz et al. 2022, 639 lakes, one occasion each",
+      "n": 639,
+      "n_sites": 639,
+      "tau": 0.23458185756715327,
+      "mu": -1.0003876846659672,
+      "median_se": 0.16530612244897958,
+      "raw_sd": 0.27893785850672154,
+      "interpretation": "Each lake seen once, so this is between-site dispersion with measurement error removed. It still contains any single-occasion temporal deviation, so it is an upper bound on the purely spatial part."
+    },
+    "within_site_gaedke": {
+      "source": "Gaedke 1993, Lake Constance, one site, 377 occasions over 10 years",
+      "n": 377,
+      "n_sites": 1,
+      "raw_sd": 0.06708045733357103,
+      "median": -1.02,
+      "range": [
+        -1.225,
+        -0.86
+      ],
+      "errors_reported": 0,
+      "interpretation": "One lake, so all dispersion is temporal. No errors are reported, so this raw SD is an UPPER bound on true temporal variation."
+    },
+    "joint_fits": [
+      {
+        "n": 27,
+        "n_groups": 5,
+        "groups_with_repeats": 5,
+        "max_group_size": 6,
+        "mu": -1.4297684651636926,
+        "loglike": -17.386940621742728,
+        "separable": true,
+        "total_latent_sd": 0.5543550157455606,
+        "median_se": 0.23,
+        "tau_between": 0.47729142653675455,
+        "tau_within": 0.2819616598702217,
+        "fraction_between": 0.7412953979294954,
+        "study": "StudyID_10"
+      },
+      {
+        "n": 24,
+        "n_groups": 6,
+        "groups_with_repeats": 6,
+        "max_group_size": 4,
+        "mu": -1.1903157684619918,
+        "loglike": 33.3845934768774,
+        "separable": true,
+        "total_latent_sd": 0.032398922863265095,
+        "median_se": 0.055,
+        "tau_between": 0.029205826450731144,
+        "tau_within": 0.014025330799292213,
+        "fraction_between": 0.812601943388976,
+        "study": "StudyID_105"
+      }
+    ]
+  },
+  "decomposition": {
+    "pooled_freshwater_tau": 0.228,
+    "between_site_tau": 0.23458185756715327,
+    "within_site_sd_upper": 0.06708045733357103,
+    "within_site_variance_share_upper": 0.08177173032283713,
+    "implied_between_site_lower": 0.2247862543474915,
+    "verdict": "dispersion is predominantly between ecosystems",
+    "note": "Between-site and within-site are estimated from different studies and different ecosystems, so these are bounds rather than a partition of one variance. Subtracting them assumes the temporal component in Arranz lakes matches that in Lake Constance, which is an assumption, not a measurement."
+  }
+}

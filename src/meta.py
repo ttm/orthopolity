@@ -12,7 +12,9 @@ from scipy.optimize import minimize
 from scipy.stats import chi2 as _chi2, norm as _norm, laplace as _laplace, t as _t
 
 __all__ = ['random_effects', 'digit_preference', 'round_number_excess',
-           'latent_shape', 'predicted_pass_fraction']
+           'latent_shape', 'predicted_pass_fraction', 'variance_components']
+
+_TINY = 1e-12
 
 
 def random_effects(y, se):
@@ -241,3 +243,74 @@ def predicted_pass_fraction(tolerances, tau, family='gaussian', nu=None):
     return dict(mean_predicted_fraction=float(np.mean(frac)),
                 median_tolerance=float(np.median(tol)), tau=float(tau),
                 family=family, n=int(len(tol)))
+
+
+def variance_components(y, se, group):
+    """Split dispersion into between-group and within-group, given known errors.
+
+    Fits y_ij = mu + a_i + e_ij + eps_ij by maximum likelihood, where a_i is a
+    group effect with variance tau_between^2, e_ij a within-group effect with
+    variance tau_within^2, and eps_ij measurement error with the supplied,
+    known standard error.
+
+    The two components are only separable when some groups are observed more
+    than once. With every group observed once they are confounded and only
+    their sum is identified; the result then reports `separable: False` and the
+    sum, rather than an arbitrary split.
+
+    Each group's covariance is D + tau_b^2 * 11', with D diagonal, so the
+    determinant and inverse are taken by rank-one update rather than by
+    forming the matrix.
+    """
+    y = np.asarray(y, float)
+    se = np.asarray(se, float)
+    group = np.asarray(group)
+    ok = np.isfinite(y) & np.isfinite(se) & (se >= 0)
+    y, se, group = y[ok], se[ok], group[ok]
+    if len(y) < 5:
+        raise ValueError('At least five observations required')
+
+    groups = [np.flatnonzero(group == g) for g in np.unique(group)]
+    sizes = np.array([len(ix) for ix in groups])
+    separable = bool((sizes > 1).sum() >= 2)
+
+    def nll(p):
+        mu, tb2, tw2 = p[0], p[1] ** 2, p[2] ** 2
+        total = 0.0
+        for ix in groups:
+            d = tw2 + se[ix] ** 2 + _TINY
+            r = y[ix] - mu
+            inv_d = 1.0 / d
+            s = float(inv_d.sum())
+            quad = float((r ** 2 * inv_d).sum())
+            cross = float((r * inv_d).sum())
+            denom = 1.0 + tb2 * s
+            quad -= tb2 * cross ** 2 / denom
+            logdet = float(np.log(d).sum()) + np.log(denom)
+            total += 0.5 * (logdet + quad + len(ix) * np.log(2 * np.pi))
+        return total
+
+    best = None
+    s0 = float(np.std(y, ddof=1))
+    for start in ([np.median(y), s0 / 2, s0 / 2], [np.median(y), s0, 1e-3],
+                  [np.median(y), 1e-3, s0]):
+        r = minimize(nll, start, method='Nelder-Mead',
+                     options=dict(maxiter=4000, xatol=1e-9, fatol=1e-9))
+        if best is None or r.fun < best.fun:
+            best = r
+    tb, tw = abs(float(best.x[1])), abs(float(best.x[2]))
+    out = dict(n=int(len(y)), n_groups=int(len(groups)),
+               groups_with_repeats=int((sizes > 1).sum()),
+               max_group_size=int(sizes.max()), mu=float(best.x[0]),
+               loglike=float(-best.fun), separable=separable,
+               total_latent_sd=float(np.hypot(tb, tw)),
+               median_se=float(np.median(se)))
+    if separable:
+        out.update(tau_between=tb, tau_within=tw,
+                   fraction_between=float(tb ** 2 / (tb ** 2 + tw ** 2))
+                   if (tb ** 2 + tw ** 2) > 0 else float('nan'))
+    else:
+        out.update(tau_between=None, tau_within=None, fraction_between=None,
+                   note='every group observed once: components confounded, '
+                        'only their sum is identified')
+    return out

@@ -8,7 +8,7 @@
 PY ?= python
 export PYTHONPATH := src
 
-.PHONY: all install data test pilot gof independent ensemble strata analyses clean
+.PHONY: all install data test pilot gof independent ensemble strata variance analyses clean
 
 all: data test analyses
 
@@ -18,10 +18,10 @@ install:
 data:            ## verify every raw input against data/snapshot_checksums.json
 	$(PY) experiments/fetch_data.py
 
-test:            ## 49 accounting, estimator, goodness-of-fit and meta-analysis checks
+test:            ## 54 accounting, estimator, goodness-of-fit and meta-analysis checks
 	$(PY) -m unittest discover -s tests -v
 
-analyses: pilot gof independent ensemble strata
+analyses: pilot gof independent ensemble strata variance
 
 pilot:           ## the three original pilots -> results/results.json
 	$(PY) experiments/run_pilot.py
@@ -37,6 +37,9 @@ ensemble:        ## is the ensemble result real? -> results/ensemble.json
 
 strata:          ## class mixture and span/taxon confound -> results/strata.json
 	$(PY) experiments/run_strata.py
+
+variance:        ## between- vs within-ecosystem dispersion -> results/variance.json
+	$(PY) experiments/run_variance.py
 
 clean:           ## remove generated exploration output only; never touches data/raw
 	rm -rf results/exploration __pycache__ src/__pycache__ tests/__pycache__

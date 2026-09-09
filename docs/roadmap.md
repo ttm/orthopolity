@@ -85,14 +85,15 @@ published reconstruction uncertainty ([evidence.md §5](evidence.md)).
 | Stale post-R1–R3 claims corrected; invalid earthquake lognormal comparison withdrawn | `aa45046` |
 | **R7** — heavy tail is largely a class mixture; Gaussian adequate within freshwater | `6ee43fc` |
 | Failed replication diagnosed as a database labelling defect (Perkins verified) | `9138a49` |
-| **R8** — conventions of Arranz (2022) and Gaedke (1993) confirmed from the papers | *this commit* |
+| **R8** — conventions of Arranz (2022) and Gaedke (1993) confirmed from the papers | `a3914ab` |
+| **R9** — dispersion decomposed: ~92% between ecosystems, ≤8% temporal | *this commit* |
 
-### R9 — Separate within-system from between-system dispersion
-**Analysis. Raised by the R8 source check ([evidence.md §6.12](evidence.md)).**
 
-Gaedke's slopes span −1.23 to −0.82 **within one lake across one season**. So the I² = 88.4%
-heterogeneity is not purely between-system: for studies with repeated observations it also contains
-within-system temporal variation. τ ≈ 0.23 currently means "dispersion of published estimates within
-a class", which is weaker than "ecosystems genuinely differ by this much". Fitting a nested model
-with study, site and occasion would separate them, and would sharpen the replication prohibition
-from a single τ to a variance decomposition.
+### R10 — A study with many sites *and* repeat visits
+**Data. The clean version of R9.**
+
+R9 bounds the temporal component using two different studies in two different ecosystems, which
+requires assuming Lake Constance's temporal variability represents Ontario lakes. A single study
+measuring many sites with repeat visits and reported errors would give a real partition instead of
+bounds. Nothing in the primary subset is large enough: the two with both levels have n = 27 and
+n = 24. This is a data requirement, not a method one.
