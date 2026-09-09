@@ -20,11 +20,16 @@ marine**. It would also supply the fixed-taxon span variation that R5 needs.
 | `pssdb.net` portal (up, HTTP 200) | Product pages for every version link only back to Zenodo DOIs |
 | NOAA COPEPOD, `copepodproject.org` | Link circularly back to `pssdb.net` |
 | IFREMER Archimer `doc/00898/101001` | Article PDFs plus Zenodo DOIs; no data |
-| `jessluo/PSSdb` on GitHub | Workflow code only; no data file over 5 KB |
+| `jessluo/PSSdb` on GitHub | **Checked exhaustively:** both branches (`main`, `v1.2`), the `v2024-04` release tag (0 assets), every file type without an extension filter, and commit history. The only data-shaped files are project metadata and standardiser configs — `project_list_all.xlsx`, `Data_source_table_PSSdb.xlsx`, taxonomy and elemental-quota tables. No NBSS slopes anywhere. The repository is the pipeline that *produces* the products; the products themselves go to Zenodo. |
 | Wayback Machine | Record page and `Documentation_PSSdb_v2024-04.pdf` archived, but `PSSdb-BULK__v2024-04.zip` was never captured (CDX empty, direct fetch 404) |
 
 The file to retrieve when Zenodo recovers is **`PSSdb-BULK__v2024-04.zip`**, whose Product 1b holds
 the NBSS slope, intercept and R² per 1°×1° monthly cell — exactly the quantity needed.
+
+Regenerating the products from the pipeline is not a realistic substitute: it pulls from three live
+platforms (EcoTaxa, EcoPart and instrument-specific IFCB dashboards), needs credentials for some of
+them, and processes ~92,000 IFCB samples, ~3,000 UVP profiles and ~2,400 scans. Waiting for Zenodo
+is cheaper than reproducing 98,000 sample ingests to obtain a published table.
 
 **A partial substitute was run and it failed** ([evidence.md §6.10](evidence.md)): across the three
 published conventions in GLOSSAQUA, whose study sets are disjoint, freshwater τ varies by a factor
