@@ -155,6 +155,7 @@ floating-point noise.
 | [docs/value.md](docs/value.md) | The case for pursuing it, the statistical requirements, and a staged plan. |
 | [docs/criticism.md](docs/criticism.md) | The case against: category error, circularity, prior art, the failed tests, opportunity cost, and kill criteria. |
 | [docs/not-worth-pursuing.md](docs/not-worth-pursuing.md) | Explicit register of deprioritised directions, with reasons — including what was deliberately left out. |
+| **[docs/paper.md](docs/paper.md)** | **Manuscript draft** — orthopolity-led, every number drawn from `results/*.json`. |
 | [docs/roadmap.md](docs/roadmap.md) | Open work in priority order, with completed items and their commits. |
 | [docs/references.md](docs/references.md) | Bibliography grouped by role in the argument. |
 

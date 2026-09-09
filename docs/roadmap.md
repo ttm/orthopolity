@@ -86,7 +86,8 @@ published reconstruction uncertainty ([evidence.md §5](evidence.md)).
 | **R7** — heavy tail is largely a class mixture; Gaussian adequate within freshwater | `6ee43fc` |
 | Failed replication diagnosed as a database labelling defect (Perkins verified) | `9138a49` |
 | **R8** — conventions of Arranz (2022) and Gaedke (1993) confirmed from the papers | `a3914ab` |
-| **R9** — dispersion decomposed: ~92% between ecosystems, ≤8% temporal | *this commit* |
+| **R9** — dispersion decomposed: ~92% between ecosystems, ≤8% temporal | `eca3855` |
+| Manuscript drafted ([docs/paper.md](paper.md)) | *this commit* |
 
 
 ### R10 — A study with many sites *and* repeat visits
@@ -97,3 +98,15 @@ requires assuming Lake Constance's temporal variability represents Ontario lakes
 measuring many sites with repeat visits and reported errors would give a real partition instead of
 bounds. Nothing in the primary subset is large enough: the two with both levels have n = 27 and
 n = 24. This is a data requirement, not a method one.
+
+### R11 — Finish the manuscript
+**Writing. [docs/paper.md](paper.md) is a complete draft; these remain.**
+
+- Format references for the target venue and verify every one against the original.
+- Decide authorship, funding and acknowledgements.
+- Produce figures: the four existing PNGs cover the analyses but were made as diagnostics, not as
+  publication figures.
+- Choose the venue. The draft is orthopolity-led, which suits PLOS ONE (negative results welcome) or
+  Physica A. Methods in Ecology and Evolution would need the §4.6 label finding moved to the front.
+- Consider extracting §4.6 as a short note *after* the main paper appears, citing it. Splitting it
+  out beforehand would be salami-slicing: one dataset, one codebase, one set of 1,300 spectra.
