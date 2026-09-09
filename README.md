@@ -106,11 +106,17 @@ label while differing by almost exactly 1 in exponent.
 The subset is **excluded as unusable**, not re-mapped — picking each study's mapping by which answer
 it gives would manufacture the agreement.
 
-Checking the primary subset for the same defect found **none**: zero studies at either adjacent
-estimand, against 3 and 4 in the contaminated one. But the two studies carrying **78% of the primary
-evidence are paywalled** with no reachable open-access copy, so their conventions remain unverified
-first-hand. That is the project's largest outstanding caveat and it needs institutional access, not
-more searching. See [evidence.md §6.11–6.12](docs/evidence.md).
+**The primary subset has since been verified directly.** The two studies carrying 78% of the
+evidence were read from the papers, and both use the convention their label claims: Arranz et al.
+(2022) divides biomass by bin width on log₂ intervals and names −1 as the expected value, and
+Gaedke (1993) states the identity outright — *"an equal distribution of biomass over all size
+classes… corresponds to a slope of −1 of the normalized spectrum"*. Every summary statistic in the
+database reproduces the published Table 1 to two decimals.
+
+That check also produced an **independent corroboration of τ**: Arranz report SD = 0.28 across 639
+lakes, against the latent τ = 0.228 estimated here after deconvolving measurement error — smaller,
+as it must be, by about the right amount, and fitted to nothing they published. See
+[evidence.md §6.11–6.12](docs/evidence.md).
 
 **What it forbids:** an independent aquatic dataset must reproduce τ ≈ 0.257; two resources
 satisfying (O) on the same systems must have equal dispersion and perfectly correlated departures;

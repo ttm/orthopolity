@@ -31,17 +31,6 @@ platforms (EcoTaxa, EcoPart and instrument-specific IFCB dashboards), needs cred
 them, and processes ~92,000 IFCB samples, ~3,000 UVP profiles and ~2,400 scans. Waiting for Zenodo
 is cheaper than reproducing 98,000 sample ingests to obtain a published table.
 
-**R8 — verify the conventions of the 16 primary NBSS studies. Half-done; see
-[evidence.md §6.12](evidence.md).** A structural check for contamination found none: zero studies at
-either adjacent estimand, against 3 and 4 in the subset known to be contaminated. But direct
-verification is blocked for the two studies carrying 78% of the evidence — Arranz et al. (2022),
-*Ecology* (no open-access copy in OpenAlex, Semantic Scholar or Europe PMC) and Gaedke (1993),
-*L&O* (publisher returns 403).
-
-**This needs institutional access, not more searching.** Reading those two Methods sections is one
-library request and is the highest-value outstanding task in the project — it converts "no
-contamination detectable" into "conventions confirmed" for the result everything else rests on.
-
 **A partial substitute was run and it failed** ([evidence.md §6.10](evidence.md)): across the three
 published conventions in GLOSSAQUA, whose study sets are disjoint, freshwater τ varies by a factor
 of two and two of three have E[s] ≠ 0. Method and study population are perfectly confounded there,
@@ -94,4 +83,16 @@ published reconstruction uncertainty ([evidence.md §5](evidence.md)).
 | **R2** — discrete Gutenberg–Richter goodness of fit; GR *not* ruled out at M ≥ 5.5 | `1098b7c` |
 | **R3** — packaging (`pyproject.toml`) and one-command reproduction (`Makefile`) | `1098b7c` |
 | Stale post-R1–R3 claims corrected; invalid earthquake lognormal comparison withdrawn | `aa45046` |
-| **R7** — heavy tail is largely a class mixture; Gaussian adequate within freshwater | *this commit* |
+| **R7** — heavy tail is largely a class mixture; Gaussian adequate within freshwater | `6ee43fc` |
+| Failed replication diagnosed as a database labelling defect (Perkins verified) | `9138a49` |
+| **R8** — conventions of Arranz (2022) and Gaedke (1993) confirmed from the papers | *this commit* |
+
+### R9 — Separate within-system from between-system dispersion
+**Analysis. Raised by the R8 source check ([evidence.md §6.12](evidence.md)).**
+
+Gaedke's slopes span −1.23 to −0.82 **within one lake across one season**. So the I² = 88.4%
+heterogeneity is not purely between-system: for studies with repeated observations it also contains
+within-system temporal variation. τ ≈ 0.23 currently means "dispersion of published estimates within
+a class", which is weaker than "ecosystems genuinely differ by this much". Fitting a nested model
+with study, site and occasion would separate them, and would sharpen the replication prohibition
+from a single τ to a variance decomposition.

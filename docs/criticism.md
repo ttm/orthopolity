@@ -82,6 +82,11 @@ The word "orthopolity" appears nowhere in the literature. The content appears re
 - **Box-counting dimension** (Mandelbrot). $N(l) \propto l^{-D}$ is the essay's boxes argument, and
   $d$-as-dimensionality is not an analogy to it; it is it.
 - **Scale invariance ⟹ power law** — textbook, and the deepest version of the intuition.
+- **Gaedke (1993)** states the identity outright: *"an equal distribution of biomass over all size
+  classes corresponds to a zero slope of a line fitted to a Sheldon-type size spectrum… and to a
+  slope of −1 of the normalized spectrum"*, citing Sheldon et al. (1972, 1977). The core equivalence
+  has therefore been in print, in plain language, since at least 1993 — read directly while
+  verifying the primary sources ([evidence.md §6.12](evidence.md)).
 - **Maximum-entropy derivations** — Jaynes; Frank; Visser on Zipf's law and maximum entropy.
 
 Not fatal — synthesis is legitimate — but the honest claim is *"these results are one identity in
@@ -153,10 +158,12 @@ So the replication attempt was never a test of the hypothesis — it was a test 
 field means one thing, and it does not. The subset is excluded rather than re-mapped, since choosing
 each study's mapping by which answer it gives would manufacture the agreement.
 
-**Two things survive as real criticisms.** The primary NBSS result has *not* had the same
-verification applied to its 16 studies, so it is unimpugned but unchecked. And the broader warning is
-now evidenced rather than suspected: compilations of published scaling exponents cannot be pooled on
-their method labels, which bears on this analysis and on any meta-analysis of the kind.
+**One of the two criticisms here has since been answered.** The primary subset's two dominant
+studies have now been read directly and both use the convention their label claims
+([evidence.md §6.12](evidence.md)). What survives is the broader warning, now evidenced rather than
+suspected: compilations of published scaling exponents cannot be pooled on their method labels
+without per-study checking. It happened to come out clean for the studies that mattered here; it
+did not for the adjacent subset.
 
 ## 9. The name is a liability
 

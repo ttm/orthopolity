@@ -626,43 +626,59 @@ Three consequences:
    size-spectrum exponents cannot be pooled on their method labels. This applies to GLOSSAQUA, to
    this analysis, and to any meta-analysis of scaling exponents that trusts a convention field.
 
-### 6.12 Verifying the primary subset (R8): partly done, and it holds up
+### 6.12 Verifying the primary subset (R8): conventions confirmed
 
-§6.11 showed one database label covering two estimands. The obvious worry is whether the *primary*
-NBSS subset is contaminated the same way. Two checks, one blocked and one informative.
+The two studies carrying 78% of the primary evidence have now been read directly. Both use the
+convention their label claims, and the mapping to −1 is correct.
 
-**Direct source verification: blocked for the studies that matter.** The two studies carrying 78% of
-the primary evidence are both paywalled with no reachable open-access copy — Arranz et al. (2022),
-*Ecology*, 49.2% of spectra, no OA version anywhere in OpenAlex, Semantic Scholar or Europe PMC; and
-Gaedke (1993), *Limnology & Oceanography*, 29.0%, available only through a publisher that returns
-403. **So the headline result still rests on sources whose conventions have not been checked
-first-hand.** That is a genuine limitation, not a formality.
+**Arranz et al. (2022), *Ecology* — 49.2% of spectra.** Methods, verbatim:
 
-Arranz et al. (2022) is at least *thematically* consistent — its abstract describes measuring
-"biomass conservation, or the ability of a community to sustain biomass from small to large
-organisms", which is the orthopolity quantity under another name. That is suggestive, not
-verification, and it carries its own caution: the studies contributing most are ones that chose to
-study this exact question.
+> "we classified body mass into a geometric series of size intervals in which the lower boundary of
+> each interval differed by a factor of two… Then, **normalized scores (normalized corrected BPUE)
+> were calculated as the biomass index divided by interval**. The NBS slope was calculated using
+> ordinary least squares (OLS) to regress log₂(normalized corrected BPUE) on log₂(body mass class)."
 
-**Structural check: no contamination detectable.** Contamination by an estimand differing by 1 in
-exponent shows up as a second mode 1.0 away. Looking for modes rather than for a preferred value
-makes this non-circular — it can find a problem it was not told where to look for.
+Biomass per bin **divided by bin width**, on log₂ bins — the normalised biomass size spectrum
+exactly. And they state the reference value themselves: *"the slopes based on simple OLS regressions
+varied around **the theoretical expected value of −1**"*.
 
-| Subset | within 0.3 of −2 | within 0.3 of **−1** | within 0.3 of 0 |
-|---|---:|---:|---:|
-| **Normalised biomass (primary)** | **0 studies, 0%** | 10 studies, **93.5%** | **0 studies, 0%** |
-| Normalised abundance (discordant) | 3 studies, 62.6% | 4 studies, 8.2% | — |
+**Gaedke (1993), *Limnology & Oceanography* — 29.0%.** More than confirmation; the paper states the
+orthopolity identity outright:
 
-The primary subset has **zero** studies at either adjacent estimand. Its study medians run −1.69 to
-+0.45 in one continuous spread with no second mode — ordinary between-study variation. The
-discordant subset, by contrast, splits across two locations exactly as §6.11 predicted from reading
-Perkins' methods.
+> "an **equal distribution of biomass over all size classes** corresponds to a zero slope of a line
+> fitted to a Sheldon-type size spectrum… and to a **slope of −1 of the normalized spectrum**"
 
-**Net.** R8 is half-answered. Gross contamination of the primary subset is ruled out, which is the
-specific failure mode that destroyed the other one. Per-study confirmation is not done and cannot be
-done from here for 78% of the evidence. Before publication those two papers should be read directly
-— it is one library request, and it is the difference between "no contamination detectable" and
-"conventions confirmed".
+Reported results: entire-range seasonal average **−1.00**; reduced spectrum seasonal average −0.97.
+
+**Extraction fidelity.** Every summary statistic GLOSSAQUA carries for Arranz reproduces the
+published Table 1 to two decimals:
+
+| | GLOSSAQUA | Paper Table 1 |
+|---|---:|---:|
+| n | 639 | 639 |
+| mean | −1.004 | −1.00 |
+| median | −0.989 | −0.99 |
+| SD | 0.279 | 0.28 |
+| min / max | −1.741 / −0.269 | −1.74 / −0.27 |
+
+Gaedke likewise: the GLOSSAQUA median of −1.020 sits between the two seasonal averages the paper
+reports, and its minimum of −1.23 is exactly the paper's early-spring value.
+
+**An independent corroboration of τ.** Arranz report SD = 0.28 across 639 lakes. The latent τ
+estimated here for freshwater is **0.228** — necessarily smaller than the raw SD, because the
+deconvolution removes measurement error, and smaller by about the right amount. τ was not fitted to
+anything Arranz published; the agreement is a genuine external check on the random-effects
+machinery.
+
+**A qualification this reading forces on §6.1.** Gaedke's slopes range from −1.23 in early spring to
+−0.82 in late summer **within a single lake across one season** — a spread of 0.41. So the
+heterogeneity measured as I² = 88.4% is not purely *between-system*: for studies reporting repeated
+observations it also contains within-system temporal variation. τ ≈ 0.23 should be read as
+"dispersion of published spectrum estimates within a class", not as "differences between ecosystems".
+Separating those needs a nested model with study, site and occasion, which has not been fitted.
+
+*(The two PDFs are not redistributed here; they are paywalled. The quotations above are the
+verification record.)*
 
 ### 6.13 What the tests together say
 
