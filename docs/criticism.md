@@ -89,7 +89,7 @@ different clothes"*, not *"here is a new natural law."* Note also that Damuth ca
 relabelled: it is a species-population relation, whereas orthopolity as stated is community
 abundance per log size class. Species richness within size classes introduces another factor.
 
-## 7. Two of three empirical tests failed, and the statistics made it worse
+## 7. The empirical record, after preregistration
 
 This is the most important entry in this document.
 
@@ -99,13 +99,18 @@ This is the most important entry in this document.
   zero — and unchanged when the missing-data problem is removed by switching to rise-phase fluence.
 - **Ocean:** near-flat over ~15 decades, but $\Phi$ spans a factor of 39 across the full range.
 
-Formal testing then weakened it further ([evidence.md §4](evidence.md)): both failures are confirmed
-by equivalence testing at every tolerance examined; the flare distribution is not a power law at all;
-and the one positive case is a *post hoc* subrange with no sampling model, which passes at a declared
-tolerance factor of 2 and fails at 1.25.
+Formal testing weakened it further ([evidence.md §4](evidence.md)): both failures are confirmed by
+equivalence testing at every tolerance examined, and the flare distribution is not a power law at
+all.
 
-The universal reading is dead. What survives is conditional, exploratory, and a much smaller claim
-than the essay makes.
+Preregistered independent testing ([evidence.md §5](evidence.md)) then delivered a split verdict.
+Against: *not supported* on the declared criteria, with under a quarter of 1,300 published spectra
+individually within tolerance, the plateau failing to transfer to the full water column, and 21 of
+23 ocean bins unresolvable. For: the ensemble median of 16 independent studies sits at −1.015
+against a predicted −1.000.
+
+The universal reading is dead, and so is the claim about individual systems. What survives is an
+**ensemble-level regularity** — much smaller than the essay claims, but real enough to test again.
 
 ## 8. The statistical terrain is hostile, and the work is not yet done
 
@@ -171,17 +176,22 @@ The asymmetry is stark: the cheapest and most tempting activities are worth the 
 
 Now written against actual results rather than hypotheticals:
 
-1. **If the independently sampled ecological test fails** — that is, if the plateau does not survive
-   in data that is not a re-expression of Hatton et al. — then the count stands at three failures and
-   zero independent successes. Stop, and publish the negative result.
+1. ⚠️ **Met, with a qualification that changes the programme rather than ending it.** The
+   preregistered independent test ([evidence.md §5](evidence.md)) returns *not supported* on its
+   declared criteria: fewer than a quarter of 1,300 published spectra are individually within
+   tolerance. The plateau also fails to transfer to the full water column. **But** the ensemble
+   median lands on −1.015 against a predicted −1.000 across 16 independent studies. The strong
+   claim is dead; a weaker ensemble-level claim survives and is worth one more round.
 2. ⚠️ **Partly met already.** CSN testing rules the flare distribution out as a power law
    (p = 0.018), and no tested system distinguishes a power law from a lognormal. Part of the
    explanandum has evaporated. This does not end the programme — the occupancy question is separate
    from the shape question — but any claim that orthopolity *explains observed power laws* must now
    first establish that the power laws are there.
-3. **If the ocean boundary failures resist explanation** from independently measured covariates
-   across several attempts, accept that orthopolity is an accounting identity with a contingent
-   empirical range, and scope every claim down permanently to match.
+3. ⚠️ **Partly met.** The ocean boundary failures were not explained — they turned out to be
+   **unresolvable**: 21 of 23 bins have departures smaller than the published reconstruction
+   uncertainty. That is not a failure of explanation so much as a limit of the data, and it means
+   the ocean case cannot carry the argument in either direction until better-constrained spectra
+   exist.
 4. **If every case that works turns out already covered by a named result** — Sheldon spectrum,
    energetic equivalence, box dimension — it is a relabelling. Write a review, cite generously, stop.
 

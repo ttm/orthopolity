@@ -34,7 +34,9 @@ Three systems tested. **Two clear failures, one qualified success.**
 |---|---|---|---|
 | Earthquakes (USGS, 6,639 events) | $b = 1.5$ | $b = 0.998$ [0.973, 1.024] | **Decisive failure** |
 | Solar flares (NOAA, 10,501 events) | $\alpha = 1.858$ | $\alpha = 2.239$, gap 0.382 [0.125, 0.620] | **Failure** |
-| Ocean size spectrum (23 log-mass bins) | $\Phi$ flat | flat over ~15 decades, fails at both ends | **Qualified, exploratory** |
+| Ocean, upper 200 m | $\Phi$ flat | 21 of 23 bins unresolvable | **Indeterminate** |
+| Ocean, full water column | $\Phi$ flat | plateau degrades from 1.7× to 4.3× | **Failure to transfer** |
+| **GLOSSAQUA** — 1,300 spectra, 16 studies | NBSS slope −1.000 | **median −1.015** | **Ensemble yes, systems no** |
 
 Formal testing then made the picture *less* favourable, not more:
 
@@ -46,9 +48,21 @@ Formal testing then made the picture *less* favourable, not more:
   model-assisted reconstruction, with no sampling model — and its verdict flips with the declared
   tolerance (passes at factor 2, fails at 1.25).
 
-The universal reading is dead. What survives is worth having anyway: a quantified 15-decade plateau
-with sharp boundary failures, in a system where the resource is unambiguous — a **domain of
-validity**, not a law.
+### The one surviving positive result
+
+A **preregistered, blind** test on 1,300 published aquatic size spectra from 16 independent studies
+(protocol committed before the analysis ran, commit `6df364f`) returns **not supported** on its
+declared criteria — fewer than a quarter of individual spectra fall within tolerance even at the
+loose setting.
+
+But the median normalized-biomass-spectrum slope is **−1.015 where orthopolity predicts −1.000**,
+a systematic drift of only 1.11× across three decades of body mass, with the median of per-study
+medians at −1.005.
+
+> **Orthopolity appears to be a statement about ensembles, not systems.** The average aquatic size
+> spectrum sits on the equal-resource value; any particular one does not. That is testable, modest,
+> and defensible — and it is a different claim from a natural law, let alone a cosmological
+> principle.
 
 Details, caveats and provenance: [docs/evidence.md](docs/evidence.md).
 

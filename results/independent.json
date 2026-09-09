@@ -1,0 +1,749 @@
+{
+  "protocol": "configs/prereg_2026-09-09.json",
+  "glossaqua": {
+    "n_records": 8459,
+    "n_kept": 3597,
+    "dropped": {
+      "axis_not_body_mass": 1900,
+      "method_excluded": 174,
+      "bad_numbers": 2788
+    },
+    "n_studies": 34,
+    "subsets": {
+      "primary_NBSS": {
+        "n": 1300,
+        "n_studies": 16,
+        "median_departure": -0.014999999999999902,
+        "median_departure_ci": [
+          -0.10000000000000009,
+          0.010000000000000009
+        ],
+        "median_span_decades": 3.0591566729134962,
+        "median_slope": -1.015,
+        "F_1.25": {
+          "fraction_equivalent": 0.07846153846153846,
+          "median_tolerance": 0.03167875160575266,
+          "pooled_inside": false
+        },
+        "F_2.0": {
+          "fraction_equivalent": 0.23846153846153847,
+          "median_tolerance": 0.09840319036720471,
+          "pooled_inside": false
+        },
+        "verdict": "not supported",
+        "implied_drift_at_median_span": 1.1114433970374025
+      },
+      "all_mapped_methods": {
+        "n": 3597,
+        "n_studies": 34,
+        "median_departure": 0.16700000000000004,
+        "median_departure_ci": [
+          0.03200000000000003,
+          0.4950000000000001
+        ],
+        "median_span_decades": 2.8388490907372548,
+        "median_slope": -1.371,
+        "F_1.25": {
+          "fraction_equivalent": 0.05893800389213233,
+          "median_tolerance": 0.03413707805894278,
+          "pooled_inside": false
+        },
+        "F_2.0": {
+          "fraction_equivalent": 0.18765638031693077,
+          "median_tolerance": 0.10603944980597861,
+          "pooled_inside": false
+        },
+        "verdict": "not supported",
+        "implied_drift_at_median_span": 2.979118635277605
+      }
+    },
+    "by_method": {
+      "Maximum Likelihood": {
+        "n": 410,
+        "predicted": -2.0,
+        "median_slope": -1.5185,
+        "median_departure": 0.48150000000000004
+      },
+      "Normalized abundance spectrum (linear)": {
+        "n": 1887,
+        "predicted": -2.0,
+        "median_slope": -1.717,
+        "median_departure": 0.2829999999999999
+      },
+      "Normalized biomass spectrum (linear)": {
+        "n": 1300,
+        "predicted": -1.0,
+        "median_slope": -1.015,
+        "median_departure": -0.014999999999999902
+      }
+    }
+  },
+  "ocean_top200": {
+    "source": "sheldon_summary_biomass_top200_table_long.csv",
+    "label": "Upper 200 m",
+    "n_draws": 20000,
+    "full_range": {
+      "tolerance_1.25": {
+        "tolerance_factor": 1.25,
+        "slope_tolerance": 0.004405000591275292,
+        "slope": -0.03916663337815591,
+        "n_bins": 23,
+        "empty_bins": 0,
+        "max_abs_log_departure": 2.7333750240356247,
+        "departure_tolerance": 0.22314355131420976,
+        "departure_within_tolerance": false,
+        "phi_min": 0.0649995440299062,
+        "phi_max": 2.5247297918447313,
+        "phi_ratio": 38.84226927319839,
+        "slope_ci": [
+          -0.05771930482681976,
+          -0.025487824631629203
+        ],
+        "slope_equivalent": false,
+        "n_slope_draws": 20000,
+        "ci_level": "90% (TOST)",
+        "verdict": "not equivalent to flat",
+        "failed_criterion": "slope+departure"
+      },
+      "tolerance_2.0": {
+        "tolerance_factor": 2.0,
+        "slope_tolerance": 0.013683181621090054,
+        "slope": -0.03916663337815591,
+        "n_bins": 23,
+        "empty_bins": 0,
+        "max_abs_log_departure": 2.7333750240356247,
+        "departure_tolerance": 0.6931471805599453,
+        "departure_within_tolerance": false,
+        "phi_min": 0.0649995440299062,
+        "phi_max": 2.5247297918447313,
+        "phi_ratio": 38.84226927319839,
+        "slope_ci": [
+          -0.05771930482681976,
+          -0.025487824631629203
+        ],
+        "slope_equivalent": false,
+        "n_slope_draws": 20000,
+        "ci_level": "90% (TOST)",
+        "verdict": "not equivalent to flat",
+        "failed_criterion": "slope+departure"
+      },
+      "label": "All bins",
+      "slope_draws_sd": 0.009826245184145179
+    },
+    "plateau": {
+      "tolerance_1.25": {
+        "tolerance_factor": 1.25,
+        "slope_tolerance": 0.006460667533870428,
+        "slope": -0.005927594989522316,
+        "n_bins": 16,
+        "empty_bins": 0,
+        "max_abs_log_departure": 0.3817660223921592,
+        "departure_tolerance": 0.22314355131420976,
+        "departure_within_tolerance": false,
+        "phi_min": 0.682654760448533,
+        "phi_max": 1.1397687510660952,
+        "phi_ratio": 1.6696122507330338,
+        "slope_ci": [
+          -0.03559468931469512,
+          0.01766612036397527
+        ],
+        "slope_equivalent": false,
+        "n_slope_draws": 20000,
+        "ci_level": "90% (TOST)",
+        "verdict": "not equivalent to flat",
+        "failed_criterion": "slope+departure"
+      },
+      "tolerance_2.0": {
+        "tolerance_factor": 2.0,
+        "slope_tolerance": 0.020068666377598746,
+        "slope": -0.005927594989522316,
+        "n_bins": 16,
+        "empty_bins": 0,
+        "max_abs_log_departure": 0.3817660223921592,
+        "departure_tolerance": 0.6931471805599453,
+        "departure_within_tolerance": true,
+        "phi_min": 0.682654760448533,
+        "phi_max": 1.1397687510660952,
+        "phi_ratio": 1.6696122507330338,
+        "slope_ci": [
+          -0.03559468931469512,
+          0.01766612036397527
+        ],
+        "slope_equivalent": false,
+        "n_slope_draws": 20000,
+        "ci_level": "90% (TOST)",
+        "verdict": "not equivalent to flat",
+        "failed_criterion": "slope"
+      },
+      "label": "Post hoc plateau (exploratory)",
+      "slope_draws_sd": 0.016197874695462525
+    },
+    "per_bin": [
+      {
+        "log10_mass_g": -13.5,
+        "phi": 2.5247297918447313,
+        "ln_phi_ci": [
+          -0.26286150647061335,
+          1.5847951046819335
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -12.5,
+        "phi": 2.5010572743978914,
+        "ln_phi_ci": [
+          -0.17211026714382874,
+          1.5970886812115834
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -11.5,
+        "phi": 1.9673165575329972,
+        "ln_phi_ci": [
+          -0.30753478940198126,
+          1.3880572740727566
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -10.5,
+        "phi": 1.110345062830376,
+        "ln_phi_ci": [
+          -1.0703003025149336,
+          1.0006485461673267
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -9.5,
+        "phi": 1.1397687510660952,
+        "ln_phi_ci": [
+          -1.1593335271942118,
+          1.091492704587733
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -8.5,
+        "phi": 1.0803542974967837,
+        "ln_phi_ci": [
+          -1.0796039044986514,
+          1.0614809458021508
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -7.5,
+        "phi": 0.9910092545354129,
+        "ln_phi_ci": [
+          -1.3674871914195257,
+          1.046595532713125
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -6.5,
+        "phi": 0.9910092545354129,
+        "ln_phi_ci": [
+          -1.3488549645104921,
+          1.018159904885731
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -5.5,
+        "phi": 0.7048982132288869,
+        "ln_phi_ci": [
+          -1.5676587652637812,
+          0.7916888230138136
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -4.5,
+        "phi": 0.682654760448533,
+        "ln_phi_ci": [
+          -2.7211568007164044,
+          1.2241349380565179
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -3.5,
+        "phi": 0.682654760448533,
+        "ln_phi_ci": [
+          -2.7544068231466965,
+          1.2274883361687166
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -2.5,
+        "phi": 1.0390079077555328,
+        "ln_phi_ci": [
+          -1.4702013929948392,
+          1.311637173180475
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -1.5,
+        "phi": 1.0686451720988808,
+        "ln_phi_ci": [
+          -1.3609083330852398,
+          1.3710952518517896
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -0.5,
+        "phi": 1.0686451720988808,
+        "ln_phi_ci": [
+          -1.3691710994407007,
+          1.3383712230507938
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 0.5,
+        "phi": 0.7252739153463251,
+        "ln_phi_ci": [
+          -1.68660742192137,
+          0.8614643610953692
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 1.5,
+        "phi": 0.8961437757819379,
+        "ln_phi_ci": [
+          -1.8351977871477299,
+          1.0684814365477144
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 2.5,
+        "phi": 0.8783614171759292,
+        "ln_phi_ci": [
+          -1.9147365207410705,
+          1.0642075478270516
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 3.5,
+        "phi": 0.8487241528325812,
+        "ln_phi_ci": [
+          -2.1653155550792835,
+          1.0354310302005512
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 4.5,
+        "phi": 0.8546807660692602,
+        "ln_phi_ci": [
+          -2.059004684727558,
+          1.054314685326037
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 5.5,
+        "phi": 0.5730534621186041,
+        "ln_phi_ci": [
+          -2.2297915460068634,
+          0.6183285124209227
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 6.5,
+        "phi": 0.48257133652092976,
+        "ln_phi_ci": [
+          -2.2048547414160726,
+          0.43362085946623663
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 7.5,
+        "phi": 0.124095399805584,
+        "ln_phi_ci": [
+          -4.444699828367638,
+          -0.48467999181481836
+        ],
+        "resolvable_at_1_25": true,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 8.5,
+        "phi": 0.0649995440299062,
+        "ln_phi_ci": [
+          -5.06795728298696,
+          -1.0724749696177738
+        ],
+        "resolvable_at_1_25": true,
+        "resolvable_at_2": true
+      }
+    ],
+    "caveat": "This propagates the authors' reported reconstruction uncertainty. It is NOT a resampling of independent observations, and independence across groups and bins is an assumption that will overstate precision if errors are correlated."
+  },
+  "ocean_allwater": {
+    "source": "sheldon_summary_biomass_allwater_table_long.csv",
+    "label": "Full water column",
+    "n_draws": 20000,
+    "full_range": {
+      "tolerance_1.25": {
+        "tolerance_factor": 1.25,
+        "slope_tolerance": 0.004405000591275292,
+        "slope": -0.05291290185616134,
+        "n_bins": 23,
+        "empty_bins": 0,
+        "max_abs_log_departure": 3.5323046070001345,
+        "departure_tolerance": 0.22314355131420976,
+        "departure_within_tolerance": false,
+        "phi_min": 0.02923745731537763,
+        "phi_max": 3.1970975673833752,
+        "phi_ratio": 109.34937101051673,
+        "slope_ci": [
+          -0.07025922966161355,
+          -0.03761589314280119
+        ],
+        "slope_equivalent": false,
+        "n_slope_draws": 20000,
+        "ci_level": "90% (TOST)",
+        "verdict": "not equivalent to flat",
+        "failed_criterion": "slope+departure"
+      },
+      "tolerance_2.0": {
+        "tolerance_factor": 2.0,
+        "slope_tolerance": 0.013683181621090054,
+        "slope": -0.05291290185616134,
+        "n_bins": 23,
+        "empty_bins": 0,
+        "max_abs_log_departure": 3.5323046070001345,
+        "departure_tolerance": 0.6931471805599453,
+        "departure_within_tolerance": false,
+        "phi_min": 0.02923745731537763,
+        "phi_max": 3.1970975673833752,
+        "phi_ratio": 109.34937101051673,
+        "slope_ci": [
+          -0.07025922966161355,
+          -0.03761589314280119
+        ],
+        "slope_equivalent": false,
+        "n_slope_draws": 20000,
+        "ci_level": "90% (TOST)",
+        "verdict": "not equivalent to flat",
+        "failed_criterion": "slope+departure"
+      },
+      "label": "All bins",
+      "slope_draws_sd": 0.009928550327106815
+    },
+    "plateau": {
+      "tolerance_1.25": {
+        "tolerance_factor": 1.25,
+        "slope_tolerance": 0.006460667533870428,
+        "slope": -0.002478134053774214,
+        "n_bins": 16,
+        "empty_bins": 0,
+        "max_abs_log_departure": 0.962950636753849,
+        "departure_tolerance": 0.22314355131420976,
+        "departure_within_tolerance": false,
+        "phi_min": 0.3817647732968019,
+        "phi_max": 1.6466173941245776,
+        "phi_ratio": 4.313172689834375,
+        "slope_ci": [
+          -0.029223065772559963,
+          0.02289041977181718
+        ],
+        "slope_equivalent": false,
+        "n_slope_draws": 20000,
+        "ci_level": "90% (TOST)",
+        "verdict": "not equivalent to flat",
+        "failed_criterion": "slope+departure"
+      },
+      "tolerance_2.0": {
+        "tolerance_factor": 2.0,
+        "slope_tolerance": 0.020068666377598746,
+        "slope": -0.002478134053774214,
+        "n_bins": 16,
+        "empty_bins": 0,
+        "max_abs_log_departure": 0.962950636753849,
+        "departure_tolerance": 0.6931471805599453,
+        "departure_within_tolerance": false,
+        "phi_min": 0.3817647732968019,
+        "phi_max": 1.6466173941245776,
+        "phi_ratio": 4.313172689834375,
+        "slope_ci": [
+          -0.029223065772559963,
+          0.02289041977181718
+        ],
+        "slope_equivalent": false,
+        "n_slope_draws": 20000,
+        "ci_level": "90% (TOST)",
+        "verdict": "not equivalent to flat",
+        "failed_criterion": "slope+departure"
+      },
+      "label": "Post hoc plateau (exploratory)",
+      "slope_draws_sd": 0.015904161995925654
+    },
+    "per_bin": [
+      {
+        "log10_mass_g": -13.5,
+        "phi": 3.0798311665198033,
+        "ln_phi_ci": [
+          -0.22095448522239483,
+          1.8889301406750043
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -12.5,
+        "phi": 3.1970975673833752,
+        "ln_phi_ci": [
+          -0.10776388300743497,
+          1.9032419732157697
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -11.5,
+        "phi": 2.112839105734632,
+        "ln_phi_ci": [
+          -0.4124407775018818,
+          1.5251499693224229
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -10.5,
+        "phi": 0.741699038769513,
+        "ln_phi_ci": [
+          -1.5302938603172938,
+          0.7495553568307735
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -9.5,
+        "phi": 0.7689479340911425,
+        "ln_phi_ci": [
+          -1.7140687616162424,
+          0.9082858973543229
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -8.5,
+        "phi": 0.7422227073826292,
+        "ln_phi_ci": [
+          -1.6510256049211693,
+          0.8598403994751098
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -7.5,
+        "phi": 0.7020343965427596,
+        "ln_phi_ci": [
+          -1.8599203168524139,
+          0.9051809453585679
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -6.5,
+        "phi": 0.7020343965427596,
+        "ln_phi_ci": [
+          -1.837487330731807,
+          0.8945876403058093
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -5.5,
+        "phi": 0.6172927423346722,
+        "ln_phi_ci": [
+          -1.8878228999470312,
+          0.8806823353016463
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -4.5,
+        "phi": 0.8214531089118567,
+        "ln_phi_ci": [
+          -2.5614056272640657,
+          1.3735651126445274
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -3.5,
+        "phi": 0.8214531089118567,
+        "ln_phi_ci": [
+          -2.5757144570474186,
+          1.412595440032747
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -2.5,
+        "phi": 1.0258561300660656,
+        "ln_phi_ci": [
+          -1.5917243159807946,
+          1.4358672034935314
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -1.5,
+        "phi": 1.6466173941245776,
+        "ln_phi_ci": [
+          -0.6331818606658925,
+          1.586495957673809
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": -0.5,
+        "phi": 1.6466173941245776,
+        "ln_phi_ci": [
+          -0.6348195622862288,
+          1.6048730162724305
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 0.5,
+        "phi": 1.233431399222805,
+        "ln_phi_ci": [
+          -0.8379557598008986,
+          1.1958541043815771
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 1.5,
+        "phi": 1.0546364673749686,
+        "ln_phi_ci": [
+          -1.0659954664577374,
+          0.9196860710735695
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 2.5,
+        "phi": 0.7598394249193644,
+        "ln_phi_ci": [
+          -1.4588384002780792,
+          0.6467239811426347
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 3.5,
+        "phi": 0.3817647732968019,
+        "ln_phi_ci": [
+          -2.9480669897498983,
+          0.2893023299170355
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 4.5,
+        "phi": 0.3844441186345398,
+        "ln_phi_ci": [
+          -2.901362391087177,
+          0.30593323310023673
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 5.5,
+        "phi": 0.25776528725206566,
+        "ln_phi_ci": [
+          -3.0264055128780156,
+          -0.1307028228757541
+        ],
+        "resolvable_at_1_25": false,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 6.5,
+        "phi": 0.21706550505437108,
+        "ln_phi_ci": [
+          -3.0271165156943045,
+          -0.30966390579145936
+        ],
+        "resolvable_at_1_25": true,
+        "resolvable_at_2": false
+      },
+      {
+        "log10_mass_g": 7.5,
+        "phi": 0.05581937548948249,
+        "ln_phi_ci": [
+          -5.218237632879347,
+          -1.2968099885943454
+        ],
+        "resolvable_at_1_25": true,
+        "resolvable_at_2": true
+      },
+      {
+        "log10_mass_g": 8.5,
+        "phi": 0.02923745731537763,
+        "ln_phi_ci": [
+          -5.843818539958483,
+          -1.89929663098264
+        ],
+        "resolvable_at_1_25": true,
+        "resolvable_at_2": true
+      }
+    ],
+    "caveat": "This propagates the authors' reported reconstruction uncertainty. It is NOT a resampling of independent observations, and independence across groups and bins is an assumption that will overstate precision if errors are correlated."
+  }
+}

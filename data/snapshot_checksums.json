@@ -1,32 +1,46 @@
 [
   {
+    "file": "GLOSSAQUA_DataSource.txt",
+    "sha256": "beac043c65733b6cb423fbfdefbdd613eaefce0152ae49d81051509144c309d8"
+  },
+  {
+    "file": "GLOSSAQUA_Sample.txt",
+    "sha256": "fc452d55f2d1ea58515a9625e18f540e314fc34ab2fbfd72411361d1086cff01"
+  },
+  {
+    "file": "GLOSSAQUA_Size.txt",
+    "sha256": "735f53d82fd40919539ffa7303bd3243388a38f0d375375e362b2cb256500b98"
+  },
+  {
     "file": "noaa_2022.csv",
-    "bytes": 598803,
     "sha256": "1a7978e87410a64db53e1459bd125727c114eb5d6f19dbb15e1fad3ef09991e9"
   },
   {
     "file": "noaa_2023.csv",
-    "bytes": 646363,
     "sha256": "23902fe462a5eafc500ea15d897d59e57480526d83dda448b9047ead4a89dbe5"
   },
   {
     "file": "noaa_2024.csv",
-    "bytes": 746060,
     "sha256": "74f23ea854f8f1f39b7b6521a08d7cf280a46e46f06ac6924b308d1ae070b4cd"
   },
   {
     "file": "noaa_metadata.json",
-    "bytes": 8516,
     "sha256": "e7b8eb00a573056dce08c86c277fc186bed92a991f414eb8cde9855a4a3aa996"
   },
   {
+    "file": "sheldon_group_standard_errors.csv",
+    "sha256": "d1b10869d1009a1986fede3e77062a618d324401f074c3a37ebaf30e37186fa0"
+  },
+  {
+    "file": "sheldon_summary_biomass_allwater_table_long.csv",
+    "sha256": "28966562af6b60c698f440a09a4ec4948bc555ffd4d6df589deacbd7ca201500"
+  },
+  {
     "file": "sheldon_summary_biomass_top200_table_long.csv",
-    "bytes": 9488,
     "sha256": "31a72a56c2595f1c9de26ac713c79d6944fa799297bfeffd63ca2b7eef3e7434"
   },
   {
     "file": "usgs_2010_2024.csv",
-    "bytes": 1277738,
     "sha256": "063d7cbefe95b8020e693a5f652e09a1cdc11e1d53f84d795af9bcf78ec41c81"
   }
 ]

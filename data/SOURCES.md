@@ -21,5 +21,21 @@
    Attribution and original third-party rights are retained; no new license
    to third-party materials is granted by this package.
 
+4. Hatton et al. (2021), full-water-column companion table
+   (`summary_biomass_table_long.csv`) and per-group uncertainty factors
+   (`group_standard_errors.csv`), from the same repository and commit as (3).
+   Note: the column named `log10_Standard_Error` does **not** contain a log10
+   standard error. It is a multiplicative factor f, with the published 95%
+   interval being exactly [estimate/f, estimate*f]; verified for all 253 rows.
+5. Ersoy, Z., et al. (2025), *GLOSSAQUA: A global dataset of size spectra across
+   aquatic ecosystems*, Ecology 106, e70050.
+   [Repository](https://github.com/zeynepersoy/GLOSSAQUA_dataset), MIT licence,
+   Copyright (c) 2023 Zeynep Ersoy. Files `GLOSSAQUA_Size.txt`,
+   `GLOSSAQUA_Sample.txt`, `GLOSSAQUA_DataSource.txt`. These are R
+   `write.table` output: space-separated, quoted, UTF-8. (The data dictionary in
+   the same repository is UTF-16; the data files are not.) `GLOSSAQUA_Size.txt`
+   holds published size-spectrum *fit parameters* per sample, not individual
+   organism measurements. Pinned to HEAD, as upstream publishes no tags.
+
 All source files are preserved byte-for-byte and hashed. New views, estimates,
 figures and audio are analysis outputs and are labeled separately.

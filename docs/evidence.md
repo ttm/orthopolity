@@ -28,7 +28,9 @@ are clear failures, one is a qualified success with a well-defined domain of val
 |---|---|---|---|---|
 | Earthquakes (USGS) | magnitude-derived energy proxy | $b = 1.5$ | $b = 0.998$ [0.973, 1.024] | **Decisive failure** |
 | Solar flares (NOAA) | integrated soft-X-ray fluence | $\alpha = 1.858$ [1.697, 2.054] | $\alpha = 2.239$ [2.085, 2.399] | **Failure**, gap 0.382 [0.125, 0.620] |
-| Ocean size spectrum | body mass (biomass) | $\Phi$ flat | flat over ~15 decades, fails at both ends | **Qualified success** |
+| Ocean, upper 200 m | body mass (biomass) | $\Phi$ flat | 21 of 23 bins unresolvable | **Indeterminate** |
+| Ocean, full water column | body mass (biomass) | $\Phi$ flat | plateau degrades to 4.3× | **Failure to transfer** |
+| **GLOSSAQUA, 1,300 spectra** | body mass (biomass) | NBSS slope −1.000 | **median −1.015**, 7.8% individually flat | **Ensemble yes, systems no** |
 
 ## 1. Earthquakes — decisive failure
 
@@ -125,6 +127,11 @@ log10 mass (g)    Φ
 document. Three steps removed from raw observation: Hatton et al. reconstruction → resource-spectrum
 re-expression → these fits.)*
 
+> ⚠️ **Superseded in part by §5.** Propagating the published uncertainties shows that 21 of these
+> 23 bins have departures too small to resolve, so the boundary failures described below are mostly
+> below the noise floor, and the plateau's flatness is not established either. Read this section
+> with §5.
+
 **The plateau is the result worth having.** The middle ~15 decades are near-flat: $\Phi$ confined
 to a factor of 1.7, slope −0.006, which implies a total systematic drift of only **1.23× across
 fifteen decades of body mass**. The failures are concentrated at the two boundaries — the bacterial
@@ -203,8 +210,93 @@ this as *unavailable* rather than manufacturing a verdict.
 than a defect. At $F = 2$ it satisfies both criteria; at $F = 1.25$ its 1.7× spread fails the
 departure bound. Anyone claiming the ocean spectrum is "flat" must say what flat means first.
 
-## 5. What is still missing
+## 5. Preregistered independent tests
 
+Protocol declared and **committed before any of these analyses were computed**
+([`configs/prereg_2026-09-09.json`](../configs/prereg_2026-09-09.json), commit `6df364f`); run by
+[`experiments/run_independent.py`](../experiments/run_independent.py). The git history is the
+preregistration record. Blinding is recorded per test rather than claimed uniformly.
+
+### Test A — GLOSSAQUA: 1,300 published size spectra, 16 studies (blind)
+
+The first genuinely independent test: different authors, ecosystems, instruments and methods from
+the Hatton et al. reconstruction. Only the categorical design columns were inspected before the
+protocol was fixed; no slope value was read.
+
+With body mass as the resource, orthopolity predicts specific values in each published convention —
+normalized biomass spectrum **−1**, normalized abundance spectrum **−2**, MLE exponent **−2**
+(derivations in the protocol). The primary subset is the normalized biomass spectrum.
+
+| Subset | n | studies | median slope | predicted | median departure | 95% CI |
+|---|---:|---:|---:|---:|---:|---|
+| **NBSS (primary)** | 1,300 | 16 | **−1.015** | −1.000 | **−0.015** | [−0.100, +0.010] |
+| All mapped methods | 3,597 | 34 | −1.371 | — | +0.167 | [+0.032, +0.495] |
+
+**The central tendency is almost exactly right.** The median of the per-study medians is
+**−1.005** against a predicted −1.000, implying a systematic drift of only **1.11× across the
+median 3.1-decade range**. Independently, across sixteen research groups, the ensemble sits on the
+orthopolity value.
+
+**The dispersion says individual systems are not flat.** By the declared criteria the verdict is
+**NOT SUPPORTED**:
+
+- Only **7.8%** of spectra are individually within tolerance at F = 1.25, and **23.8%** at F = 2.
+- Only **6 of 16** studies have a median within 0.1 of the prediction; the rest range from −1.69
+  to +0.45.
+- Two studies supply **1,016 of 1,300 spectra (78%)**, and both happen to sit near −1. The
+  apparent per-spectrum precision is largely those two studies. This is why the interval is
+  bootstrapped over study blocks, and why it is wide.
+
+> **The honest reading: orthopolity describes the ensemble average of aquatic size spectra and
+> fails as a description of individual ones.** That distinction is a result in its own right, and
+> it is the kind of "where it works" boundary worth publishing — but it is not the law the essay
+> claims.
+
+**An internal inconsistency worth flagging.** The conventions disagree with each other. An NBSS
+slope of −1.015 implies a normalized-abundance slope of −2.015, but the observed median there is
+−1.717 — a gap of 0.3 that the mapping cannot absorb. The subsets are different studies with
+different ecosystems and size ranges, so this need not be an error, but it means published slopes
+from different conventions should not be pooled naively. The primary NBSS subset is the one to
+trust.
+
+Of 6,559 body-mass records, 2,790 were dropped solely because `SizeRangeMinimum`/`Maximum` are
+absent upstream — a coverage limitation, not a selection made here.
+
+### Tests B and C — ocean spectra with published uncertainty propagated
+
+The gap flagged earlier ("no sampling model, therefore no verdict") is now closed. The published
+95% interval is exactly [estimate/f, estimate×f] with f a per-group factor, verified for all 253
+rows. Drawing 20,000 lognormal replicates per group per bin gives slope intervals and a verdict.
+
+| Domain | Range | slope | 95% CI | tol (F=1.25) | Φ ratio | Verdict |
+|---|---|---:|---|---:|---:|---|
+| Upper 200 m | full | −0.0392 | [−0.058, −0.026] | 0.0044 | 38.8× | not flat |
+| Upper 200 m | plateau ‡ | −0.0059 | [−0.036, +0.018] | 0.0065 | 1.7× | not flat |
+| Full water column (blind) | full | −0.0529 | [−0.070, −0.038] | 0.0044 | 109.3× | not flat |
+| Full water column (blind) | plateau ‡ | −0.0025 | [−0.029, +0.023] | 0.0065 | 4.3× | not flat |
+
+‡ Post hoc subrange; exploratory, not confirmatory.
+
+Two findings, and the first is the more important:
+
+**Most of the ocean spectrum's departures are not resolvable at all.** Only **2 of 23 bins** have a
+departure that clears the reconstruction uncertainty at F = 1.25, and **1 of 23** at F = 2. The
+per-group uncertainty factors run from 2.98 to 11.39 — the bacterial end, where Φ ≈ 2.5, is
+dominated by a group whose published interval spans a factor of 3.86 either way. **The "boundary
+failures" identified in §3 are mostly below the noise floor**, and so is the plateau's flatness.
+The data cannot support the claim in either direction, which is a stronger and more useful
+statement than either the positive or the negative reading.
+
+**The plateau does not transfer cleanly to the full water column.** Applying the identical pipeline
+and the same plateau boundaries without tuning, the Φ ratio degrades from 1.7× to **4.3×**, while
+the fitted slope stays near zero (−0.0025). The flat *trend* survives the change of domain; the
+*equality* does not.
+
+## 6. What is still missing
+
+- **Better-constrained ocean data.** With 21 of 23 bins unresolvable, no ocean verdict is possible
+  until the reconstruction uncertainty shrinks. Independently sampled size spectra with real
+  sampling models (PSSdb, or the individual-organism sources behind GLOSSAQUA) would be the route.
 - **A discrete goodness-of-fit treatment for the earthquake catalogue.** The continuous KS test is
   invalid on magnitudes rounded to 0.1; that row of the table is a placeholder, not a finding.
 - **A sampling model for the ocean spectrum**, without which no interval and therefore no
@@ -213,8 +305,10 @@ departure bound. Anyone claiming the ocean spectrum is "flat" must say what flat
   Choosing $F$ after seeing that is the same error as choosing a domain after seeing a fit.
 - **No preregistration.** Every result so far is exploratory. The flare threshold sensitivity shows
   exactly how much that matters.
-- **No independent positive candidate.** The one qualified success is a re-expression of someone
-  else's reconstruction. A test on independently sampled data is the single highest-value next step.
+- **A mechanism for the ensemble result.** The strongest surviving finding — that the ensemble of
+  published aquatic spectra centres on the orthopolity value while individual spectra scatter
+  widely — has no explanation. Whether that reflects a real attractor or a convention of the
+  field is the obvious next question.
 - **No preregistered domain.** Every domain and resource here was chosen before results were seen
   *by the analyst*, but nothing was registered externally. The flare threshold sensitivity shows
   how much latitude that leaves.
@@ -222,21 +316,25 @@ departure bound. Anyone claiming the ocean spectrum is "flat" must say what flat
   when a bootstrap resample produces an empty bin, so those intervals should not carry primary
   inference.
 
-## 6. How this changes the overall assessment
+## 7. How this changes the overall assessment
 
-Before these tests, orthopolity was an untested lens. It now has a **track record**, and the
-statistics have made it less favourable rather than more:
+Five systems have now been examined, three of them under a preregistered protocol. The picture is
+consistent and unflattering to the strong form of the hypothesis, with one genuine and surprising
+survivor.
 
-- **Two systems fail the occupancy test outright**, at every tolerance examined.
-- **The flare distribution is not a power law** by the standard test (p = 0.018), and in neither
-  system can a power law be distinguished from a lognormal. Part of the explanandum has evaporated:
-  some of what the framework set out to explain is not clearly there.
-- **The one positive case is exploratory**: a post hoc subrange of a re-expression of someone else's
-  model-assisted reconstruction, with no sampling model, passing at one declared tolerance and
-  failing at another.
+**Against.** Earthquakes and solar flares fail the occupancy test decisively, at every tolerance.
+The flare distribution is not a power law by the standard test, and no tested system distinguishes
+a power law from a lognormal. The ocean plateau does not transfer to the full water column, and
+most of the ocean spectrum's departures are not resolvable above the published uncertainty at all.
+The one preregistered independent test returns **not supported** on its declared criteria: fewer
+than a quarter of individual spectra are within tolerance even at the loose setting.
 
-That is a thin evidential base, and it should be described as such. What survives is worth having
-anyway: a quantified 15-decade plateau with sharp boundary failures, in a system where the resource
-is unambiguous. The question this now supports is **not whether orthopolity is true, but where and
-why equal-resource spectra occur** — and the answer so far is "rarely, and the boundaries are the
-interesting part."
+**For.** Across 16 independent studies and 1,300 published spectra, the median normalized biomass
+spectrum slope is **−1.015** where orthopolity predicts −1.000 — a systematic drift of 1.11× across
+three decades of body mass. That is not nothing. It is the Sheldon result, reproduced across an
+independent literature, and it is exactly what the hypothesis says should happen *on average*.
+
+**The synthesis.** Orthopolity looks like a statement about **ensembles, not systems**. The
+average aquatic size spectrum sits on the equal-resource value; any particular one does not. A
+research programme that claimed only that would be defensible, testable and modest — and it is a
+different claim from a natural law, let alone a cosmological principle.

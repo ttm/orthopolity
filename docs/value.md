@@ -85,10 +85,10 @@ These are the price of admission, and skipping any of them invalidates the resul
 
 Ranked by expected value, revised in light of results:
 
-1. **An independently sampled ecological test.** Now clearly the highest priority: the strongest
-   existing evidence is a *post hoc* subrange of a re-expression of someone else's model-assisted
-   reconstruction, with no sampling model and a verdict that flips with the declared tolerance. It
-   cannot confirm anything on its own. The Pelagic Size Structure database (Dugenne et
+1. ✅ **Done — an independently sampled ecological test.** 1,300 published spectra, 16 studies,
+   preregistered and blind ([evidence.md §5](evidence.md)). Result: the ensemble median lands on the
+   predicted value; individual spectra do not. **Explaining that split is now the highest-priority
+   question** — a real attractor, or a convention of the field? The Pelagic Size Structure database (Dugenne et
    al. 2024) and GLOSSAQUA (Ersoy et al. 2025) offer comparisons across places, instruments and
    ecosystems. This is the highest-value single step available.
 2. **Characterise the ocean boundary failures.** Why Φ ≈ 2.5 at the bacterial end and 0.07 at the
@@ -126,13 +126,17 @@ Each milestone is a stopping point with standalone value:
 3. **Add the missing statistics.** ✅ *Done* — see [evidence.md §4](evidence.md). The results were
    unfavourable: two occupancy failures confirmed at every tolerance, the flare distribution ruled
    out as a power law, and lognormal indistinguishable everywhere.
-4. **Run an independently sampled positive candidate** with the domain and resource fixed in
-   advance, retaining a known negative control (earthquakes).
+4. ✅ **Run an independently sampled positive candidate.** *Done* — preregistered in
+   [`configs/prereg_2026-09-09.json`](../configs/prereg_2026-09-09.json), committed before the
+   analysis ran.
 5. **Publish the failures alongside the successes.** Two already exist. This is what distinguishes
    a research programme from a manifesto.
-6. **Attack the boundary failures.** Predict the form or parameters of the departure from
-   independently measured covariates. If this works even once, orthopolity stops being an accounting
-   identity and starts being physics.
+6. **Attack the boundary failures.** ⚠️ *Attempted and blocked*: with the published uncertainties
+   propagated, 21 of 23 ocean bins have unresolvable departures, so there is nothing yet to explain.
+   Better-constrained data is a precondition.
+7. **Explain the ensemble/system split.** Why does the average of independently published spectra
+   land on −1.015 while individual spectra range from −1.69 to +0.45? This is the live question and
+   the one that would make the concept matter.
 
 Steps 2–4 are perhaps four to six weeks of focused work and yield something publishable. Step 6 is
 open-ended and may not resolve — but it is the only one that would make the concept important
