@@ -176,12 +176,14 @@ The asymmetry is stark: the cheapest and most tempting activities are worth the 
 
 Now written against actual results rather than hypotheticals:
 
-1. ⚠️ **Met, with a qualification that changes the programme rather than ending it.** The
-   preregistered independent test ([evidence.md §5](evidence.md)) returns *not supported* on its
-   declared criteria: fewer than a quarter of 1,300 published spectra are individually within
-   tolerance. The plateau also fails to transfer to the full water column. **But** the ensemble
-   median lands on −1.015 against a predicted −1.000 across 16 independent studies. The strong
-   claim is dead; a weaker ensemble-level claim survives and is worth one more round.
+1. ✅ **Tested and NOT met.** The preregistered test ([evidence.md §5](evidence.md)) returns *not
+   supported* for individual systems — fewer than a quarter of 1,300 spectra fall within tolerance —
+   and the plateau fails to transfer to the full water column. But the ensemble median of −1.015
+   against a predicted −1.000 then survived a direct attempt to discredit it
+   ([evidence.md §6](evidence.md)): no anchoring on the predicted value, and the centre holds
+   independently in freshwater and marine systems and across three taxonomic groups. The strong
+   claim is dead. A well-characterised claim about expected values is not, and stopping here would
+   discard a real result.
 2. ⚠️ **Partly met already.** CSN testing rules the flare distribution out as a power law
    (p = 0.018), and no tested system distinguishes a power law from a lognormal. Part of the
    explanandum has evaporated. This does not end the programme — the occupancy question is separate

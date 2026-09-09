@@ -36,7 +36,7 @@ Three systems tested. **Two clear failures, one qualified success.**
 | Solar flares (NOAA, 10,501 events) | $\alpha = 1.858$ | $\alpha = 2.239$, gap 0.382 [0.125, 0.620] | **Failure** |
 | Ocean, upper 200 m | $\Phi$ flat | 21 of 23 bins unresolvable | **Indeterminate** |
 | Ocean, full water column | $\Phi$ flat | plateau degrades from 1.7× to 4.3× | **Failure to transfer** |
-| **GLOSSAQUA** — 1,300 spectra, 16 studies | NBSS slope −1.000 | **median −1.015** | **Ensemble yes, systems no** |
+| **GLOSSAQUA** — 1,300 spectra, 16 studies | NBSS slope −1.000 | **median −1.015**, robust across strata | **Holds in the mean, fails in the particular** |
 
 Formal testing then made the picture *less* favourable, not more:
 
@@ -59,10 +59,18 @@ But the median normalized-biomass-spectrum slope is **−1.015 where orthopolity
 a systematic drift of only 1.11× across three decades of body mass, with the median of per-study
 medians at −1.005.
 
-> **Orthopolity appears to be a statement about ensembles, not systems.** The average aquatic size
-> spectrum sits on the equal-resource value; any particular one does not. That is testable, modest,
-> and defensible — and it is a different claim from a natural law, let alone a cosmological
-> principle.
+That centre then survived a deliberate attempt to kill it ([docs/evidence.md §6](docs/evidence.md)):
+
+- **Not a reporting artefact.** There is a generic round-number preference in the literature, but
+  −1.00 ranks only 3rd of 17 round values in local excess. No anchoring on the predicted value.
+- **Not an attractor either.** I² = 88.4%, τ = 0.25 — individual systems genuinely differ, and the
+  dispersion is real between-system variation rather than measurement error.
+- **Robust across strata.** Freshwater −1.010 and marine −1.060; fish, macroinvertebrates and
+  zooplankton separately. Every stratum with a valid interval is consistent with −1.
+
+> **Orthopolity is a statement about the *expected value* of aquatic resource spectra.** It is real,
+> independently reproducible, and violated by most individual systems. That is testable, modest and
+> defensible — and it is a different claim from a natural law, let alone a cosmological principle.
 
 Details, caveats and provenance: [docs/evidence.md](docs/evidence.md).
 

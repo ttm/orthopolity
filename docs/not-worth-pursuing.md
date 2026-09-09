@@ -148,6 +148,8 @@ Practices that produce results which look like support but are not:
 | A continuous KS test on heavily tied data | The earthquake energy proxy takes 32 distinct values across 6,639 events; the ties inflate KS on their own. A discrete treatment is required. |
 | Choosing the equivalence tolerance after seeing the spectrum | Identical in kind to choosing the domain after seeing the fit. The ocean plateau passes at $F=2$ and fails at $F=1.25$. |
 | Selecting $x_{\min}$ by minimising KS, as in standard CSN practice | Legitimate elsewhere, but incompatible with a protocol whose whole point is a declared domain. |
+| Reporting a block-bootstrap interval over fewer than ~4 blocks | With one study block the interval has zero width, which reads as high precision and produces spurious verdicts. Report "no valid interval" instead. → [evidence.md §6.3](evidence.md) |
+| Reading an excess at the predicted value as confirmation | Round numbers are over-reported generally. The excess at −1.00 (1.86×) only means something against the excess at other round values (1.46× median), where it ranks 3rd of 17. |
 
 ---
 

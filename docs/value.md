@@ -134,9 +134,11 @@ Each milestone is a stopping point with standalone value:
 6. **Attack the boundary failures.** ⚠️ *Attempted and blocked*: with the published uncertainties
    propagated, 21 of 23 ocean bins have unresolvable departures, so there is nothing yet to explain.
    Better-constrained data is a precondition.
-7. **Explain the ensemble/system split.** Why does the average of independently published spectra
-   land on −1.015 while individual spectra range from −1.69 to +0.45? This is the live question and
-   the one that would make the concept matter.
+7. ✅ **Characterise the ensemble/system split.** *Done* ([evidence.md §6](evidence.md)): the centre
+   is not a reporting artefact and the dispersion is not measurement error. Both are real.
+8. **Explain the mean.** Why should the expected NBSS slope be −1 when individual systems range
+   over ±0.5 with τ ≈ 0.25? This is now the live question, and the one that would make the concept
+   matter. An account of the mean without an account of the dispersion is incomplete.
 
 Steps 2–4 are perhaps four to six weeks of focused work and yield something publishable. Step 6 is
 open-ended and may not resolve — but it is the only one that would make the concept important

@@ -292,7 +292,91 @@ and the same plateau boundaries without tuning, the Φ ratio degrades from 1.7×
 the fitted slope stays near zero (−0.0025). The flat *trend* survives the change of domain; the
 *equality* does not.
 
-## 6. What is still missing
+## 6. Is the ensemble result real? Attractor, artefact, or neither
+
+> ⚠️ **Exploratory, not preregistered.** Preliminary values were seen during feasibility assessment
+> before this analysis was written. Run by
+> [`experiments/run_ensemble.py`](../experiments/run_ensemble.py), output in
+> [`results/ensemble.json`](../results/ensemble.json).
+
+§5 left one question: the ensemble median lands on the predicted value while individual spectra
+scatter widely. Is that a real regularity, or an artefact of the field reporting what it expects?
+Three tests on the 1,300-spectrum NBSS subset.
+
+### 6.1 The scatter is real, not estimation noise
+
+Deriving a standard error per spectrum from its reported confidence interval (747 of 1,300 have
+one) and running a random-effects decomposition:
+
+| Quantity | Value |
+|---|---:|
+| Observed SD of slopes | 0.273 |
+| Median reported SE | 0.159 |
+| Cochran's Q | 6,425 on 746 df |
+| **I²** | **88.4%** |
+| **τ** (between-system SD of true slopes) | **0.252** |
+
+**88% of the variance is genuine between-system heterogeneity.** Aquatic systems really do have
+different size-spectrum slopes, spread with a standard deviation of about 0.25 around the centre.
+Orthopolity is *not* an attractor pinning individual systems to −1.
+
+### 6.2 The centre is not an artefact of anchoring
+
+If the field simply reported the Sheldon value it expected, there would be a spike at exactly −1.00
+beyond the generic human preference for round numbers. There is a round-number preference — the
+second-decimal digit distribution is not uniform (χ² = 46.3 on 9 df, p < 0.01, with digit 0 at 198
+against an average of ~130) — but it is not specific to the predicted value:
+
+| | Excess over local baseline |
+|---|---:|
+| At −1.00 | 1.86× |
+| Median across the other 16 round values | 1.46× |
+| **Rank of −1.00 among 17 round values** | **3rd** |
+
+−1.00 is elevated, but so is every round value, and −1.00 is not even the most elevated. **No
+evidence of anchoring on the predicted value.** The central tendency is not manufactured by
+reporting habits.
+
+### 6.3 The centre holds across habitats and taxa
+
+Median slope by stratum, with study-block bootstrap intervals. Strata with fewer than four study
+blocks get no interval rather than a spurious one — with a single study the block bootstrap has
+zero width, which would otherwise have produced meaningless "inconsistent" verdicts.
+
+| Stratum | n | studies | median | 95% CI | vs −1.000 |
+|---|---:|---:|---:|---|---|
+| Freshwater | 1,075 | 5 | −1.010 | [−1.019, −0.981] | consistent |
+| Marine | 225 | 11 | −1.060 | [−1.340, −0.833] | consistent |
+| Fish | 688 | 5 | −1.011 | [−1.665, −0.987] | consistent |
+| Macroinvertebrate | 63 | 4 | −1.000 | [−1.000, −0.640] | consistent |
+| Zooplankton | 139 | 4 | −0.990 | [−1.074, −0.514] | consistent |
+| Community | 890 | 13 | −1.000 | [−1.100, −0.900] | consistent |
+
+**Every stratum with a valid interval is consistent with the prediction.** Freshwater and marine
+systems, and fish, macroinvertebrates and zooplankton separately, all centre on −1.
+
+Note the composition, which limits the reach of the claim: GLOSSAQUA is dominated by freshwater
+fish (3,127 of 3,576 sites freshwater; 2,855 fish). The marine and non-fish strata are much
+smaller and their intervals much wider.
+
+### 6.4 What the three tests together say
+
+Neither of the two hypotheses that motivated this analysis survives:
+
+- **Not an artefact.** No anchoring on the predicted value; the centre holds independently across
+  habitats and taxa.
+- **Not an attractor.** Individual systems genuinely differ, with τ ≈ 0.25.
+
+> **What is left is a real, reproducible, non-artefactual regularity in the *expected value* of
+> aquatic size spectra, with substantial genuine dispersion around it.** Orthopolity holds in the
+> mean and fails in the particular — and the failure in the particular is a fact about nature, not
+> about measurement.
+
+That is a weaker claim than a law and a stronger one than a convention. It also poses a sharper
+question than the programme has faced so far: *why should the mean be −1 if individual systems
+range over ±0.5?* An account of the mean without an account of the dispersion is incomplete.
+
+## 7. What is still missing
 
 - **Better-constrained ocean data.** With 21 of 23 bins unresolvable, no ocean verdict is possible
   until the reconstruction uncertainty shrinks. Independently sampled size spectra with real
@@ -305,10 +389,11 @@ the fitted slope stays near zero (−0.0025). The flat *trend* survives the chan
   Choosing $F$ after seeing that is the same error as choosing a domain after seeing a fit.
 - **No preregistration.** Every result so far is exploratory. The flare threshold sensitivity shows
   exactly how much that matters.
-- **A mechanism for the ensemble result.** The strongest surviving finding — that the ensemble of
-  published aquatic spectra centres on the orthopolity value while individual spectra scatter
-  widely — has no explanation. Whether that reflects a real attractor or a convention of the
-  field is the obvious next question.
+- **A mechanism for the ensemble result.** §6 establishes that it is neither a reporting artefact
+  nor an attractor: the centre is real and the dispersion is real. Nothing explains why the mean
+  should sit at −1 while individual systems range over ±0.5. This is now the central open question.
+- **Marine and non-fish coverage.** The ensemble is dominated by freshwater fish. The strata that
+  would test generality hardest are the smallest.
 - **No preregistered domain.** Every domain and resource here was chosen before results were seen
   *by the analyst*, but nothing was registered externally. The flare threshold sensitivity shows
   how much latitude that leaves.
@@ -316,25 +401,23 @@ the fitted slope stays near zero (−0.0025). The flat *trend* survives the chan
   when a bootstrap resample produces an empty bin, so those intervals should not carry primary
   inference.
 
-## 7. How this changes the overall assessment
+## 8. How this changes the overall assessment
 
-Five systems have now been examined, three of them under a preregistered protocol. The picture is
-consistent and unflattering to the strong form of the hypothesis, with one genuine and surprising
-survivor.
+Five systems examined, three under a preregistered protocol, plus a follow-up on the one positive
+result. The strong claims are gone and one modest claim has survived a serious attempt to kill it.
 
-**Against.** Earthquakes and solar flares fail the occupancy test decisively, at every tolerance.
-The flare distribution is not a power law by the standard test, and no tested system distinguishes
-a power law from a lognormal. The ocean plateau does not transfer to the full water column, and
-most of the ocean spectrum's departures are not resolvable above the published uncertainty at all.
-The one preregistered independent test returns **not supported** on its declared criteria: fewer
-than a quarter of individual spectra are within tolerance even at the loose setting.
+**Dead.** The universal reading. The claim about individual systems — τ ≈ 0.25 says they genuinely
+differ. The earthquake and flare cases, decisively. The ocean plateau, which does not transfer to
+the full water column and whose departures are anyway unresolvable in 21 of 23 bins. And the claim
+that orthopolity explains observed power laws, since the flare distribution is not a power law and
+no tested system distinguishes a power law from a lognormal.
 
-**For.** Across 16 independent studies and 1,300 published spectra, the median normalized biomass
-spectrum slope is **−1.015** where orthopolity predicts −1.000 — a systematic drift of 1.11× across
-three decades of body mass. That is not nothing. It is the Sheldon result, reproduced across an
-independent literature, and it is exactly what the hypothesis says should happen *on average*.
+**Alive.** Across 16 independent studies and 1,300 published spectra, the median normalized biomass
+spectrum slope is −1.015 where orthopolity predicts −1.000. That centre survives every check
+applied to it: it is not an artefact of round-number reporting, and it holds separately in
+freshwater and marine systems and in fish, macroinvertebrates and zooplankton.
 
-**The synthesis.** Orthopolity looks like a statement about **ensembles, not systems**. The
-average aquatic size spectrum sits on the equal-resource value; any particular one does not. A
-research programme that claimed only that would be defensible, testable and modest — and it is a
-different claim from a natural law, let alone a cosmological principle.
+**The claim that fits the evidence.** Orthopolity is a statement about the *expected value* of
+aquatic resource spectra. It is real, independently reproducible, and violated by most individual
+systems. That is worth publishing, worth a mechanism, and is not a natural law — still less a
+cosmological principle.
