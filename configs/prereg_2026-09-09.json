@@ -1,0 +1,74 @@
+{
+  "title": "Preregistered tests of equal-resource spectra in aquatic size data",
+  "declared_utc": "2026-09-09",
+  "status": "Specified and committed BEFORE any of these analyses were computed. The git history of this file is the preregistration record.",
+  "rationale": "Every positive signal obtained so far is exploratory: a post hoc subrange of a re-expression of a single model-assisted reconstruction. These tests fix the domain, the resource, the exponent mapping and the tolerance in advance.",
+
+  "blinding": {
+    "test_A": "BLIND. Only the categorical design columns of GLOSSAQUA_Size.txt were inspected (method, axis type, units). No Slope value has been read.",
+    "test_B": "PARTIALLY BLIND. Point estimates of the top-200m spectrum were already seen; the published uncertainties were not used before.",
+    "test_C": "BLIND. The full-water-column table has not been inspected."
+  },
+
+  "test_A_glossaqua": {
+    "question": "Across independently published aquatic size spectra, are the reported slopes equivalent to the value implied by equal biomass per logarithmic size class?",
+    "source": "Ersoy et al. 2025, GLOSSAQUA, github.com/zeynepersoy/GLOSSAQUA_dataset, data/GLOSSAQUA_Size.txt",
+    "independence": "Different authors, ecosystems, instruments and methods from the Hatton et al. ocean reconstruction. Not derived from it.",
+    "inclusion": [
+      "XaxisParameterType == 'body mass' (mass is the resource; length/volume would need a species-specific conversion exponent that is not available)",
+      "Slope, SizeRangeMinimum and SizeRangeMaximum all finite",
+      "SizeRangeMaximum > SizeRangeMinimum > 0",
+      "SizeSpectrumMethod in the mapping table below"
+    ],
+    "exponent_mapping": {
+      "_derivation": "With resource q = body mass m, orthopolity is dR/dln m = mean_q * dN/dln m = constant.",
+      "Normalized biomass spectrum (linear)": {"predicted_slope": -1.0, "why": "NBSS b(m) ~ m^s is biomass per unit mass; biomass per log class is m*b(m) ~ m^(1+s); flat requires s = -1", "role": "PRIMARY"},
+      "Normalized abundance spectrum (linear)": {"predicted_slope": -2.0, "why": "normalized abundance a(m) ~ m^s; biomass per log class ~ m^(2+s); flat requires s = -2", "role": "secondary"},
+      "Maximum Likelihood": {"predicted_slope": -2.0, "why": "MLE of the individual size distribution p(m) ~ m^b; biomass per log class ~ m^(b+2); flat requires b = -2", "role": "secondary"}
+    },
+    "excluded_methods": {
+      "Abundance spectrum (linear)": "binning convention (linear vs logarithmic bin width) not recorded, so the exponent cannot be mapped reliably",
+      "Biomass spectrum (linear)": "same ambiguity, and only 38 records",
+      "Type I Pareto probability density function (power)": "different parameterisation, only 85 records"
+    },
+    "statistic": "departure s = reported_slope - predicted_slope. s = 0 is exact orthopolity.",
+    "tolerance": "Per study, |s| <= ln(F)/ln(SizeRangeMaximum/SizeRangeMinimum), the slope implying at most an F-fold systematic drift across that study's own reported size range. F = 1.25 primary, F = 2.0 secondary.",
+    "uncertainty": "Percentile bootstrap over StudyID blocks, 2000 replicates, seed 20260909. Studies contribute many spectra and are not independent within themselves.",
+    "outcomes": [
+      "fraction_equivalent: fraction of spectra with |s| <= its own tolerance",
+      "pooled median s with block-bootstrap interval",
+      "median implied drift factor across each study's reported range"
+    ],
+    "declared_success_criteria": {
+      "supported": "pooled median s interval lies entirely inside the median tolerance band AND fraction_equivalent at F=2 >= 0.50",
+      "partially_supported": "exactly one of those two holds",
+      "not_supported": "neither holds"
+    }
+  },
+
+  "test_B_ocean_uncertainty": {
+    "question": "Given the published reconstruction uncertainties, can the ocean spectrum be given an equivalence verdict, and are the boundary departures larger than the uncertainty?",
+    "source": "Hatton et al. 2021, summary_biomass_top200_table_long.csv, with the published per-group 95% intervals",
+    "uncertainty_model": "The published interval is exactly [estimate/f, estimate*f] with f the per-group factor in group_standard_errors.csv (verified for all 253 rows). Draw ln(biomass) ~ Normal(ln(estimate), ln(f)/1.96) independently per group per bin, sum groups within a bin, 20000 draws, seed 20260909.",
+    "model_caveat": "This propagates the authors' reported reconstruction uncertainty. It is NOT a resampling of independent observations, and independence across groups and bins is an assumption that will overstate precision if errors are correlated.",
+    "outcomes": [
+      "slope interval and equivalence verdict for the full 23-bin range",
+      "same for the post hoc plateau (still exploratory, reported as such)",
+      "for each bin, whether the 95% interval of ln(Phi) excludes the declared tolerance band -- i.e. whether that bin's departure is resolvable at all"
+    ]
+  },
+
+  "test_C_full_water_column": {
+    "question": "Does the plateau appear in the full water column, not only the upper 200 m?",
+    "source": "Hatton et al. 2021, summary_biomass_table_long.csv (not previously inspected)",
+    "independence": "A different observational domain, but the same authors, methods and reconstruction. NOT an independent replication; reported as a second domain.",
+    "procedure": "Identical pipeline to test B, including the same plateau boundaries, applied without further tuning."
+  },
+
+  "common": {
+    "tolerance_factors": [1.25, 2.0],
+    "criteria": "Flatness requires BOTH slope equivalence (TOST) and bounded departure max|ln Phi| within tolerance.",
+    "seed": 20260909,
+    "no_reselection": "No domain, subset, method mapping or tolerance may be changed after results are seen. Any change creates a new hypothesis and the original stays in the record."
+  }
+}
