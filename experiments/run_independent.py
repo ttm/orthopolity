@@ -1,4 +1,8 @@
-"""Preregistered independent tests. Protocol: configs/prereg_2026-09-09.json.
+"""Locally planned aquatic comparisons. Protocol: configs/prereg_2026-09-09.json.
+
+The historical filename and declared decisions are preserved for audit. Git
+records the plan before the analysis commit, but provides no independently
+verified blinding or immutable external preregistration timestamp.
 
 Nothing here may be tuned after seeing output. Any change creates a new
 hypothesis and the original protocol stays in the git record.
@@ -57,7 +61,9 @@ def glossaqua():
                n_studies=len({k['study'] for k in kept}), subsets={})
 
     for label, sel in [('primary_NBSS', lambda k: k['role'] == 'PRIMARY'),
-                       ('all_mapped_methods', lambda k: True)]:
+                       ('all_mapped_methods', lambda k: True),
+                       ('primary_NBSS_excluding_known_invalid_span',
+                        lambda k: k['role'] == 'PRIMARY' and k['study'] != 'StudyID_07')]:
         g = [k for k in kept if sel(k)]
         if len(g) < 10:
             out['subsets'][label] = dict(n=len(g), note='too few records'); continue
@@ -77,12 +83,22 @@ def glossaqua():
                    median_departure=float(np.median(s)), median_departure_ci=ci,
                    median_span_decades=float(np.median(span) / np.log(10)),
                    median_slope=float(np.median([k['slope'] for k in g])))
+        if label == 'primary_NBSS_excluding_known_invalid_span':
+            res['status'] = ('Post-audit sensitivity: excludes the 377 StudyID_07 records '
+                             'only from this range-dependent analysis because reported '
+                             'body-mass bounds imply a physically implausible 35-decade '
+                             'span (upper bound 2e12 kg C). No corrected bounds are imputed. '
+                             'Historical subsets and all location-only slope analyses remain available.')
         for F in TOLS:
             tol = np.log(F) / span
-            frac = float(np.mean(np.abs(s) <= tol))
+            inside = (np.abs(s) <= tol) | np.isclose(np.abs(s), tol, rtol=1e-12, atol=0)
+            frac = float(np.mean(inside))
             med_tol = float(np.median(tol))
             res[f'F_{F}'] = dict(
                 fraction_equivalent=frac, median_tolerance=med_tol,
+                fraction_point_estimates_within_tolerance=frac,
+                count_point_estimates_within_tolerance=int(inside.sum()),
+                boundary_convention='Inclusive <= with relative tolerance 1e-12 to preserve exact boundaries under floating-point conversion',
                 pooled_inside=bool(ci[0] > -med_tol and ci[1] < med_tol))
         # declared success criteria
         pooled_ok = res[f'F_{TOLS[0]}']['pooled_inside']
@@ -90,6 +106,12 @@ def glossaqua():
         res['verdict'] = ('supported' if (pooled_ok and frac_ok) else
                           'partially supported' if (pooled_ok or frac_ok) else 'not supported')
         res['implied_drift_at_median_span'] = float(np.exp(abs(np.median(s)) * np.median(span)))
+        res['median_individual_implied_drift'] = float(np.median(np.exp(np.abs(s) * span)))
+        res['interpretation'] = ('The verdict reproduces the historical decision rule. '
+                                 'fraction_equivalent is a legacy alias for the descriptive '
+                                 'fraction_point_estimates_within_tolerance: individual '
+                                 'slope uncertainty is not used in this calculation. The pooled median and median '
+                                 'tolerance do not establish whole-spectrum equivalence.')
         out['subsets'][label] = res
 
     by_method = {}
@@ -135,11 +157,16 @@ def ocean_uncertainty(table, label, n_draws=20000):
     plateau = (np.array(mids) >= -10.5) & (np.array(mids) <= 4.5)
 
     def block(sel, name):
-        c, p = k[sel], point[sel]
-        draws = np.array([np.polyfit(np.log(c), np.log(np.maximum(phis[d][sel], 1e-300)), 1)[0]
+        c = k[sel]
+        # Each subdomain has its own mean resource per logarithmic interval.
+        p = point[sel] / point[sel].mean()
+        pd = phis[:, sel] / phis[:, sel].mean(axis=1, keepdims=True)
+        draws = np.array([np.polyfit(np.log(c), np.log(pd[d]), 1)[0]
                           for d in range(n_draws)])
         return {f'tolerance_{F}': flatness_equivalence(c, p, tolerance_factor=F,
-                                                       slope_draws=draws) for F in TOLS} | \
+                                                       slope_draws=draws,
+                                                       domain=(c[0]/np.sqrt(10), c[-1]*np.sqrt(10)),
+                                                       phi_draws=pd) for F in TOLS} | \
                dict(label=name, slope_draws_sd=float(draws.std()))
 
     ln = np.log(np.maximum(phis, 1e-300))
@@ -163,12 +190,12 @@ def figure(res):
     ax = axs[0]
     ax.axvline(0, color='black', lw=1)
     ax.axvspan(-a['F_1.25']['median_tolerance'], a['F_1.25']['median_tolerance'],
-               color='#627c90', alpha=.25, label='Median tolerance (F=1.25)')
+               color='#627c90', alpha=.25, label='Historical median tolerance (F=1.25)')
     ax.errorbar([a['median_departure']], [0], xerr=[[a['median_departure'] - a['median_departure_ci'][0]],
                 [a['median_departure_ci'][1] - a['median_departure']]], fmt='o', color='crimson',
                 capsize=4, label='Median departure')
     ax.set(xlabel='Departure from orthopolity slope', yticks=[],
-           title=f"GLOSSAQUA NBSS\nn={a['n']} spectra, {a['n_studies']} studies")
+           title=f"GLOSSAQUA NBSS: historical ranges\nn={a['n']}; 377 ranges known invalid")
     ax.legend(fontsize=7)
     for ax, key, t in [(axs[1], 'ocean_top200', 'Ocean, upper 200 m'),
                        (axs[2], 'ocean_allwater', 'Ocean, full water column')]:
@@ -177,7 +204,7 @@ def figure(res):
         p = [b['phi'] for b in r['per_bin']]
         lo = [np.exp(b['ln_phi_ci'][0]) for b in r['per_bin']]
         hi = [np.exp(b['ln_phi_ci'][1]) for b in r['per_bin']]
-        ax.fill_between(m, lo, hi, color='#627c90', alpha=.25, label='95% reconstruction uncertainty')
+        ax.fill_between(m, lo, hi, color='#627c90', alpha=.25, label='Modelled pointwise 95% interval')
         ax.plot(m, p, 'o-', color='black', ms=3, label='Estimate')
         ax.axhspan(1 / 1.25, 1.25, color='crimson', alpha=.12, label='Tolerance F=1.25')
         ax.axhline(1, ls='--', color='#999', lw=1)
@@ -190,8 +217,12 @@ def figure(res):
 
 
 def main():
+    OUT.mkdir(exist_ok=True)
     plt.rcParams.update({'font.size': 9, 'font.family': 'DejaVu Sans'})
     res = dict(protocol='configs/prereg_2026-09-09.json',
+               protocol_status='Historical local analysis plan; no external registration '
+                               'or independently verified blinding. Plan commit 6df364f '
+                               'precedes implementation commit a0c9973 in this repository.',
                glossaqua=glossaqua(),
                ocean_top200=ocean_uncertainty('sheldon_summary_biomass_top200_table_long.csv',
                                               'Upper 200 m'),
@@ -201,7 +232,7 @@ def main():
     figure(res)
 
     g = res['glossaqua']
-    print(f"\n=== TEST A: GLOSSAQUA (preregistered, blind) ===")
+    print(f"\n=== TEST A: GLOSSAQUA (historical local analysis plan) ===")
     print(f"{g['n_records']} records -> {g['n_kept']} kept from {g['n_studies']} studies; dropped {g['dropped']}")
     for name, s in g['subsets'].items():
         if 'n_studies' not in s:
@@ -222,7 +253,7 @@ def main():
               f"median={d['median_slope']:+.3f} departure={d['median_departure']:+.3f}")
 
     for key, t in [('ocean_top200', 'TEST B: ocean upper 200 m (uncertainty propagated)'),
-                   ('ocean_allwater', 'TEST C: ocean full water column (blind)')]:
+                   ('ocean_allwater', 'TEST C: ocean full water column (same reconstruction)')]:
         r = res[key]
         print(f"\n=== {t} ===")
         for sub in ('full_range', 'plateau'):

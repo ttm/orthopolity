@@ -1,7 +1,7 @@
 {
   "status": "EXPLORATORY, not preregistered",
   "components": {
-    "between_site_arranz": {
+    "cross_sectional_arranz": {
       "source": "Arranz et al. 2022, 639 lakes, one occasion each",
       "n": 639,
       "n_sites": 639,
@@ -9,7 +9,7 @@
       "mu": -1.0003876846659672,
       "median_se": 0.16530612244897958,
       "raw_sd": 0.27893785850672154,
-      "interpretation": "Each lake seen once, so this is between-site dispersion with measurement error removed. It still contains any single-occasion temporal deviation, so it is an upper bound on the purely spatial part."
+      "interpretation": "Cross-sectional dispersion after subtracting the supplied sampling variances under the fitted model. Spatial differences and single-occasion temporal deviations cannot be separated."
     },
     "within_site_gaedke": {
       "source": "Gaedke 1993, Lake Constance, one site, 377 occasions over 10 years",
@@ -22,7 +22,7 @@
         -0.86
       ],
       "errors_reported": 0,
-      "interpretation": "One lake, so all dispersion is temporal. No errors are reported, so this raw SD is an UPPER bound on true temporal variation."
+      "interpretation": "Observed variation among repeated measurements in one lake; it combines temporal changes, sampling error and other measurement differences. Temporal dependence is not modeled. It cannot bound temporal variation in the other study."
     },
     "joint_fits": [
       {
@@ -38,7 +38,8 @@
         "tau_between": 0.47729142653675455,
         "tau_within": 0.2819616598702217,
         "fraction_between": 0.7412953979294954,
-        "study": "StudyID_10"
+        "study": "StudyID_10",
+        "assumptions": "Independent Gaussian site effects and independent within-site residuals with known measurement variances; neither serial dependence nor uncertainty in reported errors is modeled."
       },
       {
         "n": 24,
@@ -53,17 +54,14 @@
         "tau_between": 0.029205826450731144,
         "tau_within": 0.014025330799292213,
         "fraction_between": 0.812601943388976,
-        "study": "StudyID_105"
+        "study": "StudyID_105",
+        "assumptions": "Independent Gaussian site effects and independent within-site residuals with known measurement variances; neither serial dependence nor uncertainty in reported errors is modeled."
       }
     ]
   },
-  "decomposition": {
-    "pooled_freshwater_tau": 0.228,
-    "between_site_tau": 0.23458185756715327,
-    "within_site_sd_upper": 0.06708045733357103,
-    "within_site_variance_share_upper": 0.08177173032283713,
-    "implied_between_site_lower": 0.2247862543474915,
-    "verdict": "dispersion is predominantly between ecosystems",
-    "note": "Between-site and within-site are estimated from different studies and different ecosystems, so these are bounds rather than a partition of one variance. Subtracting them assumes the temporal component in Arranz lakes matches that in Lake Constance, which is an assumption, not a measurement."
+  "comparison": {
+    "cross_sectional_latent_tau": 0.23458185756715327,
+    "repeated_site_observed_sd": 0.06708045733357103,
+    "note": "Different ecosystems, taxa, sampling designs and error availability. These quantities are descriptive comparisons, not components of one variance. No temporal variance share or between-site lower bound is identified."
   }
 }

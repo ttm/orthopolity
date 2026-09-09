@@ -33,6 +33,13 @@ class ScientificChecks(unittest.TestCase):
         d,A=mean_resource_exponent(x,3*x**1.7)
         self.assertAlmostEqual(d,1.7,places=4)
         self.assertAlmostEqual(A,3,places=3)
+    def test_degenerate_scale_cannot_identify_resource_exponent(self):
+        with self.assertRaises(ValueError):
+            mean_resource_exponent([1,1,1],[1,2,3])
+    def test_geometric_centers_do_not_overflow_large_finite_scales(self):
+        s=resource_spectrum([1e200,1e250],[2,3],[1e200,1e225,1e250])
+        self.assertTrue(np.isfinite(s['center']).all())
+        self.assertAlmostEqual(s['resource_sum'].sum(),5)
     def test_sound_is_bounded_and_empty_bins_silent(self):
         s=residual_audio([1,0,2],seconds_per_bin=.1)
         self.assertEqual(len(s),6615)

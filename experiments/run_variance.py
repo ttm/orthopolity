@@ -1,15 +1,8 @@
-"""R9: how much of tau is between ecosystems, and how much is one ecosystem
-varying over time?
+"""Exploratory descriptions of spatial and repeated-site slope variation.
 
-EXPLORATORY, not preregistered. Raised by the R8 source check: Gaedke's slopes
-span -1.23 to -0.82 within a single lake across one season, so tau cannot be
-read as "ecosystems differ by this much" until the two are separated.
-
-The primary subset happens to contain the two designs that isolate each
-component:
-  Arranz et al. 2022  639 sites x 1 occasion each  -> between-site only
-  Gaedke 1993           1 site  x 377 occasions    -> within-site only
-Studies with several sites AND repeat visits are fitted jointly as a check.
+One observation per lake mixes spatial and single-occasion variation. Repeated
+observations in a different lake cannot partition or bound that mixture.
+Joint random-intercept fits additionally assume independent within-site errors.
 """
 from pathlib import Path
 import sys, json, csv, io
@@ -63,14 +56,14 @@ def main():
     # Between-site: Arranz, 639 sites each seen once, all with reported errors.
     a = [x for x in d if x['study'] == 'StudyID_122']
     ra = random_effects([x['slope'] for x in a], [x['se'] for x in a])
-    res['components']['between_site_arranz'] = dict(
+    res['components']['cross_sectional_arranz'] = dict(
         source='Arranz et al. 2022, 639 lakes, one occasion each',
         n=len(a), n_sites=len({x['site'] for x in a}),
         tau=ra['tau'], mu=ra['random_effects_mean'], median_se=ra['median_se'],
         raw_sd=ra['observed_sd'],
-        interpretation='Each lake seen once, so this is between-site dispersion with '
-                       'measurement error removed. It still contains any single-occasion '
-                       'temporal deviation, so it is an upper bound on the purely spatial part.')
+        interpretation='Cross-sectional dispersion after subtracting the supplied sampling '
+                       'variances under the fitted model. Spatial differences and '
+                       'single-occasion temporal deviations cannot be separated.')
 
     # Within-site: Gaedke, one lake, 377 occasions. No reported errors.
     g = [x for x in d if x['study'] == 'StudyID_07']
@@ -81,8 +74,10 @@ def main():
         raw_sd=float(sl.std(ddof=1)), median=float(np.median(sl)),
         range=[float(sl.min()), float(sl.max())],
         errors_reported=int(np.isfinite([x['se'] for x in g]).sum()),
-        interpretation='One lake, so all dispersion is temporal. No errors are reported, '
-                       'so this raw SD is an UPPER bound on true temporal variation.')
+        interpretation='Observed variation among repeated measurements in one lake; it '
+                       'combines temporal changes, sampling error and other measurement '
+                       'differences. Temporal dependence is not modeled. It cannot bound '
+                       'temporal variation in the other study.')
 
     # Joint fit where a study has several sites and repeat visits.
     joint = []
@@ -99,26 +94,21 @@ def main():
         joint.append(vc)
     res['components']['joint_fits'] = joint
 
-    tb = ra['tau']
-    tw_ub = float(sl.std(ddof=1))
-    frac_within = float(tw_ub ** 2 / tb ** 2)
-    res['decomposition'] = dict(
-        pooled_freshwater_tau=0.228,
-        between_site_tau=tb, within_site_sd_upper=tw_ub,
-        within_site_variance_share_upper=frac_within,
-        implied_between_site_lower=float(np.sqrt(max(tb ** 2 - tw_ub ** 2, 0.0))),
-        verdict=('dispersion is predominantly between ecosystems'
-                 if frac_within < 0.25 else 'temporal variation is a major share'),
-        note='Between-site and within-site are estimated from different studies and '
-             'different ecosystems, so these are bounds rather than a partition of one '
-             'variance. Subtracting them assumes the temporal component in Arranz lakes '
-             'matches that in Lake Constance, which is an assumption, not a measurement.')
+    res['comparison'] = dict(
+        cross_sectional_latent_tau=ra['tau'], repeated_site_observed_sd=float(sl.std(ddof=1)),
+        note='Different ecosystems, taxa, sampling designs and error availability. These '
+             'quantities are descriptive comparisons, not components of one variance. '
+             'No temporal variance share or between-site lower bound is identified.')
+    for fit in joint:
+        fit['assumptions'] = ('Independent Gaussian site effects and independent within-site '
+                              'residuals with known measurement variances; neither serial '
+                              'dependence nor uncertainty in reported errors is modeled.')
     (OUT / 'variance.json').write_text(json.dumps(res, indent=2, default=float))
 
     c = res['components']
     print('\n=== R9: WHERE THE DISPERSION LIVES ===\n')
-    b = c['between_site_arranz']
-    print(f"BETWEEN-SITE  {b['source']}")
+    b = c['cross_sectional_arranz']
+    print(f"CROSS-SECTIONAL  {b['source']}")
     print(f"  n={b['n']} sites={b['n_sites']}  raw SD={b['raw_sd']:.3f}  median SE={b['median_se']:.3f}"
           f"  -> latent tau={b['tau']:.3f}  (mu={b['mu']:+.3f})")
     w = c['within_site_gaedke']
@@ -138,14 +128,7 @@ def main():
             print(f"  {v['study']:<12} n={v['n']:>4} sites={v['n_groups']:>3} "
                   f"total={v['total_latent_sd']:.3f}  -- {v['note']}")
 
-    dec = res['decomposition']
-    print(f"\nDECOMPOSITION of the pooled freshwater tau = {dec['pooled_freshwater_tau']}")
-    print(f"  between-site tau           {dec['between_site_tau']:.3f}")
-    print(f"  within-site SD (upper)     {dec['within_site_sd_upper']:.3f}")
-    print(f"  within-site share of variance (upper bound)  "
-          f"{dec['within_site_variance_share_upper']:.1%}")
-    print(f"  -> {dec['verdict']}")
-    print(f"\n  {dec['note']}")
+    print(f"\n  {res['comparison']['note']}")
 
 
 if __name__ == '__main__':

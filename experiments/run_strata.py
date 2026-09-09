@@ -1,22 +1,9 @@
-"""R7 and R5: is the heavy tail a mixture over classes, and is span a proxy for taxon?
+"""Exploratory habitat/taxon summaries and method-convention sensitivity.
 
-EXPLORATORY, not preregistered. Follow-ups to evidence.md sections 6.4-6.5.
-
-R7. The pooled latent slope distribution is heavier-tailed than the two-moment
-    maximum-entropy form. If that is because the pool mixes classes with
-    different tau, then (a) tau should differ across strata, (b) the Gaussian
-    should be adequate *within* a stratum, and (c) a mixture built from the
-    fitted per-stratum taus should reproduce the pooled excess kurtosis.
-
-R5. Wider-spanning studies sit closer to -1, but span is partly a proxy for
-    taxon. Testing the relation within taxon separates them, at whatever power
-    four or five study blocks per taxon allows.
-
-R4-partial. PSSdb is unreachable while Zenodo is down, so the nearest available
-    replication is across method subsets inside GLOSSAQUA. Their study sets are
-    disjoint, so the primary sources differ even though the compilation does
-    not. If tau is a class property, freshwater should give the same tau
-    whichever published convention is used.
+Family rankings do not establish Gaussian adequacy. A mixture fitted to the
+same data cannot establish that pooling caused the pooled distribution shape.
+Cross-method subsets differ in populations and may encode different estimands;
+these comparisons are not replication tests.
 """
 from pathlib import Path
 import sys, json, csv, io
@@ -27,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
 from meta import latent_shape, random_effects                          # noqa: E402
 sys.path.insert(0, str(ROOT / 'experiments'))
-from run_ensemble import load, PREDICTED                               # noqa: E402
+from run_ensemble import load, PREDICTED, INVALID_SPAN_STUDIES                               # noqa: E402
 
 OUT = ROOT / 'results'
 MIN_N, MIN_STUDIES = 60, 3
@@ -39,7 +26,7 @@ def per_stratum_shape(d, key):
     for lab in sorted({x[key] for x in d}):
         g = [x for x in d if x[key] == lab]
         u = [x for x in g if np.isfinite(x['se']) and x['se'] > 0]
-        ns = len({x['study'] for x in g})
+        ns = len({x['study'] for x in u})
         if len(u) < MIN_N or ns < MIN_STUDIES:
             out[lab] = dict(n=len(g), n_with_se=len(u), n_studies=ns,
                             note='too few for a latent-shape fit')
@@ -51,35 +38,48 @@ def per_stratum_shape(d, key):
                         mu=ls['families']['gaussian']['mu'],
                         best_family=ls['best_family'],
                         delta_aic=ls['delta_aic_vs_gaussian'],
-                        gaussian_adequate=ls['maxent_consistent'],
+                        gaussian_best_by_aic=ls['gaussian_best_by_aic'],
+                        inference_note=ls['inference_note'],
                         excess_kurtosis=ls['gaussian_standardised_residuals']['excess_kurtosis'],
                         I_squared=re['I_squared'])
     return out
 
 
 def mixture_check(d, strata, key):
-    """Does a mixture of the fitted per-stratum Gaussians reproduce the pooled tail?"""
-    parts = [(v['tau'], v['mu'], v['n']) for v in strata.values() if v.get('tau')]
-    if len(parts) < 2:
-        return dict(note='fewer than two fitted strata; mixture not identifiable')
-    taus = np.array([p[0] for p in parts])
-    mus = np.array([p[1] for p in parts])
-    w = np.array([p[2] for p in parts], float)
-    w /= w.sum()
-    draw = rng.choice(len(parts), size=400_000, p=w)
-    sim = rng.normal(mus[draw], taus[draw])
-    z = (sim - sim.mean()) / sim.std()
-    pooled = latent_shape([x['slope'] for x in d if np.isfinite(x['se']) and x['se'] > 0],
-                          [x['se'] for x in d if np.isfinite(x['se']) and x['se'] > 0])
-    return dict(stratifier=key, n_components=len(parts),
-                tau_range=[float(taus.min()), float(taus.max())],
-                tau_ratio=float(taus.max() / taus.min()),
-                mixture_excess_kurtosis=float(((z ** 4).mean() - 3.0)),
+    """Compare like-for-like standardized *observed* residual moments.
+
+    Each retained observation keeps its stratum and supplied error. Expected
+    second/fourth moments are computed analytically for the fitted normal
+    mixture, with the same centering/scaling as the observed residuals.
+    """
+    fitted = {label: v for label, v in strata.items() if 'tau' in v}
+    if len(fitted) < 2:
+        return dict(note='fewer than two fitted strata; no mixture comparison')
+    g = [x for x in d if x[key] in fitted and np.isfinite(x['se']) and x['se'] > 0]
+    y = np.array([x['slope'] for x in g])
+    errors = np.array([x['se'] for x in g])
+    pooled = latent_shape(y, errors, families=('gaussian',))
+    ref = pooled['families']['gaussian']
+    denominator = np.sqrt(ref['tau'] ** 2 + errors ** 2)
+    means = (np.array([fitted[x[key]]['mu'] for x in g]) - ref['mu']) / denominator
+    variances = (np.array([fitted[x[key]]['tau'] ** 2 for x in g]) + errors ** 2) / denominator ** 2
+    centered = means - means.mean()
+    m2 = np.mean(variances + centered ** 2)
+    m4 = np.mean(3 * variances ** 2 + 6 * variances * centered ** 2 + centered ** 4)
+    taus = [v['tau'] for v in fitted.values()]
+    return dict(stratifier=key, n_components=len(fitted), n_matched=len(g),
+                component_counts={lab: sum(x[key] == lab for x in g) for lab in fitted},
+                tau_range=[float(min(taus)), float(max(taus))],
+                tau_ratio=float(max(taus) / min(taus)),
+                mixture_excess_kurtosis=float(m4 / m2 ** 2 - 3),
                 pooled_excess_kurtosis=pooled['gaussian_standardised_residuals']['excess_kurtosis'],
-                pooled_best_family=pooled['best_family'])
+                interpretation='In-sample observed-residual moment comparison with matched '
+                               'stratum weights and measurement errors; no causal attribution '
+                               'or test of absolute distributional fit.')
 
 
 def span_within_taxon(d, key='species'):
+    d = [x for x in d if x['study'] not in INVALID_SPAN_STUDIES]
     out = {}
     for lab in sorted({x[key] for x in d}):
         g = [x for x in d if x[key] == lab]
@@ -103,7 +103,7 @@ def span_within_taxon(d, key='species'):
 
 
 def cross_method_replication():
-    """R4-partial: does the class-specific tau replicate across published conventions?"""
+    """Descriptive comparisons under provisional method-to-exponent mappings."""
     import csv as _csv
     sz = list(_csv.DictReader(io.StringIO((ROOT / 'data/raw/GLOSSAQUA_Size.txt').read_text('utf-8')),
                               delimiter=' ', quotechar='"'))
@@ -149,21 +149,21 @@ def cross_method_replication():
             ns = len({x['study'] for x in g})
             if len(g) < MIN_N or ns < MIN_STUDIES:
                 continue
-            ls = latent_shape([x['dep'] for x in g], [x['se'] for x in g])
+            ls = latent_shape([x['dep'] for x in g], [x['se'] for x in g], families=('gaussian',))
             gg = ls['families']['gaussian']
             out['fits'].append(dict(method=m, habitat=hab, n=len(g), n_studies=ns,
-                                    tau=gg['tau'], mu=gg['mu'],
-                                    mean_departure_is_zero=bool(abs(gg['mu']) < 0.1)))
+                                    tau=gg['tau'], mu=gg['mu']))
     fw = [f for f in out['fits'] if f['habitat'] == 'Freshwater']
     if len(fw) > 1:
         taus = [f['tau'] for f in fw]
-        out['freshwater_replication'] = dict(
+        out['freshwater_comparison'] = dict(
             n_methods=len(fw), tau_values=taus,
             tau_ratio=float(max(taus) / min(taus)),
             mu_values=[f['mu'] for f in fw],
-            replicates=bool(max(taus) / min(taus) < 1.5
-                            and all(abs(f['mu']) < 0.1 for f in fw)))
-    out['confound'] = ('Method and study population are perfectly confounded: the three subsets '
+            interpretation='No replication verdict: estimands and study populations '
+                           'have not been harmonized.')
+    out['confound'] = ('Method labels may encode incompatible estimands. Method and '
+                       'study population are perfectly confounded: the three subsets '
                        'share no studies. A discrepancy cannot be attributed to the convention '
                        'rather than to the systems, or the reverse.')
     return out
@@ -177,9 +177,10 @@ def main():
                        mixture={k: mixture_check(d, strata[k], k) for k in strata}),
                R4_partial=cross_method_replication(),
                R5=dict(span_within_taxon=span_within_taxon(d),
-                       note='Four or five study blocks per taxon is very low power; a null '
-                            'result here does not resolve the confound, it only shows the '
-                            'available data cannot.'))
+                       span_metadata_exclusions=INVALID_SPAN_STUDIES,
+                       note='Only four or five study blocks are available per taxon. Nonsignificance '
+                            'does not establish absence of an association or identify low '
+                            'power as its cause.'))
     (OUT / 'strata.json').write_text(json.dumps(res, indent=2, default=float))
 
     print('\n=== R7: LATENT SHAPE WITHIN STRATA ===')
@@ -192,7 +193,7 @@ def main():
             print(f"    {lab[:34]:<34} n={v['n_with_se']:>4} ({v['n_studies']} st.)  "
                   f"mu={v['mu']:+.3f} tau={v['tau']:.3f}  best={v['best_family']:<13}"
                   f"exkurt={v['excess_kurtosis']:+.2f}  "
-                  f"gaussian_ok={v['gaussian_adequate']}")
+                  f"gaussian_best_by_aic={v['gaussian_best_by_aic']}")
     print('\n  mixture reconstruction of the pooled tail:')
     for key, m in res['R7']['mixture'].items():
         if 'note' in m:
@@ -203,21 +204,21 @@ def main():
               f"pooled {m['pooled_excess_kurtosis']:+.3f}")
 
     cm = res['R4_partial']
-    print('\n=== R4-partial: CROSS-METHOD REPLICATION OF tau (PSSdb unreachable) ===')
+    print('\n=== R4-partial: CROSS-METHOD DESCRIPTIVE COMPARISON ===')
     print('  study overlap:')
     for m, v in cm['overlap'].items():
         print(f"    {m[:40]:<42}{v['n_studies']:>3} studies, {v['shared_with_nbss']:>3} shared "
               f"with NBSS, {v['new']:>3} new")
-    print(f"  {'method':<42}{'habitat':<12}{'n':>6}{'st.':>5}{'tau':>8}{'mu':>9}  E[s]=0?")
+    print(f"  {'method':<42}{'habitat':<12}{'n':>6}{'st.':>5}{'tau':>8}{'mu':>9}")
     for f in cm['fits']:
         print(f"    {f['method'][:40]:<42}{f['habitat']:<12}{f['n']:>6}{f['n_studies']:>5}"
-              f"{f['tau']:>8.3f}{f['mu']:>+9.3f}   {f['mean_departure_is_zero']}")
-    fr = cm.get('freshwater_replication')
+              f"{f['tau']:>8.3f}{f['mu']:>+9.3f}")
+    fr = cm.get('freshwater_comparison')
     if fr:
         print(f"\n  freshwater tau across {fr['n_methods']} conventions: "
               f"{[round(v,3) for v in fr['tau_values']]}  (ratio {fr['tau_ratio']:.2f}x)")
         print(f"  freshwater mu:  {[round(v,3) for v in fr['mu_values']]}")
-        print(f"  >>> REPLICATES: {fr['replicates']}")
+        print(f"  {fr['interpretation']}")
     print(f"  CONFOUND: {cm['confound']}")
 
     print('\n=== R5: SPAN vs |DEPARTURE| WITHIN TAXON (study level) ===')

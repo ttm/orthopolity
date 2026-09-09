@@ -9,6 +9,8 @@ Nothing here selects a subset or a threshold. Callers declare those.
 """
 import numpy as np
 from scipy.optimize import minimize
+from scipy.integrate import quad_vec
+from scipy.special import gammaln, ndtr
 from scipy.stats import chi2 as _chi2, norm as _norm, laplace as _laplace, t as _t
 
 __all__ = ['random_effects', 'digit_preference', 'round_number_excess',
@@ -20,12 +22,11 @@ _TINY = 1e-12
 def random_effects(y, se):
     """DerSimonian-Laird random-effects summary of estimates y with errors se.
 
-    Returns Cochran's Q, the heterogeneity variance tau^2, I^2 (the share of
-    total variance not attributable to sampling error), and both the
-    fixed-effect and random-effects pooled means.
-
-    I^2 is a proportion of variance, not a significance test: a large I^2 with
-    few studies is weak evidence. The Q p-value is reported alongside it.
+    Returns Cochran's Q, heterogeneity variance tau^2, the conventional I^2
+    relative excess-dispersion statistic, and fixed/random-effects means.
+    Errors must be independent and correctly calibrated for the reported
+    uncertainty and Q reference distribution. I^2 is not a literal variance
+    partition for arbitrary heterogeneous errors, nor a significance test.
     """
     y = np.asarray(y, float)
     se = np.asarray(se, float)
@@ -64,9 +65,9 @@ def random_effects(y, se):
 def digit_preference(values, decimals=2):
     """Chi-square test for uniformity of the final reported decimal digit.
 
-    A non-uniform final digit indicates rounding in the source literature. It
-    says nothing on its own about any particular value; use round_number_excess
-    for that.
+    Rejection is evidence against a uniform-digit reference, conditional on
+    independent values. Rounding, source conventions and distribution shape
+    can all affect digits; this test cannot establish their cause.
     """
     v = np.asarray(values, float)
     v = v[np.isfinite(v)]
@@ -110,20 +111,20 @@ def round_number_excess(values, target, grid=0.01, step=0.10, window=4,
         nb = [count(val + k * grid) for k in range(-window, window + 1) if k != 0]
         base = float(np.mean(nb))
         out[val] = dict(count=count(val), local_baseline=base,
-                        excess_ratio=float(count(val) / base) if base > 0 else float('nan'))
+                        excess_ratio=float(count(val) / base) if base > 0 else None)
 
     tgt = round(float(target), dec)
     if tgt not in out:
         raise ValueError(f'target {target} is not a multiple of step {step} in range')
     others = [d['excess_ratio'] for k, d in out.items()
-              if k != tgt and np.isfinite(d['excess_ratio'])]
+              if k != tgt and d['excess_ratio'] is not None]
     at = out[tgt]['excess_ratio']
     return dict(per_value={str(k): d for k, d in out.items()},
                 target=tgt, excess_at_target=at,
-                median_excess_elsewhere=float(np.median(others)) if others else float('nan'),
+                median_excess_elsewhere=float(np.median(others)) if others else None,
                 n_other_round_values=len(others),
-                rank_of_target=int(sum(o >= at for o in others) + 1),
-                stands_out=bool(others and at > np.quantile(others, 0.9)))
+                rank_of_target=int(sum(o >= at for o in others) + 1) if at is not None else None,
+                stands_out=bool(at is not None and others and at > np.quantile(others, 0.9)))
 
 
 # ---------------------------------------------------------------------------
@@ -145,35 +146,83 @@ def _unit_family(name, nu=None):
     raise ValueError(f'unknown family {name}')
 
 
-def _loglik(y, se, mu, tau, family, nu=None, n_nodes=241, width=12.0):
-    """Log-likelihood of y = latent + N(0, se^2), by quadrature over the latent.
+def _mixture_integral(fn, shape):
+    """Integrate over a mean-one Gamma variable, on a scaled log coordinate.
 
-    The Gaussian case is closed form; the others are integrated on a fixed grid
-    wide enough to cover the heavy tails at the scales used here.
+    Gaussian scale mixtures avoid an under-resolved latent grid when some
+    measurement errors are much smaller than the latent dispersion. The log
+    coordinate also retains the Student distribution's unbounded tails.
     """
-    if tau <= 0:
-        tau = 1e-9
-    if family == 'gaussian':
-        v = tau ** 2 + se ** 2
+    root = np.sqrt(shape)
+    constant = shape * np.log(shape) - shape - gammaln(shape) - np.log(root)
+
+    def integrand(u):
+        z = u / root
+        if z > 700:
+            return fn(0.0) * 0.0
+        logweight = shape * (z - np.expm1(z)) + constant
+        if logweight < -740:
+            return fn(0.0) * 0.0
+        return np.exp(logweight) * fn(z)
+
+    value, error, info = quad_vec(integrand, -np.inf, np.inf,
+                                  epsabs=1e-10, epsrel=1e-9, full_output=True)
+    if not info.success or not np.all(np.isfinite(value)):
+        raise ArithmeticError(f'convolution integration failed: {info.message}')
+    return value
+
+
+def _mixture_logvariance(logscale, tau, se, family, nu):
+    if family == 'laplace':
+        loglatent = 2 * np.log(tau) + logscale
+    elif family == 'student_t':
+        loglatent = 2 * np.log(tau) + np.log((nu - 2) / nu) - logscale
+    else:
+        raise ValueError(f'unknown family {family}')
+    with np.errstate(divide='ignore'):
+        return np.logaddexp(2 * np.log(se), loglatent)
+
+
+def _loglik(y, se, mu, tau, family, nu=None):
+    """Independent-observation convolution log likelihood.
+
+    Laplace is a normal variance mixture with exponential mixing; Student t
+    uses inverse-gamma mixing. Adaptive integration covers the full support.
+    It does not turn dependent spectra into independent observations.
+    """
+    y, se = np.asarray(y, float), np.asarray(se, float)
+    _unit_family(family, nu)  # validate the family even at the zero-variance boundary
+    if tau <= 0 or family == 'gaussian':
+        v = max(tau, 0) ** 2 + se ** 2
         return float(np.sum(-0.5 * np.log(2 * np.pi * v) - (y - mu) ** 2 / (2 * v)))
-    f = _unit_family(family, nu)
-    z = np.linspace(-width, width, n_nodes)
-    dz = z[1] - z[0]
-    prior = f(z)
-    prior = prior / (prior.sum() * dz)
-    s = mu + tau * z
-    d = (y[:, None] - s[None, :]) / se[:, None]
-    # latent = mu + tau*Z, so f(s) ds = f_unit(z) dz: no extra Jacobian factor.
-    lik = (np.exp(-0.5 * d ** 2) / (se[:, None] * np.sqrt(2 * np.pi))) @ (prior * dz)
-    return float(np.sum(np.log(np.maximum(lik, 1e-300))))
+    residual = y - mu
+    # Scaling by a nearby density makes quadrature relative accuracy meaningful
+    # even for observations deep in the tails.
+    scale = np.hypot(tau, se)
+    if family == 'student_t':
+        ref = _t.logpdf(residual / scale, df=nu) - np.log(scale)
+        shape = nu / 2
+    else:
+        ref = _laplace.logpdf(residual, scale=scale / np.sqrt(2))
+        shape = 1.0
+
+    def density(logscale):
+        lv = _mixture_logvariance(logscale, tau, se, family, nu)
+        logpdf = -0.5 * (np.log(2 * np.pi) + lv + residual ** 2 * np.exp(-lv))
+        return np.exp(logpdf - ref)
+
+    relative = _mixture_integral(density, shape)
+    if np.any(relative <= 0):
+        raise ArithmeticError('convolution density underflow')
+    return float(np.sum(np.log(relative) + ref))
 
 
 def latent_shape(y, se, families=('gaussian', 'laplace', 'student_t'), nu_grid=(3, 4, 5, 8, 15)):
     """Which latent shape best explains estimates y with known errors se?
 
-    Under a hypothesis constraining only the mean and variance of the latent
-    quantity, maximum entropy makes the latent Gaussian. Heavier-observed tails
-    than that imply structure beyond two moments.
+    Gaussianity is an additional modeling choice, not a consequence of a
+    hypothesis about the ensemble mean. AIC compares the supplied candidates;
+    its winner is not an absolute goodness-of-fit or adequacy test.
 
     The comparison is against the *convolution* of each latent shape with the
     reported measurement errors, not against the raw histogram, since the
@@ -181,6 +230,10 @@ def latent_shape(y, se, families=('gaussian', 'laplace', 'student_t'), nu_grid=(
     """
     y = np.asarray(y, float)
     se = np.asarray(se, float)
+    if y.shape != se.shape or y.ndim != 1:
+        raise ValueError('y and se must be aligned one-dimensional arrays')
+    if 'gaussian' not in families:
+        raise ValueError('families must include the Gaussian reference')
     ok = np.isfinite(y) & np.isfinite(se) & (se > 0)
     y, se = y[ok], se[ok]
     if len(y) < 20:
@@ -196,6 +249,8 @@ def latent_shape(y, se, families=('gaussian', 'laplace', 'student_t'), nu_grid=(
             r = minimize(nll, [float(np.median(y)), float(np.std(y, ddof=1))],
                          method='Nelder-Mead',
                          options=dict(maxiter=2000, xatol=1e-8, fatol=1e-8))
+            if not r.success or not np.isfinite(r.fun):
+                raise RuntimeError(f'{fam} optimization failed: {r.message}')
             k = 2 + (1 if fam == 'student_t' else 0)
             rec = dict(mu=float(r.x[0]), tau=float(abs(r.x[1])), nu=nu,
                        loglike=float(-r.fun), k_params=k,
@@ -214,34 +269,45 @@ def latent_shape(y, se, families=('gaussian', 'laplace', 'student_t'), nu_grid=(
                     mean=float(z.mean()), sd=float(z.std(ddof=1)),
                     skew=float(((z - z.mean()) ** 3).mean() / z.std() ** 3),
                     excess_kurtosis=float(((z - z.mean()) ** 4).mean() / z.std() ** 4 - 3.0)),
-                maxent_consistent=bool(ranked[0][0] == 'gaussian'))
+                gaussian_best_by_aic=bool(ranked[0][0] == 'gaussian'),
+                inference_note='Working independence likelihood; AIC ranks candidates and '
+                               'does not establish model adequacy. Student degrees of '
+                               'freedom are selected on a grid; its AIC penalty is approximate.')
 
 
-def predicted_pass_fraction(tolerances, tau, family='gaussian', nu=None):
-    """Fraction of systems an ensemble hypothesis predicts will pass individually.
+def predicted_pass_fraction(tolerances, tau, family='gaussian', nu=None,
+                            se=None, mu=0.0):
+    """Expected fraction inside symmetric tolerances under a specified model.
 
-    Given latent departures with mean zero and dispersion tau, and a per-system
-    tolerance, this is the share expected to fall inside their own tolerance.
-    A hypothesis about the ensemble mean therefore *predicts* the individual
-    failure rate, and can be refuted by it.
+    `mu` is the latent mean departure from the target. With supplied standard
+    errors this predicts *observed* passes after measurement error; without
+    them it predicts latent passes. Compare observations and tolerances from
+    exactly the same sample. Fitting these parameters to that sample yields a
+    descriptive consistency check, not an independent prediction.
     """
     tol = np.asarray(tolerances, float)
-    tol = tol[np.isfinite(tol) & (tol > 0)]
-    if len(tol) == 0 or tau <= 0:
-        raise ValueError('Positive tolerances and tau required')
+    if tol.ndim != 1 or not len(tol) or np.any(~np.isfinite(tol) | (tol <= 0)):
+        raise ValueError('Positive finite one-dimensional tolerances required')
+    if not np.isfinite(tau) or tau <= 0 or not np.isfinite(mu):
+        raise ValueError('Positive finite tau and finite mu required')
+    _unit_family(family, nu)
+    errors = np.zeros_like(tol) if se is None else np.asarray(se, float)
+    if errors.shape != tol.shape or np.any(~np.isfinite(errors) | (errors < 0)):
+        raise ValueError('se must be aligned finite nonnegative errors')
+
+    def normal_pass(sd):
+        return ndtr((tol - mu) / sd) - ndtr((-tol - mu) / sd)
+
     if family == 'gaussian':
-        frac = 2 * _norm.cdf(tol / tau) - 1
-    elif family == 'laplace':
-        frac = 1 - np.exp(-np.sqrt(2.0) * tol / tau)
-    elif family == 'student_t':
-        if nu is None or nu <= 2:
-            raise ValueError('student_t needs nu > 2')
-        c = np.sqrt(nu / (nu - 2.0))
-        frac = 2 * _t.cdf(tol / tau * c, df=nu) - 1
+        frac = normal_pass(np.hypot(tau, errors))
     else:
-        raise ValueError(f'unknown family {family}')
+        def conditional(logscale):
+            lv = _mixture_logvariance(logscale, tau, errors, family, nu)
+            return normal_pass(np.exp(lv / 2))
+        frac = _mixture_integral(conditional, 1.0 if family == 'laplace' else nu / 2)
     return dict(mean_predicted_fraction=float(np.mean(frac)),
-                median_tolerance=float(np.median(tol)), tau=float(tau),
+                median_tolerance=float(np.median(tol)), tau=float(tau), mu=float(mu),
+                measurement_error_included=se is not None,
                 family=family, n=int(len(tol)))
 
 
@@ -265,6 +331,8 @@ def variance_components(y, se, group):
     y = np.asarray(y, float)
     se = np.asarray(se, float)
     group = np.asarray(group)
+    if y.ndim != 1 or y.shape != se.shape or y.shape != group.shape:
+        raise ValueError('y, se and group must be aligned one-dimensional arrays')
     ok = np.isfinite(y) & np.isfinite(se) & (se >= 0)
     y, se, group = y[ok], se[ok], group[ok]
     if len(y) < 5:
@@ -298,6 +366,8 @@ def variance_components(y, se, group):
                      options=dict(maxiter=4000, xatol=1e-9, fatol=1e-9))
         if best is None or r.fun < best.fun:
             best = r
+    if not best.success or not np.isfinite(best.fun):
+        raise RuntimeError(f'variance-component optimization failed: {best.message}')
     tb, tw = abs(float(best.x[1])), abs(float(best.x[2]))
     out = dict(n=int(len(y)), n_groups=int(len(groups)),
                groups_with_repeats=int((sizes > 1).sum()),
@@ -311,6 +381,6 @@ def variance_components(y, se, group):
                    if (tb ** 2 + tw ** 2) > 0 else float('nan'))
     else:
         out.update(tau_between=None, tau_within=None, fraction_between=None,
-                   note='every group observed once: components confounded, '
-                        'only their sum is identified')
+                   note='fewer than two groups have repeats; the design is insufficient '
+                        'for a reported between/within split')
     return out

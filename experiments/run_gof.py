@@ -1,8 +1,8 @@
 """Goodness-of-fit and equivalence tests on the three pilot systems.
 
-Distribution fits use the domains declared in configs/pilot.json. No domain is
-re-selected here: choosing a range after seeing a result is the failure mode
-this project treats as a dead end, and it would invalidate the p-values.
+Distribution fits use configs/pilot.json. These remain exploratory analyses;
+fixed runner settings do not establish prospective registration. Bootstrap
+calibration assumes iid observations, despite possible event dependence.
 
 Outputs results/gof.json and results/gof.png.
 """
@@ -39,9 +39,10 @@ def slope_of(s):
     return float(np.polyfit(np.log(s['center']), np.log(s['phi']), 1)[0])
 
 
-def equivalence_block(centers, phi, draws, label):
+def equivalence_block(centers, phi, draws, label, domain, phi_draws=None):
     return {f'tolerance_{t}': flatness_equivalence(centers, phi, tolerance_factor=t,
-                                                   slope_draws=draws)
+                                                   slope_draws=draws, domain=domain,
+                                                   phi_draws=phi_draws)
             for t in TOLERANCES} | {'label': label}
 
 
@@ -61,11 +62,14 @@ def noaa():
               & (ev.duration_s > 0)].copy()
     edges = np.geomspace(lo, hi, int(np.ceil(np.log10(hi / lo) * SPEC['noaa']['bins_per_decade'])) + 1)
     s = resource_spectrum(pair.xrsb_irrad, pair.integrated_irrad_end, edges)
-    draws = np.array([slope_of(resource_spectrum(t.xrsb_irrad, t.integrated_irrad_end, edges))
-                      for t in (blocks(pair, 'month') for _ in range(B))])
+    spectra = [resource_spectrum(t.xrsb_irrad, t.integrated_irrad_end, edges)
+               for t in (blocks(pair, 'month') for _ in range(B))]
+    draws = np.array([slope_of(s) for s in spectra])
     return dict(distribution=gof,
                 equivalence=equivalence_block(s['center'], s['phi'], draws,
-                                              'End fluence occupancy, 2023-2024'),
+                                              'End fluence occupancy, 2023-2024',
+                                              (edges[0], edges[-1]),
+                                              np.array([s['phi'] for s in spectra])),
                 n_events=int(len(ev)), n_paired=int(len(pair)))
 
 
@@ -78,27 +82,27 @@ def usgs():
     a['energy_proxy_J'] = 10 ** (4.8 + 1.5 * a.mag)
 
     mag_edges = np.arange(5.45, 9.5, 0.5)
-    e_lo, e_hi = 10 ** (4.8 + 1.5 * mag_edges[0]), 10 ** (4.8 + 1.5 * mag_edges[-1])
-    inside = a[(a.energy_proxy_J >= e_lo) & (a.energy_proxy_J <= e_hi)]
-    gof = compare_alternatives(inside.energy_proxy_J.to_numpy(), e_lo, e_hi,
-                               n_boot=N_BOOT_GOF, seed=SPEC['seed'])
-
     edges = 10 ** (4.8 + 1.5 * mag_edges)
     s = resource_spectrum(a.energy_proxy_J, a.energy_proxy_J, edges)
-    draws = np.array([slope_of(resource_spectrum(t.energy_proxy_J, t.energy_proxy_J, edges))
-                      for t in (blocks(a, 'year') for _ in range(B))])
+    spectra = [resource_spectrum(t.energy_proxy_J, t.energy_proxy_J, edges)
+               for t in (blocks(a, 'year') for _ in range(B))]
+    draws = np.array([slope_of(s) for s in spectra])
     b, n = rounded_gr_b(a.mag, 5.5)
     disc = {f'threshold_{c}': discrete_gr_gof(a.mag.to_numpy(), c,
                                               SPEC['usgs']['rounding_step'],
                                               n_boot=N_BOOT_GOF, seed=SPEC['seed'])
             for c in SPEC['usgs']['fit_thresholds']}
-    return dict(distribution=gof, discrete=disc,
+    return dict(distribution=None, discrete=disc,
+                distribution_exclusion='Continuous KS calibration is invalid for tied '
+                                       'magnitude-derived energies; use discrete results.',
                 equivalence=equivalence_block(s['center'], s['phi'], draws,
-                                              'Magnitude-derived energy occupancy'),
+                                              'Magnitude-derived energy occupancy',
+                                              (edges[0], edges[-1]),
+                                              np.array([s['phi'] for s in spectra])),
                 gutenberg_richter_b=b, n_events=int(n),
                 note='Energy is inferred from magnitude, so the power-law form is '
-                     'largely imposed by the conversion; the goodness-of-fit test '
-                     'here is far weaker evidence than the occupancy test.')
+                     'equivalent to the discrete Gutenberg-Richter hypothesis. '
+                     'Its iid calibration does not account for earthquake clustering.')
 
 
 def ocean():
@@ -107,9 +111,12 @@ def ocean():
     phi = f.phi.to_numpy()
     plateau = (f.log10_mass_g >= -10.5) & (f.log10_mass_g <= 4.5)
     return dict(
-        full_range=equivalence_block(k, phi, None, 'All 23 published bins'),
-        plateau=equivalence_block(k[plateau.to_numpy()], phi[plateau.to_numpy()], None,
-                                  'Post hoc subrange 1e-10.5 to 1e4.5 g'),
+        full_range=equivalence_block(k, phi, None, 'All 23 published bins',
+                                     (k[0] / np.sqrt(10), k[-1] * np.sqrt(10))),
+        plateau=equivalence_block(k[plateau.to_numpy()],
+                                  phi[plateau.to_numpy()] / phi[plateau.to_numpy()].mean(), None,
+                                  'Post hoc subrange: bin centers 1e-10.5 to 1e4.5 g',
+                                  (1e-11, 1e5)),
         note='No distribution test: the source is a binned model-assisted '
              'reconstruction, not individual observations, so there is no sampling '
              'model and no interval is available. The plateau subrange was chosen '
@@ -144,25 +151,30 @@ def figure(res):
 
 
 def main():
+    OUT.mkdir(exist_ok=True)
     plt.rcParams.update({'font.size': 9, 'font.family': 'DejaVu Sans'})
     res = dict(
         protocol=dict(
             domains='Declared in configs/pilot.json; never re-selected here',
             gof_bootstrap=N_BOOT_GOF, slope_bootstrap=B, seed=SPEC['seed'],
             tolerances=TOLERANCES,
-            criteria='Flatness requires BOTH slope equivalence (TOST) and bounded '
-                     'departure (max |ln Phi| within tolerance).'),
+            criteria='Positive equivalence requires BOTH a slope interval within tolerance '
+                     'and an uncertainty upper bound for max |ln Phi| within tolerance. '
+                     'Failure to establish equivalence does not establish inequivalence.'),
         noaa=noaa(), usgs=usgs(), ocean=ocean())
     (OUT / 'gof.json').write_text(json.dumps(res, indent=2, default=float))
     figure(res)
 
     print('\n=== POWER-LAW GOODNESS OF FIT (declared domains) ===')
-    for k in ('noaa', 'usgs'):
+    for k in ('noaa',):
         g = res[k]['distribution']
         gf = g['goodness_of_fit']
         print(f"{k.upper():6} alpha={gf['alpha']:.3f} n={gf['n']} KS={gf['ks']:.4f} "
               f"p={gf['p_value']:.3f} -> {'RULED OUT' if gf['ruled_out'] else 'not ruled out'}")
         for c in g['comparisons']:
+            if 'error' in c:
+                print(f"       vs {c['against']}: fit failed: {c['error']}")
+                continue
             print(f"       vs {c['against']:<22} LR={c['loglike_ratio']:+9.1f} "
                   f"p={c['p_value']:.4f}  favours {c['favours']}")
 

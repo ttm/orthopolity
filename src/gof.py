@@ -22,7 +22,7 @@ likelihood ratios compare like with like.
 """
 import numpy as np
 from scipy.optimize import minimize, minimize_scalar
-from scipy.special import erfc, expm1, log_ndtr
+from scipy.special import erfc, expm1
 from scipy.stats import norm
 
 __all__ = ['fit_powerlaw', 'fit_lognormal', 'fit_exponential', 'fit_weibull',
@@ -35,7 +35,7 @@ _TINY = 1e-12
 
 def _check(x, lo, hi):
     x = np.asarray(x, float)
-    if lo <= 0 or hi <= lo:
+    if not np.isfinite([lo, hi]).all() or lo <= 0 or hi <= lo:
         raise ValueError('Domain must satisfy 0 < lo < hi')
     if x.ndim != 1 or len(x) < 2 or not np.all(np.isfinite(x)):
         raise ValueError('At least two finite observations required')
@@ -76,7 +76,7 @@ def fit_powerlaw(x, lo, hi):
     if not fit.success:
         raise RuntimeError('Bounded power-law fit failed')
     return dict(name='power_law', params=dict(alpha=float(1 + fit.x)),
-                loglike=float(-len(x) * fit.fun))
+                loglike=float(-len(x) * fit.fun - np.log(x).sum()))
 
 
 def _pl_cdf(x, alpha, lo, hi):
@@ -148,7 +148,7 @@ def fit_lognormal(x, lo, hi):
     starts = [[lx.mean(), lx.std() + 1e-3], [lx.mean(), 2 * lx.std() + 1e-3],
               [np.log(lo), 1.0]]
     r = _trunc_fit(x, lo, hi, logpdf, starts, 'lognormal', ['mu', 'sigma'])
-    r['params']['sigma'] = abs(r['params']['sigma'])
+    r['params']['sigma'] = abs(r['params']['sigma']) + _TINY
     return r
 
 
@@ -170,21 +170,38 @@ def fit_exponential(x, lo, hi):
 
 
 def fit_weibull(x, lo, hi):
-    """Stretched exponential (Weibull) truncated to [lo, hi]; scale, shape."""
-    def logpdf(xx, p):
-        scale, beta = abs(p[0]) + _TINY, abs(p[1]) + _TINY
-        core = (np.log(beta) - np.log(scale) + (beta - 1) * (np.log(xx) - np.log(scale))
-                - (xx / scale) ** beta)
-        mass = np.exp(-(lo / scale) ** beta) - np.exp(-(hi / scale) ** beta)
-        if mass <= _TINY:
-            return np.full_like(xx, -np.inf)
-        return core - np.log(mass)
+    """Truncated Weibull in dimensionless shape/hazard coordinates.
 
-    m = np.mean(np.asarray(x, float))
-    starts = [[m, 1.0], [m, 0.5], [lo, 0.3]]
-    r = _trunc_fit(x, lo, hi, logpdf, starts, 'stretched_exponential', ['scale', 'beta'])
-    r['params'] = {k: abs(v) for k, v in r['params'].items()}
-    return r
+    h = beta*(lo/scale)**beta is the log-coordinate hazard at the lower
+    boundary. This parameterization avoids subtracting tiny survival masses
+    and avoids a unit-dependent additive floor on scale. Near beta=0 the
+    family approaches a power law; report that numerical boundary explicitly.
+    """
+    x = _check(x, lo, hi)
+    # Optimize in x/lo so parameter estimates are invariant to physical units.
+    relative = x / lo
+    bounds = [(np.log(1e-8), np.log(1e4)), (np.log(1e-6), np.log(100))]
+
+    def nll(p):
+        with np.errstate(all='ignore'):
+            values = _we_logpdf(relative, dict(hazard_at_lo=np.exp(p[0]),
+                                              beta=np.exp(p[1])), 1.0, hi / lo)
+        return -float(values.sum()) if np.isfinite(values).all() else 1e100
+
+    fits = [minimize(nll, np.log([h, beta]), method='Nelder-Mead', bounds=bounds,
+                     options=dict(maxiter=4000, xatol=1e-9, fatol=1e-9))
+            for h, beta in [(1, .05), (1, .5), (1, 1), (.1, 2)]]
+    successful = [r for r in fits if r.success and np.isfinite(r.fun) and r.fun < 1e99]
+    if not successful:
+        raise RuntimeError('Truncated Weibull fit failed')
+    best = min(successful, key=lambda r: r.fun)
+    h, beta = np.exp(best.x)
+    fit = dict(name='stretched_exponential',
+               params=dict(hazard_at_lo=float(h), beta=float(beta)),
+               parameterization='h=beta*(lo/scale)^beta; dimensionless relative to declared lo',
+               power_law_boundary=bool(beta < 1e-5))
+    fit['loglike'] = float(_we_logpdf(x, fit['params'], lo, hi).sum())
+    return fit
 
 
 _LOGPDF = {
@@ -210,11 +227,13 @@ def _ex_logpdf(x, p, lo, hi):
 
 
 def _we_logpdf(x, p, lo, hi):
-    scale, beta = p['scale'], p['beta']
-    core = (np.log(beta) - np.log(scale) + (beta - 1) * (np.log(x) - np.log(scale))
-            - (x / scale) ** beta)
-    mass = np.exp(-(lo / scale) ** beta) - np.exp(-(hi / scale) ** beta)
-    return core - np.log(mass)
+    beta = p['beta']
+    # The fallback supports historical stored fits, without adding a scale floor.
+    h = p['hazard_at_lo'] if 'hazard_at_lo' in p else beta * (lo / p['scale']) ** beta
+    z, L = np.log(np.asarray(x, float) / lo), np.log(hi / lo)
+    delta = h * np.expm1(beta * z) / beta
+    delta_max = h * np.expm1(beta * L) / beta
+    return np.log(h) + beta * z - np.log(x) - delta - np.log(-np.expm1(-delta_max))
 
 
 def logpdf_of(fit, x, lo, hi):
@@ -236,15 +255,24 @@ def ks_distance(x, alpha, lo, hi):
     return float(max(np.max(upper - cdf), np.max(cdf - lower)))
 
 
+def _check_n_boot(n_boot):
+    if isinstance(n_boot, bool) or not isinstance(n_boot, (int, np.integer)) or n_boot < 1:
+        raise ValueError('n_boot must be a positive integer')
+
+
 def powerlaw_gof(x, lo, hi, n_boot=500, seed=0):
     """Parametric bootstrap p-value for the bounded power law (CSN procedure).
 
-    p is the fraction of synthetic datasets, drawn from the fitted model and
-    refitted, whose KS distance is at least the observed one. Following CSN,
+    p is (1 + exceedances)/(1 + n_boot) for synthetic datasets drawn from the
+    fitted model and refitted. This finite-simulation correction avoids zero
+    p-values; fitting nuisance parameters still makes calibration approximate.
+    The bootstrap assumes independent identically distributed observations.
+    Following CSN,
     p <= 0.1 rules the power law out; p > 0.1 means it cannot be ruled out,
     which is not the same as support.
     """
     x = _check(x, lo, hi)
+    _check_n_boot(n_boot)
     fit = fit_powerlaw(x, lo, hi)
     alpha = fit['params']['alpha']
     ks = ks_distance(x, alpha, lo, hi)
@@ -257,10 +285,14 @@ def powerlaw_gof(x, lo, hi, n_boot=500, seed=0):
         a_s = fit_powerlaw(xs, lo, hi)['params']['alpha']
         draws[i] = ks_distance(xs, a_s, lo, hi)
         worse += draws[i] >= ks
-    return dict(alpha=alpha, n=n, ks=ks, p_value=float(worse / n_boot),
+    p_value = float((worse + 1) / (n_boot + 1))
+    return dict(alpha=alpha, n=n, ks=ks, p_value=p_value,
+                exceedances=int(worse),
                 n_boot=n_boot, ks_synthetic_median=float(np.median(draws)),
-                ruled_out=bool(worse / n_boot <= 0.1),
-                note='p <= 0.1 rules the power law out; p > 0.1 is non-rejection, not support')
+                ruled_out=bool(p_value <= 0.1),
+                note='Approximate iid parametric bootstrap, p=(exceedances+1)/(B+1). '
+                     'p <= 0.1 rejects the fitted power law under those assumptions; '
+                     'p > 0.1 is non-rejection, not support.')
 
 
 def vuong(x, fit1, fit2, lo, hi):
@@ -270,7 +302,7 @@ def vuong(x, fit1, fit2, lo, hi):
     comparison is inconclusive, which is the common outcome for power law
     against lognormal over a narrow range.
     """
-    x = np.asarray(x, float)
+    x = _check(x, lo, hi)
     l1 = logpdf_of(fit1, x, lo, hi)
     l2 = logpdf_of(fit2, x, lo, hi)
     d = l1 - l2
@@ -282,9 +314,11 @@ def vuong(x, fit1, fit2, lo, hi):
                     p_value=1.0, favours='inconclusive')
     stat = R / (np.sqrt(n) * sd)
     p = float(erfc(abs(stat) / np.sqrt(2)))
-    fav = 'inconclusive' if p > 0.05 else ('power_law' if R > 0 else fit2['name'])
+    fav = 'inconclusive' if p > 0.05 else (fit1['name'] if R > 0 else fit2['name'])
     return dict(against=fit2['name'], loglike_ratio=R, statistic=float(stat),
-                p_value=p, favours=fav)
+                p_value=p, favours=fav,
+                caveat='Nominal iid non-nested Vuong calibration; not justified for '
+                       'dependent observations or overlapping/boundary-limit models.')
 
 
 def compare_alternatives(x, lo, hi, n_boot=500, seed=0):
@@ -302,6 +336,12 @@ def compare_alternatives(x, lo, hi, n_boot=500, seed=0):
         r = vuong(x, pl, fit, lo, hi)
         r['params'] = fit['params']
         r['loglike'] = fit['loglike']
+        if 'power_law_boundary' in fit:
+            r['power_law_boundary'] = fit['power_law_boundary']
+            r['parameterization'] = fit['parameterization']
+            if fit['power_law_boundary']:
+                r['caveat'] += ' Weibull optimum is at a numerical power-law limit; nominal p-value is not calibrated here.'
+                r['favours'] = 'inconclusive (boundary limit)'
         alts.append(r)
     return dict(domain=[lo, hi], power_law=dict(**pl['params'], loglike=pl['loglike']),
                 goodness_of_fit=gof, comparisons=alts)
@@ -312,69 +352,102 @@ def compare_alternatives(x, lo, hi, n_boot=500, seed=0):
 # --------------------------------------------------------------------------
 
 def flatness_equivalence(centers, phi, tolerance_factor=1.25, slope_draws=None,
-                         alpha_level=0.05):
-    """Test a resource spectrum for flatness against a declared tolerance.
+                         alpha_level=0.05, domain=None, phi_draws=None):
+    """Assess slope equivalence and simultaneous departure over declared bins.
 
-    Two criteria, both required:
+    The slope tolerance is ln(factor)/ln(hi/lo). Pass bin *boundaries* as
+    ``domain=(lo, hi)``; otherwise the declared domain is the center span.
+    A 1-2*alpha slope interval must lie strictly within that tolerance.
 
-    - Slope equivalence (TOST). The declared tolerance is a maximum systematic
-      drift by `tolerance_factor` across the whole domain, which corresponds to
-      |s| <= ln(factor)/ln(hi/lo) for a residual spectrum Phi proportional to
-      k**s. Equivalence is concluded when a (1 - 2*alpha_level) interval for
-      the slope lies entirely inside the tolerance band.
-    - Bounded departure. max |ln Phi| <= ln(factor). A spectrum can undulate
-      with zero fitted slope, so the slope criterion alone is not sufficient.
+    The observed max(abs(log(phi))) is descriptive. A positive overall verdict
+    additionally requires ``phi_draws``: aligned bootstrap or uncertainty-model
+    replicates of the ENTIRE normalized spectrum. Their 1-alpha quantile of
+    max(abs(log(phi))) supplies an approximate simultaneous upper bound.
+    Calibration inherits the supplied resampling/model assumptions; model
+    uncertainty draws do not become empirical confidence intervals.
 
-    `slope_draws` are bootstrap replicates of the slope. Without them no
-    interval is available and the slope verdict is reported as unavailable.
+    Empty bins are retained, prevent a finite log-slope fit, and fail the
+    observed departure criterion. Failed slope replicates are counted and
+    never silently discarded to manufacture a positive equivalence result.
     """
     centers = np.asarray(centers, float)
     phi = np.asarray(phi, float)
-    if centers.shape != phi.shape or len(phi) < 3:
-        raise ValueError('Aligned arrays with at least three bins required')
-    if tolerance_factor <= 1:
-        raise ValueError('Tolerance factor must exceed 1')
-    good = np.isfinite(phi) & (phi > 0)
-    if good.sum() < 3:
-        raise ValueError('At least three positive finite bins required')
+    if centers.ndim != 1 or centers.shape != phi.shape or len(phi) < 3:
+        raise ValueError('Aligned one-dimensional arrays with at least three bins required')
+    if not np.all(np.isfinite(centers)) or np.any(centers <= 0) or np.any(np.diff(centers) <= 0):
+        raise ValueError('Centers must be finite, positive and strictly increasing')
+    if not np.all(np.isfinite(phi)) or np.any(phi < 0):
+        raise ValueError('Phi must be finite and nonnegative; missing bins need an explicit policy')
+    if not np.isfinite(tolerance_factor) or tolerance_factor <= 1:
+        raise ValueError('Tolerance factor must be finite and exceed 1')
+    if not np.isfinite(alpha_level) or not 0 < alpha_level < 0.5:
+        raise ValueError('alpha_level must lie strictly between 0 and 0.5')
+    lo, hi = (centers[0], centers[-1]) if domain is None else domain
+    if not np.isfinite([lo, hi]).all() or not 0 < lo < hi or lo > centers[0] or hi < centers[-1]:
+        raise ValueError('A finite positive domain containing all centers is required')
 
-    span = np.log(centers[good].max() / centers[good].min())
+    span = np.log(hi) - np.log(lo)
     s_tol = float(np.log(tolerance_factor) / span)
-    lx, ly = np.log(centers[good]), np.log(phi[good])
-    slope = float(np.polyfit(lx, ly, 1)[0])
-
-    departure = float(np.max(np.abs(ly)))
-    dep_ok = bool(departure <= np.log(tolerance_factor))
-
-    out = dict(tolerance_factor=tolerance_factor, slope_tolerance=s_tol,
-               slope=slope, n_bins=int(good.sum()), empty_bins=int((~good).sum()),
+    empty = int(np.count_nonzero(phi == 0))
+    ly = np.log(phi) if not empty else None
+    slope = float(np.polyfit(np.log(centers), ly, 1)[0]) if not empty else None
+    departure = float(np.max(np.abs(ly))) if not empty else None
+    dep_ok = bool(not empty and departure <= np.log(tolerance_factor))
+    out = dict(tolerance_factor=float(tolerance_factor), slope_tolerance=s_tol,
+               domain=[float(lo), float(hi)],
+               span_basis='declared boundaries' if domain is not None else 'center extrema',
+               slope=slope, n_bins=len(phi), empty_bins=empty,
                max_abs_log_departure=departure,
                departure_tolerance=float(np.log(tolerance_factor)),
                departure_within_tolerance=dep_ok,
-               phi_min=float(phi[good].min()), phi_max=float(phi[good].max()),
-               phi_ratio=float(phi[good].max() / phi[good].min()))
+               departure_upper_bound=None, departure_equivalent=None,
+               phi_min=float(phi.min()), phi_max=float(phi.max()),
+               phi_ratio=float(phi.max() / phi.min()) if not empty else None,
+               slope_ci=None, slope_equivalent=None,
+               verdict='unavailable: no sampling model for an interval',
+               note='Observed departures alone do not establish population equivalence. '
+                    'Failure to establish equivalence is not evidence of inequivalence.')
 
-    if slope_draws is None:
-        out.update(slope_ci=None, slope_equivalent=None,
-                   verdict='unavailable: no sampling model for an interval')
+    if phi_draws is not None:
+        pd = np.asarray(phi_draws, float)
+        if pd.ndim != 2 or pd.shape[1] != len(phi) or len(pd) < 20:
+            raise ValueError('At least 20 full-spectrum replicates aligned with the bins required')
+        if not np.isfinite(pd).all() or np.any(pd < 0):
+            raise ValueError('Spectrum replicates must be finite and nonnegative')
+        # Zero resource in any replicate is infinite log departure, not a missing bin.
+        with np.errstate(divide='ignore'):
+            maxima = np.max(np.abs(np.log(pd)), axis=1)
+        # An order-statistic quantile avoids interpolation of infinity.
+        upper = float(np.quantile(maxima, 1 - alpha_level, method='higher'))
+        out.update(departure_upper_bound=upper if np.isfinite(upper) else None,
+                   departure_equivalent=bool(upper < np.log(tolerance_factor)),
+                   n_spectrum_draws=len(pd),
+                   departure_bound_level=float(1 - alpha_level))
+
+    if empty:
+        out.update(verdict='equivalence not established: empty resource bins',
+                   failed_criterion='empty bins')
         return out
-
+    if slope_draws is None:
+        return out
     d = np.asarray(slope_draws, float)
-    d = d[np.isfinite(d)]
-    if len(d) < 20:
-        out.update(slope_ci=None, slope_equivalent=None,
-                   verdict='unavailable: too few valid bootstrap replicates')
+    if d.ndim != 1:
+        raise ValueError('Slope replicates must be one-dimensional')
+    out.update(n_slope_draws=len(d), invalid_slope_draws=int(np.count_nonzero(~np.isfinite(d))))
+    if len(d) < 20 or not np.isfinite(d).all():
+        out['verdict'] = 'unavailable: insufficient or invalid slope replicates'
         return out
     ci = [float(v) for v in np.quantile(d, [alpha_level, 1 - alpha_level])]
     eq = bool(ci[0] > -s_tol and ci[1] < s_tol)
-    out.update(slope_ci=ci, slope_equivalent=eq, n_slope_draws=int(len(d)),
-               ci_level=f'{100*(1-2*alpha_level):.0f}% (TOST)',
-               verdict=('equivalent to flat' if (eq and dep_ok) else
-                        'not equivalent to flat'),
-               failed_criterion=(None if (eq and dep_ok) else
-                                 ('slope' if not eq else '') +
-                                 ('+' if (not eq and not dep_ok) else '') +
-                                 ('departure' if not dep_ok else '')))
+    out.update(slope_ci=ci, slope_equivalent=eq,
+               ci_level=f'{100*(1-2*alpha_level):.0f}% (TOST)')
+    if not eq or not dep_ok or out['departure_equivalent'] is False:
+        failed = ([] if eq else ['slope']) + ([] if dep_ok and out['departure_equivalent'] is not False else ['departure'])
+        out.update(verdict='equivalence not established', failed_criterion='+'.join(failed))
+    elif phi_draws is None:
+        out['verdict'] = 'unavailable: no uncertainty bound for whole-spectrum departure'
+    else:
+        out.update(verdict='equivalent to flat under supplied uncertainty model', failed_criterion=None)
     return out
 
 
@@ -399,8 +472,12 @@ def flatness_equivalence(centers, phi, tolerance_factor=1.25, slope_draws=None,
 
 def _to_grid(magnitudes, threshold, step=0.1):
     m = np.asarray(magnitudes, float)
-    if not np.all(np.isfinite(m)):
+    if m.ndim != 1 or not np.all(np.isfinite(m)):
         raise ValueError('Finite magnitudes required')
+    if not np.isfinite([threshold, step]).all() or step <= 0:
+        raise ValueError('A finite threshold and positive finite rounding step required')
+    if not np.isclose(threshold / step, np.round(threshold / step), rtol=0, atol=1e-8):
+        raise ValueError('Threshold must lie on the declared magnitude grid')
     mr = np.round(m / step) * step
     k = np.round((mr[mr >= threshold - 1e-8] - threshold) / step).astype(np.int64)
     if len(k) < 2:
@@ -410,13 +487,16 @@ def _to_grid(magnitudes, threshold, step=0.1):
 
 def geometric_mle(k):
     """MLE of q for P(K=k) = (1-q) q^k on non-negative integers."""
-    k = np.asarray(k, np.int64)
-    if k.min() < 0:
-        raise ValueError('Counts must be non-negative integers')
+    k = _check_counts(k)
     kbar = float(k.mean())
-    if kbar <= 0:
-        raise ValueError('Insufficient variation above the threshold')
     return kbar / (1.0 + kbar)
+
+
+def _check_counts(k):
+    k = np.asarray(k, float)
+    if k.ndim != 1 or not len(k) or not np.isfinite(k).all() or np.any(k < 0) or np.any(k != np.floor(k)):
+        raise ValueError('A nonempty one-dimensional array of non-negative integer counts required')
+    return k.astype(np.int64)
 
 
 def discrete_ks(k, q):
@@ -427,7 +507,9 @@ def discrete_ks(k, q):
     continuous fits would compare across a jump and inflate the statistic by
     roughly the size of the largest probability atom.
     """
-    k = np.asarray(k, np.int64)
+    k = _check_counts(k)
+    if not np.isfinite(q) or not 0 <= q < 1:
+        raise ValueError('Geometric parameter q must satisfy 0 <= q < 1')
     n = len(k)
     kmax = int(k.max())
     obs = np.bincount(k, minlength=kmax + 1)
@@ -449,7 +531,10 @@ def discrete_gr_gof(magnitudes, threshold, step=0.1, n_boot=500, seed=0):
     is a descriptive comparison and not a likelihood-ratio test.
     """
     k = _to_grid(magnitudes, threshold, step)
+    _check_n_boot(n_boot)
     q = geometric_mle(k)
+    if q == 0:
+        raise ValueError('An observed all-threshold catalogue has no finite b estimate')
     ks = discrete_ks(k, q)
     n = len(k)
 
@@ -473,13 +558,16 @@ def discrete_gr_gof(magnitudes, threshold, step=0.1, n_boot=500, seed=0):
         if best is None or cand['aic'] < best['aic']:
             best = cand
 
+    p_value = float((worse + 1) / (n_boot + 1))
     return dict(n=int(n), threshold=float(threshold), step=float(step),
                 q=float(q), b=float(-np.log10(q) / step), ks=ks,
-                p_value=float(worse / n_boot), n_boot=int(n_boot),
-                ruled_out=bool(worse / n_boot <= 0.1),
+                p_value=p_value, n_boot=int(n_boot), exceedances=int(worse),
+                ruled_out=bool(p_value <= 0.1),
                 loglike=ll, aic=float(2 * 1 - 2 * ll),
                 truncated=best,
                 delta_aic_truncated=float(best['aic'] - (2 * 1 - 2 * ll)),
                 note='Geometric on the rounded magnitude grid is exactly the '
                      'Gutenberg-Richter law; a power law in the magnitude-derived '
-                     'energy proxy is the same hypothesis. p <= 0.1 rules it out.')
+                     'energy proxy is the same hypothesis. Approximate iid parametric '
+                     'bootstrap, p=(exceedances+1)/(B+1); p <= 0.1 rejects under those '
+                     'assumptions. Clustering and completeness are not modelled.')

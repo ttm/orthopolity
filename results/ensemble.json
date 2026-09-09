@@ -22,7 +22,9 @@
     "median_se": 0.15892857142857142,
     "n_total": 1300,
     "all_spectra_sd": 0.27316883080897125,
-    "interpretation": "scatter is real between-system heterogeneity"
+    "n_studies": 11,
+    "interpretation": "Dispersion exceeds the supplied standard errors under a working independence model; study/site dependence, error calibration and source conventions remain possible contributors.",
+    "inference_note": "Q p-value and pooled CI assume independent estimates and are not valid study-cluster-adjusted inference."
   },
   "anchoring": {
     "fraction_reported_on_2dp_grid": 0.23076923076923078,
@@ -50,12 +52,12 @@
         "-2.0": {
           "count": 2,
           "local_baseline": 0.0,
-          "excess_ratio": NaN
+          "excess_ratio": null
         },
         "-1.9": {
           "count": 1,
           "local_baseline": 0.0,
-          "excess_ratio": NaN
+          "excess_ratio": null
         },
         "-1.8": {
           "count": 1,
@@ -145,7 +147,7 @@
         "-0.1": {
           "count": 0,
           "local_baseline": 0.0,
-          "excess_ratio": NaN
+          "excess_ratio": null
         }
       },
       "target": -1.0,
@@ -176,12 +178,6 @@
         "n": 53,
         "median_span_decades": 3.0102999566398116,
         "median_abs_departure": 0.19999999999999996
-      },
-      {
-        "study": "StudyID_07",
-        "n": 377,
-        "median_span_decades": 35.0,
-        "median_abs_departure": 0.04899999999999993
       },
       {
         "study": "StudyID_10",
@@ -261,75 +257,76 @@
         "quartile": 1,
         "span_decades": [
           0.9030899869919434,
-          2.791822014292395
+          2.687193714653188
         ],
-        "n": 325,
+        "n": 231,
         "n_studies": 5,
-        "median_abs_departure": 0.18999999999999995,
+        "median_abs_departure": 0.17799999999999994,
         "ci": [
           0.07999999999999996,
           0.6890000000000001
         ],
         "degenerate": false,
-        "tau": 0.31123766934323416
+        "tau": 0.3698405638763757
       },
       {
         "quartile": 2,
         "span_decades": [
-          2.791822014292395,
-          3.0591566729134962
+          2.687193714653188,
+          2.9393944374196264
         ],
-        "n": 325,
-        "n_studies": 4,
-        "median_abs_departure": 0.19199999999999995,
-        "ci": [
-          0.17600000000000005,
-          0.346
-        ],
-        "degenerate": false,
-        "tau": 0.2717891334243823
+        "n": 229,
+        "n_studies": 2,
+        "median_abs_departure": 0.18999999999999995,
+        "ci": null,
+        "degenerate": true,
+        "tau": 0.25217895245521776
       },
       {
         "quartile": 3,
         "span_decades": [
-          3.0591566729134962,
-          35.0
+          2.9393944374196264,
+          3.0981243382942347
         ],
-        "n": 273,
-        "n_studies": 9,
+        "n": 224,
+        "n_studies": 3,
         "median_abs_departure": 0.19999999999999996,
-        "ci": [
-          0.15599999999999992,
-          0.30299999999999994
-        ],
-        "degenerate": false,
-        "tau": 0.21074620378462858
+        "ci": null,
+        "degenerate": true,
+        "tau": 0.28592136809998664
       },
       {
         "quartile": 4,
         "span_decades": [
-          35.0,
-          35.0
+          3.0981243382942347,
+          11.91973165831116
         ],
-        "n": 377,
-        "n_studies": 1,
-        "median_abs_departure": 0.04899999999999993,
-        "ci": null,
-        "degenerate": true,
-        "tau": null
+        "n": 239,
+        "n_studies": 9,
+        "median_abs_departure": 0.19999999999999996,
+        "ci": [
+          0.15599999999999992,
+          0.32099999999999995
+        ],
+        "degenerate": false,
+        "tau": 0.21172027808624871
       }
     ],
+    "n_excluded_for_invalid_span": 377,
+    "span_metadata_exclusions": {
+      "StudyID_07": "All 377 frozen rows report 2e-8 to 2e27 pg C (35 decades) for 33 size classes; the upper bound is physically implausible. Exclude from span-derived analyses without inventing a replacement."
+    },
     "study_level": {
-      "n_studies": 16,
-      "spearman_rho": -0.549337856435929,
-      "spearman_p": 0.02751827464632215
+      "n_studies": 15,
+      "spearman_rho": -0.4525946419062343,
+      "spearman_p": 0.09026489248581678
     },
     "spectrum_level": {
-      "spearman_rho": -0.4271731699018178,
-      "spearman_p": 8.426487293774814e-59,
+      "spearman_rho": -0.01851733637143482,
+      "spearman_p": 0.5742117903129063,
       "warning": "pseudo-replicated: dominated by whichever study contributes the most spectra at one span"
     },
-    "interpretation": "wider spans sit closer to the prediction, consistent with an averaging effect",
+    "interpretation": "no evidence at study level that span drives the concentration at -1",
     "confound_note": "Span is not randomly assigned: plankton studies span more decades than fish studies, so span is partly a proxy for taxon."
   },
   "R1": {
@@ -345,27 +342,27 @@
           "aic": 367.0296324256936
         },
         "laplace": {
-          "mu": -1.0167483650680227,
-          "tau": 0.2683116969428504,
+          "mu": -1.0167514352430582,
+          "tau": 0.2680966599476112,
           "nu": null,
-          "loglike": -190.83883992347648,
+          "loglike": -190.69790014879698,
           "k_params": 2,
-          "aic": 385.67767984695297
+          "aic": 385.39580029759395
         },
         "student_t": {
-          "mu": -1.0118422202438058,
-          "tau": 0.2566301468591917,
+          "mu": -1.011841399807376,
+          "tau": 0.25662929709365656,
           "nu": 8,
-          "loglike": -176.83521566761942,
+          "loglike": -176.83578750311653,
           "k_params": 3,
-          "aic": 359.67043133523885
+          "aic": 359.67157500623307
         }
       },
       "best_family": "student_t",
       "delta_aic_vs_gaussian": {
         "gaussian": 0.0,
-        "laplace": 18.648047421259378,
-        "student_t": -7.3592010904547465
+        "laplace": 18.36616787190036,
+        "student_t": -7.358057419460522
       },
       "gaussian_standardised_residuals": {
         "mean": -0.014311811932072155,
@@ -373,44 +370,47 @@
         "skew": -0.06579419821879519,
         "excess_kurtosis": 1.1318672758177017
       },
-      "maxent_consistent": false
+      "gaussian_best_by_aic": false,
+      "inference_note": "Working independence likelihood; AIC ranks candidates and does not establish model adequacy. Student degrees of freedom are selected on a grid; its AIC penalty is approximate."
     },
-    "tau_used": 0.2566301468591917,
     "pass_fraction_checks": [
       {
         "tolerance_factor": 1.25,
         "family": "gaussian",
-        "predicted_fraction": 0.07953567813205016,
-        "observed_fraction": 0.07846153846153846,
-        "ratio": 0.9864948700289152
+        "n": 747,
+        "predicted_fraction": 0.08874320165444673,
+        "observed_fraction": 0.06961178045515395,
+        "ratio": 0.784418176912438
       },
       {
         "tolerance_factor": 1.25,
         "family": "student_t",
-        "predicted_fraction": 0.0883519588520012,
-        "observed_fraction": 0.07846153846153846,
-        "ratio": 0.8880565805334295
+        "n": 747,
+        "predicted_fraction": 0.09373578765440678,
+        "observed_fraction": 0.06961178045515395,
+        "ratio": 0.7426382409225033
       },
       {
         "tolerance_factor": 2.0,
         "family": "gaussian",
-        "predicted_fraction": 0.23716658730769125,
-        "observed_fraction": 0.23846153846153847,
-        "ratio": 1.0054600910210307
+        "n": 747,
+        "predicted_fraction": 0.2681965862405248,
+        "observed_fraction": 0.24364123159303883,
+        "ratio": 0.9084427024531022
       },
       {
         "tolerance_factor": 2.0,
         "family": "student_t",
-        "predicted_fraction": 0.2594326670016658,
-        "observed_fraction": 0.23846153846153847,
-        "ratio": 0.9191654282303907
+        "n": 747,
+        "predicted_fraction": 0.2818461578480868,
+        "observed_fraction": 0.24364123159303883,
+        "ratio": 0.8644475889018853
       }
     ],
-    "prohibition": {
-      "statement": "Two resources measured on the same systems cannot both be orthopolar unless their departures have equal dispersion and are perfectly correlated across systems.",
-      "derivation": "If both spectra are flat then s1 - s2 = d2 - d1, a constant, so Var[s1] = Var[s2] and corr(s1,s2) = 1. Unequal tau refutes at least one.",
-      "replication": "tau is a property of the class, so an independent aquatic dataset must reproduce tau = 0.257. A materially different tau refutes (O-ensemble) for that class."
-    }
+    "n_total": 1300,
+    "n_matched": 747,
+    "interpretation": "In-sample fitted-distribution checks using the same spectra, tolerances, fitted locations and reported errors. Neither a hypothesis about the ensemble mean nor resource accounting specifies this distribution or its dispersion.",
+    "dependence_note": "Likelihood and AIC assume independent observations; repeated spectra within studies violate that assumption."
   },
   "stratification": {
     "habitat": {
@@ -421,9 +421,10 @@
         "departure": -0.010000000000000009,
         "ci": [
           -1.019,
-          -0.979
+          -0.981
         ],
-        "consistent_with_prediction": true
+        "consistent_with_prediction": true,
+        "inference_note": "Exploratory study-block percentile interval; coverage can be poor with few blocks. Inclusion of -1 does not establish equivalence."
       },
       "Marine": {
         "n": 225,
@@ -431,10 +432,11 @@
         "median_slope": -1.06,
         "departure": -0.06000000000000005,
         "ci": [
-          -1.35,
+          -1.2573500000000002,
           -0.827
         ],
-        "consistent_with_prediction": true
+        "consistent_with_prediction": true,
+        "inference_note": "Exploratory study-block percentile interval; coverage can be poor with few blocks. Inclusion of -1 does not establish equivalence."
       }
     },
     "species": {
@@ -445,7 +447,7 @@
         "departure": -0.17500000000000004,
         "ci": null,
         "consistent_with_prediction": null,
-        "note": "only 2 study block(s); no valid interval"
+        "note": "only 2 study block(s); interval suppressed"
       },
       "Bacteria+Zooplankton": {
         "n": 377,
@@ -454,7 +456,7 @@
         "departure": -0.020000000000000018,
         "ci": null,
         "consistent_with_prediction": null,
-        "note": "only 1 study block(s); no valid interval"
+        "note": "only 1 study block(s); interval suppressed"
       },
       "Fish": {
         "n": 688,
@@ -465,7 +467,8 @@
           -1.665,
           -0.987
         ],
-        "consistent_with_prediction": true
+        "consistent_with_prediction": true,
+        "inference_note": "Exploratory study-block percentile interval; coverage can be poor with few blocks. Inclusion of -1 does not establish equivalence."
       },
       "Macroinvertebrate": {
         "n": 63,
@@ -476,7 +479,8 @@
           -1.0,
           -0.64
         ],
-        "consistent_with_prediction": true
+        "consistent_with_prediction": true,
+        "inference_note": "Exploratory study-block percentile interval; coverage can be poor with few blocks. Inclusion of -1 does not establish equivalence."
       },
       "Zooplankton": {
         "n": 139,
@@ -487,7 +491,8 @@
           -1.074,
           -0.514
         ],
-        "consistent_with_prediction": true
+        "consistent_with_prediction": true,
+        "inference_note": "Exploratory study-block percentile interval; coverage can be poor with few blocks. Inclusion of -1 does not establish equivalence."
       }
     },
     "organisation": {
@@ -500,7 +505,8 @@
           -1.11,
           -0.9
         ],
-        "consistent_with_prediction": true
+        "consistent_with_prediction": true,
+        "inference_note": "Exploratory study-block percentile interval; coverage can be poor with few blocks. Inclusion of -1 does not establish equivalence."
       },
       "Foodweb": {
         "n": 410,
@@ -509,7 +515,7 @@
         "departure": -0.030999999999999917,
         "ci": null,
         "consistent_with_prediction": null,
-        "note": "only 3 study block(s); no valid interval"
+        "note": "only 3 study block(s); interval suppressed"
       }
     }
   }

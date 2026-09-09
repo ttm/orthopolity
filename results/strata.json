@@ -6,32 +6,34 @@
         "Freshwater": {
           "n": 1075,
           "n_with_se": 645,
-          "n_studies": 5,
+          "n_studies": 3,
           "tau": 0.2284930763088651,
           "mu": -0.9974930424804029,
           "best_family": "gaussian",
           "delta_aic": {
             "gaussian": 0.0,
-            "laplace": 35.472011999090626,
-            "student_t": 7.3125002428221535
+            "laplace": 35.308948567933214,
+            "student_t": 7.31250220994491
           },
-          "gaussian_adequate": true,
+          "gaussian_best_by_aic": true,
+          "inference_note": "Working independence likelihood; AIC ranks candidates and does not establish model adequacy. Student degrees of freedom are selected on a grid; its AIC penalty is approximate.",
           "excess_kurtosis": -0.3439284244453784,
           "I_squared": 0.7431811267026294
         },
         "Marine": {
           "n": 225,
           "n_with_se": 102,
-          "n_studies": 11,
+          "n_studies": 8,
           "tau": 0.3827982146659998,
           "mu": -1.1090327599855765,
           "best_family": "laplace",
           "delta_aic": {
             "gaussian": 0.0,
-            "laplace": -23.268945939365466,
-            "student_t": -12.871756744576729
+            "laplace": -22.971515830607643,
+            "student_t": -12.78845325347774
           },
-          "gaussian_adequate": false,
+          "gaussian_best_by_aic": false,
+          "inference_note": "Working independence likelihood; AIC ranks candidates and does not establish model adequacy. Student degrees of freedom are selected on a grid; its AIC penalty is approximate.",
           "excess_kurtosis": 1.9059435692457036,
           "I_squared": 0.974051704541228
         }
@@ -46,35 +48,36 @@
         "Bacteria+Zooplankton": {
           "n": 377,
           "n_with_se": 0,
-          "n_studies": 1,
+          "n_studies": 0,
           "note": "too few for a latent-shape fit"
         },
         "Fish": {
           "n": 688,
           "n_with_se": 671,
-          "n_studies": 5,
+          "n_studies": 4,
           "tau": 0.26046471978671626,
           "mu": -1.0113875515928696,
           "best_family": "student_t",
           "delta_aic": {
             "gaussian": 0.0,
-            "laplace": 3.789907544806397,
-            "student_t": -9.820262447712537
+            "laplace": 3.6454274540739107,
+            "student_t": -9.819339451255587
           },
-          "gaussian_adequate": false,
+          "gaussian_best_by_aic": false,
+          "inference_note": "Working independence likelihood; AIC ranks candidates and does not establish model adequacy. Student degrees of freedom are selected on a grid; its AIC penalty is approximate.",
           "excess_kurtosis": 1.2331035818326699,
           "I_squared": 0.798535290522138
         },
         "Macroinvertebrate": {
           "n": 63,
           "n_with_se": 10,
-          "n_studies": 4,
+          "n_studies": 3,
           "note": "too few for a latent-shape fit"
         },
         "Zooplankton": {
           "n": 139,
           "n_with_se": 33,
-          "n_studies": 4,
+          "n_studies": 2,
           "note": "too few for a latent-shape fit"
         }
       }
@@ -83,17 +86,22 @@
       "habitat": {
         "stratifier": "habitat",
         "n_components": 2,
+        "n_matched": 747,
+        "component_counts": {
+          "Freshwater": 645,
+          "Marine": 102
+        },
         "tau_range": [
           0.2284930763088651,
           0.3827982146659998
         ],
         "tau_ratio": 1.6753164728219292,
-        "mixture_excess_kurtosis": 0.926282112129448,
+        "mixture_excess_kurtosis": 0.5581086148373644,
         "pooled_excess_kurtosis": 1.1318672758177017,
-        "pooled_best_family": "student_t"
+        "interpretation": "In-sample observed-residual moment comparison with matched stratum weights and measurement errors; no causal attribution or test of absolute distributional fit."
       },
       "species": {
-        "note": "fewer than two fitted strata; mixture not identifiable"
+        "note": "fewer than two fitted strata; no mixture comparison"
       }
     }
   },
@@ -122,8 +130,7 @@
         "n": 645,
         "n_studies": 3,
         "tau": 0.22849308104728008,
-        "mu": 0.0025069571277563005,
-        "mean_departure_is_zero": true
+        "mu": 0.0025069571277563005
       },
       {
         "method": "Normalized biomass spectrum (linear)",
@@ -131,8 +138,7 @@
         "n": 102,
         "n_studies": 8,
         "tau": 0.3827982124463904,
-        "mu": -0.10903276615310042,
-        "mean_departure_is_zero": false
+        "mu": -0.10903276615310042
       },
       {
         "method": "Normalized abundance spectrum (linear)",
@@ -140,8 +146,7 @@
         "n": 1881,
         "n_studies": 14,
         "tau": 0.46223799569014007,
-        "mu": 0.39747819176931676,
-        "mean_departure_is_zero": false
+        "mu": 0.39747819176931676
       },
       {
         "method": "Maximum Likelihood",
@@ -149,11 +154,10 @@
         "n": 401,
         "n_studies": 4,
         "tau": 0.35516027982615556,
-        "mu": 0.5162887921440995,
-        "mean_departure_is_zero": false
+        "mu": 0.5162887921440995
       }
     ],
-    "freshwater_replication": {
+    "freshwater_comparison": {
       "n_methods": 3,
       "tau_values": [
         0.22849308104728008,
@@ -166,9 +170,9 @@
         0.39747819176931676,
         0.5162887921440995
       ],
-      "replicates": false
+      "interpretation": "No replication verdict: estimands and study populations have not been harmonized."
     },
-    "confound": "Method and study population are perfectly confounded: the three subsets share no studies. A discrepancy cannot be attributed to the convention rather than to the systems, or the reverse."
+    "confound": "Method labels may encode incompatible estimands. Method and study population are perfectly confounded: the three subsets share no studies. A discrepancy cannot be attributed to the convention rather than to the systems, or the reverse."
   },
   "R5": {
     "span_within_taxon": {
@@ -206,6 +210,9 @@
         "significant": false
       }
     },
-    "note": "Four or five study blocks per taxon is very low power; a null result here does not resolve the confound, it only shows the available data cannot."
+    "span_metadata_exclusions": {
+      "StudyID_07": "All 377 frozen rows report 2e-8 to 2e27 pg C (35 decades) for 33 size classes; the upper bound is physically implausible. Exclude from span-derived analyses without inventing a replacement."
+    },
+    "note": "Only four or five study blocks are available per taxon. Nonsignificance does not establish absence of an association or identify low power as its cause."
   }
 }

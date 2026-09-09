@@ -26,6 +26,34 @@ class BoundedFits(unittest.TestCase):
     def test_recovers_known_exponent(self):
         self.assertAlmostEqual(fit_powerlaw(self.x, LO, HI)['params']['alpha'], 2.4, places=1)
 
+    def test_reported_loglikelihood_matches_density_in_original_coordinate(self):
+        # Small physical units exposed a dropped scale floor in the old Weibull
+        # fit: likelihood and likelihood-ratio evaluation used different models.
+        for factor in (1.0, 1e-5):
+            for estimator in (fit_powerlaw, fit_lognormal, fit_exponential, fit_weibull):
+                with self.subTest(factor=factor, estimator=estimator.__name__):
+                    fit = estimator(self.x * factor, LO * factor, HI * factor)
+                    self.assertAlmostEqual(fit['loglike'], logpdf_of(
+                        fit, self.x * factor, LO * factor, HI * factor).sum(), places=6)
+
+    def test_weibull_likelihood_is_invariant_to_size_units(self):
+        a = fit_weibull(self.x, LO, HI)
+        factor = 1e-5
+        b = fit_weibull(self.x * factor, LO * factor, HI * factor)
+        np.testing.assert_allclose(logpdf_of(a, self.x, LO, HI),
+            logpdf_of(b, self.x * factor, LO * factor, HI * factor) + np.log(factor),
+            atol=1e-6, rtol=1e-6)
+
+    def test_weibull_agrees_with_analytic_truncated_survival(self):
+        scale, beta = .03, .7
+        lo, hi = .001, .5
+        fit = dict(name='stretched_exponential',
+                   params=dict(hazard_at_lo=beta * (lo / scale) ** beta, beta=beta))
+        mass = np.exp(-(lo / scale) ** beta) - np.exp(-(hi / scale) ** beta)
+        x = np.geomspace(lo, hi, 100)
+        expected = np.log(beta / scale) + (beta - 1) * np.log(x / scale) - (x / scale) ** beta - np.log(mass)
+        np.testing.assert_allclose(logpdf_of(fit, x, lo, hi), expected, atol=1e-12)
+
     def test_cdf_spans_the_declared_domain(self):
         self.assertAlmostEqual(float(_pl_cdf(np.array([LO]), 2.4, LO, HI)[0]), 0.0)
         self.assertAlmostEqual(float(_pl_cdf(np.array([HI]), 2.4, LO, HI)[0]), 1.0)
@@ -44,6 +72,13 @@ class GoodnessOfFit(unittest.TestCase):
     def test_power_law_data_is_not_ruled_out(self):
         x = sample_powerlaw(1200, 2.5, LO, HI, np.random.default_rng(2))
         self.assertGreater(powerlaw_gof(x, LO, HI, n_boot=200, seed=5)['p_value'], 0.1)
+
+    def test_bootstrap_p_values_have_finite_simulation_resolution(self):
+        x = np.linspace(LO, HI, 100)
+        r = powerlaw_gof(x, LO, HI, n_boot=19, seed=5)
+        self.assertEqual(r['p_value'], (r['exceedances'] + 1) / 20)
+        with self.assertRaises(ValueError):
+            powerlaw_gof(x, LO, HI, n_boot=0)
 
     def test_lognormal_data_is_ruled_out(self):
         rng = np.random.default_rng(4)
@@ -75,17 +110,18 @@ class Equivalence(unittest.TestCase):
 
     def test_flat_spectrum_with_tight_draws_is_equivalent(self):
         r = flatness_equivalence(self.centers, np.ones(9), tolerance_factor=1.25,
-                                 slope_draws=np.random.default_rng(1).normal(0, 0.002, 400))
+                                 slope_draws=np.random.default_rng(1).normal(0, 0.002, 400),
+                                 phi_draws=np.ones((400, 9)))
         self.assertTrue(r['slope_equivalent'])
         self.assertTrue(r['departure_within_tolerance'])
-        self.assertEqual(r['verdict'], 'equivalent to flat')
+        self.assertEqual(r['verdict'], 'equivalent to flat under supplied uncertainty model')
 
     def test_sloped_spectrum_fails_on_slope(self):
         phi = (self.centers / self.centers[0]) ** -0.3
         r = flatness_equivalence(self.centers, phi, tolerance_factor=1.25,
                                  slope_draws=np.random.default_rng(1).normal(-0.3, 0.01, 400))
         self.assertFalse(r['slope_equivalent'])
-        self.assertEqual(r['verdict'], 'not equivalent to flat')
+        self.assertEqual(r['verdict'], 'equivalence not established')
 
     def test_wavy_spectrum_with_zero_slope_fails_on_departure(self):
         # The central lesson of the ocean re-expression: a spectrum can have a
@@ -96,13 +132,55 @@ class Equivalence(unittest.TestCase):
         self.assertLess(abs(r['slope']), r['slope_tolerance'])   # slope test passes
         self.assertTrue(r['slope_equivalent'])
         self.assertFalse(r['departure_within_tolerance'])        # departure test fails
-        self.assertEqual(r['verdict'], 'not equivalent to flat')
+        self.assertEqual(r['verdict'], 'equivalence not established')
         self.assertEqual(r['failed_criterion'], 'departure')
 
     def test_no_sampling_model_yields_no_verdict(self):
         r = flatness_equivalence(self.centers, np.ones(9), tolerance_factor=1.25)
         self.assertIsNone(r['slope_ci'])
         self.assertIn('unavailable', r['verdict'])
+
+    def test_zero_bin_cannot_be_discarded_to_claim_flatness(self):
+        phi = np.ones(9)
+        phi[4] = 0
+        r = flatness_equivalence(self.centers, phi, slope_draws=np.zeros(100))
+        self.assertEqual(r['n_bins'], 9)
+        self.assertEqual(r['empty_bins'], 1)
+        self.assertFalse(r['departure_within_tolerance'])
+        self.assertIsNone(r['slope'])
+        self.assertIn('not established', r['verdict'])
+
+    def test_boundary_span_controls_tolerance(self):
+        r = flatness_equivalence(self.centers, np.ones(9), domain=(0.1, 1000))
+        self.assertAlmostEqual(r['slope_tolerance'], np.log(1.25) / np.log(10000))
+
+    def test_slope_ci_and_flat_point_estimate_are_insufficient(self):
+        r = flatness_equivalence(self.centers, np.ones(9), slope_draws=np.zeros(100))
+        self.assertTrue(r['slope_equivalent'])
+        self.assertIsNone(r['departure_equivalent'])
+        self.assertIn('unavailable', r['verdict'])
+
+    def test_whole_spectrum_uncertainty_blocks_false_equivalence(self):
+        # Each draw has a departure somewhere, although the point estimate is flat.
+        phis = np.ones((100, 9))
+        phis[np.arange(100), np.arange(100) % 9] = 2.0
+        r = flatness_equivalence(self.centers, np.ones(9), slope_draws=np.zeros(100),
+                                 phi_draws=phis)
+        self.assertFalse(r['departure_equivalent'])
+        self.assertEqual(r['verdict'], 'equivalence not established')
+
+    def test_invalid_bootstrap_slopes_do_not_silently_disappear(self):
+        r = flatness_equivalence(self.centers, np.ones(9),
+                                 slope_draws=np.r_[np.zeros(100), np.nan])
+        self.assertEqual(r['invalid_slope_draws'], 1)
+        self.assertIn('unavailable', r['verdict'])
+
+    def test_missing_or_negative_bins_raise(self):
+        for value in (np.nan, -1):
+            phi = np.ones(9)
+            phi[0] = value
+            with self.assertRaises(ValueError):
+                flatness_equivalence(self.centers, phi)
 
 
 if __name__ == '__main__':
@@ -169,3 +247,22 @@ class DiscreteGR(unittest.TestCase):
         from gof import discrete_gr_gof
         with self.assertRaises(ValueError):
             discrete_gr_gof(np.array([5.6]), 5.5, 0.1)
+
+    def test_all_zero_synthetic_catalogues_are_valid_boundary_fits(self):
+        from gof import discrete_ks, geometric_mle, discrete_gr_gof
+        self.assertEqual(geometric_mle([0, 0]), 0)
+        self.assertEqual(discrete_ks([0, 0], 0), 0)
+        # This tiny observed sample regularly produces all-zero bootstrap draws.
+        r = discrete_gr_gof([5.5, 5.6], 5.5, n_boot=100, seed=7)
+        self.assertGreater(r['p_value'], 0)
+
+    def test_geometric_counts_are_not_silently_rounded(self):
+        from gof import geometric_mle
+        for k in ([], [0, 1.5], [0, np.nan], [-1, 2]):
+            with self.assertRaises(ValueError):
+                geometric_mle(k)
+
+    def test_threshold_must_match_the_rounding_grid(self):
+        from gof import discrete_gr_gof
+        with self.assertRaises(ValueError):
+            discrete_gr_gof([5.6, 5.7], 5.55, 0.1)

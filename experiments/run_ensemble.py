@@ -1,12 +1,11 @@
 """Is the GLOSSAQUA ensemble result an attractor or an artefact?
 
-EXPLORATORY, NOT PREREGISTERED. Preliminary values (the scatter-to-SE ratio and
-the rounded-slope counts) were inspected while assessing feasibility, before
-this was written. It is a follow-up to the preregistered test in
-configs/prereg_2026-09-09.json, not a confirmatory test, and is labelled as
-such wherever its results appear.
+EXPLORATORY. The repository protocol is not an externally timestamped
+preregistration, and these follow-ups were chosen after inspecting results.
+Repeated spectra within studies are dependent: independence-based likelihoods,
+heterogeneity statistics and AIC comparisons below are working-model summaries.
 
-Three questions:
+Four descriptive questions:
   1. Heterogeneity. Is the between-spectrum scatter real, or estimation noise?
   2. Anchoring. Is there an excess of slopes at exactly -1.00 beyond the
      generic preference for round numbers?
@@ -34,6 +33,11 @@ RAW, OUT = ROOT / 'data' / 'raw', ROOT / 'results'
 PRE = json.loads((ROOT / 'configs' / 'prereg_2026-09-09.json').read_text())
 SEED = PRE['common']['seed']
 PREDICTED = -1.0
+INVALID_SPAN_STUDIES = {
+    'StudyID_07': 'All 377 frozen rows report 2e-8 to 2e27 pg C (35 decades) '
+                  'for 33 size classes; the upper bound is physically implausible. '
+                  'Exclude from span-derived analyses without inventing a replacement.'
+}
 rng = np.random.default_rng(SEED)
 
 
@@ -92,9 +96,12 @@ def heterogeneity(d):
     r = random_effects([x['slope'] for x in g], [x['se'] for x in g])
     r.update(n_total=len(d),
              all_spectra_sd=float(np.std([x['slope'] for x in d], ddof=1)),
-             interpretation=('scatter is real between-system heterogeneity'
-                             if r['I_squared'] > 0.75 else
-                             'scatter consistent with estimation noise'))
+             n_studies=len({x['study'] for x in g}),
+             interpretation='Dispersion exceeds the supplied standard errors under a '
+                            'working independence model; study/site dependence, error '
+                            'calibration and source conventions remain possible contributors.',
+             inference_note='Q p-value and pooled CI assume independent estimates and are '
+                            'not valid study-cluster-adjusted inference.')
     return r
 
 
@@ -136,9 +143,12 @@ def stratify(d, key, min_n=30):
                    departure=med - PREDICTED)
         if ns < MIN_STUDIES_FOR_CI:
             rec.update(ci=None, consistent_with_prediction=None,
-                       note=f'only {ns} study block(s); no valid interval')
+                       note=f'only {ns} study block(s); interval suppressed')
         else:
-            rec.update(ci=ci, consistent_with_prediction=bool(ci[0] <= PREDICTED <= ci[1]))
+            rec.update(ci=ci, consistent_with_prediction=bool(ci[0] <= PREDICTED <= ci[1]),
+                       inference_note='Exploratory study-block percentile interval; coverage '
+                                      'can be poor with few blocks. Inclusion of -1 does '
+                                      'not establish equivalence.')
         out[lab] = rec
     return out
 
@@ -150,6 +160,8 @@ def span_dependence(d):
     contributing hundreds of spectra at one span dominates the correlation
     entirely, which is pseudo-replication rather than evidence.
     """
+    n_before = len(d)
+    d = [x for x in d if x['study'] not in INVALID_SPAN_STUDIES]
     dec = np.array([x['span'] for x in d]) / np.log(10)
     dep = np.abs(np.array([x['slope'] for x in d]) - PREDICTED)
     st = np.array([x['study'] for x in d])
@@ -184,50 +196,51 @@ def span_dependence(d):
 
     sig = bool(rho_s < 0 and p_s < 0.05)
     return dict(per_study=per_study, strata=strata,
+                n_excluded_for_invalid_span=n_before - len(d),
+                span_metadata_exclusions=INVALID_SPAN_STUDIES,
                 study_level=dict(n_studies=len(per_study), spearman_rho=float(rho_s),
                                  spearman_p=float(p_s)),
                 spectrum_level=dict(spearman_rho=float(rho_r), spearman_p=float(p_r),
                                     warning='pseudo-replicated: dominated by whichever study '
                                             'contributes the most spectra at one span'),
                 interpretation=('wider spans sit closer to the prediction, consistent with an '
-                                'averaging effect' if sig else
+                                'averaging association, without identifying its mechanism' if sig else
                                 'no evidence at study level that span drives the concentration '
                                 'at -1'),
                 confound_note='Span is not randomly assigned: plankton studies span more decades '
                               'than fish studies, so span is partly a proxy for taxon.')
 
 
-def latent_and_prohibition(d):
-    """R1: the shape (O-ensemble) predicts, and the individual failure rate it forbids."""
+def latent_checks(d):
+    """Descriptive family fits and matched observed pass-rate checks."""
     g = [x for x in d if np.isfinite(x['se']) and x['se'] > 0]
-    shape = latent_shape([x['slope'] for x in g], [x['se'] for x in g])
-    tau = shape['families'][shape['best_family']]['tau']
-
-    span = np.array([x['span'] for x in d])
-    dep = np.array([x['slope'] for x in d]) - PREDICTED
+    slopes = np.array([x['slope'] for x in g])
+    errors = np.array([x['se'] for x in g])
+    shape = latent_shape(slopes, errors)
+    span = np.array([x['span'] for x in g])
+    dep = slopes - PREDICTED
     checks = []
     for F in (1.25, 2.0):
         tol = np.log(F) / span
-        obs = float(np.mean(np.abs(dep) <= tol))
-        for fam in ('gaussian', shape['best_family']):
-            nu = shape['families'][fam].get('nu')
-            pr = predicted_pass_fraction(tol, tau=shape['families'][fam]['tau'],
-                                         family=fam, nu=nu)
-            checks.append(dict(tolerance_factor=F, family=fam,
+        obs = float(np.mean((np.abs(dep) <= tol) |
+                            np.isclose(np.abs(dep), tol, rtol=1e-12, atol=0)))
+        for fam in dict.fromkeys(('gaussian', shape['best_family'])):
+            fitted = shape['families'][fam]
+            pr = predicted_pass_fraction(tol, tau=fitted['tau'], family=fam,
+                                         nu=fitted.get('nu'), se=errors,
+                                         mu=fitted['mu'] - PREDICTED)
+            checks.append(dict(tolerance_factor=F, family=fam, n=len(g),
                                predicted_fraction=pr['mean_predicted_fraction'],
                                observed_fraction=obs,
                                ratio=float(obs / pr['mean_predicted_fraction'])))
-    return dict(latent_shape=shape, tau_used=tau, pass_fraction_checks=checks,
-                prohibition=dict(
-                    statement='Two resources measured on the same systems cannot both be '
-                              'orthopolar unless their departures have equal dispersion and '
-                              'are perfectly correlated across systems.',
-                    derivation='If both spectra are flat then s1 - s2 = d2 - d1, a constant, '
-                               'so Var[s1] = Var[s2] and corr(s1,s2) = 1. Unequal tau refutes '
-                               'at least one.',
-                    replication='tau is a property of the class, so an independent aquatic '
-                                f'dataset must reproduce tau = {tau:.3f}. A materially '
-                                'different tau refutes (O-ensemble) for that class.'))
+    return dict(latent_shape=shape, pass_fraction_checks=checks,
+                n_total=len(d), n_matched=len(g),
+                interpretation='In-sample fitted-distribution checks using the same '
+                               'spectra, tolerances, fitted locations and reported errors. '
+                               'Neither a hypothesis about the ensemble mean nor resource '
+                               'accounting specifies this distribution or its dispersion.',
+                dependence_note='Likelihood and AIC assume independent observations; '
+                                'repeated spectra within studies violate that assumption.')
 
 
 def figure(res, d):
@@ -246,7 +259,8 @@ def figure(res, d):
     ax = axs[1]
     ex = res['anchoring']['round_number_excess']['per_value']
     ks = sorted(float(k) for k in ex)
-    vs = [ex[str(k)]['excess_ratio'] for k in ks]
+    vs = [ex[str(k)]['excess_ratio'] if ex[str(k)]['excess_ratio'] is not None else np.nan
+          for k in ks]
     cols = ['crimson' if abs(k - PREDICTED) < 1e-9 else '#9ca3af' for k in ks]
     ax.bar(ks, vs, width=.07, color=cols)
     ax.axhline(1, ls='--', color='#666', lw=1)
@@ -293,7 +307,7 @@ def main():
                n=len(d), predicted_slope=PREDICTED,
                heterogeneity=heterogeneity(d), anchoring=anchoring(d),
                span_dependence=span_dependence(d),
-               R1=latent_and_prohibition(d),
+               R1=latent_checks(d),
                stratification=dict(habitat=stratify(d, 'habitat'),
                                    species=stratify(d, 'species'),
                                    organisation=stratify(d, 'org')))
@@ -308,6 +322,7 @@ def main():
     print(f"  random-effects mean {h['random_effects_mean']:+.4f} "
           f"CI[{h['random_effects_ci'][0]:+.4f},{h['random_effects_ci'][1]:+.4f}]")
     print(f"  -> {h['interpretation']}")
+    print(f"  {h['inference_note']}")
 
     a = res['anchoring']
     print(f"\n=== 2. ANCHORING AT THE PREDICTED VALUE ===")
@@ -344,14 +359,14 @@ def main():
               f"{s['n_studies']:>5}{s['median_abs_departure']:>11.3f}{ci}{tau:>8}")
     print(f"  study-level (n={sp['study_level']['n_studies']}): "
           f"Spearman rho={sp['study_level']['spearman_rho']:+.3f} "
-          f"(p={sp['study_level']['spearman_p']:.2g})   <-- the valid test")
+          f"(p={sp['study_level']['spearman_p']:.2g})   <-- exploratory study-level association")
     print(f"  spectrum-level: rho={sp['spectrum_level']['spearman_rho']:+.3f} "
           f"(p={sp['spectrum_level']['spearman_p']:.2g})  [{sp['spectrum_level']['warning']}]")
     print(f"  -> {sp['interpretation']}")
 
     r1 = res['R1']
     ls = r1['latent_shape']
-    print(f"\n=== 5. LATENT SHAPE: what (O-ensemble) predicts (n={ls['n']}) ===")
+    print(f"\n=== 5. DESCRIPTIVE LATENT FAMILY COMPARISON (n={ls['n']}) ===")
     print(f"  {'family':<18}{'mu':>9}{'tau':>8}{'nu':>6}{'logL':>11}{'dAIC':>9}")
     for fam, v in ls['families'].items():
         print(f"  {fam:<18}{v['mu']:>9.4f}{v['tau']:>8.4f}"
@@ -360,17 +375,16 @@ def main():
     rz = ls['gaussian_standardised_residuals']
     print(f"  gaussian standardised residuals: sd={rz['sd']:.3f} skew={rz['skew']:+.3f} "
           f"excess kurtosis={rz['excess_kurtosis']:+.3f}")
-    print(f"  best={ls['best_family']}  -> maximum-entropy (two-moment) form "
-          f"{'IS' if ls['maxent_consistent'] else 'is NOT'} adequate")
+    print(f"  best by working-independence AIC={ls['best_family']}")
+    print(f"  {ls['inference_note']}")
 
-    print(f"\n=== 6. DOES THE ENSEMBLE CLAIM PREDICT THE INDIVIDUAL FAILURE RATE? ===")
+    print(f"\n=== 6. MATCHED OBSERVED PASS RATES UNDER FITTED MODELS ===")
     print(f"  {'F':>5}{'family':<20}{'predicted':>11}{'observed':>11}{'obs/pred':>10}")
     for c in r1['pass_fraction_checks']:
         print(f"  {c['tolerance_factor']:>5.2f}  {c['family']:<18}"
               f"{c['predicted_fraction']:>11.3f}{c['observed_fraction']:>11.3f}"
               f"{c['ratio']:>10.2f}")
-    print(f"\n  PROHIBITION: {r1['prohibition']['statement']}")
-    print(f"  REPLICATION: {r1['prohibition']['replication']}")
+    print(f"\n  {r1['interpretation']}")
 
 
 if __name__ == '__main__':

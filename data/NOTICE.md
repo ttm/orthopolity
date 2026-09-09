@@ -1,41 +1,43 @@
 # Third-party data notice
 
-`data/raw/` contains **unmodified third-party source files**, redistributed here so that the
-analyses in [`results/`](../results/) reproduce offline. They are inputs, not products of this
-project. Full citations are in [`SOURCES.md`](SOURCES.md); byte integrity is fixed by
-[`snapshot_checksums.json`](snapshot_checksums.json) and verified by
-[`experiments/fetch_data.py`](../experiments/fetch_data.py).
+The frozen files in data/raw are third-party inputs, preserved byte-for-byte for
+reproduction. Their source-specific terms do not become the licence of this package.
+[Source details](SOURCES.md) and the [checksum manifest](snapshot_checksums.json) identify
+the inputs. This revision does not change or relicense them.
 
-| File(s) | Origin | Redistribution basis |
-|---|---|---|
-| `noaa_2022.csv`, `noaa_2023.csv`, `noaa_2024.csv`, `noaa_metadata.json` | NOAA NCEI, GOES L2 XRS flare report, v1.0.1 | NOAA metadata states these data may be redistributed and used without restriction. |
-| `usgs_2010_2024.csv` | USGS FDSN Event Web Service / ComCat | Work of the U.S. Geological Survey; U.S. federal government material, public domain. |
-| `GLOSSAQUA_Size.txt`, `GLOSSAQUA_Sample.txt`, `GLOSSAQUA_DataSource.txt` | Ersoy et al. (2025), *Ecology* 106, e70050 — repository `zeynepersoy/GLOSSAQUA_dataset` | **MIT licence**, Copyright (c) 2023 Zeynep Ersoy. Redistribution permitted; the licence text is preserved upstream and attribution is retained here. |
-| `sheldon_summary_biomass_top200_table_long.csv`, `sheldon_summary_biomass_allwater_table_long.csv`, `sheldon_group_standard_errors.csv` | Hatton, Heneghan, Bar-On & Galbraith (2021), *Science Advances* 7, eabh3732 — authors' public repository `ryanheneghan/sheldon_revisited` at commit `d8af6567`, archived at [10.5281/zenodo.5520055](https://doi.org/10.5281/zenodo.5520055) | Included by decision of this repository's author, 2026-09-09. See the note below for what was and was not verified. |
+| Inputs | Source and recorded terms |
+|---|---|
+| NOAA annual flare CSVs and metadata | NOAA NCEI GOES XRS reports; the supplied metadata states redistribution and use are unrestricted. |
+| USGS event catalogue | USGS ComCat. The repository records these as U.S. federal government data. |
+| GLOSSAQUA Size, Sample, and DataSource tables | Ersoy et al. (2025). The author repository/archive and publisher-associated supplements give different licence statements; see below. |
+| Three Sheldon/Hatton summary tables | Hatton et al. (2021), author repository at commit d8af6567faf1912862650423e392e1b3195a8732. Applicable archive/table terms remain unverified here; see below. |
 
-### On the Hatton et al. files
+## GLOSSAQUA: differing source statements
 
-Three small derived summary tables (9.5 KB, 9.5 KB and 295 bytes), redistributed unmodified and with
-attribution, from a published open-access article whose authors make them public themselves.
-Inclusion is the decision of this repository's author.
+The [author repository](https://github.com/zeynepersoy/GLOSSAQUA_dataset) and
+[archived release](https://zenodo.org/records/14701391) are reported as MIT,
+Copyright (c) 2023 Zeynep Ersoy. The
+[publisher-associated supplement deposited at Brunel](https://bura.brunel.ac.uk/handle/2438/32237)
+instead labels the dataset and its individual tables CC BY-NC-SA 4.0.
 
-What was checked, and what it showed:
+These statements are recorded without claiming their scopes are equivalent or that the
+permissive label overrides the dataset-specific notice. Before a release or submission
+relying on a particular redistribution licence, establish which terms apply to the exact
+frozen files and include the corresponding notices. The earlier unqualified statement that
+all GLOSSAQUA data were MIT-licensed is superseded.
 
-- The authors' GitHub repository declares **no licence** — the GitHub API reports none, and there is
-  no `LICENSE` file at the pinned commit `d8af6567`.
-- **Crossref records no licence** for the article DOI `10.1126/sciadv.abh3732`.
-- The **Zenodo archive could not be reached** (HTTP 504) at the time of checking, so any licence
-  recorded there remains unverified.
+## Hatton summary tables
 
-So this is not a case of a licence permitting redistribution; it is a case of no licence being
-stated anywhere reachable. That is common for academic data repositories and does not by itself
-imply a restriction, but it is recorded here rather than glossed, because a journal or an
-institutional review may ask.
+The existing repository includes three small summary tables from the authors' public
+repository, with citation to [Hatton et al. (2021)](https://doi.org/10.1126/sciadv.abh3732)
+and [the data archive](https://doi.org/10.5281/zenodo.5520055).
 
-If that position ever needs reversing, delete the three files. **Nothing breaks:**
-`experiments/fetch_data.py` retrieves them from the authors' repository at the pinned commit and
-verifies the checksums, so only *offline* reproduction of the ocean analyses is affected.
+Previous checks found no licence file at the pinned GitHub commit; attempts to retrieve
+archive terms during review were unsuccessful. That establishes an unresolved source-notice
+question, not permission inferred from the absence of a licence and not evidence that the
+archive is permanently unavailable. Open access to an article does not by itself identify
+the terms for every separately deposited table.
 
-No new licence to any third-party material is granted by this repository. Original rights and
-attribution are retained by their holders. Code, documentation and analysis outputs authored here
-are separate from these inputs.
+The raw snapshots remain unchanged. If missing files need restoring, make restore-data
+explicitly permits retrieval and requires the frozen checksums to match. The default
+make data command verifies locally and does not download.

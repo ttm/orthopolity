@@ -29,13 +29,21 @@
    interval being exactly [estimate/f, estimate*f]; verified for all 253 rows.
 5. Ersoy, Z., et al. (2025), *GLOSSAQUA: A global dataset of size spectra across
    aquatic ecosystems*, Ecology 106, e70050.
-   [Repository](https://github.com/zeynepersoy/GLOSSAQUA_dataset), MIT licence,
-   Copyright (c) 2023 Zeynep Ersoy. Files `GLOSSAQUA_Size.txt`,
-   `GLOSSAQUA_Sample.txt`, `GLOSSAQUA_DataSource.txt`. These are R
-   `write.table` output: space-separated, quoted, UTF-8. (The data dictionary in
-   the same repository is UTF-16; the data files are not.) `GLOSSAQUA_Size.txt`
+   [Repository](https://github.com/zeynepersoy/GLOSSAQUA_dataset) and
+   [archived release](https://zenodo.org/records/14701391) declare MIT;
+   Copyright (c) 2023 Zeynep Ersoy. The
+   [published metadata](https://bura.brunel.ac.uk/bitstream/2438/32237/8/Ersoy_et_al_2025_Metadata_S1.pdf)
+   instead describes the dataset as CC BY-NC-SA 4.0. The scope of these differing
+   statements is unresolved; see [NOTICE.md](NOTICE.md). Files `GLOSSAQUA_Size.txt`,
+   `GLOSSAQUA_Sample.txt`, `GLOSSAQUA_DataSource.txt`. In this snapshot the Size
+   file is quoted, space-separated UTF-8; Sample is tab-separated and decoded
+   as Latin-1 by the analysis; DataSource is tab-separated and UTF-8 compatible.
+   Do not apply one delimiter/encoding to all three. `GLOSSAQUA_Size.txt`
    holds published size-spectrum *fit parameters* per sample, not individual
-   organism measurements. Pinned to HEAD, as upstream publishes no tags.
+   organism measurements. The historical retrieval URL uses mutable `HEAD`;
+   this local snapshot is identified by its SHA-256 checksums. Upstream does
+   publish a `v1.0.0` release, but no equivalence between this snapshot and that
+   release is asserted. A retrieval URL is not a commit pin.
 
 All source files are preserved byte-for-byte and hashed. New views, estimates,
 figures and audio are analysis outputs and are labeled separately.

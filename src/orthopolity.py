@@ -30,12 +30,13 @@ def resource_spectrum(k, q, edges, weights=None):
     counts = np.histogram(k, bins=edges)[0]
     weighted_n = np.histogram(k, bins=edges, weights=w)[0]
     total_q = np.histogram(k, bins=edges, weights=w*q)[0]
-    width = np.diff(np.log(edges))
+    log_edges = np.log(edges)
+    width = np.diff(log_edges)
     occupancy = total_q / width
-    c = total_q.sum() / np.log(edges[-1]/edges[0])
+    c = total_q.sum() / (log_edges[-1] - log_edges[0])
     mean_q = np.divide(total_q, weighted_n, out=np.full_like(total_q,np.nan), where=weighted_n>0)
     phi = occupancy/c if c > 0 else np.full_like(occupancy,np.nan)
-    return dict(lower=edges[:-1], upper=edges[1:], center=np.sqrt(edges[:-1]*edges[1:]),
+    return dict(lower=edges[:-1], upper=edges[1:], center=np.exp((log_edges[:-1]+log_edges[1:])/2),
                 log_width=width, count=counts, weighted_count=weighted_n,
                 mean_resource=mean_q, resource_sum=total_q,
                 multiplicity_log=weighted_n/width, occupancy=occupancy, phi=phi,
@@ -48,7 +49,7 @@ def bounded_power_mle(k, lo, hi):
     This is a descriptive fit, not a power-law goodness-of-fit test.
     """
     k=np.asarray(k,float)
-    if lo<=0 or hi<=lo or len(k)<2 or np.any(~np.isfinite(k)) or np.any((k<lo)|(k>hi)):
+    if not np.isfinite([lo,hi]).all() or lo<=0 or hi<=lo or k.ndim!=1 or len(k)<2 or np.any(~np.isfinite(k)) or np.any((k<lo)|(k>hi)):
         raise ValueError('At least two finite observations within a positive domain required')
     z=np.log(k/lo); L=np.log(hi/lo)
     def log_z(t):
@@ -67,8 +68,10 @@ def mean_resource_exponent(k,q,reference=1.0):
     used outside this function. A flexible mean model is needed for final work.
     """
     k,q=np.asarray(k,float),np.asarray(q,float)
-    if k.shape!=q.shape or len(k)<3 or np.any(k<=0) or np.any(q<=0) or not np.all(np.isfinite(k*q)):
+    if k.ndim!=1 or k.shape!=q.shape or len(k)<3 or np.any(k<=0) or np.any(q<=0) or not (np.all(np.isfinite(k)) and np.all(np.isfinite(q))):
         raise ValueError('Aligned positive finite paired measurements required')
+    if not np.isfinite(reference) or reference<=0 or np.ptp(np.log(k))==0:
+        raise ValueError('Positive finite reference and varying scale measurements required')
     z=np.log(k/reference); logq=np.log(q)
     def log_a(d): return logsumexp(logq-d*z)-np.log(len(k))
     fit=minimize_scalar(lambda d: log_a(d)+d*z.mean(),bounds=(-4,6),method='bounded')
@@ -83,7 +86,9 @@ def rounded_gr_b(magnitudes, threshold, step=0.1):
     deliberately coarsened. Assumes an unbounded Gutenberg-Richter tail.
     """
     m=np.asarray(magnitudes,float)
-    if not np.all(np.isfinite(m)): raise ValueError('Finite magnitudes required')
+    if m.ndim!=1 or not np.all(np.isfinite(m)): raise ValueError('Finite magnitudes required')
+    if not np.isfinite([threshold,step]).all() or step<=0 or not np.isclose(threshold/step,np.round(threshold/step),rtol=0,atol=1e-8):
+        raise ValueError('Positive finite step and finite threshold on the magnitude grid required')
     mr=np.round(m/step)*step
     t=np.round((mr[mr>=threshold-1e-8]-threshold)/step)
     if len(t)<2 or t.mean()<=0: raise ValueError('Insufficient tail variation')

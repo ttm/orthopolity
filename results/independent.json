@@ -1,5 +1,6 @@
 {
   "protocol": "configs/prereg_2026-09-09.json",
+  "protocol_status": "Historical local analysis plan; no external registration or independently verified blinding. Plan commit 6df364f precedes implementation commit a0c9973 in this repository.",
   "glossaqua": {
     "n_records": 8459,
     "n_kept": 3597,
@@ -23,15 +24,23 @@
         "F_1.25": {
           "fraction_equivalent": 0.07846153846153846,
           "median_tolerance": 0.03167875160575266,
+          "fraction_point_estimates_within_tolerance": 0.07846153846153846,
+          "count_point_estimates_within_tolerance": 102,
+          "boundary_convention": "Inclusive <= with relative tolerance 1e-12 to preserve exact boundaries under floating-point conversion",
           "pooled_inside": false
         },
         "F_2.0": {
-          "fraction_equivalent": 0.23846153846153847,
+          "fraction_equivalent": 0.2423076923076923,
           "median_tolerance": 0.09840319036720471,
+          "fraction_point_estimates_within_tolerance": 0.2423076923076923,
+          "count_point_estimates_within_tolerance": 315,
+          "boundary_convention": "Inclusive <= with relative tolerance 1e-12 to preserve exact boundaries under floating-point conversion",
           "pooled_inside": false
         },
         "verdict": "not supported",
-        "implied_drift_at_median_span": 1.1114433970374025
+        "implied_drift_at_median_span": 1.1114433970374025,
+        "median_individual_implied_drift": 5.351981365647572,
+        "interpretation": "The verdict reproduces the historical decision rule. fraction_equivalent is a legacy alias for the descriptive fraction_point_estimates_within_tolerance: individual slope uncertainty is not used in this calculation. The pooled median and median tolerance do not establish whole-spectrum equivalence."
       },
       "all_mapped_methods": {
         "n": 3597,
@@ -46,15 +55,55 @@
         "F_1.25": {
           "fraction_equivalent": 0.05893800389213233,
           "median_tolerance": 0.03413707805894278,
+          "fraction_point_estimates_within_tolerance": 0.05893800389213233,
+          "count_point_estimates_within_tolerance": 212,
+          "boundary_convention": "Inclusive <= with relative tolerance 1e-12 to preserve exact boundaries under floating-point conversion",
           "pooled_inside": false
         },
         "F_2.0": {
-          "fraction_equivalent": 0.18765638031693077,
+          "fraction_equivalent": 0.18904642757853768,
           "median_tolerance": 0.10603944980597861,
+          "fraction_point_estimates_within_tolerance": 0.18904642757853768,
+          "count_point_estimates_within_tolerance": 680,
+          "boundary_convention": "Inclusive <= with relative tolerance 1e-12 to preserve exact boundaries under floating-point conversion",
           "pooled_inside": false
         },
         "verdict": "not supported",
-        "implied_drift_at_median_span": 2.979118635277605
+        "implied_drift_at_median_span": 2.979118635277605,
+        "median_individual_implied_drift": 7.189408119458203,
+        "interpretation": "The verdict reproduces the historical decision rule. fraction_equivalent is a legacy alias for the descriptive fraction_point_estimates_within_tolerance: individual slope uncertainty is not used in this calculation. The pooled median and median tolerance do not establish whole-spectrum equivalence."
+      },
+      "primary_NBSS_excluding_known_invalid_span": {
+        "n": 923,
+        "n_studies": 15,
+        "median_departure": -0.010000000000000009,
+        "median_departure_ci": [
+          -0.1499999999999999,
+          0.030000000000000027
+        ],
+        "median_span_decades": 2.9393944374196264,
+        "median_slope": -1.01,
+        "status": "Post-audit sensitivity: excludes the 377 StudyID_07 records only from this range-dependent analysis because reported body-mass bounds imply a physically implausible 35-decade span (upper bound 2e12 kg C). No corrected bounds are imputed. Historical subsets and all location-only slope analyses remain available.",
+        "F_1.25": {
+          "fraction_equivalent": 0.09317443120260022,
+          "median_tolerance": 0.03296938028267133,
+          "fraction_point_estimates_within_tolerance": 0.09317443120260022,
+          "count_point_estimates_within_tolerance": 86,
+          "boundary_convention": "Inclusive <= with relative tolerance 1e-12 to preserve exact boundaries under floating-point conversion",
+          "pooled_inside": false
+        },
+        "F_2.0": {
+          "fraction_equivalent": 0.28927410617551463,
+          "median_tolerance": 0.10241224921424395,
+          "fraction_point_estimates_within_tolerance": 0.28927410617551463,
+          "count_point_estimates_within_tolerance": 267,
+          "boundary_convention": "Inclusive <= with relative tolerance 1e-12 to preserve exact boundaries under floating-point conversion",
+          "pooled_inside": false
+        },
+        "verdict": "not supported",
+        "implied_drift_at_median_span": 1.07002504863635,
+        "median_individual_implied_drift": 3.962214630602627,
+        "interpretation": "The verdict reproduces the historical decision rule. fraction_equivalent is a legacy alias for the descriptive fraction_point_estimates_within_tolerance: individual slope uncertainty is not used in this calculation. The pooled median and median tolerance do not establish whole-spectrum equivalence."
       }
     },
     "by_method": {
@@ -85,46 +134,68 @@
     "full_range": {
       "tolerance_1.25": {
         "tolerance_factor": 1.25,
-        "slope_tolerance": 0.004405000591275292,
+        "slope_tolerance": 0.004213478826437235,
+        "domain": [
+          1e-14,
+          1000000000.0000001
+        ],
+        "span_basis": "declared boundaries",
         "slope": -0.03916663337815591,
         "n_bins": 23,
         "empty_bins": 0,
         "max_abs_log_departure": 2.7333750240356247,
         "departure_tolerance": 0.22314355131420976,
         "departure_within_tolerance": false,
-        "phi_min": 0.0649995440299062,
-        "phi_max": 2.5247297918447313,
+        "departure_upper_bound": 4.812579517071605,
+        "departure_equivalent": false,
+        "phi_min": 0.06499954402990618,
+        "phi_max": 2.524729791844731,
         "phi_ratio": 38.84226927319839,
         "slope_ci": [
-          -0.05771930482681976,
+          -0.057719304826819764,
           -0.025487824631629203
         ],
         "slope_equivalent": false,
+        "verdict": "equivalence not established",
+        "note": "Observed departures alone do not establish population equivalence. Failure to establish equivalence is not evidence of inequivalence.",
+        "n_spectrum_draws": 20000,
+        "departure_bound_level": 0.95,
         "n_slope_draws": 20000,
+        "invalid_slope_draws": 0,
         "ci_level": "90% (TOST)",
-        "verdict": "not equivalent to flat",
         "failed_criterion": "slope+departure"
       },
       "tolerance_2.0": {
         "tolerance_factor": 2.0,
-        "slope_tolerance": 0.013683181621090054,
+        "slope_tolerance": 0.01308826068104266,
+        "domain": [
+          1e-14,
+          1000000000.0000001
+        ],
+        "span_basis": "declared boundaries",
         "slope": -0.03916663337815591,
         "n_bins": 23,
         "empty_bins": 0,
         "max_abs_log_departure": 2.7333750240356247,
         "departure_tolerance": 0.6931471805599453,
         "departure_within_tolerance": false,
-        "phi_min": 0.0649995440299062,
-        "phi_max": 2.5247297918447313,
+        "departure_upper_bound": 4.812579517071605,
+        "departure_equivalent": false,
+        "phi_min": 0.06499954402990618,
+        "phi_max": 2.524729791844731,
         "phi_ratio": 38.84226927319839,
         "slope_ci": [
-          -0.05771930482681976,
+          -0.057719304826819764,
           -0.025487824631629203
         ],
         "slope_equivalent": false,
+        "verdict": "equivalence not established",
+        "note": "Observed departures alone do not establish population equivalence. Failure to establish equivalence is not evidence of inequivalence.",
+        "n_spectrum_draws": 20000,
+        "departure_bound_level": 0.95,
         "n_slope_draws": 20000,
+        "invalid_slope_draws": 0,
         "ci_level": "90% (TOST)",
-        "verdict": "not equivalent to flat",
         "failed_criterion": "slope+departure"
       },
       "label": "All bins",
@@ -133,50 +204,72 @@
     "plateau": {
       "tolerance_1.25": {
         "tolerance_factor": 1.25,
-        "slope_tolerance": 0.006460667533870428,
+        "slope_tolerance": 0.006056875813003525,
+        "domain": [
+          1e-11,
+          100000.0
+        ],
+        "span_basis": "declared boundaries",
         "slope": -0.005927594989522316,
         "n_bins": 16,
         "empty_bins": 0,
-        "max_abs_log_departure": 0.3817660223921592,
+        "max_abs_log_departure": 0.30124557686351044,
         "departure_tolerance": 0.22314355131420976,
         "departure_within_tolerance": false,
-        "phi_min": 0.682654760448533,
-        "phi_max": 1.1397687510660952,
-        "phi_ratio": 1.6696122507330338,
+        "departure_upper_bound": 2.756743036546707,
+        "departure_equivalent": false,
+        "phi_min": 0.7398960490829997,
+        "phi_max": 1.235339507817946,
+        "phi_ratio": 1.6696122507330335,
         "slope_ci": [
           -0.03559468931469512,
           0.01766612036397527
         ],
         "slope_equivalent": false,
+        "verdict": "equivalence not established",
+        "note": "Observed departures alone do not establish population equivalence. Failure to establish equivalence is not evidence of inequivalence.",
+        "n_spectrum_draws": 20000,
+        "departure_bound_level": 0.95,
         "n_slope_draws": 20000,
+        "invalid_slope_draws": 0,
         "ci_level": "90% (TOST)",
-        "verdict": "not equivalent to flat",
         "failed_criterion": "slope+departure"
       },
       "tolerance_2.0": {
         "tolerance_factor": 2.0,
-        "slope_tolerance": 0.020068666377598746,
+        "slope_tolerance": 0.01881437472899882,
+        "domain": [
+          1e-11,
+          100000.0
+        ],
+        "span_basis": "declared boundaries",
         "slope": -0.005927594989522316,
         "n_bins": 16,
         "empty_bins": 0,
-        "max_abs_log_departure": 0.3817660223921592,
+        "max_abs_log_departure": 0.30124557686351044,
         "departure_tolerance": 0.6931471805599453,
         "departure_within_tolerance": true,
-        "phi_min": 0.682654760448533,
-        "phi_max": 1.1397687510660952,
-        "phi_ratio": 1.6696122507330338,
+        "departure_upper_bound": 2.756743036546707,
+        "departure_equivalent": false,
+        "phi_min": 0.7398960490829997,
+        "phi_max": 1.235339507817946,
+        "phi_ratio": 1.6696122507330335,
         "slope_ci": [
           -0.03559468931469512,
           0.01766612036397527
         ],
         "slope_equivalent": false,
+        "verdict": "equivalence not established",
+        "note": "Observed departures alone do not establish population equivalence. Failure to establish equivalence is not evidence of inequivalence.",
+        "n_spectrum_draws": 20000,
+        "departure_bound_level": 0.95,
         "n_slope_draws": 20000,
+        "invalid_slope_draws": 0,
         "ci_level": "90% (TOST)",
-        "verdict": "not equivalent to flat",
-        "failed_criterion": "slope"
+        "failed_criterion": "slope+departure"
       },
       "label": "Post hoc plateau (exploratory)",
-      "slope_draws_sd": 0.016197874695462525
+      "slope_draws_sd": 0.01619787469546253
     },
     "per_bin": [
       {
@@ -419,46 +512,68 @@
     "full_range": {
       "tolerance_1.25": {
         "tolerance_factor": 1.25,
-        "slope_tolerance": 0.004405000591275292,
-        "slope": -0.05291290185616134,
+        "slope_tolerance": 0.004213478826437235,
+        "domain": [
+          1e-14,
+          1000000000.0000001
+        ],
+        "span_basis": "declared boundaries",
+        "slope": -0.05291290185616136,
         "n_bins": 23,
         "empty_bins": 0,
         "max_abs_log_departure": 3.5323046070001345,
         "departure_tolerance": 0.22314355131420976,
         "departure_within_tolerance": false,
-        "phi_min": 0.02923745731537763,
-        "phi_max": 3.1970975673833752,
+        "departure_upper_bound": 5.62539043814108,
+        "departure_equivalent": false,
+        "phi_min": 0.029237457315377635,
+        "phi_max": 3.1970975673833757,
         "phi_ratio": 109.34937101051673,
         "slope_ci": [
           -0.07025922966161355,
           -0.03761589314280119
         ],
         "slope_equivalent": false,
+        "verdict": "equivalence not established",
+        "note": "Observed departures alone do not establish population equivalence. Failure to establish equivalence is not evidence of inequivalence.",
+        "n_spectrum_draws": 20000,
+        "departure_bound_level": 0.95,
         "n_slope_draws": 20000,
+        "invalid_slope_draws": 0,
         "ci_level": "90% (TOST)",
-        "verdict": "not equivalent to flat",
         "failed_criterion": "slope+departure"
       },
       "tolerance_2.0": {
         "tolerance_factor": 2.0,
-        "slope_tolerance": 0.013683181621090054,
-        "slope": -0.05291290185616134,
+        "slope_tolerance": 0.01308826068104266,
+        "domain": [
+          1e-14,
+          1000000000.0000001
+        ],
+        "span_basis": "declared boundaries",
+        "slope": -0.05291290185616136,
         "n_bins": 23,
         "empty_bins": 0,
         "max_abs_log_departure": 3.5323046070001345,
         "departure_tolerance": 0.6931471805599453,
         "departure_within_tolerance": false,
-        "phi_min": 0.02923745731537763,
-        "phi_max": 3.1970975673833752,
+        "departure_upper_bound": 5.62539043814108,
+        "departure_equivalent": false,
+        "phi_min": 0.029237457315377635,
+        "phi_max": 3.1970975673833757,
         "phi_ratio": 109.34937101051673,
         "slope_ci": [
           -0.07025922966161355,
           -0.03761589314280119
         ],
         "slope_equivalent": false,
+        "verdict": "equivalence not established",
+        "note": "Observed departures alone do not establish population equivalence. Failure to establish equivalence is not evidence of inequivalence.",
+        "n_spectrum_draws": 20000,
+        "departure_bound_level": 0.95,
         "n_slope_draws": 20000,
+        "invalid_slope_draws": 0,
         "ci_level": "90% (TOST)",
-        "verdict": "not equivalent to flat",
         "failed_criterion": "slope+departure"
       },
       "label": "All bins",
@@ -467,46 +582,68 @@
     "plateau": {
       "tolerance_1.25": {
         "tolerance_factor": 1.25,
-        "slope_tolerance": 0.006460667533870428,
-        "slope": -0.002478134053774214,
+        "slope_tolerance": 0.006056875813003525,
+        "domain": [
+          1e-11,
+          100000.0
+        ],
+        "span_basis": "declared boundaries",
+        "slope": -0.0024781340537742133,
         "n_bins": 16,
         "empty_bins": 0,
-        "max_abs_log_departure": 0.962950636753849,
+        "max_abs_log_departure": 0.8330088320750751,
         "departure_tolerance": 0.22314355131420976,
         "departure_within_tolerance": false,
-        "phi_min": 0.3817647732968019,
-        "phi_max": 1.6466173941245776,
+        "departure_upper_bound": 2.9666283896807286,
+        "departure_equivalent": false,
+        "phi_min": 0.4347392590568782,
+        "phi_max": 1.8751054993629588,
         "phi_ratio": 4.313172689834375,
         "slope_ci": [
           -0.029223065772559963,
-          0.02289041977181718
+          0.02289041977181717
         ],
         "slope_equivalent": false,
+        "verdict": "equivalence not established",
+        "note": "Observed departures alone do not establish population equivalence. Failure to establish equivalence is not evidence of inequivalence.",
+        "n_spectrum_draws": 20000,
+        "departure_bound_level": 0.95,
         "n_slope_draws": 20000,
+        "invalid_slope_draws": 0,
         "ci_level": "90% (TOST)",
-        "verdict": "not equivalent to flat",
         "failed_criterion": "slope+departure"
       },
       "tolerance_2.0": {
         "tolerance_factor": 2.0,
-        "slope_tolerance": 0.020068666377598746,
-        "slope": -0.002478134053774214,
+        "slope_tolerance": 0.01881437472899882,
+        "domain": [
+          1e-11,
+          100000.0
+        ],
+        "span_basis": "declared boundaries",
+        "slope": -0.0024781340537742133,
         "n_bins": 16,
         "empty_bins": 0,
-        "max_abs_log_departure": 0.962950636753849,
+        "max_abs_log_departure": 0.8330088320750751,
         "departure_tolerance": 0.6931471805599453,
         "departure_within_tolerance": false,
-        "phi_min": 0.3817647732968019,
-        "phi_max": 1.6466173941245776,
+        "departure_upper_bound": 2.9666283896807286,
+        "departure_equivalent": false,
+        "phi_min": 0.4347392590568782,
+        "phi_max": 1.8751054993629588,
         "phi_ratio": 4.313172689834375,
         "slope_ci": [
           -0.029223065772559963,
-          0.02289041977181718
+          0.02289041977181717
         ],
         "slope_equivalent": false,
+        "verdict": "equivalence not established",
+        "note": "Observed departures alone do not establish population equivalence. Failure to establish equivalence is not evidence of inequivalence.",
+        "n_spectrum_draws": 20000,
+        "departure_bound_level": 0.95,
         "n_slope_draws": 20000,
+        "invalid_slope_draws": 0,
         "ci_level": "90% (TOST)",
-        "verdict": "not equivalent to flat",
         "failed_criterion": "slope+departure"
       },
       "label": "Post hoc plateau (exploratory)",
