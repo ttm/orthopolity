@@ -88,6 +88,44 @@ specifically when the resource is defined from inverse abundance.
 
 Every empirical claim in this repository must state which row it is in.
 
+### 5.1 The cleanest case: when the resource *is* the scale variable
+
+There is a special case where the test has maximal content, and it is worth naming because it
+explains why the ecological evidence is sharper than everything else in this repository.
+
+Take the resource to be body mass and the scale coordinate to be body mass: $q = k = m$. Then
+
+$$\bar q(m) = E[q \mid m] = m \quad\text{exactly},$$
+
+so in the form $\bar q = q_0 (k/k_0)^d$ we have $d \equiv 1$ **by definition**. Assumption (S) is
+not an approximation, not a fit, and carries no estimation error.
+
+**Consequence: such a test is a pure test of (O) alone.** The two ingredients that
+[§4](#4-orthopolity-alone-does-not-give-a-power-law) separates are normally entangled in any
+measurement — a failure could be (O) breaking or (S) being mis-estimated. Here (S) is exact, so
+every departure is attributable to (O).
+
+This is not a tautology, despite $q$ and $k$ being the same variable. The content condition of §5
+is satisfied because $\bar q$ is fixed by *definition of the resource*, not inferred from the
+abundance it is meant to explain — the forbidden move is defining $\bar q := C/(dN/du)$, which is
+a different thing entirely. What remains empirical, and can fail, is whether total mass is actually
+equipartitioned across logarithmic mass classes.
+
+**The contrast is stark in this repository's own results.** In the solar-flare test the resource
+(fluence) is distinct from the coordinate (peak irradiance), so $d$ had to be *fitted*: 0.858 with
+a 95% interval of [0.697, 1.054]. That interval is wide enough to matter, and the observed gap of
+0.382 therefore mixes a failure of (O) with uncertainty in (S). The biomass tests have no such
+confound. Two consequences follow:
+
+- **Biomass-spectrum evidence is stronger per observation** than the flare or earthquake evidence,
+  and should be weighted accordingly — see the revised table in §11.
+- **A negative result is more informative there too.** When the ocean plateau fails to transfer to
+  the full water column, (O) is what failed; there is no fitted exponent to blame.
+
+The general lesson: **prefer tests in which the resource is the coordinate, or in which $\bar q(k)$
+is known analytically rather than estimated.** Where $d$ must be fitted, report its interval and
+propagate it, because a gap smaller than the uncertainty in $d$ is not evidence about (O) at all.
+
 ## 6. Measure: the exponent shifts by one
 
 Orthopolity is defined against a measure, and the choice is not cosmetic — the two versions are
@@ -174,9 +212,10 @@ Not all of them do, and mixing them weakens the case.
 | Sound: $f = v/\lambda$ | Definitional | **None.** |
 | Stevens' law | Stimulus→response function | **None — category mismatch.** Not a frequency distribution over objects. The essay half-notices this and should drop it. |
 | Zipf, words | Empirical distribution | **Moderate.** Real, but needs the rank/pdf exponents disentangled and full CSN testing. |
-| City populations | Empirical distribution | **High.** Genuine power law, independent resource candidates exist. |
+| City populations | Empirical distribution | **High**, if the resource is stated. $d$ would have to be fitted, so its interval must be propagated (§5.1). |
+| *Solar flares, earthquakes* (this repository) | Empirical, $\bar q$ distinct from $k$ | **Moderate.** $d$ is fitted — 0.858 [0.697, 1.054] for flares — so a departure mixes failure of (O) with error in (S). |
 | Knowledge / expertise | Speculative | **None as stated** — no data. Genuinely testable, though. |
-| *Sheldon ocean spectrum* (absent from essay) | Empirical, resource = body mass | **Highest.** The closest precedent. See [evidence.md](evidence.md). |
+| *Sheldon ocean spectrum, GLOSSAQUA* (absent from essay) | Empirical, **resource = coordinate** | **Highest.** $d \equiv 1$ exactly, so these are pure tests of (O) with no fitted exponent to absorb blame (§5.1). |
 | *Damuth / energetic equivalence* (absent from essay) | Empirical, independent $\bar q$ | **High**, with a caveat: it is a species-population relation, not community abundance per log size bin. |
 
 Roughly half the essay's illustrations are identities restated. Identities cannot support a law.
@@ -187,7 +226,7 @@ Roughly half the essay's illustrations are identities restated. Identities canno
 |---|---|
 | (O) equal resource per log class | **Assumed.** The hypothesis itself. |
 | $dN/du \propto 1/\bar q$ | **Derived** — trivially; it is (O) rearranged. |
-| (S) $\bar q \propto k^{d}$ | **Assumed**, separately. Supplies the exponent. |
+| (S) $\bar q \propto k^{d}$ | **Assumed**, separately. Supplies the exponent. **Exact, with $d = 1$, whenever the resource is the coordinate** (§5.1); fitted otherwise, and then its interval must be propagated. |
 | $dN/dk \propto k^{-(d+1)}$ | **Derived** from (O)+(S). |
 | $d$ = dimensionality of the resource | **Interpretation** of (S). Equals box-counting dimension. |
 | Conservation / maxent / scale covariance ⟹ (O) | **False.** See §9. |

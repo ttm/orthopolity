@@ -79,9 +79,11 @@ Details, caveats and provenance: [docs/evidence.md](docs/evidence.md).
 ```bash
 python -m pip install -r requirements.txt
 python experiments/fetch_data.py                       # verifies SHA-256 of every raw input
-PYTHONPATH=src python -m unittest discover -s tests -v  # 22 accounting/estimator/GOF checks
+PYTHONPATH=src python -m unittest discover -s tests -v  # 33 accounting/estimator/GOF/meta checks
 python experiments/run_pilot.py                        # regenerates results/
 python experiments/run_gof.py                          # goodness-of-fit + equivalence tests
+python experiments/run_independent.py                  # preregistered independent tests
+python experiments/run_ensemble.py                     # is the ensemble result real?
 ```
 
 Raw snapshots are frozen and checksummed; `fetch_data.py` fails loudly rather than silently
@@ -97,6 +99,7 @@ floating-point noise.
 | [docs/value.md](docs/value.md) | The case for pursuing it, the statistical requirements, and a staged plan. |
 | [docs/criticism.md](docs/criticism.md) | The case against: category error, circularity, prior art, the failed tests, opportunity cost, and kill criteria. |
 | [docs/not-worth-pursuing.md](docs/not-worth-pursuing.md) | Explicit register of deprioritised directions, with reasons — including what was deliberately left out. |
+| [docs/roadmap.md](docs/roadmap.md) | Open work in priority order, with completed items and their commits. |
 | [docs/references.md](docs/references.md) | Bibliography grouped by role in the argument. |
 
 | Code and data | Purpose |

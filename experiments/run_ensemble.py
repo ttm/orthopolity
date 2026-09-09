@@ -11,6 +11,12 @@ Three questions:
   2. Anchoring. Is there an excess of slopes at exactly -1.00 beyond the
      generic preference for round numbers?
   3. Stratification. Does the result hold across habitats and taxa?
+  4. Span dependence. If the concentration at -1 is an averaging effect, then
+     spectra spanning more decades should sit closer to it and scatter less.
+     If the dispersion is intrinsic, span should not matter.
+
+Estimators live in src/meta.py and are unit-tested; this script only selects
+data and reports.
 """
 from pathlib import Path
 import sys, json, csv, io
@@ -18,9 +24,11 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+from scipy.stats import spearmanr
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
+from meta import random_effects, digit_preference, round_number_excess   # noqa: E402
 RAW, OUT = ROOT / 'data' / 'raw', ROOT / 'results'
 PRE = json.loads((ROOT / 'configs' / 'prereg_2026-09-09.json').read_text())
 SEED = PRE['common']['seed']
@@ -80,61 +88,27 @@ def boot_median(vals, studies, n=2000):
 # ------------------------------------------------- 1. heterogeneity
 def heterogeneity(d):
     g = [x for x in d if np.isfinite(x['se']) and x['se'] > 0]
-    y = np.array([x['slope'] for x in g])
-    se = np.array([x['se'] for x in g])
-    w = 1 / se ** 2
-    mu = float((w * y).sum() / w.sum())
-    Q = float((w * (y - mu) ** 2).sum())
-    df = len(y) - 1
-    C = float(w.sum() - (w ** 2).sum() / w.sum())
-    tau2 = max(0.0, (Q - df) / C) if C > 0 else np.nan
-    I2 = max(0.0, (Q - df) / Q) if Q > 0 else np.nan
-    return dict(n_with_uncertainty=len(g), n_total=len(d),
-                fixed_effect_mean=mu, Q=Q, df=df, I_squared=I2,
-                tau=float(np.sqrt(tau2)), tau_squared=tau2,
-                median_reported_se=float(np.median(se)),
-                observed_sd=float(np.std([x['slope'] for x in d])),
-                sd_to_se_ratio=float(np.std([x['slope'] for x in d]) / np.median(se)),
-                interpretation=('scatter is real between-system heterogeneity'
-                                if I2 > 0.75 else 'scatter consistent with estimation noise'))
+    r = random_effects([x['slope'] for x in g], [x['se'] for x in g])
+    r.update(n_total=len(d),
+             all_spectra_sd=float(np.std([x['slope'] for x in d], ddof=1)),
+             interpretation=('scatter is real between-system heterogeneity'
+                             if r['I_squared'] > 0.75 else
+                             'scatter consistent with estimation noise'))
+    return r
 
 
 # ------------------------------------------------- 2. anchoring
 def anchoring(d):
     s = np.array([x['slope'] for x in d])
-    r2 = np.round(s, 2)
-    on_grid = float(np.mean(np.abs(s - r2) < 1e-9))
-    # second-decimal digit distribution
-    dig = np.round(np.abs(r2) * 100).astype(int) % 10
-    counts = np.array([(dig == k).sum() for k in range(10)])
-    exp = counts.sum() / 10
-    chi2 = float(((counts - exp) ** 2 / exp).sum())
-
-    # local excess at each round (0.10) value, excluding the round points themselves
-    grid = {}
-    for v in np.round(np.arange(-2.0, 0.001, 0.01), 2):
-        grid[v] = int((np.abs(r2 - v) < 1e-9).sum())
-    rounds = np.round(np.arange(-1.9, -0.09, 0.1), 2)
-    ex = {}
-    for v in rounds:
-        nb = [grid.get(round(v + k * 0.01, 2), 0) for k in (-4, -3, -2, -1, 1, 2, 3, 4)]
-        base = np.mean(nb)
-        ex[float(v)] = dict(count=grid.get(float(v), 0), local_baseline=float(base),
-                            excess_ratio=float(grid.get(float(v), 0) / base) if base > 0 else np.nan)
-    others = [v['excess_ratio'] for k, v in ex.items() if abs(k + 1.0) > 1e-9
-              and np.isfinite(v['excess_ratio'])]
-    at_pred = ex[-1.0]['excess_ratio']
-    return dict(fraction_reported_on_2dp_grid=on_grid,
-                second_decimal_counts=counts.tolist(), second_decimal_chi2=chi2,
-                second_decimal_note='10 bins, 9 df; chi2 > 21.7 rejects uniformity at p<0.01',
-                excess_at_round_values={str(k): v for k, v in ex.items()},
-                excess_ratio_at_minus_1=at_pred,
-                median_excess_ratio_other_round_values=float(np.median(others)),
-                n_other_round_values=len(others),
-                rank_of_minus_1=int(sum(o >= at_pred for o in others) + 1),
+    dig = digit_preference(s, decimals=2)
+    exc = round_number_excess(s, target=PREDICTED, grid=0.01, step=0.10,
+                              window=4, lo=-2.0, hi=-0.1)
+    return dict(fraction_reported_on_2dp_grid=float(np.mean(np.abs(s - np.round(s, 2)) < 1e-9)),
+                digit_preference=dig, round_number_excess=exc,
                 interpretation=('-1.00 stands out beyond generic round-number preference'
-                                if at_pred > np.quantile(others, 0.9) else
-                                'excess at -1.00 is within the range of generic round-number preference'))
+                                if exc['stands_out'] else
+                                'excess at -1.00 is within the range of generic '
+                                'round-number preference'))
 
 
 # ------------------------------------------------- 3. stratification
@@ -168,37 +142,109 @@ def stratify(d, key, min_n=30):
     return out
 
 
+def span_dependence(d):
+    """Does the departure from -1 shrink as the reported size range widens?
+
+    Aggregated to one point per study. At spectrum level a single study
+    contributing hundreds of spectra at one span dominates the correlation
+    entirely, which is pseudo-replication rather than evidence.
+    """
+    dec = np.array([x['span'] for x in d]) / np.log(10)
+    dep = np.abs(np.array([x['slope'] for x in d]) - PREDICTED)
+    st = np.array([x['study'] for x in d])
+
+    per_study = []
+    for u in sorted(set(st)):
+        m = st == u
+        per_study.append(dict(study=u, n=int(m.sum()),
+                              median_span_decades=float(np.median(dec[m])),
+                              median_abs_departure=float(np.median(dep[m]))))
+    xs = np.array([p['median_span_decades'] for p in per_study])
+    ys = np.array([p['median_abs_departure'] for p in per_study])
+    rho_s, p_s = spearmanr(xs, ys)
+    rho_r, p_r = spearmanr(dec, dep)
+
+    edges = np.quantile(dec, [0, .25, .5, .75, 1.0])
+    strata = []
+    for i in range(4):
+        m = (dec >= edges[i]) & ((dec <= edges[i + 1]) if i == 3 else (dec < edges[i + 1]))
+        if m.sum() < 20:
+            continue
+        ns = len(set(st[m]))
+        med, ci = boot_median(dep[m], st[m])
+        sub = [x for x, k in zip(d, m) if k and np.isfinite(x['se']) and x['se'] > 0]
+        tau = (random_effects([x['slope'] for x in sub], [x['se'] for x in sub])['tau']
+               if len(sub) >= 10 else None)
+        strata.append(dict(quartile=i + 1, span_decades=[float(edges[i]), float(edges[i + 1])],
+                           n=int(m.sum()), n_studies=int(ns),
+                           median_abs_departure=med,
+                           ci=(ci if ns >= MIN_STUDIES_FOR_CI else None),
+                           degenerate=bool(ns < MIN_STUDIES_FOR_CI), tau=tau))
+
+    sig = bool(rho_s < 0 and p_s < 0.05)
+    return dict(per_study=per_study, strata=strata,
+                study_level=dict(n_studies=len(per_study), spearman_rho=float(rho_s),
+                                 spearman_p=float(p_s)),
+                spectrum_level=dict(spearman_rho=float(rho_r), spearman_p=float(p_r),
+                                    warning='pseudo-replicated: dominated by whichever study '
+                                            'contributes the most spectra at one span'),
+                interpretation=('wider spans sit closer to the prediction, consistent with an '
+                                'averaging effect' if sig else
+                                'no evidence at study level that span drives the concentration '
+                                'at -1'),
+                confound_note='Span is not randomly assigned: plankton studies span more decades '
+                              'than fish studies, so span is partly a proxy for taxon.')
+
+
 def figure(res, d):
-    fig, axs = plt.subplots(1, 3, figsize=(13.5, 4), layout='constrained')
+    fig, axs = plt.subplots(1, 4, figsize=(17, 4), layout='constrained')
     s = np.array([x['slope'] for x in d])
+
     ax = axs[0]
     ax.hist(s, bins=np.arange(-2.5, 0.75, 0.02), color='#4b5563')
-    ax.axvline(PREDICTED, color='crimson', lw=1.5, label='Orthopolity prediction (-1)')
+    ax.axvline(PREDICTED, color='crimson', lw=1.5, label='Prediction (-1)')
     ax.set(xlabel='NBSS slope', ylabel='Spectra', xlim=(-2.5, 0.5),
-           title=f"Slope distribution (n={len(s)})\n$I^2$={res['heterogeneity']['I_squared']:.1%}"
-                 f", $\\tau$={res['heterogeneity']['tau']:.2f}")
+           title=f"Slope distribution (n={len(s)})\n"
+                 f"$I^2$={res['heterogeneity']['I_squared']:.1%}, "
+                 f"$\\tau$={res['heterogeneity']['tau']:.2f}")
     ax.legend(fontsize=7)
 
     ax = axs[1]
-    ks = sorted(float(k) for k in res['anchoring']['excess_at_round_values'])
-    vs = [res['anchoring']['excess_at_round_values'][str(k)]['excess_ratio'] for k in ks]
-    cols = ['crimson' if abs(k + 1) < 1e-9 else '#9ca3af' for k in ks]
+    ex = res['anchoring']['round_number_excess']['per_value']
+    ks = sorted(float(k) for k in ex)
+    vs = [ex[str(k)]['excess_ratio'] for k in ks]
+    cols = ['crimson' if abs(k - PREDICTED) < 1e-9 else '#9ca3af' for k in ks]
     ax.bar(ks, vs, width=.07, color=cols)
     ax.axhline(1, ls='--', color='#666', lw=1)
     ax.set(xlabel='Round slope value', ylabel='Count / local baseline',
-           title='Round-number excess\n(red = the predicted value)')
+           title='Round-number excess\n(red = predicted value)')
 
     ax = axs[2]
     st = {k: v for k, v in res['stratification']['habitat'].items() if v['ci']}
+    st.update({k: v for k, v in res['stratification']['species'].items() if v['ci']})
     labs = list(st)
     y = np.arange(len(labs))
     ax.errorbar([st[l]['median_slope'] for l in labs], y,
                 xerr=[[st[l]['median_slope'] - st[l]['ci'][0] for l in labs],
                       [st[l]['ci'][1] - st[l]['median_slope'] for l in labs]],
-                fmt='o', color='black', capsize=4)
+                fmt='o', color='black', capsize=3)
     ax.axvline(PREDICTED, color='crimson', lw=1.5)
-    ax.set(yticks=y, yticklabels=[f"{l}\n(n={st[l]['n']}, {st[l]['n_studies']} st.)" for l in labs],
-           xlabel='Median NBSS slope', title='By habitat')
+    ax.set(yticks=y, yticklabels=[f"{l[:22]} ({st[l]['n_studies']} st.)" for l in labs],
+           xlabel='Median NBSS slope', title='By habitat and taxon')
+    ax.tick_params(axis='y', labelsize=7)
+
+    ax = axs[3]
+    sp = res['span_dependence']['strata']
+    x = np.arange(len(sp))
+    ax.errorbar(x, [q['median_abs_departure'] for q in sp],
+                yerr=[[q['median_abs_departure'] - (q['ci'][0] if q['ci'] else q['median_abs_departure']) for q in sp],
+                      [(q['ci'][1] if q['ci'] else q['median_abs_departure']) - q['median_abs_departure'] for q in sp]],
+                fmt='o-', color='black', capsize=4)
+    ax.set(xticks=x,
+           xticklabels=[f"{q['span_decades'][0]:.1f}-\n{q['span_decades'][1]:.1f}" for q in sp],
+           xlabel='Reported size range (decades)', ylabel='Median |departure from -1|',
+           title=f"Span dependence\n"
+                 f"study-level $\\rho$={res['span_dependence']['study_level']['spearman_rho']:+.2f}")
     for a in axs:
         a.spines[['top', 'right']].set_visible(False)
     fig.savefig(OUT / 'ensemble.png', dpi=180)
@@ -212,6 +258,7 @@ def main():
                       'during feasibility assessment before this analysis was written',
                n=len(d), predicted_slope=PREDICTED,
                heterogeneity=heterogeneity(d), anchoring=anchoring(d),
+               span_dependence=span_dependence(d),
                stratification=dict(habitat=stratify(d, 'habitat'),
                                    species=stratify(d, 'species'),
                                    organisation=stratify(d, 'org')))
@@ -219,21 +266,24 @@ def main():
     figure(res, d)
 
     h = res['heterogeneity']
-    print(f"\n=== 1. HETEROGENEITY (n={h['n_with_uncertainty']}/{h['n_total']} with usable uncertainty) ===")
-    print(f"  observed sd {h['observed_sd']:.3f} vs median reported SE {h['median_reported_se']:.3f} "
-          f"(ratio {h['sd_to_se_ratio']:.1f}x)")
-    print(f"  Q={h['Q']:.0f} on {h['df']} df   I^2={h['I_squared']:.1%}   tau={h['tau']:.3f}")
+    print(f"\n=== 1. HETEROGENEITY (n={h['k']}/{h['n_total']} with usable uncertainty) ===")
+    print(f"  observed sd {h['observed_sd']:.3f} vs median reported SE {h['median_se']:.3f}")
+    print(f"  Q={h['Q']:.0f} on {h['df']} df (p={h['Q_p_value']:.2g})   "
+          f"I^2={h['I_squared']:.1%}   tau={h['tau']:.3f}")
+    print(f"  random-effects mean {h['random_effects_mean']:+.4f} "
+          f"CI[{h['random_effects_ci'][0]:+.4f},{h['random_effects_ci'][1]:+.4f}]")
     print(f"  -> {h['interpretation']}")
 
     a = res['anchoring']
     print(f"\n=== 2. ANCHORING AT THE PREDICTED VALUE ===")
     print(f"  {a['fraction_reported_on_2dp_grid']:.1%} of slopes lie exactly on the 2-decimal grid")
-    print(f"  second-decimal digit counts {a['second_decimal_counts']}  chi2={a['second_decimal_chi2']:.1f} "
-          f"({a['second_decimal_note']})")
-    print(f"  excess ratio at -1.00: {a['excess_ratio_at_minus_1']:.2f}x local baseline")
-    print(f"  median excess at the other {a['n_other_round_values']} round values: "
-          f"{a['median_excess_ratio_other_round_values']:.2f}x")
-    print(f"  -1.00 ranks {a['rank_of_minus_1']} of {a['n_other_round_values']+1} round values")
+    dg, ex = a['digit_preference'], a['round_number_excess']
+    print(f"  second-decimal digits {dg['counts']}  chi2={dg['chi2']:.1f} on {dg['df']} df "
+          f"(p={dg['p_value']:.2g}, uniform={dg['uniform']})")
+    print(f"  excess ratio at -1.00: {ex['excess_at_target']:.2f}x local baseline")
+    print(f"  median excess at the other {ex['n_other_round_values']} round values: "
+          f"{ex['median_excess_elsewhere']:.2f}x")
+    print(f"  -1.00 ranks {ex['rank_of_target']} of {ex['n_other_round_values']+1} round values")
     print(f"  -> {a['interpretation']}")
 
     print(f"\n=== 3. STRATIFICATION (median slope, study-block CI; prediction {PREDICTED}) ===")
@@ -247,6 +297,22 @@ def main():
             flag = 'consistent' if v['consistent_with_prediction'] else 'INCONSISTENT'
             print(f"    {lab[:38]:<38} n={v['n']:>4} ({v['n_studies']:>2} st.) "
                   f"median={v['median_slope']:+.3f} CI[{v['ci'][0]:+.3f},{v['ci'][1]:+.3f}]  {flag}")
+
+    sp = res['span_dependence']
+    print(f"\n=== 4. SPAN DEPENDENCE ===")
+    print(f"  {'span (decades)':<20}{'n':>6}{'st.':>5}{'med |dep|':>11}{'95% CI':>20}{'tau':>8}")
+    for s in sp['strata']:
+        tau = f"{s['tau']:.3f}" if s['tau'] is not None else '  --'
+        ci = (f"  [{s['ci'][0]:+.3f},{s['ci'][1]:+.3f}]" if s['ci']
+              else f"  {'(1 study: no CI)':>18}")
+        print(f"  {s['span_decades'][0]:>7.2f}-{s['span_decades'][1]:<12.2f}{s['n']:>6}"
+              f"{s['n_studies']:>5}{s['median_abs_departure']:>11.3f}{ci}{tau:>8}")
+    print(f"  study-level (n={sp['study_level']['n_studies']}): "
+          f"Spearman rho={sp['study_level']['spearman_rho']:+.3f} "
+          f"(p={sp['study_level']['spearman_p']:.2g})   <-- the valid test")
+    print(f"  spectrum-level: rho={sp['spectrum_level']['spearman_rho']:+.3f} "
+          f"(p={sp['spectrum_level']['spearman_p']:.2g})  [{sp['spectrum_level']['warning']}]")
+    print(f"  -> {sp['interpretation']}")
 
 
 if __name__ == '__main__':

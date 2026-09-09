@@ -359,13 +359,48 @@ Note the composition, which limits the reach of the claim: GLOSSAQUA is dominate
 fish (3,127 of 3,576 sites freshwater; 2,855 fish). The marine and non-fish strata are much
 smaller and their intervals much wider.
 
-### 6.4 What the three tests together say
+### 6.4 Does the concentration at −1 come from averaging?
+
+If systems land near −1 because a wider size range averages over more of the spectrum, then studies
+spanning more decades should sit closer to the prediction. If the dispersion is intrinsic, span
+should not matter.
+
+| Span (decades) | n | studies | median \|departure\| | τ |
+|---|---:|---:|---:|---:|
+| 0.90 – 2.79 | 325 | 5 | 0.190 | 0.311 |
+| 2.79 – 3.06 | 325 | 4 | 0.192 | 0.272 |
+| 3.06 – 35.0 | 273 | 9 | 0.200 | 0.211 |
+| 35.0 (one study) | 377 | 1 | 0.049 | — |
+
+**At study level — the only valid test here — Spearman ρ = −0.549, p = 0.028 (n = 16).** Wider-
+spanning studies do sit closer to the prediction, and τ declines across the well-sampled quartiles
+(0.311 → 0.272 → 0.211). That is consistent with an averaging mechanism.
+
+Three reasons to treat it as suggestive rather than established:
+
+- **n = 16 studies, p = 0.028.** One marginal test.
+- **The quartile medians are flat** across the well-sampled range (0.190, 0.192, 0.200). The
+  correlation comes from including the widest-spanning studies, not from a gradient within the bulk.
+- **Span is not randomly assigned.** Plankton studies span more decades than fish studies, so span
+  is partly a proxy for taxon, and the confound is not resolved here.
+
+> **A methodological note worth keeping.** At *spectrum* level the same test gives ρ = −0.427 with
+> p = 8×10⁻⁵⁹ — an apparently overwhelming result that is almost entirely one study contributing
+> 377 spectra at a single span value of 35 decades. Pseudo-replication turns a marginal signal into
+> a spurious certainty. Both numbers are reported in
+> [`results/ensemble.json`](../results/ensemble.json), with the spectrum-level one flagged.
+
+### 6.5 What the tests together say
 
 Neither of the two hypotheses that motivated this analysis survives:
 
 - **Not an artefact.** No anchoring on the predicted value; the centre holds independently across
   habitats and taxa.
 - **Not an attractor.** Individual systems genuinely differ, with τ ≈ 0.25.
+- **Possibly an averaging effect**, on suggestive but marginal evidence (§6.4).
+
+The random-effects pooled mean is **−1.0113, 95% CI [−1.0329, −0.9897]** — an interval that
+contains the prediction while properly accounting for the heterogeneity.
 
 > **What is left is a real, reproducible, non-artefactual regularity in the *expected value* of
 > aquatic size spectra, with substantial genuine dispersion around it.** Orthopolity holds in the
