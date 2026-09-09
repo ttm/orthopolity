@@ -1,0 +1,10 @@
+# Private working material: external assessments, unpublished pilot data,
+# raw snapshots. Findings are incorporated into docs/; the directory itself
+# is deliberately not tracked.
+.private/
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store

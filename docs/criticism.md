@@ -1,168 +1,178 @@
 # The case against orthopolity — and against spending time on it
 
-> The strongest honest version of the objections, including the opportunity-cost argument.
-> Read with [value.md](value.md). If the objections in §1–§4 are not answered, the rest of the
-> programme does not get off the ground.
+> The strongest honest version of the objections, revised after empirical testing. Read with
+> [value.md](value.md) and [evidence.md](evidence.md).
 
 ## 1. It is not a cosmological principle (fatal to the current framing)
 
-Homogeneity and isotropy are **spacetime symmetries** — invariance of the metric under
-translation and under rotation. They are what force the FLRW metric, and they are tested against
-CMB anisotropy and galaxy redshift surveys. They are statements about the geometry of the
-universe.
+Homogeneity and isotropy are **spacetime symmetries** — invariance of the metric under translation
+and rotation. They force the FLRW metric and are tested against CMB anisotropy and galaxy surveys.
+They are statements about the geometry of the universe.
 
-Orthopolity is a statistical statement about how a conserved quantity partitions among
-containers. It is a different kind of object entirely. Calling it "a third cosmological
-principle, together with Isotropy and Homogeneity" is a category error, and it is the first
-sentence of the abstract.
+Orthopolity is a statistical statement about how a resource partitions across logarithmic size
+classes. Different category. Calling it "a third cosmological principle, together with Isotropy and
+Homogeneity" is a category error, and it is the first sentence of the abstract.
 
 Worse, the nearest correct version **contradicts** the framing. The genuine third symmetry is
-dilation, and exact scale invariance is *in tension with* large-scale homogeneity — that is
-precisely the historical fractal-universe debate (Pietronero, Sylos Labini) against the measured
-transition to homogeneity at roughly 70–100 Mpc/h. Scale invariance and homogeneity cannot both
-hold at all scales. So orthopolity cannot be a companion principle to homogeneity; at cosmological
-scales it is a rival to it, and one that lost.
+dilation, and exact scale invariance is *in tension with* large-scale homogeneity — the historical
+fractal-universe debate (Sylos Labini, Pietronero) against the measured transition to homogeneity at
+roughly 70–100 Mpc/h. They cannot both hold at all scales. Orthopolity is not a companion to
+homogeneity; at cosmological scales it is a rival that lost.
 
-**Cost of keeping the framing:** a physicist stops reading at the abstract. Everything downstream
-— including the parts that are correct — is discarded with it. This single framing choice
-probably costs more than every other problem in this document combined.
+**Cost:** a physicist stops reading at the abstract, and everything downstream — including the
+correct parts and the real empirical results — goes with it. This single choice probably costs more
+than every other problem here combined.
 
 ## 2. The central derivation is an identity presented as a discovery
 
-$N p(k) r(k) = C$ and $p(k) \propto 1/r(k)$ are the same equation. The essay states the first as
-its concluding "most impressive consequence" and the second as its opening postulate, with the
-examples in between, creating the impression that one was derived from the other. Nothing was
-derived. A referee will see this immediately, and finding a circularity at the core is
+$\bar q \cdot dN/d\ln k = C$ and $dN/d\ln k \propto 1/\bar q$ are the same equation. The essay
+states the first as its concluding "most impressive consequence" and the second as its opening
+postulate, with examples in between, creating the impression that one was derived from the other.
+Nothing was derived. A referee sees this immediately, and a circularity at the core is
 disproportionately damaging to how everything else is read.
 
 ## 3. The power law does not follow from the principle
 
-Shown in [concept.md §4](concept.md): (O) gives $p \propto 1/r$ for *any* $r$. With $r(k) = e^k$,
-orthopolity holds exactly and produces an exponential distribution.
+(O) gives $dN/du \propto 1/\bar q$ for *any* $\bar q$. With $\bar q(k) = e^k$, orthopolity holds
+exactly and produces an exponential ([concept.md §4](concept.md)). The power law requires
+scale-invariant cost as a separate assumption, and that assumption carries the exponent. Once
+separated, the residual contribution shrinks: the power law comes from scale invariance, which is
+standard; orthopolity contributes the equipartition reading.
 
-So the headline claim — orthopolity ⟹ the "Natural distribution law" — is false as written. The
-power law needs scale-invariant labelling as a separate assumption, and that assumption is
-carrying the exponent. Once separated, the honest description of the remaining contribution
-shrinks considerably: the power law comes from scale invariance, which is standard, and
-orthopolity contributes the equipartition reading.
+## 4. Nothing selects equal allocation
 
-## 4. As stated, it is unfalsifiable
+Three routes that sound like derivations all fail ([concept.md §9](concept.md)):
 
-Postulate 2 says deviations "are the result of other natural laws," illustrated by an apple that
-stays stuck in the tree while gravity still acts. That analogy is doing exactly the wrong work:
-it explains in advance why no observation can count against the principle.
+- **Conservation** fixes an integral, not its spread across scales. The turbulence case settles
+  this: constant energy *flux* coexists with energy occupancy $\propto k^{-2/3}$, which is not flat.
+- **Scale covariance** yields a power function; it does not force the resource-spectrum exponent
+  to zero.
+- **Maximum entropy** with normalisation and a fixed mean resource over equally weighted classes
+  gives $p_j \propto e^{-\lambda q_j}$, *not* $1/q_j$.
 
-Combined with the content condition ([concept.md §5](concept.md)) — that (O) can be made true by
-definition for any distribution by choosing $r := C/(Np)$ — the current formulation has **no
-empirical content at all**. Any distribution is orthopolity plus unmeasured friction. "Friction"
-names the residual; it does not model it.
+So there is no derivation of orthopolity from anything more basic. It is a conjecture. That is not
+fatal — conjectures are respectable — but it must not be presented as a consequence of conservation
+or of symmetry, because it is neither.
 
-This is the objection that must be answered first, and it is answerable: specify $r$
-independently, before fitting. But until that is done in a concrete system, there is nothing
-to defend.
+## 5. As originally stated, it was unfalsifiable
 
-## 5. Substantial prior art, unacknowledged
+Postulate 2 said deviations "are the result of other natural laws," illustrated by an apple stuck in
+a tree while gravity still acts. That analogy explains in advance why no observation can count
+against the principle. Combined with the content condition — (O) is true by definition for any
+distribution if $\bar q := C/(dN/du)$ — the original formulation had **no empirical content at all**.
+
+This is now partly answered: the reformulation in [concept.md](concept.md) is falsifiable, and it
+has in fact been falsified twice ([evidence.md](evidence.md)). But "friction" remains a name for the
+residual rather than a model, and any future appeal to it without an independently predicted form
+reintroduces the problem.
+
+## 6. Substantial prior art, and the closest case was missed
 
 The word "orthopolity" appears nowhere in the literature. The content appears repeatedly:
 
-- **Energetic equivalence rule** (Damuth 1981; named by Nee et al. 1991). Constant total energy
-  per size class. This *is* orthopolity, in ecology, 45 years old, with an active literature
-  including its own paradoxes and failures — observed size–density exponents cluster around
-  −0.5 to −0.6 rather than the predicted −0.75.
-- **Box-counting dimension** (Mandelbrot). $N(l) \propto l^{-D}$ is the essay's boxes argument
-  and the definition of fractal dimension. The $\alpha$-as-dimensionality reading is not an
-  analogy to it; it is it.
-- **Scale invariance ⟹ power law.** The unique-solution argument for $f(ax) = g(a)f(x)$ is
-  textbook, and it is the deepest version of the essay's intuition.
-- **Maximum-entropy derivations.** Power laws from a constraint on $\langle \ln x \rangle$;
-  see Frank's *The common patterns of nature* and the maxent-plus-symmetry literature.
-- **Equal measure per octave** in Zipf's law has been observed for decades.
+- **The Sheldon spectrum** (Hatton et al. 2021) — approximately equal ocean biomass per logarithmic
+  body-mass class, bacteria to whales. This is the orthopolity accounting exactly, measured, with
+  resource = body mass. It is the closest prior work and it is absent from the essay.
+- **Cuesta, Delius & Law (2018)** — a scale-invariant plankton model connecting the Sheldon spectrum
+  to physiological scaling and coexistence. This is the mechanistic bridge a new theory would need
+  to *beat*, not a gap to fill.
+- **Energetic equivalence** (Damuth 1981; named by Nee et al. 1991). Constant total energy per size
+  class, 45 years old, with its own active literature and documented failures — observed size–density
+  exponents cluster nearer −0.5 to −0.6 than the predicted −0.75.
+- **Box-counting dimension** (Mandelbrot). $N(l) \propto l^{-D}$ is the essay's boxes argument, and
+  $d$-as-dimensionality is not an analogy to it; it is it.
+- **Scale invariance ⟹ power law** — textbook, and the deepest version of the intuition.
+- **Maximum-entropy derivations** — Jaynes; Frank; Visser on Zipf's law and maximum entropy.
 
-Not fatal — synthesis is legitimate — but it means the honest claim is *"these four known
-results are one identity in different clothes"*, not *"here is a new natural law."* Publishing
-the latter when the former is true is the fastest way to lose the referees who know the ecology
-literature, and they are the same people most likely to find the framework useful.
+Not fatal — synthesis is legitimate — but the honest claim is *"these results are one identity in
+different clothes"*, not *"here is a new natural law."* Note also that Damuth cannot simply be
+relabelled: it is a species-population relation, whereas orthopolity as stated is community
+abundance per log size class. Species richness within size classes introduces another factor.
 
-## 6. The statistical terrain is hostile, and the essay is not equipped for it
+## 7. Two of three empirical tests failed
 
-Power-law claims are held to an unusually high standard, for good reason:
+This is new information and it is the most important entry in this document.
 
-- **Clauset–Shalizi–Newman (2009)** showed that least-squares fits to log-log plots give
-  substantially wrong exponents and, worse, give no evidence the data is a power law at all.
-  The essay's evidence is straight lines on log-log axes. That is precisely the discredited
-  method.
-- **Lognormal is usually indistinguishable** from a power law over realistic ranges — often
-  fitting better. Mitzenmacher's history of generative models is largely about how easily these
-  are confused.
-- **Broido & Clauset (2019), "Scale-free networks are rare"** found that across ~1000 networks,
-  strong scale-free structure is uncommon. If the phenomenon being explained is less universal
-  than assumed, a universality-claiming framework is explaining something that partly is not there.
-- **Stumpf & Porter, "Critical truths about power laws"**: a power law needs both a mechanism
-  and statistical validation, and most published ones have neither.
+- **Earthquakes:** flat energy occupancy requires $b = \gamma = 1.5$; observed $b = 0.998$
+  [0.973, 1.024], robust across thresholds and across two energy conversions. Decisive.
+- **Solar flares:** predicted $\alpha = 1.858$, observed 2.239, gap 0.382 [0.125, 0.620], excluding
+  zero — and unchanged when the missing-data problem is removed by switching to rise-phase fluence.
+- **Ocean:** near-flat over ~15 decades, but $\Phi$ spans a factor of 39 across the full range.
 
-None of this sinks the idea, but it does mean every empirical claim costs real work. There is no
-cheap path.
+The universal reading is dead. What survives is conditional, and that is a smaller claim than the
+essay makes.
 
-## 7. The name is a liability
+## 8. The statistical terrain is hostile, and the work is not yet done
 
-"Orthopolity" parses as *ortho-* (straight, correct) + *polity* (a political community or form of
-government) — it reads as "correct governance." It carries a political connotation the concept
-does not have, gives no hint of equipartition or scale, and will be misremembered. Given that the
-framework's most attention-grabbing claim already touches inequality, a name that sounds like a
-prescription for how society should be organised invites exactly the misreading most likely to
-discredit it.
+- **Clauset–Shalizi–Newman (2009)**: least-squares on log-log plots gives wrong exponents and no
+  evidence of a power law at all. **No CSN goodness-of-fit testing has been performed anywhere in
+  this project.** The pilot fits a bounded power law descriptively and says so.
+- **Lognormal is usually indistinguishable** from a power law over realistic ranges.
+- **Broido & Clauset (2019)**: strong scale-free structure is rare across ~1000 networks. The
+  explanandum may be less universal than assumed.
+- **Stumpf & Porter**: a power law needs both mechanism and statistical validation; most published
+  ones have neither.
+- **Curvature is real, not friction.** GAMA stellar mass functions need a double-Schechter form with
+  a characteristic mass and exponential cutoff. A resource model must explain that structure rather
+  than call it unspecified friction.
+- **A flat fitted slope is not flatness.** Demonstrated in this project's own best case
+  ([evidence.md §3](evidence.md)).
 
-## 8. Opportunity cost — the honest accounting
+## 9. The name is a liability
 
-The question was whether this is worth time and energy. A direct answer:
+"Orthopolity" parses as *ortho-* (correct) + *polity* (a political community) — it reads as "correct
+governance." It carries a political connotation the concept does not have, gives no hint of
+equipartition or scale, and will be misremembered. Given that the framework's most attention-grabbing
+claim already touches inequality, a name that sounds like a prescription for social organisation
+invites exactly the misreading most likely to discredit it.
 
-**Low expected value:**
-- Pursuing the cosmological framing. Unpublishable in physics, and a reputational cost that
-  transfers to unrelated work. Strictly negative.
-- Adding more illustrative examples. The essay already has more examples than evidence, and
-  roughly half of them are identities carrying no weight ([concept.md §8](concept.md)).
-- Further conceptual elaboration before any empirical test. The concept is not
-  under-elaborated; it is under-tested. More prose does not fix that.
+## 10. Opportunity cost — the honest accounting
 
-**Moderate expected value:**
-- The reframing and synthesis paper. Real but bounded — this is a methods note, not a discovery,
-  and it should be written as one.
+**Negative value:**
+- The cosmological framing. Unpublishable in physics, with reputational cost that transfers to
+  unrelated work.
+- More illustrative examples. Roughly half the existing ones are identities carrying no evidential
+  weight ([concept.md §11](concept.md)).
+- Further conceptual elaboration before the missing statistics exist. The concept is not
+  under-elaborated; it is under-tested.
 
-**Highest expected value:**
-- One rigorous empirical test with an independently specified resource, CSN-validated, published
-  with its negative results. This is the only activity that can convert the idea from an
-  interesting reading into a finding.
+**Moderate value:**
+- The reframing and synthesis. Real but bounded — a methods note, not a discovery.
 
-The asymmetry is stark: the cheapest and most tempting activities are worth the least. The
-expensive one is worth nearly everything. If time is limited, doing only step 3 of
-[value.md §7](value.md) and skipping the rest is a better use of it than the reverse.
+**Highest value:**
+- Porting the lab so the results are reproducible, adding CSN and equivalence testing, and running
+  one independently sampled test with a preregistered domain.
+- Explaining the ocean boundary failures from independently measured covariates. This is the only
+  activity that would make orthopolity important rather than merely useful.
 
-## 9. Failure modes to guard against
+The asymmetry is stark: the cheapest and most tempting activities are worth the least.
 
-- **Confirmation by illustration.** Collecting more systems that "look power-law" adds no
-  evidence. Only independently specified resources do.
-- **Retrofitting $r$.** The moment $r$ is chosen because it makes the line flat, the result is
-  vacuous. Preregister the candidate resource.
-- **Explaining away every deviation as friction.** Without a friction model derived from
-  something, this is unfalsifiability by another name.
-- **Escalating the claim to compensate for thin evidence.** The cosmological framing is already
-  an instance of this pattern.
+## 11. Failure modes to guard against
 
-## 10. Kill criteria — when to stop
+- **Retrofitting the resource.** The moment $\bar q$ is chosen because it flattens the line, the
+  result is vacuous.
+- **Threshold shopping.** The flare gaps run −0.480, 0.191, 0.382, 0.960 across four lower bounds.
+  A free choice of domain produces any conclusion wanted.
+- **Reporting that Φ averages to one.** True by construction. Not evidence.
+- **Confirmation by illustration.** More systems that "look power-law" add nothing.
+- **Explaining every deviation as friction** without an independently predicted form.
+- **Escalating the claim to compensate for thin evidence.** The cosmological framing is already an
+  instance.
 
-Stated in advance, because a research programme without them becomes unfalsifiable in practice
-even if its claims are falsifiable in principle:
+## 12. Kill criteria
 
-1. **If, across five or six systems, no independently specified resource equipartitions better
-   than chance** — the principle has no content beyond the tautology. Stop.
-2. **If every case that works turns out to be already covered by a named existing result**
-   (energetic equivalence, box dimension, Zipf's equal measure) — it is a relabelling. Write a
-   review, cite generously, stop.
-3. **If CSN testing shows the target distributions are not power laws** in the first place —
-   the explanandum has partly evaporated. Reassess what is left to explain.
-4. **If the friction function resists first-principles derivation across several attempts** —
-   accept that orthopolity is an accounting identity, not physics, and scope the claims down
-   permanently to match.
+Now written against actual results rather than hypotheticals:
 
-Meeting a kill criterion and stopping is a successful outcome. It is information. The failure
-mode is meeting one and continuing anyway.
+1. **If the independently sampled ecological test fails** — that is, if the plateau does not survive
+   in data that is not a re-expression of Hatton et al. — then the count stands at three failures and
+   zero independent successes. Stop, and publish the negative result.
+2. **If CSN testing shows the target distributions are not power laws** in the first place, the
+   explanandum has partly evaporated. Reassess what remains to explain.
+3. **If the ocean boundary failures resist explanation** from independently measured covariates
+   across several attempts, accept that orthopolity is an accounting identity with a contingent
+   empirical range, and scope every claim down permanently to match.
+4. **If every case that works turns out already covered by a named result** — Sheldon spectrum,
+   energetic equivalence, box dimension — it is a relabelling. Write a review, cite generously, stop.
+
+Meeting a kill criterion and stopping is a successful outcome. It is information. The failure mode
+is meeting one and continuing anyway.

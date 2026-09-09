@@ -2,110 +2,168 @@
 
 > Status: critical reconstruction. This document restates the idea from
 > [the source essay](https://ttm.github.io/2024/08/14/power.html) in a form that can be
-> attacked, tested, and cited. Where the reconstruction diverges from the essay, the
-> divergence is flagged explicitly.
+> attacked, tested, and cited. Where it diverges from the essay, the divergence is flagged.
+>
+> **Revision note.** An earlier version of this document stated orthopolity in the
+> *linear*-bin convention (equal resource per unit $k$). That is a different hypothesis from
+> the one with empirical precedent, and it disagrees by one in the exponent with the
+> size-spectrum literature. Corrected throughout to the logarithmic convention. See §6.
 
 ## 1. The idea in one sentence
 
-**A conserved resource is shared equally across size classes of the containers that hold it;
-therefore containers holding more of it are proportionally rarer.**
+**An additive resource occupies each logarithmic size class equally; therefore objects that
+cost more of it are proportionally rarer.**
 
-The essay's phrasing — "the equal distribution of resources along unit load: more resources
-on the unit makes it less frequent" — is the same claim. The reformulation above makes the
-conserved quantity and the classes explicit, because that is where all the content lives.
+The essay's phrasing — "the equal distribution of resources along unit load: more resources on
+the unit makes it less frequent" — is the same claim. The reformulation makes the conserved
+quantity, the classes, and the *measure* explicit, because that is where all the content lives.
 
 ## 2. Formal setup
 
-Let
+Declare, **before inspecting any abundance pattern**:
 
-- $U = \{u_i\}_{i=1}^{N}$ be a set of $N$ **units** (containers): rooms, people, cities,
-  species, words, files, firms.
-- $r$ be a single scalar **resource**: volume, energy, time, attention, money, information.
-- $k$ index a **class** of units — all units holding the same resource amount, written $r(k)$.
-- $p(k)$ be the fraction of units in class $k$, over a support $[k_{\min}, k_{\max}]$.
+| Symbol | Meaning |
+|---|---|
+| object | the thing being counted (an organism, an event, a city, a word) |
+| $k > 0$ | the scale coordinate, with reference $k_0$; $\;u = \ln(k/k_0)$ |
+| $q$ | the additive per-object resource (energy, biomass, time, money) |
+| $\bar q(k) = E[q \mid k]$ | the **conditional arithmetic mean** resource at scale $k$ |
+| $dN/du$ | objects per unit log scale |
+| $[k_{\min}, k_{\max}]$ | the declared finite observation domain |
 
-The essay's two-index notation $q(i,j) = m(j,i) = u_i(r_j) = r_j(u_i)$ collapses to $r(k)$ once
-a single resource is fixed. The full two-index machinery is only needed for the compound-resource
-case (the essay's postulate 4), which is not yet developed anywhere.
+$\bar q$ is a conditional mean, not a deterministic function: real objects at the same scale
+use different amounts. It must be the **arithmetic** mean, because only the arithmetic mean
+preserves the sum that the whole accounting rests on. Fitting OLS to $\log q$ estimates the
+*geometric* mean and silently breaks the identity.
 
-## 3. The orthopolity condition
+The **resource spectrum** is
 
-**(O) Orthopolity.** The total resource held by a class is the same for every class:
+$$\mathcal{O}(k) \;=\; \frac{dR}{du} \;=\; \bar q(k)\,\frac{dN}{du}.$$
 
-$$N \cdot p(k) \cdot r(k) = C \qquad \text{for all } k \in [k_{\min}, k_{\max}]$$
+## 3. The orthopolity hypothesis
 
-Immediately, $p(k) \propto 1 / r(k)$. This *is* the essay's postulate 1. It is not derived from
-it — postulate 1 and the "most impressive consequence" in the essay's final section are the same
-equation read in two directions.
+**(O)** $\;\mathcal{O}(k) = C$ for all $k$ in the declared domain.
+
+This is the whole claim. Note what it is *not*: it is a statement about the **stock** of resource
+resident at each scale, not about a **flux** through scales. See §8.
 
 ## 4. Orthopolity alone does not give a power law
 
-This is the central correction.
-
-(O) yields $p \propto 1/r$ **whatever $r$ is**. To get a power law you need a second,
+(O) yields $dN/du \propto 1/\bar q(k)$ for **whatever $\bar q$ is**. The power law needs a second,
 independent ingredient:
 
-**(S) Scale-invariant labelling.** $r(k) = c \, k^{\alpha}$.
+**(S) Scale-invariant cost.** $\;\bar q(k) = q_0 (k/k_0)^{d}$.
 
-$$\textbf{(O)} + \textbf{(S)} \implies p(k) = C' k^{-\alpha}$$
+$$\textbf{(O)} + \textbf{(S)} \;\implies\; \frac{dN}{d\ln k} \propto k^{-d}, \qquad \frac{dN}{dk} \propto k^{-(d+1)}$$
 
-The exponent $\alpha$ comes *entirely from (S)*, not from (O). In the essay's boxes, $k$ is the
-side length, $r = k^3$, and $\alpha = 3$ is Euclidean dimension inserted by hand — equivalently,
-the box-counting dimension of a space-filling set. This is why the essay's postulate 4
-("one useful interpretation of $\alpha$ is the dimensionality of $r$") is correct but is a
-statement about (S), not about orthopolity.
+The exponent comes *entirely from (S)*. In the essay's boxes, $k$ is side length, $q \propto k^3$,
+and $d = 3$ is Euclidean dimension inserted by hand — equivalently the box-counting dimension of
+a space-filling set. The essay's postulate 4 ("$\alpha$ is the dimensionality of $r$") is correct
+but is a statement about (S), not about orthopolity.
 
-**Counterexample.** Let $r(k) = e^{k}$. Then (O) holds exactly and gives $p(k) \propto e^{-k}$:
-a perfectly orthopolar *exponential* distribution. So the claim "Orthopolity ⟹ the Natural
-distribution law" is false as stated. The valid claim is:
+**Counterexample.** Let $\bar q(k) = e^{k}$. Then (O) holds exactly and gives $dN/du \propto e^{-k}$:
+a perfectly orthopolar *exponential*. So "Orthopolity ⟹ the Natural distribution law" is false as
+written. The valid claim is:
 
-> Orthopolity applied to a scale-free resource yields a power law.
+> Orthopolity applied to a scale-free cost yields a power law.
 
-Two ingredients, separable, and worth separating: much of what the essay attributes to
-orthopolity is really doing the work of scale invariance, which is old and well understood
-(power laws are the unique solutions of $f(ax) = g(a) f(x)$).
+Two ingredients, separable, and worth separating: much of what the essay credits to orthopolity is
+being done by scale invariance, which is old and well understood.
 
-## 5. The content condition — the most important methodological point
+## 5. The content condition
 
-For **any** strictly positive $p(k)$, define $r(k) := C / (N\, p(k))$. Then (O) holds identically.
+For **any** positive $dN/du$, define $\bar q(k) := C \big/ (dN/du)$. Then (O) holds identically.
 
-So orthopolity is **empirically empty until $r$ is specified independently of $p$** — measured
-directly, or derived from theory, but never read off the distribution it is meant to explain.
-
-This gives a clean criterion:
+So orthopolity is **empirically empty until $\bar q$ is specified independently of abundance** —
+measured directly, or derived from theory, but never read off the distribution it is meant to explain.
 
 | | Status |
 |---|---|
-| $r$ fitted or inferred from $p$ | Tautology. No content. Not evidence. |
-| $r$ measured independently, then $N p r$ tested for constancy | Falsifiable claim. Real content. |
+| $\bar q$ inferred from abundance | Tautology. No content. Not evidence. |
+| $\bar q$ measured independently, then $\mathcal{O}$ tested for flatness | Falsifiable claim. Real content. |
 
-**Damuth's law is the exemplar of the good case.** Metabolic rate $B \propto M^{3/4}$ is measured
-independently of population density $N \propto M^{-3/4}$; the product $N \cdot B$ being
-size-independent is then a genuine, checkable assertion — one which holds approximately and
-[measurably fails in places](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1466-8238.2012.00782.x).
-That failure is what makes it science.
+Note the converse trap, too: choosing the resource to *be* the scale variable is a legitimate
+physical choice (as in the Sheldon spectrum, where resource = body mass). The tautology arises
+specifically when the resource is defined from inverse abundance.
 
-Every future empirical claim in this repository must state which row of that table it is in.
+Every empirical claim in this repository must state which row it is in.
 
-## 6. Measure and binning: the exponent shifts by one
+## 6. Measure: the exponent shifts by one
 
-Orthopolity is defined against a measure, and the essay does not say which. Its own closing
-exercise ("what happens when $k$ is continuous?") is exactly where this bites.
+Orthopolity is defined against a measure, and the choice is not cosmetic — the two versions are
+**different hypotheses about the world**:
 
-- Equal resource per **linear** bin $dk$: $\;p(k)\, r(k) = C$
-- Equal resource per **logarithmic** bin $d(\ln k)$: $\;p(k)\, k\, r(k) = C$
+- Equal resource per **linear** bin $dk$: $\;\bar q \cdot dN/dk = C$
+- Equal resource per **logarithmic** bin $d\ln k$: $\;\bar q \cdot dN/d\ln k = C$
 
-The two differ by one in the exponent. Any statement of (O) must fix the measure, or it is
-ambiguous by exactly the amount that is usually under dispute.
+**This repository uses the logarithmic convention throughout**, because that is the one with
+empirical precedent (Sheldon spectra, energetic equivalence, all size-spectrum work).
 
-## 7. Normalisation forces cutoffs
+Conversions, which must never be skipped:
 
-$\int k^{-\alpha} dk$ diverges at $0$ for $\alpha \ge 1$ and at $\infty$ for $\alpha \le 1$. No
-single $\alpha$ normalises on $(0, \infty)$. So $k_{\min}$ and $k_{\max}$ are not housekeeping —
-they are where the physics lives, and total resource $C \times (\text{number of classes})$ depends
-on them. The essay's postulate 3 gestures at this; it needs to be load-bearing instead.
+| Representation | Exponent under (O)+(S) |
+|---|---|
+| Logarithmic histogram $dN/d\ln k$ | $-d$ |
+| Probability density $dN/dk$ | $\alpha = d + 1$ |
+| Complementary cumulative (CCDF) | $d$, far below the upper cutoff |
+| Rank–size | $1/d$ |
 
-## 8. Which of the essay's examples actually carry evidential weight
+Near a finite upper boundary the CCDF acquires a subtraction term and is **not** an exact monomial.
+A log-histogram, a density, a CCDF and a rank plot must never share an exponent label without
+conversion.
+
+## 7. Normalisation forces cutoffs — and proves nothing
+
+$$C = \frac{R_{\text{domain}}}{\ln(k_{\max}/k_{\min})}, \qquad \Phi(k) = \frac{\mathcal{O}(k)}{C}$$
+
+A nonzero constant allocation across infinitely many logarithmic intervals requires infinite
+resource, so physical endpoints are part of the model, not housekeeping.
+
+**Critically: this normalisation makes the width-weighted mean of $\Phi$ equal to one by
+construction. It does not make $\Phi$ flat.** Flatness is the separate, testable question.
+Reporting that $\Phi$ averages to 1 is not evidence of anything.
+
+## 8. Stock is not flux — the turbulence counterexample
+
+In the Kolmogorov inertial range, $E(k) \propto k^{-5/3}$, so energy per logarithmic wavenumber
+is $k E(k) \propto k^{-2/3}$ — decidedly **not** flat. Yet the energy *flux* through scales is
+constant. Constant throughput coexists with radically unequal occupancy.
+
+Any intuition of the form "the resource is conserved, therefore it is equally distributed" dies
+here. Conservation fixes an integral; it does not fix how the integral is spread over scales.
+
+## 9. What does *not* select equal allocation
+
+Three plausible-sounding derivations fail:
+
+1. **Scale covariance.** Exact scale covariance yields a power function under regularity
+   assumptions. It does not determine that the resource spectrum has exponent zero.
+2. **Conservation.** Fixes an integral, not its distribution among scales (§8).
+3. **Maximum entropy.** Depends on both constraints *and* reference measure. Maximising entropy
+   over finitely many equally weighted classes with normalisation and fixed mean resource gives
+   $p_j \propto e^{-\lambda q_j}$ — **not** $1/q_j$. Constraining a logarithmic moment can
+   generate a power law; constraining an ordinary additive mean generates an exponential.
+
+> **The open problem, stated precisely: what dynamics or symmetry selects equal allocation among
+> resource classes?** Nothing currently on offer supplies it. Until something does, orthopolity is
+> an accounting identity plus an empirical conjecture, not a derived law.
+
+## 10. Two constraints that sharpen the hypothesis
+
+**Two-resource constraint.** If two resources both have flat spectra for the same objects and
+coordinate, their mean per-object costs must have a constant ratio — hence $d_1 = d_2$. Resources
+with **different scaling exponents cannot both** satisfy the hypothesis over the same domain. So
+"which resource?" is not a free choice: at most one resource dimension per system can be orthopolar.
+This is a genuine restriction and a source of falsifiable predictions.
+
+**Intervention ratio.** Under an intervention,
+
+$$\frac{n_2(k)}{n_1(k)} = \frac{C_2}{C_1}\,\frac{\bar q_1(k)}{\bar q_2(k)}$$
+
+The normalisation $C_2/C_1$ cancels **only** when the resource budget and the logarithmic domain
+are both unchanged. Omitting it is a common error.
+
+## 11. Which of the essay's examples carry evidential weight
 
 Not all of them do, and mixing them weakens the case.
 
@@ -114,54 +172,54 @@ Not all of them do, and mixing them weakens the case.
 | Ideal boxes, $L^3/l^3$ | Geometric identity | **None.** Good pedagogy, no empirical content. |
 | Sound: $f = 1/T$ | Definitional | **None.** Frequency *is* the reciprocal of period. |
 | Sound: $f = v/\lambda$ | Definitional | **None.** |
-| Stevens' law | Stimulus→response function | **None — category mismatch.** Not a frequency distribution over containers. The essay half-notices this and should drop it. |
-| Zipf, words | Empirical distribution | **Moderate.** Real, but needs CSN testing and the rank/pdf exponents disentangled. |
-| City populations | Empirical distribution | **High.** Genuine power law, independent resource candidates exist, directly testable. |
-| Knowledge / expertise | Speculative | **None as stated** — no data. But genuinely testable (citations, chess ratings, repo contributions, reputation scores). |
-| *Damuth / energetic equivalence* (absent from essay) | Empirical, independent $r$ | **Highest.** The strongest precedent and the obvious positive control. |
+| Stevens' law | Stimulus→response function | **None — category mismatch.** Not a frequency distribution over objects. The essay half-notices this and should drop it. |
+| Zipf, words | Empirical distribution | **Moderate.** Real, but needs the rank/pdf exponents disentangled and full CSN testing. |
+| City populations | Empirical distribution | **High.** Genuine power law, independent resource candidates exist. |
+| Knowledge / expertise | Speculative | **None as stated** — no data. Genuinely testable, though. |
+| *Sheldon ocean spectrum* (absent from essay) | Empirical, resource = body mass | **Highest.** The closest precedent. See [evidence.md](evidence.md). |
+| *Damuth / energetic equivalence* (absent from essay) | Empirical, independent $\bar q$ | **High**, with a caveat: it is a species-population relation, not community abundance per log size bin. |
 
 Roughly half the essay's illustrations are identities restated. Identities cannot support a law.
 
-## 9. What is assumed, derived, and empirical
+## 12. What is assumed, derived, and empirical
 
 | Component | Status |
 |---|---|
-| (O) equipartition of resource across classes | **Assumed.** The principle itself. |
-| $p \propto 1/r$ | **Derived** — trivially, it is (O) rearranged. |
-| (S) $r \propto k^{\alpha}$ | **Assumed**, separately. Does the real work. |
-| $p(k) \propto k^{-\alpha}$ | **Derived** from (O)+(S). |
-| $\alpha$ = dimensionality of $r$ | **Interpretation** of (S). Equals box-counting dimension. |
-| Deviations = "friction" | **Not a model.** Currently a name for the residual. |
-| Any given system satisfying (O) | **Empirical.** Untested so far. |
+| (O) equal resource per log class | **Assumed.** The hypothesis itself. |
+| $dN/du \propto 1/\bar q$ | **Derived** — trivially; it is (O) rearranged. |
+| (S) $\bar q \propto k^{d}$ | **Assumed**, separately. Supplies the exponent. |
+| $dN/dk \propto k^{-(d+1)}$ | **Derived** from (O)+(S). |
+| $d$ = dimensionality of the resource | **Interpretation** of (S). Equals box-counting dimension. |
+| Conservation / maxent / scale covariance ⟹ (O) | **False.** See §9. |
+| Deviations = "friction" | **Not a model.** A name for the residual until something predicts it. |
+| (O) holding in any given system | **Empirical.** Tested; see [evidence.md](evidence.md). |
 
-## 10. Errata in the source essay
-
-Concrete and fixable:
+## 13. Errata in the source essay
 
 1. **Sign error in the central equation.** In *Equality of resources distributed*:
    `P(k) = N * p(k) = N * C * k^{\alpha}` should read $k^{-\alpha}$.
 2. **Rank and pdf exponents conflated.** The Zipf section writes $f \propto \rho^{-\alpha}$ with
-   $\rho$ = *rank*, $\alpha \approx 1$, and treats that $\alpha$ as the same object as the pdf
-   exponent in $p(k) = C k^{-\alpha}$. They differ by one (Zipf rank exponent 1 ↔ pdf exponent 2).
-   If rank-frequency goes as $\rho^{-\beta}$, the frequency pdf goes as $f^{-(1 + 1/\beta)}$.
-   This is the most-checked error in the power-law literature.
-3. **Stevens' law sign and category.** Written $\Psi(I) = k I^{-\alpha}$ with $\alpha \in [-2,-0.3]$;
-   Stevens' law is conventionally $\Psi = k I^{\beta}$ with $\beta > 0$. Beyond the double negative,
-   it is a response function, not a distribution — see §8.
+   $\rho$ = *rank*, and treats that $\alpha$ as the pdf exponent. See the conversion table in §6.
+3. **Stevens' law sign and category.** Written $\Psi(I) = k I^{-\alpha}$ with negative $\alpha$;
+   conventionally $\Psi = k I^{\beta}$, $\beta > 0$. And it is a response function, not a
+   distribution — see §11.
 4. **Measure unspecified** throughout — see §6.
+5. **"Uniform ⟹ Power" presented as a consequence.** It is (O) rearranged, not a derivation.
 
-## 11. The strongest available framing
+## 14. The strongest available framing
 
 Not "a third cosmological principle alongside homogeneity and isotropy" — those are spacetime
-symmetries (invariance of the metric under translation and rotation) and orthopolity is not one.
-See [criticism.md §1](criticism.md).
+symmetries and orthopolity is not one; see [criticism.md §1](criticism.md).
 
-The defensible framing is the symmetry triad **translation → rotation → dilation**. Scale
-invariance is the genuine third member, and power laws are exactly its invariant functions.
-Orthopolity is then best described as:
+The defensible framing is the symmetry triad **translation → rotation → dilation**, with the
+honest description:
 
-> an **equipartition accounting identity** which, combined with dilation symmetry, generates
-> the power-law family — and whose empirical content is the claim that a specific,
-> independently measurable resource is the equipartitioned one.
+> Orthopolity is an **equipartition hypothesis about resource stock across logarithmic scale**.
+> Combined with a scale-free cost it generates the power-law family. Its empirical content is the
+> claim that a specific, independently measurable resource is the equipartitioned one — and its
+> scientific value lies in mapping the domain where that is true.
 
-That last clause is the whole research programme. See [value.md](value.md).
+The research question, stated so it can be answered:
+
+> **Under what independently specified conditions does an additive resource have approximately
+> equal occupancy across logarithmic size intervals?**
