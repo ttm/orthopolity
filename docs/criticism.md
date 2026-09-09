@@ -134,6 +134,21 @@ The universal reading is dead, and so is the claim about individual systems. Wha
 - **A flat fitted slope is not flatness.** Demonstrated in this project's own best case
   ([evidence.md §3](evidence.md)).
 
+## 8b. The one positive result has failed its first replication attempt
+
+The ensemble finding rests on the normalised biomass spectrum convention and 16 studies. Comparing
+against the two other conventions in the same database — whose study sets are disjoint, so the
+primary sources differ — gives freshwater τ of 0.228, 0.462 and 0.355, and mean departures of
++0.003, +0.397 and +0.516 ([evidence.md §6.10](evidence.md)). Two of three violate E[s] = 0
+outright.
+
+Method and study population are perfectly confounded, so this does not by itself refute the
+hypothesis. But it removes any claim that the result is robust to how a size spectrum is reported,
+and it raises a specific doubt about the whole approach: published conventions that should differ by
+exactly 1.0 in exponent appear to differ by 1.4 to 1.5. If "normalised" does not mean the same thing
+across the literature, pooled slope meta-analyses — including this one — are unsafe without checking
+each primary source.
+
 ## 9. The name is a liability
 
 "Orthopolity" parses as *ortho-* (correct) + *polity* (a political community) — it reads as "correct

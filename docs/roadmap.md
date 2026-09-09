@@ -12,10 +12,25 @@ This is the only genuine out-of-sample test of the replication prohibition, whic
 sharpened from a universal τ ≈ 0.257 to class-specific values: **τ ≈ 0.23 for freshwater, ≈ 0.38 for
 marine**. It would also supply the fixed-taxon span variation that R5 needs.
 
-**Access attempted 2026-09-09 and failed.** Zenodo returns HTTP 504 on every record, including ones
-retrieved successfully earlier in this project, so the outage is theirs rather than a bad
-identifier. `jessluo/PSSdb` on GitHub holds the workflow code but no data products. The ESSD article
-page resolves normally. Retry when Zenodo recovers.
+**Access attempted 2026-09-09; every route exhausted.** Recorded so the search is not repeated:
+
+| Route | Result |
+|---|---|
+| Zenodo records 11050013 / 11983391, API and web | HTTP 504 — and the Zenodo *homepage* is 504 too, so it is a full outage, not a bad identifier |
+| `pssdb.net` portal (up, HTTP 200) | Product pages for every version link only back to Zenodo DOIs |
+| NOAA COPEPOD, `copepodproject.org` | Link circularly back to `pssdb.net` |
+| IFREMER Archimer `doc/00898/101001` | Article PDFs plus Zenodo DOIs; no data |
+| `jessluo/PSSdb` on GitHub | Workflow code only; no data file over 5 KB |
+| Wayback Machine | Record page and `Documentation_PSSdb_v2024-04.pdf` archived, but `PSSdb-BULK__v2024-04.zip` was never captured (CDX empty, direct fetch 404) |
+
+The file to retrieve when Zenodo recovers is **`PSSdb-BULK__v2024-04.zip`**, whose Product 1b holds
+the NBSS slope, intercept and R² per 1°×1° monthly cell — exactly the quantity needed.
+
+**A partial substitute was run and it failed** ([evidence.md §6.10](evidence.md)): across the three
+published conventions in GLOSSAQUA, whose study sets are disjoint, freshwater τ varies by a factor
+of two and two of three have E[s] ≠ 0. Method and study population are perfectly confounded there,
+so it neither refutes the hypothesis nor supports it — but it means the prohibition remains
+genuinely untested, and it raises a specific doubt about comparing published conventions at all.
 
 GLOSSAQUA is 87% freshwater and 80% fish, so the strata that would test generality hardest are the
 smallest. PSSdb (Dugenne et al. 2024) is the obvious next source; its Zenodo record was unreachable

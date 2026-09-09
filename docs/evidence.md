@@ -534,7 +534,46 @@ that the confound stands unresolved — the pooled relationship may be a genuine
 may be taxon acting through span, and this data cannot say which. Resolving it needs studies that
 vary span at fixed taxon, which is R5's standing requirement.
 
-### 6.10 What the tests together say
+### 6.10 The replication prohibition, tested once and failed (R4-partial)
+
+§6.7 committed to a class-specific τ that independent data must reproduce. PSSdb, the intended test,
+is unreachable — see the roadmap for the access attempt. The nearest available substitute is a
+comparison **across published conventions inside GLOSSAQUA**, whose method subsets turn out to share
+**no studies at all**, so the primary sources genuinely differ even though the compilation does not.
+
+| Convention | Habitat | n | studies | τ | μ (departure) | E[s] = 0? |
+|---|---|---:|---:|---:|---:|---|
+| Normalised biomass spectrum | Freshwater | 645 | 3 | **0.228** | **+0.003** | yes |
+| Normalised biomass spectrum | Marine | 102 | 8 | 0.383 | −0.109 | no |
+| Normalised abundance spectrum | Freshwater | 1,881 | 14 | **0.462** | **+0.397** | no |
+| Maximum likelihood | Freshwater | 401 | 4 | **0.355** | **+0.516** | no |
+
+**It does not replicate.** Freshwater τ ranges over 0.228 / 0.462 / 0.355 — a factor of 2.02 — and
+two of the three conventions have a mean departure far from zero, violating the central clause of
+(O-ensemble) outright.
+
+**What this does and does not establish.** Method and study population are *perfectly* confounded:
+the subsets share zero studies, so a discrepancy cannot be attributed to the convention rather than
+to the systems, or the reverse. Two readings survive:
+
+- **The mapping is wrong for those conventions.** An NBSS slope of −1.0 implies a
+  normalised-abundance slope of exactly −2.0 ([concept.md §6](concept.md)), a relation with no free
+  parameters. The observed offsets are both positive and both near +0.4 to +0.5, which looks more
+  like a systematic convention mismatch than like scattered biological difference. If published
+  "normalised" spectra are not all normalised the same way, the label cannot be trusted without
+  checking each primary source.
+- **Or the hypothesis fails on those systems**, and the NBSS subset is the unrepresentative one.
+
+Nothing here separates them, and the honest consequence is the same either way:
+
+> **The primary result rests on one convention and 16 studies, and the first attempt to corroborate
+> it across conventions failed.** Any meta-analysis pooling published size-spectrum slopes — this
+> one included — needs primary-source verification of each study's convention before its exponents
+> can be compared.
+
+This is the strongest caution in the repository against the result it is most tempted to believe.
+
+### 6.11 What the tests together say
 
 Neither of the two hypotheses that motivated this analysis survives:
 
@@ -542,6 +581,9 @@ Neither of the two hypotheses that motivated this analysis survives:
   habitats and taxa.
 - **Not an attractor.** Individual systems genuinely differ, with τ ≈ 0.25.
 - **Possibly an averaging effect**, on suggestive but marginal evidence (§6.4).
+- **Not replicated across conventions.** Freshwater τ varies by a factor of two and two of three
+  conventions have E[s] ≠ 0 (§6.10). Either the exponent mapping or the hypothesis fails there, and
+  the data cannot say which.
 - **A two-moment constraint after all, within class.** The pooled distribution is heavier-tailed
   than the maximum-entropy form (§6.5), but that is a pooling artefact: freshwater alone is
   adequately Gaussian, and a mixture of the fitted habitat τ values reproduces 82% of the pooled

@@ -97,6 +97,79 @@
       }
     }
   },
+  "R4_partial": {
+    "overlap": {
+      "Normalized biomass spectrum (linear)": {
+        "n_studies": 16,
+        "shared_with_nbss": 16,
+        "new": 0
+      },
+      "Normalized abundance spectrum (linear)": {
+        "n_studies": 15,
+        "shared_with_nbss": 0,
+        "new": 15
+      },
+      "Maximum Likelihood": {
+        "n_studies": 5,
+        "shared_with_nbss": 0,
+        "new": 5
+      }
+    },
+    "fits": [
+      {
+        "method": "Normalized biomass spectrum (linear)",
+        "habitat": "Freshwater",
+        "n": 645,
+        "n_studies": 3,
+        "tau": 0.22849308104728008,
+        "mu": 0.0025069571277563005,
+        "mean_departure_is_zero": true
+      },
+      {
+        "method": "Normalized biomass spectrum (linear)",
+        "habitat": "Marine",
+        "n": 102,
+        "n_studies": 8,
+        "tau": 0.3827982124463904,
+        "mu": -0.10903276615310042,
+        "mean_departure_is_zero": false
+      },
+      {
+        "method": "Normalized abundance spectrum (linear)",
+        "habitat": "Freshwater",
+        "n": 1881,
+        "n_studies": 14,
+        "tau": 0.46223799569014007,
+        "mu": 0.39747819176931676,
+        "mean_departure_is_zero": false
+      },
+      {
+        "method": "Maximum Likelihood",
+        "habitat": "Freshwater",
+        "n": 401,
+        "n_studies": 4,
+        "tau": 0.35516027982615556,
+        "mu": 0.5162887921440995,
+        "mean_departure_is_zero": false
+      }
+    ],
+    "freshwater_replication": {
+      "n_methods": 3,
+      "tau_values": [
+        0.22849308104728008,
+        0.46223799569014007,
+        0.35516027982615556
+      ],
+      "tau_ratio": 2.022984650438904,
+      "mu_values": [
+        0.0025069571277563005,
+        0.39747819176931676,
+        0.5162887921440995
+      ],
+      "replicates": false
+    },
+    "confound": "Method and study population are perfectly confounded: the three subsets share no studies. A discrepancy cannot be attributed to the convention rather than to the systems, or the reverse."
+  },
   "R5": {
     "span_within_taxon": {
       "Fish": {

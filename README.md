@@ -95,6 +95,14 @@ half-working — it is one dispersion parameter doing both jobs. *(An internal c
 out-of-sample: τ is fitted to the same slopes. The out-of-sample test is the replication
 prohibition.)*
 
+**⚠️ First replication attempt failed.** Across the two other published conventions in the same
+database — disjoint study sets, so different primary sources — freshwater τ comes out 0.228, 0.462
+and 0.355, with mean departures +0.003, +0.397 and +0.516. Two of three violate E[s] = 0 outright.
+Method and study population are perfectly confounded, so this refutes nothing on its own, but the
+positive result is **not robust to how a size spectrum is reported**, and conventions that should
+differ by exactly 1.0 in exponent appear to differ by 1.4–1.5. See
+[evidence.md §6.10](docs/evidence.md).
+
 **What it forbids:** an independent aquatic dataset must reproduce τ ≈ 0.257; two resources
 satisfying (O) on the same systems must have equal dispersion and perfectly correlated departures;
 and any dataset's pass rate must match its own fitted τ.

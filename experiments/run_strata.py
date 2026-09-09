@@ -11,6 +11,12 @@ R7. The pooled latent slope distribution is heavier-tailed than the two-moment
 R5. Wider-spanning studies sit closer to -1, but span is partly a proxy for
     taxon. Testing the relation within taxon separates them, at whatever power
     four or five study blocks per taxon allows.
+
+R4-partial. PSSdb is unreachable while Zenodo is down, so the nearest available
+    replication is across method subsets inside GLOSSAQUA. Their study sets are
+    disjoint, so the primary sources differ even though the compilation does
+    not. If tau is a class property, freshwater should give the same tau
+    whichever published convention is used.
 """
 from pathlib import Path
 import sys, json, csv, io
@@ -96,12 +102,80 @@ def span_within_taxon(d, key='species'):
     return out
 
 
+def cross_method_replication():
+    """R4-partial: does the class-specific tau replicate across published conventions?"""
+    import csv as _csv
+    sz = list(_csv.DictReader(io.StringIO((ROOT / 'data/raw/GLOSSAQUA_Size.txt').read_text('utf-8')),
+                              delimiter=' ', quotechar='"'))
+    sm = list(_csv.DictReader(io.StringIO((ROOT / 'data/raw/GLOSSAQUA_Sample.txt').read_bytes()
+                                          .decode('latin-1')), delimiter='\t', quotechar='"'))
+    meta_by_site = {r['SiteID'].strip().strip('"'): r for r in sm}
+
+    def num(s):
+        s = (s or '').strip().strip('"')
+        try:
+            return float(s) if s not in ('', 'NA') else np.nan
+        except ValueError:
+            return np.nan
+
+    predicted = {'Normalized biomass spectrum (linear)': -1.0,
+                 'Normalized abundance spectrum (linear)': -2.0,
+                 'Maximum Likelihood': -2.0}
+    subsets = {m: [] for m in predicted}
+    for r in sz:
+        if r['XaxisParameterType'].strip() != 'body mass':
+            continue
+        m = r['SizeSpectrumMethod'].strip()
+        if m not in predicted:
+            continue
+        sl, lo, hi = num(r['Slope']), num(r['SizeRangeMinimum']), num(r['SizeRangeMaximum'])
+        if not np.isfinite([sl, lo, hi]).all() or not (0 < lo < hi):
+            continue
+        cl, cu = num(r['SlopeConfIntLow']), num(r['SlopeConfIntUp'])
+        se = (cu - cl) / (2 * 1.96) if np.isfinite([cl, cu]).all() and cu > cl else num(r['SlopeSE'])
+        md = meta_by_site.get(r['SiteID'].strip().strip('"'), {})
+        subsets[m].append(dict(study=r['StudyID'].strip().strip('"'), dep=sl - predicted[m],
+                               se=se, hab=(md.get('Habitat') or '?').strip().strip('"')))
+
+    nbss = {x['study'] for x in subsets['Normalized biomass spectrum (linear)']}
+    out = dict(overlap={}, fits=[])
+    for m, v in subsets.items():
+        s = {x['study'] for x in v}
+        out['overlap'][m] = dict(n_studies=len(s), shared_with_nbss=len(s & nbss),
+                                 new=len(s - nbss))
+    for m, v in subsets.items():
+        for hab in ('Freshwater', 'Marine'):
+            g = [x for x in v if x['hab'] == hab and np.isfinite(x['se']) and x['se'] > 0]
+            ns = len({x['study'] for x in g})
+            if len(g) < MIN_N or ns < MIN_STUDIES:
+                continue
+            ls = latent_shape([x['dep'] for x in g], [x['se'] for x in g])
+            gg = ls['families']['gaussian']
+            out['fits'].append(dict(method=m, habitat=hab, n=len(g), n_studies=ns,
+                                    tau=gg['tau'], mu=gg['mu'],
+                                    mean_departure_is_zero=bool(abs(gg['mu']) < 0.1)))
+    fw = [f for f in out['fits'] if f['habitat'] == 'Freshwater']
+    if len(fw) > 1:
+        taus = [f['tau'] for f in fw]
+        out['freshwater_replication'] = dict(
+            n_methods=len(fw), tau_values=taus,
+            tau_ratio=float(max(taus) / min(taus)),
+            mu_values=[f['mu'] for f in fw],
+            replicates=bool(max(taus) / min(taus) < 1.5
+                            and all(abs(f['mu']) < 0.1 for f in fw)))
+    out['confound'] = ('Method and study population are perfectly confounded: the three subsets '
+                       'share no studies. A discrepancy cannot be attributed to the convention '
+                       'rather than to the systems, or the reverse.')
+    return out
+
+
 def main():
     d = load()
     strata = {k: per_stratum_shape(d, k) for k in ('habitat', 'species')}
     res = dict(status='EXPLORATORY follow-up, not preregistered',
                R7=dict(per_stratum=strata,
                        mixture={k: mixture_check(d, strata[k], k) for k in strata}),
+               R4_partial=cross_method_replication(),
                R5=dict(span_within_taxon=span_within_taxon(d),
                        note='Four or five study blocks per taxon is very low power; a null '
                             'result here does not resolve the confound, it only shows the '
@@ -127,6 +201,24 @@ def main():
               f"{m['tau_range'][1]:.3f} ({m['tau_ratio']:.2f}x)  "
               f"mixture exkurt={m['mixture_excess_kurtosis']:+.3f} vs "
               f"pooled {m['pooled_excess_kurtosis']:+.3f}")
+
+    cm = res['R4_partial']
+    print('\n=== R4-partial: CROSS-METHOD REPLICATION OF tau (PSSdb unreachable) ===')
+    print('  study overlap:')
+    for m, v in cm['overlap'].items():
+        print(f"    {m[:40]:<42}{v['n_studies']:>3} studies, {v['shared_with_nbss']:>3} shared "
+              f"with NBSS, {v['new']:>3} new")
+    print(f"  {'method':<42}{'habitat':<12}{'n':>6}{'st.':>5}{'tau':>8}{'mu':>9}  E[s]=0?")
+    for f in cm['fits']:
+        print(f"    {f['method'][:40]:<42}{f['habitat']:<12}{f['n']:>6}{f['n_studies']:>5}"
+              f"{f['tau']:>8.3f}{f['mu']:>+9.3f}   {f['mean_departure_is_zero']}")
+    fr = cm.get('freshwater_replication')
+    if fr:
+        print(f"\n  freshwater tau across {fr['n_methods']} conventions: "
+              f"{[round(v,3) for v in fr['tau_values']]}  (ratio {fr['tau_ratio']:.2f}x)")
+        print(f"  freshwater mu:  {[round(v,3) for v in fr['mu_values']]}")
+        print(f"  >>> REPLICATES: {fr['replicates']}")
+    print(f"  CONFOUND: {cm['confound']}")
 
     print('\n=== R5: SPAN vs |DEPARTURE| WITHIN TAXON (study level) ===')
     for lab, v in res['R5']['span_within_taxon'].items():
