@@ -1,0 +1,303 @@
+{
+  "protocol": {
+    "domains": "Declared in configs/pilot.json; never re-selected here",
+    "gof_bootstrap": 500,
+    "slope_bootstrap": 600,
+    "seed": 20260908,
+    "tolerances": [
+      1.25,
+      2.0
+    ],
+    "criteria": "Flatness requires BOTH slope equivalence (TOST) and bounded departure (max |ln Phi| within tolerance)."
+  },
+  "noaa": {
+    "distribution": {
+      "domain": [
+        1e-05,
+        0.001
+      ],
+      "power_law": {
+        "alpha": 2.2735705676437714,
+        "loglike": -964.6757751203297
+      },
+      "goodness_of_fit": {
+        "alpha": 2.2735705676437714,
+        "n": 1306,
+        "ks": 0.032322070386014534,
+        "p_value": 0.018,
+        "n_boot": 500,
+        "ks_synthetic_median": 0.018649068068461894,
+        "ruled_out": true,
+        "note": "p <= 0.1 rules the power law out; p > 0.1 is non-rejection, not support"
+      },
+      "comparisons": [
+        {
+          "against": "lognormal",
+          "loglike_ratio": 0.41707335996756356,
+          "statistic": 0.8273522115600701,
+          "p_value": 0.40803745845813466,
+          "favours": "inconclusive",
+          "params": {
+            "mu": -51.30428420977974,
+            "sigma": 5.697476351665631
+          },
+          "loglike": 13062.43468560611
+        },
+        {
+          "against": "exponential",
+          "loglike_ratio": 458.48858114590587,
+          "statistic": 7.483551323852949,
+          "p_value": 7.234063280859722e-14,
+          "favours": "power_law",
+          "params": {
+            "lambda": 42239.89252424223
+          },
+          "loglike": 12604.363177808775
+        },
+        {
+          "against": "stretched_exponential",
+          "loglike_ratio": 45119.47972753582,
+          "statistic": 30.464136875732663,
+          "p_value": 7.784425834512663e-204,
+          "favours": "power_law",
+          "params": {
+            "scale": 1.1663101111794951e-24,
+            "beta": 0.13379694162870492
+          },
+          "loglike": 13056.425168103127
+        }
+      ]
+    },
+    "equivalence": {
+      "tolerance_1.25": {
+        "tolerance_factor": 1.25,
+        "slope_tolerance": 0.05537715029031795,
+        "slope": -0.23254380846145128,
+        "n_bins": 8,
+        "empty_bins": 0,
+        "max_abs_log_departure": 0.6795298465441709,
+        "departure_tolerance": 0.22314355131420976,
+        "departure_within_tolerance": false,
+        "phi_min": 0.5068552360965002,
+        "phi_max": 1.5248477577813198,
+        "phi_ratio": 3.0084482692233725,
+        "slope_ci": [
+          -0.5293971864767841,
+          -0.06005804135521889
+        ],
+        "slope_equivalent": false,
+        "n_slope_draws": 577,
+        "ci_level": "90% (TOST)",
+        "verdict": "not equivalent to flat",
+        "failed_criterion": "slope+departure"
+      },
+      "tolerance_2.0": {
+        "tolerance_factor": 2.0,
+        "slope_tolerance": 0.17201714037941782,
+        "slope": -0.23254380846145128,
+        "n_bins": 8,
+        "empty_bins": 0,
+        "max_abs_log_departure": 0.6795298465441709,
+        "departure_tolerance": 0.6931471805599453,
+        "departure_within_tolerance": true,
+        "phi_min": 0.5068552360965002,
+        "phi_max": 1.5248477577813198,
+        "phi_ratio": 3.0084482692233725,
+        "slope_ci": [
+          -0.5293971864767841,
+          -0.06005804135521889
+        ],
+        "slope_equivalent": false,
+        "n_slope_draws": 577,
+        "ci_level": "90% (TOST)",
+        "verdict": "not equivalent to flat",
+        "failed_criterion": "slope"
+      },
+      "label": "End fluence occupancy, 2023-2024"
+    },
+    "n_events": 1306,
+    "n_paired": 1168
+  },
+  "usgs": {
+    "distribution": {
+      "domain": [
+        9440608762859.266,
+        9.440608762859188e+18
+      ],
+      "power_law": {
+        "alpha": 1.661984368564192,
+        "loglike": -9370.486043185188
+      },
+      "goodness_of_fit": {
+        "alpha": 1.661984368564192,
+        "n": 6639,
+        "ks": 0.10803962708933273,
+        "p_value": 0.0,
+        "n_boot": 500,
+        "ks_synthetic_median": 0.008470211650741563,
+        "ruled_out": true,
+        "note": "p <= 0.1 rules the power law out; p > 0.1 is non-rejection, not support"
+      },
+      "comparisons": [
+        {
+          "against": "lognormal",
+          "loglike_ratio": 0.16210957631790635,
+          "statistic": 0.12093117499344103,
+          "p_value": 0.9037455492989639,
+          "favours": "inconclusive",
+          "params": {
+            "mu": -47.31980214041205,
+            "sigma": 11.018481711472138
+          },
+          "loglike": -217736.83462470002
+        },
+        {
+          "against": "exponential",
+          "loglike_ratio": 19431.611222153904,
+          "statistic": 7.715807243601378,
+          "p_value": 1.2021888418941774e-14,
+          "favours": "power_law",
+          "params": {
+            "lambda": 8.313381477287095e-16
+          },
+          "loglike": -237168.28373730782
+        },
+        {
+          "against": "stretched_exponential",
+          "loglike_ratio": 5441.929820407359,
+          "statistic": 33.38450919250685,
+          "p_value": 2.3008004652492232e-244,
+          "favours": "power_law",
+          "params": {
+            "scale": 7.71323497715561e-23,
+            "beta": 0.04537783116011211
+          },
+          "loglike": -217749.95687823585
+        }
+      ]
+    },
+    "equivalence": {
+      "tolerance_1.25": {
+        "tolerance_factor": 1.25,
+        "slope_tolerance": 0.018459050096772664,
+        "slope": 0.272047447358217,
+        "n_bins": 8,
+        "empty_bins": 0,
+        "max_abs_log_departure": 2.319493660263146,
+        "departure_tolerance": 0.22314355131420976,
+        "departure_within_tolerance": false,
+        "phi_min": 0.09832335802565012,
+        "phi_max": 2.801365882854586,
+        "phi_ratio": 28.49135687700759,
+        "slope_ci": [
+          0.23866273732882512,
+          0.3230112182076298
+        ],
+        "slope_equivalent": false,
+        "n_slope_draws": 357,
+        "ci_level": "90% (TOST)",
+        "verdict": "not equivalent to flat",
+        "failed_criterion": "slope+departure"
+      },
+      "tolerance_2.0": {
+        "tolerance_factor": 2.0,
+        "slope_tolerance": 0.05733904679313931,
+        "slope": 0.272047447358217,
+        "n_bins": 8,
+        "empty_bins": 0,
+        "max_abs_log_departure": 2.319493660263146,
+        "departure_tolerance": 0.6931471805599453,
+        "departure_within_tolerance": false,
+        "phi_min": 0.09832335802565012,
+        "phi_max": 2.801365882854586,
+        "phi_ratio": 28.49135687700759,
+        "slope_ci": [
+          0.23866273732882512,
+          0.3230112182076298
+        ],
+        "slope_equivalent": false,
+        "n_slope_draws": 357,
+        "ci_level": "90% (TOST)",
+        "verdict": "not equivalent to flat",
+        "failed_criterion": "slope+departure"
+      },
+      "label": "Magnitude-derived energy occupancy"
+    },
+    "gutenberg_richter_b": 0.99831638693147,
+    "n_events": 6639,
+    "note": "Energy is inferred from magnitude, so the power-law form is largely imposed by the conversion; the goodness-of-fit test here is far weaker evidence than the occupancy test."
+  },
+  "ocean": {
+    "full_range": {
+      "tolerance_1.25": {
+        "tolerance_factor": 1.25,
+        "slope_tolerance": 0.004405000591275292,
+        "slope": -0.03916663337815591,
+        "n_bins": 23,
+        "empty_bins": 0,
+        "max_abs_log_departure": 2.7333750240356247,
+        "departure_tolerance": 0.22314355131420976,
+        "departure_within_tolerance": false,
+        "phi_min": 0.0649995440299062,
+        "phi_max": 2.5247297918447313,
+        "phi_ratio": 38.84226927319839,
+        "slope_ci": null,
+        "slope_equivalent": null,
+        "verdict": "unavailable: no sampling model for an interval"
+      },
+      "tolerance_2.0": {
+        "tolerance_factor": 2.0,
+        "slope_tolerance": 0.013683181621090054,
+        "slope": -0.03916663337815591,
+        "n_bins": 23,
+        "empty_bins": 0,
+        "max_abs_log_departure": 2.7333750240356247,
+        "departure_tolerance": 0.6931471805599453,
+        "departure_within_tolerance": false,
+        "phi_min": 0.0649995440299062,
+        "phi_max": 2.5247297918447313,
+        "phi_ratio": 38.84226927319839,
+        "slope_ci": null,
+        "slope_equivalent": null,
+        "verdict": "unavailable: no sampling model for an interval"
+      },
+      "label": "All 23 published bins"
+    },
+    "plateau": {
+      "tolerance_1.25": {
+        "tolerance_factor": 1.25,
+        "slope_tolerance": 0.006460667533870428,
+        "slope": -0.005927594989522313,
+        "n_bins": 16,
+        "empty_bins": 0,
+        "max_abs_log_departure": 0.3817660223921592,
+        "departure_tolerance": 0.22314355131420976,
+        "departure_within_tolerance": false,
+        "phi_min": 0.682654760448533,
+        "phi_max": 1.1397687510660952,
+        "phi_ratio": 1.6696122507330338,
+        "slope_ci": null,
+        "slope_equivalent": null,
+        "verdict": "unavailable: no sampling model for an interval"
+      },
+      "tolerance_2.0": {
+        "tolerance_factor": 2.0,
+        "slope_tolerance": 0.020068666377598746,
+        "slope": -0.005927594989522313,
+        "n_bins": 16,
+        "empty_bins": 0,
+        "max_abs_log_departure": 0.3817660223921592,
+        "departure_tolerance": 0.6931471805599453,
+        "departure_within_tolerance": true,
+        "phi_min": 0.682654760448533,
+        "phi_max": 1.1397687510660952,
+        "phi_ratio": 1.6696122507330338,
+        "slope_ci": null,
+        "slope_equivalent": null,
+        "verdict": "unavailable: no sampling model for an interval"
+      },
+      "label": "Post hoc subrange 1e-10.5 to 1e4.5 g"
+    },
+    "note": "No distribution test: the source is a binned model-assisted reconstruction, not individual observations, so there is no sampling model and no interval is available. The plateau subrange was chosen AFTER inspecting the spectrum and is exploratory, not confirmatory."
+  }
+}

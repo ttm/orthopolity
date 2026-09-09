@@ -144,6 +144,10 @@ Practices that produce results which look like support but are not:
 | Discarding empty bins, or dropping the final bin edge | Silently manufactures flatness. |
 | Treating missing $q$ as zero $q$ | Missingness in the flare data depends on event size. |
 | Sharing an exponent label across log-histogram, density, CCDF and rank plots | They differ by one or by inversion. → [concept.md §6](concept.md) |
+| Applying a slope tolerance computed for one span to a domain of a different width | The tolerance scales as $\ln F/\ln(k_{\max}/k_{\min})$. Using a two-decade tolerance on a 22-decade spectrum understates the drift by an order of magnitude — an error made and corrected in [evidence.md §3](evidence.md). |
+| A continuous KS test on heavily tied data | The earthquake energy proxy takes 32 distinct values across 6,639 events; the ties inflate KS on their own. A discrete treatment is required. |
+| Choosing the equivalence tolerance after seeing the spectrum | Identical in kind to choosing the domain after seeing the fit. The ocean plateau passes at $F=2$ and fails at $F=1.25$. |
+| Selecting $x_{\min}$ by minimising KS, as in standard CSN practice | Legitimate elsewhere, but incompatible with a protocol whose whole point is a declared domain. |
 
 ---
 

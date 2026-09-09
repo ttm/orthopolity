@@ -89,9 +89,9 @@ different clothes"*, not *"here is a new natural law."* Note also that Damuth ca
 relabelled: it is a species-population relation, whereas orthopolity as stated is community
 abundance per log size class. Species richness within size classes introduces another factor.
 
-## 7. Two of three empirical tests failed
+## 7. Two of three empirical tests failed, and the statistics made it worse
 
-This is new information and it is the most important entry in this document.
+This is the most important entry in this document.
 
 - **Earthquakes:** flat energy occupancy requires $b = \gamma = 1.5$; observed $b = 0.998$
   [0.973, 1.024], robust across thresholds and across two energy conversions. Decisive.
@@ -99,15 +99,23 @@ This is new information and it is the most important entry in this document.
   zero — and unchanged when the missing-data problem is removed by switching to rise-phase fluence.
 - **Ocean:** near-flat over ~15 decades, but $\Phi$ spans a factor of 39 across the full range.
 
-The universal reading is dead. What survives is conditional, and that is a smaller claim than the
-essay makes.
+Formal testing then weakened it further ([evidence.md §4](evidence.md)): both failures are confirmed
+by equivalence testing at every tolerance examined; the flare distribution is not a power law at all;
+and the one positive case is a *post hoc* subrange with no sampling model, which passes at a declared
+tolerance factor of 2 and fails at 1.25.
+
+The universal reading is dead. What survives is conditional, exploratory, and a much smaller claim
+than the essay makes.
 
 ## 8. The statistical terrain is hostile, and the work is not yet done
 
 - **Clauset–Shalizi–Newman (2009)**: least-squares on log-log plots gives wrong exponents and no
-  evidence of a power law at all. **No CSN goodness-of-fit testing has been performed anywhere in
-  this project.** The pilot fits a bounded power law descriptively and says so.
-- **Lognormal is usually indistinguishable** from a power law over realistic ranges.
+  evidence of a power law at all. CSN testing has now been run
+  ([evidence.md §4](evidence.md)), and **the flare distribution is ruled out as a power law**
+  (p = 0.018).
+- **Lognormal is usually indistinguishable** from a power law over realistic ranges — confirmed
+  here in both systems tested (p = 0.41 and p = 0.90). No claim of the form "power law rather than
+  lognormal" is supportable from these data.
 - **Broido & Clauset (2019)**: strong scale-free structure is rare across ~1000 networks. The
   explanandum may be less universal than assumed.
 - **Stumpf & Porter**: a power law needs both mechanism and statistical validation; most published
@@ -166,8 +174,11 @@ Now written against actual results rather than hypotheticals:
 1. **If the independently sampled ecological test fails** — that is, if the plateau does not survive
    in data that is not a re-expression of Hatton et al. — then the count stands at three failures and
    zero independent successes. Stop, and publish the negative result.
-2. **If CSN testing shows the target distributions are not power laws** in the first place, the
-   explanandum has partly evaporated. Reassess what remains to explain.
+2. ⚠️ **Partly met already.** CSN testing rules the flare distribution out as a power law
+   (p = 0.018), and no tested system distinguishes a power law from a lognormal. Part of the
+   explanandum has evaporated. This does not end the programme — the occupancy question is separate
+   from the shape question — but any claim that orthopolity *explains observed power laws* must now
+   first establish that the power laws are there.
 3. **If the ocean boundary failures resist explanation** from independently measured covariates
    across several attempts, accept that orthopolity is an accounting identity with a contingent
    empirical range, and scope every claim down permanently to match.

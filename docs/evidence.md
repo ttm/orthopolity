@@ -125,27 +125,92 @@ log10 mass (g)    Φ
 document. Three steps removed from raw observation: Hatton et al. reconstruction → resource-spectrum
 re-expression → these fits.)*
 
-**Two conclusions, and the second is the one worth having.**
+**The plateau is the result worth having.** The middle ~15 decades are near-flat: $\Phi$ confined
+to a factor of 1.7, slope −0.006, which implies a total systematic drift of only **1.23× across
+fifteen decades of body mass**. The failures are concentrated at the two boundaries — the bacterial
+end (Φ ≈ 2.5) and the whale end (Φ ≈ 0.07). That is a **quantified domain of validity**, and it is
+the shape of result worth publishing: not "orthopolity is true" but "it holds across fifteen decades
+of the marine size spectrum, breaks at both ends, and here is where."
 
-First, a warning: the **full-range fitted slope of −0.039 sits inside** the illustrative tolerance
-of $|s| \leq \ln(1.25)/\ln(100) \approx 0.0485$ — while $\Phi$ varies by a factor of **39**. The
-slope test passes and the equality claim fails, on the same data. This is exactly why a slope test
-alone is inadequate: it averages a 2.5 at one end against a 0.065 at the other. **A flat fitted
-slope is not flatness.**
+> **Correction.** An earlier version of this document claimed the full-range slope of −0.039 "sits
+> inside" a tolerance of $|s| \leq 0.0485$ while $\Phi$ varied by 39×, and offered that as a case
+> of the slope test passing while flatness failed. That was an error: the 0.0485 figure is the
+> tolerance for a **two-decade** span, and the ocean spectrum spans **22 decades**. The slope
+> tolerance scales as $\ln(F)/\ln(k_{\max}/k_{\min})$, so the correct value here is ±0.0044 — and
+> a slope of −0.039 implies a **7.3× drift across the full range**, failing the slope criterion
+> too. The full range fails *both* criteria, not just one.
+>
+> The general point survives and still matters — a spectrum can undulate with zero fitted slope, so
+> a slope criterion alone is never sufficient — but the ocean is not an example of it. The point is
+> now enforced by a unit test on synthetic data instead
+> ([`test_wavy_spectrum_with_zero_slope_fails_on_departure`](../tests/test_gof.py)).
 
-Second, and more positively: the middle ~15 decades really are near-flat, with $\Phi$ confined to a
-factor of 1.7 and a slope of −0.006. The failures are concentrated at the two boundaries — the
-bacterial end (Φ ≈ 2.5) and the whale end (Φ ≈ 0.07). That is a **quantified domain of validity**,
-which is precisely the shape of result worth publishing: not "orthopolity is true" but "it holds
-across fifteen decades of the marine size spectrum and breaks at both ends, and here is where."
+## 4. Distribution goodness of fit and flatness equivalence
 
-## 4. What is still missing
+Both tests that were previously missing now exist ([`src/gof.py`](../src/gof.py),
+[`experiments/run_gof.py`](../experiments/run_gof.py), outputs in
+[`results/gof.json`](../results/gof.json)). All fits use the domains declared in
+[`configs/pilot.json`](../configs/pilot.json); **no domain is re-selected**, since choosing a range
+after seeing a result would invalidate the p-values and is the threshold-shopping failure this
+project treats as a dead end. Alternatives are fitted on the same truncated support so the
+likelihood ratios compare like with like.
 
-- **No Clauset–Shalizi–Newman goodness-of-fit testing has been done.** The lab fits a bounded
-  power law *descriptively* and says so. No KS bootstrap $p$-values, no likelihood-ratio comparison
-  against lognormal, exponential or stretched exponential. Mandatory before any confirmatory claim.
-- **No equivalence testing.** Failure to reject flatness is not support for flatness; see
-  [value.md §4](value.md).
+### Is the distribution even a power law?
+
+Clauset–Shalizi–Newman procedure: MLE, KS statistic, parametric bootstrap p-value (500 synthetic
+datasets), Vuong likelihood-ratio tests against truncated alternatives. Following CSN, **p ≤ 0.1
+rules the power law out**; p > 0.1 is non-rejection, not support.
+
+| System | $\alpha$ | n | KS | p | Verdict |
+|---|---:|---:|---:|---:|---|
+| Solar flares, peak irradiance | 2.274 | 1,306 | 0.0323 | **0.018** | **Power law ruled out** |
+| Earthquakes, energy proxy | 1.662 | 6,639 | 0.1080 | 0.000 | ⚠️ Test invalid — see below |
+
+Likelihood-ratio comparisons, both systems: the power law beats the exponential and the stretched
+exponential decisively (p < 0.0001 in every case), and is **statistically indistinguishable from the
+lognormal** (flare p = 0.41, earthquake p = 0.90). That is the classic CSN outcome — lognormal and
+power law cannot be separated over a bounded range — and it means no claim of the form "this is a
+power law rather than a lognormal" is supportable from these data.
+
+⚠️ **The earthquake goodness-of-fit test should not be read as a result.** Magnitudes are rounded to
+0.1, so the energy proxy takes only **32 distinct values** across 6,639 events. A continuous KS
+statistic on data that heavily tied is inflated by the ties alone, and the small p-value reflects
+discretisation rather than evidence about the underlying law. A discrete CSN treatment would be
+required. The occupancy test below is unaffected and is far stronger evidence.
+
+### Is the spectrum flat?
+
+Flatness requires **both** criteria — slope equivalence by TOST, and bounded departure
+$\max|\ln\Phi|$ within tolerance — because a spectrum can undulate with zero fitted slope. The
+tolerance is a **declared design choice**, not a natural constant: a maximum drift by a factor $F$
+across the domain gives $|s| \leq \ln F / \ln(k_{\max}/k_{\min})$. Results at two tolerances:
+
+| System | slope | 90% CI | tol ±(F=1.25) | $\Phi$ ratio | Verdict (F=1.25) | Verdict (F=2) |
+|---|---:|---|---:|---:|---|---|
+| Solar flares | −0.2325 | [−0.529, −0.060] | 0.0554 | 3.0× | not flat | not flat |
+| Earthquakes | +0.2720 | [+0.239, +0.323] | 0.0185 | 28.5× | not flat | not flat |
+| Ocean, full range | −0.0392 | *no interval* | 0.0044 | 38.8× | not flat | not flat |
+| Ocean, plateau ‡ | −0.0059 | *no interval* | 0.0065 | 1.7× | fails departure | **passes both** |
+
+‡ The plateau subrange was chosen **after** inspecting the spectrum. It is exploratory, not
+confirmatory, and cannot be counted as a passed test.
+
+No interval is available for the ocean because the source is a binned model-assisted reconstruction
+rather than individual observations: there is no sampling model to bootstrap. The module reports
+this as *unavailable* rather than manufacturing a verdict.
+
+**The plateau result depends on the declared tolerance**, and that is the honest situation rather
+than a defect. At $F = 2$ it satisfies both criteria; at $F = 1.25$ its 1.7× spread fails the
+departure bound. Anyone claiming the ocean spectrum is "flat" must say what flat means first.
+
+## 5. What is still missing
+
+- **A discrete goodness-of-fit treatment for the earthquake catalogue.** The continuous KS test is
+  invalid on magnitudes rounded to 0.1; that row of the table is a placeholder, not a finding.
+- **A sampling model for the ocean spectrum**, without which no interval and therefore no
+  equivalence verdict is possible for the strongest positive case.
+- **An externally declared tolerance.** The plateau passes at $F = 2$ and fails at $F = 1.25$.
+  Choosing $F$ after seeing that is the same error as choosing a domain after seeing a fit.
 - **No preregistration.** Every result so far is exploratory. The flare threshold sensitivity shows
   exactly how much that matters.
 - **No independent positive candidate.** The one qualified success is a re-expression of someone
@@ -157,10 +222,21 @@ across fifteen decades of the marine size spectrum and breaks at both ends, and 
   when a bootstrap resample produces an empty bin, so those intervals should not carry primary
   inference.
 
-## 5. How this changes the overall assessment
+## 6. How this changes the overall assessment
 
-Before these tests, orthopolity was an untested lens. It is now a hypothesis with a **track record**:
-one qualified success with a mapped domain of validity, and two failures — one of them decisive, and
-neither rescued by obvious corrections. That is considerably more informative than the essay's
-collection of confirming illustrations, and it points the work toward the only question that now
-looks answerable: **not whether orthopolity is true, but where and why it holds.**
+Before these tests, orthopolity was an untested lens. It now has a **track record**, and the
+statistics have made it less favourable rather than more:
+
+- **Two systems fail the occupancy test outright**, at every tolerance examined.
+- **The flare distribution is not a power law** by the standard test (p = 0.018), and in neither
+  system can a power law be distinguished from a lognormal. Part of the explanandum has evaporated:
+  some of what the framework set out to explain is not clearly there.
+- **The one positive case is exploratory**: a post hoc subrange of a re-expression of someone else's
+  model-assisted reconstruction, with no sampling model, passing at one declared tolerance and
+  failing at another.
+
+That is a thin evidential base, and it should be described as such. What survives is worth having
+anyway: a quantified 15-decade plateau with sharp boundary failures, in a system where the resource
+is unambiguous. The question this now supports is **not whether orthopolity is true, but where and
+why equal-resource spectra occur** — and the answer so far is "rarely, and the boundaries are the
+interesting part."

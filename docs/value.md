@@ -58,11 +58,13 @@ formulations and explicit separation of established results from proposed extens
 
 These are the price of admission, and skipping any of them invalidates the result:
 
-1. **Full Clauset–Shalizi–Newman treatment.** MLE, KS goodness-of-fit, bootstrap $p$-values, and
-   likelihood-ratio tests against lognormal, exponential and stretched exponential. Least-squares
-   on a log-log plot is not evidence. **This has not yet been done anywhere in this project.**
-2. **Equivalence testing against a declared tolerance.** *Failure to reject flatness is not support
-   for flatness.* Declare in advance the tolerable resource drift — for illustration, no more than
+1. **Full Clauset–Shalizi–Newman treatment.** ✅ *Implemented* in [`src/gof.py`](../src/gof.py) —
+   MLE, KS goodness-of-fit, parametric bootstrap $p$-values, and Vuong likelihood-ratio tests
+   against truncated lognormal, exponential and stretched exponential. Note the deliberate
+   departure from standard practice: the lower bound is **declared, never fitted**, because
+   selecting $x_{\min}$ by minimising KS is the same threshold shopping the protocol forbids.
+2. **Equivalence testing against a declared tolerance.** ✅ *Implemented.* *Failure to reject
+   flatness is not support for flatness.* Declare in advance the tolerable resource drift — for illustration, no more than
    a factor 1.25 across two decades implies $|s| \leq \ln(1.25)/\ln(100) \approx 0.0485$ — and
    require the interval to sit entirely inside it. The tolerance is a design choice, not a natural
    constant.
@@ -83,8 +85,10 @@ These are the price of admission, and skipping any of them invalidates the resul
 
 Ranked by expected value, revised in light of results:
 
-1. **An independently sampled ecological test.** The strongest existing evidence is a re-expression
-   of someone else's model-assisted reconstruction, so it cannot confirm anything on its own. The Pelagic Size Structure database (Dugenne et
+1. **An independently sampled ecological test.** Now clearly the highest priority: the strongest
+   existing evidence is a *post hoc* subrange of a re-expression of someone else's model-assisted
+   reconstruction, with no sampling model and a verdict that flips with the declared tolerance. It
+   cannot confirm anything on its own. The Pelagic Size Structure database (Dugenne et
    al. 2024) and GLOSSAQUA (Ersoy et al. 2025) offer comparisons across places, instruments and
    ecosystems. This is the highest-value single step available.
 2. **Characterise the ocean boundary failures.** Why Φ ≈ 2.5 at the bacterial end and 0.07 at the
@@ -119,8 +123,9 @@ Each milestone is a stopping point with standalone value:
 2. **Port the pilot lab into this repository.** ✅ *Done* — accounting functions, estimators, unit
    tests, checksummed raw snapshots and all outputs are here and reproduce offline. See
    [evidence.md](evidence.md).
-3. **Add the missing statistics.** Full CSN testing and equivalence testing (§4). Nothing is
-   confirmatory until this exists.
+3. **Add the missing statistics.** ✅ *Done* — see [evidence.md §4](evidence.md). The results were
+   unfavourable: two occupancy failures confirmed at every tolerance, the flare distribution ruled
+   out as a power law, and lognormal indistinguishable everywhere.
 4. **Run an independently sampled positive candidate** with the domain and resource fixed in
    advance, retaining a known negative control (earthquakes).
 5. **Publish the failures alongside the successes.** Two already exist. This is what distinguishes

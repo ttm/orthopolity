@@ -34,12 +34,21 @@ Three systems tested. **Two clear failures, one qualified success.**
 |---|---|---|---|
 | Earthquakes (USGS, 6,639 events) | $b = 1.5$ | $b = 0.998$ [0.973, 1.024] | **Decisive failure** |
 | Solar flares (NOAA, 10,501 events) | $\alpha = 1.858$ | $\alpha = 2.239$, gap 0.382 [0.125, 0.620] | **Failure** |
-| Ocean size spectrum (23 log-mass bins) | $\Phi$ flat | flat over ~15 decades, fails at both ends | **Qualified success** |
+| Ocean size spectrum (23 log-mass bins) | $\Phi$ flat | flat over ~15 decades, fails at both ends | **Qualified, exploratory** |
 
-The universal reading is dead. What survives is conditional — and the ocean result is genuinely
-interesting: $\Phi$ stays within a factor of 1.7 across fifteen decades of body mass before breaking
-down at the bacterial and whale ends. That is a **quantified domain of validity**, which is the
-shape of result worth publishing.
+Formal testing then made the picture *less* favourable, not more:
+
+- Both failures are confirmed by **equivalence testing** at every tolerance examined.
+- The flare distribution is **ruled out as a power law** by the Clauset–Shalizi–Newman test
+  (p = 0.018), and in no tested system can a power law be distinguished from a **lognormal**
+  (p = 0.41, p = 0.90). Part of the explanandum has evaporated.
+- The one positive case is a **post hoc** subrange of a re-expression of someone else's
+  model-assisted reconstruction, with no sampling model — and its verdict flips with the declared
+  tolerance (passes at factor 2, fails at 1.25).
+
+The universal reading is dead. What survives is worth having anyway: a quantified 15-decade plateau
+with sharp boundary failures, in a system where the resource is unambiguous — a **domain of
+validity**, not a law.
 
 Details, caveats and provenance: [docs/evidence.md](docs/evidence.md).
 
@@ -48,8 +57,9 @@ Details, caveats and provenance: [docs/evidence.md](docs/evidence.md).
 ```bash
 python -m pip install -r requirements.txt
 python experiments/fetch_data.py                       # verifies SHA-256 of every raw input
-PYTHONPATH=src python -m unittest discover -s tests -v  # 8 accounting/estimator checks
+PYTHONPATH=src python -m unittest discover -s tests -v  # 22 accounting/estimator/GOF checks
 python experiments/run_pilot.py                        # regenerates results/
+python experiments/run_gof.py                          # goodness-of-fit + equivalence tests
 ```
 
 Raw snapshots are frozen and checksummed; `fetch_data.py` fails loudly rather than silently
