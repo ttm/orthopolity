@@ -78,7 +78,8 @@ needed, since `tools/md2tex.py` converts the Markdown subset the manuscript uses
 make paper
 ~~~
 
-This writes `docs/paper.pdf`, which is untracked and regenerated on demand.
+This writes [docs/paper.pdf](docs/paper.pdf), which is committed for convenience; regenerate
+it whenever the manuscript changes, so the tracked PDF matches its Markdown source.
 
 Results contain estimated quantities, diagnostic plots, and declared limitations. Successful
 reproduction verifies computation from the frozen inputs; it does not validate sampling

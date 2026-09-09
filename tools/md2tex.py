@@ -31,6 +31,10 @@ PREAMBLE = r"""\documentclass[11pt,a4paper]{article}
 \usepackage[hidelinks,breaklinks]{hyperref}
 \usepackage{microtype}
 
+% Byte-reproducible output: a fixed trailer id, with document timestamps coming
+% from SOURCE_DATE_EPOCH, so rebuilding an unchanged manuscript changes nothing.
+\ifdefined\pdfvariable\pdfvariable trailerid{}\fi
+
 \setlength{\parskip}{0.4em}
 \setlength{\parindent}{0pt}
 \renewcommand{\arraystretch}{1.25}
