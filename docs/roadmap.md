@@ -17,7 +17,10 @@ heavy tail stops being an anomaly; if a single stratum is still heavy-tailed, th
 structure beyond two moments to explain.
 
 ### R4 — Extend coverage beyond freshwater fish
-**Data. Determines how far the one positive result generalises.**
+**Data. Determines how far the one positive result generalises. Now the top priority** — the
+sequencing argument that deprioritised new systems has expired
+([not-worth-pursuing.md B7](not-worth-pursuing.md)), and this is also the out-of-sample test of the
+τ ≈ 0.257 replication prohibition.
 
 GLOSSAQUA is 87% freshwater and 80% fish, so the strata that would test generality hardest are the
 smallest. PSSdb (Dugenne et al. 2024) is the obvious next source; its Zenodo record was unreachable
@@ -27,8 +30,14 @@ when last tried.
 **Analysis. Follows directly from [evidence.md §6.4](evidence.md).**
 
 Wider-spanning studies sit closer to −1 (study-level ρ = −0.549, p = 0.028, n = 16), but span is
-partly a proxy for taxon. Stratifying span within taxon, or finding studies that vary span at fixed
-taxon, would separate the two.
+partly a proxy for taxon. Stratifying span within taxon would separate the two.
+
+**Runnable now, but underpowered.** Three taxa have at least four studies *and* genuine span
+variation within them — Fish (5 studies, 0.9–3.0 decades), Macroinvertebrate (4, 3.0–5.3) and
+Zooplankton (4, 2.6–9.9). That is enough to attempt the stratification and not enough to settle it
+at four or five study blocks per taxon. Worth running for the honest answer, which may well be
+"cannot separate at this sample size" — itself worth recording rather than leaving the confound
+unexamined.
 
 ### R6 — Better-constrained ocean data
 **Data.** No ocean verdict is possible while 21 of 23 bins have departures smaller than the
@@ -47,5 +56,5 @@ published reconstruction uncertainty ([evidence.md §5](evidence.md)).
 | Ensemble result attacked from three directions and survived | `d57a707` |
 | Meta-analysis estimators moved into tested `src/meta.py`; span test; §5.1 theory | `ab218dd` |
 | **R1** — (O-ensemble) formalised, latent-shape test, quantitative prohibitions | `1494a89` |
-| **R2** — discrete Gutenberg–Richter goodness of fit; GR *not* ruled out at M ≥ 5.5 | *this commit* |
-| **R3** — packaging (`pyproject.toml`) and one-command reproduction (`Makefile`) | *this commit* |
+| **R2** — discrete Gutenberg–Richter goodness of fit; GR *not* ruled out at M ≥ 5.5 | `1098b7c` |
+| **R3** — packaging (`pyproject.toml`) and one-command reproduction (`Makefile`) | `1098b7c` |

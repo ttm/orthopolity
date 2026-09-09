@@ -114,10 +114,13 @@ This one carries a specific risk worth naming: the framework's most attention-gr
 touches inequality, and attaching a moral conclusion to it invites the reading most likely to
 discredit the technical work. Keep the accounting result and the political interpretation apart.
 
-### B7. Multiplying pilot systems before the statistics exist ⚠️ *Sequencing, not merit*
-Three systems have been tested; a fourth adds little while CSN testing, equivalence testing and
-preregistration are all still missing. Depth on the existing three — especially the ocean boundary
-failures — is worth more than breadth. Reverse this once [value.md §7](value.md) step 3 is done.
+### B7. Multiplying pilot systems before the statistics exist ✅ *Reversed — precondition met*
+This said a fourth system added little while CSN testing, equivalence testing and preregistration
+were missing. **All three now exist**, and a fifth system has been added under a preregistered
+protocol. The sequencing argument has expired: breadth is now worth more than further depth on the
+existing systems, and the binding constraint is data availability rather than method
+(roadmap R4, R6). Kept in the record because the *ordering* it argued for was correct — the
+statistics did come first.
 
 ### B8. The commissioned assessment document itself ⚠️ *Substance imported, document not*
 The external assessment's findings are incorporated throughout [concept.md](concept.md),

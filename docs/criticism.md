@@ -112,15 +112,18 @@ against a predicted −1.000.
 The universal reading is dead, and so is the claim about individual systems. What survives is an
 **ensemble-level regularity** — much smaller than the essay claims, but real enough to test again.
 
-## 8. The statistical terrain is hostile, and the work is not yet done
+## 8. The statistical terrain is hostile
 
 - **Clauset–Shalizi–Newman (2009)**: least-squares on log-log plots gives wrong exponents and no
   evidence of a power law at all. CSN testing has now been run
   ([evidence.md §4](evidence.md)), and **the flare distribution is ruled out as a power law**
   (p = 0.018).
 - **Lognormal is usually indistinguishable** from a power law over realistic ranges — confirmed
-  here in both systems tested (p = 0.41 and p = 0.90). No claim of the form "power law rather than
-  lognormal" is supportable from these data.
+  for the solar flares (Vuong p = 0.41). No claim of the form "power law rather than lognormal" is
+  supportable there. *The corresponding earthquake comparison (p = 0.90) is withdrawn*: it used the
+  continuous fits on magnitudes tied to a 0.1 grid, which [evidence.md §4](evidence.md) shows are
+  invalid. The valid discrete test finds Gutenberg–Richter is not ruled out at M ≥ 5.5
+  (p = 0.256); no lognormal comparison has been run on the discrete support.
 - **Broido & Clauset (2019)**: strong scale-free structure is rare across ~1000 networks. The
   explanandum may be less universal than assumed.
 - **Stumpf & Porter**: a power law needs both mechanism and statistical validation; most published

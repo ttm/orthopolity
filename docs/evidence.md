@@ -511,26 +511,34 @@ range over ±0.5?* An account of the mean without an account of the dispersion i
 
 ## 7. What is still missing
 
-- **Better-constrained ocean data.** With 21 of 23 bins unresolvable, no ocean verdict is possible
-  until the reconstruction uncertainty shrinks. Independently sampled size spectra with real
-  sampling models (PSSdb, or the individual-organism sources behind GLOSSAQUA) would be the route.
-- **A sampling model for the ocean spectrum**, without which no interval and therefore no
-  equivalence verdict is possible for the strongest positive case.
-- **An externally declared tolerance.** The plateau passes at $F = 2$ and fails at $F = 1.25$.
-  Choosing $F$ after seeing that is the same error as choosing a domain after seeing a fit.
-- **No preregistration.** Every result so far is exploratory. The flare threshold sensitivity shows
-  exactly how much that matters.
-- **A mechanism for the ensemble result.** §6 establishes that it is neither a reporting artefact
-  nor an attractor: the centre is real and the dispersion is real. Nothing explains why the mean
-  should sit at −1 while individual systems range over ±0.5. This is now the central open question.
-- **Marine and non-fish coverage.** The ensemble is dominated by freshwater fish. The strata that
-  would test generality hardest are the smallest.
-- **No preregistered domain.** Every domain and resource here was chosen before results were seen
-  *by the analyst*, but nothing was registered externally. The flare threshold sensitivity shows
-  how much latitude that leaves.
-- **Exported slope intervals have conditional coverage** — the log-slope diagnostic is undefined
-  when a bootstrap resample produces an empty bin, so those intervals should not carry primary
-  inference.
+Revised as items were closed; the roadmap tracks them with identifiers.
+
+- **Better-constrained ocean data (R6).** With 21 of 23 bins unresolvable, no ocean verdict is
+  possible until the reconstruction uncertainty shrinks. Independently sampled spectra with real
+  sampling models — PSSdb, or the individual-organism sources behind GLOSSAQUA — are the route.
+- **Marine and non-fish coverage (R4).** The ensemble is 87% freshwater and 80% fish, so the strata
+  that would test generality hardest are the smallest. This is also the out-of-sample test of the
+  τ ≈ 0.257 replication prohibition, and therefore the highest-value outstanding item.
+- **A mechanism for the mean.** §6 establishes that the centre is neither a reporting artefact nor
+  an attractor, and that both the centre and the dispersion are real. Nothing explains *why* the
+  mean should sit at −1 while individual systems scatter with τ ≈ 0.26. This is the central open
+  question.
+- **Whether the heavy tail is a mixture over classes (R7).** The latent distribution is heavier
+  than the two-moment maximum-entropy form; estimating τ per stratum would test the obvious
+  explanation. Runnable with data in hand.
+- **The span/taxon confound (R5).** Runnable but underpowered: only three taxa have both four or
+  more studies and real span variation within them.
+- **An externally declared tolerance.** F = 1.25 and F = 2 were chosen by the analyst, not
+  registered with anyone. The ocean plateau passes at one and fails at the other, so this is not a
+  cosmetic point.
+- **A lognormal comparison on the discrete earthquake support.** The valid discrete test shows
+  Gutenberg–Richter is not ruled out at M ≥ 5.5, but no alternative has been fitted on that same
+  discrete support; the earlier continuous comparison is withdrawn (§4).
+
+**Closed since earlier versions of this document:** CSN goodness-of-fit and equivalence testing
+(§4); preregistration, which §5 now has (commit `6df364f`); a sampling model for the ocean spectrum,
+supplied by propagating the published per-group uncertainties (§5); and a discrete treatment for the
+earthquake catalogue (§4).
 
 ## 8. How this changes the overall assessment
 
