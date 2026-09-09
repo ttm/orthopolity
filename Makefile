@@ -8,7 +8,7 @@
 PY ?= python
 export PYTHONPATH := src
 
-.PHONY: all install data test pilot gof independent ensemble analyses clean
+.PHONY: all install data test pilot gof independent ensemble strata analyses clean
 
 all: data test analyses
 
@@ -21,7 +21,7 @@ data:            ## verify every raw input against data/snapshot_checksums.json
 test:            ## 49 accounting, estimator, goodness-of-fit and meta-analysis checks
 	$(PY) -m unittest discover -s tests -v
 
-analyses: pilot gof independent ensemble
+analyses: pilot gof independent ensemble strata
 
 pilot:           ## the three original pilots -> results/results.json
 	$(PY) experiments/run_pilot.py
@@ -34,6 +34,9 @@ independent:     ## preregistered independent tests -> results/independent.json
 
 ensemble:        ## is the ensemble result real? -> results/ensemble.json
 	$(PY) experiments/run_ensemble.py
+
+strata:          ## class mixture and span/taxon confound -> results/strata.json
+	$(PY) experiments/run_strata.py
 
 clean:           ## remove generated exploration output only; never touches data/raw
 	rm -rf results/exploration __pycache__ src/__pycache__ tests/__pycache__

@@ -99,9 +99,12 @@ prohibition.)*
 satisfying (O) on the same systems must have equal dispersion and perfectly correlated departures;
 and any dataset's pass rate must match its own fitted τ.
 
-**Where it is already strained:** the latent distribution is heavier-tailed than the two-moment
-maximum-entropy form (Student t, ν = 8, ΔAIC = −7.4), most likely because the pool mixes classes
-with different τ — filed as R7.
+**And the one place it looked strained has resolved.** The pooled latent distribution is
+heavier-tailed than the two-moment maximum-entropy form — but that is a pooling artefact. Fitting
+strata separately, **freshwater alone is adequately Gaussian** (excess kurtosis −0.34), and a
+two-component mixture built from the fitted habitat parameters reproduces 82% of the pooled excess
+kurtosis. τ is confirmed as a *class* property: **0.228 freshwater against 0.383 marine**, which
+sharpens the replication prohibition from one universal number to class-specific ones.
 
 Details, caveats and provenance: [docs/evidence.md](docs/evidence.md).
 

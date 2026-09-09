@@ -5,29 +5,31 @@ was tried is visible alongside what is left.
 
 ## Open
 
-### R7 — Is the heavy tail a mixture over classes?
-**Analysis. Follows directly from [evidence.md §6.5](evidence.md).**
-
-The latent slope distribution is heavier-tailed than the maximum-entropy two-moment form
-(Student t with ν = 8 beats Gaussian by ΔAIC = −7.4; excess kurtosis +1.13). The natural
-explanation is that pooling freshwater with marine, and fish with plankton, mixes subgroups with
-different τ — and a mixture of Gaussians with unequal variances is heavy-tailed. Estimating τ
-separately per stratum tests this. If it holds, τ is confirmed as a *class* property and the
-heavy tail stops being an anomaly; if a single stratum is still heavy-tailed, there is real
-structure beyond two moments to explain.
-
 ### R4 — Extend coverage beyond freshwater fish
-**Data. Determines how far the one positive result generalises. Now the top priority** — the
-sequencing argument that deprioritised new systems has expired
-([not-worth-pursuing.md B7](not-worth-pursuing.md)), and this is also the out-of-sample test of the
-τ ≈ 0.257 replication prohibition.
+**Data. THE top priority, and currently blocked by an external outage.**
+
+This is the only genuine out-of-sample test of the replication prohibition, which R7 has now
+sharpened from a universal τ ≈ 0.257 to class-specific values: **τ ≈ 0.23 for freshwater, ≈ 0.38 for
+marine**. It would also supply the fixed-taxon span variation that R5 needs.
+
+**Access attempted 2026-09-09 and failed.** Zenodo returns HTTP 504 on every record, including ones
+retrieved successfully earlier in this project, so the outage is theirs rather than a bad
+identifier. `jessluo/PSSdb` on GitHub holds the workflow code but no data products. The ESSD article
+page resolves normally. Retry when Zenodo recovers.
 
 GLOSSAQUA is 87% freshwater and 80% fish, so the strata that would test generality hardest are the
 smallest. PSSdb (Dugenne et al. 2024) is the obvious next source; its Zenodo record was unreachable
 when last tried.
 
 ### R5 — Resolve the span/taxon confound
-**Analysis. Follows directly from [evidence.md §6.4](evidence.md).**
+**Blocked on power, not method. Attempted; see [evidence.md §6.9](evidence.md).**
+
+Tested within taxon and nothing reached significance, with signs disagreeing: Fish ρ = −0.500
+(p = 0.39, 5 studies), Macroinvertebrate ρ = −0.211 (p = 0.79, 4), Zooplankton ρ = +0.400
+(p = 0.60, 4). That is a power failure rather than a null result. Needs studies that vary span at
+fixed taxon — which is what R4 would supply.
+
+*Original framing:*
 
 Wider-spanning studies sit closer to −1 (study-level ρ = −0.549, p = 0.028, n = 16), but span is
 partly a proxy for taxon. Stratifying span within taxon would separate the two.
@@ -58,3 +60,5 @@ published reconstruction uncertainty ([evidence.md §5](evidence.md)).
 | **R1** — (O-ensemble) formalised, latent-shape test, quantitative prohibitions | `1494a89` |
 | **R2** — discrete Gutenberg–Richter goodness of fit; GR *not* ruled out at M ≥ 5.5 | `1098b7c` |
 | **R3** — packaging (`pyproject.toml`) and one-command reproduction (`Makefile`) | `1098b7c` |
+| Stale post-R1–R3 claims corrected; invalid earthquake lognormal comparison withdrawn | `aa45046` |
+| **R7** — heavy tail is largely a class mixture; Gaussian adequate within freshwater | *this commit* |

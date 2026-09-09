@@ -1,0 +1,138 @@
+{
+  "status": "EXPLORATORY follow-up, not preregistered",
+  "R7": {
+    "per_stratum": {
+      "habitat": {
+        "Freshwater": {
+          "n": 1075,
+          "n_with_se": 645,
+          "n_studies": 5,
+          "tau": 0.2284930763088651,
+          "mu": -0.9974930424804029,
+          "best_family": "gaussian",
+          "delta_aic": {
+            "gaussian": 0.0,
+            "laplace": 35.472011999090626,
+            "student_t": 7.3125002428221535
+          },
+          "gaussian_adequate": true,
+          "excess_kurtosis": -0.3439284244453784,
+          "I_squared": 0.7431811267026294
+        },
+        "Marine": {
+          "n": 225,
+          "n_with_se": 102,
+          "n_studies": 11,
+          "tau": 0.3827982146659998,
+          "mu": -1.1090327599855765,
+          "best_family": "laplace",
+          "delta_aic": {
+            "gaussian": 0.0,
+            "laplace": -23.268945939365466,
+            "student_t": -12.871756744576729
+          },
+          "gaussian_adequate": false,
+          "excess_kurtosis": 1.9059435692457036,
+          "I_squared": 0.974051704541228
+        }
+      },
+      "species": {
+        "Bacteria+PrimProd+Zooplankton": {
+          "n": 33,
+          "n_with_se": 33,
+          "n_studies": 2,
+          "note": "too few for a latent-shape fit"
+        },
+        "Bacteria+Zooplankton": {
+          "n": 377,
+          "n_with_se": 0,
+          "n_studies": 1,
+          "note": "too few for a latent-shape fit"
+        },
+        "Fish": {
+          "n": 688,
+          "n_with_se": 671,
+          "n_studies": 5,
+          "tau": 0.26046471978671626,
+          "mu": -1.0113875515928696,
+          "best_family": "student_t",
+          "delta_aic": {
+            "gaussian": 0.0,
+            "laplace": 3.789907544806397,
+            "student_t": -9.820262447712537
+          },
+          "gaussian_adequate": false,
+          "excess_kurtosis": 1.2331035818326699,
+          "I_squared": 0.798535290522138
+        },
+        "Macroinvertebrate": {
+          "n": 63,
+          "n_with_se": 10,
+          "n_studies": 4,
+          "note": "too few for a latent-shape fit"
+        },
+        "Zooplankton": {
+          "n": 139,
+          "n_with_se": 33,
+          "n_studies": 4,
+          "note": "too few for a latent-shape fit"
+        }
+      }
+    },
+    "mixture": {
+      "habitat": {
+        "stratifier": "habitat",
+        "n_components": 2,
+        "tau_range": [
+          0.2284930763088651,
+          0.3827982146659998
+        ],
+        "tau_ratio": 1.6753164728219292,
+        "mixture_excess_kurtosis": 0.926282112129448,
+        "pooled_excess_kurtosis": 1.1318672758177017,
+        "pooled_best_family": "student_t"
+      },
+      "species": {
+        "note": "fewer than two fitted strata; mixture not identifiable"
+      }
+    }
+  },
+  "R5": {
+    "span_within_taxon": {
+      "Fish": {
+        "n_studies": 5,
+        "n_spectra": 688,
+        "span_range_decades": [
+          0.9030899869919434,
+          3.0102999566398116
+        ],
+        "spearman_rho": -0.49999999999999994,
+        "spearman_p": 0.3910022189557703,
+        "significant": false
+      },
+      "Macroinvertebrate": {
+        "n_studies": 4,
+        "n_spectra": 63,
+        "span_range_decades": [
+          3.0102999566398116,
+          5.311329952303793
+        ],
+        "spearman_rho": -0.21081851067789195,
+        "spearman_p": 0.7891814893221081,
+        "significant": false
+      },
+      "Zooplankton": {
+        "n_studies": 4,
+        "n_spectra": 139,
+        "span_range_decades": [
+          2.645913275033844,
+          9.868035662489604
+        ],
+        "spearman_rho": 0.39999999999999997,
+        "spearman_p": 0.6,
+        "significant": false
+      }
+    },
+    "note": "Four or five study blocks per taxon is very low power; a null result here does not resolve the confound, it only shows the available data cannot."
+  }
+}

@@ -484,7 +484,57 @@ With τ measured, (O-ensemble) makes three refutable commitments:
 That is a small theory that forbids specific things, which is the minimum for the work to be
 scientific rather than descriptive.
 
-### 6.8 What the tests together say
+### 6.8 The heavy tail is largely a mixture over classes (R7)
+
+§6.5 found the pooled latent distribution heavier-tailed than the two-moment maximum-entropy form,
+and suggested the obvious explanation: pooling classes with different τ. Fitting each stratum
+separately ([`experiments/run_strata.py`](../experiments/run_strata.py)) supports it.
+
+| Stratum | n | studies | μ | **τ** | Best latent | Excess kurtosis | Gaussian adequate? |
+|---|---:|---:|---:|---:|---|---:|---|
+| **Freshwater** | 645 | 5 | −0.997 | **0.228** | Gaussian | −0.34 | **yes** |
+| Marine | 102 | 11 | −1.109 | **0.383** | Laplace | +1.91 | no |
+| Fish | 671 | 5 | −1.011 | 0.260 | Student t | +1.23 | no |
+
+Three things follow.
+
+**Within a homogeneous class, the maximum-entropy form works.** Freshwater — the largest and
+cleanest stratum — is adequately Gaussian, with excess kurtosis of −0.34. The two-moment prediction
+of [concept.md §3.1](concept.md) is not wrong; it was being tested on a pooled sample that violates
+its own scope condition.
+
+**A mixture of the fitted strata reproduces most of the pooled tail.** Building a two-component
+mixture from the fitted habitat parameters alone gives excess kurtosis **+0.926** against the pooled
+**+1.132** — about 82% of it, from nothing but the τ difference between freshwater and marine.
+
+**τ really is a class property**, as the hypothesis asserts rather than assumes: freshwater 0.228
+against marine 0.383, a 1.68× difference. This sharpens the replication prohibition of §6.7. The
+commitment is not a universal τ ≈ 0.257 but **class-specific values — τ ≈ 0.23 for freshwater and
+≈ 0.38 for marine** — which is both more useful and easier to refute.
+
+Marine and Fish remain heavy-tailed, and both are themselves heterogeneous: "Marine" spans coral
+reef, continental shelf and open ocean across 11 studies, and "Fish" spans fresh and salt water. The
+mixture explanation predicts exactly that, and finer strata would test it — but n = 102 for marine
+is already thin.
+
+### 6.9 The span/taxon confound cannot be resolved with this data (R5)
+
+§6.4 found wider-spanning studies closer to −1 (ρ = −0.549, p = 0.028) but flagged span as partly a
+proxy for taxon. Testing within taxon:
+
+| Taxon | studies | span range | ρ | p |
+|---|---:|---|---:|---:|
+| Fish | 5 | 0.9 – 3.0 decades | −0.500 | 0.391 |
+| Macroinvertebrate | 4 | 3.0 – 5.3 | −0.211 | 0.789 |
+| Zooplankton | 4 | 2.6 – 9.9 | +0.400 | 0.600 |
+
+Nothing significant, and the signs disagree. **This is a power failure, not a null result**: four or
+five study blocks per taxon cannot detect a correlation of the pooled size. The honest position is
+that the confound stands unresolved — the pooled relationship may be a genuine averaging effect or
+may be taxon acting through span, and this data cannot say which. Resolving it needs studies that
+vary span at fixed taxon, which is R5's standing requirement.
+
+### 6.10 What the tests together say
 
 Neither of the two hypotheses that motivated this analysis survives:
 
@@ -492,8 +542,10 @@ Neither of the two hypotheses that motivated this analysis survives:
   habitats and taxa.
 - **Not an attractor.** Individual systems genuinely differ, with τ ≈ 0.25.
 - **Possibly an averaging effect**, on suggestive but marginal evidence (§6.4).
-- **Not purely a two-moment constraint** — the latent distribution is heavier-tailed than the
-  maximum-entropy form, most likely because the pool mixes classes with different τ (§6.5).
+- **A two-moment constraint after all, within class.** The pooled distribution is heavier-tailed
+  than the maximum-entropy form (§6.5), but that is a pooling artefact: freshwater alone is
+  adequately Gaussian, and a mixture of the fitted habitat τ values reproduces 82% of the pooled
+  excess kurtosis (§6.8).
 
 The random-effects pooled mean is **−1.0113, 95% CI [−1.0329, −0.9897]** — an interval that
 contains the prediction while properly accounting for the heterogeneity. And the fitted dispersion
@@ -523,11 +575,11 @@ Revised as items were closed; the roadmap tracks them with identifiers.
   an attractor, and that both the centre and the dispersion are real. Nothing explains *why* the
   mean should sit at −1 while individual systems scatter with τ ≈ 0.26. This is the central open
   question.
-- **Whether the heavy tail is a mixture over classes (R7).** The latent distribution is heavier
-  than the two-moment maximum-entropy form; estimating τ per stratum would test the obvious
-  explanation. Runnable with data in hand.
-- **The span/taxon confound (R5).** Runnable but underpowered: only three taxa have both four or
-  more studies and real span variation within them.
+- **Finer marine strata.** Marine remains heavy-tailed (excess kurtosis +1.91) and is itself a
+  mixture of coral reef, shelf and open ocean, but n = 102 is already thin for splitting further.
+- **The span/taxon confound (R5), still open.** Tested and underpowered: at four or five study
+  blocks per taxon nothing reaches significance and the signs disagree (§6.9). Needs studies that
+  vary span at fixed taxon.
 - **An externally declared tolerance.** F = 1.25 and F = 2 were chosen by the analyst, not
   registered with anyone. The ocean plateau passes at one and fails at the other, so this is not a
   cosmetic point.

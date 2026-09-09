@@ -84,6 +84,12 @@ route to a decisive test.
 **What would refute it.** A class whose $\tau$ does not replicate on independent data; a pass rate
 inconsistent with the fitted $\tau$; two resources with unequal dispersion; or $E[s] \neq 0$.
 
+**The class clause is not decoration.** Measured values differ by class — τ ≈ 0.23 for freshwater
+against ≈ 0.38 for marine ([evidence.md §6.8](evidence.md)) — and the Gaussian shape this section
+predicts holds *within* freshwater while failing on the pooled sample. Testing (O-ensemble) on a
+pool that mixes classes violates its own scope condition, and the heavier tail that results is an
+artefact of that, not evidence against the hypothesis.
+
 ## 4. Orthopolity alone does not give a power law
 
 (O) yields $dN/du \propto 1/\bar q(k)$ for **whatever $\bar q$ is**. The power law needs a second,
