@@ -71,6 +71,15 @@ make data
 make restore-data
 ~~~
 
+The manuscript typesets to PDF with a TeX installation providing `pdflatex`; no Pandoc is
+needed, since `tools/md2tex.py` converts the Markdown subset the manuscript uses:
+
+~~~bash
+make paper
+~~~
+
+This writes `docs/paper.pdf`, which is untracked and regenerated on demand.
+
 Results contain estimated quantities, diagnostic plots, and declared limitations. Successful
 reproduction verifies computation from the frozen inputs; it does not validate sampling
 assumptions, data labels, novelty, or the physical hypothesis. The historical analysis plan

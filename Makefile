@@ -2,13 +2,18 @@
 #
 #   make install   editable install, so `import gof` works without PYTHONPATH
 #   make all       verify data, run tests, run every analysis
+#   make paper     typeset docs/paper.md into docs/paper.pdf (needs pdflatex)
 #
 # Analyses depend only on data/raw/, which is checksummed; they never fetch.
 
 PY ?= python3
 export PYTHONPATH := src
 
-.PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory analyses clean
+.PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory analyses paper clean
+
+PAPER_SRC := docs/paper.md
+PAPER_TEX := build/paper.tex
+PAPER_PDF := docs/paper.pdf
 
 all: data test analyses
 
@@ -47,5 +52,15 @@ variance:        ## between- vs within-ecosystem dispersion -> results/variance.
 theory:          ## deterministic mathematical illustrations (not empirical evidence)
 	$(PY) experiments/run_theory.py
 
-clean:           ## remove generated exploration output only; never touches data/raw
-	rm -rf results/exploration __pycache__ src/__pycache__ tests/__pycache__
+paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
+
+# tools/md2tex.py handles the Markdown subset the manuscript uses, so no Pandoc
+# is required. Two passes settle the PDF outline and any page references.
+$(PAPER_PDF): $(PAPER_SRC) tools/md2tex.py results/theory.png
+	$(PY) tools/md2tex.py $(PAPER_SRC) $(PAPER_TEX)
+	pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build $(PAPER_TEX) > build/paper.pass1.log
+	pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build $(PAPER_TEX) > build/paper.pass2.log
+	cp build/paper.pdf $@
+
+clean:           ## remove generated exploration and typesetting output; never touches data/raw
+	rm -rf results/exploration build __pycache__ src/__pycache__ tests/__pycache__
