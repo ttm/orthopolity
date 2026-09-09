@@ -1,0 +1,312 @@
+{
+  "protocol": {
+    "status": "Exploratory protocol; not an externally preregistered confirmatory study",
+    "seed": 20260908,
+    "bootstrap_replicates": 600,
+    "noaa": {
+      "years": [
+        2022,
+        2023,
+        2024
+      ],
+      "training_year": 2022,
+      "evaluation_years": [
+        2023,
+        2024
+      ],
+      "primary_peak_flux_domain_W_m2": [
+        1e-05,
+        0.001
+      ],
+      "sensitivity_lower_bounds_W_m2": [
+        1e-06,
+        5e-06,
+        1e-05,
+        3e-05
+      ],
+      "primary_resource": "integrated_irrad_end in J/m2 as supplied, no background subtraction",
+      "sensitivity_resource": "integrated_irrad_peak in J/m2 as supplied",
+      "bins_per_decade": 4,
+      "uncertainty_blocks": "calendar month, independently resampled within training and evaluation",
+      "limitations": [
+        "Missing end fluence may depend on event size",
+        "No completeness or exposure correction",
+        "Catalog fluence is not total flare energy",
+        "One solar-cycle phase",
+        "Related measurements share instrument and event definitions"
+      ]
+    },
+    "usgs": {
+      "start": "2010-01-01",
+      "end_exclusive": "2025-01-01",
+      "query_minimum_magnitude": 5.5,
+      "types": "magType starts with mw",
+      "fit_thresholds": [
+        5.5,
+        6.0,
+        6.5
+      ],
+      "rounding_step": 0.1,
+      "energy_proxy": "10^(4.8+1.5*Mw) J; illustrative magnitude conversion, not independently measured energy",
+      "uncertainty_blocks": "calendar year",
+      "limitations": [
+        "No declustering or completeness model",
+        "Annual blocks do not remove all temporal dependence",
+        "Magnitude method heterogeneity",
+        "Energy conversion ignores event-specific radiative efficiency"
+      ]
+    },
+    "ocean": {
+      "source": "ryanheneghan/sheldon_revisited",
+      "commit": "d8af6567faf1912862650423e392e1b3195a8732",
+      "data_kind": "Author-produced reconstructed biomass summary, upper 200 m",
+      "task": "Re-express published summary in resource-spectrum coordinates; not an independent replication"
+    }
+  },
+  "noaa": {
+    "catalog_n": 10501,
+    "end_fluence_missing_n": 1441,
+    "cases": [
+      {
+        "resource": "integrated_irrad_end",
+        "lo": 1e-06,
+        "hi": 0.001,
+        "selected_n": 9564,
+        "paired_n": 8254,
+        "train_n": 2142,
+        "evaluation_n": 6112,
+        "missing_fraction": 0.13697197825177754,
+        "d_train": 1.0454345693343985,
+        "alpha_predicted": 2.0454345693343985,
+        "alpha_evaluation": 1.5653494227423768,
+        "gap": -0.4800851465920217,
+        "spectrum_slope": 0.05966067032022047,
+        "phi_min": 0.14011996699391216,
+        "phi_max": 1.6310785379460235
+      },
+      {
+        "resource": "integrated_irrad_end",
+        "lo": 5e-06,
+        "hi": 0.001,
+        "selected_n": 3600,
+        "paired_n": 3161,
+        "train_n": 463,
+        "evaluation_n": 2698,
+        "missing_fraction": 0.12194444444444441,
+        "d_train": 1.0206728568374617,
+        "alpha_predicted": 2.0206728568374617,
+        "alpha_evaluation": 2.211183196491895,
+        "gap": 0.1905103396544332,
+        "spectrum_slope": -0.23636933529184717,
+        "phi_min": 0.38921068946806603,
+        "phi_max": 1.4606048792009259
+      },
+      {
+        "resource": "integrated_irrad_end",
+        "lo": 1e-05,
+        "hi": 0.001,
+        "selected_n": 1509,
+        "paired_n": 1357,
+        "train_n": 189,
+        "evaluation_n": 1168,
+        "missing_fraction": 0.10072895957587802,
+        "d_train": 0.8576273512893057,
+        "alpha_predicted": 1.8576273512893056,
+        "alpha_evaluation": 2.239128905943169,
+        "gap": 0.3815015546538634,
+        "spectrum_slope": -0.23254380846145098,
+        "phi_min": 0.5068552360965002,
+        "phi_max": 1.5248477577813198,
+        "d_train_ci": [
+          0.6974517083578181,
+          1.0541650880706748
+        ],
+        "alpha_evaluation_ci": [
+          2.084977511977884,
+          2.3987913863434223
+        ],
+        "gap_ci": [
+          0.12464292025706575,
+          0.6200978383897412
+        ],
+        "spectrum_slope_ci": [
+          -0.6175081103204765,
+          -0.02982045977219789
+        ],
+        "bootstrap_B": 600,
+        "valid_slope_bootstraps": 581
+      },
+      {
+        "resource": "integrated_irrad_end",
+        "lo": 3e-05,
+        "hi": 0.001,
+        "selected_n": 388,
+        "paired_n": 361,
+        "train_n": 48,
+        "evaluation_n": 313,
+        "missing_fraction": 0.06958762886597936,
+        "d_train": 0.28644063127429426,
+        "alpha_predicted": 1.2864406312742942,
+        "alpha_evaluation": 2.2465584455605665,
+        "gap": 0.9601178142862723,
+        "spectrum_slope": -0.3493995296647291,
+        "phi_min": 0.48260855879637754,
+        "phi_max": 1.4127060829997116
+      },
+      {
+        "resource": "integrated_irrad_peak",
+        "lo": 1e-06,
+        "hi": 0.001,
+        "selected_n": 9564,
+        "paired_n": 9564,
+        "train_n": 2473,
+        "evaluation_n": 7091,
+        "missing_fraction": 0.0,
+        "d_train": 1.0046482839423256,
+        "alpha_predicted": 2.0046482839423256,
+        "alpha_evaluation": 1.5740674066863551,
+        "gap": -0.4305808772559705,
+        "spectrum_slope": -0.009007237659127022,
+        "phi_min": 0.16233544470233055,
+        "phi_max": 1.855108725616188
+      },
+      {
+        "resource": "integrated_irrad_peak",
+        "lo": 5e-06,
+        "hi": 0.001,
+        "selected_n": 3600,
+        "paired_n": 3600,
+        "train_n": 511,
+        "evaluation_n": 3089,
+        "missing_fraction": 0.0,
+        "d_train": 0.9710885023994655,
+        "alpha_predicted": 1.9710885023994655,
+        "alpha_evaluation": 2.245229376809957,
+        "gap": 0.2741408744104916,
+        "spectrum_slope": -0.3080483079197821,
+        "phi_min": 0.3694803708953635,
+        "phi_max": 1.6962002769610696
+      },
+      {
+        "resource": "integrated_irrad_peak",
+        "lo": 1e-05,
+        "hi": 0.001,
+        "selected_n": 1509,
+        "paired_n": 1509,
+        "train_n": 203,
+        "evaluation_n": 1306,
+        "missing_fraction": 0.0,
+        "d_train": 0.8622153234244232,
+        "alpha_predicted": 1.8622153234244232,
+        "alpha_evaluation": 2.2735705676437714,
+        "gap": 0.4113552442193482,
+        "spectrum_slope": -0.3043518288953864,
+        "phi_min": 0.47883341366485377,
+        "phi_max": 1.7192221368462102,
+        "d_train_ci": [
+          0.7589920105629329,
+          0.9900428646788692
+        ],
+        "alpha_evaluation_ci": [
+          2.1166154063003213,
+          2.4391713565026705
+        ],
+        "gap_ci": [
+          0.20818786993210509,
+          0.604147594144831
+        ],
+        "spectrum_slope_ci": [
+          -0.6978583047593272,
+          -0.10568807346838666
+        ],
+        "bootstrap_B": 600,
+        "valid_slope_bootstraps": 572
+      },
+      {
+        "resource": "integrated_irrad_peak",
+        "lo": 3e-05,
+        "hi": 0.001,
+        "selected_n": 388,
+        "paired_n": 388,
+        "train_n": 48,
+        "evaluation_n": 340,
+        "missing_fraction": 0.0,
+        "d_train": 0.5031335340387917,
+        "alpha_predicted": 1.5031335340387917,
+        "alpha_evaluation": 2.291230872961501,
+        "gap": 0.7880973389227093,
+        "spectrum_slope": -0.38686422633563683,
+        "phi_min": 0.5069014653529896,
+        "phi_max": 1.5079275219087471
+      }
+    ]
+  },
+  "usgs": {
+    "catalog_n": 7174,
+    "mw_n": 6639,
+    "rounded_to_step": 0.1,
+    "cases": [
+      {
+        "cutoff": 5.5,
+        "n": 6639,
+        "b": 0.99831638693147,
+        "b_ci": [
+          0.9730800527418133,
+          1.0241119412333133
+        ],
+        "energy_proxy_slope": 0.33445574204568673,
+        "energy_proxy_slope_ci": [
+          0.3172587058444578,
+          0.3512799648387911
+        ],
+        "predicted_equal_resource_b": 1.5
+      },
+      {
+        "cutoff": 6.0,
+        "n": 2076,
+        "b": 0.9840774649888112,
+        "b_ci": [
+          0.9470680677298785,
+          1.0282440446459782
+        ],
+        "energy_proxy_slope": 0.3439483566741258,
+        "energy_proxy_slope_ci": [
+          0.3145039702360145,
+          0.368621288180081
+        ],
+        "predicted_equal_resource_b": 1.5
+      },
+      {
+        "cutoff": 6.5,
+        "n": 679,
+        "b": 0.9768369696903269,
+        "b_ci": [
+          0.920943145305353,
+          1.0457113061755705
+        ],
+        "energy_proxy_slope": 0.34877535353978206,
+        "energy_proxy_slope_ci": [
+          0.3028591292162863,
+          0.3860379031297646
+        ],
+        "predicted_equal_resource_b": 1.5
+      }
+    ],
+    "energy_is_proxy": true
+  },
+  "ocean": {
+    "bins": 23,
+    "slope_abundance": -1.039166633378156,
+    "slope_biomass": -0.03916663337815596,
+    "phi_min": 0.0649995440299062,
+    "phi_max": 2.5247297918447313,
+    "source_kind": "Published model-assisted reconstruction; not new observations"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  }
+}

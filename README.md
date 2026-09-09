@@ -43,6 +43,19 @@ shape of result worth publishing.
 
 Details, caveats and provenance: [docs/evidence.md](docs/evidence.md).
 
+## Reproduce
+
+```bash
+python -m pip install -r requirements.txt
+python experiments/fetch_data.py                       # verifies SHA-256 of every raw input
+PYTHONPATH=src python -m unittest discover -s tests -v  # 8 accounting/estimator checks
+python experiments/run_pilot.py                        # regenerates results/
+```
+
+Raw snapshots are frozen and checksummed; `fetch_data.py` fails loudly rather than silently
+replacing them if a remote source has changed. The pipeline reproduces every number above to
+floating-point noise.
+
 ## What is in here
 
 | Document | Contents |
@@ -54,7 +67,15 @@ Details, caveats and provenance: [docs/evidence.md](docs/evidence.md).
 | [docs/not-worth-pursuing.md](docs/not-worth-pursuing.md) | Explicit register of deprioritised directions, with reasons — including what was deliberately left out. |
 | [docs/references.md](docs/references.md) | Bibliography grouped by role in the argument. |
 
-No code in this repository yet. A pilot lab exists privately; porting it is the next step.
+| Code and data | Purpose |
+|---|---|
+| [src/orthopolity.py](src/orthopolity.py) | Resource-spectrum accounting, bounded power-law MLE, conditional-mean estimator. No automatic range selection, no universal-law classification. |
+| [tests/](tests/) | Eight checks: resource conservation, arithmetic-vs-median accounting, unit invariance, weighting, missingness, bin endpoints, known scaling, audio bounds. |
+| [experiments/](experiments/) | `fetch_data.py` (checksummed retrieval), `run_pilot.py` (the three analyses). |
+| [configs/pilot.json](configs/pilot.json) | Declared domains, resources, time splits, block schemes and limitations — fixed before analysis. |
+| [data/](data/) | Frozen raw snapshots, provenance ([SOURCES.md](data/SOURCES.md)) and third-party rights ([NOTICE.md](data/NOTICE.md)). |
+| [results/](results/) | Machine-readable estimates, bin totals, bootstrap draws, figures. |
+| [tools/explore.py](tools/explore.py) | Interactive inspection aid. Deliberately outside `experiments/` — no result depends on it. |
 
 ## Summary of the assessment
 
@@ -77,7 +98,7 @@ equal occupancy across logarithmic size intervals?*
 
 ## Next steps
 
-1. Port the pilot lab here so the results above are reproducible by others.
+1. ~~Port the pilot lab here so the results above are reproducible by others.~~ ✅ Done.
 2. Add the missing statistics: full Clauset–Shalizi–Newman goodness-of-fit testing, and equivalence
    testing against a declared tolerance. **Neither exists yet**; nothing is confirmatory until they do.
 3. Run one independently sampled ecological test with the domain and resource fixed in advance,
@@ -92,3 +113,6 @@ Detailed in [docs/value.md §7](docs/value.md).
 They are an adversarial assessment: the strongest honest version of both the case for the idea and
 the case against it, including the argument that time would be better spent elsewhere. Where they
 disagree with the source essay, the disagreement is stated explicitly rather than smoothed over.
+
+[docs/not-worth-pursuing.md](docs/not-worth-pursuing.md) records what was deliberately *excluded*
+and why, so the omissions are visible rather than silent.

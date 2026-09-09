@@ -1,0 +1,34 @@
+{
+  "status": "Exploratory protocol; not an externally preregistered confirmatory study",
+  "seed": 20260908,
+  "bootstrap_replicates": 600,
+  "noaa": {
+    "years": [2022, 2023, 2024],
+    "training_year": 2022,
+    "evaluation_years": [2023, 2024],
+    "primary_peak_flux_domain_W_m2": [0.00001, 0.001],
+    "sensitivity_lower_bounds_W_m2": [0.000001, 0.000005, 0.00001, 0.00003],
+    "primary_resource": "integrated_irrad_end in J/m2 as supplied, no background subtraction",
+    "sensitivity_resource": "integrated_irrad_peak in J/m2 as supplied",
+    "bins_per_decade": 4,
+    "uncertainty_blocks": "calendar month, independently resampled within training and evaluation",
+    "limitations": ["Missing end fluence may depend on event size", "No completeness or exposure correction", "Catalog fluence is not total flare energy", "One solar-cycle phase", "Related measurements share instrument and event definitions"]
+  },
+  "usgs": {
+    "start": "2010-01-01",
+    "end_exclusive": "2025-01-01",
+    "query_minimum_magnitude": 5.5,
+    "types": "magType starts with mw",
+    "fit_thresholds": [5.5, 6.0, 6.5],
+    "rounding_step": 0.1,
+    "energy_proxy": "10^(4.8+1.5*Mw) J; illustrative magnitude conversion, not independently measured energy",
+    "uncertainty_blocks": "calendar year",
+    "limitations": ["No declustering or completeness model", "Annual blocks do not remove all temporal dependence", "Magnitude method heterogeneity", "Energy conversion ignores event-specific radiative efficiency"]
+  },
+  "ocean": {
+    "source": "ryanheneghan/sheldon_revisited",
+    "commit": "d8af6567faf1912862650423e392e1b3195a8732",
+    "data_kind": "Author-produced reconstructed biomass summary, upper 200 m",
+    "task": "Re-express published summary in resource-spectrum coordinates; not an independent replication"
+  }
+}

@@ -84,7 +84,7 @@ These are the price of admission, and skipping any of them invalidates the resul
 Ranked by expected value, revised in light of results:
 
 1. **An independently sampled ecological test.** The strongest existing evidence is a re-expression
-   of someone else's model-assisted reconstruction. The Pelagic Size Structure database (Dugenne et
+   of someone else's model-assisted reconstruction, so it cannot confirm anything on its own. The Pelagic Size Structure database (Dugenne et
    al. 2024) and GLOSSAQUA (Ersoy et al. 2025) offer comparisons across places, instruments and
    ecosystems. This is the highest-value single step available.
 2. **Characterise the ocean boundary failures.** Why Φ ≈ 2.5 at the bacterial end and 0.07 at the
@@ -116,8 +116,9 @@ does not have.
 Each milestone is a stopping point with standalone value:
 
 1. **Restate the claim falsifiably.** ✅ *Done — [concept.md](concept.md).*
-2. **Port the pilot lab into this repository.** Accounting functions, tests, provenance and raw
-   snapshots, so [evidence.md](evidence.md) becomes reproducible by others. Currently it is not.
+2. **Port the pilot lab into this repository.** ✅ *Done* — accounting functions, estimators, unit
+   tests, checksummed raw snapshots and all outputs are here and reproduce offline. See
+   [evidence.md](evidence.md).
 3. **Add the missing statistics.** Full CSN testing and equivalence testing (§4). Nothing is
    confirmatory until this exists.
 4. **Run an independently sampled positive candidate** with the domain and resource fixed in

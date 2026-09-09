@@ -3,13 +3,23 @@
 What has actually been tested, and what happened. Three systems have been examined so far. **Two
 are clear failures, one is a qualified success with a well-defined domain of validity.**
 
-> **Provenance.** These results come from an independent assessment and pilot analysis
-> commissioned by the author, held privately and **not currently in this repository**. The
-> analyses are reproducible from raw snapshots (NOAA, USGS, and the Hatton et al. archive) with
-> recorded SHA-256 digests; the code passes eight accounting and estimator unit tests. Nothing
-> below is reproducible from the public repository yet — porting the lab is task 1 in
-> [value.md §7](value.md). Numbers are quoted as exploratory percentile bootstrap intervals
-> (600 resamples), conditional on the stated catalogues, preprocessing and block schemes. They do
+> **Provenance and reproduction.** These results originate in an independent assessment
+> commissioned by the author. **The analysis code, raw data snapshots and outputs are now in this
+> repository** and reproduce offline:
+>
+> ```bash
+> python -m pip install -r requirements.txt
+> python experiments/fetch_data.py                      # verifies SHA-256 of every raw input
+> PYTHONPATH=src python -m unittest discover -s tests -v # 8 accounting/estimator checks
+> python experiments/run_pilot.py                       # regenerates results/
+> ```
+>
+> Verified: the pipeline reproduces every number below from the frozen snapshots, agreeing to
+> floating-point noise (~1e-15 relative). Recorded environment: Python 3.12.14, numpy 2.3.5,
+> pandas 2.2.3, scipy 1.17.0, matplotlib 3.10.8.
+>
+> Numbers are exploratory percentile bootstrap intervals (600 resamples, seed 20260908),
+> conditional on the stated catalogues, preprocessing, working models and block schemes. They do
 > **not** cover measurement, selection, completeness or energy-conversion bias.
 
 ## Summary
@@ -140,6 +150,9 @@ across fifteen decades of the marine size spectrum and breaks at both ends, and 
   exactly how much that matters.
 - **No independent positive candidate.** The one qualified success is a re-expression of someone
   else's reconstruction. A test on independently sampled data is the single highest-value next step.
+- **No preregistered domain.** Every domain and resource here was chosen before results were seen
+  *by the analyst*, but nothing was registered externally. The flare threshold sensitivity shows
+  how much latitude that leaves.
 - **Exported slope intervals have conditional coverage** — the log-slope diagnostic is undefined
   when a bootstrap resample produces an empty bin, so those intervals should not carry primary
   inference.

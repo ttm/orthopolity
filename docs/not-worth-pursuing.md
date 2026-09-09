@@ -56,28 +56,38 @@ The private assessment and pilot lab contain substantial value, incorporated int
 [concept.md](concept.md), [value.md](value.md), [criticism.md](criticism.md) and
 [evidence.md](evidence.md). The following were reviewed and **left out on purpose**.
 
-### B1. Sonification of the resource spectrum ⚠️ *Interesting, separate project*
-The lab maps $\Phi = 1$ to 440 Hz with one octave per factor of two, clipped to 110–1760 Hz, empty
-bins silent, no autoplay. It is carefully built and honestly labelled as an inspection aid with no
-evidence that it improves inference.
+### B1. Sonification as a *research direction* ⚠️ *Code included; programme deprioritised*
+`residual_audio()` in [`src/orthopolity.py`](../src/orthopolity.py) maps $\Phi = 1$ to 440 Hz with
+one octave per factor of two, clipped to 110–1760 Hz, empty bins silent, no autoplay. It is
+carefully built, unit-tested and honestly labelled as an inspection aid with no evidence that it
+improves inference.
 
-Left out because it is **orthogonal to whether orthopolity is true**. Establishing that an
+**The code ships; the research programme does not.** Keeping a working, tested function available
+costs nothing and beats letting it rot outside version control. What is deprioritised is *pursuing
+sonification as a contribution*, because it is **orthogonal to whether orthopolity is true**. Establishing that an
 audiovisual encoding helps requires its own experiment — visual-only against audio-only against
 combined, with known simulated departures, counterbalanced order, accuracy and response time. That
 is a legitimate study in audiovisual analytics and a reasonable thing for the author to want to do,
 but it is a *different paper with a different literature*, and attaching it to a contested physical
 hypothesis weakens both. Pleasantness or consonance are not evidence about a distribution.
 
-### B2. The interactive Matplotlib viewer ⚠️ *Premature*
-Sound architectural advice accompanies it — a single analysis representation carrying dataset
+### B2. Expanding the interactive viewer ⚠️ *Tool included; expansion premature*
+[`tools/explore.py`](../tools/explore.py) ships as an inspection aid — dataset selector, bin control,
+reproducible export, headless smoke test. It is deliberately outside `experiments/`, because
+**nothing in the scientific claim depends on it** and no result in [evidence.md](evidence.md) is
+produced by it.
+
+Sound architectural advice accompanies it: a single analysis representation carrying dataset
 identity, unit, scale, resource, selection, model and provenance, with plots and sounds consuming
 that same object rather than quietly recomputing a different sample. Worth following **when the
 analysis layer is stable**. Building interfaces before then risks the specific failure the advice
-warns about: two views silently normalising away a discrepancy.
+warns about — two views silently normalising away a discrepancy — and note the viewer's own status
+line already says it: *bin changes do not constitute a new hypothesis test.*
 
-### B3. A JOSS software paper ❌ *Ineligible*
+### B3. A JOSS software paper ❌ *Ineligible for now*
 JOSS expects substantial, used research software with more than six months of public development
-history. This repository is days old. Revisit only if the lab becomes genuinely used by others.
+history. This repository is days old, even though the code is now public. Revisit only if the lab
+becomes genuinely used by others.
 
 ### B4. The dark-sector / cosmological-energy speculation ❌ *Negative value*
 Would require specified physical degrees of freedom, an action or stress-energy description,
@@ -107,7 +117,14 @@ discredit the technical work. Keep the accounting result and the political inter
 ### B7. Multiplying pilot systems before the statistics exist ⚠️ *Sequencing, not merit*
 Three systems have been tested; a fourth adds little while CSN testing, equivalence testing and
 preregistration are all still missing. Depth on the existing three — especially the ocean boundary
-failures — is worth more than breadth. Reverse this once [value.md §7](value.md) steps 2–3 are done.
+failures — is worth more than breadth. Reverse this once [value.md §7](value.md) step 3 is done.
+
+### B8. The commissioned assessment document itself ⚠️ *Substance imported, document not*
+The external assessment's findings are incorporated throughout [concept.md](concept.md),
+[evidence.md](evidence.md), [value.md](value.md) and [criticism.md](criticism.md), and its code and
+data are now in this repository. The document is not reproduced verbatim: it is a third-party
+deliverable, and part of it audits a separate report that was never supplied, leaving those sections
+uncheckable. Its substance is here; its prose stays private.
 
 ---
 
