@@ -31,10 +31,16 @@ platforms (EcoTaxa, EcoPart and instrument-specific IFCB dashboards), needs cred
 them, and processes ~92,000 IFCB samples, ~3,000 UVP profiles and ~2,400 scans. Waiting for Zenodo
 is cheaper than reproducing 98,000 sample ingests to obtain a published table.
 
-**R8 — verify the conventions of the 16 primary NBSS studies against their sources.** The same
-check that dissolved the cross-convention failure has not been applied to the studies the headline
-result rests on. Until it is, that result is unimpugned but unverified. This is now the highest-value
-runnable task, ahead of anything needing new data.
+**R8 — verify the conventions of the 16 primary NBSS studies. Half-done; see
+[evidence.md §6.12](evidence.md).** A structural check for contamination found none: zero studies at
+either adjacent estimand, against 3 and 4 in the subset known to be contaminated. But direct
+verification is blocked for the two studies carrying 78% of the evidence — Arranz et al. (2022),
+*Ecology* (no open-access copy in OpenAlex, Semantic Scholar or Europe PMC) and Gaedke (1993),
+*L&O* (publisher returns 403).
+
+**This needs institutional access, not more searching.** Reading those two Methods sections is one
+library request and is the highest-value outstanding task in the project — it converts "no
+contamination detectable" into "conventions confirmed" for the result everything else rests on.
 
 **A partial substitute was run and it failed** ([evidence.md §6.10](evidence.md)): across the three
 published conventions in GLOSSAQUA, whose study sets are disjoint, freshwater τ varies by a factor

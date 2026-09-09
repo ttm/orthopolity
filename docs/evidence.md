@@ -626,7 +626,45 @@ Three consequences:
    size-spectrum exponents cannot be pooled on their method labels. This applies to GLOSSAQUA, to
    this analysis, and to any meta-analysis of scaling exponents that trusts a convention field.
 
-### 6.12 What the tests together say
+### 6.12 Verifying the primary subset (R8): partly done, and it holds up
+
+§6.11 showed one database label covering two estimands. The obvious worry is whether the *primary*
+NBSS subset is contaminated the same way. Two checks, one blocked and one informative.
+
+**Direct source verification: blocked for the studies that matter.** The two studies carrying 78% of
+the primary evidence are both paywalled with no reachable open-access copy — Arranz et al. (2022),
+*Ecology*, 49.2% of spectra, no OA version anywhere in OpenAlex, Semantic Scholar or Europe PMC; and
+Gaedke (1993), *Limnology & Oceanography*, 29.0%, available only through a publisher that returns
+403. **So the headline result still rests on sources whose conventions have not been checked
+first-hand.** That is a genuine limitation, not a formality.
+
+Arranz et al. (2022) is at least *thematically* consistent — its abstract describes measuring
+"biomass conservation, or the ability of a community to sustain biomass from small to large
+organisms", which is the orthopolity quantity under another name. That is suggestive, not
+verification, and it carries its own caution: the studies contributing most are ones that chose to
+study this exact question.
+
+**Structural check: no contamination detectable.** Contamination by an estimand differing by 1 in
+exponent shows up as a second mode 1.0 away. Looking for modes rather than for a preferred value
+makes this non-circular — it can find a problem it was not told where to look for.
+
+| Subset | within 0.3 of −2 | within 0.3 of **−1** | within 0.3 of 0 |
+|---|---:|---:|---:|
+| **Normalised biomass (primary)** | **0 studies, 0%** | 10 studies, **93.5%** | **0 studies, 0%** |
+| Normalised abundance (discordant) | 3 studies, 62.6% | 4 studies, 8.2% | — |
+
+The primary subset has **zero** studies at either adjacent estimand. Its study medians run −1.69 to
++0.45 in one continuous spread with no second mode — ordinary between-study variation. The
+discordant subset, by contrast, splits across two locations exactly as §6.11 predicted from reading
+Perkins' methods.
+
+**Net.** R8 is half-answered. Gross contamination of the primary subset is ruled out, which is the
+specific failure mode that destroyed the other one. Per-study confirmation is not done and cannot be
+done from here for 78% of the evidence. Before publication those two papers should be read directly
+— it is one library request, and it is the difference between "no contamination detectable" and
+"conventions confirmed".
+
+### 6.13 What the tests together say
 
 Neither of the two hypotheses that motivated this analysis survives:
 

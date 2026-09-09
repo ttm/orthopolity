@@ -104,9 +104,13 @@ in that subset fit the −1 mapping better. Girón 2023 (−2.016) and Perkins (
 label while differing by almost exactly 1 in exponent.
 
 The subset is **excluded as unusable**, not re-mapped — picking each study's mapping by which answer
-it gives would manufacture the agreement. Two things follow: the primary result is unimpugned but
-**not yet verified the same way** (R8), and compilations of published scaling exponents cannot be
-pooled on their method labels. See [evidence.md §6.11](docs/evidence.md).
+it gives would manufacture the agreement.
+
+Checking the primary subset for the same defect found **none**: zero studies at either adjacent
+estimand, against 3 and 4 in the contaminated one. But the two studies carrying **78% of the primary
+evidence are paywalled** with no reachable open-access copy, so their conventions remain unverified
+first-hand. That is the project's largest outstanding caveat and it needs institutional access, not
+more searching. See [evidence.md §6.11–6.12](docs/evidence.md).
 
 **What it forbids:** an independent aquatic dataset must reproduce τ ≈ 0.257; two resources
 satisfying (O) on the same systems must have equal dispersion and perfectly correlated departures;
