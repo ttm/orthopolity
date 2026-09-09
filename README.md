@@ -135,7 +135,7 @@ Details, caveats and provenance: [docs/evidence.md](docs/evidence.md).
 
 ```bash
 make install   # editable install, so `import gof` works without PYTHONPATH
-make all       # verify checksums, run 49 tests, run every analysis
+make all       # verify checksums, run 54 tests, run every analysis
 ```
 
 Or individually: `make data` (verify raw inputs), `make test`, `make pilot`, `make gof`,
