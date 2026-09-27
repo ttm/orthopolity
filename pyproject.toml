@@ -26,4 +26,4 @@ Repository = "https://github.com/ttm/orthopolity"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
-py-modules = ["orthopolity", "gof", "meta"]
+packages = ["orthopolity"]

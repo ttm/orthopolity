@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from orthopolity import resource_spectrum, bounded_power_mle, mean_resource_exponent, residual_audio
+from orthopolity.spectrum import resource_spectrum, bounded_power_mle, mean_resource_exponent, residual_audio
 
 class ScientificChecks(unittest.TestCase):
     def test_total_resource_including_final_edge_and_empty_bin(self):

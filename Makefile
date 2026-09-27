@@ -1,6 +1,6 @@
 # Reproduce everything from the frozen snapshots.
 #
-#   make install   editable install, so `import gof` works without PYTHONPATH
+#   make install   editable install, so `import orthopolity` works without PYTHONPATH
 #   make all       verify data, run tests, run every analysis
 #   make paper     typeset docs/paper.md into docs/paper.pdf (needs pdflatex)
 #
@@ -71,4 +71,4 @@ $(PAPER_PDF): $(PAPER_SRC) tools/md2tex.py results/theory.png
 	cp build/paper.pdf $@
 
 clean:           ## remove generated exploration and typesetting output; never touches data/raw
-	rm -rf results/exploration build __pycache__ src/__pycache__ tests/__pycache__
+	rm -rf results/exploration build __pycache__ src/orthopolity/__pycache__ tests/__pycache__

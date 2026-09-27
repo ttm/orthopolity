@@ -1,7 +1,9 @@
 import unittest
 import numpy as np
-from meta import (random_effects, digit_preference, round_number_excess,
-                  latent_shape, predicted_pass_fraction, variance_components)
+from orthopolity.meta_analysis import (random_effects, digit_preference,
+                                       round_number_excess, latent_shape,
+                                       predicted_pass_fraction,
+                                       variance_components)
 
 
 class RandomEffects(unittest.TestCase):
@@ -109,7 +111,7 @@ class LatentShape(unittest.TestCase):
         # The Gaussian case is closed form; every other family goes through
         # quadrature. A Student t tends to a Gaussian as nu grows, so the
         # quadrature path must converge to the closed form monotonically.
-        from meta import _loglik
+        from orthopolity.meta_analysis import _loglik
         y = self.rng.normal(-1, .3, 200)
         se = np.full(200, .12)
         exact = _loglik(y, se, -1.0, .25, 'gaussian')
@@ -122,7 +124,7 @@ class LatentShape(unittest.TestCase):
     def test_convolution_handles_tiny_errors_and_unbounded_tails(self):
         # A fixed latent grid fails both limits: errors much smaller than grid
         # spacing and observations beyond the grid's truncated support.
-        from meta import _loglik
+        from orthopolity.meta_analysis import _loglik
         from scipy.stats import t, laplace
         y = np.array([0.017, 0.071, 0.31, 1.07, 4.2])
         se = np.full(len(y), 1e-7)
@@ -133,7 +135,7 @@ class LatentShape(unittest.TestCase):
         self.assertAlmostEqual(_loglik(y, se, 0, scale, 'laplace'), expected_l, places=7)
 
     def test_laplace_convolution_matches_closed_form_with_unequal_errors(self):
-        from meta import _loglik
+        from orthopolity.meta_analysis import _loglik
         from scipy.special import log_ndtr
         y = np.array([-0.9, -0.3, 0.0, 0.07, 0.8])
         se = np.array([0.01, 0.1, 0.3, 0.4, 0.2])
@@ -227,7 +229,7 @@ class VarianceComponents(unittest.TestCase):
         return y, se, g
 
     def test_recovers_both_components(self):
-        from meta import variance_components
+        from orthopolity.meta_analysis import variance_components
         y, se, g = self._make(120, 8, tb=0.30, tw=0.15)
         r = variance_components(y, se, g)
         self.assertTrue(r['separable'])
@@ -236,20 +238,20 @@ class VarianceComponents(unittest.TestCase):
         self.assertAlmostEqual(r['mu'], -1.0, delta=0.05)
 
     def test_all_variance_between_is_detected(self):
-        from meta import variance_components
+        from orthopolity.meta_analysis import variance_components
         y, se, g = self._make(120, 6, tb=0.35, tw=0.001)
         r = variance_components(y, se, g)
         self.assertGreater(r['fraction_between'], 0.9)
 
     def test_all_variance_within_is_detected(self):
-        from meta import variance_components
+        from orthopolity.meta_analysis import variance_components
         y, se, g = self._make(120, 6, tb=0.001, tw=0.35)
         r = variance_components(y, se, g)
         self.assertLess(r['fraction_between'], 0.1)
 
     def test_singleton_groups_are_reported_as_confounded(self):
         # Every group seen once: the split is not identified, so refuse to make one.
-        from meta import variance_components
+        from orthopolity.meta_analysis import variance_components
         y, se, g = self._make(300, 1, tb=0.20, tw=0.20)
         r = variance_components(y, se, g)
         self.assertFalse(r['separable'])
@@ -257,7 +259,7 @@ class VarianceComponents(unittest.TestCase):
         self.assertAlmostEqual(r['total_latent_sd'], np.hypot(0.2, 0.2), delta=0.06)
 
     def test_measurement_error_is_removed_from_the_total(self):
-        from meta import variance_components
+        from orthopolity.meta_analysis import variance_components
         y, se, g = self._make(200, 1, tb=0.20, tw=0.0, se_val=0.30)
         r = variance_components(y, se, g)
         self.assertAlmostEqual(r['total_latent_sd'], 0.20, delta=0.06)

@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
-from orthopolity import resource_spectrum,bounded_power_mle,mean_resource_exponent,rounded_gr_b,residual_audio
+from orthopolity.spectrum import resource_spectrum,bounded_power_mle,mean_resource_exponent,rounded_gr_b,residual_audio
 
 RAW=ROOT/'data'/'raw'; OUT=ROOT/'results';OUT.mkdir(exist_ok=True)
 SPEC=json.loads((ROOT/'configs'/'pilot.json').read_text())
