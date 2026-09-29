@@ -9,6 +9,9 @@ test of a conditional hypothesis. The current evidence does not establish a new 
 a cosmological principle, or equal resource allocation in an average ecosystem.
 
 The revised [scientific manuscript](docs/paper.md) is the main document.
+The [scientific-strength assessment](docs/scientific-assessment.md) develops the
+resource-symmetry argument, a concrete research design, and a stronger mathematical
+restriction on ensemble averaging.
 
 ## What the hypothesis says
 
@@ -22,9 +25,12 @@ Equal resource per *linear* interval instead implies $dN/dk\propto k^{-d}$.
 The difference is substantive: the original essay's uniform allocation does not uniquely
 select the logarithmic version used in the ecological analyses.
 
-Conservation alone gives neither hypothesis. A fitted inverse-cost relation does not
-explain why a system allocates resources that way. The [concept note](docs/concept.md)
-states the assumptions and counterexamples.
+Conservation alone gives neither hypothesis. Resource symmetry can instead be proposed
+as a physical law: exchangeable allocations across declared cost classes imply equal
+expected resource shares. A deeper mechanism is optional; empirical support and an
+independently specified scope are essential. Equal expectation does not by itself imply
+equal snapshots or convergence over time. The [concept note](docs/concept.md) states
+the assumptions and counterexamples.
 
 ## What the evidence supports
 

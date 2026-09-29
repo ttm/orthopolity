@@ -61,14 +61,28 @@ establish either priority for the identity or independent confirmation of it.
   dimension; $N(l) \propto l^{-D}$ is the essay's boxes argument.
 - **Mandelbrot, B. (1953).** An informational theory of the statistical structure of language. —
   Origin of the Zipf–Mandelbrot form referenced in the essay.
+- **Hill, T. P. (1995).** Base-invariance implies Benford's law. *Proceedings of the American
+  Mathematical Society* 123(3), 887–895.
+  [Author archive](https://digitalcommons.calpoly.edu/rgp_rsr/30/).
+  Checked 2026-09-29. Concerns significand distributions and an appropriate mantissa
+  sigma-algebra, not a finite globally scale-invariant probability on positive reals.
+- **Wojcik, M. R. (2013).** Notes on scale-invariance and base-invariance for Benford's law.
+  [Preprint](https://arxiv.org/abs/1307.3620). Checked 2026-09-29. Relates significand
+  invariance to uniformity modulo one. Benford behaviour does not establish uniform
+  resource across the full logarithmic domain; see [the assessment](scientific-assessment.md).
 
-## Why conservation and symmetry do not select equal allocation
+## Conservation, reference measures, and specified symmetries
 
 - **Sreenivasan, K. R. (1995).** On the universality of the Kolmogorov constant. *Physics of Fluids*
   7, 2778–2784. — Inertial-range spectrum. Constant energy *flux* coexists with occupancy
   $\propto k^{-2/3}$: the stock/flux counterexample.
 - **Jaynes, E. T. (1957).** Information theory and statistical mechanics. *Physical Review* 106,
   620–630.
+- **Jaynes, E. T. (1968).** Prior probabilities. *IEEE Transactions on Systems Science and
+  Cybernetics* 4(3), 227–241. [Original article](https://bayes.wustl.edu/etj/articles/prior.pdf).
+  Checked 2026-09-28. Develops transformation-based reasoning for prior probabilities.
+  This motivates specifying the symmetry behind indifference; it is not empirical evidence
+  for a physical resource-allocation law.
 - **Frank, S. A. (2009).** The common patterns of nature. *Journal of Evolutionary Biology* 22,
   1563–1585. — Distributions from constraints and invariances rather than mechanisms. The closest
   methodological sibling.
@@ -79,10 +93,15 @@ establish either priority for the identity or independent confirmation of it.
   Journal B* 17, 723–729. <https://arxiv.org/abs/cond-mat/0001432> — Conserved quantity, exponential
   rather than power-law outcome.
 
-## Generating mechanisms — the alternatives orthopolity would displace
+## Generative accounts and complementary models
 
 - **Newman, M. E. J. (2005).** Power laws, Pareto distributions and Zipf's law. *Contemporary
   Physics* 46(5), 323–351. — The standard survey; the single most useful orientation document.
+- **Schwab, D. J., Nemenman, I., & Mehta, P. (2014).** Zipf's law and criticality in
+  multivariate data without fine-tuning. *Physical Review Letters* 113, 068102.
+  [Article](https://doi.org/10.1103/PhysRevLett.113.068102);
+  [author preprint](https://arxiv.org/abs/1310.0448). Checked 2026-09-29. A latent-variable
+  mechanism for Zipf-like statistics; a shared exponent does not identify one explanation.
 - **Mitzenmacher, M. (2004).** A brief history of generative models for power law and lognormal
   distributions. *Internet Mathematics* 1(2), 226–251.
 - **Simon, H. A. (1955).** On a class of skew distribution functions. *Biometrika* 42, 425–440.
@@ -166,12 +185,13 @@ establish either priority for the identity or independent confirmation of it.
   114(3), 739–767.
 - **Gabaix, X. (2009).** Power laws in economics and finance. *Annual Review of Economics* 1, 255–293.
 - **Stevens, S. S. (1957).** On the psychophysical law. *Psychological Review* 64(3), 153–181. —
-  Cited in the essay; see [concept.md §11](concept.md) for why it does not belong.
+  Cited in the essay; see [concept.md §3](concept.md#3-the-hypothesis-needs-independent-content)
+  for why a deterministic response curve does not establish an abundance distribution.
 - **Landauer, R. (1961).** Irreversibility and heat generation in the computing process. *IBM Journal
-  of Research and Development* 5, 183–191. — See [not-worth-pursuing.md B5](not-worth-pursuing.md).
+  of Research and Development* 5, 183–191. — See the [scope decisions](not-worth-pursuing.md).
 - **Enge, K., et al. (2024).** Open your ears and take a look: a state-of-the-art report on the
   integration of sonification and visualization. *Computer Graphics Forum* 43(3).
-  <https://arxiv.org/abs/2402.16558> — See [not-worth-pursuing.md B1](not-worth-pursuing.md).
+  <https://arxiv.org/abs/2402.16558> — See the [scope decisions](not-worth-pursuing.md).
 
 ## Primary sources for this repository
 

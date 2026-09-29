@@ -21,9 +21,12 @@ The revised manuscript provides:
 
 - A formulation that covers discrete, linear, and logarithmic allocation without treating
   them as equivalent hypotheses.
+- A physical resource-symmetry postulate that yields equal expected allocations without
+  requiring a deeper mechanism, with its scope and empirical status stated explicitly.
 - Explicit conditions for obtaining a power law, and counterexamples showing why conservation
   or independent inputs alone are insufficient.
-- An ensemble counterexample: zero average slope does not imply a flat average resource profile.
+- An ensemble counterexample and a general restriction for positive mixtures of exact power
+  spectra: zero average slope does not imply a flat average resource profile.
 - Reproducible exploratory analyses, including negative and unresolved results, with corrections
   to computational errors and metadata-dependent inference.
 - A direct audit of the original manuscript rather than a verdict based only on later paraphrases.
@@ -34,8 +37,10 @@ for a targeted literature comparison and peer review; it cannot be established b
 ## A worthwhile next empirical question
 
 For a specified population and independently justified resource, does the complete resource
-profile lie within a scientifically meaningful band on a declared size range? If a mechanism
-predicts systematic departures, do those predictions transfer to a new sample?
+profile lie within a scientifically meaningful band on a declared size range? Does resource
+symmetry hold in systems identified independently as having negligible class-specific bias?
+If a postulate or mechanism predicts systematic departures, do those predictions transfer
+to a new sample? Expected, typical, and long-time allocations must be distinguished.
 
 A useful study would need raw measurements or trustworthy bin totals, sampling/exposure
 information, validated size bounds and estimands, and an uncertainty model reflecting its

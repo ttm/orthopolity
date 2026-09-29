@@ -4,6 +4,11 @@ The repository now contains a complete critical manuscript, corrected definition
 audit of the supplied essay, and reproducible exploratory analyses. It is a research draft,
 not a submission-ready announcement of a new law.
 
+The [scientific-strength assessment](scientific-assessment.md) develops a concrete
+next study: calibration of complete-profile equivalence decisions, followed by an
+audited application. It also formalizes resource symmetry as a candidate law and
+separates its empirical test from the optional construction of a deeper mechanism.
+
 ## Completed in this revision
 
 - Read the 2017 manuscript and 2024 essay directly; distinguish their linear allocation from
@@ -14,6 +19,10 @@ not a submission-ready announcement of a new law.
 - Preserve the historical protocol and raw snapshots while disclosing retrospective changes.
 - Identify impossible StudyID_07 size bounds and report an explicit exclusion sensitivity.
 - Align the supporting documents with the revised assessment.
+- Correct the mechanism requirement: a physical symmetry postulate can support an empirical
+  law; its measure, eligible systems, and expected/typical/temporal target need specification.
+- Generalize the ensemble counterexample to a positive-mixture restriction, with a proof
+  and an approximate-flatness bound under explicitly limited assumptions.
 
 ## Work needed before a journal submission
 
@@ -21,8 +30,10 @@ not a submission-ready announcement of a new law.
    definition, axis units, size bounds, sample identifiers, and reported error coverage.
    StudyID_07 requires a documented correction; the observed slope cannot supply one.
 2. **Choose the article's scope and venue.** The current contribution is a critical synthesis
-   and exploratory assessment. A stronger original-research claim requires new predictive
-   evidence. Select a venue only after comparing its current scope and novelty expectations.
+   and exploratory assessment. A stronger original-research claim requires a demonstrated
+   theoretical, methodological, or empirical advance; a stronger natural-law claim requires
+   independent predictive evidence. Select a venue only after comparing its current scope
+   and novelty expectations.
 3. **Verify declarations.** Agree authorship, contributions, funding, acknowledgements, and
    any required assistance disclosure. Do not copy declarations from the 2017 manuscript.
 4. **Finalize data notices.** Resolve inconsistent GLOSSAQUA licence metadata between author

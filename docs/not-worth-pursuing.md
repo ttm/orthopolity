@@ -6,7 +6,7 @@ give the detailed reasoning.
 
 | Direction | Reason to set it aside |
 |---|---|
-| Announcing a universal natural or cosmological law | The allocation assumption is not derived, and the selected empirical tests do not establish universality. |
+| Announcing an established universal natural or cosmological law | Independently specified scope and sufficient empirical support for universality are missing. A deeper derivation is not required; testing a precise resource-symmetry postulate remains a valid research direction. |
 | Claiming discovery of inverse-cost accounting | The identity and closely related ecological interpretations have substantial prior art. |
 | Treating more deterministic power-law examples as confirmation | Response curves, wave identities, and packing capacities do not establish object-abundance distributions. |
 | Explaining every departure with unrestricted “friction” | A fitted residual that can match every observation makes no independent prediction. |

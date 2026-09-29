@@ -2,7 +2,7 @@
 
 **Reference measures, counterexamples, and an exploratory assessment of aquatic size spectra**
 
-> Research manuscript, revised 9 September 2026. Empirical analyses are exploratory or governed
+> Research manuscript, revised 29 September 2026. Empirical analyses are exploratory or governed
 > by a locally recorded analysis plan; this is not an externally preregistered study.
 > Authorship and submission declarations require agreement before submission. Historical drafts
 > remain in Git history. Computational details accompany the manuscript in
@@ -26,7 +26,9 @@ interval does not establish the planned equivalence. A range-metadata audit iden
 implausible bounds in 377 records. Excluding them, 9.3% of remaining reported slopes meet
 a factor-1.25 drift criterion; this is not a count of statistically equivalent systems.
 We show why centred slopes, fitted dispersion, and conservation cannot
-establish ensemble equipartition. Orthopolity supports a useful synthesis and testing framework;
+establish ensemble equipartition. Resource symmetry supplies a possible physical postulate
+for equal expected allocations, whose empirical standing does not require a deeper mechanism.
+Orthopolity supports a useful synthesis and testing framework;
 the available evidence does not establish a new natural or cosmological law.
 
 ## 1. Introduction
@@ -123,7 +125,34 @@ from the upper boundary, not exact finite-domain identities. For an unbounded do
 $d>0$, count can be finite while logarithmically uniform resource has infinite total.
 Finite boundaries are essential to a finite-budget interpretation.
 
-### 2.3 Assumptions that cannot be derived from the accounting
+### 2.3 Allocation postulates and limits of the accounting
+
+**Resource symmetry as a candidate law.** The proposed rationale is that, absent restrictions
+favouring particular resource costs, allocation should not distinguish those costs. A natural
+law can adopt this as a physical postulate without a deeper mechanistic derivation. One
+precise sufficient formulation uses $K$ declared classes with fixed positive per-object
+costs $q_i$, allocations $R_i=q_iN_i$, and fixed total $\sum_iR_i=R>0$. If the probability
+law of $(R_1,\ldots,R_K)$ is invariant under exchanging allocations across the fixed classes,
+then symmetry and the sum give
+
+$$E[R_i]=R/K,\qquad E[N_i]=R/(Kq_i).$$
+
+This postulate selects resource allocations as the symmetric quantities; symmetry of counts
+would give a different prediction. It is stronger than conservation and is not implied by
+an unspecified absence of constraints. Indivisible objects may require an approximation
+where exact exchangeability is infeasible. The class measure also matters: with cost itself
+as coordinate, equal resource per $dq$ predicts $dE[N]/dq\propto q^{-1}$, whereas equal
+resource per $d\ln q$ predicts $dE[N]/dq\propto q^{-2}$. Transformation-based treatments
+of indifference likewise require a specified symmetry (Jaynes, 1968); an inferential rule
+does not itself establish a physical law.
+
+Equal expectation does not establish equal snapshots or relaxation toward equality. In a
+divisible-resource idealization, assigning all resource to one uniformly chosen class has
+the required symmetry and unequal allocation in every realization. Time-average equality
+needs an additional condition connecting time averages to expectations or its own empirical
+postulate. A test must therefore specify what "tends to allocate" means and identify
+eligible systems through conditions independent of their observed allocation. A deeper
+mechanism is optional for an empirical law; the scope and predictive evidence are not.
 
 **Conservation does not imply equal allocation.** On any bounded logarithmic domain,
 $\mathcal O(u)=A\exp(\beta u)$ can be normalized to the same resource total for every
@@ -166,6 +195,21 @@ $\exp(cu)$ and $\exp(-cu)$ on a symmetric domain produces a nonconstant hyperbol
 A median slope is a different estimand again. A claim about average resource occupancy
 requires spectra, a common domain, and an explicit weighting of systems; slopes alone do
 not identify it.
+
+More generally, let $H(u)=\sum_{i=1}^n w_iA_i e^{\beta_i u}$ on a common log-domain,
+with fixed positive weights and amplitudes. Then
+
+$$H''(u)=\sum_iw_iA_i\beta_i^2e^{\beta_i u}\ge0.$$
+
+If any slope is nonzero, the derivative is strictly positive, so the arithmetic mixture
+cannot be constant on an open interval. Exact flatness requires every contributing slope
+to be zero. With $p_i(u)=w_iA_i e^{\beta_i u}/H(u)$, its log-curvature is
+$d^2\ln H/du^2=\operatorname{Var}_{p(u)}(\beta)$. Per-system total normalization preserves
+these conclusions. They are standard convexity consequences for exact power spectra;
+arbitrary curved profiles can cancel to a flat mean. They therefore neither exclude a
+general resource-symmetry law nor convert noisy fitted slopes into a profile test.
+The [scientific assessment](scientific-assessment.md) gives a quantitative bound for
+approximate flatness and its weighting restrictions.
 
 Mean and variance also do not require a Gaussian distribution. Gaussianity is an additional
 maximum-entropy modelling choice, and selecting it by AIC is not a goodness-of-fit test.
@@ -423,19 +467,27 @@ sampling structure. A new dataset could test a frozen conditional prediction, in
 its uncertainty; numerical proximity to a dispersion fitted on the original sample is
 not sufficient.
 
-The principal limitation is therefore not simply a lack of additional examples. It is a
-lack of an independently motivated allocation mechanism and of data/design sufficient to
-test the proposed generalization. Prior ecological work already supplies models and
-environmental explanations (Cuesta, Delius and Law, 2018; Arranz et al., 2022). Further
-orthopolity research needs a demonstrable benefit over those accounts, such as a new
-conditional prediction or a useful diagnostic comparison, rather than new terminology
-for their established findings.
+The principal limitation is the absence of independently specified conditions identifying
+the proposed neutral regime and of data/design sufficient to test its generalization.
+An empirically supported allocation law need not explain its symmetry through a deeper
+mechanism. Its predictions must nevertheless specify the resource, class measure, and
+statistical target. An experiment that weakens an independently measured source of bias
+could test approach to the neutral prediction, if that convergence is part of the declared
+hypothesis. Departures cannot simply be relabelled as previously unspecified restrictions.
+
+Prior ecological work already supplies models and environmental explanations (Cuesta,
+Delius and Law, 2018; Arranz et al., 2022). Further orthopolity research needs a demonstrable
+contribution relative to those accounts, such as an independently validated conditional
+prediction or a calibrated diagnostic comparison. A resource-symmetry law could coexist
+with mechanisms explaining when it applies and how it is approached.
 
 ## 6. Conclusion
 
 Orthopolity can be stated as a mathematically coherent, falsifiable hypothesis once its
 resource, measure, and domain are fixed. Its inverse-cost consequence is an accounting
-identity shared with established size-spectrum theory. The stronger universal,
+identity shared with established size-spectrum theory. Resource symmetry provides a
+coherent postulate for equal expected allocations; a deeper mechanism is not required
+for it to become an empirically established law. The stronger universal,
 cosmological, and ensemble-confirmation claims are not justified by the available
 arguments or evidence. A scientific document is warranted as a critical synthesis with
 reproducible exploratory tests and explicit counterexamples. A paper announcing a new
@@ -496,6 +548,9 @@ ocean size spectrum from bacteria to whales. *Science Advances*, 7, eabh3732.
 
 Jaynes, E. T. (1957). Information theory and statistical mechanics. *Physical Review*,
 106, 620–630. <https://doi.org/10.1103/PhysRev.106.620>.
+
+Jaynes, E. T. (1968). Prior probabilities. *IEEE Transactions on Systems Science and
+Cybernetics*, 4(3), 227–241. <https://bayes.wustl.edu/etj/articles/prior.pdf>.
 
 Newman, M. E. J. (2005). Power laws, Pareto distributions and Zipf's law.
 *Contemporary Physics*, 46, 323–351. <https://arxiv.org/abs/cond-mat/0412004>.

@@ -18,7 +18,7 @@ be additive. Currency, energy, biomass, and person-hours cannot be combined with
 defined resource model and compatible units.
 
 **Orthopolity relative to $\mu$** is the hypothesis $\mathcal O_\mu(k)=C>0$ on $D$.
-It is equivalent to inverse mean-cost abundance. For positive finite
+It is equivalent to inverse mean-cost abundance. For $0<\mu(D)<\infty$ and positive finite
 $Z=\int_D1/\bar q\,d\mu$, object density is $p_N=1/(Z\bar q)$ and resource-weighted
 size density is uniform with respect to $\mu$. This equivalence is not a generative mechanism.
 
@@ -75,6 +75,13 @@ A deterministic power response, such as a psychophysical law, is not a size dist
 
 ## 4. Neither conservation nor uniformity of ignorance derives it
 
+A natural law can be an empirically supported postulate without a deeper
+mechanistic derivation. The relevant distinction here is between conservation
+alone and an additional physical symmetry of resource allocations. The
+[scientific assessment](scientific-assessment.md#alternative-route-test-resource-symmetry-as-a-candidate-law)
+formalizes the latter and distinguishes equal expectations from typical or
+long-time allocations.
+
 A finite budget fixes $\int_D\mathcal O_\mu\,d\mu$, not its shape. All normalized
 $\mathcal O(u)\propto e^{\beta u}$ on a bounded log-domain can have the same budget.
 
@@ -115,6 +122,13 @@ $$E[\mathcal O_i(u)]=Ae^{\tau^2u^2/2}.$$
 Even equal-total normalized spectra with opposite slopes average to a nonconstant cosh
 profile on a symmetric domain. Therefore the earlier claim that orthopolity “holds in the
 mean” does not follow from the observed median slope near −1.
+
+More generally, a positive, fixed-weight arithmetic mixture of exact power spectra on
+a common log-domain is flat only if every contributing spectrum is flat. The
+[scientific assessment](scientific-assessment.md#a-mathematical-strengthening-available-now)
+gives a proof, an exact log-curvature identity, and a quantitative restriction for
+approximate flatness. These statements require exact power shapes; arbitrary curved
+profiles can average to a flat profile.
 
 Mean and variance do not imply Gaussian shape. Choosing a Gaussian is an extra assumption.
 A fitted dispersion and a matching in-sample fraction do not independently validate it.
