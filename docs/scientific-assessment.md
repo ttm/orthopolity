@@ -1,7 +1,8 @@
 # Scientific strength and a concrete route forward
 
 Assessment: 28 September 2026; consistency review and external-assessment addendum:
-29 September 2026. This is a research assessment and proposed design,
+29 September 2026; constructive rereading: 30 September 2026.
+This is a research assessment and proposed design,
 not a completed validation study or a preregistration. It supplements the
 [manuscript](paper.md) and [remaining work](roadmap.md).
 
@@ -21,7 +22,7 @@ provide additional explanatory content, but is not a prerequisite for a law.
 | Empirical support for the broad hypothesis | Weak | The physical cases disagree with specified versions; aquatic equivalence is unresolved; the ocean reconstruction is reused evidence. |
 | Reproducibility and disclosure | A substantial asset | Frozen inputs, explicit estimands, tests, and disclosed corrections make the work inspectable. They do not validate the sampling model. |
 | Generalization | Not established | Convenience sources, study concentration, uncertain metadata, and differing resources prevent a general population claim. |
-| Potential for stronger research | Credible but conditional | A validated method with demonstrated utility, or a successful independent prediction, could add scientific content. |
+| Potential for stronger research | Credible but conditional | A validated method, a substantive theoretical extension, or a successful independent prediction could add scientific content. The constructive rereading below develops the source's hierarchy, versatility, and constraint ideas. |
 
 The aquatic result illustrates the distinction. The primary sample has 1,300
 reported slopes but only 16 study identifiers, with 78% of estimates from two
@@ -380,15 +381,205 @@ models, and uncertainty may still require estimation. The useful objective is
 an independently specified prediction that distinguishes competing accounts,
 not merely obtaining a non-unit fitted exponent or a Benford digit histogram.
 
+## Constructive rereading of the original sources
+
+The private 2017 essay, *A simple model that explains why inequality is
+ubiquitous*, and the [2024 essay](https://ttm.github.io/2024/08/14/power.html)
+motivate a broader programme than the current manuscript develops. The earlier
+assessment concentrated on making the allocation claim precise and checking its
+evidence. That work remains useful, but it underdeveloped the positive theory.
+The source intuition is that abundance reflects opportunities to realize units
+at different resource costs, while environmental restrictions shape departures.
+Its mathematical simplicity does not by itself make that physical interpretation
+scientifically empty.
+
+Three developments deserve separate treatment. They are proposed reconstructions,
+not results already established empirically by the sources or this repository.
+
+### 1. Capacity, occupancy, and conservative hierarchies
+
+Section 3.1 of the 2017 essay (p. 7) does more than count how many cubes could fit:
+it explicitly assumes the same occupancy probability at different sizes. Write
+the number of available opportunities at level or class $j$ as $M_j=B/q_j$ and
+their mean occupancy probability as $s_j$. Then
+
+$$E[N_j]=s_j M_j,\qquad q_jE[N_j]=B s_j.$$
+
+Equal occupancy gives inverse-cost expected abundance. Independence among
+occupancy indicators is unnecessary for this expectation identity. The physical
+content is whether opportunities and occupancy really have the stated structure.
+Measuring both independently would turn the source's geometric intuition into a
+test; defining occupancy afterward as observed abundance divided by capacity
+would not. If the classes compete for one disjoint budget $B$, their simultaneous
+occupation must be feasible: the full capacity $B/q_j$ cannot be realized in
+every class at once. For this simplified model, the expected budget already
+requires $\sum_j s_j\le1$; further geometric constraints may apply.
+
+The source examples also suggest a different, exact case: a complete conservative
+hierarchy. At each level $\ell$, the units partition the same underlying resource,
+so $\sum_i q_{\ell i}=B$. In a balanced $b$-ary hierarchy with equal resource
+subdivision,
+
+$$N_\ell=b^\ell,\qquad q_\ell=B b^{-\ell},\qquad
+N_\ell q_\ell=B.$$
+
+Here capacity is realized by the partition itself. Every level represents the
+same total resource, and counts vary inversely with unit cost. Geometric spacing
+of costs makes levels equally spaced in log cost. Without such spacing, equal
+resource per level does not imply equal resource per log interval. Unequal
+partitions preserve each level's total but need not produce a simple pooled
+size spectrum.
+
+This is a structural explanation for a specified class of representations.
+Different levels reuse the same underlying resource; summing them as though they
+were disjoint physical allocations would double count it. Complete hierarchies
+and competing populations therefore need different sampling models. The
+hierarchy identity is elementary and is not claimed as new mathematics; its
+value here is to recover a legitimate part of the intuition and an independently
+specifiable applicability condition. The original examples do not establish
+that arbitrary collections of household objects form such a hierarchy.
+
+### 2. Versatility as a conditional allocation model
+
+Section 5 of the 2017 essay (p. 10) proposes that a broad range of engagements
+can support sensing and group versatility. One explicit development is to model
+representation across $K$ predefined task or cost classes through positive,
+continuous counts or expected counts $N_j$. For costs $q_j>0$ and budget $B>0$,
+consider the objective
+
+$$\max_{N_j>0}\sum_{j=1}^K\log N_j
+\quad\text{subject to}\quad \sum_j q_jN_j\le B.$$
+
+This rewards representation of every declared class with diminishing returns.
+The first-order condition $1/N_j=\lambda q_j$ and the binding budget give
+
+$$N_j=\frac{B}{Kq_j},\qquad q_jN_j=\frac{B}{K}.$$
+
+Thus the source's versatility idea admits a precise conditional route to equal
+resource allocation. The objective maximizes the geometric mean of representation;
+it does not prove a general statement about maximizing the occupied size range.
+Logarithmic utility is an additional assumption, not a consequence of ignorance
+or conservation. Other utility functions need not give the same allocation.
+The result concerns a continuous relaxation, not exact integer populations or
+guaranteed occupancy in individual realizations. Class choice matters: splitting
+one class into two equally weighted classes changes the objective.
+
+This is established proportional-fairness mathematics; see
+[Kelly, Maulloo and Tan (1998)](https://doi.org/10.1057/palgrave.jors.2600523).
+It supplies a constructive precedent, not a new discovery to claim here.
+With independently specified positive importance weights $w_j$, maximizing
+$\sum_j w_j\log N_j$ gives
+
+$$q_jN_j=B\frac{w_j}{\sum_i w_i}.$$
+
+Changing task importance therefore predicts a change in resource shares, if the
+model applies. For several resource budgets $\sum_j q_{aj}N_j\le B_a$, the
+same optimization gives, for finite positive budgets, a bounded feasible set,
+and strict feasibility,
+
+$$N_j=\frac{w_j}{\sum_a\lambda_a q_{aj}},\qquad \lambda_a\ge0.$$
+
+Each class must have a positive denominator at a finite optimum. Multipliers
+are constrained by budgets and complementary slackness; redundant constraints
+can make the multipliers nonunique. They express relative
+scarcity and convert different resource costs into a common effective cost.
+The equality concerns this priced aggregate cost per unit weight, not each
+resource separately. This is one principled development of compound resources; multiplying quantities
+of unrelated resources without a supported production model is unnecessary.
+A scientific contribution would require evidence for the objective and predictions
+that improve on existing allocation models.
+
+### 3. Restrictions that predict departures
+
+The source's restrictions can also be developed from a neutral resource reference
+distribution. On a finite declared domain with $0<\mu(D)<\infty$, let
+$P_0=d\mu/\mu(D)$, $P=dR_1/R_1$, and let $q_1(k),q_2(k)>0$ be the conditional
+mean costs of an object in two resources. Accounting gives
+
+$$\frac{R_2}{R_1}=E_P[q_2/q_1],\qquad
+\frac{N}{R_1}=E_P[1/q_1].$$
+
+In particular, both resources can be exactly neutral relative to the same
+class measure only if $q_2/q_1$ is constant on the occupied domain. Distinct
+resource scalings supply a concrete source of incompatibility between neutrality
+claims; this is an accounting result, not a new empirical law.
+
+One possible additional model chooses the feasible $P$ minimizing
+$D_{\mathrm{KL}}(P\Vert P_0)$. For fixed $R_1$ and an active upper bound
+$R_2\le B_2$, an interior solution has
+
+$$dP=Z^{-1}\exp[-\lambda q_2/q_1]dP_0,\qquad \lambda\ge0.$$
+
+The multiplier is set by the measured budget ratio $B_2/R_1$. For logarithmic
+classes, $q_1=a k^d$ and $q_2=b k^e$ give
+
+$$\frac{dN}{dk}\propto k^{-(d+1)}
+\exp[-\lambda(b/a)k^{e-d}].$$
+
+For $e>d$ the auxiliary restriction suppresses the upper end of the size range;
+for $e<d$ it suppresses the lower end. For $e=d$ the resource costs are
+proportional and the second budget supplies no additional shape constraint if
+feasible. If object count is fixed too, its constraint requires an additional
+factor $\exp[-\lambda_N/q_1]$. Appropriate integrability is required; a compact
+size interval bounded away from zero avoids the power-law endpoint problems.
+
+This is a proposed closure using standard maximum-relative-entropy mathematics,
+not a deduction that physical systems minimize relative entropy. The choice of
+reference probability and level of description is substantive; see
+[Banavar and Maritan (2007)](https://arxiv.org/abs/cond-mat/0703622).
+The versatility optimization and this resource-probability model can yield
+different constrained profiles. They are alternatives to assess, not interchangeable
+proofs of one uniquely determined physical theory.
+
+An informative test would measure the resource costs independently, change an
+auxiliary budget, and predict the new full profile using the changed budget.
+For this relative-entropy model, when the costs, primary budget, and domain remain
+fixed and no further moment constraints are imposed,
+
+$$\log\frac{dP_{\lambda_2}}{dP_{\lambda_1}}(k)
+=\text{constant}-(\lambda_2-\lambda_1)\frac{q_2(k)}{q_1(k)}.$$
+
+The expression presumes the auxiliary-budget constraint is the only varying
+shape constraint. Such an intervention can discriminate models even with a unit
+primary cost exponent. Restrictions and resource functions must be identified
+before observing the target profile; an arbitrary fitted correction can explain
+any distribution and makes no prediction.
+
+### Revised assessment of the possible contribution
+
+As written, the manuscript remains a useful critical synthesis with modest
+original discovery content and exploratory evidence that does not establish a
+broad law. The rereading changes the assessment of its developmental direction:
+a statistical calibration paper is one option, but does not exhaust the source.
+A theory of neutral allocation, hierarchical representation, and specific
+resource constraints is a credible alternative closer to its central ambition.
+
+A strong theoretical contribution would need a substantive new result or a
+distinctive explanatory connection beyond the standard identities and optimization
+results above. A strong empirical contribution could come from predicting a
+departure and its response to a changed restriction on untouched observations,
+with comparison against existing accounts. Establishing a broad natural law
+requires broader independent evidence still. Neither a microscopic mechanism
+nor a non-unit exponent is mandatory for scientific strength.
+
+The focused next step for this theoretical route is to choose one physical
+setting, specify how its classes and resources are measured, justify one model
+of the restrictions, and derive a prospective prediction. Hierarchy, allocation,
+and field or throughput analogies can share a conceptual motivation while
+retaining their different observables. Adding all analogies to one evidence
+count would not establish universality.
+
 ## What has and has not been accomplished here
 
 This assessment supplies a sharper mathematical restriction, a comparison with
-nearby research, and a concrete design with success and stopping criteria. It
+nearby research, a concrete design with success and stopping criteria, and
+conditional models developing the original intuition. It
 does not add an independent dataset, complete the calibration benchmark, establish
 a physical mechanism, or turn the existing evidence into confirmation.
 
-The next computational step is the calibration benchmark, followed by one audited
-profile-level application. In parallel, a test of the proposed law needs an
+For the methodological route, the next computational step is the calibration
+benchmark, followed by one audited profile-level application. For the constructive
+theory route, it is the focused prediction described above. A test of the proposed law needs an
 independently defined neutral regime and a choice among expected, typical, and
 long-time allocation. A convincing negative result or a method that prevents
 incorrect conclusions can also make the scientific contribution stronger.
