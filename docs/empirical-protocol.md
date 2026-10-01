@@ -5,6 +5,12 @@ external preregistration. No natural-system observations have been added. The
 domain, equipment, sampling plan, and analysis thresholds must be fixed for the
 chosen setting before validation outcomes are inspected.
 
+The first [controlled workload implementation](workload-pilot.md) is now
+executed. It supplies actual cost measurements and later quota-acceptance
+outcomes under a saved prediction freeze. The general protocol below remains
+applicable to future independently chosen systems; the controlled pilot does
+not test autonomous neutral allocation.
+
 ## Question and observable
 
 Can independently measured resource availability and independently calibrated
@@ -155,8 +161,9 @@ are design precedents; a chosen real system still requires calibration for its
 own costs, observation design, clustering, censoring, and detectable alternatives.
 
 The repository supplies the mathematical targets, model comparisons, metadata
-and data templates, and this observation design. Selecting a real system,
-calibrating its measurements, registering a concrete analysis if desired,
-collecting independent validation outcomes, and evaluating empirical evidence
+and data templates, and this observation design. The workload pilot completes
+one controlled measurement and prospective forecast exercise. Selecting an
+autonomously allocating system, calibrating its measurements, registering a
+concrete analysis if desired, and collecting independent allocation outcomes
 remain future work. Existing heterogeneous ecological summaries do not provide
 the paired capacities and independent cost calibration required by this design.

@@ -47,3 +47,15 @@
 
 All source files are preserved byte-for-byte and hashed. New views, estimates,
 figures and audio are analysis outputs and are labeled separately.
+
+## First-party controlled workload measurements
+
+`workload-pilot/2026-10-01/` contains measurements generated locally by
+`experiments/run_workload_pilot.py` and the fresh-process matrix worker. The
+calibration and validation JSONL records are actual observed CPU, peak-resident
+memory, numerical checks, and cooperative quota outcomes. The calibration
+manifest and frozen forecast contain SHA-256 hashes of inputs and source files.
+This directory is separate from the downloaded empirical snapshots in `raw/`.
+See [the pilot report](../docs/workload-pilot.md) for resource units, assigned
+conditions, sampling limitations, and reproduction instructions. These records
+describe controlled task acceptance rather than autonomous resource allocation.

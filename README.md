@@ -25,8 +25,11 @@ The [follow-up research programme](docs/research-programme.md) separates resourc
 cost from joint feasibility and tests predictions under changed dependence,
 attachment dynamics, and resource budgets. It includes an
 [independent empirical protocol](docs/empirical-protocol.md) with calibration and
-observation templates. The protocol is a design; validation observations have
-not been collected.
+observation templates. Its first controlled implementation is the
+[measured workload pilot](docs/workload-pilot.md): separate cost calibration,
+frozen forecasts, and later execution under assigned memory/CPU quotas. This
+tests operational cost-model transfer; autonomous resource allocation remains
+an empirical question.
 
 The [predictive reliability benchmarks](docs/predictive-benchmarks.md) extend this
 programme to capacity-only family selection, training uncertainty, omitted
@@ -145,6 +148,17 @@ These write results to `results/competition/`, `results/forecast/`, and
 `results/interventions/`. They generate simulated observations; no independent
 natural-system validation is implied by successful reproduction.
 
+Analyse the recorded actual workload measurements:
+
+~~~bash
+make workload-report PY=python3.11
+~~~
+
+The [pilot report](docs/workload-pilot.md) links 72 calibration and 672 validation
+task attempts, the prediction freeze, and the numerical results. To collect a
+new hardware/session replication, use a new measurement and output directory
+as described there. Existing measurements and frozen predictions are preserved.
+
 ## Repository guide
 
 | Path | Purpose |
@@ -160,6 +174,7 @@ natural-system validation is implied by successful reproduction.
 | [docs/model-study.md](docs/model-study.md) / [docs/model-sources.md](docs/model-sources.md) | Cross-model simulations, resource interpretations, primary model references, and next discriminating tests |
 | [docs/research-programme.md](docs/research-programme.md) | Follow-up theory, dependence and transfer benchmarks, predictive restrictions, and independent empirical protocol |
 | [docs/predictive-benchmarks.md](docs/predictive-benchmarks.md) / [docs/predictive-claims.md](docs/predictive-claims.md) | Forecast reliability, identifiability, competing resources, observation design, and claim ledger |
+| [docs/workload-pilot.md](docs/workload-pilot.md) | Actual memory/CPU calibration, frozen predictions, executed quota interventions, and replication instructions |
 | [src/](src/) / [tests/](tests/) | Accounting, distribution fitting, equivalence diagnostics, meta-analysis, and regression checks |
 | [experiments/](experiments/) / [results/](results/) | Reproducible analyses and outputs |
 | [data/SOURCES.md](data/SOURCES.md) / [data/NOTICE.md](data/NOTICE.md) | Input provenance and source-specific notices |

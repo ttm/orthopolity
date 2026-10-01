@@ -9,7 +9,7 @@
 PY ?= python3
 export PYTHONPATH := src
 
-.PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory models dependence attachment restrictions followup competition forecast interventions robustness analyses paper clean
+.PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory models dependence attachment restrictions followup competition forecast interventions robustness workload-pilot workload-report analyses paper clean
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -84,6 +84,12 @@ interventions:   ## sampling design and calibrated model discrimination
 	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_interventions.py
 
 robustness: competition forecast interventions ## predictive reliability and observation design
+
+workload-pilot:   ## execute or resume the controlled workload measurement stages
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_workload_pilot.py
+
+workload-report:  ## analyse the recorded workload observations without collecting new ones
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_workload_pilot.py --stage analyse
 
 paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 

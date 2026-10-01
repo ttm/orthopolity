@@ -9,6 +9,11 @@ The [predictive reliability continuation](predictive-benchmarks.md) adds
 capacity-only model selection, uncertainty assessment, omitted-resource failures,
 negative dependence, and calibrated sampling designs for budget interventions.
 
+The later [controlled workload pilot](workload-pilot.md) adds actual hardware
+cost measurements and prospective quota-acceptance predictions. Its assigned
+resource conditions evaluate operational transfer rather than spontaneous
+neutral allocation.
+
 ## The central hypothesis and its operational targets
 
 The general organizing relation is $H(k)=G(k)h(k)$. A constant aggregate $H$ and

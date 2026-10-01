@@ -37,13 +37,22 @@ The [predictive reliability benchmarks](predictive-benchmarks.md) now add
 unknown-family selection, approximate training bands with measured coverage,
 omitted resources, negative dependence, and observation-specific discrimination
 calculations. These complete further computational design work; real resource
-calibration and independent validation remain the substantive empirical step.
+calibration and later validation are now implemented in the first
+[controlled workload pilot](workload-pilot.md). That pilot tests measured
+cost-model transfer under assigned quotas; the substantive neutrality-selection
+step still requires an autonomously allocating system.
 
 Use the follow-up reports to select one independently measurable system. Calibrate
 its resource costs without using validation size outcomes, measure joint availability,
 and predict a changed full profile before inspecting those outcomes. The protocol
 includes an accessible candidate using numerical workloads; a natural-system test
 requires a separately justified observation and intervention design.
+
+Replicate the workload forecast in a new session or on another machine using
+the same cost and outcome definitions. Keep a transfer test with the original
+cost model distinct from a locally recalibrated replication. For the central
+allocation claim, independently define a system and restriction intervention
+that predicts neutrality, a departure, or recovery before examining its spectrum.
 
 For a dimensionality paper, establish the conditions connecting joint-feasibility
 scaling to resource-cost scaling and test the corresponding prediction. For an

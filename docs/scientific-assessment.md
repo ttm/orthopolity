@@ -698,3 +698,37 @@ would measure costs and availability separately, freeze full-profile and
 intervention predictions, and compare them with independently observed outcomes.
 Testing whether a declared natural regime selects resource neutrality remains
 an additional endpoint beyond successful feasibility prediction.
+
+## Executed controlled measurement pilot: 1 October 2026
+
+The [workload pilot](workload-pilot.md) adds actual measurements to the resource
+prediction programme: 72 fresh-process calibration tasks followed by 672
+validation task attempts under four assigned memory/CPU quota conditions.
+Calibrated costs, complete forecasts, quota pairings, analysis code hashes,
+and exploratory error tolerances were saved before validation. Each observed
+size is the largest numerically verified, quota-completed workload in a fully
+executed fixed grid; no fitted inverse cost supplies its observed value.
+
+The paired-calibration forecast's maximum absolute survival errors are 0.0238,
+0, 0, and 0.0357 in aligned, opposed, permuted, and CPU-tightened conditions.
+All are within the frozen conditional tolerance of $1/28$. Reversing quota
+pairings removes completion at the three largest sizes despite unchanged quota
+marginals. Single-resource forecasts miss opposed profiles by up to 0.4286;
+an independent-budget approximation misses them by up to 0.1837. These are
+finite-profile prospective errors on one machine/session, not a guarantee of
+equivalence or generalization.
+
+The outcome criterion explicitly applies both quotas, using cooperative
+checkpoints rather than operating-system hard limits. Prediction success
+therefore supports transfer of measured workload costs and the observation
+pipeline. It does not discover the joint-quota rule or show spontaneous neutral
+allocation. Median costs and independent resource-cost replay remain competitive
+in this design, so no unique cost-dependence law is identified. Total peak RSS
+includes substantial process overhead; neither its scaling nor the completion
+spectrum establishes an unlimited resource dimension.
+
+The next operational test is replication across sessions or machines, separating
+transfer of an original forecast from local recalibration. The stronger
+allocation test still needs independently meaningful costs, observed autonomous
+allocations, and a restriction intervention whose complete response is predicted
+in advance. The pilot supplies a concrete measurement precedent for that study.
