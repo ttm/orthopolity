@@ -583,3 +583,81 @@ theory route, it is the focused prediction described above. A test of the propos
 independently defined neutral regime and a choice among expected, typical, and
 long-time allocation. A convincing negative result or a method that prevents
 incorrect conclusions can also make the scientific contribution stronger.
+
+## Cross-model programme and broader principle: 1 October 2026
+
+The [first model study](model-study.md), with its [primary-source catalogue](model-sources.md),
+develops the dimensionality direction through six stochastic model families,
+sixteen allocation scenarios, and a spherical-transport comparison. Constructed
+controls are distinguished from independent generative dynamics. The study
+recovers parameter-predicted multiplicative and joint-feasibility exponents,
+shows the effect of dependence with unchanged resource marginals, and compares
+the same preferential-attachment graph through edge incidence and independently
+defined wedge counts. The latter approaches log-resource neutrality asymptotically,
+with explicit finite-degree corrections. Conservative exchange and random graphs
+supply non-flat comparators; compound costs and absorption supply intervention
+templates. These results add theoretical compatibility checks, not empirical
+confirmation of a general law.
+
+A broader organizing relation is $H(k)=G(k)h(k)$: an intensity or density times an
+independently defined resource cost or geometric support. Constant $H$ and a
+homogeneous $G$ yield a power law. Allocation, capacity, hierarchy, and transport
+can share this form while retaining different physical invariants and measurement
+models. The source's light-bulb example is legitimate conserved throughput across
+enclosing spheres; its shell-resident stock is equal per linear radial thickness.
+
+An outcome-defined class is legitimate for description and mathematical analysis.
+Independent prediction is needed when its defining outcome is offered as evidence
+for a more general physical tendency. Selecting power-law ranges and testing an
+independently specified resource prediction differs from selecting precisely the
+ranges where that prediction holds. A balancing weight can be constructed for
+any positive density; identifying a meaningful resource and invariant supplies
+the additional scientific content.
+
+The term "cosmological principle" may retain the author's explicit broad
+philosophical sense of a proposed principle governing Nature or Reality. That
+usage is distinct from the conventional cosmological principle and does not
+constrain the project to spacetime-only questions. The general principle and its
+derived laws remain hypotheses whose empirical and explanatory standing must be
+established. This clarification broadens the constructive programme without
+changing the assessment of the existing empirical evidence.
+
+## Executed dimensionality and restriction benchmarks: 1 October 2026
+
+The [follow-up programme](research-programme.md) implements the proposed next
+computational steps. Its [dimensionality note](resource-dimensionality.md)
+distinguishes cost elasticity $D_q$ from joint-feasibility survival elasticity
+$\kappa$. For smooth survival $S$, the exact local bridge is
+
+$$\alpha=1+\kappa-\frac{d\log\kappa}{d\log k},\qquad
+\beta=D_q-\kappa+\frac{d\log\kappa}{d\log k}.$$
+
+Only constant elasticity, or suitable asymptotic regularity, removes the
+derivative correction. This supplies an operational connection between resource
+availability, cost, and allocation while preserving their distinct dimensions.
+
+Twelve dependence scenarios test fixed Pareto marginals, common shocks, Gaussian
+and Student joint laws, two/four resources, and capacity ceilings. Exact or
+deterministically integrated profiles are compared with separately simulated
+outputs and independently trained capacity forecasts. Gaussian and Student
+models with the same Kendall dependence have different joint-tail dimensions;
+finite-range behaviour differs further. The observed size is still the bottleneck
+by construction, so the physical mechanism has not been independently tested.
+
+The [attachment benchmark](attachment-study.md) keeps centered wedges fixed
+across five growth kernels and increasing graph sizes. Exact finite references
+are restricted to kernels with deterministic normalizers; nonlinear cases receive
+limiting or concentration predictions. Full resource totals and excluded tails
+remain visible. The [restriction benchmark](restriction-study.md) solves two
+budget-driven closures and their distinct intervention responses. Scarcity prices
+give proportional fairness an independently budget-determined compound cost and
+scale-dependent dimension, conditional on the additional optimization objective.
+Slack primary budgets and fixed-primary infeasibility are explicit diagnostics.
+
+The [empirical protocol](empirical-protocol.md) separates cost calibration,
+availability measurements, and independently observed unit sizes. It includes
+a candidate controlled workload experiment and header-only data templates.
+Measurement-specific tolerances, sample-size design, and real validation
+observations remain future work. The new work sharpens conditional prediction;
+its mathematics draws on established probability and optimization models and
+does not yet constitute discovery of a new universal law.

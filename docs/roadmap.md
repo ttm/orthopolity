@@ -23,6 +23,27 @@ separates its empirical test from the optional construction of a deeper mechanis
   law; its measure, eligible systems, and expected/typical/temporal target need specification.
 - Generalize the ensemble counterexample to a positive-mixture restriction, with a proof
   and an approximate-flatness bound under explicitly limited assumptions.
+- Implement a first cross-model suite and the [follow-up research programme](research-programme.md):
+  explicit resource dimensions, dependence interventions, fixed-resource attachment
+  comparisons, and two-budget restriction closures. Keep known-model compatibility
+  separate from new empirical evidence.
+- Prepare an [independent empirical protocol](empirical-protocol.md), metadata skeleton,
+  and header-only calibration and opportunity templates. This is a design; real
+  validation observations and measurement-specific decision thresholds remain to be obtained.
+
+## Next substantive research step
+
+Use the follow-up reports to select one independently measurable system. Calibrate
+its resource costs without using validation size outcomes, measure joint availability,
+and predict a changed full profile before inspecting those outcomes. The protocol
+includes an accessible candidate using numerical workloads; a natural-system test
+requires a separately justified observation and intervention design.
+
+For a dimensionality paper, establish the conditions connecting joint-feasibility
+scaling to resource-cost scaling and test the corresponding prediction. For an
+allocation paper, choose and justify a restriction closure, then compare its
+budget-induced profile response with a prespecified alternative. Additional model
+matches alone do not establish that natural systems select either closure.
 
 ## Work needed before a journal submission
 

@@ -1,0 +1,25 @@
+{
+  "description": "Fixed before this benchmark run; exploratory known-model construction, not empirical validation or external preregistration",
+  "seed": 202610011,
+  "replicates": 6,
+  "validation_samples": 60000,
+  "capacity_training_samples": 16000,
+  "bins": 8,
+  "cost_exponent": 1,
+  "tail_thresholds": [2.0, 10.0, 100.0, 10000.0, 1000000.0],
+  "family_df_known_in_training": true,
+  "scenarios": [
+    {"id": "independent_m2", "family": "independent", "resources": 2, "parameter": 0.0, "domain": [1.0, 16.0]},
+    {"id": "shock_m2_half", "family": "common_shock", "resources": 2, "parameter": 0.5, "domain": [1.0, 16.0]},
+    {"id": "shock_m2_shared", "family": "common_shock", "resources": 2, "parameter": 1.0, "domain": [1.0, 16.0]},
+    {"id": "gaussian_m2_half", "family": "gaussian", "resources": 2, "parameter": 0.5, "domain": [1.0, 16.0]},
+    {"id": "student_m2_half", "family": "student", "resources": 2, "parameter": 0.5, "df": 4.0, "domain": [1.0, 16.0]},
+    {"id": "student_m2_zero", "family": "student", "resources": 2, "parameter": 0.0, "df": 4.0, "domain": [1.0, 16.0]},
+    {"id": "independent_m4", "family": "independent", "resources": 4, "parameter": 0.0, "domain": [1.0, 6.0]},
+    {"id": "shock_m4_half", "family": "common_shock", "resources": 4, "parameter": 0.5, "domain": [1.0, 6.0]},
+    {"id": "gaussian_m4_half", "family": "gaussian", "resources": 4, "parameter": 0.5, "domain": [1.0, 6.0]},
+    {"id": "student_m4_half", "family": "student", "resources": 4, "parameter": 0.5, "df": 4.0, "domain": [1.0, 6.0]},
+    {"id": "gaussian_m2_cap8", "family": "gaussian", "resources": 2, "parameter": 0.5, "capacity_cap": 8.0, "domain": [1.0, 8.0]},
+    {"id": "student_m2_cap8", "family": "student", "resources": 2, "parameter": 0.5, "df": 4.0, "capacity_cap": 8.0, "domain": [1.0, 8.0]}
+  ]
+}

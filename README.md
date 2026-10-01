@@ -13,6 +13,21 @@ The [scientific-strength assessment](docs/scientific-assessment.md) develops the
 resource-symmetry argument, a concrete research design, and a stronger mathematical
 restriction on ensemble averaging.
 
+The [model comparison study](docs/model-study.md) develops a shared resource and
+geometry formulation and compares constructed allocation models with preferential
+attachment, random graphs, conservative exchange with saving, multiplicative growth,
+dependent resource feasibility, and spherical radiation. Six stochastic model families
+produce 16 allocation scenarios plus a transport comparison. These simulations test
+mathematical compatibility and prospective prediction templates; they are not new
+empirical evidence for a universal principle.
+
+The [follow-up research programme](docs/research-programme.md) separates resource
+cost from joint feasibility and tests predictions under changed dependence,
+attachment dynamics, and resource budgets. It includes an
+[independent empirical protocol](docs/empirical-protocol.md) with calibration and
+observation templates. The protocol is a design; validation observations have
+not been collected.
+
 ## What the hypothesis says
 
 Choose the objects, an additive resource $q$, a size coordinate $k$, an observation domain,
@@ -93,6 +108,27 @@ assumptions, data labels, novelty, or the physical hypothesis. The historical an
 is preserved in [configs/prereg_2026-09-09.json](configs/prereg_2026-09-09.json);
 Git records commit order, not independently verified blinding or external preregistration.
 
+Run the exploratory model study separately:
+
+~~~bash
+make models PY=python3.11
+~~~
+
+Its configuration is [configs/model_study_2026-10-01.json](configs/model_study_2026-10-01.json).
+Results, profiles, and figures are written to `results/models/`; the model source
+catalogue records which predictions are exact, asymptotic, or approximate.
+
+Run the three follow-up benchmarks together, or use the `dependence`, `attachment`,
+and `restrictions` targets separately:
+
+~~~bash
+make followup PY=python3.11
+~~~
+
+Configurations are in `configs/`; outputs are in `results/dependence/`,
+`results/attachment/`, and `results/restrictions/`. The research programme links
+the theory, model-specific reports, and empirical design.
+
 ## Repository guide
 
 | Path | Purpose |
@@ -105,6 +141,8 @@ Git records commit order, not independently verified blinding or external prereg
 | [docs/not-worth-pursuing.md](docs/not-worth-pursuing.md) | Claims and directions the present evidence does not justify |
 | [docs/roadmap.md](docs/roadmap.md) | Remaining scientific and submission work |
 | [docs/references.md](docs/references.md) | Annotated literature and primary sources |
+| [docs/model-study.md](docs/model-study.md) / [docs/model-sources.md](docs/model-sources.md) | Cross-model simulations, resource interpretations, primary model references, and next discriminating tests |
+| [docs/research-programme.md](docs/research-programme.md) | Follow-up theory, dependence and transfer benchmarks, predictive restrictions, and independent empirical protocol |
 | [src/](src/) / [tests/](tests/) | Accounting, distribution fitting, equivalence diagnostics, meta-analysis, and regression checks |
 | [experiments/](experiments/) / [results/](results/) | Reproducible analyses and outputs |
 | [data/SOURCES.md](data/SOURCES.md) / [data/NOTICE.md](data/NOTICE.md) | Input provenance and source-specific notices |

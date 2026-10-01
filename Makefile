@@ -9,7 +9,7 @@
 PY ?= python3
 export PYTHONPATH := src
 
-.PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory analyses paper clean
+.PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory models dependence attachment restrictions followup analyses paper clean
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -59,6 +59,20 @@ variance:        ## between- vs within-ecosystem dispersion -> results/variance.
 
 theory:          ## deterministic mathematical illustrations (not empirical evidence)
 	$(PY) experiments/run_theory.py
+
+models:          ## exploratory model comparisons (not empirical evidence)
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_models.py
+
+dependence:      ## joint-resource dimensionality and independent forward predictions
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_dependence.py
+
+attachment:      ## fixed-resource transfer across attachment dynamics
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_attachment.py
+
+restrictions:    ## prospective profile responses under two resource budgets
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_restrictions.py
+
+followup: dependence attachment restrictions ## the three follow-up computational studies
 
 paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 
