@@ -5,6 +5,10 @@ and develops the dimensionality proposal through independent forward predictions
 changes in mechanism, and explicit resource restrictions. The computational
 studies use specified models. They supply no new observations of natural systems.
 
+The [predictive reliability continuation](predictive-benchmarks.md) adds
+capacity-only model selection, uncertainty assessment, omitted-resource failures,
+negative dependence, and calibrated sampling designs for budget interventions.
+
 ## The central hypothesis and its operational targets
 
 The general organizing relation is $H(k)=G(k)h(k)$. A constant aggregate $H$ and

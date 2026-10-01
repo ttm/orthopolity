@@ -28,6 +28,12 @@ attachment dynamics, and resource budgets. It includes an
 observation templates. The protocol is a design; validation observations have
 not been collected.
 
+The [predictive reliability benchmarks](docs/predictive-benchmarks.md) extend this
+programme to capacity-only family selection, training uncertainty, omitted
+resources, negative dependence, and calibrated intervention sampling. They show
+both successful bounded forecasts and explicit failures, while separating
+prediction from identified asymptotic dimension and resource neutrality.
+
 ## What the hypothesis says
 
 Choose the objects, an additive resource $q$, a size coordinate $k$, an observation domain,
@@ -129,6 +135,16 @@ Configurations are in `configs/`; outputs are in `results/dependence/`,
 `results/attachment/`, and `results/restrictions/`. The research programme links
 the theory, model-specific reports, and empirical design.
 
+Run the predictive-reliability and observation-design benchmarks:
+
+~~~bash
+make robustness PY=python3.11
+~~~
+
+These write results to `results/competition/`, `results/forecast/`, and
+`results/interventions/`. They generate simulated observations; no independent
+natural-system validation is implied by successful reproduction.
+
 ## Repository guide
 
 | Path | Purpose |
@@ -143,6 +159,7 @@ the theory, model-specific reports, and empirical design.
 | [docs/references.md](docs/references.md) | Annotated literature and primary sources |
 | [docs/model-study.md](docs/model-study.md) / [docs/model-sources.md](docs/model-sources.md) | Cross-model simulations, resource interpretations, primary model references, and next discriminating tests |
 | [docs/research-programme.md](docs/research-programme.md) | Follow-up theory, dependence and transfer benchmarks, predictive restrictions, and independent empirical protocol |
+| [docs/predictive-benchmarks.md](docs/predictive-benchmarks.md) / [docs/predictive-claims.md](docs/predictive-claims.md) | Forecast reliability, identifiability, competing resources, observation design, and claim ledger |
 | [src/](src/) / [tests/](tests/) | Accounting, distribution fitting, equivalence diagnostics, meta-analysis, and regression checks |
 | [experiments/](experiments/) / [results/](results/) | Reproducible analyses and outputs |
 | [data/SOURCES.md](data/SOURCES.md) / [data/NOTICE.md](data/NOTICE.md) | Input provenance and source-specific notices |

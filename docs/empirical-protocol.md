@@ -148,6 +148,12 @@ confirmation of one allocation law.
 
 ## What can be completed now
 
+The [forecast benchmark](forecast-study.md) now assesses capacity-only family
+selection and training uncertainty. The [intervention design](intervention-design.md)
+quantifies sampling requirements for the declared two-budget comparison. These
+are design precedents; a chosen real system still requires calibration for its
+own costs, observation design, clustering, censoring, and detectable alternatives.
+
 The repository supplies the mathematical targets, model comparisons, metadata
 and data templates, and this observation design. Selecting a real system,
 calibrating its measurements, registering a concrete analysis if desired,

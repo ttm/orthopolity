@@ -33,6 +33,12 @@ separates its empirical test from the optional construction of a deeper mechanis
 
 ## Next substantive research step
 
+The [predictive reliability benchmarks](predictive-benchmarks.md) now add
+unknown-family selection, approximate training bands with measured coverage,
+omitted resources, negative dependence, and observation-specific discrimination
+calculations. These complete further computational design work; real resource
+calibration and independent validation remain the substantive empirical step.
+
 Use the follow-up reports to select one independently measurable system. Calibrate
 its resource costs without using validation size outcomes, measure joint availability,
 and predict a changed full profile before inspecting those outcomes. The protocol

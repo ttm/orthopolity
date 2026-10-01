@@ -9,7 +9,7 @@
 PY ?= python3
 export PYTHONPATH := src
 
-.PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory models dependence attachment restrictions followup analyses paper clean
+.PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory models dependence attachment restrictions followup competition forecast interventions robustness analyses paper clean
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -73,6 +73,17 @@ restrictions:    ## prospective profile responses under two resource budgets
 	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_restrictions.py
 
 followup: dependence attachment restrictions ## the three follow-up computational studies
+
+competition:     ## negative coupling, finite support, and dimension corrections
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_competition.py
+
+forecast:        ## capacity-only selection, misspecification, and uncertainty
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_forecast.py
+
+interventions:   ## sampling design and calibrated model discrimination
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_interventions.py
+
+robustness: competition forecast interventions ## predictive reliability and observation design
 
 paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 

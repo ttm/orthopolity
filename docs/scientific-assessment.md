@@ -661,3 +661,40 @@ Measurement-specific tolerances, sample-size design, and real validation
 observations remain future work. The new work sharpens conditional prediction;
 its mathematics draws on established probability and optimization models and
 does not yet constitute discovery of a new universal law.
+
+## Predictive reliability and observation design: 1 October 2026
+
+The [next benchmark round](predictive-benchmarks.md) evaluates unknown-family
+forecasting, competing resources, and finite-sample discrimination of allocation
+models. Its [claim ledger](predictive-claims.md) identifies established results
+and the independent evidence needed for a further contribution.
+
+Capacity-only model selection predicts bounded resource profiles accurately in
+complete-resource simulations, including a generating family absent from the
+candidate list. Accurate bounded forecasts nevertheless fail to identify a
+unique unlimited tail dimension. An omitted third resource causes both selected
+and nonparametric forecasts to miss the actual output population targets in
+all 24 repetitions. These results give the proposed mechanism a concrete failure
+condition, while the bottleneck realization itself remains imposed.
+
+Negative coupling of two unchanged Pareto resource marginals gives a feasibility
+index greater than two; fully opposed inputs instead yield a bounded neutral
+profile whose survival elasticity varies. The finite derivative correction
+accounts for that example exactly. Thus input count, cost dimension, and
+feasibility dimension coincide only under additional assumptions. Dependencies
+do not generally act as a fractional reduction of input count.
+
+The intervention study also supplies an observation-design calculation. Under
+its frozen predictions and calibrated unique-acceptance criterion, the first
+tested sample size meeting the target is 50,000 uniform objects per cohort or
+10,000 resource-proportional opportunities per cohort. These are conditional
+requirements for this model comparison. An extra allocation objective or a
+miscalibrated cost can make both frozen candidates fail even when forced
+likelihood selection strongly prefers one. This distinction preserves failures
+instead of turning every observed allocation into confirmation.
+
+All new observations are simulated. The strongest next empirical contribution
+would measure costs and availability separately, freeze full-profile and
+intervention predictions, and compare them with independently observed outcomes.
+Testing whether a declared natural regime selects resource neutrality remains
+an additional endpoint beyond successful feasibility prediction.

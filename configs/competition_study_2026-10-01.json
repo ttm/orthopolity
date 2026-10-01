@@ -1,0 +1,16 @@
+{
+  "description": "Exploratory fixed-marginal competition benchmark, specified before its run; not external preregistration",
+  "seed": 202610013,
+  "replicates": 6,
+  "samples": 120000,
+  "bins": 10,
+  "cost_exponent": 1,
+  "tail_thresholds": [2.0, 10.0, 100.0, 10000.0],
+  "scenarios": [
+    {"id": "opposed", "rho": -1.0, "domain": [1.0, 2.0]},
+    {"id": "negative", "rho": -0.5, "domain": [1.0, 8.0]},
+    {"id": "independent", "rho": 0.0, "domain": [1.0, 8.0]},
+    {"id": "positive", "rho": 0.5, "domain": [1.0, 8.0]},
+    {"id": "identical", "rho": 1.0, "domain": [1.0, 8.0]}
+  ]
+}
