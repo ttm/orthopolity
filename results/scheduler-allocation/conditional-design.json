@@ -1,0 +1,179 @@
+{
+  "kind": "conditional_generated_design_not_scheduler_measurements",
+  "simulation_cpu_costs_seconds": [
+    0.00025,
+    0.002,
+    0.016
+  ],
+  "replicates": 500,
+  "resource_quanta_per_replicate": 3000,
+  "conditions": {
+    "equal_workers": {
+      "worker_counts": [
+        1,
+        1,
+        1
+      ],
+      "hypotheses": {
+        "fair_runnable_process_cpu_share": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "equal_job_service_cpu_share": [
+          0.0136986301369863,
+          0.1095890410958904,
+          0.8767123287671232
+        ],
+        "equal_active_class_cpu_share": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "cpu_share_per_log_class": [
+          0.4808983469629878,
+          0.4808983469629878,
+          0.4808983469629878
+        ],
+        "log_widths": [
+          0.6931471805599453,
+          0.6931471805599453,
+          0.6931471805599453
+        ],
+        "per_thread_and_per_process_identifiable": false
+      },
+      "generated_models": {
+        "fair_runnable_process_cpu_share": {
+          "expected_cpu_shares": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "generated_max_share_error_95th_percentile": 0.019999999999999962
+        },
+        "equal_job_service_cpu_share": {
+          "expected_cpu_shares": [
+            0.0136986301369863,
+            0.1095890410958904,
+            0.8767123287671232
+          ],
+          "generated_max_share_error_95th_percentile": 0.012589041095890402
+        },
+        "equal_active_class_cpu_share": {
+          "expected_cpu_shares": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "generated_max_share_error_95th_percentile": 0.019666666666666666
+        }
+      }
+    },
+    "restricted_classes": {
+      "worker_counts": [
+        2,
+        1,
+        0
+      ],
+      "hypotheses": {
+        "fair_runnable_process_cpu_share": [
+          0.6666666666666666,
+          0.3333333333333333,
+          0.0
+        ],
+        "equal_job_service_cpu_share": [
+          0.2,
+          0.8,
+          0.0
+        ],
+        "equal_active_class_cpu_share": [
+          0.5,
+          0.5,
+          0
+        ],
+        "cpu_share_per_log_class": [
+          0.9617966939259756,
+          0.4808983469629878,
+          0.0
+        ],
+        "log_widths": [
+          0.6931471805599453,
+          0.6931471805599453,
+          0.6931471805599453
+        ],
+        "per_thread_and_per_process_identifiable": false
+      },
+      "generated_models": {
+        "fair_runnable_process_cpu_share": {
+          "expected_cpu_shares": [
+            0.6666666666666666,
+            0.3333333333333333,
+            0.0
+          ],
+          "generated_max_share_error_95th_percentile": 0.017333333333333423
+        },
+        "equal_job_service_cpu_share": {
+          "expected_cpu_shares": [
+            0.2,
+            0.8,
+            0.0
+          ],
+          "generated_max_share_error_95th_percentile": 0.014666666666666717
+        },
+        "equal_active_class_cpu_share": {
+          "expected_cpu_shares": [
+            0.5,
+            0.5,
+            0
+          ],
+          "generated_max_share_error_95th_percentile": 0.01733333333333331
+        }
+      }
+    }
+  },
+  "scientific_status": "These simulations encode the declared allocation models and cannot validate OS fairness or Nature's allocation selection",
+  "uncertainty_status": "Generated quanta variability is not an empirical scheduler interval or a frozen acceptance tolerance",
+  "gate": {
+    "eligible": false,
+    "status": "unsupported_hardware",
+    "reason": "CPU scarcity under the four-total-process bound is not established, or the inherited scheduling policy is unsupported",
+    "maximum_total_processes": 4,
+    "maximum_workers": 3,
+    "minimum_workers_per_condition": 3,
+    "qualifying_constraints": [],
+    "hardware": {
+      "system": "Darwin",
+      "architecture": "arm64",
+      "logical_cpu_count": 10,
+      "inherited_affinity": null,
+      "capacity_bound_cpus": 10.0,
+      "capacity_constraints": [
+        {
+          "kind": "logical_cpu_count",
+          "capacity_cpus": 10.0
+        }
+      ],
+      "cgroup_warnings": [],
+      "inherited_nice": 0,
+      "inherited_scheduler_policy": null,
+      "load_average": [
+        6.93994140625,
+        6.8291015625,
+        6.10986328125
+      ]
+    },
+    "changes_to_priority_affinity_or_cgroups": false,
+    "inspected_utc": "2026-10-01T21:02:29.466167+00:00",
+    "config_sha256": "c0f7b1cb8a782e46c8b3c200dfaa0e7555a9a90e9ed461c60271f74c9dc19173",
+    "source_sha256": {
+      "experiments/run_scheduler_allocation.py": "59599f38c794825401d36c2b822d796f00e68b772d447f720a3e83107f9904d4",
+      "src/orthopolity/scheduler_allocation.py": "2c368b588daad0e50f759788795d742f0e53e0c2310c4b32fd9fbbf355b5150d"
+    },
+    "actual_allocation_measurements_executed": false
+  },
+  "config_sha256": "c0f7b1cb8a782e46c8b3c200dfaa0e7555a9a90e9ed461c60271f74c9dc19173",
+  "source_sha256": {
+    "experiments/run_scheduler_allocation.py": "59599f38c794825401d36c2b822d796f00e68b772d447f720a3e83107f9904d4",
+    "src/orthopolity/scheduler_allocation.py": "2c368b588daad0e50f759788795d742f0e53e0c2310c4b32fd9fbbf355b5150d"
+  }
+}

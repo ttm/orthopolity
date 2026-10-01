@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "run_id": "scheduler-design-2026-10-01",
+  "evidence_kind": "simulation",
+  "resources": [
+    {
+      "name": "allocated CPU share",
+      "definition": "Generated multinomial resource quanta with probabilities fixed by each declared class-allocation hypothesis",
+      "units": "dimensionless fractions of generated CPU quanta"
+    },
+    {
+      "name": "illustrative job cost",
+      "definition": "Declared example CPU costs [0.00025,0.002,0.016] used to construct competing predictions, not measured costs",
+      "units": "illustrative CPU seconds per completed job"
+    }
+  ],
+  "data_inputs": [
+    {
+      "path": "data/scheduler-allocation/2026-10-01/hardware-gate.json",
+      "sha256": "e2465eca4c1d36611c254b3375e06e90818b689ca78accc5094860a2ef8d37bb"
+    }
+  ],
+  "generated_seeds": {
+    "base_seed": 202610016,
+    "algorithm": "Python random.Random; condition/hypothesis/replicate order fixed by archived source"
+  },
+  "algorithms": [
+    {
+      "name": "CPU eligibility and conditional allocation models",
+      "sources": [
+        {
+          "path": "data/run-sources/59599f38c794825401d36c2b822d796f00e68b772d447f720a3e83107f9904d4/run_scheduler_allocation.py",
+          "sha256": "59599f38c794825401d36c2b822d796f00e68b772d447f720a3e83107f9904d4",
+          "original_path": "experiments/run_scheduler_allocation.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/2c368b588daad0e50f759788795d742f0e53e0c2310c4b32fd9fbbf355b5150d/scheduler_allocation.py",
+          "sha256": "2c368b588daad0e50f759788795d742f0e53e0c2310c4b32fd9fbbf355b5150d",
+          "original_path": "src/orthopolity/scheduler_allocation.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        }
+      ],
+      "source_provenance": "Digests match retained gate/design source manifests"
+    }
+  ],
+  "configs": [
+    {
+      "path": "data/run-sources/c0f7b1cb8a782e46c8b3c200dfaa0e7555a9a90e9ed461c60271f74c9dc19173/scheduler_allocation_2026-10-01.json",
+      "sha256": "c0f7b1cb8a782e46c8b3c200dfaa0e7555a9a90e9ed461c60271f74c9dc19173",
+      "original_path": "configs/scheduler_allocation_2026-10-01.json",
+      "provenance": "Content-addressed byte snapshot at registration"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "results/scheduler-allocation/conditional-design.json",
+      "sha256": "85def6804e62f06cae7360537729db32fe114a339361a61322d31236f21dde0d"
+    },
+    {
+      "path": "results/scheduler-allocation/hardware-gate.json",
+      "sha256": "e2465eca4c1d36611c254b3375e06e90818b689ca78accc5094860a2ef8d37bb"
+    }
+  ],
+  "relationships": [
+    {
+      "run_id": "workload-transfer-2026-10-01b",
+      "type": "allocation_protocol_followup"
+    }
+  ],
+  "hardware_metadata": {
+    "recording_scope": "Hardware gate inspection before conditional simulation",
+    "inspected_utc": "2026-10-01T21:02:29.466167+00:00",
+    "capacity": {
+      "system": "Darwin",
+      "architecture": "arm64",
+      "logical_cpu_count": 10,
+      "inherited_affinity": null,
+      "capacity_bound_cpus": 10.0,
+      "capacity_constraints": [
+        {
+          "kind": "logical_cpu_count",
+          "capacity_cpus": 10.0
+        }
+      ],
+      "cgroup_warnings": [],
+      "inherited_nice": 0,
+      "inherited_scheduler_policy": null,
+      "load_average": [
+        6.93994140625,
+        6.8291015625,
+        6.10986328125
+      ]
+    }
+  },
+  "summary": {
+    "actual_allocation_measurements_executed": false,
+    "hardware_eligible": false,
+    "reason": "CPU scarcity under the four-total-process bound is not established, or the inherited scheduling policy is unsupported",
+    "conditions": 2,
+    "generated_hypotheses_per_condition": 3,
+    "simulation_replicates": 500,
+    "resource_quanta_per_replicate": 3000,
+    "inference_scope": "OS policy and workload allocation under declared opportunity counts; no power-law exponent fit, no autonomous selection principle for Nature"
+  }
+}

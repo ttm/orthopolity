@@ -8,8 +8,9 @@
 
 PY ?= python3
 export PYTHONPATH := src
+STUDY_OUTPUT_ROOT ?= build/reproductions
 
-.PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory models dependence attachment restrictions followup competition forecast interventions robustness workload-pilot workload-report analyses paper clean
+.PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory models dependence attachment restrictions followup competition forecast interventions robustness workload-pilot workload-report workload-transfer workload-transfer-report scheduler-allocation run-registry registry-verify analyses paper clean
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -61,35 +62,51 @@ theory:          ## deterministic mathematical illustrations (not empirical evid
 	$(PY) experiments/run_theory.py
 
 models:          ## exploratory model comparisons (not empirical evidence)
-	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_models.py
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_models.py --output $(STUDY_OUTPUT_ROOT)/models
 
 dependence:      ## joint-resource dimensionality and independent forward predictions
-	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_dependence.py
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_dependence.py --output $(STUDY_OUTPUT_ROOT)/dependence
 
 attachment:      ## fixed-resource transfer across attachment dynamics
-	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_attachment.py
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_attachment.py --output $(STUDY_OUTPUT_ROOT)/attachment
 
 restrictions:    ## prospective profile responses under two resource budgets
-	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_restrictions.py
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_restrictions.py --output $(STUDY_OUTPUT_ROOT)/restrictions
 
 followup: dependence attachment restrictions ## the three follow-up computational studies
 
 competition:     ## negative coupling, finite support, and dimension corrections
-	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_competition.py
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_competition.py --output $(STUDY_OUTPUT_ROOT)/competition
 
 forecast:        ## capacity-only selection, misspecification, and uncertainty
-	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_forecast.py
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_forecast.py --output $(STUDY_OUTPUT_ROOT)/forecast
 
 interventions:   ## sampling design and calibrated model discrimination
-	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_interventions.py
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_interventions.py --output $(STUDY_OUTPUT_ROOT)/interventions
 
 robustness: competition forecast interventions ## predictive reliability and observation design
 
 workload-pilot:   ## execute or resume the controlled workload measurement stages
-	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_workload_pilot.py
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_workload_pilot.py --output $(STUDY_OUTPUT_ROOT)/workload-pilot
 
 workload-report:  ## analyse the recorded workload observations without collecting new ones
-	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_workload_pilot.py --stage analyse
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_workload_pilot.py --stage analyse --output $(STUDY_OUTPUT_ROOT)/workload-pilot
+
+workload-transfer: ## execute/resume the retained comparison; new collection needs new directories
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_workload_transfer.py
+
+workload-transfer-report: ## reuse recorded comparison outputs without launching workers
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_workload_transfer.py --stage analyse
+
+scheduler-allocation: ## inspect scarcity and simulate models; actual trials only on eligible hosts
+	$(PY) experiments/run_scheduler_allocation.py
+
+run-registry:     ## idempotently catalogue eight reference studies and audit every registered run
+	$(PY) experiments/register_runs.py --catalogue
+	$(PY) experiments/register_runs.py --verify
+
+registry-verify:  ## check registry integrity, retained files, and lineage offline
+	$(PY) experiments/register_runs.py --verify
 
 paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 

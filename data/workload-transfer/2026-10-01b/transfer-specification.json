@@ -1,0 +1,138 @@
+{
+  "config": {
+    "study": "Transfer of original resource-cost forecast versus prospective local recalibration",
+    "status": "local exploratory replication protocol specified before its validation outcomes",
+    "seed": 202610015,
+    "sizes": [
+      256,
+      384,
+      576,
+      864,
+      1296,
+      1944
+    ],
+    "dtype": "float64",
+    "matrix_repeats": 3,
+    "warmup_size": 64,
+    "calibration_blocks": 12,
+    "validation_repetitions_per_budget_stratum": 4,
+    "conditions": [
+      "aligned",
+      "opposed",
+      "permuted",
+      "cpu_tightened"
+    ],
+    "permutation_shift": 2,
+    "cpu_tightening_factor": 0.65,
+    "lowest_budget_factor": 0.85,
+    "highest_budget_factor": 1.05,
+    "design_simulations": 2000,
+    "analysis_bootstrap_replicates": 2000,
+    "nominal_interval_level": 0.95,
+    "worker_timeout_seconds": 20,
+    "maximum_total_worker_memory_bytes": 268435456,
+    "maximum_calibration_cpu_seconds": 2,
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "reference_run_id": "workload-pilot-2026-10-01",
+    "reference_directory": "data/workload-pilot/2026-10-01",
+    "reference_results": "results/workload-pilot/study.json",
+    "memory_resource": "Total fresh-child process peak resident memory in bytes, including import and warm-up",
+    "cpu_resource": "Child user plus system CPU seconds for input construction, computation, and verification, excluding import and warm-up",
+    "primary_endpoint": "Original frozen forecast max absolute largest-completed-size survival error on exactly the original quotas and grid",
+    "secondary_endpoint": "Paired mean-squared-profile-error improvement from independently measured local costs, forecast before validation",
+    "decision_rule": "Retain original per-condition exploratory tolerances; numerical comparison slack limited to floating-point roundoff. Report local recalibration errors under the same original tolerance, not a newly chosen criterion.",
+    "interpretation": "Fresh same-machine software launches on the same date; no distinct-day or different-hardware claim. Original quota rule and numerical task unchanged; forecast transfer and local cost drift are assessed."
+  },
+  "config_sha256": "4bc66602174ae1b3d6277fa86de1626fc014dde56dd8026e2a0ac31ecdb13249",
+  "source_sha256": {
+    "experiments/workload_worker.py": "754ed12cec237c5b21113f3240d013b921575b343bd2e476995fc9e1af55e572",
+    "src/orthopolity/workload.py": "ac56fe83e64d6351d81dcfa0ff52f7277fcabdcda8df8944439b9a6946e2aafe",
+    "src/orthopolity/workload_prediction.py": "b3995b98e122b723496f7cb8f8216cf65aacad94216356c9b947f319441d6fbd",
+    "src/orthopolity/workload_analysis.py": "b63eb6a121e94aab43b4142eabf36043d6037d7dc63745ea9d65397ade56517c",
+    "experiments/run_workload_pilot.py": "9009b1348c000c7c5ebed0d9f5612fd8b1cee46413be62f4547b5846284d3596",
+    "experiments/run_workload_transfer.py": "d9557e6f2e8f09a4dc969cdcb15d1802d5e6096c41d0f69fa6be1d3257dbac97",
+    "src/orthopolity/workload_transfer.py": "e87142f262ea6abf63f47a1b14501f27dd20cab7da17edd9c00f80c705762500",
+    "src/orthopolity/run_registry.py": "33824ebac344210cf59ef2dc83d795e35676d859830c96e7171db9ff6bb1781e"
+  },
+  "lineage": {
+    "reference_run_id": "workload-pilot-2026-10-01",
+    "reference_plan": {
+      "path": "data/workload-pilot/2026-10-01/frozen-plan.json",
+      "sha256": "6071cc9709034a2bc152052cb04059b9d1d6c9255845dee04362318edc3aca82"
+    },
+    "reference_calibration": {
+      "path": "data/workload-pilot/2026-10-01/calibration.jsonl",
+      "sha256": "920968e75914865eb18f064cf120dc616815a066d56fc9662b45a9b9bb7d35f3"
+    },
+    "reference_validation": {
+      "path": "data/workload-pilot/2026-10-01/validation.jsonl",
+      "sha256": "3a45d7fa8540477434b5a44534c458311be8dba8a51f6827c3d42bb603743e8b"
+    },
+    "reference_result": {
+      "path": "results/workload-pilot/study.json",
+      "sha256": "aa373fa796df274b876406e0bfc49dfd59850f544e6dce3d70b5b68608be3999"
+    }
+  },
+  "hardware_metadata_reference": {
+    "path": "data/workload-transfer/2026-10-01b/hardware-metadata.json",
+    "sha256": "8c3262f05ba17b83d45ea2e406bd458b57e6dd148f13f74cc379b0ae563e54b3"
+  },
+  "started_utc": "2026-10-01T20:58:14.330989+00:00",
+  "hardware_metadata": {
+    "collected_utc": "2026-10-01T20:54:32.208531+00:00",
+    "recording_scope": "Current metadata collector process; not a historical hardware reconstruction",
+    "os": {
+      "system": "Darwin",
+      "release": "25.6.0",
+      "version": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+      "build": "25G83",
+      "product_version": "26.6.2"
+    },
+    "cpu": {
+      "model": "Apple M1 Max",
+      "architecture": "arm64",
+      "logical_count": 10
+    },
+    "total_ram_bytes": 34359738368,
+    "python_version": "3.11.6",
+    "availability": {
+      "cpu_model": true,
+      "total_ram": true,
+      "os_build": true
+    },
+    "numpy": {
+      "available": true,
+      "version": "2.3.5",
+      "blas": {
+        "name": "accelerate",
+        "version": "unknown"
+      }
+    },
+    "requested_thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "runtime_thread_verification": {
+      "inspection_available": false,
+      "blas_count_available": false,
+      "libraries": [],
+      "thread_count_verified": false,
+      "verified_single_thread": false,
+      "scope": "Optional threadpoolctl is unavailable; requested environment is not runtime verification"
+    },
+    "collection_context": "Read-only host metadata collected before calibration; workers run under the ordinary workspace execution context"
+  },
+  "run_id": "workload-transfer-2026-10-01b",
+  "qualification": "Later software launches on the same date/machine; no distinct-day or different-hardware claim"
+}

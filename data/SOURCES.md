@@ -59,3 +59,23 @@ This directory is separate from the downloaded empirical snapshots in `raw/`.
 See [the pilot report](../docs/workload-pilot.md) for resource units, assigned
 conditions, sampling limitations, and reproduction instructions. These records
 describe controlled task acceptance rather than autonomous resource allocation.
+
+`workload-transfer/2026-10-01b/` retains a separate 72-task calibration, a
+comparison freeze and 672 fresh validation attempts. It keeps the original
+pilot's tasks, numerical quota values and criteria. Original and prospective
+locally recalibrated forecasts are scored against the same new outcomes.
+`workload-transfer/2026-10-01/` retains an earlier calibration whose description
+guard failed before any freeze/validation; it is registered as incomplete.
+See [the transfer report](../docs/workload-transfer.md).
+
+`scheduler-allocation/2026-10-01/` contains hardware qualification metadata and
+a registry entry. Current hardware did not qualify for actual allocation
+trials. Conditional generated resource-share simulations are separately
+labelled in `results/scheduler-allocation/`; they are not measured CPU shares.
+
+`run-sources/<sha256>/` contains content-addressed source/configuration copies
+for the [central run registry](../docs/run-registry.md). These preserve each
+record's bytes when working source changes. Retrospectively registered model
+sources are explicitly distinguished from original execution-time source
+manifests. The registry is `results/run-registry.jsonl`; its offline audit checks
+all entry and retained-file hashes.

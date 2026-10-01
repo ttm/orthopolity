@@ -30,6 +30,17 @@ separates its empirical test from the optional construction of a deeper mechanis
 - Prepare an [independent empirical protocol](empirical-protocol.md), metadata skeleton,
   and header-only calibration and opportunity templates. This is a design; real
   validation observations and measurement-specific decision thresholds remain to be obtained.
+- Execute a [fresh-launch workload transfer comparison](workload-transfer.md),
+  retaining original quotas, forecasts and tolerances while freezing a separate
+  local-cost comparator before 672 new validation attempts. Original forecasts
+  fail two conditions; local recalibration recovers one.
+- Create an [append-only run registry](run-registry.md) with resource definitions,
+  units, seeds, archived algorithms/configurations, raw data, outputs, hardware
+  metadata and lineage. Retain the incomplete precheck attempt explicitly.
+- Prepare and check a [gated CPU-allocation protocol](scheduler-allocation.md)
+  with competing class-share predictions and full CPU accounting. The current
+  10-CPU host does not establish scarcity with three workers; its executed
+  design simulations remain separate from actual allocation measurements.
 
 ## Next substantive research step
 
@@ -48,11 +59,17 @@ and predict a changed full profile before inspecting those outcomes. The protoco
 includes an accessible candidate using numerical workloads; a natural-system test
 requires a separately justified observation and intervention design.
 
-Replicate the workload forecast in a new session or on another machine using
-the same cost and outcome definitions. Keep a transfer test with the original
-cost model distinct from a locally recalibrated replication. For the central
-allocation claim, independently define a system and restriction intervention
-that predicts neutrality, a departure, or recovery before examining its spectrum.
+The completed same-date launch replication finds an operational transfer
+boundary. Next, test genuinely different dates or machines, preserving original
+forecasts/quotas alongside prospective local calibration. Investigate the
+remaining CPU-tightened failure with independently recorded execution conditions
+and a declared cost model; do not widen its criterion retrospectively.
+
+For the central allocation claim, execute the gated protocol on independently
+eligible hardware or choose a natural system with measurable opportunity counts,
+resource costs and restrictions. Predict neutrality, departure or recovery
+before examining the resource profile. More generated examples cannot supply
+the missing allocation observations.
 
 For a dimensionality paper, establish the conditions connecting joint-feasibility
 scaling to resource-cost scaling and test the corresponding prediction. For an

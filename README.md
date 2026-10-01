@@ -31,6 +31,14 @@ frozen forecasts, and later execution under assigned memory/CPU quotas. This
 tests operational cost-model transfer; autonomous resource allocation remains
 an empirical question.
 
+The [fresh-launch comparison](docs/workload-transfer.md) found a transfer
+boundary: the original forecast fails its unchanged tolerance in two of four
+conditions; local recalibration recovers one. A [central run registry](docs/run-registry.md)
+retains inputs, algorithms, seeds, outputs, hardware facts and lineage, including
+an incomplete attempt. The [CPU-allocation protocol](docs/scheduler-allocation.md)
+adds discriminating intervention predictions; the current host does not meet
+its scarcity requirement, so its allocation results remain conditional simulations.
+
 The [predictive reliability benchmarks](docs/predictive-benchmarks.md) extend this
 programme to capacity-only family selection, training uncertainty, omitted
 resources, negative dependence, and calibrated intervention sampling. They show
@@ -124,7 +132,8 @@ make models PY=python3.11
 ~~~
 
 Its configuration is [configs/model_study_2026-10-01.json](configs/model_study_2026-10-01.json).
-Results, profiles, and figures are written to `results/models/`; the model source
+Retained results, profiles, and figures are in `results/models/`; new reproductions
+write to `build/reproductions/models/`. The model source
 catalogue records which predictions are exact, asymptotic, or approximate.
 
 Run the three follow-up benchmarks together, or use the `dependence`, `attachment`,
@@ -134,8 +143,9 @@ and `restrictions` targets separately:
 make followup PY=python3.11
 ~~~
 
-Configurations are in `configs/`; outputs are in `results/dependence/`,
-`results/attachment/`, and `results/restrictions/`. The research programme links
+Configurations are in `configs/`; retained outputs are in `results/dependence/`,
+`results/attachment/`, and `results/restrictions/`. New reproductions write to
+the corresponding directories under `build/reproductions/`. The research programme links
 the theory, model-specific reports, and empirical design.
 
 Run the predictive-reliability and observation-design benchmarks:
@@ -144,8 +154,9 @@ Run the predictive-reliability and observation-design benchmarks:
 make robustness PY=python3.11
 ~~~
 
-These write results to `results/competition/`, `results/forecast/`, and
-`results/interventions/`. They generate simulated observations; no independent
+Retained results are in `results/competition/`, `results/forecast/`, and
+`results/interventions/`; reproductions write under `build/reproductions/`.
+They generate simulated observations; no independent
 natural-system validation is implied by successful reproduction.
 
 Analyse the recorded actual workload measurements:
@@ -158,6 +169,22 @@ The [pilot report](docs/workload-pilot.md) links 72 calibration and 672 validati
 task attempts, the prediction freeze, and the numerical results. To collect a
 new hardware/session replication, use a new measurement and output directory
 as described there. Existing measurements and frozen predictions are preserved.
+Reanalysis writes under `build/reproductions/workload-pilot/`, preserving the
+registered result bytes. Set `STUDY_OUTPUT_ROOT` to another fresh destination
+to direct model/workload-pilot reproductions elsewhere.
+
+Inspect the completed transfer comparison and audit all eleven retained runs:
+
+~~~bash
+make workload-transfer-report registry-verify PY=python3.11
+~~~
+
+The [transfer report](docs/workload-transfer.md) gives commands for a new
+collection with original quotas, a prospective local comparator, and its own
+data/output directories. `make scheduler-allocation PY=python3.11` reuses the
+retained gate/design and checks eligibility before any actual trial. The
+[allocation protocol](docs/scheduler-allocation.md) explains the current
+hardware qualification and commands for collection on an eligible host.
 
 ## Repository guide
 
@@ -175,6 +202,9 @@ as described there. Existing measurements and frozen predictions are preserved.
 | [docs/research-programme.md](docs/research-programme.md) | Follow-up theory, dependence and transfer benchmarks, predictive restrictions, and independent empirical protocol |
 | [docs/predictive-benchmarks.md](docs/predictive-benchmarks.md) / [docs/predictive-claims.md](docs/predictive-claims.md) | Forecast reliability, identifiability, competing resources, observation design, and claim ledger |
 | [docs/workload-pilot.md](docs/workload-pilot.md) | Actual memory/CPU calibration, frozen predictions, executed quota interventions, and replication instructions |
+| [docs/workload-transfer.md](docs/workload-transfer.md) | Original forecasts versus prospective local recalibration on 672 fresh outcomes under unchanged quotas and criteria |
+| [docs/run-registry.md](docs/run-registry.md) | Append-only study records, source/configuration archives, resources, hardware metadata and lineage |
+| [docs/scheduler-allocation.md](docs/scheduler-allocation.md) | Gated measurement protocol, competing allocation predictions and current hardware qualification |
 | [src/](src/) / [tests/](tests/) | Accounting, distribution fitting, equivalence diagnostics, meta-analysis, and regression checks |
 | [experiments/](experiments/) / [results/](results/) | Reproducible analyses and outputs |
 | [data/SOURCES.md](data/SOURCES.md) / [data/NOTICE.md](data/NOTICE.md) | Input provenance and source-specific notices |

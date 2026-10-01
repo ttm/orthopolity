@@ -14,6 +14,14 @@ cost measurements and prospective quota-acceptance predictions. Its assigned
 resource conditions evaluate operational transfer rather than spontaneous
 neutral allocation.
 
+The [fresh-launch transfer comparison](workload-transfer.md) then finds two
+original-forecast failures under unchanged quotas/criteria and recovery of one
+with prospective local recalibration. The [run registry](run-registry.md)
+retains the complete programme and incomplete attempt. A [gated CPU-allocation
+protocol](scheduler-allocation.md) supplies competing restriction predictions;
+the present host fails its scarcity qualification, so no actual allocation
+trial was executed.
+
 ## The central hypothesis and its operational targets
 
 The general organizing relation is $H(k)=G(k)h(k)$. A constant aggregate $H$ and
@@ -97,6 +105,8 @@ make test PY=python3.11
 The combined target runs the three studies. Individual targets are `dependence`,
 `attachment`, and `restrictions`. Outputs are written respectively to
 `results/dependence/`, `results/attachment/`, and `results/restrictions/`.
+New `make` reproductions write under `build/reproductions/` to preserve these
+registered artifacts.
 The first study remains available through `make models`. Existing empirical
 analyses and the historical manuscript are separate targets.
 

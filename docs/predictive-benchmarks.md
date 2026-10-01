@@ -87,6 +87,8 @@ Individual targets are `competition`, `forecast`, and `interventions`. Each stud
 has its own configuration, numerical record, CSV output, and PNG/SVG figures.
 The corresponding result directories are `results/competition/`,
 `results/forecast/`, and `results/interventions/`.
+New `make` reproductions write under `build/reproductions/`, preserving the
+registered retained artifacts.
 The complete test suite passes all 131 tests, including 23 new checks for these
 three studies. The generated figures were rendered and visually inspected.
 

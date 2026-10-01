@@ -727,8 +727,52 @@ in this design, so no unique cost-dependence law is identified. Total peak RSS
 includes substantial process overhead; neither its scaling nor the completion
 spectrum establishes an unlimited resource dimension.
 
-The next operational test is replication across sessions or machines, separating
-transfer of an original forecast from local recalibration. The stronger
+The [fresh-launch replication](workload-transfer.md) now separates transfer of
+this original forecast from prospective local recalibration. The stronger
 allocation test still needs independently meaningful costs, observed autonomous
 allocations, and a restriction intervention whose complete response is predicted
 in advance. The pilot supplies a concrete measurement precedent for that study.
+
+## Transfer boundary and retained run history: 1 October 2026
+
+The follow-up collects 72 new calibration tasks and 672 fresh validation
+attempts on the same machine/date. It preserves the original numerical quota
+pairs, task definitions, forecasts and four exploratory tolerances of $1/28$.
+A separate local-cost forecast is frozen before validation and scored against
+the same new outcomes. Maximum errors of the original forecasts are 0.130952,
+0, 0 and 0.107143. Locally recalibrated errors are 0, 0, 0 and 0.047619. Thus
+the original forecast fails two conditions; recalibration recovers aligned
+prediction while CPU tightening still fails the unchanged criterion.
+
+The aligned loss of completion at size 1944 is consistent with independently
+measured median CPU rising from 0.243998 to 0.261692 seconds, above the unchanged
+highest aligned allowance of 0.256198 seconds. The study does not identify the
+cause of that cost change. Conditional paired uncertainty supports the aligned
+recalibration improvement, but the CPU-tightened gain interval includes zero.
+Joint and resource-independent cost predictions still coincide. No uniquely
+identified cost-dependence mechanism or natural allocation law follows.
+
+This failure is scientifically useful: a successful first pilot did not predict
+stable accuracy across later launches. Independent resource calibration can
+improve a prospective prediction without guaranteeing that its cost model
+captures all variation. The remaining discrepancy supplies a target for a
+declared model extension or different-session replication.
+
+The [central registry](run-registry.md) retains eleven study records with
+resource definitions, units, data, seeds, archived algorithms/configurations,
+results, hardware metadata and lineage. An earlier calibration attempt failed
+a resource-description check before a freeze/validation and remains registered
+as incomplete. Retrospective source snapshots and original prospective source
+manifests are distinguished; neither local freezing nor Git implies external
+preregistration.
+
+A [CPU-allocation protocol](scheduler-allocation.md) moves toward policy-selected
+allocation with baseline and opportunity-restriction predictions. It directly
+measures class CPU shares, retaining partial-job CPU and overhead, with
+calibrated count-times-cost as a secondary check. The current host has 10 logical
+CPUs and no independently visible restriction establishing scarcity with three
+workers. Its hardware gate therefore prevents actual allocation trials. The
+executed competing-model simulations remain conditional constructions. A future
+eligible-host measurement could test an engineered allocation policy; a broad
+natural-law claim still requires independently defined natural systems and
+predictive restriction tests.

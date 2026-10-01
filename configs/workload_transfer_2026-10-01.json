@@ -1,0 +1,51 @@
+{
+  "study": "Transfer of original resource-cost forecast versus prospective local recalibration",
+  "status": "local exploratory replication protocol specified before its validation outcomes",
+  "seed": 202610015,
+  "sizes": [
+    256,
+    384,
+    576,
+    864,
+    1296,
+    1944
+  ],
+  "dtype": "float64",
+  "matrix_repeats": 3,
+  "warmup_size": 64,
+  "calibration_blocks": 12,
+  "validation_repetitions_per_budget_stratum": 4,
+  "conditions": [
+    "aligned",
+    "opposed",
+    "permuted",
+    "cpu_tightened"
+  ],
+  "permutation_shift": 2,
+  "cpu_tightening_factor": 0.65,
+  "lowest_budget_factor": 0.85,
+  "highest_budget_factor": 1.05,
+  "design_simulations": 2000,
+  "analysis_bootstrap_replicates": 2000,
+  "nominal_interval_level": 0.95,
+  "worker_timeout_seconds": 20,
+  "maximum_total_worker_memory_bytes": 268435456,
+  "maximum_calibration_cpu_seconds": 2,
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "reference_run_id": "workload-pilot-2026-10-01",
+  "reference_directory": "data/workload-pilot/2026-10-01",
+  "reference_results": "results/workload-pilot/study.json",
+  "memory_resource": "Total fresh-child process peak resident memory in bytes, including import and warm-up",
+  "cpu_resource": "Child user plus system CPU seconds for input construction, computation, and verification, excluding import and warm-up",
+  "primary_endpoint": "Original frozen forecast max absolute largest-completed-size survival error on exactly the original quotas and grid",
+  "secondary_endpoint": "Paired mean-squared-profile-error improvement from independently measured local costs, forecast before validation",
+  "decision_rule": "Retain original per-condition exploratory tolerances; numerical comparison slack limited to floating-point roundoff. Report local recalibration errors under the same original tolerance, not a newly chosen criterion.",
+  "interpretation": "Fresh same-machine software launches on the same date; no distinct-day or different-hardware claim. Original quota rule and numerical task unchanged; forecast transfer and local cost drift are assessed."
+}

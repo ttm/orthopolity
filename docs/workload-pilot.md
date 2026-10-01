@@ -225,7 +225,7 @@ workload and protocol checks; tests validate implementation rather than a natura
 Reanalyse saved measurements without launching new workers:
 
 ~~~bash
-PYTHONPATH=src MPLCONFIGDIR=build/matplotlib python3.11 experiments/run_workload_pilot.py --stage analyse
+PYTHONPATH=src MPLCONFIGDIR=build/matplotlib python3.11 experiments/run_workload_pilot.py --stage analyse --output build/reproductions/workload-pilot
 ~~~
 
 A new full measurement run uses a new directory and output destination:
@@ -242,3 +242,11 @@ The next informative replication changes the measurement session or machine
 while retaining the frozen cost/observation definitions, or deliberately introduces
 a declared unmodelled requirement. It tests a forecast's transfer boundary rather
 than accumulating more constructed power-law examples.
+
+The [fresh-launch transfer comparison](workload-transfer.md) now executes that
+test with the original forecasts, quotas and tolerances unchanged, alongside
+prospective local recalibration. The original forecast fails two conditions;
+local recalibration recovers one. This does not alter the original pilot's
+observations. Both studies and an incomplete attempt are retained in the
+[central registry](run-registry.md). Registered outputs must remain unchanged;
+the reanalysis command above writes a separate copy.

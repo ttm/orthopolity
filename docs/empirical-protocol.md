@@ -167,3 +167,12 @@ autonomously allocating system, calibrating its measurements, registering a
 concrete analysis if desired, and collecting independent allocation outcomes
 remain future work. Existing heterogeneous ecological summaries do not provide
 the paired capacities and independent cost calibration required by this design.
+
+The [workload transfer comparison](workload-transfer.md) now completes a separate
+fresh-launch replication against the original quotas and criteria, with
+prospective local calibration as a comparator. Two original predictions fail;
+recalibration recovers one. The [run registry](run-registry.md) retains raw
+measurements, source/configuration snapshots and lineage. The [CPU-allocation
+protocol](scheduler-allocation.md) defines a next allocation experiment and
+competing restriction predictions, but current hardware does not satisfy its
+scarcity requirement. Its conditional simulations are not measured allocations.

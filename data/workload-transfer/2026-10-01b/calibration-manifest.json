@@ -1,0 +1,31 @@
+{
+  "config_sha256": "4bc66602174ae1b3d6277fa86de1626fc014dde56dd8026e2a0ac31ecdb13249",
+  "source_sha256": {
+    "experiments/workload_worker.py": "754ed12cec237c5b21113f3240d013b921575b343bd2e476995fc9e1af55e572",
+    "src/orthopolity/workload.py": "ac56fe83e64d6351d81dcfa0ff52f7277fcabdcda8df8944439b9a6946e2aafe",
+    "src/orthopolity/workload_prediction.py": "b3995b98e122b723496f7cb8f8216cf65aacad94216356c9b947f319441d6fbd",
+    "src/orthopolity/workload_analysis.py": "b63eb6a121e94aab43b4142eabf36043d6037d7dc63745ea9d65397ade56517c",
+    "experiments/run_workload_pilot.py": "9009b1348c000c7c5ebed0d9f5612fd8b1cee46413be62f4547b5846284d3596"
+  },
+  "calibration_sha256": "d88dec24f377051e147ed40623cce4dad6f41afb68d9a939766ac223f830b37e",
+  "completed_utc": "2026-10-01T20:58:26.709780+00:00",
+  "rows": 72,
+  "environment": {
+    "python": "3.11.6",
+    "numpy": "2.3.5",
+    "system": "Darwin",
+    "architecture": "arm64",
+    "logical_cpu_count": 10,
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "blas_name": "accelerate",
+    "runtime_thread_count_verified": false
+  },
+  "interpretation": "Actual fresh-process measurements; serial randomized calibration blocks"
+}
