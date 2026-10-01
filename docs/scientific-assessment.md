@@ -776,3 +776,44 @@ executed competing-model simulations remain conditional constructions. A future
 eligible-host measurement could test an engineered allocation policy; a broad
 natural-law claim still requires independently defined natural systems and
 predictive restriction tests.
+
+## Tests from existing measurements and simulated models: 1 October 2026
+
+The [additional profile studies](additional-profile-tests.md) supply tests
+without further workload hardware. A retained NOAA flare catalogue supports
+costs-only full-profile prediction from 2022–2023 into 2024, with logarithmic
+and linear reference measures and a historical-count comparator specified
+separately. Primary count-profile TV errors are 0.167, 0.685 and 0.022,
+respectively. The log forecast substantially improves on the linear forecast;
+the historical-count advantage over log neutrality is smaller and uncertain
+under paired month-block resampling. Measured cost transfer and catalogue
+missingness remain separate diagnostics. This is a retrospective fitting
+holdout, and no calibrated resource-equivalence verdict is obtained.
+
+GLOSSAQUA permits prediction of reported slopes in a wholly excluded study.
+The fixed −1 location has better descriptive scores than the training-estimated
+location, but primary nominal 95% coverage is only 66.96%. Directly reported
+standard errors give 103 records across eight studies; confidence-interval
+conversion, under an unverified 95% assumption, is a separate sensitivity.
+Most of the primary relative gain comes from two studies. Source inspection
+confirms large reported errors were faithfully copied but does not validate
+their uncertainty calibration. These results concern center transport rather
+than full resource-profile neutrality or an arithmetic ensemble principle.
+
+A stationary growth/removal simulation gives two populations with the same
+population power-law MLE exponent 2 and the same independent physical mass
+cost, while their resource profiles differ materially. At 10,000 objects,
+92.35% of curved-profile cohorts remain exponent-compatible and 100% fail
+the full neutral-profile screen. A changed constant-removal rate also produces
+a pure power exponent 2.4 while physical mass cost dimension stays one. The
+explicit mechanisms predict the departures. This establishes a concrete
+identification limit for scalar fitted exponents and a calibrated observation
+design, rather than discovering a new law or refuting an unrestricted regime
+whose applicability has not been independently specified.
+
+The studies improve the scientific programme through empirical alternatives,
+source auditing, fitting separation and explicit power calculations. The
+broader principle still needs an independently justified eligible regime and
+successful complete-profile/restriction predictions. All data, costs,
+algorithms, seeds, predictions and results are retained in fifteen registry
+records; the plotting replay adds no independent evidence.

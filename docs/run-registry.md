@@ -66,6 +66,23 @@ This catalogue covers this model and controlled-workload research programme.
 Downloaded natural-system snapshots retain their separate checksum catalogue
 and provenance in [data/SOURCES.md](../data/SOURCES.md).
 
+The [additional profile tests](additional-profile-tests.md) extend the catalogue
+to fifteen records. `aquatic-study-transfer-2026-10-01` and
+`solar-resource-transfer-2026-10-01` reanalyse published/retained measurements
+with zero newly collected observations. The evidence kind `actual_measurement`
+describes their empirical inputs, rather than a new collection. Each retains
+its exact source-row membership and fitting separation.
+
+`resource-identification-2026-10-01` retains a completed numerical simulation
+whose figure rendering was interrupted. Its exact original source/configuration
+copies survive the plotting fix. `resource-identification-2026-10-01-final`
+references it as a same-seed computational replay; its calibration/validation
+arrays are verified identical. These two records represent one numerical
+realization, with a resolved plotting interruption.
+
+`make profile-test-registry PY=python3.11` idempotently registers these additional
+records and verifies the complete archive. It does not regenerate their results.
+
 ## Hardware and threading
 
 The new workload metadata records CPU model, architecture/logical CPU count,

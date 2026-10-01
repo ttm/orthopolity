@@ -79,3 +79,25 @@ record's bytes when working source changes. Retrospectively registered model
 sources are explicitly distinguished from original execution-time source
 manifests. The registry is `results/run-registry.jsonl`; its offline audit checks
 all entry and retained-file hashes.
+
+## Retrospective profile tests and identification simulations
+
+`solar-resource-transfer/2026-10-01/` retains calibration-only bin pooling,
+2022–2023 measured fluence costs, frozen count/resource forecasts and complete
+row/flare membership manifests for training and 2024 evaluation. It reuses the
+NOAA snapshots above; fluence at the observer is not total flare energy.
+
+`aquatic-study-transfer/2026-10-01/` retains the exact GLOSSAQUA row selection,
+units/specifications, reported uncertainty route and leave-study-out analysis
+specification. Direct standard errors define the primary sample; confidence
+bounds assuming a 95% Gaussian interval form an explicitly unverified sensitivity.
+No missing errors or invalid size bounds are imputed. Neither empirical test
+collects new observations or claims previously seen data were blinded.
+
+`resource-identification/2026-10-01/` and its `2026-10-01-final/` replay retain
+generated calibration/evaluation cohort counts, exact log-size sums and mass
+totals, seeds, frozen stationary laws and source digests. The first rendering
+interruption is recorded with original exact sources. The final replay has
+identical numerical arrays and counts as the same simulation realization.
+These generated cohorts are separate from natural-system measurements.
+See [the additional-test reports](../docs/additional-profile-tests.md).

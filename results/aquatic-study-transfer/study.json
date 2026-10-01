@@ -1,0 +1,1882 @@
+{
+  "kind": "retrospective_leave_study_out_reported_slope_prediction",
+  "config": {
+    "study": "Retrospective leave-study-out prediction of aquatic biomass slopes",
+    "run_id": "aquatic-study-transfer-2026-10-01",
+    "status": "Exploratory held-out-by-fitting reanalysis; all source data have previously been inspected",
+    "input": "data/raw/GLOSSAQUA_Size.txt",
+    "predicted_nbss_slope": -1.0,
+    "resource": "Reported biomass; object cost proportional to body mass in each source study's units",
+    "coordinate": "Reported body mass; slopes invariant to constant changes of mass units",
+    "reference_measure": "d ln body mass",
+    "inclusion": {
+      "XaxisParameterType": "body mass",
+      "SizeSpectrumMethod": "Normalized biomass spectrum (linear)",
+      "finite_slope_and_positive_ordered_bounds": true
+    },
+    "excluded_studies": {
+      "StudyID_07": "Known invalid upper size bounds; no correction inferred from slopes"
+    },
+    "primary_errors": "Directly reported finite positive SlopeSE only",
+    "sensitivity_errors": "Direct SE preferred; otherwise ordered confidence-bound width divided by 3.92 under an unverified 95%-Gaussian assumption",
+    "training_weights": "Equal total weight per study, then equal weight per row within study",
+    "location_estimator": "Weighted mean; the held-out study is excluded from every fitted quantity",
+    "shared_spread_estimator": "max(0, weighted centered slope variance minus weighted squared standard error)",
+    "models": [
+      "fixed_neutral_shared_scatter",
+      "training_location_shared_scatter",
+      "fixed_neutral_measurement_only"
+    ],
+    "primary_score": "Mean held-out log predictive density per study, aggregated with equal study weights",
+    "point_sensitivity": "All eligible slopes, comparing -1 against the training median of study medians by held-study mean absolute error",
+    "predictive_interval_level": 0.95,
+    "endpoint_drift_factors": [
+      1.25,
+      2.0
+    ],
+    "inference": "Descriptive overlapping-fold transport scores; no independent-fold p-value or population equivalence verdict",
+    "randomness": "Deterministic selection, fitting, and scoring; no random seed"
+  },
+  "primary": {
+    "rows": 103,
+    "studies": 8,
+    "folds": [
+      {
+        "held_study": "StudyID_01",
+        "held_rows": 2,
+        "training_studies": [
+          "StudyID_03",
+          "StudyID_10",
+          "StudyID_105",
+          "StudyID_115",
+          "StudyID_25",
+          "StudyID_34",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -1.023641402116402,
+          "tau_squared": 0.019817931195917682,
+          "observed_centered_variance": 0.14986806519062668,
+          "weighted_measurement_variance": 0.130050133994709,
+          "rows": 101,
+          "studies": 7
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.019817931195917682,
+            "mean_log_predictive_density": 0.6154943989097421,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.11000000000000004,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.08163480798832826,
+                "mean_absolute_calibration_gap": 0.08163480798832826
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.2497897254908022,
+                "mean_absolute_calibration_gap": 0.2497897254908022
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -1.023641402116402,
+            "tau_squared": 0.019817931195917682,
+            "mean_log_predictive_density": 0.6021605287495888,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.11000000000000004,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.08091901257385359,
+                "mean_absolute_calibration_gap": 0.08091901257385359
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.24766522345385117,
+                "mean_absolute_calibration_gap": 0.24766522345385117
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": 0.7826496158268854,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.11000000000000004,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.13364278358157497,
+                "mean_absolute_calibration_gap": 0.13364278358157497
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.39861058357799894,
+                "mean_absolute_calibration_gap": 0.39861058357799894
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": 0.013333870160153305,
+        "observed_mean_slope": -1.0,
+        "observed_median_slope": -1.0
+      },
+      {
+        "held_study": "StudyID_03",
+        "held_rows": 4,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_10",
+          "StudyID_105",
+          "StudyID_115",
+          "StudyID_25",
+          "StudyID_34",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -1.076498544973545,
+          "tau_squared": 0.0,
+          "observed_centered_variance": 0.12624638227301516,
+          "weighted_measurement_variance": 0.12984941970899472,
+          "rows": 99,
+          "studies": 7
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -4.023380439672901,
+            "predictive_coverage_fraction": 0.0,
+            "mean_absolute_slope_error": 0.37,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.17120040501107053,
+                "mean_absolute_calibration_gap": 0.17120040501107053
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.49739565361145177,
+                "mean_absolute_calibration_gap": 0.49739565361145177
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -1.076498544973545,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -6.410530466334859,
+            "predictive_coverage_fraction": 0.0,
+            "mean_absolute_slope_error": 0.4464985449735449,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.13640298118818217,
+                "mean_absolute_calibration_gap": 0.13640298118818217
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.4086700962750088,
+                "mean_absolute_calibration_gap": 0.4086700962750088
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -4.023380439672901,
+            "predictive_coverage_fraction": 0.0,
+            "mean_absolute_slope_error": 0.37,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.17120040501107053,
+                "mean_absolute_calibration_gap": 0.17120040501107053
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.49739565361145177,
+                "mean_absolute_calibration_gap": 0.49739565361145177
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": 2.387150026661958,
+        "observed_mean_slope": -0.63,
+        "observed_median_slope": -0.62
+      },
+      {
+        "held_study": "StudyID_10",
+        "held_rows": 27,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_03",
+          "StudyID_105",
+          "StudyID_115",
+          "StudyID_25",
+          "StudyID_34",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -0.942636111111111,
+          "tau_squared": 0.0,
+          "observed_centered_variance": 0.05495012194995591,
+          "weighted_measurement_variance": 0.1190047107142857,
+          "rows": 76,
+          "studies": 7
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -5.582913576179372,
+            "predictive_coverage_fraction": 0.37037037037037035,
+            "mean_absolute_slope_error": 0.6737037037037036,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.1111111111111111,
+                "forecast_reported_slope_fraction": 0.3705696646820605,
+                "mean_absolute_calibration_gap": 0.2594585535709494
+              },
+              "2.0": {
+                "observed_point_fraction": 0.18518518518518517,
+                "forecast_reported_slope_fraction": 0.7979036199140412,
+                "mean_absolute_calibration_gap": 0.6127184347288561
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -0.942636111111111,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -6.247224981633849,
+            "predictive_coverage_fraction": 0.37037037037037035,
+            "mean_absolute_slope_error": 0.7153570987654322,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.1111111111111111,
+                "forecast_reported_slope_fraction": 0.3531350134864851,
+                "mean_absolute_calibration_gap": 0.24202390237537402
+              },
+              "2.0": {
+                "observed_point_fraction": 0.18518518518518517,
+                "forecast_reported_slope_fraction": 0.7890254748811603,
+                "mean_absolute_calibration_gap": 0.6038402896959751
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -5.582913576179372,
+            "predictive_coverage_fraction": 0.37037037037037035,
+            "mean_absolute_slope_error": 0.6737037037037036,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.1111111111111111,
+                "forecast_reported_slope_fraction": 0.3705696646820605,
+                "mean_absolute_calibration_gap": 0.2594585535709494
+              },
+              "2.0": {
+                "observed_point_fraction": 0.18518518518518517,
+                "forecast_reported_slope_fraction": 0.7979036199140412,
+                "mean_absolute_calibration_gap": 0.6127184347288561
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": 0.6643114054544768,
+        "observed_mean_slope": -1.5670370370370372,
+        "observed_median_slope": -1.6
+      },
+      {
+        "held_study": "StudyID_105",
+        "held_rows": 24,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_03",
+          "StudyID_10",
+          "StudyID_115",
+          "StudyID_25",
+          "StudyID_34",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -0.994873544973545,
+          "tau_squared": 0.014353864167856445,
+          "observed_centered_variance": 0.14565836125780351,
+          "weighted_measurement_variance": 0.13130449708994707,
+          "rows": 79,
+          "studies": 7
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.014353864167856445,
+            "mean_log_predictive_density": -0.1498188361135788,
+            "predictive_coverage_fraction": 0.875,
+            "mean_absolute_slope_error": 0.201375,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.1473422961526438,
+                "mean_absolute_calibration_gap": 0.1473422961526438
+              },
+              "2.0": {
+                "observed_point_fraction": 0.041666666666666664,
+                "forecast_reported_slope_fraction": 0.4359254741533603,
+                "mean_absolute_calibration_gap": 0.3942588074866936
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -0.994873544973545,
+            "tau_squared": 0.014353864167856445,
+            "mean_log_predictive_density": -0.2089843960464314,
+            "predictive_coverage_fraction": 0.875,
+            "mean_absolute_slope_error": 0.20650145502645503,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.14723187696333764,
+                "mean_absolute_calibration_gap": 0.14723187696333764
+              },
+              "2.0": {
+                "observed_point_fraction": 0.041666666666666664,
+                "forecast_reported_slope_fraction": 0.4356303457338118,
+                "mean_absolute_calibration_gap": 0.39396367906714513
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -6.356500613055599,
+            "predictive_coverage_fraction": 0.041666666666666664,
+            "mean_absolute_slope_error": 0.201375,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.3733137088487119,
+                "mean_absolute_calibration_gap": 0.3733137088487119
+              },
+              "2.0": {
+                "observed_point_fraction": 0.041666666666666664,
+                "forecast_reported_slope_fraction": 0.8401247659848602,
+                "mean_absolute_calibration_gap": 0.7984580993181936
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": 0.05916555993285261,
+        "observed_mean_slope": -1.2013749999999999,
+        "observed_median_slope": -1.2045
+      },
+      {
+        "held_study": "StudyID_115",
+        "held_rows": 18,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_03",
+          "StudyID_10",
+          "StudyID_105",
+          "StudyID_25",
+          "StudyID_34",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -1.066689021164021,
+          "tau_squared": 0.001522040593750884,
+          "observed_centered_variance": 0.1330888571281424,
+          "weighted_measurement_variance": 0.1315668165343915,
+          "rows": 85,
+          "studies": 7
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.001522040593750884,
+            "mean_log_predictive_density": -17.937840957984893,
+            "predictive_coverage_fraction": 0.1111111111111111,
+            "mean_absolute_slope_error": 0.30133333333333334,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.41462669896001436,
+                "mean_absolute_calibration_gap": 0.41462669896001436
+              },
+              "2.0": {
+                "observed_point_fraction": 0.05555555555555555,
+                "forecast_reported_slope_fraction": 0.8937593509521515,
+                "mean_absolute_calibration_gap": 0.838203795396596
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -1.066689021164021,
+            "tau_squared": 0.001522040593750884,
+            "mean_log_predictive_density": -26.623174128743038,
+            "predictive_coverage_fraction": 0.0,
+            "mean_absolute_slope_error": 0.3680223544973543,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.19196208708308657,
+                "mean_absolute_calibration_gap": 0.19196208708308657
+              },
+              "2.0": {
+                "observed_point_fraction": 0.05555555555555555,
+                "forecast_reported_slope_fraction": 0.6461048291316447,
+                "mean_absolute_calibration_gap": 0.5905492735760891
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -59.855247234037364,
+            "predictive_coverage_fraction": 0.0,
+            "mean_absolute_slope_error": 0.30133333333333334,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.6182889329765694,
+                "mean_absolute_calibration_gap": 0.6182889329765694
+              },
+              "2.0": {
+                "observed_point_fraction": 0.05555555555555555,
+                "forecast_reported_slope_fraction": 0.9758796032995767,
+                "mean_absolute_calibration_gap": 0.9203240477440211
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": 8.685333170758145,
+        "observed_mean_slope": -0.6986666666666668,
+        "observed_median_slope": -0.6685000000000001
+      },
+      {
+        "held_study": "StudyID_25",
+        "held_rows": 9,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_03",
+          "StudyID_10",
+          "StudyID_105",
+          "StudyID_115",
+          "StudyID_34",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -1.0041017195767195,
+          "tau_squared": 0.017706419811857887,
+          "observed_centered_variance": 0.14935791888593195,
+          "weighted_measurement_variance": 0.13165149907407406,
+          "rows": 94,
+          "studies": 7
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.017706419811857887,
+            "mean_log_predictive_density": 0.5463891312223272,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.13677777777777778,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.050655072423356956,
+                "mean_absolute_calibration_gap": 0.050655072423356956
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.1563730992503862,
+                "mean_absolute_calibration_gap": 0.1563730992503862
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -1.0041017195767195,
+            "tau_squared": 0.017706419811857887,
+            "mean_log_predictive_density": 0.5764899887018932,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.13267605820105832,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.05063208188479798,
+                "mean_absolute_calibration_gap": 0.05063208188479798
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.15630299076858278,
+                "mean_absolute_calibration_gap": 0.15630299076858278
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -16.015209794145964,
+            "predictive_coverage_fraction": 0.1111111111111111,
+            "mean_absolute_slope_error": 0.13677777777777778,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.27493092108542494,
+                "mean_absolute_calibration_gap": 0.27493092108542494
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.7192988894674746,
+                "mean_absolute_calibration_gap": 0.7192988894674746
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": -0.030100857479565923,
+        "observed_mean_slope": -1.1367777777777777,
+        "observed_median_slope": -1.145
+      },
+      {
+        "held_study": "StudyID_34",
+        "held_rows": 4,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_03",
+          "StudyID_10",
+          "StudyID_105",
+          "StudyID_115",
+          "StudyID_25",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -1.0515699735449735,
+          "tau_squared": 0.1223950634899464,
+          "observed_centered_variance": 0.14026359034179825,
+          "weighted_measurement_variance": 0.017868526851851852,
+          "rows": 99,
+          "studies": 7
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.1223950634899464,
+            "mean_log_predictive_density": -0.8728251094580861,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.2285,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.016630578318947015,
+                "mean_absolute_calibration_gap": 0.016630578318947015
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.05161787802962231,
+                "mean_absolute_calibration_gap": 0.05161787802962231
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -1.0515699735449735,
+            "tau_squared": 0.1223950634899464,
+            "mean_log_predictive_density": -0.8917750497711743,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.2542849867724868,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.016593658461349275,
+                "mean_absolute_calibration_gap": 0.016593658461349275
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.05150356459454396,
+                "mean_absolute_calibration_gap": 0.05150356459454396
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -0.7922706109000683,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.2285,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.01882133928281335,
+                "mean_absolute_calibration_gap": 0.01882133928281335
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.05839433633162254,
+                "mean_absolute_calibration_gap": 0.05839433633162254
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": 0.018949940313088165,
+        "observed_mean_slope": -0.8045,
+        "observed_median_slope": -0.7595000000000001
+      },
+      {
+        "held_study": "StudyID_76",
+        "held_rows": 15,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_03",
+          "StudyID_10",
+          "StudyID_105",
+          "StudyID_115",
+          "StudyID_25",
+          "StudyID_34"
+        ],
+        "training": {
+          "mean": -1.0054794973544974,
+          "tau_squared": 0.017773660293927213,
+          "observed_centered_variance": 0.14877399428863622,
+          "weighted_measurement_variance": 0.131000333994709,
+          "rows": 88,
+          "studies": 7
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.017773660293927213,
+            "mean_log_predictive_density": 0.5102223021932312,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.12726666666666664,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.06666666666666667,
+                "forecast_reported_slope_fraction": 0.052211476036997384,
+                "mean_absolute_calibration_gap": 0.014455190629669282
+              },
+              "2.0": {
+                "observed_point_fraction": 0.13333333333333333,
+                "forecast_reported_slope_fraction": 0.16117046236314614,
+                "mean_absolute_calibration_gap": 0.027837129029812807
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -1.0054794973544974,
+            "tau_squared": 0.017773660293927213,
+            "mean_log_predictive_density": 0.53869140954135,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.12251776895943559,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.06666666666666667,
+                "forecast_reported_slope_fraction": 0.05217574485150656,
+                "mean_absolute_calibration_gap": 0.014490921815160103
+              },
+              "2.0": {
+                "observed_point_fraction": 0.13333333333333333,
+                "forecast_reported_slope_fraction": 0.16106158441528476,
+                "mean_absolute_calibration_gap": 0.027728251081951427
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -1.2491430875913843,
+            "predictive_coverage_fraction": 0.5333333333333333,
+            "mean_absolute_slope_error": 0.12726666666666664,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.06666666666666667,
+                "forecast_reported_slope_fraction": 0.14916420683795006,
+                "mean_absolute_calibration_gap": 0.0824975401712834
+              },
+              "2.0": {
+                "observed_point_fraction": 0.13333333333333333,
+                "forecast_reported_slope_fraction": 0.43031566616515865,
+                "mean_absolute_calibration_gap": 0.2969823328318253
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": -0.028469107348118805,
+        "observed_mean_slope": -1.1271333333333333,
+        "observed_median_slope": -1.119
+      }
+    ],
+    "models": {
+      "fixed_neutral_shared_scatter": {
+        "equal_study_mean_log_score": -3.3618341358854416,
+        "equal_study_predictive_coverage": 0.6695601851851851
+      },
+      "training_location_shared_scatter": {
+        "equal_study_mean_log_score": -4.833043386942064,
+        "equal_study_predictive_coverage": 0.6556712962962963
+      },
+      "fixed_neutral_measurement_only": {
+        "equal_study_mean_log_score": -11.63650196746947,
+        "equal_study_predictive_coverage": 0.38206018518518514
+      }
+    },
+    "comparison": {
+      "equal_study_mean_fixed_minus_training_log_score": 1.4712092510566237,
+      "median_fixed_minus_training_log_score": 0.039057750122970386,
+      "fixed_location_study_wins": 6,
+      "ties": 0,
+      "inference": "Overlapping training folds; descriptive scores without an independent-fold significance test"
+    }
+  },
+  "ci_assumption_sensitivity": {
+    "rows": 747,
+    "studies": 11,
+    "folds": [
+      {
+        "held_study": "StudyID_01",
+        "held_rows": 2,
+        "training_studies": [
+          "StudyID_03",
+          "StudyID_10",
+          "StudyID_105",
+          "StudyID_115",
+          "StudyID_122",
+          "StudyID_25",
+          "StudyID_34",
+          "StudyID_65",
+          "StudyID_69",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -0.8667005464267085,
+          "tau_squared": 0.24079924918289974,
+          "observed_centered_variance": 0.35331771160690006,
+          "weighted_measurement_variance": 0.11251846242400032,
+          "rows": 745,
+          "studies": 10
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.24079924918289974,
+            "mean_log_predictive_density": -0.2551764231501872,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.11000000000000004,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.0289519089883305,
+                "mean_absolute_calibration_gap": 0.0289519089883305
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.08976239421733298,
+                "mean_absolute_calibration_gap": 0.08976239421733298
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -0.8667005464267085,
+            "tau_squared": 0.24079924918289974,
+            "mean_log_predictive_density": -0.28992938932435486,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.1332994535732916,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.027952243548979183,
+                "mean_absolute_calibration_gap": 0.027952243548979183
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.08667458469468883,
+                "mean_absolute_calibration_gap": 0.08667458469468883
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": 0.7826496158268854,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.11000000000000004,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.13364278358157497,
+                "mean_absolute_calibration_gap": 0.13364278358157497
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.39861058357799894,
+                "mean_absolute_calibration_gap": 0.39861058357799894
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": 0.034752966174167677,
+        "observed_mean_slope": -1.0,
+        "observed_median_slope": -1.0
+      },
+      {
+        "held_study": "StudyID_03",
+        "held_rows": 4,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_10",
+          "StudyID_105",
+          "StudyID_115",
+          "StudyID_122",
+          "StudyID_25",
+          "StudyID_34",
+          "StudyID_65",
+          "StudyID_69",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -0.9037005464267083,
+          "tau_squared": 0.23660490874732334,
+          "observed_centered_variance": 0.34898287117132365,
+          "weighted_measurement_variance": 0.1123779624240003,
+          "rows": 743,
+          "studies": 10
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.23660490874732334,
+            "mean_log_predictive_density": -0.506147488830316,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.37,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.03930393398913437,
+                "mean_absolute_calibration_gap": 0.03930393398913437
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.1216632170842965,
+                "mean_absolute_calibration_gap": 0.1216632170842965
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -0.9037005464267083,
+            "tau_squared": 0.23660490874732334,
+            "mean_log_predictive_density": -0.3822539191987585,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.27370054642670827,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.038582013232267245,
+                "mean_absolute_calibration_gap": 0.038582013232267245
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.1194440147185758,
+                "mean_absolute_calibration_gap": 0.1194440147185758
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -4.023380439672901,
+            "predictive_coverage_fraction": 0.0,
+            "mean_absolute_slope_error": 0.37,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.17120040501107053,
+                "mean_absolute_calibration_gap": 0.17120040501107053
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.49739565361145177,
+                "mean_absolute_calibration_gap": 0.49739565361145177
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": -0.12389356963155751,
+        "observed_mean_slope": -0.63,
+        "observed_median_slope": -0.62
+      },
+      {
+        "held_study": "StudyID_10",
+        "held_rows": 27,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_03",
+          "StudyID_105",
+          "StudyID_115",
+          "StudyID_122",
+          "StudyID_25",
+          "StudyID_34",
+          "StudyID_65",
+          "StudyID_69",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -0.8099968427230048,
+          "tau_squared": 0.1656682196565372,
+          "observed_centered_variance": 0.2704548857842412,
+          "weighted_measurement_variance": 0.10478666612770401,
+          "rows": 720,
+          "studies": 10
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.1656682196565372,
+            "mean_log_predictive_density": -1.4343735754883953,
+            "predictive_coverage_fraction": 0.7777777777777778,
+            "mean_absolute_slope_error": 0.6737037037037036,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.1111111111111111,
+                "forecast_reported_slope_fraction": 0.17411252150270135,
+                "mean_absolute_calibration_gap": 0.06300141039159024
+              },
+              "2.0": {
+                "observed_point_fraction": 0.18518518518518517,
+                "forecast_reported_slope_fraction": 0.5040747982208748,
+                "mean_absolute_calibration_gap": 0.3188896130356896
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -0.8099968427230048,
+            "tau_squared": 0.1656682196565372,
+            "mean_log_predictive_density": -1.9280878375485817,
+            "predictive_coverage_fraction": 0.5185185185185185,
+            "mean_absolute_slope_error": 0.8185209741784035,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.1111111111111111,
+                "forecast_reported_slope_fraction": 0.16103288551798725,
+                "mean_absolute_calibration_gap": 0.049921774406876146
+              },
+              "2.0": {
+                "observed_point_fraction": 0.18518518518518517,
+                "forecast_reported_slope_fraction": 0.4715446203326586,
+                "mean_absolute_calibration_gap": 0.2863594351474734
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -5.582913576179372,
+            "predictive_coverage_fraction": 0.37037037037037035,
+            "mean_absolute_slope_error": 0.6737037037037036,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.1111111111111111,
+                "forecast_reported_slope_fraction": 0.3705696646820605,
+                "mean_absolute_calibration_gap": 0.2594585535709494
+              },
+              "2.0": {
+                "observed_point_fraction": 0.18518518518518517,
+                "forecast_reported_slope_fraction": 0.7979036199140412,
+                "mean_absolute_calibration_gap": 0.6127184347288561
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": 0.4937142620601864,
+        "observed_mean_slope": -1.5670370370370372,
+        "observed_median_slope": -1.6
+      },
+      {
+        "held_study": "StudyID_105",
+        "held_rows": 24,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_03",
+          "StudyID_10",
+          "StudyID_115",
+          "StudyID_122",
+          "StudyID_25",
+          "StudyID_34",
+          "StudyID_65",
+          "StudyID_69",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -0.8465630464267084,
+          "tau_squared": 0.23082740311731895,
+          "observed_centered_variance": 0.34422391970798594,
+          "weighted_measurement_variance": 0.11339651659066699,
+          "rows": 723,
+          "studies": 10
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.23082740311731895,
+            "mean_log_predictive_density": -0.28919004788729286,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.201375,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.040438747662668396,
+                "mean_absolute_calibration_gap": 0.040438747662668396
+              },
+              "2.0": {
+                "observed_point_fraction": 0.041666666666666664,
+                "forecast_reported_slope_fraction": 0.12514835761915868,
+                "mean_absolute_calibration_gap": 0.08348169095249203
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -0.8465630464267084,
+            "tau_squared": 0.23082740311731895,
+            "mean_log_predictive_density": -0.4713644529787337,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.3548119535732916,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.03845659990740207,
+                "mean_absolute_calibration_gap": 0.03845659990740207
+              },
+              "2.0": {
+                "observed_point_fraction": 0.041666666666666664,
+                "forecast_reported_slope_fraction": 0.1190584669743411,
+                "mean_absolute_calibration_gap": 0.07739180030767442
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -6.356500613055599,
+            "predictive_coverage_fraction": 0.041666666666666664,
+            "mean_absolute_slope_error": 0.201375,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.3733137088487119,
+                "mean_absolute_calibration_gap": 0.3733137088487119
+              },
+              "2.0": {
+                "observed_point_fraction": 0.041666666666666664,
+                "forecast_reported_slope_fraction": 0.8401247659848602,
+                "mean_absolute_calibration_gap": 0.7984580993181936
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": 0.18217440509144084,
+        "observed_mean_slope": -1.2013749999999999,
+        "observed_median_slope": -1.2045
+      },
+      {
+        "held_study": "StudyID_115",
+        "held_rows": 18,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_03",
+          "StudyID_10",
+          "StudyID_105",
+          "StudyID_122",
+          "StudyID_25",
+          "StudyID_34",
+          "StudyID_65",
+          "StudyID_69",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -0.896833879760042,
+          "tau_squared": 0.23783957847380574,
+          "observed_centered_variance": 0.3514197186755839,
+          "weighted_measurement_variance": 0.11358014020177817,
+          "rows": 729,
+          "studies": 10
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.23783957847380574,
+            "mean_log_predictive_density": -0.4175610249202452,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.30133333333333334,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.046240017660305756,
+                "mean_absolute_calibration_gap": 0.046240017660305756
+              },
+              "2.0": {
+                "observed_point_fraction": 0.05555555555555555,
+                "forecast_reported_slope_fraction": 0.14287082985881053,
+                "mean_absolute_calibration_gap": 0.08731527430325497
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -0.896833879760042,
+            "tau_squared": 0.23783957847380574,
+            "mean_log_predictive_density": -0.30984340239878927,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.20375968425781046,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.04522404344263083,
+                "mean_absolute_calibration_gap": 0.04522404344263083
+              },
+              "2.0": {
+                "observed_point_fraction": 0.05555555555555555,
+                "forecast_reported_slope_fraction": 0.13976471940717533,
+                "mean_absolute_calibration_gap": 0.08420916385161978
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -59.855247234037364,
+            "predictive_coverage_fraction": 0.0,
+            "mean_absolute_slope_error": 0.30133333333333334,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.6182889329765694,
+                "mean_absolute_calibration_gap": 0.6182889329765694
+              },
+              "2.0": {
+                "observed_point_fraction": 0.05555555555555555,
+                "forecast_reported_slope_fraction": 0.9758796032995767,
+                "mean_absolute_calibration_gap": 0.9203240477440211
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": -0.10771762252145595,
+        "observed_mean_slope": -0.6986666666666668,
+        "observed_median_slope": -0.6685000000000001
+      },
+      {
+        "held_study": "StudyID_122",
+        "held_rows": 639,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_03",
+          "StudyID_10",
+          "StudyID_105",
+          "StudyID_115",
+          "StudyID_25",
+          "StudyID_34",
+          "StudyID_65",
+          "StudyID_69",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -0.8662989814814814,
+          "tau_squared": 0.23632029958133566,
+          "observed_centered_variance": 0.34665042440637,
+          "weighted_measurement_variance": 0.11033012482503435,
+          "rows": 108,
+          "studies": 10
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.23632029958133566,
+            "mean_log_predictive_density": -0.4071029570923688,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.22754616588419405,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.07511737089201878,
+                "forecast_reported_slope_fraction": 0.051499561076949724,
+                "mean_absolute_calibration_gap": 0.023617809815069057
+              },
+              "2.0": {
+                "observed_point_fraction": 0.27073552425665104,
+                "forecast_reported_slope_fraction": 0.15899676070293137,
+                "mean_absolute_calibration_gap": 0.11173876355371967
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -0.8662989814814814,
+            "tau_squared": 0.23632029958133566,
+            "mean_log_predictive_density": -0.44164330707008803,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.24685398843679363,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.07511737089201878,
+                "forecast_reported_slope_fraction": 0.04981094766937891,
+                "mean_absolute_calibration_gap": 0.025306423222639873
+              },
+              "2.0": {
+                "observed_point_fraction": 0.27073552425665104,
+                "forecast_reported_slope_fraction": 0.1538462860535609,
+                "mean_absolute_calibration_gap": 0.11688923820309013
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -1.0249544799435397,
+            "predictive_coverage_fraction": 0.7261345852895149,
+            "mean_absolute_slope_error": 0.22754616588419405,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.07511737089201878,
+                "forecast_reported_slope_fraction": 0.1741267980833227,
+                "mean_absolute_calibration_gap": 0.09900942719130393
+              },
+              "2.0": {
+                "observed_point_fraction": 0.27073552425665104,
+                "forecast_reported_slope_fraction": 0.49089808187774153,
+                "mean_absolute_calibration_gap": 0.2201625576210905
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": 0.03454034997771921,
+        "observed_mean_slope": -1.004015649452269,
+        "observed_median_slope": -0.989
+      },
+      {
+        "held_study": "StudyID_25",
+        "held_rows": 9,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_03",
+          "StudyID_10",
+          "StudyID_105",
+          "StudyID_115",
+          "StudyID_122",
+          "StudyID_34",
+          "StudyID_65",
+          "StudyID_69",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -0.8530227686489309,
+          "tau_squared": 0.23510816474798985,
+          "observed_centered_variance": 0.3487475827275457,
+          "weighted_measurement_variance": 0.11363941797955586,
+          "rows": 738,
+          "studies": 10
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.23510816474798985,
+            "mean_log_predictive_density": -0.23793316490857183,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.13677777777777778,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.014202152970346826,
+                "mean_absolute_calibration_gap": 0.014202152970346826
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.04409385696006658,
+                "mean_absolute_calibration_gap": 0.04409385696006658
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -0.8530227686489309,
+            "tau_squared": 0.23510816474798985,
+            "mean_log_predictive_density": -0.3689964330286146,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.2837550091288468,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.013566718305308416,
+                "mean_absolute_calibration_gap": 0.013566718305308416
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.042122928294398204,
+                "mean_absolute_calibration_gap": 0.042122928294398204
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -16.015209794145964,
+            "predictive_coverage_fraction": 0.1111111111111111,
+            "mean_absolute_slope_error": 0.13677777777777778,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.27493092108542494,
+                "mean_absolute_calibration_gap": 0.27493092108542494
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.7192988894674746,
+                "mean_absolute_calibration_gap": 0.7192988894674746
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": 0.1310632681200428,
+        "observed_mean_slope": -1.1367777777777777,
+        "observed_median_slope": -1.145
+      },
+      {
+        "held_study": "StudyID_34",
+        "held_rows": 4,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_03",
+          "StudyID_10",
+          "StudyID_105",
+          "StudyID_115",
+          "StudyID_122",
+          "StudyID_25",
+          "StudyID_65",
+          "StudyID_69",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -0.8862505464267083,
+          "tau_squared": 0.3189034303176155,
+          "observed_centered_variance": 0.35289476774161577,
+          "weighted_measurement_variance": 0.03399133742400032,
+          "rows": 743,
+          "studies": 10
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.3189034303176155,
+            "mean_log_predictive_density": -0.9772118201774069,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.2285,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.014537577362753323,
+                "mean_absolute_calibration_gap": 0.014537577362753323
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.04513304001973786,
+                "mean_absolute_calibration_gap": 0.04513304001973786
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -0.8862505464267083,
+            "tau_squared": 0.3189034303176155,
+            "mean_log_predictive_density": -0.9572441890369334,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.17162527321335416,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.014430372735838567,
+                "mean_absolute_calibration_gap": 0.014430372735838567
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.0448006904969554,
+                "mean_absolute_calibration_gap": 0.0448006904969554
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -0.7922706109000683,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.2285,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.01882133928281335,
+                "mean_absolute_calibration_gap": 0.01882133928281335
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.05839433633162254,
+                "mean_absolute_calibration_gap": 0.05839433633162254
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": -0.019967631140473507,
+        "observed_mean_slope": -0.8045,
+        "observed_median_slope": -0.7595000000000001
+      },
+      {
+        "held_study": "StudyID_65",
+        "held_rows": 4,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_03",
+          "StudyID_10",
+          "StudyID_105",
+          "StudyID_115",
+          "StudyID_122",
+          "StudyID_25",
+          "StudyID_34",
+          "StudyID_69",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -0.8719505464267083,
+          "tau_squared": 0.21017708812992594,
+          "observed_centered_variance": 0.30813229336941983,
+          "weighted_measurement_variance": 0.09795520523949389,
+          "rows": 743,
+          "studies": 10
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.21017708812992594,
+            "mean_log_predictive_density": -1.2517773098014437,
+            "predictive_coverage_fraction": 0.75,
+            "mean_absolute_slope_error": 0.6174999999999999,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.04475472559236793,
+                "mean_absolute_calibration_gap": 0.04475472559236793
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.13832595280149257,
+                "mean_absolute_calibration_gap": 0.13832595280149257
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -0.8719505464267083,
+            "tau_squared": 0.21017708812992594,
+            "mean_log_predictive_density": -1.1557890282789378,
+            "predictive_coverage_fraction": 0.75,
+            "mean_absolute_slope_error": 0.6174999999999999,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.04354051591740178,
+                "mean_absolute_calibration_gap": 0.04354051591740178
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.13461631686312975,
+                "mean_absolute_calibration_gap": 0.13461631686312975
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -54.909614096478094,
+            "predictive_coverage_fraction": 0.75,
+            "mean_absolute_slope_error": 0.6174999999999999,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.1695473568823209,
+                "mean_absolute_calibration_gap": 0.1695473568823209
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.3951045259637941,
+                "mean_absolute_calibration_gap": 0.3951045259637941
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": -0.09598828152250594,
+        "observed_mean_slope": -0.9475,
+        "observed_median_slope": -1.065
+      },
+      {
+        "held_study": "StudyID_69",
+        "held_rows": 1,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_03",
+          "StudyID_10",
+          "StudyID_105",
+          "StudyID_115",
+          "StudyID_122",
+          "StudyID_25",
+          "StudyID_34",
+          "StudyID_65",
+          "StudyID_76"
+        ],
+        "training": {
+          "mean": -1.0117005464267086,
+          "tau_squared": 0.05053936456338595,
+          "observed_centered_variance": 0.1619095531431547,
+          "weighted_measurement_variance": 0.11137018857976874,
+          "rows": 746,
+          "studies": 10
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.05053936456338595,
+            "mean_log_predictive_density": -13.829270373600238,
+            "predictive_coverage_fraction": 0.0,
+            "mean_absolute_slope_error": 1.45,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.15639344207213746,
+                "mean_absolute_calibration_gap": 0.15639344207213746
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.4600013824684487,
+                "mean_absolute_calibration_gap": 0.4600013824684487
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -1.0117005464267086,
+            "tau_squared": 0.05053936456338595,
+            "mean_log_predictive_density": -14.059565234692148,
+            "predictive_coverage_fraction": 0.0,
+            "mean_absolute_slope_error": 1.4617005464267085,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.15625064401724753,
+                "mean_absolute_calibration_gap": 0.15625064401724753
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.45962650492741436,
+                "mean_absolute_calibration_gap": 0.45962650492741436
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -43.91404347785853,
+            "predictive_coverage_fraction": 0.0,
+            "mean_absolute_slope_error": 1.45,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.2740694690973896,
+                "mean_absolute_calibration_gap": 0.2740694690973896
+              },
+              "2.0": {
+                "observed_point_fraction": 0.0,
+                "forecast_reported_slope_fraction": 0.7237971133820219,
+                "mean_absolute_calibration_gap": 0.7237971133820219
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": 0.23029486109190955,
+        "observed_mean_slope": 0.45,
+        "observed_median_slope": 0.45
+      },
+      {
+        "held_study": "StudyID_76",
+        "held_rows": 15,
+        "training_studies": [
+          "StudyID_01",
+          "StudyID_03",
+          "StudyID_10",
+          "StudyID_105",
+          "StudyID_115",
+          "StudyID_122",
+          "StudyID_25",
+          "StudyID_34",
+          "StudyID_65",
+          "StudyID_69"
+        ],
+        "training": {
+          "mean": -0.853987213093375,
+          "tau_squared": 0.23544704623226514,
+          "observed_centered_variance": 0.3486306486562655,
+          "weighted_measurement_variance": 0.11318360242400033,
+          "rows": 732,
+          "studies": 10
+        },
+        "models": {
+          "fixed_neutral_shared_scatter": {
+            "mean": -1.0,
+            "tau_squared": 0.23544704623226514,
+            "mean_log_predictive_density": -0.25492808698253044,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.12726666666666664,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.06666666666666667,
+                "forecast_reported_slope_fraction": 0.015982848469784025,
+                "mean_absolute_calibration_gap": 0.05068381819688264
+              },
+              "2.0": {
+                "observed_point_fraction": 0.13333333333333333,
+                "forecast_reported_slope_fraction": 0.04961821673507702,
+                "mean_absolute_calibration_gap": 0.08371511659825631
+              }
+            }
+          },
+          "training_location_shared_scatter": {
+            "mean": -0.853987213093375,
+            "tau_squared": 0.23544704623226514,
+            "mean_log_predictive_density": -0.37574978594335284,
+            "predictive_coverage_fraction": 1.0,
+            "mean_absolute_slope_error": 0.2731461202399583,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.06666666666666667,
+                "forecast_reported_slope_fraction": 0.015290888752527853,
+                "mean_absolute_calibration_gap": 0.05137577791413881
+              },
+              "2.0": {
+                "observed_point_fraction": 0.13333333333333333,
+                "forecast_reported_slope_fraction": 0.04747250397376864,
+                "mean_absolute_calibration_gap": 0.08586082935956468
+              }
+            }
+          },
+          "fixed_neutral_measurement_only": {
+            "mean": -1.0,
+            "tau_squared": 0.0,
+            "mean_log_predictive_density": -1.2491430875913843,
+            "predictive_coverage_fraction": 0.5333333333333333,
+            "mean_absolute_slope_error": 0.12726666666666664,
+            "endpoint_drift_checks": {
+              "1.25": {
+                "observed_point_fraction": 0.06666666666666667,
+                "forecast_reported_slope_fraction": 0.14916420683795006,
+                "mean_absolute_calibration_gap": 0.0824975401712834
+              },
+              "2.0": {
+                "observed_point_fraction": 0.13333333333333333,
+                "forecast_reported_slope_fraction": 0.43031566616515865,
+                "mean_absolute_calibration_gap": 0.2969823328318253
+              }
+            }
+          }
+        },
+        "fixed_minus_training_location_log_score": 0.1208216989608224,
+        "observed_mean_slope": -1.1271333333333333,
+        "observed_median_slope": -1.119
+      }
+    ],
+    "models": {
+      "fixed_neutral_shared_scatter": {
+        "equal_study_mean_log_score": -1.8055156611671814,
+        "equal_study_predictive_coverage": 0.8661616161616162
+      },
+      "training_location_shared_scatter": {
+        "equal_study_mean_log_score": -1.8854969981362992,
+        "equal_study_predictive_coverage": 0.8425925925925927
+      },
+      "fixed_neutral_measurement_only": {
+        "equal_study_mean_log_score": -17.540057072185085,
+        "equal_study_predictive_coverage": 0.41205600607009063
+      }
+    },
+    "comparison": {
+      "equal_study_mean_fixed_minus_training_log_score": 0.07998133696911781,
+      "median_fixed_minus_training_log_score": 0.034752966174167677,
+      "fixed_location_study_wins": 7,
+      "ties": 0,
+      "inference": "Overlapping training folds; descriptive scores without an independent-fold significance test"
+    }
+  },
+  "uncertainty_free_point_sensitivity": {
+    "rows": 923,
+    "studies": 15,
+    "folds": [
+      {
+        "held_study": "StudyID_01",
+        "held_rows": 2,
+        "training_median_of_study_medians": -1.005,
+        "fixed_location_mae": 0.11000000000000004,
+        "training_location_mae": 0.11000000000000004
+      },
+      {
+        "held_study": "StudyID_03",
+        "held_rows": 4,
+        "training_median_of_study_medians": -1.005,
+        "fixed_location_mae": 0.37,
+        "training_location_mae": 0.3749999999999999
+      },
+      {
+        "held_study": "StudyID_06",
+        "held_rows": 53,
+        "training_median_of_study_medians": -1.005,
+        "fixed_location_mae": 0.2188679245283019,
+        "training_location_mae": 0.21971698113207547
+      },
+      {
+        "held_study": "StudyID_10",
+        "held_rows": 27,
+        "training_median_of_study_medians": -1.0,
+        "fixed_location_mae": 0.6737037037037036,
+        "training_location_mae": 0.6737037037037036
+      },
+      {
+        "held_study": "StudyID_105",
+        "held_rows": 24,
+        "training_median_of_study_medians": -1.0,
+        "fixed_location_mae": 0.201375,
+        "training_location_mae": 0.201375
+      },
+      {
+        "held_study": "StudyID_115",
+        "held_rows": 18,
+        "training_median_of_study_medians": -1.005,
+        "fixed_location_mae": 0.30133333333333334,
+        "training_location_mae": 0.30633333333333324
+      },
+      {
+        "held_study": "StudyID_122",
+        "held_rows": 639,
+        "training_median_of_study_medians": -1.005,
+        "fixed_location_mae": 0.22754616588419405,
+        "training_location_mae": 0.22768544600938964
+      },
+      {
+        "held_study": "StudyID_25",
+        "held_rows": 9,
+        "training_median_of_study_medians": -1.0,
+        "fixed_location_mae": 0.13677777777777778,
+        "training_location_mae": 0.13677777777777778
+      },
+      {
+        "held_study": "StudyID_32",
+        "held_rows": 17,
+        "training_median_of_study_medians": -1.0,
+        "fixed_location_mae": 0.6565882352941177,
+        "training_location_mae": 0.6565882352941177
+      },
+      {
+        "held_study": "StudyID_33",
+        "held_rows": 88,
+        "training_median_of_study_medians": -1.0,
+        "fixed_location_mae": 0.08988636363636364,
+        "training_location_mae": 0.08988636363636364
+      },
+      {
+        "held_study": "StudyID_34",
+        "held_rows": 4,
+        "training_median_of_study_medians": -1.005,
+        "fixed_location_mae": 0.2285,
+        "training_location_mae": 0.23099999999999996
+      },
+      {
+        "held_study": "StudyID_52",
+        "held_rows": 18,
+        "training_median_of_study_medians": -1.005,
+        "fixed_location_mae": 0.5651666666666667,
+        "training_location_mae": 0.5696111111111111
+      },
+      {
+        "held_study": "StudyID_65",
+        "held_rows": 4,
+        "training_median_of_study_medians": -1.0,
+        "fixed_location_mae": 0.6174999999999999,
+        "training_location_mae": 0.6174999999999999
+      },
+      {
+        "held_study": "StudyID_69",
+        "held_rows": 1,
+        "training_median_of_study_medians": -1.005,
+        "fixed_location_mae": 1.45,
+        "training_location_mae": 1.4549999999999998
+      },
+      {
+        "held_study": "StudyID_76",
+        "held_rows": 15,
+        "training_median_of_study_medians": -1.0,
+        "fixed_location_mae": 0.12726666666666664,
+        "training_location_mae": 0.12726666666666664
+      }
+    ],
+    "equal_study_fixed_mae": 0.398300789166075,
+    "equal_study_training_mae": 0.39982964124430254
+  },
+  "interpretation": "A population-center forecast is distinct from universal individual flatness and complete resource-profile equivalence",
+  "run_id": "aquatic-study-transfer-2026-10-01",
+  "source_sha256": {
+    "experiments/run_aquatic_study_transfer.py": "4be520898f86191ecf3aa792adc583fc7a2cb670e025df97d438fda894f2a8cb",
+    "src/orthopolity/aquatic_study_transfer.py": "de2c5d73c807dfd006e9c2427bb3720f14122b42eafce2e4851be94b20512e7c",
+    "src/orthopolity/run_registry.py": "33824ebac344210cf59ef2dc83d795e35676d859830c96e7171db9ff6bb1781e",
+    "src/orthopolity/figures.py": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40"
+  },
+  "completed_utc": "2026-10-01T21:26:25.604608+00:00",
+  "specification_sha256": "46b6fcbb269e46b4d9a7d20492f7378a68922ea73e37713b2c06a738d753c4d9",
+  "hardware_metadata": {
+    "collected_utc": "2026-10-01T21:26:25.473036+00:00",
+    "recording_scope": "Current metadata collector process; not a historical hardware reconstruction",
+    "os": {
+      "system": "Darwin",
+      "release": "25.6.0",
+      "version": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+      "build": null,
+      "product_version": "26.6.2"
+    },
+    "cpu": {
+      "model": null,
+      "architecture": "arm64",
+      "logical_count": 10
+    },
+    "total_ram_bytes": null,
+    "python_version": "3.11.6",
+    "availability": {
+      "cpu_model": false,
+      "total_ram": false,
+      "os_build": false
+    },
+    "numpy": {
+      "available": true,
+      "version": "2.3.5",
+      "blas": {
+        "name": "accelerate",
+        "version": "unknown"
+      }
+    },
+    "requested_thread_environment": {},
+    "runtime_thread_verification": {
+      "inspection_available": false,
+      "blas_count_available": false,
+      "libraries": [],
+      "thread_count_verified": false,
+      "verified_single_thread": false,
+      "scope": "Optional threadpoolctl is unavailable; requested environment is not runtime verification"
+    }
+  },
+  "numerical_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.16.3"
+  },
+  "summary": {
+    "new_observations_collected": 0,
+    "primary_records": 103,
+    "primary_studies": 8,
+    "primary_equal_study_fixed_minus_training_log_score": 1.4712092510566237,
+    "ci_sensitivity_records": 747,
+    "ci_sensitivity_studies": 11,
+    "ci_sensitivity_fixed_minus_training_log_score": 0.07998133696911781,
+    "strict_measurement_only_mean_log_score": -11.63650196746947,
+    "inference": "Descriptive overlapping-fold transport scores; no independent-fold p-value or population equivalence verdict"
+  }
+}

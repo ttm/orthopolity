@@ -1,0 +1,80 @@
+{
+  "stage": "calibration",
+  "completed_utc": "2026-10-01T21:29:34.110211+00:00",
+  "data_sha256": "6d9960cdecc58d1a76358246c5ac69ece64e14e0559af479a9213f54d6102bbd",
+  "frozen_plan_sha256": "cc7ac4096f590c8b572f07b19f204896876d4522c97a3b74d4fae96b34a56976",
+  "shape_order": [
+    "sample_size",
+    "scenario",
+    "replicate",
+    "bin"
+  ],
+  "scenarios": [
+    "neutral",
+    "curved_same_exponent",
+    "shifted_power"
+  ],
+  "sample_sizes": [
+    100,
+    1000,
+    10000
+  ],
+  "replicates": 4000,
+  "streams": [
+    [
+      202610017,
+      10,
+      0,
+      0
+    ],
+    [
+      202610017,
+      10,
+      0,
+      1
+    ],
+    [
+      202610017,
+      10,
+      0,
+      2
+    ],
+    [
+      202610017,
+      10,
+      1,
+      0
+    ],
+    [
+      202610017,
+      10,
+      1,
+      1
+    ],
+    [
+      202610017,
+      10,
+      1,
+      2
+    ],
+    [
+      202610017,
+      10,
+      2,
+      0
+    ],
+    [
+      202610017,
+      10,
+      2,
+      1
+    ],
+    [
+      202610017,
+      10,
+      2,
+      2
+    ]
+  ],
+  "retained_statistics": "Exact continuous log sums and all bin counts reconstruct MLE and deviance; exact per-bin physical resource totals are retained; individual log sizes are not retained."
+}

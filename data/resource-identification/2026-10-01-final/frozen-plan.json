@@ -1,0 +1,320 @@
+{
+  "run_id": "resource-identification-2026-10-01-final",
+  "frozen_utc": "2026-10-01T21:29:25.267081+00:00",
+  "config": {
+    "description": "Bounded size-structured growth/removal counterexample: exact equal population power-law MLE, unequal independently specified mass profiles. Frozen locally before simulation; not an external preregistration.",
+    "seed": 202610017,
+    "run_id": "resource-identification-2026-10-01-final",
+    "domain": [
+      1.0,
+      64.0
+    ],
+    "resource": {
+      "name": "mass",
+      "definition": "Per-object stock q(x)=x in declared mass units, independently fixed across all removal conditions.",
+      "units": "mass units",
+      "cost_exponent": 1.0
+    },
+    "log_growth_rate": 1.0,
+    "curvature_amplitude": 0.8,
+    "shifted_removal_rate": 1.4,
+    "log_bins": 12,
+    "sample_sizes": [
+      100,
+      1000,
+      10000
+    ],
+    "heldout_replicates": 2000,
+    "null_calibration_replicates": 4000,
+    "alpha": 0.05,
+    "monte_carlo_interval_level": 0.95,
+    "practical_resource_factor": 1.5,
+    "inverse_cdf_grid_points": 65537,
+    "maximum_audited_cdf_interpolation_error": 1e-08,
+    "coordinate_powers": [
+      0.5,
+      1.0,
+      3.0
+    ],
+    "observation_design": "Independent uniformly sampled extant objects conditional on cohort size, all within the fixed domain. Continuous log sizes generate both the exact bounded power-law MLE and the binned count profile. No conserved sampled-resource total is imposed.",
+    "decisions": "Exponent-only: absolute deviation of bounded continuous power-law MLE from the frozen neutral exponent. Full profile: multinomial deviance from the frozen neutral bin probabilities. Independent null calibration uses Monte Carlo rank p values, reject at alpha. Non-rejection is compatibility, never resource equivalence.",
+    "streams": "PCG64 SeedSequence([seed, stage, sample_size_index, scenario_index]); stage 10 calibration, 20 held-out validation. Scenarios ordered neutral, curved_same_exponent, shifted_power.",
+    "interpretation": "Known transport/removal dynamics and deliberate moment matching construct an identification limit. Results test the sufficiency of an exponent and quantify observation requirements; they do not establish autonomous resource neutrality, a natural law, or novelty of standard moment identities."
+  },
+  "config_path": "configs/resource_identification_2026-10-01.json",
+  "config_sha256": "7eb81bdfa93590a5e4d4264cb1893767be71befa17f1d250ac954b762f33313a",
+  "source_sha256": {
+    "experiments/run_resource_identification.py": "6a11243014c440cad099d94b110c5d847ca45c7dbefa3e2ac78b0f067dbf304e",
+    "src/orthopolity/resource_identification.py": "3442c4498ef9a71e30addf4595dff7fad1b13c980ee54842476fde8bfa826428",
+    "src/orthopolity/interventions.py": "cdc73d83e6219fe114bc0f7c5a2a9708e00a33e433ae05980e1d3804505c8841",
+    "src/orthopolity/figures.py": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40"
+  },
+  "populations": [
+    {
+      "name": "neutral",
+      "parameters": {
+        "log_width": 4.1588830833596715,
+        "rate": 1.0,
+        "a": 2.9819050812429793,
+        "b": -1.1916301617066123,
+        "scale": 6.086544064196186,
+        "orthogonality_residuals": [
+          -7.296245704724244e-17,
+          3.648122852362122e-17
+        ]
+      },
+      "amplitude": 0.0,
+      "hazard_extrema": {
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "audited_points": [
+          0.0,
+          4.1588830833596715
+        ],
+        "values": [
+          1.0,
+          1.0
+        ]
+      },
+      "numerical_sampling_audit": {
+        "knots": 65537,
+        "maximum_midpoint_cdf_error": 5.113629034035855e-10,
+        "interpretation": "Numerical error at table midpoints, not a certified global error bound"
+      },
+      "probability_integral": 1.0,
+      "mean_log_size": 0.9339859828038147,
+      "variance_log_size": 0.7210975701517924,
+      "population_bounded_power_mle": 2.0,
+      "object_bin_probabilities": [
+        0.29754231752477706,
+        0.21039419041173074,
+        0.14877115876238878,
+        0.10519709520586529,
+        0.07438557938119439,
+        0.05259854760293259,
+        0.03719278969059714,
+        0.02629927380146635,
+        0.018596394845298625,
+        0.01314963690073312,
+        0.009298197422649368,
+        0.00657481845036656
+      ],
+      "resource_per_log_bin": [
+        1.0158730158730158,
+        1.0158730158730158,
+        1.0158730158730158,
+        1.0158730158730158,
+        1.0158730158730158,
+        1.0158730158730158,
+        1.0158730158730158,
+        1.0158730158730158,
+        1.0158730158730158,
+        1.0158730158730158,
+        1.0158730158730158,
+        1.0158730158730158
+      ],
+      "normalized_resource_per_log_bin": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "binned_max_log_departure": 0.0,
+      "binned_resource_max_min_ratio": 1.0
+    },
+    {
+      "name": "curved_same_exponent",
+      "parameters": {
+        "log_width": 4.1588830833596715,
+        "rate": 1.0,
+        "a": 2.9819050812429793,
+        "b": -1.1916301617066123,
+        "scale": 6.086544064196186,
+        "orthogonality_residuals": [
+          -7.296245704724244e-17,
+          3.648122852362122e-17
+        ]
+      },
+      "amplitude": 0.8,
+      "hazard_extrema": {
+        "minimum": 0.6100666813065658,
+        "maximum": 1.3388601571232945,
+        "audited_points": [
+          0.0,
+          4.1588830833596715,
+          4.055493584076667
+        ],
+        "values": [
+          1.3388601571232945,
+          0.6103710429507156,
+          0.6100666813065658
+        ]
+      },
+      "numerical_sampling_audit": {
+        "knots": 65537,
+        "maximum_midpoint_cdf_error": 7.91864974105023e-10,
+        "interpretation": "Numerical error at table midpoints, not a certified global error bound"
+      },
+      "probability_integral": 1.0,
+      "mean_log_size": 0.9339859828038147,
+      "variance_log_size": 0.8334095547698978,
+      "population_bounded_power_mle": 2.0,
+      "object_bin_probabilities": [
+        0.3265335723989441,
+        0.20876708713686254,
+        0.13667187435631356,
+        0.09222124842336177,
+        0.06443331035599442,
+        0.04667262400343253,
+        0.03496275631662449,
+        0.02693888557973545,
+        0.02120313600248014,
+        0.016931516419948944,
+        0.013636800560751117,
+        0.01102718844555084
+      ],
+      "resource_per_log_bin": [
+        1.1113349310803937,
+        1.0054207865184355,
+        0.9315825948838844,
+        0.8898203561767399,
+        0.880134070397003,
+        0.9025237375446723,
+        0.9569893576197491,
+        1.043530930622233,
+        1.1621484565521236,
+        1.3128419354094212,
+        1.4956113671941258,
+        1.7104567519062375
+      ],
+      "normalized_resource_per_log_bin": [
+        0.9950474447608908,
+        0.9002159084139169,
+        0.8341039723477139,
+        0.7967116365622815,
+        0.7880389010576204,
+        0.8080857658337295,
+        0.85685223089061,
+        0.9343382962282613,
+        1.0405439618466834,
+        1.1754692277458763,
+        1.33911409392584,
+        1.5314785603865746
+      ],
+      "binned_max_log_departure": 0.42623364809807496,
+      "binned_resource_max_min_ratio": 1.9434047714284028
+    },
+    {
+      "name": "shifted_power",
+      "parameters": {
+        "log_width": 4.1588830833596715,
+        "rate": 1.4,
+        "a": 2.5230784062705816,
+        "b": -0.819630983500877,
+        "scale": 7.622751382727323,
+        "orthogonality_residuals": [
+          1.4564597071089745e-17,
+          7.282298535544872e-18
+        ]
+      },
+      "amplitude": 0.0,
+      "hazard_extrema": {
+        "minimum": 1.4,
+        "maximum": 1.4,
+        "audited_points": [
+          0.0,
+          4.1588830833596715
+        ],
+        "values": [
+          1.4,
+          1.4
+        ]
+      },
+      "numerical_sampling_audit": {
+        "knots": 65537,
+        "maximum_midpoint_cdf_error": 9.895276618362763e-10,
+        "interpretation": "Numerical error at table midpoints, not a certified global error bound"
+      },
+      "probability_integral": 1.0000000000000002,
+      "mean_log_size": 0.7019372675417129,
+      "variance_log_size": 0.4586958512262687,
+      "population_bounded_power_mle": 2.4,
+      "object_bin_probabilities": [
+        0.38556922626462353,
+        0.23734569943670714,
+        0.14610341594647125,
+        0.08993720215655343,
+        0.055362841993456646,
+        0.0340798268135708,
+        0.020978594194644873,
+        0.012913839521283443,
+        0.00794940069073069,
+        0.004893430124916609,
+        0.0030122595801923557,
+        0.0018542632768492329
+      ],
+      "resource_per_log_bin": [
+        1.3111740010776163,
+        1.1414432652173518,
+        0.9936840775055329,
+        0.8650522334108313,
+        0.7530717090763693,
+        0.6555870005388084,
+        0.5707216326086759,
+        0.49684203875276645,
+        0.43252611670541563,
+        0.3765358545381847,
+        0.3277935002694041,
+        0.285360816304338
+      ],
+      "normalized_resource_per_log_bin": [
+        1.9165025790497023,
+        1.6684123997501934,
+        1.452437354412769,
+        1.2644201570363687,
+        1.1007416799509844,
+        0.9582512895248515,
+        0.8342061998750967,
+        0.7262186772063846,
+        0.6322100785181843,
+        0.5503708399754922,
+        0.4791256447624257,
+        0.4171030999375484
+      ],
+      "binned_max_log_departure": 0.8744218456861449,
+      "binned_resource_max_min_ratio": 4.594793419988139
+    }
+  ],
+  "log_bin_edges": [
+    0.0,
+    0.34657359027997264,
+    0.6931471805599453,
+    1.0397207708399179,
+    1.3862943611198906,
+    1.7328679513998633,
+    2.0794415416798357,
+    2.4260151319598084,
+    2.772588722239781,
+    3.119162312519754,
+    3.4657359027997265,
+    3.8123094930796992,
+    4.1588830833596715
+  ],
+  "primary_null_exponent": 2.0,
+  "mechanism": "Stationary solution g*d(n)/du=-h(u)*n(u), external entry at u=0 and exit at u=L; removal hazard and growth are specified before simulation.",
+  "stage_order": "prediction freeze, independent null calibration, held-out stationary cross sections, analysis",
+  "versions": {
+    "python": "3.11.6",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.7"
+  }
+}

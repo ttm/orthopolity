@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "run_id": "aquatic-study-transfer-2026-10-01",
+  "evidence_kind": "actual_measurement",
+  "resources": [
+    {
+      "name": "reported biomass",
+      "definition": "Reported biomass; object cost proportional to body mass in each source study's units",
+      "units": "Source-specific reported biomass units; compared via dimensionless slopes"
+    }
+  ],
+  "data_inputs": [
+    {
+      "path": "data/raw/GLOSSAQUA_Size.txt",
+      "sha256": "735f53d82fd40919539ffa7303bd3243388a38f0d375375e362b2cb256500b98"
+    },
+    {
+      "path": "data/aquatic-study-transfer/2026-10-01/membership.json",
+      "sha256": "132091846962fa685260248f8aae58f2b96ea6c41f3e315df1d6b5eb84ed48a3"
+    },
+    {
+      "path": "data/aquatic-study-transfer/2026-10-01/selected-records.json",
+      "sha256": "5a39d05162fd031bc4c96cb550f871a4fa3454169597938719793fb0b8c3046c"
+    },
+    {
+      "path": "data/aquatic-study-transfer/2026-10-01/study-specification.json",
+      "sha256": "46b6fcbb269e46b4d9a7d20492f7378a68922ea73e37713b2c06a738d753c4d9"
+    }
+  ],
+  "generated_seeds": {
+    "status": "Deterministic selection, fitting, and scoring; no random seed"
+  },
+  "algorithms": [
+    {
+      "name": "Study-excluded weighted-moment slope prediction",
+      "sources": [
+        {
+          "path": "data/run-sources/4be520898f86191ecf3aa792adc583fc7a2cb670e025df97d438fda894f2a8cb/run_aquatic_study_transfer.py",
+          "sha256": "4be520898f86191ecf3aa792adc583fc7a2cb670e025df97d438fda894f2a8cb",
+          "original_path": "experiments/run_aquatic_study_transfer.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/de2c5d73c807dfd006e9c2427bb3720f14122b42eafce2e4851be94b20512e7c/aquatic_study_transfer.py",
+          "sha256": "de2c5d73c807dfd006e9c2427bb3720f14122b42eafce2e4851be94b20512e7c",
+          "original_path": "src/orthopolity/aquatic_study_transfer.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/33824ebac344210cf59ef2dc83d795e35676d859830c96e7171db9ff6bb1781e/run_registry.py",
+          "sha256": "33824ebac344210cf59ef2dc83d795e35676d859830c96e7171db9ff6bb1781e",
+          "original_path": "src/orthopolity/run_registry.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40/figures.py",
+          "sha256": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40",
+          "original_path": "src/orthopolity/figures.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        }
+      ]
+    }
+  ],
+  "configs": [
+    {
+      "path": "data/run-sources/2c02a879bc3a18eecfaec7d601b41be94089d63e06f2f0fc0cb18d68552f1dc0/aquatic_study_transfer_2026-10-01.json",
+      "sha256": "2c02a879bc3a18eecfaec7d601b41be94089d63e06f2f0fc0cb18d68552f1dc0",
+      "original_path": "configs/aquatic_study_transfer_2026-10-01.json",
+      "provenance": "Content-addressed byte snapshot at registration"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "results/aquatic-study-transfer/folds.csv",
+      "sha256": "bf56c73c854843964edf7966976ac913688ce2e2433a1b38bbee2cea94b5cf1f"
+    },
+    {
+      "path": "results/aquatic-study-transfer/study-transfer.png",
+      "sha256": "05375e392d54aab3453a5649728dfb1ab2905184cbf013a2547b2bec6619f487"
+    },
+    {
+      "path": "results/aquatic-study-transfer/study-transfer.svg",
+      "sha256": "10ed992906e4c27c1f0fa34e4d4a173f9e70fca7a3acdc28fb17380c8e77200e"
+    },
+    {
+      "path": "results/aquatic-study-transfer/study.json",
+      "sha256": "2f18ec684be46e84de1f5146f8c3d874225c46d614751cdc864bd75ebee7a0a2"
+    }
+  ],
+  "relationships": [
+    {
+      "run_id": "models-2026-10-01",
+      "type": "empirical_test_of_fixed_cost_prediction"
+    }
+  ],
+  "hardware_metadata": {
+    "collected_utc": "2026-10-01T21:26:25.473036+00:00",
+    "recording_scope": "Current metadata collector process; not a historical hardware reconstruction",
+    "os": {
+      "system": "Darwin",
+      "release": "25.6.0",
+      "version": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+      "build": null,
+      "product_version": "26.6.2"
+    },
+    "cpu": {
+      "model": null,
+      "architecture": "arm64",
+      "logical_count": 10
+    },
+    "total_ram_bytes": null,
+    "python_version": "3.11.6",
+    "availability": {
+      "cpu_model": false,
+      "total_ram": false,
+      "os_build": false
+    },
+    "numpy": {
+      "available": true,
+      "version": "2.3.5",
+      "blas": {
+        "name": "accelerate",
+        "version": "unknown"
+      }
+    },
+    "requested_thread_environment": {},
+    "runtime_thread_verification": {
+      "inspection_available": false,
+      "blas_count_available": false,
+      "libraries": [],
+      "thread_count_verified": false,
+      "verified_single_thread": false,
+      "scope": "Optional threadpoolctl is unavailable; requested environment is not runtime verification"
+    }
+  },
+  "summary": {
+    "new_observations_collected": 0,
+    "primary_records": 103,
+    "primary_studies": 8,
+    "primary_equal_study_fixed_minus_training_log_score": 1.4712092510566237,
+    "ci_sensitivity_records": 747,
+    "ci_sensitivity_studies": 11,
+    "ci_sensitivity_fixed_minus_training_log_score": 0.07998133696911781,
+    "strict_measurement_only_mean_log_score": -11.63650196746947,
+    "inference": "Descriptive overlapping-fold transport scores; no independent-fold p-value or population equivalence verdict"
+  }
+}

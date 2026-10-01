@@ -1,0 +1,30 @@
+{
+  "study": "Retrospective leave-study-out prediction of aquatic biomass slopes",
+  "run_id": "aquatic-study-transfer-2026-10-01",
+  "status": "Exploratory held-out-by-fitting reanalysis; all source data have previously been inspected",
+  "input": "data/raw/GLOSSAQUA_Size.txt",
+  "predicted_nbss_slope": -1.0,
+  "resource": "Reported biomass; object cost proportional to body mass in each source study's units",
+  "coordinate": "Reported body mass; slopes invariant to constant changes of mass units",
+  "reference_measure": "d ln body mass",
+  "inclusion": {
+    "XaxisParameterType": "body mass",
+    "SizeSpectrumMethod": "Normalized biomass spectrum (linear)",
+    "finite_slope_and_positive_ordered_bounds": true
+  },
+  "excluded_studies": {
+    "StudyID_07": "Known invalid upper size bounds; no correction inferred from slopes"
+  },
+  "primary_errors": "Directly reported finite positive SlopeSE only",
+  "sensitivity_errors": "Direct SE preferred; otherwise ordered confidence-bound width divided by 3.92 under an unverified 95%-Gaussian assumption",
+  "training_weights": "Equal total weight per study, then equal weight per row within study",
+  "location_estimator": "Weighted mean; the held-out study is excluded from every fitted quantity",
+  "shared_spread_estimator": "max(0, weighted centered slope variance minus weighted squared standard error)",
+  "models": ["fixed_neutral_shared_scatter", "training_location_shared_scatter", "fixed_neutral_measurement_only"],
+  "primary_score": "Mean held-out log predictive density per study, aggregated with equal study weights",
+  "point_sensitivity": "All eligible slopes, comparing -1 against the training median of study medians by held-study mean absolute error",
+  "predictive_interval_level": 0.95,
+  "endpoint_drift_factors": [1.25, 2.0],
+  "inference": "Descriptive overlapping-fold transport scores; no independent-fold p-value or population equivalence verdict",
+  "randomness": "Deterministic selection, fitting, and scoring; no random seed"
+}

@@ -22,6 +22,13 @@ protocol](scheduler-allocation.md) supplies competing restriction predictions;
 the present host fails its scarcity qualification, so no actual allocation
 trial was executed.
 
+The [additional profile tests](additional-profile-tests.md) use available
+natural-system measurements and simulation outputs: solar forecasts across
+calendar years, aquatic predictions across excluded studies, and a
+growth/removal counterexample to exponent-only identification. They supply
+empirical comparison and test calibration without requiring new allocation
+hardware; their retrospective/data-source limits are retained.
+
 ## The central hypothesis and its operational targets
 
 The general organizing relation is $H(k)=G(k)h(k)$. A constant aggregate $H$ and

@@ -39,6 +39,13 @@ an incomplete attempt. The [CPU-allocation protocol](docs/scheduler-allocation.m
 adds discriminating intervention predictions; the current host does not meet
 its scarcity requirement, so its allocation results remain conditional simulations.
 
+[Additional tests on retained data](docs/additional-profile-tests.md) evaluate
+solar full-profile forecasts across years, aquatic slope predictions across
+entire excluded studies, and growth/removal simulations with matching fitted
+exponents but unequal resource profiles. They add empirical discrimination and
+an explicit limit on exponent-based identification, with source and uncertainty
+caveats retained.
+
 The [predictive reliability benchmarks](docs/predictive-benchmarks.md) extend this
 programme to capacity-only family selection, training uncertainty, omitted
 resources, negative dependence, and calibrated intervention sampling. They show
@@ -173,7 +180,7 @@ Reanalysis writes under `build/reproductions/workload-pilot/`, preserving the
 registered result bytes. Set `STUDY_OUTPUT_ROOT` to another fresh destination
 to direct model/workload-pilot reproductions elsewhere.
 
-Inspect the completed transfer comparison and audit all eleven retained runs:
+Inspect the completed transfer comparison and audit the retained runs:
 
 ~~~bash
 make workload-transfer-report registry-verify PY=python3.11
@@ -185,6 +192,17 @@ data/output directories. `make scheduler-allocation PY=python3.11` reuses the
 retained gate/design and checks eligibility before any actual trial. The
 [allocation protocol](docs/scheduler-allocation.md) explains the current
 hardware qualification and commands for collection on an eligible host.
+
+Reproduce/reuse the additional empirical and simulation tests:
+
+~~~bash
+make profile-tests profile-test-registry registry-verify PY=python3.11
+~~~
+
+The [comparison report](docs/additional-profile-tests.md) links specifications,
+raw-input membership records, frozen predictions, results and limitations.
+The registry now retains fifteen records, including incomplete attempts and
+a simulation replay that adds no independent evidence.
 
 ## Repository guide
 
@@ -205,6 +223,7 @@ hardware qualification and commands for collection on an eligible host.
 | [docs/workload-transfer.md](docs/workload-transfer.md) | Original forecasts versus prospective local recalibration on 672 fresh outcomes under unchanged quotas and criteria |
 | [docs/run-registry.md](docs/run-registry.md) | Append-only study records, source/configuration archives, resources, hardware metadata and lineage |
 | [docs/scheduler-allocation.md](docs/scheduler-allocation.md) | Gated measurement protocol, competing allocation predictions and current hardware qualification |
+| [docs/additional-profile-tests.md](docs/additional-profile-tests.md) | Solar year transfer, aquatic study transfer, and exponent versus full-profile identification tests |
 | [src/](src/) / [tests/](tests/) | Accounting, distribution fitting, equivalence diagnostics, meta-analysis, and regression checks |
 | [experiments/](experiments/) / [results/](results/) | Reproducible analyses and outputs |
 | [data/SOURCES.md](data/SOURCES.md) / [data/NOTICE.md](data/NOTICE.md) | Input provenance and source-specific notices |

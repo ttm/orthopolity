@@ -10,7 +10,7 @@ PY ?= python3
 export PYTHONPATH := src
 STUDY_OUTPUT_ROOT ?= build/reproductions
 
-.PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory models dependence attachment restrictions followup competition forecast interventions robustness workload-pilot workload-report workload-transfer workload-transfer-report scheduler-allocation run-registry registry-verify analyses paper clean
+.PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory models dependence attachment restrictions followup competition forecast interventions robustness workload-pilot workload-report workload-transfer workload-transfer-report scheduler-allocation run-registry registry-verify solar-resource-transfer aquatic-study-transfer resource-identification profile-tests profile-test-registry analyses paper clean
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -36,7 +36,7 @@ restore-data:    ## explicitly permit network restoration of missing snapshots
 	$(PY) experiments/fetch_data.py --restore
 
 test:            ## accounting, estimator, goodness-of-fit and meta-analysis checks
-	$(PY) -m unittest discover -s tests -v
+	MPLCONFIGDIR=build/matplotlib $(PY) -m unittest discover -s tests -v
 
 analyses: pilot gof independent ensemble strata variance theory
 
@@ -107,6 +107,21 @@ run-registry:     ## idempotently catalogue eight reference studies and audit ev
 
 registry-verify:  ## check registry integrity, retained files, and lineage offline
 	$(PY) experiments/register_runs.py --verify
+
+solar-resource-transfer: ## retained measured-fluence forecasts and calendar-year holdout
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_solar_resource_transfer.py
+
+aquatic-study-transfer: ## exclude whole studies from fitting published-slope forecasts
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_aquatic_study_transfer.py
+
+resource-identification: ## exponent agreement versus complete profiles in growth/removal models
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_resource_identification.py
+
+profile-tests: solar-resource-transfer aquatic-study-transfer resource-identification
+
+profile-test-registry: ## idempotently register the additional empirical/simulation tests
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_aquatic_study_transfer.py --register
+	$(PY) experiments/register_profile_tests.py
 
 paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 

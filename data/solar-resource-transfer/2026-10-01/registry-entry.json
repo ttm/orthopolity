@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "run_id": "solar-resource-transfer-2026-10-01",
+  "evidence_kind": "actual_measurement",
+  "resources": [
+    {
+      "name": "rise-window fluence",
+      "definition": "Supplied start-to-peak XRS integrated irradiance at the observer, without additional background subtraction",
+      "units": "J/m\u00b2"
+    },
+    {
+      "name": "end-window fluence",
+      "definition": "Supplied start-to-end XRS integrated irradiance; complete-case sensitivity with missingness retained",
+      "units": "J/m\u00b2"
+    }
+  ],
+  "data_inputs": [
+    {
+      "path": "data/raw/noaa_2022.csv",
+      "sha256": "1a7978e87410a64db53e1459bd125727c114eb5d6f19dbb15e1fad3ef09991e9"
+    },
+    {
+      "path": "data/raw/noaa_2023.csv",
+      "sha256": "23902fe462a5eafc500ea15d897d59e57480526d83dda448b9047ead4a89dbe5"
+    },
+    {
+      "path": "data/raw/noaa_2024.csv",
+      "sha256": "74f23ea854f8f1f39b7b6521a08d7cf280a46e46f06ac6924b308d1ae070b4cd"
+    },
+    {
+      "path": "data/raw/noaa_metadata.json",
+      "sha256": "e7b8eb00a573056dce08c86c277fc186bed92a991f414eb8cde9855a4a3aa996"
+    },
+    {
+      "path": "data/solar-resource-transfer/2026-10-01/frozen-plan.json",
+      "sha256": "2733d224d647c2b177daecc44b3652ea3bb2c09f3dc6715d0cda5dfd11c5f093"
+    },
+    {
+      "path": "data/solar-resource-transfer/2026-10-01/training-membership.csv",
+      "sha256": "6fd3deccef9d0b4c1e40eebde38cb15412fc288813d5975a34dccbccf6c77aef"
+    },
+    {
+      "path": "data/solar-resource-transfer/2026-10-01/validation-membership.csv",
+      "sha256": "9a6eb094131ef969176b7b24a39d16089625416f90676b0a87a3a4c6d4abc2c6"
+    }
+  ],
+  "generated_seeds": {
+    "base_seed": 202610019,
+    "bootstrap_replicates": 2000,
+    "algorithm": "Paired month-block resampling stratified within each calendar year, as specified in archived source"
+  },
+  "algorithms": [
+    {
+      "name": "Measured-cost full-profile temporal forecast",
+      "sources": [
+        {
+          "path": "data/run-sources/265493da22050fbb4407b750ae74f3e69832d380db45ee8e6a09f73116b9cd2a/run_solar_resource_transfer.py",
+          "sha256": "265493da22050fbb4407b750ae74f3e69832d380db45ee8e6a09f73116b9cd2a",
+          "original_path": "experiments/run_solar_resource_transfer.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/ab07fbfc0c0781cecae0e0939ee6efce7c031880b439ccb4ae4607341cbc3e22/solar_resource_transfer.py",
+          "sha256": "ab07fbfc0c0781cecae0e0939ee6efce7c031880b439ccb4ae4607341cbc3e22",
+          "original_path": "src/orthopolity/solar_resource_transfer.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40/figures.py",
+          "sha256": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40",
+          "original_path": "src/orthopolity/figures.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        }
+      ]
+    }
+  ],
+  "configs": [
+    {
+      "path": "data/run-sources/0212cda0978a86879104c71dc4af3f2ee98e025873ae4405ee4ded434959bea8/solar_resource_transfer_2026-10-01.json",
+      "sha256": "0212cda0978a86879104c71dc4af3f2ee98e025873ae4405ee4ded434959bea8",
+      "original_path": "configs/solar_resource_transfer_2026-10-01.json",
+      "provenance": "Content-addressed byte snapshot at registration"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "results/solar-resource-transfer/end-bootstrap.csv",
+      "sha256": "0e31266a9c1a4a3a5cb6dc1a924d0294757fccfb86b9692ad29d1180f1647ce8"
+    },
+    {
+      "path": "results/solar-resource-transfer/end-profiles.csv",
+      "sha256": "8b7239c3e00400eabdc8582cf5eb01dc5ef379bebd4a16aaa0c073480f5107ee"
+    },
+    {
+      "path": "results/solar-resource-transfer/profiles.png",
+      "sha256": "088872643ce7eb4ac9ebf911032d68c270e86207d5a850e64e3aabd5e8c9604d"
+    },
+    {
+      "path": "results/solar-resource-transfer/profiles.svg",
+      "sha256": "97b9cf48814e4c7dcbef529350ad12a40c1996e7ec2243cc8d40d35fba6d450e"
+    },
+    {
+      "path": "results/solar-resource-transfer/rise-bootstrap.csv",
+      "sha256": "b5f82e08fa4179bafced4d2d1ea8d60808a391003dcdade37575f900ae42e259"
+    },
+    {
+      "path": "results/solar-resource-transfer/rise-profiles.csv",
+      "sha256": "d2f5406ad18b8a01136c2985322564320011f35c85b7ad86d0a2a87df5950bc0"
+    },
+    {
+      "path": "results/solar-resource-transfer/study.json",
+      "sha256": "cd29a67b7a0e0ca1cb9fbd1c18b2b43739b403db107f28ab66aa5132b0f2ba2e"
+    }
+  ],
+  "relationships": [
+    {
+      "run_id": "models-2026-10-01",
+      "type": "empirical_full_profile_test"
+    }
+  ],
+  "hardware_metadata": {
+    "recording_scope": "Recorded numerical execution versions; additional host facts not recorded",
+    "recorded_environment": {
+      "python": "3.11.6",
+      "numpy": "2.3.5",
+      "matplotlib": "3.10.7"
+    },
+    "cpu_model": null,
+    "total_ram_bytes": null
+  },
+  "summary": {
+    "new_observations_collected": 0,
+    "training_events": 573,
+    "heldout_events": 936,
+    "primary_count_scores": {
+      "log_resource_neutral": {
+        "count_cross_entropy_nats_per_event": 1.3376517931403045,
+        "count_total_variation": 0.16683359225313363,
+        "resource_share_total_variation": 0.1424709224048688,
+        "count_cross_entropy_nats_per_event_ci": [
+          1.2576505776902756,
+          1.419313096714717
+        ],
+        "count_total_variation_ci": [
+          0.09472991111920488,
+          0.251355785418644
+        ],
+        "resource_share_total_variation_ci": [
+          0.037868646404563104,
+          0.3414060694269488
+        ]
+      },
+      "linear_resource_neutral": {
+        "count_cross_entropy_nats_per_event": 2.5830444119009037,
+        "count_total_variation": 0.6853533919220638,
+        "resource_share_total_variation": 0.551561831495778,
+        "count_cross_entropy_nats_per_event_ci": [
+          2.3296417517261325,
+          2.9088585786734846
+        ],
+        "count_total_variation_ci": [
+          0.6162991012869369,
+          0.761066781494521
+        ],
+        "resource_share_total_variation_ci": [
+          0.4307053711627105,
+          0.7500433404387087
+        ]
+      },
+      "historical_count_shape": {
+        "count_cross_entropy_nats_per_event": 1.267645359870592,
+        "count_total_variation": 0.022447084619859496,
+        "resource_share_total_variation": 0.1783243625691334,
+        "count_cross_entropy_nats_per_event_ci": [
+          1.143503614443415,
+          1.4021277973648665
+        ],
+        "count_total_variation_ci": [
+          0.016266971203346938,
+          0.10327345366685041
+        ],
+        "resource_share_total_variation_ci": [
+          0.03753571072466957,
+          0.33629107558179344
+        ]
+      }
+    },
+    "paired_cross_entropy": {
+      "linear_resource_neutral": {
+        "value": 1.2453926187605993,
+        "ci": [
+          0.9971021484467234,
+          1.5389469282661024
+        ]
+      },
+      "historical_count_shape": {
+        "value": -0.07000643326971256,
+        "ci": [
+          -0.16342709855968074,
+          0.008968071793712793
+        ]
+      }
+    },
+    "scope": "Previously inspected measured snapshots; frozen forecasts use only 2022/2023 cost and count summaries. No new observations, blinding or external preregistration."
+  }
+}

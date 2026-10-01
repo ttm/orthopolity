@@ -176,3 +176,10 @@ measurements, source/configuration snapshots and lineage. The [CPU-allocation
 protocol](scheduler-allocation.md) defines a next allocation experiment and
 competing restriction predictions, but current hardware does not satisfy its
 scarcity requirement. Its conditional simulations are not measured allocations.
+
+[Additional tests on retained observations](additional-profile-tests.md) now
+evaluate temporal solar resource-cost forecasts and aquatic study-excluded
+slope predictions, while a growth/removal simulation calibrates exponent and
+complete-profile screens. The natural-system tests reanalyse already inspected
+data and do not claim new independent observations. Their comparison and
+measurement limitations identify which future profile tests need calibration.

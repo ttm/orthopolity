@@ -41,6 +41,12 @@ separates its empirical test from the optional construction of a deeper mechanis
   with competing class-share predictions and full CPU accounting. The current
   10-CPU host does not establish scarcity with three workers; its executed
   design simulations remain separate from actual allocation measurements.
+- Execute [additional profile tests](additional-profile-tests.md) on retained
+  solar/aquatic measurements and independently generated growth/removal cohorts.
+  They test reference-measure prediction, excluded-study transport, and the
+  insufficiency of a fitted exponent to identify a neutral resource profile.
+  Retain all forecasts, source membership, simulation statistics, limitations
+  and replay lineage in the expanded registry.
 
 ## Next substantive research step
 

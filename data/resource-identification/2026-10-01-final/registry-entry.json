@@ -1,0 +1,603 @@
+{
+  "schema_version": 1,
+  "run_id": "resource-identification-2026-10-01-final",
+  "evidence_kind": "simulation",
+  "resources": [
+    {
+      "name": "mass",
+      "definition": "Per-object stock q(x)=x in declared mass units, independently fixed across all removal conditions.",
+      "units": "mass units",
+      "cost_exponent": 1.0
+    }
+  ],
+  "data_inputs": [
+    {
+      "path": "data/resource-identification/2026-10-01-final/calibration-manifest.json",
+      "sha256": "4d578f06a6c017db6081940ac698c7563c5b8dd479f82b7a4eaf46e2f5039651"
+    },
+    {
+      "path": "data/resource-identification/2026-10-01-final/calibration.npz",
+      "sha256": "6d9960cdecc58d1a76358246c5ac69ece64e14e0559af479a9213f54d6102bbd"
+    },
+    {
+      "path": "data/resource-identification/2026-10-01-final/frozen-plan.json",
+      "sha256": "cc7ac4096f590c8b572f07b19f204896876d4522c97a3b74d4fae96b34a56976"
+    },
+    {
+      "path": "data/resource-identification/2026-10-01-final/validation-manifest.json",
+      "sha256": "4dfdc8dc7e511c0e11b5520f45c7b917046387d09cf54c7c07d8aa396f7c70c6"
+    },
+    {
+      "path": "data/resource-identification/2026-10-01-final/validation.npz",
+      "sha256": "370cd969d6fd080ed5be79f53041eb18a5264fe39368b1d8a0d9c1a45cec2132"
+    }
+  ],
+  "generated_seeds": {
+    "base_seed": 202610017,
+    "streams": "PCG64 SeedSequence([seed, stage, sample_size_index, scenario_index]); stage 10 calibration, 20 held-out validation. Scenarios ordered neutral, curved_same_exponent, shifted_power."
+  },
+  "algorithms": [
+    {
+      "name": "Stationary growth/removal populations and independently calibrated rank tests",
+      "sources": [
+        {
+          "path": "data/run-sources/6a11243014c440cad099d94b110c5d847ca45c7dbefa3e2ac78b0f067dbf304e/run_resource_identification.py",
+          "sha256": "6a11243014c440cad099d94b110c5d847ca45c7dbefa3e2ac78b0f067dbf304e",
+          "original_path": "experiments/run_resource_identification.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/3442c4498ef9a71e30addf4595dff7fad1b13c980ee54842476fde8bfa826428/resource_identification.py",
+          "sha256": "3442c4498ef9a71e30addf4595dff7fad1b13c980ee54842476fde8bfa826428",
+          "original_path": "src/orthopolity/resource_identification.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/cdc73d83e6219fe114bc0f7c5a2a9708e00a33e433ae05980e1d3804505c8841/interventions.py",
+          "sha256": "cdc73d83e6219fe114bc0f7c5a2a9708e00a33e433ae05980e1d3804505c8841",
+          "original_path": "src/orthopolity/interventions.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40/figures.py",
+          "sha256": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40",
+          "original_path": "src/orthopolity/figures.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        }
+      ]
+    }
+  ],
+  "configs": [
+    {
+      "path": "data/run-sources/7eb81bdfa93590a5e4d4264cb1893767be71befa17f1d250ac954b762f33313a/resource_identification_2026-10-01.json",
+      "sha256": "7eb81bdfa93590a5e4d4264cb1893767be71befa17f1d250ac954b762f33313a",
+      "original_path": "configs/resource_identification_2026-10-01.json",
+      "provenance": "Content-addressed byte snapshot at registration"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "results/resource-identification/decisions.csv",
+      "sha256": "94b197e30c6af5f5285d810f0b340a8cf38a8e2e8cd152864ee095634556c634"
+    },
+    {
+      "path": "results/resource-identification/identification.png",
+      "sha256": "7aa5a02e30d39e3fb409313344550e8ac204dc6337b163c75712beabac59df53"
+    },
+    {
+      "path": "results/resource-identification/identification.svg",
+      "sha256": "1821a4d7cf115d64d3ee75df8b70453c3cf0d8f3d1780a009656070b0be290ce"
+    },
+    {
+      "path": "results/resource-identification/pvalues.npz",
+      "sha256": "faf47db5078f0d1690a4b195ffac8556616167e78259a953c52bc578eb7c1611"
+    },
+    {
+      "path": "results/resource-identification/study.json",
+      "sha256": "85b207892a13e2dc8651ee20c11eaa2c8917014773871e2fb34e999b931e2410"
+    }
+  ],
+  "relationships": [
+    {
+      "run_id": "resource-identification-2026-10-01",
+      "type": "same_seed_computational_replay_after_plot_fix"
+    }
+  ],
+  "hardware_metadata": {
+    "recording_scope": "Recorded numerical execution versions; additional host facts not recorded",
+    "recorded_environment": {
+      "python": "3.11.6",
+      "numpy": "2.3.5",
+      "scipy": "1.16.3",
+      "matplotlib": "3.10.7"
+    },
+    "cpu_model": null,
+    "total_ram_bytes": null
+  },
+  "summary": {
+    "rendering_status": "complete",
+    "independent_numerical_realization": false,
+    "calibration_cohorts": 36000,
+    "heldout_cohorts": 18000,
+    "operating_characteristics": [
+      {
+        "scenario": "neutral",
+        "sample_size": 100,
+        "exponent_compatibility": {
+          "rate": 0.953,
+          "successes": 1906,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.9428245575283534,
+            0.9614385976348314
+          ]
+        },
+        "frozen_neutral_profile_rejection": {
+          "rate": 0.0475,
+          "successes": 95,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.03901402059617837,
+            0.05772090719335553
+          ]
+        },
+        "frozen_mechanism_profile_rejection": {
+          "rate": 0.0475,
+          "successes": 95,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.03901402059617837,
+            0.05772090719335553
+          ]
+        },
+        "exponent_compatible_but_neutral_profile_rejected": {
+          "rate": 0.037,
+          "successes": 74,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.029575304829629133,
+            0.04619988095281107
+          ]
+        },
+        "observed_exponent": {
+          "mean": 2.0094113762267627,
+          "sd": 0.11997662738448861,
+          "quantile_025": 1.792748996381676,
+          "quantile_975": 2.264920640894117
+        },
+        "mean_zero_count_bins": 1.418,
+        "physical_mass_profile_total_variation": {
+          "mean": 0.22748150327629332,
+          "quantile_90": 0.29701544367769606
+        },
+        "population_exponent": 2.0,
+        "population_resource_max_log_departure": 0.0
+      },
+      {
+        "scenario": "curved_same_exponent",
+        "sample_size": 100,
+        "exponent_compatibility": {
+          "rate": 0.934,
+          "successes": 1868,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.9222654015999561,
+            0.9440706013599165
+          ]
+        },
+        "frozen_neutral_profile_rejection": {
+          "rate": 0.0985,
+          "successes": 197,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.08619980868374258,
+            0.11233958028310354
+          ]
+        },
+        "frozen_mechanism_profile_rejection": {
+          "rate": 0.047,
+          "successes": 94,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.038561402365168564,
+            0.05717544247164658
+          ]
+        },
+        "exponent_compatible_but_neutral_profile_rejected": {
+          "rate": 0.085,
+          "successes": 170,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.07355910081272696,
+            0.09803204843071298
+          ]
+        },
+        "observed_exponent": {
+          "mean": 2.011297166260485,
+          "sd": 0.1286062153361257,
+          "quantile_025": 1.7691414067796258,
+          "quantile_975": 2.279937189270966
+        },
+        "mean_zero_count_bins": 0.9915,
+        "physical_mass_profile_total_variation": {
+          "mean": 0.22437570835535162,
+          "quantile_90": 0.3082218551446675
+        },
+        "population_exponent": 2.0,
+        "population_resource_max_log_departure": 0.42623364809807496
+      },
+      {
+        "scenario": "shifted_power",
+        "sample_size": 100,
+        "exponent_compatibility": {
+          "rate": 0.119,
+          "successes": 238,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.10553480426223787,
+            0.13392598576607684
+          ]
+        },
+        "frozen_neutral_profile_rejection": {
+          "rate": 0.4225,
+          "successes": 845,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.401020588630758,
+            0.4442765536978361
+          ]
+        },
+        "frozen_mechanism_profile_rejection": {
+          "rate": 0.0435,
+          "successes": 87,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.03540128785854411,
+            0.0533489763092398
+          ]
+        },
+        "exponent_compatible_but_neutral_profile_rejected": {
+          "rate": 0.0075,
+          "successes": 15,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.004550377435809225,
+            0.012337914136224913
+          ]
+        },
+        "observed_exponent": {
+          "mean": 2.410964141592222,
+          "sd": 0.14942354401602645,
+          "quantile_025": 2.145841304485775,
+          "quantile_975": 2.7308696149267537
+        },
+        "mean_zero_count_bins": 3.067,
+        "physical_mass_profile_total_variation": {
+          "mean": 0.2331346525792968,
+          "quantile_90": 0.28619344726040874
+        },
+        "population_exponent": 2.4,
+        "population_resource_max_log_departure": 0.8744218456861449
+      },
+      {
+        "scenario": "neutral",
+        "sample_size": 1000,
+        "exponent_compatibility": {
+          "rate": 0.947,
+          "successes": 1894,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.9362966169363569,
+            0.9559895427942029
+          ]
+        },
+        "frozen_neutral_profile_rejection": {
+          "rate": 0.047,
+          "successes": 94,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.038561402365168564,
+            0.05717544247164658
+          ]
+        },
+        "frozen_mechanism_profile_rejection": {
+          "rate": 0.047,
+          "successes": 94,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.038561402365168564,
+            0.05717544247164658
+          ]
+        },
+        "exponent_compatible_but_neutral_profile_rejected": {
+          "rate": 0.04,
+          "successes": 80,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.032256746939981165,
+            0.04950693655877153
+          ]
+        },
+        "observed_exponent": {
+          "mean": 2.0015122207949236,
+          "sd": 0.037560682527847784,
+          "quantile_025": 1.9301368400047554,
+          "quantile_975": 2.077912432723632
+        },
+        "mean_zero_count_bins": 0.0025,
+        "physical_mass_profile_total_variation": {
+          "mean": 0.0713948138586761,
+          "quantile_90": 0.09652397186611812
+        },
+        "population_exponent": 2.0,
+        "population_resource_max_log_departure": 0.0
+      },
+      {
+        "scenario": "curved_same_exponent",
+        "sample_size": 1000,
+        "exponent_compatibility": {
+          "rate": 0.9325,
+          "successes": 1865,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.9206548165175205,
+            0.9426869375841956
+          ]
+        },
+        "frozen_neutral_profile_rejection": {
+          "rate": 0.643,
+          "successes": 1286,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.6217464611040721,
+            0.6637052633734896
+          ]
+        },
+        "frozen_mechanism_profile_rejection": {
+          "rate": 0.046,
+          "successes": 92,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.03765702335931109,
+            0.05608365557206656
+          ]
+        },
+        "exponent_compatible_but_neutral_profile_rejected": {
+          "rate": 0.585,
+          "successes": 1170,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.5632630456485423,
+            0.6064110563136447
+          ]
+        },
+        "observed_exponent": {
+          "mean": 2.00134712504352,
+          "sd": 0.04043616871189773,
+          "quantile_025": 1.9261835874784223,
+          "quantile_975": 2.0831118648823757
+        },
+        "mean_zero_count_bins": 0.0,
+        "physical_mass_profile_total_variation": {
+          "mean": 0.07097507632249801,
+          "quantile_90": 0.09701417470872556
+        },
+        "population_exponent": 2.0,
+        "population_resource_max_log_departure": 0.42623364809807496
+      },
+      {
+        "scenario": "shifted_power",
+        "sample_size": 1000,
+        "exponent_compatibility": {
+          "rate": 0.0,
+          "successes": 0,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        },
+        "frozen_neutral_profile_rejection": {
+          "rate": 1.0,
+          "successes": 2000,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.9980829527187469,
+            0.9999999999999998
+          ]
+        },
+        "frozen_mechanism_profile_rejection": {
+          "rate": 0.046,
+          "successes": 92,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.03765702335931109,
+            0.05608365557206656
+          ]
+        },
+        "exponent_compatible_but_neutral_profile_rejected": {
+          "rate": 0.0,
+          "successes": 0,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        },
+        "observed_exponent": {
+          "mean": 2.399876213934989,
+          "sd": 0.04694700712497778,
+          "quantile_025": 2.3075733116211197,
+          "quantile_975": 2.490749806084853
+        },
+        "mean_zero_count_bins": 0.1965,
+        "physical_mass_profile_total_variation": {
+          "mean": 0.07392491027409887,
+          "quantile_90": 0.09687981370271515
+        },
+        "population_exponent": 2.4,
+        "population_resource_max_log_departure": 0.8744218456861449
+      },
+      {
+        "scenario": "neutral",
+        "sample_size": 10000,
+        "exponent_compatibility": {
+          "rate": 0.941,
+          "successes": 1882,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.9298033851481019,
+            0.9505057791498329
+          ]
+        },
+        "frozen_neutral_profile_rejection": {
+          "rate": 0.0515,
+          "successes": 103,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.042644720050338814,
+            0.062074871360945055
+          ]
+        },
+        "frozen_mechanism_profile_rejection": {
+          "rate": 0.0515,
+          "successes": 103,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.042644720050338814,
+            0.062074871360945055
+          ]
+        },
+        "exponent_compatible_but_neutral_profile_rejected": {
+          "rate": 0.043,
+          "successes": 86,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.03495107254461269,
+            0.05280110867045247
+          ]
+        },
+        "observed_exponent": {
+          "mean": 2.000392966779166,
+          "sd": 0.011988326560884726,
+          "quantile_025": 1.977388590711883,
+          "quantile_975": 2.024233949120404
+        },
+        "mean_zero_count_bins": 0.0,
+        "physical_mass_profile_total_variation": {
+          "mean": 0.02238646869246554,
+          "quantile_90": 0.030087293917882157
+        },
+        "population_exponent": 2.0,
+        "population_resource_max_log_departure": 0.0
+      },
+      {
+        "scenario": "curved_same_exponent",
+        "sample_size": 10000,
+        "exponent_compatibility": {
+          "rate": 0.9235,
+          "successes": 1847,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.9110221882003662,
+            0.9343540727524124
+          ]
+        },
+        "frozen_neutral_profile_rejection": {
+          "rate": 1.0,
+          "successes": 2000,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.9980829527187469,
+            0.9999999999999998
+          ]
+        },
+        "frozen_mechanism_profile_rejection": {
+          "rate": 0.061,
+          "successes": 122,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.05132898110812262,
+            0.07235418640481744
+          ]
+        },
+        "exponent_compatible_but_neutral_profile_rejected": {
+          "rate": 0.9235,
+          "successes": 1847,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.9110221882003662,
+            0.9343540727524124
+          ]
+        },
+        "observed_exponent": {
+          "mean": 2.000144537027183,
+          "sd": 0.012909946549753162,
+          "quantile_025": 1.9759779209660466,
+          "quantile_975": 2.0260562234056017
+        },
+        "mean_zero_count_bins": 0.0,
+        "physical_mass_profile_total_variation": {
+          "mean": 0.022243495648353675,
+          "quantile_90": 0.030940785579082922
+        },
+        "population_exponent": 2.0,
+        "population_resource_max_log_departure": 0.42623364809807496
+      },
+      {
+        "scenario": "shifted_power",
+        "sample_size": 10000,
+        "exponent_compatibility": {
+          "rate": 0.0,
+          "successes": 0,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        },
+        "frozen_neutral_profile_rejection": {
+          "rate": 1.0,
+          "successes": 2000,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.9980829527187469,
+            0.9999999999999998
+          ]
+        },
+        "frozen_mechanism_profile_rejection": {
+          "rate": 0.0575,
+          "successes": 115,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            0.04812031303342549,
+            0.06857627381048334
+          ]
+        },
+        "exponent_compatible_but_neutral_profile_rejected": {
+          "rate": 0.0,
+          "successes": 0,
+          "replicates": 2000,
+          "monte_carlo_interval": [
+            1.0842021724855044e-19,
+            0.001917047281252934
+          ]
+        },
+        "observed_exponent": {
+          "mean": 2.4002511484947133,
+          "sd": 0.014692798796547814,
+          "quantile_025": 2.3708009410059763,
+          "quantile_975": 2.429161920178173
+        },
+        "mean_zero_count_bins": 0.0,
+        "physical_mass_profile_total_variation": {
+          "mean": 0.023455693652163247,
+          "quantile_90": 0.03099535438580616
+        },
+        "population_exponent": 2.4,
+        "population_resource_max_log_departure": 0.8744218456861449
+      }
+    ],
+    "interpretation": "Known transport/removal dynamics and deliberate moment matching construct an identification limit. Results test the sufficiency of an exponent and quantify observation requirements; they do not establish autonomous resource neutrality, a natural law, or novelty of standard moment identities."
+  }
+}
