@@ -22,11 +22,12 @@ retrospective validation, not global blinding or prospective data collection.
 
 ## Current state
 
-- Starting branch: `py314-and-package-names`; latest pushed starting commit
-  `ca0c683` (available-data roadmap), following completed study commit `ec5f078`.
+- Branch: `py314-and-package-names`. Protocol checkpoint `bc57364` follows the
+  available-data roadmap `ca0c683` and the last completed study `ec5f078`.
 - Registry: 18 executed/incomplete historical records, 464 retained references.
-  Previous complete suite: 240 passing tests. New protocols and original inputs are now retained; neither new study has
-  been numerically fitted, evaluated or registered.
+  Complete suite at the start of session 2: 265 passing tests. New protocols and
+  original inputs are retained; neither new study has been numerically fitted,
+  evaluated or registered.
 - Metadata screening ranks Dryad `10.5061/dryad.51c59zwj5` first: separate
   preliminary algal C/N and cell-volume records plus 24 nutrient-pulsed vessels.
 - The main series resolves three algal groups: Cryptomonas, Chlamydomonas, and
@@ -80,8 +81,10 @@ No prediction freeze or validation result exists yet for this candidate.
 ## Current files and ownership boundaries
 
 - Source acquisition: `experiments/fetch_chemostat_sources.py`,
-  `data/chemostat-sources/2026-10-02/`; audit report in progress at
-  `docs/chemostat-source-audit.md`.
+  `data/chemostat-sources/2026-10-02/`; completed audit report at
+  `docs/chemostat-source-audit.md`. Git omits only the 98.7 MB Zenodo bundle
+  and its extracted 94.8 MB `.RData`. Restore both by checksum with
+  `make restore-chemostat-bundle PY=python3.11`.
 - Response mathematics in development: `src/orthopolity/chemostat_response.py`
   and `tests/test_chemostat_response.py`. Primary design uses additive changes
   in resource shares, explicit simplex projection, and a separate stock-total
@@ -129,3 +132,8 @@ No prediction freeze or validation result exists yet for this candidate.
   CSV retrieval at 14:30:01–14:30:03 UTC. This Git checkpoint follows acquisition
   and precedes quota parsing/fitting. Do not describe it as a pre-acquisition
   Git commit. Source MD5 matched the provider; seven method tests pass.
+- Session 2 checkpoint (new coding session, same day): registry audit passed,
+  265 tests passed, chemostat `verify`/`audit` replays were byte-identical.
+  Retained chemostat sources committed except the two large ignored binaries.
+  Next: execute the frozen cost study, then implement and freeze the chemostat
+  forecasts.

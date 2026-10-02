@@ -14,6 +14,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 
 .PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory models dependence attachment restrictions followup competition forecast interventions robustness workload-pilot workload-report workload-transfer workload-transfer-report scheduler-allocation run-registry registry-verify solar-resource-transfer aquatic-study-transfer resource-identification profile-tests profile-test-registry analyses paper clean
 .PHONY: profile-calibration solar-validation dimensionality-intervention validation-round validation-round-registry
+.PHONY: chemostat-sources restore-chemostat-bundle
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -140,6 +141,14 @@ validation-round: profile-calibration solar-validation dimensionality-interventi
 
 validation-round-registry: ## append/check the three completed studies idempotently
 	$(PY) experiments/register_validation_round.py
+
+chemostat-sources: ## offline: verify retained chemostat sources and replay the metadata audit
+	$(PY) experiments/fetch_chemostat_sources.py --stage verify
+	$(PY) experiments/fetch_chemostat_sources.py --stage audit
+
+restore-chemostat-bundle: ## network: restore the untracked 98.7 MB author bundle by checksum
+	$(PY) experiments/restore_chemostat_bundle.py
+	$(PY) experiments/fetch_chemostat_sources.py --stage verify
 
 paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 

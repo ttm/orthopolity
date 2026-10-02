@@ -12,6 +12,12 @@ venv/
 # Interactive viewer scratch output (regenerated on demand)
 results/exploration/
 
+# Large public chemostat bundle and its extracted R workspace (~193 MB together).
+# Their checksums are retained in acquisition.json and archive-members.json;
+# restore with `make restore-chemostat-bundle`.
+data/chemostat-sources/2026-10-02/zenodo/scripts_data_plankton_responses_Npulse.zip
+data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.RData
+
 # Packaging build artefacts
 *.egg-info/
 build/

@@ -1,0 +1,386 @@
+[
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.RData",
+    "bytes": 94757037,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.RData",
+    "sha256": "1b6b433dca55738765d645aca7b544de7151aabff3ae5498112849f7d2dde613"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rhistory",
+    "bytes": 23120,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rhistory",
+    "sha256": "2c2f77d67bbe5b371b0b1a0d1dad9c225939a283b40acf923aca9dcf8378fdfd"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/pcs/files-pane.pper",
+    "bytes": 227,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/pcs/files-pane.pper",
+    "sha256": "fe96b44b3ed0227a13ec56b51977a76e371ee5fefe93f47e57c510434836fadd"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/pcs/source-pane.pper",
+    "bytes": 22,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/pcs/source-pane.pper",
+    "sha256": "fd4604a39edb54918b82c77db934a588e084305c43a827c948aa93ab2679c579"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/pcs/windowlayoutstate.pper",
+    "bytes": 285,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/pcs/windowlayoutstate.pper",
+    "sha256": "504e28956540a2c2ebf28f3441597905b4224325eb921f740658ab3fcdd15447"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/pcs/workbench-pane.pper",
+    "bytes": 57,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/pcs/workbench-pane.pper",
+    "sha256": "d55de6dc13788983c7c1dd94a52d450fe01364dd756488b76c0b1f61a125b409"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/rmd-outputs",
+    "bytes": 5,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/rmd-outputs",
+    "sha256": "7c370d9536d7d0d6a0f7cd7f9826692acd93e4fb05ba46f7b630b879740343d3"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/saved_source_markers",
+    "bytes": 27,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/saved_source_markers",
+    "sha256": "943cf5311c54c71f50cdf4d28d072c70ec8785a4b2b73bcc2000e6f1cf1dfc31"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/per/t/5ACD9AB3",
+    "bytes": 781,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/per/t/5ACD9AB3",
+    "sha256": "0488a68fe007abf7ae5f8434909d1f157a597ca85f225992ece02c95087d3b26"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/per/t/5ACD9AB3-contents",
+    "bytes": 7150,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/per/t/5ACD9AB3-contents",
+    "sha256": "f0d052989d3e7cfc30661846e533f8be1ef9103b346e9d6c48e9c7c4f017e62b"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/per/t/7A4A8DA9",
+    "bytes": 748,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/per/t/7A4A8DA9",
+    "sha256": "7aed0031fe1147b3be8a79d843b8924a92185e76ead3cef1411b92ba61933214"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/per/t/7A4A8DA9-contents",
+    "bytes": 8607,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/per/t/7A4A8DA9-contents",
+    "sha256": "1d2a2447ca359111017905bf98a63cd88f6bfc2c9c17d5448426f5b7e31b301a"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/04326B22",
+    "bytes": 110,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/04326B22",
+    "sha256": "fce23d3b56ac3a21bc956412ef5054a4aed8e33a7ffdad3af43e962bfb6c22d3"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/06FD2673",
+    "bytes": 110,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/06FD2673",
+    "sha256": "f4d7cec9517e1b4d782d5aa7333558270e5fa91cdb792b86c1794e9c3eb6411d"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/08765F5C",
+    "bytes": 54,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/08765F5C",
+    "sha256": "9198e55dc22131a6a0920c04113e609afcccb491fe7a465df8f8bbff4f07d3bc"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/08C3076F",
+    "bytes": 110,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/08C3076F",
+    "sha256": "f676a333e87f32001757fff7be01362a8e68381760aad7778e10bccb4828c0bf"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/19BB3E6D",
+    "bytes": 107,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/19BB3E6D",
+    "sha256": "88995de1839868de767554ac0659e331d20cc7bc0ff686f923e0e0884ea23c3d"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/303D7042",
+    "bytes": 106,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/303D7042",
+    "sha256": "c547bef08dc42c559e01c0d156bad27359fc5c6299149058b630370d444a64ae"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/38A33945",
+    "bytes": 110,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/38A33945",
+    "sha256": "476008ba219ad583d0fc37c5aa869beb4d1643877e9cb3592ce607eb1f92e99a"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/664FA9BB",
+    "bytes": 106,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/664FA9BB",
+    "sha256": "c547bef08dc42c559e01c0d156bad27359fc5c6299149058b630370d444a64ae"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/72A93A6A",
+    "bytes": 109,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/72A93A6A",
+    "sha256": "aeacbcf837588a7c3822729cd06d16c7e5d015a4036698f2af9d82a743678a71"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/80D70CFF",
+    "bytes": 107,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/80D70CFF",
+    "sha256": "88995de1839868de767554ac0659e331d20cc7bc0ff686f923e0e0884ea23c3d"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/8AFB3262",
+    "bytes": 108,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/8AFB3262",
+    "sha256": "683610aa8dc3a0fdbc99b9b347bb3d0a1edacd18032788864cccabc4caa068d9"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/8B544EA1",
+    "bytes": 108,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/8B544EA1",
+    "sha256": "e952c597a63b91bf139f2d1f6611e8c19a8aba287f3b5e8bef9774329f8af609"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/9D1AC0AA",
+    "bytes": 106,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/9D1AC0AA",
+    "sha256": "c547bef08dc42c559e01c0d156bad27359fc5c6299149058b630370d444a64ae"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/ADBD9464",
+    "bytes": 54,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/ADBD9464",
+    "sha256": "9198e55dc22131a6a0920c04113e609afcccb491fe7a465df8f8bbff4f07d3bc"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/B60314A1",
+    "bytes": 106,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/B60314A1",
+    "sha256": "c547bef08dc42c559e01c0d156bad27359fc5c6299149058b630370d444a64ae"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/B8D258D1",
+    "bytes": 107,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/B8D258D1",
+    "sha256": "88995de1839868de767554ac0659e331d20cc7bc0ff686f923e0e0884ea23c3d"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/C2F3B540",
+    "bytes": 106,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/C2F3B540",
+    "sha256": "c547bef08dc42c559e01c0d156bad27359fc5c6299149058b630370d444a64ae"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/D0C05085",
+    "bytes": 54,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/D0C05085",
+    "sha256": "9198e55dc22131a6a0920c04113e609afcccb491fe7a465df8f8bbff4f07d3bc"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/E5382237",
+    "bytes": 110,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/E5382237",
+    "sha256": "33289a095fd0ec8408802cf97eb8dff6de677b8ec159d2a70c6fa4dde670a82a"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/FD1D3F66",
+    "bytes": 111,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/FD1D3F66",
+    "sha256": "07eb6ffb66bd1cae602b1a23e7f17774eaa975d166a30b6f450e16a96a656dad"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/INDEX",
+    "bytes": 2737,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/1E5EB6E9/sources/prop/INDEX",
+    "sha256": "e2c386b9f81129eedcb9c0b3f9585d1e3585c38dd9ef78d716e08acf63718577"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/shared/notebooks/patch-chunk-names",
+    "bytes": 0,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/shared/notebooks/patch-chunk-names",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/.Rproj.user/shared/notebooks/paths",
+    "bytes": 2489,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/.Rproj.user/shared/notebooks/paths",
+    "sha256": "dee08f017849fb7953a8899fca288dcf88a09a17580ad98e2efa50283ac43453"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/Read_me.pdf",
+    "bytes": 66617,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/Read_me.pdf",
+    "sha256": "ae921651494d70238b436ce699f1bc919bdac5319f6f4863392921fa8d2519f7"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/data/Chemostat_experimental_timeseries.xlsx",
+    "bytes": 53060,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/data/Chemostat_experimental_timeseries.xlsx",
+    "sha256": "675854e62ade20d4ab535cd6f9abd833507a4df286eb4a85d27cadaa2ef2329f"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/data/algae_no-rotifer_chemostat_preliminary_experiments.xlsx",
+    "bytes": 14456,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/data/algae_no-rotifer_chemostat_preliminary_experiments.xlsx",
+    "sha256": "4ce7ec70f990029a341075548b8376b17e71bd816fa3f98418f2b13e90ef5ba8"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/data/algae_stoichiometry_preliminary_experiments.xlsx",
+    "bytes": 6523,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/data/algae_stoichiometry_preliminary_experiments.xlsx",
+    "sha256": "aae542acaddc7e9b4ff97b02fe0a73d2bf5463815086495f0315255dc4bf1fda"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/data/bayesian_predictions_monocultures.csv",
+    "bytes": 2120369,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/data/bayesian_predictions_monocultures.csv",
+    "sha256": "46f42b81f1b913b416b40c4588a0fd345c68ed30717adfe26b594140249da9b6"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/data/bayesian_predictions_polycultures.csv",
+    "bytes": 2114594,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/data/bayesian_predictions_polycultures.csv",
+    "sha256": "eced7c0df85eeb9227a9e653ccd136e3c48c4ed56f5a383bea61828524cf5422"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/data/fit_monocultures.rds",
+    "bytes": 1252121,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/data/fit_monocultures.rds",
+    "sha256": "0425031f004b67d7adeeee6a24c6678b15ffdb4a6b6b9f30fa0bb4412c174e5a"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/data/fit_polycultures.rds",
+    "bytes": 1126629,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/data/fit_polycultures.rds",
+    "sha256": "06f2535129ed563d72f40ab3f03a6ef20704b6d06816538e24d65085cecfefe6"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/data/plankton_response_avgOEV_TC_share.csv",
+    "bytes": 4110,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/data/plankton_response_avgOEV_TC_share.csv",
+    "sha256": "6128f18fc31b21687d04a5147cd2c84a6730f7a0ec529fbe508bd41b3c1bc227"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/figures/figure2.pdf",
+    "bytes": 16078,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/figures/figure2.pdf",
+    "sha256": "96669b3150f437c5c9be74701d92c63f6058657783d83b98a26a4ccb9a925ca7"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/figures/figure3.pdf",
+    "bytes": 122732,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/figures/figure3.pdf",
+    "sha256": "6d8b8986b990e71e1008ff911b2295199125e34e6e57c069ffbc323c845b5c60"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/figures/figure4.pdf",
+    "bytes": 16969,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/figures/figure4.pdf",
+    "sha256": "d07b2b51e2091bdc8abf2020e678a24a1be990a311b476a92cc88b499507576f"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/figures/figureS2_1.pdf",
+    "bytes": 12751,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/figures/figureS2_1.pdf",
+    "sha256": "2989d863205ce0fd4ecda7b7736e224d4b1d4b8a93d5e8f1f6d19de3efb114b5"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/figures/figureS2_2.pdf",
+    "bytes": 11461,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/figures/figureS2_2.pdf",
+    "sha256": "62ed12da88c5b1c824795267426899b0d8c286c25fbe73cdc6cf23a15511e50f"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/figures/figureS5_1.pdf",
+    "bytes": 40162,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/figures/figureS5_1.pdf",
+    "sha256": "e3c8ebbee27c7af31edeb3043b9b49fac0e292ecb6444a6b3a6d9d567c79bd7e"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/figures/figureS5_2.pdf",
+    "bytes": 67975,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/figures/figureS5_2.pdf",
+    "sha256": "7d85830448f8e25f12057706cbe7751a96948a799647bb86c9af0840548cd5bf"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/scripts/.Rhistory",
+    "bytes": 6022,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/scripts/.Rhistory",
+    "sha256": "20545eb3dede43c275dc745994333239b47d3e831dac47864fbd86ebcbbe309f"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/scripts/figure2.R",
+    "bytes": 8317,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/scripts/figure2.R",
+    "sha256": "7927ceb1f644382277b5defc681909939e1196ee98876f4400933df40ee04b40"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/scripts/figure3.R",
+    "bytes": 7182,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/scripts/figure3.R",
+    "sha256": "ea71f5ba3ca90b7dec782aae8cd7f688f42b23105ee6a1eee7b4134d0e9291f1"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/scripts/figure4.R",
+    "bytes": 7403,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/scripts/figure4.R",
+    "sha256": "7a97a53377166e3a796774e047903ff7610b571491d55d419eeb1cd2106c0e43"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/scripts/figureS2_1.R",
+    "bytes": 4174,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/scripts/figureS2_1.R",
+    "sha256": "7812a81e0beae26b1c0affffcb80128e10da09e86fcedf371540c8a6aee06306"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/scripts/figureS2_2.R",
+    "bytes": 7655,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/scripts/figureS2_2.R",
+    "sha256": "a5373261deffaec707a6449b093caddf555ecacec0f7d400ef51eaf99c63c006"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/scripts/figureS5_5.R",
+    "bytes": 5260,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/scripts/figureS5_5.R",
+    "sha256": "24043eb16bb768463fc2d885d113cc9b61f9e9e6b51ab297718ceca4cd66b929"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/scripts/figuresS5_1_and_S5_2.R",
+    "bytes": 8076,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/scripts/figuresS5_1_and_S5_2.R",
+    "sha256": "21034349fed26399fcb2492072c31f9b8e82ec851e7b74e19088172b1a4b58ee"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/scripts/figuresS5_3_and_S54.R",
+    "bytes": 9502,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/scripts/figuresS5_3_and_S54.R",
+    "sha256": "4e4a932d75a563ec735a52418c55d057eb49c1bd129553b154f36bcbbe901602"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/scripts/get_bayesian_predictions_monocultures.R",
+    "bytes": 10500,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/scripts/get_bayesian_predictions_monocultures.R",
+    "sha256": "96c44d0568c08ca13848c7c0011e93a9f90db79bf1ee9c4e23135f6bd7467557"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/scripts/get_bayesian_predictions_polycultures.R",
+    "bytes": 9803,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/scripts/get_bayesian_predictions_polycultures.R",
+    "sha256": "d77eb78b0d8d62cee2c2862178ecf12c3d6977d91ef5840ed2dc62a35a2a3c97"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/scripts/get_responses_to_pulse.R",
+    "bytes": 7150,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/scripts/get_responses_to_pulse.R",
+    "sha256": "f0d052989d3e7cfc30661846e533f8be1ef9103b346e9d6c48e9c7c4f017e62b"
+  },
+  {
+    "archive_member": "scripts_data_plankton_responses_Npulse/scripts_data_plankton_responses_Npulse.Rproj",
+    "bytes": 205,
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/scripts_data_plankton_responses_Npulse.Rproj",
+    "sha256": "3a81ccc25a62f1a31c7d3404389935ced50831abea5e848408745ad1a1bf6126"
+  }
+]

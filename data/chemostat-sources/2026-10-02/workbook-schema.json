@@ -1,0 +1,4708 @@
+{
+  "inspection_scope": "Main headers, identifiers, dates, times and cell-presence missingness; preliminary values only.",
+  "main_outcome_values_inspected": false,
+  "workbooks": [
+    {
+      "input_reference": {
+        "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/data/Chemostat_experimental_timeseries.xlsx",
+        "sha256": "675854e62ade20d4ab535cd6f9abd833507a4df286eb4a85d27cadaa2ef2329f"
+      },
+      "sheets": [
+        {
+          "absent_value_elements_by_phase": {
+            "post_pulse": {
+              "Biovolume_Brachionus \u00b5m\u00b3/mL": 0,
+              "Biovolume_Cephalodella \u00b5m\u00b3/mL": 0,
+              "Biovolume_Chlamydomonas \u00b5m\u00b3/mL": 1,
+              "Biovolume_Cryptomonas \u00b5m\u00b3/mL": 1,
+              "Biovolume_Lecane \u00b5m\u00b3/mL": 0,
+              "Biovolume_Monoraphidium_Chlorella \u00b5m\u00b3/mL": 1,
+              "Biovolume_total_algae \u00b5m\u00b3/mL": 0,
+              "Biovolume_total_rotifers \u00b5m\u00b3/mL": 0,
+              "Relative_abundance_Chlamydomonas": 1,
+              "Relative_abundance_Cryptomonas": 1,
+              "Relative_abundance_Monoraphidium_Chlorella": 1
+            },
+            "pre_or_at_pulse": {
+              "Biovolume_Brachionus \u00b5m\u00b3/mL": 0,
+              "Biovolume_Cephalodella \u00b5m\u00b3/mL": 0,
+              "Biovolume_Chlamydomonas \u00b5m\u00b3/mL": 0,
+              "Biovolume_Cryptomonas \u00b5m\u00b3/mL": 0,
+              "Biovolume_Lecane \u00b5m\u00b3/mL": 0,
+              "Biovolume_Monoraphidium_Chlorella \u00b5m\u00b3/mL": 0,
+              "Biovolume_total_algae \u00b5m\u00b3/mL": 0,
+              "Biovolume_total_rotifers \u00b5m\u00b3/mL": 0,
+              "Relative_abundance_Chlamydomonas": 0,
+              "Relative_abundance_Cryptomonas": 0,
+              "Relative_abundance_Monoraphidium_Chlorella": 0
+            }
+          },
+          "column_count": 16,
+          "headers": [
+            "Category",
+            "Treatment",
+            "Chemostat",
+            "Date",
+            "Time standardised to pulse",
+            "Biovolume_total_algae \u00b5m\u00b3/mL",
+            "Biovolume_Cryptomonas \u00b5m\u00b3/mL",
+            "Biovolume_Chlamydomonas \u00b5m\u00b3/mL",
+            "Biovolume_Monoraphidium_Chlorella \u00b5m\u00b3/mL",
+            "Biovolume_total_rotifers \u00b5m\u00b3/mL",
+            "Biovolume_Brachionus \u00b5m\u00b3/mL",
+            "Biovolume_Cephalodella \u00b5m\u00b3/mL",
+            "Biovolume_Lecane \u00b5m\u00b3/mL",
+            "Relative_abundance_Cryptomonas",
+            "Relative_abundance_Chlamydomonas",
+            "Relative_abundance_Monoraphidium_Chlorella"
+          ],
+          "metadata_rows": [
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-08-29T00:00:00",
+              "Time standardised to pulse": -17,
+              "Treatment": "Bc",
+              "source_row": 2
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-08-31T00:00:00",
+              "Time standardised to pulse": -15,
+              "Treatment": "Bc",
+              "source_row": 3
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-02T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "Bc",
+              "source_row": 4
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-05T00:00:00",
+              "Time standardised to pulse": -10,
+              "Treatment": "Bc",
+              "source_row": 5
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-07T00:00:00",
+              "Time standardised to pulse": -8,
+              "Treatment": "Bc",
+              "source_row": 6
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-09T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "Bc",
+              "source_row": 7
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-12T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "Bc",
+              "source_row": 8
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "Bc",
+              "source_row": 9
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "Bc",
+              "source_row": 10
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "Bc",
+              "source_row": 11
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "Bc",
+              "source_row": 12
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "Bc",
+              "source_row": 13
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "Bc",
+              "source_row": 14
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "Bc",
+              "source_row": 15
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "Bc",
+              "source_row": 16
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "Bc",
+              "source_row": 17
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-26T00:00:00",
+              "Time standardised to pulse": 11,
+              "Treatment": "Bc",
+              "source_row": 18
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-28T00:00:00",
+              "Time standardised to pulse": 13,
+              "Treatment": "Bc",
+              "source_row": 19
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-09-30T00:00:00",
+              "Time standardised to pulse": 15,
+              "Treatment": "Bc",
+              "source_row": 20
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc1",
+              "Date": "2022-10-04T00:00:00",
+              "Time standardised to pulse": 19,
+              "Treatment": "Bc",
+              "source_row": 21
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-08-29T00:00:00",
+              "Time standardised to pulse": -17,
+              "Treatment": "Bc",
+              "source_row": 22
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-08-31T00:00:00",
+              "Time standardised to pulse": -15,
+              "Treatment": "Bc",
+              "source_row": 23
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-02T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "Bc",
+              "source_row": 24
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-05T00:00:00",
+              "Time standardised to pulse": -10,
+              "Treatment": "Bc",
+              "source_row": 25
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-07T00:00:00",
+              "Time standardised to pulse": -8,
+              "Treatment": "Bc",
+              "source_row": 26
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-09T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "Bc",
+              "source_row": 27
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-12T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "Bc",
+              "source_row": 28
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "Bc",
+              "source_row": 29
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "Bc",
+              "source_row": 30
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "Bc",
+              "source_row": 31
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "Bc",
+              "source_row": 32
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "Bc",
+              "source_row": 33
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "Bc",
+              "source_row": 34
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "Bc",
+              "source_row": 35
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "Bc",
+              "source_row": 36
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "Bc",
+              "source_row": 37
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-26T00:00:00",
+              "Time standardised to pulse": 11,
+              "Treatment": "Bc",
+              "source_row": 38
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-28T00:00:00",
+              "Time standardised to pulse": 13,
+              "Treatment": "Bc",
+              "source_row": 39
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-09-30T00:00:00",
+              "Time standardised to pulse": 15,
+              "Treatment": "Bc",
+              "source_row": 40
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc2",
+              "Date": "2022-10-04T00:00:00",
+              "Time standardised to pulse": 19,
+              "Treatment": "Bc",
+              "source_row": 41
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-08-29T00:00:00",
+              "Time standardised to pulse": -17,
+              "Treatment": "Bc",
+              "source_row": 42
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-08-31T00:00:00",
+              "Time standardised to pulse": -15,
+              "Treatment": "Bc",
+              "source_row": 43
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-02T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "Bc",
+              "source_row": 44
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-05T00:00:00",
+              "Time standardised to pulse": -10,
+              "Treatment": "Bc",
+              "source_row": 45
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-07T00:00:00",
+              "Time standardised to pulse": -8,
+              "Treatment": "Bc",
+              "source_row": 46
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-09T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "Bc",
+              "source_row": 47
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-12T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "Bc",
+              "source_row": 48
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "Bc",
+              "source_row": 49
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "Bc",
+              "source_row": 50
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "Bc",
+              "source_row": 51
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "Bc",
+              "source_row": 52
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "Bc",
+              "source_row": 53
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "Bc",
+              "source_row": 54
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "Bc",
+              "source_row": 55
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "Bc",
+              "source_row": 56
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "Bc",
+              "source_row": 57
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-26T00:00:00",
+              "Time standardised to pulse": 11,
+              "Treatment": "Bc",
+              "source_row": 58
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-28T00:00:00",
+              "Time standardised to pulse": 13,
+              "Treatment": "Bc",
+              "source_row": 59
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-09-30T00:00:00",
+              "Time standardised to pulse": 15,
+              "Treatment": "Bc",
+              "source_row": 60
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc3",
+              "Date": "2022-10-04T00:00:00",
+              "Time standardised to pulse": 19,
+              "Treatment": "Bc",
+              "source_row": 61
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-08-29T00:00:00",
+              "Time standardised to pulse": -17,
+              "Treatment": "Bc",
+              "source_row": 62
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-08-31T00:00:00",
+              "Time standardised to pulse": -15,
+              "Treatment": "Bc",
+              "source_row": 63
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-02T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "Bc",
+              "source_row": 64
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-05T00:00:00",
+              "Time standardised to pulse": -10,
+              "Treatment": "Bc",
+              "source_row": 65
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-07T00:00:00",
+              "Time standardised to pulse": -8,
+              "Treatment": "Bc",
+              "source_row": 66
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-09T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "Bc",
+              "source_row": 67
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-12T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "Bc",
+              "source_row": 68
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "Bc",
+              "source_row": 69
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "Bc",
+              "source_row": 70
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "Bc",
+              "source_row": 71
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "Bc",
+              "source_row": 72
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "Bc",
+              "source_row": 73
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "Bc",
+              "source_row": 74
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "Bc",
+              "source_row": 75
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "Bc",
+              "source_row": 76
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "Bc",
+              "source_row": 77
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-26T00:00:00",
+              "Time standardised to pulse": 11,
+              "Treatment": "Bc",
+              "source_row": 78
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-28T00:00:00",
+              "Time standardised to pulse": 13,
+              "Treatment": "Bc",
+              "source_row": 79
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-09-30T00:00:00",
+              "Time standardised to pulse": 15,
+              "Treatment": "Bc",
+              "source_row": 80
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Bc4",
+              "Date": "2022-10-04T00:00:00",
+              "Time standardised to pulse": 19,
+              "Treatment": "Bc",
+              "source_row": 81
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-08-29T00:00:00",
+              "Time standardised to pulse": -17,
+              "Treatment": "Ce",
+              "source_row": 82
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-08-31T00:00:00",
+              "Time standardised to pulse": -15,
+              "Treatment": "Ce",
+              "source_row": 83
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-02T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "Ce",
+              "source_row": 84
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-05T00:00:00",
+              "Time standardised to pulse": -10,
+              "Treatment": "Ce",
+              "source_row": 85
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-07T00:00:00",
+              "Time standardised to pulse": -8,
+              "Treatment": "Ce",
+              "source_row": 86
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-09T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "Ce",
+              "source_row": 87
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-12T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "Ce",
+              "source_row": 88
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "Ce",
+              "source_row": 89
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "Ce",
+              "source_row": 90
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "Ce",
+              "source_row": 91
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "Ce",
+              "source_row": 92
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "Ce",
+              "source_row": 93
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "Ce",
+              "source_row": 94
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "Ce",
+              "source_row": 95
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "Ce",
+              "source_row": 96
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "Ce",
+              "source_row": 97
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-26T00:00:00",
+              "Time standardised to pulse": 11,
+              "Treatment": "Ce",
+              "source_row": 98
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-28T00:00:00",
+              "Time standardised to pulse": 13,
+              "Treatment": "Ce",
+              "source_row": 99
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-09-30T00:00:00",
+              "Time standardised to pulse": 15,
+              "Treatment": "Ce",
+              "source_row": 100
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce1",
+              "Date": "2022-10-04T00:00:00",
+              "Time standardised to pulse": 19,
+              "Treatment": "Ce",
+              "source_row": 101
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-08-29T00:00:00",
+              "Time standardised to pulse": -17,
+              "Treatment": "Ce",
+              "source_row": 102
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-08-31T00:00:00",
+              "Time standardised to pulse": -15,
+              "Treatment": "Ce",
+              "source_row": 103
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-02T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "Ce",
+              "source_row": 104
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-05T00:00:00",
+              "Time standardised to pulse": -10,
+              "Treatment": "Ce",
+              "source_row": 105
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-07T00:00:00",
+              "Time standardised to pulse": -8,
+              "Treatment": "Ce",
+              "source_row": 106
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-09T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "Ce",
+              "source_row": 107
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-12T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "Ce",
+              "source_row": 108
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "Ce",
+              "source_row": 109
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "Ce",
+              "source_row": 110
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "Ce",
+              "source_row": 111
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "Ce",
+              "source_row": 112
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "Ce",
+              "source_row": 113
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "Ce",
+              "source_row": 114
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "Ce",
+              "source_row": 115
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "Ce",
+              "source_row": 116
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "Ce",
+              "source_row": 117
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-26T00:00:00",
+              "Time standardised to pulse": 11,
+              "Treatment": "Ce",
+              "source_row": 118
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-28T00:00:00",
+              "Time standardised to pulse": 13,
+              "Treatment": "Ce",
+              "source_row": 119
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-09-30T00:00:00",
+              "Time standardised to pulse": 15,
+              "Treatment": "Ce",
+              "source_row": 120
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce2",
+              "Date": "2022-10-04T00:00:00",
+              "Time standardised to pulse": 19,
+              "Treatment": "Ce",
+              "source_row": 121
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-08-29T00:00:00",
+              "Time standardised to pulse": -17,
+              "Treatment": "Ce",
+              "source_row": 122
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-08-31T00:00:00",
+              "Time standardised to pulse": -15,
+              "Treatment": "Ce",
+              "source_row": 123
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-02T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "Ce",
+              "source_row": 124
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-05T00:00:00",
+              "Time standardised to pulse": -10,
+              "Treatment": "Ce",
+              "source_row": 125
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-07T00:00:00",
+              "Time standardised to pulse": -8,
+              "Treatment": "Ce",
+              "source_row": 126
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-09T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "Ce",
+              "source_row": 127
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-12T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "Ce",
+              "source_row": 128
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "Ce",
+              "source_row": 129
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "Ce",
+              "source_row": 130
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "Ce",
+              "source_row": 131
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "Ce",
+              "source_row": 132
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "Ce",
+              "source_row": 133
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "Ce",
+              "source_row": 134
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "Ce",
+              "source_row": 135
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "Ce",
+              "source_row": 136
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "Ce",
+              "source_row": 137
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-26T00:00:00",
+              "Time standardised to pulse": 11,
+              "Treatment": "Ce",
+              "source_row": 138
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-28T00:00:00",
+              "Time standardised to pulse": 13,
+              "Treatment": "Ce",
+              "source_row": 139
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-09-30T00:00:00",
+              "Time standardised to pulse": 15,
+              "Treatment": "Ce",
+              "source_row": 140
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce3",
+              "Date": "2022-10-04T00:00:00",
+              "Time standardised to pulse": 19,
+              "Treatment": "Ce",
+              "source_row": 141
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-08-29T00:00:00",
+              "Time standardised to pulse": -17,
+              "Treatment": "Ce",
+              "source_row": 142
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-08-31T00:00:00",
+              "Time standardised to pulse": -15,
+              "Treatment": "Ce",
+              "source_row": 143
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-02T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "Ce",
+              "source_row": 144
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-05T00:00:00",
+              "Time standardised to pulse": -10,
+              "Treatment": "Ce",
+              "source_row": 145
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-07T00:00:00",
+              "Time standardised to pulse": -8,
+              "Treatment": "Ce",
+              "source_row": 146
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-09T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "Ce",
+              "source_row": 147
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-12T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "Ce",
+              "source_row": 148
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "Ce",
+              "source_row": 149
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "Ce",
+              "source_row": 150
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "Ce",
+              "source_row": 151
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "Ce",
+              "source_row": 152
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "Ce",
+              "source_row": 153
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "Ce",
+              "source_row": 154
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "Ce",
+              "source_row": 155
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "Ce",
+              "source_row": 156
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "Ce",
+              "source_row": 157
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-26T00:00:00",
+              "Time standardised to pulse": 11,
+              "Treatment": "Ce",
+              "source_row": 158
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-28T00:00:00",
+              "Time standardised to pulse": 13,
+              "Treatment": "Ce",
+              "source_row": 159
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-09-30T00:00:00",
+              "Time standardised to pulse": 15,
+              "Treatment": "Ce",
+              "source_row": 160
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Ce4",
+              "Date": "2022-10-04T00:00:00",
+              "Time standardised to pulse": 19,
+              "Treatment": "Ce",
+              "source_row": 161
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-08-29T00:00:00",
+              "Time standardised to pulse": -17,
+              "Treatment": "Le",
+              "source_row": 162
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-08-31T00:00:00",
+              "Time standardised to pulse": -15,
+              "Treatment": "Le",
+              "source_row": 163
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-02T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "Le",
+              "source_row": 164
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-05T00:00:00",
+              "Time standardised to pulse": -10,
+              "Treatment": "Le",
+              "source_row": 165
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-07T00:00:00",
+              "Time standardised to pulse": -8,
+              "Treatment": "Le",
+              "source_row": 166
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-09T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "Le",
+              "source_row": 167
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-12T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "Le",
+              "source_row": 168
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "Le",
+              "source_row": 169
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "Le",
+              "source_row": 170
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "Le",
+              "source_row": 171
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "Le",
+              "source_row": 172
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "Le",
+              "source_row": 173
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "Le",
+              "source_row": 174
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "Le",
+              "source_row": 175
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "Le",
+              "source_row": 176
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "Le",
+              "source_row": 177
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-26T00:00:00",
+              "Time standardised to pulse": 11,
+              "Treatment": "Le",
+              "source_row": 178
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-28T00:00:00",
+              "Time standardised to pulse": 13,
+              "Treatment": "Le",
+              "source_row": 179
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-09-30T00:00:00",
+              "Time standardised to pulse": 15,
+              "Treatment": "Le",
+              "source_row": 180
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le1",
+              "Date": "2022-10-04T00:00:00",
+              "Time standardised to pulse": 19,
+              "Treatment": "Le",
+              "source_row": 181
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-08-29T00:00:00",
+              "Time standardised to pulse": -17,
+              "Treatment": "Le",
+              "source_row": 182
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-08-31T00:00:00",
+              "Time standardised to pulse": -15,
+              "Treatment": "Le",
+              "source_row": 183
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-02T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "Le",
+              "source_row": 184
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-05T00:00:00",
+              "Time standardised to pulse": -10,
+              "Treatment": "Le",
+              "source_row": 185
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-07T00:00:00",
+              "Time standardised to pulse": -8,
+              "Treatment": "Le",
+              "source_row": 186
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-09T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "Le",
+              "source_row": 187
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-12T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "Le",
+              "source_row": 188
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "Le",
+              "source_row": 189
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "Le",
+              "source_row": 190
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "Le",
+              "source_row": 191
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "Le",
+              "source_row": 192
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "Le",
+              "source_row": 193
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "Le",
+              "source_row": 194
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "Le",
+              "source_row": 195
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "Le",
+              "source_row": 196
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "Le",
+              "source_row": 197
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-26T00:00:00",
+              "Time standardised to pulse": 11,
+              "Treatment": "Le",
+              "source_row": 198
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-28T00:00:00",
+              "Time standardised to pulse": 13,
+              "Treatment": "Le",
+              "source_row": 199
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-09-30T00:00:00",
+              "Time standardised to pulse": 15,
+              "Treatment": "Le",
+              "source_row": 200
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le2",
+              "Date": "2022-10-04T00:00:00",
+              "Time standardised to pulse": 19,
+              "Treatment": "Le",
+              "source_row": 201
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-08-29T00:00:00",
+              "Time standardised to pulse": -17,
+              "Treatment": "Le",
+              "source_row": 202
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-08-31T00:00:00",
+              "Time standardised to pulse": -15,
+              "Treatment": "Le",
+              "source_row": 203
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-02T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "Le",
+              "source_row": 204
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-05T00:00:00",
+              "Time standardised to pulse": -10,
+              "Treatment": "Le",
+              "source_row": 205
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-07T00:00:00",
+              "Time standardised to pulse": -8,
+              "Treatment": "Le",
+              "source_row": 206
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-09T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "Le",
+              "source_row": 207
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-12T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "Le",
+              "source_row": 208
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "Le",
+              "source_row": 209
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "Le",
+              "source_row": 210
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "Le",
+              "source_row": 211
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "Le",
+              "source_row": 212
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "Le",
+              "source_row": 213
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "Le",
+              "source_row": 214
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "Le",
+              "source_row": 215
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "Le",
+              "source_row": 216
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "Le",
+              "source_row": 217
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-26T00:00:00",
+              "Time standardised to pulse": 11,
+              "Treatment": "Le",
+              "source_row": 218
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-28T00:00:00",
+              "Time standardised to pulse": 13,
+              "Treatment": "Le",
+              "source_row": 219
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-09-30T00:00:00",
+              "Time standardised to pulse": 15,
+              "Treatment": "Le",
+              "source_row": 220
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le3",
+              "Date": "2022-10-04T00:00:00",
+              "Time standardised to pulse": 19,
+              "Treatment": "Le",
+              "source_row": 221
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-08-29T00:00:00",
+              "Time standardised to pulse": -17,
+              "Treatment": "Le",
+              "source_row": 222
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-08-31T00:00:00",
+              "Time standardised to pulse": -15,
+              "Treatment": "Le",
+              "source_row": 223
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-02T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "Le",
+              "source_row": 224
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-05T00:00:00",
+              "Time standardised to pulse": -10,
+              "Treatment": "Le",
+              "source_row": 225
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-07T00:00:00",
+              "Time standardised to pulse": -8,
+              "Treatment": "Le",
+              "source_row": 226
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-09T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "Le",
+              "source_row": 227
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-12T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "Le",
+              "source_row": 228
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "Le",
+              "source_row": 229
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "Le",
+              "source_row": 230
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "Le",
+              "source_row": 231
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "Le",
+              "source_row": 232
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "Le",
+              "source_row": 233
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "Le",
+              "source_row": 234
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "Le",
+              "source_row": 235
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "Le",
+              "source_row": 236
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "Le",
+              "source_row": 237
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-26T00:00:00",
+              "Time standardised to pulse": 11,
+              "Treatment": "Le",
+              "source_row": 238
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-28T00:00:00",
+              "Time standardised to pulse": 13,
+              "Treatment": "Le",
+              "source_row": 239
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-09-30T00:00:00",
+              "Time standardised to pulse": 15,
+              "Treatment": "Le",
+              "source_row": 240
+            },
+            {
+              "Category": "Monocultures",
+              "Chemostat": "Le4",
+              "Date": "2022-10-04T00:00:00",
+              "Time standardised to pulse": 19,
+              "Treatment": "Le",
+              "source_row": 241
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-06T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "13d",
+              "source_row": 242
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-08T00:00:00",
+              "Time standardised to pulse": -11,
+              "Treatment": "13d",
+              "source_row": 243
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-10T00:00:00",
+              "Time standardised to pulse": -9,
+              "Treatment": "13d",
+              "source_row": 244
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-13T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "13d",
+              "source_row": 245
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-14T00:00:00",
+              "Time standardised to pulse": -5,
+              "Treatment": "13d",
+              "source_row": 246
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-15T00:00:00",
+              "Time standardised to pulse": -4,
+              "Treatment": "13d",
+              "source_row": 247
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-16T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "13d",
+              "source_row": 248
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-17T00:00:00",
+              "Time standardised to pulse": -2,
+              "Treatment": "13d",
+              "source_row": 249
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-18T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "13d",
+              "source_row": 250
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-19T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "13d",
+              "source_row": 251
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-20T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "13d",
+              "source_row": 252
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-21T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "13d",
+              "source_row": 253
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-22T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "13d",
+              "source_row": 254
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-23T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "13d",
+              "source_row": 255
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-24T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "13d",
+              "source_row": 256
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-27T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "13d",
+              "source_row": 257
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-29T00:00:00",
+              "Time standardised to pulse": 10,
+              "Treatment": "13d",
+              "source_row": 258
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 1,
+              "Date": "2023-03-31T00:00:00",
+              "Time standardised to pulse": 12,
+              "Treatment": "13d",
+              "source_row": 259
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-06T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "13d",
+              "source_row": 260
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-08T00:00:00",
+              "Time standardised to pulse": -11,
+              "Treatment": "13d",
+              "source_row": 261
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-10T00:00:00",
+              "Time standardised to pulse": -9,
+              "Treatment": "13d",
+              "source_row": 262
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-13T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "13d",
+              "source_row": 263
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-14T00:00:00",
+              "Time standardised to pulse": -5,
+              "Treatment": "13d",
+              "source_row": 264
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-15T00:00:00",
+              "Time standardised to pulse": -4,
+              "Treatment": "13d",
+              "source_row": 265
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-16T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "13d",
+              "source_row": 266
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-17T00:00:00",
+              "Time standardised to pulse": -2,
+              "Treatment": "13d",
+              "source_row": 267
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-18T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "13d",
+              "source_row": 268
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-19T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "13d",
+              "source_row": 269
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-20T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "13d",
+              "source_row": 270
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-21T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "13d",
+              "source_row": 271
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-22T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "13d",
+              "source_row": 272
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-23T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "13d",
+              "source_row": 273
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-24T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "13d",
+              "source_row": 274
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-27T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "13d",
+              "source_row": 275
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-29T00:00:00",
+              "Time standardised to pulse": 10,
+              "Treatment": "13d",
+              "source_row": 276
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 2,
+              "Date": "2023-03-31T00:00:00",
+              "Time standardised to pulse": 12,
+              "Treatment": "13d",
+              "source_row": 277
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-06T00:00:00",
+              "Time standardised to pulse": -9,
+              "Treatment": "9d",
+              "source_row": 278
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-08T00:00:00",
+              "Time standardised to pulse": -7,
+              "Treatment": "9d",
+              "source_row": 279
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-10T00:00:00",
+              "Time standardised to pulse": -5,
+              "Treatment": "9d",
+              "source_row": 280
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-13T00:00:00",
+              "Time standardised to pulse": -2,
+              "Treatment": "9d",
+              "source_row": 281
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "9d",
+              "source_row": 282
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "9d",
+              "source_row": 283
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "9d",
+              "source_row": 284
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "9d",
+              "source_row": 285
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "9d",
+              "source_row": 286
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "9d",
+              "source_row": 287
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "9d",
+              "source_row": 288
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "9d",
+              "source_row": 289
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-22T00:00:00",
+              "Time standardised to pulse": 7,
+              "Treatment": "9d",
+              "source_row": 290
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "9d",
+              "source_row": 291
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-24T00:00:00",
+              "Time standardised to pulse": 9,
+              "Treatment": "9d",
+              "source_row": 292
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-27T00:00:00",
+              "Time standardised to pulse": 12,
+              "Treatment": "9d",
+              "source_row": 293
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-29T00:00:00",
+              "Time standardised to pulse": 14,
+              "Treatment": "9d",
+              "source_row": 294
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 3,
+              "Date": "2023-03-31T00:00:00",
+              "Time standardised to pulse": 16,
+              "Treatment": "9d",
+              "source_row": 295
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-06T00:00:00",
+              "Time standardised to pulse": -9,
+              "Treatment": "9d",
+              "source_row": 296
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-08T00:00:00",
+              "Time standardised to pulse": -7,
+              "Treatment": "9d",
+              "source_row": 297
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-10T00:00:00",
+              "Time standardised to pulse": -5,
+              "Treatment": "9d",
+              "source_row": 298
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-13T00:00:00",
+              "Time standardised to pulse": -2,
+              "Treatment": "9d",
+              "source_row": 299
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "9d",
+              "source_row": 300
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "9d",
+              "source_row": 301
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "9d",
+              "source_row": 302
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "9d",
+              "source_row": 303
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "9d",
+              "source_row": 304
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "9d",
+              "source_row": 305
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "9d",
+              "source_row": 306
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "9d",
+              "source_row": 307
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-22T00:00:00",
+              "Time standardised to pulse": 7,
+              "Treatment": "9d",
+              "source_row": 308
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "9d",
+              "source_row": 309
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-24T00:00:00",
+              "Time standardised to pulse": 9,
+              "Treatment": "9d",
+              "source_row": 310
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-27T00:00:00",
+              "Time standardised to pulse": 12,
+              "Treatment": "9d",
+              "source_row": 311
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-29T00:00:00",
+              "Time standardised to pulse": 14,
+              "Treatment": "9d",
+              "source_row": 312
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 4,
+              "Date": "2023-03-31T00:00:00",
+              "Time standardised to pulse": 16,
+              "Treatment": "9d",
+              "source_row": 313
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-06T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "13d",
+              "source_row": 314
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-08T00:00:00",
+              "Time standardised to pulse": -11,
+              "Treatment": "13d",
+              "source_row": 315
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-10T00:00:00",
+              "Time standardised to pulse": -9,
+              "Treatment": "13d",
+              "source_row": 316
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-13T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "13d",
+              "source_row": 317
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-14T00:00:00",
+              "Time standardised to pulse": -5,
+              "Treatment": "13d",
+              "source_row": 318
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-15T00:00:00",
+              "Time standardised to pulse": -4,
+              "Treatment": "13d",
+              "source_row": 319
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-16T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "13d",
+              "source_row": 320
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-17T00:00:00",
+              "Time standardised to pulse": -2,
+              "Treatment": "13d",
+              "source_row": 321
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-18T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "13d",
+              "source_row": 322
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-19T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "13d",
+              "source_row": 323
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-20T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "13d",
+              "source_row": 324
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-21T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "13d",
+              "source_row": 325
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-22T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "13d",
+              "source_row": 326
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-23T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "13d",
+              "source_row": 327
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-24T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "13d",
+              "source_row": 328
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-27T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "13d",
+              "source_row": 329
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-29T00:00:00",
+              "Time standardised to pulse": 10,
+              "Treatment": "13d",
+              "source_row": 330
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 5,
+              "Date": "2023-03-31T00:00:00",
+              "Time standardised to pulse": 12,
+              "Treatment": "13d",
+              "source_row": 331
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-06T00:00:00",
+              "Time standardised to pulse": -9,
+              "Treatment": "9d",
+              "source_row": 332
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-08T00:00:00",
+              "Time standardised to pulse": -7,
+              "Treatment": "9d",
+              "source_row": 333
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-10T00:00:00",
+              "Time standardised to pulse": -5,
+              "Treatment": "9d",
+              "source_row": 334
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-13T00:00:00",
+              "Time standardised to pulse": -2,
+              "Treatment": "9d",
+              "source_row": 335
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "9d",
+              "source_row": 336
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "9d",
+              "source_row": 337
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "9d",
+              "source_row": 338
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "9d",
+              "source_row": 339
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "9d",
+              "source_row": 340
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "9d",
+              "source_row": 341
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "9d",
+              "source_row": 342
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "9d",
+              "source_row": 343
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-22T00:00:00",
+              "Time standardised to pulse": 7,
+              "Treatment": "9d",
+              "source_row": 344
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "9d",
+              "source_row": 345
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-24T00:00:00",
+              "Time standardised to pulse": 9,
+              "Treatment": "9d",
+              "source_row": 346
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-27T00:00:00",
+              "Time standardised to pulse": 12,
+              "Treatment": "9d",
+              "source_row": 347
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-29T00:00:00",
+              "Time standardised to pulse": 14,
+              "Treatment": "9d",
+              "source_row": 348
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 6,
+              "Date": "2023-03-31T00:00:00",
+              "Time standardised to pulse": 16,
+              "Treatment": "9d",
+              "source_row": 349
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-06T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "13d",
+              "source_row": 350
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-08T00:00:00",
+              "Time standardised to pulse": -11,
+              "Treatment": "13d",
+              "source_row": 351
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-10T00:00:00",
+              "Time standardised to pulse": -9,
+              "Treatment": "13d",
+              "source_row": 352
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-13T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "13d",
+              "source_row": 353
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-14T00:00:00",
+              "Time standardised to pulse": -5,
+              "Treatment": "13d",
+              "source_row": 354
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-15T00:00:00",
+              "Time standardised to pulse": -4,
+              "Treatment": "13d",
+              "source_row": 355
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-16T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "13d",
+              "source_row": 356
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-17T00:00:00",
+              "Time standardised to pulse": -2,
+              "Treatment": "13d",
+              "source_row": 357
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-18T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "13d",
+              "source_row": 358
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-19T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "13d",
+              "source_row": 359
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-20T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "13d",
+              "source_row": 360
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-21T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "13d",
+              "source_row": 361
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-22T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "13d",
+              "source_row": 362
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-23T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "13d",
+              "source_row": 363
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-24T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "13d",
+              "source_row": 364
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-27T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "13d",
+              "source_row": 365
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-29T00:00:00",
+              "Time standardised to pulse": 10,
+              "Treatment": "13d",
+              "source_row": 366
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 7,
+              "Date": "2023-03-31T00:00:00",
+              "Time standardised to pulse": 12,
+              "Treatment": "13d",
+              "source_row": 367
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-06T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "13d",
+              "source_row": 368
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-08T00:00:00",
+              "Time standardised to pulse": -11,
+              "Treatment": "13d",
+              "source_row": 369
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-10T00:00:00",
+              "Time standardised to pulse": -9,
+              "Treatment": "13d",
+              "source_row": 370
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-13T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "13d",
+              "source_row": 371
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-14T00:00:00",
+              "Time standardised to pulse": -5,
+              "Treatment": "13d",
+              "source_row": 372
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-15T00:00:00",
+              "Time standardised to pulse": -4,
+              "Treatment": "13d",
+              "source_row": 373
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-16T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "13d",
+              "source_row": 374
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-17T00:00:00",
+              "Time standardised to pulse": -2,
+              "Treatment": "13d",
+              "source_row": 375
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-18T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "13d",
+              "source_row": 376
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-19T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "13d",
+              "source_row": 377
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-20T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "13d",
+              "source_row": 378
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-21T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "13d",
+              "source_row": 379
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-22T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "13d",
+              "source_row": 380
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-23T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "13d",
+              "source_row": 381
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-24T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "13d",
+              "source_row": 382
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-27T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "13d",
+              "source_row": 383
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-29T00:00:00",
+              "Time standardised to pulse": 10,
+              "Treatment": "13d",
+              "source_row": 384
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 8,
+              "Date": "2023-03-31T00:00:00",
+              "Time standardised to pulse": 12,
+              "Treatment": "13d",
+              "source_row": 385
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-06T00:00:00",
+              "Time standardised to pulse": -13,
+              "Treatment": "13d",
+              "source_row": 386
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-08T00:00:00",
+              "Time standardised to pulse": -11,
+              "Treatment": "13d",
+              "source_row": 387
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-10T00:00:00",
+              "Time standardised to pulse": -9,
+              "Treatment": "13d",
+              "source_row": 388
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-13T00:00:00",
+              "Time standardised to pulse": -6,
+              "Treatment": "13d",
+              "source_row": 389
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-14T00:00:00",
+              "Time standardised to pulse": -5,
+              "Treatment": "13d",
+              "source_row": 390
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-15T00:00:00",
+              "Time standardised to pulse": -4,
+              "Treatment": "13d",
+              "source_row": 391
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-16T00:00:00",
+              "Time standardised to pulse": -3,
+              "Treatment": "13d",
+              "source_row": 392
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-17T00:00:00",
+              "Time standardised to pulse": -2,
+              "Treatment": "13d",
+              "source_row": 393
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-18T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "13d",
+              "source_row": 394
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-19T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "13d",
+              "source_row": 395
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-20T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "13d",
+              "source_row": 396
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-21T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "13d",
+              "source_row": 397
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-22T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "13d",
+              "source_row": 398
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-23T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "13d",
+              "source_row": 399
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-24T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "13d",
+              "source_row": 400
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-27T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "13d",
+              "source_row": 401
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-29T00:00:00",
+              "Time standardised to pulse": 10,
+              "Treatment": "13d",
+              "source_row": 402
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 9,
+              "Date": "2023-03-31T00:00:00",
+              "Time standardised to pulse": 12,
+              "Treatment": "13d",
+              "source_row": 403
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-06T00:00:00",
+              "Time standardised to pulse": -9,
+              "Treatment": "9d",
+              "source_row": 404
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-08T00:00:00",
+              "Time standardised to pulse": -7,
+              "Treatment": "9d",
+              "source_row": 405
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-10T00:00:00",
+              "Time standardised to pulse": -5,
+              "Treatment": "9d",
+              "source_row": 406
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-13T00:00:00",
+              "Time standardised to pulse": -2,
+              "Treatment": "9d",
+              "source_row": 407
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "9d",
+              "source_row": 408
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "9d",
+              "source_row": 409
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "9d",
+              "source_row": 410
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "9d",
+              "source_row": 411
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "9d",
+              "source_row": 412
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "9d",
+              "source_row": 413
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "9d",
+              "source_row": 414
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "9d",
+              "source_row": 415
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-22T00:00:00",
+              "Time standardised to pulse": 7,
+              "Treatment": "9d",
+              "source_row": 416
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "9d",
+              "source_row": 417
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-24T00:00:00",
+              "Time standardised to pulse": 9,
+              "Treatment": "9d",
+              "source_row": 418
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-27T00:00:00",
+              "Time standardised to pulse": 12,
+              "Treatment": "9d",
+              "source_row": 419
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-29T00:00:00",
+              "Time standardised to pulse": 14,
+              "Treatment": "9d",
+              "source_row": 420
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 10,
+              "Date": "2023-03-31T00:00:00",
+              "Time standardised to pulse": 16,
+              "Treatment": "9d",
+              "source_row": 421
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-06T00:00:00",
+              "Time standardised to pulse": -9,
+              "Treatment": "9d",
+              "source_row": 422
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-08T00:00:00",
+              "Time standardised to pulse": -7,
+              "Treatment": "9d",
+              "source_row": 423
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-10T00:00:00",
+              "Time standardised to pulse": -5,
+              "Treatment": "9d",
+              "source_row": 424
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-13T00:00:00",
+              "Time standardised to pulse": -2,
+              "Treatment": "9d",
+              "source_row": 425
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "9d",
+              "source_row": 426
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "9d",
+              "source_row": 427
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "9d",
+              "source_row": 428
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "9d",
+              "source_row": 429
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "9d",
+              "source_row": 430
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "9d",
+              "source_row": 431
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "9d",
+              "source_row": 432
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "9d",
+              "source_row": 433
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-22T00:00:00",
+              "Time standardised to pulse": 7,
+              "Treatment": "9d",
+              "source_row": 434
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "9d",
+              "source_row": 435
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-24T00:00:00",
+              "Time standardised to pulse": 9,
+              "Treatment": "9d",
+              "source_row": 436
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-27T00:00:00",
+              "Time standardised to pulse": 12,
+              "Treatment": "9d",
+              "source_row": 437
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-29T00:00:00",
+              "Time standardised to pulse": 14,
+              "Treatment": "9d",
+              "source_row": 438
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 11,
+              "Date": "2023-03-31T00:00:00",
+              "Time standardised to pulse": 16,
+              "Treatment": "9d",
+              "source_row": 439
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-06T00:00:00",
+              "Time standardised to pulse": -9,
+              "Treatment": "9d",
+              "source_row": 440
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-08T00:00:00",
+              "Time standardised to pulse": -7,
+              "Treatment": "9d",
+              "source_row": 441
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-10T00:00:00",
+              "Time standardised to pulse": -5,
+              "Treatment": "9d",
+              "source_row": 442
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-13T00:00:00",
+              "Time standardised to pulse": -2,
+              "Treatment": "9d",
+              "source_row": 443
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-14T00:00:00",
+              "Time standardised to pulse": -1,
+              "Treatment": "9d",
+              "source_row": 444
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-15T00:00:00",
+              "Time standardised to pulse": 0,
+              "Treatment": "9d",
+              "source_row": 445
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-16T00:00:00",
+              "Time standardised to pulse": 1,
+              "Treatment": "9d",
+              "source_row": 446
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-17T00:00:00",
+              "Time standardised to pulse": 2,
+              "Treatment": "9d",
+              "source_row": 447
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-18T00:00:00",
+              "Time standardised to pulse": 3,
+              "Treatment": "9d",
+              "source_row": 448
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-19T00:00:00",
+              "Time standardised to pulse": 4,
+              "Treatment": "9d",
+              "source_row": 449
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-20T00:00:00",
+              "Time standardised to pulse": 5,
+              "Treatment": "9d",
+              "source_row": 450
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-21T00:00:00",
+              "Time standardised to pulse": 6,
+              "Treatment": "9d",
+              "source_row": 451
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-22T00:00:00",
+              "Time standardised to pulse": 7,
+              "Treatment": "9d",
+              "source_row": 452
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-23T00:00:00",
+              "Time standardised to pulse": 8,
+              "Treatment": "9d",
+              "source_row": 453
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-24T00:00:00",
+              "Time standardised to pulse": 9,
+              "Treatment": "9d",
+              "source_row": 454
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-27T00:00:00",
+              "Time standardised to pulse": 12,
+              "Treatment": "9d",
+              "source_row": 455
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-29T00:00:00",
+              "Time standardised to pulse": 14,
+              "Treatment": "9d",
+              "source_row": 456
+            },
+            {
+              "Category": "Polycultures",
+              "Chemostat": 12,
+              "Date": "2023-03-31T00:00:00",
+              "Time standardised to pulse": 16,
+              "Treatment": "9d",
+              "source_row": 457
+            }
+          ],
+          "missingness_scope": "Counts omitted/empty value elements only; textual NA and numeric validity are not evaluated for main outcomes.",
+          "row_count_including_header": 457,
+          "row_counts_by_treatment": {
+            "13d": 108,
+            "9d": 108,
+            "Bc": 80,
+            "Ce": 80,
+            "Le": 80
+          },
+          "sheet": "Sheet1",
+          "vessels": [
+            {
+              "category": [
+                "Polycultures"
+              ],
+              "chemostat": "1",
+              "date_range": [
+                "2023-03-06T00:00:00",
+                "2023-03-31T00:00:00"
+              ],
+              "n_rows": 18,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                8,
+                10,
+                12
+              ],
+              "pre_pulse_times": [
+                -13,
+                -11,
+                -9,
+                -6,
+                -5,
+                -4,
+                -3,
+                -2,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "13d"
+              ]
+            },
+            {
+              "category": [
+                "Polycultures"
+              ],
+              "chemostat": "10",
+              "date_range": [
+                "2023-03-06T00:00:00",
+                "2023-03-31T00:00:00"
+              ],
+              "n_rows": 18,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                12,
+                14,
+                16
+              ],
+              "pre_pulse_times": [
+                -9,
+                -7,
+                -5,
+                -2,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "9d"
+              ]
+            },
+            {
+              "category": [
+                "Polycultures"
+              ],
+              "chemostat": "11",
+              "date_range": [
+                "2023-03-06T00:00:00",
+                "2023-03-31T00:00:00"
+              ],
+              "n_rows": 18,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                12,
+                14,
+                16
+              ],
+              "pre_pulse_times": [
+                -9,
+                -7,
+                -5,
+                -2,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "9d"
+              ]
+            },
+            {
+              "category": [
+                "Polycultures"
+              ],
+              "chemostat": "12",
+              "date_range": [
+                "2023-03-06T00:00:00",
+                "2023-03-31T00:00:00"
+              ],
+              "n_rows": 18,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                12,
+                14,
+                16
+              ],
+              "pre_pulse_times": [
+                -9,
+                -7,
+                -5,
+                -2,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "9d"
+              ]
+            },
+            {
+              "category": [
+                "Polycultures"
+              ],
+              "chemostat": "2",
+              "date_range": [
+                "2023-03-06T00:00:00",
+                "2023-03-31T00:00:00"
+              ],
+              "n_rows": 18,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                8,
+                10,
+                12
+              ],
+              "pre_pulse_times": [
+                -13,
+                -11,
+                -9,
+                -6,
+                -5,
+                -4,
+                -3,
+                -2,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "13d"
+              ]
+            },
+            {
+              "category": [
+                "Polycultures"
+              ],
+              "chemostat": "3",
+              "date_range": [
+                "2023-03-06T00:00:00",
+                "2023-03-31T00:00:00"
+              ],
+              "n_rows": 18,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                12,
+                14,
+                16
+              ],
+              "pre_pulse_times": [
+                -9,
+                -7,
+                -5,
+                -2,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "9d"
+              ]
+            },
+            {
+              "category": [
+                "Polycultures"
+              ],
+              "chemostat": "4",
+              "date_range": [
+                "2023-03-06T00:00:00",
+                "2023-03-31T00:00:00"
+              ],
+              "n_rows": 18,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                12,
+                14,
+                16
+              ],
+              "pre_pulse_times": [
+                -9,
+                -7,
+                -5,
+                -2,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "9d"
+              ]
+            },
+            {
+              "category": [
+                "Polycultures"
+              ],
+              "chemostat": "5",
+              "date_range": [
+                "2023-03-06T00:00:00",
+                "2023-03-31T00:00:00"
+              ],
+              "n_rows": 18,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                8,
+                10,
+                12
+              ],
+              "pre_pulse_times": [
+                -13,
+                -11,
+                -9,
+                -6,
+                -5,
+                -4,
+                -3,
+                -2,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "13d"
+              ]
+            },
+            {
+              "category": [
+                "Polycultures"
+              ],
+              "chemostat": "6",
+              "date_range": [
+                "2023-03-06T00:00:00",
+                "2023-03-31T00:00:00"
+              ],
+              "n_rows": 18,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                12,
+                14,
+                16
+              ],
+              "pre_pulse_times": [
+                -9,
+                -7,
+                -5,
+                -2,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "9d"
+              ]
+            },
+            {
+              "category": [
+                "Polycultures"
+              ],
+              "chemostat": "7",
+              "date_range": [
+                "2023-03-06T00:00:00",
+                "2023-03-31T00:00:00"
+              ],
+              "n_rows": 18,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                8,
+                10,
+                12
+              ],
+              "pre_pulse_times": [
+                -13,
+                -11,
+                -9,
+                -6,
+                -5,
+                -4,
+                -3,
+                -2,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "13d"
+              ]
+            },
+            {
+              "category": [
+                "Polycultures"
+              ],
+              "chemostat": "8",
+              "date_range": [
+                "2023-03-06T00:00:00",
+                "2023-03-31T00:00:00"
+              ],
+              "n_rows": 18,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                8,
+                10,
+                12
+              ],
+              "pre_pulse_times": [
+                -13,
+                -11,
+                -9,
+                -6,
+                -5,
+                -4,
+                -3,
+                -2,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "13d"
+              ]
+            },
+            {
+              "category": [
+                "Polycultures"
+              ],
+              "chemostat": "9",
+              "date_range": [
+                "2023-03-06T00:00:00",
+                "2023-03-31T00:00:00"
+              ],
+              "n_rows": 18,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                8,
+                10,
+                12
+              ],
+              "pre_pulse_times": [
+                -13,
+                -11,
+                -9,
+                -6,
+                -5,
+                -4,
+                -3,
+                -2,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "13d"
+              ]
+            },
+            {
+              "category": [
+                "Monocultures"
+              ],
+              "chemostat": "Bc1",
+              "date_range": [
+                "2022-08-29T00:00:00",
+                "2022-10-04T00:00:00"
+              ],
+              "n_rows": 20,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8,
+                11,
+                13,
+                15,
+                19
+              ],
+              "pre_pulse_times": [
+                -17,
+                -15,
+                -13,
+                -10,
+                -8,
+                -6,
+                -3,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "Bc"
+              ]
+            },
+            {
+              "category": [
+                "Monocultures"
+              ],
+              "chemostat": "Bc2",
+              "date_range": [
+                "2022-08-29T00:00:00",
+                "2022-10-04T00:00:00"
+              ],
+              "n_rows": 20,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8,
+                11,
+                13,
+                15,
+                19
+              ],
+              "pre_pulse_times": [
+                -17,
+                -15,
+                -13,
+                -10,
+                -8,
+                -6,
+                -3,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "Bc"
+              ]
+            },
+            {
+              "category": [
+                "Monocultures"
+              ],
+              "chemostat": "Bc3",
+              "date_range": [
+                "2022-08-29T00:00:00",
+                "2022-10-04T00:00:00"
+              ],
+              "n_rows": 20,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8,
+                11,
+                13,
+                15,
+                19
+              ],
+              "pre_pulse_times": [
+                -17,
+                -15,
+                -13,
+                -10,
+                -8,
+                -6,
+                -3,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "Bc"
+              ]
+            },
+            {
+              "category": [
+                "Monocultures"
+              ],
+              "chemostat": "Bc4",
+              "date_range": [
+                "2022-08-29T00:00:00",
+                "2022-10-04T00:00:00"
+              ],
+              "n_rows": 20,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8,
+                11,
+                13,
+                15,
+                19
+              ],
+              "pre_pulse_times": [
+                -17,
+                -15,
+                -13,
+                -10,
+                -8,
+                -6,
+                -3,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "Bc"
+              ]
+            },
+            {
+              "category": [
+                "Monocultures"
+              ],
+              "chemostat": "Ce1",
+              "date_range": [
+                "2022-08-29T00:00:00",
+                "2022-10-04T00:00:00"
+              ],
+              "n_rows": 20,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8,
+                11,
+                13,
+                15,
+                19
+              ],
+              "pre_pulse_times": [
+                -17,
+                -15,
+                -13,
+                -10,
+                -8,
+                -6,
+                -3,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "Ce"
+              ]
+            },
+            {
+              "category": [
+                "Monocultures"
+              ],
+              "chemostat": "Ce2",
+              "date_range": [
+                "2022-08-29T00:00:00",
+                "2022-10-04T00:00:00"
+              ],
+              "n_rows": 20,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8,
+                11,
+                13,
+                15,
+                19
+              ],
+              "pre_pulse_times": [
+                -17,
+                -15,
+                -13,
+                -10,
+                -8,
+                -6,
+                -3,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "Ce"
+              ]
+            },
+            {
+              "category": [
+                "Monocultures"
+              ],
+              "chemostat": "Ce3",
+              "date_range": [
+                "2022-08-29T00:00:00",
+                "2022-10-04T00:00:00"
+              ],
+              "n_rows": 20,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8,
+                11,
+                13,
+                15,
+                19
+              ],
+              "pre_pulse_times": [
+                -17,
+                -15,
+                -13,
+                -10,
+                -8,
+                -6,
+                -3,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "Ce"
+              ]
+            },
+            {
+              "category": [
+                "Monocultures"
+              ],
+              "chemostat": "Ce4",
+              "date_range": [
+                "2022-08-29T00:00:00",
+                "2022-10-04T00:00:00"
+              ],
+              "n_rows": 20,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8,
+                11,
+                13,
+                15,
+                19
+              ],
+              "pre_pulse_times": [
+                -17,
+                -15,
+                -13,
+                -10,
+                -8,
+                -6,
+                -3,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "Ce"
+              ]
+            },
+            {
+              "category": [
+                "Monocultures"
+              ],
+              "chemostat": "Le1",
+              "date_range": [
+                "2022-08-29T00:00:00",
+                "2022-10-04T00:00:00"
+              ],
+              "n_rows": 20,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8,
+                11,
+                13,
+                15,
+                19
+              ],
+              "pre_pulse_times": [
+                -17,
+                -15,
+                -13,
+                -10,
+                -8,
+                -6,
+                -3,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "Le"
+              ]
+            },
+            {
+              "category": [
+                "Monocultures"
+              ],
+              "chemostat": "Le2",
+              "date_range": [
+                "2022-08-29T00:00:00",
+                "2022-10-04T00:00:00"
+              ],
+              "n_rows": 20,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8,
+                11,
+                13,
+                15,
+                19
+              ],
+              "pre_pulse_times": [
+                -17,
+                -15,
+                -13,
+                -10,
+                -8,
+                -6,
+                -3,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "Le"
+              ]
+            },
+            {
+              "category": [
+                "Monocultures"
+              ],
+              "chemostat": "Le3",
+              "date_range": [
+                "2022-08-29T00:00:00",
+                "2022-10-04T00:00:00"
+              ],
+              "n_rows": 20,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8,
+                11,
+                13,
+                15,
+                19
+              ],
+              "pre_pulse_times": [
+                -17,
+                -15,
+                -13,
+                -10,
+                -8,
+                -6,
+                -3,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "Le"
+              ]
+            },
+            {
+              "category": [
+                "Monocultures"
+              ],
+              "chemostat": "Le4",
+              "date_range": [
+                "2022-08-29T00:00:00",
+                "2022-10-04T00:00:00"
+              ],
+              "n_rows": 20,
+              "post_pulse_times": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                8,
+                11,
+                13,
+                15,
+                19
+              ],
+              "pre_pulse_times": [
+                -17,
+                -15,
+                -13,
+                -10,
+                -8,
+                -6,
+                -3,
+                -1
+              ],
+              "pulse_time_available": true,
+              "treatment": [
+                "Le"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "input_reference": {
+        "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/data/algae_stoichiometry_preliminary_experiments.xlsx",
+        "sha256": "aae542acaddc7e9b4ff97b02fe0a73d2bf5463815086495f0315255dc4bf1fda"
+      },
+      "sheets": [
+        {
+          "algae": [
+            "Ca",
+            "Co",
+            "Cr",
+            "Mo"
+          ],
+          "column_count": 9,
+          "headers": [
+            "Date",
+            "Time standardised to pulse [days]",
+            "Algae",
+            "N [pmol/cell]",
+            "C [pmol/cell]",
+            "C/N Ratio [molar]",
+            "Cell volume [\u00b5m\u00b3]",
+            "Density [cells/mL]",
+            "Biovolume [\u00b5m\u00b3/mL]"
+          ],
+          "missing_values_by_column": {
+            "Algae": 0,
+            "Biovolume [\u00b5m\u00b3/mL]": 0,
+            "C [pmol/cell]": 0,
+            "C/N Ratio [molar]": 0,
+            "Cell volume [\u00b5m\u00b3]": 0,
+            "Date": 0,
+            "Density [cells/mL]": 0,
+            "N [pmol/cell]": 0,
+            "Time standardised to pulse [days]": 0
+          },
+          "n_nonempty_records": 20,
+          "replicate_identifier_present": false,
+          "retained_preliminary_json": "data/chemostat-sources/2026-10-02/preliminary-stoichiometry.json",
+          "row_count_including_header": 21,
+          "sheet": "Sheet1",
+          "timepoints": [
+            -4,
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "input_reference": {
+        "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/data/algae_no-rotifer_chemostat_preliminary_experiments.xlsx",
+        "sha256": "4ce7ec70f990029a341075548b8376b17e71bd816fa3f98418f2b13e90ef5ba8"
+      },
+      "sheets": [
+        {
+          "column_count": 13,
+          "headers": [
+            "Category",
+            "Treatment",
+            "Chemostat",
+            "Date",
+            "Time standardised to pulse",
+            "Biovolume_total_algae \u00b5m\u00b3/mL",
+            "Biovolume_Cryptomonas \u00b5m\u00b3/mL",
+            "Biovolume_Chlamydomonas \u00b5m\u00b3/mL",
+            "Biovolume_Monoraphidium_Chlorella \u00b5m\u00b3/mL",
+            "Relative_abundance_Cryptomonas",
+            "Relative_abundance_Chlamydomonas",
+            "Relative_abundance_Monoraphidium_Chlorella",
+            null
+          ],
+          "missing_values_by_column": {
+            "Biovolume_Chlamydomonas \u00b5m\u00b3/mL": 0,
+            "Biovolume_Cryptomonas \u00b5m\u00b3/mL": 0,
+            "Biovolume_Monoraphidium_Chlorella \u00b5m\u00b3/mL": 0,
+            "Biovolume_total_algae \u00b5m\u00b3/mL": 0,
+            "Category": 0,
+            "Chemostat": 0,
+            "Date": 0,
+            "Relative_abundance_Chlamydomonas": 0,
+            "Relative_abundance_Cryptomonas": 0,
+            "Relative_abundance_Monoraphidium_Chlorella": 0,
+            "Time standardised to pulse": 0,
+            "Treatment": 0
+          },
+          "n_nonempty_records": 140,
+          "retained_preliminary_json": "data/chemostat-sources/2026-10-02/preliminary-no-herbivore.json",
+          "row_count_including_header": 141,
+          "sheet": "Sheet1"
+        }
+      ]
+    }
+  ]
+}
