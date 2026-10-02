@@ -1,0 +1,905 @@
+{
+  "fitted": {
+    "QC": {
+      "diagnostics": {
+        "inference": "Finite observed calibration slopes; no confidence or asymptotic dimension claim",
+        "leave_one_strain_out_pooled_cost_degrees": {
+          "BL107": 2.706622425764348,
+          "CC9311": 2.6479155383626582,
+          "CC9902": 3.4790843565719625,
+          "ROS8604": 2.6734831397626917
+        },
+        "within_strain_demeaned_cost_degree": 4.8018936638116685
+      },
+      "diameter_range_um": [
+        0.638,
+        1.298
+      ],
+      "eligible_training_rows": 42,
+      "models": {
+        "fixed_cubic": {
+          "coefficient": 3.0,
+          "log_intercept": 2.8599585222294834
+        },
+        "pooled_free_power": {
+          "coefficient": 2.7371484001064212,
+          "log_intercept": 2.8502210735083153
+        },
+        "strain_geometric_mean": {
+          "BL107": {
+            "log_intercept": 2.5507851183385832
+          },
+          "CC9311": {
+            "log_intercept": 3.265541805578115
+          },
+          "CC9902": {
+            "log_intercept": 1.7911413969747254
+          },
+          "ROS8604": {
+            "log_intercept": 3.4454154862639546
+          }
+        },
+        "strain_temperature_trend": {
+          "BL107": {
+            "coefficient": -0.03833774748494742,
+            "log_intercept": 3.2792023205525833
+          },
+          "CC9311": {
+            "coefficient": -0.17285452313512037,
+            "log_intercept": 6.596919887818615
+          },
+          "CC9902": {
+            "coefficient": -0.0484544015211078,
+            "log_intercept": 2.7214659061799953
+          },
+          "ROS8604": {
+            "coefficient": 0.022595198416642245,
+            "log_intercept": 3.0085749835422027
+          }
+        }
+      },
+      "training_culture_ids": [
+        "BL107:16:1",
+        "BL107:16:2",
+        "BL107:16:3",
+        "BL107:18:1",
+        "BL107:18:2",
+        "BL107:18:3",
+        "BL107:20:1",
+        "BL107:20:2",
+        "BL107:20:3",
+        "BL107:22:1",
+        "BL107:22:2",
+        "BL107:22:3",
+        "CC9311:16:1",
+        "CC9311:16:2",
+        "CC9311:18:1",
+        "CC9311:18:2",
+        "CC9311:18:3",
+        "CC9311:20:1",
+        "CC9311:20:2",
+        "CC9311:20:3",
+        "CC9311:22:1",
+        "CC9311:22:2",
+        "CC9311:22:3",
+        "CC9902:16:1",
+        "CC9902:16:2",
+        "CC9902:16:3",
+        "CC9902:18:3",
+        "CC9902:20:1",
+        "CC9902:20:2",
+        "CC9902:20:3",
+        "CC9902:22:1",
+        "CC9902:22:2",
+        "CC9902:22:3",
+        "ROS8604:16:2",
+        "ROS8604:18:1",
+        "ROS8604:18:2",
+        "ROS8604:18:3",
+        "ROS8604:20:1",
+        "ROS8604:20:2",
+        "ROS8604:20:3",
+        "ROS8604:22:1",
+        "ROS8604:22:2"
+      ]
+    },
+    "QN": {
+      "diagnostics": {
+        "inference": "Finite observed calibration slopes; no confidence or asymptotic dimension claim",
+        "leave_one_strain_out_pooled_cost_degrees": {
+          "BL107": 2.3542993850113865,
+          "CC9311": 2.515647449903322,
+          "CC9902": 3.3479246753195633,
+          "ROS8604": 2.051554586537218
+        },
+        "within_strain_demeaned_cost_degree": 3.9494820298091877
+      },
+      "diameter_range_um": [
+        0.638,
+        1.298
+      ],
+      "eligible_training_rows": 42,
+      "models": {
+        "fixed_cubic": {
+          "coefficient": 3.0,
+          "log_intercept": 0.8960840839024898
+        },
+        "pooled_free_power": {
+          "coefficient": 2.3905159247561825,
+          "log_intercept": 0.8735054884841706
+        },
+        "strain_geometric_mean": {
+          "BL107": {
+            "log_intercept": 0.5734967699016952
+          },
+          "CC9311": {
+            "log_intercept": 1.1006655782560062
+          },
+          "CC9902": {
+            "log_intercept": -0.020983182999774495
+          },
+          "ROS8604": {
+            "log_intercept": 1.576484160908078
+          }
+        },
+        "strain_temperature_trend": {
+          "BL107": {
+            "coefficient": -0.04916904007709794,
+            "log_intercept": 1.507708531366556
+          },
+          "CC9311": {
+            "coefficient": -0.15154415345019762,
+            "log_intercept": 4.0213347174779965
+          },
+          "CC9902": {
+            "coefficient": -0.00844725034441333,
+            "log_intercept": 0.14120402361296144
+          },
+          "ROS8604": {
+            "coefficient": 0.029276167805029008,
+            "log_intercept": 1.0104782500108498
+          }
+        }
+      },
+      "training_culture_ids": [
+        "BL107:16:1",
+        "BL107:16:2",
+        "BL107:16:3",
+        "BL107:18:1",
+        "BL107:18:2",
+        "BL107:18:3",
+        "BL107:20:1",
+        "BL107:20:2",
+        "BL107:20:3",
+        "BL107:22:1",
+        "BL107:22:2",
+        "BL107:22:3",
+        "CC9311:16:1",
+        "CC9311:16:2",
+        "CC9311:18:1",
+        "CC9311:18:2",
+        "CC9311:18:3",
+        "CC9311:20:1",
+        "CC9311:20:2",
+        "CC9311:20:3",
+        "CC9311:22:1",
+        "CC9311:22:2",
+        "CC9311:22:3",
+        "CC9902:16:1",
+        "CC9902:16:2",
+        "CC9902:16:3",
+        "CC9902:18:3",
+        "CC9902:20:1",
+        "CC9902:20:2",
+        "CC9902:20:3",
+        "CC9902:22:1",
+        "CC9902:22:2",
+        "CC9902:22:3",
+        "ROS8604:16:2",
+        "ROS8604:18:1",
+        "ROS8604:18:2",
+        "ROS8604:18:3",
+        "ROS8604:20:1",
+        "ROS8604:20:2",
+        "ROS8604:20:3",
+        "ROS8604:22:1",
+        "ROS8604:22:2"
+      ]
+    },
+    "QP": {
+      "diagnostics": {
+        "inference": "Finite observed calibration slopes; no confidence or asymptotic dimension claim",
+        "leave_one_strain_out_pooled_cost_degrees": {
+          "BL107": 2.895478455513979,
+          "CC9311": 2.9509364689788757,
+          "CC9902": 3.650421557618687,
+          "ROS8604": 2.758966897198031
+        },
+        "within_strain_demeaned_cost_degree": 3.635760043644684
+      },
+      "diameter_range_um": [
+        0.638,
+        1.298
+      ],
+      "eligible_training_rows": 42,
+      "models": {
+        "fixed_cubic": {
+          "coefficient": 3.0,
+          "log_intercept": -1.6874947497309132
+        },
+        "pooled_free_power": {
+          "coefficient": 2.932930053776392,
+          "log_intercept": -1.6899793842636621
+        },
+        "strain_geometric_mean": {
+          "BL107": {
+            "log_intercept": -2.0241982583471647
+          },
+          "CC9311": {
+            "log_intercept": -1.2784561390831548
+          },
+          "CC9902": {
+            "log_intercept": -2.8343825097647573
+          },
+          "ROS8604": {
+            "log_intercept": -0.9828090074514777
+          }
+        },
+        "strain_temperature_trend": {
+          "BL107": {
+            "coefficient": -0.09345363743978252,
+            "log_intercept": -0.24857914699129707
+          },
+          "CC9311": {
+            "coefficient": -0.1378394484785978,
+            "log_intercept": 1.3780859588680017
+          },
+          "CC9902": {
+            "coefficient": 0.0032799349638769713,
+            "log_intercept": -2.897357261071197
+          },
+          "ROS8604": {
+            "coefficient": 0.017286315914239115,
+            "log_intercept": -1.3170111151267667
+          }
+        }
+      },
+      "training_culture_ids": [
+        "BL107:16:1",
+        "BL107:16:2",
+        "BL107:16:3",
+        "BL107:18:1",
+        "BL107:18:2",
+        "BL107:18:3",
+        "BL107:20:1",
+        "BL107:20:2",
+        "BL107:20:3",
+        "BL107:22:1",
+        "BL107:22:2",
+        "BL107:22:3",
+        "CC9311:16:1",
+        "CC9311:16:2",
+        "CC9311:18:1",
+        "CC9311:18:2",
+        "CC9311:18:3",
+        "CC9311:20:1",
+        "CC9311:20:2",
+        "CC9311:20:3",
+        "CC9311:22:1",
+        "CC9311:22:2",
+        "CC9311:22:3",
+        "CC9902:16:1",
+        "CC9902:16:2",
+        "CC9902:16:3",
+        "CC9902:18:3",
+        "CC9902:20:1",
+        "CC9902:20:2",
+        "CC9902:20:3",
+        "CC9902:22:1",
+        "CC9902:22:2",
+        "CC9902:22:3",
+        "ROS8604:16:2",
+        "ROS8604:18:1",
+        "ROS8604:18:2",
+        "ROS8604:18:3",
+        "ROS8604:20:1",
+        "ROS8604:20:2",
+        "ROS8604:20:3",
+        "ROS8604:22:1",
+        "ROS8604:22:2"
+      ]
+    }
+  },
+  "forecast_scope": "Quota prediction conditional on measured validation diameter, strain, and temperature, not a prediction of diameter itself or of allocation neutrality",
+  "frozen_plan_reference": {
+    "path": "data/archived-cost-transfer/2026-10-02/frozen-plan.json",
+    "sha256": "ba5d8eae1e45441a475ef355d7a910c76d626fd3f6b0d883c9006c5fd8284ac6"
+  },
+  "frozen_utc": "2026-10-02T15:00:10.934342+00:00",
+  "held_out_quota_conversion_performed": false,
+  "membership_reference": {
+    "path": "data/archived-cost-transfer/2026-10-02/membership.json",
+    "sha256": "5edab10a3a3922466caaa4488d44eff21b2b4a7abcc2c2981bd173f76a60f061"
+  },
+  "raw_reference": {
+    "path": "data/archived-cost-transfer/2026-10-02/926311_v1_syn-batch-cultures.csv",
+    "sha256": "4192fd69842c7ce4dc9a66a689a32f3c393bf833f7126119efaa5989babbc766"
+  },
+  "run_id": "archived-cost-transfer-2026-10-02",
+  "training_reference": {
+    "path": "data/archived-cost-transfer/2026-10-02/training-records.json",
+    "sha256": "c1b5ea0d2836b1a2b9c412a1e9495ac9fb9ffaba46bcf775c4470e8d7adbb53c"
+  },
+  "validation_predictions": [
+    {
+      "culture_id": "BL107:25:1",
+      "diameter_um": 0.95,
+      "predicted_log_quota": {
+        "fixed_cubic": 2.7060786390668317,
+        "pooled_free_power": 2.7098237148392434,
+        "strain_geometric_mean": 2.5507851183385832,
+        "strain_temperature_trend": 2.320758633428898
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 14.970455703246275,
+        "pooled_free_power": 15.02662631013981,
+        "strain_geometric_mean": 12.817162822958734,
+        "strain_temperature_trend": 10.183396841679958
+      },
+      "resource": "QC",
+      "strain": "BL107",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "BL107:25:1",
+      "diameter_um": 0.95,
+      "predicted_log_quota": {
+        "fixed_cubic": 0.7422042007398382,
+        "pooled_free_power": 0.750888051417524,
+        "strain_geometric_mean": 0.5734967699016952,
+        "strain_temperature_trend": 0.27848252943910734
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 2.1005604724013565,
+        "pooled_free_power": 2.1188808564959802,
+        "strain_geometric_mean": 1.7744610977032083,
+        "strain_temperature_trend": 1.3211235244253898
+      },
+      "resource": "QN",
+      "strain": "BL107",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "BL107:25:1",
+      "diameter_um": 0.95,
+      "predicted_log_quota": {
+        "fixed_cubic": -1.841374632893565,
+        "pooled_free_power": -1.8404190289301092,
+        "strain_geometric_mean": -2.0241982583471647,
+        "strain_temperature_trend": -2.5849200829858603
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 0.15859926043213332,
+        "pooled_free_power": 0.1587508909518274,
+        "strain_geometric_mean": 0.13209971058331116,
+        "strain_temperature_trend": 0.0754021052714609
+      },
+      "resource": "QP",
+      "strain": "BL107",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "BL107:25:2",
+      "diameter_um": 0.954,
+      "predicted_log_quota": {
+        "fixed_cubic": 2.7186836996279315,
+        "pooled_free_power": 2.721324355288597,
+        "strain_geometric_mean": 2.5507851183385832,
+        "strain_temperature_trend": 2.320758633428898
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 15.16035352643378,
+        "pooled_free_power": 15.200439703392481,
+        "strain_geometric_mean": 12.817162822958734,
+        "strain_temperature_trend": 10.183396841679958
+      },
+      "resource": "QC",
+      "strain": "BL107",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "BL107:25:2",
+      "diameter_um": 0.954,
+      "predicted_log_quota": {
+        "fixed_cubic": 0.7548092613009381,
+        "pooled_free_power": 0.7609322507521327,
+        "strain_geometric_mean": 0.5734967699016952,
+        "strain_temperature_trend": 0.27848252943910734
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 2.127205744201348,
+        "pooled_free_power": 2.1402705595792604,
+        "strain_geometric_mean": 1.7744610977032083,
+        "strain_temperature_trend": 1.3211235244253898
+      },
+      "resource": "QN",
+      "strain": "BL107",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "BL107:25:2",
+      "diameter_um": 0.954,
+      "predicted_log_quota": {
+        "fixed_cubic": -1.8287695723324648,
+        "pooled_free_power": -1.8280957752803353,
+        "strain_geometric_mean": -2.0241982583471647,
+        "strain_temperature_trend": -2.5849200829858603
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 0.16061106654627053,
+        "pooled_free_power": 0.16071932227654906,
+        "strain_geometric_mean": 0.13209971058331116,
+        "strain_temperature_trend": 0.0754021052714609
+      },
+      "resource": "QP",
+      "strain": "BL107",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "BL107:25:3",
+      "diameter_um": 0.953,
+      "predicted_log_quota": {
+        "fixed_cubic": 2.7155373962456784,
+        "pooled_free_power": 2.7184537221989356,
+        "strain_geometric_mean": 2.5507851183385832,
+        "strain_temperature_trend": 2.320758633428898
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 15.11272941409708,
+        "pooled_free_power": 15.156867388189022,
+        "strain_geometric_mean": 12.817162822958734,
+        "strain_temperature_trend": 10.183396841679958
+      },
+      "resource": "QC",
+      "strain": "BL107",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "BL107:25:3",
+      "diameter_um": 0.953,
+      "predicted_log_quota": {
+        "fixed_cubic": 0.7516629579186849,
+        "pooled_free_power": 0.7584251546390024,
+        "strain_geometric_mean": 0.5734967699016952,
+        "strain_temperature_trend": 0.27848252943910734
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 2.1205234273840996,
+        "pooled_free_power": 2.134911416328986,
+        "strain_geometric_mean": 1.7744610977032083,
+        "strain_temperature_trend": 1.3211235244253898
+      },
+      "resource": "QN",
+      "strain": "BL107",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "BL107:25:3",
+      "diameter_um": 0.953,
+      "predicted_log_quota": {
+        "fixed_cubic": -1.831915875714718,
+        "pooled_free_power": -1.831171737863038,
+        "strain_geometric_mean": -2.0241982583471647,
+        "strain_temperature_trend": -2.5849200829858603
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 0.16010652953383342,
+        "pooled_free_power": 0.16022571520254456,
+        "strain_geometric_mean": 0.13209971058331116,
+        "strain_temperature_trend": 0.0754021052714609
+      },
+      "resource": "QP",
+      "strain": "BL107",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "CC9311:25:1",
+      "diameter_um": 1.107,
+      "predicted_log_quota": {
+        "fixed_cubic": 3.164919483408983,
+        "pooled_free_power": 3.1284622091707766,
+        "strain_geometric_mean": 3.265541805578115,
+        "strain_temperature_trend": 2.275556809440606
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 23.686836772700165,
+        "pooled_free_power": 22.838831178814797,
+        "strain_geometric_mean": 26.194299364316322,
+        "strain_temperature_trend": 9.73333711798967
+      },
+      "resource": "QC",
+      "strain": "CC9311",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "CC9311:25:1",
+      "diameter_um": 1.107,
+      "predicted_log_quota": {
+        "fixed_cubic": 1.2010450450819894,
+        "pooled_free_power": 1.1165101665270192,
+        "strain_geometric_mean": 1.1006655782560062,
+        "strain_temperature_trend": 0.23273088122305596
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 3.323588408211755,
+        "pooled_free_power": 3.0541770141469833,
+        "strain_geometric_mean": 3.0061661970914426,
+        "strain_temperature_trend": 1.2620417944773439
+      },
+      "resource": "QN",
+      "strain": "CC9311",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "CC9311:25:1",
+      "diameter_um": 1.107,
+      "predicted_log_quota": {
+        "fixed_cubic": -1.3825337885514137,
+        "pooled_free_power": -1.3918363281730324,
+        "strain_geometric_mean": -1.2784561390831548,
+        "strain_temperature_trend": -2.0679002530969433
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 0.25094191309836206,
+        "pooled_free_power": 0.24861834032918861,
+        "strain_geometric_mean": 0.27846688289723587,
+        "strain_temperature_trend": 0.1264510182767678
+      },
+      "resource": "QP",
+      "strain": "CC9311",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "CC9311:25:2",
+      "diameter_um": 1.107,
+      "predicted_log_quota": {
+        "fixed_cubic": 3.164919483408983,
+        "pooled_free_power": 3.1284622091707766,
+        "strain_geometric_mean": 3.265541805578115,
+        "strain_temperature_trend": 2.275556809440606
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 23.686836772700165,
+        "pooled_free_power": 22.838831178814797,
+        "strain_geometric_mean": 26.194299364316322,
+        "strain_temperature_trend": 9.73333711798967
+      },
+      "resource": "QC",
+      "strain": "CC9311",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "CC9311:25:2",
+      "diameter_um": 1.107,
+      "predicted_log_quota": {
+        "fixed_cubic": 1.2010450450819894,
+        "pooled_free_power": 1.1165101665270192,
+        "strain_geometric_mean": 1.1006655782560062,
+        "strain_temperature_trend": 0.23273088122305596
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 3.323588408211755,
+        "pooled_free_power": 3.0541770141469833,
+        "strain_geometric_mean": 3.0061661970914426,
+        "strain_temperature_trend": 1.2620417944773439
+      },
+      "resource": "QN",
+      "strain": "CC9311",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "CC9311:25:2",
+      "diameter_um": 1.107,
+      "predicted_log_quota": {
+        "fixed_cubic": -1.3825337885514137,
+        "pooled_free_power": -1.3918363281730324,
+        "strain_geometric_mean": -1.2784561390831548,
+        "strain_temperature_trend": -2.0679002530969433
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 0.25094191309836206,
+        "pooled_free_power": 0.24861834032918861,
+        "strain_geometric_mean": 0.27846688289723587,
+        "strain_temperature_trend": 0.1264510182767678
+      },
+      "resource": "QP",
+      "strain": "CC9311",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "CC9311:25:3",
+      "diameter_um": 1.112,
+      "predicted_log_quota": {
+        "fixed_cubic": 3.1784391097146556,
+        "pooled_free_power": 3.1407972836749796,
+        "strain_geometric_mean": 3.265541805578115,
+        "strain_temperature_trend": 2.275556809440606
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 24.00924848631211,
+        "pooled_free_power": 23.12229453966599,
+        "strain_geometric_mean": 26.194299364316322,
+        "strain_temperature_trend": 9.73333711798967
+      },
+      "resource": "QC",
+      "strain": "CC9311",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "CC9311:25:3",
+      "diameter_um": 1.112,
+      "predicted_log_quota": {
+        "fixed_cubic": 1.214564671387662,
+        "pooled_free_power": 1.1272831271871735,
+        "strain_geometric_mean": 1.1006655782560062,
+        "strain_temperature_trend": 0.23273088122305596
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 3.368827198190979,
+        "pooled_free_power": 3.0872574099379815,
+        "strain_geometric_mean": 3.0061661970914426,
+        "strain_temperature_trend": 1.2620417944773439
+      },
+      "resource": "QN",
+      "strain": "CC9311",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "CC9311:25:3",
+      "diameter_um": 1.112,
+      "predicted_log_quota": {
+        "fixed_cubic": -1.369014162245741,
+        "pooled_free_power": -1.3786189554037878,
+        "strain_geometric_mean": -1.2784561390831548,
+        "strain_temperature_trend": -2.0679002530969433
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 0.25435759130797214,
+        "pooled_free_power": 0.2519262342873623,
+        "strain_geometric_mean": 0.27846688289723587,
+        "strain_temperature_trend": 0.1264510182767678
+      },
+      "resource": "QP",
+      "strain": "CC9311",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "CC9902:25:1",
+      "diameter_um": 0.753,
+      "predicted_log_quota": {
+        "fixed_cubic": 2.008888368682753,
+        "pooled_free_power": 2.073719303788729,
+        "strain_geometric_mean": 1.7911413969747254,
+        "strain_temperature_trend": 1.5101058681523003
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 7.4550254996180225,
+        "pooled_free_power": 7.954352823428729,
+        "strain_geometric_mean": 5.9962927122838785,
+        "strain_temperature_trend": 4.527210056308251
+      },
+      "resource": "QC",
+      "strain": "CC9902",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "CC9902:25:1",
+      "diameter_um": 0.753,
+      "predicted_log_quota": {
+        "fixed_cubic": 0.0450139303557594,
+        "pooled_free_power": 0.19533990343812113,
+        "strain_geometric_mean": -0.020983182999774495,
+        "strain_temperature_trend": -0.0699772349973718
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 1.0460424315504335,
+        "pooled_free_power": 1.2157241450854608,
+        "strain_geometric_mean": 0.9792354322334755,
+        "strain_temperature_trend": 0.9324150460953151
+      },
+      "resource": "QN",
+      "strain": "CC9902",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "CC9902:25:1",
+      "diameter_um": 0.753,
+      "predicted_log_quota": {
+        "fixed_cubic": -2.538564903277644,
+        "pooled_free_power": -2.5220224613334272,
+        "strain_geometric_mean": -2.8343825097647573,
+        "strain_temperature_trend": -2.815358886974273
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 0.07897966195415973,
+        "pooled_free_power": 0.08029704474907014,
+        "strain_geometric_mean": 0.05875479514702346,
+        "strain_temperature_trend": 0.0598832235742571
+      },
+      "resource": "QP",
+      "strain": "CC9902",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "CC9902:25:2",
+      "diameter_um": 0.753,
+      "predicted_log_quota": {
+        "fixed_cubic": 2.008888368682753,
+        "pooled_free_power": 2.073719303788729,
+        "strain_geometric_mean": 1.7911413969747254,
+        "strain_temperature_trend": 1.5101058681523003
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 7.4550254996180225,
+        "pooled_free_power": 7.954352823428729,
+        "strain_geometric_mean": 5.9962927122838785,
+        "strain_temperature_trend": 4.527210056308251
+      },
+      "resource": "QC",
+      "strain": "CC9902",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "CC9902:25:2",
+      "diameter_um": 0.753,
+      "predicted_log_quota": {
+        "fixed_cubic": 0.0450139303557594,
+        "pooled_free_power": 0.19533990343812113,
+        "strain_geometric_mean": -0.020983182999774495,
+        "strain_temperature_trend": -0.0699772349973718
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 1.0460424315504335,
+        "pooled_free_power": 1.2157241450854608,
+        "strain_geometric_mean": 0.9792354322334755,
+        "strain_temperature_trend": 0.9324150460953151
+      },
+      "resource": "QN",
+      "strain": "CC9902",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "CC9902:25:2",
+      "diameter_um": 0.753,
+      "predicted_log_quota": {
+        "fixed_cubic": -2.538564903277644,
+        "pooled_free_power": -2.5220224613334272,
+        "strain_geometric_mean": -2.8343825097647573,
+        "strain_temperature_trend": -2.815358886974273
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 0.07897966195415973,
+        "pooled_free_power": 0.08029704474907014,
+        "strain_geometric_mean": 0.05875479514702346,
+        "strain_temperature_trend": 0.0598832235742571
+      },
+      "resource": "QP",
+      "strain": "CC9902",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "ROS8604:25:2",
+      "diameter_um": 1.219,
+      "predicted_log_quota": {
+        "fixed_cubic": 3.454051073726887,
+        "pooled_free_power": 3.3922608991237353,
+        "strain_geometric_mean": 3.4454154862639546,
+        "strain_temperature_trend": 3.573454943958259
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 31.628261549403273,
+        "pooled_free_power": 29.733099874238075,
+        "strain_geometric_mean": 31.35630885616069,
+        "strain_temperature_trend": 35.639513209239844
+      },
+      "resource": "QC",
+      "strain": "ROS8604",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "ROS8604:25:2",
+      "diameter_um": 1.219,
+      "predicted_log_quota": {
+        "fixed_cubic": 1.4901766353998935,
+        "pooled_free_power": 1.3469013901953626,
+        "strain_geometric_mean": 1.576484160908078,
+        "strain_temperature_trend": 1.742382445136575
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 4.4378793363679385,
+        "pooled_free_power": 3.8454913733241205,
+        "strain_geometric_mean": 4.8379165390284395,
+        "strain_temperature_trend": 5.710933212837456
+      },
+      "resource": "QN",
+      "strain": "ROS8604",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "ROS8604:25:2",
+      "diameter_um": 1.219,
+      "predicted_log_quota": {
+        "fixed_cubic": -1.0934021982335096,
+        "pooled_free_power": -1.1091687512598507,
+        "strain_geometric_mean": -0.9828090074514777,
+        "strain_temperature_trend": -0.8848532172707888
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 0.33507456218595233,
+        "pooled_free_power": 0.3298330204363564,
+        "strain_geometric_mean": 0.37425832649304697,
+        "strain_temperature_trend": 0.41277475703800365
+      },
+      "resource": "QP",
+      "strain": "ROS8604",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "ROS8604:25:3",
+      "diameter_um": 1.2,
+      "predicted_log_quota": {
+        "fixed_cubic": 3.4069231926113472,
+        "pooled_free_power": 3.3492622309918003,
+        "strain_geometric_mean": 3.4454154862639546,
+        "strain_temperature_trend": 3.573454943958259
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 30.17226704208726,
+        "pooled_free_power": 28.481712965391925,
+        "strain_geometric_mean": 31.35630885616069,
+        "strain_temperature_trend": 35.639513209239844
+      },
+      "resource": "QC",
+      "strain": "ROS8604",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "ROS8604:25:3",
+      "diameter_um": 1.2,
+      "predicted_log_quota": {
+        "fixed_cubic": 1.4430487542843538,
+        "pooled_free_power": 1.3093480734264578,
+        "strain_geometric_mean": 1.576484160908078,
+        "strain_temperature_trend": 1.742382445136575
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 4.233583316879479,
+        "pooled_free_power": 3.703758346487141,
+        "strain_geometric_mean": 4.8379165390284395,
+        "strain_temperature_trend": 5.710933212837456
+      },
+      "resource": "QN",
+      "strain": "ROS8604",
+      "temperature_degC": 25.0
+    },
+    {
+      "culture_id": "ROS8604:25:3",
+      "diameter_um": 1.2,
+      "predicted_log_quota": {
+        "fixed_cubic": -1.1405300793490494,
+        "pooled_free_power": -1.1552430108913734,
+        "strain_geometric_mean": -0.9828090074514777,
+        "strain_temperature_trend": -0.8848532172707888
+      },
+      "predicted_quota_fmol_per_cell": {
+        "fixed_cubic": 0.31964953728150036,
+        "pooled_free_power": 0.31498098379253314,
+        "strain_geometric_mean": 0.37425832649304697,
+        "strain_temperature_trend": 0.41277475703800365
+      },
+      "resource": "QP",
+      "strain": "ROS8604",
+      "temperature_degC": 25.0
+    }
+  ]
+}

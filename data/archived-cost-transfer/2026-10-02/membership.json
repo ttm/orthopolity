@@ -1,0 +1,470 @@
+[
+  {
+    "culture_id": "BL107:16:1",
+    "diameter_um": 0.945,
+    "replicate": "1",
+    "source_line": 2,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "BL107:16:2",
+    "diameter_um": 0.946,
+    "replicate": "2",
+    "source_line": 3,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "BL107:16:3",
+    "diameter_um": 0.952,
+    "replicate": "3",
+    "source_line": 4,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "BL107:18:1",
+    "diameter_um": 0.908,
+    "replicate": "1",
+    "source_line": 5,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "BL107:18:2",
+    "diameter_um": 0.906,
+    "replicate": "2",
+    "source_line": 6,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "BL107:18:3",
+    "diameter_um": 0.901,
+    "replicate": "3",
+    "source_line": 7,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "BL107:20:1",
+    "diameter_um": 0.938,
+    "replicate": "1",
+    "source_line": 8,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "BL107:20:2",
+    "diameter_um": 0.934,
+    "replicate": "2",
+    "source_line": 9,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "BL107:20:3",
+    "diameter_um": 0.95,
+    "replicate": "3",
+    "source_line": 10,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "BL107:22:1",
+    "diameter_um": 0.926,
+    "replicate": "1",
+    "source_line": 11,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "BL107:22:2",
+    "diameter_um": 0.925,
+    "replicate": "2",
+    "source_line": 12,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "BL107:22:3",
+    "diameter_um": 0.928,
+    "replicate": "3",
+    "source_line": 13,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "BL107:25:1",
+    "diameter_um": 0.95,
+    "replicate": "1",
+    "source_line": 14,
+    "split": "validation",
+    "strain": "BL107",
+    "temperature_degC": 25.0
+  },
+  {
+    "culture_id": "BL107:25:2",
+    "diameter_um": 0.954,
+    "replicate": "2",
+    "source_line": 15,
+    "split": "validation",
+    "strain": "BL107",
+    "temperature_degC": 25.0
+  },
+  {
+    "culture_id": "BL107:25:3",
+    "diameter_um": 0.953,
+    "replicate": "3",
+    "source_line": 16,
+    "split": "validation",
+    "strain": "BL107",
+    "temperature_degC": 25.0
+  },
+  {
+    "culture_id": "CC9311:16:1",
+    "diameter_um": 1.231,
+    "replicate": "1",
+    "source_line": 17,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "CC9311:16:2",
+    "diameter_um": 1.236,
+    "replicate": "2",
+    "source_line": 18,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "CC9311:18:1",
+    "diameter_um": 1.28,
+    "replicate": "1",
+    "source_line": 19,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "CC9311:18:2",
+    "diameter_um": 1.298,
+    "replicate": "2",
+    "source_line": 20,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "CC9311:18:3",
+    "diameter_um": 1.252,
+    "replicate": "3",
+    "source_line": 21,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "CC9311:20:1",
+    "diameter_um": 1.114,
+    "replicate": "1",
+    "source_line": 22,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "CC9311:20:2",
+    "diameter_um": 1.116,
+    "replicate": "2",
+    "source_line": 23,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "CC9311:20:3",
+    "diameter_um": 1.115,
+    "replicate": "3",
+    "source_line": 24,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "CC9311:22:1",
+    "diameter_um": 1.058,
+    "replicate": "1",
+    "source_line": 25,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "CC9311:22:2",
+    "diameter_um": 1.058,
+    "replicate": "2",
+    "source_line": 26,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "CC9311:22:3",
+    "diameter_um": 1.055,
+    "replicate": "3",
+    "source_line": 27,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "CC9311:25:1",
+    "diameter_um": 1.107,
+    "replicate": "1",
+    "source_line": 28,
+    "split": "validation",
+    "strain": "CC9311",
+    "temperature_degC": 25.0
+  },
+  {
+    "culture_id": "CC9311:25:2",
+    "diameter_um": 1.107,
+    "replicate": "2",
+    "source_line": 29,
+    "split": "validation",
+    "strain": "CC9311",
+    "temperature_degC": 25.0
+  },
+  {
+    "culture_id": "CC9311:25:3",
+    "diameter_um": 1.112,
+    "replicate": "3",
+    "source_line": 30,
+    "split": "validation",
+    "strain": "CC9311",
+    "temperature_degC": 25.0
+  },
+  {
+    "culture_id": "CC9902:16:1",
+    "diameter_um": 0.688,
+    "replicate": "1",
+    "source_line": 31,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "CC9902:16:2",
+    "diameter_um": 0.643,
+    "replicate": "2",
+    "source_line": 32,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "CC9902:16:3",
+    "diameter_um": 0.701,
+    "replicate": "3",
+    "source_line": 33,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "CC9902:18:3",
+    "diameter_um": 0.657,
+    "replicate": "3",
+    "source_line": 34,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "CC9902:20:1",
+    "diameter_um": 0.642,
+    "replicate": "1",
+    "source_line": 35,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "CC9902:20:2",
+    "diameter_um": 0.638,
+    "replicate": "2",
+    "source_line": 36,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "CC9902:20:3",
+    "diameter_um": 0.643,
+    "replicate": "3",
+    "source_line": 37,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "CC9902:22:1",
+    "diameter_um": 0.671,
+    "replicate": "1",
+    "source_line": 38,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "CC9902:22:2",
+    "diameter_um": 0.663,
+    "replicate": "2",
+    "source_line": 39,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "CC9902:22:3",
+    "diameter_um": 0.652,
+    "replicate": "3",
+    "source_line": 40,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "CC9902:25:1",
+    "diameter_um": 0.753,
+    "replicate": "1",
+    "source_line": 41,
+    "split": "validation",
+    "strain": "CC9902",
+    "temperature_degC": 25.0
+  },
+  {
+    "culture_id": "CC9902:25:2",
+    "diameter_um": 0.753,
+    "replicate": "2",
+    "source_line": 42,
+    "split": "validation",
+    "strain": "CC9902",
+    "temperature_degC": 25.0
+  },
+  {
+    "culture_id": "ROS8604:16:2",
+    "diameter_um": 1.232,
+    "replicate": "2",
+    "source_line": 43,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "ROS8604:18:1",
+    "diameter_um": 1.213,
+    "replicate": "1",
+    "source_line": 44,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "ROS8604:18:2",
+    "diameter_um": 1.259,
+    "replicate": "2",
+    "source_line": 45,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "ROS8604:18:3",
+    "diameter_um": 1.21,
+    "replicate": "3",
+    "source_line": 46,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "ROS8604:20:1",
+    "diameter_um": 1.245,
+    "replicate": "1",
+    "source_line": 47,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "ROS8604:20:2",
+    "diameter_um": 1.243,
+    "replicate": "2",
+    "source_line": 48,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "ROS8604:20:3",
+    "diameter_um": 1.24,
+    "replicate": "3",
+    "source_line": 49,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "ROS8604:22:1",
+    "diameter_um": 1.198,
+    "replicate": "1",
+    "source_line": 50,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "ROS8604:22:2",
+    "diameter_um": 1.198,
+    "replicate": "2",
+    "source_line": 51,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "ROS8604:25:2",
+    "diameter_um": 1.219,
+    "replicate": "2",
+    "source_line": 52,
+    "split": "validation",
+    "strain": "ROS8604",
+    "temperature_degC": 25.0
+  },
+  {
+    "culture_id": "ROS8604:25:3",
+    "diameter_um": 1.2,
+    "replicate": "3",
+    "source_line": 53,
+    "split": "validation",
+    "strain": "ROS8604",
+    "temperature_degC": 25.0
+  }
+]
