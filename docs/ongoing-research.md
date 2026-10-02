@@ -45,14 +45,15 @@ retrospective validation, not global blinding or prospective data collection.
 
 ## Next actions, in priority order
 
-1. **Revise `docs/paper.md` (in progress).** The user asked for this. Integrate
-   the 2 October validation round and the three available-data studies, then
-   rebuild `docs/paper.pdf` with `make paper` if TeX is available.
-2. **Audit the next dataset.** Look for coexisting size classes with directly
+1. **Audit the next dataset.** Look for coexisting size classes with directly
    measured resource stocks: only such records can test neutrality itself.
    Follow the same discipline: retain bytes and receipts, declare the partition
    from metadata, freeze the protocol before decoding held-out outcomes,
    register, and keep every failure.
+2. **Manuscript.** [`docs/paper.md`](paper.md) now reports the frozen-forecast
+   tests in Section 5 (commits `31b2f84`, `d5d6ee1`). Revise it again only when
+   a new registered study changes a conclusion. Rebuild with `make paper`, which
+   needs TeX; the PDF is byte-reproducible from the manuscript's commit date.
 3. Never edit a registered study. A corrective analysis gets a new run
    identifier and its own frozen protocol.
 
@@ -152,3 +153,7 @@ source audit.
   - `74c229f`: forecasts retained (frozen 20:55:22; evaluation 20:55:46).
 
   Offline audit replay matched. Registered with 539 file references.
+- Manuscript checkpoint. `docs/paper.md` revised (`31b2f84`) with a new
+  Section 5, Figure 2 (*Dunaliella*), and an updated abstract, discussion,
+  conclusion and references. PDF rebuilt (`d5d6ee1`, 15 pages, no LaTeX
+  warnings); a second rebuild was byte-identical.
