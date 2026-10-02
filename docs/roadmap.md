@@ -5,8 +5,9 @@ audit of the supplied essay, and reproducible exploratory analyses. It is a rese
 not a submission-ready announcement of a new law.
 
 The [scientific-strength assessment](scientific-assessment.md) develops a concrete
-next study: calibration of complete-profile equivalence decisions, followed by an
-audited application. It also formalizes resource symmetry as a candidate law and
+study of complete-profile equivalence decisions, now executed in the
+[calibration and validation round](validation-round.md). It also formalizes
+resource symmetry as a candidate law and
 separates its empirical test from the optional construction of a deeper mechanism.
 
 ## Completed in this revision
@@ -47,6 +48,11 @@ separates its empirical test from the optional construction of a deeper mechanis
   insufficiency of a fitted exponent to identify a neutral resource profile.
   Retain all forecasts, source membership, simulation statistics, limitations
   and replay lineage in the expanded registry.
+- Execute the [2 October validation round](validation-round.md): calibrate
+  equivalence/departure/unresolved decisions, checkpoint before acquiring 2025
+  solar outcomes, and predict an actual CPU-allocation restriction using
+  independently measured non-unit resource costs. Preserve both positive
+  forecasts and statistical applicability failures.
 
 ## Next substantive research step
 
@@ -82,6 +88,16 @@ scaling to resource-cost scaling and test the corresponding prediction. For an
 allocation paper, choose and justify a restriction closure, then compare its
 budget-induced profile response with a prespecified alternative. Additional model
 matches alone do not establish that natural systems select either closure.
+
+The runtime intervention now provides a successful actual allocation example
+under a declared engineered mechanism. The solar holdout supplies unused-data
+prediction but leaves neutrality unresolved. The next natural-system step needs
+paired raw resource measurements, an independently justified observation model,
+and a measured restriction whose response is predicted before its outcomes.
+For methods research, address the benchmark's serial-dependence and detection
+failures while retaining useful power: operational coverage gates alone can
+pass through conservatism. No universal sample-size threshold follows from
+the tested 12/24/48-block scenarios.
 
 ## Work needed before a journal submission
 

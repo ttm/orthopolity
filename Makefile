@@ -4,13 +4,16 @@
 #   make all       verify data, run tests, run every analysis
 #   make paper     typeset docs/paper.md into docs/paper.pdf (needs pdflatex)
 #
-# Analyses depend only on data/raw/, which is checksummed; they never fetch.
+# Historical downloaded inputs live in checksummed data/raw/. Later studies
+# retain their own measured/generated inputs and acquisition receipts. Analysis
+# targets are offline; network acquisition is a separate explicit driver stage.
 
 PY ?= python3
 export PYTHONPATH := src
 STUDY_OUTPUT_ROOT ?= build/reproductions
 
 .PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory models dependence attachment restrictions followup competition forecast interventions robustness workload-pilot workload-report workload-transfer workload-transfer-report scheduler-allocation run-registry registry-verify solar-resource-transfer aquatic-study-transfer resource-identification profile-tests profile-test-registry analyses paper clean
+.PHONY: profile-calibration solar-validation dimensionality-intervention validation-round validation-round-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -122,6 +125,21 @@ profile-tests: solar-resource-transfer aquatic-study-transfer resource-identific
 profile-test-registry: ## idempotently register the additional empirical/simulation tests
 	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_aquatic_study_transfer.py --register
 	$(PY) experiments/register_profile_tests.py
+
+profile-calibration: ## audit/reuse the complete-profile repeated-sampling benchmark
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_profile_calibration.py
+
+solar-validation: ## evaluate/reuse the acquired 2025 snapshot without downloading
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_solar_validation.py --stage analyse
+
+dimensionality-intervention: ## audit measured CPU allocation without collecting new trials
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_dimensionality_intervention.py --stage audit
+
+validation-round: profile-calibration solar-validation dimensionality-intervention
+	$(PY) experiments/audit_solar_validation.py
+
+validation-round-registry: ## append/check the three completed studies idempotently
+	$(PY) experiments/register_validation_round.py
 
 paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 

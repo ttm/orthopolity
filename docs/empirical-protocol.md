@@ -183,3 +183,18 @@ slope predictions, while a growth/removal simulation calibrates exponent and
 complete-profile screens. The natural-system tests reanalyse already inspected
 data and do not claim new independent observations. Their comparison and
 measurement limitations identify which future profile tests need calibration.
+
+The [2 October validation round](validation-round.md) now calibrates complete
+three-way profile decisions and evaluates a forecast on an unused solar year.
+The solar source/configuration, costs, classes, comparators and observation gate
+were committed before acquisition; its formal verdict remains unresolved because
+the actual monthly sampling assumptions are not established. This ordering is
+documented local analysis separation, not external blinding or prospective data
+collection.
+
+The [runtime intervention](dimensionality-intervention.md) also executes an
+allocation experiment with independently measured non-unit CPU costs. Runnable
+threads receive no class quotas or job targets. Their observed CPU/job profiles
+and changed-worker response test a conditional GIL/OS allocation hypothesis.
+This supplies actual engineered allocation evidence; natural-system selection
+of neutrality remains a separate target.

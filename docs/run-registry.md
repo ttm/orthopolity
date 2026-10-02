@@ -83,6 +83,29 @@ realization, with a resolved plotting interruption.
 `make profile-test-registry PY=python3.11` idempotently registers these additional
 records and verifies the complete archive. It does not regenerate their results.
 
+The [2 October validation round](validation-round.md) adds three records,
+bringing the catalogue to eighteen. `profile-calibration-2026-10-02` records
+generated outer datasets and their decision-calibration results; development
+source snapshots precede final output-integrity guard changes, with inference
+parameters unchanged. `solar-validation-2026-10-02` records a forecast frozen
+and committed before acquiring the public 2025 event values. Its snapshot,
+acquisition attempts, source bytes, membership and formal ineligibility rule
+are retained. It uses existing public measurements rather than newly collecting
+solar observations or claiming global blindness.
+
+`dimensionality-intervention-2026-10-02` records actual thread CPU measurements,
+separate non-unit cost calibration, full forecasts and an executed runnable-worker
+restriction. It is distinct from the earlier OS scarcity gate: this process's
+verified GIL supplies a single Python-execution bottleneck. Incomplete jobs and
+unassigned process CPU remain in its accounting. Concurrent development-benchmark
+activity is disclosed; seed replay cannot regenerate actual CPU timings.
+
+`make validation-round-registry PY=python3.11` registers these retained studies
+idempotently. Registration verifies original source and configuration hashes,
+checks each report's frozen-plan reference, archives exact algorithms, and audits
+all prior records before appending. Sources, data and artifacts from earlier
+records remain unchanged.
+
 ## Hardware and threading
 
 The new workload metadata records CPU model, architecture/logical CPU count,

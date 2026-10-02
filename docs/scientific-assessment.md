@@ -817,3 +817,52 @@ broader principle still needs an independently justified eligible regime and
 successful complete-profile/restriction predictions. All data, costs,
 algorithms, seeds, predictions and results are retained in fifteen registry
 records; the plotting replay adds no independent evidence.
+
+## Executed decision calibration and allocation intervention: 2 October 2026
+
+The [validation round](validation-round.md) now completes a 90-condition
+calibration benchmark with 180,000 independently generated evaluation datasets,
+a frozen forecast on previously unused 2025 solar records, and an actual
+non-unit-resource-cost allocation experiment. The registry retains eighteen
+study records with their inputs, algorithms, decisions and lineage.
+
+Calibration is a substantive finding rather than a blanket certification.
+Centered simultaneous bands pass the declared dense-bounded operational gate
+at 48 independent blocks, but their worst-shape coverage is 93.95%, below the
+nominal 95%. Under the serially dependent observation family, twelve blocks
+give 43.75% false departures at the true margin. Incorrect detection weighting
+at 48 blocks gives 36.80% false equivalence in a just-outside profile; correcting
+the observation weighting removes observed false equivalence in that comparison.
+Sparse heavy-tail cases can pass a coverage gate by remaining uninformative.
+The conservative known-bound reference is valid under its independent bounded
+sampling assumptions, which are not supplied by empirical sample maxima.
+
+The solar methods, measured costs, six pooled classes, three forecasts, margin
+and application gate were committed before downloading 2025 event values.
+Logarithmic neutrality predicts eligible counts better than linear neutrality,
+with count TV 0.1248 versus 0.5727; historical counts have TV 0.0216 and a better
+point log score whose smaller advantage remains uncertain. The measured resource
+profile departs from the fixed practical margin at the point estimate, but its
+conditional interval and formal observation gate leave neutrality unresolved.
+The instrument mixture also changes between development and validation, so a
+cost-transfer change cannot be attributed uniquely to natural flare physics.
+Public-data acquisition ordering does not establish external blinding.
+
+The strongest positive evidence is the actual runtime intervention. Independent
+CPU calibration yields cost degrees 1.870 and 2.686. Before validation, full
+cost curves predict CPU and job profiles under equal and restricted runnable
+opportunities. Actual CPU-share maximum errors are 0.0035–0.0063, job-share
+TV errors are 0.0021–0.0124, and restriction-response errors are below 0.0078.
+Unit-degree and equal-job-service alternatives are poorer descriptive forecasts.
+Changed opportunities alter apparent count slopes despite fixed task costs;
+measured allocation tilt explains why an abundance slope need not equal the
+independent cost dimension. Partial work and unassigned process CPU are retained.
+
+This is a useful independently calibrated forecast in an engineered GIL/OS
+allocation system. Its mathematical relation and interval methods are established
+tools; no new fairness theorem, spatial dimension, input-count interpretation or
+universal natural law follows. A stronger paper can build around the measured
+conditional prediction and documented inference failures, after comparing its
+scientific increment with the relevant prior work. Natural-system selection of
+neutrality still requires independent eligibility conditions, a justified
+observation design and predictive responses to measured restrictions.

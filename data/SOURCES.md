@@ -101,3 +101,34 @@ interruption is recorded with original exact sources. The final replay has
 identical numerical arrays and counts as the same simulation realization.
 These generated cohorts are separate from natural-system measurements.
 See [the additional-test reports](../docs/additional-profile-tests.md).
+
+## Calibration and unused-observation validation: 2 October 2026
+
+`profile-calibration/2026-10-02/` retains separate generated development and
+evaluation samples, 90 conditions, 18,000 development and 180,000 evaluation
+datasets, population targets, frozen seed recipes and original development
+source bytes. Every outer dataset's means, bounds, decisions and zero flags are
+retained; eight full block-vector examples per condition are retained, and the
+remaining inputs regenerate from the recorded source, NumPy version and seeds.
+The internal bootstrap indices are regenerated rather than stored.
+
+`solar-validation/2026-10-02/` contains a new immutable NOAA 2025 annual flare
+snapshot, obtained after protocol checkpoint `390856c`. The raw SHA-256 is
+`287c9ee0961e221368f3580c6e159e8dc17ef7607d02442dabf3ab48fa8c6c88`.
+The acquisition receipt retains the exact URL, access time, response metadata,
+verified TLS context and both the initial failed sandbox retrieval and successful
+approved retrieval. It does not change the historical `raw/` checksum catalogue.
+Development and evaluation membership, source snapshots, the frozen application
+gate and decisions are retained. Instrument composition differs across periods;
+resource-cost changes cannot uniquely be attributed to physical flare behavior.
+
+`dimensionality-intervention/2026-10-02/` contains 360 actual job-cost calibration
+measurements and sixteen actual allocation trials, with 80 worker records,
+104,133 complete jobs and 79 partial jobs. Thread CPU seconds, complete/partial
+job charges, overhead and enclosing process CPU are separate fields. Original
+source/configuration bytes and full forecasts were frozen before allocation.
+The measured CPython/GIL execution mechanism is an engineered system; no CPU
+quota or target completed count enforces its observed class shares.
+
+The [validation-round report](../docs/validation-round.md) links resources,
+algorithms, outcomes, explicit limitations and offline audit commands.

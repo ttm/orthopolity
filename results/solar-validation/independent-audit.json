@@ -1,0 +1,654 @@
+{
+  "algorithm_scope": "Standard CSV/datetime parsing and NumPy arithmetic only; no study-analysis functions imported. Recomputed selection, membership, support pooling, arithmetic costs, three forecast shapes, point scores, and CPU charge bookkeeping. No bootstrap regeneration, new fit, bin selection, or inferential verdict.",
+  "audit_algorithm": {
+    "path": "experiments/audit_solar_validation.py",
+    "sha256": "fafe8cc538515d40b7e9f4bc3abf332982089118d026aec4c956a3d42b4b66fe"
+  },
+  "audit_source_reference": {
+    "path": "experiments/audit_solar_validation.py",
+    "sha256": "fafe8cc538515d40b7e9f4bc3abf332982089118d026aec4c956a3d42b4b66fe"
+  },
+  "audited_run_id": "solar-validation-2026-10-02",
+  "caveats": [
+    "This audit adds no independent observations and is selected after results are available.",
+    "Local Git ordering and receipt checks do not establish external preregistration or global blindness.",
+    "The irradiance-source mix changes across years; temporal cost changes cannot isolate physics from instrument/source effects.",
+    "Matching CSV columns and historical versioned metadata do not independently validate calibration, detection completeness, or annual exposure.",
+    "Raw resource-share ratios differ from width-corrected resource-density ratios because the final class is wider.",
+    "Conditional bootstrap coverage and formal application assumptions are not validated by arithmetic agreement."
+  ],
+  "comparison_tolerance": {
+    "absolute": 1e-14,
+    "relative": 1e-12
+  },
+  "cpu_accounting_crosscheck": {
+    "accounting": {
+      "allocation_trials": 16,
+      "calibration_completed_jobs": 360,
+      "censored_partial_jobs": 79,
+      "completed_validation_jobs": 104133,
+      "enclosing_process_cpu_seconds": 63.893975999999995,
+      "measured_worker_cpu_seconds": 63.776719961,
+      "unassigned_process_cpu_seconds": 0.11725603899999548,
+      "worker_records": 80
+    },
+    "groups": {
+      "cubic": {
+        "conditions": {
+          "equal_threads": {
+            "count_share": [
+              0.6568019375036919,
+              0.22966507177033493,
+              0.07956760588339536,
+              0.026168113887412133,
+              0.007797270955165692
+            ],
+            "cpu_share": [
+              0.20253618041944532,
+              0.19575089246750188,
+              0.19948817046029474,
+              0.20309894596763065,
+              0.19912581068512736
+            ],
+            "fair_thread_count_total_variation": 0.012413685915788827,
+            "fair_thread_cpu_maximum_error": 0.004249107532498131
+          },
+          "restricted_classes": {
+            "count_share": [
+              0.7898443425186897,
+              0.1455812777637329,
+              0.049080862436346566,
+              0.015493517281230813,
+              0.0
+            ],
+            "cpu_share": [
+              0.3981316094139936,
+              0.20345832787744825,
+              0.20094546922998946,
+              0.19746459347856865,
+              0.0
+            ],
+            "fair_thread_count_total_variation": 0.0020885970151268444,
+            "fair_thread_cpu_maximum_error": 0.0034583278774482362
+          }
+        },
+        "independent_cost_degree": 2.686373954786267,
+        "independent_mean_job_cpu_seconds": [
+          0.00029646522222221246,
+          0.000797186361111127,
+          0.0023520393333333394,
+          0.007244549888888892,
+          0.02280251975
+        ]
+      },
+      "quadratic": {
+        "conditions": {
+          "equal_threads": {
+            "count_share": [
+              0.5356823694625303,
+              0.2569471041320907,
+              0.12426060683433338,
+              0.057236478148006295,
+              0.025873441423039278
+            ],
+            "cpu_share": [
+              0.20058195218530409,
+              0.19638981527193358,
+              0.20161508064159467,
+              0.2016829862813593,
+              0.19973016561980833
+            ],
+            "fair_thread_count_total_variation": 0.005556745276583862,
+            "fair_thread_cpu_maximum_error": 0.003610184728066429
+          },
+          "restricted_classes": {
+            "count_share": [
+              0.7130164371390493,
+              0.16995224344735674,
+              0.08088071968014215,
+              0.0361505997334518,
+              0.0
+            ],
+            "cpu_share": [
+              0.4062716795445553,
+              0.19934847592543822,
+              0.20033308498672994,
+              0.19404675954327652,
+              0.0
+            ],
+            "fair_thread_count_total_variation": 0.007045148862479655,
+            "fair_thread_cpu_maximum_error": 0.006271679544555264
+          }
+        },
+        "independent_cost_degree": 1.870114696020954,
+        "independent_mean_job_cpu_seconds": [
+          0.0002498033055555776,
+          0.0005057465555555736,
+          0.0010734582777777977,
+          0.002349151555555534,
+          0.0051364538055555424
+        ]
+      }
+    },
+    "inputs": [
+      {
+        "path": "data/dimensionality-intervention/2026-10-02/calibration.json",
+        "sha256": "c6948f840b110e5e9e58f24ae0d24125b154377cb6b7852396b182cbe76ad483"
+      },
+      {
+        "path": "data/dimensionality-intervention/2026-10-02/trials.json",
+        "sha256": "11f4a8ea9cfede93c73fa0f1a95fe6a8a549986618856fb34fa462511ca3b439"
+      },
+      {
+        "path": "data/dimensionality-intervention/2026-10-02/frozen-plan.json",
+        "sha256": "fe4b7362c0e4addc67ab1493a610e741f7a4c44ee716ac258a37bb0d43a8795f"
+      },
+      {
+        "path": "results/dimensionality-intervention/study.json",
+        "sha256": "8065ce79bdb2c53f4a67bf7b19028607ee212be233bc84978eb4f282083caecd"
+      }
+    ],
+    "maximum_start_lag_seconds": 0.0860774169996148,
+    "maximum_stop_lag_seconds": 0.012058957989211194,
+    "scope": "Direct charge partitions, calibration arithmetic means, fitted finite cost slopes, and aggregate allocation profiles; not independent observations or a natural-law test",
+    "status": "passed"
+  },
+  "development_raw_rows": 10501,
+  "duplicated_flare_ids": {
+    "between_splits": 0,
+    "development": 0,
+    "evaluation": 0
+  },
+  "evaluation_peak_time_range": [
+    "2025-01-01T03:51:00",
+    "2025-12-31T13:51:00"
+  ],
+  "evaluation_raw_rows": 3277,
+  "forecast_and_score_absolute_error_limit": 1e-12,
+  "input_references": [
+    {
+      "path": "configs/solar_validation_2026-10-02.json",
+      "sha256": "93dba7e4855f2018e23777793d5febe0251fca4a1c5263c642ecbb2fd10640be"
+    },
+    {
+      "path": "data/dimensionality-intervention/2026-10-02/calibration.json",
+      "sha256": "c6948f840b110e5e9e58f24ae0d24125b154377cb6b7852396b182cbe76ad483"
+    },
+    {
+      "path": "data/dimensionality-intervention/2026-10-02/frozen-plan.json",
+      "sha256": "fe4b7362c0e4addc67ab1493a610e741f7a4c44ee716ac258a37bb0d43a8795f"
+    },
+    {
+      "path": "data/dimensionality-intervention/2026-10-02/trials.json",
+      "sha256": "11f4a8ea9cfede93c73fa0f1a95fe6a8a549986618856fb34fa462511ca3b439"
+    },
+    {
+      "path": "data/raw/noaa_2022.csv",
+      "sha256": "1a7978e87410a64db53e1459bd125727c114eb5d6f19dbb15e1fad3ef09991e9"
+    },
+    {
+      "path": "data/raw/noaa_2023.csv",
+      "sha256": "23902fe462a5eafc500ea15d897d59e57480526d83dda448b9047ead4a89dbe5"
+    },
+    {
+      "path": "data/raw/noaa_2024.csv",
+      "sha256": "74f23ea854f8f1f39b7b6521a08d7cf280a46e46f06ac6924b308d1ae070b4cd"
+    },
+    {
+      "path": "data/raw/noaa_metadata.json",
+      "sha256": "e7b8eb00a573056dce08c86c277fc186bed92a991f414eb8cde9855a4a3aa996"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/acquisition.json",
+      "sha256": "090542b0596b189447970d3c0b97840e9795295beebdc1f9d44e20079939d74f"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/frozen-plan.json",
+      "sha256": "9c9a5954214a03a877cf97d3f0f8f4b87d21301affc44ce4271dc4c271ac6795"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/noaa_2025.csv",
+      "sha256": "287c9ee0961e221368f3580c6e159e8dc17ef7607d02442dabf3ab48fa8c6c88"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/retrieval-attempts.jsonl",
+      "sha256": "b5d15ed3dd02914e5ae59ac2b0eb4628d983593fe861ab494f82a32734434525"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/source-snapshots/2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40/figures.py",
+      "sha256": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/source-snapshots/2616641fef115828e922c45e8acea539c4ca3e8136b3a38133d62b3c6dd65f68/run_solar_validation.py",
+      "sha256": "2616641fef115828e922c45e8acea539c4ca3e8136b3a38133d62b3c6dd65f68"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/source-snapshots/93dba7e4855f2018e23777793d5febe0251fca4a1c5263c642ecbb2fd10640be/solar_validation_2026-10-02.json",
+      "sha256": "93dba7e4855f2018e23777793d5febe0251fca4a1c5263c642ecbb2fd10640be"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/source-snapshots/ab07fbfc0c0781cecae0e0939ee6efce7c031880b439ccb4ae4607341cbc3e22/solar_resource_transfer.py",
+      "sha256": "ab07fbfc0c0781cecae0e0939ee6efce7c031880b439ccb4ae4607341cbc3e22"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/source-snapshots/acc3d0fe0fa01649a2a6bea9f81588c789d8b04eef5aac75add91e4b4ebeb689/profile_calibration.py",
+      "sha256": "acc3d0fe0fa01649a2a6bea9f81588c789d8b04eef5aac75add91e4b4ebeb689"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/source-snapshots/e750b6eafec2e72b21d6af0cd7fd31f2e1c10060028e68d88a654558c9e57fd4/solar_validation.py",
+      "sha256": "e750b6eafec2e72b21d6af0cd7fd31f2e1c10060028e68d88a654558c9e57fd4"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/training-membership.csv",
+      "sha256": "4b972b3d26d13cbd86b9f48fe884ac11b67c03936014cbed6249a8e23846e33a"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/validation-membership.csv",
+      "sha256": "d315cb62d1617746319b73189283011c91ebd85a1a37e078f3e2d344de350b8d"
+    },
+    {
+      "path": "experiments/run_solar_validation.py",
+      "sha256": "2616641fef115828e922c45e8acea539c4ca3e8136b3a38133d62b3c6dd65f68"
+    },
+    {
+      "path": "results/dimensionality-intervention/study.json",
+      "sha256": "8065ce79bdb2c53f4a67bf7b19028607ee212be233bc84978eb4f282083caecd"
+    },
+    {
+      "path": "results/profile-calibration/study.json",
+      "sha256": "38877cbea23061d00c184b092e5b21ba4948e9ea312b9a36e8aaa5c7ddb447c2"
+    },
+    {
+      "path": "results/solar-validation/study.json",
+      "sha256": "7d1b4fd579cd6f3116256cdec63dbb29f7dec02c927be5e8b3cbc299ab3475f2"
+    },
+    {
+      "path": "src/orthopolity/figures.py",
+      "sha256": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40"
+    },
+    {
+      "path": "src/orthopolity/profile_calibration.py",
+      "sha256": "acc3d0fe0fa01649a2a6bea9f81588c789d8b04eef5aac75add91e4b4ebeb689"
+    },
+    {
+      "path": "src/orthopolity/solar_resource_transfer.py",
+      "sha256": "ab07fbfc0c0781cecae0e0939ee6efce7c031880b439ccb4ae4607341cbc3e22"
+    },
+    {
+      "path": "src/orthopolity/solar_validation.py",
+      "sha256": "e750b6eafec2e72b21d6af0cd7fd31f2e1c10060028e68d88a654558c9e57fd4"
+    }
+  ],
+  "instrument_mix": {
+    "development": {
+      "2022": {
+        "eligible_peaks": {
+          "GOES-16": 200,
+          "GOES-17": 3
+        },
+        "integrated_irrad_end": {
+          "GOES-16": 186,
+          "GOES-17": 3
+        },
+        "integrated_irrad_peak": {
+          "GOES-16": 200,
+          "GOES-17": 3
+        }
+      },
+      "2023": {
+        "eligible_peaks": {
+          "GOES-16": 364,
+          "GOES-18": 6
+        },
+        "integrated_irrad_end": {
+          "GOES-16": 338,
+          "GOES-18": 5
+        },
+        "integrated_irrad_peak": {
+          "GOES-16": 364,
+          "GOES-18": 6
+        }
+      },
+      "2024": {
+        "eligible_peaks": {
+          "GOES-16": 914,
+          "GOES-18": 18,
+          "GOES-19": 4
+        },
+        "integrated_irrad_end": {
+          "GOES-16": 804,
+          "GOES-18": 17,
+          "GOES-19": 4
+        },
+        "integrated_irrad_peak": {
+          "GOES-16": 914,
+          "GOES-18": 18,
+          "GOES-19": 4
+        }
+      }
+    },
+    "evaluation": {
+      "2025": {
+        "eligible_peaks": {
+          "GOES-16": 118,
+          "GOES-18": 233,
+          "GOES-19": 5
+        },
+        "integrated_irrad_end": {
+          "GOES-16": 115,
+          "GOES-18": 219,
+          "GOES-19": 5
+        },
+        "integrated_irrad_peak": {
+          "GOES-16": 118,
+          "GOES-18": 233,
+          "GOES-19": 5
+        }
+      }
+    }
+  },
+  "kind": "post_hoc_descriptive_independent_recomputation",
+  "local_ordering": {
+    "acquisition_finished_utc": "2026-10-02T08:58:49.979250+00:00",
+    "analysed_utc": "2026-10-02T08:59:07.049973+00:00",
+    "attempt_statuses": [
+      "failed",
+      "successful"
+    ],
+    "attempts_started_utc": [
+      "2026-10-02T08:58:34.278769+00:00",
+      "2026-10-02T08:58:47.555453+00:00"
+    ],
+    "checkpoint": "390856c49597f4e8f04f3b0667bc675bae765358",
+    "checkpoint_committed_time": "2026-10-02T10:57:51+02:00",
+    "checkpoint_contains_2025_event_bytes": false,
+    "committed_forecast_matches": true,
+    "frozen_utc": "2026-10-02T08:55:48.187814+00:00",
+    "tls_verification_preserved": true
+  },
+  "maximum_absolute_forecast_and_score_difference": 5.551115123125783e-17,
+  "measurement_units": {
+    "fluence": "J/m2",
+    "peak_irradiance": "W/m2"
+  },
+  "pooled_edges_W_m2": [
+    1e-05,
+    1.778279410038923e-05,
+    3.1622776601683795e-05,
+    5.623413251903491e-05,
+    0.0001,
+    0.00017782794100389227,
+    0.001
+  ],
+  "post_hoc_scope": "Audit designed after the retained solar and CPU results were available; descriptive independent arithmetic cross-check only, with no additional observations or scientific hypothesis retuning",
+  "reference_measure": "d ln peak irradiance",
+  "resources": {
+    "integrated_irrad_end": {
+      "development_complete_counts": [
+        728,
+        288,
+        181,
+        89,
+        42,
+        29
+      ],
+      "development_mean_cost_J_m2": [
+        0.0125931510989011,
+        0.02117787847222223,
+        0.04451429834254143,
+        0.07390348314606741,
+        0.13309880952380956,
+        0.35661793103448275
+      ],
+      "evaluation_complete_counts": [
+        185,
+        72,
+        43,
+        21,
+        9,
+        9
+      ],
+      "evaluation_resource_totals_J_m2": [
+        2.1636800000000003,
+        1.51684,
+        1.941342,
+        1.6608599999999998,
+        1.01777,
+        2.02304
+      ],
+      "evaluation_to_development_mean_cost_ratio": [
+        0.9287244690161898,
+        0.9947749133538022,
+        1.0142244189648715,
+        1.070160269337453,
+        0.8496361159062515,
+        0.6303166572981076
+      ],
+      "observed_count_share": [
+        0.5457227138643068,
+        0.21238938053097345,
+        0.12684365781710916,
+        0.061946902654867256,
+        0.02654867256637168,
+        0.02654867256637168
+      ],
+      "observed_resource_share": [
+        0.20958718392116188,
+        0.14693033353313575,
+        0.18805017507573957,
+        0.1608809853061917,
+        0.09858738269034281,
+        0.19596393947342827
+      ],
+      "raw_resource_share_max_to_min": 2.1259027088634954,
+      "relative_resource_density_phi": [
+        1.6766974713692968,
+        1.1754426682650836,
+        1.5044014006059183,
+        1.2870478824495308,
+        0.7886990615227434,
+        0.5225705052624755
+      ],
+      "scores": {
+        "historical_count_shape": {
+          "count_cross_entropy_nats_per_event": 1.2877211181551966,
+          "count_share": [
+            0.5364775239498895,
+            0.21223286661753868,
+            0.13338246131171702,
+            0.0655858511422255,
+            0.030950626381724394,
+            0.021370670596904937
+          ],
+          "count_total_variation": 0.014579705797318846,
+          "resource_share": [
+            0.20002382094659743,
+            0.13307328109059532,
+            0.17578994594163652,
+            0.14350625788572494,
+            0.12196617019767439,
+            0.2256405239377713
+          ],
+          "resource_share_total_variation": 0.053055371971674634
+        },
+        "linear_resource_neutral": {
+          "count_cross_entropy_nats_per_event": 2.1216582647659514,
+          "count_share": [
+            0.11645715486845469,
+            0.12314538426119316,
+            0.10418400727067549,
+            0.11159267351148784,
+            0.11018600038975009,
+            0.43443477969843874
+          ],
+          "count_total_variation": 0.5411692058120661,
+          "resource_share": [
+            0.007861408182211344,
+            0.01397978030433795,
+            0.024859955472071836,
+            0.044207946950469805,
+            0.07861408182211342,
+            0.8304768272687957
+          ],
+          "resource_share_total_variation": 0.6345128877953674
+        },
+        "log_resource_neutral": {
+          "count_cross_entropy_nats_per_event": 1.3126413987309413,
+          "count_share": [
+            0.44474261880901966,
+            0.26446043715517104,
+            0.1258182473344856,
+            0.07578412762647986,
+            0.04207934705667723,
+            0.04711522201816665
+          ],
+          "count_total_variation": 0.10200550553791071,
+          "resource_share": [
+            0.12499999999999985,
+            0.12500000000000022,
+            0.12499999999999985,
+            0.12500000000000022,
+            0.12499999999999985,
+            0.37499999999999994
+          ],
+          "resource_share_total_variation": 0.20544867783622872
+        }
+      },
+      "width_corrected_resource_density_max_to_min": 3.2085574185384402
+    },
+    "integrated_irrad_peak": {
+      "development_complete_counts": [
+        820,
+        323,
+        199,
+        95,
+        43,
+        29
+      ],
+      "development_mean_cost_J_m2": [
+        0.008186693902439026,
+        0.013795164086687307,
+        0.02819056281407035,
+        0.04462884210526316,
+        0.07002418604651162,
+        0.20676482758620693
+      ],
+      "evaluation_complete_counts": [
+        199,
+        75,
+        43,
+        21,
+        9,
+        9
+      ],
+      "evaluation_resource_totals_J_m2": [
+        1.562082,
+        0.992615,
+        1.135957,
+        0.87176,
+        0.45074,
+        1.15182
+      ],
+      "evaluation_to_development_mean_cost_ratio": [
+        0.9588312919722907,
+        0.9593845048525852,
+        0.9371080962589847,
+        0.9301693477609925,
+        0.7152132006069517,
+        0.6189640737936486
+      ],
+      "observed_count_share": [
+        0.5589887640449438,
+        0.21067415730337077,
+        0.12078651685393259,
+        0.05898876404494382,
+        0.025280898876404494,
+        0.025280898876404494
+      ],
+      "observed_resource_share": [
+        0.2533801440200721,
+        0.16100878933147164,
+        0.18425982007385597,
+        0.14140530033054477,
+        0.07311304151485472,
+        0.1868329047292008
+      ],
+      "raw_resource_share_max_to_min": 3.4655943559479967,
+      "relative_resource_density_phi": [
+        2.027041152160579,
+        1.2880703146517705,
+        1.4740785605908493,
+        1.131242402644356,
+        0.5849043321188384,
+        0.4982210792778689
+      ],
+      "scores": {
+        "historical_count_shape": {
+          "count_cross_entropy_nats_per_event": 1.263372476602159,
+          "count_share": [
+            0.5434062292909212,
+            0.2140490390987409,
+            0.1318754141815772,
+            0.06295559973492379,
+            0.028495692511597084,
+            0.019218025182239893
+          ],
+          "count_total_variation": 0.02164540844818725,
+          "resource_share": [
+            0.22357728979092625,
+            0.14840026458571023,
+            0.1868366644176015,
+            0.14120318956268588,
+            0.10028172762972014,
+            0.199700864013356
+          ],
+          "resource_share_total_variation": 0.04261348974276613
+        },
+        "linear_resource_neutral": {
+          "count_cross_entropy_nats_per_event": 2.1931189065542855,
+          "count_share": [
+            0.1068711828087515,
+            0.11278265084405921,
+            0.09814437690048654,
+            0.1102436413038529,
+            0.1249456380779221,
+            0.44701251006492787
+          ],
+          "count_total_variation": 0.57265122764895,
+          "resource_share": [
+            0.00786140818221134,
+            0.013979780304337946,
+            0.024859955472071833,
+            0.04420794695046979,
+            0.07861408182211341,
+            0.8304768272687957
+          ],
+          "resource_share_total_variation": 0.6491449628468535
+        },
+        "log_resource_neutral": {
+          "count_cross_entropy_nats_per_event": 1.3016464597272512,
+          "count_share": [
+            0.4342187432138294,
+            0.2576856581810357,
+            0.12609950219295127,
+            0.07965288297215714,
+            0.050765544565305014,
+            0.05157766887472118
+          ],
+          "count_total_variation": 0.12477002083111426,
+          "resource_share": [
+            0.12499999999999985,
+            0.12500000000000022,
+            0.12499999999999986,
+            0.12500000000000025,
+            0.12499999999999986,
+            0.37499999999999994
+          ],
+          "resource_share_total_variation": 0.2400540537559443
+        }
+      },
+      "width_corrected_resource_density_max_to_min": 4.068557587122991
+    }
+  },
+  "status": "passed"
+}

@@ -150,3 +150,24 @@ would need a genuinely new conditional result, a demonstrably useful predictive
 method, or successful independent predictions beyond known model properties.
 The broader philosophical use of "cosmological principle" remains a proposed
 interpretation of the programme, with empirical status determined separately.
+
+## Executed calibrated validation round: 2 October 2026
+
+The [new round](validation-round.md) executes the remaining immediate tests:
+90 complete-profile calibration conditions with 180,000 evaluation datasets,
+a forecast frozen before acquiring 2025 solar events, and measured CPU
+allocation under independently calibrated non-unit resource costs.
+
+The runtime degrees 1.870 and 2.686 predict full job profiles with TV errors
+0.0021–0.0124, and the worker restriction's CPU response with maximum errors
+below 0.0078. Availability changes apparent count slopes despite unchanged task
+costs, illustrating allocation tilt and the limits of exponent-only dimension
+recovery. This tests a conditional engineered allocation mechanism.
+
+The solar logarithmic forecast improves substantially on the linear alternative;
+historical counts remain a strong comparator. Its formal neutrality decision is
+unresolved under its pre-acquisition observation gate. Calibration failures under
+serial dependence and incorrect detection weighting explain why successful
+simulation examples cannot automatically certify a real sampling design.
+Further work needs a useful calibrated observation model and independently
+identified natural-system eligibility/restriction conditions.

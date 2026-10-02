@@ -5,6 +5,10 @@ reproduction. Their source-specific terms do not become the licence of this pack
 [Source details](SOURCES.md) and the [checksum manifest](snapshot_checksums.json) identify
 the inputs. This revision does not change or relicense them.
 
+The newly retained NOAA 2025 snapshot under `data/solar-validation/2026-10-02/`
+is another third-party GOES XRS input. Its URL, bytes and retrieval metadata
+are retained separately; the historical snapshot catalogue is unchanged.
+
 | Inputs | Source and recorded terms |
 |---|---|
 | NOAA annual flare CSVs and metadata | NOAA NCEI GOES XRS reports; the supplied metadata states redistribution and use are unrestricted. |

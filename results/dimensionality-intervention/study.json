@@ -1,0 +1,4839 @@
+{
+  "run_id": "dimensionality-intervention-2026-10-02",
+  "kind": "actual_cpython_runtime_allocation_with_independent_nonunit_costs",
+  "config_reference": "configs/dimensionality_intervention_2026-10-02.json",
+  "config": {
+    "run_id": "dimensionality-intervention-2026-10-02",
+    "study": "Measured non-unit CPU cost dimensions and runtime allocation restrictions",
+    "evidence_kind": "actual_controlled_runtime_measurements",
+    "seed": 202610023,
+    "sizes": [
+      16,
+      24,
+      36,
+      54,
+      81
+    ],
+    "log_bin_edges": [
+      13.063945294843618,
+      19.595917942265423,
+      29.393876913398138,
+      44.09081537009721,
+      66.13622305514582,
+      99.20433458271873
+    ],
+    "kernels": [
+      "quadratic",
+      "cubic"
+    ],
+    "quadratic_repeats": 16,
+    "conditions": {
+      "equal_threads": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "restricted_classes": [
+        2,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    "trial_seconds": 4,
+    "trial_replicates_per_condition": 4,
+    "calibration_blocks": 12,
+    "calibration_jobs_per_block": 3,
+    "calibration_bootstrap_replicates": 1000,
+    "synchronization_lead_seconds": 0.25,
+    "maximum_start_lag_seconds": 0.1,
+    "maximum_stop_lag_seconds": 0.1,
+    "maximum_absolute_cpu_share_error_tolerance": 0.1,
+    "count_total_variation_tolerance": 0.1,
+    "dimension_criterion": "Independent nominal calibration interval must exclude one for a non-unit-cost example; no pure-power fit to abundance is a primary endpoint",
+    "primary_endpoint": "Actual per-thread user+system CPU resource shares by the fixed size classes, including completed jobs, censored partial jobs and loop overhead",
+    "secondary_endpoint": "Complete count shares from independent full CPU-cost calibration, conditioned on observed total completed jobs; pure-degree approximation and unit-degree alternative separately compared",
+    "allocation_hypothesis": "Continuously runnable pure-Python threads receive equal CPU time under the unmodified CPython GIL/OS mechanism; class CPU share proportional to declared thread count",
+    "competing_hypotheses": [
+      "equal job service per runnable thread",
+      "equal CPU resource per active class",
+      "unit cost degree with equal runnable-thread CPU",
+      "power-cost approximation from independent calibration"
+    ],
+    "restriction": "Replace the largest-size thread with a second smallest-size thread, keeping total runnable count five",
+    "measurement_scope": "Single process, five workload threads plus an ordinarily blocked controller; no per-class CPU quotas, manual job targets, priority or affinity changes, or switch-interval changes",
+    "uncertainty_scope": "Nominal block resampling for calibration dimension; all four actual allocation trials retained; frozen profile tolerances are exploratory engineering criteria without a claimed population false-positive rate",
+    "natural_dataset_candidate": {
+      "url": "https://doi.pangaea.de/10.1594/PANGAEA.912143",
+      "finding": "Primary metadata supplies cell volume, carbon per cell, counts and Si:N/grazing treatments. It does not directly supply per-cell nitrogen/silica requirements needed to predict a nutrient-budget intervention without further physiological assumptions. No natural outcome data were downloaded or analyzed for this study."
+    }
+  },
+  "sources": [
+    {
+      "path": "experiments/run_dimensionality_intervention.py",
+      "sha256": "d741b7df6432b37df7692112b93a6bd363d3e5a3bbd502372a4bf9c803519b32"
+    },
+    {
+      "path": "src/orthopolity/dimensionality_intervention.py",
+      "sha256": "d03a5f49ccebea569120fd033aefc43cf6195dff7116d7bc236f2a2aa0a392dd"
+    },
+    {
+      "path": "src/orthopolity/figures.py",
+      "sha256": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40"
+    }
+  ],
+  "seeds": {
+    "base": 202610023,
+    "cost_bootstrap": 202620023,
+    "worker_order": {
+      "quadratic": {
+        "equal_threads": [
+          202613023,
+          202613123,
+          202613223,
+          202613323
+        ],
+        "restricted_classes": [
+          202613024,
+          202613124,
+          202613224,
+          202613324
+        ]
+      },
+      "cubic": {
+        "equal_threads": [
+          202613033,
+          202613133,
+          202613233,
+          202613333
+        ],
+        "restricted_classes": [
+          202613034,
+          202613134,
+          202613234,
+          202613334
+        ]
+      }
+    }
+  },
+  "hardware_metadata": {
+    "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "implementation": "CPython",
+    "system": "Darwin",
+    "architecture": "arm64",
+    "logical_cpu_count": 10,
+    "gil_enabled": true,
+    "switch_interval_seconds": 0.005,
+    "thread_cpu_clock": {
+      "implementation": "clock_gettime(CLOCK_THREAD_CPUTIME_ID)",
+      "resolution": 4.2000000000000006e-08,
+      "monotonic": true,
+      "adjustable": false
+    },
+    "priority_affinity_and_switch_interval_changed": false
+  },
+  "frozen_utc": "2026-10-02T08:44:33.296175+00:00",
+  "analysed_utc": "2026-10-02T08:47:41.625478+00:00",
+  "frozen_plan_sha256": "fe4b7362c0e4addc67ab1493a610e741f7a4c44ee716ac258a37bb0d43a8795f",
+  "calibration_sha256": "c6948f840b110e5e9e58f24ae0d24125b154377cb6b7852396b182cbe76ad483",
+  "trials_sha256": "11f4a8ea9cfede93c73fa0f1a95fe6a8a549986618856fb34fa462511ca3b439",
+  "independent_cost_calibration": {
+    "quadratic": {
+      "q_cpu_seconds": [
+        0.0002498033055555776,
+        0.0005057465555555736,
+        0.0010734582777777977,
+        0.002349151555555534,
+        0.0051364538055555424
+      ],
+      "raw_block_costs": [
+        [
+          0.0002614303333333401,
+          0.0004955140000000117,
+          0.0010611110000000035,
+          0.0024465000000000042,
+          0.005637319666666678
+        ],
+        [
+          0.0002572779999999904,
+          0.0004954863333333318,
+          0.0010410693333333387,
+          0.0023848749999999717,
+          0.005059236333333328
+        ],
+        [
+          0.00024151366666667432,
+          0.0004955693333333344,
+          0.0011199446666666686,
+          0.0022911386666666735,
+          0.005066639000000002
+        ],
+        [
+          0.0002443750000000004,
+          0.0005242639999999965,
+          0.00108620833333332,
+          0.0023710970000000073,
+          0.005110847000000048
+        ],
+        [
+          0.00024201366666672572,
+          0.0005032083333333196,
+          0.0010394720000000228,
+          0.0023178746666665897,
+          0.005080027999999996
+        ],
+        [
+          0.0002499029999999773,
+          0.0005214306666666927,
+          0.0010780276666666848,
+          0.002350847333333387,
+          0.005006236333333303
+        ],
+        [
+          0.00024025000000001592,
+          0.0005148889999999998,
+          0.001088347000000008,
+          0.0023390556666666638,
+          0.005112500000000002
+        ],
+        [
+          0.00026073633333341856,
+          0.0005189306666666393,
+          0.0010911113333333944,
+          0.0023534863333332843,
+          0.005057513999999985
+        ],
+        [
+          0.00025968100000010413,
+          0.0005052780000001089,
+          0.0010851526666666444,
+          0.0023108609999999232,
+          0.005171556000000003
+        ],
+        [
+          0.00024198633333338826,
+          0.000499485666666688,
+          0.0010408890000001374,
+          0.002346388666666588,
+          0.005041291666666596
+        ],
+        [
+          0.00025693066666665487,
+          0.0004967359999999607,
+          0.0010932359999999974,
+          0.002342402666666669,
+          0.005162138666666631
+        ],
+        [
+          0.0002415416666666411,
+          0.0004981666666667994,
+          0.001056930333333354,
+          0.0023352916666666466,
+          0.005132138999999943
+        ]
+      ],
+      "independently_measured_cost_fit": {
+        "degree": 1.8701146960209567,
+        "log_intercept": -13.510846398673031,
+        "log_rms_curvature": 0.023086021018045782
+      },
+      "degree_nominal_block_bootstrap_interval": [
+        1.8591230319146834,
+        1.8813551387849274
+      ],
+      "degree_for_area_coordinate": 0.9350573480104784,
+      "leading_algorithm_operation_degree": 2,
+      "uncertainty": "Nominal percentile resampling of 12 randomized calibration blocks; hardware drift and correlated blocks are not covered"
+    },
+    "cubic": {
+      "q_cpu_seconds": [
+        0.00029646522222221246,
+        0.000797186361111127,
+        0.0023520393333333394,
+        0.007244549888888892,
+        0.02280251975
+      ],
+      "raw_block_costs": [
+        [
+          0.00028191666666666876,
+          0.0008143333333333336,
+          0.002379583333333324,
+          0.007197486000000003,
+          0.022538805333333328
+        ],
+        [
+          0.0002971803333333504,
+          0.0007830833333333231,
+          0.0024031249999999873,
+          0.0071125276666666555,
+          0.02276033366666665
+        ],
+        [
+          0.0002810833333333392,
+          0.0007769163333333403,
+          0.00230879166666668,
+          0.007201152999999978,
+          0.02243355566666666
+        ],
+        [
+          0.00027968033333332826,
+          0.0007692916666666901,
+          0.002390666666666689,
+          0.0071609863333333785,
+          0.02246709733333337
+        ],
+        [
+          0.00030322199999995486,
+          0.0008275693333333889,
+          0.002409985999999975,
+          0.00709193066666669,
+          0.02275802766666668
+        ],
+        [
+          0.0002858886666666782,
+          0.0008260003333333913,
+          0.0023654303333333257,
+          0.007474930666666675,
+          0.02296376433333332
+        ],
+        [
+          0.0003071249999999637,
+          0.0007846249999999833,
+          0.002287596999999993,
+          0.007179000000000009,
+          0.022851375333333295
+        ],
+        [
+          0.00030651366666660057,
+          0.0007967640000000239,
+          0.0023317913333333142,
+          0.007270139000000027,
+          0.022948902666666642
+        ],
+        [
+          0.0003051389999999543,
+          0.0007932223333333432,
+          0.002369236333333339,
+          0.007365819666666755,
+          0.023050291666666684
+        ],
+        [
+          0.0002832636666666814,
+          0.0008106943333333246,
+          0.0023041390000000384,
+          0.007271416999999965,
+          0.02272656933333339
+        ],
+        [
+          0.0003191670000000091,
+          0.0008134863333334094,
+          0.0023963333333333705,
+          0.007216833666666626,
+          0.02295602766666664
+        ],
+        [
+          0.0003074030000000209,
+          0.0007702499999999723,
+          0.0022777920000000376,
+          0.007392374999999933,
+          0.02317548633333333
+        ]
+      ],
+      "independently_measured_cost_fit": {
+        "degree": 2.6863739547862706,
+        "log_intercept": -15.630445004914385,
+        "log_rms_curvature": 0.043975523588943195
+      },
+      "degree_nominal_block_bootstrap_interval": [
+        2.6756722272353666,
+        2.6970494591801333
+      ],
+      "degree_for_area_coordinate": 1.3431869773931353,
+      "leading_algorithm_operation_degree": 3,
+      "uncertainty": "Nominal percentile resampling of 12 randomized calibration blocks; hardware drift and correlated blocks are not covered"
+    }
+  },
+  "profiles": {
+    "quadratic": {
+      "equal_threads": {
+        "cpu_seconds_by_class": [
+          3.1857035,
+          3.1191227080000004,
+          3.2021119600000003,
+          3.203190458,
+          3.172175167
+        ],
+        "measured_cpu_share": [
+          0.2005819521853041,
+          0.1963898152719336,
+          0.20161508064159472,
+          0.20168298628135933,
+          0.19973016561980833
+        ],
+        "completed_jobs_by_class": [
+          12588,
+          6038,
+          2920,
+          1345,
+          608
+        ],
+        "count_share": [
+          0.5356823694625303,
+          0.2569471041320907,
+          0.12426060683433338,
+          0.057236478148006295,
+          0.025873441423039278
+        ],
+        "complete_job_cpu_seconds_by_class": [
+          3.1812037269999998,
+          3.115642243000001,
+          3.198240579,
+          3.195706861000001,
+          3.1571162860000004
+        ],
+        "partial_job_cpu_seconds_by_class": [
+          0.0004522910000002156,
+          0.0013003339999998476,
+          0.0025227509999999898,
+          0.006485624999999939,
+          0.014535833000000054
+        ],
+        "loop_overhead_cpu_seconds_by_class": [
+          0.004047481999999936,
+          0.0021801309999990304,
+          0.0013486299999999618,
+          0.000997971999998848,
+          0.0005230479999999149
+        ],
+        "calibrated_completed_job_cpu_seconds_by_class": [
+          3.1445240103336105,
+          3.0536977024445533,
+          3.1344981711111695,
+          3.1596088422221933,
+          3.12296391377777
+        ],
+        "reconstruction_relative_error_by_active_class": [
+          -0.011530137587566474,
+          -0.01988178864072729,
+          -0.019930460612428706,
+          -0.011295785360773648,
+          -0.010817584506999864
+        ],
+        "cpu_resource_per_log_class": [
+          7.856911572154721,
+          7.692703134317349,
+          7.89737981386498,
+          7.900039717216548,
+          7.823546597636635
+        ],
+        "dimension_diagnostics": {
+          "apparent_log_class_count_degree": 1.8650994671161032,
+          "binned_linear_density_degree": 2.865099467116103,
+          "observed_full_cpu_allocation_tilt": 0.004460140882569378,
+          "realized_completed_job_cost_degree": 1.8676081342039614,
+          "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+        },
+        "forecasts": {
+          "fair_thread_cpu": {
+            "cpu_share": [
+              0.2,
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            "count_share": [
+              0.5314598114034121,
+              0.2625038494086746,
+              0.12367543332317303,
+              0.05651419864527243,
+              0.02584670721946797
+            ],
+            "cpu_share_per_log_width": [
+              0.4932606924752867,
+              0.49326069247528614,
+              0.49326069247528614,
+              0.49326069247528637,
+              0.49326069247528637
+            ]
+          },
+          "equal_job_service": {
+            "cpu_share": [
+              0.026818429509241244,
+              0.05429603231047345,
+              0.1152445324519149,
+              0.25220064746170384,
+              0.5514403582666664
+            ],
+            "count_share": [
+              0.2,
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            "cpu_share_per_log_width": [
+              0.06614238555414,
+              0.1339104924806232,
+              0.28422798940611066,
+              0.622003330048378,
+              1.3600192648871792
+            ]
+          },
+          "equal_active_class_cpu": {
+            "cpu_share": [
+              0.2,
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            "count_share": [
+              0.5314598114034121,
+              0.2625038494086746,
+              0.12367543332317303,
+              0.05651419864527243,
+              0.02584670721946797
+            ],
+            "cpu_share_per_log_width": [
+              0.4932606924752867,
+              0.49326069247528614,
+              0.49326069247528614,
+              0.49326069247528637,
+              0.49326069247528637
+            ]
+          },
+          "unit_cost_fair_cpu": {
+            "cpu_share": [
+              0.2,
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            "count_share": [
+              0.3838862559241707,
+              0.2559241706161138,
+              0.17061611374407584,
+              0.1137440758293839,
+              0.07582938388625593
+            ],
+            "cpu_share_per_log_width": [
+              0.4932606924752867,
+              0.49326069247528614,
+              0.49326069247528614,
+              0.49326069247528637,
+              0.49326069247528637
+            ]
+          },
+          "power_cost_fair_cpu": {
+            "cpu_share": [
+              0.2,
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            "count_share": [
+              0.5437930404558452,
+              0.2547550452799616,
+              0.11934711970787906,
+              0.05591149320286767,
+              0.02619330135344639
+            ],
+            "cpu_share_per_log_width": [
+              0.4932606924752867,
+              0.49326069247528614,
+              0.49326069247528614,
+              0.49326069247528637,
+              0.49326069247528637
+            ]
+          }
+        },
+        "errors": {
+          "fair_thread_cpu": {
+            "maximum_absolute_cpu_share_error": 0.0036101847280664012,
+            "count_total_variation": 0.005556745276583806
+          },
+          "equal_job_service": {
+            "maximum_absolute_cpu_share_error": 0.35171019264685804,
+            "count_total_variation": 0.3926294735946211
+          },
+          "equal_active_class_cpu": {
+            "maximum_absolute_cpu_share_error": 0.0036101847280664012,
+            "count_total_variation": 0.005556745276583806
+          },
+          "unit_cost_fair_cpu": {
+            "maximum_absolute_cpu_share_error": 0.0036101847280664012,
+            "count_total_variation": 0.15281904705433666
+          },
+          "power_cost_fair_cpu": {
+            "maximum_absolute_cpu_share_error": 0.0036101847280664012,
+            "count_total_variation": 0.008430530923722
+          }
+        },
+        "pooled_cpu_within_frozen_tolerance": true,
+        "pooled_counts_within_frozen_tolerance": true,
+        "individual_trial_profiles": [
+          {
+            "cpu_seconds_by_class": [
+              0.7478747499999999,
+              0.77131075,
+              0.8400337920000001,
+              0.845323375,
+              0.7974067499999999
+            ],
+            "measured_cpu_share": [
+              0.1868776119016099,
+              0.19273375788397681,
+              0.20990614934601512,
+              0.21122790093476088,
+              0.19925457993363738
+            ],
+            "completed_jobs_by_class": [
+              2967,
+              1499,
+              770,
+              358,
+              153
+            ],
+            "count_share": [
+              0.5162693579258744,
+              0.2608317382982426,
+              0.13398294762484775,
+              0.06229337045414999,
+              0.02662258569688533
+            ],
+            "complete_job_cpu_seconds_by_class": [
+              0.7465651690000009,
+              0.7702144140000005,
+              0.8392239169999997,
+              0.8443287869999999,
+              0.7932918290000002
+            ],
+            "partial_job_cpu_seconds_by_class": [
+              0.00012491700000005768,
+              0.0004664999999999253,
+              0.0003630420000000356,
+              0.0006099999999999994,
+              0.003962208000000023
+            ],
+            "loop_overhead_cpu_seconds_by_class": [
+              0.0011846639999989472,
+              0.0006298359999996617,
+              0.0004468330000003684,
+              0.00038458800000007454,
+              0.00015271299999974897
+            ],
+            "calibrated_completed_job_cpu_seconds_by_class": [
+              0.7411664075833987,
+              0.7581140867778049,
+              0.8265628738889043,
+              0.8409962568888812,
+              0.785877432249998
+            ],
+            "reconstruction_relative_error_by_active_class": [
+              -0.007231467045045361,
+              -0.015710335982099075,
+              -0.015086609014141572,
+              -0.0039469578231005765,
+              -0.00934636722446591
+            ],
+            "cpu_resource_per_log_class": [
+              1.8444860853489093,
+              1.9022863732931616,
+              2.0717782497228026,
+              2.0848239665902306,
+              1.9666470284473374
+            ],
+            "dimension_diagnostics": {
+              "apparent_log_class_count_degree": 1.8156329021373652,
+              "binned_linear_density_degree": 2.8156329021373656,
+              "observed_full_cpu_allocation_tilt": 0.05423072582445761,
+              "realized_completed_job_cost_degree": 1.8682365743293268,
+              "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+            },
+            "forecasts": {
+              "fair_thread_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.5314598114034121,
+                  0.2625038494086746,
+                  0.12367543332317303,
+                  0.05651419864527243,
+                  0.02584670721946797
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "equal_job_service": {
+                "cpu_share": [
+                  0.026818429509241244,
+                  0.05429603231047345,
+                  0.1152445324519149,
+                  0.25220064746170384,
+                  0.5514403582666664
+                ],
+                "count_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "cpu_share_per_log_width": [
+                  0.06614238555414,
+                  0.1339104924806232,
+                  0.28422798940611066,
+                  0.622003330048378,
+                  1.3600192648871792
+                ]
+              },
+              "equal_active_class_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.5314598114034121,
+                  0.2625038494086746,
+                  0.12367543332317303,
+                  0.05651419864527243,
+                  0.02584670721946797
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "unit_cost_fair_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.3838862559241707,
+                  0.2559241706161138,
+                  0.17061611374407584,
+                  0.1137440758293839,
+                  0.07582938388625593
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "power_cost_fair_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.5437930404558452,
+                  0.2547550452799616,
+                  0.11934711970787906,
+                  0.05591149320286767,
+                  0.02619330135344639
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              }
+            },
+            "errors": {
+              "fair_thread_cpu": {
+                "maximum_absolute_cpu_share_error": 0.013122388098390114,
+                "count_total_variation": 0.016862564587969725
+              },
+              "equal_job_service": {
+                "maximum_absolute_cpu_share_error": 0.352185778333029,
+                "count_total_variation": 0.37710109622411697
+              },
+              "equal_active_class_cpu": {
+                "maximum_absolute_cpu_share_error": 0.013122388098390114,
+                "count_total_variation": 0.016862564587969725
+              },
+              "unit_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.013122388098390114,
+                "count_total_variation": 0.13729066968383252
+              },
+              "power_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.013122388098390114,
+                "count_total_variation": 0.027523682529970873
+              }
+            },
+            "pooled_cpu_within_frozen_tolerance": true,
+            "pooled_counts_within_frozen_tolerance": true
+          },
+          {
+            "cpu_seconds_by_class": [
+              0.829160542,
+              0.811280875,
+              0.769610334,
+              0.797243916,
+              0.7978103750000001
+            ],
+            "measured_cpu_share": [
+              0.20702586480979868,
+              0.20256164668111426,
+              0.19215729269821913,
+              0.19905688080155953,
+              0.19919831500930832
+            ],
+            "completed_jobs_by_class": [
+              3300,
+              1571,
+              702,
+              338,
+              154
+            ],
+            "count_share": [
+              0.5441055234954658,
+              0.2590272052761748,
+              0.11574608408903544,
+              0.05572959604286892,
+              0.02539159109645507
+            ],
+            "complete_job_cpu_seconds_by_class": [
+              0.828041124,
+              0.8105541210000003,
+              0.7683079179999999,
+              0.7954028349999995,
+              0.7927411220000006
+            ],
+            "partial_job_cpu_seconds_by_class": [
+              0.00014425000000006793,
+              0.00017895899999997855,
+              0.0009792090000000364,
+              0.0016952089999999753,
+              0.004955040999999993
+            ],
+            "loop_overhead_cpu_seconds_by_class": [
+              0.0009751679999999707,
+              0.0005477949999996845,
+              0.00032320700000010305,
+              0.00014587200000049094,
+              0.00011421199999950282
+            ],
+            "calibrated_completed_job_cpu_seconds_by_class": [
+              0.824350908333406,
+              0.7945278387778062,
+              0.753567711000014,
+              0.7940132257777706,
+              0.7910138860555536
+            ],
+            "reconstruction_relative_error_by_active_class": [
+              -0.004456560863508512,
+              -0.01977200757726349,
+              -0.019185285813995617,
+              -0.0017470508792302357,
+              -0.002178814617424392
+            ],
+            "cpu_resource_per_log_class": [
+              2.0449615156005203,
+              2.0008648309722803,
+              1.8980926314248812,
+              1.966245430389345,
+              1.9676424901823395
+            ],
+            "dimension_diagnostics": {
+              "apparent_log_class_count_degree": 1.8906366736763673,
+              "binned_linear_density_degree": 2.890636673676368,
+              "observed_full_cpu_allocation_tilt": -0.023316272877141466,
+              "realized_completed_job_cost_degree": 1.8644934555417523,
+              "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+            },
+            "forecasts": {
+              "fair_thread_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.5314598114034121,
+                  0.2625038494086746,
+                  0.12367543332317303,
+                  0.05651419864527243,
+                  0.02584670721946797
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "equal_job_service": {
+                "cpu_share": [
+                  0.026818429509241244,
+                  0.05429603231047345,
+                  0.1152445324519149,
+                  0.25220064746170384,
+                  0.5514403582666664
+                ],
+                "count_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "cpu_share_per_log_width": [
+                  0.06614238555414,
+                  0.1339104924806232,
+                  0.28422798940611066,
+                  0.622003330048378,
+                  1.3600192648871792
+                ]
+              },
+              "equal_active_class_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.5314598114034121,
+                  0.2625038494086746,
+                  0.12367543332317303,
+                  0.05651419864527243,
+                  0.02584670721946797
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "unit_cost_fair_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.3838862559241707,
+                  0.2559241706161138,
+                  0.17061611374407584,
+                  0.1137440758293839,
+                  0.07582938388625593
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "power_cost_fair_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.5437930404558452,
+                  0.2547550452799616,
+                  0.11934711970787906,
+                  0.05591149320286767,
+                  0.02619330135344639
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              }
+            },
+            "errors": {
+              "fair_thread_cpu": {
+                "maximum_absolute_cpu_share_error": 0.007842707301780882,
+                "count_total_variation": 0.012645712092053741
+              },
+              "equal_job_service": {
+                "maximum_absolute_cpu_share_error": 0.3522420432573581,
+                "count_total_variation": 0.40313272877164064
+              },
+              "equal_active_class_cpu": {
+                "maximum_absolute_cpu_share_error": 0.007842707301780882,
+                "count_total_variation": 0.012645712092053741
+              },
+              "unit_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.007842707301780882,
+                "count_total_variation": 0.1633223022313562
+              },
+              "power_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.007842707301780882,
+                "count_total_variation": 0.0045846430358337294
+              }
+            },
+            "pooled_cpu_within_frozen_tolerance": true,
+            "pooled_counts_within_frozen_tolerance": true
+          },
+          {
+            "cpu_seconds_by_class": [
+              0.834532791,
+              0.74890925,
+              0.810625959,
+              0.7721685420000001,
+              0.747982542
+            ],
+            "measured_cpu_share": [
+              0.21320543717424684,
+              0.1913304375478846,
+              0.20709774838959935,
+              0.1972726935894731,
+              0.19109368329879617
+            ],
+            "completed_jobs_by_class": [
+              3260,
+              1443,
+              734,
+              319,
+              142
+            ],
+            "count_share": [
+              0.5527297388945405,
+              0.2446592065106816,
+              0.12444896575110206,
+              0.05408613089182774,
+              0.024075957951848085
+            ],
+            "complete_job_cpu_seconds_by_class": [
+              0.8335136839999971,
+              0.748036762,
+              0.8094821620000002,
+              0.7699578670000001,
+              0.7435082460000001
+            ],
+            "partial_job_cpu_seconds_by_class": [
+              7.495800000001385e-05,
+              0.00034841699999998976,
+              0.0008574999999999555,
+              0.0019512910000000216,
+              0.004296917000000011
+            ],
+            "loop_overhead_cpu_seconds_by_class": [
+              0.0009441490000028363,
+              0.0005240709999999593,
+              0.0002862969999998244,
+              0.0002593839999999181,
+              0.00017737899999992202
+            ],
+            "calibrated_completed_job_cpu_seconds_by_class": [
+              0.8143587761111829,
+              0.7297922796666927,
+              0.7879183758889036,
+              0.7493793462222154,
+              0.729376440388887
+            ],
+            "reconstruction_relative_error_by_active_class": [
+              -0.022980915918369385,
+              -0.024389820474234034,
+              -0.02663898863171818,
+              -0.0267268141021342,
+              -0.019006925191671707
+            ],
+            "cpu_resource_per_log_class": [
+              2.0582111119099684,
+              1.8470374762807358,
+              1.9992496093739145,
+              1.9044019486727612,
+              1.8447519331317248
+            ],
+            "dimension_diagnostics": {
+              "apparent_log_class_count_degree": 1.9179453753227704,
+              "binned_linear_density_degree": 2.9179453753227707,
+              "observed_full_cpu_allocation_tilt": -0.04646509965642575,
+              "realized_completed_job_cost_degree": 1.868703936156162,
+              "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+            },
+            "forecasts": {
+              "fair_thread_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.5314598114034121,
+                  0.2625038494086746,
+                  0.12367543332317303,
+                  0.05651419864527243,
+                  0.02584670721946797
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "equal_job_service": {
+                "cpu_share": [
+                  0.026818429509241244,
+                  0.05429603231047345,
+                  0.1152445324519149,
+                  0.25220064746170384,
+                  0.5514403582666664
+                ],
+                "count_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "cpu_share_per_log_width": [
+                  0.06614238555414,
+                  0.1339104924806232,
+                  0.28422798940611066,
+                  0.622003330048378,
+                  1.3600192648871792
+                ]
+              },
+              "equal_active_class_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.5314598114034121,
+                  0.2625038494086746,
+                  0.12367543332317303,
+                  0.05651419864527243,
+                  0.02584670721946797
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "unit_cost_fair_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.3838862559241707,
+                  0.2559241706161138,
+                  0.17061611374407584,
+                  0.1137440758293839,
+                  0.07582938388625593
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "power_cost_fair_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.5437930404558452,
+                  0.2547550452799616,
+                  0.11934711970787906,
+                  0.05591149320286767,
+                  0.02619330135344639
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              }
+            },
+            "errors": {
+              "fair_thread_cpu": {
+                "maximum_absolute_cpu_share_error": 0.013205437174246826,
+                "count_total_variation": 0.02204345991905747
+              },
+              "equal_job_service": {
+                "maximum_absolute_cpu_share_error": 0.3603466749678702,
+                "count_total_variation": 0.3973889454052221
+              },
+              "equal_active_class_cpu": {
+                "maximum_absolute_cpu_share_error": 0.013205437174246826,
+                "count_total_variation": 0.02204345991905747
+              },
+              "unit_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.013205437174246826,
+                "count_total_variation": 0.16884348297036986
+              },
+              "power_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.013205437174246826,
+                "count_total_variation": 0.014038544481918262
+              }
+            },
+            "pooled_cpu_within_frozen_tolerance": true,
+            "pooled_counts_within_frozen_tolerance": true
+          },
+          {
+            "cpu_seconds_by_class": [
+              0.7741354170000001,
+              0.7876218330000001,
+              0.781841875,
+              0.788454625,
+              0.8289755000000001
+            ],
+            "measured_cpu_share": [
+              0.19543794507450307,
+              0.19884272073981782,
+              0.19738351465089535,
+              0.1990529671044464,
+              0.2092828524303374
+            ],
+            "completed_jobs_by_class": [
+              3061,
+              1525,
+              714,
+              330,
+              159
+            ],
+            "count_share": [
+              0.5287614441181552,
+              0.26343064432544483,
+              0.12333736396614269,
+              0.057004664017965105,
+              0.02746588357229228
+            ],
+            "complete_job_cpu_seconds_by_class": [
+              0.7730837500000018,
+              0.7868369460000004,
+              0.7812265820000004,
+              0.7860173720000017,
+              0.8275750889999993
+            ],
+            "partial_job_cpu_seconds_by_class": [
+              0.00010816600000007615,
+              0.00030645799999995393,
+              0.0003229999999999622,
+              0.002229124999999943,
+              0.0013216670000000263
+            ],
+            "loop_overhead_cpu_seconds_by_class": [
+              0.0009435009999981814,
+              0.0004784289999997249,
+              0.00029229299999966596,
+              0.0002081279999983643,
+              7.874400000074111e-05
+            ],
+            "calibrated_completed_job_cpu_seconds_by_class": [
+              0.764647918305623,
+              0.7712634972222497,
+              0.7664492103333476,
+              0.7752200133333262,
+              0.8166961550833313
+            ],
+            "reconstruction_relative_error_by_active_class": [
+              -0.010911924735682095,
+              -0.019792472705966044,
+              -0.018915602729264045,
+              -0.013736793932685998,
+              -0.013145555081670738
+            ],
+            "cpu_resource_per_log_class": [
+              1.9092528592953244,
+              1.9425144537711712,
+              1.9282593233433805,
+              1.944568371564211,
+              2.0445051458752337
+            ],
+            "dimension_diagnostics": {
+              "apparent_log_class_count_degree": 1.836370715786733,
+              "binned_linear_density_degree": 2.8363707157867326,
+              "observed_full_cpu_allocation_tilt": 0.03402126581241505,
+              "realized_completed_job_cost_degree": 1.8697108886269707,
+              "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+            },
+            "forecasts": {
+              "fair_thread_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.5314598114034121,
+                  0.2625038494086746,
+                  0.12367543332317303,
+                  0.05651419864527243,
+                  0.02584670721946797
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "equal_job_service": {
+                "cpu_share": [
+                  0.026818429509241244,
+                  0.05429603231047345,
+                  0.1152445324519149,
+                  0.25220064746170384,
+                  0.5514403582666664
+                ],
+                "count_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "cpu_share_per_log_width": [
+                  0.06614238555414,
+                  0.1339104924806232,
+                  0.28422798940611066,
+                  0.622003330048378,
+                  1.3600192648871792
+                ]
+              },
+              "equal_active_class_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.5314598114034121,
+                  0.2625038494086746,
+                  0.12367543332317303,
+                  0.05651419864527243,
+                  0.02584670721946797
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "unit_cost_fair_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.3838862559241707,
+                  0.2559241706161138,
+                  0.17061611374407584,
+                  0.1137440758293839,
+                  0.07582938388625593
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "power_cost_fair_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.5437930404558452,
+                  0.2547550452799616,
+                  0.11934711970787906,
+                  0.05591149320286767,
+                  0.02619330135344639
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              }
+            },
+            "errors": {
+              "fair_thread_cpu": {
+                "maximum_absolute_cpu_share_error": 0.009282852430337385,
+                "count_total_variation": 0.00303643664228726
+              },
+              "equal_job_service": {
+                "maximum_absolute_cpu_share_error": 0.342157505836329,
+                "count_total_variation": 0.3921920884436
+              },
+              "equal_active_class_cpu": {
+                "maximum_absolute_cpu_share_error": 0.009282852430337385,
+                "count_total_variation": 0.00303643664228726
+              },
+              "unit_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.009282852430337385,
+                "count_total_variation": 0.15238166190331556
+              },
+              "power_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.009282852430337385,
+                "count_total_variation": 0.01503159633769009
+              }
+            },
+            "pooled_cpu_within_frozen_tolerance": true,
+            "pooled_counts_within_frozen_tolerance": true
+          }
+        ],
+        "timing_valid_trials": 4
+      },
+      "restricted_classes": {
+        "cpu_seconds_by_class": [
+          6.476125125000001,
+          3.1776905419999997,
+          3.193385585,
+          3.0931791659999996,
+          0.0
+        ],
+        "measured_cpu_share": [
+          0.40627167954455534,
+          0.1993484759254382,
+          0.20033308498672997,
+          0.19404675954327652,
+          0.0
+        ],
+        "completed_jobs_by_class": [
+          25680,
+          6121,
+          2913,
+          1302,
+          0
+        ],
+        "count_share": [
+          0.7130164371390493,
+          0.16995224344735674,
+          0.08088071968014215,
+          0.0361505997334518,
+          0.0
+        ],
+        "complete_job_cpu_seconds_by_class": [
+          6.4674099469999975,
+          3.174200914999997,
+          3.1883051430000022,
+          3.0877605100000003,
+          0.0
+        ],
+        "partial_job_cpu_seconds_by_class": [
+          0.0012634170000001,
+          0.001492959000000016,
+          0.003701207999999956,
+          0.004793457999999973,
+          0.0
+        ],
+        "loop_overhead_cpu_seconds_by_class": [
+          0.007451761000002666,
+          0.0019966680000026438,
+          0.001379233999998064,
+          0.0006251979999997159,
+          0.0
+        ],
+        "calibrated_completed_job_cpu_seconds_by_class": [
+          6.414948886667232,
+          3.095674666555666,
+          3.1269839631667247,
+          3.0585953253333056,
+          0.0
+        ],
+        "reconstruction_relative_error_by_active_class": [
+          -0.0081116027532939,
+          -0.024738902970271197,
+          -0.01923315902428901,
+          -0.009445416693503444,
+          null
+        ],
+        "cpu_resource_per_log_class": [
+          15.972089818570515,
+          7.837149186095436,
+          7.875857924988484,
+          7.628718486856442,
+          0.0
+        ],
+        "dimension_diagnostics": {
+          "apparent_log_class_count_degree": 2.389348581484689,
+          "binned_linear_density_degree": 3.3893485814846893,
+          "observed_full_cpu_allocation_tilt": -0.5455073184163637,
+          "realized_completed_job_cost_degree": 1.8434186569438609,
+          "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+        },
+        "forecasts": {
+          "fair_thread_cpu": {
+            "cpu_share": [
+              0.4,
+              0.2,
+              0.2,
+              0.2,
+              0.0
+            ],
+            "count_share": [
+              0.7059712882765696,
+              0.17435013595405313,
+              0.08214290442842966,
+              0.0375356713409476,
+              0.0
+            ],
+            "cpu_share_per_log_width": [
+              0.9865213849505734,
+              0.49326069247528614,
+              0.49326069247528614,
+              0.49326069247528637,
+              0.0
+            ]
+          },
+          "equal_job_service": {
+            "cpu_share": [
+              0.11282989742939323,
+              0.11421652700249904,
+              0.2424271110164613,
+              0.5305264645516464,
+              0.0
+            ],
+            "count_share": [
+              0.4,
+              0.2,
+              0.2,
+              0.2,
+              0.0
+            ],
+            "cpu_share_per_log_width": [
+              0.27827276668969037,
+              0.28169261600687445,
+              0.5978988232738138,
+              1.3084392564060527,
+              0.0
+            ]
+          },
+          "equal_active_class_cpu": {
+            "cpu_share": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.0
+            ],
+            "count_share": [
+              0.5455607606544787,
+              0.2694687287453581,
+              0.12695684985077188,
+              0.05801366074939149,
+              0.0
+            ],
+            "cpu_share_per_log_width": [
+              0.6165758655941084,
+              0.6165758655941077,
+              0.6165758655941077,
+              0.6165758655941079,
+              0.0
+            ]
+          },
+          "unit_cost_fair_cpu": {
+            "cpu_share": [
+              0.4,
+              0.2,
+              0.2,
+              0.2,
+              0.0
+            ],
+            "count_share": [
+              0.5869565217391305,
+              0.1956521739130435,
+              0.13043478260869565,
+              0.08695652173913045,
+              0.0
+            ],
+            "cpu_share_per_log_width": [
+              0.9865213849505734,
+              0.49326069247528614,
+              0.49326069247528614,
+              0.49326069247528637,
+              0.0
+            ]
+          },
+          "power_cost_fair_cpu": {
+            "cpu_share": [
+              0.4,
+              0.2,
+              0.2,
+              0.2,
+              0.0
+            ],
+            "count_share": [
+              0.7166488322902292,
+              0.16786708557991672,
+              0.07864202703307545,
+              0.03684205509677878,
+              0.0
+            ],
+            "cpu_share_per_log_width": [
+              0.9865213849505734,
+              0.49326069247528614,
+              0.49326069247528614,
+              0.49326069247528637,
+              0.0
+            ]
+          }
+        },
+        "errors": {
+          "fair_thread_cpu": {
+            "maximum_absolute_cpu_share_error": 0.00627167954455532,
+            "count_total_variation": 0.007045148862479672
+          },
+          "equal_job_service": {
+            "maximum_absolute_cpu_share_error": 0.3364797050083699,
+            "count_total_variation": 0.31301643713904925
+          },
+          "equal_active_class_cpu": {
+            "maximum_absolute_cpu_share_error": 0.15627167954455534,
+            "count_total_variation": 0.16745567648457071
+          },
+          "unit_cost_fair_cpu": {
+            "maximum_absolute_cpu_share_error": 0.00627167954455532,
+            "count_total_variation": 0.12605991539991884
+          },
+          "power_cost_fair_cpu": {
+            "maximum_absolute_cpu_share_error": 0.00627167954455532,
+            "count_total_variation": 0.004323850514506834
+          }
+        },
+        "pooled_cpu_within_frozen_tolerance": true,
+        "pooled_counts_within_frozen_tolerance": true,
+        "individual_trial_profiles": [
+          {
+            "cpu_seconds_by_class": [
+              1.630864167,
+              0.770049125,
+              0.7921265,
+              0.7996500409999999,
+              0.0
+            ],
+            "measured_cpu_share": [
+              0.4084625240660411,
+              0.1928647496320559,
+              0.1983941986810474,
+              0.20027852762085566,
+              0.0
+            ],
+            "completed_jobs_by_class": [
+              6492,
+              1489,
+              724,
+              338,
+              0
+            ],
+            "count_share": [
+              0.7179033506579675,
+              0.16465774632312286,
+              0.08006192635187438,
+              0.037376976667035273,
+              0.0
+            ],
+            "complete_job_cpu_seconds_by_class": [
+              1.6287244489999975,
+              0.7693072189999964,
+              0.7915155380000001,
+              0.7981959549999996,
+              0.0
+            ],
+            "partial_job_cpu_seconds_by_class": [
+              0.0002446670000000317,
+              0.00019825000000006643,
+              0.0002981669999999603,
+              0.001299500000000009,
+              0.0
+            ],
+            "loop_overhead_cpu_seconds_by_class": [
+              0.0018950510000024234,
+              0.0005436560000035007,
+              0.00031279499999992133,
+              0.00015458600000028966,
+              0.0
+            ],
+            "calibrated_completed_job_cpu_seconds_by_class": [
+              1.6217230596668097,
+              0.7530566212222491,
+              0.7771837931111255,
+              0.7940132257777706,
+              0.0
+            ],
+            "reconstruction_relative_error_by_active_class": [
+              -0.004298694808373774,
+              -0.021123677740696418,
+              -0.01810671326186216,
+              -0.005240228537902158,
+              null
+            ],
+            "cpu_resource_per_log_class": [
+              4.022205941737758,
+              1.8991748231874408,
+              1.9536243295901237,
+              1.9721796648077554,
+              0.0
+            ],
+            "dimension_diagnostics": {
+              "apparent_log_class_count_degree": 2.3644226218338913,
+              "binned_linear_density_degree": 3.3644226218338913,
+              "observed_full_cpu_allocation_tilt": -0.5203423352010716,
+              "realized_completed_job_cost_degree": 1.8437524607080689,
+              "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+            },
+            "forecasts": {
+              "fair_thread_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.7059712882765696,
+                  0.17435013595405313,
+                  0.08214290442842966,
+                  0.0375356713409476,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              },
+              "equal_job_service": {
+                "cpu_share": [
+                  0.11282989742939323,
+                  0.11421652700249904,
+                  0.2424271110164613,
+                  0.5305264645516464,
+                  0.0
+                ],
+                "count_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.27827276668969037,
+                  0.28169261600687445,
+                  0.5978988232738138,
+                  1.3084392564060527,
+                  0.0
+                ]
+              },
+              "equal_active_class_cpu": {
+                "cpu_share": [
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.0
+                ],
+                "count_share": [
+                  0.5455607606544787,
+                  0.2694687287453581,
+                  0.12695684985077188,
+                  0.05801366074939149,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.6165758655941084,
+                  0.6165758655941077,
+                  0.6165758655941077,
+                  0.6165758655941079,
+                  0.0
+                ]
+              },
+              "unit_cost_fair_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.5869565217391305,
+                  0.1956521739130435,
+                  0.13043478260869565,
+                  0.08695652173913045,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              },
+              "power_cost_fair_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.7166488322902292,
+                  0.16786708557991672,
+                  0.07864202703307545,
+                  0.03684205509677878,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              }
+            },
+            "errors": {
+              "fair_thread_cpu": {
+                "maximum_absolute_cpu_share_error": 0.008462524066041088,
+                "count_total_variation": 0.011932062381397879
+              },
+              "equal_job_service": {
+                "maximum_absolute_cpu_share_error": 0.3302479369307908,
+                "count_total_variation": 0.3179033506579675
+              },
+              "equal_active_class_cpu": {
+                "maximum_absolute_cpu_share_error": 0.1584625240660411,
+                "count_total_variation": 0.1723425900034889
+              },
+              "unit_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.008462524066041088,
+                "count_total_variation": 0.13094682891883705
+              },
+              "power_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.008462524066041088,
+                "count_total_variation": 0.0032093392567937827
+              }
+            },
+            "pooled_cpu_within_frozen_tolerance": true,
+            "pooled_counts_within_frozen_tolerance": true
+          },
+          {
+            "cpu_seconds_by_class": [
+              1.5676141660000003,
+              0.8376985,
+              0.826875709,
+              0.746533042,
+              0.0
+            ],
+            "measured_cpu_share": [
+              0.39399947915478806,
+              0.21054464794160782,
+              0.20782447986103872,
+              0.18763139304256546,
+              0.0
+            ],
+            "completed_jobs_by_class": [
+              6224,
+              1617,
+              755,
+              314,
+              0
+            ],
+            "count_share": [
+              0.6985409652076319,
+              0.1814814814814815,
+              0.08473625140291807,
+              0.03524130190796858,
+              0.0
+            ],
+            "complete_job_cpu_seconds_by_class": [
+              1.5656152760000015,
+              0.837014487999999,
+              0.8262314650000004,
+              0.744548547,
+              0.0
+            ],
+            "partial_job_cpu_seconds_by_class": [
+              0.00024012500000003545,
+              0.00017570899999996836,
+              0.00030799999999997496,
+              0.0018472079999999336,
+              0.0
+            ],
+            "loop_overhead_cpu_seconds_by_class": [
+              0.0017587649999986077,
+              0.0005083030000010424,
+              0.00033624399999954147,
+              0.00013728700000015248,
+              0.0
+            ],
+            "calibrated_completed_job_cpu_seconds_by_class": [
+              1.5547757737779149,
+              0.8177921803333625,
+              0.8104609997222373,
+              0.7376335884444377,
+              0.0
+            ],
+            "reconstruction_relative_error_by_active_class": [
+              -0.006923477554320067,
+              -0.022965322514986723,
+              -0.01908722427771877,
+              -0.009287451548222865,
+              null
+            ],
+            "cpu_resource_per_log_class": [
+              3.8662122452761456,
+              2.0660187109775423,
+              2.0393264240616658,
+              1.8411770262630103,
+              0.0
+            ],
+            "dimension_diagnostics": {
+              "apparent_log_class_count_degree": 2.3977242815143844,
+              "binned_linear_density_degree": 3.3977242815143844,
+              "observed_full_cpu_allocation_tilt": -0.5521102770305489,
+              "realized_completed_job_cost_degree": 1.8445978289341844,
+              "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+            },
+            "forecasts": {
+              "fair_thread_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.7059712882765696,
+                  0.17435013595405313,
+                  0.08214290442842966,
+                  0.0375356713409476,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              },
+              "equal_job_service": {
+                "cpu_share": [
+                  0.11282989742939323,
+                  0.11421652700249904,
+                  0.2424271110164613,
+                  0.5305264645516464,
+                  0.0
+                ],
+                "count_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.27827276668969037,
+                  0.28169261600687445,
+                  0.5978988232738138,
+                  1.3084392564060527,
+                  0.0
+                ]
+              },
+              "equal_active_class_cpu": {
+                "cpu_share": [
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.0
+                ],
+                "count_share": [
+                  0.5455607606544787,
+                  0.2694687287453581,
+                  0.12695684985077188,
+                  0.05801366074939149,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.6165758655941084,
+                  0.6165758655941077,
+                  0.6165758655941077,
+                  0.6165758655941079,
+                  0.0
+                ]
+              },
+              "unit_cost_fair_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.5869565217391305,
+                  0.1956521739130435,
+                  0.13043478260869565,
+                  0.08695652173913045,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              },
+              "power_cost_fair_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.7166488322902292,
+                  0.16786708557991672,
+                  0.07864202703307545,
+                  0.03684205509677878,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              }
+            },
+            "errors": {
+              "fair_thread_cpu": {
+                "maximum_absolute_cpu_share_error": 0.012368606957434553,
+                "count_total_variation": 0.009724692501916782
+              },
+              "equal_job_service": {
+                "maximum_absolute_cpu_share_error": 0.34289507150908094,
+                "count_total_variation": 0.29854096520763185
+              },
+              "equal_active_class_cpu": {
+                "maximum_absolute_cpu_share_error": 0.14399947915478806,
+                "count_total_variation": 0.15298020455315325
+              },
+              "unit_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.012368606957434553,
+                "count_total_variation": 0.11158444346850141
+              },
+              "power_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.012368606957434553,
+                "count_total_variation": 0.019708620271407483
+              }
+            },
+            "pooled_cpu_within_frozen_tolerance": true,
+            "pooled_counts_within_frozen_tolerance": true
+          },
+          {
+            "cpu_seconds_by_class": [
+              1.6453360000000001,
+              0.7282295,
+              0.817927584,
+              0.792085375,
+              0.0
+            ],
+            "measured_cpu_share": [
+              0.4130296458157447,
+              0.1828078717402262,
+              0.20532483354308648,
+              0.19883764890094258,
+              0.0
+            ],
+            "completed_jobs_by_class": [
+              6527,
+              1400,
+              746,
+              333,
+              0
+            ],
+            "count_share": [
+              0.7247390628469909,
+              0.1554519209415945,
+              0.08283366644459249,
+              0.03697534976682212,
+              0.0
+            ],
+            "complete_job_cpu_seconds_by_class": [
+              1.6430932270000014,
+              0.7272185660000013,
+              0.8165898350000012,
+              0.7912931300000007,
+              0.0
+            ],
+            "partial_job_cpu_seconds_by_class": [
+              0.00036237500000002587,
+              0.0005702910000000561,
+              0.0008870410000000328,
+              0.0006297090000000338,
+              0.0
+            ],
+            "loop_overhead_cpu_seconds_by_class": [
+              0.0018803979999987286,
+              0.00044064299999857504,
+              0.0004507079999988006,
+              0.00016253599999926927,
+              0.0
+            ],
+            "calibrated_completed_job_cpu_seconds_by_class": [
+              1.6304661753612548,
+              0.7080451777778031,
+              0.8007998752222371,
+              0.7822674679999929,
+              0.0
+            ],
+            "reconstruction_relative_error_by_active_class": [
+              -0.007684927082196868,
+              -0.02636537228093574,
+              -0.019336463792454718,
+              -0.011406218072445231,
+              null
+            ],
+            "cpu_resource_per_log_class": [
+              4.057897873572592,
+              1.796034937254657,
+              2.017257632392389,
+              1.9535229028602341,
+              0.0
+            ],
+            "dimension_diagnostics": {
+              "apparent_log_class_count_degree": 2.356844608886703,
+              "binned_linear_density_degree": 3.356844608886702,
+              "observed_full_cpu_allocation_tilt": -0.5122350960633206,
+              "realized_completed_job_cost_degree": 1.8448172521362802,
+              "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+            },
+            "forecasts": {
+              "fair_thread_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.7059712882765696,
+                  0.17435013595405313,
+                  0.08214290442842966,
+                  0.0375356713409476,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              },
+              "equal_job_service": {
+                "cpu_share": [
+                  0.11282989742939323,
+                  0.11421652700249904,
+                  0.2424271110164613,
+                  0.5305264645516464,
+                  0.0
+                ],
+                "count_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.27827276668969037,
+                  0.28169261600687445,
+                  0.5978988232738138,
+                  1.3084392564060527,
+                  0.0
+                ]
+              },
+              "equal_active_class_cpu": {
+                "cpu_share": [
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.0
+                ],
+                "count_share": [
+                  0.5455607606544787,
+                  0.2694687287453581,
+                  0.12695684985077188,
+                  0.05801366074939149,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.6165758655941084,
+                  0.6165758655941077,
+                  0.6165758655941077,
+                  0.6165758655941079,
+                  0.0
+                ]
+              },
+              "unit_cost_fair_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.5869565217391305,
+                  0.1956521739130435,
+                  0.13043478260869565,
+                  0.08695652173913045,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              },
+              "power_cost_fair_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.7166488322902292,
+                  0.16786708557991672,
+                  0.07864202703307545,
+                  0.03684205509677878,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              }
+            },
+            "errors": {
+              "fair_thread_cpu": {
+                "maximum_absolute_cpu_share_error": 0.017192128259773815,
+                "count_total_variation": 0.019458536586584092
+              },
+              "equal_job_service": {
+                "maximum_absolute_cpu_share_error": 0.33168881565070385,
+                "count_total_variation": 0.3247390628469909
+              },
+              "equal_active_class_cpu": {
+                "maximum_absolute_cpu_share_error": 0.1630296458157447,
+                "count_total_variation": 0.17917830219251227
+              },
+              "unit_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.017192128259773815,
+                "count_total_variation": 0.13778254110786042
+              },
+              "power_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.017192128259773815,
+                "count_total_variation": 0.012415164638322113
+              }
+            },
+            "pooled_cpu_within_frozen_tolerance": true,
+            "pooled_counts_within_frozen_tolerance": true
+          },
+          {
+            "cpu_seconds_by_class": [
+              1.6323107920000002,
+              0.841713417,
+              0.756455792,
+              0.7549107079999999,
+              0.0
+            ],
+            "measured_cpu_share": [
+              0.4095735929513354,
+              0.2111997238060505,
+              0.1898071851002551,
+              0.18941949814235887,
+              0.0
+            ],
+            "completed_jobs_by_class": [
+              6437,
+              1615,
+              688,
+              317,
+              0
+            ],
+            "count_share": [
+              0.7107209892900519,
+              0.1783151153803688,
+              0.07596334327039858,
+              0.03500055205918074,
+              0.0
+            ],
+            "complete_job_cpu_seconds_by_class": [
+              1.6299769949999972,
+              0.8406606420000006,
+              0.7539683050000002,
+              0.7537228779999999,
+              0.0
+            ],
+            "partial_job_cpu_seconds_by_class": [
+              0.0004162500000000069,
+              0.0005487089999999251,
+              0.0022079999999999878,
+              0.0010170409999999963,
+              0.0
+            ],
+            "loop_overhead_cpu_seconds_by_class": [
+              0.001917547000002906,
+              0.0005040659999995256,
+              0.00027948699999980064,
+              0.00017078900000000452,
+              0.0
+            ],
+            "calibrated_completed_job_cpu_seconds_by_class": [
+              1.607983877861253,
+              0.8167806872222514,
+              0.7385392951111248,
+              0.7446810431111043,
+              0.0
+            ],
+            "reconstruction_relative_error_by_active_class": [
+              -0.01349290033307754,
+              -0.028406176743253745,
+              -0.02046373804648911,
+              -0.011996232505092741,
+              null
+            ],
+            "cpu_resource_per_log_class": [
+              4.025773757984019,
+              2.0759207146757963,
+              1.865649538944305,
+              1.8618388929254432,
+              0.0
+            ],
+            "dimension_diagnostics": {
+              "apparent_log_class_count_degree": 2.4381998585220206,
+              "binned_linear_density_degree": 3.438199858522021,
+              "observed_full_cpu_allocation_tilt": -0.5969078204164777,
+              "realized_completed_job_cost_degree": 1.840681865426444,
+              "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+            },
+            "forecasts": {
+              "fair_thread_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.7059712882765696,
+                  0.17435013595405313,
+                  0.08214290442842966,
+                  0.0375356713409476,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              },
+              "equal_job_service": {
+                "cpu_share": [
+                  0.11282989742939323,
+                  0.11421652700249904,
+                  0.2424271110164613,
+                  0.5305264645516464,
+                  0.0
+                ],
+                "count_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.27827276668969037,
+                  0.28169261600687445,
+                  0.5978988232738138,
+                  1.3084392564060527,
+                  0.0
+                ]
+              },
+              "equal_active_class_cpu": {
+                "cpu_share": [
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.0
+                ],
+                "count_share": [
+                  0.5455607606544787,
+                  0.2694687287453581,
+                  0.12695684985077188,
+                  0.05801366074939149,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.6165758655941084,
+                  0.6165758655941077,
+                  0.6165758655941077,
+                  0.6165758655941079,
+                  0.0
+                ]
+              },
+              "unit_cost_fair_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.5869565217391305,
+                  0.1956521739130435,
+                  0.13043478260869565,
+                  0.08695652173913045,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              },
+              "power_cost_fair_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.7166488322902292,
+                  0.16786708557991672,
+                  0.07864202703307545,
+                  0.03684205509677878,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              }
+            },
+            "errors": {
+              "fair_thread_cpu": {
+                "maximum_absolute_cpu_share_error": 0.011199723806050499,
+                "count_total_variation": 0.00871468043979793
+              },
+              "equal_job_service": {
+                "maximum_absolute_cpu_share_error": 0.34110696640928756,
+                "count_total_variation": 0.3107209892900519
+              },
+              "equal_active_class_cpu": {
+                "maximum_absolute_cpu_share_error": 0.15957359295133539,
+                "count_total_variation": 0.16516022863557325
+              },
+              "unit_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.011199723806050499,
+                "count_total_variation": 0.12376446755092144
+              },
+              "power_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.011199723806050499,
+                "count_total_variation": 0.010448029800452157
+              }
+            },
+            "pooled_cpu_within_frozen_tolerance": true,
+            "pooled_counts_within_frozen_tolerance": true
+          }
+        ],
+        "timing_valid_trials": 4
+      }
+    },
+    "cubic": {
+      "equal_threads": {
+        "cpu_seconds_by_class": [
+          3.235241375,
+          3.1268555829999998,
+          3.1865535410000003,
+          3.2442307930000003,
+          3.1807653339999997
+        ],
+        "measured_cpu_share": [
+          0.20253618041944532,
+          0.19575089246750185,
+          0.19948817046029477,
+          0.20309894596763067,
+          0.19912581068512736
+        ],
+        "completed_jobs_by_class": [
+          11119,
+          3888,
+          1347,
+          443,
+          132
+        ],
+        "count_share": [
+          0.6568019375036919,
+          0.22966507177033493,
+          0.07956760588339536,
+          0.026168113887412133,
+          0.007797270955165692
+        ],
+        "complete_job_cpu_seconds_by_class": [
+          3.230876996000001,
+          3.1231144349999975,
+          3.180725462999999,
+          3.225474514000001,
+          3.117158418
+        ],
+        "partial_job_cpu_seconds_by_class": [
+          0.0006213759999998958,
+          0.0021259989999999895,
+          0.004708249999999969,
+          0.018337500999999867,
+          0.06346645800000006
+        ],
+        "loop_overhead_cpu_seconds_by_class": [
+          0.0037430029999987458,
+          0.0016151490000021473,
+          0.0011198280000010996,
+          0.0004187779999992314,
+          0.00014045799999962139
+        ],
+        "calibrated_completed_job_cpu_seconds_by_class": [
+          3.2963968058887803,
+          3.0994605720000616,
+          3.1681969820000084,
+          3.209335600777779,
+          3.009932607
+        ],
+        "reconstruction_relative_error_by_active_class": [
+          0.02027926472282798,
+          -0.007573806049132458,
+          -0.003938875311852277,
+          -0.0050035779703643465,
+          -0.03439857608160861
+        ],
+        "cpu_resource_per_log_class": [
+          7.979087004785994,
+          7.711774750703972,
+          7.8590080312161765,
+          8.001257637524137,
+          7.8447325562511265
+        ],
+        "dimension_diagnostics": {
+          "apparent_log_class_count_degree": 2.7226258440033355,
+          "binned_linear_density_degree": 3.722625844003336,
+          "observed_full_cpu_allocation_tilt": 0.0007120181195551608,
+          "realized_completed_job_cost_degree": 2.7129050987260253,
+          "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+        },
+        "forecasts": {
+          "fair_thread_cpu": {
+            "cpu_share": [
+              0.2,
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            "count_share": [
+              0.644388251587903,
+              0.23964121254924484,
+              0.08122258139860619,
+              0.02636998973495792,
+              0.008377964729287894
+            ],
+            "cpu_share_per_log_width": [
+              0.4932606924752867,
+              0.49326069247528614,
+              0.49326069247528614,
+              0.49326069247528637,
+              0.49326069247528637
+            ]
+          },
+          "equal_job_service": {
+            "cpu_share": [
+              0.008851620986286144,
+              0.023801751419946622,
+              0.07022530523967807,
+              0.2163019640280804,
+              0.6808193583260087
+            ],
+            "count_share": [
+              0.2,
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            "cpu_share_per_log_width": [
+              0.021830783486121417,
+              0.05870234193763748,
+              0.17319691345905971,
+              0.5334662828012771,
+              1.6791071406923357
+            ]
+          },
+          "equal_active_class_cpu": {
+            "cpu_share": [
+              0.2,
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            "count_share": [
+              0.644388251587903,
+              0.23964121254924484,
+              0.08122258139860619,
+              0.02636998973495792,
+              0.008377964729287894
+            ],
+            "cpu_share_per_log_width": [
+              0.4932606924752867,
+              0.49326069247528614,
+              0.49326069247528614,
+              0.49326069247528637,
+              0.49326069247528637
+            ]
+          },
+          "unit_cost_fair_cpu": {
+            "cpu_share": [
+              0.2,
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            "count_share": [
+              0.3838862559241707,
+              0.2559241706161138,
+              0.17061611374407584,
+              0.1137440758293839,
+              0.07582938388625593
+            ],
+            "cpu_share_per_log_width": [
+              0.4932606924752867,
+              0.49326069247528614,
+              0.49326069247528614,
+              0.49326069247528637,
+              0.49326069247528637
+            ]
+          },
+          "power_cost_fair_cpu": {
+            "cpu_share": [
+              0.2,
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            "count_share": [
+              0.6663989084775687,
+              0.22422668952201505,
+              0.07544671465453714,
+              0.025385946536058003,
+              0.008541740809821202
+            ],
+            "cpu_share_per_log_width": [
+              0.4932606924752867,
+              0.49326069247528614,
+              0.49326069247528614,
+              0.49326069247528637,
+              0.49326069247528637
+            ]
+          }
+        },
+        "errors": {
+          "fair_thread_cpu": {
+            "maximum_absolute_cpu_share_error": 0.004249107532498159,
+            "count_total_variation": 0.012413685915788786
+          },
+          "equal_job_service": {
+            "maximum_absolute_cpu_share_error": 0.48169354764088135,
+            "count_total_variation": 0.48646700927402675
+          },
+          "equal_active_class_cpu": {
+            "maximum_absolute_cpu_share_error": 0.004249107532498159,
+            "count_total_variation": 0.012413685915788786
+          },
+          "unit_cost_fair_cpu": {
+            "maximum_absolute_cpu_share_error": 0.004249107532498159,
+            "count_total_variation": 0.27291568157952123
+          },
+          "power_cost_fair_cpu": {
+            "maximum_absolute_cpu_share_error": 0.004249107532498159,
+            "count_total_variation": 0.010341440828532266
+          }
+        },
+        "pooled_cpu_within_frozen_tolerance": true,
+        "pooled_counts_within_frozen_tolerance": true,
+        "individual_trial_profiles": [
+          {
+            "cpu_seconds_by_class": [
+              0.7624442499999999,
+              0.8178423330000001,
+              0.8142616250000001,
+              0.836917875,
+              0.7737209169999999
+            ],
+            "measured_cpu_share": [
+              0.19036420771364734,
+              0.20419579235626206,
+              0.20330177467369195,
+              0.20895850181277434,
+              0.1931797234436245
+            ],
+            "completed_jobs_by_class": [
+              2631,
+              1021,
+              345,
+              115,
+              32
+            ],
+            "count_share": [
+              0.6348938223938224,
+              0.24638030888030887,
+              0.08325289575289575,
+              0.02775096525096525,
+              0.007722007722007722
+            ],
+            "complete_job_cpu_seconds_by_class": [
+              0.7614425150000016,
+              0.8171677969999989,
+              0.8125476269999997,
+              0.8347573780000002,
+              0.7542048749999999
+            ],
+            "partial_job_cpu_seconds_by_class": [
+              0.00010741699999994303,
+              0.0002745830000000504,
+              0.001313457999999934,
+              0.0020846669999999845,
+              0.019451541000000017
+            ],
+            "loop_overhead_cpu_seconds_by_class": [
+              0.0008943179999983952,
+              0.0003999530000011742,
+              0.00040054000000044887,
+              7.582999999988793e-05,
+              6.450099999999459e-05
+            ],
+            "calibrated_completed_job_cpu_seconds_by_class": [
+              0.779999999666641,
+              0.8139272746944607,
+              0.8114535700000021,
+              0.8331232372222226,
+              0.729680632
+            ],
+            "reconstruction_relative_error_by_active_class": [
+              0.024371484781933125,
+              -0.003965553118263884,
+              -0.0013464527661437014,
+              -0.0019576236411265003,
+              -0.03251668586735122
+            ],
+            "cpu_resource_per_log_class": [
+              1.8804188936440027,
+              2.017047377555918,
+              2.008216265017759,
+              2.0640934528372257,
+              1.9082305765101675
+            ],
+            "dimension_diagnostics": {
+              "apparent_log_class_count_degree": 2.7135189258621693,
+              "binned_linear_density_degree": 3.7135189258621697,
+              "observed_full_cpu_allocation_tilt": 0.012928379185004057,
+              "realized_completed_job_cost_degree": 2.7140603776988614,
+              "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+            },
+            "forecasts": {
+              "fair_thread_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.644388251587903,
+                  0.23964121254924484,
+                  0.08122258139860619,
+                  0.02636998973495792,
+                  0.008377964729287894
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "equal_job_service": {
+                "cpu_share": [
+                  0.008851620986286144,
+                  0.023801751419946622,
+                  0.07022530523967807,
+                  0.2163019640280804,
+                  0.6808193583260087
+                ],
+                "count_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "cpu_share_per_log_width": [
+                  0.021830783486121417,
+                  0.05870234193763748,
+                  0.17319691345905971,
+                  0.5334662828012771,
+                  1.6791071406923357
+                ]
+              },
+              "equal_active_class_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.644388251587903,
+                  0.23964121254924484,
+                  0.08122258139860619,
+                  0.02636998973495792,
+                  0.008377964729287894
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "unit_cost_fair_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.3838862559241707,
+                  0.2559241706161138,
+                  0.17061611374407584,
+                  0.1137440758293839,
+                  0.07582938388625593
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "power_cost_fair_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.6663989084775687,
+                  0.22422668952201505,
+                  0.07544671465453714,
+                  0.025385946536058003,
+                  0.008541740809821202
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              }
+            },
+            "errors": {
+              "fair_thread_cpu": {
+                "maximum_absolute_cpu_share_error": 0.009635792286352668,
+                "count_total_variation": 0.010150386201360856
+              },
+              "equal_job_service": {
+                "maximum_absolute_cpu_share_error": 0.4876396348823842,
+                "count_total_variation": 0.48127413127413127
+              },
+              "equal_active_class_cpu": {
+                "maximum_absolute_cpu_share_error": 0.009635792286352668,
+                "count_total_variation": 0.010150386201360856
+              },
+              "unit_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.009635792286352668,
+                "count_total_variation": 0.2510075664696518
+              },
+              "power_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.009635792286352668,
+                "count_total_variation": 0.03232481917155971
+              }
+            },
+            "pooled_cpu_within_frozen_tolerance": true,
+            "pooled_counts_within_frozen_tolerance": true
+          },
+          {
+            "cpu_seconds_by_class": [
+              0.826219916,
+              0.718305125,
+              0.797756292,
+              0.7717180840000001,
+              0.887559833
+            ],
+            "measured_cpu_share": [
+              0.20647449266182927,
+              0.17950630744752813,
+              0.1993613594500694,
+              0.19285434396604278,
+              0.22180349647453054
+            ],
+            "completed_jobs_by_class": [
+              2841,
+              892,
+              338,
+              105,
+              37
+            ],
+            "count_share": [
+              0.6743413244718728,
+              0.21172561120341798,
+              0.08022786612864942,
+              0.024922857821030146,
+              0.00878234037502967
+            ],
+            "complete_job_cpu_seconds_by_class": [
+              0.8251275169999963,
+              0.7172773629999992,
+              0.7972551239999992,
+              0.7657104200000004,
+              0.8655806670000005
+            ],
+            "partial_job_cpu_seconds_by_class": [
+              9.987499999997151e-05,
+              0.0006781249999999739,
+              0.0002096250000001021,
+              0.005931291999999977,
+              0.021949125000000014
+            ],
+            "loop_overhead_cpu_seconds_by_class": [
+              0.0009925240000037139,
+              0.0003496370000007909,
+              0.00029154300000067135,
+              7.637199999965816e-05,
+              3.0040999999481066e-05
+            ],
+            "calibrated_completed_job_cpu_seconds_by_class": [
+              0.8422576963333056,
+              0.7110902341111253,
+              0.7949892946666687,
+              0.7606777383333336,
+              0.84369323075
+            ],
+            "reconstruction_relative_error_by_active_class": [
+              0.02076064484625516,
+              -0.008625852714766307,
+              -0.0028420379689281607,
+              -0.006572565209007882,
+              -0.025286419954202183
+            ],
+            "cpu_resource_per_log_class": [
+              2.037709039515166,
+              1.7715584168302347,
+              1.9675091050921827,
+              1.9032909825477062,
+              2.1889918891941473
+            ],
+            "dimension_diagnostics": {
+              "apparent_log_class_count_degree": 2.668908496549499,
+              "binned_linear_density_degree": 3.6689084965494994,
+              "observed_full_cpu_allocation_tilt": 0.05301437079613446,
+              "realized_completed_job_cost_degree": 2.708632436895175,
+              "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+            },
+            "forecasts": {
+              "fair_thread_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.644388251587903,
+                  0.23964121254924484,
+                  0.08122258139860619,
+                  0.02636998973495792,
+                  0.008377964729287894
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "equal_job_service": {
+                "cpu_share": [
+                  0.008851620986286144,
+                  0.023801751419946622,
+                  0.07022530523967807,
+                  0.2163019640280804,
+                  0.6808193583260087
+                ],
+                "count_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "cpu_share_per_log_width": [
+                  0.021830783486121417,
+                  0.05870234193763748,
+                  0.17319691345905971,
+                  0.5334662828012771,
+                  1.6791071406923357
+                ]
+              },
+              "equal_active_class_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.644388251587903,
+                  0.23964121254924484,
+                  0.08122258139860619,
+                  0.02636998973495792,
+                  0.008377964729287894
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "unit_cost_fair_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.3838862559241707,
+                  0.2559241706161138,
+                  0.17061611374407584,
+                  0.1137440758293839,
+                  0.07582938388625593
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "power_cost_fair_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.6663989084775687,
+                  0.22422668952201505,
+                  0.07544671465453714,
+                  0.025385946536058003,
+                  0.008541740809821202
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              }
+            },
+            "errors": {
+              "fair_thread_cpu": {
+                "maximum_absolute_cpu_share_error": 0.02180349647453053,
+                "count_total_variation": 0.030357448529711464
+              },
+              "equal_job_service": {
+                "maximum_absolute_cpu_share_error": 0.45901586185147814,
+                "count_total_variation": 0.4860669356752908
+              },
+              "equal_active_class_cpu": {
+                "maximum_absolute_cpu_share_error": 0.02180349647453053,
+                "count_total_variation": 0.030357448529711464
+              },
+              "unit_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.02180349647453053,
+                "count_total_variation": 0.29045506854770214
+              },
+              "power_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.02180349647453053,
+                "count_total_variation": 0.012964167033624891
+              }
+            },
+            "pooled_cpu_within_frozen_tolerance": true,
+            "pooled_counts_within_frozen_tolerance": true
+          },
+          {
+            "cpu_seconds_by_class": [
+              0.812044042,
+              0.794894958,
+              0.7917127079999999,
+              0.827430625,
+              0.774223292
+            ],
+            "measured_cpu_share": [
+              0.20299550037504946,
+              0.1987085569243225,
+              0.19791305520562566,
+              0.2068418522397273,
+              0.193541035255275
+            ],
+            "completed_jobs_by_class": [
+              2795,
+              989,
+              334,
+              113,
+              32
+            ],
+            "count_share": [
+              0.6556415669716162,
+              0.2319962467745719,
+              0.078348580811635,
+              0.02650715458597232,
+              0.00750645085620455
+            ],
+            "complete_job_cpu_seconds_by_class": [
+              0.8109323330000007,
+              0.7936419189999999,
+              0.7905766290000006,
+              0.8200911300000001,
+              0.758158043
+            ],
+            "partial_job_cpu_seconds_by_class": [
+              0.0002419590000000138,
+              0.0007805829999999458,
+              0.0008779169999999503,
+              0.007144458999999936,
+              0.016042917000000045
+            ],
+            "loop_overhead_cpu_seconds_by_class": [
+              0.0008697499999993363,
+              0.000472456000000121,
+              0.0002581619999993956,
+              0.00019503599999992627,
+              2.2331999999902763e-05
+            ],
+            "calibrated_completed_job_cpu_seconds_by_class": [
+              0.8286202961110838,
+              0.7884173111389046,
+              0.7855811373333353,
+              0.8186341374444448,
+              0.729680632
+            ],
+            "reconstruction_relative_error_by_active_class": [
+              0.021811885395724012,
+              -0.0065830795173702945,
+              -0.006318795020520697,
+              -0.0017766227462493274,
+              -0.03756131226586487
+            ],
+            "cpu_resource_per_log_class": [
+              2.002747032386754,
+              1.9604521871409675,
+              1.95260379294782,
+              2.0406950153137946,
+              1.909469585712079
+            ],
+            "dimension_diagnostics": {
+              "apparent_log_class_count_degree": 2.739818854037079,
+              "binned_linear_density_degree": 3.7398188540370794,
+              "observed_full_cpu_allocation_tilt": -0.01363205340540091,
+              "realized_completed_job_cost_degree": 2.714711290874498,
+              "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+            },
+            "forecasts": {
+              "fair_thread_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.644388251587903,
+                  0.23964121254924484,
+                  0.08122258139860619,
+                  0.02636998973495792,
+                  0.008377964729287894
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "equal_job_service": {
+                "cpu_share": [
+                  0.008851620986286144,
+                  0.023801751419946622,
+                  0.07022530523967807,
+                  0.2163019640280804,
+                  0.6808193583260087
+                ],
+                "count_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "cpu_share_per_log_width": [
+                  0.021830783486121417,
+                  0.05870234193763748,
+                  0.17319691345905971,
+                  0.5334662828012771,
+                  1.6791071406923357
+                ]
+              },
+              "equal_active_class_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.644388251587903,
+                  0.23964121254924484,
+                  0.08122258139860619,
+                  0.02636998973495792,
+                  0.008377964729287894
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "unit_cost_fair_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.3838862559241707,
+                  0.2559241706161138,
+                  0.17061611374407584,
+                  0.1137440758293839,
+                  0.07582938388625593
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "power_cost_fair_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.6663989084775687,
+                  0.22422668952201505,
+                  0.07544671465453714,
+                  0.025385946536058003,
+                  0.008541740809821202
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              }
+            },
+            "errors": {
+              "fair_thread_cpu": {
+                "maximum_absolute_cpu_share_error": 0.006841852239727275,
+                "count_total_variation": 0.011390480234727546
+              },
+              "equal_job_service": {
+                "maximum_absolute_cpu_share_error": 0.4872783230707337,
+                "count_total_variation": 0.4876378137461881
+              },
+              "equal_active_class_cpu": {
+                "maximum_absolute_cpu_share_error": 0.006841852239727275,
+                "count_total_variation": 0.011390480234727546
+              },
+              "unit_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.006841852239727275,
+                "count_total_variation": 0.2717553110474456
+              },
+              "power_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.006841852239727275,
+                "count_total_variation": 0.011792631459569046
+              }
+            },
+            "pooled_cpu_within_frozen_tolerance": true,
+            "pooled_counts_within_frozen_tolerance": true
+          },
+          {
+            "cpu_seconds_by_class": [
+              0.834533167,
+              0.795813167,
+              0.782822916,
+              0.808164209,
+              0.745261292
+            ],
+            "measured_cpu_share": [
+              0.21039032706570532,
+              0.20062880555150517,
+              0.19735389298406297,
+              0.20374257007128277,
+              0.18788440432744374
+            ],
+            "completed_jobs_by_class": [
+              2852,
+              986,
+              330,
+              110,
+              31
+            ],
+            "count_share": [
+              0.6618705035971223,
+              0.22882339289858436,
+              0.0765838941749826,
+              0.025527964724994197,
+              0.007194244604316547
+            ],
+            "complete_job_cpu_seconds_by_class": [
+              0.8333746310000028,
+              0.795027356,
+              0.7803460829999994,
+              0.8049155860000002,
+              0.7392148329999998
+            ],
+            "partial_job_cpu_seconds_by_class": [
+              0.00017212499999996744,
+              0.0003927080000000194,
+              0.002307249999999983,
+              0.0031770829999999695,
+              0.006022874999999983
+            ],
+            "loop_overhead_cpu_seconds_by_class": [
+              0.0009864109999973003,
+              0.00039310300000006126,
+              0.0001695830000005838,
+              7.153999999975902e-05,
+              2.3584000000242966e-05
+            ],
+            "calibrated_completed_job_cpu_seconds_by_class": [
+              0.84551881377775,
+              0.7860257520555712,
+              0.776172980000002,
+              0.7969004877777781,
+              0.70687811225
+            ],
+            "reconstruction_relative_error_by_active_class": [
+              0.01457229717105123,
+              -0.011322382653243855,
+              -0.005347759271058461,
+              -0.009957687938499089,
+              -0.043744685991710656
+            ],
+            "cpu_resource_per_log_class": [
+              2.0582120392400705,
+              1.9627167691768528,
+              1.9306788681584137,
+              1.9931781868254101,
+              1.8380405048347328
+            ],
+            "dimension_diagnostics": {
+              "apparent_log_class_count_degree": 2.771324318222399,
+              "binned_linear_density_degree": 3.7713243182223986,
+              "observed_full_cpu_allocation_tilt": -0.05200802183651918,
+              "realized_completed_job_cost_degree": 2.715233549063373,
+              "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+            },
+            "forecasts": {
+              "fair_thread_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.644388251587903,
+                  0.23964121254924484,
+                  0.08122258139860619,
+                  0.02636998973495792,
+                  0.008377964729287894
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "equal_job_service": {
+                "cpu_share": [
+                  0.008851620986286144,
+                  0.023801751419946622,
+                  0.07022530523967807,
+                  0.2163019640280804,
+                  0.6808193583260087
+                ],
+                "count_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "cpu_share_per_log_width": [
+                  0.021830783486121417,
+                  0.05870234193763748,
+                  0.17319691345905971,
+                  0.5334662828012771,
+                  1.6791071406923357
+                ]
+              },
+              "equal_active_class_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.644388251587903,
+                  0.23964121254924484,
+                  0.08122258139860619,
+                  0.02636998973495792,
+                  0.008377964729287894
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "unit_cost_fair_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.3838862559241707,
+                  0.2559241706161138,
+                  0.17061611374407584,
+                  0.1137440758293839,
+                  0.07582938388625593
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              },
+              "power_cost_fair_cpu": {
+                "cpu_share": [
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.2
+                ],
+                "count_share": [
+                  0.6663989084775687,
+                  0.22422668952201505,
+                  0.07544671465453714,
+                  0.025385946536058003,
+                  0.008541740809821202
+                ],
+                "cpu_share_per_log_width": [
+                  0.4932606924752867,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.49326069247528637
+                ]
+              }
+            },
+            "errors": {
+              "fair_thread_cpu": {
+                "maximum_absolute_cpu_share_error": 0.012115595672556267,
+                "count_total_variation": 0.017482252009219202
+              },
+              "equal_job_service": {
+                "maximum_absolute_cpu_share_error": 0.49293495399856496,
+                "count_total_variation": 0.4906938964957066
+              },
+              "equal_active_class_cpu": {
+                "maximum_absolute_cpu_share_error": 0.012115595672556267,
+                "count_total_variation": 0.017482252009219202
+              },
+              "unit_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.012115595672556267,
+                "count_total_variation": 0.27798424767295166
+              },
+              "power_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.012115595672556267,
+                "count_total_variation": 0.0058759010859509905
+              }
+            },
+            "pooled_cpu_within_frozen_tolerance": true,
+            "pooled_counts_within_frozen_tolerance": true
+          }
+        ],
+        "timing_valid_trials": 4
+      },
+      "restricted_classes": {
+        "cpu_seconds_by_class": [
+          6.362298041,
+          3.25134325,
+          3.211186791,
+          3.1555610419999995,
+          0.0
+        ],
+        "measured_cpu_share": [
+          0.39813160941399367,
+          0.20345832787744828,
+          0.20094546922998946,
+          0.19746459347856865,
+          0.0
+        ],
+        "completed_jobs_by_class": [
+          21870,
+          4031,
+          1359,
+          429,
+          0
+        ],
+        "count_share": [
+          0.7898443425186897,
+          0.1455812777637329,
+          0.049080862436346566,
+          0.015493517281230813,
+          0.0
+        ],
+        "complete_job_cpu_seconds_by_class": [
+          6.3529688230000065,
+          3.2471180570000002,
+          3.2076325560000005,
+          3.1326435719999997,
+          0.0
+        ],
+        "partial_job_cpu_seconds_by_class": [
+          0.0017510829999999311,
+          0.0024585419999999525,
+          0.002703126000000111,
+          0.022531416000000082,
+          0.0
+        ],
+        "loop_overhead_cpu_seconds_by_class": [
+          0.007578134999994046,
+          0.0017666510000001745,
+          0.0008511089999994059,
+          0.0003860540000002466,
+          0.0
+        ],
+        "calibrated_completed_job_cpu_seconds_by_class": [
+          6.483694409999787,
+          3.2134582216389527,
+          3.196421454000008,
+          3.1079119023333344,
+          0.0
+        ],
+        "reconstruction_relative_error_by_active_class": [
+          0.02057708618473102,
+          -0.010366064544060877,
+          -0.0034951328758094542,
+          -0.007894824003509484,
+          null
+        ],
+        "cpu_resource_per_log_class": [
+          15.691357687189099,
+          8.018799114849237,
+          7.919761100980759,
+          7.78257112362478,
+          0.0
+        ],
+        "dimension_diagnostics": {
+          "apparent_log_class_count_degree": 3.176970761626686,
+          "binned_linear_density_degree": 4.176970761626685,
+          "observed_full_cpu_allocation_tilt": -0.5218938915064988,
+          "realized_completed_job_cost_degree": 2.6508170556251205,
+          "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+        },
+        "forecasts": {
+          "fair_thread_cpu": {
+            "cpu_share": [
+              0.4,
+              0.2,
+              0.2,
+              0.2,
+              0.0
+            ],
+            "count_share": [
+              0.7877557455035629,
+              0.14647903773844348,
+              0.04964674247529685,
+              0.016118474282696752,
+              0.0
+            ],
+            "cpu_share_per_log_width": [
+              0.9865213849505734,
+              0.49326069247528614,
+              0.49326069247528614,
+              0.49326069247528637,
+              0.0
+            ]
+          },
+          "equal_job_service": {
+            "cpu_share": [
+              0.05396799030986301,
+              0.07255917825557487,
+              0.21408048302982335,
+              0.6593923484047388,
+              0.0
+            ],
+            "count_share": [
+              0.4,
+              0.2,
+              0.2,
+              0.2,
+              0.0
+            ],
+            "cpu_share_per_log_width": [
+              0.13310144135871294,
+              0.17895295255891291,
+              0.5279874365236721,
+              1.6262616319351337,
+              0.0
+            ]
+          },
+          "equal_active_class_cpu": {
+            "cpu_share": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.0
+            ],
+            "count_share": [
+              0.6498325255670478,
+              0.24166588077464712,
+              0.08190881052419584,
+              0.02659278313410909,
+              0.0
+            ],
+            "cpu_share_per_log_width": [
+              0.6165758655941084,
+              0.6165758655941077,
+              0.6165758655941077,
+              0.6165758655941079,
+              0.0
+            ]
+          },
+          "unit_cost_fair_cpu": {
+            "cpu_share": [
+              0.4,
+              0.2,
+              0.2,
+              0.2,
+              0.0
+            ],
+            "count_share": [
+              0.5869565217391305,
+              0.1956521739130435,
+              0.13043478260869565,
+              0.08695652173913045,
+              0.0
+            ],
+            "cpu_share_per_log_width": [
+              0.9865213849505734,
+              0.49326069247528614,
+              0.49326069247528614,
+              0.49326069247528637,
+              0.0
+            ]
+          },
+          "power_cost_fair_cpu": {
+            "cpu_share": [
+              0.4,
+              0.2,
+              0.2,
+              0.2,
+              0.0
+            ],
+            "count_share": [
+              0.8039280119831436,
+              0.13525090936359394,
+              0.04550857343197704,
+              0.015312505221285518,
+              0.0
+            ],
+            "cpu_share_per_log_width": [
+              0.9865213849505734,
+              0.49326069247528614,
+              0.49326069247528614,
+              0.49326069247528637,
+              0.0
+            ]
+          }
+        },
+        "errors": {
+          "fair_thread_cpu": {
+            "maximum_absolute_cpu_share_error": 0.003458327877448264,
+            "count_total_variation": 0.002088597015126841
+          },
+          "equal_job_service": {
+            "maximum_absolute_cpu_share_error": 0.46192775492617016,
+            "count_total_variation": 0.3898443425186897
+          },
+          "equal_active_class_cpu": {
+            "maximum_absolute_cpu_share_error": 0.14813160941399367,
+            "count_total_variation": 0.14001181695164183
+          },
+          "unit_cost_fair_cpu": {
+            "maximum_absolute_cpu_share_error": 0.003458327877448264,
+            "count_total_variation": 0.2028878207795593
+          },
+          "power_cost_fair_cpu": {
+            "maximum_absolute_cpu_share_error": 0.003458327877448264,
+            "count_total_variation": 0.014083669464453802
+          }
+        },
+        "pooled_cpu_within_frozen_tolerance": true,
+        "pooled_counts_within_frozen_tolerance": true,
+        "individual_trial_profiles": [
+          {
+            "cpu_seconds_by_class": [
+              1.5941187079999999,
+              0.825558333,
+              0.8338572080000001,
+              0.749056375,
+              0.0
+            ],
+            "measured_cpu_share": [
+              0.3982717339218951,
+              0.20625600031386074,
+              0.20832937622950873,
+              0.1871428895347355,
+              0.0
+            ],
+            "completed_jobs_by_class": [
+              5483,
+              1031,
+              354,
+              103,
+              0
+            ],
+            "count_share": [
+              0.7865442547697604,
+              0.14789843637928562,
+              0.05078181035719409,
+              0.014775498493759863,
+              0.0
+            ],
+            "complete_job_cpu_seconds_by_class": [
+              1.5917116500000024,
+              0.8244414049999986,
+              0.8329425410000008,
+              0.7433547040000003,
+              0.0
+            ],
+            "partial_job_cpu_seconds_by_class": [
+              0.0006506659999999664,
+              0.0006960419999999523,
+              0.0006497080000000821,
+              0.005595458000000053,
+              0.0
+            ],
+            "loop_overhead_cpu_seconds_by_class": [
+              0.001756391999997664,
+              0.0004208860000014525,
+              0.0002649589999992319,
+              0.00010621299999968858,
+              0.0
+            ],
+            "calibrated_completed_job_cpu_seconds_by_class": [
+              1.625518813444391,
+              0.8218991383055719,
+              0.8326219240000021,
+              0.7461886385555558,
+              0.0
+            ],
+            "reconstruction_relative_error_by_active_class": [
+              0.021239502421426998,
+              -0.0030836232617728635,
+              -0.00038492090896655856,
+              0.0038123584075087564,
+              null
+            ],
+            "cpu_resource_per_log_class": [
+              3.931580488979446,
+              2.0360773750716143,
+              2.0565449192179437,
+              1.8474003311776388,
+              0.0
+            ],
+            "dimension_diagnostics": {
+              "apparent_log_class_count_degree": 3.2044739171342775,
+              "binned_linear_density_degree": 4.204473917134277,
+              "observed_full_cpu_allocation_tilt": -0.5563447870705283,
+              "realized_completed_job_cost_degree": 2.6436569524364293,
+              "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+            },
+            "forecasts": {
+              "fair_thread_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.7877557455035629,
+                  0.14647903773844348,
+                  0.04964674247529685,
+                  0.016118474282696752,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              },
+              "equal_job_service": {
+                "cpu_share": [
+                  0.05396799030986301,
+                  0.07255917825557487,
+                  0.21408048302982335,
+                  0.6593923484047388,
+                  0.0
+                ],
+                "count_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.13310144135871294,
+                  0.17895295255891291,
+                  0.5279874365236721,
+                  1.6262616319351337,
+                  0.0
+                ]
+              },
+              "equal_active_class_cpu": {
+                "cpu_share": [
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.0
+                ],
+                "count_share": [
+                  0.6498325255670478,
+                  0.24166588077464712,
+                  0.08190881052419584,
+                  0.02659278313410909,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.6165758655941084,
+                  0.6165758655941077,
+                  0.6165758655941077,
+                  0.6165758655941079,
+                  0.0
+                ]
+              },
+              "unit_cost_fair_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.5869565217391305,
+                  0.1956521739130435,
+                  0.13043478260869565,
+                  0.08695652173913045,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              },
+              "power_cost_fair_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.8039280119831436,
+                  0.13525090936359394,
+                  0.04550857343197704,
+                  0.015312505221285518,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              }
+            },
+            "errors": {
+              "fair_thread_cpu": {
+                "maximum_absolute_cpu_share_error": 0.012857110465264499,
+                "count_total_variation": 0.0025544665227393596
+              },
+              "equal_job_service": {
+                "maximum_absolute_cpu_share_error": 0.4722494588700033,
+                "count_total_variation": 0.3865442547697604
+              },
+              "equal_active_class_cpu": {
+                "maximum_absolute_cpu_share_error": 0.14827173392189508,
+                "count_total_variation": 0.13671172920271252
+              },
+              "unit_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.012857110465264499,
+                "count_total_variation": 0.19958773303062996
+              },
+              "power_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.012857110465264499,
+                "count_total_variation": 0.01792076394090877
+              }
+            },
+            "pooled_cpu_within_frozen_tolerance": true,
+            "pooled_counts_within_frozen_tolerance": true
+          },
+          {
+            "cpu_seconds_by_class": [
+              1.585546208,
+              0.820398625,
+              0.856288916,
+              0.71391675,
+              0.0
+            ],
+            "measured_cpu_share": [
+              0.3987641333995693,
+              0.20632987237438066,
+              0.21535626385755677,
+              0.17954973036849328,
+              0.0
+            ],
+            "completed_jobs_by_class": [
+              5446,
+              1011,
+              363,
+              97,
+              0
+            ],
+            "count_share": [
+              0.7873355500939714,
+              0.14616163076478242,
+              0.05247939858320081,
+              0.014023420558045395,
+              0.0
+            ],
+            "complete_job_cpu_seconds_by_class": [
+              1.5831478300000001,
+              0.819082080000002,
+              0.8548852489999995,
+              0.7098993690000001,
+              0.0
+            ],
+            "partial_job_cpu_seconds_by_class": [
+              0.00048562500000004505,
+              0.0008212079999999622,
+              0.0012252090000000049,
+              0.003958958000000012,
+              0.0
+            ],
+            "loop_overhead_cpu_seconds_by_class": [
+              0.0019127529999997117,
+              0.0004953369999980417,
+              0.00017845800000049206,
+              5.842299999991862e-05,
+              0.0
+            ],
+            "calibrated_completed_job_cpu_seconds_by_class": [
+              1.614549600222169,
+              0.8059554110833493,
+              0.8537902780000022,
+              0.7027213392222225,
+              0.0
+            ],
+            "reconstruction_relative_error_by_active_class": [
+              0.019835020853465682,
+              -0.01602607264543338,
+              -0.0012808397399278746,
+              -0.010111334213311006,
+              null
+            ],
+            "cpu_resource_per_log_class": [
+              3.9104381025482247,
+              2.023351969366363,
+              2.1118683183253606,
+              1.7607353523735294,
+              0.0
+            ],
+            "dimension_diagnostics": {
+              "apparent_log_class_count_degree": 3.232847711633377,
+              "binned_linear_density_degree": 4.232847711633376,
+              "observed_full_cpu_allocation_tilt": -0.579812196313353,
+              "realized_completed_job_cost_degree": 2.649971738079605,
+              "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+            },
+            "forecasts": {
+              "fair_thread_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.7877557455035629,
+                  0.14647903773844348,
+                  0.04964674247529685,
+                  0.016118474282696752,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              },
+              "equal_job_service": {
+                "cpu_share": [
+                  0.05396799030986301,
+                  0.07255917825557487,
+                  0.21408048302982335,
+                  0.6593923484047388,
+                  0.0
+                ],
+                "count_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.13310144135871294,
+                  0.17895295255891291,
+                  0.5279874365236721,
+                  1.6262616319351337,
+                  0.0
+                ]
+              },
+              "equal_active_class_cpu": {
+                "cpu_share": [
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.0
+                ],
+                "count_share": [
+                  0.6498325255670478,
+                  0.24166588077464712,
+                  0.08190881052419584,
+                  0.02659278313410909,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.6165758655941084,
+                  0.6165758655941077,
+                  0.6165758655941077,
+                  0.6165758655941079,
+                  0.0
+                ]
+              },
+              "unit_cost_fair_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.5869565217391305,
+                  0.1956521739130435,
+                  0.13043478260869565,
+                  0.08695652173913045,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              },
+              "power_cost_fair_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.8039280119831436,
+                  0.13525090936359394,
+                  0.04550857343197704,
+                  0.015312505221285518,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              }
+            },
+            "errors": {
+              "fair_thread_cpu": {
+                "maximum_absolute_cpu_share_error": 0.02045026963150673,
+                "count_total_variation": 0.002832656107903931
+              },
+              "equal_job_service": {
+                "maximum_absolute_cpu_share_error": 0.4798426180362455,
+                "count_total_variation": 0.38733555009397136
+              },
+              "equal_active_class_cpu": {
+                "maximum_absolute_cpu_share_error": 0.1487641333995693,
+                "count_total_variation": 0.13750302452692348
+              },
+              "unit_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.02045026963150673,
+                "count_total_variation": 0.20037902835484092
+              },
+              "power_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.02045026963150673,
+                "count_total_variation": 0.01788154655241228
+              }
+            },
+            "pooled_cpu_within_frozen_tolerance": true,
+            "pooled_counts_within_frozen_tolerance": true
+          },
+          {
+            "cpu_seconds_by_class": [
+              1.572176708,
+              0.7842180839999999,
+              0.8218202920000001,
+              0.817103417,
+              0.0
+            ],
+            "measured_cpu_share": [
+              0.39350472499413885,
+              0.1962842471266598,
+              0.2056958141871053,
+              0.2045152136920961,
+              0.0
+            ],
+            "completed_jobs_by_class": [
+              5395,
+              970,
+              349,
+              111,
+              0
+            ],
+            "count_share": [
+              0.7904761904761904,
+              0.14212454212454212,
+              0.05113553113553113,
+              0.016263736263736263,
+              0.0
+            ],
+            "complete_job_cpu_seconds_by_class": [
+              1.5696841780000041,
+              0.782997157999999,
+              0.8209797580000002,
+              0.8110833799999997,
+              0.0
+            ],
+            "partial_job_cpu_seconds_by_class": [
+              0.0004986669999998972,
+              0.0007870420000000156,
+              0.0006503340000000302,
+              0.005874457999999971,
+              0.0
+            ],
+            "loop_overhead_cpu_seconds_by_class": [
+              0.0019938629999959323,
+              0.0004338840000008837,
+              0.0001901999999998072,
+              0.00014557900000033985,
+              0.0
+            ],
+            "calibrated_completed_job_cpu_seconds_by_class": [
+              1.5994298738888362,
+              0.7732707702777931,
+              0.8208617273333355,
+              0.804145037666667,
+              0.0
+            ],
+            "reconstruction_relative_error_by_active_class": [
+              0.0189501151287211,
+              -0.012421996201173851,
+              -0.00014376805946135713,
+              -0.008554413152113515,
+              null
+            ],
+            "cpu_resource_per_log_class": [
+              3.8774648584079827,
+              1.9341197758274105,
+              2.0268582316108095,
+              2.015224986466713,
+              0.0
+            ],
+            "dimension_diagnostics": {
+              "apparent_log_class_count_degree": 3.1256246036968225,
+              "binned_linear_density_degree": 4.1256246036968225,
+              "observed_full_cpu_allocation_tilt": -0.4726713810180623,
+              "realized_completed_job_cost_degree": 2.6487877202980745,
+              "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+            },
+            "forecasts": {
+              "fair_thread_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.7877557455035629,
+                  0.14647903773844348,
+                  0.04964674247529685,
+                  0.016118474282696752,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              },
+              "equal_job_service": {
+                "cpu_share": [
+                  0.05396799030986301,
+                  0.07255917825557487,
+                  0.21408048302982335,
+                  0.6593923484047388,
+                  0.0
+                ],
+                "count_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.13310144135871294,
+                  0.17895295255891291,
+                  0.5279874365236721,
+                  1.6262616319351337,
+                  0.0
+                ]
+              },
+              "equal_active_class_cpu": {
+                "cpu_share": [
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.0
+                ],
+                "count_share": [
+                  0.6498325255670478,
+                  0.24166588077464712,
+                  0.08190881052419584,
+                  0.02659278313410909,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.6165758655941084,
+                  0.6165758655941077,
+                  0.6165758655941077,
+                  0.6165758655941079,
+                  0.0
+                ]
+              },
+              "unit_cost_fair_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.5869565217391305,
+                  0.1956521739130435,
+                  0.13043478260869565,
+                  0.08695652173913045,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              },
+              "power_cost_fair_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.8039280119831436,
+                  0.13525090936359394,
+                  0.04550857343197704,
+                  0.015312505221285518,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              }
+            },
+            "errors": {
+              "fair_thread_cpu": {
+                "maximum_absolute_cpu_share_error": 0.0064952750058611675,
+                "count_total_variation": 0.004354495613901365
+              },
+              "equal_job_service": {
+                "maximum_absolute_cpu_share_error": 0.4548771347126427,
+                "count_total_variation": 0.3904761904761905
+              },
+              "equal_active_class_cpu": {
+                "maximum_absolute_cpu_share_error": 0.14350472499413885,
+                "count_total_variation": 0.14064366490914257
+              },
+              "unit_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.0064952750058611675,
+                "count_total_variation": 0.20351966873706
+              },
+              "power_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.0064952750058611675,
+                "count_total_variation": 0.01345182150695307
+              }
+            },
+            "pooled_cpu_within_frozen_tolerance": true,
+            "pooled_counts_within_frozen_tolerance": true
+          },
+          {
+            "cpu_seconds_by_class": [
+              1.610456417,
+              0.821168208,
+              0.6992203749999999,
+              0.8754845,
+              0.0
+            ],
+            "measured_cpu_share": [
+              0.4019780242738397,
+              0.20496771621006213,
+              0.17452892354460608,
+              0.21852533597149212,
+              0.0
+            ],
+            "completed_jobs_by_class": [
+              5546,
+              1019,
+              293,
+              118,
+              0
+            ],
+            "count_share": [
+              0.7950114678899083,
+              0.14607224770642202,
+              0.04200114678899083,
+              0.0169151376146789,
+              0.0
+            ],
+            "complete_job_cpu_seconds_by_class": [
+              1.6084251649999992,
+              0.8205974140000002,
+              0.698825008,
+              0.8683061189999997,
+              0.0
+            ],
+            "partial_job_cpu_seconds_by_class": [
+              0.00011612500000002246,
+              0.00015425000000002242,
+              0.000177874999999994,
+              0.007102542000000045,
+              0.0
+            ],
+            "loop_overhead_cpu_seconds_by_class": [
+              0.001915127000000738,
+              0.00041654399999979663,
+              0.00021749199999987479,
+              7.583900000029953e-05,
+              0.0
+            ],
+            "calibrated_completed_job_cpu_seconds_by_class": [
+              1.6441961224443904,
+              0.8123329019722384,
+              0.6891475246666685,
+              0.8548568868888892,
+              0.0
+            ],
+            "reconstruction_relative_error_by_active_class": [
+              0.022239739978447304,
+              -0.010071335696119794,
+              -0.013848221260753043,
+              -0.015489044493432268,
+              null
+            ],
+            "cpu_resource_per_log_class": [
+              3.971874237253445,
+              2.025249994583849,
+              1.724489631826646,
+              2.159210453606899,
+              0.0
+            ],
+            "dimension_diagnostics": {
+              "apparent_log_class_count_degree": 3.1560908629213213,
+              "binned_linear_density_degree": 4.156090862921322,
+              "observed_full_cpu_allocation_tilt": -0.4906090176058791,
+              "realized_completed_job_cost_degree": 2.660356035438175,
+              "interpretation": "Descriptive finite-class slopes; these are not fitted continuous power-law tails. Absent classes remain zeros in full profiles and are not in slope diagnostics."
+            },
+            "forecasts": {
+              "fair_thread_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.7877557455035629,
+                  0.14647903773844348,
+                  0.04964674247529685,
+                  0.016118474282696752,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              },
+              "equal_job_service": {
+                "cpu_share": [
+                  0.05396799030986301,
+                  0.07255917825557487,
+                  0.21408048302982335,
+                  0.6593923484047388,
+                  0.0
+                ],
+                "count_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.13310144135871294,
+                  0.17895295255891291,
+                  0.5279874365236721,
+                  1.6262616319351337,
+                  0.0
+                ]
+              },
+              "equal_active_class_cpu": {
+                "cpu_share": [
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.25,
+                  0.0
+                ],
+                "count_share": [
+                  0.6498325255670478,
+                  0.24166588077464712,
+                  0.08190881052419584,
+                  0.02659278313410909,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.6165758655941084,
+                  0.6165758655941077,
+                  0.6165758655941077,
+                  0.6165758655941079,
+                  0.0
+                ]
+              },
+              "unit_cost_fair_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.5869565217391305,
+                  0.1956521739130435,
+                  0.13043478260869565,
+                  0.08695652173913045,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              },
+              "power_cost_fair_cpu": {
+                "cpu_share": [
+                  0.4,
+                  0.2,
+                  0.2,
+                  0.2,
+                  0.0
+                ],
+                "count_share": [
+                  0.8039280119831436,
+                  0.13525090936359394,
+                  0.04550857343197704,
+                  0.015312505221285518,
+                  0.0
+                ],
+                "cpu_share_per_log_width": [
+                  0.9865213849505734,
+                  0.49326069247528614,
+                  0.49326069247528614,
+                  0.49326069247528637,
+                  0.0
+                ]
+              }
+            },
+            "errors": {
+              "fair_thread_cpu": {
+                "maximum_absolute_cpu_share_error": 0.025471076455393926,
+                "count_total_variation": 0.008052385718327525
+              },
+              "equal_job_service": {
+                "maximum_absolute_cpu_share_error": 0.44086701243324666,
+                "count_total_variation": 0.39501146788990826
+              },
+              "equal_active_class_cpu": {
+                "maximum_absolute_cpu_share_error": 0.15197802427383972,
+                "count_total_variation": 0.14517894232286035
+              },
+              "unit_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.025471076455393926,
+                "count_total_variation": 0.2080549461507778
+              },
+              "power_cost_fair_cpu": {
+                "maximum_absolute_cpu_share_error": 0.025471076455393926,
+                "count_total_variation": 0.012423970736221479
+              }
+            },
+            "pooled_cpu_within_frozen_tolerance": true,
+            "pooled_counts_within_frozen_tolerance": true
+          }
+        ],
+        "timing_valid_trials": 4
+      }
+    }
+  },
+  "contrasts": {
+    "quadratic": {
+      "observed_cpu_share_change": [
+        0.20568972735925123,
+        0.0029586606535045856,
+        -0.0012819956548647538,
+        -0.007636226738082813,
+        -0.19973016561980833
+      ],
+      "frozen_predicted_cpu_share_change": [
+        0.2,
+        0.0,
+        0.0,
+        0.0,
+        -0.2
+      ],
+      "maximum_absolute_change_error": 0.007636226738082813
+    },
+    "cubic": {
+      "observed_cpu_share_change": [
+        0.19559542899454835,
+        0.007707435409946423,
+        0.0014572987696946926,
+        -0.005634352489062022,
+        -0.19912581068512736
+      ],
+      "frozen_predicted_cpu_share_change": [
+        0.2,
+        0.0,
+        0.0,
+        0.0,
+        -0.2
+      ],
+      "maximum_absolute_change_error": 0.007707435409946423
+    }
+  },
+  "accounting": {
+    "allocation_trials": 16,
+    "worker_records": 80,
+    "calibration_completed_jobs": 360,
+    "completed_validation_jobs": 104133,
+    "censored_partial_jobs": 79,
+    "measured_worker_cpu_seconds": 63.776719961,
+    "enclosing_process_cpu_seconds": 63.893975999999995,
+    "unassigned_process_cpu_seconds": 0.11725603899999548
+  },
+  "conclusion_scope": "Actual allocation and cost transfer under an engineered GIL/OS mechanism; no resource law for Nature, exact fairness guarantee, continuous tail exponent, or input-count dimension is identified",
+  "artifact_sha256": {
+    "results/dimensionality-intervention/cost-calibration.png": "2f5d3092b7616f5c13b846b954365e70e41741e76d2c1ed1c56d56e12a62e5c2",
+    "results/dimensionality-intervention/cost-calibration.svg": "dfbd51a2523efc3254fb23f06864ffcdf033457cc4b77a5ba5562863ea4f1ca4",
+    "results/dimensionality-intervention/count-profiles.png": "1a838812f807bfe079fd4eeae9f3c713ff7c9de5b68b5ead930542b7370538f3",
+    "results/dimensionality-intervention/count-profiles.svg": "a176406344d4013434187a2e5ba47cc427efddde6e5999bd4e476571a477e4e1",
+    "results/dimensionality-intervention/cpu-profiles.png": "002d48b78bcdefc8e38d3b3154d5cd35d6bc6e119e932641c79567a08525f0ea",
+    "results/dimensionality-intervention/cpu-profiles.svg": "8df47a00e92364e04e4ee2a0e2f195b08b4b90b55e402fdfd9381ad28bfe2273"
+  },
+  "execution_context_disclosure": {
+    "added_after_measurements": true,
+    "basis": "Root agent reported confirmed concurrent development-benchmark collection after this allocation window ended.",
+    "known_concurrent_activity": "Another research agent collected development-stage numerical simulations during the allocation window; its final evaluation stage had not started.",
+    "interpretation": "Concurrent activity can affect processor frequency, thermal conditions and cost transfer. Per-thread CPU accounting remains measured; no quiet-machine or background-load isolation claim is made.",
+    "frozen_protocol_changed": false
+  }
+}

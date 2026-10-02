@@ -1,8 +1,14 @@
 # Frozen forecasts for NOAA solar flares in 2025
 
-This study fixes resource-cost forecasts and a full-profile assessment before
-this analysis acquires or inspects NOAA's 2025 event bytes. Development uses
-the already inspected 2022–2024 snapshots. The 2025 catalogue describes already
+The frozen 2025 test finds that logarithmic resource neutrality predicts counts
+much better than the declared linear alternative. Historical counts predict
+the validation counts and resources better at the point estimates; their small
+count log-score advantage remains uncertain. The measured primary resource
+profile ranges from about half to twice its logarithmic-width mean.
+
+Resource-cost forecasts and the full-profile assessment were fixed before this
+analysis acquired or inspected NOAA's 2025 event bytes. Development uses the
+already inspected 2022–2024 snapshots. The 2025 catalogue describes already
 measured public observations: a local forecast freeze does not make this
 prospective observation, external preregistration, or independently verified
 global blinding.
@@ -146,5 +152,139 @@ PYTHONPATH=src MPLCONFIGDIR=build/matplotlib python3.11 \
   -m unittest discover -s tests -p test_solar_validation.py
 ~~~
 
-Results will be added after the approved acquisition and analysis. Until then
-this report records the fixed protocol rather than evaluation findings.
+The pre-acquisition protocol, method benchmark, source copies, development
+inputs and tests were also retained in Git checkpoint
+[`390856c`](https://github.com/ttm/orthopolity/commit/390856c49597f4e8f04f3b0667bc675bae765358)
+before the approved download. This strengthens the local ordering record but
+does not independently establish that anyone was globally blinded.
+
+## Acquisition and measured validation population
+
+The successful HTTPS acquisition completed at **2026-10-02 08:58:49 UTC**,
+after the 08:55:48 UTC forecast freeze and the checkpoint commit. The response
+reported HTTP 200 and last modification 25 June 2026, 16:43:53 GMT. The
+[retained 2025 file](../data/solar-validation/2026-10-02/noaa_2025.csv) contains
+626,081 bytes and has SHA-256
+`287c9ee0961e221368f3580c6e159e8dc17ef7607d02442dabf3ab48fa8c6c88`.
+The [receipt](../data/solar-validation/2026-10-02/acquisition.json) records
+response headers, verified TLS trust metadata, access UTC and the matching
+forecast-plan hash. An initial sandbox DNS failure and the subsequently
+successful authorized request are both preserved in the
+[attempt log](../data/solar-validation/2026-10-02/retrieval-attempts.jsonl).
+No certificate or hostname check was disabled.
+
+The raw catalogue contains **3,277 rows**, with peak times from 1 January to
+31 December 2025 and events in every calendar month. There are **356** eligible
+in-domain peak events, all with valid primary rise fluence. End fluence has
+**339** complete cases: 17 missing or invalid cases, or **4.78%**, compared with
+10.07% in development. Calendar coverage does not establish catalogue
+completeness. The primary complete-case counts in the six pooled classes are
+[199, 75, 43, 21, 9, 9]; the end counts are [185, 72, 43, 21, 9, 9].
+Every source row's membership and exclusion status is retained in the
+[validation manifest](../data/solar-validation/2026-10-02/validation-membership.csv).
+
+## Frozen forecast results
+
+All scores below are complete-profile point estimates; lower is better.
+
+| Resource and forecast | Count cross entropy, nats/event | Count TV | Resource-share TV |
+|---|---:|---:|---:|
+| Start-to-peak, logarithmic neutrality | 1.302 | 0.125 | 0.240 |
+| Start-to-peak, linear neutrality | 2.193 | 0.573 | 0.649 |
+| Start-to-peak, historical count shape | 1.263 | 0.022 | 0.043 |
+| Start-to-end, logarithmic neutrality | 1.313 | 0.102 | 0.205 |
+| Start-to-end, linear neutrality | 2.122 | 0.541 | 0.635 |
+| Start-to-end, historical count shape | 1.288 | 0.015 | 0.053 |
+
+For the primary resource, linear-minus-logarithmic count cross entropy is
+**0.891 nats/event**, with nominal paired month-bootstrap interval
+**[0.726, 1.126]**. The historical forecast's log-score advantage over the
+logarithmic neutral forecast is **0.0383 nats/event**, with interval
+**[−0.0166, 0.0944]**. Its total conditional log-score advantage is 13.626 nats
+over 356 events. That total is a sum of event-category scoring terms, not a
+calibrated independent-event likelihood-ratio test or a Bayes factor.
+
+The corresponding end-fluence comparisons are 0.809 [0.638, 1.067] for
+linear-minus-logarithmic cross entropy and a historical log-score advantage
+of 0.0249 [−0.0166, 0.0725] nats/event. Thus logarithmic neutrality beats the
+linear alternative in the conditional forecast comparison. Historical counts
+are the stronger point forecast, while both signed historical comparisons
+include zero under the declared nominal uncertainty procedure. All 4,000
+score-bootstrap draws are valid for both resources.
+
+## Full resource profile and cost transfer
+
+The primary measured relative resource-density profile is
+**[2.027, 1.288, 1.474, 1.131, 0.585, 0.498]**. Its point departure is
+$\Delta=0.707$, greater than the frozen margin $\log1.5=0.405$. This is a
+measured point discrepancy, not a population rejection. The conditional
+centered-bootstrap simultaneous departure interval is **[0, 1.915]**, which
+does not establish either equivalence or departure at the stated margin.
+The end-fluence point profile is
+[1.677, 1.175, 1.504, 1.287, 0.789, 0.523], with departure 0.649 and
+conditional simultaneous departure interval **[0, 1.933]**.
+
+**Both conditional candidate decisions and both formal verdicts are
+unresolved.** The formal verdict was restricted by the application gate
+before acquisition; no favorable result could have overridden that gate.
+The factor, bins, resource definitions and domain remain exactly those of
+the freeze.
+
+The primary 2025/development mean-cost ratios by class are
+**[0.959, 0.959, 0.937, 0.930, 0.715, 0.619]**. The largest pooled class has a
+nominal ratio interval [0.320, 0.996]. End-fluence ratios are
+[0.929, 0.995, 1.014, 1.070, 0.850, 0.630], with a largest-class interval
+[0.278, 1.075]. Changing within-class composition or duration can affect these
+costs. This is a separate temporal-transfer diagnostic: a count-forecast
+discrepancy does not isolate resource-allocation failure from cost-transfer
+failure. Computing the observed resource profile itself does not require
+the cost-transfer assumption.
+
+The [posthoc independent audit](../results/solar-validation/independent-audit.json)
+also found a change in instrument composition. Development's 1,509 eligible
+peaks included 1,478 GOES-16, 24 GOES-18, three GOES-17 and four GOES-19 records.
+The 356 validation peaks included 118 GOES-16, 233 GOES-18 and five GOES-19
+records. These temporal cost changes cannot isolate physical flare behavior
+from instrument or catalogue composition. The audit independently recomputes
+selection, pooling, costs and all three frozen forecasts; it introduces no new
+primary hypothesis or forecast fitting. It also distinguishes raw resource-share
+ratios from width-corrected density ratios in the unequal pooled classes.
+
+![Frozen 2025 count, resource and cost-transfer profiles](../results/solar-validation/profiles.png)
+
+The resource panels divide resource shares by logarithmic-width shares;
+neutrality therefore equals one even for unequal pooled classes. Blue shading
+marks the frozen factor-1.5 margin. Gray shading shows conditional **pointwise
+percentile** intervals from the 4,000 score-bootstrap draws, not the distinct
+499-draw simultaneous candidate band. The latter is retained in the
+[rise candidate record](../results/solar-validation/rise-candidate-profile.json)
+and [end candidate record](../results/solar-validation/end-candidate-profile.json).
+
+## What this adds and how to audit it
+
+This is an additional year of measured observations evaluated against forecasts
+fixed before this analysis acquired their bytes. It reproduces the advantage
+of the logarithmic reference over the declared linear alternative without
+selecting a resource exponent from validation counts. It also preserves a
+strong historical-abundance alternative and separates transfer of measured
+costs from the allocation profile. It does not establish a natural law,
+geometric dimension or a cosmological principle.
+
+The [result record](../results/solar-validation/study.json) hashes the validation
+membership, all tables, bootstrap score draws, conditional candidate records,
+monthly resource vectors and figures. Historical inputs and earlier studies
+are unchanged. The six-panel PNG was inspected visually. The 13 targeted
+tests passed before acquisition; existing acquisition and analysis were
+replayed offline with matching hashes and preserved results.
+The independent [audit algorithm](../experiments/audit_solar_validation.py)
+retains 28 input hashes and also cross-checks the runtime study's CPU accounting.
+
+~~~bash
+PYTHONPATH=src MPLCONFIGDIR=build/matplotlib python3.11 \
+  experiments/run_solar_validation.py --stage analyse
+~~~
+
+For a new acquisition on a previously frozen run, use the explicit `--stage
+acquire`. The ordinary analysis command above never fetches data. Retain the
+same source snapshots and configuration when reproducing this run; changing
+scientific assumptions requires a separate identifier and output directory.

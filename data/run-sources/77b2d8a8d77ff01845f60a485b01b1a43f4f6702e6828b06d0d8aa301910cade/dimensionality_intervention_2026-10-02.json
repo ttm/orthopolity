@@ -1,0 +1,36 @@
+{
+  "run_id": "dimensionality-intervention-2026-10-02",
+  "study": "Measured non-unit CPU cost dimensions and runtime allocation restrictions",
+  "evidence_kind": "actual_controlled_runtime_measurements",
+  "seed": 202610023,
+  "sizes": [16, 24, 36, 54, 81],
+  "log_bin_edges": [13.063945294843618, 19.595917942265423, 29.393876913398138, 44.09081537009721, 66.13622305514582, 99.20433458271873],
+  "kernels": ["quadratic", "cubic"],
+  "quadratic_repeats": 16,
+  "conditions": {
+    "equal_threads": [1, 1, 1, 1, 1],
+    "restricted_classes": [2, 1, 1, 1, 0]
+  },
+  "trial_seconds": 4,
+  "trial_replicates_per_condition": 4,
+  "calibration_blocks": 12,
+  "calibration_jobs_per_block": 3,
+  "calibration_bootstrap_replicates": 1000,
+  "synchronization_lead_seconds": 0.25,
+  "maximum_start_lag_seconds": 0.1,
+  "maximum_stop_lag_seconds": 0.1,
+  "maximum_absolute_cpu_share_error_tolerance": 0.1,
+  "count_total_variation_tolerance": 0.1,
+  "dimension_criterion": "Independent nominal calibration interval must exclude one for a non-unit-cost example; no pure-power fit to abundance is a primary endpoint",
+  "primary_endpoint": "Actual per-thread user+system CPU resource shares by the fixed size classes, including completed jobs, censored partial jobs and loop overhead",
+  "secondary_endpoint": "Complete count shares from independent full CPU-cost calibration, conditioned on observed total completed jobs; pure-degree approximation and unit-degree alternative separately compared",
+  "allocation_hypothesis": "Continuously runnable pure-Python threads receive equal CPU time under the unmodified CPython GIL/OS mechanism; class CPU share proportional to declared thread count",
+  "competing_hypotheses": ["equal job service per runnable thread", "equal CPU resource per active class", "unit cost degree with equal runnable-thread CPU", "power-cost approximation from independent calibration"],
+  "restriction": "Replace the largest-size thread with a second smallest-size thread, keeping total runnable count five",
+  "measurement_scope": "Single process, five workload threads plus an ordinarily blocked controller; no per-class CPU quotas, manual job targets, priority or affinity changes, or switch-interval changes",
+  "uncertainty_scope": "Nominal block resampling for calibration dimension; all four actual allocation trials retained; frozen profile tolerances are exploratory engineering criteria without a claimed population false-positive rate",
+  "natural_dataset_candidate": {
+    "url": "https://doi.pangaea.de/10.1594/PANGAEA.912143",
+    "finding": "Primary metadata supplies cell volume, carbon per cell, counts and Si:N/grazing treatments. It does not directly supply per-cell nitrogen/silica requirements needed to predict a nutrient-budget intervention without further physiological assumptions. No natural outcome data were downloaded or analyzed for this study."
+  }
+}

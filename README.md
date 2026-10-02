@@ -46,6 +46,14 @@ exponents but unequal resource profiles. They add empirical discrimination and
 an explicit limit on exponent-based identification, with source and uncertainty
 caveats retained.
 
+The [validation round](docs/validation-round.md) adds complete-profile decision
+calibration, a frozen forecast evaluated on newly acquired 2025 solar records,
+and an actual runtime allocation intervention with independently measured cost
+degrees 1.870 and 2.686. The runtime forecasts predict full CPU/job profiles
+and their restriction response accurately. Solar neutrality remains unresolved;
+its formal eligibility rule was fixed before acquisition. Statistical calibration
+failures, instrument changes and engineered-runtime scope are retained.
+
 The [predictive reliability benchmarks](docs/predictive-benchmarks.md) extend this
 programme to capacity-only family selection, training uncertainty, omitted
 resources, negative dependence, and calibrated intervention sampling. They show
@@ -201,8 +209,19 @@ make profile-tests profile-test-registry registry-verify PY=python3.11
 
 The [comparison report](docs/additional-profile-tests.md) links specifications,
 raw-input membership records, frozen predictions, results and limitations.
-The registry now retains fifteen records, including incomplete attempts and
+The registry now retains eighteen records, including incomplete attempts and
 a simulation replay that adds no independent evidence.
+
+Audit/reuse the new calibration and measured validation studies offline:
+
+~~~bash
+make validation-round validation-round-registry registry-verify PY=python3.11
+~~~
+
+The solar protocol was committed before downloading its validation year. The
+runtime audit reuses measured timings; collecting another realization requires
+a new run. The calibration data retain all outer statistics, seed recipes,
+and example full inputs; inner bootstrap draws are reproducible computations.
 
 ## Repository guide
 
@@ -224,6 +243,7 @@ a simulation replay that adds no independent evidence.
 | [docs/run-registry.md](docs/run-registry.md) | Append-only study records, source/configuration archives, resources, hardware metadata and lineage |
 | [docs/scheduler-allocation.md](docs/scheduler-allocation.md) | Gated measurement protocol, competing allocation predictions and current hardware qualification |
 | [docs/additional-profile-tests.md](docs/additional-profile-tests.md) | Solar year transfer, aquatic study transfer, and exponent versus full-profile identification tests |
+| [docs/validation-round.md](docs/validation-round.md) | Three-way decision calibration, unused-year solar forecasts, and measured non-unit-cost allocation intervention |
 | [src/](src/) / [tests/](tests/) | Accounting, distribution fitting, equivalence diagnostics, meta-analysis, and regression checks |
 | [experiments/](experiments/) / [results/](results/) | Reproducible analyses and outputs |
 | [data/SOURCES.md](data/SOURCES.md) / [data/NOTICE.md](data/NOTICE.md) | Input provenance and source-specific notices |

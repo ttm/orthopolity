@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "run_id": "solar-validation-2026-10-02",
+  "evidence_kind": "actual_measurement",
+  "resources": [
+    {
+      "name": "Rise-window XRS fluence",
+      "definition": "Supplied start-to-peak integrated irradiance at the observer without additional background subtraction; not total radiated flare energy",
+      "units": "J/m²"
+    },
+    {
+      "name": "End-window XRS fluence",
+      "definition": "Supplied start-to-end integrated irradiance; complete-case sensitivity with missingness retained",
+      "units": "J/m²"
+    }
+  ],
+  "data_inputs": [
+    {
+      "path": "data/raw/noaa_2022.csv",
+      "sha256": "1a7978e87410a64db53e1459bd125727c114eb5d6f19dbb15e1fad3ef09991e9"
+    },
+    {
+      "path": "data/raw/noaa_2023.csv",
+      "sha256": "23902fe462a5eafc500ea15d897d59e57480526d83dda448b9047ead4a89dbe5"
+    },
+    {
+      "path": "data/raw/noaa_2024.csv",
+      "sha256": "74f23ea854f8f1f39b7b6521a08d7cf280a46e46f06ac6924b308d1ae070b4cd"
+    },
+    {
+      "path": "data/raw/noaa_metadata.json",
+      "sha256": "e7b8eb00a573056dce08c86c277fc186bed92a991f414eb8cde9855a4a3aa996"
+    },
+    {
+      "path": "results/profile-calibration/study.json",
+      "sha256": "38877cbea23061d00c184b092e5b21ba4948e9ea312b9a36e8aaa5c7ddb447c2"
+    },
+    {
+      "path": "configs/solar_validation_2026-10-02.json",
+      "sha256": "93dba7e4855f2018e23777793d5febe0251fca4a1c5263c642ecbb2fd10640be"
+    },
+    {
+      "path": "data/dimensionality-intervention/2026-10-02/calibration.json",
+      "sha256": "c6948f840b110e5e9e58f24ae0d24125b154377cb6b7852396b182cbe76ad483"
+    },
+    {
+      "path": "data/dimensionality-intervention/2026-10-02/frozen-plan.json",
+      "sha256": "fe4b7362c0e4addc67ab1493a610e741f7a4c44ee716ac258a37bb0d43a8795f"
+    },
+    {
+      "path": "data/dimensionality-intervention/2026-10-02/trials.json",
+      "sha256": "11f4a8ea9cfede93c73fa0f1a95fe6a8a549986618856fb34fa462511ca3b439"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/acquisition.json",
+      "sha256": "090542b0596b189447970d3c0b97840e9795295beebdc1f9d44e20079939d74f"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/frozen-plan.json",
+      "sha256": "9c9a5954214a03a877cf97d3f0f8f4b87d21301affc44ce4271dc4c271ac6795"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/noaa_2025.csv",
+      "sha256": "287c9ee0961e221368f3580c6e159e8dc17ef7607d02442dabf3ab48fa8c6c88"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/retrieval-attempts.jsonl",
+      "sha256": "b5d15ed3dd02914e5ae59ac2b0eb4628d983593fe861ab494f82a32734434525"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/source-snapshots/2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40/figures.py",
+      "sha256": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/source-snapshots/2616641fef115828e922c45e8acea539c4ca3e8136b3a38133d62b3c6dd65f68/run_solar_validation.py",
+      "sha256": "2616641fef115828e922c45e8acea539c4ca3e8136b3a38133d62b3c6dd65f68"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/source-snapshots/93dba7e4855f2018e23777793d5febe0251fca4a1c5263c642ecbb2fd10640be/solar_validation_2026-10-02.json",
+      "sha256": "93dba7e4855f2018e23777793d5febe0251fca4a1c5263c642ecbb2fd10640be"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/source-snapshots/ab07fbfc0c0781cecae0e0939ee6efce7c031880b439ccb4ae4607341cbc3e22/solar_resource_transfer.py",
+      "sha256": "ab07fbfc0c0781cecae0e0939ee6efce7c031880b439ccb4ae4607341cbc3e22"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/source-snapshots/acc3d0fe0fa01649a2a6bea9f81588c789d8b04eef5aac75add91e4b4ebeb689/profile_calibration.py",
+      "sha256": "acc3d0fe0fa01649a2a6bea9f81588c789d8b04eef5aac75add91e4b4ebeb689"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/source-snapshots/e750b6eafec2e72b21d6af0cd7fd31f2e1c10060028e68d88a654558c9e57fd4/solar_validation.py",
+      "sha256": "e750b6eafec2e72b21d6af0cd7fd31f2e1c10060028e68d88a654558c9e57fd4"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/training-membership.csv",
+      "sha256": "4b972b3d26d13cbd86b9f48fe884ac11b67c03936014cbed6249a8e23846e33a"
+    },
+    {
+      "path": "data/solar-validation/2026-10-02/validation-membership.csv",
+      "sha256": "d315cb62d1617746319b73189283011c91ebd85a1a37e078f3e2d344de350b8d"
+    },
+    {
+      "path": "experiments/run_solar_validation.py",
+      "sha256": "2616641fef115828e922c45e8acea539c4ca3e8136b3a38133d62b3c6dd65f68"
+    },
+    {
+      "path": "results/dimensionality-intervention/study.json",
+      "sha256": "8065ce79bdb2c53f4a67bf7b19028607ee212be233bc84978eb4f282083caecd"
+    },
+    {
+      "path": "results/solar-validation/study.json",
+      "sha256": "7d1b4fd579cd6f3116256cdec63dbb29f7dec02c927be5e8b3cbc299ab3475f2"
+    },
+    {
+      "path": "src/orthopolity/figures.py",
+      "sha256": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40"
+    },
+    {
+      "path": "src/orthopolity/profile_calibration.py",
+      "sha256": "acc3d0fe0fa01649a2a6bea9f81588c789d8b04eef5aac75add91e4b4ebeb689"
+    },
+    {
+      "path": "src/orthopolity/solar_resource_transfer.py",
+      "sha256": "ab07fbfc0c0781cecae0e0939ee6efce7c031880b439ccb4ae4607341cbc3e22"
+    },
+    {
+      "path": "src/orthopolity/solar_validation.py",
+      "sha256": "e750b6eafec2e72b21d6af0cd7fd31f2e1c10060028e68d88a654558c9e57fd4"
+    }
+  ],
+  "generated_seeds": {
+    "configuration": {
+      "run_id": "solar-validation-2026-10-02",
+      "status": "Forecast and analysis frozen before this analysis acquires or inspects the public 2025 event bytes; not prospective data collection, external preregistration, or global blinding",
+      "training_years": [
+        2022,
+        2023,
+        2024
+      ],
+      "evaluation_years": [
+        2025
+      ],
+      "peak_irradiance_domain_W_m2": [
+        1e-05,
+        0.001
+      ],
+      "bins_per_decade": 4,
+      "minimum_training_events_per_resource_per_pooled_bin": 20,
+      "pooling": "Use development events only. From highest fine bin downward, merge neighbors until both resources have at least 20 complete development events per class; merge any undersupported lowest remainder into its neighbor. Retain outer domain and actual log/linear widths.",
+      "primary_resource": "integrated_irrad_peak",
+      "sensitivity_resource": "integrated_irrad_end",
+      "resource_definition": "Supplied GOES XRS-B start-to-peak or start-to-end integrated irradiance at the observer, J/m2, without additional background subtraction; not total radiated flare energy",
+      "eligibility": "Finite positive peak irradiance, peak_saturated equal to zero, closed fixed coordinate domain, finite positive resource and positive corresponding event-window duration; preserve all exclusions and resource-specific missingness",
+      "forecasts": [
+        "log_resource_neutral",
+        "linear_resource_neutral",
+        "historical_count_shape"
+      ],
+      "cost_estimation": "Arithmetic mean measured development fluence separately in each supported pooled class; no assumed power-law cost and no fit to evaluation outcomes",
+      "conditioning": "Complete-case count shape conditional on the eligible evaluation event total; no absolute rate or total-fluence forecast",
+      "profile_definition": "phi_j = (sum_j q / sum_all q) / (Delta log k_j / total Delta log k), retaining zero evaluation bins",
+      "factor_margin": 1.5,
+      "margin_rationale": "Exploratory operational margin fixed before acquisition: every resource density must be within [2/3,1.5] of the domain mean, distinguishing approximate equality from sustained 50% excess or 33% deficit. It is not derived from instrument accuracy, established prior law, or evaluation outcomes.",
+      "alpha": 0.05,
+      "profile_bootstrap_replicates": 499,
+      "score_bootstrap_replicates": 4000,
+      "profile_seed": 202610021,
+      "score_seed": 202610022,
+      "score_uncertainty": "Independently resample 12 complete calendar-month vectors within each development year and within evaluation year; preserve joint bins and pair draws across forecasts and resource definitions",
+      "score_endpoints": [
+        "count_cross_entropy_nats_per_event",
+        "count_total_variation",
+        "resource_share_total_variation",
+        "historical_minus_log_neutral_count_cross_entropy"
+      ],
+      "profile_candidate": "Centered-bootstrap simultaneous log-profile band from orthopolity.profile_calibration.profile_decision; method benchmark and application gate must be retained before evaluation acquisition",
+      "candidate_benchmark_run_id": "profile-calibration-2026-10-02",
+      "application_gate": "A formal profile verdict requires benchmark support for the matching small-block/heavy-tail/dependence regime and independently established applicability of the candidate's sampling assumptions. Calendar months are not declared independent/exchangeable by default. No resource bound is inferred from development or evaluation maxima. Failed or unestablished eligibility yields formal verdict unresolved regardless of conditional band or point estimate.",
+      "missingness_gate": "Primary rise fluence must be complete among eligible in-domain peak events for an all-catalogue resource interpretation; otherwise retain complete-case forecasts but classify all-catalogue neutrality unresolved. End fluence is always an explicitly missingness-limited sensitivity.",
+      "zero_bin_policy": "No evaluation-based pooling, dropping zero bins or smoothing. Unsupported bootstrap development costs invalidate that resource's score draw. Zero evaluation resource bins prevent a finite log band and produce an unresolved candidate result.",
+      "validation_url": "https://data.ngdc.noaa.gov/platforms/solar-space-observing-satellites/goes/multi/l2/data/xrsf-l2-flrpt_science/csv/sci_xrsf-l2-flrpt_geo_y2025_v1-0-1.csv",
+      "tls_policy": "HTTPS certificate and hostname verification remain enabled. Prefer system OpenSSL CA bundle /etc/ssl/cert.pem when present, otherwise platform default roots; record TLS trust metadata without changing machine settings.",
+      "directory_information_before_freeze": "NOAA directory listing names v1-0-1 annual 2025 product, about 611 KB, modified 2026-06-25; event bytes have not been acquired or inspected by this analysis",
+      "limitations": [
+        "2022-2024 development observations and the earlier study have already been inspected",
+        "Public 2025 catalogue is already measured, and local acquisition ordering does not establish global blindness",
+        "No catalogue completeness, exposure, overlapping-event or background correction",
+        "Related peak and fluence measurements share instrument and event definitions",
+        "One validation year supplies only 12 potentially seasonal/dependent monthly blocks",
+        "High-resource events may dominate monthly totals; finite sample maxima do not establish a physical upper bound",
+        "Within-class composition and solar-cycle changes may prevent cost transfer",
+        "Count-score intervals are conditional nominal bootstrap summaries, not a neutrality null test"
+      ]
+    },
+    "scope": "Seed streams are in the frozen configuration; physical CPU timings are actual observations, not seed-reproducible values"
+  },
+  "algorithms": [
+    {
+      "name": "Frozen measured-cost forecasts and gated complete-profile decisions on an unused solar year",
+      "sources": [
+        {
+          "path": "data/run-sources/2616641fef115828e922c45e8acea539c4ca3e8136b3a38133d62b3c6dd65f68/run_solar_validation.py",
+          "sha256": "2616641fef115828e922c45e8acea539c4ca3e8136b3a38133d62b3c6dd65f68",
+          "original_path": "experiments/run_solar_validation.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/e750b6eafec2e72b21d6af0cd7fd31f2e1c10060028e68d88a654558c9e57fd4/solar_validation.py",
+          "sha256": "e750b6eafec2e72b21d6af0cd7fd31f2e1c10060028e68d88a654558c9e57fd4",
+          "original_path": "src/orthopolity/solar_validation.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/ab07fbfc0c0781cecae0e0939ee6efce7c031880b439ccb4ae4607341cbc3e22/solar_resource_transfer.py",
+          "sha256": "ab07fbfc0c0781cecae0e0939ee6efce7c031880b439ccb4ae4607341cbc3e22",
+          "original_path": "src/orthopolity/solar_resource_transfer.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/acc3d0fe0fa01649a2a6bea9f81588c789d8b04eef5aac75add91e4b4ebeb689/profile_calibration.py",
+          "sha256": "acc3d0fe0fa01649a2a6bea9f81588c789d8b04eef5aac75add91e4b4ebeb689",
+          "original_path": "src/orthopolity/profile_calibration.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40/figures.py",
+          "sha256": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40",
+          "original_path": "src/orthopolity/figures.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/56281fe4b312e17a43ed9332f53aefdd8e6f10bd8b4c303b82a074b5dfaa7963/register_validation_round.py",
+          "sha256": "56281fe4b312e17a43ed9332f53aefdd8e6f10bd8b4c303b82a074b5dfaa7963",
+          "original_path": "experiments/register_validation_round.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        }
+      ]
+    },
+    {
+      "name": "Posthoc independent catalogue/accounting audit; no forecast refitting",
+      "sources": [
+        {
+          "path": "data/run-sources/fafe8cc538515d40b7e9f4bc3abf332982089118d026aec4c956a3d42b4b66fe/audit_solar_validation.py",
+          "sha256": "fafe8cc538515d40b7e9f4bc3abf332982089118d026aec4c956a3d42b4b66fe",
+          "original_path": "experiments/audit_solar_validation.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        }
+      ]
+    }
+  ],
+  "configs": [
+    {
+      "path": "data/run-sources/93dba7e4855f2018e23777793d5febe0251fca4a1c5263c642ecbb2fd10640be/solar_validation_2026-10-02.json",
+      "sha256": "93dba7e4855f2018e23777793d5febe0251fca4a1c5263c642ecbb2fd10640be",
+      "original_path": "configs/solar_validation_2026-10-02.json",
+      "provenance": "Content-addressed byte snapshot at registration"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "results/solar-validation/end-bootstrap.csv",
+      "sha256": "fd30e61cf87ef061cbc87272bf1c4ee2731961d084b0f56369dae131e5dafd39"
+    },
+    {
+      "path": "results/solar-validation/end-candidate-profile.json",
+      "sha256": "fecc73c0ba0c5c2e9d1e105e47154353a3b191640aab32b7195709d25e1cab82"
+    },
+    {
+      "path": "results/solar-validation/end-profiles.csv",
+      "sha256": "ddab318171d572965b0b008ee46da3d26d415092ff70d7daed96abd266a8d416"
+    },
+    {
+      "path": "results/solar-validation/independent-audit.json",
+      "sha256": "a9337811ceac19ef732e1cf0a9012029ed56866fcba0f7adb81069fcc4569976"
+    },
+    {
+      "path": "results/solar-validation/profiles.png",
+      "sha256": "43911a12e2d8b07ed1abe3b3c8835b1479eaf5fd43cc312d1e565116803bb17d"
+    },
+    {
+      "path": "results/solar-validation/profiles.svg",
+      "sha256": "31ad1d7ff56704a725523c75492bb5389ce9e9aa71932c5939f7fe6f9a5ba76f"
+    },
+    {
+      "path": "results/solar-validation/rise-bootstrap.csv",
+      "sha256": "3860af73c2051e6425ce1906e0f8407f755006a31049c1d2035d8c7c66fe23e6"
+    },
+    {
+      "path": "results/solar-validation/rise-candidate-profile.json",
+      "sha256": "460077fa3b3d892547f13c556c45e48c3882133e5bc8482ee1bab03b7e1547a7"
+    },
+    {
+      "path": "results/solar-validation/rise-profiles.csv",
+      "sha256": "b2affed8fcb62da352e2e8e05f7a7b6539e6c3b4cf5d2527e10101083bbab097"
+    },
+    {
+      "path": "results/solar-validation/study.json",
+      "sha256": "7d1b4fd579cd6f3116256cdec63dbb29f7dec02c927be5e8b3cbc299ab3475f2"
+    },
+    {
+      "path": "results/solar-validation/validation-monthly-resource-totals.json",
+      "sha256": "f4691b0dff17d27723b20d880c90a9302e1200c06887fa8353640c781dd8d397"
+    }
+  ],
+  "relationships": [
+    {
+      "run_id": "solar-resource-transfer-2026-10-01",
+      "type": "new_observation_period"
+    },
+    {
+      "run_id": "profile-calibration-2026-10-02",
+      "type": "uses_calibrated_decision_benchmark"
+    }
+  ],
+  "hardware_metadata": {
+    "recorded_environment": {
+      "python": "3.11.6",
+      "numpy": "2.3.5",
+      "matplotlib": "3.10.7"
+    },
+    "scope": "Only metadata retained by the original collector; no newly probed historical host facts"
+  },
+  "summary": {
+    "scope": "Frozen forecasts scored on newly acquired historical public observations. Formal full-profile neutrality remains unresolved under the pre-acquisition application gate; conditional bands do not establish their observational sampling assumptions.",
+    "report": "results/solar-validation/study.json"
+  }
+}
