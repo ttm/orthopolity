@@ -1,0 +1,42 @@
+{
+  "run_id": "profile-calibration-2026-10-02",
+  "description": "Prospectively frozen repeated-sampling benchmark of complete-profile equivalence/departure/unresolved rules; separate development/evaluation streams, no tuning from evaluation.",
+  "development_seed": 202610020,
+  "evaluation_seed": 202610021,
+  "bootstrap_seed": 202610022,
+  "resource": "Generated additive per-block resource totals in arbitrary resource units; zero bins retained. Population estimand is normalized arithmetic mean raw resource per fixed log-bin width.",
+  "log_widths": [1.0, 1.0, 1.0, 1.0, 1.0, 3.0],
+  "factor": 1.5,
+  "alpha": 0.05,
+  "development_replicates": 200,
+  "evaluation_replicates": 2000,
+  "bootstrap_replicates": 499,
+  "bootstrap_chunk": 32,
+  "block_counts": [12, 24, 48],
+  "profile_shapes": [
+    {"name": "flat", "shape": "flat", "departure_margin_multiple": 0.0},
+    {"name": "gradient_inside", "shape": "gradient", "departure_margin_multiple": 0.9},
+    {"name": "gradient_boundary", "shape": "gradient", "departure_margin_multiple": 1.0},
+    {"name": "gradient_outside", "shape": "gradient", "departure_margin_multiple": 1.1},
+    {"name": "curved_material", "shape": "hump", "departure_margin_multiple": 2.0},
+    {"name": "structural_zero", "shape": "zero", "departure_margin_multiple": null}
+  ],
+  "observation_families": [
+    {"name": "iid_bounded_dense", "kind": "bounded", "noise_half_width": 0.3, "independent_blocks": true, "correct_observation": true},
+    {"name": "iid_sparse_pareto", "kind": "compound_pareto", "pareto_shape": 1.5, "expected_resource_scale": 4.0, "independent_blocks": true, "correct_observation": true},
+    {"name": "serial_lognormal", "kind": "ar_lognormal", "ar_correlation": 0.8, "log_sd": 0.45, "independent_blocks": false, "correct_observation": true},
+    {"name": "detection_corrected", "kind": "detection", "noise_half_width": 0.3, "inclusion_probabilities": [1.0, 0.9, 0.8, 0.7, 0.6, 0.5], "inverse_probability_correction": true, "independent_blocks": true, "correct_observation": true},
+    {"name": "detection_misspecified", "kind": "detection", "noise_half_width": 0.3, "inclusion_probabilities": [1.0, 0.9, 0.8, 0.7, 0.6, 0.5], "inverse_probability_correction": false, "independent_blocks": true, "correct_observation": false}
+  ],
+  "known_bound_base_multiplier": 4.0,
+  "raw_input_examples_per_scenario": 8,
+  "monte_carlo_interval_level": 0.95,
+  "eligibility": {
+    "maximum_false_decision_mc_upper": 0.065,
+    "minimum_coverage_mc_lower": 0.925,
+    "rules": "A family/block-count/method passes only if every frozen profile shape has false-equivalence and false-departure Wilson upper bounds <=0.065 and coverage Wilson lower bound >=0.925. Centered and known-bound methods use simultaneous full-vector coverage; the percentile extension uses Delta interval coverage and is not a simultaneous-vector method. Coverage/decision criteria are operational tolerances, not a theorem or universal certification. Missing reference methods are unavailable, not passing.",
+    "application": "Any eligibility is restricted to the simulated observation model. Twelve observed seasonal months, unknown fluence tails, independence and absent physical resource bounds cannot be certified by a favorable simulated family. Solar's robust primary verdict remains unresolved unless its sampling assumptions are independently justified."
+  },
+  "stream_recipe": "SeedSequence([stage_data_seed, block_count_index, profile_index, observation_family_index]); independent bootstrap stream SeedSequence([bootstrap_seed, stage_index, block_count_index, profile_index, observation_family_index]). Corrected/misspecified detection share family index 3 for paired identical latent resources/inclusion draws, while all outer datasets within a scenario are independent. Stage indices: development 0, evaluation 1.",
+  "interpretation": "Calibrates statistical operating characteristics for declared complete-profile targets and observation processes. Generating profiles and resource allocation are imposed; this is method validation, not evidence for autonomous allocation or a novel natural law."
+}

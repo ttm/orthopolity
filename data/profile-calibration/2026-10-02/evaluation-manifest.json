@@ -1,0 +1,2279 @@
+{
+  "stage": "evaluation",
+  "completed": true,
+  "started_utc": "2026-10-02T08:52:16.788786+00:00",
+  "completed_utc": "2026-10-02T08:54:25.562323+00:00",
+  "run_id": "profile-calibration-2026-10-02",
+  "replicates": 2000,
+  "config_sha256": "75b4116241136893baf9ff5e92377a0334e3f2f093d242dd3727e789581ab8f9",
+  "source_sha256": {
+    "experiments/run_profile_calibration.py": "49934f36ad96fb10ec34cd0316ddaf7955314794a12548045841fce9eb85a59d",
+    "src/orthopolity/profile_calibration.py": "acc3d0fe0fa01649a2a6bea9f81588c789d8b04eef5aac75add91e4b4ebeb689",
+    "src/orthopolity/goodness_of_fit.py": "c292925bd36d62b24091344503a6031c7ddfc2628ab784d9abcaf5b26d638488",
+    "src/orthopolity/interventions.py": "cdc73d83e6219fe114bc0f7c5a2a9708e00a33e433ae05980e1d3804505c8841",
+    "src/orthopolity/figures.py": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40"
+  },
+  "artifacts": [
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-000.npz",
+      "sha256": "8ae3e259f2d0a895a87a4d83c2cb0b7a159fd7ecda61e4eaeeaae1f4b826939f",
+      "index": 0,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        0,
+        0,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-001.npz",
+      "sha256": "988949868ef8f764e6ba0a6b746e02c043b7c319f48dfdd3d89d0c1ec8011b1a",
+      "index": 1,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        0,
+        0,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-002.npz",
+      "sha256": "735903e261618bdaf9677680113ffe91850810d95355ce701027c136a76f17fd",
+      "index": 2,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        0,
+        0,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-003.npz",
+      "sha256": "fcb161637a5d6a0cfc1484f0715e3531ca47b323ac6589cd99e11a81e848c8e8",
+      "index": 3,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        0,
+        0,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-004.npz",
+      "sha256": "d913a8546d9ee1c426425eb71bae6320ace178a39fc4b41a952fab2090778392",
+      "index": 4,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        0,
+        0,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-005.npz",
+      "sha256": "fcaa2e2d72ab3343f97928ec032e224547906df982c1951f257c6d0725d26529",
+      "index": 5,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        0,
+        1,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-006.npz",
+      "sha256": "d5a61d4f093378e7a0a577f8ac22d994886118d77596055233fc5307836b3bfd",
+      "index": 6,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        0,
+        1,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-007.npz",
+      "sha256": "2c9e7889c41ecd509ff9e007aa32e7c13289130ebf48a638af9b34dd23cef963",
+      "index": 7,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        0,
+        1,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-008.npz",
+      "sha256": "8bf08fbecc3f3c3781a163019d670a4325bc3995a965671ea88df0d970daf048",
+      "index": 8,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        0,
+        1,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-009.npz",
+      "sha256": "38bd04adecd6332d15ad5630a1e4f474d4aa20e7f9076d13bce3767ce6ad8e8c",
+      "index": 9,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        0,
+        1,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-010.npz",
+      "sha256": "fd1ba3356b7c038530104b33b035ea539c3530c6014cb53f7933de8466b80682",
+      "index": 10,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        0,
+        2,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-011.npz",
+      "sha256": "40ad887d597c485ff882a547dd6b7648a7b63030d7c65be4b54fecbda901f459",
+      "index": 11,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        0,
+        2,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-012.npz",
+      "sha256": "0858429929eb1db25ee8e53e90dbec5ef36495c6d6fa695d9405ac44e33eedbf",
+      "index": 12,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        0,
+        2,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-013.npz",
+      "sha256": "70a07e5636e67123d6a4100b99da2183754f1ba997472a9c52a6c86cdb95e5e1",
+      "index": 13,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        0,
+        2,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-014.npz",
+      "sha256": "7b6722b230eb13fb2955933055ae70b3bcf27f413755e1eaf80b601b5ed85416",
+      "index": 14,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        0,
+        2,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-015.npz",
+      "sha256": "d266b04487adf21a1117daa2a9ed27391e588b31c608c5f4a0e01742aa836520",
+      "index": 15,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        0,
+        3,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-016.npz",
+      "sha256": "3479329edd201cb32e3ab2a5d78f9329e95acb173e02934d9d73d19c1c5cbfcc",
+      "index": 16,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        0,
+        3,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        3,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-017.npz",
+      "sha256": "f9c7115e9169ac060fe42b963d08b0557510ebf5b6df2600294e65032ec09fbd",
+      "index": 17,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        0,
+        3,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        3,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-018.npz",
+      "sha256": "0a4be3d78778e3c805aa38e37e4110668d18371fa83c875520f49eab93e8da0b",
+      "index": 18,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        0,
+        3,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        3,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-019.npz",
+      "sha256": "e2c47fb0ccc8386f582eeda40527270fda56a30f679da350b5ad26d1b434839a",
+      "index": 19,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        0,
+        3,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        3,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-020.npz",
+      "sha256": "344e9540a95747b71debc47bce5fe1ceadb4240c1b979a30d8d17f950eba6bfd",
+      "index": 20,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        0,
+        4,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        4,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-021.npz",
+      "sha256": "50833dc7d7e0eb064763faa2f07a005f9dd7617c1790fd6c07aa4237ffcf8df1",
+      "index": 21,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        0,
+        4,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        4,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-022.npz",
+      "sha256": "fd5ad0eaa22a71701ea2536079233f56eb43a75a9f4535be7ab316635f73a941",
+      "index": 22,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        0,
+        4,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        4,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-023.npz",
+      "sha256": "0027a79250b5f9d772be2233e2e6787801071e7259fba769ddee505ee23aad8e",
+      "index": 23,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        0,
+        4,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        4,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-024.npz",
+      "sha256": "946743536dae5d149ebecefac7875400364481ad9b5886e7c761725020002893",
+      "index": 24,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        0,
+        4,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        4,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-025.npz",
+      "sha256": "90031fdd6418ac33ee125ca5a35c485f23a799797a58d29bad1056c9a7bbb3c5",
+      "index": 25,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        0,
+        5,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        5,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-026.npz",
+      "sha256": "616bc9c4aa9372bb9164a61d5fdd47e364df71e1c0606ebe99f3980b8cb3ebc9",
+      "index": 26,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        0,
+        5,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        5,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-027.npz",
+      "sha256": "01a6472321bf1f32ecfd2763054d8be5d51239ff2ab2e1c16b407e5718668d12",
+      "index": 27,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        0,
+        5,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        5,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-028.npz",
+      "sha256": "4474962cf7a61ee7f15ae144d63c500d9e992e7cae33aef003125b113c896557",
+      "index": 28,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        0,
+        5,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        5,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-029.npz",
+      "sha256": "7dc7ffb511666bad42fe3c6cd9be2b0309f8f2fcb7b5d2ca488118647b0f1ac9",
+      "index": 29,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        0,
+        5,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        0,
+        5,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-030.npz",
+      "sha256": "c4c9cd99f1b63b9105683c86f14dad0f4316ac0b6e60de8e4e6d8822e69c45c6",
+      "index": 30,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        1,
+        0,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-031.npz",
+      "sha256": "da43ae6de51e9bccbe5b573f9f2cc18e533d69d875083dbd3606ff77d5904dad",
+      "index": 31,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        1,
+        0,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-032.npz",
+      "sha256": "ccf7b6ebc7a502bf4702c26dcceb4890027c8fae21d0455a164bd65855c1ba0a",
+      "index": 32,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        1,
+        0,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-033.npz",
+      "sha256": "45c077721adf773cfe9d6688217e8b8c434e4d820d2fe433f7896fcec243f8b3",
+      "index": 33,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        1,
+        0,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        0,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-034.npz",
+      "sha256": "a795a54a25a02c3286ccc7d3df370aa9cb4bad0f1acb2b8437b1dc4e49a6aa4a",
+      "index": 34,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        1,
+        0,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        0,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-035.npz",
+      "sha256": "35cdc1860b6398647d5716e3d6c11fac60ba0e37f3611c448cc5885eb6fa256f",
+      "index": 35,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        1,
+        1,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-036.npz",
+      "sha256": "d740f6541995b4b4fdf968bbc741879fc995bd220715c9e47f54c1b2594a5680",
+      "index": 36,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        1,
+        1,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-037.npz",
+      "sha256": "d746005d924f1eb4d942fab2d2f654fc0456daa251081d9dde7d1b2ed6354228",
+      "index": 37,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        1,
+        1,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-038.npz",
+      "sha256": "99d68bbd22ecbed24b5f4a5f9403798edd42d3d8a73acf8f418ffd288de91559",
+      "index": 38,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        1,
+        1,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-039.npz",
+      "sha256": "e8cb746c808f22777b7cfdf33208e7fea8497cef394ab01e6d8ee833304d756b",
+      "index": 39,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        1,
+        1,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-040.npz",
+      "sha256": "7fbb0c8495222718965f10c9dd2f334bf28cd4d00d56bd2e0d510850c35d0448",
+      "index": 40,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        1,
+        2,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-041.npz",
+      "sha256": "9810d99f03693702eebd097f9802f2dbe71135756bac774693d0e6adb17c9407",
+      "index": 41,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        1,
+        2,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-042.npz",
+      "sha256": "ca186393effcd4f55c7236d3dc9cd2973a42bc83279fa90f986c4b2d54d05c93",
+      "index": 42,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        1,
+        2,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-043.npz",
+      "sha256": "cc2a478bb53c346a1b5191085413e96cb3d61d88c459e6a2731d0c6c4fbebf06",
+      "index": 43,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        1,
+        2,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-044.npz",
+      "sha256": "133ffe018290a71e93a36db3a6e31c6d27c05b5d4ec032ec8551c93575c52641",
+      "index": 44,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        1,
+        2,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-045.npz",
+      "sha256": "15fdcc16612299715a338ed07a7a3b590717063c132f4c76106790c36b944e51",
+      "index": 45,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        1,
+        3,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        3,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-046.npz",
+      "sha256": "1ee040d7e5b0ee1a1e594e1fd25d5f636a7347d88e0f363b398134d684186e79",
+      "index": 46,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        1,
+        3,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-047.npz",
+      "sha256": "8aae6c09e139da82be541da9f371703531367b380b0317f2b37db3c42a9c93e0",
+      "index": 47,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        1,
+        3,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-048.npz",
+      "sha256": "849d3b7cb47c0c6d67e7272209b456eca97a4e877162964825fa33f128257834",
+      "index": 48,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        1,
+        3,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-049.npz",
+      "sha256": "08c3a6efccff84e727220dd534db84512710b52f4b43c605709e4c6b7a997d0c",
+      "index": 49,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        1,
+        3,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-050.npz",
+      "sha256": "0b97bdf0b1b96bda7ec257425f6bf8da5a50d77600c7addf7b5ee3ed3bbe8e46",
+      "index": 50,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        1,
+        4,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        4,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-051.npz",
+      "sha256": "058a05f15b47f05a227727d2ec5c7faf29bb7ba09bc5990973d91804ed6178d6",
+      "index": 51,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        1,
+        4,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        4,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-052.npz",
+      "sha256": "f3be6771f2b9c7e0f700190a17d2951a06c1296dc51e6fedd6b5996834e56654",
+      "index": 52,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        1,
+        4,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        4,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-053.npz",
+      "sha256": "667a59544810d18a9bffc6b1ab2cc157c0e0bf4d7911cdaadea3f5fadcf7f854",
+      "index": 53,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        1,
+        4,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        4,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-054.npz",
+      "sha256": "139a3a29e934a8f40cdd8e898be97e846e5786acb8deba2cc868f63fc75d6c2c",
+      "index": 54,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        1,
+        4,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        4,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-055.npz",
+      "sha256": "16fd1ead0175b33015a669258f7699776a060fbac2acfb15cc16e2e1af187220",
+      "index": 55,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        1,
+        5,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        5,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-056.npz",
+      "sha256": "f5a0f0f702dfd681204a7f02ada75d927b453e2015dd5e804ea775b6f5772d94",
+      "index": 56,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        1,
+        5,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        5,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-057.npz",
+      "sha256": "c1ade8223037fc52f34a7b263260531b7a2ed9fb8d1fa827a142c94ce2457600",
+      "index": 57,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        1,
+        5,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        5,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-058.npz",
+      "sha256": "8bf3be25437aa47f9ab2ec5088515d69496f2abbe11cfffdee085c4cca286671",
+      "index": 58,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        1,
+        5,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        5,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-059.npz",
+      "sha256": "a49483027a555516bd731a9143aeb1e426777e73cb8a70f8b43e154c5a2f886b",
+      "index": 59,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        1,
+        5,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        1,
+        5,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-060.npz",
+      "sha256": "da72ed4223c890d567d733749eb6f179318f54bd8145fa443980e23eef83567a",
+      "index": 60,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        2,
+        0,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-061.npz",
+      "sha256": "4a8f289e6232a40f157ef15997359e1fdc986cadd8df456aa198223683a78022",
+      "index": 61,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        2,
+        0,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-062.npz",
+      "sha256": "6cdb6638622bbbe91fc4bb2b665ae15bcc7f40be9a7006fdd5a418ff9b38d1d7",
+      "index": 62,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        2,
+        0,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-063.npz",
+      "sha256": "7c4b1b118b357d1dbab9368263d98fd8e682e8bc261ca3927ba88840b3f9040c",
+      "index": 63,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        2,
+        0,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        0,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-064.npz",
+      "sha256": "95880cd563dfb4059ef10a03f13cd4f57ad835ce4cb9a092e45565869cf6c70b",
+      "index": 64,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        2,
+        0,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        0,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-065.npz",
+      "sha256": "5d3a4d4b839c2cea8b0e4d15b617e9f7bb6a64f600472d932c96f7a77880e34a",
+      "index": 65,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        2,
+        1,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-066.npz",
+      "sha256": "b581f7ac1a897b5f1b9474bb3419df4bd1eb90fd8d43aab3f569d2ddc896d1b3",
+      "index": 66,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        2,
+        1,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-067.npz",
+      "sha256": "07084d3cc20b4ccb191d38d5ed54e17e3209b1f48a7dd7342d103a2f238517fb",
+      "index": 67,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        2,
+        1,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-068.npz",
+      "sha256": "4caaf8977f31cf874fac6f0f742c33e3565329dd48e02a6ea6f9217074ac1969",
+      "index": 68,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        2,
+        1,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-069.npz",
+      "sha256": "f6d89ae9dbf9bd43e29be0339859df57198a7f727235c2eb510bc3ceda3928fa",
+      "index": 69,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        2,
+        1,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-070.npz",
+      "sha256": "06686648d338758c5b941b47fb2ebda0564cec96920f47a614bd107fc62a78b0",
+      "index": 70,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        2,
+        2,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-071.npz",
+      "sha256": "757dd6c31e41a4f42f58665684e93f2c82fcb8b1aabbb17142f5e67ea9dc3cbc",
+      "index": 71,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        2,
+        2,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-072.npz",
+      "sha256": "48e4a333158a499585f7b27f02720b2d9bf781eaf6750c779b79d83b62bcf070",
+      "index": 72,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        2,
+        2,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-073.npz",
+      "sha256": "ca21f7ff4884cdcb1d10b302cef45df0ff66407be154997bfafec2e1bfd4fc91",
+      "index": 73,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        2,
+        2,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-074.npz",
+      "sha256": "c711170679121b21018f5e2384ad899948a813c5a65ff2278c7bd17acbc89e9b",
+      "index": 74,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        2,
+        2,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-075.npz",
+      "sha256": "c14441adeaeb0d06c9d263fa507a74ea67a6a0a83de528ef027fd9abda9dafb9",
+      "index": 75,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        2,
+        3,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        3,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-076.npz",
+      "sha256": "9398833871affed67a922c0834e7f5b9a990152b54bc8152585aff0f8840d626",
+      "index": 76,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        2,
+        3,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-077.npz",
+      "sha256": "8980fc6da61411d680535daaf9b6e3636c14ac64308342bb729893124b8c3ce3",
+      "index": 77,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        2,
+        3,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-078.npz",
+      "sha256": "b4aa053bffbdd561750b2208581f59509c4114bd06d22648f7e324b33e6084fc",
+      "index": 78,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        2,
+        3,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-079.npz",
+      "sha256": "779e04effd487484857772ede24ca0ec13bf55ecbf17364e7f133acf1bf8b7d9",
+      "index": 79,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        2,
+        3,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-080.npz",
+      "sha256": "d2229382c7e617b7005633af7086a4f8a3fe59e11a09820f1a738fde2726fbbf",
+      "index": 80,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        2,
+        4,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        4,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-081.npz",
+      "sha256": "13df117a2992b422e49e47b12045bed8b4215db4f51533de27c2102626db96d2",
+      "index": 81,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        2,
+        4,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-082.npz",
+      "sha256": "c479fdc2a51a71a6326ea0c32e8e7434d19d37ca0421e570f7998d9177242c51",
+      "index": 82,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        2,
+        4,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-083.npz",
+      "sha256": "bdf235f16cb10a31fe9c2d38c5979912b7748f274cd9a73851fd61a81a42c37f",
+      "index": 83,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        2,
+        4,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        4,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-084.npz",
+      "sha256": "64385e6066b25ac2a228351bf10e9db414dbe5a9a0db01039fe0c51c871fffef",
+      "index": 84,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        2,
+        4,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        4,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-085.npz",
+      "sha256": "051fe502acf183964948de30bb1801e65d4aa05c107fa8ceae0a147cd2b04264",
+      "index": 85,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0,
+      "data_seed": [
+        202610021,
+        2,
+        5,
+        0
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        5,
+        0
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-086.npz",
+      "sha256": "45b33ec60d48e08198df38691f9a5603546d1feeea9a62616600f4af80623d22",
+      "index": 86,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1,
+      "data_seed": [
+        202610021,
+        2,
+        5,
+        1
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        5,
+        1
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-087.npz",
+      "sha256": "a906325285ce22671c4a574bf21a76f8376eaed3fdc9635a75782c6933360c2b",
+      "index": 87,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2,
+      "data_seed": [
+        202610021,
+        2,
+        5,
+        2
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        5,
+        2
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-088.npz",
+      "sha256": "2bf260f580d8c21d8335c2315fcb5aa9a4c1a9475d17aef1a4ac4c2a40b9a9dd",
+      "index": 88,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        2,
+        5,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        5,
+        3
+      ]
+    },
+    {
+      "path": "data/profile-calibration/2026-10-02/evaluation/scenario-089.npz",
+      "sha256": "f4fd733d2de75f4556bdc077a6fd5358def2302351d80bc5250eb5f0035cc7a8",
+      "index": 89,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3,
+      "data_seed": [
+        202610021,
+        2,
+        5,
+        3
+      ],
+      "bootstrap_seed": [
+        202610022,
+        1,
+        2,
+        5,
+        3
+      ]
+    }
+  ],
+  "methods": [
+    "centered_bootstrap",
+    "percentile_delta_extension",
+    "known_bound"
+  ],
+  "decision_codes": [
+    "equivalent",
+    "departure",
+    "unresolved"
+  ],
+  "retention": "All outer means, profile bounds, decisions, bootstrap radii and zero flags; first eight full block-vector inputs per scenario. Remaining generated inputs reconstruct exactly from frozen source, NumPy version and recorded SeedSequence recipes. Inner bootstrap indices are regenerated, not retained."
+}
