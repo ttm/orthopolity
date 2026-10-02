@@ -5,6 +5,12 @@ external preregistration. No natural-system observations have been added. The
 domain, equipment, sampling plan, and analysis thresholds must be fixed for the
 chosen setting before validation outcomes are inspected.
 
+**Current constraint, 2 October 2026:** further empirical work uses available
+data, as specified by the user. The [available-data programme](available-data-programme.md)
+adapts this separation of calibration and validation to published records and
+existing interventions. New laboratory or hardware collection is not planned;
+the experimental designs below remain methodological precedents.
+
 The first [controlled workload implementation](workload-pilot.md) is now
 executed. It supplies actual cost measurements and later quota-acceptance
 outcomes under a saved prediction freeze. The general protocol below remains

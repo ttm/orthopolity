@@ -54,7 +54,23 @@ separates its empirical test from the optional construction of a deeper mechanis
   independently measured non-unit resource costs. Preserve both positive
   forecasts and statistical applicability failures.
 
-## Next substantive research step
+## Current route: available empirical data only
+
+The user has specified that further empirical work must use available data.
+No new laboratory, field or hardware measurements are planned. The
+[available-data programme](available-data-programme.md) prioritizes a measurement
+audit of published nutrient-pulsed chemostats, using separate preliminary
+stoichiometry and whole-vessel evaluation. Independent cost-scaling and recovery
+datasets provide complementary tests with their own stated endpoints.
+
+The immediate deliverables are source/measurement provenance, a development and
+evaluation manifest, frozen forecast comparisons, and retrospective validation
+at the experimental-unit level. Missing budgets or kinetics narrow the scientific
+claim; they are not inferred from validation abundances and relabelled measured.
+Return to baseline remains distinct from return to neutrality. Earlier
+experimental routes below are retained as context, not current collection plans.
+
+## Earlier routes and completed steps
 
 The [predictive reliability benchmarks](predictive-benchmarks.md) now add
 unknown-family selection, approximate training bands with measured coverage,
