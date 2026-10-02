@@ -343,3 +343,90 @@ This endpoint does not test neutrality against a logarithmic reference.
     return dict(status=('recovery_right_censored' if departed else 'no_observed_departure'),
                 confirmation_time=None, last_valid_time=last_observed,
                 total_variation=scores['total_variation'])
+
+
+def cost_ratio_forecast(baseline_shares, cost_ratios, strength):
+    """Two-budget reweighting of a declared initial resource composition.
+
+The orthopolic rule N_j = w_j/(lambda_1 q_1j + lambda_2 q_2j) gives primary
+resource stocks w_j/(lambda_1 + lambda_2 r_j), with r_j = q_2j/q_1j.  If only
+the primary budget binds initially, baseline shares are proportional to w_j,
+and a binding secondary budget multiplies each share by 1/(1 + kappa r_j),
+kappa = lambda_2/lambda_1, before renormalization.  kappa = 0 is persistence.
+Measured cost ratios fix the direction of change; kappa is supplied separately
+and is never fitted to the scored unit.
+"""
+    baseline = _probability_vector(baseline_shares, 'Initial composition')
+    ratio = np.asarray(cost_ratios, dtype=float)
+    if ratio.shape != baseline.shape or not np.all(np.isfinite(ratio)) or np.any(ratio <= 0):
+        raise ValueError('One positive finite cost ratio is required per group')
+    if not np.isfinite(strength) or strength < 0:
+        raise ValueError('A finite nonnegative secondary-budget strength is required')
+    weighted = baseline/(1.+strength*ratio)
+    return weighted/np.sum(weighted)
+
+
+def fit_cost_ratio_strength(baselines, observed, cost_ratios, strengths):
+    """Choose the candidate strength minimizing equal-unit mean TV at one time.
+
+Rows index distinct experimental units.  Units with an incomplete observed
+composition are excluded.  The first minimizing candidate in increasing order
+is chosen, so exact ties resolve to the smallest strength.
+"""
+    base = np.asarray(baselines, dtype=float)
+    seen = np.asarray(observed, dtype=float)
+    ratio = np.asarray(cost_ratios, dtype=float)
+    candidates = np.asarray(strengths, dtype=float)
+    if (base.ndim != 2 or seen.shape != base.shape or ratio.shape != base.shape[1:]
+            or candidates.ndim != 1 or not candidates.size or not np.all(np.isfinite(candidates))
+            or candidates[0] < 0 or np.any(np.diff(candidates) <= 0)
+            or not np.all(np.isfinite(ratio)) or np.any(ratio <= 0)):
+        raise ValueError('Matched unit compositions, positive ratios and increasing nonnegative strengths are required')
+    complete = np.all(np.isfinite(seen), axis=1)
+    if not np.any(complete):
+        return dict(strength=None, units=0, mean_total_variation=None, persistence_total_variation=None)
+    for row in np.concatenate([base[complete], seen[complete]]):
+        _probability_vector(row, 'Complete fitted composition')
+    weighted = base[complete][None, :, :]/(1.+candidates[:, None, None]*ratio[None, None, :])
+    forecast = weighted/np.sum(weighted, axis=2, keepdims=True)
+    objective = np.mean(.5*np.sum(np.abs(forecast-seen[complete][None, :, :]), axis=2), axis=1)
+    best = int(np.argmin(objective))
+    return dict(strength=float(candidates[best]), units=int(np.sum(complete)),
+                mean_total_variation=float(objective[best]),
+                persistence_total_variation=float(np.mean(.5*np.sum(np.abs(base[complete]-seen[complete]), axis=1))))
+
+
+def time_weighted_mean(times, values):
+    """Trapezoidal mean over adjacent pairs of non-missing values.
+
+NaN marks a missing row and breaks continuity; -inf (an observed extinction in
+a log growth factor) propagates.  Returns None without positive exposure.
+"""
+    time = np.asarray(times, dtype=float)
+    value = np.asarray(values, dtype=float)
+    if (time.ndim != 1 or value.shape != time.shape or not np.all(np.isfinite(time))
+            or np.any(np.diff(time) <= 0) or np.any(value == np.inf)):
+        raise ValueError('Strictly ordered times and one value per time are required')
+    present = ~np.isnan(value)
+    adjacent = present[:-1] & present[1:]
+    durations = np.diff(time)[adjacent]
+    exposure = float(np.sum(durations))
+    if exposure <= 0:
+        return None
+    return float(np.sum(.5*(value[:-1][adjacent]+value[1:][adjacent])*durations)/exposure)
+
+
+def log_share_growth(shares, baseline_shares):
+    """Rowwise log(s_j(t)/s_j(baseline)); an absent group gives -inf.
+
+Missing rows stay NaN.  Every group needs a positive baseline share, otherwise
+its growth factor is undefined rather than infinite.
+"""
+    baseline = _probability_vector(baseline_shares, 'Initial composition')
+    if np.any(baseline <= 0):
+        raise ValueError('Every group needs a positive initial share')
+    observed = _nonnegative_array(shares, 'Observed shares')
+    if observed.ndim != 2 or observed.shape[1] != len(baseline):
+        raise ValueError('One group-composition vector is required per time')
+    with np.errstate(divide='ignore'):
+        return np.log(observed/baseline)

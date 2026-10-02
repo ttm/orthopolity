@@ -4,10 +4,11 @@ import unittest
 import numpy as np
 
 from orthopolity.chemostat_response import (
-    baseline_anchored_forecast, common_comparison_support, fractional_trajectory,
-    interpolate_trajectory, mean_unit_trajectory, pooled_profile_envelope,
+    baseline_anchored_forecast, common_comparison_support, cost_ratio_forecast,
+    fit_cost_ratio_strength, fractional_trajectory, interpolate_trajectory,
+    log_share_growth, mean_unit_trajectory, pooled_profile_envelope,
     profile_tv_envelope, recovery_endpoint, resource_profile, simplex_projection,
-    stock_forecast, trajectory_scores, whole_unit_partition,
+    stock_forecast, time_weighted_mean, trajectory_scores, whole_unit_partition,
 )
 
 
@@ -166,6 +167,63 @@ class ChemostatResponseChecks(unittest.TestCase):
         self.assertEqual(result['last_valid_time'], 3.)
         unchanged = recovery_endpoint([0., 1.], [[.5, .5]]*2, [.5, .5], .1)
         self.assertEqual(unchanged['status'], 'no_observed_departure')
+
+    def test_cost_ratio_forecast_reweights_by_measured_ratio_and_reduces_to_persistence(self):
+        np.testing.assert_allclose(cost_ratio_forecast([.5, .5], [1., 3.], 1.), [2./3., 1./3.])
+        np.testing.assert_allclose(cost_ratio_forecast([.2, .3, .5], [9., 13., 8.], 0.), [.2, .3, .5])
+        shifted = cost_ratio_forecast([.2, .3, .5], [9., 13., 8.], .4)
+        self.assertLess(shifted[1], .3)
+        self.assertGreater(shifted[2], .5)
+        np.testing.assert_allclose(cost_ratio_forecast([0., 1.], [1., 2.], 5.), [0., 1.])
+        for ratios, strength in [([1., 0.], 1.), ([1., 2.], -.1), ([1., 2.], np.nan), ([1.], 1.)]:
+            with self.subTest(ratios=ratios, strength=strength), self.assertRaises(ValueError):
+                cost_ratio_forecast([.5, .5], ratios, strength)
+
+    def test_strength_fit_recovers_known_reweighting_and_prefers_smallest_tie(self):
+        baselines = np.array([[.5, .5], [.2, .8], [.6, .4]])
+        ratios = np.array([1., 3.])
+        observed = np.array([cost_ratio_forecast(row, ratios, .7) for row in baselines])
+        candidates = np.concatenate([[0.], np.geomspace(1e-4, 1e4, 801)])
+        result = fit_cost_ratio_strength(baselines, observed, ratios, candidates)
+        self.assertAlmostEqual(result['strength'], .7, delta=.7*.025)
+        self.assertEqual(result['units'], 3)
+        self.assertLess(result['mean_total_variation'], .002)
+        self.assertGreater(result['persistence_total_variation'], .1)
+        unchanged = fit_cost_ratio_strength(baselines, baselines, ratios, candidates)
+        self.assertEqual(unchanged['strength'], 0.)
+        flat = fit_cost_ratio_strength([[1., 0.]], [[1., 0.]], ratios, candidates)
+        self.assertEqual(flat['strength'], 0.)
+
+    def test_strength_fit_ignores_incomplete_units_and_validates_candidates(self):
+        observed = [[.5, .5], [np.nan, np.nan]]
+        result = fit_cost_ratio_strength([[.5, .5], [.2, .8]], observed, [1., 2.], [0., 1.])
+        self.assertEqual(result['units'], 1)
+        empty = fit_cost_ratio_strength([[.5, .5]], [[np.nan, np.nan]], [1., 2.], [0., 1.])
+        self.assertIsNone(empty['strength'])
+        for candidates in [[1., 0.], [-1., 0.], [0., np.inf], []]:
+            with self.subTest(candidates=candidates), self.assertRaises(ValueError):
+                fit_cost_ratio_strength([[.5, .5]], [[.5, .5]], [1., 2.], candidates)
+
+    def test_time_weighted_mean_breaks_at_missing_rows_and_keeps_extinction(self):
+        self.assertAlmostEqual(time_weighted_mean([0., 1., 3.], [0., 1., 3.]), 4.5/3.)
+        self.assertAlmostEqual(time_weighted_mean([0., 1., 2., 4.], [0., np.nan, 2., 2.]), 2.)
+        self.assertIsNone(time_weighted_mean([0., 1.], [1., np.nan]))
+        self.assertEqual(time_weighted_mean([0., 1.], [0., -np.inf]), -np.inf)
+        with self.assertRaises(ValueError):
+            time_weighted_mean([0., 1.], [0., np.inf])
+
+    def test_log_share_growth_is_invariant_to_resource_conversion_ordering(self):
+        volumes = np.array([[1., 2., 3.], [2., 1., 6.]])
+        orderings = []
+        for density in ([1., 1., 1.], [4., .5, 2.]):
+            profile = resource_profile(volumes, density)
+            growth = log_share_growth(profile['shares'][1:], profile['shares'][0])
+            orderings.append(np.argsort(growth[0]))
+        np.testing.assert_array_equal(orderings[0], orderings[1])
+        extinct = log_share_growth([[1., 0.]], [.5, .5])
+        self.assertEqual(extinct[0, 1], -np.inf)
+        with self.assertRaises(ValueError):
+            log_share_growth([[.5, .5]], [1., 0.])
 
     def test_time_order_invalid_compositions_and_duplicate_times_are_rejected(self):
         with self.assertRaises(ValueError):
