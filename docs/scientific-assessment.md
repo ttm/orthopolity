@@ -866,3 +866,46 @@ conditional prediction and documented inference failures, after comparing its
 scientific increment with the relevant prior work. Natural-system selection of
 neutrality still requires independent eligibility conditions, a justified
 observation design and predictive responses to measured restrictions.
+
+## Executed available-data tests: 2 October 2026
+
+Two retrospective studies of published measurements add registry records 19 and
+20; no new observations were collected.
+
+The [archived quota transfer](archived-cost-transfer.md) froze four log-quota
+models before converting held-out Synechococcus quotas at 25°C. A fixed $d^3$
+carbon cost with one fitted intercept transfers best (mean absolute log error
+0.133, a typical factor of 1.14). Strain means beat diameter models for nitrogen
+and phosphorus. A fitted free exponent never beats the fixed cubic degree, and
+extrapolated temperature trends are worst for every element. Cost calibration
+can therefore transfer for one resource while failing as a size law for others
+in the same cells.
+
+The [chemostat resource-response study](chemostat-response.md) is the first
+test of the two-budget allocation rule on measured costs. Separately assayed
+pre-pulse N and C per cell volume converted the algal biovolumes of twelve
+held-out food-web chemostats into resource-stock proxies. All forecasts were
+frozen, with 120 held-out rows gated undecoded.
+
+The pulse redistributed resource composition by 0.25 TV on average, about 1.5
+times the pre-pulse variation around baseline. No forecast reduced that error
+appreciably:
+
+- development-vessel response 0.243 against persistence 0.247, not
+  distinguished;
+- transfer from ungrazed cultures worse than persistence;
+- equal group stock 0.260.
+
+The two-budget rule, with measured C:N ratios of 7.3–13.6, could move a
+vessel's composition by at most 0.05–0.12 TV. Every observed departure was
+larger (0.29–0.49). Its parameter-free direction, that the highest-C:N group
+loses most share, held in 4 of 12 vessels, the chance count. No vessel
+returned to its baseline composition within 12 days.
+
+These results constrain the programme without testing neutrality itself.
+Measured cost ratios between coexisting groups can be too similar for a
+budget-closure rule to produce the redistribution actually observed. In grazed
+communities, short-term allocation is not explained by stoichiometric cost
+ratios alone. A test of allocation neutrality still requires an independently
+eligible system with directly measured resource stocks, adequate size support
+and observed recovery. The failed predictions are retained as evidence.

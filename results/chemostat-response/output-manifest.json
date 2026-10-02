@@ -1,0 +1,13 @@
+{
+  "artifacts": [
+    {
+      "path": "results/chemostat-response/study.json",
+      "sha256": "55d6a3dfcb0bf2b92a919d45793f38b0aa4342e25110177972562a83baa8302c"
+    }
+  ],
+  "evaluation_records": {
+    "path": "data/chemostat-response/2026-10-02/evaluation-records.json",
+    "sha256": "3156657e67176b1b007bf989cae85e41d4a09a189c71a5c1df84f00b8a065526"
+  },
+  "run_id": "chemostat-resource-response-2026-10-02"
+}

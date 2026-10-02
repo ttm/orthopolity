@@ -22,91 +22,76 @@ retrospective validation, not global blinding or prospective data collection.
 
 ## Current state
 
-- Branch: `py314-and-package-names`. Protocol checkpoint `bc57364` follows the
-  available-data roadmap `ca0c683` and the last completed study `ec5f078`.
-- Registry: 19 records, 484 retained references. The new record is
-  `archived-cost-transfer-2026-10-02`, complete. The chemostat response study
-  is not yet frozen, evaluated or registered. Suite: 265 passing tests.
-- Metadata screening ranks Dryad `10.5061/dryad.51c59zwj5` first: separate
-  preliminary algal C/N and cell-volume records plus 24 nutrient-pulsed vessels.
-- The main series resolves three algal groups: Cryptomonas, Chlamydomonas, and
-  pooled Monoraphidium/Chlorella. Pool uncertainty must remain explicit.
-- Supplied posterior nitrogen trajectories and full-data fitted interaction
-  summaries are not independently measured inputs. The first endpoint is a
-  finite-group resource-stock response, not a broad power-law exponent.
+- Branch: `py314-and-package-names`, pushed to `origin`. Both studies of this
+  checkpoint are complete and registered. Registry: 20 records, 514 retained
+  file references. Suite: 283 passing tests (`make test PY=python3.11`).
+- [Archived cost transfer](archived-cost-transfer.md) (`archived-cost-transfer-2026-10-02`):
+  a size-geometric carbon cost predicts held-out 25°C Synechococcus quotas best
+  (mean absolute log error 0.133); strain identity predicts N and P better than
+  cell size; extrapolated temperature trends are worst throughout.
+- [Chemostat response](chemostat-response.md) (`chemostat-resource-response-2026-10-02`):
+  negative. No frozen forecast beat persistence on the twelve held-out
+  polyculture vessels (nitrogen midpoint time-weighted TV: development response
+  0.243, persistence 0.247; not distinguished). The two-budget cost-ratio rule
+  failed on score, size and direction. Its capacity of 0.05–0.12 TV fell below
+  every observed departure (0.29–0.49), and its ordinal prediction held in 4 of
+  12 vessels, the chance count. All twelve held-out vessels are right-censored
+  for recovery to baseline by day 12.
+- Erratum retained, not corrected in frozen code: the chemostat freeze field
+  `baseline_algal_nitrogen_umol_per_l` holds nmol/L. Corrected values are in
+  `results/chemostat-response/posthoc-diagnostics.json`. No score uses the field.
 
-## Active work and checkpoint sequence
+## Next actions, in priority order
 
-1. Retrieve versioned source metadata, README, original workbooks and published
-   measurement methods; preserve bytes and acquisition receipts/checksums.
-2. Audit schemas, assay methods, missingness, units, pooled groups and actual
-   replicate structure. Inspect separate calibration records first. Keep whole
-   community vessels together in development/evaluation membership.
-3. Specify a feasible forecast using the measurements actually available,
-   compare independent-cost/reference and development-only dynamic forecasts
-   with persistence/mean-response rivals, and freeze all choices before reading
-   held-out post-pulse values. Acquisition of a bundle is not outcome blinding.
-4. Evaluate held-out resource composition, absolute stocks and return toward
-   baseline separately; use calibrated uncertainty only when justified. Missing
-   resource states narrow the claim rather than becoming invented measurements.
-5. Register executed evidence with immutable inputs, algorithms, predictions,
-   outcomes and limits. Update this file after each material checkpoint.
-6. Audit complementary existing cost-scaling/recovery datasets; do not transplant
-   quotas between different organisms as though they were one population.
+1. **Audit the next available dataset for direct resource stocks.** The
+   chemostat study's main limit was a transferred, not measured, resource
+   proxy. Begin with the [Dunaliella recovery records](https://doi.org/10.5061/dryad.4mh47r7)
+   (deprivation and replenishment). Follow the same sequence: retain bytes and
+   receipts; audit methods and replication from metadata; freeze a protocol;
+   then forecast, evaluate and register. Declare a multi-sample baseline and the
+   grazer/forcing structure in advance.
+2. **Search for systems where recovery can resolve.** Longer post-perturbation
+   windows are needed than the 12 days here, ideally with stocks measured in the
+   evaluated units.
+3. **Decide with the user whether to integrate these results into
+   `docs/paper.md`.** The manuscript does not yet cite the 2 October validation
+   round or the two available-data studies. The scientific assessment and
+   roadmap now summarize them.
+4. Keep every failed forecast. A corrective or extended analysis gets a new run
+   identifier and its own frozen protocol. Never edit a registered one.
 
-## Candidate sources
-
-- [Chemostat Dryad record](https://datadryad.org/dataset/doi:10.5061/dryad.51c59zwj5)
-  and [published supplement](https://doi.org/10.6084/m9.figshare.c.8172360).
-- [BCO-DMO 926311](https://www.bco-dmo.org/dataset/926311/description): independent
-  Synechococcus C/N/P cost measurements; separate cost-transfer study only.
-- [Dunaliella recovery publication](https://pubmed.ncbi.nlm.nih.gov/30068687/)
-  and [data DOI](https://doi.org/10.5061/dryad.4mh47r7): existing deprivation and
-  replenishment; resource costs and replication require file audit.
-
-## Resume commands and immediate next action
+## Resume commands
 
 ```bash
 git status --short --branch
 PYTHONPATH=src python3.11 experiments/register_runs.py --verify
+make archived-cost-transfer chemostat-response PY=python3.11   # offline audits
 ```
 
-Read this document, the current source-audit report and frozen manifests before
-changing code or interpreting outputs. Immediate next action at this checkpoint:
-implement and freeze the chemostat finite-group response forecasts before any
-held-out post-pulse value is decoded. The cost study is complete. No chemostat
-prediction freeze or validation result exists yet.
+A clone lacks the 98.7 MB chemostat bundle. The audits above do not need it.
+Run `make restore-chemostat-bundle PY=python3.11` only to replay the source
+acquisition audit.
 
 ## Current files and ownership boundaries
 
-- Source acquisition: `experiments/fetch_chemostat_sources.py`,
-  `data/chemostat-sources/2026-10-02/`; completed audit report at
-  `docs/chemostat-source-audit.md`. Git omits only the 98.7 MB Zenodo bundle
-  and its extracted 94.8 MB `.RData`. Restore both by checksum with
-  `make restore-chemostat-bundle PY=python3.11`.
-- Response mathematics in development: `src/orthopolity/chemostat_response.py`
-  and `tests/test_chemostat_response.py`. Primary design uses additive changes
-  in resource shares, explicit simplex projection, and a separate stock-total
-  response. Comparators: persistence, development-vessel mean response,
-  preliminary no-herbivore response, equal stock across the three measured groups.
-  Equal group stock is a comparator, not logarithmic neutrality.
-- Response configuration now exists at
-  `configs/chemostat_response_2026-10-02.json`: development monoculture-rotifer
-  vessels versus evaluation polyculture-rotifer vessels; nitrogen primary,
-  carbon sensitivity; pre-pulse median quota/volume calibration; pooled lower,
-  midpoint and upper conversions; whole-vessel descriptive scores. These choices
-  precede inspection of main held-out post-pulse numerical responses. Final
-  schema/availability checks may still require an explicitly logged amendment
-  before prediction freeze; no frozen prediction exists yet.
-- Complementary archived cost study (complete; see
-  [archived-cost-transfer.md](archived-cost-transfer.md)):
-  `experiments/run_archived_cost_transfer.py`,
-  `src/orthopolity/archived_cost_transfer.py`, corresponding config/tests,
+- Chemostat sources: `experiments/fetch_chemostat_sources.py`,
+  `data/chemostat-sources/2026-10-02/` and the
+  [source audit](chemostat-source-audit.md). Git omits only the Zenodo bundle
+  and its extracted `.RData`, both restorable by checksum
+  (`experiments/restore_chemostat_bundle.py`).
+- Chemostat study, frozen: `experiments/run_chemostat_response.py`,
+  `src/orthopolity/chemostat_response.py`, `src/orthopolity/gated_xlsx.py`,
+  configuration plus amendments 1–2 in `configs/`, and outputs in
+  `data/chemostat-response/2026-10-02/` and `results/chemostat-response/`.
+  Do not edit these files: evaluation and audit refuse changed source bytes.
+  The post-hoc report `experiments/report_chemostat_response.py` reads
+  retained outputs only.
+- Cost study, frozen: `experiments/run_archived_cost_transfer.py`,
+  `src/orthopolity/archived_cost_transfer.py`, its config, and outputs in
   `data/archived-cost-transfer/2026-10-02/` and `results/archived-cost-transfer/`.
-  Trained on 16/18/20/22°C cultures. The source holds no 27°C cultures, so ten
-  25°C cultures were evaluated. No quota transfer into other taxa; no community
-  neutrality claim. Registered by `experiments/register_available_data.py`
-  (`make available-data-registry`).
+- Registration of both: `experiments/register_available_data.py`
+  (`make available-data-registry PY=python3.11`). It is idempotent; add later
+  studies to its `STUDIES` table without changing existing entries.
 
 ## Checkpoint log
 
@@ -146,3 +131,19 @@ prediction freeze or validation result exists yet.
   0.207 best (cubic 0.221); P, strain mean 0.147 best (cubic 0.226). Strain
   temperature trends were worst for every element. Registered with 484 registry
   file references.
+- Chemostat protocol checkpoint: amendment 1 (`a67c6a3`, 15:11:23 UTC) fixed the
+  implementation and added the two-budget cost-ratio model before any
+  main-workbook outcome was decoded. Synthetic tests then showed that the rule
+  saturates. Amendment 2 (`92d239d`, 15:26:19 UTC, with the gated runner and
+  tests) retained its capacity bound and a nitrogen-budget diagnostic.
+- Chemostat freeze checkpoint: forecasts frozen at 15:26:34 UTC and pushed in
+  `180dc6d` at 15:26:45 UTC. The reader matched 2,960 permitted cells against
+  the openpyxl audit copies, and 120 held-out post-pulse rows stayed gated.
+  Development diagnostics before evaluation: the fitted two-budget strength was
+  zero on most days, and Chlamydomonas lowest growth held in 2 of 12
+  development vessels.
+- Chemostat evaluation checkpoint: evaluation started at 15:27:47 UTC, and the
+  offline audit replay matched. Held-out reader cross-check: 480 cells. Results
+  and verdicts are as stated in *Current state*. Post-hoc noise floor: 0.117 TV
+  between consecutive pre-pulse samples; 0.164 from the day-0 composition.
+  Registered with 514 file references, linked to `restrictions-2026-10-01`.

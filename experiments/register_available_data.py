@@ -30,6 +30,18 @@ def cost_summary(result):
             for resource, score in result["scores"].items()}
 
 
+def chemostat_summary(result):
+    variants = {row["variant_id"]: row for row in result["evaluation"]["variants"]}
+    nominal = variants["nitrogen-midpoint"]
+    return {"primary_equal_vessel_mean_time_weighted_total_variation": {
+                variant: {model: summary["equal_vessel_mean_time_weighted_total_variation"]
+                          for model, summary in row["primary"].items()} for variant, row in variants.items()},
+            "verdicts": [dict(pair=row["pair"], verdict=row["verdict"]) for row in result["evaluation"]["verdicts"]],
+            "cost_ratio_ordinal_endpoint": nominal["ordinal"],
+            "two_budget_capacity": nominal["two_budget_capacity"],
+            "observed_recovery_status": nominal["recovery"]["observed"]}
+
+
 STUDIES = {
     "archived-cost-transfer": {
         "config": "configs/archived_cost_transfer_2026-10-02.json",
@@ -45,6 +57,34 @@ STUDIES = {
         "seeds": {"status": "Deterministic least-squares analysis; no random seed"},
         "summary": cost_summary,
         "parents": [],
+    },
+    "chemostat-response": {
+        "config": "configs/chemostat_response_2026-10-02.json",
+        "amendments": ["configs/chemostat_response_2026-10-02_amendment-1.json",
+                       "configs/chemostat_response_2026-10-02_amendment-2.json"],
+        "data": "data/chemostat-response/2026-10-02",
+        "results": "results/chemostat-response",
+        "plan": "frozen-forecasts.json",
+        "result_plan_key": "frozen_forecasts",
+        "plan_inputs": True,
+        "kind": "actual_measurement",
+        "resources": [
+            {"name": "Algal nitrogen-stock proxy",
+             "definition": "Published group biovolume times separately assayed pre-pulse N per cell volume from preliminary monocultures; a transferred stock proxy, not a measured vessel stock, uptake flux or requirement",
+             "units": "pmol N per mL (nmol N/L)"},
+            {"name": "Algal carbon-stock proxy",
+             "definition": "Published group biovolume times separately assayed pre-pulse C per cell volume; carbon sensitivity of the same proxy",
+             "units": "pmol C per mL (nmol C/L)"},
+            {"name": "Algal biovolume reference",
+             "definition": "Published group biovolume without resource conversion; reference variant only",
+             "units": "cubic micrometres per mL"}],
+        "algorithm": "Gated finite-group resource-response forecasts frozen before held-out decoding, with a development-fitted two-budget cost-ratio model",
+        "source_provenance": "Digests equal the sources recorded in the frozen forecasts before any held-out post-pulse value was decoded",
+        "posthoc": [{"name": "Post-hoc diagnostics and figures specified after evaluation; computes no forecast, score or verdict",
+                     "source": "experiments/report_chemostat_response.py"}],
+        "seeds": {"status": "Deterministic analysis and grid fits; no random seed"},
+        "summary": chemostat_summary,
+        "parents": [("restrictions-2026-10-01", "tests_two_budget_rule_on_published_measurements")],
     },
 }
 
@@ -65,16 +105,31 @@ def retained_files(directory):
 def register_study(name):
     specification = STUDIES[name]
     directory, output = ROOT / specification["data"], ROOT / specification["results"]
-    plan = json.loads((directory / "frozen-plan.json").read_text())
+    plan_name = specification.get("plan", "frozen-plan.json")
+    plan = json.loads((directory / plan_name).read_text())
     result = json.loads((output / "study.json").read_text())
-    plan_reference = file_reference(ROOT, (directory / "frozen-plan.json").relative_to(ROOT).as_posix())
-    if checked_reference(result["frozen_plan"])["sha256"] != plan_reference["sha256"]:
+    plan_reference = file_reference(ROOT, (directory / plan_name).relative_to(ROOT).as_posix())
+    if checked_reference(result[specification.get("result_plan_key", "frozen_plan")])["sha256"] != plan_reference["sha256"]:
         raise ValueError("Result belongs to a different frozen plan")
     if result["run_id"] != plan["run_id"] or result.get("status") != "complete":
         raise ValueError("Only a complete report of the frozen run can be registered")
     config = archive_reference(ROOT, specification["config"])
     if config["sha256"] != checked_reference(plan["config_reference"])["sha256"]:
         raise ValueError("Configuration differs from freeze")
+    configs = [config]
+    amendments = specification.get("amendments", [])
+    if [reference["path"] for reference in plan.get("amendment_references", [])] != amendments:
+        raise ValueError("Amendments differ from those recorded at the freeze")
+    for path, reference in zip(amendments, plan.get("amendment_references", [])):
+        archived = archive_reference(ROOT, path)
+        if archived["sha256"] != checked_reference(reference)["sha256"]:
+            raise ValueError("Amendment differs from freeze")
+        configs.append(archived)
+    inputs = retained_files(directory)
+    if specification.get("plan_inputs"):
+        known = {reference["path"] for reference in inputs}
+        inputs += [checked_reference(reference) for reference in plan["input_references"].values()
+                   if reference["path"] not in known]
     sources = []
     for reference in plan["source_references"]:
         snapshot = archive_reference(ROOT, checked_reference(reference)["path"])
@@ -84,11 +139,14 @@ def register_study(name):
     entry = {
         "schema_version": 1, "run_id": plan["run_id"], "evidence_kind": specification["kind"],
         "resources": specification["resources"],
-        "data_inputs": retained_files(directory),
+        "data_inputs": inputs,
         "generated_seeds": specification["seeds"],
         "algorithms": [{"name": specification["algorithm"], "sources": sources,
-                        "source_provenance": "Digests equal the sources recorded in the frozen plan before acquisition/evaluation"}],
-        "configs": [config], "artifacts": retained_files(output),
+                        "source_provenance": specification.get("source_provenance", "Digests equal the sources recorded in the frozen plan before acquisition/evaluation")}]
+                      + [{"name": item["name"], "sources": [archive_reference(ROOT, item["source"])],
+                          "source_provenance": "Content-addressed snapshot at registration; presentation and labelled post-hoc diagnostics only"}
+                         for item in specification.get("posthoc", [])],
+        "configs": configs, "artifacts": retained_files(output),
         "relationships": [{"run_id": run_id, "type": relationship}
                           for run_id, relationship in specification["parents"]],
         "hardware_metadata": {"recorded_environment": plan.get("environment", {}),

@@ -12,6 +12,23 @@ have been downloaded or analyzed. Published summaries and methods have been
 read, so any ensuing analysis must disclose retrospective development rather
 than claim global blinding. The eighteen existing registry records are unchanged.
 
+## Executed studies
+
+Two studies have now been run and registered, both on 2 October 2026:
+
+- The [archived cost transfer](archived-cost-transfer.md) used the BCO-DMO
+  Synechococcus quotas. Size-geometric carbon cost transfers to an unused
+  temperature; nitrogen and phosphorus follow strain identity more than size.
+- The [chemostat resource-response study](chemostat-response.md) used the first
+  candidate below. It is negative. No frozen forecast predicted held-out
+  resource redistribution better than persistence, and the two-budget
+  cost-ratio rule failed on score, size and direction. No held-out vessel
+  recovered its baseline composition by day 12.
+
+The next audit should favour records with resource stocks measured in the
+evaluated units, multi-sample baselines and longer recovery windows. The
+sections below are the original plan; they are retained unchanged.
+
 ## What the available records can test
 
 Resource-cost scaling, allocation response, and recovery are separate endpoints.

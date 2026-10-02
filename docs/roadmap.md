@@ -53,6 +53,12 @@ separates its empirical test from the optional construction of a deeper mechanis
   solar outcomes, and predict an actual CPU-allocation restriction using
   independently measured non-unit resource costs. Preserve both positive
   forecasts and statistical applicability failures.
+- Execute two [available-data studies](available-data-programme.md) with
+  zero new observations. One is an [archived quota transfer](archived-cost-transfer.md)
+  across temperature. The other is a [chemostat resource-response test](chemostat-response.md)
+  whose forecasts were frozen before held-out decoding. Retain the chemostat
+  study's negative result: no forecast beat persistence, and the two-budget
+  cost-ratio rule failed.
 
 ## Current route: available empirical data only
 
@@ -69,6 +75,13 @@ at the experimental-unit level. Missing budgets or kinetics narrow the scientifi
 claim; they are not inferred from validation abundances and relabelled measured.
 Return to baseline remains distinct from return to neutrality. Earlier
 experimental routes below are retained as context, not current collection plans.
+
+Both first studies are complete; see [ongoing research](ongoing-research.md).
+The chemostat test showed that a transferred resource proxy and a 12-day window
+cannot settle allocation questions. Quota differences between groups bounded
+the two-budget rule far below the observed redistribution. The next audit
+should target records with directly measured resource stocks, multi-sample
+baselines and recovery windows that can resolve.
 
 ## Earlier routes and completed steps
 

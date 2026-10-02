@@ -117,6 +117,15 @@ assembler `experiments/register_available_data.py` computes no result, so it is
 not archived as an analysis source. Later available-data studies can therefore
 be appended without changing earlier entries.
 
+`chemostat-resource-response-2026-10-02` is the twentieth record. It retains
+frozen forecasts for twelve held-out chemostat communities from the published
+Wojcik et al. archive, written before any held-out post-pulse value was decoded.
+It also retains the two configuration amendments, the gated reader, the held-out
+records, the evaluation, and a separately archived post-hoc report source.
+Lineage links it to `restrictions-2026-10-01`, whose two-budget rule it tests on
+measurements. See [the study](chemostat-response.md); its retained nitrogen-budget
+unit erratum is documented there.
+
 ## Hardware and threading
 
 The new workload metadata records CPU model, architecture/logical CPU count,

@@ -1,5 +1,7 @@
 # Chemostat source audit, 2 October 2026
 
+The study built on this audit is reported in [chemostat-response.md](chemostat-response.md).
+
 The published algal community archive can support a conditional test of resource
 allocation forecasts after a measured nutrient intervention. The archive contains
 chemically measured cellular nitrogen and carbon from separate preliminary

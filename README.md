@@ -64,7 +64,11 @@ measurements are not planned. Its first completed study, an
 [archived quota transfer](docs/archived-cost-transfer.md), predicts held-out
 warmer Synechococcus cultures. A size-geometric carbon cost transfers within a
 typical factor of 1.14; nitrogen and phosphorus quotas follow strain identity
-more closely than cell size.
+more closely than cell size. The [chemostat resource-response study](docs/chemostat-response.md)
+froze forecasts for twelve held-out food-web chemostats before decoding their
+post-pulse values. None beat persistence. The two-budget cost-ratio rule failed:
+measured C:N ratios cap its redistribution below every observed departure, and
+its direction held only at the chance rate.
 
 The [predictive reliability benchmarks](docs/predictive-benchmarks.md) extend this
 programme to capacity-only family selection, training uncertainty, omitted
