@@ -1,9 +1,10 @@
 # Orthopolity as a resource-allocation hypothesis
 
-**Reference measures, counterexamples, and an exploratory assessment of aquatic size spectra**
+**Reference measures, counterexamples, and frozen-forecast tests**
 
-> Research manuscript, revised 29 September 2026. Empirical analyses are exploratory or governed
-> by a locally recorded analysis plan; this is not an externally preregistered study.
+> Research manuscript, revised 2 October 2026. The analyses of Sections 3 and 4 are exploratory
+> or governed by a locally recorded plan; the tests of Section 5 use protocols frozen and
+> committed before their outcomes were decoded. None is an externally preregistered study.
 > Authorship and submission declarations require agreement before submission. Historical drafts
 > remain in Git history. Computational details accompany the manuscript in
 > [evidence.md](evidence.md) and [source-audit.md](source-audit.md).
@@ -16,20 +17,21 @@ conditional allocation hypothesis and distinguish it from a universal explanatio
 The defining accounting identity depends on a reference measure. With resource cost proportional
 to size raised to power $d$, equal resource per logarithmic size interval implies a count-density
 exponent $d+1$; equal resource per linear interval implies exponent $d$. Conservation alone
-selects neither allocation. We examine frozen earthquake and solar-flare catalogues, a published
-ocean biomass reconstruction, and 1,300 aquatic size-spectrum estimates from 16 studies.
-Earthquake magnitudes imply a Gutenberg–Richter coefficient of 0.998, far from the 1.5 required
-by logarithmic equipartition of the chosen energy proxy. Solar-flare estimates also disagree
-with the joint allocation-and-scaling prediction on the selected domain. Aquatic normalized
-biomass slopes have median −1.015, close to the predicted −1, but their study-block bootstrap
-interval does not establish the planned equivalence. A range-metadata audit identifies
-implausible bounds in 377 records. Excluding them, 9.3% of remaining reported slopes meet
-a factor-1.25 drift criterion; this is not a count of statistically equivalent systems.
-We show why centred slopes, fitted dispersion, and conservation cannot
-establish ensemble equipartition. Resource symmetry supplies a possible physical postulate
-for equal expected allocations, whose empirical standing does not require a deeper mechanism.
-Orthopolity supports a useful synthesis and testing framework;
-the available evidence does not establish a new natural or cosmological law.
+selects neither allocation. Exploratory assessments of earthquake and solar-flare catalogues,
+an ocean biomass reconstruction and 1,300 aquatic size-spectrum estimates contradict the
+specified physical proxies and find aquatic slopes near the logarithmic prediction without
+establishing equivalence. Centred slopes, fitted dispersion and conservation cannot establish
+ensemble equipartition. We then test forecasts frozen before their outcomes were decoded. In an
+engineered CPU-allocation system, independently measured non-unit costs predict allocation
+profiles and their response to a restriction. On an unused solar year, logarithmic neutrality
+predicts counts better than linear neutrality, but neutrality itself remains unresolved. In 30
+size-selected algal lineages regrown in one medium, carrying capacity in biovolume is constant
+across a 10-fold range of cell volume, so abundance scales inversely with volume, as budget
+closure with a geometric cost predicts. In grazed food-web chemostats, a two-budget cost-ratio
+rule fails to predict pulse-driven redistribution. Resource symmetry supplies a possible
+physical postulate for equal expected allocations. The evidence supports budget closure where
+a shared budget is known and a framework for testing allocation; it does not establish
+neutrality across coexisting natural size classes or a new natural or cosmological law.
 
 ## 1. Introduction
 
@@ -55,9 +57,10 @@ Power laws arise under different generative mechanisms, and apparent straight li
 logarithmic plots do not establish a power-law distribution (Newman, 2005; Clauset, Shalizi
 and Newman, 2009). Rewriting a distribution as inverse resource cost does not identify a new
 mechanism. Our contribution is a critical reconstruction: we specify the measure and resource,
-derive their conditional consequences, give counterexamples to stronger interpretations, and
-assess what the repository's existing data can support. We make no priority claim for the
-accounting identity or for ecological biomass equivalence.
+derive their conditional consequences, give counterexamples to stronger interpretations,
+assess what the repository's existing data can support, and test forecasts frozen before their
+outcomes were decoded. We make no priority claim for the accounting identity or for ecological
+biomass equivalence.
 
 ## 2. Mathematical formulation
 
@@ -442,7 +445,122 @@ would bias the test. Secondary conventions remain sensitivity analyses; a comple
 study-level methods audit is needed before pooling them. Checks of two dominant primary
 studies do not validate every record in the primary subset.
 
-## 5. Discussion
+## 5. Frozen-forecast tests
+
+The analyses of Section 4 assess data that had already been inspected. We therefore added tests
+in which the resource, its cost law, the forecasts and the decision rules are fixed before the
+evaluated outcomes are decoded, and in which whole units are held out: launches, a calendar year,
+vessels and selection treatments. Each executed study retains its inputs, frozen protocol,
+archived algorithms, forecasts and results in an append-only [run registry](run-registry.md).
+Three kinds of evidence are kept separate: measurements on engineered systems, an unused
+observation period of a natural catalogue, and published biological experiments reanalysed
+retrospectively. Published summaries of those experiments had been read, so their reanalyses
+are retrospective validations, not blinded tests.
+
+### 5.1 Controlled allocation measurements
+
+In a controlled workload experiment, separately measured memory and CPU costs of matrix tasks
+predicted completion profiles under assigned quota pairs within four tolerances frozen before
+672 validation tasks ([workload pilot](workload-pilot.md)). A fresh launch exposed a transfer
+boundary: the original forecast failed its unchanged tolerance in two of four conditions, and
+local recalibration recovered one ([workload transfer](workload-transfer.md)). The quotas were
+acceptance criteria, so these tests concern the transfer of cost models, not allocation.
+
+An allocation test requires the system, not the experimenter, to divide a resource. In a Python
+runtime whose global interpreter lock serializes execution, worker threads running matrix
+kernels of five sizes competed for one execution resource
+([dimensionality intervention](dimensionality-intervention.md)). Separate calibration gave CPU
+cost degrees 1.870 and 2.686 for the two kernels. The calibrated mean-cost curves predicted
+complete CPU and job profiles before 16 allocation trials, with maximum CPU-share errors of
+0.0035–0.0063 and job-share total-variation errors of 0.0021–0.0124. Replacing the
+largest-class thread with a second smallest-class thread produced the predicted CPU-share change
+within 0.0078. A unit-cost alternative had count errors of 0.126–0.273. This success concerns
+one engineered allocation mechanism; it identifies no geometric dimension and no tendency of
+natural systems.
+
+### 5.2 Calibrated decisions and an unused observation period
+
+Complete-profile equivalence decisions were calibrated on 180,000 independently generated
+datasets in 90 conditions ([profile calibration](profile-calibration.md)). Simultaneous bands
+met the declared gate for dense, bounded, independent blocks at 48 blocks, with minimum coverage
+93.95%, but failed at 12 and 24 blocks. With twelve serially dependent blocks, wrong-departure
+rates reached 43.75%. These failures define observation designs for which no neutrality verdict
+is available, whatever a nominal interval suggests.
+
+For solar flares, measured rise-phase fluence costs, six logarithmic classes, three forecasts,
+a tolerance and an application gate were committed before the 2025 NOAA records were acquired
+([solar validation](solar-validation.md)). Of 3,277 events, 356 met the domain rules.
+Logarithmic neutrality predicted the class counts much better than linear neutrality, with
+count total variation 0.125 against 0.573; historical counts did better still, at 0.022. The
+point profile departed from the $\ln 1.5$ margin, but the calibrated decision remained
+unresolved, as declared before acquisition, and the instrument mix changed between periods.
+
+### 5.3 Published biological measurements
+
+| Study | Held out | Resource and cost | Frozen comparison | Outcome |
+|---|---|---|---|---|
+| *Synechococcus* quotas (Harcourt et al., 2024) | Ten cultures at 25 °C | C, N and P per cell against measured diameter | Fixed cube, free power, strain means, temperature trends | Fixed cube best for C; strain means best for N and P |
+| Size-selected *Dunaliella* (Malerba et al., 2018) | Each selection treatment | Biovolume at carrying capacity in one shared medium | Equal biovolume ($d=1$), fitted size law, assigned exponents, equal cell number | Equal biovolume best; cells at capacity scale as $V^{-1.02}$ |
+| Food-web chemostats (Wojcik et al., 2025) | Twelve polyculture vessels | Algal N stock: biovolume times separately assayed N per volume | Persistence, development response, no-herbivore response, equal stock, two-budget cost ratio | No model beat persistence; the cost-ratio rule failed |
+
+Published elemental quotas of four *Synechococcus* strains tested whether a size-based cost
+transfers to an unused temperature ([cost transfer](archived-cost-transfer.md)). Trained on
+16–22 °C cultures, a cubic diameter law with one fitted intercept predicted held-out 25 °C
+carbon quotas within a typical factor of 1.14. For nitrogen and phosphorus, strain means beat
+both size laws, and a fitted exponent never beat the fixed cube. Extrapolated temperature trends
+were worst for every element. A cost calibration can therefore transfer for one resource while
+failing as a size law for another resource in the same cells.
+
+The accounting identity behind orthopolity, $N\,q(V)=R$, predicts how abundance scales with
+per-object cost when a budget is shared. Thirty *Dunaliella tertiolecta* lineages, artificially
+selected for about 280 generations into small, control and large classes, were regrown
+separately in one F/2 medium after replete, N-deprived or P-deprived histories
+([size budget](dunaliella-size-budget.md)). The protocol was committed before any small- or
+large-selected outcome was decoded; each held-out selection treatment was then predicted from
+the other two. Across a 10.4-fold range of mean cell volume, replete carrying capacity in total
+biovolume was constant to within 3%, so cell number at capacity scaled as $V^{-1.02}$
+(Figure 2). The frozen equal-biovolume law ($d=1$) had held-out errors of 0.124 and 0.179 log
+units. It outperformed a size law fitted within part of the range, whose fitted cost dimension
+was 0.74 in one fold and 1.12 in the other, and an equal-cell-number law, with errors of
+1.48–2.08. A carbon cost degree assigned from the *Synechococcus* study ($d=0.91$) performed
+comparably; its nitrogen degree ($d=0.80$) did not. Regrowth after N deprivation nearly
+restored capacity, whereas P deprivation left an overshoot of 25–31% in control and large
+lineages but not in small ones. Restoring the medium therefore did not guarantee a return to the
+replete profile.
+
+In 24 food-web chemostats, a nitrogen pulse redistributed algal resource composition
+([chemostat response](chemostat-response.md)). Pre-pulse N and C per cell volume from separate
+monocultures converted three algal groups' biovolumes into resource stocks. Forecasts for twelve
+held-out polyculture vessels were frozen before their post-pulse values were decoded. The pulse
+moved resource composition by 0.25 total variation on average, about 1.5 times the pre-pulse
+variation around baseline, yet no forecast improved appreciably on persistence: 0.243 for the
+development response against 0.247. A two-budget allocation rule, in which a binding secondary
+carbon budget reweights each group's share by its measured C:N ratio, failed on three counts. Its
+attainable redistribution, 0.05–0.12, was below every observed departure, 0.29–0.49. Its
+predicted direction held in 4 of 12 vessels, the chance count. It did not beat persistence. No
+held-out vessel recovered its pre-pulse composition within 12 days.
+
+![Size-selected Dunaliella lineages regrown in one shared medium](../results/dunaliella-size-budget/size-budget.png)
+
+*Figure 2. Size-selected Dunaliella lineages regrown in one shared medium, from the data of
+Malerba et al. (2018). (a) Replete carrying capacity in total biovolume against mean cell
+volume, with the two cross-fitted size laws and the equal-biovolume law. (b) Implied cell
+number at capacity. (c) Held-out errors of the frozen forecasts. (d) Capacity after N or P
+deprivation against replete capacity. Generated from retained outputs by
+[report_dunaliella_size_budget.py](../experiments/report_dunaliella_size_budget.py).*
+
+### 5.4 What the tests establish
+
+The positive results concern budget closure: an independently measured or geometric cost, a
+known shared budget, and abundance or resource shares predicted from them. The runtime
+experiment and the algal lineages are the clearest cases; in the lineages the closure holds with
+cost proportional to volume, so the abundance gradient carries no information beyond geometry.
+A rule that goes beyond closure, by predicting how a restriction redistributes resource among
+coexisting classes, failed in the one natural community tested, where grazing and fast dynamics
+dominated. None of these tests observes neutrality across coexisting size classes in a natural
+system whose eligibility was identified independently. That remains the decisive missing test.
+
+## 6. Discussion
 
 The conditional identity is useful because it forces a researcher to name the resource,
 sampling unit, coordinate, and reference measure before interpreting a slope. It also
@@ -465,7 +583,8 @@ totals would permit testing profile shape as well as slope. A design with multip
 and repeat visits could separate sources of variation using a model appropriate to its
 sampling structure. A new dataset could test a frozen conditional prediction, including
 its uncertainty; numerical proximity to a dispersion fitted on the original sample is
-not sufficient.
+not sufficient. Section 5 reports such tests. Their positive results concern budget closure,
+not neutrality.
 
 The principal limitation is the absence of independently specified conditions identifying
 the proposed neutral regime and of data/design sufficient to test its generalization.
@@ -474,6 +593,9 @@ mechanism. Its predictions must nevertheless specify the resource, class measure
 statistical target. An experiment that weakens an independently measured source of bias
 could test approach to the neutral prediction, if that convergence is part of the declared
 hypothesis. Departures cannot simply be relabelled as previously unspecified restrictions.
+The tests of Section 5 sharpen this limitation. Budget closure with a geometric cost is
+confirmed in separately grown lineages that share one medium. A cost-ratio rule for
+redistribution among coexisting classes failed in a grazed community.
 
 Prior ecological work already supplies models and environmental explanations (Cuesta,
 Delius and Law, 2018; Arranz et al., 2022). Further orthopolity research needs a demonstrable
@@ -481,7 +603,7 @@ contribution relative to those accounts, such as an independently validated cond
 prediction or a calibrated diagnostic comparison. A resource-symmetry law could coexist
 with mechanisms explaining when it applies and how it is approached.
 
-## 6. Conclusion
+## 7. Conclusion
 
 Orthopolity can be stated as a mathematically coherent, falsifiable hypothesis once its
 resource, measure, and domain are fixed. Its inverse-cost consequence is an accounting
@@ -490,8 +612,11 @@ coherent postulate for equal expected allocations; a deeper mechanism is not req
 for it to become an empirically established law. The stronger universal,
 cosmological, and ensemble-confirmation claims are not justified by the available
 arguments or evidence. A scientific document is warranted as a critical synthesis with
-reproducible exploratory tests and explicit counterexamples. A paper announcing a new
-natural law is not warranted.
+reproducible exploratory tests and explicit counterexamples. Frozen forecasts support the
+budget-closure form of the identity in an engineered allocation system and in algal lineages
+sharing one medium. They reject a two-budget cost-ratio rule for short-term redistribution in
+grazed food webs. Neutrality across coexisting classes in natural systems remains untested. A
+paper announcing a new natural law is not warranted.
 
 ## Data and code availability
 
@@ -501,7 +626,11 @@ analyses; see the [README](../README.md) for setup. Pilot estimates originate in
 [results.json](../results/results.json); distribution diagnostics in
 [gof.json](../results/gof.json); aquatic median, compatibility fractions, and ocean
 intervals in [independent.json](../results/independent.json). Remaining JSON files contain
-explicitly exploratory diagnostics. Source-specific conditions are recorded in
+explicitly exploratory diagnostics. The studies of Section 5 are registered in an append-only
+[run registry](run-registry.md) with their inputs, frozen protocols, archived algorithms and
+outputs. The registry-verify target audits it offline, and each study report gives its replay
+command; source errata found during those audits are recorded there. Source-specific conditions
+are recorded in
 [data/NOTICE.md](../data/NOTICE.md); there is no blanket licence for all inputs.
 The supplied 2017 manuscript was inspected privately and is not redistributed.
 
@@ -542,6 +671,11 @@ Gaedke, U. (1993). Ecosystem analysis based on biomass size distributions: A cas
 of a plankton community in a large lake. *Limnology and Oceanography*, 38, 112–127.
 <https://doi.org/10.4319/lo.1993.38.1.0112>.
 
+Harcourt, R., Garcia, N. S., and Martiny, A. C. (2024). *Synechococcus* batch culture data
+(cell quotas and ratios (C, N, P), size, and diameter) from laboratory experiments in 2021 to
+2022 with related isolates cultured across a range of temperatures. BCO-DMO dataset 926311,
+version 1. <https://doi.org/10.26008/1912/bco-dmo.926311.1>.
+
 Hatton, I. A., Heneghan, R. F., Bar-On, Y. M., and Galbraith, E. D. (2021). The global
 ocean size spectrum from bacteria to whales. *Science Advances*, 7, eabh3732.
 <https://doi.org/10.1126/sciadv.abh3732>.
@@ -551,6 +685,11 @@ Jaynes, E. T. (1957). Information theory and statistical mechanics. *Physical Re
 
 Jaynes, E. T. (1968). Prior probabilities. *IEEE Transactions on Systems Science and
 Cybernetics*, 4(3), 227–241. <https://bayes.wustl.edu/etj/articles/prior.pdf>.
+
+Malerba, M. E., Palacios, M. M., and Marshall, D. J. (2018). Do larger individuals cope with
+resource fluctuations better? An artificial selection approach. *Proceedings of the Royal
+Society B*, 285, 20181347. <https://doi.org/10.1098/rspb.2018.1347>. Data:
+<https://doi.org/10.5061/dryad.4mh47r7>.
 
 Newman, M. E. J. (2005). Power laws, Pareto distributions and Zipf's law.
 *Contemporary Physics*, 46, 323–351. <https://arxiv.org/abs/cond-mat/0412004>.
@@ -565,3 +704,9 @@ particles in the ocean. *Limnology and Oceanography*, 17, 327–340.
 
 Visser, M. (2013). Zipf's law, power laws and maximum entropy. *New Journal of Physics*,
 15, 043021. <https://arxiv.org/abs/1212.5567>.
+
+Wojcik, L. A. M., Pfennig, A., Flamm, S., Klauschies, T., Rosenbaum, B., Weithoff, G., and
+Gaedke, U. (2025). Top-down control and species composition influence nonlinearly the
+short-term response of experimental food webs to a nutrient pulse perturbation. *Proceedings
+of the Royal Society B*. <https://doi.org/10.1098/rspb.2025.1969>. Data:
+<https://doi.org/10.5061/dryad.51c59zwj5>.
