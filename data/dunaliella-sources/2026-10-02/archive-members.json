@@ -1,0 +1,1436 @@
+[
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/K_final.pdf",
+    "bytes": 12037,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/K_final.pdf",
+    "sha256": "3915610182d21877cfecdb2561e56d1fde1b099d3e6148f7079cecbba506fc37"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large4_FSW.pdf",
+    "bytes": 13849,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large4_FSW.pdf",
+    "sha256": "d2628477a1db58af5e6473270f01f1b7d2d9ecd953cffba5c0683a1b48ff4098"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control5_FSW.pdf",
+    "bytes": 13170,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control5_FSW.pdf",
+    "sha256": "dea61c2584d84a23373c9f640bc273930dece50a36684284c09b65886708ba65"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small1_Pfree.pdf",
+    "bytes": 14396,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small1_Pfree.pdf",
+    "sha256": "93e9b6caffa0ebc11293fb3b1d1f397680123bed8f25f87d4f27b387edf28351"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/DataSum_conv.RData",
+    "bytes": 5686,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/DataSum_conv.RData",
+    "sha256": "d765353d098defc1bf9d5e73340a7f0e55b0ab4f94d42708a690574a5ecc60d6"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large1_Pfree.pdf",
+    "bytes": 13858,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large1_Pfree.pdf",
+    "sha256": "2d635eab616b059ee7f8684200d951566e794fde78bda736df4d496b0ad5b609"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control1_NP.pdf",
+    "bytes": 14508,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control1_NP.pdf",
+    "sha256": "ee84c6b9d4f863fb95b75d3722ff233b1bcd389f722222500a336145d7bae201"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control7_Pfree.pdf",
+    "bytes": 14023,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control7_Pfree.pdf",
+    "sha256": "c9d17853c054b42bc873a33206ead24711bed0b14bf41c31fa2d5db2b07845bc"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large6_Nfree.pdf",
+    "bytes": 13861,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large6_Nfree.pdf",
+    "sha256": "366da3ef6042ad99a1a0b6c3d8643a2d5770e4c997bc0a4b96a38ed535ed9aa0"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small2_FSW.pdf",
+    "bytes": 14054,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small2_FSW.pdf",
+    "sha256": "5be0c7d503dc3dd680b8f0c42009a33f1dd0dfdd8ca319e7ea27e383bf0cf032"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small3_NP.pdf",
+    "bytes": 14458,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small3_NP.pdf",
+    "sha256": "23d6a73abef3c54fd38b2849fd0b24f9c7a1f79f69130eac19a095340723ec3a"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small6_Nfree.pdf",
+    "bytes": 14308,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small6_Nfree.pdf",
+    "sha256": "965ad3250e077f029d9c4badb62732ae7751c71c8e31c7a3d56d858e5c1fad72"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large2_NP.pdf",
+    "bytes": 14440,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large2_NP.pdf",
+    "sha256": "b1ea79484ea7e0005febe3d02200abcfe0510baf243044fd6c4ce39ca0af446c"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large7_Pfree.pdf",
+    "bytes": 14039,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large7_Pfree.pdf",
+    "sha256": "b019eaa7499abfad54c679cbe42e9681db60a72ccd5a0ed70562b22091c9be4b"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control1_Pfree.pdf",
+    "bytes": 14558,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control1_Pfree.pdf",
+    "sha256": "d386cbac8f60cd7aafa776f971abc988b532145a20c55a147800337075ec2ed6"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small1_NP.pdf",
+    "bytes": 14449,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small1_NP.pdf",
+    "sha256": "c935ba102738d44399c29f0acd41972601ebdc727d62da7a55531740d5a22746"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small3_FSW.pdf",
+    "bytes": 14606,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small3_FSW.pdf",
+    "sha256": "4ba3e902a8ce2a7ac7ed4fbac8d35066eeec62e784e8c9aef12bef37d00ea2f5"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small7_Pfree.pdf",
+    "bytes": 14623,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small7_Pfree.pdf",
+    "sha256": "bed4eabbd6b22ec09ab2dcb0c710d354e2c5213e13fcf93b402e18bda1c3d311"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large5_FSW.pdf",
+    "bytes": 13932,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large5_FSW.pdf",
+    "sha256": "869b56b612cc13b09289d7c11ab85f94f1e650b48278ee5091d364d0aab0065c"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control10_Nfree.pdf",
+    "bytes": 13815,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control10_Nfree.pdf",
+    "sha256": "aa1b5df3a7c904256d12a8bcd8500e08d316f07acf35a8ae5e7710f709bd7dd2"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control4_FSW.pdf",
+    "bytes": 14082,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control4_FSW.pdf",
+    "sha256": "dc518c0289432a2f0cfaf9ad35b16850e7788117728b37e0dedb34ebc8bc915e"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control3_NP.pdf",
+    "bytes": 14434,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control3_NP.pdf",
+    "sha256": "356def4565de2a15a009027d0777851698afc91f5d434d54cf5d379d88042b66"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control6_Nfree.pdf",
+    "bytes": 14395,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control6_Nfree.pdf",
+    "sha256": "70fc28bce9f38aea1d0ccf5fd7c5a06674aaaf0cd21a87f9ebc29918b4f0c6e3"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small9_NP.pdf",
+    "bytes": 14466,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small9_NP.pdf",
+    "sha256": "915d0e1532b717f16ab459863545ca30e8785572ad751c729a12d4f781c1f82b"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large8_NP.pdf",
+    "bytes": 14553,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large8_NP.pdf",
+    "sha256": "e692416af6338c9f28226a81ddad051f2b0f5f0fbbc55bc04a3f01ba4b10b73e"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large4_NP.pdf",
+    "bytes": 14513,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large4_NP.pdf",
+    "sha256": "be7c4d8f0f6a29015dd8fa3e7f609aaf79ffe9a4aa6eda41ddc3cca832e91864"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control10_Pfree.pdf",
+    "bytes": 14476,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control10_Pfree.pdf",
+    "sha256": "93aba9b705b0fe8f78e5bdfa401ac9d59512ee813a55410740b1ccdb5d694d97"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small5_NP.pdf",
+    "bytes": 14702,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small5_NP.pdf",
+    "sha256": "493beb7b6d6fa6aad160a79b124d35e94fc95c12570940e87701b34f73c12b44"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control6_Pfree.pdf",
+    "bytes": 14457,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control6_Pfree.pdf",
+    "sha256": "9b8cdf2550086a17b0924218a827320643f4ad1c8b84168649ab1565e85abdab"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small1_FSW.pdf",
+    "bytes": 14038,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small1_FSW.pdf",
+    "sha256": "c26c660858655710d5c368d2126e83920a3e66d55d6315839c41a1d0e3abb1e6"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control6_FSW.pdf",
+    "bytes": 14026,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control6_FSW.pdf",
+    "sha256": "6318222ddb90108768379eb2ce8bce1c5ce7c6bca25b7a4eeb67610585472d4a"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large7_Nfree.pdf",
+    "bytes": 14009,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large7_Nfree.pdf",
+    "sha256": "ef52dabcc19210a7e0261086bbfb6f281bce290e3d599285d7cb4d54c9685f9f"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control1_Nfree.pdf",
+    "bytes": 13649,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control1_Nfree.pdf",
+    "sha256": "49d2b57112833f699a191085cf23a0ac32a60287c15fb728a08f7f239a421d04"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control7_NP.pdf",
+    "bytes": 14484,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control7_NP.pdf",
+    "sha256": "d7a16bacd8b5a9bf77bd1790c20958cc45b5c48678f6e0b87f44e7ebfad52931"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large7_FSW.pdf",
+    "bytes": 13938,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large7_FSW.pdf",
+    "sha256": "8ad975428b7b36bc8458aeb5ccb9ceab80496f5bb356af7c4a7f94a899994d99"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small7_Nfree.pdf",
+    "bytes": 14548,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small7_Nfree.pdf",
+    "sha256": "abafeb2b0b44f9c42708265734a50f01d9d4fc3263a7f70dda130757c0053ee0"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small8_FSW.pdf",
+    "bytes": 14100,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small8_FSW.pdf",
+    "sha256": "330927eab1f90febc2eb81db3abbe055752ed138901ab36dbaf7a303d44c9083"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large6_Pfree.pdf",
+    "bytes": 14491,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large6_Pfree.pdf",
+    "sha256": "5a67611a29359f543aee10273cd13d29f6d15b868220b472ba308d21816d7ee7"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control5_NP.pdf",
+    "bytes": 14399,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control5_NP.pdf",
+    "sha256": "22ebb3ddcd357e9cb1a03e9cc94275a1596293e750fa90ea476f3fdb730ec954"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control7_FSW.pdf",
+    "bytes": 14030,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control7_FSW.pdf",
+    "sha256": "119a1ce9fb058bb6d594b61ec39a533142191683d7b84ba7793de9b931850b56"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control9_NP.pdf",
+    "bytes": 14348,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control9_NP.pdf",
+    "sha256": "3ddad5f68cd3e0e3a333b8901d81b9da3e7ed82d1b6f5a6602efc7bbc30f0115"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large6_FSW.pdf",
+    "bytes": 13852,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large6_FSW.pdf",
+    "sha256": "84c31cfd549d1fb1f6609aa954ecfe3fcbcc7ee8028d54270b72da059f53e689"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small9_FSW.pdf",
+    "bytes": 14556,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small9_FSW.pdf",
+    "sha256": "b2c8af3dceb0f2741da8a217bceff640ad63a8fa9f45da4895d75e0310abaddf"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small6_Pfree.pdf",
+    "bytes": 14003,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small6_Pfree.pdf",
+    "sha256": "9815259240216cccba4bf7a69e508bf7564375d4d52af7622d4fd1451193580e"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small7_NP.pdf",
+    "bytes": 14615,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small7_NP.pdf",
+    "sha256": "73ce0b1243224f1700a8ff5a27692b4219f9a44e1e676b37d479e8b7b36df871"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large6_NP.pdf",
+    "bytes": 14384,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large6_NP.pdf",
+    "sha256": "b82523ff3ae079b59bfb3b4d8c69406eb0d35d9910a85ebc0c097bec8b268b06"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small1_Nfree.pdf",
+    "bytes": 13985,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small1_Nfree.pdf",
+    "sha256": "c38a27f1b7dfd91dd0eeb38d39586bf9be487166ea17fa75442a3e11850b236a"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large1_Nfree.pdf",
+    "bytes": 13831,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large1_Nfree.pdf",
+    "sha256": "722dbc7ca902220e2695a3bc11792d473d66695370a5da55c221b1d838e0445f"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control7_Nfree.pdf",
+    "bytes": 13250,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control7_Nfree.pdf",
+    "sha256": "c85d5c664482e1f3a47b5788b8f5a44080c7f193499e6cfc754c83d77e211ba3"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small10_NP.pdf",
+    "bytes": 14528,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small10_NP.pdf",
+    "sha256": "2f2a16cd6f507e1eac0078403ea25088574a0a746ae6170596b5ac773ae69432"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large3_NP.pdf",
+    "bytes": 14460,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large3_NP.pdf",
+    "sha256": "20db4d10b635ad7c25b03604e61d8e95221cac00df4e675c6e52589715388f3d"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small5_FSW.pdf",
+    "bytes": 14497,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small5_FSW.pdf",
+    "sha256": "135949e4c3043c54ac971ab35810ba75d3b408d7ba4ca5bf9aeb6053b3a4bf5c"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small9_Nfree.pdf",
+    "bytes": 14008,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small9_Nfree.pdf",
+    "sha256": "d9c0c987664d5c7853cea620531d987d8d1f41801d06fe92264729e6f65c739b"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control5_Pfree.pdf",
+    "bytes": 14241,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control5_Pfree.pdf",
+    "sha256": "35149fe0b2b166c598d1beaf2534645f28d7c419f901bb6957e70d2c7780ff79"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small2_NP.pdf",
+    "bytes": 14552,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small2_NP.pdf",
+    "sha256": "1322d0182b383c8ac6b0e3e365d8ca9b7d11615692e93b0678a1c19c88b319fd"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large3_Pfree.pdf",
+    "bytes": 14200,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large3_Pfree.pdf",
+    "sha256": "1a975a8d3388930e7be8dad423b8f85ca1b8b8fbc09c6b05e117cff2755132b5"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large9_Nfree.pdf",
+    "bytes": 13995,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large9_Nfree.pdf",
+    "sha256": "bf4a066c34cffa402008095660767439a5c45a74a224cd64bf8f6f721b3df354"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small3_Pfree.pdf",
+    "bytes": 14517,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small3_Pfree.pdf",
+    "sha256": "3477e0445ae28a0cd147d7812b6a9271568838828237d66a6d37364740e1c496"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small4_Nfree.pdf",
+    "bytes": 14111,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small4_Nfree.pdf",
+    "sha256": "6700b3f2bf2d836f95e0b84a283c96d5e99b46aaa6e128a5473ebcc27874894f"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control8_Pfree.pdf",
+    "bytes": 14513,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control8_Pfree.pdf",
+    "sha256": "f0716d3988a41b7d402f05d10fdd33f48de6552093124e0dd30f337c2aac869f"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control2_FSW.pdf",
+    "bytes": 14404,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control2_FSW.pdf",
+    "sha256": "b25b419ffe3fdaa89d44a39dd6b355b4e76e40d7276ca0e16619da356de18c6c"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control2_Nfree.pdf",
+    "bytes": 13931,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control2_Nfree.pdf",
+    "sha256": "563f1c8f14398b74c79a1cf37a6cdd28aaa512df2dbfe5465b7791478c2652d2"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large4_Nfree.pdf",
+    "bytes": 14001,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large4_Nfree.pdf",
+    "sha256": "0caf46a502dacfb371c32a0d9aa929f1d2dba7986a4cd97f35297b4328daa2d1"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large3_FSW.pdf",
+    "bytes": 13143,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large3_FSW.pdf",
+    "sha256": "cdb28edf925cf75e24530dea4db213298dbff4b5a2b36bb355b1d552863c1f66"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small10_Pfree.pdf",
+    "bytes": 14613,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small10_Pfree.pdf",
+    "sha256": "cbaf1fa5d97c31752e837a5e14dc2432583a9d193dabe3d6d89329f7ad0eaa33"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large10_FSW.pdf",
+    "bytes": 13902,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large10_FSW.pdf",
+    "sha256": "99af679cca9403fc1b07b93f25aa7f477317cbae09c2be3ad0ba11d3556b46ef"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large10_Pfree.pdf",
+    "bytes": 14233,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large10_Pfree.pdf",
+    "sha256": "bd52d25fb1ca87eebdc46d5427d86188340a25ba1abf543955e2861fb9094149"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control2_NP.pdf",
+    "bytes": 14575,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control2_NP.pdf",
+    "sha256": "d5801bd9f17dc52a5a68000902d56dd3051590fd3689626f6dd293b8500f9ac8"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small5_Pfree.pdf",
+    "bytes": 14485,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small5_Pfree.pdf",
+    "sha256": "08d6fe411687a8b26dc5a7ad268cdb20fadb5c4cccf76e6987f6e23569748592"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control9_Nfree.pdf",
+    "bytes": 14072,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control9_Nfree.pdf",
+    "sha256": "4a13b094f4690156244e14e584f8cde26ed9007840ce256ee67e2d7f448001ed"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control3_FSW.pdf",
+    "bytes": 13925,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control3_FSW.pdf",
+    "sha256": "c5b45f2a7b295c8d562275c8f322732541f80e8bd6fef8872f318d033600ef59"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control3_Pfree.pdf",
+    "bytes": 14259,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control3_Pfree.pdf",
+    "sha256": "34a600d0ae51d048128becc1dd013ba0c59221b073b4a506afe75bd32b46fdbe"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large2_FSW.pdf",
+    "bytes": 13937,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large2_FSW.pdf",
+    "sha256": "368497214366bef7d86a6d0337c4213d162191356f4dd55cb42e2c90c2cfe827"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large5_Pfree.pdf",
+    "bytes": 14473,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large5_Pfree.pdf",
+    "sha256": "2f3bfec4ec2cf0bc5f6a57ef9f8defb799d4decd748f6343bbf3d5ae90165844"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large1_NP.pdf",
+    "bytes": 14538,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large1_NP.pdf",
+    "sha256": "91335018dcdfec26de064da33d4ee53640ba740c62eddf071ce77b8e3fa3a41e"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small8_Pfree.pdf",
+    "bytes": 14027,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small8_Pfree.pdf",
+    "sha256": "b6224a755fc5a8bb02d5005f51aa46b1f7a341cf096a3a232987c4c0e88ea048"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control4_Nfree.pdf",
+    "bytes": 14465,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control4_Nfree.pdf",
+    "sha256": "a43454c488b9213019266f04494c2f8df1f214c73b8f05b49ffb1d2f0eb01e95"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large2_Nfree.pdf",
+    "bytes": 13126,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large2_Nfree.pdf",
+    "sha256": "2436b4d0c7842db2e3fb515c0bcc6e8c293d38864449876a8d8f79caf7338cd8"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small4_FSW.pdf",
+    "bytes": 13988,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small4_FSW.pdf",
+    "sha256": "734269331857a4712bd9f9e8ef694dddc4975d414048afdb7f34ceb9b8db2892"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large8_Pfree.pdf",
+    "bytes": 13900,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large8_Pfree.pdf",
+    "sha256": "bcd465da16638f020ceec67b43596a18ce79311965ecdbd95c4dd5258b89c770"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small2_Nfree.pdf",
+    "bytes": 13842,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small2_Nfree.pdf",
+    "sha256": "e1af788da371cb1c841119c47c479cd0679c407822708d625e83807f7cdc2aa0"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small8_Nfree.pdf",
+    "bytes": 13837,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small8_Nfree.pdf",
+    "sha256": "08428c14ac4586303001c10fbf9a9580ecd426a397772ddf4e8a0bf64c5b9573"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control4_Pfree.pdf",
+    "bytes": 14459,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control4_Pfree.pdf",
+    "sha256": "983b78632ea3d76bdc4b90636107229685054219599f50c3bf18f2be8bd12c4a"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large2_Pfree.pdf",
+    "bytes": 14054,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large2_Pfree.pdf",
+    "sha256": "a9213913e698124dec314fb9d922a5da2b17683ae328aa73f0095c11ceae1713"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large8_Nfree.pdf",
+    "bytes": 13806,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large8_Nfree.pdf",
+    "sha256": "a0a25510f01c8019084d8454bcc020a0921f479e384d19b6a14a64d9f797c826"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small2_Pfree.pdf",
+    "bytes": 14507,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small2_Pfree.pdf",
+    "sha256": "e72c36bcd07ed28bfd6e1d17fe85be74b7517e2a11801713799d3321af51efe5"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large10_NP.pdf",
+    "bytes": 14534,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large10_NP.pdf",
+    "sha256": "50cd148c12c04270299ab1968fdb5409302f77b4a72bddc7a7c8b9d67ad3a13c"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control1_FSW.pdf",
+    "bytes": 13595,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control1_FSW.pdf",
+    "sha256": "9e49836834737f770b00564978c69efbb5e5a519aa64468035d27a49cec3151c"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control6_NP.pdf",
+    "bytes": 14458,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control6_NP.pdf",
+    "sha256": "379d25a6fbeb787ae271c0ef448f8c4a10e14664294775731ff88da61fcfc4c8"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small5_Nfree.pdf",
+    "bytes": 14045,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small5_Nfree.pdf",
+    "sha256": "2ded178853b6a97d4b935dea8366f74dde82d9d733f38a1dd2643728e8481ebb"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small6_FSW.pdf",
+    "bytes": 14012,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small6_FSW.pdf",
+    "sha256": "7df02cde91a56eaa5c6350d0b4a3027bd087922d5671d26363de6fea95108293"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control9_Pfree.pdf",
+    "bytes": 14611,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control9_Pfree.pdf",
+    "sha256": "bcfad147b47c10da0389e7144fb2cd166daec1f454bfaf5f040dc57649ae3591"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large10_Nfree.pdf",
+    "bytes": 13321,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large10_Nfree.pdf",
+    "sha256": "0b8b1fcf0cc678c40942d8909b5a6cdbf0b64513d0712528a897ed0a65905484"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control8_FSW.pdf",
+    "bytes": 14570,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control8_FSW.pdf",
+    "sha256": "83b524fe4849e0fb0738dee8bb4c193554046aa2d9dc9412b39780cd9c65e2e0"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control3_Nfree.pdf",
+    "bytes": 14285,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control3_Nfree.pdf",
+    "sha256": "e86aee82428ee300cdb57c9058c9598053fa3e02d6b29194104d986699cddc3b"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large9_NP.pdf",
+    "bytes": 13877,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large9_NP.pdf",
+    "sha256": "734a61b106c1bd068e1ebaaf4e1bfb5d6b13fb0a669044b0336d7382a301045b"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large5_Nfree.pdf",
+    "bytes": 14634,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large5_Nfree.pdf",
+    "sha256": "3c9a3e923d9bf4d421216e9a43351097603786ccfe829a2668d65972fb7a68f9"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small8_NP.pdf",
+    "bytes": 14605,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small8_NP.pdf",
+    "sha256": "e71a961cd562ef846d1f4d8375e192e2c09956392c94b23c8c289840e19199a6"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small4_NP.pdf",
+    "bytes": 14551,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small4_NP.pdf",
+    "sha256": "cf0c930ae9dea8943916bd2447c0c003874c81da887b1d54fb268bf567815e3a"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large9_FSW.pdf",
+    "bytes": 13088,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large9_FSW.pdf",
+    "sha256": "aa6fea3ecaf7240e54992deb7bcbbce56f6b75ba6aa621e8ddcb8025fc6caa83"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large5_NP.pdf",
+    "bytes": 14482,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large5_NP.pdf",
+    "sha256": "f72f185a522eeaa69aba7c778266417950a1207e34838441f57dc85281ce108f"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small4_Pfree.pdf",
+    "bytes": 13644,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small4_Pfree.pdf",
+    "sha256": "3870fbad93e0c8a3af211c47cf459ab1a74fbf768776e263421abc22bebc967c"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small7_FSW.pdf",
+    "bytes": 14591,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small7_FSW.pdf",
+    "sha256": "098998e32bccdb1924ae7817c98720ea8e35982605af5c33bd55b38076213a22"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control8_Nfree.pdf",
+    "bytes": 14347,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control8_Nfree.pdf",
+    "sha256": "ce8e21b8d824ce8bf6c95d07a6004e96ded1bebaabe3895de3a699fb009f1310"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control2_Pfree.pdf",
+    "bytes": 14542,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control2_Pfree.pdf",
+    "sha256": "310efe1a127e3cbaeb553f9d1fa8a0edf8681e24f4c4e2e39fc90c4d77e8bc46"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large7_NP.pdf",
+    "bytes": 14388,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large7_NP.pdf",
+    "sha256": "939c83fd2957d05728ebfadb53b462cf09ccdeb244f4051c75f293c666fdd0a1"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large4_Pfree.pdf",
+    "bytes": 14494,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large4_Pfree.pdf",
+    "sha256": "6e57d9c1468e7994a226c8fd7bbc1f097ae6cf146bfd737b1b964b53ada9c97a"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small10_Nfree.pdf",
+    "bytes": 14492,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small10_Nfree.pdf",
+    "sha256": "3e2d620d65a2106b2014ea687d31e08b2c297fb60ed017fcd0a2ed5fae93eb1c"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small6_NP.pdf",
+    "bytes": 13909,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small6_NP.pdf",
+    "sha256": "8120ac4293067b657afdf90df99727581ab2ea3ef3be53da196c7dab795288a3"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control9_FSW.pdf",
+    "bytes": 13911,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control9_FSW.pdf",
+    "sha256": "b56ee3c16677604e9878df8c2aa1a8e380d86907ac04d110a6196cb1366bc18c"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control10_FSW.pdf",
+    "bytes": 13989,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control10_FSW.pdf",
+    "sha256": "963fb64abdac14b59cce70ef73d33559076dc89a107594e2a8c2d69ad1e9fee8"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large8_FSW.pdf",
+    "bytes": 13806,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large8_FSW.pdf",
+    "sha256": "a77b961bfbf891a4983afbdd082acc5d3a6656706553ce6c7ef2ca87adb6245e"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small9_Pfree.pdf",
+    "bytes": 14826,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small9_Pfree.pdf",
+    "sha256": "dd6c464392dd76618d7d22d959e07dff2bff61f61dc075d3c5193e65eb775f47"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control5_Nfree.pdf",
+    "bytes": 14223,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control5_Nfree.pdf",
+    "sha256": "c24514f90406074f5984951cc5889b08f486804dd545590e915c5fa1ca72ec15"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large3_Nfree.pdf",
+    "bytes": 14002,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large3_Nfree.pdf",
+    "sha256": "97c407bda41a16c9cc68201585e151b211f8a66544616cfa5406b01a33382975"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large9_Pfree.pdf",
+    "bytes": 14710,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large9_Pfree.pdf",
+    "sha256": "9d3803544a9a8fdc2defed58640ff9bfbcee8094a41f660e3d5f05f8d4feef45"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control4_NP.pdf",
+    "bytes": 14792,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control4_NP.pdf",
+    "sha256": "ff7513d1f71c65fe9a47de39a745f8f1fb7077389df4b287edcb7f7fddeae253"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small3_Nfree.pdf",
+    "bytes": 13962,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small3_Nfree.pdf",
+    "sha256": "8a9111c07a600f60b4f1747fa564e3609908e4a7baee2b47b00c2f424bf6b0b5"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large1_FSW.pdf",
+    "bytes": 13891,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Large1_FSW.pdf",
+    "sha256": "461c6340963c96396042b08f849a280dde08380aba107b292742ed5967200ba2"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control10_NP.pdf",
+    "bytes": 14507,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control10_NP.pdf",
+    "sha256": "2535dc1a89a3ed73e72536b4247b90357d89a0bd7b27dc9a136af397d7c840ce"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control8_NP.pdf",
+    "bytes": 14605,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Control8_NP.pdf",
+    "sha256": "ba4997e91ef552f4d0fe9e8b0e45896b15066990393eb2356837267826a9353d"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small10_FSW.pdf",
+    "bytes": 14822,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Fits/nls.Small10_FSW.pdf",
+    "sha256": "393ffd37f04af03c6a764c7f63199fab6cbd2d5d379164a4068d95af8e564879"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/AllData across shelves.RData",
+    "bytes": 29187,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/AllData across shelves.RData",
+    "sha256": "c2279e2b01782a8706465bc8f5fa3fc1cdb5b46a035089d6cd246dd4bd663d85"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Illustrator/MM_Vm and K_2_ill3.pdf",
+    "bytes": 341038,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Illustrator/MM_Vm and K_2_ill3.pdf",
+    "sha256": "44008dd5221ec0baea9a9553fc9b7e5ce3d58a01eeccf32ec8dd60249e48e89b"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Illustrator/MM_Vm and K_2_ill3.png",
+    "bytes": 59325,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/Illustrator/MM_Vm and K_2_ill3.png",
+    "sha256": "cdc6e8fc62b2303bf291127aa3f60d428f04041b473849f60e4c14365478d46f"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/GetData.R",
+    "bytes": 10113,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. S7/GetData.R",
+    "sha256": "681aaf17c64cd1bbfa8ac393792b4ebafbad2090d9b7ec9684ebcda8eefcc26e"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fig3_UMAX and K_2.pdf",
+    "bytes": 16387,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fig3_UMAX and K_2.pdf",
+    "sha256": "8cb72040d20a94873f8f4963bf4f37c083cf0a53838bf3063ac94b381010d41e"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/CalibrationCurve.biovolcount.sqrt.RData",
+    "bytes": 6181,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/CalibrationCurve.biovolcount.sqrt.RData",
+    "sha256": "3fbada12b0edf23ca44fee0aaeafaf749619e7fb3872cb5f2b3ea2c4275bd8e7"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Codes for Malerba et al (in review).R",
+    "bytes": 16599,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Codes for Malerba et al (in review).R",
+    "sha256": "21164b0dd67c06dbf79618bc4769b37041a158518e2e39aa3658daa58eb87aad"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.6_P-Deplete.pdf",
+    "bytes": 14138,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.6_P-Deplete.pdf",
+    "sha256": "3fa4bf18a2282015efc16b7aecca58fe23fcef9665027ac9f508e8682140b23a"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.3_P-Deplete.pdf",
+    "bytes": 15158,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.3_P-Deplete.pdf",
+    "sha256": "b92e220254a6a4788f5847712864e8dc3c31ca4e95bbac4c43d3bb2dbc90f731"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.7_Replete.pdf",
+    "bytes": 14564,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.7_Replete.pdf",
+    "sha256": "74bc38a2142a58c02dd17c15caaa043682f144dfdf15bd3809873a324259dc65"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.2_P-Deplete.pdf",
+    "bytes": 14127,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.2_P-Deplete.pdf",
+    "sha256": "c4e82c1efd01298403b6278a2b4196320343f8769214a1868acfabd2c5c9a9b7"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.7_P-Deplete.pdf",
+    "bytes": 14531,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.7_P-Deplete.pdf",
+    "sha256": "801dc713161bde100518a0c72a3e30cd1fc4f436a67975db4ebb303fb0d3136a"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.2_P-Deplete.pdf",
+    "bytes": 14894,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.2_P-Deplete.pdf",
+    "sha256": "1f8d76bde611c568a2e69d30863d76f831641c9366ea732df2ff236fb07b09a6"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.6_P-Deplete.pdf",
+    "bytes": 14480,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.6_P-Deplete.pdf",
+    "sha256": "f95418dfc155421467b75637cf1f8a0ac09e3a24095c5e37112b2f082e0125b7"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.4_Replete.pdf",
+    "bytes": 14209,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.4_Replete.pdf",
+    "sha256": "ab9f0ebebbe8da88e4e3c634fb3aa78e6444fcc5e3676f8fda1b990e963b70cd"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.9_Replete.pdf",
+    "bytes": 14227,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.9_Replete.pdf",
+    "sha256": "9f772df7ce859b98e6c5f4402e55c06e0f714d3eb80a934052f39ea91bd528c4"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.1_P-Deplete.pdf",
+    "bytes": 14841,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.1_P-Deplete.pdf",
+    "sha256": "a0ada56014e2a00ce86bf7ccce9e20b74d63a9d9e0dfc28ff7116c7cfc34d26f"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.8_N-Deplete.pdf",
+    "bytes": 14312,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.8_N-Deplete.pdf",
+    "sha256": "2bf620e5a56bfa8dd53bc6dbc0d9aa5f9d2e80c3ef0543d695b7b6d4ebca47a7"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.10_Replete.pdf",
+    "bytes": 13307,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.10_Replete.pdf",
+    "sha256": "ded7e16888a2b81d8c27bc22a133f0e8d12a08238f9c3bb888d928f8548e8cc4"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.5_P-Deplete.pdf",
+    "bytes": 14217,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.5_P-Deplete.pdf",
+    "sha256": "ee9d1d9eb1154fa54905ae00bea78dbb67afb7cd49df2babd310950408372f9f"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.1_Replete.pdf",
+    "bytes": 13688,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.1_Replete.pdf",
+    "sha256": "034fe7968885272454a72b1badba92af0134171ef0fed35e03bddbc4b80e2bb0"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.9_N-Deplete.pdf",
+    "bytes": 14342,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.9_N-Deplete.pdf",
+    "sha256": "2fe074ebf33cba3e72eccc8382c38791c7a322fda5b09992141f3b3d90ec227d"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.5_P-Deplete.pdf",
+    "bytes": 14423,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.5_P-Deplete.pdf",
+    "sha256": "5a41c5f529dd668e85544b649cc054d4daaeafe6b295f8aedb1bcdd31cd90334"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.2_Replete.pdf",
+    "bytes": 14458,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.2_Replete.pdf",
+    "sha256": "5180834a3fbe777656c2b88d161f016bdb8bdedb2f463e87b7f2289da7414688"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.9_N-Deplete.pdf",
+    "bytes": 14282,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.9_N-Deplete.pdf",
+    "sha256": "94c45fc7283e91aadca56dfe13640a3d5e51b7708c08aa46b8fee5f72fd673f7"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.1_P-Deplete.pdf",
+    "bytes": 14357,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.1_P-Deplete.pdf",
+    "sha256": "61563acde358ae0226e6d3387189c6cdc67b2a954693aa2df5655b88f8ea6d49"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.4_P-Deplete.pdf",
+    "bytes": 14588,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.4_P-Deplete.pdf",
+    "sha256": "2cabaf95d8cb98283d27004045f65e74e3d7aeb899720f3501daa0082c3d8c4b"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.8_Replete.pdf",
+    "bytes": 14499,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.8_Replete.pdf",
+    "sha256": "c62f6f7a12fc555cf4724f20be897855a98f41a4de0536e84d5c39a9836d0518"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.5_Replete.pdf",
+    "bytes": 14406,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.5_Replete.pdf",
+    "sha256": "e7fb703383ee4aa4f35449f2cdf1ec4fddae1a90c8b68ad3cd00f616d46e7c2e"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.6_Replete.pdf",
+    "bytes": 14365,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.6_Replete.pdf",
+    "sha256": "3e79b11e59285b4d2d348f7411ccc05cf0d65b9c57742d14822fd0dbf5b63242"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/DataSum_conv_red.RData",
+    "bytes": 12453,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/DataSum_conv_red.RData",
+    "sha256": "448f7f2d7739d28b302b25aa3f1559243cca79f41d84e5796c64b6905cf2256d"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.7_N-Deplete.pdf",
+    "bytes": 13594,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.7_N-Deplete.pdf",
+    "sha256": "a1647603055d98fa8387e2aff8e95492b895ed2cd243909461860b3094b70f63"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.3_N-Deplete.pdf",
+    "bytes": 14314,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.3_N-Deplete.pdf",
+    "sha256": "fbca772b66bd61ed5540fd0d6c7ee983274f53a6b00db6130eaac128e845a4e6"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.1_Replete.pdf",
+    "bytes": 13426,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.1_Replete.pdf",
+    "sha256": "3d6a4437dda1ee9985350a18026c1199f4e0dfdd2ba53c0e806a6937b826ecc5"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.10_N-Deplete.pdf",
+    "bytes": 13898,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.10_N-Deplete.pdf",
+    "sha256": "7b69d303ccd2f25f8827635e231379cc5f0959f0d5901d92cb268eee84f2ea57"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.2_Replete.pdf",
+    "bytes": 13813,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.2_Replete.pdf",
+    "sha256": "971629ee4ada805d06a1c21c7dfa3586957a8aec8aae40ef595b592b976a705a"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.6_N-Deplete.pdf",
+    "bytes": 14283,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.6_N-Deplete.pdf",
+    "sha256": "46a578198e4b092f6b9d8b05d9043dabf5432e32a30c26cedd926566a46dffe2"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.3_N-Deplete.pdf",
+    "bytes": 13466,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.3_N-Deplete.pdf",
+    "sha256": "87a55f99c3a49ac735c97734152e925d0ad077bb7b4cbc613a76b367b839d877"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.2_N-Deplete.pdf",
+    "bytes": 14677,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.2_N-Deplete.pdf",
+    "sha256": "d645c0482c92699ef51367547c6bb71f55a6ee15141c92167e1729a673cc65e8"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.8_Replete.pdf",
+    "bytes": 14415,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.8_Replete.pdf",
+    "sha256": "bf0a0d5425424696e0483bb564cb274f881518026367d92f85602ef48c26f5dd"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.7_N-Deplete.pdf",
+    "bytes": 14121,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.7_N-Deplete.pdf",
+    "sha256": "9fadbfc9dc7b7f71ecb612e78cafad92c4661c9af57ed4032af9e4d1ee86cb4d"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.10_N-Deplete.pdf",
+    "bytes": 13906,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.10_N-Deplete.pdf",
+    "sha256": "00e6a351d0a4514d7bfdad0f23c0cc86f1177cc8e180ffa2ff805f3e7daffb56"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.5_N-Deplete.pdf",
+    "bytes": 14024,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.5_N-Deplete.pdf",
+    "sha256": "71c6091bc51bc60f3a188ee8601f29034713e37106dcd3ca7cce72a0785c18ac"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.10_N-Deplete.pdf",
+    "bytes": 14319,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.10_N-Deplete.pdf",
+    "sha256": "7c555cf33b38cb512726597e9ce2ad2d56000c0360a4fae5db074b0057b3c962"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.7_Replete.pdf",
+    "bytes": 14535,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.7_Replete.pdf",
+    "sha256": "91861d1aee572d3da077cdfca3e85fcd0aa43f3c95954f44421d033591d55bd8"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.8_P-Deplete.pdf",
+    "bytes": 14272,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.8_P-Deplete.pdf",
+    "sha256": "c8fecdc23da7077ef15c7d16e728fce6ba7138943638d30db736b22cccabc828"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.1_N-Deplete.pdf",
+    "bytes": 13908,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.1_N-Deplete.pdf",
+    "sha256": "3fcd75506ff65289228d576aa81ad126f750950395e6a464f842cf7d15f568a8"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.4_N-Deplete.pdf",
+    "bytes": 14174,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.4_N-Deplete.pdf",
+    "sha256": "aefec12e2eac8abdf16f1c2edbaf7034c761194ba1b884755463fee929d77886"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.8_P-Deplete.pdf",
+    "bytes": 14832,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.8_P-Deplete.pdf",
+    "sha256": "556a9976f97793233780d4e97e88db03fac111861d0d7662fc0547f81b7b91c4"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.3_Replete.pdf",
+    "bytes": 14245,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.3_Replete.pdf",
+    "sha256": "ce175d84a492b631dedb46b90fa4d01fb90163b193e8e4af1f84342df8252fe5"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.4_N-Deplete.pdf",
+    "bytes": 13825,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.4_N-Deplete.pdf",
+    "sha256": "34bcfd084fa84f236fa91c6e6f90eddc4a2bb299e1a3b1295ada2094facdf95b"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.4_Replete.pdf",
+    "bytes": 13865,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.4_Replete.pdf",
+    "sha256": "6e62272243f18563c79cbff55af1100199af198e3a9b60e6e0dffb2cd1ab529d"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.9_P-Deplete.pdf",
+    "bytes": 14361,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.9_P-Deplete.pdf",
+    "sha256": "da4e749a2501ff00ffaed72e71290c6e52901a0724cf0b89527bf475ff8ec50b"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.5_N-Deplete.pdf",
+    "bytes": 14210,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.5_N-Deplete.pdf",
+    "sha256": "28ac56c8b6d1baece45bb26e872f6a1421f279ad5552d6ff292a06dfb92b30df"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.4_Replete.pdf",
+    "bytes": 13572,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.4_Replete.pdf",
+    "sha256": "a7545a2e63eb116914a1897271d879a27eeb612b905052381d3fa35a65584575"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.9_Replete.pdf",
+    "bytes": 14290,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.9_Replete.pdf",
+    "sha256": "37726055e149767ccdc9d86b70da4de4e743c724151020e2417400ddd5d9c77e"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.9_P-Deplete.pdf",
+    "bytes": 15183,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.9_P-Deplete.pdf",
+    "sha256": "8298d7d34083e5a539421567b431b9ddadf046af219aaf9ab0d3e75b77453d83"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.1_N-Deplete.pdf",
+    "bytes": 14123,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.1_N-Deplete.pdf",
+    "sha256": "ac5d30890f070eb79848298a474f34ab2630547023374749c1922be0d9096121"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.10_Replete.pdf",
+    "bytes": 13548,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.10_Replete.pdf",
+    "sha256": "6f958f50b6636919190c79bdc25dc45d5a356b0c6dc7afaa4cdba04894de92c9"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.3_Replete.pdf",
+    "bytes": 14330,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.3_Replete.pdf",
+    "sha256": "d22247b8b082408a574f1388c7b59225924cf1e73d7e81556d67e3af11ca0a07"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.4_N-Deplete.pdf",
+    "bytes": 13506,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.4_N-Deplete.pdf",
+    "sha256": "b2182d3c164c63686f3e8d7d413d58d57ecb6c2062ec66cddd92f87f63b46c8b"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.8_P-Deplete.pdf",
+    "bytes": 14873,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.8_P-Deplete.pdf",
+    "sha256": "c44b1e5bab46d4e26a65093a39f79a5a01fd9ae7a5458d858ca7ab0bdd31866e"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.1_N-Deplete.pdf",
+    "bytes": 14191,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.1_N-Deplete.pdf",
+    "sha256": "88ee0450384cc48e621b9e9a29bf62d03037eb38a1ccdaf10715ed146908201c"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.10_Replete.pdf",
+    "bytes": 13009,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.10_Replete.pdf",
+    "sha256": "8b13741eba0d7db54628f754ec83fb0e4b6d8926779ce0043e6db3ded8dab3c4"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.5_N-Deplete.pdf",
+    "bytes": 14395,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.5_N-Deplete.pdf",
+    "sha256": "6eb686bc392d31b39b0bbdba045f5550298afca379cac497a569d79736ed10fa"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.9_P-Deplete.pdf",
+    "bytes": 14599,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.9_P-Deplete.pdf",
+    "sha256": "8044be78b3c61fb9c203db3eb1c4b137d08648dd92c475b7dfc35f9522b1f621"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.8_Replete.pdf",
+    "bytes": 14429,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.8_Replete.pdf",
+    "sha256": "4c6522412fea2b1ce80a55a37670ebcaf59c20f266760d30ba5ad2e4ed076c06"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.2_N-Deplete.pdf",
+    "bytes": 13586,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.2_N-Deplete.pdf",
+    "sha256": "364f7599a47392274830b32722459fa48cc3d7e3e2844cdbb97ce594b9ca74bb"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.5_Replete.pdf",
+    "bytes": 13790,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.5_Replete.pdf",
+    "sha256": "f7ff7f2bfee31b36f0247f182a7b7ec3482bd128cf98168d6990620719cb6b55"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.6_N-Deplete.pdf",
+    "bytes": 13752,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.6_N-Deplete.pdf",
+    "sha256": "5669d027c13022bc238b73bacfd26e22ee1aea984f5c53be8b4533c1c2dee8bc"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.6_N-Deplete.pdf",
+    "bytes": 13445,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.6_N-Deplete.pdf",
+    "sha256": "cb058e3620d3b1b3461e5e9316b5387228ce83fd8f4704c40589e5440f4589c0"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.1_Replete.pdf",
+    "bytes": 14100,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.1_Replete.pdf",
+    "sha256": "0a33ce6a455ea958e61d62fb783aea042f37da2c264a2245a189caa96d588692"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.3_N-Deplete.pdf",
+    "bytes": 13780,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.3_N-Deplete.pdf",
+    "sha256": "d3116309c102209d3e4fc7f50faea535e2e8c43310a291bcf884abdfd48b77f5"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.2_N-Deplete.pdf",
+    "bytes": 13392,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.2_N-Deplete.pdf",
+    "sha256": "380a5d57c2af32ae356323fcfabb93525cd58f3b1f9da0019898c91a92178ff9"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.7_N-Deplete.pdf",
+    "bytes": 14194,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.7_N-Deplete.pdf",
+    "sha256": "d8f5901a09731b2e8decbf031abf67033c6b402af27b86b3a6d21c71a2f3e5cf"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.6_Replete.pdf",
+    "bytes": 14163,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.6_Replete.pdf",
+    "sha256": "e4e68af56550bc3fa3ff3fc95150897ecb247696670d34cac114cd23f1b955ef"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.8_N-Deplete.pdf",
+    "bytes": 14493,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.8_N-Deplete.pdf",
+    "sha256": "0a9cd1aa9586bfc2f47e6917c1e195303a8d570e103a783752eee9ce2cf14a29"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.5_Replete.pdf",
+    "bytes": 13526,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.5_Replete.pdf",
+    "sha256": "7f784eb7db2da231f0f96fc500481cfdae470e60c02c1f059c5a4f0d9b20be59"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.4_P-Deplete.pdf",
+    "bytes": 13800,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.4_P-Deplete.pdf",
+    "sha256": "be42c0fafd0522aa4ec2d810eaf8dfc1d5a1fbb4ee4651ac47c64725158cba6d"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.9_N-Deplete.pdf",
+    "bytes": 13664,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.9_N-Deplete.pdf",
+    "sha256": "485c82668117e36e8a8e8d7f1bf15108bb31ce124a8cddf75c1afabbc043fad1"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.2_Replete.pdf",
+    "bytes": 14328,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.2_Replete.pdf",
+    "sha256": "da629f5084488521576b3b7ee421ed4de34fae469de08633038ce58f0a747f49"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.10_P-Deplete.pdf",
+    "bytes": 14428,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.10_P-Deplete.pdf",
+    "sha256": "cadcbbb0d3cfb2b20f2dfd507ff005dcbccdef9aa7f4188faf359a6b67d03647"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.5_P-Deplete.pdf",
+    "bytes": 14415,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.5_P-Deplete.pdf",
+    "sha256": "12983fe4ca387a6161b621fe249e5370d98d964fa3e20e5fab857beef63fdc2a"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.1_P-Deplete.pdf",
+    "bytes": 14031,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.1_P-Deplete.pdf",
+    "sha256": "e837fff8c06be91b7ab85badad6b36dcf87a5db8e5283505d74dcc67f984a7bd"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.8_N-Deplete.pdf",
+    "bytes": 14052,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.8_N-Deplete.pdf",
+    "sha256": "7d07937a930ab87595eb205a767550aafbaa1a33117b85c1f6150e4d5f9227fa"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.6_Replete.pdf",
+    "bytes": 13493,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.6_Replete.pdf",
+    "sha256": "ccafa25acb56718df84495e1cf01b98028edefdedaa47997c989559a8e3e897c"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.4_P-Deplete.pdf",
+    "bytes": 14624,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.4_P-Deplete.pdf",
+    "sha256": "987f2930eca85a37c965eca61f662c1eedf9edc9e6028e44b949a8151b6d811d"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.6_P-Deplete.pdf",
+    "bytes": 15145,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.6_P-Deplete.pdf",
+    "sha256": "29998625d41fc5fae54220be9dc85629eaee1aa56f0a2280bff9d6cdc593f8b8"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.9_Replete.pdf",
+    "bytes": 13582,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.9_Replete.pdf",
+    "sha256": "86a4098a1d8ffa1e4065ff099282a2238e52e5f5629623512306ae81ec4def31"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.3_P-Deplete.pdf",
+    "bytes": 14531,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.3_P-Deplete.pdf",
+    "sha256": "6adf5a71704b0b17c8bdd037190779e79d13380e433a3cb41602b64b88e8ae56"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.2_P-Deplete.pdf",
+    "bytes": 15173,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.2_P-Deplete.pdf",
+    "sha256": "4c541834a400527a94d6ab5c48adb74ad5ec9eb344b0778d24fa57df32c90605"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.3_Replete.pdf",
+    "bytes": 13523,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.3_Replete.pdf",
+    "sha256": "dc60d74b82956199741698b21d248c5f2948c2535668076d71b5d80187d3b5b1"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.7_P-Deplete.pdf",
+    "bytes": 13606,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.7_P-Deplete.pdf",
+    "sha256": "0a383782a4b4003c371f310f1c016006f5fd27fb3cf1b8371c824806b2526362"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.10_P-Deplete.pdf",
+    "bytes": 14527,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.S.10_P-Deplete.pdf",
+    "sha256": "6268f67c4a836aca5ef8daf94b76d830cda8353e083c5188ecac82e3802aaa85"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.7_P-Deplete.pdf",
+    "bytes": 14938,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.7_P-Deplete.pdf",
+    "sha256": "2345c5ecd3d5ab1aebb7972a59f8c0f66ce2270a70ade9e57edf1872a07be3b7"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.7_Replete.pdf",
+    "bytes": 14285,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.7_Replete.pdf",
+    "sha256": "da1aeaeffbfe4e3270669ac4b10c9dd86abb3396e45dd7afdd7b04bc918d237a"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.3_P-Deplete.pdf",
+    "bytes": 14366,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.C.3_P-Deplete.pdf",
+    "sha256": "5dd190c8b6a9fbfac95cf3a9032463ff67d26ed9f98489b7bad8438d8ff17d03"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.10_P-Deplete.pdf",
+    "bytes": 14757,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Fits/nls.L.10_P-Deplete.pdf",
+    "sha256": "4937407155ee95bab6080083dcdd1451ee47319ecb3ffaffc34edfd1d8292ea4"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/table.whichBest.csv",
+    "bytes": 1537,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/table.whichBest.csv",
+    "sha256": "ae9ec6d88ac7eb45437e6ed748b303f19ebc4e14265b3d0ced4f476948bbb2b1"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/FigS4_KCELLSUL.pdf",
+    "bytes": 10869,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/FigS4_KCELLSUL.pdf",
+    "sha256": "8f22590c888e8207dbb9ca141620c5220d21f88caec2a8841046a67ec5e6f418"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Illustrator/Fig3_UMAX and K_2.pdf",
+    "bytes": 270078,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Illustrator/Fig3_UMAX and K_2.pdf",
+    "sha256": "ef3c1c9a697ed56184659c68a6da59fba8ca2a8ac73dab65cbd40177bc8f470d"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Illustrator/Fig3_UMAX and K_2.png",
+    "bytes": 68621,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Illustrator/Fig3_UMAX and K_2.png",
+    "sha256": "b9ccee9ec9cf0354d9aa00c48325617419a40c505d8a7a0954d3c7eb5de42459"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Illustrator/FigS4_KCELLSUL.pdf",
+    "bytes": 193551,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Illustrator/FigS4_KCELLSUL.pdf",
+    "sha256": "ec3533bd9100cea61e50c7321745ac0d5b95cdf6dbafe89861de3a416589dcbd"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Illustrator/FigS4_KCELLSUL.png",
+    "bytes": 41871,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/Illustrator/FigS4_KCELLSUL.png",
+    "sha256": "e7edbccbccfdab289f74384cd281285bd2efe2abfb4bf396f1f30ec22b3ecb03"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/SummaryData.RData",
+    "bytes": 8869,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/SummaryData.RData",
+    "sha256": "28fa9c4c8153775c7599cc6d79e79e5f8cad644b724102285dceddc1317f6ae2"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/All stats.RData",
+    "bytes": 100510,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/All stats.RData",
+    "sha256": "62815cfbbc898a0ddb006f6ea6f569d5df67f2a91bc15f5547d30ad16c2b9e66"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/All raw data.RData",
+    "bytes": 69902,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of demographic rates/All analysis Fig. 3/All raw data.RData",
+    "sha256": "74e90d8012663858b1d0b678f12365aa0feb6c736caad5cf148273cf678dfed8"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of cell size/SummaryData.csv",
+    "bytes": 20711,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of cell size/SummaryData.csv",
+    "sha256": "3c648fd978ad11ec4d67171e0a1048ca649ae54a4da8b998f97dd6118f16131c"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of cell size/Get all sizes.R",
+    "bytes": 2829,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of cell size/Get all sizes.R",
+    "sha256": "2ec9366ac096a3bafd504db1089602f3354b95d289241feeb51be81e61f8e7ed"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of cell size/Summary Volumes.pdf",
+    "bytes": 5386,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of cell size/Summary Volumes.pdf",
+    "sha256": "495aeb85fe6cc20ea117654ed7e5e351cd24787492953ec540f0f556e5da0417"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of cell size/Summary Circularity_red.pdf",
+    "bytes": 5453,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of cell size/Summary Circularity_red.pdf",
+    "sha256": "2393aa29201540e6b427ec61d7dfa7e399e10a6658a05702193cadcb7e0ce911"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of cell size/CombData.RData",
+    "bytes": 979309,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of cell size/CombData.RData",
+    "sha256": "90ae0140bfcfede5c005a87f1b531c89e5d206348ee96129edb0a477ee3458ac"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of cell size/Summary Volumes (noLog).pdf",
+    "bytes": 5518,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of cell size/Summary Volumes (noLog).pdf",
+    "sha256": "01f6d43cb317f8343a92f1596b65e5b53ab2777d981c873ea921b52e127d1b44"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of cell size/Summary Circularity.pdf",
+    "bytes": 5372,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of cell size/Summary Circularity.pdf",
+    "sha256": "df186b2255349d4d61d41c9a958411b57340460ca9fc7b245076df538d49433b"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of cell size/SummaryData.RData",
+    "bytes": 8610,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of cell size/SummaryData.RData",
+    "sha256": "9a076dc6e70c5e9de12e067c0482c880917ad6a243a997c4375ce99e6591413c"
+  },
+  {
+    "archive_member": "Codes and analysis/Analysis of cell size/All Volumes.pdf",
+    "bytes": 35697,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/Analysis of cell size/All Volumes.pdf",
+    "sha256": "6cd1bb2c7f63ee9a9989095b832dd3ca608bca22b62febd82cdde04347cb271c"
+  },
+  {
+    "archive_member": "Codes and analysis/READ ME_Instructions.rtf",
+    "bytes": 1660,
+    "path": "data/dunaliella-sources/2026-10-02/extracted/Codes and analysis/READ ME_Instructions.rtf",
+    "sha256": "cba449f88f7cba6d3fcbe00a0a7f9d8f9fe4e8db2db0984eca4d8f3195eea0ff"
+  }
+]
