@@ -33,6 +33,7 @@ from orthopolity.size_budget import (  # noqa: E402
 )
 
 CONFIG = ROOT / 'configs/dunaliella_size_budget_2026-10-02.json'
+AMENDMENT = ROOT / 'configs/dunaliella_size_budget_2026-10-02_amendment-1.json'
 PARTITION = ROOT / 'configs/dunaliella_size_budget_2026-10-02_partition.json'
 SOURCES = ROOT / 'data/dunaliella-sources/2026-10-02'
 BUNDLE = SOURCES / 'extracted/Codes and analysis'
@@ -109,21 +110,28 @@ def assigned_slopes():
 
 
 def read_sizes():
-    """Log mean cell volume per (lineage, history), cross-checked across both summaries."""
+    """Log mean prolate-spheroid volume, (pi/6) L W^2, per (lineage, history).
+
+    The second summary repeats every shape column exactly but computes volume
+    as (4 pi/3) L W^2 from full axes, exactly 8 times larger (amendment 1);
+    both facts are verified rather than assumed.
+    """
     frame = data_frame(load_rdata(SIZES)['SummaryData'])
     check = data_frame(load_rdata(SIZES_CHECK)['SummaryData'])
+    shape = ('Size', 'Major', 'Minor', 'Perim', 'Circ')
     rows = list(zip(frame['Treat'].factor_labels(), frame['Rep'].decode(), frame['Media'].factor_labels(),
-                    frame['Vol'].decode()))
-    other = {(treat, int(rep), SIZE_LABELS[media]): volume for treat, rep, media, volume in
+                    frame['Vol'].decode(), *(frame[column].decode() for column in shape)))
+    other = {(treat, int(rep), SIZE_LABELS[media]): (volume, values) for treat, rep, media, volume, *values in
              zip(check['Treat'].factor_labels(), check['Rep'].decode(), check['Media'].factor_labels(),
-                 check['Vol'].decode())}
+                 check['Vol'].decode(), *(check[column].decode() for column in shape))}
     sizes = {}
-    for treat, rep, media, volume in rows:
+    for treat, rep, media, volume, *values in rows:
         key = (f'{TREATMENT_CODES[treat]}.{int(rep)}', media)
         if key in sizes or not (math.isfinite(volume) and volume > 0):
             raise ValueError(f'Duplicate or invalid size summary: {key}')
-        if other.get((treat, int(rep), media)) != volume:
-            raise ValueError(f'Cell-size summaries disagree: {key}')
+        repeated = other.get((treat, int(rep), media))
+        if repeated is None or repeated[1] != values or not math.isclose(repeated[0], 8.*volume, rel_tol=1e-12):
+            raise ValueError(f'Cell-size summaries are not the documented factor-8 pair: {key}')
         sizes[key] = math.log(volume)
     if len(other) != len(sizes):
         raise ValueError('Cell-size summaries cover different lineages')
@@ -271,7 +279,8 @@ def forecast():
             raise RuntimeError(f'Source snapshot differs: {source}')
     save_json(target, dict(
         run_id=config['run_id'], status='forecasts_retained_before_scoring', frozen_utc=now(),
-        config_reference=ref(CONFIG), partition_reference=ref(PARTITION), input_references=inputs,
+        config_reference=ref(CONFIG), partition_reference=ref(PARTITION), amendment_reference=ref(AMENDMENT),
+        input_references=inputs,
         source_references=sources, source_snapshot_references=snapshots,
         assigned_slopes=slopes, size_log_volumes={f'{lineage}|{history}': value for (lineage, history), value in sorted(sizes.items())},
         git_head_at_forecast=subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
@@ -285,7 +294,8 @@ def forecast():
 
 def verify_forecasts():
     frozen = read_json(DATA / 'frozen-forecasts.json')
-    for reference in [frozen['config_reference'], frozen['partition_reference'], *frozen['input_references'].values(),
+    for reference in [frozen['config_reference'], frozen['partition_reference'], frozen['amendment_reference'],
+                      *frozen['input_references'].values(),
                       *frozen['source_references'], *frozen['source_snapshot_references']]:
         verify_reference(reference)
     return frozen
