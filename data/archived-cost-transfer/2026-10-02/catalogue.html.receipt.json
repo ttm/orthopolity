@@ -1,0 +1,35 @@
+{
+  "bytes": 238981,
+  "final_url": "https://www.bco-dmo.org/dataset/926311",
+  "http_status": 200,
+  "md5": "356ca08f1ab942a6b7313274c008b4cf",
+  "requested_url": "https://www.bco-dmo.org/dataset/926311",
+  "response_headers": {
+    "Age": "656",
+    "Cache-Control": "public, max-age=0, must-revalidate",
+    "Connection": "close",
+    "Content-Length": "238981",
+    "Content-Type": "text/html; charset=utf-8",
+    "Date": "Fri, 02 Oct 2026 14:18:43 GMT",
+    "Etag": "\"jcna1bszg154c1\"",
+    "Server": "Vercel",
+    "Strict-Transport-Security": "max-age=63072000",
+    "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "X-Matched-Path": "/dataset/[id]",
+    "X-Nextjs-Prerender": "1",
+    "X-Nextjs-Stale-Time": "300",
+    "X-Powered-By": "Next.js",
+    "X-Vercel-Cache": "HIT",
+    "X-Vercel-Id": "fra1::iad1::9bzjs-1790951380315-bb2099e6e5fa"
+  },
+  "retrieval_finished_utc": "2026-10-02T14:29:40.492746+00:00",
+  "retrieval_started_utc": "2026-10-02T14:29:39.930717+00:00",
+  "sha256": "eed5a88ffa6c96a66809259ee5974290b0dd4b8f7e73810cb21b4081ade5a0b1",
+  "tls": {
+    "ca_file": "/etc/ssl/cert.pem",
+    "ca_file_sha256": "9dae8d76e55cb08991f2b672d58999ea15560d910759c16b544f843bdffbb994",
+    "certificate_verification": true,
+    "hostname_verification": true,
+    "openssl": "OpenSSL 3.0.11 19 Sep 2023"
+  }
+}

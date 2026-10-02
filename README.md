@@ -54,6 +54,9 @@ and their restriction response accurately. Solar neutrality remains unresolved;
 its formal eligibility rule was fixed before acquisition. Statistical calibration
 failures, instrument changes and engineered-runtime scope are retained.
 
+Resume ongoing work from [docs/ongoing-research.md](docs/ongoing-research.md),
+which records current decisions, acquisition status and exact next steps.
+
 Further empirical work follows the [available-data programme](docs/available-data-programme.md):
 published resource measurements and interventions, separate calibration records,
 and evaluation on whole held-out communities or studies. New experimental

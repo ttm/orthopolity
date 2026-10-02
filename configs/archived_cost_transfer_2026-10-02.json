@@ -1,0 +1,31 @@
+{
+  "run_id": "archived-cost-transfer-2026-10-02",
+  "dataset_doi": "10.26008/1912/bco-dmo.926311.1",
+  "dataset_version": "1 (2024-04-30)",
+  "metadata_url": "https://www.bco-dmo.org/dataset/926311/description",
+  "catalogue_url": "https://www.bco-dmo.org/dataset/926311",
+  "data_url": "https://datadocs.bco-dmo.org/file/m7knBNyHR0kwkV/926311_v1_syn-batch-cultures.csv",
+  "published_csv_md5": "0dea9ff74bffe353e442495b23312ac3",
+  "license": "CC-BY-4.0",
+  "training_temperatures_degC": [16, 18, 20, 22],
+  "validation_temperatures_degC": [25, 27],
+  "strains": ["BL107", "CC9311", "CC9902", "ROS8604"],
+  "resources": ["QC", "QN", "QP"],
+  "resource_unit": "fmol per cell",
+  "coordinate": "Cell_Diameter_um",
+  "coordinate_unit": "micrometres",
+  "models": ["fixed_cubic", "pooled_free_power", "strain_geometric_mean", "strain_temperature_trend"],
+  "model_rules": {
+    "fixed_cubic": "OLS training log-quota intercept with log-diameter coefficient fixed to 3; no strain term",
+    "pooled_free_power": "OLS training log-quota intercept and log-diameter coefficient; no strain term",
+    "strain_geometric_mean": "Mean training log quota separately for each strain",
+    "strain_temperature_trend": "OLS training log quota versus temperature separately for each strain; no validation refit"
+  },
+  "training_weighting": "Each eligible biological-culture row has equal weight within the specified fit; positive diameter and resource required in all fits for a common comparison population",
+  "evaluation_weighting": "Mean absolute log error and mean squared log error within each strain-temperature cell, then equal weight across observed cells; also report individual rows, per-strain/per-temperature results, and maximum error",
+  "missingness": "Keep every source culture in membership. Empty, N/A, NA, NaN are missing; nonpositive diameter or quota excluded separately by resource. No imputation or substitution from ratios. All four models score the same resource-specific common eligible rows.",
+  "calibration_diagnostics": "Training pooled and within-strain demeaned log-quota/log-diameter slopes; leave-one-strain-out descriptive pooled slopes; no confidence intervals or independence claims",
+  "forecast_scope": "Quota prediction conditional on measured validation diameter, strain, and temperature, not a prediction of diameter itself or of allocation neutrality",
+  "freeze_scope": "Local retrospective protocol recorded before CSV acquisition; a second coefficient-and-prediction freeze precedes conversion of validation quota fields. Published metadata/methods were already inspected, not external preregistration or guaranteed external blinding.",
+  "excluded_claims": ["neutrality test", "nutrient-flux estimate", "geometric dimension measurement", "number of independent inputs", "universal cost exponent", "chemostat taxon cost calibration"]
+}
