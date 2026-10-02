@@ -1,0 +1,1497 @@
+{
+  "acquisition_reference": {
+    "path": "data/archived-cost-transfer/2026-10-02/926311_v1_syn-batch-cultures.csv.receipt.json",
+    "sha256": "3dc4c97afc3285d904c62af810dc35cabcc618133425c1ab5ba3f2a308dc3461"
+  },
+  "calibration_reference": {
+    "path": "data/archived-cost-transfer/2026-10-02/calibration.json",
+    "sha256": "0fbde15accc807355bb9bd7dd12fd9955273bbb9a5b41f1cf3a1b94398571c4e"
+  },
+  "config": {
+    "calibration_diagnostics": "Training pooled and within-strain demeaned log-quota/log-diameter slopes; leave-one-strain-out descriptive pooled slopes; no confidence intervals or independence claims",
+    "catalogue_url": "https://www.bco-dmo.org/dataset/926311",
+    "coordinate": "Cell_Diameter_um",
+    "coordinate_unit": "micrometres",
+    "data_url": "https://datadocs.bco-dmo.org/file/m7knBNyHR0kwkV/926311_v1_syn-batch-cultures.csv",
+    "dataset_doi": "10.26008/1912/bco-dmo.926311.1",
+    "dataset_version": "1 (2024-04-30)",
+    "evaluation_weighting": "Mean absolute log error and mean squared log error within each strain-temperature cell, then equal weight across observed cells; also report individual rows, per-strain/per-temperature results, and maximum error",
+    "excluded_claims": [
+      "neutrality test",
+      "nutrient-flux estimate",
+      "geometric dimension measurement",
+      "number of independent inputs",
+      "universal cost exponent",
+      "chemostat taxon cost calibration"
+    ],
+    "forecast_scope": "Quota prediction conditional on measured validation diameter, strain, and temperature, not a prediction of diameter itself or of allocation neutrality",
+    "freeze_scope": "Local retrospective protocol recorded before CSV acquisition; a second coefficient-and-prediction freeze precedes conversion of validation quota fields. Published metadata/methods were already inspected, not external preregistration or guaranteed external blinding.",
+    "license": "CC-BY-4.0",
+    "metadata_url": "https://www.bco-dmo.org/dataset/926311/description",
+    "missingness": "Keep every source culture in membership. Empty, N/A, NA, NaN are missing; nonpositive diameter or quota excluded separately by resource. No imputation or substitution from ratios. All four models score the same resource-specific common eligible rows.",
+    "model_rules": {
+      "fixed_cubic": "OLS training log-quota intercept with log-diameter coefficient fixed to 3; no strain term",
+      "pooled_free_power": "OLS training log-quota intercept and log-diameter coefficient; no strain term",
+      "strain_geometric_mean": "Mean training log quota separately for each strain",
+      "strain_temperature_trend": "OLS training log quota versus temperature separately for each strain; no validation refit"
+    },
+    "models": [
+      "fixed_cubic",
+      "pooled_free_power",
+      "strain_geometric_mean",
+      "strain_temperature_trend"
+    ],
+    "published_csv_md5": "0dea9ff74bffe353e442495b23312ac3",
+    "resource_unit": "fmol per cell",
+    "resources": [
+      "QC",
+      "QN",
+      "QP"
+    ],
+    "run_id": "archived-cost-transfer-2026-10-02",
+    "strains": [
+      "BL107",
+      "CC9311",
+      "CC9902",
+      "ROS8604"
+    ],
+    "training_temperatures_degC": [
+      16,
+      18,
+      20,
+      22
+    ],
+    "training_weighting": "Each eligible biological-culture row has equal weight within the specified fit; positive diameter and resource required in all fits for a common comparison population",
+    "validation_temperatures_degC": [
+      25,
+      27
+    ]
+  },
+  "evaluation_started_utc": "2026-10-02T15:00:43.932897+00:00",
+  "fitted": {
+    "QC": {
+      "diagnostics": {
+        "inference": "Finite observed calibration slopes; no confidence or asymptotic dimension claim",
+        "leave_one_strain_out_pooled_cost_degrees": {
+          "BL107": 2.706622425764348,
+          "CC9311": 2.6479155383626582,
+          "CC9902": 3.4790843565719625,
+          "ROS8604": 2.6734831397626917
+        },
+        "within_strain_demeaned_cost_degree": 4.8018936638116685
+      },
+      "diameter_range_um": [
+        0.638,
+        1.298
+      ],
+      "eligible_training_rows": 42,
+      "models": {
+        "fixed_cubic": {
+          "coefficient": 3.0,
+          "log_intercept": 2.8599585222294834
+        },
+        "pooled_free_power": {
+          "coefficient": 2.7371484001064212,
+          "log_intercept": 2.8502210735083153
+        },
+        "strain_geometric_mean": {
+          "BL107": {
+            "log_intercept": 2.5507851183385832
+          },
+          "CC9311": {
+            "log_intercept": 3.265541805578115
+          },
+          "CC9902": {
+            "log_intercept": 1.7911413969747254
+          },
+          "ROS8604": {
+            "log_intercept": 3.4454154862639546
+          }
+        },
+        "strain_temperature_trend": {
+          "BL107": {
+            "coefficient": -0.03833774748494742,
+            "log_intercept": 3.2792023205525833
+          },
+          "CC9311": {
+            "coefficient": -0.17285452313512037,
+            "log_intercept": 6.596919887818615
+          },
+          "CC9902": {
+            "coefficient": -0.0484544015211078,
+            "log_intercept": 2.7214659061799953
+          },
+          "ROS8604": {
+            "coefficient": 0.022595198416642245,
+            "log_intercept": 3.0085749835422027
+          }
+        }
+      },
+      "training_culture_ids": [
+        "BL107:16:1",
+        "BL107:16:2",
+        "BL107:16:3",
+        "BL107:18:1",
+        "BL107:18:2",
+        "BL107:18:3",
+        "BL107:20:1",
+        "BL107:20:2",
+        "BL107:20:3",
+        "BL107:22:1",
+        "BL107:22:2",
+        "BL107:22:3",
+        "CC9311:16:1",
+        "CC9311:16:2",
+        "CC9311:18:1",
+        "CC9311:18:2",
+        "CC9311:18:3",
+        "CC9311:20:1",
+        "CC9311:20:2",
+        "CC9311:20:3",
+        "CC9311:22:1",
+        "CC9311:22:2",
+        "CC9311:22:3",
+        "CC9902:16:1",
+        "CC9902:16:2",
+        "CC9902:16:3",
+        "CC9902:18:3",
+        "CC9902:20:1",
+        "CC9902:20:2",
+        "CC9902:20:3",
+        "CC9902:22:1",
+        "CC9902:22:2",
+        "CC9902:22:3",
+        "ROS8604:16:2",
+        "ROS8604:18:1",
+        "ROS8604:18:2",
+        "ROS8604:18:3",
+        "ROS8604:20:1",
+        "ROS8604:20:2",
+        "ROS8604:20:3",
+        "ROS8604:22:1",
+        "ROS8604:22:2"
+      ]
+    },
+    "QN": {
+      "diagnostics": {
+        "inference": "Finite observed calibration slopes; no confidence or asymptotic dimension claim",
+        "leave_one_strain_out_pooled_cost_degrees": {
+          "BL107": 2.3542993850113865,
+          "CC9311": 2.515647449903322,
+          "CC9902": 3.3479246753195633,
+          "ROS8604": 2.051554586537218
+        },
+        "within_strain_demeaned_cost_degree": 3.9494820298091877
+      },
+      "diameter_range_um": [
+        0.638,
+        1.298
+      ],
+      "eligible_training_rows": 42,
+      "models": {
+        "fixed_cubic": {
+          "coefficient": 3.0,
+          "log_intercept": 0.8960840839024898
+        },
+        "pooled_free_power": {
+          "coefficient": 2.3905159247561825,
+          "log_intercept": 0.8735054884841706
+        },
+        "strain_geometric_mean": {
+          "BL107": {
+            "log_intercept": 0.5734967699016952
+          },
+          "CC9311": {
+            "log_intercept": 1.1006655782560062
+          },
+          "CC9902": {
+            "log_intercept": -0.020983182999774495
+          },
+          "ROS8604": {
+            "log_intercept": 1.576484160908078
+          }
+        },
+        "strain_temperature_trend": {
+          "BL107": {
+            "coefficient": -0.04916904007709794,
+            "log_intercept": 1.507708531366556
+          },
+          "CC9311": {
+            "coefficient": -0.15154415345019762,
+            "log_intercept": 4.0213347174779965
+          },
+          "CC9902": {
+            "coefficient": -0.00844725034441333,
+            "log_intercept": 0.14120402361296144
+          },
+          "ROS8604": {
+            "coefficient": 0.029276167805029008,
+            "log_intercept": 1.0104782500108498
+          }
+        }
+      },
+      "training_culture_ids": [
+        "BL107:16:1",
+        "BL107:16:2",
+        "BL107:16:3",
+        "BL107:18:1",
+        "BL107:18:2",
+        "BL107:18:3",
+        "BL107:20:1",
+        "BL107:20:2",
+        "BL107:20:3",
+        "BL107:22:1",
+        "BL107:22:2",
+        "BL107:22:3",
+        "CC9311:16:1",
+        "CC9311:16:2",
+        "CC9311:18:1",
+        "CC9311:18:2",
+        "CC9311:18:3",
+        "CC9311:20:1",
+        "CC9311:20:2",
+        "CC9311:20:3",
+        "CC9311:22:1",
+        "CC9311:22:2",
+        "CC9311:22:3",
+        "CC9902:16:1",
+        "CC9902:16:2",
+        "CC9902:16:3",
+        "CC9902:18:3",
+        "CC9902:20:1",
+        "CC9902:20:2",
+        "CC9902:20:3",
+        "CC9902:22:1",
+        "CC9902:22:2",
+        "CC9902:22:3",
+        "ROS8604:16:2",
+        "ROS8604:18:1",
+        "ROS8604:18:2",
+        "ROS8604:18:3",
+        "ROS8604:20:1",
+        "ROS8604:20:2",
+        "ROS8604:20:3",
+        "ROS8604:22:1",
+        "ROS8604:22:2"
+      ]
+    },
+    "QP": {
+      "diagnostics": {
+        "inference": "Finite observed calibration slopes; no confidence or asymptotic dimension claim",
+        "leave_one_strain_out_pooled_cost_degrees": {
+          "BL107": 2.895478455513979,
+          "CC9311": 2.9509364689788757,
+          "CC9902": 3.650421557618687,
+          "ROS8604": 2.758966897198031
+        },
+        "within_strain_demeaned_cost_degree": 3.635760043644684
+      },
+      "diameter_range_um": [
+        0.638,
+        1.298
+      ],
+      "eligible_training_rows": 42,
+      "models": {
+        "fixed_cubic": {
+          "coefficient": 3.0,
+          "log_intercept": -1.6874947497309132
+        },
+        "pooled_free_power": {
+          "coefficient": 2.932930053776392,
+          "log_intercept": -1.6899793842636621
+        },
+        "strain_geometric_mean": {
+          "BL107": {
+            "log_intercept": -2.0241982583471647
+          },
+          "CC9311": {
+            "log_intercept": -1.2784561390831548
+          },
+          "CC9902": {
+            "log_intercept": -2.8343825097647573
+          },
+          "ROS8604": {
+            "log_intercept": -0.9828090074514777
+          }
+        },
+        "strain_temperature_trend": {
+          "BL107": {
+            "coefficient": -0.09345363743978252,
+            "log_intercept": -0.24857914699129707
+          },
+          "CC9311": {
+            "coefficient": -0.1378394484785978,
+            "log_intercept": 1.3780859588680017
+          },
+          "CC9902": {
+            "coefficient": 0.0032799349638769713,
+            "log_intercept": -2.897357261071197
+          },
+          "ROS8604": {
+            "coefficient": 0.017286315914239115,
+            "log_intercept": -1.3170111151267667
+          }
+        }
+      },
+      "training_culture_ids": [
+        "BL107:16:1",
+        "BL107:16:2",
+        "BL107:16:3",
+        "BL107:18:1",
+        "BL107:18:2",
+        "BL107:18:3",
+        "BL107:20:1",
+        "BL107:20:2",
+        "BL107:20:3",
+        "BL107:22:1",
+        "BL107:22:2",
+        "BL107:22:3",
+        "CC9311:16:1",
+        "CC9311:16:2",
+        "CC9311:18:1",
+        "CC9311:18:2",
+        "CC9311:18:3",
+        "CC9311:20:1",
+        "CC9311:20:2",
+        "CC9311:20:3",
+        "CC9311:22:1",
+        "CC9311:22:2",
+        "CC9311:22:3",
+        "CC9902:16:1",
+        "CC9902:16:2",
+        "CC9902:16:3",
+        "CC9902:18:3",
+        "CC9902:20:1",
+        "CC9902:20:2",
+        "CC9902:20:3",
+        "CC9902:22:1",
+        "CC9902:22:2",
+        "CC9902:22:3",
+        "ROS8604:16:2",
+        "ROS8604:18:1",
+        "ROS8604:18:2",
+        "ROS8604:18:3",
+        "ROS8604:20:1",
+        "ROS8604:20:2",
+        "ROS8604:20:3",
+        "ROS8604:22:1",
+        "ROS8604:22:2"
+      ]
+    }
+  },
+  "frozen_plan": {
+    "path": "data/archived-cost-transfer/2026-10-02/frozen-plan.json",
+    "sha256": "ba5d8eae1e45441a475ef355d7a910c76d626fd3f6b0d883c9006c5fd8284ac6"
+  },
+  "interpretation": "Independently published retained elemental quotas conditional on calibrated diameter; finite slopes confound strain and temperature, and are not allocation neutrality, causal dimensionality, uptake fluxes, or a universal law.",
+  "kind": "retrospective_archived_quota_cost_transfer",
+  "missingness": {
+    "training": {
+      "QC": {
+        "eligible": 42,
+        "missing_diameter": 0,
+        "missing_quota": 0,
+        "total": 42
+      },
+      "QN": {
+        "eligible": 42,
+        "missing_diameter": 0,
+        "missing_quota": 0,
+        "total": 42
+      },
+      "QP": {
+        "eligible": 42,
+        "missing_diameter": 0,
+        "missing_quota": 0,
+        "total": 42
+      }
+    },
+    "validation": {
+      "QC": {
+        "eligible": 10,
+        "missing_diameter": 0,
+        "missing_quota": 0,
+        "total": 10
+      },
+      "QN": {
+        "eligible": 10,
+        "missing_diameter": 0,
+        "missing_quota": 0,
+        "total": 10
+      },
+      "QP": {
+        "eligible": 10,
+        "missing_diameter": 0,
+        "missing_quota": 0,
+        "total": 10
+      }
+    }
+  },
+  "raw_reference": {
+    "path": "data/archived-cost-transfer/2026-10-02/926311_v1_syn-batch-cultures.csv",
+    "sha256": "4192fd69842c7ce4dc9a66a689a32f3c393bf833f7126119efaa5989babbc766"
+  },
+  "retained_cultures": 52,
+  "run_id": "archived-cost-transfer-2026-10-02",
+  "scores": {
+    "QC": {
+      "eligible_validation_rows": 10,
+      "excluded": [],
+      "models": {
+        "fixed_cubic": {
+          "cells": [
+            {
+              "mean_absolute_log_error": 0.1279427183434736,
+              "mean_squared_log_error": 0.022890744458671983,
+              "rows": 3,
+              "strain": "BL107",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.1541624590949199,
+              "mean_squared_log_error": 0.05159922323249427,
+              "rows": 3,
+              "strain": "CC9311",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.012823935926169927,
+              "mean_squared_log_error": 0.0001662390950178696,
+              "rows": 2,
+              "strain": "CC9902",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.2360176633482698,
+              "mean_squared_log_error": 0.06178539611208002,
+              "rows": 2,
+              "strain": "ROS8604",
+              "temperature_degC": 25.0
+            }
+          ],
+          "equal_cell_mean_absolute_log_error": 0.1327366941782083,
+          "equal_cell_root_mean_squared_log_error": 0.18469001251980582,
+          "geometric_absolute_error_factor": 1.141949276848988,
+          "maximum_absolute_log_error": 0.3887472957077813
+        },
+        "pooled_free_power": {
+          "cells": [
+            {
+              "mean_absolute_log_error": 0.13104340413891835,
+              "mean_squared_log_error": 0.023727982808535622,
+              "rows": 3,
+              "strain": "BL107",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.14161518374836124,
+              "mean_squared_log_error": 0.042400922345562225,
+              "rows": 3,
+              "strain": "CC9311",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.052006999179806,
+              "mean_squared_log_error": 0.0027065137260677,
+              "rows": 2,
+              "strain": "CC9902",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.2380822698400722,
+              "mean_squared_log_error": 0.07564630556108336,
+              "rows": 2,
+              "strain": "ROS8604",
+              "temperature_degC": 25.0
+            }
+          ],
+          "equal_cell_mean_absolute_log_error": 0.14068696422678945,
+          "equal_cell_root_mean_squared_log_error": 0.19005375847457537,
+          "geometric_absolute_error_factor": 1.1510642672887363,
+          "maximum_absolute_log_error": 0.37578898118299264
+        },
+        "strain_geometric_mean": {
+          "cells": [
+            {
+              "mean_absolute_log_error": 0.06606451169884393,
+              "mean_squared_log_error": 0.008142428674151849,
+              "rows": 3,
+              "strain": "BL107",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.24026155988987016,
+              "mean_squared_log_error": 0.08935744664326566,
+              "rows": 3,
+              "strain": "CC9311",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.23057090763419752,
+              "mean_squared_log_error": 0.053164729209636996,
+              "rows": 2,
+              "strain": "CC9902",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.2595816039060397,
+              "mean_squared_log_error": 0.07135826343045906,
+              "rows": 2,
+              "strain": "ROS8604",
+              "temperature_degC": 25.0
+            }
+          ],
+          "equal_cell_mean_absolute_log_error": 0.19911964578223784,
+          "equal_cell_root_mean_squared_log_error": 0.23559651310955004,
+          "geometric_absolute_error_factor": 1.2203279642595248,
+          "maximum_absolute_log_error": 0.4893696178769136
+        },
+        "strain_temperature_trend": {
+          "cells": [
+            {
+              "mean_absolute_log_error": 0.26473189320777574,
+              "mean_squared_log_error": 0.07702093859038786,
+              "rows": 3,
+              "strain": "BL107",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.7497234362476389,
+              "mean_squared_log_error": 0.5937170603415195,
+              "rows": 3,
+              "strain": "CC9311",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.5116064364566226,
+              "mean_squared_log_error": 0.26174293158622364,
+              "rows": 2,
+              "strain": "CC9902",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.2595816039060397,
+              "mean_squared_log_error": 0.07160587604667029,
+              "rows": 2,
+              "strain": "ROS8604",
+              "temperature_degC": 25.0
+            }
+          ],
+          "equal_cell_mean_absolute_log_error": 0.44641084245451923,
+          "equal_cell_root_mean_squared_log_error": 0.5010206598945799,
+          "geometric_absolute_error_factor": 1.5626933554409184,
+          "maximum_absolute_log_error": 0.9043876928768135
+        }
+      },
+      "observed_cells": 4,
+      "ranking_by_primary_error": [
+        "fixed_cubic",
+        "pooled_free_power",
+        "strain_geometric_mean",
+        "strain_temperature_trend"
+      ],
+      "rows": [
+        {
+          "culture_id": "BL107:25:1",
+          "diameter_um": 0.95,
+          "log_error": {
+            "fixed_cubic": 0.15316930419800467,
+            "pooled_free_power": 0.15691437997041646,
+            "strain_geometric_mean": -0.00212421653024375,
+            "strain_temperature_trend": -0.2321507014399291
+          },
+          "observed_quota_fmol_per_cell": 12.84441819,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 14.970455703246275,
+            "pooled_free_power": 15.02662631013981,
+            "strain_geometric_mean": 12.817162822958734,
+            "strain_temperature_trend": 10.183396841679958
+          },
+          "strain": "BL107",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "BL107:25:2",
+          "diameter_um": 0.954,
+          "log_error": {
+            "fixed_cubic": 0.018867917824190616,
+            "pooled_free_power": 0.02150857348485591,
+            "strain_geometric_mean": -0.1490306634651577,
+            "strain_temperature_trend": -0.37905714837484306
+          },
+          "observed_quota_fmol_per_cell": 14.87699086,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 15.16035352643378,
+            "pooled_free_power": 15.200439703392481,
+            "strain_geometric_mean": 12.817162822958734,
+            "strain_temperature_trend": 10.183396841679958
+          },
+          "strain": "BL107",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "BL107:25:3",
+          "diameter_um": 0.953,
+          "log_error": {
+            "fixed_cubic": 0.2117909330082255,
+            "pooled_free_power": 0.21470725896148268,
+            "strain_geometric_mean": 0.04703865510113037,
+            "strain_temperature_trend": -0.182987829808555
+          },
+          "observed_quota_fmol_per_cell": 12.22822083,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 15.11272941409708,
+            "pooled_free_power": 15.156867388189022,
+            "strain_geometric_mean": 12.817162822958734,
+            "strain_temperature_trend": 10.183396841679958
+          },
+          "strain": "BL107",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "CC9311:25:1",
+          "diameter_um": 1.107,
+          "log_error": {
+            "fixed_cubic": -0.01502501890843666,
+            "pooled_free_power": -0.05148229314664299,
+            "strain_geometric_mean": 0.08559730326069559,
+            "strain_temperature_trend": -0.9043876928768135
+          },
+          "observed_quota_fmol_per_cell": 24.04541905,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 23.686836772700165,
+            "pooled_free_power": 22.838831178814797,
+            "strain_geometric_mean": 26.194299364316322,
+            "strain_temperature_trend": 9.73333711798967
+          },
+          "strain": "CC9311",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "CC9311:25:2",
+          "diameter_um": 1.107,
+          "log_error": {
+            "fixed_cubic": 0.3887472957077813,
+            "pooled_free_power": 0.352290021469575,
+            "strain_geometric_mean": 0.4893696178769136,
+            "strain_temperature_trend": -0.5006153782605955
+          },
+          "observed_quota_fmol_per_cell": 16.0574383,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 23.686836772700165,
+            "pooled_free_power": 22.838831178814797,
+            "strain_geometric_mean": 26.194299364316322,
+            "strain_temperature_trend": 9.73333711798967
+          },
+          "strain": "CC9311",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "CC9311:25:3",
+          "diameter_um": 1.112,
+          "log_error": {
+            "fixed_cubic": 0.05871506266854176,
+            "pooled_free_power": 0.021073236628865732,
+            "strain_geometric_mean": 0.1458177585320013,
+            "strain_temperature_trend": -0.8441672376055078
+          },
+          "observed_quota_fmol_per_cell": 22.64013117,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 24.00924848631211,
+            "pooled_free_power": 23.12229453966599,
+            "strain_geometric_mean": 26.194299364316322,
+            "strain_temperature_trend": 9.73333711798967
+          },
+          "strain": "CC9311",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "CC9902:25:1",
+          "diameter_um": 0.753,
+          "log_error": {
+            "fixed_cubic": -0.011487611721735291,
+            "pooled_free_power": 0.05334332338424064,
+            "strain_geometric_mean": -0.22923458342976288,
+            "strain_temperature_trend": -0.510270112252188
+          },
+          "observed_quota_fmol_per_cell": 7.541159729,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 7.4550254996180225,
+            "pooled_free_power": 7.954352823428729,
+            "strain_geometric_mean": 5.9962927122838785,
+            "strain_temperature_trend": 4.527210056308251
+          },
+          "strain": "CC9902",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "CC9902:25:2",
+          "diameter_um": 0.753,
+          "log_error": {
+            "fixed_cubic": -0.014160260130604563,
+            "pooled_free_power": 0.050670674975371366,
+            "strain_geometric_mean": -0.23190723183863216,
+            "strain_temperature_trend": -0.5129427606610573
+          },
+          "observed_quota_fmol_per_cell": 7.561341555,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 7.4550254996180225,
+            "pooled_free_power": 7.954352823428729,
+            "strain_geometric_mean": 5.9962927122838785,
+            "strain_temperature_trend": 4.527210056308251
+          },
+          "strain": "CC9902",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "ROS8604:25:2",
+          "diameter_um": 1.219,
+          "log_error": {
+            "fixed_cubic": -0.3139988065798409,
+            "pooled_free_power": -0.37578898118299264,
+            "strain_geometric_mean": -0.3226343940427734,
+            "strain_temperature_trend": -0.19459493634846892
+          },
+          "observed_quota_fmol_per_cell": 43.29555095,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 31.628261549403273,
+            "pooled_free_power": 29.733099874238075,
+            "strain_geometric_mean": 31.35630885616069,
+            "strain_temperature_trend": 35.639513209239844
+          },
+          "strain": "ROS8604",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "ROS8604:25:3",
+          "diameter_um": 1.2,
+          "log_error": {
+            "fixed_cubic": 0.15803652011669866,
+            "pooled_free_power": 0.10037555849715174,
+            "strain_geometric_mean": 0.19652881376930598,
+            "strain_temperature_trend": 0.32456827146361045
+          },
+          "observed_quota_fmol_per_cell": 25.7616428,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 30.17226704208726,
+            "pooled_free_power": 28.481712965391925,
+            "strain_geometric_mean": 31.35630885616069,
+            "strain_temperature_trend": 35.639513209239844
+          },
+          "strain": "ROS8604",
+          "temperature_degC": 25.0
+        }
+      ]
+    },
+    "QN": {
+      "eligible_validation_rows": 10,
+      "excluded": [],
+      "models": {
+        "fixed_cubic": {
+          "cells": [
+            {
+              "mean_absolute_log_error": 0.154641699635802,
+              "mean_squared_log_error": 0.027836473029877757,
+              "rows": 3,
+              "strain": "BL107",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.29854683488127237,
+              "mean_squared_log_error": 0.21149051626663654,
+              "rows": 3,
+              "strain": "CC9311",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.18566961187548717,
+              "mean_squared_log_error": 0.06299988797265928,
+              "rows": 2,
+              "strain": "CC9902",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.24396697904416886,
+              "mean_squared_log_error": 0.08165151862220675,
+              "rows": 2,
+              "strain": "ROS8604",
+              "temperature_degC": 25.0
+            }
+          ],
+          "equal_cell_mean_absolute_log_error": 0.2207062813591826,
+          "equal_cell_root_mean_squared_log_error": 0.3098299517039066,
+          "geometric_absolute_error_factor": 1.246957122219808,
+          "maximum_absolute_log_error": 0.7914433185892331
+        },
+        "pooled_free_power": {
+          "cells": [
+            {
+              "mean_absolute_log_error": 0.16183137858553465,
+              "mean_squared_log_error": 0.03024575534573817,
+              "rows": 3,
+              "strain": "BL107",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.3172233285270332,
+              "mean_squared_log_error": 0.17827325124218277,
+              "rows": 3,
+              "strain": "CC9311",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.3359955849578489,
+              "mean_squared_log_error": 0.1414197163098323,
+              "rows": 2,
+              "strain": "CC9902",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.2872550015789671,
+              "mean_squared_log_error": 0.1443941184059898,
+              "rows": 2,
+              "strain": "ROS8604",
+              "temperature_degC": 25.0
+            }
+          ],
+          "equal_cell_mean_absolute_log_error": 0.27557632341234595,
+          "equal_cell_root_mean_squared_log_error": 0.3515440375343262,
+          "geometric_absolute_error_factor": 1.3172896410025883,
+          "maximum_absolute_log_error": 0.7069084400342629
+        },
+        "strain_geometric_mean": {
+          "cells": [
+            {
+              "mean_absolute_log_error": 0.0646569006303902,
+              "mean_squared_log_error": 0.005063405036393236,
+              "rows": 3,
+              "strain": "BL107",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.3260958448374223,
+              "mean_squared_log_error": 0.17430972636694061,
+              "rows": 3,
+              "strain": "CC9311",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.16889844048618458,
+              "mean_squared_log_error": 0.04284819010067345,
+              "rows": 2,
+              "strain": "CC9902",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.26753091960193875,
+              "mean_squared_log_error": 0.07308565850174592,
+              "rows": 2,
+              "strain": "ROS8604",
+              "temperature_degC": 25.0
+            }
+          ],
+          "equal_cell_mean_absolute_log_error": 0.20679552638898396,
+          "equal_cell_root_mean_squared_log_error": 0.2717107745405734,
+          "geometric_absolute_error_factor": 1.2297310985135137,
+          "maximum_absolute_log_error": 0.6910638517632499
+        },
+        "strain_temperature_trend": {
+          "cells": [
+            {
+              "mean_absolute_log_error": 0.3164345775782444,
+              "mean_squared_log_error": 0.10473541608136683,
+              "rows": 3,
+              "strain": "BL107",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.7333213073615393,
+              "mean_squared_log_error": 0.6939491015185505,
+              "rows": 3,
+              "strain": "CC9311",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.16889844048618455,
+              "mean_squared_log_error": 0.03352212600147876,
+              "rows": 2,
+              "strain": "CC9902",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.26753091960193875,
+              "mean_squared_log_error": 0.08770248173407381,
+              "rows": 2,
+              "strain": "ROS8604",
+              "temperature_degC": 25.0
+            }
+          ],
+          "equal_cell_mean_absolute_log_error": 0.3715463112569768,
+          "equal_cell_root_mean_squared_log_error": 0.47955946589955606,
+          "geometric_absolute_error_factor": 1.449974994711127,
+          "maximum_absolute_log_error": 1.0568853182819145
+        }
+      },
+      "observed_cells": 4,
+      "ranking_by_primary_error": [
+        "strain_geometric_mean",
+        "fixed_cubic",
+        "pooled_free_power",
+        "strain_temperature_trend"
+      ],
+      "rows": [
+        {
+          "culture_id": "BL107:25:1",
+          "diameter_um": 0.95,
+          "log_error": {
+            "fixed_cubic": 0.2335622761102435,
+            "pooled_free_power": 0.24224612678792934,
+            "strain_geometric_mean": 0.0648548452721005,
+            "strain_temperature_trend": -0.23015939519048734
+          },
+          "observed_quota_fmol_per_cell": 1.663031139,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 2.1005604724013565,
+            "pooled_free_power": 2.1188808564959802,
+            "strain_geometric_mean": 1.7744610977032083,
+            "strain_temperature_trend": 1.3211235244253898
+          },
+          "strain": "BL107",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "BL107:25:2",
+          "diameter_um": 0.954,
+          "log_error": {
+            "fixed_cubic": 0.08036354813633317,
+            "pooled_free_power": 0.08648653758752778,
+            "strain_geometric_mean": -0.10094894326290971,
+            "strain_temperature_trend": -0.39596318372549755
+          },
+          "observed_quota_fmol_per_cell": 1.96294464,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 2.127205744201348,
+            "pooled_free_power": 2.1402705595792604,
+            "strain_geometric_mean": 1.7744610977032083,
+            "strain_temperature_trend": 1.3211235244253898
+          },
+          "strain": "BL107",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "BL107:25:3",
+          "diameter_um": 0.953,
+          "log_error": {
+            "fixed_cubic": 0.1499992746608293,
+            "pooled_free_power": 0.15676147138114682,
+            "strain_geometric_mean": -0.028166913356160395,
+            "strain_temperature_trend": -0.32318115381874823
+          },
+          "observed_quota_fmol_per_cell": 1.825152752,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 2.1205234273840996,
+            "pooled_free_power": 2.134911416328986,
+            "strain_geometric_mean": 1.7744610977032083,
+            "strain_temperature_trend": 1.3211235244253898
+          },
+          "strain": "BL107",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "CC9311:25:1",
+          "diameter_um": 1.107,
+          "log_error": {
+            "fixed_cubic": -0.08857115442298102,
+            "pooled_free_power": -0.17310603297795124,
+            "strain_geometric_mean": -0.18895062124896422,
+            "strain_temperature_trend": -1.0568853182819145
+          },
+          "observed_quota_fmol_per_cell": 3.631392558,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 3.323588408211755,
+            "pooled_free_power": 3.0541770141469833,
+            "strain_geometric_mean": 3.0061661970914426,
+            "strain_temperature_trend": 1.2620417944773439
+          },
+          "strain": "CC9311",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "CC9311:25:2",
+          "diameter_um": 1.107,
+          "log_error": {
+            "fixed_cubic": 0.7914433185892331,
+            "pooled_free_power": 0.7069084400342629,
+            "strain_geometric_mean": 0.6910638517632499,
+            "strain_temperature_trend": -0.17687084526970026
+          },
+          "observed_quota_fmol_per_cell": 1.506217779,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 3.323588408211755,
+            "pooled_free_power": 3.0541770141469833,
+            "strain_geometric_mean": 3.0061661970914426,
+            "strain_temperature_trend": 1.2620417944773439
+          },
+          "strain": "CC9311",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "CC9311:25:3",
+          "diameter_um": 1.112,
+          "log_error": {
+            "fixed_cubic": 0.015626031631603032,
+            "pooled_free_power": -0.07165551256888558,
+            "strain_geometric_mean": -0.09827306150005288,
+            "strain_temperature_trend": -0.9662077585330031
+          },
+          "observed_quota_fmol_per_cell": 3.316594952,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 3.368827198190979,
+            "pooled_free_power": 3.0872574099379815,
+            "strain_geometric_mean": 3.0061661970914426,
+            "strain_temperature_trend": 1.2620417944773439
+          },
+          "strain": "CC9311",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "CC9902:25:1",
+          "diameter_um": 0.753,
+          "log_error": {
+            "fixed_cubic": 0.3545680523616717,
+            "pooled_free_power": 0.5048940254440335,
+            "strain_geometric_mean": 0.28857093900613784,
+            "strain_temperature_trend": 0.23957688700854052
+          },
+          "observed_quota_fmol_per_cell": 0.733774057,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 1.0460424315504335,
+            "pooled_free_power": 1.2157241450854608,
+            "strain_geometric_mean": 0.9792354322334755,
+            "strain_temperature_trend": 0.9324150460953151
+          },
+          "strain": "CC9902",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "CC9902:25:2",
+          "diameter_um": 0.753,
+          "log_error": {
+            "fixed_cubic": 0.016771171389302616,
+            "pooled_free_power": 0.16709714447166435,
+            "strain_geometric_mean": -0.049225941966231285,
+            "strain_temperature_trend": -0.09821999396382858
+          },
+          "observed_quota_fmol_per_cell": 1.028645367,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 1.0460424315504335,
+            "pooled_free_power": 1.2157241450854608,
+            "strain_geometric_mean": 0.9792354322334755,
+            "strain_temperature_trend": 0.9324150460953151
+          },
+          "strain": "CC9902",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "ROS8604:25:2",
+          "diameter_um": 1.219,
+          "log_error": {
+            "fixed_cubic": -0.3927340175919225,
+            "pooled_free_power": -0.5360092627964534,
+            "strain_geometric_mean": -0.30642649208373807,
+            "strain_temperature_trend": -0.140528207855241
+          },
+          "observed_quota_fmol_per_cell": 6.572607628,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 4.4378793363679385,
+            "pooled_free_power": 3.8454913733241205,
+            "strain_geometric_mean": 4.8379165390284395,
+            "strain_temperature_trend": 5.710933212837456
+          },
+          "strain": "ROS8604",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "ROS8604:25:3",
+          "diameter_um": 1.2,
+          "log_error": {
+            "fixed_cubic": 0.09519994049641523,
+            "pooled_free_power": -0.03850074036148077,
+            "strain_geometric_mean": 0.22863534712013944,
+            "strain_temperature_trend": 0.3945336313486365
+          },
+          "observed_quota_fmol_per_cell": 3.849136409,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 4.233583316879479,
+            "pooled_free_power": 3.703758346487141,
+            "strain_geometric_mean": 4.8379165390284395,
+            "strain_temperature_trend": 5.710933212837456
+          },
+          "strain": "ROS8604",
+          "temperature_degC": 25.0
+        }
+      ]
+    },
+    "QP": {
+      "eligible_validation_rows": 10,
+      "excluded": [],
+      "models": {
+        "fixed_cubic": {
+          "cells": [
+            {
+              "mean_absolute_log_error": 0.41985940007818773,
+              "mean_squared_log_error": 0.18007487409998701,
+              "rows": 3,
+              "strain": "BL107",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.15562797265949846,
+              "mean_squared_log_error": 0.026941273869212756,
+              "rows": 3,
+              "strain": "CC9311",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.17079928688392054,
+              "mean_squared_log_error": 0.04919947473049777,
+              "rows": 2,
+              "strain": "CC9902",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.15660293759773863,
+              "mean_squared_log_error": 0.02494393480741612,
+              "rows": 2,
+              "strain": "ROS8604",
+              "temperature_degC": 25.0
+            }
+          ],
+          "equal_cell_mean_absolute_log_error": 0.22572239930483634,
+          "equal_cell_root_mean_squared_log_error": 0.2651224045168164,
+          "geometric_absolute_error_factor": 1.2532277200992117,
+          "maximum_absolute_log_error": 0.4770066061745619
+        },
+        "pooled_free_power": {
+          "cells": [
+            {
+              "mean_absolute_log_error": 0.4206505797006095,
+              "mean_squared_log_error": 0.18072650054426534,
+              "rows": 3,
+              "strain": "BL107",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.15242637494014954,
+              "mean_squared_log_error": 0.025235955768681873,
+              "rows": 3,
+              "strain": "CC9311",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.18734172882813716,
+              "mean_squared_log_error": 0.055124001690757256,
+              "rows": 2,
+              "strain": "CC9902",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.1718426798820712,
+              "mean_squared_log_error": 0.029928060107617317,
+              "rows": 2,
+              "strain": "ROS8604",
+              "temperature_degC": 25.0
+            }
+          ],
+          "equal_cell_mean_absolute_log_error": 0.23306534083774183,
+          "equal_cell_root_mean_squared_log_error": 0.2697288073747972,
+          "geometric_absolute_error_factor": 1.2624639670855506,
+          "maximum_absolute_log_error": 0.47775074402624185
+        },
+        "strain_geometric_mean": {
+          "cells": [
+            {
+              "mean_absolute_log_error": 0.2296811687112723,
+              "mean_squared_log_error": 0.055976511452197564,
+              "rows": 3,
+              "strain": "BL107",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.1942897800241262,
+              "mean_squared_log_error": 0.055202983018753204,
+              "rows": 3,
+              "strain": "CC9311",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.141517060209863,
+              "mean_squared_log_error": 0.03565665856684807,
+              "rows": 2,
+              "strain": "CC9902",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.02244580625793685,
+              "mean_squared_log_error": 0.0005133212426699225,
+              "rows": 2,
+              "strain": "ROS8604",
+              "temperature_degC": 25.0
+            }
+          ],
+          "equal_cell_mean_absolute_log_error": 0.14698345380079958,
+          "equal_cell_root_mean_squared_log_error": 0.19193063478798061,
+          "geometric_absolute_error_factor": 1.1583347968330027,
+          "maximum_absolute_log_error": 0.32321299857960617
+        },
+        "strain_temperature_trend": {
+          "cells": [
+            {
+              "mean_absolute_log_error": 0.33104065592742327,
+              "mean_squared_log_error": 0.11281098806848026,
+              "rows": 3,
+              "strain": "BL107",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.5951543339896622,
+              "mean_squared_log_error": 0.3716631456636083,
+              "rows": 3,
+              "strain": "CC9311",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.141517060209863,
+              "mean_squared_log_error": 0.03126195408286,
+              "rows": 2,
+              "strain": "CC9902",
+              "temperature_degC": 25.0
+            },
+            {
+              "mean_absolute_log_error": 0.07550998392275204,
+              "mean_squared_log_error": 0.005711264696115358,
+              "rows": 2,
+              "strain": "ROS8604",
+              "temperature_degC": 25.0
+            }
+          ],
+          "equal_cell_mean_absolute_log_error": 0.28580550851242514,
+          "equal_cell_root_mean_squared_log_error": 0.3610565580733384,
+          "geometric_absolute_error_factor": 1.3308335942745144,
+          "maximum_absolute_log_error": 0.77673041454814
+        }
+      },
+      "observed_cells": 4,
+      "ranking_by_primary_error": [
+        "strain_geometric_mean",
+        "fixed_cubic",
+        "pooled_free_power",
+        "strain_temperature_trend"
+      ],
+      "rows": [
+        {
+          "culture_id": "BL107:25:1",
+          "diameter_um": 0.95,
+          "log_error": {
+            "fixed_cubic": 0.3343640522790634,
+            "pooled_free_power": 0.33531965624251914,
+            "strain_geometric_mean": 0.15154042682546365,
+            "strain_temperature_trend": -0.40918139781323193
+          },
+          "observed_quota_fmol_per_cell": 0.113524264,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 0.15859926043213332,
+            "pooled_free_power": 0.1587508909518274,
+            "strain_geometric_mean": 0.13209971058331116,
+            "strain_temperature_trend": 0.0754021052714609
+          },
+          "strain": "BL107",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "BL107:25:2",
+          "diameter_um": 0.954,
+          "log_error": {
+            "fixed_cubic": 0.4482075417809379,
+            "pooled_free_power": 0.44888133883306747,
+            "strain_geometric_mean": 0.25277885576623804,
+            "strain_temperature_trend": -0.30794296887245753
+          },
+          "observed_quota_fmol_per_cell": 0.102593868,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 0.16061106654627053,
+            "pooled_free_power": 0.16071932227654906,
+            "strain_geometric_mean": 0.13209971058331116,
+            "strain_temperature_trend": 0.0754021052714609
+          },
+          "strain": "BL107",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "BL107:25:3",
+          "diameter_um": 0.953,
+          "log_error": {
+            "fixed_cubic": 0.4770066061745619,
+            "pooled_free_power": 0.47775074402624185,
+            "strain_geometric_mean": 0.28472422354211524,
+            "strain_temperature_trend": -0.27599760109658034
+          },
+          "observed_quota_fmol_per_cell": 0.099368265,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 0.16010652953383342,
+            "pooled_free_power": 0.16022571520254456,
+            "strain_geometric_mean": 0.13209971058331116,
+            "strain_temperature_trend": 0.0754021052714609
+          },
+          "strain": "BL107",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "CC9311:25:1",
+          "diameter_um": 1.107,
+          "log_error": {
+            "fixed_cubic": -0.09136395000261044,
+            "pooled_free_power": -0.10066648962422908,
+            "strain_geometric_mean": 0.012713699465648487,
+            "strain_temperature_trend": -0.77673041454814
+          },
+          "observed_quota_fmol_per_cell": 0.274948949,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 0.25094191309836206,
+            "pooled_free_power": 0.24861834032918861,
+            "strain_geometric_mean": 0.27846688289723587,
+            "strain_temperature_trend": 0.1264510182767678
+          },
+          "strain": "CC9311",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "CC9311:25:2",
+          "diameter_um": 1.107,
+          "log_error": {
+            "fixed_cubic": 0.21913534911134724,
+            "pooled_free_power": 0.2098328094897286,
+            "strain_geometric_mean": 0.32321299857960617,
+            "strain_temperature_trend": -0.4662311154341823
+          },
+          "observed_quota_fmol_per_cell": 0.201559806,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 0.25094191309836206,
+            "pooled_free_power": 0.24861834032918861,
+            "strain_geometric_mean": 0.27846688289723587,
+            "strain_temperature_trend": 0.1264510182767678
+          },
+          "strain": "CC9311",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "CC9311:25:3",
+          "diameter_um": 1.112,
+          "log_error": {
+            "fixed_cubic": 0.1563846188645377,
+            "pooled_free_power": 0.14677982570649095,
+            "strain_geometric_mean": 0.2469426420271239,
+            "strain_temperature_trend": -0.5425014719866645
+          },
+          "observed_quota_fmol_per_cell": 0.217534291,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 0.25435759130797214,
+            "pooled_free_power": 0.2519262342873623,
+            "strain_geometric_mean": 0.27846688289723587,
+            "strain_temperature_trend": 0.1264510182767678
+          },
+          "strain": "CC9311",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "CC9902:25:1",
+          "diameter_um": 0.753,
+          "log_error": {
+            "fixed_cubic": 0.029282226674057554,
+            "pooled_free_power": 0.04582466861827417,
+            "strain_geometric_mean": -0.26653537981305586,
+            "strain_temperature_trend": -0.24751175702257155
+          },
+          "observed_quota_fmol_per_cell": 0.076700494,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 0.07897966195415973,
+            "pooled_free_power": 0.08029704474907014,
+            "strain_geometric_mean": 0.05875479514702346,
+            "strain_temperature_trend": 0.0598832235742571
+          },
+          "strain": "CC9902",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "CC9902:25:2",
+          "diameter_um": 0.753,
+          "log_error": {
+            "fixed_cubic": 0.31231634709378353,
+            "pooled_free_power": 0.32885878903800014,
+            "strain_geometric_mean": 0.016498740606670115,
+            "strain_temperature_trend": 0.03552236339715442
+          },
+          "observed_quota_fmol_per_cell": 0.057793368,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 0.07897966195415973,
+            "pooled_free_power": 0.08029704474907014,
+            "strain_geometric_mean": 0.05875479514702346,
+            "strain_temperature_trend": 0.0598832235742571
+          },
+          "strain": "CC9902",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "ROS8604:25:2",
+          "diameter_um": 1.219,
+          "log_error": {
+            "fixed_cubic": -0.13612234329056816,
+            "pooled_free_power": -0.15188889631690927,
+            "strain_geometric_mean": -0.025529152508536268,
+            "strain_temperature_trend": 0.07242663767215263
+          },
+          "observed_quota_fmol_per_cell": 0.383935828,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 0.33507456218595233,
+            "pooled_free_power": 0.3298330204363564,
+            "strain_geometric_mean": 0.37425832649304697,
+            "strain_temperature_trend": 0.41277475703800365
+          },
+          "strain": "ROS8604",
+          "temperature_degC": 25.0
+        },
+        {
+          "culture_id": "ROS8604:25:3",
+          "diameter_um": 1.2,
+          "log_error": {
+            "fixed_cubic": -0.1770835319049091,
+            "pooled_free_power": -0.1917964634472331,
+            "strain_geometric_mean": -0.019362460007337434,
+            "strain_temperature_trend": 0.07859333017335146
+          },
+          "observed_quota_fmol_per_cell": 0.381575499,
+          "predicted_quota_fmol_per_cell": {
+            "fixed_cubic": 0.31964953728150036,
+            "pooled_free_power": 0.31498098379253314,
+            "strain_geometric_mean": 0.37425832649304697,
+            "strain_temperature_trend": 0.41277475703800365
+          },
+          "strain": "ROS8604",
+          "temperature_degC": 25.0
+        }
+      ]
+    }
+  },
+  "source_references": [
+    {
+      "path": "experiments/run_archived_cost_transfer.py",
+      "sha256": "33273cfe328562796728525e72f3b9c7b234ef817bda0509e861fc01543a5d8a"
+    },
+    {
+      "path": "src/orthopolity/archived_cost_transfer.py",
+      "sha256": "ddabe2cf2b293eb4fbb8849f44e73328569537558e42aa7bad158936b21d74bd"
+    }
+  ],
+  "statistical_scope": "Point prediction errors and descriptive calibration diagnostics only; four strains in one published experiment, no independence-based intervals or significance claims.",
+  "status": "complete"
+}

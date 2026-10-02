@@ -106,6 +106,17 @@ checks each report's frozen-plan reference, archives exact algorithms, and audit
 all prior records before appending. Sources, data and artifacts from earlier
 records remain unchanged.
 
+The [available-data programme](available-data-programme.md) adds
+`archived-cost-transfer-2026-10-02`, bringing the catalogue to nineteen. It
+reanalyses the published BCO-DMO 926311 Synechococcus quotas with zero new
+observations. Its protocol was frozen before the CSV was acquired; coefficients
+and predictions were frozen and pushed before any held-out quota field was
+converted. See [the study](archived-cost-transfer.md).
+`make available-data-registry PY=python3.11` registers it idempotently. The
+assembler `experiments/register_available_data.py` computes no result, so it is
+not archived as an analysis source. Later available-data studies can therefore
+be appended without changing earlier entries.
+
 ## Hardware and threading
 
 The new workload metadata records CPU model, architecture/logical CPU count,

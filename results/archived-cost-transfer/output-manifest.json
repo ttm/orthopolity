@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "path": "results/archived-cost-transfer/cost-transfer.png",
+      "sha256": "97fe5b58f9303e829165132cfd75e15f2095d2f5e95e760c4a48f21e56dabddb"
+    },
+    {
+      "path": "results/archived-cost-transfer/cost-transfer.svg",
+      "sha256": "47cedf3fb873bdb762f2798353ca9ea9be0be9dac1ad1729f35280d87247bd92"
+    },
+    {
+      "path": "results/archived-cost-transfer/study.json",
+      "sha256": "a78b3ac5c0ac613f606f94087c007e84a73cc989e079a6b97d398f21499d3849"
+    }
+  ],
+  "evaluation_reference": {
+    "path": "data/archived-cost-transfer/2026-10-02/evaluation-records.json",
+    "sha256": "e7cc3e06baebd21dabf18b510629c49a93dea80744a5bca6fc506f45ab74f100"
+  },
+  "run_id": "archived-cost-transfer-2026-10-02"
+}

@@ -60,7 +60,11 @@ which records current decisions, acquisition status and exact next steps.
 Further empirical work follows the [available-data programme](docs/available-data-programme.md):
 published resource measurements and interventions, separate calibration records,
 and evaluation on whole held-out communities or studies. New experimental
-measurements are not planned.
+measurements are not planned. Its first completed study, an
+[archived quota transfer](docs/archived-cost-transfer.md), predicts held-out
+warmer Synechococcus cultures. A size-geometric carbon cost transfers within a
+typical factor of 1.14; nitrogen and phosphorus quotas follow strain identity
+more closely than cell size.
 
 The [predictive reliability benchmarks](docs/predictive-benchmarks.md) extend this
 programme to capacity-only family selection, training uncertainty, omitted

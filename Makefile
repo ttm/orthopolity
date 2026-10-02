@@ -14,7 +14,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 
 .PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory models dependence attachment restrictions followup competition forecast interventions robustness workload-pilot workload-report workload-transfer workload-transfer-report scheduler-allocation run-registry registry-verify solar-resource-transfer aquatic-study-transfer resource-identification profile-tests profile-test-registry analyses paper clean
 .PHONY: profile-calibration solar-validation dimensionality-intervention validation-round validation-round-registry
-.PHONY: chemostat-sources restore-chemostat-bundle
+.PHONY: chemostat-sources restore-chemostat-bundle archived-cost-transfer available-data-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -149,6 +149,12 @@ chemostat-sources: ## offline: verify retained chemostat sources and replay the 
 restore-chemostat-bundle: ## network: restore the untracked 98.7 MB author bundle by checksum
 	$(PY) experiments/restore_chemostat_bundle.py
 	$(PY) experiments/fetch_chemostat_sources.py --stage verify
+
+archived-cost-transfer: ## offline audit of the frozen Synechococcus quota-transfer study
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_archived_cost_transfer.py --stage audit
+
+available-data-registry: ## append/check completed available-data studies idempotently
+	$(PY) experiments/register_available_data.py
 
 paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 

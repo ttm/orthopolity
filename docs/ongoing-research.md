@@ -24,10 +24,9 @@ retrospective validation, not global blinding or prospective data collection.
 
 - Branch: `py314-and-package-names`. Protocol checkpoint `bc57364` follows the
   available-data roadmap `ca0c683` and the last completed study `ec5f078`.
-- Registry: 18 executed/incomplete historical records, 464 retained references.
-  Complete suite at the start of session 2: 265 passing tests. New protocols and
-  original inputs are retained; neither new study has been numerically fitted,
-  evaluated or registered.
+- Registry: 19 records, 484 retained references. The new record is
+  `archived-cost-transfer-2026-10-02`, complete. The chemostat response study
+  is not yet frozen, evaluated or registered. Suite: 265 passing tests.
 - Metadata screening ranks Dryad `10.5061/dryad.51c59zwj5` first: separate
   preliminary algal C/N and cell-volume records plus 24 nutrient-pulsed vessels.
 - The main series resolves three algal groups: Cryptomonas, Chlamydomonas, and
@@ -74,9 +73,9 @@ PYTHONPATH=src python3.11 experiments/register_runs.py --verify
 
 Read this document, the current source-audit report and frozen manifests before
 changing code or interpreting outputs. Immediate next action at this checkpoint:
-implement/freeze the finite-group response study before evaluation extraction;
-resume the complementary cost study from its locally frozen protocol.
-No prediction freeze or validation result exists yet for this candidate.
+implement and freeze the chemostat finite-group response forecasts before any
+held-out post-pulse value is decoded. The cost study is complete. No chemostat
+prediction freeze or validation result exists yet.
 
 ## Current files and ownership boundaries
 
@@ -99,12 +98,15 @@ No prediction freeze or validation result exists yet for this candidate.
   precede inspection of main held-out post-pulse numerical responses. Final
   schema/availability checks may still require an explicitly logged amendment
   before prediction freeze; no frozen prediction exists yet.
-- Complementary archived cost study: `experiments/run_archived_cost_transfer.py`,
+- Complementary archived cost study (complete; see
+  [archived-cost-transfer.md](archived-cost-transfer.md)):
+  `experiments/run_archived_cost_transfer.py`,
   `src/orthopolity/archived_cost_transfer.py`, corresponding config/tests,
   `data/archived-cost-transfer/2026-10-02/` and `results/archived-cost-transfer/`.
-  Metadata-only protocol: train cultures at 16/18/20/22°C and evaluate 25/27°C;
-  C/N/P quotas in fmol/cell; forecasts conditional on measured cell diameter.
-  No quota transfer into other taxa or community neutrality claim.
+  Trained on 16/18/20/22°C cultures. The source holds no 27°C cultures, so ten
+  25°C cultures were evaluated. No quota transfer into other taxa; no community
+  neutrality claim. Registered by `experiments/register_available_data.py`
+  (`make available-data-registry`).
 
 ## Checkpoint log
 
@@ -137,3 +139,10 @@ No prediction freeze or validation result exists yet for this candidate.
   Retained chemostat sources committed except the two large ignored binaries.
   Next: execute the frozen cost study, then implement and freeze the chemostat
   forecasts.
+- Cost-study result checkpoint: calibration froze coefficients and 30 conditional
+  predictions at 15:00:10 UTC (commit `a697be6`, pushed before evaluation).
+  Evaluation started at 15:00:43 UTC; the offline audit replay matched.
+  Held-out mean absolute log error: C, fixed cubic 0.133 best; N, strain mean
+  0.207 best (cubic 0.221); P, strain mean 0.147 best (cubic 0.226). Strain
+  temperature trends were worst for every element. Registered with 484 registry
+  file references.
