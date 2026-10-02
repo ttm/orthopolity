@@ -59,6 +59,11 @@ separates its empirical test from the optional construction of a deeper mechanis
   whose forecasts were frozen before held-out decoding. Retain the chemostat
   study's negative result: no forecast beat persistence, and the two-budget
   cost-ratio rule failed.
+- Execute a [size-budget study](dunaliella-size-budget.md) on published
+  size-selected *Dunaliella* lineages. A protocol frozen before decoding
+  selected lineages finds carrying capacity flat in biovolume across a 10-fold
+  size range. An equal-biovolume forecast ($d=1$) transfers to unseen
+  treatments; restoration after P deprivation is incomplete and size-dependent.
 
 ## Current route: available empirical data only
 
@@ -76,12 +81,14 @@ claim; they are not inferred from validation abundances and relabelled measured.
 Return to baseline remains distinct from return to neutrality. Earlier
 experimental routes below are retained as context, not current collection plans.
 
-Both first studies are complete; see [ongoing research](ongoing-research.md).
+The first three studies are complete; see [ongoing research](ongoing-research.md).
 The chemostat test showed that a transferred resource proxy and a 12-day window
 cannot settle allocation questions. Quota differences between groups bounded
-the two-budget rule far below the observed redistribution. The next audit
-should target records with directly measured resource stocks, multi-sample
-baselines and recovery windows that can resolve.
+the two-budget rule far below the observed redistribution. The size-selected
+lineages then gave the clearest budget-closure result: abundance at capacity
+inversely proportional to cell volume under one shared medium. The next audit
+should target records with directly measured resource stocks, coexisting size
+classes, multi-sample baselines and recovery windows that can resolve.
 
 ## Earlier routes and completed steps
 

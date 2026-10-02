@@ -22,76 +22,72 @@ retrospective validation, not global blinding or prospective data collection.
 
 ## Current state
 
-- Branch: `py314-and-package-names`, pushed to `origin`. Both studies of this
-  checkpoint are complete and registered. Registry: 20 records, 514 retained
-  file references. Suite: 283 passing tests (`make test PY=python3.11`).
+- Branch: `py314-and-package-names`, pushed to `origin`. All three
+  available-data studies are complete and registered. Registry: 21 records, 539
+  retained file references. Run the suite with `make test PY=python3.11`.
 - [Archived cost transfer](archived-cost-transfer.md) (`archived-cost-transfer-2026-10-02`):
-  a size-geometric carbon cost predicts held-out 25°C Synechococcus quotas best
-  (mean absolute log error 0.133); strain identity predicts N and P better than
-  cell size; extrapolated temperature trends are worst throughout.
+  a size-geometric carbon cost predicts held-out 25°C *Synechococcus* quotas
+  best; strain identity predicts N and P better than size.
 - [Chemostat response](chemostat-response.md) (`chemostat-resource-response-2026-10-02`):
-  negative. No frozen forecast beat persistence on the twelve held-out
-  polyculture vessels (nitrogen midpoint time-weighted TV: development response
-  0.243, persistence 0.247; not distinguished). The two-budget cost-ratio rule
-  failed on score, size and direction. Its capacity of 0.05–0.12 TV fell below
-  every observed departure (0.29–0.49), and its ordinal prediction held in 4 of
-  12 vessels, the chance count. All twelve held-out vessels are right-censored
-  for recovery to baseline by day 12.
-- Erratum retained, not corrected in frozen code: the chemostat freeze field
-  `baseline_algal_nitrogen_umol_per_l` holds nmol/L. Corrected values are in
-  `results/chemostat-response/posthoc-diagnostics.json`. No score uses the field.
+  negative. No frozen forecast beat persistence on held-out food webs. The
+  two-budget cost-ratio rule failed on score, size and direction, and no vessel
+  recovered by day 12.
+- [*Dunaliella* size budget](dunaliella-size-budget.md) (`dunaliella-size-budget-2026-10-02`):
+  positive for budget closure with a geometric cost. In one shared medium,
+  capacity in biovolume is flat across a 10.4-fold volume range, so cell
+  number scales as $V^{-1.02}$. A frozen equal-biovolume forecast ($d=1$)
+  predicted held-out treatments best (errors 0.124 and 0.179). Restoration
+  after P deprivation left a size-dependent overshoot.
+- Retained errata, none of which changes a score:
+  - The chemostat nitrogen-budget field holds nmol/L, not µmol/L.
+  - The *Dunaliella* archive's cell-size folder overstates volume by exactly 8
+    ($(4\pi/3)LW^2$ from full axes). The study uses the correct copy.
 
 ## Next actions, in priority order
 
-1. **Audit the next available dataset for direct resource stocks.** The
-   chemostat study's main limit was a transferred, not measured, resource
-   proxy. Begin with the [Dunaliella recovery records](https://doi.org/10.5061/dryad.4mh47r7)
-   (deprivation and replenishment). Follow the same sequence: retain bytes and
-   receipts; audit methods and replication from metadata; freeze a protocol;
-   then forecast, evaluate and register. Declare a multi-sample baseline and the
-   grazer/forcing structure in advance.
-2. **Search for systems where recovery can resolve.** Longer post-perturbation
-   windows are needed than the 12 days here, ideally with stocks measured in the
-   evaluated units.
-3. **Decide with the user whether to integrate these results into
-   `docs/paper.md`.** The manuscript does not yet cite the 2 October validation
-   round or the two available-data studies. The scientific assessment and
-   roadmap now summarize them.
-4. Keep every failed forecast. A corrective or extended analysis gets a new run
-   identifier and its own frozen protocol. Never edit a registered one.
+1. **Revise `docs/paper.md` (in progress).** The user asked for this. Integrate
+   the 2 October validation round and the three available-data studies, then
+   rebuild `docs/paper.pdf` with `make paper` if TeX is available.
+2. **Audit the next dataset.** Look for coexisting size classes with directly
+   measured resource stocks: only such records can test neutrality itself.
+   Follow the same discipline: retain bytes and receipts, declare the partition
+   from metadata, freeze the protocol before decoding held-out outcomes,
+   register, and keep every failure.
+3. Never edit a registered study. A corrective analysis gets a new run
+   identifier and its own frozen protocol.
 
 ## Resume commands
 
 ```bash
 git status --short --branch
 PYTHONPATH=src python3.11 experiments/register_runs.py --verify
-make archived-cost-transfer chemostat-response PY=python3.11   # offline audits
+make archived-cost-transfer chemostat-response dunaliella-size-budget PY=python3.11   # offline audits
 ```
 
-A clone lacks the 98.7 MB chemostat bundle. The audits above do not need it.
-Run `make restore-chemostat-bundle PY=python3.11` only to replay the source
-acquisition audit.
+A clone lacks the 98.7 MB chemostat bundle. These audits do not need it.
+Run `make restore-chemostat-bundle PY=python3.11` only to replay the chemostat
+source audit.
 
 ## Current files and ownership boundaries
 
-- Chemostat sources: `experiments/fetch_chemostat_sources.py`,
-  `data/chemostat-sources/2026-10-02/` and the
-  [source audit](chemostat-source-audit.md). Git omits only the Zenodo bundle
-  and its extracted `.RData`, both restorable by checksum
-  (`experiments/restore_chemostat_bundle.py`).
-- Chemostat study, frozen: `experiments/run_chemostat_response.py`,
-  `src/orthopolity/chemostat_response.py`, `src/orthopolity/gated_xlsx.py`,
-  configuration plus amendments 1–2 in `configs/`, and outputs in
-  `data/chemostat-response/2026-10-02/` and `results/chemostat-response/`.
-  Do not edit these files: evaluation and audit refuse changed source bytes.
-  The post-hoc report `experiments/report_chemostat_response.py` reads
-  retained outputs only.
+- Chemostat sources and study: `experiments/fetch_chemostat_sources.py`,
+  `experiments/run_chemostat_response.py`, `src/orthopolity/chemostat_response.py`,
+  `src/orthopolity/gated_xlsx.py`, configuration plus amendments 1–2, and
+  outputs in `data/chemostat-*/` and `results/chemostat-response/`. Frozen:
+  evaluation and audit refuse changed source bytes.
+- *Dunaliella* sources and study: `experiments/fetch_dunaliella_sources.py`,
+  `experiments/run_dunaliella_size_budget.py`, `src/orthopolity/size_budget.py`,
+  `src/orthopolity/rdata_reader.py`, and protocol, partition and amendment in
+  `configs/dunaliella_size_budget_2026-10-02*.json`. Outputs are in
+  `data/dunaliella-*/` and `results/dunaliella-size-budget/`. Frozen in the
+  same way.
 - Cost study, frozen: `experiments/run_archived_cost_transfer.py`,
-  `src/orthopolity/archived_cost_transfer.py`, its config, and outputs in
-  `data/archived-cost-transfer/2026-10-02/` and `results/archived-cost-transfer/`.
-- Registration of both: `experiments/register_available_data.py`
+  `src/orthopolity/archived_cost_transfer.py` and its outputs.
+- Post-hoc report scripts (`experiments/report_*.py`) read retained outputs
+  only and refuse to overwrite changed bytes.
+- Registration of all three: `experiments/register_available_data.py`
   (`make available-data-registry PY=python3.11`). It is idempotent; add later
-  studies to its `STUDIES` table without changing existing entries.
+  studies to `STUDIES` without changing existing entries.
 
 ## Checkpoint log
 
@@ -147,3 +143,12 @@ acquisition audit.
   and verdicts are as stated in *Current state*. Post-hoc noise floor: 0.117 TV
   between consecutive pre-pulse samples; 0.164 from the day-0 composition.
   Registered with 514 file references, linked to `restrictions-2026-10-01`.
+- *Dunaliella* checkpoints. Sources came from Dryad's Zenodo copy, whose MD5
+  equals Dryad's digest. Commits:
+  - `78a14cc` (16:06:23 UTC): partition declared; only controls inspectable.
+  - `1eaa72d` (16:10:56): protocol frozen before decoding selected lineages.
+  - `e6216f7`: runner and leakage tests.
+  - `f3fd250`: factor-8 cell-volume amendment.
+  - `74c229f`: forecasts retained (frozen 20:55:22; evaluation 20:55:46).
+
+  Offline audit replay matched. Registered with 539 file references.

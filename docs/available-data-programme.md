@@ -14,7 +14,7 @@ than claim global blinding. The eighteen existing registry records are unchanged
 
 ## Executed studies
 
-Two studies have now been run and registered, both on 2 October 2026:
+Three studies have now been run and registered, all on 2 October 2026:
 
 - The [archived cost transfer](archived-cost-transfer.md) used the BCO-DMO
   Synechococcus quotas. Size-geometric carbon cost transfers to an unused
@@ -24,6 +24,12 @@ Two studies have now been run and registered, both on 2 October 2026:
   resource redistribution better than persistence, and the two-budget
   cost-ratio rule failed on score, size and direction. No held-out vessel
   recovered its baseline composition by day 12.
+- The [*Dunaliella* size-budget study](dunaliella-size-budget.md) used the
+  third candidate. It is positive for one form of the budget law. In one shared
+  medium, carrying capacity in biovolume is flat across a 10-fold cell-volume
+  range, so cell number scales as $V^{-1.02}$. A frozen equal-biovolume
+  forecast ($d=1$) predicted held-out selection treatments best. Restoration
+  after P deprivation left a size-dependent overshoot.
 
 The next audit should favour records with resource stocks measured in the
 evaluated units, multi-sample baselines and longer recovery windows. The

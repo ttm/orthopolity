@@ -126,6 +126,15 @@ Lineage links it to `restrictions-2026-10-01`, whose two-budget rule it tests on
 measurements. See [the study](chemostat-response.md); its retained nitrogen-budget
 unit erratum is documented there.
 
+`dunaliella-size-budget-2026-10-02` is the twenty-first record. It retains
+cross-fitted size-law and restoration forecasts for size-selected *Dunaliella*
+lineages from Malerba et al. (2018). It also retains the partition declaration,
+the protocol committed before any selected-lineage outcome was decoded, the
+cell-volume amendment, the capacities and a post-hoc report source. Lineage links
+it to `archived-cost-transfer-2026-10-02`, whose exponents it assigns
+cross-taxon, and to `restrictions-2026-10-01`. See
+[the study](dunaliella-size-budget.md).
+
 ## Hardware and threading
 
 The new workload metadata records CPU model, architecture/logical CPU count,

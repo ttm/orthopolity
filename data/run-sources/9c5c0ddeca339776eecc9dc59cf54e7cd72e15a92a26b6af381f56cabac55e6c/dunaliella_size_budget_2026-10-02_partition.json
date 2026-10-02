@@ -1,0 +1,20 @@
+{
+  "run_id": "dunaliella-size-budget-2026-10-02",
+  "source_doi": "10.5061/dryad.4mh47r7",
+  "publication_doi": "10.1098/rspb.2018.1347",
+  "declared": "2 October 2026, before any optical-density, biovolume or cell-count value of a small- or large-selected lineage was decoded",
+  "inspected_before_declaration": "Dryad and Zenodo metadata; the archive member list and tabular headers; the authors' README and R scripts; the publication abstract and methods; R object structure (column names, types, lengths) and design factors, plates, wells and sampling times. No outcome value of any lineage, figure, photograph or fitted-result object had been opened.",
+  "units": "Whole lineages: 10 small-selected, 10 control and 10 large-selected Dunaliella tertiolecta lineages",
+  "inspection_permitted_before_protocol_freeze": [
+    "All outcome columns of the 10 control lineages, in both growth experiments",
+    "Microscopy cell-size measurements of all 30 lineages (the size coordinate, a predictor)",
+    "The authors' biovolume-to-count calibration object, which is fitted to separate calibration cultures"
+  ],
+  "gated_until_protocol_freeze": "OD_BC, OD_BC_man, ODraw, OD_BC_middle, CellsUL and BiovolUL of every small- and large-selected lineage in 'All raw data.RData' and 'AllData across shelves.RData'",
+  "never_used_as_inputs": "The authors' fitted-result objects (Fits/*.RData, SummaryData fits, All stats.RData), result figures and photographs",
+  "folds": {
+    "A": {"development": ["Small", "Control"], "evaluation": ["Large"]},
+    "B": {"development": ["Control", "Large"], "evaluation": ["Small"]}
+  },
+  "scope": "Control lineages are development data in both folds, so inspecting them cannot leak an evaluation outcome. Each fold's forecasts must use only its development lineages. A protocol fixing the endpoints, estimators, models and scores will be committed before any gated value is decoded."
+}

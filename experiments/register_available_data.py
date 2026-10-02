@@ -42,6 +42,15 @@ def chemostat_summary(result):
             "observed_recovery_status": nominal["recovery"]["observed"]}
 
 
+def size_budget_summary(result):
+    return {outcome: {"mean_absolute_log_error": {fold: {endpoint: values[endpoint]["mean_absolute_log_error"]
+                                                      for endpoint in ("E1", "E2")}
+                                               for fold, values in evaluation["folds"].items()},
+                      "verdicts": {endpoint: [dict(pair=row["pair"], verdict=row["verdict"]) for row in rows]
+                                   for endpoint, rows in evaluation["verdicts"].items()}}
+            for outcome, evaluation in result["evaluation"].items()}
+
+
 STUDIES = {
     "archived-cost-transfer": {
         "config": "configs/archived_cost_transfer_2026-10-02.json",
@@ -86,6 +95,34 @@ STUDIES = {
         "summary": chemostat_summary,
         "parents": [("restrictions-2026-10-01", "tests_two_budget_rule_on_published_measurements")],
     },
+    "dunaliella-size-budget": {
+        "config": "configs/dunaliella_size_budget_2026-10-02.json",
+        "config_keys": ["partition_reference", "amendment_reference"],
+        "data": "data/dunaliella-size-budget/2026-10-02",
+        "results": "results/dunaliella-size-budget",
+        "plan": "frozen-forecasts.json",
+        "result_plan_key": "frozen_forecasts",
+        "plan_inputs": True,
+        "kind": "actual_measurement",
+        "resources": [
+            {"name": "Carrying-capacity biovolume",
+             "definition": "Maximum across-plate mean of the authors' OD-calibrated total biovolume during 12 days of regrowth in one shared F/2 medium; the budget-limited stock of each separately grown lineage",
+             "units": "cubic micrometres per microlitre"},
+            {"name": "Carrying-capacity optical density",
+             "definition": "The same estimator on manually blank-corrected optical density at 750 nm; common-scale sensitivity without treatment-specific calibration",
+             "units": "OD750"},
+            {"name": "Cell volume",
+             "definition": "Mean microscopy prolate-spheroid volume (pi/6) L W^2 per lineage and pre-trial history; the size coordinate, not a resource quota",
+             "units": "cubic micrometres"}],
+        "algorithm": "Cross-fitted size-law and restoration forecasts for held-out selection treatments, protocol frozen before decoding selected lineages",
+        "source_provenance": "Digests equal the sources recorded with the retained forecasts; the protocol and partition commits precede any decoding of small- or large-selected outcomes",
+        "posthoc": [{"name": "Post-hoc diagnostics and figure specified after evaluation; computes no forecast, score or verdict",
+                     "source": "experiments/report_dunaliella_size_budget.py"}],
+        "seeds": {"status": "Deterministic least-squares analysis; no random seed"},
+        "summary": size_budget_summary,
+        "parents": [("archived-cost-transfer-2026-10-02", "uses_assigned_cross_taxon_cost_exponents"),
+                    ("restrictions-2026-10-01", "tests_budget_closure_and_restoration_on_published_measurements")],
+    },
 }
 
 
@@ -124,6 +161,12 @@ def register_study(name):
         archived = archive_reference(ROOT, path)
         if archived["sha256"] != checked_reference(reference)["sha256"]:
             raise ValueError("Amendment differs from freeze")
+        configs.append(archived)
+    for key in specification.get("config_keys", []):
+        reference = checked_reference(plan[key])
+        archived = archive_reference(ROOT, reference["path"])
+        if archived["sha256"] != reference["sha256"]:
+            raise ValueError(f"{key} differs from freeze")
         configs.append(archived)
     inputs = retained_files(directory)
     if specification.get("plan_inputs"):

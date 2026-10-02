@@ -68,7 +68,11 @@ more closely than cell size. The [chemostat resource-response study](docs/chemos
 froze forecasts for twelve held-out food-web chemostats before decoding their
 post-pulse values. None beat persistence. The two-budget cost-ratio rule failed:
 measured C:N ratios cap its redistribution below every observed departure, and
-its direction held only at the chance rate.
+its direction held only at the chance rate. A [size-budget study](docs/dunaliella-size-budget.md)
+of size-selected algal lineages regrown in one medium supports the budget
+closure behind the hypothesis. Carrying capacity in biovolume is flat across a
+10-fold size range, so cell number scales inversely with cell volume. A frozen
+equal-biovolume forecast predicts unseen selection treatments best.
 
 The [predictive reliability benchmarks](docs/predictive-benchmarks.md) extend this
 programme to capacity-only family selection, training uncertainty, omitted

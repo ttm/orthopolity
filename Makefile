@@ -15,6 +15,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory models dependence attachment restrictions followup competition forecast interventions robustness workload-pilot workload-report workload-transfer workload-transfer-report scheduler-allocation run-registry registry-verify solar-resource-transfer aquatic-study-transfer resource-identification profile-tests profile-test-registry analyses paper clean
 .PHONY: profile-calibration solar-validation dimensionality-intervention validation-round validation-round-registry
 .PHONY: chemostat-sources restore-chemostat-bundle archived-cost-transfer available-data-registry chemostat-response chemostat-response-report
+.PHONY: dunaliella-sources dunaliella-size-budget dunaliella-size-budget-report
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -158,6 +159,16 @@ chemostat-response: ## offline audit: replay the frozen chemostat forecasts and 
 
 chemostat-response-report: ## post-hoc diagnostics and figures from retained outputs; refuses changed bytes
 	MPLCONFIGDIR=build/matplotlib $(PY) experiments/report_chemostat_response.py
+
+dunaliella-sources: ## offline: verify the retained Dunaliella bundle and its header-only schema
+	$(PY) experiments/fetch_dunaliella_sources.py --stage verify
+	$(PY) experiments/fetch_dunaliella_sources.py --stage schema
+
+dunaliella-size-budget: ## offline audit: replay the Dunaliella forecasts and held-out evaluation
+	$(PY) experiments/run_dunaliella_size_budget.py --stage audit
+
+dunaliella-size-budget-report: ## post-hoc diagnostics and figure from retained outputs; refuses changed bytes
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/report_dunaliella_size_budget.py
 
 available-data-registry: ## append/check completed available-data studies idempotently
 	$(PY) experiments/register_available_data.py

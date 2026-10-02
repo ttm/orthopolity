@@ -869,8 +869,8 @@ observation design and predictive responses to measured restrictions.
 
 ## Executed available-data tests: 2 October 2026
 
-Two retrospective studies of published measurements add registry records 19 and
-20; no new observations were collected.
+Three retrospective studies of published measurements add registry records
+19–21; no new observations were collected.
 
 The [archived quota transfer](archived-cost-transfer.md) froze four log-quota
 models before converting held-out Synechococcus quotas at 25°C. A fixed $d^3$
@@ -909,3 +909,24 @@ communities, short-term allocation is not explained by stoichiometric cost
 ratios alone. A test of allocation neutrality still requires an independently
 eligible system with directly measured resource stocks, adequate size support
 and observed recovery. The failed predictions are retained as evidence.
+
+The [size-budget study](dunaliella-size-budget.md) tests the accounting identity
+behind the hypothesis, $N\,q(V)=R$, on 30 *Dunaliella* lineages artificially
+selected for size and regrown in one shared medium. Its protocol was frozen
+before any small- or large-selected outcome was decoded. Across a 10.4-fold
+range of mean cell volume, carrying capacity in total biovolume is constant to
+within 3%. Cell number at capacity therefore scales as $V^{-1.02}$.
+
+A pre-frozen equal-biovolume law ($d=1$) predicted each held-out selection
+treatment with errors of 0.124 and 0.179 log units. It outperformed a law
+fitted within part of the size range and an equal-cell-number law (errors
+1.5–2.1). A carbon exponent assigned from *Synechococcus* ($d=0.91$) performed
+comparably; the nitrogen exponent ($d=0.80$) did not.
+
+Regrowth after N deprivation nearly restored capacity. After P deprivation,
+control and large lineages overshot by 25–31% while small lineages did not.
+This is the clearest positive evidence so far that a shared budget fixes total
+resource and leaves abundance inversely proportional to per-object cost. Here
+that cost is geometric. The lineages grew separately and no quota or binding
+resource was measured, so the result supports budget closure, not neutrality
+across a coexisting size spectrum.

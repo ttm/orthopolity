@@ -1,0 +1,49 @@
+{
+  "run_id": "dunaliella-size-budget-2026-10-02",
+  "partition_reference": "configs/dunaliella_size_budget_2026-10-02_partition.json",
+  "evidence_kind": "actual_measurement",
+  "recorded": "2 October 2026, after inspecting control lineages as the partition permits and before any small- or large-selected outcome value was decoded",
+  "control_inspection_findings": "Control growth curves peak by days 3-5 and then hold; plate-to-plate SD of per-well maxima 0.093 log units; replete between-lineage SD 0.20; control history deficits relative to replete K: N-Deplete -0.04, P-Deplete +0.31. Control CellsUL is an exact function of BiovolUL; sqrt(BiovolUL) is exactly linear in OD_BC_man for controls. In the 72 h media assay, P-free and full-media controls were still growing at 72 h.",
+  "question": "With every lineage regrown in one shared medium, does carrying capacity follow a single size law, log K = a + (1 - d) log V, as the budget closure N_cells q(V) = R with q proportional to V^d implies, so that a law fitted on two selection treatments predicts the third, held-out treatment? After a week of N or P deprivation, does regrowth in the same medium restore each lineage's replete carrying capacity?",
+  "experiment": "Malerba et al. Fig. 3 assay ('All raw data.RData'): 30 lineages x 3 pre-trial histories (Replete, N-Deplete, P-Deplete), regrown for 12 days in standard F/2; 3 replicate wells on separate plates; daily OD at 750 nm. The 72 h media assay is not used: two of its four media do not reach a plateau.",
+  "outcomes": {
+    "primary": "log BiovolUL: the authors' calibrated total biovolume per microlitre, square-root linear in manually blank-corrected OD, calibrated on cultures separate from the experiment",
+    "sensitivity": "log OD_BC_man: the common optical scale without treatment-specific calibration; nonpositive values are missing",
+    "excluded": "CellsUL, an exact function of BiovolUL through a treatment-specific calibration"
+  },
+  "carrying_capacity_estimator": "For each lineage and history: on each day, the mean of the log outcome over replicate wells with a finite positive value (at least 2 wells); K is the maximum of these daily means over days 0-11.",
+  "size_coordinate": "Natural log of the lineage's mean microscopy cell volume (cubic micrometres; prolate spheroid; at least 200 cells) under the same pre-trial history. A lineage-history without a size summary is excluded from every model in that comparison and reported.",
+  "folds": "As declared in the partition: A develops on Small and Control and evaluates Large; B develops on Control and Large and evaluates Small. Every fit receives only its fold's development lineages.",
+  "endpoints": {
+    "E1_size_law_transfer": {
+      "history": "Replete",
+      "models": {
+        "size_law": "OLS log K = a + b log V on development lineages",
+        "constant_biovolume": "d = 1: log K equals the development mean (equal biovolume at every size)",
+        "constant_cells": "d = 0: slope 1 with the development-mean intercept (equal cell number at every size)",
+        "assigned_carbon_cost": "Cross-taxon assigned exponent: slope 1 - 2.737/3, from the archived Synechococcus pooled carbon cost degree in diameter, with the development-mean intercept",
+        "assigned_nitrogen_cost": "Cross-taxon assigned exponent: slope 1 - 2.391/3, from the archived Synechococcus pooled nitrogen cost degree, with the development-mean intercept"
+      },
+      "assigned_source": "data/archived-cost-transfer/2026-10-02/calibration.json (registered training fit of archived-cost-transfer-2026-10-02)",
+      "pairs": [["size_law", "constant_biovolume"], ["size_law", "constant_cells"], ["assigned_carbon_cost", "constant_biovolume"], ["assigned_nitrogen_cost", "constant_biovolume"], ["size_law", "assigned_carbon_cost"]]
+    },
+    "E2_restoration": {
+      "histories": ["N-Deplete", "P-Deplete"],
+      "models": {
+        "full_restoration": "K equals the same lineage's observed replete K (a declared input from the held-out lineage)",
+        "history_offset": "The lineage's replete K plus the development mean of (history K - replete K)",
+        "size_law_history": "OLS log K = a + b log V within the history on development lineages, using history-specific volumes",
+        "constant_history": "The development mean of K within the history"
+      },
+      "pairs": [["full_restoration", "history_offset"], ["full_restoration", "constant_history"], ["history_offset", "constant_history"], ["size_law_history", "constant_history"]]
+    }
+  },
+  "scores": "Mean absolute log error over held-out lineage units, per fold; E2 pools both deprived histories with equal weight per lineage-history unit. All models in a comparison score the same units.",
+  "decision_rule": {
+    "practical_margin_log": 0.05,
+    "pairwise": "Model A outperforms model B when its mean absolute log error is at least 0.05 lower in both folds and A has the lower absolute error for a strict majority of scored held-out units in each fold. The converse defines B outperforming A; otherwise the pair is not distinguished. These are descriptive verdicts, not significance tests."
+  },
+  "diagnostics": "Development-fitted slopes b, implied cost dimensions d = 1 - b, per fold and history; their agreement across folds describes whether one power law spans the 10-fold size range. The OD sensitivity reruns every endpoint with the same rules.",
+  "excluded_claims": ["logarithmic neutrality across coexisting size classes: the lineages grew separately", "a measured nutrient quota: none is in the archive", "the binding resource at carrying capacity: it was not measured", "a universal cost exponent"],
+  "statistical_scope": "Point errors over 10 held-out lineages per fold; no intervals or significance claims"
+}

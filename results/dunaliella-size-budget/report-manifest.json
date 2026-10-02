@@ -1,0 +1,36 @@
+{
+  "artifacts": [
+    {
+      "path": "results/dunaliella-size-budget/posthoc-diagnostics.json",
+      "sha256": "c83fc5ee3d80420fc847ba934de5c55f708b5c671504a4b44dbd4985b061cede"
+    },
+    {
+      "path": "results/dunaliella-size-budget/size-budget.png",
+      "sha256": "40ed832ab2994e25b4e89419e9da8eade6676962a1113a2a8e266dfdcf6745cc"
+    },
+    {
+      "path": "results/dunaliella-size-budget/size-budget.svg",
+      "sha256": "f147b72e38653f7d250e8e3f9706f3a94e7e5ff12d6791b46b7d155cec6a5755"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "results/dunaliella-size-budget/study.json",
+      "sha256": "061abe1259e87fc09f3e9c06dd11419b35ee1c28190f2f4e1ff2c9a5c58e564b"
+    },
+    {
+      "path": "data/dunaliella-size-budget/2026-10-02/frozen-forecasts.json",
+      "sha256": "9e92cb493c04eef5696209eb08d52084362ad9d295adab7d244121bc80d3d986"
+    },
+    {
+      "path": "data/dunaliella-size-budget/2026-10-02/capacities.json",
+      "sha256": "94268dc8a0b187396dcbb672fe2eadd89b51577fb16ec2d26f0c1af020d9c1e0"
+    }
+  ],
+  "run_id": "dunaliella-size-budget-2026-10-02",
+  "scope": "Post hoc: specified after the held-out evaluation; no forecast, score or verdict is changed",
+  "source": {
+    "path": "experiments/report_dunaliella_size_budget.py",
+    "sha256": "c420a2a25c4f1ec89f8f04e0933eead405a0654cb9987c077134fa93f367f9fb"
+  }
+}

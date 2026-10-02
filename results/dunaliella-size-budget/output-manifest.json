@@ -1,0 +1,13 @@
+{
+  "artifacts": [
+    {
+      "path": "results/dunaliella-size-budget/study.json",
+      "sha256": "061abe1259e87fc09f3e9c06dd11419b35ee1c28190f2f4e1ff2c9a5c58e564b"
+    }
+  ],
+  "capacities": {
+    "path": "data/dunaliella-size-budget/2026-10-02/capacities.json",
+    "sha256": "94268dc8a0b187396dcbb672fe2eadd89b51577fb16ec2d26f0c1af020d9c1e0"
+  },
+  "run_id": "dunaliella-size-budget-2026-10-02"
+}
