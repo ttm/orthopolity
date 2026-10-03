@@ -48,6 +48,19 @@
 All source files are preserved byte-for-byte and hashed. New views, estimates,
 figures and audio are analysis outputs and are labeled separately.
 
+## Candidate metadata audit: 3 October 2026
+
+`neutrality-audit/2026-10-03/` retains seven metadata snapshots: GitHub repository,
+commit and two equivalent tree inventories for `KerkhoffLab/PlantSizeDist` at
+`defccc3dcbbbf3ba57ff1572377de88fba83ff7f`, plus PANGAEA landing pages for
+816451 (MALASPINA fraction stocks), 983551 (PELACUS dry-mass stocks), and 911575
+(A Coruña ratios, excluded as a stock source). HTTP receipts, exact URLs and
+SHA-256 digests are in `acquisition.json`. No numerical outcome table is retained
+in this directory. `exposure.json` records raw plant rows emitted during a
+separate failed header-only inspection; it contains no outcome values.
+See [the dataset audit](../docs/next-dataset-audit.md). Verify these snapshots
+offline with `python3.11 experiments/fetch_neutrality_metadata.py --stage verify`.
+
 ## First-party controlled workload measurements
 
 `workload-pilot/2026-10-01/` contains measurements generated locally by

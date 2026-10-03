@@ -1,0 +1,4 @@
+# Retained source metadata must keep its original bytes and line endings.
+data/neutrality-audit/2026-10-03/* -text
+# Source HTML contains original whitespace; audit it by receipt hashes.
+data/neutrality-audit/2026-10-03/*.html -diff

@@ -35,6 +35,13 @@ The next audit should favour records with resource stocks measured in the
 evaluated units, multi-sample baselines and longer recovery windows. The
 sections below are the original plan; they are retained unchanged.
 
+The [3 October dataset audit](next-dataset-audit.md) now identifies direct
+dry-mass censuses of coexisting herbaceous plants and chemically assayed
+plankton sieve fractions. It records usable endpoints, exclusions, source
+receipts and an accidental exposure of raw plant rows during header inspection.
+Plant evaluation must therefore be labelled retrospective after outcome
+exposure. No new study or neutrality result is reported by that audit.
+
 ## What the available records can test
 
 Resource-cost scaling, allocation response, and recovery are separate endpoints.

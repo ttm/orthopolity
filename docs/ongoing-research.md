@@ -1,6 +1,6 @@
 # Ongoing research: resume here
 
-Last updated: 2 October 2026. This is the mutable handoff document for ongoing
+Last updated: 3 October 2026. This is the mutable handoff document for ongoing
 work. It records the current objective, decisions, completed work and exact next
 steps. Immutable executed studies belong in the run registry; this document does
 not replace their frozen protocols or results.
@@ -42,19 +42,45 @@ retrospective validation, not global blinding or prospective data collection.
   - The chemostat nitrogen-budget field holds nmol/L, not µmol/L.
   - The *Dunaliella* archive's cell-size folder overstates volume by exactly 8
     ($(4\pi/3)LW^2$ from full axes). The study uses the correct copy.
+- [Next-dataset audit](next-dataset-audit.md), completed 3 October: harvested
+  herbaceous plant plots provide directly weighed aboveground dry mass among
+  coexisting ramets. MALASPINA sieve fractions provide a separate chemical N/C
+  stock candidate. Seven source-metadata snapshots and their receipts are
+  retained in `data/neutrality-audit/2026-10-03/`. No new study was evaluated
+  or registered; the manuscript and all 21 existing studies remain current.
+- **Plant-source exposure:** a header-only binary reader emitted numerical
+  rows from CR-only CSVs. Both BFEC wetlands and all five RMBL files are
+  conservatively treated as exposed. No fits or scores were computed. Any
+  plant analysis is retrospective after raw outcome exposure; no later freeze
+  can restore an unseen-outcome claim. See the audit and `exposure.json`.
+  Plankton outcome tables have not been retrieved or decoded in this audit.
 
 ## Next actions, in priority order
 
-1. **Audit the next dataset.** Look for coexisting size classes with directly
-   measured resource stocks: only such records can test neutrality itself.
-   Follow the same discipline: retain bytes and receipts, declare the partition
-   from metadata, freeze the protocol before decoding held-out outcomes,
-   register, and keep every failure.
-2. **Manuscript.** [`docs/paper.md`](paper.md) now reports the frozen-forecast
+1. **Implement the plant biomass-profile study.** Follow the completed
+   [dataset audit](next-dataset-audit.md). Candidate source:
+   `KerkhoffLab/PlantSizeDist`, commit
+   `defccc3dcbbbf3ba57ff1572377de88fba83ff7f`. Ten directly weighed plot files;
+   exclude forest/desert allometry. Proposed split: five BFEC plots for
+   development, five RMBL plots for evaluation. This is metadata-based
+   transfer after source exposure, not a blinded holdout. Before formal
+   scoring, freeze the mass domain, bin conventions, whole-profile scores,
+   missingness/tail accounting and development-only competitors. Calibrate a
+   finite-census/dependence observation model on synthetic inputs before
+   choosing equivalence tolerances. A direct census describes realized
+   aboveground mass; equal expected ecological allocation is a separate claim.
+2. **Preserve the plankton candidate for a separate freeze.** PANGAEA 816451
+   has chemical stocks in common-net 200–500, 500–1000 and 1000–2000 µm
+   fractions. Prefer nitrogen; audit sampling/volume normalization and stock
+   uncertainty before interpreting net catches as water-column allocation.
+   Exclude the different-net small fraction and the ambiguously bounded tail.
+   Freeze before decoding any numerical plankton outcome. No measured
+   opportunity budgets or individual quotas are supplied by this source.
+3. **Manuscript.** [`docs/paper.md`](paper.md) now reports the frozen-forecast
    tests in Section 5 (commits `31b2f84`, `d5d6ee1`). Revise it again only when
    a new registered study changes a conclusion. Rebuild with `make paper`, which
    needs TeX; the PDF is byte-reproducible from the manuscript's commit date.
-3. Never edit a registered study. A corrective analysis gets a new run
+4. Never edit a registered study. A corrective analysis gets a new run
    identifier and its own frozen protocol.
 
 ## Resume commands
@@ -62,6 +88,7 @@ retrospective validation, not global blinding or prospective data collection.
 ```bash
 git status --short --branch
 PYTHONPATH=src python3.11 experiments/register_runs.py --verify
+python3.11 experiments/fetch_neutrality_metadata.py --stage verify
 make archived-cost-transfer chemostat-response dunaliella-size-budget PY=python3.11   # offline audits
 ```
 
@@ -89,6 +116,10 @@ source audit.
 - Registration of all three: `experiments/register_available_data.py`
   (`make available-data-registry PY=python3.11`). It is idempotent; add later
   studies to `STUDIES` without changing existing entries.
+- New candidate metadata: `experiments/fetch_neutrality_metadata.py` has
+  separate acquire/verify stages and a fixed metadata-only URL allowlist.
+  Source files, receipts and the plant exposure record are under
+  `data/neutrality-audit/2026-10-03/`; this is not a registered result.
 
 ## Checkpoint log
 
@@ -157,3 +188,14 @@ source audit.
   Section 5, Figure 2 (*Dunaliella*), and an updated abstract, discussion,
   conclusion and references. PDF rebuilt (`d5d6ee1`, 15 pages, no LaTeX
   warnings); a second rebuild was byte-identical.
+- 3 October 2026, session continuation. Checkout matched `05f2b4f` and was
+  clean. All 295 tests passed and registry verification retained 21 studies /
+  539 file references. Dataset screening identified directly harvested plant
+  masses and chemically assayed plankton sieve fractions; methods, exclusions,
+  proposed transfer design and seven metadata receipts are in
+  [the audit](next-dataset-audit.md). The plant CSV header inspection exposed
+  raw rows on CR-only line endings; retrieval stopped, no scoring occurred,
+  and the incident was reported at 08:03:16 UTC (exact request time unknown).
+  Future plant work must disclose retrospective raw-outcome exposure. Next:
+  implement the plant protocol and observation calibration before formal
+  scoring; preserve unused plankton outcomes for a separate frozen study.

@@ -57,6 +57,12 @@ failures, instrument changes and engineered-runtime scope are retained.
 Resume ongoing work from [docs/ongoing-research.md](docs/ongoing-research.md),
 which records current decisions, acquisition status and exact next steps.
 
+The [next-dataset audit](docs/next-dataset-audit.md) identifies directly harvested
+plant biomass and chemical stocks in plankton sieve fractions for tests of
+resource profiles among coexisting classes. It retains source metadata and
+measurement limits, including a raw plant-outcome exposure during inspection.
+The next analysis is retrospective and has not yet been evaluated.
+
 Further empirical work follows the [available-data programme](docs/available-data-programme.md):
 published resource measurements and interventions, separate calibration records,
 and evaluation on whole held-out communities or studies. New experimental

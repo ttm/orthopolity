@@ -9,6 +9,12 @@ The newly retained NOAA 2025 snapshot under `data/solar-validation/2026-10-02/`
 is another third-party GOES XRS input. Its URL, bytes and retrieval metadata
 are retained separately; the historical snapshot catalogue is unchanged.
 
+`data/neutrality-audit/2026-10-03/` holds source metadata rather than raw
+outcome tables. The plant repository metadata at the pinned commit reports no
+explicit license; none is inferred from the paper's public data link. Dataset
+terms shown by PANGAEA remain in the retained landing-page snapshots. These
+metadata and any later source inputs do not acquire the package's MIT license.
+
 | Inputs | Source and recorded terms |
 |---|---|
 | NOAA annual flare CSVs and metadata | NOAA NCEI GOES XRS reports; the supplied metadata states redistribution and use are unrestricted. |
