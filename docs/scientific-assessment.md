@@ -2,6 +2,8 @@
 
 Assessment: 28 September 2026; consistency review and external-assessment addendum:
 29 September 2026; constructive rereading: 30 September 2026.
+Scientific-strength and prior-work addendum: 3 October 2026, before the plant
+study's formal evaluation.
 This is a research assessment and proposed design,
 not a completed validation study or a preregistration. It supplements the
 [manuscript](paper.md) and [remaining work](roadmap.md).
@@ -930,3 +932,71 @@ resource and leaves abundance inversely proportional to per-object cost. Here
 that cost is geometric. The lineages grew separately and no quota or binding
 resource was measured, so the result supports budget closure, not neutrality
 across a coexisting size spectrum.
+
+## Scientific contribution and prior-work comparison: 3 October 2026
+
+This assessment precedes the plant study's formal evaluation and claims no new
+plant result. The programme now has stronger conditional forecasts than the
+original exploratory analysis, but its present contribution remains **modest
+as original science, strong in transparency, and weak as evidence for a general
+neutrality law**. The 295 software tests and 21 registered records establish
+implementation and provenance; they are not 295 scientific validations or 21
+independent confirmations.
+
+The strongest positive case is the [runtime intervention](dimensionality-intervention.md):
+separately measured CPU costs predict allocation and its response to changed
+opportunities in one engineered mechanism. The [Dunaliella study](dunaliella-size-budget.md)
+adds successful transfer of an equal-biovolume forecast across selected lineages.
+Its observed near-equality of carrying biovolume is the empirical finding;
+the inverse count–volume relation is derived by dividing that biovolume by mean
+cell volume, rather than supplied by a second independent count measurement.
+The cultures grew separately, and neither a binding nutrient nor per-cell
+nutrient costs was measured. The resource-budget interpretation consequently
+remains conditional, and the result cannot establish community neutrality.
+
+The [chemostat study](chemostat-response.md) supplies a useful negative result:
+the frozen cost-ratio rule fails its score, attainable redistribution and
+direction tests, and no forecast improves appreciably on persistence. In
+[solar validation](solar-validation.md), logarithmic neutrality beats linear
+neutrality on count forecasts, but historical frequencies predict better and
+the calibrated observation gate leaves neutrality unresolved. These results
+constrain particular hypotheses; they do not support a broad affirmative law.
+
+The mathematics clarifies reference measures, accounting and consequences of
+symmetry assumptions. Conservation does not select equal allocation.
+Exchangeability assumes a symmetry that must be tested in actual systems, and
+the mixture-curvature result applies standard convexity. Useful clarification
+does not by itself constitute a new mathematical theory.
+
+Two close predecessors sharpen the novelty requirement. [Marshall et al.
+(2022)](https://doi.org/10.1073/pnas.2200713119) independently measured metabolic
+scaling in evolved *E. coli* and used it to predict maximum density and
+biovolume across resource levels. Cost-to-capacity predictions therefore already
+have direct experimental precedents with independently measured costs.
+[Fogarty and Small (2014)](https://arxiv.org/abs/1407.5079) developed equivalence
+tests for complete functional observations using bootstrap methods. Together
+with the ecological spectrum-estimation benchmarks cited above, this means
+that whole-profile testing or cost-based forecasting alone cannot establish
+methodological priority. This is a targeted comparison, not an exhaustive
+priority search.
+
+The forthcoming plant application addresses an important measurement gap:
+directly weighed stocks of coexisting plants. However, [Dillon et al.
+(2019)](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecs2.2856) already
+found Weibull distributions superior to Pareto distributions at every site.
+Detecting curvature alone would add little. Potential new value lies in an
+audited biomass-profile target, transferred forecasts, calibrated observation
+limits and the distinction between realized stocks and ecological expectations.
+The [documented outcome exposure](next-dataset-audit.md#outcome-exposure-incident)
+makes the application retrospective; freezing subsequent scoring prevents
+score-driven revision but cannot restore blinding.
+
+The best present framing is a **reproducible critical evaluation of resource
+equipartition**, with conditional forecasting successes, explicit counterexamples
+and demonstrated inference limits. A stronger original contribution needs
+either a discriminating natural-system prediction with independently declared
+eligibility, measured costs and adequate independent replication, or a methods
+advance that improves calibrated decisions against established alternatives
+and changes a substantive interpretation. A deeper mechanism is not compulsory
+for a law; independently specified scope and successful discriminating
+predictions are. Additional datasets help when they resolve those requirements.
