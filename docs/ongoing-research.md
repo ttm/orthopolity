@@ -1,6 +1,6 @@
 # Ongoing research: resume here
 
-Last updated: 3 October 2026. This is the mutable handoff document for ongoing
+Last updated: 4 October 2026. This is the mutable handoff document for ongoing
 work. It records the current objective, decisions, completed work and exact next
 steps. Immutable executed studies belong in the run registry; this document does
 not replace their frozen protocols or results.
@@ -73,6 +73,15 @@ retrospective validation, not global blinding or prospective data collection.
 
 ## Next actions, in priority order
 
+Follow the [scoped natural-law route](natural-law-route.md), recorded on
+4 October after the user's question about establishing a law. This is a
+feasibility plan, not a frozen protocol or positive result. It proposes a
+nitrogen-stock regularity and identifies BCO-DMO 956590 as a potential
+independent chemical-stock replication of MALASPINA. No raw nitrogen outcomes
+from either proposed source have been acquired. The Leg 8 methods review did
+expose published dry-mass/isotope summaries; the new review note records this,
+without modifying the registered plant exposure input.
+
 1. **Audit the plankton observation design before a separate outcome freeze.** PANGAEA 816451
    has chemical stocks in common-net 200–500, 500–1000 and 1000–2000 µm
    fractions. Prefer nitrogen; audit sampling/volume normalization and stock
@@ -81,7 +90,12 @@ retrospective validation, not global blinding or prospective data collection.
    Freeze before decoding any numerical plankton outcome. No measured
    opportunity budgets or individual quotas are supplied by this source. Decide
    whether independent samples and observation metadata can identify an expected
-   allocation target. If not, retain a descriptive audit without claiming a law test.
+   allocation target. Review one potential same-resource replication archive,
+   BCO-DMO 956590, including processing/gear comparability. Obtain publicly
+   available tow/sample/QC metadata for both. If observation calibration or
+   independent replication is inadequate, stop this law-test route and retain
+   a descriptive audit without claiming a law test. Stock regularity itself
+   does not require opportunity budgets; a feasibility explanation does.
 2. **Resolve scope or method novelty.** Before adding further examples, declare
    independently observable eligibility for a neutral regime or identify a
    methods comparison that changes a substantive inference. Preserve the plant
