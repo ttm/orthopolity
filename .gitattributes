@@ -2,3 +2,6 @@
 data/neutrality-audit/2026-10-03/* -text
 # Source HTML contains original whitespace; audit it by receipt hashes.
 data/neutrality-audit/2026-10-03/*.html -diff
+# Pinned plant CSVs include CR-only files. Never normalize their source bytes.
+data/plant-sources/2026-10-03/* -text
+data/plant-sources/2026-10-03/*.csv -diff
