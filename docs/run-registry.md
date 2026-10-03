@@ -135,6 +135,17 @@ it to `archived-cost-transfer-2026-10-02`, whose exponents it assigns
 cross-taxon, and to `restrictions-2026-10-01`. See
 [the study](dunaliella-size-budget.md).
 
+The [plant biomass-profile study](plant-biomass-profile.md) adds record 22,
+`plant-biomass-profile-2026-10-03`. It retains ten directly weighed plot sources,
+source-exposure metadata, protocol and amendment, development-only forecasts,
+every membership record, synthetic finite-census calibration and evaluation.
+Protocol and algorithms were committed before formal fitting; forecasts and
+calibration were pushed in `1258e80` before scoring. Earlier raw outcome exposure
+prevents a blinding claim. Aboveground stock is measured directly, but $q(m)=m$
+is definitional. Point stock/count comparisons transfer across locales;
+ecological expected neutrality remains unresolved. Synthetic calibration is
+separate from field evidence within this actual-measurement reanalysis record.
+
 ## Hardware and threading
 
 The new workload metadata records CPU model, architecture/logical CPU count,

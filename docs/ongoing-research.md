@@ -22,9 +22,10 @@ retrospective validation, not global blinding or prospective data collection.
 
 ## Current state
 
-- Branch: `py314-and-package-names`, pushed to `origin`. All three
-  available-data studies are complete and registered. Registry: 21 records, 539
-  retained file references. Run the suite with `make test PY=python3.11`.
+- Branch: `py314-and-package-names`, pushed to `origin`. All four
+  available-data studies are complete and registered. Registry: 22 records, 571
+  retained file references. All 317 tests pass. Run the suite with
+  `make test PY=python3.11`.
 - [Archived cost transfer](archived-cost-transfer.md) (`archived-cost-transfer-2026-10-02`):
   a size-geometric carbon cost predicts held-out 25°C *Synechococcus* quotas
   best; strain identity predicts N and P better than size.
@@ -46,38 +47,48 @@ retrospective validation, not global blinding or prospective data collection.
   herbaceous plant plots provide directly weighed aboveground dry mass among
   coexisting ramets. MALASPINA sieve fractions provide a separate chemical N/C
   stock candidate. Seven source-metadata snapshots and their receipts are
-  retained in `data/neutrality-audit/2026-10-03/`. No new study was evaluated
-  or registered; the manuscript and all 21 existing studies remain current.
+  retained in `data/neutrality-audit/2026-10-03/`. The audit itself evaluated no
+  study; the subsequent plant study below closes its direct-stock measurement gap.
 - **Plant-source exposure:** a header-only binary reader emitted numerical
   rows from CR-only CSVs. Both BFEC wetlands and all five RMBL files are
   conservatively treated as exposed. No fits or scores were computed. Any
   plant analysis is retrospective after raw outcome exposure; no later freeze
   can restore an unseen-outcome claim. See the audit and `exposure.json`.
   Plankton outcome tables have not been retrieved or decoded in this audit.
+- [Plant biomass profile](plant-biomass-profile.md)
+  (`plant-biomass-profile-2026-10-03`): ten directly weighed plot files, five
+  BFEC development plots and five RMBL evaluation plots after raw exposure.
+  Logarithmic neutrality ranks second for primary biomass TV (0.493 versus
+  Pareto 0.470); all three trained count models outperform both neutral models.
+  Every plot favors a different biomass template. Thirty missing masses and
+  all exclusions remain in the ledger; a 112.55 g ramet above the frozen domain
+  contains 24.50% of one plot's known mass. Synthetic calibration distinguishes
+  normalized expected stocks from average normalized census shares and exposes
+  severe iid-envelope failures under dependence. Ecological neutrality remains
+  unresolved. Exact offline replay and isolated missing-manifest recovery pass.
+- [Scientific assessment](scientific-assessment.md): modest original scientific
+  contribution, strong transparency, weak evidence for a general natural law.
+  Close prior metabolic cost/capacity work and existing spectrum methods narrow
+  novelty. More records alone do not improve identification.
 
 ## Next actions, in priority order
 
-1. **Implement the plant biomass-profile study.** Follow the completed
-   [dataset audit](next-dataset-audit.md). Candidate source:
-   `KerkhoffLab/PlantSizeDist`, commit
-   `defccc3dcbbbf3ba57ff1572377de88fba83ff7f`. Ten directly weighed plot files;
-   exclude forest/desert allometry. Proposed split: five BFEC plots for
-   development, five RMBL plots for evaluation. This is metadata-based
-   transfer after source exposure, not a blinded holdout. Before formal
-   scoring, freeze the mass domain, bin conventions, whole-profile scores,
-   missingness/tail accounting and development-only competitors. Calibrate a
-   finite-census/dependence observation model on synthetic inputs before
-   choosing equivalence tolerances. A direct census describes realized
-   aboveground mass; equal expected ecological allocation is a separate claim.
-2. **Preserve the plankton candidate for a separate freeze.** PANGAEA 816451
+1. **Audit the plankton observation design before a separate outcome freeze.** PANGAEA 816451
    has chemical stocks in common-net 200–500, 500–1000 and 1000–2000 µm
    fractions. Prefer nitrogen; audit sampling/volume normalization and stock
    uncertainty before interpreting net catches as water-column allocation.
    Exclude the different-net small fraction and the ambiguously bounded tail.
    Freeze before decoding any numerical plankton outcome. No measured
-   opportunity budgets or individual quotas are supplied by this source.
-3. **Manuscript.** [`docs/paper.md`](paper.md) now reports the frozen-forecast
-   tests in Section 5 (commits `31b2f84`, `d5d6ee1`). Revise it again only when
+   opportunity budgets or individual quotas are supplied by this source. Decide
+   whether independent samples and observation metadata can identify an expected
+   allocation target. If not, retain a descriptive audit without claiming a law test.
+2. **Resolve scope or method novelty.** Before adding further examples, declare
+   independently observable eligibility for a neutral regime or identify a
+   methods comparison that changes a substantive inference. Preserve the plant
+   finite-census/dependence findings as calibrated synthetic diagnostics rather
+   than fitting them to provide an ecological verdict.
+3. **Manuscript.** [`docs/paper.md`](paper.md) now reports the plant comparison,
+   Figure 3, outcome exposure and narrower scientific contribution. Revise it again only when
    a new registered study changes a conclusion. Rebuild with `make paper`, which
    needs TeX; the PDF is byte-reproducible from the manuscript's commit date.
 4. Never edit a registered study. A corrective analysis gets a new run
@@ -90,6 +101,7 @@ git status --short --branch
 PYTHONPATH=src python3.11 experiments/register_runs.py --verify
 python3.11 experiments/fetch_neutrality_metadata.py --stage verify
 make archived-cost-transfer chemostat-response dunaliella-size-budget PY=python3.11   # offline audits
+make plant-sources plant-biomass-profile PY=python3.11
 ```
 
 A clone lacks the 98.7 MB chemostat bundle. These audits do not need it.
@@ -111,9 +123,15 @@ source audit.
   same way.
 - Cost study, frozen: `experiments/run_archived_cost_transfer.py`,
   `src/orthopolity/archived_cost_transfer.py` and its outputs.
+- Plant study, frozen: `experiments/fetch_plant_sources.py`,
+  `experiments/run_plant_biomass_profile.py`, `src/orthopolity/plant_profiles.py`,
+  `src/orthopolity/plant_observation.py`, protocol plus amendment, exact
+  `data/plant-sources/` bytes and `data/plant-biomass-profile/` forecasts,
+  calibration and membership. Results in `results/plant-biomass-profile/`.
+  The separate figure manifest is a post-hoc presentation archive.
 - Post-hoc report scripts (`experiments/report_*.py`) read retained outputs
   only and refuse to overwrite changed bytes.
-- Registration of all three: `experiments/register_available_data.py`
+- Registration of all four: `experiments/register_available_data.py`
   (`make available-data-registry PY=python3.11`). It is idempotent; add later
   studies to `STUDIES` without changing existing entries.
 - New candidate metadata: `experiments/fetch_neutrality_metadata.py` has
@@ -199,3 +217,15 @@ source audit.
   Future plant work must disclose retrospective raw-outcome exposure. Next:
   implement the plant protocol and observation calibration before formal
   scoring; preserve unused plankton outcomes for a separate frozen study.
+- Plant execution checkpoint, 3 October. Protocol `6a2d2b3` precedes retained
+  source acquisition; implementation/amendment `7cad34e` precedes formal
+  calibration and fitting. Forecasts/calibration frozen at 21:34:45 UTC and
+  pushed in `1258e80` before evaluation at 21:35:21 UTC. All five comparisons,
+  missingness/tails and generated census diagnostics are retained. Registered
+  as record 22 with 571 file references. Exact offline audit, figure byte
+  reproduction and isolated missing-manifest recovery pass; 317 tests pass.
+  Paper Section 5.4 and Figure 3 report the mixed stock/count comparison and
+  unresolved expected neutrality. Prior raw exposure remains part of every
+  interpretation. Next: investigate the plankton observation design without
+  decoding its outcome table, or address an explicitly discriminating methods
+  comparison; do not modify any registered plant outputs.

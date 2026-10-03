@@ -145,3 +145,29 @@ quota or target completed count enforces its observed class shares.
 
 The [validation-round report](../docs/validation-round.md) links resources,
 algorithms, outcomes, explicit limitations and offline audit commands.
+
+## Directly weighed plant sources and profile transfer: 3 October 2026
+
+`plant-sources/2026-10-03/` retains ten exact CSVs and an acquisition receipt
+from [KerkhoffLab/PlantSizeDist](https://github.com/KerkhoffLab/PlantSizeDist),
+commit `defccc3dcbbbf3ba57ff1572377de88fba83ff7f`. Each file matches its
+published Git blob SHA-1; the receipt also retains SHA-256, bytes, exact URLs,
+retrieval times and response metadata. CR-only source endings are preserved.
+`fetch_plant_sources.py --stage verify` checks all bytes without decoding masses.
+
+[Dillon et al. (2019)](https://doi.org/10.1002/ecs2.2856) describe exhaustive
+aboveground harvests, drying at at least 60°C for over a week, and weighing to
+0.001 g. Objects are ramets/stem clusters, including inseparable bunched grasses.
+Five BFEC plots train models; five RMBL plots evaluate them. Forest/desert
+allometric inputs are excluded. The recorded masses are used without imposing
+a new rounding rule. No binding resource, uptake flux or opportunity budget
+is supplied. The author repository reports no explicit licence.
+
+`plant-biomass-profile/2026-10-03/` retains synthetic calibration, the fixed
+forecasts, all-record development/evaluation ledgers and registration. The
+source-exposure record in `neutrality-audit/2026-10-03/exposure.json` is an input;
+this is retrospective after raw exposure, although protocols and forecasts
+precede formal scoring. Eight half-decade bins on 0.01–100 g retain empty
+classes. Missing and excluded masses remain explicit. The generated calibration
+uses its recorded independent random streams; it supplies no new field data.
+See [the study report](../docs/plant-biomass-profile.md).

@@ -51,6 +51,18 @@ def size_budget_summary(result):
             for outcome, evaluation in result["evaluation"].items()}
 
 
+def plant_profile_summary(result):
+    evaluation = result["evaluation"]
+    return {"equal_plot_mean_scores": evaluation["equal_plot_mean_scores"],
+            "ranking_by_stock_tv": evaluation["ranking_by_stock_tv"],
+            "differences_from_log_neutral": evaluation["differences_from_log_neutral"],
+            "coverage": {plot: {key: row[key] for key in
+                         ("raw_count", "in_domain_count", "below_count", "above_count",
+                          "raw_mass", "below_mass", "above_mass", "count_coverage", "mass_coverage")}
+                         for plot, row in evaluation["observed_profiles"].items()},
+            "ecological_neutrality_decision": evaluation["ecological_neutrality_decision"]}
+
+
 STUDIES = {
     "archived-cost-transfer": {
         "config": "configs/archived_cost_transfer_2026-10-02.json",
@@ -122,6 +134,29 @@ STUDIES = {
         "summary": size_budget_summary,
         "parents": [("archived-cost-transfer-2026-10-02", "uses_assigned_cross_taxon_cost_exponents"),
                     ("restrictions-2026-10-01", "tests_budget_closure_and_restoration_on_published_measurements")],
+    },
+    "plant-biomass-profile": {
+        "config": "configs/plant_biomass_profile_2026-10-03.json",
+        "amendments": ["configs/plant_biomass_profile_2026-10-03_amendment-1.json"],
+        "data": "data/plant-biomass-profile/2026-10-03",
+        "results": "results/plant-biomass-profile",
+        "plan": "frozen-forecasts.json",
+        "result_plan_key": "frozen_forecasts",
+        "plan_inputs": True,
+        "kind": "actual_measurement",
+        "resources": [{"name": "Aboveground plant dry mass",
+                       "definition": "Directly harvested and weighed ramet/stem-cluster dry mass; bin stock is its sum, with q(m)=m an identity rather than an independently tested cost law. No limiting nutrient or opportunity budget is measured",
+                       "units": "grams"}],
+        "algorithm": "Retrospective Ohio-to-Colorado transfer of five development-only count and expected-stock templates, with separate synthetic finite-census and dependence calibration",
+        "source_provenance": "Protocol and algorithm commits precede formal fitting/scoring; forecasts and calibration were committed and pushed before scoring. Raw plant outcomes had been exposed earlier, as retained in exposure.json; no blinding claim",
+        "posthoc": [{"name": "Presentation figure from retained outputs; computes no fit, forecast, score or verdict",
+                     "source": "experiments/report_plant_biomass_profile.py"}],
+        "seeds": {"master_seed": 2026100301,
+                  "recipe": "NumPy SeedSequence: reference [seed,n,0]; census [seed,n,block,int(100*exponent),1]",
+                  "scope": "Synthetic calibration only; deterministic empirical fitting and scoring"},
+        "summary": plant_profile_summary,
+        "parents": [("profile-calibration-2026-10-02", "extends_finite_census_observation_diagnostics"),
+                    ("dunaliella-size-budget-2026-10-02", "examines_coexisting_stocks_after_separate_lineage_budget_closure")],
     },
 }
 

@@ -1,0 +1,16 @@
+{
+  "run_id": "plant-biomass-profile-2026-10-03",
+  "amendment": 1,
+  "timing": "Before formal calibration, development fitting or evaluation; after byte retention and prior disclosed raw-outcome exposure.",
+  "base_config_reference": {
+    "path": "configs/plant_biomass_profile_2026-10-03.json",
+    "sha256": "20a53ad1aeb002f40c8b37bc2af810ba4a6911436f988086901be66f0be7e0af"
+  },
+  "clarifications": {
+    "empirical_count": "The Jeffreys-0.5 smoothed count template supplies both secondary count TV and binned log loss. The primary mass template remains unsmoothed.",
+    "coverage_denominator": "Positive finite source masses constitute raw_count/raw_mass and the coverage denominators. Missing, unparseable, nonfinite and nonpositive CSV records are separately retained and counted in membership; coverage does not imply those have known mass.",
+    "likelihood": "Continuous likelihood for recorded masses is an approximation; rounding is simulated as a sensitivity, not imposed on source values. Finite count_log_shares remain valid under probability underflow; only true log-zero yields flagged infinite loss.",
+    "optimizer": "Pareto bounded scalar success required. Weibull 12 starts: shapes0.3,0.8,1.5,3.5 crossed with pooled development log-mass quantiles0.25,0.5,0.75; L-BFGS-B maxiter600 ftol1e-12 gtol1e-7. Only successful finite optimizations can be selected; no initial-start fallback.",
+    "null_envelope": "Synthetic 95% IID-envelope threshold is computed against the unrounded log-neutral expected-stock template, matching descriptive scoring. Exact rounded expectations are retained separately to quantify measurement/ratio bias."
+  }
+}

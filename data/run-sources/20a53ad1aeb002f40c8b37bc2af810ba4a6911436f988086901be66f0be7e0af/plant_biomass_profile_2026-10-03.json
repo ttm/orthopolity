@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "run_id": "plant-biomass-profile-2026-10-03",
+  "evidence_kind": "actual_measurement",
+  "source": {
+    "publication_doi": "10.1002/ecs2.2856",
+    "repository": "https://github.com/KerkhoffLab/PlantSizeDist",
+    "commit": "defccc3dcbbbf3ba57ff1572377de88fba83ff7f",
+    "metadata_receipt": "data/neutrality-audit/2026-10-03/acquisition.json",
+    "exposure_record": "data/neutrality-audit/2026-10-03/exposure.json",
+    "files": [
+      {
+        "plot": "BFECPrairie1",
+        "upstream_path": "Data/BFECPrairie1.csv",
+        "git_blob_sha1": "8b56501254df598232bd3b283fa14a98bbca3958",
+        "bytes": 6700,
+        "mass_field": "mass.g",
+        "role": "development"
+      },
+      {
+        "plot": "BFECPrairie2",
+        "upstream_path": "Data/BFECPrairie2.csv",
+        "git_blob_sha1": "4b6c330439c01c0a89038ee5d723df21fda77f2b",
+        "bytes": 7929,
+        "mass_field": "mass.g",
+        "role": "development"
+      },
+      {
+        "plot": "BFECPrairie3",
+        "upstream_path": "Data/BFECPrairie3.csv",
+        "git_blob_sha1": "11e19263d667d2430db29cdb58f79f528c75c802",
+        "bytes": 5905,
+        "mass_field": "mass.g",
+        "role": "development"
+      },
+      {
+        "plot": "BFECWetland1",
+        "upstream_path": "Data/BFECWetland1.csv",
+        "git_blob_sha1": "8e5de3176717a818363aa2ac025c84445c13bb54",
+        "bytes": 26957,
+        "mass_field": "Weight",
+        "role": "development"
+      },
+      {
+        "plot": "BFECWetland2",
+        "upstream_path": "Data/BFECWetland2.csv",
+        "git_blob_sha1": "28df923539ff54324214cf51c736570c0db72a75",
+        "bytes": 18049,
+        "mass_field": "Weight",
+        "role": "development"
+      },
+      {
+        "plot": "RMBLAlpine1",
+        "upstream_path": "Data/RMBLAlpine1.csv",
+        "git_blob_sha1": "7779434e0755e96fdc75b2dd7865d06fb3d7cc03",
+        "bytes": 40660,
+        "mass_field": "biomass",
+        "role": "evaluation"
+      },
+      {
+        "plot": "RMBLAlpine2",
+        "upstream_path": "Data/RMBLAlpine2.csv",
+        "git_blob_sha1": "da3bd1a6e41b2c09cd4d01b43c704f2a4cad5620",
+        "bytes": 14499,
+        "mass_field": "biomass",
+        "role": "evaluation"
+      },
+      {
+        "plot": "RMBLAlpine3",
+        "upstream_path": "Data/RMBLAlpine3.csv",
+        "git_blob_sha1": "a58959ea09a9840510dabef46f7649869efb7e8d",
+        "bytes": 7583,
+        "mass_field": "biomass",
+        "role": "evaluation"
+      },
+      {
+        "plot": "RMBLGrassSage",
+        "upstream_path": "Data/RMBLGrassSage.csv",
+        "git_blob_sha1": "ee629eef70024c7e37317a1c3860dc3d9485fda4",
+        "bytes": 10025,
+        "mass_field": "biomass",
+        "role": "evaluation"
+      },
+      {
+        "plot": "RMBLWetMeadow",
+        "upstream_path": "Data/RMBLWetMeadow.csv",
+        "git_blob_sha1": "93895d231c79e92075b392c4801d1fb8cdaf5b97",
+        "bytes": 26778,
+        "mass_field": "biomass",
+        "role": "evaluation"
+      }
+    ],
+    "license": "No explicit source-repository license established; package MIT license does not apply to source data."
+  },
+  "recorded_scope": "Retrospective after published results and accidental raw plant-outcome exposure. This protocol precedes retained raw acquisition, formal development fitting and evaluation; it cannot establish unseen outcomes. Preliminary synthetic pilot results were read before this final calibration specification.",
+  "question": "How accurately do fixed stock-neutrality templates and development-only distribution templates describe the complete normalized count and aboveground dry-mass profiles of five geographically transferred coexisting plant censuses?",
+  "objects": "Harvested aboveground ramets or inseparable stem clusters within each of ten herbaceous plots; exclude forest and desert allometric masses.",
+  "resource": {
+    "name": "Aboveground plant dry mass",
+    "units": "g",
+    "cost": "q(m)=m is an accounting identity, not a fitted trait or a limiting-resource requirement.",
+    "excluded": "Roots, soil nutrient availability, external energy budgets, genets and time trajectories."
+  },
+  "partition": "Five BFEC whole plots development; five RMBL whole plots evaluation. Unequal habitat composition and only two geographic locales; not independent regional replication or a blinded holdout.",
+  "domain": {
+    "lower": 0.01,
+    "lower_rationale": "Ten times the published nearest-0.001g weighing precision; source masses are used as recorded, without imposing rounding.",
+    "upper_rule": "10 raised to ceil(log10(max positive finite development mass)); includes the development maximum. No evaluation mass enters domain selection.",
+    "log10_bin_width": 0.5,
+    "endpoint_rule": "[left,right) except last bin includes upper. All empty bins retained.",
+    "coverage": "Retain raw row membership and mass tokens; missing/unparseable/nonfinite/nonpositive entries excluded with reason. Positive masses below lower or above upper excluded from scored profiles but counted and summed in whole-plot coverage."
+  },
+  "models": {
+    "log_neutral": "Count density proportional to m^-2 on the frozen domain; normalized expected-stock shares equal logarithmic bin widths / log-domain width.",
+    "linear_neutral": "Count density proportional to m^-1; normalized expected-stock shares equal linear bin widths / linear-domain width.",
+    "empirical": "Equal-plot mean development count histogram, with predeclared Jeffreys 0.5 pseudocount per bin in each plot for count log loss; equal-plot mean mass profile without pseudocount. Count and mass are separate descriptive templates, not one generative population model.",
+    "bounded_pareto": "Count m^-alpha, alpha in [-2,4]. Fit equal-plot average per-object continuous loglikelihood within frozen domain with deterministic scalar optimizer.",
+    "bounded_weibull": "Truncated Weibull count density. Shape [0.1,5], scale [lower/100,upper*100]. Fit equal-plot average per-object continuous loglikelihood with deterministic fixed multistart optimizer; exact initializations/termination and numerical integration are frozen by the implementation source checkpoint."
+  },
+  "fitting": "No evaluation plot is passed into fit_forecasts. Continuous likelihood for recorded source masses is an approximation to weighing; synthetic rounding sensitivity is retained. Any plot with no positive in-domain mass is an explicit eligibility failure; do not silently reweight plots. Optimizer failure aborts instead of selecting an evaluation-dependent fallback.",
+  "scores": {
+    "primary": "Equal-evaluation-plot mean TV between realized normalized mass profile and each normalized expected-stock/descriptive template. Descriptive template discrepancy; it does not estimate expected normalized census-share prediction error without an observation law.",
+    "secondary": [
+      "Equal-plot count-profile TV",
+      "Equal-plot mean per-object binned negative log probability",
+      "Per-plot and pooled count/mass coverage",
+      "Equal-plot average and pooled-mass resource profiles shown separately"
+    ],
+    "comparisons": "Retain all model scores, rank by primary mean TV, report per-plot paired differences and strict-majority wins; no arbitrary significance or improvement threshold. Ties retained.",
+    "zero_probability": "If an occupied observed count bin has zero predicted probability, retain infinite log loss as null with an explicit infinite flag in JSON; never epsilon clip."
+  },
+  "calibration": {
+    "domain": [
+      0.01,
+      100.0
+    ],
+    "log10_bin_width": 0.5,
+    "rounding": 0.001,
+    "sample_sizes": [
+      160,
+      320,
+      640,
+      1280
+    ],
+    "block_sizes": [
+      1,
+      5,
+      20
+    ],
+    "exponents": [
+      2.0,
+      1.5
+    ],
+    "replicates": 1000,
+    "null_reference_replicates": 2000,
+    "seed": 2026100301,
+    "reference_stream": "SeedSequence([seed,n,0]); independent rounded IID alpha=2 null replicates supply 95% TV quantile.",
+    "evaluation_stream": "SeedSequence([seed,n,block,int(alpha*100),1]); perfect repeated blocks, final block truncated to n.",
+    "estimands": "Exact rounded expected count/stock profiles; realized TV distribution, mean normalized share bias, empty-bin fractions, and independent-reference IID-envelope exceedance with Wilson Monte Carlo intervals. Conditional on fixed census count; perfect blocks are stress scenarios, not identified plant dependence.",
+    "decision": "Actual ecological neutrality remains unresolved because inclusion/dependence, count-mass dependence and regional replication are not calibrated. The 95% IID null envelope is a synthetic sampling diagnostic, not practical equivalence or a plant verdict."
+  },
+  "excluded_claims": [
+    "New measurement collection",
+    "Unseen or externally preregistered plant outcomes",
+    "Measured limiting-resource budgets or quotas",
+    "An independently identified resource-cost exponent",
+    "Universal neutrality",
+    "Equivalence inferred from non-rejection or a fitted near-zero slope"
+  ],
+  "statistical_scope": "Five evaluation plots nested within one locale; point template discrepancies, no ecological significance/equivalence claim."
+}

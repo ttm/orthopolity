@@ -1,20 +1,19 @@
 # Resource prediction using available data
 
-2 October 2026. The current research constraint is to use available empirical
+Updated 3 October 2026. The current research constraint is to use available empirical
 data. No new laboratory, field or hardware measurements are planned. Published
 experiments and observational records provide the empirical evidence; numerical
 models can support prediction and statistical calibration. Earlier experimental
 designs remain methodological context rather than work awaiting execution.
 
-This is a metadata-screened research plan, not an executed study or frozen
-analysis protocol. No numerical outcome files from the new candidates below
-have been downloaded or analyzed. Published summaries and methods have been
-read, so any ensuing analysis must disclose retrospective development rather
-than claim global blinding. The eighteen existing registry records are unchanged.
+This programme retains the original 2 October plan below and links its executed
+studies. The plan is not itself a frozen protocol. Published summaries and methods
+were read, and plant rows were exposed before its protocol; these reanalyses must
+disclose retrospective development rather than claim global blinding.
 
 ## Executed studies
 
-Three studies have now been run and registered, all on 2 October 2026:
+Four studies have now been run and registered, on 2–3 October 2026:
 
 - The [archived cost transfer](archived-cost-transfer.md) used the BCO-DMO
   Synechococcus quotas. Size-geometric carbon cost transfers to an unused
@@ -30,6 +29,14 @@ Three studies have now been run and registered, all on 2 October 2026:
   range, so cell number scales as $V^{-1.02}$. A frozen equal-biovolume
   forecast ($d=1$) predicted held-out selection treatments best. Restoration
   after P deprivation left a size-dependent overshoot.
+- The [plant biomass-profile study](plant-biomass-profile.md) uses directly
+  weighed coexisting ramets, with five Ohio plots for development and five
+  Colorado plots for evaluation. Logarithmic neutrality ranks second for stock
+  TV (0.493 versus Pareto 0.470); fitted count templates perform better.
+  A separate synthetic calibration identifies finite-census normalization bias
+  and dependence failures. Prior raw exposure, 30 missing masses and a ramet
+  holding 24.50% of one plot's biomass above the frozen domain are retained.
+  Ecological neutrality remains unresolved.
 
 The next audit should favour records with resource stocks measured in the
 evaluated units, multi-sample baselines and longer recovery windows. The
@@ -39,8 +46,9 @@ The [3 October dataset audit](next-dataset-audit.md) now identifies direct
 dry-mass censuses of coexisting herbaceous plants and chemically assayed
 plankton sieve fractions. It records usable endpoints, exclusions, source
 receipts and an accidental exposure of raw plant rows during header inspection.
-Plant evaluation must therefore be labelled retrospective after outcome
-exposure. No new study or neutrality result is reported by that audit.
+Plant evaluation is therefore labelled retrospective after outcome exposure.
+The audit itself reports no neutrality result; the subsequent executed study is
+linked above. Chemical plankton outcomes remain undecoded for a separate protocol.
 
 ## What the available records can test
 

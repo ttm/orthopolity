@@ -15,6 +15,14 @@ explicit license; none is inferred from the paper's public data link. Dataset
 terms shown by PANGAEA remain in the retained landing-page snapshots. These
 metadata and any later source inputs do not acquire the package's MIT license.
 
+`data/plant-sources/2026-10-03/` now retains ten exact third-party CSVs from
+that same pinned `KerkhoffLab/PlantSizeDist` commit, referenced by
+[Dillon et al. (2019)](https://doi.org/10.1002/ecs2.2856). The public data link
+and article's open access do not establish a licence for the separate repository
+files. No explicit source licence was found in the retained repository metadata;
+the package MIT licence is not applied to them. Source attribution, checksums
+and retrieval provenance accompany the files.
+
 | Inputs | Source and recorded terms |
 |---|---|
 | NOAA annual flare CSVs and metadata | NOAA NCEI GOES XRS reports; the supplied metadata states redistribution and use are unrestricted. |

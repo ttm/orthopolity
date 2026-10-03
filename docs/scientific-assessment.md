@@ -3,7 +3,7 @@
 Assessment: 28 September 2026; consistency review and external-assessment addendum:
 29 September 2026; constructive rereading: 30 September 2026.
 Scientific-strength and prior-work addendum: 3 October 2026, before the plant
-study's formal evaluation.
+study's formal evaluation; plant-result judgment appended after evaluation on the same date.
 This is a research assessment and proposed design,
 not a completed validation study or a preregistration. It supplements the
 [manuscript](paper.md) and [remaining work](roadmap.md).
@@ -1000,3 +1000,40 @@ advance that improves calibrated decisions against established alternatives
 and changes a substantive interpretation. A deeper mechanism is not compulsory
 for a law; independently specified scope and successful discriminating
 predictions are. Additional datasets help when they resolve those requirements.
+
+## Plant result and updated judgment: 3 October 2026
+
+The completed [plant study](plant-biomass-profile.md) now observes directly
+weighed aboveground stocks among coexisting ramets. It closes the earlier
+measurement gap, but does not supply a calibrated test of expected ecological
+neutrality. The five Ohio development plots predict five Colorado evaluation
+plots after disclosed raw outcome exposure. Logarithmic neutrality ranks second
+for realized biomass discrepancy (0.493 TV versus Pareto 0.470); all three
+trained models predict counts better than both neutrality templates. Each
+evaluation plot favors a different biomass model. These are descriptive
+comparisons, without ecological superiority or equivalence inference.
+
+Coverage is consequential: a 112.55 g ramet above the development-fixed 100 g
+limit holds 24.50% of one evaluation plot's known mass. Thirty unknown masses
+remain explicit. Neither the domain nor these outcomes is changed after
+scoring. The q(m)=m conversion defines measured stock and tests no independent
+physiological cost law.
+
+The clearest additional methodological finding is that normalized expected
+stocks and mean normalized census shares differ. Under iid m⁻² masses on
+0.01–100 g, each half-decade bin has 12.5% of expected stock before rounding, but the largest
+bin averages only 3.13% of normalized stock at 160 ramets. The mean realized
+TV is 0.441. Perfect repeated blocks of twenty produce 97.8–99.9% exceedance
+of an iid 95% envelope at counts 160–1280 despite a neutral marginal law.
+This illustrates a serious observation-model failure, not measured ecological
+dependence or a new statistical theorem. The plant decision remains unresolved.
+
+The overall judgment therefore remains **modest original scientific
+contribution, strong transparency, weak evidence for a general natural law**.
+The new contribution is an auditable stock/count transfer comparison with
+explicit finite-census and dependence limits. A focused critical synthesis or
+methods application is defensible; a major discovery or broad confirmation of
+orthopolity is not. Further effort should resolve independently specified
+eligibility and observation design, or demonstrate a methods improvement
+against established alternatives, rather than accumulating weakly identified
+examples. Registry size and software test counts remain engineering evidence.

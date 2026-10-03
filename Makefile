@@ -16,6 +16,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: profile-calibration solar-validation dimensionality-intervention validation-round validation-round-registry
 .PHONY: chemostat-sources restore-chemostat-bundle archived-cost-transfer available-data-registry chemostat-response chemostat-response-report
 .PHONY: dunaliella-sources dunaliella-size-budget dunaliella-size-budget-report
+.PHONY: plant-sources plant-biomass-profile plant-biomass-profile-report
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -172,6 +173,15 @@ dunaliella-size-budget-report: ## post-hoc diagnostics and figure from retained 
 
 available-data-registry: ## append/check completed available-data studies idempotently
 	$(PY) experiments/register_available_data.py
+
+plant-sources: ## offline: verify the ten pinned, directly weighed plant source files
+	$(PY) experiments/fetch_plant_sources.py --stage verify
+
+plant-biomass-profile: ## offline: replay the frozen plant forecasts, calibration and evaluation
+	$(PY) experiments/run_plant_biomass_profile.py --stage audit
+
+plant-biomass-profile-report: ## figure from retained outputs only; refuses changed bytes
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/report_plant_biomass_profile.py
 
 paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 

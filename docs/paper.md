@@ -2,9 +2,10 @@
 
 **Reference measures, counterexamples, and frozen-forecast tests**
 
-> Research manuscript, revised 2 October 2026. The analyses of Sections 3 and 4 are exploratory
-> or governed by a locally recorded plan; the tests of Section 5 use protocols frozen and
-> committed before their outcomes were decoded. None is an externally preregistered study.
+> Research manuscript, revised 3 October 2026. The analyses of Sections 3 and 4 are exploratory
+> or governed by a locally recorded plan. Section 5 distinguishes forecasts frozen before
+> outcome decoding from a plant transfer study frozen after raw outcome exposure.
+> None is an externally preregistered study.
 > Authorship and submission declarations require agreement before submission. Historical drafts
 > remain in Git history. Computational details accompany the manuscript in
 > [evidence.md](evidence.md) and [source-audit.md](source-audit.md).
@@ -21,16 +22,20 @@ selects neither allocation. Exploratory assessments of earthquake and solar-flar
 an ocean biomass reconstruction and 1,300 aquatic size-spectrum estimates contradict the
 specified physical proxies and find aquatic slopes near the logarithmic prediction without
 establishing equivalence. Centred slopes, fitted dispersion and conservation cannot establish
-ensemble equipartition. We then test forecasts frozen before their outcomes were decoded. In an
+ensemble equipartition. We then test frozen forecasts, disclosing prior outcome exposure. In an
 engineered CPU-allocation system, independently measured non-unit costs predict allocation
 profiles and their response to a restriction. On an unused solar year, logarithmic neutrality
 predicts counts better than linear neutrality, but neutrality itself remains unresolved. In 30
 size-selected algal lineages regrown in one medium, carrying capacity in biovolume is constant
 across a 10-fold range of cell volume, so abundance scales inversely with volume, as budget
 closure with a geometric cost predicts. In grazed food-web chemostats, a two-budget cost-ratio
-rule fails to predict pulse-driven redistribution. Resource symmetry supplies a possible
-physical postulate for equal expected allocations. The evidence supports budget closure where
-a shared budget is known and a framework for testing allocation; it does not establish
+rule fails to predict pulse-driven redistribution. In directly weighed plant censuses, a flat
+logarithmic biomass template ranks second of five transferred models, while all three trained
+models predict counts better. Finite-census calibration distinguishes normalized expected
+stocks from expected normalized census shares; ecological neutrality remains unresolved.
+Resource symmetry supplies a possible
+physical postulate for equal expected allocations. The evidence supports conditional
+budget-closure forecasts under declared resource conditions and a framework for testing allocation; it does not establish
 neutrality across coexisting natural size classes or a new natural or cosmological law.
 
 ## 1. Introduction
@@ -58,8 +63,8 @@ logarithmic plots do not establish a power-law distribution (Newman, 2005; Claus
 and Newman, 2009). Rewriting a distribution as inverse resource cost does not identify a new
 mechanism. Our contribution is a critical reconstruction: we specify the measure and resource,
 derive their conditional consequences, give counterexamples to stronger interpretations,
-assess what the repository's existing data can support, and test forecasts frozen before their
-outcomes were decoded. We make no priority claim for the accounting identity or for ecological
+assess what the repository's existing data can support, and test frozen forecasts with their
+exposure history retained. We make no priority claim for the accounting identity or for ecological
 biomass equivalence.
 
 ## 2. Mathematical formulation
@@ -455,7 +460,9 @@ archived algorithms, forecasts and results in an append-only [run registry](run-
 Three kinds of evidence are kept separate: measurements on engineered systems, an unused
 observation period of a natural catalogue, and published biological experiments reanalysed
 retrospectively. Published summaries of those experiments had been read, so their reanalyses
-are retrospective validations, not blinded tests.
+are retrospective validations, not blinded tests. A further plant study uses fixed scoring
+and a development-only geographic split after accidental raw outcome exposure. Its freeze
+cannot establish that those outcomes were unseen.
 
 ### 5.1 Controlled allocation measurements
 
@@ -502,6 +509,7 @@ unresolved, as declared before acquisition, and the instrument mix changed betwe
 | *Synechococcus* quotas (Harcourt et al., 2024) | Ten cultures at 25 °C | C, N and P per cell against measured diameter | Fixed cube, free power, strain means, temperature trends | Fixed cube best for C; strain means best for N and P |
 | Size-selected *Dunaliella* (Malerba et al., 2018) | Each selection treatment | Biovolume at carrying capacity in one shared medium | Equal biovolume ($d=1$), fitted size law, assigned exponents, equal cell number | Equal biovolume best; cells at capacity scale as $V^{-1.02}$ |
 | Food-web chemostats (Wojcik et al., 2025) | Twelve polyculture vessels | Algal N stock: biovolume times separately assayed N per volume | Persistence, development response, no-herbivore response, equal stock, two-budget cost ratio | No model beat persistence; the cost-ratio rule failed |
+| Harvested plants (Dillon et al., 2019) | Five Colorado plots; prior raw exposure | Direct aboveground dry mass; $q(m)=m$ by definition | Log and linear neutrality, Ohio histogram, bounded Pareto and Weibull | Pareto best for biomass; trained models better for counts; ecological neutrality unresolved |
 
 Published elemental quotas of four *Synechococcus* strains tested whether a size-based cost
 transfers to an unused temperature ([cost transfer](archived-cost-transfer.md)). Trained on
@@ -549,16 +557,69 @@ number at capacity. (c) Held-out errors of the frozen forecasts. (d) Capacity af
 deprivation against replete capacity. Generated from retained outputs by
 [report_dunaliella_size_budget.py](../experiments/report_dunaliella_size_budget.py).*
 
-### 5.4 What the tests establish
+### 5.4 Directly weighed coexisting plant stocks
 
-The positive results concern budget closure: an independently measured or geometric cost, a
-known shared budget, and abundance or resource shares predicted from them. The runtime
+Ten harvested herbaceous plots provide direct aboveground dry masses for coexisting ramets
+or stem clusters (Dillon et al., 2019; [plant study](plant-biomass-profile.md)). Forest and
+desert allometric masses are excluded. Five Ohio plots supply development fits; five Colorado
+plots supply evaluation. The protocol, algorithms and forecasts were committed before formal
+scoring, but raw rows had already been exposed during source inspection. This is a retrospective
+transfer comparison. It identifies neither a limiting nutrient nor an opportunity budget;
+$q(m)=m$ defines the measured stock rather than testing an independent cost law.
+
+The frozen domain is 0.01–100 g, split into eight half-decade bins with empty classes retained.
+The upper bound depends only on Ohio masses. Thirty missing mass records, 144 subthreshold
+ramets and one above-domain ramet remain in the evaluation membership ledger. The latter
+weighs 112.55 g and accounts for 24.50% of one plot's known biomass. In-domain mass coverage
+is 75.48% there and 99.89–99.97% in the other four plots. Scores therefore describe the
+declared domain; the excluded mass and unknown missing mass cannot be silently absorbed.
+
+The primary score is equal-plot mean total variation between realized normalized biomass
+and each expected-stock or empirical template. Bounded Pareto scores 0.470, logarithmic
+neutrality 0.493, linear neutrality 0.507, the development histogram 0.510 and bounded
+Weibull 0.531 (Figure 3). Pareto beats logarithmic neutrality in three of five plots;
+large opposing plot differences leave a mean improvement of only 0.023. Count profiles
+provide a different comparison: the development histogram, Pareto and Weibull score
+0.260–0.271, versus 0.412 for linear and 0.495 for logarithmic neutrality. Their binned
+count log losses are about 1.83, versus 2.08 and 2.42. These are point discrepancies,
+without a calibrated ecological superiority or equivalence verdict. They also do not
+contradict the original study's superior within-site Weibull fits: the models here transfer
+across locales and share a development-fixed domain.
+
+Synthetic calibration fixes census size and draws masses from $m^{-2}$ on the same domain,
+so each bin has equal expected biomass before measurement rounding. At 160 independent ramets, mean realized stock TV
+is 0.441 and every simulated census has an empty bin. The largest bin's average normalized
+share is 3.13%, although its normalized expected stock is 12.50%. At 1,280 ramets these
+values are 0.244, 87.2% and 9.12%. Thus
+$E[R_i/\sum_jR_j]$ differs from $E[R_i]/\sum_jE[R_j]$. A separately generated iid 95% TV
+envelope has exceedance rates 6.2% and 5.2%, but repeating masses in blocks of twenty raises
+these to 97.8% and 99.9%. This stress test is not an ecological dependence model. Field
+dependence, inclusion and independent regional replication remain unidentified, so the
+ecological neutrality decision is unresolved. An uneven small census alone cannot settle
+a claim about expected allocation.
+
+![Plant biomass transfer and finite-census normalization](../results/plant-biomass-profile/mass-profile.png)
+
+*Figure 3. Directly weighed plant profiles and synthetic observation limits. (a) Equal-plot
+mean Colorado biomass shares and transferred stock templates. (b) Count shares and retained
+count forecasts. (c) Each plot's biomass discrepancy and the five means. (d) Mean normalized
+census shares under iid logarithmic neutrality, compared with normalized expected stocks.
+All panels read retained outputs; [report_plant_biomass_profile.py](../experiments/report_plant_biomass_profile.py)
+performs presentation only. Prior raw exposure and excluded biomass are retained.*
+
+### 5.5 What the tests establish
+
+The positive results concern conditional budget closure: a separately measured or geometric
+cost, declared shared resource conditions, and abundance or resource shares predicted from them. The runtime
 experiment and the algal lineages are the clearest cases; in the lineages the closure holds with
 cost proportional to volume, so the abundance gradient carries no information beyond geometry.
 A rule that goes beyond closure, by predicting how a restriction redistributes resource among
 coexisting classes, failed in the one natural community tested, where grazing and fast dynamics
-dominated. None of these tests observes neutrality across coexisting size classes in a natural
-system whose eligibility was identified independently. That remains the decisive missing test.
+dominated. The plant study now observes coexisting class stocks directly, but it does not
+establish equal expected allocation: the flat template is not best for biomass or counts,
+and the ecological observation law is uncalibrated. No natural system here has independently
+identified neutral eligibility and a design sufficient for the expected-allocation verdict.
+That remains the decisive missing test.
 
 ## 6. Discussion
 
@@ -584,7 +645,8 @@ and repeat visits could separate sources of variation using a model appropriate 
 sampling structure. A new dataset could test a frozen conditional prediction, including
 its uncertainty; numerical proximity to a dispersion fitted on the original sample is
 not sufficient. Section 5 reports such tests. Their positive results concern budget closure,
-not neutrality.
+not neutrality. The plant application additionally shows why normalized snapshots cannot be
+interchanged with normalized expected stocks without an observation model.
 
 The principal limitation is the absence of independently specified conditions identifying
 the proposed neutral regime and of data/design sufficient to test its generalization.
@@ -598,7 +660,12 @@ confirmed in separately grown lineages that share one medium. A cost-ratio rule 
 redistribution among coexisting classes failed in a grazed community.
 
 Prior ecological work already supplies models and environmental explanations (Cuesta,
-Delius and Law, 2018; Arranz et al., 2022). Further orthopolity research needs a demonstrable
+Delius and Law, 2018; Arranz et al., 2022). Marshall et al. (2022) independently measured
+metabolic scaling and predicted maximum density and biovolume in evolved bacteria.
+Cost-to-capacity prediction therefore has direct experimental precedents. Dillon et al.
+(2019) already established curvature and superior Weibull fits in the plant data;
+the present application adds transferred stock/count comparisons and observation limits.
+Further orthopolity research needs a demonstrable
 contribution relative to those accounts, such as an independently validated conditional
 prediction or a calibrated diagnostic comparison. A resource-symmetry law could coexist
 with mechanisms explaining when it applies and how it is approached.
@@ -615,7 +682,9 @@ arguments or evidence. A scientific document is warranted as a critical synthesi
 reproducible exploratory tests and explicit counterexamples. Frozen forecasts support the
 budget-closure form of the identity in an engineered allocation system and in algal lineages
 sharing one medium. They reject a two-budget cost-ratio rule for short-term redistribution in
-grazed food webs. Neutrality across coexisting classes in natural systems remains untested. A
+grazed food webs. Direct coexisting plant stocks give mixed template transfer and an unresolved
+expected-neutrality verdict. The current original contribution is modest and methodological;
+transparent execution does not substitute for novelty or discriminating natural-system evidence. A
 paper announcing a new natural law is not warranted.
 
 ## Data and code availability
@@ -628,7 +697,9 @@ analyses; see the [README](../README.md) for setup. Pilot estimates originate in
 intervals in [independent.json](../results/independent.json). Remaining JSON files contain
 explicitly exploratory diagnostics. The studies of Section 5 are registered in an append-only
 [run registry](run-registry.md) with their inputs, frozen protocols, archived algorithms and
-outputs. The registry-verify target audits it offline, and each study report gives its replay
+outputs. Plant sources are pinned to author commit defccc3dcbbbf3ba57ff1572377de88fba83ff7f,
+with acquisition checksums and complete inclusion ledgers. The registry-verify target audits
+the registry offline, and each study report gives its replay
 command; source errata found during those audits are recorded there. Source-specific conditions
 are recorded in
 [data/NOTICE.md](../data/NOTICE.md); there is no blanket licence for all inputs.
@@ -649,6 +720,9 @@ two sides of the same coin—a trait-based plankton size-spectrum model.
 
 Damuth, J. (1981). Population density and body size in mammals. *Nature*, 290, 699–700.
 <https://doi.org/10.1038/290699a0>.
+
+Dillon, K. T., et al. (2019). On the relationships between size and abundance in plants:
+beyond forest communities. *Ecosphere*, 10, e02856. <https://doi.org/10.1002/ecs2.2856>.
 
 Edwards, A. M., Robinson, J. P. W., Plank, M. J., Baum, J. K., and Blanchard, J. L. (2017).
 Testing and recommending methods for fitting size spectra to data.
@@ -690,6 +764,10 @@ Malerba, M. E., Palacios, M. M., and Marshall, D. J. (2018). Do larger individua
 resource fluctuations better? An artificial selection approach. *Proceedings of the Royal
 Society B*, 285, 20181347. <https://doi.org/10.1098/rspb.2018.1347>. Data:
 <https://doi.org/10.5061/dryad.4mh47r7>.
+
+Marshall, D. J., et al. (2022). Long-term experimental evolution decouples size and
+production costs in *Escherichia coli*. *Proceedings of the National Academy of Sciences*,
+119, e2200713119. <https://doi.org/10.1073/pnas.2200713119>.
 
 Newman, M. E. J. (2005). Power laws, Pareto distributions and Zipf's law.
 *Contemporary Physics*, 46, 323–351. <https://arxiv.org/abs/cond-mat/0412004>.

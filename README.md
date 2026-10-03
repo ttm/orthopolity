@@ -61,7 +61,12 @@ The [next-dataset audit](docs/next-dataset-audit.md) identifies directly harvest
 plant biomass and chemical stocks in plankton sieve fractions for tests of
 resource profiles among coexisting classes. It retains source metadata and
 measurement limits, including a raw plant-outcome exposure during inspection.
-The next analysis is retrospective and has not yet been evaluated.
+The [plant biomass-profile study](docs/plant-biomass-profile.md) is now complete:
+five Ohio plots trained forecasts for five Colorado plots. Logarithmic neutrality
+ranks second for biomass (TV 0.493 versus Pareto 0.470), while trained models
+predict counts better. Finite-census normalization and dependence calibration
+leave ecological neutrality unresolved. A large excluded ramet and all missing
+masses remain in the ledger. Prior raw exposure makes this retrospective.
 
 Further empirical work follows the [available-data programme](docs/available-data-programme.md):
 published resource measurements and interventions, separate calibration records,
@@ -270,6 +275,8 @@ and example full inputs; inner bootstrap draws are reproducible computations.
 | [docs/scheduler-allocation.md](docs/scheduler-allocation.md) | Gated measurement protocol, competing allocation predictions and current hardware qualification |
 | [docs/additional-profile-tests.md](docs/additional-profile-tests.md) | Solar year transfer, aquatic study transfer, and exponent versus full-profile identification tests |
 | [docs/validation-round.md](docs/validation-round.md) | Three-way decision calibration, unused-year solar forecasts, and measured non-unit-cost allocation intervention |
+| [docs/plant-biomass-profile.md](docs/plant-biomass-profile.md) | Directly weighed coexisting stocks, geographic forecast transfer, finite-census normalization and dependence limits |
+| [docs/scientific-assessment.md](docs/scientific-assessment.md) | Current scientific strength, prior-work comparison and remaining novelty requirements |
 | [src/](src/) / [tests/](tests/) | Accounting, distribution fitting, equivalence diagnostics, meta-analysis, and regression checks |
 | [experiments/](experiments/) / [results/](results/) | Reproducible analyses and outputs |
 | [data/SOURCES.md](data/SOURCES.md) / [data/NOTICE.md](data/NOTICE.md) | Input provenance and source-specific notices |

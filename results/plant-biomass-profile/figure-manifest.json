@@ -1,0 +1,37 @@
+{
+  "artifacts": [
+    {
+      "path": "results/plant-biomass-profile/mass-profile.png",
+      "sha256": "3054eb22d892e1ba511c38e5808b7438b4babed9a9ce72f6bd8752d600458b5f"
+    },
+    {
+      "path": "results/plant-biomass-profile/mass-profile.svg",
+      "sha256": "5cd86ab26d0b74bcd1e274c662c2812a688765f3480683e822f5501195ba155d"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "results/plant-biomass-profile/output-manifest.json",
+      "sha256": "2de32363f9c4168ee884563faae11affc8ee262cfa857b5f3869af2021171d25"
+    },
+    {
+      "path": "results/plant-biomass-profile/study.json",
+      "sha256": "8d7c0ac94f8607263ae169f822ed389c7c3832319a389a58793db8c30e9f943b"
+    },
+    {
+      "path": "data/plant-biomass-profile/2026-10-03/frozen-forecasts.json",
+      "sha256": "8f337aad869b856601bbf971f646df2f085bda872b1e90adc7144f7bcd0f65e1"
+    },
+    {
+      "path": "data/plant-biomass-profile/2026-10-03/calibration.json",
+      "sha256": "f537c6d2adcbb17dab759fd5eab3624e05355839752efeb505356385a742d22c"
+    }
+  ],
+  "presentation_aggregation": "Arithmetic mean of retained per-plot count shares; observed stock mean and all scores retained",
+  "run_id": "plant-biomass-profile-2026-10-03",
+  "scope": "Post-hoc visualization of retained outputs; no fits, scores, simulations or decisions recomputed",
+  "source": {
+    "path": "experiments/report_plant_biomass_profile.py",
+    "sha256": "d08abc6288932ae692e69574408d8570cb2ffc3d3837e1c958c8b31053d47279"
+  }
+}
