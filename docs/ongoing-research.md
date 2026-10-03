@@ -225,7 +225,10 @@ source audit.
   as record 22 with 571 file references. Exact offline audit, figure byte
   reproduction and isolated missing-manifest recovery pass; 317 tests pass.
   Paper Section 5.4 and Figure 3 report the mixed stock/count comparison and
-  unresolved expected neutrality. Prior raw exposure remains part of every
+  unresolved expected neutrality. The revised PDF is 17 pages; all pages were
+  visually checked, with no LaTeX warnings or overfull boxes. Table cells emit
+  underfull-spacing diagnostics without clipping. A forced rebuild reproduces
+  identical PDF bytes. Prior raw exposure remains part of every
   interpretation. Next: investigate the plankton observation design without
   decoding its outcome table, or address an explicitly discriminating methods
   comparison; do not modify any registered plant outputs.
