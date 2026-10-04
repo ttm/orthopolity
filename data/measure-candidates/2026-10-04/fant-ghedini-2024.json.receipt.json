@@ -1,0 +1,12 @@
+{
+  "bytes": 2779,
+  "completed_utc": "2026-10-04T20:38:52.386899+00:00",
+  "http_status": 200,
+  "name": "fant-ghedini-2024.json",
+  "requested_url": "https://api.figshare.com/v2/articles/25234837",
+  "scope": "metadata only",
+  "sha256": "8afe23b3607e9fca8c66a80f01fa12302c5edf28159974d2ef7743afcb6a14fa",
+  "started_utc": "2026-10-04T20:38:51.959422+00:00",
+  "tls_verification": true,
+  "transport": "system curl, TLS verification enabled, user config disabled"
+}

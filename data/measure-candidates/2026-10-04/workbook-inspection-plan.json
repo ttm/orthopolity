@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-04",
+  "scope": "Nested workbook sheet-name metadata only",
+  "permitted": [
+    "Read ZIP members as opaque XLSX bytes, then parse only xl/workbook.xml for sheet titles and identifiers"
+  ],
+  "prohibited": [
+    "Shared strings, worksheet cells, formulas, values or charts"
+  ],
+  "reason": "Top-level archive has only three XLSX files and no standalone calibration or README"
+}

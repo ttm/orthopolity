@@ -1,0 +1,23 @@
+[
+  {
+    "bytes": 152797,
+    "compressed_bytes": 149434,
+    "crc32": "b96b8110",
+    "directory": false,
+    "name": "1. Data summary.xlsx"
+  },
+  {
+    "bytes": 1109815,
+    "compressed_bytes": 1105090,
+    "crc32": "ea2ac47c",
+    "directory": false,
+    "name": "2. Community estimates from each approach.xlsx"
+  },
+  {
+    "bytes": 647075,
+    "compressed_bytes": 624323,
+    "crc32": "5b22af25",
+    "directory": false,
+    "name": "3. Community oxygen rates_all subsamples.xlsx"
+  }
+]

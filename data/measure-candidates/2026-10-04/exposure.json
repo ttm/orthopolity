@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-04",
+  "purpose": "Cost-coordinate candidate audit, separate from all registered studies",
+  "published_sources_seen": [
+    {
+      "source": "Ghedini, Malerba and Marshall 2020; DOI 10.1098/rspb.2020.0995",
+      "exposure": "Abstract, methods, model-comparison results and published error/precision summaries were read during screening. Published outcomes are not globally blinded."
+    },
+    {
+      "source": "Malerba, White and Marshall 2017; DOI 10.1002/ecy.2032",
+      "exposure": "Author paper abstract/methods, indexed coefficient and size-scaling summaries; these concern independent calibration."
+    },
+    {
+      "source": "Fant and Ghedini 2024; DOI 10.1038/s41467-024-54307-w",
+      "exposure": "Abstract, methods, figure captions, reported slopes and F-test summaries."
+    },
+    {
+      "source": "Padfield et al. 2018; DOI 10.1111/ele.13082",
+      "exposure": "Methods, Table 1 parameter estimates/intervals, figure caption and published size summaries."
+    },
+    {
+      "source": "Briddon et al. 2025; DOI 10.1098/rspb.2025.1146",
+      "exposure": "Abstract, methods, published taxon size and coexistence/productivity summaries."
+    },
+    {
+      "source": "Kordas et al. 2022; DOI 10.1038/s41467-022-29808-1",
+      "exposure": "Methods, published coefficient table, slopes and figure captions."
+    },
+    {
+      "source": "SeaFlow; DOI 10.1038/s41597-019-0292-2",
+      "exposure": "Methods and prescribed carbon conversion; related Hynes 2024 indexed quota summary."
+    },
+    {
+      "source": "Huete-Ortega et al. 2012; PMC3297465",
+      "exposure": "Short published-methods screening; related Irion 2021 indexed methods snippet. No separate candidate data retained."
+    }
+  ],
+  "archive_and_schema_stage": {
+    "retained": "Six exact metadata JSON snapshots with receipts and one provider-checksummed Ghedini 2020 source ZIP",
+    "inspected": "ZIP directory, nested workbook sheet names, and row 1 text headers of species metabolism only",
+    "community_outcome_bytes_acquired": true,
+    "community_worksheet_contents_interpreted_or_emitted": false,
+    "numerical_calibration_cells_interpreted_or_emitted_at_this_stage": false,
+    "qualification_next": "calibration-inspection-plan.json explicitly permits the subsequent A:I calibration-only read. Its output files, if present, establish that later exposure."
+  },
+  "limitations": [
+    "Header-only XML parsing can buffer later-row bytes and parse unrelated shared-string XML. Numeric data rows were not interpreted or emitted by that stage.",
+    "Local inspection plans were written before their respective reads but were not prior external preregistrations.",
+    "A subsequent Git checkpoint cannot erase the published summary exposure recorded here.",
+    "No investigator was contacted and no new biological or hardware measurements were collected."
+  ]
+}

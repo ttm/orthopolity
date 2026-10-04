@@ -4,6 +4,7 @@ data/neutrality-audit/2026-10-03/* -text
 data/neutrality-audit/2026-10-03/*.html -diff
 data/law-route/2026-10-04/metadata/* -text
 data/law-route/2026-10-04/metadata/*.html -diff
+data/measure-candidates/2026-10-04/*.json -text
 # Pinned plant CSVs include CR-only files. Never normalize their source bytes.
 data/plant-sources/2026-10-03/* -text
 data/plant-sources/2026-10-03/*.csv -diff

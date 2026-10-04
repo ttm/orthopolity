@@ -1,0 +1,12 @@
+{
+  "bytes": 6427,
+  "completed_utc": "2026-10-04T20:38:51.959116+00:00",
+  "http_status": 200,
+  "name": "ghedini-2020.json",
+  "requested_url": "https://api.figshare.com/v2/articles/11755200",
+  "scope": "metadata only",
+  "sha256": "ce1ef845b7dd146b4239bd15180e475dc00b34b7c42e838d00674955037d524a",
+  "started_utc": "2026-10-04T20:38:51.353329+00:00",
+  "tls_verification": true,
+  "transport": "system curl, TLS verification enabled, user config disabled"
+}

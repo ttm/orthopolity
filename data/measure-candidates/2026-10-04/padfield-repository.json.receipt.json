@@ -1,0 +1,12 @@
+{
+  "bytes": 6977,
+  "completed_utc": "2026-10-04T20:38:53.346274+00:00",
+  "http_status": 200,
+  "name": "padfield-repository.json",
+  "requested_url": "https://api.github.com/repos/padpadpadpad/Padfield_2018_ELE_metab_size_struc",
+  "scope": "metadata only",
+  "sha256": "a28c4049f31762aafc929f54a5a405fe86dfd250c9e33611124f299dccdb496c",
+  "started_utc": "2026-10-04T20:38:52.831508+00:00",
+  "tls_verification": true,
+  "transport": "system curl, TLS verification enabled, user config disabled"
+}

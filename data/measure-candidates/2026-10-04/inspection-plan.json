@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-04",
+  "scope": "Candidate metadata, followed by directory-only inspection of one pinned Ghedini 2020 archive",
+  "target": "Independent calibration capable of distinguishing log-size and log-cost allocation",
+  "permitted": [
+    "Six explicitly allowlisted metadata endpoints",
+    "Opaque Ghedini ZIP acquisition after checking the archive identity against Figshare metadata",
+    "ZIP central-directory filenames, sizes and CRC values; no member-content decoding"
+  ],
+  "deferred": [
+    "Any numerical cost fitting until a calibration partition and eligibility gate are documented",
+    "Community abundance, size distribution and respiration outcome parsing until a justified protocol"
+  ],
+  "qualification": "Local inspection plan written before these acquisitions; not an empirical preregistration or a claim of global results blinding. Published summaries have already been read."
+}
