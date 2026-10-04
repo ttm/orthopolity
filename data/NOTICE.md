@@ -15,6 +15,14 @@ explicit license; none is inferred from the paper's public data link. Dataset
 terms shown by PANGAEA remain in the retained landing-page snapshots. These
 metadata and any later source inputs do not acquire the package's MIT license.
 
+`data/law-route/2026-10-04/metadata/` retains third-party PANGAEA event/schema
+metadata, a Bode, Fernández Lamas and Mompeán (2012) methods chapter from CSIC,
+and BCO-DMO dataset/event-log descriptions and deployment metadata. Original
+notices, attributions and provider terms remain applicable; the package MIT
+licence does not relicense these files. Exact sources and hashes are recorded
+in the adjacent acquisition receipt. These are methods and metadata, not the
+candidates' nitrogen-stock outcome tables.
+
 `data/plant-sources/2026-10-03/` now retains ten exact third-party CSVs from
 that same pinned `KerkhoffLab/PlantSizeDist` commit, referenced by
 [Dillon et al. (2019)](https://doi.org/10.1002/ecs2.2856). The public data link

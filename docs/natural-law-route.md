@@ -5,6 +5,13 @@ a frozen study protocol, an evaluated result or a registry entry. The existing
 22 studies and their inputs, algorithms and outcomes remain unchanged. No new
 laboratory, field or hardware measurements are proposed.
 
+**Completed gate, 4 October:** the [two-archive observation assessment](plankton-observation-gate.md)
+does not justify freezing the proposed ecological equivalence study. Relative
+measurement effects, shared chemical estimates and sampling compatibility remain
+unresolved. No raw nitrogen outcomes were acquired or scored. The plan below
+records the proposed route; subsequent stages remain conditional on new
+observation evidence, rather than on collecting more outcome rows.
+
 ## The objective
 
 Pursue a conditional empirical regularity with independently specified scope
@@ -79,10 +86,13 @@ is not elemental-stock precision.
 No complete usable tow count, biological repeat-haul allocation or independent
 sampling-unit count has been established from the reviewed metadata. The
 archive's 1,161 data points do not represent 1,161 ecological replicates.
-Required observation information includes actual filtered volumes, class
-aliquot/split factors, fraction recovery and relative capture, blanks, detection
-limits and nitrogen-assay repeatability. Event/location/time fields alone
-cannot identify all of these. Shared volume error may cancel within one
+Relevant observation information includes filtered volumes, class aliquot/split
+factors, fraction recovery and relative capture, blanks, detection limits and
+nitrogen-assay repeatability. Not every raw QC record is mandatory: traceable
+normalization and a justified error model or bounds may suffice. The completed
+gate establishes 43 station events, without identifying independent complete
+assays. Event/location/time fields alone cannot resolve relative class bias.
+Shared volume error may cancel within one
 correctly scaled catch share, but this does not solve class-specific errors
 or identify the ratio of expected water-column stocks.
 
@@ -107,7 +117,8 @@ must not motivate switching resources after evaluation.
    observation corrections, uncertainty information and independent replication.
    Seek publicly linked tow/sample/QC records; do not request new measurements.
    If the ecological target is not identifiable, stop this law-test route and
-   retain a descriptive operational-catch comparison. Do not compensate with
+   retain a descriptive observation audit. A narrower operational-catch study
+   would need a separate protocol. Do not compensate with
    more catalogues of the same inadequate design.
 2. **Specify the claim and admissible population.** Use geography, season,
    depth, protocol and independently measured environment fields. Eligibility
@@ -149,6 +160,7 @@ not an unseen-outcome guarantee. The separate
 [review exposure note](../data/law-route/2026-10-04/review-exposure.json)
 records its scope; the registered plant exposure record is unchanged.
 
-The next deliverable is a go/no-go observation assessment and, only if justified,
-a frozen two-archive stock-test protocol. No manuscript or registry conclusion
-changes merely because this route has been proposed.
+The go/no-go observation assessment is now complete: the current evidence does
+not justify the two-archive stock-test protocol. See the
+[decision and reopening criteria](plankton-observation-gate.md). No manuscript
+or registry conclusion changes from this metadata audit.

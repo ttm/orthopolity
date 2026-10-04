@@ -17,6 +17,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: chemostat-sources restore-chemostat-bundle archived-cost-transfer available-data-registry chemostat-response chemostat-response-report
 .PHONY: dunaliella-sources dunaliella-size-budget dunaliella-size-budget-report
 .PHONY: plant-sources plant-biomass-profile plant-biomass-profile-report
+.PHONY: law-observation-metadata
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -182,6 +183,9 @@ plant-biomass-profile: ## offline: replay the frozen plant forecasts, calibratio
 
 plant-biomass-profile-report: ## figure from retained outputs only; refuses changed bytes
 	MPLCONFIGDIR=build/matplotlib $(PY) experiments/report_plant_biomass_profile.py
+
+law-observation-metadata: ## offline: verify six retained methods/event metadata files
+	$(PY) experiments/fetch_law_observation_metadata.py --stage verify
 
 paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 

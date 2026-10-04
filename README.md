@@ -68,6 +68,13 @@ predict counts better. Finite-census normalization and dependence calibration
 leave ecological neutrality unresolved. A large excluded ramet and all missing
 masses remain in the ledger. Prior raw exposure makes this retrospective.
 
+The [scoped natural-law route](docs/natural-law-route.md) next examined chemical
+nitrogen stocks in two plankton archives. Its completed
+[observation-design audit](docs/plankton-observation-gate.md) does not justify
+the proposed ecological equivalence test: relative measurement effects, shared
+chemical estimates and sampling compatibility remain unresolved. Six methods
+and metadata sources are retained; no raw nitrogen outcomes were evaluated.
+
 Further empirical work follows the [available-data programme](docs/available-data-programme.md):
 published resource measurements and interventions, separate calibration records,
 and evaluation on whole held-out communities or studies. New experimental

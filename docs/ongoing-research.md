@@ -24,7 +24,7 @@ retrospective validation, not global blinding or prospective data collection.
 
 - Branch: `py314-and-package-names`, pushed to `origin`. All four
   available-data studies are complete and registered. Registry: 22 records, 571
-  retained file references. All 317 tests pass. Run the suite with
+  retained file references. All 321 tests pass. Run the suite with
   `make test PY=python3.11`.
 - [Archived cost transfer](archived-cost-transfer.md) (`archived-cost-transfer-2026-10-02`):
   a size-geometric carbon cost predicts held-out 25°C *Synechococcus* quotas
@@ -70,32 +70,36 @@ retrospective validation, not global blinding or prospective data collection.
   contribution, strong transparency, weak evidence for a general natural law.
   Close prior metabolic cost/capacity work and existing spectrum methods narrow
   novelty. More records alone do not improve identification.
+- [Two-archive plankton observation gate](plankton-observation-gate.md), completed
+  4 October: the reviewed public evidence does not justify freezing the proposed
+  nitrogen-stock equivalence study. MALASPINA has 43 station events, but relative
+  class corrections/backgrounds and sampling dependence remain unresolved.
+  BLOOFINZ derives many stocks using shared chemical composition means; chemical
+  provenance/uncertainty and depth/organism-selection compatibility remain
+  unresolved. Six exact metadata/methods files and receipts are retained.
+  Neither raw nitrogen-stock table was acquired or evaluated. No new registry
+  record, empirical verdict or manuscript revision results from this audit.
 
 ## Next actions, in priority order
 
-Follow the [scoped natural-law route](natural-law-route.md), recorded on
-4 October after the user's question about establishing a law. This is a
-feasibility plan, not a frozen protocol or positive result. It proposes a
-nitrogen-stock regularity and identifies BCO-DMO 956590 as a potential
-independent chemical-stock replication of MALASPINA. No raw nitrogen outcomes
-from either proposed source have been acquired. The Leg 8 methods review did
-expose published dry-mass/isotope summaries; the new review note records this,
-without modifying the registered plant exposure input.
+The [scoped natural-law route](natural-law-route.md) proposed a finite
+two-archive gate. That gate is complete and currently closes the proposed
+ecological law test. The Leg 8 review exposed published dry-mass/isotope
+summaries, recorded separately from the registered plant exposure input.
+No later freeze can establish global blinding.
 
-1. **Audit the plankton observation design before a separate outcome freeze.** PANGAEA 816451
-   has chemical stocks in common-net 200–500, 500–1000 and 1000–2000 µm
-   fractions. Prefer nitrogen; audit sampling/volume normalization and stock
-   uncertainty before interpreting net catches as water-column allocation.
-   Exclude the different-net small fraction and the ambiguously bounded tail.
-   Freeze before decoding any numerical plankton outcome. No measured
-   opportunity budgets or individual quotas are supplied by this source. Decide
-   whether independent samples and observation metadata can identify an expected
-   allocation target. Review one potential same-resource replication archive,
-   BCO-DMO 956590, including processing/gear comparability. Obtain publicly
-   available tow/sample/QC metadata for both. If observation calibration or
-   independent replication is inadequate, stop this law-test route and retain
-   a descriptive audit without claiming a law test. Stock regularity itself
-   does not require opportunity budgets; a feasibility explanation does.
+1. **Reopen the plankton route only on additional observation evidence.** The
+   [completed gate](plankton-observation-gate.md) identifies the required changes:
+   traceable class corrections or defensible bias bounds and sampling/dependence
+   for MALASPINA; original assay linkage or equivalent evidence supporting the
+   shared chemical estimates for BLOOFINZ; a declared compatible depth and
+   organism-selection scope. These are evidence requirements, not a demand for
+   every raw laboratory record or new measurements. A metadata-only tow listing
+   cannot resolve the chemical gaps. Do not acquire outcomes, invent calibration
+   bounds or substitute a descriptive catch comparison as a law verdict. The
+   bounded public-source review is finished; avoid repeating it or automatically
+   expanding a catalogue of similarly inadequate archives. Stock regularity
+   itself does not require opportunity budgets; a feasibility explanation does.
 2. **Resolve scope or method novelty.** Before adding further examples, declare
    independently observable eligibility for a neutral regime or identify a
    methods comparison that changes a substantive inference. Preserve the plant
@@ -114,6 +118,7 @@ without modifying the registered plant exposure input.
 git status --short --branch
 PYTHONPATH=src python3.11 experiments/register_runs.py --verify
 python3.11 experiments/fetch_neutrality_metadata.py --stage verify
+make law-observation-metadata PY=python3.11
 make archived-cost-transfer chemostat-response dunaliella-size-budget PY=python3.11   # offline audits
 make plant-sources plant-biomass-profile PY=python3.11
 ```
@@ -152,6 +157,11 @@ source audit.
   separate acquire/verify stages and a fixed metadata-only URL allowlist.
   Source files, receipts and the plant exposure record are under
   `data/neutrality-audit/2026-10-03/`; this is not a registered result.
+- Completed law-route metadata gate: `experiments/fetch_law_observation_metadata.py`
+  has fixed allowlisted acquisition and default offline verification. Six source
+  files and receipts are in `data/law-route/2026-10-04/metadata/`. Reports:
+  `docs/plankton-observation-gate.md`, `docs/malaspina-observation-gate.md` and
+  `docs/bloofinz-observation-gate.md`. These are unregistered audit materials.
 
 ## Checkpoint log
 
@@ -246,3 +256,14 @@ source audit.
   interpretation. Next: investigate the plankton observation design without
   decoding its outcome table, or address an explicitly discriminating methods
   comparison; do not modify any registered plant outputs.
+- Law-route checkpoint, 4 October: proposal `7a8ee6f` preceded this methods
+  gate. PANGAEA XML/KML agree on 43 station labels and coordinates; the six-page
+  CSIC methods chapter documents class filtration and a possible background
+  pathway, without demonstrating contamination. BCO-DMO processing confirms
+  shared Cycle/gear/day-night/class chemistry and different depth supports.
+  Six source files verify by checksum. The current two-archive ecological test
+  is not justified; no forecasts were frozen and no raw N stocks were acquired
+  or scored. The reopening criteria are evidence-based and do not require
+  independent chemical assays on every tow. The manuscript and all registered
+  studies remain unchanged. All 321 tests pass; offline verification retains
+  22 registry records and 571 file references.

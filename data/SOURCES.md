@@ -171,3 +171,24 @@ precede formal scoring. Eight half-decade bins on 0.01–100 g retain empty
 classes. Missing and excluded masses remain explicit. The generated calibration
 uses its recorded independent random streams; it supplies no new field data.
 See [the study report](../docs/plant-biomass-profile.md).
+
+## Plankton observation gate: 4 October 2026
+
+`law-route/2026-10-04/metadata/` retains six exact source files: PANGAEA
+816451 metadata XML and event KML; Bode, Fernández Lamas and Mompeán's (2012)
+six-page MALASPINA processing chapter from the CSIC repository; BCO-DMO 956590
+and 943418 description PDFs; and RR2201 deployment metadata. The
+[receipt](law-route/2026-10-04/metadata/acquisition.json) records URLs, byte
+lengths, SHA-256 digests, response metadata and acquisition times. Failed
+retrievals remain in `retrieval-attempts.jsonl`. Python's certificate-chain
+failure for CSIC was resolved through macOS system curl with TLS certificate
+and hostname verification enabled; verification was not disabled.
+
+The acquisition driver requests only six allowlisted methods/metadata URLs,
+refuses redirects outside that list and defaults to offline byte verification:
+`make law-observation-metadata PY=python3.11`. XML and KML identify the same 43
+station labels and coordinates; this is not an independent nitrogen-sample
+count. No candidate nitrogen-stock table was requested. The
+[observation assessment](../docs/plankton-observation-gate.md) closes the
+current two-archive law-test gate without a new registry record. The prior
+public-summary exposure note in the parent directory remains applicable.

@@ -1,0 +1,91 @@
+{
+  "complete": true,
+  "completed_utc": "2026-10-04T08:02:53.312227+00:00",
+  "files": [
+    {
+      "bytes": 135335,
+      "completed_utc": "2026-10-03T23:53:48.157258+00:00",
+      "content_type": "application/vnd.pangaea.metadata+xml; charset=UTF-8",
+      "final_url": "https://doi.pangaea.de/10.1594/PANGAEA.816451?format=metadata_panmd",
+      "http_status": 200,
+      "name": "malaspina-panmd.xml",
+      "path": "data/law-route/2026-10-04/metadata/malaspina-panmd.xml",
+      "requested_url": "https://doi.pangaea.de/10.1594/PANGAEA.816451?format=metadata_panmd",
+      "sha256": "acaa7af68503e5e795d1943977bb3f74dcbdc92c3cf141c8cacd6e86bbf4417c",
+      "started_utc": "2026-10-03T23:53:47.479420+00:00"
+    },
+    {
+      "bytes": 49503,
+      "completed_utc": "2026-10-03T23:53:48.636896+00:00",
+      "content_type": "application/vnd.google-earth.kml+xml; charset=UTF-8",
+      "final_url": "https://doi.pangaea.de/10.1594/PANGAEA.816451?format=events_kml",
+      "http_status": 200,
+      "name": "malaspina-events.kml",
+      "path": "data/law-route/2026-10-04/metadata/malaspina-events.kml",
+      "requested_url": "https://doi.pangaea.de/10.1594/PANGAEA.816451?format=events_kml",
+      "sha256": "464e4789771fa51a529ce90b9de95dc0f5eb0ccf9c878b531646691ac02ebc09",
+      "started_utc": "2026-10-03T23:53:48.157857+00:00"
+    },
+    {
+      "bytes": 126866,
+      "completed_utc": "2026-10-04T08:02:41.327491+00:00",
+      "content_type": "application/pdf",
+      "final_url": "https://digital.csic.es/bitstream/10261/316565/2/Bode_MalaspinaLibroBlanco_2012_617-622.pdf",
+      "http_status": 200,
+      "name": "malaspina-processing-methods.pdf",
+      "path": "data/law-route/2026-10-04/metadata/malaspina-processing-methods.pdf",
+      "requested_url": "https://digital.csic.es/bitstream/10261/316565/2/Bode_MalaspinaLibroBlanco_2012_617-622.pdf",
+      "sha256": "d162ac01b02f728edfb55baa58a88c2f4f790d42bb973991c64cc5d82f476297",
+      "started_utc": "2026-10-04T08:02:40.293040+00:00",
+      "transport": "macOS system curl; native TLS verification; redirects disabled"
+    },
+    {
+      "bytes": 96685,
+      "completed_utc": "2026-10-04T08:02:49.468641+00:00",
+      "content_type": "application/pdf",
+      "final_url": "https://www.bco-dmo.org/dataset/956590/Dataset_description.pdf",
+      "http_status": 200,
+      "name": "bloofinz-description.pdf",
+      "path": "data/law-route/2026-10-04/metadata/bloofinz-description.pdf",
+      "requested_url": "https://www.bco-dmo.org/dataset/956590/Dataset_description.pdf",
+      "sha256": "98d731122972d6dd981648ca507873301c2d48ac0bce4f35c8c6401a774d7a85",
+      "started_utc": "2026-10-04T08:02:41.328630+00:00",
+      "transport": "Python urllib; verified system-CA TLS"
+    },
+    {
+      "bytes": 70231,
+      "completed_utc": "2026-10-04T08:02:52.793004+00:00",
+      "content_type": "application/pdf",
+      "final_url": "https://www.bco-dmo.org/dataset/943418/Dataset_description.pdf",
+      "http_status": 200,
+      "name": "bloofinz-event-log-description.pdf",
+      "path": "data/law-route/2026-10-04/metadata/bloofinz-event-log-description.pdf",
+      "requested_url": "https://www.bco-dmo.org/dataset/943418/Dataset_description.pdf",
+      "sha256": "b25ea5a67cb36d1ce5f238d62359b9b8cf3ecffa427d1abe9301015440a7dc94",
+      "started_utc": "2026-10-04T08:02:49.469770+00:00",
+      "transport": "Python urllib; verified system-CA TLS"
+    },
+    {
+      "bytes": 51560,
+      "completed_utc": "2026-10-04T08:02:53.310268+00:00",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://www.bco-dmo.org/deployment/916293",
+      "http_status": 200,
+      "name": "bloofinz-deployment.html",
+      "path": "data/law-route/2026-10-04/metadata/bloofinz-deployment.html",
+      "requested_url": "https://www.bco-dmo.org/deployment/916293",
+      "sha256": "4643d77705c2ae94c7cdf5128a3ba50d1f287517a529e5f64886e8512f254bcd",
+      "started_utc": "2026-10-04T08:02:52.793619+00:00",
+      "transport": "Python urllib; verified system-CA TLS"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Fixed methods/schema/event-metadata URLs; no outcome-table request",
+  "started_utc": "2026-10-03T23:53:47.458509+00:00",
+  "tls": {
+    "cafile_sha256": "9dae8d76e55cb08991f2b672d58999ea15560d910759c16b544f843bdffbb994",
+    "certificate_verification": "CERT_REQUIRED",
+    "hostname_verification": true,
+    "openssl_version": "OpenSSL 3.0.11 19 Sep 2023"
+  }
+}
