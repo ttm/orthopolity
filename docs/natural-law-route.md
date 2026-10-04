@@ -12,6 +12,13 @@ unresolved. No raw nitrogen outcomes were acquired or scored. The plan below
 records the proposed route; subsequent stages remain conditional on new
 observation evidence, rather than on collecting more outcome rows.
 
+**Theoretical continuation, 4 October:** the
+[cost-intervention design](measure-intervention.md) establishes how to distinguish
+two reference-measure rules that are identical under a power cost law. A physical
+additive overhead makes their full-profile and abundance-response predictions
+different. This is a conditional design with an analytic calculator; no eligible
+natural-system application or intervention-stability rule has been established.
+
 ## The objective
 
 Pursue a conditional empirical regularity with independently specified scope

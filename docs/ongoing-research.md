@@ -24,7 +24,7 @@ retrospective validation, not global blinding or prospective data collection.
 
 - Branch: `py314-and-package-names`, pushed to `origin`. All four
   available-data studies are complete and registered. Registry: 22 records, 571
-  retained file references. All 321 tests pass. Run the suite with
+  retained file references. All 331 tests pass. Run the suite with
   `make test PY=python3.11`.
 - [Archived cost transfer](archived-cost-transfer.md) (`archived-cost-transfer-2026-10-02`):
   a size-geometric carbon cost predicts held-out 25°C *Synechococcus* quotas
@@ -79,6 +79,14 @@ retrospective validation, not global blinding or prospective data collection.
   unresolved. Six exact metadata/methods files and receipts are retained.
   Neither raw nitrogen-stock table was acquired or evaluated. No new registry
   record, empirical verdict or manuscript revision results from this audit.
+- [Reference-measure intervention design](measure-intervention.md), completed
+  4 October: size-log and cost-log allocation agree under power costs but
+  diverge under a physical additive cost. The pointwise abundance-response
+  predictions have slopes −1 and −2 against the log cost multiplier. Exact bin
+  integrals and an independently checked calculator provide a concrete test
+  design. The three deterministic examples add no empirical observations and
+  are not a registered study. Natural-regime eligibility and persistence through
+  a cost change remain unestablished.
 
 ## Next actions, in priority order
 
@@ -100,11 +108,20 @@ No later freeze can establish global blinding.
    bounded public-source review is finished; avoid repeating it or automatically
    expanding a catalogue of similarly inadequate archives. Stock regularity
    itself does not require opportunity budgets; a feasibility explanation does.
-2. **Resolve scope or method novelty.** Before adding further examples, declare
-   independently observable eligibility for a neutral regime or identify a
-   methods comparison that changes a substantive inference. Preserve the plant
-   finite-census/dependence findings as calibrated synthetic diagnostics rather
-   than fitting them to provide an ecological verdict.
+2. **Connect the new discriminating prediction to observable scope.** The
+   [measure-intervention note](measure-intervention.md) supplies the cost-change
+   comparison; repeating its algebra or adding more arbitrary simulations is
+   unnecessary. An existing-data application needs coexisting objects, an
+   independently calibrated non-power cost curve on a fixed size domain, an
+   outcome-independent eligibility rule and sufficient observation information.
+   A causal comparison additionally needs a documented physical cost change
+   and an explicit assumption about which regime conditions persist. Bulk bin
+   stock/count ratios do not supply boundary costs; separately grown monocultures
+   do not supply coexistence. No suitable application is identified yet. Do not
+   fit cost or regime membership to rescue either forecast. Preserve the plant
+   finite-census/dependence findings as synthetic diagnostics. A generic
+   sensitivity-analysis addition also overlaps the existing profile-calibration
+   code and needs a concrete improvement before becoming a separate project.
 3. **Manuscript.** [`docs/paper.md`](paper.md) now reports the plant comparison,
    Figure 3, outcome exposure and narrower scientific contribution. Revise it again only when
    a new registered study changes a conclusion. Rebuild with `make paper`, which
@@ -119,6 +136,7 @@ git status --short --branch
 PYTHONPATH=src python3.11 experiments/register_runs.py --verify
 python3.11 experiments/fetch_neutrality_metadata.py --stage verify
 make law-observation-metadata PY=python3.11
+make measure-intervention PY=python3.11   # deterministic mathematical examples only
 make archived-cost-transfer chemostat-response dunaliella-size-budget PY=python3.11   # offline audits
 make plant-sources plant-biomass-profile PY=python3.11
 ```
@@ -162,6 +180,10 @@ source audit.
   files and receipts are in `data/law-route/2026-10-04/metadata/`. Reports:
   `docs/plankton-observation-gate.md`, `docs/malaspina-observation-gate.md` and
   `docs/bloofinz-observation-gate.md`. These are unregistered audit materials.
+- Analytic reference-measure comparison: `src/orthopolity/measure_intervention.py`,
+  `experiments/illustrate_measure_intervention.py`, and
+  `tests/test_measure_intervention.py`. The runner prints deterministic examples
+  without reading data, generating random samples or modifying the run registry.
 
 ## Checkpoint log
 
@@ -267,3 +289,18 @@ source audit.
   independent chemical assays on every tow. The manuscript and all registered
   studies remain unchanged. All 321 tests pass; offline verification retains
   22 registry records and 571 file references.
+- Reference-measure design checkpoint, 4 October: continued after the archive
+  gate, without opening its outcomes. Derived the exact power-cost equivalence
+  and additive-cost discrimination, including budget-independent pairwise
+  response contrasts and exact bin integrals. Independent mathematical review
+  checked the proof, dimensional consistency, limits and causal qualifications.
+  The software compares analytic forecasts with direct quadrature and checks
+  invariance under bin merging and unit changes. A worked example changes the
+  smaller-bin resource prediction from shared 50% at baseline to 50% versus
+  25.96% after overhead. This is a conditional mathematical distinction, with
+  no newly established natural regime or empirical support. The manuscript
+  and registered records remain unchanged. All 331 tests pass, the illustrative
+  table reproduces exactly, and the registry verifies 22 records / 571 file
+  references. The response contrast also holds for a general increasing cost
+  curve under a size-independent physical cost addition; the power baseline
+  supplies initial observational equivalence.

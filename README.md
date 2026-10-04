@@ -75,6 +75,13 @@ the proposed ecological equivalence test: relative measurement effects, shared
 chemical estimates and sampling compatibility remain unresolved. Six methods
 and metadata sources are retained; no raw nitrogen outcomes were evaluated.
 
+A subsequent [cost-intervention design](docs/measure-intervention.md) distinguishes
+equal resource per logarithmic size from equal resource per logarithmic cost.
+The rules agree exactly for power costs but predict different responses to a
+physical per-object overhead: pointwise abundance-response slopes of −1 and −2.
+The note and analytic calculator sharpen a conditional test; they add no
+natural-system observations or empirical support.
+
 Further empirical work follows the [available-data programme](docs/available-data-programme.md):
 published resource measurements and interventions, separate calibration records,
 and evaluation on whole held-out communities or studies. New experimental

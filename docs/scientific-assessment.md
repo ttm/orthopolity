@@ -4,6 +4,7 @@ Assessment: 28 September 2026; consistency review and external-assessment addend
 29 September 2026; constructive rereading: 30 September 2026.
 Scientific-strength and prior-work addendum: 3 October 2026, before the plant
 study's formal evaluation; plant-result judgment appended after evaluation on the same date.
+Reference-measure discrimination addendum: 4 October 2026.
 This is a research assessment and proposed design,
 not a completed validation study or a preregistration. It supplements the
 [manuscript](paper.md) and [remaining work](roadmap.md).
@@ -1037,3 +1038,28 @@ orthopolity is not. Further effort should resolve independently specified
 eligibility and observation design, or demonstrate a methods improvement
 against established alternatives, rather than accumulating weakly identified
 examples. Registry size and software test counts remain engineering evidence.
+
+## Reference-measure discrimination: 4 October 2026
+
+The completed [plankton observation audit](plankton-observation-gate.md) leaves
+the proposed two-archive ecological test unjustified. The subsequent
+[cost-intervention note](measure-intervention.md) advances the design question:
+what observation could distinguish competing meanings of resource neutrality?
+
+For independently fixed monotone cost $q(k)$, equal expected resource per
+logarithmic size and per logarithmic cost coincide precisely when $q$ is a power
+on the declared band. An additive physical per-object cost breaks that
+equivalence. Relative to their common power-cost baseline, the predicted
+pointwise log abundance response against log cost multiplier has slope −1 for
+the size reference and −2 for the current-cost reference. Exact integrated
+forecasts allow comparison on fixed bins without midpoint-cost approximations.
+The analytic calculator is checked against independent quadrature, unit changes,
+bin merging and limits; its examples contain no empirical observations.
+
+This is an explicit experimental-design consequence of established accounting
+and change-of-variable ideas, with no claim of mathematical priority. The work
+has sharpened a falsifiable conditional prediction. It has not identified an
+eligible natural regime, established that the regime survives a cost change,
+or supplied an independent measured cost curve with a suitable observation
+design. Those empirical requirements determine whether this becomes useful
+science about nature. The overall strength assessment therefore remains unchanged.

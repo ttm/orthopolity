@@ -18,6 +18,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: dunaliella-sources dunaliella-size-budget dunaliella-size-budget-report
 .PHONY: plant-sources plant-biomass-profile plant-biomass-profile-report
 .PHONY: law-observation-metadata
+.PHONY: measure-intervention
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -186,6 +187,9 @@ plant-biomass-profile-report: ## figure from retained outputs only; refuses chan
 
 law-observation-metadata: ## offline: verify six retained methods/event metadata files
 	$(PY) experiments/fetch_law_observation_metadata.py --stage verify
+
+measure-intervention: ## analytic examples only: size-reference versus cost-reference allocation
+	$(PY) experiments/illustrate_measure_intervention.py
 
 paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 
