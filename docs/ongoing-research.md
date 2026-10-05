@@ -88,7 +88,7 @@ retrospective validation, not global blinding or prospective data collection.
   are not a registered study. Natural-regime eligibility and persistence through
   a cost change remain unestablished.
 - [Size-versus-cost candidate audit](measure-candidate-audit.md), completed
-  5 October: recovered 231 independent-monoculture respiration rows for six
+  5 October: recovered 231 respiration rows from separate monoculture assays for six
   Ghedini community species. Signed and missing readings are retained. The rows
   include repeated dark periods, not 231 independent biological replicates.
   Seven metadata snapshots and two provider-checksummed archives are retained.

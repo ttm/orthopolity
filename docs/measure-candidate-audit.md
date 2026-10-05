@@ -77,8 +77,9 @@ not an exclusion criterion.
 ## A narrower observable
 
 Let k be physical cell volume, N total count, and V total cell biovolume over a
-fixed domain [a,b]. With independently calibrated positive, increasing q(k),
-the two continuous allocation rules imply
+fixed domain [a,b]. If physical costs are adequately represented by an
+independently calibrated positive, increasing deterministic q(k), the two
+continuous allocation rules imply
 
 \[
 m_S=\frac{E[V]}{E[N]}
@@ -109,8 +110,9 @@ extrapolation of q cannot fill that gap.
    species or independent cultures, not repeated dark windows. A common
    multiplicative density effect cancels from normalized forecasts;
    species-specific changes do not. An across-species mean curve is not a
-   measured deterministic cost for every cell. Bound residual taxon/within-size
-   variation or specify a joint size-cost model before treating it that way.
+   measured deterministic cost for every cell. Distinguish biological cost
+   variation from assay error, and bound residual taxon/within-size variation
+   or specify a joint size-cost model before treating it that way.
 2. **Fix observable scope and domain.** Assess the mean-size implication's
    domain support and observation uncertainty. Choose domain, transfer
    assumptions, eligible sampling occasions and a meaningful forecast-separation
