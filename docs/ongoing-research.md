@@ -23,8 +23,9 @@ retrospective validation, not global blinding or prospective data collection.
 ## Current state
 
 - Branch: `py314-and-package-names`, pushed to `origin`. All four
-  available-data studies are complete and registered. Registry: 22 records, 571
-  retained file references. All 338 tests pass. Run the suite with
+  available-data allocation/transfer studies and the subsequent respiration
+  calibration diagnostic are complete and registered. Registry: 23 records, 587
+  retained file references. All 352 tests pass. Run the suite with
   `make test PY=python3.11`.
 - [Archived cost transfer](archived-cost-transfer.md) (`archived-cost-transfer-2026-10-02`):
   a size-geometric carbon cost predicts held-out 25°C *Synechococcus* quotas
@@ -96,8 +97,20 @@ retrospective validation, not global blinding or prospective data collection.
   its headers name species size/count/biovolume fields. That opens a possible
   aggregate mean-size test without inventing taxon bins. Cost uncertainty,
   transfer and domain coverage still need qualification. No cost curve was
-  fitted and no numerical community outcome row was interpreted. Published
-  summaries have been seen. Registry and manuscript remain unchanged.
+  fitted during that inventory. Published summaries have been seen.
+- [Respiration calibration gate](ghedini-cost-calibration.md)
+  (`ghedini-cost-calibration-2026-10-05`), completed 5 October: signed
+  species-by-OD means, power versus power plus positive overhead, six whole-species
+  and four whole-OD holdouts, two fit weightings and separate-OD sensitivity.
+  Protocol/algorithms committed in `d49f0e6` before fitting. Equal-group fits
+  effectively tie and give power-equivalent S/Q predictions. Species-RMS fits
+  improve raw species-holdout RMSE by 35.7% but fail on the smallest-species
+  extrapolation; the interior standardized score improves. Across the declared
+  sensitivity set, S means span 3.408–45.038 µm³ and Q means 3.408–187.360 µm³,
+  with zero minimum paired gap. The frozen qualification gate fails. Registered
+  as a calibration diagnostic, not an allocation study. Exact numerical replay
+  and figure reproduction pass. Numerical community rows remain uninterpreted;
+  manuscript/PDF and earlier registered studies remain unchanged.
 
 ## Next actions, in priority order
 
@@ -119,7 +132,7 @@ No later freeze can establish global blinding.
    bounded public-source review is finished; avoid repeating it or automatically
    expanding a catalogue of similarly inadequate archives. Stock regularity
    itself does not require opportunity budgets; a feasibility explanation does.
-2. **Connect the new discriminating prediction to observable scope.** The
+2. **Preserve the failed curvature qualification; reopen on new evidence.** The
    [measure-intervention note](measure-intervention.md) supplies the cost-change
    comparison; repeating its algebra or adding more arbitrary simulations is
    unnecessary. An existing-data application needs coexisting objects, an
@@ -129,13 +142,14 @@ No later freeze can establish global blinding.
    and an explicit assumption about which regime conditions persist. Bulk bin
    stock/count ratios do not supply boundary costs; separately grown monocultures
    do not supply coexistence. The [candidate audit](measure-candidate-audit.md)
-   now identifies a conditional Ghedini lead. The bounded source screen is
-   finished; prioritize its recovered calibration rather than extending the
-   catalogue. The next concrete step is a calibration-only numerical gate:
-   specify signed-assay error and dependence, compare a power cost with one
-   low-flexibility monotone alternative, and assess forecast separation after
-   uncertainty. Six species alone do not disqualify it. The full 21-species
-   source calibration was not recovered as a separate public table.
+   and [completed numerical gate](ghedini-cost-calibration.md) now close the
+   recovered Ghedini additive-cost route. No model/weight/domain/margin change
+   may rescue that run. Additional independent calibration evidence could
+   justify a new protocol, but finding another fitting family on the same
+   observations would not itself strengthen the evidence. The full 21-species
+   source calibration was not recovered as a separate public table during the
+   bounded public-source screen. Do not repeat the catalogue or that search
+   without a specific new source lead.
    Community-specific mean sizes may support the ratio-of-expected-totals
    prediction for biovolume/count. It needs the same independently supported
    size domain as the cost forecast. Write the observable/domain/transfer and
@@ -163,6 +177,7 @@ python3.11 experiments/fetch_neutrality_metadata.py --stage verify
 make law-observation-metadata PY=python3.11
 make measure-intervention PY=python3.11   # deterministic mathematical examples only
 make measure-candidates measure-calibration PY=python3.11   # offline source/calibration qualification; no community score
+make ghedini-cost-calibration ghedini-cost-calibration-report PY=python3.11  # exact replay; community outcomes closed
 make archived-cost-transfer chemostat-response dunaliella-size-budget PY=python3.11   # offline audits
 make plant-sources plant-biomass-profile PY=python3.11
 ```
@@ -181,7 +196,20 @@ source audit.
   inspection outputs are in `data/measure-candidates/2026-10-04/`, the start-date
   directory spanning 4–5 October. Seven boundary/integrity tests are in
   `tests/test_measure_candidate_schema.py`. These are unregistered audit
-  materials; source bytes and calibration readings must remain traceable.
+  materials; source bytes and calibration readings must remain traceable. The
+  later calibration diagnostic references immutable snapshots of its inputs.
+
+- Respiration calibration, frozen: `src/orthopolity/cost_calibration.py`,
+  `experiments/run_ghedini_cost_calibration.py`,
+  `configs/ghedini_cost_calibration_2026-10-05.json`, and
+  `data/ghedini-cost-calibration/2026-10-05/`. Fits, held-out forecasts and
+  moment sensitivities are in `results/ghedini-cost-calibration/`. Live-source
+  hashes and software versions must match for exact replay. Numerical fitting
+  uses Python 3.11.6, NumPy 2.3.5 and SciPy 1.16.3; post-analysis figures use
+  Matplotlib 3.10.7. Registration's own audit recomputes the numerical outputs;
+  repeat registration is idempotent. Fourteen synthetic numerical/protocol
+  tests cover the new analysis and leakage boundary. No community reader is
+  part of this workflow.
 
 - Chemostat sources and study: `experiments/fetch_chemostat_sources.py`,
   `experiments/run_chemostat_response.py`, `src/orthopolity/chemostat_response.py`,
@@ -340,3 +368,17 @@ source audit.
   references. The response contrast also holds for a general increasing cost
   curve under a size-independent physical cost addition; the power baseline
   supplies initial observational equivalence.
+- Candidate/calibration checkpoint, 5 October: source inventory completed in
+  `8e209fa`, with 231 signed/missing independent-assay readings and real
+  community-specific size headers. The frozen calibration protocol, source
+  snapshots and synthetic tests were committed in `d49f0e6` before the first
+  real-data fit. It fails the specified additive-family gate without opening
+  numerical community outcomes. The primary weighting gives effectively
+  identical power/additive forecasts; the alternative weighting gives interior
+  gains but fails robust cross-weight separation. Exact numerical replay and
+  PNG reproduction pass; registered as record 23 with 587 references. All 352
+  tests pass. The report and scientific assessment retain the negative
+  qualification; no conclusion changes in the manuscript. Future work must
+  supply additional independent calibration/observation evidence or a
+  substantively different, independently valid prediction. This route is not
+  improved by selecting the favorable weighting after results.

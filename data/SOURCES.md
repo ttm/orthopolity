@@ -211,7 +211,7 @@ but numerical community rows remain uninterpreted. Inspection includes sheet
 names and row-1 text headers, followed by a separately checkpointed A:I read of
 the independent species-metabolism sheet. All 231 calibration rows, including
 signed and missing rates, remain in the derived ledger. No cost fit or law score
-was computed.
+was computed during this inventory.
 
 The [audit](../docs/measure-candidate-audit.md) records methods, observation
 limits, an aggregate-moment target and the remaining gate. The two offline
@@ -219,3 +219,20 @@ commands `make measure-candidates PY=python3.11` and
 `make measure-calibration PY=python3.11` verify sources/headers and replay
 calibration qualification. Published-summary exposure is recorded separately.
 The two papers reuse the same community experiment.
+
+## Published respiration calibration diagnostic: 5 October 2026
+
+`ghedini-cost-calibration/2026-10-05/` contains the derived species-by-OD group
+ledger, fold membership, frozen plan and registry receipt. It references the
+unchanged Ghedini calibration JSON and provider-verified source ZIP above.
+Content-addressed snapshots retain configuration, algorithms and the prior
+exposure record. No further source or numerical community row was acquired.
+
+Protocol checkpoint `d49f0e6` preceded fitting. Positive expected power and
+power-plus-overhead costs were fitted to all signed group means. Whole-species
+and whole-condition predictions plus deterministic moment sensitivities are
+retained in `results/ghedini-cost-calibration/`. Two scientific PNGs plot all
+usable signed readings and descriptive SDs; their separate post-analysis
+source is archived. The failed gate supplies a calibration qualification
+result, not an allocation-law verdict. See
+[the report](../docs/ghedini-cost-calibration.md).

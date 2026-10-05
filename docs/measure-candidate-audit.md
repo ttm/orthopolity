@@ -165,5 +165,14 @@ make measure-calibration PY=python3.11  # independent calibration qualification 
 PYTHONPATH=src python3.11 experiments/register_runs.py --verify
 ```
 
-The registry remains 22 studies and 571 file references. The manuscript and PDF
-remain unchanged because no new allocation study was evaluated.
+At completion of this source inventory, the registry remained 22 studies and
+571 file references. No cost fit or allocation study had been evaluated.
+
+**Calibration follow-up, 5 October:** the separately frozen
+[numerical calibration gate](ghedini-cost-calibration.md) is complete and adds
+registry record 23. Its additive-cost route fails: equal-group fits include
+power-equivalent predictions, whereas species-RMS fits support a different
+conditional contrast. The combined sensitivity ranges overlap. Numerical
+community rows remain unopened. The manuscript and PDF remain unchanged;
+there is no new allocation-law verdict. Reopening requires additional
+independent calibration evidence, not choosing the favorable fit after results.

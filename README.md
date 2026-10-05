@@ -90,6 +90,14 @@ distributions. Cost uncertainty, transfer and size-domain coverage still need
 qualification. Numerical community outcomes remain unopened; this audit adds
 no allocation-law verdict.
 
+The subsequent [respiration calibration gate](docs/ghedini-cost-calibration.md)
+is complete and registered. A power-plus-overhead cost improves held-out
+predictions under species-RMS weights but ties a power under equal-group
+weights. The implied size-log and cost-log mean-size sensitivity ranges overlap,
+and some fits make the predictions identical. The frozen gate fails, so this
+route does not qualify a community discrimination test. Community outcomes
+remain closed; the analysis adds no natural-law verdict.
+
 Further empirical work follows the [available-data programme](docs/available-data-programme.md):
 published resource measurements and interventions, separate calibration records,
 and evaluation on whole held-out communities or studies. New experimental

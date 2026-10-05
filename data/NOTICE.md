@@ -9,6 +9,12 @@ checksums and receipts accompany the files. The package's MIT licence does not
 relicense them. Extracted headers and the independent calibration ledger are
 identified as derived inspection materials, with signed/missing rates preserved.
 
+The group ledger in `data/ghedini-cost-calibration/2026-10-05/` and figures in
+`results/ghedini-cost-calibration/` derive from those attributed Ghedini
+calibration readings. Grouping, fitting and plotting are identified in
+[the analysis report](../docs/ghedini-cost-calibration.md); source CC BY 4.0
+attribution and terms continue to apply to the reproduced readings.
+
 The frozen files in data/raw are third-party inputs, preserved byte-for-byte for
 reproduction. Their source-specific terms do not become the licence of this package.
 [Source details](SOURCES.md) and the [checksum manifest](snapshot_checksums.json) identify

@@ -146,6 +146,19 @@ is definitional. Point stock/count comparisons transfer across locales;
 ecological expected neutrality remains unresolved. Synthetic calibration is
 separate from field evidence within this actual-measurement reanalysis record.
 
+Record 23, `ghedini-cost-calibration-2026-10-05`, is a
+[published respiration calibration diagnostic](ghedini-cost-calibration.md),
+not an allocation study. The previously exposed monoculture readings are grouped
+without clipping negative values; entire species and OD conditions are held
+out. Commit `d49f0e6` retains the protocol and algorithms before fitting.
+The power-plus-overhead family fails the fixed predictive/stability gate;
+numerical community outcomes remain unopened. The record retains source and
+exposure snapshots, groups/folds, every fit and prediction, conditional moment
+sensitivities and two post-analysis figures. Registration requires exact
+numerical replay and links to the earlier quota-calibration study. The registry
+now verifies 23 records and 587 file references; record count is not a count of
+independent tests of an allocation law.
+
 ## Hardware and threading
 
 The new workload metadata records CPU model, architecture/logical CPU count,

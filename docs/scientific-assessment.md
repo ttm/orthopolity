@@ -5,6 +5,7 @@ Assessment: 28 September 2026; consistency review and external-assessment addend
 Scientific-strength and prior-work addendum: 3 October 2026, before the plant
 study's formal evaluation; plant-result judgment appended after evaluation on the same date.
 Reference-measure discrimination addendum: 4 October 2026.
+Independent respiration-calibration result: 5 October 2026.
 This is a research assessment and proposed design,
 not a completed validation study or a preregistration. It supplements the
 [manuscript](paper.md) and [remaining work](roadmap.md).
@@ -1063,3 +1064,29 @@ eligible natural regime, established that the regime survives a cost change,
 or supplied an independent measured cost curve with a suitable observation
 design. Those empirical requirements determine whether this becomes useful
 science about nature. The overall strength assessment therefore remains unchanged.
+
+## Independent curvature calibration: 5 October 2026
+
+The [Ghedini calibration diagnostic](ghedini-cost-calibration.md) executes a
+concrete independent-cost qualification, using published monoculture respiration
+for six species at four assay conditions. Protocol and algorithms were committed
+before fitting; calibration readings had already been exposed. Signed and
+missing readings remain explicit, and whole species/conditions are held out.
+
+The frozen gate fails. Under equal-group weights the power-plus-overhead
+model effectively ties a power, with near-zero overhead and coincident S/Q
+mean-size predictions. Species-RMS weights give real interior predictive gains
+and a distinct conditional mean-size contrast, but the two weightings together
+give overlapping prediction ranges and a zero minimum paired gap. A weakly
+qualified curvature estimate cannot justify unmasking communities to decide
+between the reference measures. The numerical community outcomes stay closed.
+
+This adds a reproducible negative calibration qualification to the identification
+argument: power costs make the rules indistinguishable, and the reviewed
+independent calibration does not supply a robust distinction. It is neither
+evidence against every non-power cost nor an allocation-law test. The broader
+judgment remains modest original contribution and weak evidence for a natural
+law. Another curve or favorable weighting on these same observations would
+not strengthen that evidence without a separately declared hypothesis and
+independent validation. Close this particular discrimination route pending
+additional calibration evidence; retain the completed argument and result.

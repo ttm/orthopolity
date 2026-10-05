@@ -19,6 +19,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: plant-sources plant-biomass-profile plant-biomass-profile-report
 .PHONY: law-observation-metadata
 .PHONY: measure-intervention measure-candidates measure-calibration
+.PHONY: ghedini-cost-calibration ghedini-cost-calibration-report
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -196,6 +197,12 @@ measure-candidates: ## offline: verify candidate metadata, source checksums and 
 
 measure-calibration: ## offline: qualify independent respiration data; no model fit or community score
 	$(PY) experiments/inspect_measure_calibration.py
+
+ghedini-cost-calibration: ## offline: exact replay of the frozen respiration calibration gate
+	$(PY) experiments/run_ghedini_cost_calibration.py --stage audit
+
+ghedini-cost-calibration-report: ## figures from retained calibration results; no refitting
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/report_ghedini_cost_calibration.py --verify
 
 paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 
