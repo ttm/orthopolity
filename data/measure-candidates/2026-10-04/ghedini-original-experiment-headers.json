@@ -1,0 +1,479 @@
+[
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "date",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "community",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "cell_vol_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "density_cells_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "biovolume_um3_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "tot abundance_cells_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "tot biovolume_um3_ul",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "species size and abundance",
+    "sheetId": "1"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "date",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "community",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "light received_each community_umol/s/m2",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "light_not_captured_by 50ml_umol/s/m2",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "light_not_captured_at 500ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "light absorbed_500ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "U1_energy_lost_light_not_captured_14h_J",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "light_absorbed_J_14h",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "light",
+    "sheetId": "6"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "community",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "light_umol_s_m2",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "net_O2_produced_umolO2_min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "light_metab_umolO2_min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "dark_metab_molO2_min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "energy_netVO2_J/min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "energy_light_resp_J/min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "energy_dark_resp_J/min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "K1",
+        "header": "photosynthesis_J_14h_5ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "L1",
+        "header": "light_metab_J_14h_5ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "M1",
+        "header": "dark_metab_J_10h_5ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "N1",
+        "header": "average_metab_J_h_5ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "O1",
+        "header": "average_metab_J_14h_5ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "P1",
+        "header": "gross_photosynthesis_J_14h_5ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "Q1",
+        "header": "metab_J_24h_5ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "R1",
+        "header": "gross_photosynthesis_J_14h_per_ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "S1",
+        "header": "metab_J_24h_per_ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "T1",
+        "header": "log_gross_photosynthesis_J_14h_per_ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "U1",
+        "header": "log_metab_J_24h_per_ml",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "oxygen rates",
+    "sheetId": "7"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "date",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "community",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "species_vol_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "pgC per um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "dead_cells",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "live_cells",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "tot_cells",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "K1",
+        "header": "dead_biov",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "L1",
+        "header": "pcC_lost_to_mortality",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "M1",
+        "header": "energy_lost_Joules",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "N1",
+        "header": "live_biov",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "O1",
+        "header": "tot biov",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "P1",
+        "header": "species_biovolume_chemostat_um3/ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "Q1",
+        "header": "estimated_dead_biovolume_um3_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "R1",
+        "header": "pgC per ul_lost to dead biov_estimated",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "S1",
+        "header": "mgC per ul_lost to dead biov_estimated",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "T1",
+        "header": "energy_J per ul_lost_to_dead_biov_estimated",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "U1",
+        "header": "J per ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "V1",
+        "header": "whole chemostat_500ml_J",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "W1",
+        "header": "tot energy lost to mortality per chemostat_J",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "X1",
+        "header": "lost to mortality_over 24h_J",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "mortality",
+    "sheetId": "3"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "date",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "community",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "hours",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "nutrient",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "amount_mg/L",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "nutrients",
+    "sheetId": "4"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "date",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "community",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "biov_um3_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "U1_light_not_captured_14h_J",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "light_absorbed_14h_J_500ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "estimated_gross_photosynthesis_14h_J_500ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "U2_light_not_used_14h_J",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "B1_estimated_mortality_energy_24h_J",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "K1",
+        "header": "B2_estimated_metabolism_24h_J_500ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "L1",
+        "header": "U",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "M1",
+        "header": "B",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "N1",
+        "header": "Q",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "O1",
+        "header": "Q_unitbiov_um3_ul",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "energy waste",
+    "sheetId": "5"
+  }
+]

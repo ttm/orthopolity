@@ -18,7 +18,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: dunaliella-sources dunaliella-size-budget dunaliella-size-budget-report
 .PHONY: plant-sources plant-biomass-profile plant-biomass-profile-report
 .PHONY: law-observation-metadata
-.PHONY: measure-intervention
+.PHONY: measure-intervention measure-candidates measure-calibration
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -190,6 +190,12 @@ law-observation-metadata: ## offline: verify six retained methods/event metadata
 
 measure-intervention: ## analytic examples only: size-reference versus cost-reference allocation
 	$(PY) experiments/illustrate_measure_intervention.py
+
+measure-candidates: ## offline: verify candidate metadata, source checksums and text headers
+	$(PY) experiments/fetch_measure_candidates.py --stage verify
+
+measure-calibration: ## offline: qualify independent respiration data; no model fit or community score
+	$(PY) experiments/inspect_measure_calibration.py
 
 paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 

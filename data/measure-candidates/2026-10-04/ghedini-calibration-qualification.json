@@ -1,0 +1,79 @@
+{
+  "by_species": [
+    {
+      "rows": 32,
+      "size_values": [
+        395.8963277
+      ],
+      "species": "amphidinium"
+    },
+    {
+      "rows": 32,
+      "size_values": [
+        728.9686366
+      ],
+      "species": "amphora"
+    },
+    {
+      "rows": 47,
+      "size_values": [
+        146.2526368
+      ],
+      "species": "dunaliella"
+    },
+    {
+      "rows": 40,
+      "size_values": [
+        2.002144
+      ],
+      "species": "synechoccus"
+    },
+    {
+      "rows": 47,
+      "size_values": [
+        366.144678
+      ],
+      "species": "tetraselmis"
+    },
+    {
+      "rows": 33,
+      "size_values": [
+        41.90607246
+      ],
+      "species": "tisochrysis"
+    }
+  ],
+  "checked_bulk_to_cell_pairs": 230,
+  "calibration_reader_opens_community_worksheets": false,
+  "community_numerical_data_rows_interpreted": false,
+  "dilution_percent_values": [
+    10.0,
+    30.0,
+    70.0,
+    100.0
+  ],
+  "light_values": [
+    0.0
+  ],
+  "max_relative_rate_identity_error": 0.004142924528302008,
+  "missing_by_field": {
+    "cells_in_5ml": 0,
+    "cells_per_ul": 0,
+    "dilution_percent": 0,
+    "light": 0,
+    "optical_density": 0,
+    "oxygen_umol_per_min": 1,
+    "oxygen_umol_per_min_per_cell": 1,
+    "species": 0,
+    "volume_um3": 0
+  },
+  "per_cell_rate_signs": {
+    "missing": 1,
+    "negative": 20,
+    "positive": 209,
+    "zero": 1
+  },
+  "rows": 231,
+  "species": 6,
+  "stage": "calibration qualification only; no fitted model or community score"
+}

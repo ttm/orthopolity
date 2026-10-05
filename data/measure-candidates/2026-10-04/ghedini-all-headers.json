@@ -1,0 +1,1222 @@
+[
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "sampling_week",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "date",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "community",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "tot_biov_um3_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "tot_abundance_cells_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "community_metabolism_observed_J_day_500ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "estimates1_mean_cell_rates_J_day_500ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "estimates2_mean_biomass_rates",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "estimates3_size_across_sp",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "K1",
+        "header": "estimates4a_size&density_across_sp_species.density",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "L1",
+        "header": "estimates4b_size&density_across_sp_community.density",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "M1",
+        "header": "estimates5_mean_individual_sp_rates",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "N1",
+        "header": "estimates6a_density_dep_individual_sp_rates_species.density",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "O1",
+        "header": "estimates6b_density_dep_individual_sp_rates_community.density",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "estimates_community_metab",
+    "workbook": "1. Data summary.xlsx"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "date",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "community",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "tot_biov_um3_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "tot_abundance_cells_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "community_net_productivity_observed_J_day_500ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "estimates1_mean_cell_rates_J_day_500ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "estimates2_mean_biomass_rates",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "estimates3_size_across_sp",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "K1",
+        "header": "estimates4a_size&density_across_sp_species.density",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "L1",
+        "header": "estimates4b_size&density_across_sp_community.density",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "M1",
+        "header": "estimates5_mean_individual_sp_rates",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "N1",
+        "header": "estimates6a_density_dep_individual_sp_rates_species.density",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "O1",
+        "header": "estimates6b_density_dep_individual_sp_rates_community.density",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "estimates_com_netproduction",
+    "workbook": "1. Data summary.xlsx"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "date",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "community",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "biovolume_um3_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "abundance_cells_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "photosynthesis_average across lights_umolO2_min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "light_Resp_average across lights_umolO2_min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "dark_Resp_average across lights_umolO2_min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "energy_photosynthesis_J/min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "K1",
+        "header": "energy_light_Resp_J/min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "L1",
+        "header": "energy_dark_Resp_J/min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "M1",
+        "header": "metabolism_J_day_5mlvial_16:8h",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "N1",
+        "header": "community_metabolism_J_day_500ml_16:8h",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "O1",
+        "header": "photosynthesis_J_16h_5mlvial",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "P1",
+        "header": "community_photosynthesis_J_16h_500ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "Q1",
+        "header": "hourly_metab",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "R1",
+        "header": "metab_8h",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "S1",
+        "header": "community_net_productivity_J_day_500ml_16:8h",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "observed community rates",
+    "workbook": "1. Data summary.xlsx"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "Light",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "biomass_density_concentration_%",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "OD",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "cell_vol_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "cellsuL",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "cells.5ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "metab_umolO2_min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "metab_umolO2_min_cell",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "average metabolism across species_umol_min_cell",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "K1",
+        "header": "metab_per_unit_vol_umolO2_min_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "L1",
+        "header": "av_metab_unit_vol_umolO2_min_um3",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "species metabolism",
+    "workbook": "1. Data summary.xlsx"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "light",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "biomass_density_concentration_%",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "cell_vol_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "cellsuL",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "cells.5ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "population_photosynthesis_umolO2_min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "cell_photosynthesis_umol_min_cell",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "average cell photosynthesis across species densities and lights_umol_min_cell",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "cell_photosynthesis_unit_biovolume_umol_min_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "K1",
+        "header": "average cell biovolume-specific photosynthesis_umol_min_um3",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "species photosynthesis",
+    "workbook": "1. Data summary.xlsx"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "chemostat",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "tot_biov_um3_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "tot_biov_whole_chemostat_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "tot_abundance_cells_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "tot_abundance_whole_chemostat",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "average_cell_size_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "mean cell metab_umol min cell",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "estimates_com metab_umol_min_500ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "K1",
+        "header": "community_metab_estimates1_J_day_500ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "M1",
+        "header": "mean cell photosynthesis across species and densities",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "N1",
+        "header": "estimates_com photo_umol_min_500ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "O1",
+        "header": "estimates_com_photosynthesis_J_day_500ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "P1",
+        "header": "metab_per_hour",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "Q1",
+        "header": "community_netprod_estimates1_J_day_500ml",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "mean rates per cell",
+    "workbook": "2. Community estimates from each approach.xlsx"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "chemostat",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "tot_biov_um3_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "tot_biov_whole_chemostat_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "tot_abundance_cells_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "tot_abundance_whole_chemostat",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "average_cell_size_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "mean_cell_biomass-specific_metab_umol_min_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "com_metab_estimates_umol_min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "K1",
+        "header": "community_metab_estimates2_J_day_500ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "M1",
+        "header": "mean_cell_biomass-specific_photosynthesis_umol_min_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "N1",
+        "header": "com_photosynthesis_estimates_umol_min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "O1",
+        "header": "com_photosynthesis_estimates_J_day_500ml",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "P1",
+        "header": "metab_h",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "Q1",
+        "header": "community_netprod_estimates2_J_day_500ml",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "mean biomass-specific rates",
+    "workbook": "2. Community estimates from each approach.xlsx"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "id",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "date",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "chemostat",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "cell_vol_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "density_cells_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "log10_volume",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "log10_cell_metab_size_across_species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "K1",
+        "header": "metab_J_cell_day",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "L1",
+        "header": "pop_metab_J_day_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "M1",
+        "header": "community_metab_estimates3_J_day_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "P1",
+        "header": "log10_cell_netprod_size_across_sp",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "Q1",
+        "header": "netprod_J_cell_day",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "R1",
+        "header": "pop_netprod_J_day_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "S1",
+        "header": "community_netprod_estimates3_J_day_ul",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "size across species",
+    "workbook": "2. Community estimates from each approach.xlsx"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "id",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "date",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "chemostat",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "cell_vol_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "density_cells_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "species_biomass_density_concentration",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "log10_volume",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "K1",
+        "header": "log10_cell_metab_across_species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "L1",
+        "header": "metab_J_cell_day_across_species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "M1",
+        "header": "pop_metab_J_day_ul_across_species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "N1",
+        "header": "community_metab_estimates4a_J_day_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "Q1",
+        "header": "log10_cell_netprod",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "R1",
+        "header": "netprod_avlights_J_cell_day",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "S1",
+        "header": "pop_netprod_J_day_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "T1",
+        "header": "community_netprod_estimates4a_J_day_ul",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "size&dens across sp_species.den",
+    "workbook": "2. Community estimates from each approach.xlsx"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "id",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "date",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "chemostat",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "cell_vol_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "density_cells_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "species_biomass_density_concentration",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "community_biomass_density_concentration",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "K1",
+        "header": "log10_volume",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "L1",
+        "header": "log10_cell_metab_across_species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "M1",
+        "header": "metab_J_cell_day_across_species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "N1",
+        "header": "pop_metab_J_day_ul_across_species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "O1",
+        "header": "community_metab_estimates4b_J_day_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "R1",
+        "header": "log10_cell_netprod",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "S1",
+        "header": "netprod_J_cell_day",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "T1",
+        "header": "pop_netprod_J_day_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "U1",
+        "header": "ommunity_netprod_estimates4b_J_day_ul",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "size&dens across sp_com.density",
+    "workbook": "2. Community estimates from each approach.xlsx"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "date",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "chemostat",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "cell_vol_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "density_cells_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "ind_sp_metab_J_day_cell",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "pop_metab_ind_sp_J_day_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "com_metab_estimates5_J_day_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "M1",
+        "header": "ind_sp_cell_metab_8h",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "N1",
+        "header": "photo_J_cell_16h",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "O1",
+        "header": "net_production_J_day_cell",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "P1",
+        "header": "pop_netprod_J_day_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "Q1",
+        "header": "com_netprod_estimates5_J_day_ul",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "mean individual sp rates",
+    "workbook": "2. Community estimates from each approach.xlsx"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "id",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "date",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "chemostat",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "cell_vol_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "density_cells_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "species_biomass_density_concentration",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "cell_metab_ind_sp_spConc",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "K1",
+        "header": "pop_metab_umol_min_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "L1",
+        "header": "com_metab_estimates6a_umol_min_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "Q1",
+        "header": "cell_photosynthesis_spConc_umol_min_cell",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "R1",
+        "header": "pop_photo_umol_min_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "S1",
+        "header": "com_netprod_estimates6a_umol_min_ul",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "density_ind_sp_species.dens",
+    "workbook": "2. Community estimates from each approach.xlsx"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "id",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "date",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "chemostat",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "species",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "cell_vol_um3",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "density_cells_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "community_biomass_density_concentration",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "cell_metab_ind_sp_umol_min_cell",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "K1",
+        "header": "pop_metab_comConc_umol_min_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "L1",
+        "header": "com_metab_estimates6b_umol_min_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "P1",
+        "header": "cell_photosynthesis_ind_sp_umol_min_cell",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "Q1",
+        "header": "pop_photo_umol_min_ul",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "R1",
+        "header": "com_net prod_estimates6b_umol_min_ul",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "density_ind_sp_community.dens",
+    "workbook": "2. Community estimates from each approach.xlsx"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "run ",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "id",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "SDR",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "community",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "subsample_n",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "sensor spot",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "light_umol_s_m2",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "photosynthesis_umolO2_min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "light_metab_umolO2_min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "K1",
+        "header": "dark_metab_molO2_min",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "all subsamples",
+    "workbook": "3. Community oxygen rates_all subsamples.xlsx"
+  },
+  {
+    "cells": [
+      {
+        "cell": "A1",
+        "header": "id",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "B1",
+        "header": "run",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "C1",
+        "header": "sampling",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "D1",
+        "header": "community",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "E1",
+        "header": "light_umol_s_m2",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "F1",
+        "header": "measure_umolO2_min",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "G1",
+        "header": "N",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "H1",
+        "header": "mean",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "I1",
+        "header": "sd",
+        "omitted_nontext_or_formula": false
+      },
+      {
+        "cell": "J1",
+        "header": "se",
+        "omitted_nontext_or_formula": false
+      }
+    ],
+    "row": 1,
+    "sheet": "variability among subsamples",
+    "workbook": "3. Community oxygen rates_all subsamples.xlsx"
+  }
+]

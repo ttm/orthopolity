@@ -1,5 +1,14 @@
 # Third-party data notice
 
+`data/measure-candidates/2026-10-04/` retains provider metadata and two
+biological archives. [Ghedini, Malerba and Marshall (2020)](https://doi.org/10.26180/5e30e9e2b02b3)
+and [Ghedini, Loreau and Marshall (2020)](https://doi.org/10.26180/5e2a1a8d74be7)
+are supplied under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/),
+as recorded in their exact Figshare metadata. Authors, original source names,
+checksums and receipts accompany the files. The package's MIT licence does not
+relicense them. Extracted headers and the independent calibration ledger are
+identified as derived inspection materials, with signed/missing rates preserved.
+
 The frozen files in data/raw are third-party inputs, preserved byte-for-byte for
 reproduction. Their source-specific terms do not become the licence of this package.
 [Source details](SOURCES.md) and the [checksum manifest](snapshot_checksums.json) identify

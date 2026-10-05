@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-04",
+  "stage": "After independent calibration qualification, before remaining workbook headers",
+  "purpose": "Determine whether the remaining table schemas name individual-size measurements, size distributions or sample identifiers",
+  "scope": "First-row text headers in the sixteen sheets enumerated in ghedini-workbook-inventory.json",
+  "inventory_count_correction": "The pre-inspection scope said sixteen; the listed inventory contains fifteen. All and only the listed sheets were inspected.",
+  "permitted": [
+    "Resolve sheets through workbook relationships",
+    "Use the tested first-row header reader, omitting numeric and formula cells",
+    "Retain text headers with workbook and sheet names"
+  ],
+  "prohibited": [
+    "Interpreting or emitting any community numerical outcome cell",
+    "Reading later worksheet rows",
+    "Fitting a cost curve or evaluating a community forecast"
+  ],
+  "limitations": "Headers can establish possible fields, not the meaning or absence of information in uninspected rows. This is a local pre-inspection amendment, not a new preregistration."
+}

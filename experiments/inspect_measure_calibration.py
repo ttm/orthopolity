@@ -1,8 +1,10 @@
 """Qualify one independently measured calibration worksheet, without fitting.
 
 Reads only the fixed sheet and columns in calibration-inspection-plan.json.
-Community worksheets are never opened. Formula cells stop inspection before
-any cached values can be used. Outputs are development data, not forecasts.
+The calibration reader never opens community worksheets. Source verification
+also replays retained first-row header inspections. No community data row is
+interpreted. Formula cells stop before cached values can be used. Outputs are
+development data, not forecasts.
 """
 from __future__ import annotations
 
@@ -14,7 +16,7 @@ import re
 import xml.etree.ElementTree as ET
 import zipfile
 
-from fetch_measure_candidates import BASE, NS, REL, encode, retain_report, verify
+from fetch_measure_candidates import BASE, NS, REL, retain_report, verify
 
 WORKBOOK = "1. Data summary.xlsx"
 SHEET = "species metabolism"
@@ -94,9 +96,14 @@ def selected_rows(book):
 def qualify(rows):
     if not rows:
         raise ValueError("Empty calibration")
-    species = sorted({r["species"] for r in rows})
-    if any(not isinstance(s, str) or not s for s in species):
+    identities = {r["species"] for r in rows}
+    if any(not isinstance(s, str) or not s for s in identities):
         raise ValueError("Missing species identity")
+    species = sorted(identities)
+    for row in rows:
+        for field in FIELDS:
+            if field != "species" and row[field] is not None and not isinstance(row[field], (int, float)):
+                raise ValueError(f"Expected numeric calibration field: {field}")
     errors = []
     signs = collections.Counter()
     for row in rows:
@@ -116,7 +123,8 @@ def qualify(rows):
         by_species=[dict(species=s, rows=sum(r["species"] == s for r in rows),
                          size_values=sorted({r["volume_um3"] for r in rows if r["species"] == s and r["volume_um3"] is not None}))
                     for s in species],
-        community_worksheets_opened=False,
+        calibration_reader_opens_community_worksheets=False,
+        community_numerical_data_rows_interpreted=False,
     )
 
 

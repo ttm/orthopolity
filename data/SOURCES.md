@@ -192,3 +192,30 @@ count. No candidate nitrogen-stock table was requested. The
 [observation assessment](../docs/plankton-observation-gate.md) closes the
 current two-archive law-test gate without a new registry record. The prior
 public-summary exposure note in the parent directory remains applicable.
+
+## Size-versus-cost candidate inventory: 4–5 October 2026
+
+`measure-candidates/2026-10-04/` retains seven exact API metadata responses
+and receipts with URLs, UTC retrieval times, lengths, SHA-256 and verified TLS.
+Sources are three Figshare candidate deposits, a Padfield author repository
+description, Hengill and SeaFlow DataCite records, and the original Ghedini
+experiment deposit. Metadata line endings are preserved.
+
+| Retained biological archive | Provider identifier and integrity |
+|---|---|
+| [Ghedini, Malerba and Marshall (2020)](https://doi.org/10.26180/5e30e9e2b02b3) | File 22484462; 1,879,319 bytes; MD5 `af61d509937b76cb986d45683eea3617`; three XLSX members |
+| [Ghedini, Loreau and Marshall (2020)](https://doi.org/10.26180/5e2a1a8d74be7) | File 21286929; 466,041 bytes; MD5 `6dc5a38875eb1eb9d44d08d7b020b95d`; one XLSX |
+
+Both providers record CC BY 4.0. Archive bytes include community outcomes,
+but numerical community rows remain uninterpreted. Inspection includes sheet
+names and row-1 text headers, followed by a separately checkpointed A:I read of
+the independent species-metabolism sheet. All 231 calibration rows, including
+signed and missing rates, remain in the derived ledger. No cost fit or law score
+was computed.
+
+The [audit](../docs/measure-candidate-audit.md) records methods, observation
+limits, an aggregate-moment target and the remaining gate. The two offline
+commands `make measure-candidates PY=python3.11` and
+`make measure-calibration PY=python3.11` verify sources/headers and replay
+calibration qualification. Published-summary exposure is recorded separately.
+The two papers reuse the same community experiment.

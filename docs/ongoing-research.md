@@ -1,6 +1,6 @@
 # Ongoing research: resume here
 
-Last updated: 4 October 2026. This is the mutable handoff document for ongoing
+Last updated: 5 October 2026. This is the mutable handoff document for ongoing
 work. It records the current objective, decisions, completed work and exact next
 steps. Immutable executed studies belong in the run registry; this document does
 not replace their frozen protocols or results.
@@ -24,7 +24,7 @@ retrospective validation, not global blinding or prospective data collection.
 
 - Branch: `py314-and-package-names`, pushed to `origin`. All four
   available-data studies are complete and registered. Registry: 22 records, 571
-  retained file references. All 331 tests pass. Run the suite with
+  retained file references. All 338 tests pass. Run the suite with
   `make test PY=python3.11`.
 - [Archived cost transfer](archived-cost-transfer.md) (`archived-cost-transfer-2026-10-02`):
   a size-geometric carbon cost predicts held-out 25°C *Synechococcus* quotas
@@ -87,6 +87,17 @@ retrospective validation, not global blinding or prospective data collection.
   design. The three deterministic examples add no empirical observations and
   are not a registered study. Natural-regime eligibility and persistence through
   a cost change remain unestablished.
+- [Size-versus-cost candidate audit](measure-candidate-audit.md), completed
+  5 October: recovered 231 independent-monoculture respiration rows for six
+  Ghedini community species. Signed and missing readings are retained. The rows
+  include repeated dark periods, not 231 independent biological replicates.
+  Seven metadata snapshots and two provider-checksummed archives are retained.
+  The original community experiment measured size within each community and
+  its headers name species size/count/biovolume fields. That opens a possible
+  aggregate mean-size test without inventing taxon bins. Cost uncertainty,
+  transfer and domain coverage still need qualification. No cost curve was
+  fitted and no numerical community outcome row was interpreted. Published
+  summaries have been seen. Registry and manuscript remain unchanged.
 
 ## Next actions, in priority order
 
@@ -117,8 +128,22 @@ No later freeze can establish global blinding.
    A causal comparison additionally needs a documented physical cost change
    and an explicit assumption about which regime conditions persist. Bulk bin
    stock/count ratios do not supply boundary costs; separately grown monocultures
-   do not supply coexistence. No suitable application is identified yet. Do not
-   fit cost or regime membership to rescue either forecast. Preserve the plant
+   do not supply coexistence. The [candidate audit](measure-candidate-audit.md)
+   now identifies a conditional Ghedini lead. The bounded source screen is
+   finished; prioritize its recovered calibration rather than extending the
+   catalogue. The next concrete step is a calibration-only numerical gate:
+   specify signed-assay error and dependence, compare a power cost with one
+   low-flexibility monotone alternative, and assess forecast separation after
+   uncertainty. Six species alone do not disqualify it. The full 21-species
+   source calibration was not recovered as a separate public table.
+   Community-specific mean sizes may support the ratio-of-expected-totals
+   prediction for biovolume/count. It needs the same independently supported
+   size domain as the cost forecast. Write the observable/domain/transfer and
+   eligibility specification before reading numerical community rows. Do not
+   require every individual size if a justified aggregate implication suffices,
+   and do not substitute fixed taxon means for physical size distributions.
+   No additive physical cost intervention is documented in these archives.
+   Do not fit cost or regime membership to rescue either forecast. Preserve the plant
    finite-census/dependence findings as synthetic diagnostics. A generic
    sensitivity-analysis addition also overlaps the existing profile-calibration
    code and needs a concrete improvement before becoming a separate project.
@@ -137,6 +162,7 @@ PYTHONPATH=src python3.11 experiments/register_runs.py --verify
 python3.11 experiments/fetch_neutrality_metadata.py --stage verify
 make law-observation-metadata PY=python3.11
 make measure-intervention PY=python3.11   # deterministic mathematical examples only
+make measure-candidates measure-calibration PY=python3.11   # offline source/calibration qualification; no community score
 make archived-cost-transfer chemostat-response dunaliella-size-budget PY=python3.11   # offline audits
 make plant-sources plant-biomass-profile PY=python3.11
 ```
@@ -146,6 +172,16 @@ Run `make restore-chemostat-bundle PY=python3.11` only to replay the chemostat
 source audit.
 
 ## Current files and ownership boundaries
+
+- Size-versus-cost candidate inventory: `experiments/fetch_measure_candidates.py`
+  separates acquisition from offline checksum/header replay; its default never
+  interprets numerical data rows. `experiments/inspect_measure_calibration.py`
+  reads only the independent calibration sheet A:I, stops on selected formulas
+  and replays the retained qualification. Sources, plans, receipts, exposure and
+  inspection outputs are in `data/measure-candidates/2026-10-04/`, the start-date
+  directory spanning 4–5 October. Seven boundary/integrity tests are in
+  `tests/test_measure_candidate_schema.py`. These are unregistered audit
+  materials; source bytes and calibration readings must remain traceable.
 
 - Chemostat sources and study: `experiments/fetch_chemostat_sources.py`,
   `experiments/run_chemostat_response.py`, `src/orthopolity/chemostat_response.py`,

@@ -82,6 +82,14 @@ physical per-object overhead: pointwise abundance-response slopes of âˆ’1 and âˆ
 The note and analytic calculator sharpen a conditional test; they add no
 natural-system observations or empirical support.
 
+The [existing-data candidate audit](docs/measure-candidate-audit.md) recovered
+independent respiration measurements for six phytoplankton species and verified
+the linked coexisting-community archive. Community-specific size measurements
+may support a narrower mean-size prediction even without individual-cell
+distributions. Cost uncertainty, transfer and size-domain coverage still need
+qualification. Numerical community outcomes remain unopened; this audit adds
+no allocation-law verdict.
+
 Further empirical work follows the [available-data programme](docs/available-data-programme.md):
 published resource measurements and interventions, separate calibration records,
 and evaluation on whole held-out communities or studies. New experimental
