@@ -8,8 +8,11 @@ not replace their frozen protocols or results.
 ## Objective and standing instructions
 
 Develop the [research brief](research-brief.md), established by the user's
-5 October clarification. The central proposition is that Nature tends to
-distribute resources equally among concentrations of those resources. Work now
+5 October clarification and extended 6 October. The paper centrally proposes
+orthopolity as a new general natural law: Nature tends to distribute resources
+equally among concentrations of those resources. The operative resource may
+combine many constituents nonlinearly. Forward prediction and inverse inference
+of effective resources are equally central uses of the law. Work now
 centers on its mathematical formulation, mechanisms, toy models, realizations
 within known physical laws, positive empirical cases, and explained departures.
 The project has moved from open-ended exploration to a focused scientific
@@ -38,6 +41,29 @@ retrospective validation, not global blinding or prospective data collection.
 
 ## Current state
 
+- **General-law and effective-resource revision, 6 October:** the manuscript now
+  opens with the explicit general natural-law proposal and develops its basis,
+  consequences, physical realizations and evidence. New Sections 2.2–2.3 and
+  [effective resources](effective-resources.md) formalize nonlinear per-object
+  composition, class means of the composite, constituent budgets, and inverse
+  identification of effective resource divided by its constraint profile.
+  Two constructed examples show inverse recovery; the nonlinear example infers
+  $Q=Q_0X\sqrt Y$ from two environments and predicts a third. City Pareto/Zipf
+  scaling is introduced through primary literature as a conditional inverse
+  target. No city dataset or empirical composite was newly fitted. The earlier
+  mechanism/radiation sections are now 2.8–2.11; existing figures and all
+  registered results remain unchanged. The abstract, introduction, discussion,
+  conclusion, brief and active roadmap follow this direction. Inverse inference
+  is legitimate calibration; a second comparison to its fitting profile does
+  not add independent evidence. Independent constituent information or transferred
+  predictions distinguish physical combinations.
+  Both inverse examples and the finite-bin identities were checked numerically
+  against their algebra; an independent mathematical review checked the
+  identification conditions and the effective-budget normalization. The 28-page
+  PDF was rebuilt and visually checked, including detailed inspection of the
+  new equations. Typesetting has no warnings or overfull boxes. All 25 registry
+  records and 628 file references verify; no analysis algorithm changed in this
+  conceptual and theoretical revision.
 - **Thermal radiation, completed 6 October:** the
   [thermal-radiation report](thermal-radiation.md) derives classical equal mean
   energy per electromagnetic mode, the quantum suppression factor, independent
@@ -48,12 +74,11 @@ retrospective validation, not global blinding or prospective data collection.
   49.2761 ppm of the tabulated peak; the descriptive residual quadratic is
   49.7741, without a new p-value or claim to reproduce the original fit.
   The source reconstruction discrepancy remains retained and unexplained.
-  Manuscript Sections 2.8–2.9 and Figure 3 integrate the result; algae and plants
+  Manuscript Sections 2.10–2.11 and Figure 3 integrate the result; algae and plants
   are now Figures 4 and 5. All seven reproduction artifacts are byte-identical.
   Run `thermal-radiation-2026-10-06` is registered; 25 records / 628 file
-  references verify. All 372 tests pass. The updated manuscript PDF has 24 pages;
-  all pages were visually checked, with detailed inspection of the new equations
-  and Figure 3. Typesetting reports no warnings or overfull boxes.
+  references verify. All 372 tests passed at that checkpoint. Its 24-page PDF
+  was visually checked and is superseded by the general-law revision above.
 - **Mechanism and physical realization, completed 6 October:**
   [class exchange](class-exchange.md) proves neutral equalization, a constrained
   equilibrium with opposing active drifts, and recovery with a spectral bound.
@@ -64,18 +89,19 @@ retrospective validation, not global blinding or prospective data collection.
   fluctuations remain finite. The [physical realization](physical-realizations.md)
   derives radial throughput and shell stocks from electromagnetic energy balance,
   with absorption and causal recovery, and maps the retained empirical cases.
-  Manuscript Sections 2.6–2.7 and Figure 2 integrate these results; the plant
+  Manuscript Sections 2.8–2.9 and Figure 2 integrate these results; the plant
   figure subsequently became Figure 5. This is a conditional toy mechanism and a physical
   derivation, with no new biological measurements.
 - **Framing revision, 5 October:** the research brief and manuscript now
   distinguish the underlying tendency, neutral allocation form, and constrained
   outcome. The introduction includes the tree/apple gravity analogy; new
-  Section 2.5 develops system and medium constraints, with age and height as
+  Section 2.7 now develops system and medium constraints, with age and height as
   motivating examples. Definitions, discussion, and conclusion reflect that
   distinction. The PDF was rebuilt and visually checked. This is a conceptual
   and editorial revision, with no new study or change to registered results.
 - Branch: `py314-and-package-names`; preceding studies were pushed to `origin`.
-  The current physics and framing revisions remain working-tree changes.
+  The current general-law framing revision remains in the working tree; the
+  preceding physical milestones are present in the recorded repository history.
   All four
   available-data allocation/transfer studies and the subsequent respiration
   calibration diagnostic are complete and registered. With the class-exchange
@@ -170,18 +196,26 @@ retrospective validation, not global blinding or prospective data collection.
 
 ## Next actions, in priority order
 
-1. **Mechanism-to-data connection.** Use the completed
+1. **Inverse effective-resource application.** Identify an available-data setting
+   with physically defined constituent measurements and variation sufficient to
+   distinguish a small combination family. Infer the composite with an explicit
+   observation model and test a new profile or change using the same parameters.
+   Fix the comparison measure, retain constituent budgets and distinguish known
+   from inferred constraints. City-size literature is a candidate lead, not a
+   dataset already qualified for this analysis. Do not select a resource after
+   fitting and report the same fit as independent confirmation.
+2. **Mechanism-to-data connection.** Use the completed
    [evidence map](physical-realizations.md#6-where-the-retained-empirical-cases-enter)
    to select a case with independently identifiable exchange or constraint
    information. Derive a response prediction from those inputs before evaluating
    it; do not fit the preference to manufacture the observed allocation.
-2. **Further physics and article development.** Extend to gravity and relativity
+3. **Further physics and article development.** Extend to gravity and relativity
    through worked equations and explicit observables; the thermal-radiation
    milestone supplies the first quantum case. Continue the structure established
-   in Sections 2.6–2.9. Preserve the distinction between class stocks, shell
+   in Sections 2.8–2.11. Preserve the distinction between class stocks, shell
    stocks, nested throughput, modes, and spectral densities.
    Rebuild the PDF whenever the Markdown changes.
-3. **Article synthesis.** Use the completed physical examples to organize
+4. **Article synthesis.** Use the completed physical examples to organize
    equality conditions, reference measures, constraint mechanisms and observable
    responses. Do not conflate quantum state restrictions with the toy model's
    additive opposing currents, or count a reconstructed template as independent

@@ -1,25 +1,64 @@
 # Orthopolity: research direction
 
-Established 5 October 2026 from the investigators' clarification of the project's
-purpose. This brief sets the active direction for the repository and article.
+Established 5 October 2026; extended 6 October with the investigators' general-law,
+composite-resource and inverse-inference clarification. This brief sets the active
+direction for the repository and article.
 The [handoff](ongoing-research.md) records execution status; the
 [evidence ledger](evidence.md) and individual studies record findings.
 
 ## Scientific purpose
 
-The central proposition is that **Nature tends to distribute resources equally
-among concentrations of those resources**. The investigators take this tendency
-as the starting point of orthopolity. The research task is to give it a precise
-mathematical expression, explain its mechanisms where possible, demonstrate its
-realizations, and characterize its departures and domain of application.
+The article centrally proposes **orthopolity as a new general natural law**:
+**Nature tends to distribute resources equally among concentrations of those
+resources**. Develop the law's basis, mathematical expression, consequences,
+mechanisms, physical realizations and empirical evidence. The law proposal is
+the organizing claim; established component results, new conditional derivations,
+and general empirical validation retain their distinct scientific status.
 
 Earlier development deliberately allowed broad exploration. The present phase
-organizes that work toward an article about the principle and the natural laws
-it may yield. Repeated assessments of whether the project is worth pursuing are
+organizes that work toward the general law and the consequences it may yield.
+Repeated assessments of whether the project is worth pursuing are
 no longer the organizing task. Specific equations, derivations, and empirical
 claims remain accountable to their assumptions and evidence. A failed model is
 information about that formulation; a successful example establishes the result
 for its stated setting.
+
+## Effective resources and inverse use of the law
+
+Resource concentrations exist within multiple interacting resources. The relevant
+quantity may be an effective, potentially nonlinear combination. Algae depend on
+space, time, light, water and several nutrients; cities depend on land, people,
+infrastructure, transport, money, food, water and energy. Distinguish constituent
+requirements from available budgets, stocks from flows, and an observation horizon
+from additive occupancies such as person-hours. The programme expects compound
+resources to be important in complex systems; their prevalence is not quantified
+by the present studies.
+
+For fixed physical reference scales, write $Q_i=Q_0F(\mathbf q_i/\mathbf s;z_i,\theta)$
+and use $\bar q_{\mathrm{eff}}(k)=E[Q_i\mid k]$. The function may be nonlinear
+within objects while the effective total sums across the declared objects.
+Its additivity, partition dependence and balance must be stated; constituent
+conservation does not automatically conserve every nonlinear composite.
+
+The law has two complementary uses. **Forward:** derive an allocation from a
+specified resource combination and constraints. **Inverse:** use an observed
+allocation to learn about the effective resource. With
+$\bar q_{\mathrm{eff}}n_\mu=Ca$, the profile identifies
+$\bar q_{\mathrm{eff}}/a=C/n_\mu$ up to scale. In log-size classes, a Pareto
+survival exponent $\alpha$ corresponds to $\bar q_{\mathrm{eff}}/a\propto k^\alpha$.
+The composite's constituents are not unique from one profile; independent
+constituent measurements, shared models across environments, and transferred
+predictions can identify and test them. Inverse calibration is legitimate
+scientific work. Agreement with the profile used to calibrate it is not a
+second independent validation.
+
+City-size Pareto/Zipf behavior is a candidate consequence and an inverse target,
+with city definition and size range explicit. Zipf scaling implies a linear
+net effective-resource scaling under logarithmic allocation; it does not alone
+identify an urban resource combination. The [effective-resource note](effective-resources.md)
+and manuscript Sections 2.2–2.3 give the equations, conditional examples and
+literature context. The present revision adds no new city dataset or fitted
+biological composite.
 
 ## The tendency and the constraints of the system
 
@@ -166,8 +205,8 @@ information, as recorded in the [handoff](ongoing-research.md).
 
 Develop the article around:
 
-1. The physical intuition: resources and their concentrations.
-2. A precise principle and its mathematical consequences.
+1. The general natural-law proposal: resources and their concentrations.
+2. Effective resources, nonlinear composition, and the law's forward and inverse consequences.
 3. Mechanisms and minimal dynamical demonstrations.
 4. Realizations and limits within established physical theories.
 5. Positive empirical cases and quantitative predictions.
@@ -180,15 +219,19 @@ a constrained fixed point sustained by opposing flows, a recovery bound,
 and a reproducible stochastic demonstration. The
 [electromagnetic realization](physical-realizations.md) derives throughput,
 shell stocks, absorption, and causal recovery, followed by the empirical
-evidence map. Manuscript Sections 2.6–2.7 present the results.
+evidence map. Manuscript Sections 2.8–2.9 present the results.
 
 The second physical milestone, also completed 6 October, is
 [thermal radiation](thermal-radiation.md): classical energy equipartition per
 mode, its quantum departure, independent mode counting, and a reproducible
 transformation of the published FIRAS spectrum with correlated errors and
-explicit reconstruction provenance. Manuscript Sections 2.8–2.9 present it.
+explicit reconstruction provenance. Manuscript Sections 2.10–2.11 present it.
 
-Next, connect a mechanism to available data with independently identified
+The effective-resource and inverse formulation is now explicit in Sections
+2.2–2.3 and the [supporting note](effective-resources.md), including a constructed
+nonlinear identification and prediction example and the city-size interpretation.
+Next, develop an inverse application with independent constituent information
+and a transferable combination rule. Connect it to available data with identified
 kinetics or constraints, and develop gravity or relativity with a physically
 specified comparison measure. Continue
 the broader physical programme through actual derivations and primary-source

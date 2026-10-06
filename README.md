@@ -1,9 +1,11 @@
 # Orthopolity
 
-Orthopolity develops the proposition that Nature tends to distribute resources equally
-among concentrations of those resources. The project takes that tendency as its research
-premise and seeks its mathematical formulation, mechanisms, toy-model demonstrations,
-realizations within known physical laws, and empirical successes and departures.
+Orthopolity is proposed here as a general natural law: Nature tends to distribute
+resources equally among concentrations of those resources. The project develops
+its basis, mathematical consequences, mechanisms, physical realizations and evidence.
+The operative resource may be a nonlinear combination of several constituents.
+The framework therefore supports both forward allocation predictions and inverse
+inference of effective resources from observed distributions.
 The starting points are [Fabbri's 2024 essay](https://ttm.github.io/2024/08/14/power.html)
 and the supplied 2017 manuscript by Renato Fabbri and Osvaldo N. Oliveira Jr.
 
@@ -17,10 +19,16 @@ develops this distinction, including age and height as motivating examples and
 the task of predicting how constraints shape distributions.
 
 **Current direction:** the [research brief](docs/research-brief.md), established
-5 October 2026, organizes the work toward a scientific account of the principle
-and the laws it may yield. It sets six connected lines of work and an article
+5 October and extended 6 October 2026, organizes the work around the general-law
+proposal, effective resources and forward/inverse inference. It sets six connected lines of work and an article
 structure. Specific derivations and empirical findings retain their stated scope.
 The [handoff](docs/ongoing-research.md) records current execution status.
+
+The [effective-resource formulation](docs/effective-resources.md) explains
+nonlinear composition, constituent budgets, and what a distribution identifies.
+A worked inverse example recovers a composite resource from two environments
+and predicts a third. The manuscript also develops city-size Pareto/Zipf scaling
+as a conditional inverse target, with its comparison measure and domain explicit.
 
 The [scientific manuscript](docs/paper.md) now includes the first complete
 mechanism demonstration and a worked physical realization (6 October revision).

@@ -6,6 +6,16 @@ mathematical developments, and study-specific findings. The
 purpose and priorities; the assessments here describe the work evaluated at
 their respective dates.
 
+**6 October update:** the manuscript now centrally proposes orthopolity as a
+general natural law and supplies constructive exchange dynamics, electromagnetic
+and thermal realizations, and a nonlinear effective-resource framework with
+forward and inverse uses. The older verdict below predates those additions.
+The current contribution includes conditional mechanisms and an explicit route
+from distributions to candidate resource combinations; existing empirical
+successes, failures and unresolved questions retain their original status.
+See the [current manuscript](paper.md) and
+[effective-resource derivation](effective-resources.md).
+
 Assessment: 28 September 2026; consistency review and external-assessment addendum:
 29 September 2026; constructive rereading: 30 September 2026.
 Scientific-strength and prior-work addendum: 3 October 2026, before the plant

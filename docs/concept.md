@@ -1,8 +1,9 @@
 # Orthopolity: definitions and limits
 
-This is a reconstruction of the idea, not a claim that the source essays already supplied
-these distinctions. [The source audit](source-audit.md) identifies where the reconstruction
-changes the original statements. The [manuscript](paper.md) gives the full argument.
+The [manuscript](paper.md) proposes orthopolity as a general natural law of
+resource allocation. These definitions make the proposal operational, including
+effective combinations of several resources and inverse inference from distributions.
+[The source audit](source-audit.md) identifies distinctions added to the original essays.
 
 ## 1. Specify what is equal
 
@@ -95,7 +96,27 @@ Selecting the coordinate or measure to flatten the observed data defeats a test.
 ## 3. The hypothesis needs independent content
 
 For any positive $n_\mu$, one can choose $\bar q=C/n_\mu$. This proves that resource
-definition must precede, or be independently justified from, the abundance being explained.
+inversion from one profile cannot independently validate itself on that profile.
+It does not prohibit inverse inference: the inferred quantity can identify candidate
+resource structure, which independent measurements or predictions can then test.
+A forward test fixes its resource model before evaluating its new outcomes.
+
+For a potentially nonlinear combination, define
+$Q_i=Q_0F(\mathbf q_i/\mathbf s;z_i,\theta)$ and use
+$\bar q_{\mathrm{eff}}(k)=E[Q_i\mid k]$. Constituents enter in compatible
+dimensionless ratios; nonlinear composition is within the declared objects,
+while the effective total sums across them. The mean of the nonlinear function
+is generally not its value at mean inputs, and constituent conservation does
+not automatically conserve the effective total.
+
+With a specified constrained profile $a(k)>0$, the allocation law gives
+$\bar q_{\mathrm{eff}}n_\mu=Ca$. Observed abundance thus identifies
+$\bar q_{\mathrm{eff}}/a$ up to scale. Under logarithmic allocation, a Pareto
+density exponent $1+\alpha$ implies $\bar q_{\mathrm{eff}}/a\propto k^\alpha$.
+This constrains an effective combination without uniquely identifying its parts.
+The [full inverse formulation](effective-resources.md) shows how independent
+constituent information across environments can identify a nonlinear candidate
+and predict another profile without refitting.
 
 The exact case $q=k=m$ is informative: mean resource is fixed by definition and cannot be
 adjusted to fit abundance. When fluence is modelled from peak irradiance, the cost exponent
