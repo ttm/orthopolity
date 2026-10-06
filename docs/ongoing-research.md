@@ -1,15 +1,31 @@
 # Ongoing research: resume here
 
-Last updated: 5 October 2026. This is the mutable handoff document for ongoing
+Last updated: 6 October 2026. This is the mutable handoff document for ongoing
 work. It records the current objective, decisions, completed work and exact next
 steps. Immutable executed studies belong in the run registry; this document does
 not replace their frozen protocols or results.
 
 ## Objective and standing instructions
 
-Execute the [available-data programme](available-data-programme.md), beginning
-with the published nutrient-pulsed chemostat records. Keep work resumable across
-coding sessions. The user authorizes implementation, public-data retrieval,
+Develop the [research brief](research-brief.md), established by the user's
+5 October clarification. The central proposition is that Nature tends to
+distribute resources equally among concentrations of those resources. Work now
+centers on its mathematical formulation, mechanisms, toy models, realizations
+within known physical laws, positive empirical cases, and explained departures.
+The project has moved from open-ended exploration to a focused scientific
+article. Keep work resumable across coding sessions.
+
+The user's further clarification makes system and medium constraints central.
+Distinguish the proposed tendency, its neutral signature, and the actual outcome
+under constraints. Include the tree/apple gravity analogy and age/height examples
+from the [research brief](research-brief.md#the-tendency-and-the-constraints-of-the-system).
+Do not infer a general absence of evidence from the number of distributions
+without a clear signature. Develop and test explanations of particular departures;
+keep failed predictions and unresolved causes explicit.
+
+Empirical work follows the [available-data programme](available-data-programme.md);
+the chemostat and other completed studies below are inputs to the synthesis.
+The user authorizes implementation, public-data retrieval,
 analysis, documentation, and commit/push. No new laboratory, field or hardware
 measurements: all empirical evidence must come from existing data. Simulations
 may calibrate methods and clarify model predictions.
@@ -22,10 +38,50 @@ retrospective validation, not global blinding or prospective data collection.
 
 ## Current state
 
-- Branch: `py314-and-package-names`, pushed to `origin`. All four
+- **Thermal radiation, completed 6 October:** the
+  [thermal-radiation report](thermal-radiation.md) derives classical equal mean
+  energy per electromagnetic mode, the quantum suppression factor, independent
+  mode counting and the Planck spectrum. The retrospective FIRAS calculation
+  preserves all 43 source rows, original fitted residuals and the approximate
+  correlated covariance. No temperature is fitted and the product's 2.725 K
+  blackbody reconstruction is explicit. Residual WRMS is 18.8963 kJy/sr,
+  49.2761 ppm of the tabulated peak; the descriptive residual quadratic is
+  49.7741, without a new p-value or claim to reproduce the original fit.
+  The source reconstruction discrepancy remains retained and unexplained.
+  Manuscript Sections 2.8–2.9 and Figure 3 integrate the result; algae and plants
+  are now Figures 4 and 5. All seven reproduction artifacts are byte-identical.
+  Run `thermal-radiation-2026-10-06` is registered; 25 records / 628 file
+  references verify. All 372 tests pass. The updated manuscript PDF has 24 pages;
+  all pages were visually checked, with detailed inspection of the new equations
+  and Figure 3. Typesetting reports no warnings or overfull boxes.
+- **Mechanism and physical realization, completed 6 October:**
+  [class exchange](class-exchange.md) proves neutral equalization, a constrained
+  equilibrium with opposing active drifts, and recovery with a spectral bound.
+  The run `class-exchange-2026-10-05` uses 24 fixed log-size classes, 4,096 packets,
+  and 128 realizations; costs and preference are prescribed independently.
+  All resource totals and switching states are preserved, and all phase bounds
+  hold. Final released expectation error is $5.51\times10^{-11}$; snapshot
+  fluctuations remain finite. The [physical realization](physical-realizations.md)
+  derives radial throughput and shell stocks from electromagnetic energy balance,
+  with absorption and causal recovery, and maps the retained empirical cases.
+  Manuscript Sections 2.6–2.7 and Figure 2 integrate these results; the plant
+  figure subsequently became Figure 5. This is a conditional toy mechanism and a physical
+  derivation, with no new biological measurements.
+- **Framing revision, 5 October:** the research brief and manuscript now
+  distinguish the underlying tendency, neutral allocation form, and constrained
+  outcome. The introduction includes the tree/apple gravity analogy; new
+  Section 2.5 develops system and medium constraints, with age and height as
+  motivating examples. Definitions, discussion, and conclusion reflect that
+  distinction. The PDF was rebuilt and visually checked. This is a conceptual
+  and editorial revision, with no new study or change to registered results.
+- Branch: `py314-and-package-names`; preceding studies were pushed to `origin`.
+  The current physics and framing revisions remain working-tree changes.
+  All four
   available-data allocation/transfer studies and the subsequent respiration
-  calibration diagnostic are complete and registered. Registry: 23 records, 587
-  retained file references. All 352 tests pass. Run the suite with
+  calibration diagnostic are complete and registered. With the class-exchange
+  demonstration and thermal-radiation calculation, registry: 25 records,
+  628 retained file references. All 372 tests
+  pass. Run the suite with
   `make test PY=python3.11`.
 - [Archived cost transfer](archived-cost-transfer.md) (`archived-cost-transfer-2026-10-02`):
   a size-geometric carbon cost predicts held-out 25°C *Synechococcus* quotas
@@ -67,10 +123,10 @@ retrospective validation, not global blinding or prospective data collection.
   normalized expected stocks from average normalized census shares and exposes
   severe iid-envelope failures under dependence. Ecological neutrality remains
   unresolved. Exact offline replay and isolated missing-manifest recovery pass.
-- [Scientific assessment](scientific-assessment.md): modest original scientific
-  contribution, strong transparency, weak evidence for a general natural law.
-  Close prior metabolic cost/capacity work and existing spectrum methods narrow
-  novelty. More records alone do not improve identification.
+- [Scientific assessment](scientific-assessment.md): records the assessment of
+  the work completed before the current research brief, including novelty and
+  evidential limits. Use its mathematical results and study-specific findings
+  in developing the principle; the brief sets the project's active direction.
 - [Two-archive plankton observation gate](plankton-observation-gate.md), completed
   4 October: the reviewed public evidence does not justify freezing the proposed
   nitrogen-stock equivalence study. MALASPINA has 43 station events, but relative
@@ -113,6 +169,28 @@ retrospective validation, not global blinding or prospective data collection.
   manuscript/PDF and earlier registered studies remain unchanged.
 
 ## Next actions, in priority order
+
+1. **Mechanism-to-data connection.** Use the completed
+   [evidence map](physical-realizations.md#6-where-the-retained-empirical-cases-enter)
+   to select a case with independently identifiable exchange or constraint
+   information. Derive a response prediction from those inputs before evaluating
+   it; do not fit the preference to manufacture the observed allocation.
+2. **Further physics and article development.** Extend to gravity and relativity
+   through worked equations and explicit observables; the thermal-radiation
+   milestone supplies the first quantum case. Continue the structure established
+   in Sections 2.6–2.9. Preserve the distinction between class stocks, shell
+   stocks, nested throughput, modes, and spectral densities.
+   Rebuild the PDF whenever the Markdown changes.
+3. **Article synthesis.** Use the completed physical examples to organize
+   equality conditions, reference measures, constraint mechanisms and observable
+   responses. Do not conflate quantum state restrictions with the toy model's
+   additive opposing currents, or count a reconstructed template as independent
+   new observational confirmation.
+
+## Earlier empirical routes: conditions for reopening
+
+These conditions concern particular data applications. They do not block the
+active theory, physics, and synthesis work above.
 
 The [scoped natural-law route](natural-law-route.md) proposed a finite
 two-archive gate. That gate is complete and currently closes the proposed
@@ -161,10 +239,11 @@ No later freeze can establish global blinding.
    finite-census/dependence findings as synthetic diagnostics. A generic
    sensitivity-analysis addition also overlaps the existing profile-calibration
    code and needs a concrete improvement before becoming a separate project.
-3. **Manuscript.** [`docs/paper.md`](paper.md) now reports the plant comparison,
-   Figure 3, outcome exposure and narrower scientific contribution. Revise it again only when
-   a new registered study changes a conclusion. Rebuild with `make paper`, which
-   needs TeX; the PDF is byte-reproducible from the manuscript's commit date.
+3. **Existing manuscript.** [`docs/paper.md`](paper.md) reports the plant comparison,
+   Figure 5, outcome exposure and the preceding assessment of the contribution.
+   Preserve its numerical findings and provenance while developing the argument
+   under the research brief. Rebuild with `make paper`, which needs TeX; the PDF
+   is byte-reproducible from the manuscript's commit date.
 4. Never edit a registered study. A corrective analysis gets a new run
    identifier and its own frozen protocol.
 
@@ -172,6 +251,10 @@ No later freeze can establish global blinding.
 
 ```bash
 git status --short --branch
+make class-exchange class-exchange-report PY=python3.11
+make class-exchange-registry PY=python3.11
+make thermal-radiation PY=python3.11
+make thermal-radiation-registry PY=python3.11
 PYTHONPATH=src python3.11 experiments/register_runs.py --verify
 python3.11 experiments/fetch_neutrality_metadata.py --stage verify
 make law-observation-metadata PY=python3.11
@@ -187,6 +270,16 @@ Run `make restore-chemostat-bundle PY=python3.11` only to replay the chemostat
 source audit.
 
 ## Current files and ownership boundaries
+
+- Thermal radiation, retained: `src/orthopolity/thermal_radiation.py`,
+  `experiments/run_thermal_radiation.py`, the dated configuration and
+  `docs/thermal-radiation-protocol.md` have content-addressed registry snapshots.
+  Four downloaded files, their receipts, and the covariance transcription are
+  in `data/thermal-radiation/2026-10-06/`. The runner is offline and preserves
+  outputs in `results/thermal-radiation/`; Make writes fresh copies under build.
+  Source acquisition is explicit through `fetch_thermal_radiation.py --fetch`.
+  Published summaries and raw table values were seen during source review;
+  all later inference remains retrospective. No empirical outcome was withheld.
 
 - Size-versus-cost candidate inventory: `experiments/fetch_measure_candidates.py`
   separates acquisition from offline checksum/header replay; its default never

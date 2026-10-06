@@ -1,0 +1,17 @@
+{
+  "run_id": "class-exchange-2026-10-05",
+  "kind": "conditional_toy_model_not_empirical_evidence",
+  "classes": 24,
+  "size_min": 1.0,
+  "size_max": 64.0,
+  "resource_degree": 1.5,
+  "diffusivity": 1.0,
+  "potential_center_log_size": 2.0794415416798357,
+  "potential_sigma_log_size": 0.75,
+  "phase_relaxation_times": 8.0,
+  "intervals_per_phase": 50,
+  "resource_quanta": 4096,
+  "replicates": 128,
+  "seed": 20261005,
+  "initial_class": 0
+}

@@ -1,5 +1,11 @@
 # Scientific strength and a concrete route forward
 
+**Role in the current programme:** this document retains dated assessments,
+mathematical developments, and study-specific findings. The
+[research brief of 5 October 2026](research-brief.md) sets the active research
+purpose and priorities; the assessments here describe the work evaluated at
+their respective dates.
+
 Assessment: 28 September 2026; consistency review and external-assessment addendum:
 29 September 2026; constructive rereading: 30 September 2026.
 Scientific-strength and prior-work addendum: 3 October 2026, before the plant

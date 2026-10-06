@@ -20,6 +20,8 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: law-observation-metadata
 .PHONY: measure-intervention measure-candidates measure-calibration
 .PHONY: ghedini-cost-calibration ghedini-cost-calibration-report
+.PHONY: class-exchange class-exchange-report class-exchange-registry
+.PHONY: thermal-sources thermal-radiation thermal-radiation-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -69,6 +71,24 @@ variance:        ## between- vs within-ecosystem dispersion -> results/variance.
 
 theory:          ## deterministic mathematical illustrations (not empirical evidence)
 	$(PY) experiments/run_theory.py
+
+class-exchange:   ## conservative class exchange, constrained equilibrium, and recovery
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_class_exchange.py --output $(STUDY_OUTPUT_ROOT)/class-exchange
+
+class-exchange-registry: ## archive the retained demonstration and verify prior runs
+	$(PY) experiments/register_class_exchange.py
+
+class-exchange-report: ## manuscript figure from retained outputs, without resimulation
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/report_class_exchange.py --output $(STUDY_OUTPUT_ROOT)/class-exchange-presentation
+
+thermal-sources: ## offline: verify four retained FIRAS product and source documents
+	$(PY) experiments/fetch_thermal_radiation.py
+
+thermal-radiation: thermal-sources ## thermal mode calculation and retrospective FIRAS description
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_thermal_radiation.py --output $(STUDY_OUTPUT_ROOT)/thermal-radiation
+
+thermal-radiation-registry: ## archive the retained calculation without rerunning it
+	$(PY) experiments/register_thermal_radiation.py
 
 models:          ## exploratory model comparisons (not empirical evidence)
 	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_models.py --output $(STUDY_OUTPUT_ROOT)/models
@@ -208,7 +228,7 @@ paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 
 # tools/md2tex.py handles the Markdown subset the manuscript uses, so no Pandoc
 # is required. Two passes settle the PDF outline and any page references.
-$(PAPER_PDF): $(PAPER_SRC) tools/md2tex.py results/theory.png
+$(PAPER_PDF): $(PAPER_SRC) tools/md2tex.py results/theory.png results/class-exchange-presentation/class-exchange.png results/thermal-radiation/thermal-radiation.png
 	$(PY) tools/md2tex.py $(PAPER_SRC) $(PAPER_TEX)
 	$(PAPER_ENV) pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build $(PAPER_TEX) > build/paper.pass1.log
 	$(PAPER_ENV) pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build $(PAPER_TEX) > build/paper.pass2.log

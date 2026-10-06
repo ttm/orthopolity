@@ -1,0 +1,20 @@
+{
+  "kind": "presentation_of_retained_toy_model_outputs_without_resimulation",
+  "inputs": {
+    "predictions.json": "/Users/renatofabbri/rep/orthopolity/results/class-exchange/predictions.json",
+    "trajectories.csv": "/Users/renatofabbri/rep/orthopolity/results/class-exchange/trajectories.csv"
+  },
+  "input_sha256": {
+    "predictions.json": "4df8c0763149264317a97157f6aa6739c3a645edf6a8eb460a04a1a1166af189",
+    "trajectories.csv": "c971695231a44bcaea5269412058edd64fd862964a564637c31f344177a607f5"
+  },
+  "source": "experiments/report_class_exchange.py",
+  "source_sha256": "00bf80b5043934095a9042b52cc9a34ada5c98c1c9be14f42a12e1eec8c1c823",
+  "matplotlib_version": "3.10.7",
+  "display_transform": "For each phase, divide retained relative_l2 and relative_l2_bound by its first recorded relative_l2",
+  "simulation_rerun": false,
+  "artifact_sha256": {
+    "class-exchange.png": "e7338b9625708a6f195a7db855addbcce600542065f33ac07548e5e6223f6e97",
+    "class-exchange.svg": "d4ea0f182d9ea4671749d18071391fb3e8a00df004db908f1c074134aa6d7eb2"
+  }
+}

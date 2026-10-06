@@ -82,3 +82,15 @@ the terms for every separately deposited table.
 The raw snapshots remain unchanged. If missing files need restoring, make restore-data
 explicitly permits retrieval and requires the frozen checksums to match. The default
 make data command verifies locally and does not download.
+
+## Thermal-radiation source materials
+
+The FIRAS monopole product and its metadata are obtained from
+[NASA LAMBDA](https://lambda.gsfc.nasa.gov/product/cobe/firas_monopole_spect.html).
+The supporting source article is Fixsen et al. (1996),
+[arXiv:astro-ph/9605054](https://arxiv.org/abs/astro-ph/9605054),
+*The Astrophysical Journal* 473, 576. Source bytes, attribution and retrieval
+receipts are retained under `thermal-radiation/2026-10-06/`.
+The repository's software licence is not asserted over third-party article
+or source-document content. Derived calculations and the covariance
+transcription identify the original measurement and document their scope.

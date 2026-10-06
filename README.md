@@ -1,14 +1,42 @@
 # Orthopolity
 
-A critical investigation of the idea that equal resource allocation can produce unequal
-object abundance. The starting points are [Fabbri's 2024 essay](https://ttm.github.io/2024/08/14/power.html)
+Orthopolity develops the proposition that Nature tends to distribute resources equally
+among concentrations of those resources. The project takes that tendency as its research
+premise and seeks its mathematical formulation, mechanisms, toy-model demonstrations,
+realizations within known physical laws, and empirical successes and departures.
+The starting points are [Fabbri's 2024 essay](https://ttm.github.io/2024/08/14/power.html)
 and the supplied 2017 manuscript by Renato Fabbri and Osvaldo N. Oliveira Jr.
 
-**Assessment:** the idea merits a scientific document as a precise synthesis and reproducible
-test of a conditional hypothesis. The current evidence does not establish a new natural law,
-a cosmological principle, or equal resource allocation in an average ecosystem.
+**System and medium constraints matter.** The proposed tendency and the observed
+distribution are distinct: structure, competing processes, and initial or boundary
+conditions can prevent a clear equal-allocation signature. A supported tree or a
+caught apple still experiences gravity. Similarly, many non-neutral distributions
+do not by themselves establish that orthopolity has no evidence in Nature.
+The [research brief](docs/research-brief.md#the-tendency-and-the-constraints-of-the-system)
+develops this distinction, including age and height as motivating examples and
+the task of predicting how constraints shape distributions.
 
-The revised [scientific manuscript](docs/paper.md) is the main document.
+**Current direction:** the [research brief](docs/research-brief.md), established
+5 October 2026, organizes the work toward a scientific account of the principle
+and the laws it may yield. It sets six connected lines of work and an article
+structure. Specific derivations and empirical findings retain their stated scope.
+The [handoff](docs/ongoing-research.md) records current execution status.
+
+The [scientific manuscript](docs/paper.md) now includes the first complete
+mechanism demonstration and a worked physical realization (6 October revision).
+The [class-exchange study](docs/class-exchange.md) proves equalization, derives a
+nonuniform state in which neutral and constraint flows cancel, and predicts
+recovery after release. Its simulation preserves resource and verifies the
+convergence bound across all three phases. The
+[electromagnetic derivation](docs/physical-realizations.md) establishes equal
+radial throughput and equal energy per radial thickness, with absorption and
+causal recovery, then maps the retained empirical successes and departures.
+The [thermal-radiation study](docs/thermal-radiation.md) now derives equal classical
+energy per mode and its quantum departure, then expresses the published FIRAS
+spectrum in those physical units. It retains all 43 channels, correlated
+uncertainties, original fitted residuals, and the product's reconstruction
+assumptions. Reproduce it offline with
+`make thermal-radiation PY=python3.11`.
 The [scientific-strength assessment](docs/scientific-assessment.md) develops the
 resource-symmetry argument, a concrete research design, and a stronger mathematical
 restriction on ensemble averaging.
@@ -207,7 +235,20 @@ Run the exploratory model study separately:
 make models PY=python3.11
 ~~~
 
-Its configuration is [configs/model_study_2026-10-01.json](configs/model_study_2026-10-01.json).
+Reproduce the class-exchange demonstration and its manuscript figure, or audit
+the retained run and all earlier records:
+
+~~~bash
+make class-exchange class-exchange-report PY=python3.11
+make class-exchange-registry PY=python3.11
+~~~
+
+Reproductions go to `build/reproductions/`; the retained simulation and figure
+have separate source/input receipts. The [report](docs/class-exchange.md) gives
+the proofs, predictions, executed results, and interpretation.
+
+The earlier exploratory model study uses
+[configs/model_study_2026-10-01.json](configs/model_study_2026-10-01.json).
 Retained results, profiles, and figures are in `results/models/`; new reproductions
 write to `build/reproductions/models/`. The model source
 catalogue records which predictions are exact, asymptotic, or approximate.
@@ -288,6 +329,9 @@ and example full inputs; inner bootstrap draws are reproducible computations.
 
 | Path | Purpose |
 |---|---|
+| [docs/research-brief.md](docs/research-brief.md) | Active scientific purpose, mathematical target, six lines of work, and article structure |
+| [docs/class-exchange.md](docs/class-exchange.md) | Proved class equalization, constrained equilibrium, recovery bound, stochastic simulation and reproduction |
+| [docs/physical-realizations.md](docs/physical-realizations.md) | Electromagnetic transport, absorption, causal recovery, shell stocks, and empirical evidence map |
 | [docs/paper.md](docs/paper.md) | Scientific manuscript: formulation, methods, results, limitations, references |
 | [docs/source-audit.md](docs/source-audit.md) | Direct assessment of the original PDF and blog, and corrections to this repository |
 | [docs/concept.md](docs/concept.md) | Definitions, reference measures, exponent conversions, and ensemble counterexample |

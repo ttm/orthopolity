@@ -1,0 +1,62 @@
+{
+  "run_id": "thermal-radiation-2026-10-06",
+  "analysis_kind": "retrospective_published_product_description",
+  "rows": 43,
+  "selection": "All published monopole rows; no exclusions, fitted temperature, or selected frequency window",
+  "exposure": "Published blackbody agreement and source construction were known before acquisition; retrospective analysis, not blinded or externally preregistered",
+  "inference": "Descriptive transformed spectrum and published residual audit only; no new goodness-of-fit p-value or independent confirmation from reconstructed intensity",
+  "temperature_kelvin": 2.725,
+  "temperature_origin": "NASA LAMBDA monopole product reconstruction; not independently fitted or independently calibrated here",
+  "exact_SI_constants": {
+    "h_J_s": 6.62607015e-34,
+    "kB_J_per_K": 1.380649e-23,
+    "c_m_per_s": 299792458.0
+  },
+  "units": {
+    "input_frequency": "cm^-1 coordinate, converted to Hz by nu=100*c*wavenumber",
+    "intensity": "Input intensities are already per Hz (MJy/sr); no extra wavenumber Jacobian",
+    "resource": "Thermal excitation energy per electromagnetic mode, excluding zero-point energy",
+    "reference_measure": "Count of electromagnetic modes, including two polarizations"
+  },
+  "frequency_GHz_range": [
+    68.052887966,
+    639.457312914
+  ],
+  "x_range": [
+    1.1985407383243778,
+    11.26205900813171
+  ],
+  "observed_mode_energy_over_kBT_range": [
+    0.00013211894341800593,
+    0.51768506979185
+  ],
+  "planck_mode_energy_over_kBT_range": [
+    0.00014473491077904592,
+    0.5176665668336117
+  ],
+  "maximum_absolute_mode_ratio_difference": 2.462964953675595e-05,
+  "maximum_absolute_reported_residual_kJy_sr": 432.0,
+  "maximum_absolute_reported_residual_over_marginal_sigma": 2.5217391304347827,
+  "diagonal_weighted_residual_rms_kJy_sr": 18.896281030233464,
+  "diagonal_weighted_residual_rms_formula": "sqrt(sum((reported_residual/marginal_sigma)^2)/sum(1/marginal_sigma^2))",
+  "diagonal_weighting_scope": "Descriptive inverse-marginal-variance weighted RMS; channel correlations are retained separately and no independence or test interpretation is assigned",
+  "peak_tabulated_monopole_MJy_sr": 383.478,
+  "diagonal_weighted_residual_rms_ppm_of_peak": 49.27604981311435,
+  "reconstruction_discrepancy_kJy_sr_range": [
+    -0.1265467577607211,
+    7.597571348297764
+  ],
+  "maximum_absolute_reconstruction_discrepancy_kJy_sr": 7.597571348297764,
+  "reconstruction_caution": "Displayed frequencies and intensities with modern exact SI constants do not reproduce the published monopole minus original residual exactly; discrepancies are preserved and no cause is inferred",
+  "covariance_audit": {
+    "formula": "C_ij=sigma_i*sigma_j*q[abs(i-j)] from the published approximate lag prescription",
+    "original_residual_quadratic": 49.77414086161948,
+    "correlation_minimum_eigenvalue": 0.07236002047136389,
+    "mode_covariance_transformation": "D C D; D_ii=1e-23/B_RJ(nu_i,T), with input C in (kJy/sr)^2",
+    "marginal_variance_conversion_max_relative_error": 4.440892098500626e-16,
+    "scope": "Descriptive quadratic for published original residuals and approximate covariance; no refit, new p-value, or reproduction claim for the original publication's chi-square"
+  },
+  "interpretation": "Classical equal thermal energy per mode is the x->0 limit; FIRAS samples quantum-suppressed modes and its reconstructed product is not an independent confirmation of the model used to construct it",
+  "fitted_parameters": 0,
+  "new_goodness_of_fit_p_value": null
+}

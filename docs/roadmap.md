@@ -1,4 +1,46 @@
-# Remaining work
+# Research roadmap
+
+## Active direction: updated 6 October 2026
+
+The [research brief](research-brief.md) sets the current purpose: develop
+orthopolity as a principle about Nature's tendency to distribute resources
+equally among their concentrations. Organize the article around mathematical
+formulation, mechanisms, toy models, established physical laws, positive
+empirical cases, and explained departures.
+
+The first complete demonstration is now available:
+[class exchange](class-exchange.md) establishes neutral convergence, a constrained
+equilibrium with opposing active flows, and a quantitative release response.
+The registered simulation preserves resource and verifies its bounds.
+[Electromagnetic transport](physical-realizations.md) supplies a physical
+derivation of throughput and shell-stock equality, absorption, and causal recovery,
+plus a map of the retained empirical cases. Manuscript Sections 2.6–2.7 integrate
+the results, with a compact figure and full supporting proofs.
+
+The [thermal-radiation realization](thermal-radiation.md) now adds classical
+equal energy per mode, the quantitative quantum departure, and a retrospective
+FIRAS comparison preserving reconstruction and covariance. Sections 2.8–2.9
+and Figure 3 connect the known physics to the observational product.
+
+The next sequence is:
+
+1. Select a mechanism-to-data connection from the evidence map where kinetics or
+   a constraint can be identified independently of the allocation being explained.
+2. Extend the physics programme to gravity and relativity through worked equations
+   and primary-source review; thermal radiation supplies the first quantum case.
+3. Continue developing the article's explanatory argument and empirical scope,
+   rebuilding its PDF whenever the source changes.
+
+Empirical work continues to use available data. The completed observation and
+calibration gates apply to their particular studies; other lines of theoretical
+and physical work can proceed independently. See the [handoff](ongoing-research.md)
+for current state and the conditions for reopening earlier data routes.
+
+## Earlier assessment and work record
+
+The sections below retain the preceding critical-assessment phase and its
+completed work, empirical routes, and submission considerations. The active
+priorities above supersede its task ordering and proposed article scope.
 
 The repository now contains a complete critical manuscript, corrected definitions, a direct
 audit of the supplied essay, and reproducible exploratory analyses. It is a research draft,

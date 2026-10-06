@@ -236,3 +236,24 @@ usable signed readings and descriptive SDs; their separate post-analysis
 source is archived. The failed gate supplies a calibration qualification
 result, not an allocation-law verdict. See
 [the report](../docs/ghedini-cost-calibration.md).
+
+## Thermal radiation and FIRAS: 6 October 2026
+
+`thermal-radiation/2026-10-06/` retains four exact public source files with
+retrieval receipts and SHA-256 hashes: the NASA LAMBDA version 1 monopole table,
+its product description and download page, and Fixsen et al. (1996)'s arXiv
+article. `correlation.json` transcribes its 43 lag coefficients from Section 3.3,
+printed page 11, with the primary PDF checksum. The table's 43 rows contain a
+2.725 K blackbody reconstruction plus original fitted residuals, marginal
+uncertainties, and the modeled Galactic spectrum. They are not raw independent
+measurements. All rows and columns are preserved by the retrospective analysis.
+Published conclusions and table values were seen before final computation;
+there is no blinding claim. No new observations were collected.
+
+The download listing says 1 March 2003, whereas the file header says initial
+release May 2005; both remain in the source bytes. Numerical conversions use
+exact SI constants and preserve their discrepancy from the posted reconstruction.
+`make thermal-sources PY=python3.11` verifies sources offline;
+`make thermal-radiation PY=python3.11` reproduces the calculation and figure.
+See [the report](../docs/thermal-radiation.md) and
+[specification](../docs/thermal-radiation-protocol.md).

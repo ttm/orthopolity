@@ -24,6 +24,7 @@ PREAMBLE = r"""\documentclass[11pt,a4paper]{article}
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
+\usepackage{placeins}
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage[font=small]{caption}
@@ -38,6 +39,9 @@ PREAMBLE = r"""\documentclass[11pt,a4paper]{article}
 \setlength{\parskip}{0.4em}
 \setlength{\parindent}{0pt}
 \renewcommand{\arraystretch}{1.25}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
 
 % Hanging indent for the reference list.
 \newenvironment{referencelist}%
@@ -139,6 +143,8 @@ def heading(level: int, text: str, out: list[str]) -> None:
     """Sections are numbered in the source, so emit starred ones plus a bookmark."""
     cmd = {2: "section", 3: "subsection", 4: "subsubsection"}[level]
     body = inline(text)
+    # Keep a preceding section's figure from interrupting the next section.
+    out.append(r"\FloatBarrier")
     out.append(rf"\phantomsection\addcontentsline{{toc}}{{{cmd}}}{{{body}}}")
     out.append(rf"\{cmd}*{{{body}}}")
 

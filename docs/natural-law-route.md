@@ -1,5 +1,10 @@
 # A route toward a scoped empirical allocation law
 
+**Scope:** this is a particular plankton-data route within the broader
+[orthopolity research programme](research-brief.md). Its observation gate
+applies to this proposed study; current theory, physics, and article priorities
+are recorded in the [handoff](ongoing-research.md).
+
 4 October 2026. This is a research direction and a finite feasibility plan, not
 a frozen study protocol, an evaluated result or a registry entry. The existing
 22 studies and their inputs, algorithms and outcomes remain unchanged. No new

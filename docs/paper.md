@@ -1,8 +1,8 @@
-# Orthopolity as a resource-allocation hypothesis
+# Orthopolity: a general law of resource allocation
 
-**Reference measures, counterexamples, and frozen-forecast tests**
+**Effective resources, constrained distributions, and inverse inference**
 
-> Research manuscript, revised 3 October 2026. The analyses of Sections 3 and 4 are exploratory
+> Research manuscript, revised 6 October 2026. The analyses of Sections 3 and 4 are exploratory
 > or governed by a locally recorded plan. Section 5 distinguishes forecasts frozen before
 > outcome decoding from a plant transfer study frozen after raw outcome exposure.
 > None is an externally preregistered study.
@@ -12,42 +12,72 @@
 
 ## Abstract
 
-Orthopolity proposes that equally allocated resources can produce unequal abundances: classes
-whose objects require more resource contain fewer objects. We reconstruct this idea as a
-conditional allocation hypothesis and distinguish it from a universal explanation of power laws.
-The defining accounting identity depends on a reference measure. With resource cost proportional
-to size raised to power $d$, equal resource per logarithmic size interval implies a count-density
-exponent $d+1$; equal resource per linear interval implies exponent $d$. Conservation alone
-selects neither allocation. Exploratory assessments of earthquake and solar-flare catalogues,
-an ocean biomass reconstruction and 1,300 aquatic size-spectrum estimates contradict the
-specified physical proxies and find aquatic slopes near the logarithmic prediction without
-establishing equivalence. Centred slopes, fitted dispersion and conservation cannot establish
-ensemble equipartition. We then test frozen forecasts, disclosing prior outcome exposure. In an
-engineered CPU-allocation system, independently measured non-unit costs predict allocation
-profiles and their response to a restriction. On an unused solar year, logarithmic neutrality
-predicts counts better than linear neutrality, but neutrality itself remains unresolved. In 30
-size-selected algal lineages regrown in one medium, carrying capacity in biovolume is constant
-across a 10-fold range of cell volume, so abundance scales inversely with volume, as budget
-closure with a geometric cost predicts. In grazed food-web chemostats, a two-budget cost-ratio
-rule fails to predict pulse-driven redistribution. In directly weighed plant censuses, a flat
-logarithmic biomass template ranks second of five transferred models, while all three trained
-models predict counts better. Finite-census calibration distinguishes normalized expected
-stocks from expected normalized census shares; ecological neutrality remains unresolved.
-Resource symmetry supplies a possible
-physical postulate for equal expected allocations. The evidence supports conditional
-budget-closure forecasts under declared resource conditions and a framework for testing allocation; it does not establish
-neutrality across coexisting natural size classes or a new natural or cosmological law.
+We propose orthopolity as a new general natural law: Nature tends to distribute resources
+equally among concentrations of those resources. Its expression depends on the physical
+comparison measure, interactions, and system and medium constraints. The relevant resource
+may be an effective combination of several resources, including nonlinear combinations;
+equality in an individual measured resource is therefore only one possible manifestation.
+We formulate the law's neutral allocation relation and its constrained extensions, and
+develop both a forward problem, predicting abundance from resources, and an inverse
+problem, inferring effective resource structure from observed distributions. Under
+logarithmic size allocation, a Pareto survival exponent $\alpha$ identifies effective
+resource divided by the constraint factor as proportional to size$^\alpha$. Multiple
+environments can distinguish resource compositions that a single distribution cannot.
+A class-exchange mechanism proves equalization, an unequal equilibrium with opposing
+active contributions, and recovery after constraint removal. Electromagnetic transport
+and thermal radiation supply established physical realizations with explicit comparison
+measures and quantitative departures. A retrospective FIRAS calculation connects mode
+allocation to a measured spectrum while preserving the product's reconstruction and
+uncertainty assumptions. Retained empirical studies provide positive conditional
+budget-closure forecasts, failed redistribution forecasts, and unresolved natural
+size-class neutrality. City-size scaling illustrates an additional inverse application.
+The contribution is the general-law proposal and its mathematical, physical, and
+inferential framework; the component derivations and observations have their stated
+established precedents. The results support particular realizations and predictions;
+extension of the law's scope and identification of effective resources remain empirical
+tasks.
 
 ## 1. Introduction
 
-An allocation can be equal when counted in resources and unequal when counted in objects.
-For example, equal biomass in successive body-mass classes requires fewer large organisms.
-This observation motivates the term *orthopolity* in Fabbri's
-[2024 essay](https://ttm.github.io/2024/08/14/power.html), following an earlier manuscript by
-Fabbri and Oliveira Jr. (2017). The earlier manuscript assumes uniform resource allocation
-across component-wealth values; the later essay proposes a much broader natural and
-cosmological principle. The useful question is which allocation statement can be defined and
-tested independently of the abundance distribution it seeks to explain.
+We propose **orthopolity as a general natural law** governing the allocation of resources
+among their concentrations. Its central statement is:
+
+**Nature tends to distribute resources equally among concentrations of those resources.**
+
+The law concerns a physical tendency whose observed expression depends on the system.
+Equal resource allocation can require unequal numbers of objects: concentrations that
+require more effective resource can be less abundant. This article develops the proposal's
+basis, mathematical consequences, mechanisms, physical realizations, empirical evidence,
+and inverse use for identifying the resources underlying observed systems. The general
+statement is a proposed law; each worked result specifies the conditions under which it
+has been derived or observed.
+
+The term follows Fabbri's [2024 essay](https://ttm.github.io/2024/08/14/power.html) and
+an earlier manuscript by Fabbri and Oliveira Jr. (2017). The earlier account assumes
+uniform resource allocation across component-wealth values; the later essay proposes a
+broader natural and cosmological principle. Here we develop a common formulation while
+keeping each physical comparison explicit.
+
+Real concentrations depend on several resources together. Algae develop within available
+space, light, water and multiple nutrients over time; cities depend on land, people,
+buildings, transport, energy, money, food and water. These quantities interact and may
+substitute for, complement, or limit one another. The operative resource may therefore be
+a nonlinear effective combination. Deriving it from individual inputs can be difficult.
+Orthopolity also motivates the reverse direction: use an observed allocation to infer
+properties of the effective resource, then test the resulting resource model through
+independent measurements or predictions in other conditions. Forward prediction and
+inverse inference are complementary uses of the law, developed in Sections 2.2--2.3.
+
+The proposed tendency must be distinguished from the resulting distribution. A standing
+tree experiences gravity while its structure and anchorage support it. An apple thrown
+upward initially rises while gravity acts; catching it or lodging it against a ceiling
+introduces an interaction that can prevent its return to the ground. These outcomes reflect
+gravity together with other interactions and initial conditions. The same logical distinction
+guides orthopolity: its visible signature can be altered or obscured by the construction of
+the system and its medium. Human age and height distributions motivate analyses of such
+constraints. Their lack of an apparent neutral signature would not, by itself, establish a
+general absence of evidence for orthopolity in Nature. Section 2.7 states how this distinction
+enters the research programme.
 
 The ecological precedent is substantial. Sheldon, Prakash and Sutcliffe (1972) studied ocean
 particle size distributions; Gaedke (1993) explicitly related equal biomass in logarithmic
@@ -58,14 +88,17 @@ already a research topic. Energetic equivalence (Damuth, 1981) is related, but i
 species-population sampling unit differs from community abundance per size interval.
 Species richness across sizes prevents automatic interchange of those statements.
 
-Power laws arise under different generative mechanisms, and apparent straight lines in
-logarithmic plots do not establish a power-law distribution (Newman, 2005; Clauset, Shalizi
-and Newman, 2009). Rewriting a distribution as inverse resource cost does not identify a new
-mechanism. Our contribution is a critical reconstruction: we specify the measure and resource,
-derive their conditional consequences, give counterexamples to stronger interpretations,
-assess what the repository's existing data can support, and test frozen forecasts with their
-exposure history retained. We make no priority claim for the accounting identity or for ecological
-biomass equivalence.
+Power laws arise under different generative mechanisms, so an observed exponent supplies
+an inverse constraint rather than a unique causal explanation (Newman, 2005; Clauset,
+Shalizi and Newman, 2009). Our formulation specifies what a distribution can reveal about
+effective resources and what additional information resolves competing interpretations.
+The class-exchange model demonstrates an equalizing contribution that persists under a
+constraint. Electromagnetic transport and thermal radiation connect the proposed law to
+known physical equations, with different physically defined comparison measures. The
+empirical cases establish the successes and limits of specific resource and response
+models. The accounting identity, reversible transport, classical equipartition and quantum
+radiation law are established results; their organization into a general allocation
+proposal and its forward and inverse programme is the contribution developed here.
 
 ## 2. Mathematical formulation
 
@@ -84,11 +117,12 @@ biomass, or an accumulated event quantity over a declared observation period. Th
 is not a stock resident in a size class, and neither is a flux through size classes.
 Additivity is needed for (1); a dynamical conservation law is not.
 
-Define **orthopolity relative to $\mu$**, denoted $O_\mu$, by
+Define the **neutral allocation form of orthopolity relative to $\mu$**, denoted $O_\mu$, by
 
 $$\mathcal O_\mu(k)=C>0\quad\text{for }\mu\text{-almost every }k\in D. \tag{2}$$
 
-This is an assumption about allocation. It gives $n_\mu=C/\bar q$. Equivalently, if an object
+This is an assumption about the neutral allocation, rather than a claim that every
+constrained system has this profile. It gives $n_\mu=C/\bar q$. Equivalently, if an object
 is sampled uniformly from the population, its size density with respect to $\mu$ is
 
 $$p_N(k)=\frac{1}{Z\bar q(k)},\qquad
@@ -101,7 +135,150 @@ accounting equivalence, not a derivation of the allocation assumption. The count
 total, and constants also satisfy $N=CZ$ and $R=C\mu(D)$. For a finite observed population,
 the identity is exact for class totals; a smooth density is a population model or approximation.
 
-### 2.2 The measure changes the exponent
+### 2.2 Effective resources in systems with coupled requirements
+
+An effective resource can combine several constituent requirements. For an object $i$,
+let $q_{i\ell}$ be its requirement or assigned amount of constituent $\ell$, and let
+$s_\ell>0$ be a fixed reference quantity in the same units. A general representation is
+
+$$Q_i=Q_0 F\!\left(\frac{q_{i1}}{s_1},\ldots,
+\frac{q_{im}}{s_m};z_i,\theta\right)>0,\qquad
+\bar q_{\mathrm{eff}}(k)=E[Q_i\mid k].$$
+
+Here $Q_0$ supplies effective-resource units, $z_i$ records relevant environmental or
+historical conditions, and $\theta$ specifies the combination rule. The reference scales
+are declared independently of the observed abundance. Nonlinearity can represent
+complementarity, substitution, saturation, or a bottleneck. The arithmetic class mean is
+taken after combining the constituent resources. In general,
+$E[F(X,Y)\mid k]\ne F(E[X\mid k],E[Y\mid k])$; for $F(X,Y)=XY$, the difference
+is the conditional covariance. Marginal resource means alone may therefore miss a
+dependence that changes the effective resource.
+
+The quantity $R_{\mathrm{eff}}=\sum_i Q_i$ is additive over the declared object
+partition, so equation (1) still holds with $\bar q=\bar q_{\mathrm{eff}}$.
+Nonlinearity within an object does not prevent this additivity across objects. It does,
+however, make the physical partition important: $\sum_iF(\mathbf q_i)$ need not equal
+$F(\sum_i\mathbf q_i)$. Splitting or merging objects can change the effective total.
+Nor is $R_{\mathrm{eff}}$ automatically conserved merely because some constituent
+resources are conserved. The proposed combination must be interpreted as a physical
+stock, an accumulated requirement, an opportunity cost, or another explicitly defined
+quantity, with its appropriate balance law.
+
+For algae, nutrient stocks per cell and available nutrient budgets differ; light can be
+an absorbed photon flux or an exposure integrated over a specified interval. Space and
+water can be capacities or environmental conditions. Time can enter through residence
+time, growth history, or an additive occupancy such as cell-hours; elapsed time is not
+automatically a divisible stock. For cities, land, buildings and people are stocks,
+while food, water, energy and money can involve stocks, flows and exchanges over the
+chosen observation horizon. The combination rule must respect those distinctions and
+avoid counting a resource twice along a supply chain.
+
+Multiple physical budgets remain explicit. For fixed class requirements, feasibility
+can require $\sum_jN_jq_{\ell j}\le B_\ell$ for each constituent $\ell$.
+A scalar $Q$ does not generally replace all these inequalities. A specified optimization
+model can produce a local effective cost $Q_i=\sum_\ell\lambda_\ell q_{i\ell}$,
+with dimensionally compatible scarcity prices $\lambda_\ell$, but those prices and
+their range of validity belong to that model. A bottleneck gives another illustration:
+for a separately supported population of identical objects with fixed requirements,
+$N_{\max}=\min_\ell B_\ell/q_\ell$ depends nonlinearly on the budgets. It does
+not prescribe the allocation among competing types. These are ways to derive candidate
+effective quantities; neither scalarization nor feasibility by itself proves neutrality.
+
+A simple nonlinear candidate is a product of positive normalized inputs,
+$Q=Q_0\prod_\ell(q_\ell/s_\ell)^{\theta_\ell}$. If constituent requirements
+are deterministic functions $q_\ell(k)\propto k^{d_\ell}$, then
+$Q(k)\propto k^{d_{\mathrm{eff}}}$ with
+$d_{\mathrm{eff}}=\sum_\ell\theta_\ell d_\ell$. Under logarithmic neutrality
+the abundance density exponent is $1+d_{\mathrm{eff}}$. For differentiable $F$,
+the more general local elasticity is
+
+$$\frac{d\ln Q}{d\ln k}
+=\sum_\ell\frac{\partial\ln F}{\partial\ln(q_\ell/s_\ell)}
+\frac{d\ln q_\ell}{d\ln k},$$
+
+when the environment and parameters are fixed and $F$ has no further explicit size
+dependence. Varying constituent elasticities or interactions can generate curvature.
+This chain rule for specified functions is distinct from a claim that independent random
+resource distributions have additive tail exponents. With heterogeneous objects, the
+class mean $E[Q\mid k]$ remains the relevant quantity. The
+[effective-resource derivation](effective-resources.md) develops the finite-bin and
+heterogeneity implications.
+
+### 2.3 Inverse inference and the city-size example
+
+The law can be used in two directions. Given a resource model and a specified constraint,
+it predicts abundance. Given an abundance profile, it supplies information about the
+effective resource required by that allocation. Write a positive constrained profile as
+
+$$\bar q_{\mathrm{eff}}(k)n_\mu(k)=C a(k),\qquad a(k)>0,$$
+
+where neutrality has $a=1$. The class-exchange example below derives $a=e^{-V}$ from
+prescribed kinetics. In other systems $a$ needs its own mechanism or conditional
+assumption; an arbitrary fitted factor is not an explanation. On a domain with positive
+population density, inversion gives
+
+$$\frac{\bar q_{\mathrm{eff}}(k)}{a(k)}=\frac{C}{n_\mu(k)},\qquad
+\frac{\bar q_{\mathrm{eff}}(k)/a(k)}{\bar q_{\mathrm{eff}}(k_0)/a(k_0)}
+=\frac{n_\mu(k_0)}{n_\mu(k)}.$$
+
+Thus a distribution identifies the shape of effective resource divided by its constraint
+factor, conditional on the comparison measure. An independently known budget can fix the
+absolute scale. Without further information, the constituents and their combination are
+not unique; multiplying both $\bar q_{\mathrm{eff}}$ and $a$ by the same positive
+size-dependent function leaves the prediction unchanged. This is a precise statement of
+the inverse information available, not a reason to discard inverse inference. Measured
+constituents, restricted combination families, and responses in different environments
+can resolve parts of that ambiguity. Finite observed counts require a sampling model and
+bin integration; a zero-count bin does not establish infinite physical cost.
+
+**A constructive inverse example.** Prespecify $Q=Q_0X^{\theta_1}Y^{\theta_2}$
+for positive normalized resources. In environment $s$, suppose independently measured
+class requirements scale as $X_s\propto k^{d_{1s}}$ and $Y_s\propto k^{d_{2s}}$,
+with no within-class variation, and a known constraint has
+$V_s=v_s\ln(k/k_0)$. A Pareto count density $dN/dk\propto k^{-(1+\alpha_s)}$
+then implies
+
+$$\alpha_s-v_s=\theta_1d_{1s}+\theta_2d_{2s}.$$
+
+Two environments with scaling vectors $(1,1)$ and $(1,2)$ and corrected exponents
+$\alpha_s-v_s$ equal to $1.5$ and $2$ identify $\theta_1=1$ and
+$\theta_2=1/2$. The inferred nonlinear resource is $Q=Q_0X\sqrt Y$.
+A third environment with scaling vector $(2,1)$ predicts
+$\alpha_3=2.5+v_3$ without refitting. The two independent scaling directions identify
+the composition within this family; the third supplies a test. The remaining scale
+$Q_0$ requires an independent anchor. These are algebraic illustrative values, not
+measurements. They show how allocation distributions can reveal a composite resource
+and generate further predictions.
+
+**City sizes.** Upper city-size tails often admit Pareto descriptions, with Zipf scaling
+as a prominent special case. The result depends on how cities and the fitted size range
+are defined. Eeckhout (2004) found a lognormal description across the full US Census
+Places distribution; Ioannides and Skouras (2013) found a lognormal body and Pareto tail,
+with an estimated tail exponent of 1.25 for their preferred Census Places model. These
+findings concern different parts and definitions of an urban system, not a requirement
+that every city-size observation follow exact Zipf scaling.
+
+Let $S$ denote population per city and $n(S)$ the positive number density of cities per
+unit population interval. For a Pareto survival exponent $\alpha$,
+$N(\ge S)\propto S^{-\alpha}$ and $n(S)\propto S^{-(1+\alpha)}$;
+ranked size scales as $S(r)\propto r^{-1/\alpha}$. Finite upper cutoffs modify
+the survival and rank relations near the largest city. Under logarithmic allocation,
+
+$$\frac{dN}{d\ln S}=S n(S),\qquad
+\frac{\bar q_{\mathrm{eff}}(S)}{a(S)}\propto S^\alpha.$$
+
+Exact Zipf scaling has $\alpha=1$. If $a=1$ and population is the resource,
+$q(S)=S$, the relation expresses equal population in equal logarithmic city-size
+intervals. If the operative resource is a nonlinear combination of urban requirements,
+the same observation instead constrains that combination to have approximately linear
+net scaling, after accounting for $a$. This is the proposed orthopolity interpretation
+and an inverse target for measurements of land, infrastructure, energy, water and other
+inputs. The exponent alone does not identify the combination or assign a probability to
+its causal explanation. Existing proportional-growth mechanisms, including Gabaix's
+(1999) model with lower-size regularization, provide comparisons that the resource
+account should explain, connect to, or distinguish. No new city dataset is analyzed here.
+
+### 2.4 The measure changes the exponent
 
 Write $u=\ln(k/k_0)$ for a fixed reference size $k_0$. For
 $\bar q(k)=q_0(k/k_0)^d$, with $d>0$, two different hypotheses give:
@@ -133,7 +310,7 @@ from the upper boundary, not exact finite-domain identities. For an unbounded do
 $d>0$, count can be finite while logarithmically uniform resource has infinite total.
 Finite boundaries are essential to a finite-budget interpretation.
 
-### 2.3 Allocation postulates and limits of the accounting
+### 2.5 Allocation postulates and limits of the accounting
 
 **Resource symmetry as a candidate law.** The proposed rationale is that, absent restrictions
 favouring particular resource costs, allocation should not distinguish those costs. A natural
@@ -181,13 +358,17 @@ unit-scale Pareto variables with densities $h x^{-h-1}$, $x\ge1$, $h>0$, have pr
 density $h^2 z^{-h-1}\ln z$, $z\ge1$. Integration over the possible factorizations introduces
 a logarithmic factor. This limits the independent-input argument in the 2017 essay.
 
-**The resource must not be fitted to force the conclusion.** For any positive abundance,
-defining $\bar q=C/n_\mu$ makes (2) hold identically. A test must instead specify the
-resource through measurements, definitions, or an independently justified cost model.
-An unrestricted residual multiplier called “friction” is equally uninformative unless its
-form or parameters are predicted independently.
+**Forward tests and inverse inference have different roles.** For any positive abundance,
+defining $\bar q=C/n_\mu$ makes (2) hold identically. In Section 2.3 this is the starting
+inverse relation: it identifies a conditional effective-resource profile and motivates
+resource hypotheses. Agreement on the same fitted profile is not independent evidence
+for the law or for the inferred physical composition. A forward test fixes the resource
+model through definitions, independent measurements, or a separate calibration, then
+checks a prediction on additional observations. A constraint inferred from the original
+profile likewise needs additional information or a transferred prediction to establish
+its explanatory value.
 
-### 2.4 What an ensemble statement would mean
+### 2.6 What an ensemble statement would mean
 
 Suppose a system has a power-shaped resource spectrum
 $\mathcal O_i(u)=A_i\exp(\beta_i u)$. A proposed ensemble condition
@@ -249,6 +430,272 @@ resource profiles on a common domain have opposite log-slopes and therefore zero
 log-slope, but their arithmetic mean is not flat. Generated by
 [run_theory.py](../experiments/run_theory.py); a [vector version](../results/theory.svg)
 is available.*
+
+### 2.7 System constraints and observable distributions
+
+Three levels of description must be kept distinct: an underlying resource-equalizing
+tendency, the neutral signature (2), and the outcome of the complete system. The latter
+depends on the proposed tendency together with resource costs, other processes, forcing,
+and initial and boundary conditions. A model containing an equalizing contribution can
+therefore predict a non-neutral stationary state or a transient with no clear neutral
+signature. Establishing such a contribution requires an explicit model or discriminating
+observations; equation (1) alone does not identify it.
+
+Age and height distributions are motivating examples of constrained outcomes. A worked
+age-distribution account must specify birth history, survival, and migration; a height
+account must specify developmental processes, biological variation, and environmental
+conditions, as well as the population sampled. An orthopolity application must additionally
+identify the resource, its concentrations, and the comparison measure. No completed
+orthopolity model of either example is supplied here. The relevant task is to derive the
+combined outcome and explain how its form depends on the constraints.
+
+A failure of the neutral prediction is a finding about that prediction in the stated
+setting. It does not automatically establish the absence of the broader tendency, and
+counting distributions without its visible signature does not establish a general absence
+of evidence in Nature. A constrained model has its own predictions, which can succeed or
+fail. Specify the constraint through physical reasoning or independent measurements,
+derive its effect on the profile, and test the predicted response when it changes. Where
+recovery of neutrality is predicted, specify its conditions and timescale. This permits
+both neutral and non-neutral outcomes to inform the theory, while preserving the distinction
+between an observed departure, a proposed cause, and a tested explanation.
+
+### 2.8 A mechanism on resource-concentration classes
+
+Consider $K$ fixed size classes, with positive reference widths $w_i$, fixed per-object
+resource costs $q_i$, nonnegative class stocks $R_i$, and conserved total $B=\sum_iR_i$.
+The classes represent populations of resource-bearing objects; the state is their aggregate
+resource. Equivalent counts $N_i=R_i/q_i$ may be continuous or expected counts, and their
+total need not be conserved. This effective model does not specify individual-object
+assembly or demographic kinetics. The [full derivation](class-exchange.md) states its
+interpretation and assumptions.
+
+Let $g_{ij}=g_{ji}\ge0$ be conductances on a connected undirected graph. Neutral exchange
+has current $J^0_{ij}=g_{ij}(R_i/w_i-R_j/w_j)$ and dynamics
+$\dot R_i=-\sum_jJ^0_{ij}$. Positivity follows from nonnegative jump rates $g_{ij}/w_i$;
+antisymmetry of currents conserves total resource. Connectedness makes the stationary
+resource density constant, giving
+
+$$R_i^0=\frac{Bw_i}{\sum_jw_j},\qquad N_i^0=\frac{Bw_i}{q_i\sum_jw_j}.$$
+
+This is a mechanism selecting equal resource per declared class measure. The local
+exchange symmetry and the measure are assumptions of the model; they are not supplied
+by conservation alone. To model a constraint, prescribe dimensionless class preferences
+$V_i$ and add downhill transitions:
+
+$$a_{ij}=\frac{g_{ij}}{w_i}\exp\!\left(\max\{V_i-V_j,0\}\right).$$
+
+The rate $a_{ij}$ is from $i$ to $j$. Its neutral part $g_{ij}/w_i$ remains, and the
+additional part is nonnegative. With column generator $A_{ji}=a_{ij}$ for $j\ne i$,
+$A_{ii}=-\sum_{j\ne i}a_{ij}$, define
+
+$$\pi_i=\frac{w_i e^{-V_i}}{Z},\qquad Z=\sum_jw_j e^{-V_j}.$$
+
+Then $\pi_i a_{ij}=\pi_j a_{ji}$ on every edge. Detailed balance selects the unique
+stationary resource $R_i^V=B\pi_i$. This uses standard reversible-chain mathematics
+(Levin and Peres, 2017), specialized here to fixed concentration classes and an explicit
+additive constraint mechanism. At that stationary state the neutral edge current is
+
+$$J^0_{ij}=\frac{Bg_{ij}}{Z}(e^{-V_i}-e^{-V_j}),\qquad
+J^{\mathrm c}_{ij}=-J^0_{ij}.$$
+
+Thus a nonuniform stationary distribution can have an active equalizing contribution
+balanced by the constraint. Setting $V$ to a constant removes the added rates and lets
+the actual constrained allocation relax toward neutrality.
+
+For $p=R/B$, set $E^2=\sum_i(p_i-\pi_i)^2/\pi_i$. Writing $z_i=p_i/\pi_i$ gives
+
+$$\frac{dE^2}{dt}=-2\sum_{i<j}\pi_i a_{ij}(z_i-z_j)^2
+\le-2\lambda E^2,$$
+
+where $\lambda>0$ is the smallest nonzero eigenvalue of the symmetric matrix
+$-D_\pi^{-1/2}AD_\pi^{1/2}$. Consequently $E(t)\le E(0)e^{-\lambda t}$ and
+$\operatorname{TV}(p,\pi)\le E/2$. The same bound applies after release, using the neutral
+generator and the state actually present at the switch. If connections are removed, each
+component retains its own resource total and only component-wise equalization follows.
+
+The simulation fixes 24 equal-log size classes on $[1,64]$, $q_i=k_i^{1.5}$, and adjacent
+conductances $1/\Delta\ln k$. A prescribed quadratic preference in $\ln k$, centered at
+$k=8$ with width $0.75$, produces a curved resource profile. The corresponding continuous
+count form is $dN/dk\propto k^{-2.5}e^{-V(\ln k)}$, a truncated lognormal shape for this
+quadratic choice. Each phase runs for eight relaxation times. The neutral and constrained
+spectral gaps are 0.569805 and 1.991712 per model time unit. The final relative errors in
+the neutral, constrained, and released phases are $4.73\times10^{-4}$,
+$2.41\times10^{-7}$, and $5.51\times10^{-11}$, each below its predicted bound.
+The opposing stationary drift vectors cancel to Euclidean residual $3.22\times10^{-15}$.
+
+There are 4,096 equal-resource packets in each of 128 realizations, initially all in the
+first class. Exact matrix-exponential checkpoint transitions preserve the state at both
+switches. Packets remain independent, giving class-count law
+$X(t)\sim\operatorname{Multinomial}(4096,p(t))$ and share covariance
+$(\operatorname{diag}(p)-pp^T)/4096$. Uneven finite snapshots are therefore predicted even
+at neutral mean allocation. Rates, costs, preferences, and predictions were fixed before
+drawing the stochastic trajectories. The computational results and checks are retained
+with the [model report](class-exchange.md); the simulation supplies a constructive example,
+not new natural-system observations.
+
+![Class-resource exchange, opposing constrained flows, and recovery](../results/class-exchange-presentation/class-exchange.png)
+
+*Figure 2. Fixed class-exchange model. Equalizing kinetics select neutral resource shares;
+an added class preference selects a curved profile and changes equivalent abundance.
+At constrained equilibrium the neutral and added contributions cancel. Removing the
+preference preserves the current state and predicts recovery under the neutral dynamics.
+The displayed convergence curves are deterministic expectations; stochastic packet
+realizations and their uncertainty are retained in the linked report.*
+
+### 2.9 A physical realization from electromagnetic transport
+
+For electromagnetic energy density $u$ and Poynting vector $\mathbf S$, Maxwell's equations
+give $\partial_tu+\nabla\cdot\mathbf S=-\mathbf J\cdot\mathbf E$ (Poynting, 1884;
+Haus and Melcher, 1989). Define $P(r)=\int_{S_r}\mathbf S\cdot\mathbf n\,dA$ outside a
+source enclosed by an inner sphere $r_0$ with steady power $P(r_0)=L$.
+Integrating the balance over a transparent, source-free shell
+with no net energy accumulation gives $P(r_2)=P(r_1)=L$. Isotropy is a separate condition:
+it makes the local radial flux density $F=L/(4\pi r^2)$; otherwise this is its sphere average.
+
+Under outgoing radial transport at constant speed $c$, without scattering or secondary
+emission in the modeled component, a specified absorber with coefficient $\kappa(r)$ gives
+
+$$\frac{dP}{dr}=-\kappa(r)P,\qquad
+P(r)=L\exp\!\left[-\int_{r_0}^r\kappa(s)\,ds\right].$$
+
+This is the absorption law specialized to spherical transport (Condon and Ransom, 2016).
+An absorbing layer with optical depth $\ln2$ halves downstream power. The missing
+radiative power is deposited in matter, so the modeled radiation component has an open
+budget. Its departure follows from the prescribed medium and the same energy balance.
+
+These nested surfaces receive the passage of the same energy; their powers cannot be
+summed as disjoint resource shares. Disjoint shell stocks do give an additive comparison:
+in transparent stationary radial transport, $dU=(L/c)dr$. Thus equal radial thicknesses
+hold equal energy, whereas $dU/d\ln r=Lr/c$ increases with radius. The resource, units,
+and comparison measure determine which equality is physically meaningful.
+
+The response to removing an absorber is also determined. For sphere-averaged $u$,
+with $e=4\pi r^2u=P/c$, the
+transport equation is $\partial_te+c\partial_re=-c\kappa(r,t)e$. Suppose the source
+remains constant, the initial field is stationary under $\kappa_{\mathrm{old}}(r)$,
+and absorption is set to zero throughout the modeled domain at $t=0$. For $t\ge0$, characteristics give
+
+$$P(r,t)=L\exp\!\left[-\int_{r_0}^{\max\{r_0,r-ct\}}
+\kappa_{\mathrm{old}}(s)\,ds\right].$$
+
+Every radius recovers by $(r-r_0)/c$. Downstream of a layer $[a,b]$, the response starts
+at $(r-b)/c$ and completes at $(r-a)/c$. This is an idealized change of the absorption
+coefficient, with no radiation injected by the removal process. The
+[physical derivation](physical-realizations.md) states the boundary history and all
+transport assumptions. It supplies an established physical realization of a declared
+equality and its constrained departure; it does not equate radial shells with organism
+size classes or derive abundance laws from an inverse-square flux.
+
+### 2.10 Classical equipartition and quantum radiation
+
+Thermal electromagnetic radiation supplies a second physical realization with a different
+reference measure: counting field modes, including polarization. For a finite set of
+classical normal modes in canonical equilibrium at $T>0$, each has two quadratic terms,
+$H_j=P_j^2/(2m_j)+m_j\omega_j^2Q_j^2/2$. Gaussian integration over both coordinates
+gives $Z_j^{\mathrm{cl}}\propto(\beta\omega_j)^{-1}$, with
+$\beta=(k_BT)^{-1}$, and therefore
+
+$$\langle H_j\rangle=-\partial_\beta\ln Z_j^{\mathrm{cl}}=k_BT.$$
+
+A class of $M_i$ modes consequently has mean energy $M_i k_BT$: the resource density
+is equal per mode, with independently defined weight $w_i=M_i$. This is equality of
+equilibrium means, not identical instantaneous energies. Equilibrium preparation or
+thermal coupling must be justified; uncoupled harmonic modes do not thermalize each
+other merely because their canonical distribution can be written down. This argument
+uses standard equipartition and supplies no relaxation time (Tong, n.d.).
+
+Quantization changes the allowed states. Define the resource as thermal excitation
+energy above the ground state, excluding the temperature-independent zero-point term.
+For photon absorption and emission in thermal equilibrium, photon chemical potential
+is zero and a mode has excitation levels $\epsilon_n=nh\nu$. The geometric sum gives
+
+$$Z_\nu=\frac{1}{1-e^{-x}},\qquad
+\bar\epsilon_\nu=\frac{h\nu}{e^x-1}=k_BT f(x),\qquad
+x=\frac{h\nu}{k_BT},\quad f(x)=\frac{x}{e^x-1}.$$
+
+For $x>0$, $f$ decreases strictly from 1 toward 0. Its limits are
+$f(x)=1-x/2+x^2/12+O(x^4)$ near zero and $f(x)\sim xe^{-x}$ at large $x$.
+The quantum level spacing relative to thermal energy specifies the departure before
+any spectrum is observed. Raising temperature or lowering frequency recovers classical
+relative equality. This is a restriction of the available energy states; it does not
+establish the additive decomposition into opposed classical currents proved in Section 2.8.
+
+In a large three-dimensional vacuum cavity, counting two polarizations gives the mode
+density $dM/(Vd\nu)=8\pi\nu^2/c^3$. Multiplication by $\bar\epsilon_\nu$ yields the
+Planck energy density and, for isotropic radiation, the spectral radiance:
+
+$$u_\nu(T)=\frac{8\pi h\nu^3}{c^3(e^{h\nu/(k_BT)}-1)},\qquad
+B_\nu(T)=\frac{c}{4\pi}u_\nu(T).$$
+
+Thus the classical equality per mode gives $u_\nu^{\mathrm{cl}}\propto\nu^2$ and
+$dU/(Vd\ln\nu)\propto\nu^3$, neither a flat linear-frequency nor a flat
+log-frequency spectrum. If photons are the counted objects, $q(\nu)=h\nu$ and their
+mean number per mode approaches $k_BT/(h\nu)$ in the classical regime. Extending
+classical equipartition to infinitely many modes gives divergent total energy;
+quantization makes it finite, $U/V=8\pi^5 k_B^4T^4/(15h^3c^3)$. These are established
+results (Planck, 1901; Tong, n.d.; Condon and Ransom, 2016), here specifying the resource,
+comparison measure, and constraint in the allocation framework.
+
+### 2.11 Connection to the measured thermal spectrum
+
+FIRAS measured the cosmic microwave background against calibrated blackbody references
+and separated monopole, dipole, and Galactic components (Fixsen et al., 1996).
+NASA LAMBDA's distributed monopole table contains a 2.725 K blackbody plus the residuals
+from that published analysis, with marginal uncertainties and a Galactic model column.
+The residuals already follow temperature and foreground fitting. The table therefore
+supports a transparent re-expression of the published result; agreement with its
+embedded template cannot be counted as a new independent confirmation.
+
+Our retrospective calculation retains all 43 rows and fixes $T_0=2.725$ K from the
+product definition. With wavenumber $\tilde\nu$ in inverse centimetres,
+$\nu=100c\tilde\nu$. Radiance remains per hertz, with
+$1\,\mathrm{MJy/sr}=10^{-20}\,\mathrm{W\,m^{-2}\,Hz^{-1}\,sr^{-1}}$.
+Dividing the inferred energy density by the independent mode density gives
+
+$$\frac{\widehat\epsilon_\nu}{k_BT_0}
+=\frac{c^2 I_\nu}{2\nu^2k_BT_0}
+=\frac{I_\nu}{B_\nu^{\mathrm{RJ}}(T_0)},\qquad
+B_\nu^{\mathrm{RJ}}=\frac{2\nu^2k_BT_0}{c^2}.$$
+
+The channels span 68.05--639.46 GHz and $x=1.199$--$11.262$. Their transformed
+mode energies range from $0.518$ to $1.32\times10^{-4}$ of $k_BT_0$ (Figure 3).
+They illustrate the quantum departure, not the $x\ll1$ classical plateau.
+The CMB can retain a Planck spectrum through collisionless cosmological redshifting;
+this example does not require current thermal contact with surrounding matter
+(Condon and Ransom, 2016, Section 2.6.2).
+
+For residual diagnostics we use the source's original residual column, not the difference
+between rounded monopole intensities and a newly calculated curve. The source's
+approximate frequency covariance is $C_{ij}=\sigma_i\sigma_j Q_{|i-j|}$, using its
+43 published lag coefficients (Fixsen et al., 1996, Section 3.3). The matrix is positive
+definite. Applying the linear radiance-to-mode conversion to both axes propagates this
+covariance to the mode-energy ratios. The residual quadratic form is
+$r^TC^{-1}r=49.774$; it is a descriptive audit of the published approximation, with no
+new fit or goodness-of-fit probability. It need not reproduce the original full-analysis
+statistic, 46 for 40 degrees of freedom. Diagonal inverse-variance weighting gives residual
+RMS 18.90 kJy/sr, or 49.28 parts per million of the tabulated peak radiance. This defined
+amplitude summary does not assume that the channels are independent.
+
+Using exact SI constants at the rounded source coordinates gives a discrepancy
+$I_{\mathrm{posted}}-[B_\nu(T_0)+r_{\mathrm{published}}]$ of
+$-0.127$ to $+7.598$ kJy/sr, with radiances in common units.
+This discrepancy is retained without assigning a cause or replacing
+the original residuals. Absolute calibration, foreground modeling, and the prior fits
+remain inherited from the published analysis. The [thermal-radiation report](thermal-radiation.md)
+retains the full derivation, source bytes, covariance transcription, and reproducible
+calculation. This example connects a physical equality and an independently derived
+quantum departure to established observational evidence under its documented conditions.
+
+![Classical mode equality, quantum suppression, and the published FIRAS spectrum](../results/thermal-radiation/thermal-radiation.png)
+
+*Figure 3. Thermal energy per electromagnetic mode. (A) The theoretical quantum factor
+$f(x)$ approaches classical equality as $x\to0$. (B) The NASA FIRAS reconstructed
+monopole product and Planck and Rayleigh--Jeans radiances at the product's 2.725 K
+reference temperature. (C) The same product expressed as energy per mode relative to
+$k_BT_0$. (D) Original published residuals with marginal one-sigma uncertainties;
+channels are correlated. The Planck template is part of the distributed product, so
+panels B and C illustrate the published result rather than provide a new independent
+model test. All 43 channels are retained.*
 
 ## 3. Data and methods
 
@@ -527,7 +974,7 @@ separately in one F/2 medium after replete, N-deprived or P-deprived histories
 large-selected outcome was decoded; each held-out selection treatment was then predicted from
 the other two. Across a 10.4-fold range of mean cell volume, replete carrying capacity in total
 biovolume was constant to within 3%, so cell number at capacity scaled as $V^{-1.02}$
-(Figure 2). The frozen equal-biovolume law ($d=1$) had held-out errors of 0.124 and 0.179 log
+(Figure 4). The frozen equal-biovolume law ($d=1$) had held-out errors of 0.124 and 0.179 log
 units. It outperformed a size law fitted within part of the range, whose fitted cost dimension
 was 0.74 in one fold and 1.12 in the other, and an equal-cell-number law, with errors of
 1.48–2.08. A carbon cost degree assigned from the *Synechococcus* study ($d=0.91$) performed
@@ -550,7 +997,7 @@ held-out vessel recovered its pre-pulse composition within 12 days.
 
 ![Size-selected Dunaliella lineages regrown in one shared medium](../results/dunaliella-size-budget/size-budget.png)
 
-*Figure 2. Size-selected Dunaliella lineages regrown in one shared medium, from the data of
+*Figure 4. Size-selected Dunaliella lineages regrown in one shared medium, from the data of
 Malerba et al. (2018). (a) Replete carrying capacity in total biovolume against mean cell
 volume, with the two cross-fitted size laws and the equal-biovolume law. (b) Implied cell
 number at capacity. (c) Held-out errors of the frozen forecasts. (d) Capacity after N or P
@@ -577,7 +1024,7 @@ declared domain; the excluded mass and unknown missing mass cannot be silently a
 The primary score is equal-plot mean total variation between realized normalized biomass
 and each expected-stock or empirical template. Bounded Pareto scores 0.470, logarithmic
 neutrality 0.493, linear neutrality 0.507, the development histogram 0.510 and bounded
-Weibull 0.531 (Figure 3). Pareto beats logarithmic neutrality in three of five plots;
+Weibull 0.531 (Figure 5). Pareto beats logarithmic neutrality in three of five plots;
 large opposing plot differences leave a mean improvement of only 0.023. Count profiles
 provide a different comparison: the development histogram, Pareto and Weibull score
 0.260–0.271, versus 0.412 for linear and 0.495 for logarithmic neutrality. Their binned
@@ -600,7 +1047,7 @@ a claim about expected allocation.
 
 ![Plant biomass transfer and finite-census normalization](../results/plant-biomass-profile/mass-profile.png)
 
-*Figure 3. Directly weighed plant profiles and synthetic observation limits. (a) Equal-plot
+*Figure 5. Directly weighed plant profiles and synthetic observation limits. (a) Equal-plot
 mean Colorado biomass shares and transferred stock templates. (b) Count shares and retained
 count forecasts. (c) Each plot's biomass discrepancy and the five means. (d) Mean normalized
 census shares under iid logarithmic neutrality, compared with normalized expected stocks.
@@ -614,11 +1061,12 @@ cost, declared shared resource conditions, and abundance or resource shares pred
 experiment and the algal lineages are the clearest cases; in the lineages the closure holds with
 cost proportional to volume, so the abundance gradient carries no information beyond geometry.
 A rule that goes beyond closure, by predicting how a restriction redistributes resource among
-coexisting classes, failed in the one natural community tested, where grazing and fast dynamics
-dominated. The plant study now observes coexisting class stocks directly, but it does not
+coexisting classes, failed in the grazed, dynamically changing food webs tested. The plant
+study now observes coexisting class stocks directly, but it does not
 establish equal expected allocation: the flat template is not best for biomass or counts,
-and the ecological observation law is uncalibrated. No natural system here has independently
-identified neutral eligibility and a design sufficient for the expected-allocation verdict.
+and the ecological observation law is uncalibrated. No natural size-class study in Section 5
+has independently identified neutral eligibility and a design sufficient for the
+expected-allocation verdict.
 That remains the decisive missing test.
 
 ## 6. Discussion
@@ -630,12 +1078,21 @@ without the specified resource being equally allocated. Conversely, equal alloca
 hold with a non-power cost law and yield a different abundance shape.
 
 Neither this identity nor the current case studies establishes a universal tendency.
+This evidential limit differs from concluding that the tendency is absent because many
+distributions lack its neutral signature. Section 2.7 makes system and medium constraints
+part of the explanatory programme; the reported tests address specified allocation and
+response models under their stated conditions.
 The original linear-allocation assumption and the ecological logarithmic-allocation
 assumption must be treated separately. The physical examples contradict selected proxy
 versions, while the ecological summaries contain suggestive locations and substantial
-uncertainty. No result here explains why a dynamical system should approach equal
-allocation, proves an equilibrium or time arrow, or quantifies the work needed to change
-social inequality. No spacetime model or cosmological prediction has been supplied.
+uncertainty. The class-exchange result now explains approach to equal allocation under
+explicit symmetric kinetics, and predicts a constrained equilibrium and recovery. Radial
+radiation transport derives a physical equality and its medium-dependent departure.
+Thermal radiation adds classical equality per mode and a quantum departure derived from
+the allowed states, connected to the published FIRAS measurement with its reconstruction
+and calibration assumptions. These results do not establish that every natural system follows the
+same class-exchange mechanism, proves a cosmological time arrow, or quantifies the work
+needed to change social inequality.
 
 A narrower empirical claim remains possible. It would specify a population of systems,
 one independently justified resource and measure, a sampling frame, a common or explicitly
@@ -648,13 +1105,16 @@ not sufficient. Section 5 reports such tests. Their positive results concern bud
 not neutrality. The plant application additionally shows why normalized snapshots cannot be
 interchanged with normalized expected stocks without an observation model.
 
-The principal limitation is the absence of independently specified conditions identifying
-the proposed neutral regime and of data/design sufficient to test its generalization.
+For natural size-class applications, the principal limitation is the absence of independently
+specified conditions identifying the proposed neutral regime and of data/design sufficient
+to test its generalization. The physical examples have explicit equality conditions, but
+those conditions do not automatically transfer to ecological or social concentrations.
 An empirically supported allocation law need not explain its symmetry through a deeper
 mechanism. Its predictions must nevertheless specify the resource, class measure, and
 statistical target. An experiment that weakens an independently measured source of bias
 could test approach to the neutral prediction, if that convergence is part of the declared
-hypothesis. Departures cannot simply be relabelled as previously unspecified restrictions.
+hypothesis. To explain a departure, identify the restriction and predict its effect through
+a combined model; naming a previously unspecified restriction does not supply that prediction.
 The tests of Section 5 sharpen this limitation. Budget closure with a geometric cost is
 confirmed in separately grown lineages that share one medium. A cost-ratio rule for
 redistribution among coexisting classes failed in a grazed community.
@@ -665,27 +1125,33 @@ metabolic scaling and predicted maximum density and biovolume in evolved bacteri
 Cost-to-capacity prediction therefore has direct experimental precedents. Dillon et al.
 (2019) already established curvature and superior Weibull fits in the plant data;
 the present application adds transferred stock/count comparisons and observation limits.
-Further orthopolity research needs a demonstrable
-contribution relative to those accounts, such as an independently validated conditional
-prediction or a calibrated diagnostic comparison. A resource-symmetry law could coexist
-with mechanisms explaining when it applies and how it is approached.
+Further work should connect resource symmetry to explicit mechanisms, derive constrained
+outcomes, and test predictions beyond these existing accounts.
 
 ## 7. Conclusion
 
-Orthopolity can be stated as a mathematically coherent, falsifiable hypothesis once its
-resource, measure, and domain are fixed. Its inverse-cost consequence is an accounting
+The neutral allocation form of orthopolity is mathematically precise and testable once its
+resource, measure, domain, and statistical target are fixed. Its inverse-cost consequence is an accounting
 identity shared with established size-spectrum theory. Resource symmetry provides a
 coherent postulate for equal expected allocations; a deeper mechanism is not required
-for it to become an empirically established law. The stronger universal,
-cosmological, and ensemble-confirmation claims are not justified by the available
-arguments or evidence. A scientific document is warranted as a critical synthesis with
-reproducible exploratory tests and explicit counterexamples. Frozen forecasts support the
+for it to become an empirically established law. The broader principle concerns a tendency
+whose observable expression depends on system and medium constraints. Departures from
+neutrality therefore address particular formulations and conditions; they do not by
+themselves imply a general absence of evidence for orthopolity. Establishing the scope of
+the principle requires both positive demonstrations and predictive explanations of
+constrained outcomes. The stronger universal, cosmological, and ensemble-confirmation
+claims remain unestablished by the arguments and evidence presented here. Frozen forecasts support the
 budget-closure form of the identity in an engineered allocation system and in algal lineages
 sharing one medium. They reject a two-budget cost-ratio rule for short-term redistribution in
 grazed food webs. Direct coexisting plant stocks give mixed template transfer and an unresolved
-expected-neutrality verdict. The current original contribution is modest and methodological;
-transparent execution does not substitute for novelty or discriminating natural-system evidence. A
-paper announcing a new natural law is not warranted.
+expected-neutrality verdict. The class-exchange construction adds a mechanism selecting
+neutrality and a non-neutral state sustained by opposing contributions, with a proved
+recovery bound. Electromagnetic transport adds a physical equality with an explicitly
+resolved absorption constraint and propagation-limited recovery. Thermal radiation adds
+equal classical mean energy per mode, quantum suppression, and its connection to the
+published FIRAS spectrum under a declared observation model. Together these results
+connect the proposed tendency to governing dynamics, constraints, and observable outcomes,
+while retaining the scope of each derivation and empirical claim.
 
 ## Data and code availability
 
@@ -697,7 +1163,9 @@ analyses; see the [README](../README.md) for setup. Pilot estimates originate in
 intervals in [independent.json](../results/independent.json). Remaining JSON files contain
 explicitly exploratory diagnostics. The studies of Section 5 are registered in an append-only
 [run registry](run-registry.md) with their inputs, frozen protocols, archived algorithms and
-outputs. Plant sources are pinned to author commit defccc3dcbbbf3ba57ff1572377de88fba83ff7f,
+outputs. The class-exchange demonstration and retrospective FIRAS calculation are also
+registered; their reports give offline reproduction commands and interpretation limits.
+Plant sources are pinned to author commit defccc3dcbbbf3ba57ff1572377de88fba83ff7f,
 with acquisition checksums and complete inclusion ledgers. The registry-verify target audits
 the registry offline, and each study report gives its replay
 command; source errata found during those audits are recorded there. Source-specific conditions
@@ -713,6 +1181,10 @@ Species compositions mediate biomass conservation: The case of lake fish communi
 
 Clauset, A., Shalizi, C. R., and Newman, M. E. J. (2009). Power-law distributions in
 empirical data. *SIAM Review*, 51, 661–703. <https://doi.org/10.1137/070710111>.
+
+Condon, J. J., and Ransom, S. M. (2016). *Essential Radio Astronomy*.
+Princeton University Press. Chapter 2, radiation and absorption.
+<https://www.cv.nrao.edu/~sransom/web/Ch2.html>.
 
 Cuesta, J. A., Delius, G. W., and Law, R. (2018). Sheldon spectrum and the plankton paradox:
 two sides of the same coin—a trait-based plankton size-spectrum model.
@@ -741,6 +1213,11 @@ is ubiquitous*. Supplied manuscript dated 17 March 2017, 13 pp.; publication sta
 Fabbri, R. (2024). The Orthopolity cosmological principle and the Natural distribution law.
 Author's essay, 14 August. <https://ttm.github.io/2024/08/14/power.html>.
 
+Fixsen, D. J., Cheng, E. S., Gales, J. M., Mather, J. C., Shafer, R. A., and Wright,
+E. L. (1996). The cosmic microwave background spectrum from the full COBE FIRAS data set.
+*The Astrophysical Journal*, 473, 576. <https://doi.org/10.1086/178173>.
+Source article: <https://arxiv.org/abs/astro-ph/9605054>.
+
 Gaedke, U. (1993). Ecosystem analysis based on biomass size distributions: A case study
 of a plankton community in a large lake. *Limnology and Oceanography*, 38, 112–127.
 <https://doi.org/10.4319/lo.1993.38.1.0112>.
@@ -754,11 +1231,19 @@ Hatton, I. A., Heneghan, R. F., Bar-On, Y. M., and Galbraith, E. D. (2021). The 
 ocean size spectrum from bacteria to whales. *Science Advances*, 7, eabh3732.
 <https://doi.org/10.1126/sciadv.abh3732>.
 
+Haus, H. A., and Melcher, J. R. (1989). *Electromagnetic Fields and Energy*.
+Prentice-Hall. Section 11.2, Poynting's theorem.
+<https://web.mit.edu/6.013_book/www/chapter11/11.2.html>.
+
 Jaynes, E. T. (1957). Information theory and statistical mechanics. *Physical Review*,
 106, 620–630. <https://doi.org/10.1103/PhysRev.106.620>.
 
 Jaynes, E. T. (1968). Prior probabilities. *IEEE Transactions on Systems Science and
 Cybernetics*, 4(3), 227–241. <https://bayes.wustl.edu/etj/articles/prior.pdf>.
+
+Levin, D. A., and Peres, Y. (2017). *Markov Chains and Mixing Times*, second edition,
+with contributions by E. L. Wilmer. American Mathematical Society.
+<https://pages.uoregon.edu/dlevin/MARKOV/mcmt2e.pdf>.
 
 Malerba, M. E., Palacios, M. M., and Marshall, D. J. (2018). Do larger individuals cope with
 resource fluctuations better? An artificial selection approach. *Proceedings of the Royal
@@ -772,13 +1257,28 @@ production costs in *Escherichia coli*. *Proceedings of the National Academy of 
 Newman, M. E. J. (2005). Power laws, Pareto distributions and Zipf's law.
 *Contemporary Physics*, 46, 323–351. <https://arxiv.org/abs/cond-mat/0412004>.
 
+NASA LAMBDA (accessed 6 October 2026). COBE FIRAS CMB monopole spectrum, version 1.
+Product description and reconstruction provenance.
+<https://lambda.gsfc.nasa.gov/product/cobe/firas_monopole_spect.html>.
+
+Planck, M. (1901). Ueber das Gesetz der Energieverteilung im Normalspectrum.
+*Annalen der Physik*, 309, 553--563. <https://doi.org/10.1002/andp.19013090310>.
+
 Perkins, D. M., et al. (2018). Bending the rules: exploitation of allochthonous resources
 by a top-predator modifies size-abundance scaling in stream food webs.
 *Ecology Letters*, 21, 1771–1780. <https://doi.org/10.1111/ele.13147>.
 
+Poynting, J. H. (1884). On the transfer of energy in the electromagnetic field.
+*Philosophical Transactions of the Royal Society of London*, 175, 343–361.
+<https://doi.org/10.1098/rstl.1884.0016>.
+
 Sheldon, R. W., Prakash, A., and Sutcliffe, W. H., Jr. (1972). The size distribution of
 particles in the ocean. *Limnology and Oceanography*, 17, 327–340.
 <https://doi.org/10.4319/lo.1972.17.3.0327>.
+
+Tong, D. (n.d.). *Statistical Physics*. University of Cambridge Part II Mathematical
+Tripos lecture notes, Sections 1.3, 2.2.1 and 3.2. Accessed 6 October 2026.
+<https://davidtong.org/pdfs/teaching/statistical-physics/statphys.pdf>.
 
 Visser, M. (2013). Zipf's law, power laws and maximum entropy. *New Journal of Physics*,
 15, 043021. <https://arxiv.org/abs/1212.5567>.

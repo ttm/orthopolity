@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "scope": "Retrospective published-product analysis; no new measurement collection",
+  "sources": [
+    {
+      "filename": "firas_monopole_spec_v1.txt",
+      "url": "https://lambda.gsfc.nasa.gov/data/cobe/firas/monopole_spec/firas_monopole_spec_v1.txt",
+      "final_url": "https://lambda.gsfc.nasa.gov/data/cobe/firas/monopole_spec/firas_monopole_spec_v1.txt",
+      "retrieved_at_utc": "2026-10-06T08:41:55.329515+00:00",
+      "content_type": "text/plain",
+      "size_bytes": 2388,
+      "sha256": "df793c3dca09ebfa7dbc5aa0ec1951daa8884431bc30eff28a710d7516cf50fa",
+      "role": "Published reconstructed CMB monopole and original fitted residuals"
+    },
+    {
+      "filename": "product-description.html",
+      "url": "https://lambda.gsfc.nasa.gov/product/cobe/firas_monopole_spect.html",
+      "final_url": "https://lambda.gsfc.nasa.gov/product/cobe/firas_monopole_spect.html",
+      "retrieved_at_utc": "2026-10-06T08:41:56.034317+00:00",
+      "content_type": "text/html",
+      "size_bytes": 11973,
+      "sha256": "e42bcf7e3e2eccac3ac8c210d4287e2477c394ad03d76ac7f719515d29753f2a",
+      "role": "Construction and calibration metadata"
+    },
+    {
+      "filename": "download-page.html",
+      "url": "https://lambda.gsfc.nasa.gov/product/cobe/firas_monopole_get.html",
+      "final_url": "https://lambda.gsfc.nasa.gov/product/cobe/firas_monopole_get.html",
+      "retrieved_at_utc": "2026-10-06T08:41:56.750473+00:00",
+      "content_type": "text/html",
+      "size_bytes": 12141,
+      "sha256": "4c19e7c4f6faecfc6c36aaee9de561e5f385e2cc2ca3de57ac8a81f641fb7a68",
+      "role": "Download listing and delivery metadata"
+    },
+    {
+      "filename": "fixsen-1996.pdf",
+      "url": "https://arxiv.org/pdf/astro-ph/9605054",
+      "final_url": "https://arxiv.org/pdf/astro-ph/9605054",
+      "retrieved_at_utc": "2026-10-06T08:41:57.400798+00:00",
+      "content_type": "application/pdf",
+      "size_bytes": 215241,
+      "sha256": "70165f3450634e5114c2f8015d85c8b5024a79fe0e26166f5a7e41877b5a2585",
+      "role": "Primary measurement article; covariance Section 3.3, residuals Table 4"
+    }
+  ]
+}

@@ -34,6 +34,27 @@ retained history; neither mechanism proves external preregistration or blinding.
 
 ## Catalogue
 
+`thermal-radiation-2026-10-06` brings the catalogue to 25 records and 628 file
+references. It retains four downloaded FIRAS source documents and their
+receipts, all 43 monopole rows, a traceable transcription of the published
+approximate spectral correlations, the linear mode-energy conversion, original
+residual diagnostics, theoretical curves and figures. The actual-measurement
+classification refers to the published empirical input: this is a retrospective
+description of a calibrated reconstructed product, with no new observations,
+temperature fit, or independent test of its embedded Planck template.
+`make thermal-radiation-registry PY=python3.11` registers/checks the retained
+study without rerunning it. See [the report](thermal-radiation.md).
+
+`class-exchange-2026-10-05`, completed and integrated 6 October, brings the
+catalogue to 24 records and 603 file references. It retains fixed class weights,
+independent costs, conductances, prescribed preferences, rate-derived predictions,
+exact deterministic checkpoints, raw integer packet counts, and generated
+figures. A separate algorithm bundle records the post-hoc compact manuscript
+figure without resimulation. All earlier entries remain intact.
+`make class-exchange-registry PY=python3.11` checks the execution receipts,
+archives the exact sources and configuration, and registers or audits the run
+idempotently. See [the model report](class-exchange.md).
+
 The seven completed model-study workflows are registered retrospectively:
 `models`, `dependence`, `attachment`, `restrictions`, `competition`, `forecast`,
 and `interventions`, each with date suffix `2026-10-01`. Their algorithm snapshots

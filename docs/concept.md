@@ -17,10 +17,43 @@ requires an error model. Resources need not be dynamically conserved for their t
 be additive. Currency, energy, biomass, and person-hours cannot be combined without a
 defined resource model and compatible units.
 
-**Orthopolity relative to $\mu$** is the hypothesis $\mathcal O_\mu(k)=C>0$ on $D$.
+The **neutral allocation form of orthopolity relative to $\mu$** is the hypothesis
+$\mathcal O_\mu(k)=C>0$ on $D$.
 It is equivalent to inverse mean-cost abundance. For $0<\mu(D)<\infty$ and positive finite
 $Z=\int_D1/\bar q\,d\mu$, object density is $p_N=1/(Z\bar q)$ and resource-weighted
 size density is uniform with respect to $\mu$. This equivalence is not a generative mechanism.
+
+### The tendency, its neutral signature, and constrained outcomes
+
+The broader principle concerns an underlying resource-equalizing tendency. The
+flat profile above describes its neutral allocation form. The actual outcome
+also depends on the system's construction, medium, other dynamics, and initial
+and boundary conditions. A constrained model may predict a non-flat profile
+while retaining an equalizing contribution to its dynamics.
+
+The [research brief](research-brief.md#the-tendency-and-the-constraints-of-the-system)
+uses supported trees and thrown, caught, or lodged apples to illustrate this
+distinction: gravity continues to act when another interaction or an initial
+condition changes the motion. Age and height distributions motivate analogous
+work on the processes and constraints that shape observed distributions.
+
+A departure from the neutral signature tests the specified allocation model and
+its applicability. It does not alone establish the absence of the broader
+tendency, and many such departures do not imply a general absence of evidence.
+A physical explanation should identify the constraint, derive its effect, and
+predict a response to changing it where possible. Until then, an unexplained
+departure remains unresolved; the existence of a constraint is not itself a
+quantitative explanation.
+
+The [class-exchange demonstration](class-exchange.md) now supplies an explicit
+example: a nonuniform fixed point in which equalizing and constraint currents
+cancel, followed by recovery under a proved spectral bound when the constraint
+is removed. The [electromagnetic derivation](physical-realizations.md) supplies
+a separate physical realization with an absorbing medium and causal recovery.
+The [thermal-radiation derivation](thermal-radiation.md) adds equality of classical
+mean energy per mode and its quantitative quantum departure. Independently counted
+modes fix the measure; a quantum restriction on allowed states supplies a different
+kind of constraint from the additive opposing currents above.
 
 ## 2. Linear and logarithmic allocation differ
 
