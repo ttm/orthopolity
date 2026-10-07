@@ -34,6 +34,24 @@ retained history; neither mechanism proves external preregistration or blinding.
 
 ## Catalogue
 
+The inverse-resource and linguistic studies completed on 7 October bring the
+catalogue to **27 records and 677 file references**. The earlier records and
+all their retained inputs and results remain intact.
+
+- `inverse-resources-2026-10-06` is a constructed simulation: fixed constituent
+  exponents, known offsets, analytic predictions, 20,000 correlated Gaussian
+  replicates, partial identification and conditioning examples. It adds no
+  natural observations. See [the demonstration](inverse-resources.md).
+- `linguistic-resources-2026-10-07` is a retrospective empirical corpus study.
+  Pinned text and pronunciation sources define independent symbolic features;
+  the vocabulary, cost models and competitors were frozen before acquisition
+  of the test corpus. All six forecasts, document uncertainty, omissions,
+  duplicate exclusions and allocation discrepancies are retained. See
+  [the report](linguistic-resources.md).
+
+The corresponding make targets ending in `-registry` register or audit these
+retained studies without rerunning or replacing their results.
+
 `thermal-radiation-2026-10-06` brings the catalogue to 25 records and 628 file
 references. It retains four downloaded FIRAS source documents and their
 receipts, all 43 monopole rows, a traceable transcription of the published

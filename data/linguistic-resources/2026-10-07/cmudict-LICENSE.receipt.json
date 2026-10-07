@@ -1,0 +1,11 @@
+{
+  "filename": "cmudict-LICENSE",
+  "url": "https://raw.githubusercontent.com/cmusphinx/cmudict/74790861f652b15e4ac49015a90074ad62a27690/LICENSE",
+  "final_url": "https://raw.githubusercontent.com/cmusphinx/cmudict/74790861f652b15e4ac49015a90074ad62a27690/LICENSE",
+  "content_type": "text/plain; charset=utf-8",
+  "role": "CMU dictionary redistribution license",
+  "stage": "train",
+  "retrieved_at_utc": "2026-10-07T07:22:07.333501+00:00",
+  "size_bytes": 1754,
+  "sha256": "bd4ce8e44170a5f9f481310ca85c51de3c4f851a65e679b40e603b143bd3542a"
+}

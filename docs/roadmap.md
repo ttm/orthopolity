@@ -1,6 +1,6 @@
 # Research roadmap
 
-## Active direction: updated 6 October 2026
+## Active direction: updated 7 October 2026
 
 The [research brief](research-brief.md) sets the current purpose: develop
 orthopolity as a proposed general natural law about Nature's tendency to
@@ -23,21 +23,29 @@ equal energy per mode, the quantitative quantum departure, and a retrospective
 FIRAS comparison preserving reconstruction and covariance. Sections 2.10–2.11
 and Figure 3 connect the known physics to the observational product.
 
+The identification and first inverse application are now completed:
+[the general result and synthetic demonstration](inverse-resources.md)
+establish cross-environment contrasts, partial identification and conditioning;
+[the linguistic study](linguistic-resources.md) supplies a frozen transfer
+gain for a letter/phoneme composite and records its substantial remaining
+lexical and allocation discrepancies.
+
 The next sequence is:
 
-1. Develop an inverse application with a physically interpretable composite-resource
-   family, independent constituent information, and conditions that distinguish
-   its parameters. Infer on one subset and test another profile or intervention;
-   preserve constituent budgets and the uncertainty of the inverse reconstruction.
+1. Extend beyond symbolic-count inference to independently measured physical
+   requirements or constraints. Keep the successful and failed linguistic
+   forecasts frozen; additional context, duration or phonetic measurements
+   require a separate analysis with new predictions.
 2. Select a mechanism-to-data connection from the evidence map where kinetics or
-   a constraint can be identified independently of the allocation being explained.
+   a constraint can be characterized independently of the allocation explained.
 3. Extend the physics programme to gravity and relativity through worked equations
    and primary-source review; thermal radiation supplies the first quantum case.
 4. Continue developing the article's explanatory argument and empirical scope,
-   rebuilding its PDF whenever the source changes.
+   using the prior-work comparison and supporting empirical report to keep the
+   main argument focused.
 
 The [effective-resource formulation](effective-resources.md), completed 6 October,
-provides the mathematical basis for the first priority, two constructed inverse
+provides the mathematical basis, conditional identification results, and constructed inverse
 examples, and the limits of identification from one distribution. City-size
 Pareto/Zipf behavior is a literature-grounded candidate application; no city
 resource model has yet been empirically fitted in this repository.

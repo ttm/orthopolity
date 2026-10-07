@@ -94,3 +94,19 @@ receipts are retained under `thermal-radiation/2026-10-06/`.
 The repository's software licence is not asserted over third-party article
 or source-document content. Derived calculations and the covariance
 transcription identify the original measurement and document their scope.
+
+## Linguistic source materials
+
+The English EWT corpus is retained at Universal Dependencies release 2.18,
+commit `b7711cce01cdd4f5fcc0a8199b8a50d951b16c0c`. Its annotations and database
+are licensed CC BY-SA 4.0, while the underlying web texts retain the mixed
+rights specified in the source README. That license is not asserted over
+every original text. The source README and complete license are retained in
+`linguistic-resources/2026-10-07/`.
+
+The CMU pronunciation dictionary is retained at source commit
+`74790861f652b15e4ac49015a90074ad62a27690`, with its BSD-style two-clause
+license and README. The dictionary supplies canonical pronunciation-symbol
+counts; it is not a recording of the corpus being spoken. The source manifest
+and per-file receipts retain exact URLs, sizes, hashes and retrieval times.
+The repository's software license does not replace these source terms.

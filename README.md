@@ -30,6 +30,26 @@ A worked inverse example recovers a composite resource from two environments
 and predicts a third. The manuscript also develops city-size Pareto/Zipf scaling
 as a conditional inverse target, with its comparison measure and domain explicit.
 
+The **7 October inverse-resource study** now supplies a general identification
+and transfer result, correlated uncertainty and conditioning bounds, and a
+[reproducible synthetic demonstration](docs/inverse-resources.md).
+The [linguistic application](docs/linguistic-resources.md) infers a combined
+letter/phoneme cost from three genres and freezes it before evaluating two
+withheld genres. Its prediction improves over fitted letter power by 0.1843
+nats per retained token; a lexical frequency baseline remains much stronger,
+and observed resource allocation remains uneven. This is a completed inverse
+application with an explicit predictive gain and explanatory limits.
+The article distinguishes rank-frequency Zipf scaling from letter expenditure
+over word types, and compares its contribution with
+[established inverse methods](docs/contribution-positioning.md).
+
+Reproduce the new studies offline with
+`make inverse-resources linguistic-resources PY=python3.11`.
+The retained registry now contains 27 records and 677 file references.
+All 393 tests pass. Earlier detailed empirical accounts remain available in
+[the supporting report](docs/empirical-studies.md); their conclusions are
+unchanged.
+
 The [scientific manuscript](docs/paper.md) now includes the first complete
 mechanism demonstration and a worked physical realization (6 October revision).
 The [class-exchange study](docs/class-exchange.md) proves equalization, derives a

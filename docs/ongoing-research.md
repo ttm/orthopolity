@@ -1,6 +1,6 @@
 # Ongoing research: resume here
 
-Last updated: 6 October 2026. This is the mutable handoff document for ongoing
+Last updated: 7 October 2026. This is the mutable handoff document for ongoing
 work. It records the current objective, decisions, completed work and exact next
 steps. Immutable executed studies belong in the run registry; this document does
 not replace their frozen protocols or results.
@@ -40,6 +40,39 @@ latent quantities. Published outcome summaries have been read; this is
 retrospective validation, not global blinding or prospective data collection.
 
 ## Current state
+
+- **Inverse identification and linguistic transfer, completed 7 October:**
+  [the general result](effective-resources.md) establishes compatibility,
+  rank and target identification, parameter-free cross-environment contrasts,
+  correlated-error propagation, and fixed/perturbed-design conditioning bounds.
+  The [registered synthetic demonstration](inverse-resources.md) recovers
+  $Q=Q_0X\sqrt Y$, predicts the third environment, and verifies the declared
+  Gaussian uncertainty in 20,000 replicates. Coverage is 94.815% for the
+  nominal 95% interval; deliberately changed held-out composition is rejected
+  in 99.915% of paired simulations. These are simulated checks, not new
+  empirical evidence.
+  The [linguistic study](linguistic-resources.md) uses pinned EWT v2.18 original
+  text and CMU dictionary pronunciations. Training email, weblog and newsgroup
+  texts yield 2,623 types and 83,635 tokens, with inferred symbolic cost
+  $Q\propto L^{0.5153}P^{1.8275}$. Protocol, code, sources and fitted forecasts
+  were frozen at 13:39:25 UTC before official test acquisition at 13:39:49 UTC.
+  Primary withheld review/answer genres contain 7,329 retained tokens with
+  77.65% vocabulary coverage. Composite minus letter-power loss is −0.1843
+  nats/token, with conditional document-bootstrap interval [−0.1967, −0.1696].
+  The lexical frequency baseline remains far better (6.136 versus 7.055);
+  word-type resource shares remain uneven, and the composite resource TV
+  worsens within every individual genre despite a small pooled decrease.
+  No acoustic energy, sonority, unique physical resource or neutral language
+  allocation is identified. All exclusions, 93 duplicate sentences, six
+  models and document uncertainty are retained; no document-ID overlap exists.
+  Frozen algorithms and fits were not edited after test acquisition.
+  Six synthetic and twelve linguistic output artifacts reproduce byte for
+  byte. All 393 tests pass, and the registry verifies 27 runs / 677 references.
+  The manuscript adds the theorem, language accounting, empirical transfer,
+  and [prior-art comparison](contribution-positioning.md). Earlier detailed
+  empirical methods and results moved to [supporting material](empirical-studies.md)
+  without changing any earlier result. Main article Figures 1–5 remain;
+  Figure 6 reports the linguistic comparison.
 
 - **General-law and effective-resource revision, 6 October:** the manuscript now
   opens with the explicit general natural-law proposal and develops its basis,
@@ -99,16 +132,13 @@ retrospective validation, not global blinding or prospective data collection.
   motivating examples. Definitions, discussion, and conclusion reflect that
   distinction. The PDF was rebuilt and visually checked. This is a conceptual
   and editorial revision, with no new study or change to registered results.
-- Branch: `py314-and-package-names`; preceding studies were pushed to `origin`.
-  The current general-law framing revision remains in the working tree; the
-  preceding physical milestones are present in the recorded repository history.
-  All four
-  available-data allocation/transfer studies and the subsequent respiration
-  calibration diagnostic are complete and registered. With the class-exchange
-  demonstration and thermal-radiation calculation, registry: 25 records,
-  628 retained file references. All 372 tests
-  pass. Run the suite with
-  `make test PY=python3.11`.
+- Branch: `py314-and-package-names`. The inverse-resource and linguistic
+  revision is in the working tree. The preceding physical and empirical
+  milestones remain in the recorded repository history. All earlier registered
+  inputs, algorithms and results are unchanged. Run the full suite with
+  `make test PY=python3.11`; replay the new studies with
+  `make inverse-resources linguistic-resources PY=python3.11` and audit
+  all retained records with `make registry-verify PY=python3.11`.
 - [Archived cost transfer](archived-cost-transfer.md) (`archived-cost-transfer-2026-10-02`):
   a size-geometric carbon cost predicts held-out 25°C *Synechococcus* quotas
   best; strain identity predicts N and P better than size.
@@ -196,14 +226,13 @@ retrospective validation, not global blinding or prospective data collection.
 
 ## Next actions, in priority order
 
-1. **Inverse effective-resource application.** Identify an available-data setting
-   with physically defined constituent measurements and variation sufficient to
-   distinguish a small combination family. Infer the composite with an explicit
-   observation model and test a new profile or change using the same parameters.
-   Fix the comparison measure, retain constituent budgets and distinguish known
-   from inferred constraints. City-size literature is a candidate lead, not a
-   dataset already qualified for this analysis. Do not select a resource after
-   fitting and report the same fit as independent confirmation.
+1. **Extend the completed inverse application.** The linguistic study now
+   supplies an executed inference-and-transfer comparison. A next study should
+   independently characterize a physical requirement or constraint, or add
+   contextual/duration information with a separately frozen prediction.
+   Preserve the current six forecasts and their outcomes. City-size resource
+   measurements remain a possible separate application; none has been fitted.
+
 2. **Mechanism-to-data connection.** Use the completed
    [evidence map](physical-realizations.md#6-where-the-retained-empirical-cases-enter)
    to select a case with independently identifiable exchange or constraint

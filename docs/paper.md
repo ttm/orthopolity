@@ -2,7 +2,7 @@
 
 **Effective resources, constrained distributions, and inverse inference**
 
-> Research manuscript, revised 6 October 2026. The analyses of Sections 3 and 4 are exploratory
+> Research manuscript, revised 7 October 2026. The analyses of Sections 3 and 4 are exploratory
 > or governed by a locally recorded plan. Section 5 distinguishes forecasts frozen before
 > outcome decoding from a plant transfer study frozen after raw outcome exposure.
 > None is an externally preregistered study.
@@ -13,29 +13,27 @@
 ## Abstract
 
 We propose orthopolity as a new general natural law: Nature tends to distribute resources
-equally among concentrations of those resources. Its expression depends on the physical
-comparison measure, interactions, and system and medium constraints. The relevant resource
-may be an effective combination of several resources, including nonlinear combinations;
-equality in an individual measured resource is therefore only one possible manifestation.
-We formulate the law's neutral allocation relation and its constrained extensions, and
-develop both a forward problem, predicting abundance from resources, and an inverse
-problem, inferring effective resource structure from observed distributions. Under
-logarithmic size allocation, a count density proportional to $k^{-(1+\alpha)}$ identifies
-effective resource divided by the constraint factor as proportional to $k^\alpha$. Multiple
-environments can distinguish resource compositions that a single distribution cannot.
-A class-exchange mechanism proves equalization, an unequal equilibrium with opposing
-active contributions, and recovery after constraint removal. Electromagnetic transport
-and thermal radiation supply established physical realizations with explicit comparison
-measures and quantitative departures. A retrospective FIRAS calculation connects mode
-allocation to a measured spectrum while preserving the product's reconstruction and
-uncertainty assumptions. Retained empirical studies provide positive conditional
-budget-closure forecasts, failed redistribution forecasts, and unresolved natural
-size-class neutrality. City-size scaling illustrates an additional inverse application.
-The contribution is the general-law proposal and its mathematical, physical, and
-inferential framework; the component derivations and observations have their stated
-established precedents. The results support particular realizations and predictions;
-extension of the law's scope and identification of effective resources remain empirical
-tasks.
+equally among concentrations of those resources. Its expression depends on the comparison
+measure, interactions, and system and medium constraints. The operative resource may
+combine several constituents nonlinearly, so equality in one separately measured resource
+is only one possible manifestation. We formulate neutral and constrained allocation,
+forward prediction, and inverse inference of effective resources. A distribution identifies
+effective resource divided by its constraint profile, conditional on the measure.
+A shared product-resource family yields identification conditions, uncertainty bounds,
+and parameter-free predictions across environments. A reproducible synthetic study
+demonstrates recovery, partial identification, instability and detection of changed
+composition. A class-exchange mechanism proves equalization, an unequal equilibrium
+with opposing contributions, and recovery after release. Electromagnetic transport and
+thermal radiation supply established physical realizations with explicit measures and
+quantitative departures. A retrospective FIRAS calculation preserves the published
+product's reconstruction and uncertainty assumptions. Retained empirical studies provide
+conditional budget-closure successes, failed response forecasts and unresolved natural
+size-class neutrality. A new linguistic application infers a letter/phoneme resource
+combination and predicts withheld genres better than letter-only models, while training
+word frequencies remain substantially more predictive. City and linguistic Zipf relations
+supply distinct inverse targets. The contribution is the general-law proposal and its
+mathematical, physical and inferential framework; established component results retain
+their precedents, and the law's broader empirical scope remains to be determined.
 
 ## 1. Introduction
 
@@ -99,6 +97,13 @@ empirical cases establish the successes and limits of specific resource and resp
 models. The accounting identity, reversible transport, classical equipartition and quantum
 radiation law are established results; their organization into a general allocation
 proposal and its forward and inverse programme is the contribution developed here.
+Inverse optimization already estimates objectives from observed decisions
+(Keshavarz, Wang and Boyd, 2011), and inverse statistical mechanics estimates
+interactions from ensemble properties (Habeck, 2014). Our inverse contribution
+concerns the resource interpretation and the consequences of sharing an
+allocation model across environments. A
+[comparison with these foundations](contribution-positioning.md) makes the
+distinction explicit.
 
 ## 2. Mathematical formulation
 
@@ -206,7 +211,7 @@ class mean $E[Q\mid k]$ remains the relevant quantity. The
 [effective-resource derivation](effective-resources.md) develops the finite-bin and
 heterogeneity implications.
 
-### 2.3 Inverse inference and the city-size example
+### 2.3 Inverse identification and Zipf examples
 
 The law can be used in two directions. Given a resource model and a specified constraint,
 it predicts abundance. Given an abundance profile, it supplies information about the
@@ -253,6 +258,53 @@ $Q_0$ requires an independent anchor. These are algebraic illustrative values, n
 measurements. They show how allocation distributions can reveal a composite resource
 and generate further predictions.
 
+**Identification and transfer.** More generally, assume a common product composition
+$Q=Q_0\prod_{\ell=1}^m X_\ell^{\theta_\ell}$, a fixed logarithmic comparison
+measure, independently characterized constituent exponents $D_{s\ell}$, and known
+constraint slopes $v_s$. Assume deterministic class requirements or write
+$X_{s\ell}=A_{s\ell}(k/k_0)^{D_{s\ell}}U_{s\ell}$ with a finite positive
+residual moment $E[\prod_\ell U_{s\ell}^{\theta_\ell}\mid k,s]$ independent
+of size. Then the corrected abundance slopes satisfy
+
+$$b=D\theta,\qquad b_s=\alpha_s-v_s.$$
+
+For a compatible $b$ and unrestricted real exponents, $\theta$ is unique
+precisely when $D$ has full column rank. With deficient rank, the compatible parameters are
+$D^+b+\ker D$, provided $b$ lies in the column space. A new environment with
+constituent row $d_*$ still has an identified prediction if and only if
+$d_*$ lies in the row space of $D$, for unrestricted real exponents.
+Restrictions such as nonnegative exponents can reduce this ambiguity further;
+they must be included in the identification problem.
+
+Every vector $\ell$ satisfying $\ell^\top D=0$ supplies a parameter-free
+cross-environment consequence,
+
+$$\ell^\top b=0.$$
+
+For the three environments above, this gives $b_3=3b_1-b_2$. The third slope
+is predicted before its abundance data are used. Thus additional environments
+can test a shared effective resource even when an individual profile supplies
+only a conditional reconstruction.
+
+**Proof and precision.** Two parameter vectors give the same calibration slopes
+exactly when their difference lies in $\ker D$. A target row gives the same
+prediction for all such vectors exactly when it annihilates that kernel.
+Multiplication by a left-null vector gives the stated contrast. For full column
+rank and fixed $D$, least-squares recovery obeys
+
+$$\|\widehat\theta-\theta\|_2
+\le \frac{\|\delta b\|_2}{\sigma_{\min}(D)}.$$
+
+Near-proportional constituent scalings can therefore make a formally unique
+composition practically unstable. A contrast with slope-error covariance
+$\Sigma_b$ has variance $\ell^\top\Sigma_b\ell$, including correlations
+between environments. Uncertain constituent scalings, constraint corrections,
+and size-dependent heterogeneity require their own error model; this fixed-design
+bound does not cover them. These statements apply standard linear inverse-problem
+results to the allocation model. The supporting
+[identification analysis](inverse-resources.md) supplies generalized least squares,
+partial identification, and reproducible synthetic recovery and transfer checks.
+
 **City sizes.** Upper city-size tails often admit Pareto descriptions, with Zipf scaling
 as a prominent special case. The result depends on how cities and the fitted size range
 are defined. Eeckhout (2004) found a lognormal description across the full US Census
@@ -280,6 +332,32 @@ inputs. The exponent alone does not identify the combination or assign a probabi
 its causal explanation. Existing proportional-growth mechanisms, including Gabaix's
 (1999) model with lower-size regularization, provide comparisons that the resource
 account should explain, connect to, or distinguish. No new city dataset is analyzed here.
+
+**Language.** A word type is a distinct lexical form and a token is one occurrence.
+For type $w$, let $f_w$ be its token frequency and $L_w$ its letter count.
+The corpus expenditure of letters on that type is $f_wL_w$. Equality on a
+counting measure over word types would therefore imply $f_w\propto L_w^{-1}$.
+Zipf's rank-frequency relation $f(r)\propto r^{-\zeta}$ concerns a different
+coordinate. In a smooth rank approximation, letter expenditure per logarithmic
+rank is $r f(r)L(r)\propto r^{1-\zeta}L(r)$. For $\zeta=1$, tokens per log
+rank are constant, while letters per log rank vary with word length. Finite
+rank groups require the actual sums, including tied frequencies.
+Length classes introduce another distinction: if $M_L$ vocabulary types have
+length $L$, equal letter expenditure per type gives total token count at that
+length proportional to $M_L/L$. The number of available types is part of the
+comparison measure; a peaked word-length distribution alone does not negate
+this conditional allocation.
+
+The abbreviation tendency, in which frequent words are shorter, motivates
+resource candidates without fixing either exponent or comparison measure.
+Contextual information is also relevant to word length (Piantadosi, Tily and
+Gibson, 2011). A declared candidate is
+$Q_w=Q_0L_w^{\theta_L}P_w^{\theta_P}$, where $P_w$ is a dictionary phoneme
+count. Under neutral type allocation it predicts
+$p_\theta(w)\propto L_w^{-\theta_L}P_w^{-\theta_P}$ on a fixed vocabulary.
+Section 5 applies this inverse model across text genres. Letter and phoneme
+counts are symbolic resource candidates; sonority, duration and acoustic
+energy need separate measurements and constitutive definitions.
 
 ### 2.4 The measure changes the exponent
 
@@ -700,205 +778,77 @@ channels are correlated. The Planck template is part of the distributed product,
 panels B and C illustrate the published result rather than provide a new independent
 model test. All 43 channels are retained.*
 
-## 3. Data and methods
+## 3. Empirical sources and analysis
 
-### 3.1 Sources and scope
+The applications distinguish a measured resource, a geometric or instrumental
+proxy, and an inferred composite. Stocks, throughput and accumulated event
+quantities retain their different physical meanings. Table 1 summarizes the
+earlier exploratory sources; Section 5 reports frozen predictions, followed
+by the inverse linguistic application. These convenience cases do not constitute
+a representative sample of natural systems.
 
-| Data source | Analysed material | Resource and size coordinate |
+| Source | Analysed material | Resource and coordinate |
 |---|---|---|
-| NOAA GOES XRS flare reports, 2022–2024 | 10,501 catalogue events; 1,168 paired events in the primary evaluation domain | End fluence in J/m²; peak irradiance in W/m² |
-| USGS ComCat, 2010–2024 | 6,639 events after retaining moment-magnitude types and rounding to 0.1 at threshold 5.5 | Magnitude-derived energy proxy as both resource and coordinate |
-| Hatton et al. (2021) | 23 one-decade biomass bins, upper 200 m and full water column | Body mass for both |
-| GLOSSAQUA (Ersoy et al., 2025) | 1,300 normalized biomass-spectrum estimates from 16 study identifiers | Body mass for both |
+| NOAA GOES XRS, 2022–2024 | 10,501 events; 1,168 paired primary evaluation events | End fluence; peak irradiance |
+| USGS ComCat, 2010–2024 | 6,639 selected, rounded moment magnitudes at threshold 5.5 | Magnitude-derived energy proxy for both |
+| Hatton et al. (2021) | 23 one-decade biomass bins in two related ocean reconstructions | Biomass; body mass |
+| GLOSSAQUA (Ersoy et al., 2025) | 1,300 spectrum estimates from 16 study identifiers | Biomass; body mass |
 
-These are four data sources; the two ocean domains are related reconstructions. GLOSSAQUA
-contains published estimates rather than organism-level observations. Study identifiers do
-not guarantee independent authors, methods, sites, or measurement errors. The sources are
-convenience cases for evaluating a hypothesis, not a representative sample of natural systems.
-Input bytes are fixed by SHA-256 manifests; provenance and source notices accompany the data.
+*Table 1. Earlier exploratory sources. The ocean domains are related, and the
+aquatic entries are published estimates rather than independent organism
+observations.*
 
-### 3.2 Analysis-plan provenance
+For a size class $B_j$ of logarithmic width $w_j$, the observed profile is
+$\widehat{\mathcal O}_j=\sum_{i\in B_j}q_i/w_j$. Its normalization to a
+width-weighted mean of one is an accounting identity, not evidence of
+flatness. Empty classes, finite-bin integration, missing resources and excluded
+mass remain explicit. Arithmetic mean cost is the relevant quantity in equation
+(1); a fitted log cost needs appropriate retransformation.
 
-The pilot configuration explicitly labels itself exploratory. The subsequent aquatic/ocean
-plan is retained as [prereg_2026-09-09.json](../configs/prereg_2026-09-09.json). In local
-history, commit 6df364f contains the plan and raw slope data, preceding analysis commit
-a0c9973. This records an order of commits. It does not establish an immutable public
-registration, independently verified blinding, or when values were first viewed.
-Statements of blinding in the historical file are author reports. The current corrections
-are retrospective, and the later ensemble, stratification, and variance analyses are
-exploratory. No claim of confirmatory preregistration is needed for the descriptive and
-mathematical results here.
+The exploratory comparisons retain their original domain choices and uncertainty
+models: calendar blocks for event catalogues, study blocks for pooled aquatic
+slopes, and stated multiplicative reconstruction errors for ocean biomass.
+Power-law adequacy uses refitted parametric-bootstrap diagnostics; rounded
+earthquake magnitudes use their discrete observation grid. Whole-profile
+equality cannot be inferred from a central slope alone or from pointwise
+interval overlap. All these methods and their sensitivity results appear in
+[the supporting empirical report](empirical-studies.md).
 
-### 3.3 Accounting and uncertainty
+Input files are checksummed. Local commits document the aquatic and ocean
+analysis plans and execution order. They do not establish external
+preregistration or independently verified blinding.
 
-For bins $B_j$ of logarithmic width $w_j$, compute
-$\widehat{\mathcal O}_j=\sum_{i\in B_j}q_i/w_j$ and
-$\widehat C=\sum_j\sum_{i\in B_j}q_i/\sum_j w_j$. The normalized profile
-$\phi_j=\widehat{\mathcal O}_j/\widehat C$ has width-weighted mean one by construction.
-This is not evidence of flatness. Empty bins remain in the profile, the final boundary is
-included, and missing resources require an explicit exclusion policy.
+Later studies record when protocols,
+forecasts and outcomes became available. The linguistic test freezes its
+vocabulary and model parameters using calibration genres before decoding the
+evaluation corpus. Its uncertainty summaries remain conditional on those
+trained models and on the sampled documents.
 
-A factor-$F$ endpoint drift across log-domain width $L$ corresponds, for a power-shaped
-spectrum, to slope tolerance $c=\ln(F)/L$. This differs from requiring every
-$\phi_j\in[1/F,F]$: the latter permits a maximum-to-minimum ratio of $F^2$. Both slope
-and profile deviations matter. A slope equivalence interval combined with a point-estimate
-profile screen is not full simultaneous equivalence; that would require uncertainty for
-the whole profile. Failure to establish equivalence is not, by itself, evidence of a
-nonzero departure.
+## 4. Exploratory allocation results
 
-For flares, the arithmetic mean resource exponent is fitted by Gamma quasi-likelihood on
-2022 data, with bounded count-density fitting on 2023–2024 over $[10^{-5},10^{-3}]$ W/m².
-Log-resource least squares would target a different conditional quantity unless an appropriate
-retransformation were justified. Pilot intervals use 600 calendar-month block resamples for
-flares and calendar-year blocks for earthquakes. These do not capture all dependence or
-selection bias. The temporal split separates estimation samples but does not make the
-exploratory domain choice a prospective prediction.
+| Application | Retained result | Scientific implication |
+|---|---|---|
+| Earthquake energy proxy | Gutenberg–Richter $b=0.998$; year-block 95% interval [0.973, 1.024], versus conversion exponent $\gamma=1.5$ | Disagrees with the specified equal-proxy allocation; energy is inferred from magnitude |
+| Solar flares | Predicted count exponent 1.858 versus observed 2.239; gap 0.382 [0.125, 0.620] | Joint resource, transfer and count-model prediction fails on the selected domain |
+| Upper-ocean reconstruction | Biomass max/min 38.8 across 23 bins; 1.7 across the selected 16-bin plateau | A broad approximate plateau with nonuniformities; re-expression of published evidence |
+| Aquatic spectra | Median normalized slope −1.015; departure interval [−0.100, 0.010] from study-block resampling | Near-neutral central location, without equivalence under the historical criteria |
 
-Power-law diagnostics use maximum likelihood and a refitted parametric-bootstrap KS
-statistic on declared support, following the approach of Clauset et al. (2009). The
-rounded earthquake magnitudes are tested on their integer grid: for
-$K=(M-M_0)/\Delta$, $P(K=k)=(1-r)r^k$ with $r=10^{-b\Delta}$. Continuous-reference KS
-calibration is unsuitable for these ties. Parametric-bootstrap probabilities remain
-conditional on an independent-event working model; catalogue clustering is a limitation.
+*Table 2. Outcomes of the specified exploratory analyses. Intervals retain their
+original working assumptions; no row supplies a verdict on the general law
+independent of its resource and observation model.*
 
-### 3.4 Aquatic estimates and reconstruction uncertainty
-
-The primary GLOSSAQUA subset requires body mass on the size axis, finite slopes and positive
-ordered size limits, and the normalized biomass-spectrum convention. For biomass per unit
-linear mass $B(m)\propto m^t$, equal biomass per log mass requires $t=-1$. We examine
-$\beta=t+1$ and each estimate's reported size span. The historical plan uses $F=1.25$
-and $F=2$, a 2,000-replicate study-block bootstrap for the pooled median, and a joint
-criterion involving its interval and the fraction of slopes inside their tolerances.
-That fraction ignores individual slope uncertainty and must not be interpreted as formal
-individual equivalence. Slope summaries cannot detect within-spectrum curvature. A post-audit
-sensitivity explicitly excludes StudyID_07 from range-dependent assessment because its
-reported bounds are physically implausible; no replacement bounds are imputed (§4.4).
-
-For the ocean reconstruction, 20,000 simulated profiles propagate reported multiplicative
-uncertainty factors using lognormal draws centred on the published log estimates, with
-log-scale standard deviation $\ln(f)/1.96$. The published bounds match estimate divided
-and multiplied by $f$. Independent errors across groups and bins are a working assumption,
-not a property established by those bounds. The reconstruction is not a sample of independent
-organisms, and its plateau was selected after inspecting the upper-ocean estimates.
-
-Exploratory random-effects and latent-distribution fits use reported errors where available.
-Intervals converted to standard errors assume their advertised coverage and approximate
-normality. Size-spectrum estimators can have biased estimates and miscalibrated intervals
-(Edwards et al., 2017, 2020). Repeated spectra within studies and estimated error variances
-further limit inference; independence-based pooled intervals are not primary evidence
-of a population mean.
-
-## 4. Results
-
-### 4.1 Earthquakes contradict the specified energy-proxy allocation
-
-Gutenberg–Richter scaling $N(\ge M)\propto10^{-bM}$ and proxy
-$E\propto10^{\gamma M}$ give resource per log energy proportional to
-$E^{1-b/\gamma}$. Flatness therefore requires $b=\gamma$. At threshold 5.5, the fitted
-$b=0.998$ has year-block 95% interval [0.973, 1.024], far below the chosen $\gamma=1.5$.
-Thresholds 6.0 and 6.5 give 0.984 and 0.977. Using conversion exponent 1.44 also leaves a
-substantial discrepancy.
-
-At threshold 5.5 the discrete KS statistic is approximately 0.0077, with a parametric-bootstrap
-probability about 0.26. This is non-rejection of the fitted geometric model, not proof that
-the model is exact. A power-like tail can thus coexist with a resource-proxy allocation that
-disagrees with $O_{\log}$. No discrete lognormal comparison was conducted. Magnitude-derived
-energy is not independently measured radiated energy; the finding is restricted to the
-specified proxy and catalogue, without declustering or a regional completeness model.
-
-### 4.2 Flares disagree with the joint prediction on the selected domain
-
-The fitted resource exponent is $d=0.858$ with 95% interval [0.697, 1.054]. The implied
-density exponent is 1.858, compared with 2.239 [2.085, 2.399] in the paired evaluation
-sample. The estimated gap is 0.382 [0.125, 0.620]. A rise-phase fluence sensitivity gives
-gap 0.411 [0.208, 0.604]. This alternate resource has no missing values in the domain,
-but does not prove the primary end-fluence analysis free of missingness bias.
-
-For all 1,306 in-domain evaluation events, peak irradiance has fitted exponent 2.274 and
-KS statistic about 0.032; its bootstrap probability is about 0.02. The power law is
-therefore inadequate under this working test. Its likelihood cannot clearly distinguish
-it from the fitted lognormal. Exponent mismatch tests the conjunction of equipartition,
-power-shaped mean cost, transfer between years, and the count model; it cannot isolate
-equipartition from all those assumptions.
-
-The gaps at four lower cutoffs are −0.480, 0.191, 0.382, and 0.960. This substantial
-sensitivity discourages treating one selected range as a universal scaling regime.
-Fluence is instrument-band irradiance integrated over an event, not total flare energy.
-
-### 4.3 The ocean reconstruction is compatible with a broad, uneven plateau
-
-The upper-ocean summary reproduces the published abundance slope at approximately −1.039.
-Its maximum-to-minimum biomass ratio is 38.8 across all 23 bins, and 1.7 within the selected
-plateau of 16 bins. The corresponding full-water-column plateau ratio is 4.3. The 23
-one-decade bins span 23 decades between outer edges; their centres are 22 decades apart.
-Similarly, the plateau covers 16 decades between edges and 15 between centres.
-
-Under the stated uncertainty propagation, only 2 of 23 upper-ocean bin intervals lie
-wholly outside the factor-1.25 band; the corresponding full-column count is 3. These are
-pointwise intervals without multiplicity adjustment. The remaining intervals can include
-both near-flat and materially non-flat values, so their overlap with the band establishes
-neither equality nor absence of departures. Correlated reconstruction errors and post hoc
-range selection further limit the assessment. These results re-express Hatton et al.'s
-reconstruction; they do not independently replicate it.
-
-The full upper-ocean range has a fitted biomass log-slope of −0.0392 and a propagated
-90% interval approximately [−0.058, −0.026], outside the factor-1.25 slope tolerance
-of 0.00421. Thus the assumed uncertainty model indicates a systematic gradient even
-though most individual bin intervals overlap the pointwise band. Pointwise overlap
-does not make the whole-profile question uninformative; its interpretation remains
-conditional on the reconstruction error model.
-
-### 4.4 Aquatic slopes are close in location, without established equivalence
-
-Among 1,300 normalized biomass spectra from 16 study identifiers, the pooled median slope
-is −1.015. The study-block 95% interval for its departure from −1 is [−0.100, 0.010].
-The median slope tolerance is 0.0317 at $F=1.25$ and 0.0984 at $F=2$. This interval is
-not wholly within either band. Under the historical joint criteria, the result is
-**not supported**.
-
-The reported-slope fractions inside their individual drift tolerances are 0.07846
-($F=1.25$) and 0.24231 ($F=2$), counting boundary cases inclusively. These are descriptive compatibility fractions. Their
-complements are not estimates of the fraction of true spectra violating equipartition,
-because measurement error and within-spectrum shape are not accounted for.
-
-These historical fractions also depend on a metadata defect: all 377 StudyID_07 records
-report bounds of $2\times10^{-8}$ to $2\times10^{27}$ pg C, a 35-decade range with a
-physically implausible upper body mass of $2\times10^{12}$ kg C. Excluding those records
-from this range-dependent calculation leaves 923 slopes from 15 studies. Their point-slope
-compatibility fractions are 9.32% at $F=1.25$ and 28.93% at $F=2$. The source-derived
-replacement bounds are unknown; the original slopes remain in the location summary.
-The remaining records also require a methods and units audit. Consequently neither version
-of the pass fraction should be treated as a validated estimate of ecological prevalence.
-
-Two studies supply 1,016 of the 1,300 estimates, approximately 78%. A central estimate
-near −1 is worth investigating, but it neither establishes a mean of −1 in a defined
-population nor establishes equal average biomass occupancy. The stronger ensemble
-interpretation fails on both statistical and mathematical grounds (§2.4).
-
-### 4.5 Exploratory diagnostics identify further limits
-
-Latent-shape fits and random-effects summaries describe appreciable variation in the
-error-reporting subset. Their fitted dispersion includes ecological differences, study
-methods, and potentially unmodelled dependence. An $I^2$ estimate is not a measured
-fraction of variance caused by ecosystem differences. AIC rankings among Gaussian,
-Laplace, and Student families do not establish adequacy or identify ecological classes.
-Error-aware, matched-sample pass fractions are internal model checks, not independent
-predictions of individual failure.
-
-The cross-study comparison of 639 lake-fish estimates with 377 records associated with
-Gaedke's Lake Constance study does not partition spatial and temporal variance. Different
-taxa, sampling designs, fitting methods, and measurement uncertainties prevent treating
-their variance ratio as a bound on one population. Reproducing Arranz et al.'s reported
-summary statistics from the same underlying observations checks extraction, not independent
-replication of a dispersion parameter.
-
-Exponent metadata also need source verification. Counts in equal-log bins and abundance
-divided by linear bin width have slopes differing by one under power scaling. The
-Perkins et al. (2018) count-bin method illustrates why a database category alone may not
-identify the estimand. Choosing a mapping because it makes a slope closer to −1 or −2
-would bias the test. Secondary conventions remain sensitivity analyses; a complete
-study-level methods audit is needed before pooling them. Checks of two dominant primary
-studies do not validate every record in the primary subset.
+Several limitations affect interpretation. The solar discrepancy changes with
+the domain, and its fitted power law fails the stated adequacy test. Ocean
+uncertainty includes correlated reconstruction errors not captured by the working
+propagation model; the plateau was selected after inspection.
+For the full upper-ocean domain, the biomass log-slope is −0.0392 with propagated
+90% interval [−0.058, −0.026], outside the stated slope-equivalence tolerance.
+Aquatic estimates are concentrated in two studies, and 377 records have implausible reported
+size ranges. The retained sensitivity excludes those records only from
+range-dependent calculations, without inventing replacement bounds. Reported
+compatibility fractions are therefore not estimates of the prevalence of
+orthopolity in Nature. The supplement preserves every numerical comparison,
+metadata correction and unresolved observation issue.
 
 ## 5. Frozen-forecast tests
 
@@ -954,49 +904,30 @@ unresolved, as declared before acquisition, and the instrument mix changed betwe
 
 ### 5.3 Published biological measurements
 
-| Study | Held out | Resource and cost | Frozen comparison | Outcome |
-|---|---|---|---|---|
-| *Synechococcus* quotas (Harcourt et al., 2024) | Ten cultures at 25 °C | C, N and P per cell against measured diameter | Fixed cube, free power, strain means, temperature trends | Fixed cube best for C; strain means best for N and P |
-| Size-selected *Dunaliella* (Malerba et al., 2018) | Each selection treatment | Biovolume at carrying capacity in one shared medium | Equal biovolume ($d=1$), fitted size law, assigned exponents, equal cell number | Equal biovolume best; cells at capacity scale as $V^{-1.02}$ |
-| Food-web chemostats (Wojcik et al., 2025) | Twelve polyculture vessels | Algal N stock: biovolume times separately assayed N per volume | Persistence, development response, no-herbivore response, equal stock, two-budget cost ratio | No model beat persistence; the cost-ratio rule failed |
-| Harvested plants (Dillon et al., 2019) | Five Colorado plots; prior raw exposure | Direct aboveground dry mass; $q(m)=m$ by definition | Log and linear neutrality, Ohio histogram, bounded Pareto and Weibull | Pareto best for biomass; trained models better for counts; ecological neutrality unresolved |
+The *Synechococcus* comparison demonstrates that a size-based cost can transfer
+for one resource and fail for another in the same organisms: cubic diameter
+predicted held-out 25 °C carbon quotas within a typical factor of 1.14, while strain
+means predicted N and P better ([cost transfer](archived-cost-transfer.md)).
 
-Published elemental quotas of four *Synechococcus* strains tested whether a size-based cost
-transfers to an unused temperature ([cost transfer](archived-cost-transfer.md)). Trained on
-16–22 °C cultures, a cubic diameter law with one fitted intercept predicted held-out 25 °C
-carbon quotas within a typical factor of 1.14. For nitrogen and phosphorus, strain means beat
-both size laws, and a fitted exponent never beat the fixed cube. Extrapolated temperature trends
-were worst for every element. A cost calibration can therefore transfer for one resource while
-failing as a size law for another resource in the same cells.
+The positive biological allocation result concerns separately grown populations.
+Thirty size-selected *Dunaliella* lineages were regrown in one shared F/2 medium.
+Across a 10.4-fold range of mean cell volume, replete capacity in total biovolume
+was constant to within 3%, and cell number scaled as $V^{-1.02}$ (Figure 4).
+Each held-out selection treatment was predicted from the other two.
+The frozen equal-biovolume law gave held-out errors of 0.124 and 0.179 log units,
+outperforming a fitted size law and equal cell number. This establishes
+conditional budget closure across cultures; it does not demonstrate exchange
+among coexisting size classes. Regrowth after P deprivation retained a
+size-dependent overshoot ([size budget](dunaliella-size-budget.md)).
 
-The accounting identity behind orthopolity, $N\,q(V)=R$, predicts how abundance scales with
-per-object cost when a budget is shared. Thirty *Dunaliella tertiolecta* lineages, artificially
-selected for about 280 generations into small, control and large classes, were regrown
-separately in one F/2 medium after replete, N-deprived or P-deprived histories
-([size budget](dunaliella-size-budget.md)). The protocol was committed before any small- or
-large-selected outcome was decoded; each held-out selection treatment was then predicted from
-the other two. Across a 10.4-fold range of mean cell volume, replete carrying capacity in total
-biovolume was constant to within 3%, so cell number at capacity scaled as $V^{-1.02}$
-(Figure 4). The frozen equal-biovolume law ($d=1$) had held-out errors of 0.124 and 0.179 log
-units. It outperformed a size law fitted within part of the range, whose fitted cost dimension
-was 0.74 in one fold and 1.12 in the other, and an equal-cell-number law, with errors of
-1.48–2.08. A carbon cost degree assigned from the *Synechococcus* study ($d=0.91$) performed
-comparably; its nitrogen degree ($d=0.80$) did not. Regrowth after N deprivation nearly
-restored capacity, whereas P deprivation left an overshoot of 25–31% in control and large
-lineages but not in small ones. Restoring the medium therefore did not guarantee a return to the
-replete profile.
-
-In 24 food-web chemostats, a nitrogen pulse redistributed algal resource composition
-([chemostat response](chemostat-response.md)). Pre-pulse N and C per cell volume from separate
-monocultures converted three algal groups' biovolumes into resource stocks. Forecasts for twelve
-held-out polyculture vessels were frozen before their post-pulse values were decoded. The pulse
-moved resource composition by 0.25 total variation on average, about 1.5 times the pre-pulse
-variation around baseline, yet no forecast improved appreciably on persistence: 0.243 for the
-development response against 0.247. A two-budget allocation rule, in which a binding secondary
-carbon budget reweights each group's share by its measured C:N ratio, failed on three counts. Its
-attainable redistribution, 0.05–0.12, was below every observed departure, 0.29–0.49. Its
-predicted direction held in 4 of 12 vessels, the chance count. It did not beat persistence. No
-held-out vessel recovered its pre-pulse composition within 12 days.
+The chemostat response supplies a contrasting dynamical test. A nitrogen pulse
+changed algal resource composition, but no frozen prediction improved
+appreciably on persistence in twelve held-out polyculture vessels. The two-budget
+C:N reweighting rule predicted too little redistribution, 0.05–0.12 versus
+observed departures of 0.29–0.49, and the predicted direction held in only
+4 of 12 vessels. No vessel recovered its pre-pulse composition within twelve
+days ([chemostat response](chemostat-response.md)). This particular constraint
+model failed; its frozen result is retained.
 
 ![Size-selected Dunaliella lineages regrown in one shared medium](../results/dunaliella-size-budget/size-budget.png)
 
@@ -1017,36 +948,27 @@ scoring, but raw rows had already been exposed during source inspection. This is
 transfer comparison. It identifies neither a limiting nutrient nor an opportunity budget;
 $q(m)=m$ defines the measured stock rather than testing an independent cost law.
 
-The frozen domain is 0.01–100 g, split into eight half-decade bins with empty classes retained.
-The upper bound depends only on Ohio masses. Thirty missing mass records, 144 subthreshold
-ramets and one above-domain ramet remain in the evaluation membership ledger. The latter
-weighs 112.55 g and accounts for 24.50% of one plot's known biomass. In-domain mass coverage
-is 75.48% there and 99.89–99.97% in the other four plots. Scores therefore describe the
-declared domain; the excluded mass and unknown missing mass cannot be silently absorbed.
+The frozen domain is 0.01–100 g in eight half-decade bins. Thirty missing
+masses, 144 subthreshold ramets and one above-domain ramet remain in the
+membership ledger. The above-domain ramet contains 24.50% of one plot's known
+biomass. Results describe the declared domain.
 
-The primary score is equal-plot mean total variation between realized normalized biomass
-and each expected-stock or empirical template. Bounded Pareto scores 0.470, logarithmic
-neutrality 0.493, linear neutrality 0.507, the development histogram 0.510 and bounded
-Weibull 0.531 (Figure 5). Pareto beats logarithmic neutrality in three of five plots;
-large opposing plot differences leave a mean improvement of only 0.023. Count profiles
-provide a different comparison: the development histogram, Pareto and Weibull score
-0.260–0.271, versus 0.412 for linear and 0.495 for logarithmic neutrality. Their binned
-count log losses are about 1.83, versus 2.08 and 2.42. These are point discrepancies,
-without a calibrated ecological superiority or equivalence verdict. They also do not
-contradict the original study's superior within-site Weibull fits: the models here transfer
-across locales and share a development-fixed domain.
+Mean biomass total variation is 0.470 for the transferred bounded Pareto
+template and 0.493 for logarithmic neutrality (Figure 5). No template is best
+in every plot. Trained count models score 0.260–0.271, compared with 0.495
+for logarithmic neutrality. These are point comparisons; no calibrated
+ecological superiority or equivalence verdict follows.
 
-Synthetic calibration fixes census size and draws masses from $m^{-2}$ on the same domain,
-so each bin has equal expected biomass before measurement rounding. At 160 independent ramets, mean realized stock TV
-is 0.441 and every simulated census has an empty bin. The largest bin's average normalized
-share is 3.13%, although its normalized expected stock is 12.50%. At 1,280 ramets these
-values are 0.244, 87.2% and 9.12%. Thus
-$E[R_i/\sum_jR_j]$ differs from $E[R_i]/\sum_jE[R_j]$. A separately generated iid 95% TV
-envelope has exceedance rates 6.2% and 5.2%, but repeating masses in blocks of twenty raises
-these to 97.8% and 99.9%. This stress test is not an ecological dependence model. Field
-dependence, inclusion and independent regional replication remain unidentified, so the
-ecological neutrality decision is unresolved. An uneven small census alone cannot settle
-a claim about expected allocation.
+Synthetic censuses explain an observation limitation. Under exactly equal
+expected biomass, 160 independent ramets produce mean realized stock TV
+0.441 and an empty bin in every simulated census. The largest bin's average
+normalized share is 3.13%, while its normalized expected stock is 12.50%:
+$E[R_i/\sum_jR_j]\ne E[R_i]/\sum_jE[R_j]$. Repeating masses in blocks of
+twenty also makes an iid 95% envelope fail severely. These simulations diagnose
+finite-census normalization and dependence sensitivity, without identifying
+the ecological dependence model. Expected neutrality remains unresolved.
+The [supporting empirical report](empirical-studies.md) retains all scores,
+coverage calculations and sensitivities.
 
 ![Plant biomass transfer and finite-census normalization](../results/plant-biomass-profile/mass-profile.png)
 
@@ -1057,7 +979,83 @@ census shares under iid logarithmic neutrality, compared with normalized expecte
 All panels read retained outputs; [report_plant_biomass_profile.py](../experiments/report_plant_biomass_profile.py)
 performs presentation only. Prior raw exposure and excluded biomass are retained.*
 
-### 5.5 What the tests establish
+### 5.5 Inferring a linguistic resource and predicting withheld genres
+
+The linguistic study turns the inverse proposal into a measured transfer
+comparison ([protocol and report](linguistic-resources.md)). Word occurrences
+come from the pinned Universal Dependencies English EWT corpus, release 2.18;
+letter counts $L$ come from original sentence text and phoneme counts $P$
+from an independently pinned CMU pronunciation dictionary. The model uses a
+counting measure on word types, with no fitted rank transformation or
+post-hoc constraint factor.
+
+Training uses only email, weblog and newsgroup texts: 83 documents and 83,635
+retained tokens determine a vocabulary of 2,623 types with at least five
+training occurrences and a dictionary pronunciation. All six forecasts share
+this vocabulary. Conditional multinomial likelihood with nonnegative
+exponents gives
+
+$$\widehat Q_w\propto L_w^{0.5153}P_w^{1.8275},\qquad
+\widehat p(w)\propto\widehat Q_w^{-1}.$$
+
+Both exponents are interior. The log-feature correlation is 0.871 and the
+model information condition number is 11.65; these diagnostics describe the
+fitted model, without treating dependent tokens as independent measurements
+of parameter precision. The protocol, code and fitted forecasts were hashed
+before the official test file was acquired or decoded.
+
+The primary target comprises withheld review and answer genres: 253 documents,
+7,329 retained tokens and 77.65% vocabulary coverage after exact-duplicate
+exclusion. The secondary target contains 63 new documents from the training
+genres, with 9,618 retained tokens and 79.35% coverage. Ninety-three sentences
+matching original training text were excluded by the frozen rule, and no
+training/test document IDs overlap. Coverage is conditional on the tokenizer
+and fixed vocabulary; excluded tokens remain in the ledger.
+
+| Frozen forecast | New genres | Represented genres |
+|---|---:|---:|
+| Uniform word types | 7.872 | 7.872 |
+| Inverse letter count | 7.405 | 7.457 |
+| Fitted letter power | 7.239 | 7.328 |
+| Fitted letter/phoneme product | 7.055 | 7.189 |
+| Exponential letter cost | 7.195 | 7.304 |
+| Smoothed training frequencies | 6.136 | 6.199 |
+
+*Table 3. Held-out conditional log loss in nats per retained token; lower is
+better. Every parameter and the vocabulary are fixed from training.*
+
+The composite improves on letter power by 0.1843 nats per token in new genres;
+the paired document-bootstrap 95% interval for composite minus letter-power
+loss is [−0.1967, −0.1696]. The secondary improvement is 0.1387, with interval
+[−0.1512, −0.1251], and the point difference favors the composite in all five
+genres. The 2,000-resample intervals condition on the fitted forecasts and
+exchangeability of documents within each evaluation group. They omit
+training uncertainty and dependence between authors, threads or websites.
+
+The gain demonstrates transferable information in the combined symbolic
+features (Figure 6). Training word frequencies nevertheless predict much
+better. Only 83 distinct $(L,P)$ pairs occur among the 2,623 vocabulary types,
+so the resource model must give many different words identical probabilities.
+Observed primary letter-resource and inferred-cost shares remain far from
+uniform over word types, with descriptive total variations 0.693 and 0.689.
+Within every individual genre the composite distance is larger than the
+letter-resource distance, despite the small decrease after pooling.
+These finite-corpus discrepancies are not calibrated neutrality tests.
+The fitted combination is a predictive candidate; neither equal resource
+allocation nor a unique physical linguistic cost has been established.
+Sonority, duration, context and semantic requirements remain unmeasured here.
+
+![Linguistic resource transfer and descriptive allocation](../results/linguistic-resources/linguistic-resources.png)
+
+*Figure 6. Frozen linguistic predictions. (a) Loss on withheld review and answer
+genres, including all six declared alternatives. (b) Observed letter and
+inferred-cost allocation aggregated by word length. Equal allocation over word
+types gives the dashed type-multiplicity profile, not a flat profile over length.
+Aggregation conceals variation among words of the same length. The fitted
+composite improves prediction over letter-only costs but trails training
+word frequencies; its resource profile remains descriptive.*
+
+### 5.6 What the tests establish
 
 The positive results concern conditional budget closure: a separately measured or geometric
 cost, declared shared resource conditions, and abundance or resource shares predicted from them. The runtime
@@ -1070,7 +1068,10 @@ establish equal expected allocation: the flat template is not best for biomass o
 and the ecological observation law is uncalibrated. No natural size-class study in Section 5
 has independently identified neutral eligibility and a design sufficient for the
 expected-allocation verdict.
-That remains the decisive missing test.
+Identifying such a regime, or independently characterizing its constrained
+allocation, remains a central empirical task. The linguistic study separately
+shows a gain from an inferred composite in a frozen genre transfer. Its lexical
+baseline and uneven resource shares retain the limits of that candidate.
 
 ## 6. Discussion
 
@@ -1097,10 +1098,21 @@ profile constrains effective resource divided by its allocation distortion, cond
 on the comparison measure. A Pareto exponent can identify its scaling even when the
 constituent resource combination is unknown. It does not uniquely determine that
 combination, but shared constitutive families and independently characterized environments
-can make the inverse problem identifiable. The constructed example in Section 2.3
-recovers a nonlinear resource from two environments and predicts a third. City-size
-scaling supplies an observational motivation for applying this strategy to coupled
-urban requirements. No city resource combination has yet been measured or fitted here.
+can make the inverse problem identifiable. The result in Section 2.3 specifies
+when composition or a target prediction is identified, and its left-null contrasts
+make a shared resource model testable across environments. Correlated errors and
+nearly proportional constituent scalings determine how precise that test can be.
+City-size scaling motivates applying this strategy to coupled urban requirements;
+no city resource combination has yet been measured or fitted here.
+
+The linguistic comparison executes a complementary inverse application using direct
+symbolic counts. Its letter/phoneme combination improves frozen predictions in
+withheld genres, with the same signs of improvement in represented genres.
+The stronger lexical baseline and the large observed allocation discrepancies
+also show that these two length features do not explain complete word usage.
+These findings motivate independently characterized contextual, temporal or
+phonetic requirements. Adding an arbitrary fitted constraint after seeing a
+residual would not identify such a requirement.
 
 The empirical studies contribute different kinds of evidence. Separately calibrated
 costs and shared resource conditions support budget-closure predictions in the engineered
@@ -1122,8 +1134,24 @@ organizes their constraints, and generates further forward and inverse predictio
 These relationships require explicit derivations and comparisons, not an assumption
 that naming a common pattern establishes a common microscopic mechanism.
 
-The next empirical advance should connect a physically interpretable effective-resource
-family to observations across conditions. Specify the object partition, comparison
+The inverse formulation also has established statistical foundations. With deterministic
+constituent requirements, a product resource gives
+
+$$p_\theta(k\mid s)=Z_s(\theta)^{-1}
+\exp\!\left(\ln a_s(k)-\sum_\ell\theta_\ell\ln X_{s\ell}(k)\right)$$
+
+relative to the declared measure. This is an exponential family. Its likelihood,
+rank conditions and error propagation use standard methods; the physical content
+lies in the specified resources, constraints and shared composition across conditions.
+Inverse optimization and inverse statistical mechanics already infer governing
+quantities from outcomes (Keshavarz, Wang and Boyd, 2011; Habeck, 2014).
+The left-null relations in Section 2.3 state what the proposed composition must
+predict across environments. A fitted resource that reproduces its calibration
+profile has not yet passed that test.
+
+The next empirical advance should connect a resource combination to independently
+measured constraints or physical requirements across conditions, extending beyond
+the linguistic symbolic-count pilot. Specify the object partition, comparison
 measure, constituent requirements and budgets, and observable target; use a calibration
 subset to infer the combination and its uncertainty; then predict another distribution
 or a response to a specified change. Variation in resource requirements must distinguish
@@ -1149,7 +1177,10 @@ radiation supply worked physical realizations and explained departures. The reta
 observational studies contribute conditional successes, failed predictions and unresolved
 questions with their original scope preserved. A Pareto profile supplies a conditional
 constraint on effective-resource scaling; additional environments can identify and test
-candidate nonlinear combinations.
+candidate nonlinear combinations. The linguistic transfer provides an executed
+inverse application: a combined symbolic cost improves prediction over letter-only
+models, while a lexical baseline and residual allocation differences delimit
+its explanatory scope.
 
 Together these results provide the proposed law's mathematical and inferential foundation
 and several physical and empirical connections. They establish the stated conditional
@@ -1169,6 +1200,10 @@ explicitly exploratory diagnostics. The studies of Section 5 are registered in a
 [run registry](run-registry.md) with their inputs, frozen protocols, archived algorithms and
 outputs. The class-exchange demonstration and retrospective FIRAS calculation are also
 registered; their reports give offline reproduction commands and interpretation limits.
+The inverse-resource simulation and linguistic transfer likewise retain configurations,
+algorithms, predictions, all scored outcomes and source hashes. The linguistic
+protocol and training fit were frozen before test-file acquisition; this is a
+retrospective public-corpus study, not external preregistration.
 Plant sources are pinned to author commit defccc3dcbbbf3ba57ff1572377de88fba83ff7f,
 with acquisition checksums and complete inclusion ledgers. The registry-verify target audits
 the registry offline, and each study report gives its replay
@@ -1185,6 +1220,9 @@ Species compositions mediate biomass conservation: The case of lake fish communi
 
 Boyd, S., and Vandenberghe, L. (2004). *Convex Optimization*. Cambridge University Press.
 Sections 4.7 and 5.6. <https://web.stanford.edu/~boyd/cvxbook/>.
+
+CMU Sphinx contributors (accessed 7 October 2026). *CMU Pronouncing Dictionary*.
+[Pinned source](https://github.com/cmusphinx/cmudict/tree/74790861f652b15e4ac49015a90074ad62a27690).
 
 Clauset, A., Shalizi, C. R., and Newman, M. E. J. (2009). Power-law distributions in
 empirical data. *SIAM Review*, 51, 661–703. <https://doi.org/10.1137/070710111>.
@@ -1244,6 +1282,9 @@ Hatton, I. A., Heneghan, R. F., Bar-On, Y. M., and Galbraith, E. D. (2021). The 
 ocean size spectrum from bacteria to whales. *Science Advances*, 7, eabh3732.
 <https://doi.org/10.1126/sciadv.abh3732>.
 
+Habeck, M. (2014). Bayesian approach to inverse statistical mechanics.
+*Physical Review E*, 89, 052113. <https://doi.org/10.1103/PhysRevE.89.052113>.
+
 Haus, H. A., and Melcher, J. R. (1989). *Electromagnetic Fields and Energy*.
 Prentice-Hall. Section 11.2, Poynting's theorem.
 <https://web.mit.edu/6.013_book/www/chapter11/11.2.html>.
@@ -1257,6 +1298,10 @@ Jaynes, E. T. (1957). Information theory and statistical mechanics. *Physical Re
 
 Jaynes, E. T. (1968). Prior probabilities. *IEEE Transactions on Systems Science and
 Cybernetics*, 4(3), 227–241. <https://bayes.wustl.edu/etj/articles/prior.pdf>.
+
+Keshavarz, A., Wang, Y., and Boyd, S. (2011). Imputing a Convex Objective Function.
+*Proceedings IEEE Multi-Conference on Systems and Control*, 613–619.
+<https://stanford.edu/~boyd/papers/imputed_objective.html>.
 
 Levin, D. A., and Peres, Y. (2017). *Markov Chains and Mixing Times*, second edition,
 with contributions by E. L. Wilmer. American Mathematical Society.
@@ -1273,6 +1318,10 @@ production costs in *Escherichia coli*. *Proceedings of the National Academy of 
 
 Newman, M. E. J. (2005). Power laws, Pareto distributions and Zipf's law.
 *Contemporary Physics*, 46, 323–351. <https://arxiv.org/abs/cond-mat/0412004>.
+
+Piantadosi, S. T., Tily, H., and Gibson, E. (2011). Word lengths are optimized for
+efficient communication. *Proceedings of the National Academy of Sciences*,
+108(9), 3526–3529. <https://doi.org/10.1073/pnas.1012551108>.
 
 NASA LAMBDA (accessed 6 October 2026). COBE FIRAS CMB monopole spectrum, version 1.
 Product description and reconstruction provenance.
@@ -1305,3 +1354,7 @@ Gaedke, U. (2025). Top-down control and species composition influence nonlinearl
 short-term response of experimental food webs to a nutrient pulse perturbation. *Proceedings
 of the Royal Society B*. <https://doi.org/10.1098/rspb.2025.1969>. Data:
 <https://doi.org/10.5061/dryad.51c59zwj5>.
+
+Universal Dependencies contributors (2026). *English EWT*, release 2.18.
+[Corpus description](https://universaldependencies.org/treebanks/en_ewt/) and
+[pinned source](https://github.com/UniversalDependencies/UD_English-EWT/tree/b7711cce01cdd4f5fcc0a8199b8a50d951b16c0c).

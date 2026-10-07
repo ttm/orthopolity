@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "filename": "ewt-README.md",
+      "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/b7711cce01cdd4f5fcc0a8199b8a50d951b16c0c/README.md",
+      "final_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/b7711cce01cdd4f5fcc0a8199b8a50d951b16c0c/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "role": "Corpus metadata and mixed underlying-text rights",
+      "stage": "train",
+      "retrieved_at_utc": "2026-10-07T07:21:58.410027+00:00",
+      "size_bytes": 24522,
+      "sha256": "c2dc7edaf5937d18cb3ff142410fde7460e32faa69b2bd0a041abc3f957da281"
+    },
+    {
+      "filename": "ewt-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/b7711cce01cdd4f5fcc0a8199b8a50d951b16c0c/LICENSE.txt",
+      "final_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/b7711cce01cdd4f5fcc0a8199b8a50d951b16c0c/LICENSE.txt",
+      "content_type": "text/plain; charset=utf-8",
+      "role": "CC BY-SA 4.0 annotations/database license",
+      "stage": "train",
+      "retrieved_at_utc": "2026-10-07T07:21:58.954644+00:00",
+      "size_bytes": 20014,
+      "sha256": "b3d1b0f4c6ae151f7eb78738f46ebd5ee140f8a7f76501ba26af123140d35ae7"
+    },
+    {
+      "filename": "en_ewt-ud-train.conllu",
+      "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/b7711cce01cdd4f5fcc0a8199b8a50d951b16c0c/en_ewt-ud-train.conllu",
+      "final_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/b7711cce01cdd4f5fcc0a8199b8a50d951b16c0c/en_ewt-ud-train.conllu",
+      "content_type": "text/plain; charset=utf-8",
+      "role": "Official training split; selected genres only used for fitting",
+      "stage": "train",
+      "retrieved_at_utc": "2026-10-07T07:22:05.266293+00:00",
+      "size_bytes": 15034493,
+      "sha256": "d68e06122a702464c613076523d56740f047e5bbe89dd90ec32737e04d952143"
+    },
+    {
+      "filename": "cmudict.dict",
+      "url": "https://raw.githubusercontent.com/cmusphinx/cmudict/74790861f652b15e4ac49015a90074ad62a27690/cmudict.dict",
+      "final_url": "https://raw.githubusercontent.com/cmusphinx/cmudict/74790861f652b15e4ac49015a90074ad62a27690/cmudict.dict",
+      "content_type": "text/plain; charset=utf-8",
+      "role": "Independent canonical pronunciation features",
+      "stage": "train",
+      "retrieved_at_utc": "2026-10-07T07:22:06.914217+00:00",
+      "size_bytes": 3618488,
+      "sha256": "81917843c7f44ce2b094ac63873c2c7a4cf802040792c455ba3ca406891c3d22"
+    },
+    {
+      "filename": "cmudict-LICENSE",
+      "url": "https://raw.githubusercontent.com/cmusphinx/cmudict/74790861f652b15e4ac49015a90074ad62a27690/LICENSE",
+      "final_url": "https://raw.githubusercontent.com/cmusphinx/cmudict/74790861f652b15e4ac49015a90074ad62a27690/LICENSE",
+      "content_type": "text/plain; charset=utf-8",
+      "role": "CMU dictionary redistribution license",
+      "stage": "train",
+      "retrieved_at_utc": "2026-10-07T07:22:07.333501+00:00",
+      "size_bytes": 1754,
+      "sha256": "bd4ce8e44170a5f9f481310ca85c51de3c4f851a65e679b40e603b143bd3542a"
+    },
+    {
+      "filename": "cmudict-README",
+      "url": "https://raw.githubusercontent.com/cmusphinx/cmudict/74790861f652b15e4ac49015a90074ad62a27690/README",
+      "final_url": "https://raw.githubusercontent.com/cmusphinx/cmudict/74790861f652b15e4ac49015a90074ad62a27690/README",
+      "content_type": "text/plain; charset=utf-8",
+      "role": "Dictionary metadata",
+      "stage": "train",
+      "retrieved_at_utc": "2026-10-07T07:22:07.793954+00:00",
+      "size_bytes": 1412,
+      "sha256": "00c34e7564f1f6a68de02e12c123d801471da92bc3091f7d89b605f238bf8554"
+    },
+    {
+      "filename": "en_ewt-ud-test.conllu",
+      "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/b7711cce01cdd4f5fcc0a8199b8a50d951b16c0c/en_ewt-ud-test.conllu",
+      "final_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/b7711cce01cdd4f5fcc0a8199b8a50d951b16c0c/en_ewt-ud-test.conllu",
+      "content_type": "text/plain; charset=utf-8",
+      "role": "Official test split, acquired after frozen fit",
+      "stage": "test",
+      "retrieved_at_utc": "2026-10-07T13:39:49.860679+00:00",
+      "size_bytes": 1900101,
+      "sha256": "fa024f43dc5da3c5ac02563bc9bd0e974f46cbb1560823976a8f342a37dc494a"
+    }
+  ]
+}

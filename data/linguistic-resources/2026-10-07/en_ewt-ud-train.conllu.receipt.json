@@ -1,0 +1,11 @@
+{
+  "filename": "en_ewt-ud-train.conllu",
+  "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/b7711cce01cdd4f5fcc0a8199b8a50d951b16c0c/en_ewt-ud-train.conllu",
+  "final_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/b7711cce01cdd4f5fcc0a8199b8a50d951b16c0c/en_ewt-ud-train.conllu",
+  "content_type": "text/plain; charset=utf-8",
+  "role": "Official training split; selected genres only used for fitting",
+  "stage": "train",
+  "retrieved_at_utc": "2026-10-07T07:22:05.266293+00:00",
+  "size_bytes": 15034493,
+  "sha256": "d68e06122a702464c613076523d56740f047e5bbe89dd90ec32737e04d952143"
+}

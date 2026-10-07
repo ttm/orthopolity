@@ -1,7 +1,8 @@
 # Orthopolity: research direction
 
 Established 5 October 2026; extended 6 October with the investigators' general-law,
-composite-resource and inverse-inference clarification. This brief sets the active
+composite-resource and inverse-inference clarification, and 7 October with the
+linguistic resource application. This brief sets the active
 direction for the repository and article.
 The [handoff](ongoing-research.md) records execution status; the
 [evidence ledger](evidence.md) and individual studies record findings.
@@ -59,6 +60,15 @@ identify an urban resource combination. The [effective-resource note](effective-
 and manuscript Sections 2.2–2.3 give the equations, conditional examples and
 literature context. The present revision adds no new city dataset or fitted
 biological composite.
+
+The linguistic lead considers letters, word length and sonority as candidate
+resources. Distinguish word types, token occurrences, frequency ranks and
+length classes before deriving an allocation prediction. The executable
+application uses written letter and dictionary phoneme counts; those symbolic
+quantities do not measure sonority, duration or acoustic energy. The latter
+require separately defined measurements. Learn a restricted combination on
+calibration genres and test it on withheld genres with the same parameters and
+comparison measure, preserving vocabulary coverage and alternative models.
 
 ## The tendency and the constraints of the system
 

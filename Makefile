@@ -22,6 +22,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: ghedini-cost-calibration ghedini-cost-calibration-report
 .PHONY: class-exchange class-exchange-report class-exchange-registry
 .PHONY: thermal-sources thermal-radiation thermal-radiation-registry
+.PHONY: inverse-resources inverse-resources-registry linguistic-sources linguistic-resources linguistic-resources-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -89,6 +90,21 @@ thermal-radiation: thermal-sources ## thermal mode calculation and retrospective
 
 thermal-radiation-registry: ## archive the retained calculation without rerunning it
 	$(PY) experiments/register_thermal_radiation.py
+
+inverse-resources: ## conditional identification and synthetic cross-environment predictions
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_inverse_resources.py --output $(STUDY_OUTPUT_ROOT)/inverse-resources
+
+inverse-resources-registry: ## archive/audit the retained synthetic identification study
+	$(PY) experiments/register_inverse_resources.py
+
+linguistic-sources: ## offline: verify pinned corpus and pronunciation source files
+	$(PY) experiments/fetch_linguistic_resources.py
+
+linguistic-resources: linguistic-sources ## replay frozen cross-genre forecasts offline
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_linguistic_resources.py --stage evaluate --output-dir $(STUDY_OUTPUT_ROOT)/linguistic-resources
+
+linguistic-resources-registry: ## archive/audit the retained corpus transfer comparison
+	$(PY) experiments/register_linguistic_resources.py
 
 models:          ## exploratory model comparisons (not empirical evidence)
 	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_models.py --output $(STUDY_OUTPUT_ROOT)/models
@@ -228,7 +244,7 @@ paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 
 # tools/md2tex.py handles the Markdown subset the manuscript uses, so no Pandoc
 # is required. Two passes settle the PDF outline and any page references.
-$(PAPER_PDF): $(PAPER_SRC) tools/md2tex.py results/theory.png results/class-exchange-presentation/class-exchange.png results/thermal-radiation/thermal-radiation.png
+$(PAPER_PDF): $(PAPER_SRC) tools/md2tex.py results/theory.png results/class-exchange-presentation/class-exchange.png results/thermal-radiation/thermal-radiation.png results/linguistic-resources/linguistic-resources.png
 	$(PY) tools/md2tex.py $(PAPER_SRC) $(PAPER_TEX)
 	$(PAPER_ENV) pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build $(PAPER_TEX) > build/paper.pass1.log
 	$(PAPER_ENV) pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build $(PAPER_TEX) > build/paper.pass2.log

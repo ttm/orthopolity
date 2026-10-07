@@ -1,0 +1,23 @@
+{
+  "run_id": "inverse-resources-2026-10-06",
+  "kind": "conditional_theorem_and_synthetic_transfer_demonstration",
+  "reference_measure": "Logarithmic size, fixed throughout",
+  "resource_family": "Q=Q0*X**theta1*Y**theta2 with common unrestricted composition exponents",
+  "coefficient_truth": [1.0, 0.5],
+  "constituent_exponents": [[1.0, 1.0], [1.0, 2.0], [2.0, 1.0]],
+  "known_constraint_slopes": [0.15, -0.10, 0.20],
+  "calibration_environments": [0, 1],
+  "heldout_environment": 2,
+  "slope_standard_errors": [0.02, 0.02, 0.02],
+  "slope_correlation": [[1.0, 0.35, 0.20], [0.35, 1.0, 0.40], [0.20, 0.40, 1.0]],
+  "noise_model": "Unbiased joint Gaussian slope estimates with known covariance and exact fixed design/offsets",
+  "replicates": 20000,
+  "seed": 20261006,
+  "interval_probability": 0.95,
+  "rank_rcond": 1e-12,
+  "near_collinear_epsilon": 0.0001,
+  "slope_perturbation_l2": 0.001,
+  "heldout_alternative_coefficient": [1.0, 0.8],
+  "alternative_scope": "Only the held-out composition is changed; calibration is identical, using paired Gaussian errors for the two synthetic scenarios",
+  "scope": "Algebraic and simulated consequences of declared assumptions; no new natural observations or empirical validation of the proposed general law"
+}

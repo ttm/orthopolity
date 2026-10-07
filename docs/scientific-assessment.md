@@ -6,15 +6,26 @@ mathematical developments, and study-specific findings. The
 purpose and priorities; the assessments here describe the work evaluated at
 their respective dates.
 
-**6 October update:** the manuscript now centrally proposes orthopolity as a
-general natural law and supplies constructive exchange dynamics, electromagnetic
-and thermal realizations, and a nonlinear effective-resource framework with
-forward and inverse uses. The older verdict below predates those additions.
-The current contribution includes conditional mechanisms and an explicit route
-from distributions to candidate resource combinations; existing empirical
-successes, failures and unresolved questions retain their original status.
-See the [current manuscript](paper.md) and
-[effective-resource derivation](effective-resources.md).
+**7 October update:** the manuscript now combines the general-law proposal,
+worked mechanisms and physical realizations with a conditional identification
+and transfer result and an executed inverse-resource application. The
+[synthetic demonstration](inverse-resources.md) verifies recovery, uncertainty,
+partial identification and instability under its specified model.
+The [linguistic comparison](linguistic-resources.md) infers
+$Q\propto L^{0.5153}P^{1.8275}$ on calibration genres; its frozen forecast
+improves loss over letter power by 0.1843 nats per token in withheld genres.
+The lexical baseline remains much better, allocation remains uneven, and
+symbolic counts do not identify acoustic or physical effort.
+
+This is a scientific increment beyond reframing: a testable identification
+result and a measured predictive gain for a restricted composite. The linear
+algebra and exponential-family fitting use established methods; their novelty
+is not asserted. The [prior-work comparison](contribution-positioning.md)
+locates the proposed allocation framework relative to inverse optimization,
+inverse statistical mechanics and linguistic efficiency. The general law's
+broader empirical scope and physically identified effective resources remain
+open research tasks. Earlier empirical results keep their original status.
+The historical verdicts below refer to earlier versions of the work.
 
 Assessment: 28 September 2026; consistency review and external-assessment addendum:
 29 September 2026; constructive rereading: 30 September 2026.
@@ -26,7 +37,7 @@ This is a research assessment and proposed design,
 not a completed validation study or a preregistration. It supplements the
 [manuscript](paper.md) and [remaining work](roadmap.md).
 
-## Verdict
+## Historical verdict: 28 September 2026
 
 The current contribution is modest as original science, useful as a critical
 synthesis, and comparatively strong in transparency and reproducible accounting.
