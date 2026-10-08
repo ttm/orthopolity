@@ -1,0 +1,28 @@
+{
+  "title": "Seismicity in volumetric support: b-value against hypocentre dimension",
+  "declared_utc": "2026-10-08T23:55Z",
+  "status": "Specified and committed BEFORE any regional catalogue was obtained. The data hosts were not reachable from the registering environment; experiments/run_volumetric_b.py is ready to run where they are. The prediction was first committed in docs/resource-catalogue.md (commit e4bf526).",
+  "prior_exposure": [
+    "The registrant knows: Aki (1981) proposed b = D/2; Hirata (1989) reported a negative correlation between b and the epicentre correlation dimension; high b-values are reported for some volcanic swarms. This test therefore defines the support dimension from hypocentres, measured independently of magnitudes, and predicts the relation, rather than relying on known swarm b-values."
+  ],
+  "question": "When earthquakes in a cluster occupy a support of dimension D2 (from hypocentre correlation), does b follow the territory prediction b = D2/2, or the fractal-diffusive self-organized criticality prediction b = 1 independent of support?",
+  "hypotheses": {
+    "H_territory": {"relation": "b = D2/2 (slope 0.5 on D2, intercept 0)", "why": "Territory rule: ruptures tile a support of dimension D2, so N(>L) ∝ L^-D2; with M0 ∝ L^3 and M ∝ (2/3) log10 M0, b = D2/2. A planar fault (D2 = 2) gives b = 1; a volume (D2 = 3) gives b = 1.5."},
+    "H_fdsoc": {"relation": "b = 1 (slope 0 on D2)", "why": "Fractal-diffusive self-organized criticality predicts energy exponent 5/3 in three dimensions, b = 1, independent of the hypocentre support."}
+  },
+  "data": {
+    "source": "A relocated regional catalogue with hypocentres and a cluster identifier, for example the Southern California relocated catalogue (Hauksson, Yang and Shearer 2012, updated) with clusters from a nearest-neighbour declustering (Zaliapin and Ben-Zion 2013), or published swarm lists. Record exactly which catalogue and cluster definition were used before computing b or D2.",
+    "input_format": "CSV with columns x_km, y_km, z_km (or latitude, longitude, depth_km), mag, cluster."
+  },
+  "estimator": {
+    "clusters": "Clusters with at least 200 events above their completeness magnitude.",
+    "b": "Aki-Utsu maximum likelihood above Mc = maximum-curvature magnitude + 0.2, with bin correction for 0.1 rounding; standard error from 500 bootstrap resamples.",
+    "D2": "Correlation dimension from the slope of log C(r) on log r over r between 3 and 30 times the median nearest-neighbour hypocentre distance, using hypocentres of events above Mc; standard error from 500 bootstrap resamples.",
+    "regression": "Errors-in-variables (Deming) regression of b on D2 with the bootstrap variances; 95% interval for the slope by bootstrap over clusters."
+  },
+  "decision_rule": {
+    "support_H_territory": "Slope interval contains 0.5 and excludes 0, and the intercept interval contains 0.",
+    "support_H_fdsoc": "Slope interval contains 0 and excludes 0.5, and the mean b interval contains 1.",
+    "inconclusive": "Otherwise, including fewer than 10 qualifying clusters or a D2 range narrower than 0.5."
+  }
+}

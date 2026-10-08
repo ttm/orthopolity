@@ -1,0 +1,49 @@
+{
+  "title": "Aftershock productivity: rupture area or seismic moment as the orthopolic resource",
+  "declared_utc": "2026-10-08T23:55Z",
+  "status": "Specified and committed BEFORE any aftershock count was computed from the catalogue. The git history of this file is the preregistration record. The prediction itself was first committed in docs/resource-catalogue.md (commit e4bf526).",
+  "prior_exposure": [
+    "The frozen catalogue data/raw/usgs_2010_2024.csv was analysed before for Gutenberg-Richter b-values only (b = 0.998 [0.973, 1.024], Mw >= 5.5). No space-time clustering, mainshock selection or aftershock count has been computed.",
+    "The registrant knows that published aftershock-productivity exponents are commonly reported between about 0.8 and 1.1. This test is therefore a replication on frozen data under a fixed pipeline, testing a second consequence of the rupture-area reading of Gutenberg-Richter; it is not blind to the literature."
+  ],
+  "question": "Does the expected number of aftershocks of a mainshock scale with its rupture area (the territory reading of earthquake size statistics) or with its seismic moment (the energy reading)?",
+  "hypotheses": {
+    "H_area": {"alpha": 1.0, "why": "Aftershock sites are allocated per unit rupture area; self-similar scaling gives A ∝ M0^(2/3) ∝ 10^(1.0 M)."},
+    "H_moment": {"alpha": 1.5, "why": "Aftershocks are allocated per unit seismic moment (energy); M0 ∝ 10^(1.5 M)."},
+    "H_width": {"alpha": 0.75, "why": "Secondary. Width-saturated rupture (Hanks and Bakun 2002, M0 ∝ A^2 above about M 6.7) gives A ∝ 10^(0.75 M). The global set mixes saturated and unsaturated ruptures, so a mixture would fall between 0.75 and 1."}
+  },
+  "data": {
+    "file": "data/raw/usgs_2010_2024.csv (checksum in data/snapshot_checksums.json)",
+    "events": "Rows with time before 2025-01-01T00:00:00Z and magType starting with 'mw' (as in the pilot); magnitudes rounded to 0.1.",
+    "sensitivity_all_magnitude_types": "Repeat with all magnitude types."
+  },
+  "declustering": {
+    "method": "Gardner and Knopoff (1974) windows. Distance d(M) = 10^(0.1238 M + 0.983) km (great-circle distance between epicentres); time t(M) = 10^(0.032 M + 2.7389) days for M >= 6.5, else 10^(0.5409 M - 0.547) days.",
+    "procedure": "Process events in decreasing magnitude (ties: earlier first). An unassigned event becomes a mainshock; every unassigned smaller-or-equal event within d(M) and within t(M) after it, or within t(M) before it, is assigned to its cluster.",
+    "mainshocks_analysed": "Mainshocks with M >= 6.5 whose full time window ends before 2025-01-01.",
+    "aftershock_count": "N_i = number of events assigned to mainshock i that occur after it, with M >= 5.5."
+  },
+  "estimator": {
+    "model": "Poisson regression of N_i on M_i: E[N_i] = K 10^(alpha (M_i - 6.5)), maximum likelihood.",
+    "uncertainty": "Percentile 95% interval from 2,000 bootstrap resamples of mainshocks (seed 20261008), which accommodates overdispersion.",
+    "reported_also": "Negative-binomial fit as a check on the point estimate; b-value of the analysed catalogue for comparison with alpha."
+  },
+  "decision_rule": {
+    "support_H_area": "95% interval contains 1.0 and excludes 1.5.",
+    "support_H_moment": "95% interval contains 1.5 and excludes 1.0.",
+    "support_H_width": "Reported if the interval contains 0.75 and excludes 1.0; a mixture is then the likely reading.",
+    "inconclusive": "Any other outcome.",
+    "primary": "Gardner-Knopoff windows, mw-family magnitudes, all depths."
+  },
+  "sensitivity": [
+    "Rupture-length windows: distance max(d(M), L(M)) with Wells and Coppersmith (1994) subsurface length log10 L = -2.44 + 0.59 M km, time 365 days.",
+    "Exclude aftershocks in the first day after the mainshock (short-term incompleteness after large events).",
+    "Shallow mainshocks only (depth <= 70 km).",
+    "All magnitude types."
+  ],
+  "limitations": [
+    "A global M >= 5.5 catalogue counts only the largest aftershocks, so smaller mainshocks mostly have zero or one; the slope is driven by M >= 7 events.",
+    "Gardner-Knopoff distance windows are smaller than the ruptures of the largest earthquakes, which can bias alpha downwards; the rupture-length sensitivity addresses this.",
+    "No focal mechanisms are available to separate width-saturated strike-slip events."
+  ]
+}

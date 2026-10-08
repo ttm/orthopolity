@@ -1,0 +1,33 @@
+{
+  "title": "Lake radius of gyration: two-dimensional territory independent of shoreline fractality",
+  "declared_utc": "2026-10-08T23:55Z",
+  "status": "Specified and committed BEFORE the lake polygons were obtained. The data host was not reachable from the registering environment; experiments/run_lake_gyration.py is ready to run where it is. The prediction was first committed in docs/resource-catalogue.md (commit e4bf526).",
+  "prior_exposure": [
+    "The registrant knows published lake-AREA exponents (Cael and Seekell 2016 and corrigendum: tau = 2.14 above 0.46 km^2). No distribution of lake radii of gyration has been read."
+  ],
+  "question": "Do lakes tile the land surface as a two-dimensional territory, so that the count per logarithmic class of linear size falls as L^-2 whatever the fractal dimension of their area?",
+  "hypotheses": {
+    "H_territory": {"zeta_R": 2.0, "why": "Territory rule with support dimension d_s = 2 and linear size R (D_k = 1): survival exponent zeta_R = 2, density exponent 3. Independent of the area-size dimension D, because the territory is counted, not the water area."},
+    "H_area_inherited": {"zeta_R": "zeta_A x D", "why": "If the area distribution were primary, zeta_R would equal the fitted area exponent times the fitted area-radius dimension D (from log A on log R), e.g. 1.14 x 2 = 2.28 for compact lakes. This is an identity check that the territory hypothesis must also satisfy, with zeta_A = 2/D."}
+  },
+  "data": {
+    "source": "HydroLAKES v1.0 polygons (Messager et al. 2016, Nature Communications 7, 13603; CC BY 4.0), https://www.hydrosheds.org/products/hydrolakes, shapefile HydroLAKES_polys_v10_shp.zip, about 1.43 million lakes of at least 10 ha.",
+    "variable": "Radius of gyration R of each polygon (outer ring, area-weighted, holes ignored), computed after projecting to an equal-area projection (EPSG:6933)."
+  },
+  "estimator": {
+    "range": "Fixed in advance: lakes with area between 1 km^2 and 1,000 km^2, to stay above the 10 ha mapping limit and below the few largest lakes; R bounds are taken as the 0.5% and 99.5% quantiles of R within that area range.",
+    "model": "Truncated (bounded) power law for R on [R_lo, R_hi], maximum likelihood (src/gof.fit_powerlaw); zeta_R = alpha - 1.",
+    "uncertainty": "Percentile 95% interval from 1,000 bootstrap resamples of lakes, and a spatial-block bootstrap by HydroBASINS level-3 region if the basin field is present.",
+    "dimension_D": "Ordinary least squares slope of log A on log R in the same range."
+  },
+  "decision_rule": {
+    "equivalence_margin": 0.1,
+    "support_H_territory": "Both bootstrap intervals for zeta_R lie within [1.9, 2.1].",
+    "against_H_territory": "Either interval lies entirely outside [1.9, 2.1].",
+    "inconclusive": "Otherwise."
+  },
+  "limitations": [
+    "Polygon generalization at 10 ha affects small lakes; the fixed range mitigates but does not remove it.",
+    "Reservoirs are included in HydroLAKES; a sensitivity excluding them (Lake_type != 1) is reported."
+  ]
+}

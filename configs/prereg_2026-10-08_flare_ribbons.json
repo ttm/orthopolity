@@ -1,0 +1,31 @@
+{
+  "title": "Solar flare ribbon areas: space-filling territory or fractal area",
+  "declared_utc": "2026-10-08T23:55Z",
+  "status": "Specified and committed BEFORE the ribbon data were obtained or inspected. The data host was not reachable from the registering environment; the analysis script experiments/run_flare_ribbons.py is ready to run where it is. The prediction was first committed in docs/resource-catalogue.md (commit e4bf526).",
+  "prior_exposure": [
+    "No ribbon-area distribution from this database has been read by the registrant. If its authors or others have published a power-law index for ribbon areas, the person running the test should record whether they had read it before running."
+  ],
+  "question": "Is the frequency distribution of flare ribbon areas that of a space-filling two-dimensional territory (log-orthopolic in area) or that of a fractal area?",
+  "hypotheses": {
+    "H_territory": {"alpha_area": 2.0, "why": "Territory rule alpha = 1 + d_s/D_k with support dimension d_s = 2 (the chromospheric surface tiled by ribbon footprints) and area ∝ L^2 (D_k = 2): equal ribbon area per logarithmic area class."},
+    "H_fractal": {"alpha_area": 2.3333, "why": "Fractal-diffusive self-organized criticality (Aschwanden): N(L) ∝ L^-3 with fractal area A ∝ L^(3/2) gives alpha_A = 1 + 2/(3/2) = 7/3."},
+    "note": "The two hypotheses agree on the distribution of linear sizes, N(L) ∝ L^-3. They differ only in how measured area scales with size, so this test discriminates a space-filling from a fractal area, which is the distinction the orthopolic territory reading makes."
+  },
+  "data": {
+    "source": "RibbonDB: Kazachenko, M. D., Lynch, B. J., Welsch, B. T. and Sun, X. (2017), A database of flare ribbon properties from the Solar Dynamics Observatory. I. Reconnection flux, Astrophysical Journal 845, 49. Reported host: http://solarmuri.ssl.berkeley.edu/~kazachenko/RibbonDB/ (verify; about 3,000 flares of GOES class C1.0 and above, 2010-2016).",
+    "variable": "Total (cumulative) ribbon area per flare, as tabulated; secondary: ribbon reconnection flux.",
+    "input_format": "CSV with one row per flare and a positive numeric column named by --column."
+  },
+  "estimator": {
+    "model": "Continuous power law above x_min, maximum likelihood (Clauset, Shalizi and Newman 2009).",
+    "x_min": "Minimum Kolmogorov-Smirnov distance over candidate quantiles 0.30-0.90 of the data (GOES-class selection makes small ribbons incomplete).",
+    "uncertainty": "Percentile 95% interval from 2,000 bootstrap resamples of flares (seed 20261008), refitting x_min in each.",
+    "goodness_of_fit": "Parametric bootstrap KS p-value (500 replicates); lognormal likelihood-ratio comparison reported."
+  },
+  "decision_rule": {
+    "support_H_territory": "95% interval contains 2.0 and excludes 7/3.",
+    "support_H_fractal": "95% interval contains 7/3 and excludes 2.0.",
+    "inconclusive": "Interval contains both or neither, or the power law is rejected at p <= 0.1."
+  },
+  "secondary": "Repeat for reconnection flux; under a size-independent mean field strength the same hypotheses apply."
+}
