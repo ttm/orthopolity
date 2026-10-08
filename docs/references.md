@@ -173,6 +173,74 @@ establish either priority for the identity or independent confirmation of it.
   integration of sonification and visualization. *Computer Graphics Forum* 43(3).
   <https://arxiv.org/abs/2402.16558> — See [not-worth-pursuing.md B1](not-worth-pursuing.md).
 
+## Proportional growth and the exponent ζ = 1 (added 2026-10-08)
+
+Prior art for the mechanism discussed in [research-program.md](research-program.md). Checked from
+abstracts and search extracts only; read the full texts before any priority statement.
+
+- **Kesten, H. (1973).** Random difference equations and renewal theory for products of random
+  matrices. *Acta Mathematica* 131, 207–248. **Goldie, C. M. (1991).** Implicit renewal theory and
+  tails of solutions of random equations. *Ann. Appl. Probab.* 1, 126–166. — Tail exponent solves
+  $E[A^\zeta]=1$; $\zeta=1$ iff $E[A]=1$.
+- **Levy, M. & Solomon, S. (1996).** Power laws are logarithmic Boltzmann laws. *Int. J. Mod. Phys. C*
+  7, 595–601. **Malcai, O., Biham, O. & Solomon, S. (1999).** *Phys. Rev. E* 60, 1299–1303. — Floor
+  relative to the mean sets the exponent; limits $N\to\infty$ and floor $\to0$ do not commute.
+- **Gabaix, X. (1999).** Zipf's law for cities: an explanation. *QJE* 114, 739–767. — Gibrat growth
+  with normalization gives $\zeta\to1$; finite floor gives $\zeta>1$.
+- **Reed, W. J. (2001).** The Pareto, Zipf and other power laws. *Economics Letters* 74, 15–19. —
+  Geometric Brownian motion observed at exponential times gives a double Pareto law.
+- **Saichev, A., Malevergne, Y. & Sornette, D. (2010).** *Theory of Zipf's Law and Beyond.* LNEMS 632,
+  Springer. **Malevergne, Y., Saichev, A. & Sornette, D. (2013).** Zipf's law and maximum sustainable
+  growth. *J. Econ. Dyn. Control* 37, 1195–1212. — Balance condition for $\zeta=1$ with births and
+  deaths; the closest prior art to the deviation law.
+- **Zhang, Q. & Sornette, D. (2011).** *Physica A* 390, 4124–4130. **Hisano, R., Sornette, D. &
+  Mizuno, T. (2011).** *Phys. Rev. E* 84, 026117. — Deviations from $\zeta=1$ predicted from measured
+  rates without free parameters, in single domains.
+- **Bouchaud, J.-P. & Mézard, M. (2000).** Wealth condensation in a simple model of economy.
+  *Physica A* 282, 536–545. — $\zeta=1+J/\sigma^2$; condensation below.
+- **Axtell, R. L. (2001).** Zipf distribution of U.S. firm sizes. *Science* 293, 1818–1820.
+- **Rozenfeld, H. D., Rybski, D., Gabaix, X. & Makse, H. A. (2011).** The area and population of
+  cities. *AER* 101, 2205–2225. — Zipf for clustered "natural" cities.
+- **Eeckhout, J. (2004).** Gibrat's law for (all) cities. *AER* 94, 1429–1451. **Soo, K. T. (2005).**
+  *Reg. Sci. Urban Econ.* 35, 239–263. **Schwarzkopf, Y. & Farmer, J. D. (2010).** *Phys. Rev. E* 81,
+  066113. — Counterexamples and slow relaxation within the proportional-growth class.
+- **Corominas-Murtra, B. & Solé, R. V. (2010)** *Phys. Rev. E* 82, 011102; **Mazzarisi, O. et al.
+  (2021)** *Phys. Rev. Lett.* 127, 128301; **Hernando, A. et al. (2010)** *Physica A* 389, 490–498. —
+  Other routes to $\zeta=1$; observing $\zeta\approx1$ does not identify the mechanism.
+
+## Domain criteria equivalent to equal resource per log class (added 2026-10-08)
+
+- **Hudson, H. S. (1991).** Solar flares, microflares, nanoflares, and coronal heating. *Solar Physics*
+  133, 357–369. — $\alpha=2$ divides small-flare from large-flare dominance of energy.
+- **Veronig, A. et al. (2002).** *Astron. Astrophys.* 382, 1070–1080. — GOES fluence $\alpha=2.03\pm0.09$.
+- **Aki, K. (1981).** A probabilistic synthesis of precursory phenomena. *Maurice Ewing Series* 4,
+  566–574. — $b=D/2$, rupture area $\zeta_A=b$.
+- **Kanamori, H. & Anderson, D. L. (1975).** *BSSA* 65, 1073–1095. **Hanks, T. C. & Bakun, W. H.
+  (2002).** *BSSA* 92, 1841–1846. — Self-similar area scaling and its breakdown for large events.
+- **Kagan, Y. Y. (2002).** Seismic moment distribution revisited I. *Geophys. J. Int.* 148, 520–541. —
+  Moment exponent 0.60–0.65 with a corner moment.
+- **Scholz, C. H. (2015).** On the stress dependence of the earthquake b value. *GRL* 42, 1399–1402.
+- **Aschwanden, M. J. (2014).** *Astrophys. J.* 782, 54; **Aschwanden, M. J. & Scholkmann, F. (2025)**
+  arXiv:2505.00748. — Scale-free probability conjecture $N(L)\propto L^{-d}$, a cross-domain geometric
+  claim; logarithmic orthopolity in area for $d=3$.
+- **Dohnanyi, J. S. (1969).** *JGR* 74, 2531–2554. **O'Brien, D. P. & Greenberg, R. (2003).** *Icarus*
+  164, 334–345. — Cascade exponents that differ from 1.
+- **Cael, B. B. & Seekell, D. A. (2016).** *Sci. Rep.* 6, 29633; corrigendum (2017) 7, 42039. — Lake
+  areas $\tau=2.14$ against percolation 2.055.
+- **Andersen, K. H. & Beyer, J. E. (2006).** *Am. Nat.* 168, 54–61. **Hartvig, M., Andersen, K. H. &
+  Beyer, J. E. (2011).** *J. Theor. Biol.* 272, 113–122. — $\lambda=2+q-n\approx2.05$.
+- **Jennings, S. & Mackinson, S. (2003)** *Ecol. Lett.* 6, 971–974; **Mehner, T. et al. (2018)**
+  *Ecology* 99, 1463–1472; **Atkinson, A. et al. (2021)** *Limnol. Oceanogr.* 66, 422–437. — Spectrum
+  slope from transfer efficiency and predator–prey mass ratio.
+- **Platt, T. & Denman, K. (1977).** Organisation in the pelagic ecosystem. *Helgoländer wiss.
+  Meeresunters.* 30, 575–581.
+- **Schwamborn, R. (2025).** Towards a compleat theory of ecosystem size spectra. arXiv:2509.00023
+  (not peer reviewed). — Slope −1 as an equilibrium constant.
+- **Frank, S. A. (2016).** The invariances of power law size distributions. *F1000Research* 5, 2074.
+  **Frank, S. A. (2019).** *F1000Research* 8, 334. — Conserved totals and scale invariance.
+- **Harte, J. (2011).** *Maximum Entropy and Ecology.* Oxford University Press. **Xiao, X., McGlinn,
+  D. J. & White, E. P. (2015).** *Am. Nat.* 185, E70–E80.
+
 ## Primary sources for this repository
 
 - **Fabbri, R. (2024).** The Orthopolity cosmological principle and the Natural distribution law.
