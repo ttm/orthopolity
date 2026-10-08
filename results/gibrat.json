@@ -1,0 +1,127 @@
+{
+  "model": "GBM growth relative to entrants, constant entry, exit hazard h; d = 0",
+  "seed": 20261008,
+  "exact_sample_size": 400000,
+  "time_stepping": {
+    "birth_rate": 1000.0,
+    "dt": 0.05,
+    "horizon": 300.0
+  },
+  "rows": [
+    {
+      "phi": -0.02,
+      "g": 0.07,
+      "sigma2": 0.1,
+      "h": 0.05,
+      "predicted_zeta": 0.819803902718557,
+      "exact_sampler": {
+        "zeta": 0.8199319362094295,
+        "se": 0.0016757435873233548,
+        "n_tail": 239409
+      },
+      "time_stepped": {
+        "zeta": 0.8056926840049164,
+        "se": 0.007356160419695451,
+        "n_tail": 11996,
+        "population": 20023
+      },
+      "stepped_log_resource_slope": 0.20500419304194265
+    },
+    {
+      "phi": -0.01,
+      "g": 0.060000000000000005,
+      "sigma2": 0.1,
+      "h": 0.05,
+      "predicted_zeta": 0.904987562112089,
+      "exact_sampler": {
+        "zeta": 0.9070649119430347,
+        "se": 0.0019339611949691163,
+        "n_tail": 219979
+      },
+      "time_stepped": {
+        "zeta": 0.900537219421347,
+        "se": 0.008536760718777113,
+        "n_tail": 11128,
+        "population": 20069
+      },
+      "stepped_log_resource_slope": 0.10080809664772145
+    },
+    {
+      "phi": 0.0,
+      "g": 0.05,
+      "sigma2": 0.1,
+      "h": 0.05,
+      "predicted_zeta": 1.0,
+      "exact_sampler": {
+        "zeta": 1.0019499856983922,
+        "se": 0.0022398851717660515,
+        "n_tail": 200097
+      },
+      "time_stepped": {
+        "zeta": 0.9881887491649627,
+        "se": 0.009876950250526222,
+        "n_tail": 10010,
+        "population": 20150
+      },
+      "stepped_log_resource_slope": -0.01819719696353511
+    },
+    {
+      "phi": 0.01,
+      "g": 0.04,
+      "sigma2": 0.1,
+      "h": 0.05,
+      "predicted_zeta": 1.104987562112089,
+      "exact_sampler": {
+        "zeta": 1.1073011123267378,
+        "se": 0.0026070458747732023,
+        "n_tail": 180399
+      },
+      "time_stepped": {
+        "zeta": 1.1110149571616927,
+        "se": 0.011730693406001986,
+        "n_tail": 8970,
+        "population": 19940
+      },
+      "stepped_log_resource_slope": -0.100807757873782
+    },
+    {
+      "phi": 0.02,
+      "g": 0.030000000000000002,
+      "sigma2": 0.1,
+      "h": 0.05,
+      "predicted_zeta": 1.219803902718557,
+      "exact_sampler": {
+        "zeta": 1.2228778796972288,
+        "se": 0.003046635460223547,
+        "n_tail": 161111
+      },
+      "time_stepped": {
+        "zeta": 1.2166251971247595,
+        "se": 0.013610792624961529,
+        "n_tail": 7990,
+        "population": 20098
+      },
+      "stepped_log_resource_slope": -0.21806075379511045
+    },
+    {
+      "phi": 0.05,
+      "g": 0.0,
+      "sigma2": 0.1,
+      "h": 0.05,
+      "predicted_zeta": 1.6180339887498951,
+      "exact_sampler": {
+        "zeta": 1.6135517268145563,
+        "se": 0.004850358327137797,
+        "n_tail": 110667
+      },
+      "time_stepped": {
+        "zeta": 1.5984836419376822,
+        "se": 0.02157357029032208,
+        "n_tail": 5490,
+        "population": 20071
+      },
+      "stepped_log_resource_slope": -0.6340681472197527
+    }
+  ],
+  "note": "Simulation of a stated model. It checks the algebra and the approach to the stationary state; it does not show that any real system satisfies the model."
+}

@@ -95,6 +95,26 @@ def rounded_gr_b(magnitudes, threshold, step=0.1):
     return float(np.log10(1+1/t.mean())/step),len(t)
 
 
+def gibrat_zeta(g, sigma2, d=0.0, h=0.0):
+    """Upper-tail survival exponent of a Gibrat population with entry and exit.
+
+    Incumbents grow as geometric Brownian motion with drift g and variance
+    rate sigma2, both measured relative to the size of new entrants; units
+    exit at hazard h and the entry rate grows at rate d. The stationary
+    normalized size distribution has P(S>s) ~ s^-zeta, with zeta the positive
+    root of (sigma2/2) z^2 + (g - sigma2/2) z - (d + h) = 0 (Reed 2001;
+    Saichev, Malevergne and Sornette 2010). Equivalently
+    (zeta - 1)(g + sigma2 zeta / 2) = phi with phi = d + h - g, the share of
+    the normalized total injected by entry per unit time. zeta = 1, equal
+    resource per log-size interval in the upper tail, iff phi = 0.
+    """
+    g, sigma2, d, h = (float(v) for v in (g, sigma2, d, h))
+    if not np.isfinite([g, sigma2, d, h]).all() or sigma2 <= 0 or d + h <= 0:
+        raise ValueError('Finite rates with sigma2 > 0 and d + h > 0 required')
+    b = g - sigma2 / 2
+    return float((-b + np.sqrt(b * b + 2 * sigma2 * (d + h))) / sigma2)
+
+
 def residual_audio(phi, sample_rate=22050, seconds_per_bin=0.3):
     """Illustrative mapping only: one octave per factor 2 in Phi, 440 Hz at 1.
 

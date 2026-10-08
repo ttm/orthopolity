@@ -9,7 +9,7 @@
 PY ?= python3
 export PYTHONPATH := src
 
-.PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory analyses paper clean
+.PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory resource gibrat analyses paper clean
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -37,7 +37,7 @@ restore-data:    ## explicitly permit network restoration of missing snapshots
 test:            ## accounting, estimator, goodness-of-fit and meta-analysis checks
 	$(PY) -m unittest discover -s tests -v
 
-analyses: pilot gof independent ensemble strata variance theory
+analyses: pilot gof independent ensemble strata variance theory resource gibrat
 
 pilot:           ## the three original pilots -> results/results.json
 	$(PY) experiments/run_pilot.py
@@ -59,6 +59,12 @@ variance:        ## between- vs within-ecosystem dispersion -> results/variance.
 
 theory:          ## deterministic mathematical illustrations (not empirical evidence)
 	$(PY) experiments/run_theory.py
+
+resource:        ## post hoc: does the verdict depend on the resource? -> results/resource_choice.json
+	$(PY) experiments/run_resource_choice.py
+
+gibrat:          ## simulated check of the Gibrat deviation law (not empirical evidence) -> results/gibrat.json
+	$(PY) experiments/run_gibrat.py
 
 paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 

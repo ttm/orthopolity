@@ -1,0 +1,137 @@
+{
+  "status": "Exploratory and post hoc; resources examined after the pilot results were known",
+  "earthquakes": {
+    "cases": [
+      {
+        "cutoff": 5.5,
+        "n": 6639,
+        "b": 0.99831638693147,
+        "b_ci": [
+          0.9728636790647178,
+          1.02385904706961
+        ],
+        "zeta_seismic_moment": 0.6655442579543133,
+        "zeta_seismic_moment_ci": [
+          0.6485757860431453,
+          0.6825726980464067
+        ],
+        "zeta_rupture_area_self_similar": 0.99831638693147,
+        "zeta_rupture_area_self_similar_ci": [
+          0.9728636790647178,
+          1.02385904706961
+        ],
+        "zeta_rupture_area_wells_coppersmith": 0.9783500591928406,
+        "zeta_rupture_area_wells_coppersmith_ci": [
+          0.9534064054834234,
+          1.0033818661282181
+        ]
+      },
+      {
+        "cutoff": 6.0,
+        "n": 2076,
+        "b": 0.9840774649888112,
+        "b_ci": [
+          0.9482461410111582,
+          1.025089102162945
+        ],
+        "zeta_seismic_moment": 0.6560516433258742,
+        "zeta_seismic_moment_ci": [
+          0.6321640940074388,
+          0.6833927347752966
+        ],
+        "zeta_rupture_area_self_similar": 0.9840774649888112,
+        "zeta_rupture_area_self_similar_ci": [
+          0.9482461410111582,
+          1.025089102162945
+        ],
+        "zeta_rupture_area_wells_coppersmith": 0.9643959156890349,
+        "zeta_rupture_area_wells_coppersmith_ci": [
+          0.9292812181909351,
+          1.004587320119686
+        ]
+      },
+      {
+        "cutoff": 6.5,
+        "n": 679,
+        "b": 0.9768369696903269,
+        "b_ci": [
+          0.9225005050990924,
+          1.041845111381452
+        ],
+        "zeta_seismic_moment": 0.6512246464602179,
+        "zeta_seismic_moment_ci": [
+          0.6150003367327282,
+          0.6945634075876346
+        ],
+        "zeta_rupture_area_self_similar": 0.9768369696903269,
+        "zeta_rupture_area_self_similar_ci": [
+          0.9225005050990924,
+          1.041845111381452
+        ],
+        "zeta_rupture_area_wells_coppersmith": 0.9573002302965203,
+        "zeta_rupture_area_wells_coppersmith_ci": [
+          0.9040504949971105,
+          1.0210082091538228
+        ]
+      }
+    ],
+    "large_event_width_saturation": {
+      "cutoff": 6.7,
+      "n": 446,
+      "b": 1.0166091456632769,
+      "b_ci": [
+        0.9647170714453326,
+        1.0824820057922235
+      ],
+      "zeta_rupture_area_hanks_bakun": 1.355478860884369,
+      "zeta_rupture_area_hanks_bakun_ci": [
+        1.286289428593777,
+        1.4433093410562978
+      ],
+      "note": "Hanks-Bakun scaling is for continental strike-slip events; the catalogue mixes mechanisms."
+    },
+    "caveat": "Areas are converted from magnitudes; no rupture area was measured. Zeta of an area proxy is a reparametrization of b, so these rows share one estimate."
+  },
+  "flares": {
+    "end_fluence_as_supplied": {
+      "n_positive": 9060,
+      "xmin": 0.005929065210084033,
+      "n_tail": 2159,
+      "alpha": 2.1254170084606936,
+      "alpha_ci_month_blocks": [
+        2.0256200201417096,
+        2.21928577740626
+      ],
+      "ks": 0.010529463767265046,
+      "gof_p": 0.9221556886227545,
+      "equal_resource_alpha": 2.0
+    },
+    "end_fluence_minus_background_times_duration": {
+      "n_positive": 9060,
+      "xmin": 0.0033051470924369743,
+      "n_tail": 1853,
+      "alpha": 1.8986510726060122,
+      "alpha_ci_month_blocks": [
+        1.8201496748374706,
+        1.9857813198773322
+      ],
+      "ks": 0.01584545833254279,
+      "gof_p": 0.5249500998003992,
+      "equal_resource_alpha": 2.0
+    },
+    "peak_irradiance": {
+      "n_positive": 10501,
+      "xmin": 5.511470588235294e-06,
+      "n_tail": 3212,
+      "alpha": 2.271632859129441,
+      "alpha_ci_month_blocks": [
+        2.1613689462996715,
+        2.3847771634309
+      ],
+      "ks": 0.014984028240004887,
+      "gof_p": 0.2055888223552894,
+      "equal_resource_alpha": null
+    },
+    "note": "Fluence is GOES 1-8 Angstrom band irradiance integrated over the event, not total flare energy. Peak irradiance is the coordinate, not a resource; its exponent is listed for comparison."
+  }
+}
