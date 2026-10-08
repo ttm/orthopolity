@@ -5,7 +5,21 @@ exhaustive priority search. Orthopolity is proposed as a general natural law;
 the comparisons below locate the specific mathematical, physical, and
 inferential claims without attributing established results to this proposal.
 
-## What is proposed
+## What is established and what is generalized
+
+The [capacity and hierarchy result](resource-capacity.md) establishes a precise
+mathematical core. Finite additive resource bounds threshold counts inversely;
+every complete partition level represents the same resource and therefore has
+count inversely proportional to mean resource per unit. Nesting, gaps and overlap
+are handled by an exact coverage identity. Applying nonlinear composites across
+those levels imposes explicit subdivision restrictions.
+
+These proofs use established additivity, integration and functional-equation
+arguments. The mathematical elementary nature does not limit the possible
+significance of their physical organization and consequences. It does mean
+that the new general-law claim is not established merely by renaming them.
+The contribution sought is a common account of how natural systems realize
+these relations and of the independently testable consequences that follow.
 
 The central proposal is that Nature tends to distribute resources equally
 among concentrations of those resources. Its operational formulation specifies
@@ -26,12 +40,20 @@ inversion alone does not establish that scope.
 
 | Established work | What it supplies | What this manuscript develops |
 |---|---|---|
+| Additive measures, covering counts and resource hierarchies | Finite-budget count bounds, level-wise conservation and geometric scaling | A capacity-to-allocation foundation, explicit overlap corrections, and subdivision consistency conditions for composite resources |
 | Resource-weighted distributions and ecological size spectra | Allocation identities, inverse-cost abundance conditional on equality, and observed biomass patterns | Explicit resource, measure, constraint and observation definitions across applications; the proposal of a general allocation tendency |
 | Reversible transport and statistical mechanics | Detailed balance, convergence, classical equipartition and quantum occupancy | Worked realizations of equality, constrained outcomes and recovery, with the physical comparison measure identified in each case |
 | Inverse optimization | Inference of objectives from choices across conditions under a restricted model family | Inference of candidate effective resource requirements from allocation profiles, followed by predictions with a shared composition rule |
 | Inverse statistical mechanics | Inference of interactions from ensemble observations | An allocation-level inverse problem that can be formulated before a complete microscopic interaction model is available; its resource/constraint ambiguity remains explicit |
 | Linear inverse problems | Rank, null spaces, conditioning and covariance propagation | Conditional identification and parameter-free transfer relations for resource-composition models; no claim that the underlying linear algebra is new |
 | Linguistic abbreviation and communication efficiency | Relationships among word frequency, length, context and communicative cost | A declared resource-allocation interpretation and a frozen comparison of candidate symbolic costs across text genres |
+
+[Tao (2011)](https://terrytao.wordpress.com/wp-content/uploads/2012/12/gsm-126-tao5-measure-book.pdf),
+Exercise 1.4.34, supplies standard indicator-integral and additivity foundations.
+[Bishop and Peres (2017)](https://www.math.stonybrook.edu/~bishop/fractalbook.pdf),
+Section 1.1, treats the geometric covering-count setting. An asymptotic box
+dimension does not by itself imply an exact resource plateau. In this paper,
+exactness follows from the specified complete partitions.
 
 [Keshavarz, Wang and Boyd (2011)](https://stanford.edu/~boyd/papers/imputed_objective.html)
 infer a parameterized convex objective from optimal or nearly optimal decisions

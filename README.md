@@ -1,8 +1,12 @@
 # Orthopolity
 
-Orthopolity is proposed here as a general natural law: Nature tends to distribute
-resources equally among concentrations of those resources. The project develops
-its basis, mathematical consequences, mechanisms, physical realizations and evidence.
+Orthopolity expresses the general natural-law principle that Nature tends to
+distribute resources equally among concentrations of those resources. The
+[mathematical foundation](docs/resource-capacity.md) establishes inverse
+resource-capacity bounds and exact inverse count--mean-resource relations across
+complete partitions, including nested boxes. The article develops their
+physical extension through mechanisms, known laws and empirical evidence.
+The general physical scope remains a claim to establish through those connections.
 The operative resource may be a nonlinear combination of several constituents.
 The framework therefore supports both forward allocation predictions and inverse
 inference of effective resources from observed distributions.
@@ -23,6 +27,13 @@ the task of predicting how constraints shape distributions.
 proposal, effective resources and forward/inverse inference. It sets six connected lines of work and an article
 structure. Specific derivations and empirical findings retain their stated scope.
 The [handoff](docs/ongoing-research.md) records current execution status.
+
+The **8 October geometric foundation** makes the elementary box argument explicit:
+each complete subdivision represents the same volume, with more units at smaller
+volume per unit. A coverage theorem handles missing and repeated resource accounting.
+It also restricts which nonlinear effective resources can remain unchanged when
+objects are subdivided. These are exact mathematical results with stated premises;
+coexisting size classes require their own allocation conditions.
 
 The [effective-resource formulation](docs/effective-resources.md) explains
 nonlinear composition, constituent budgets, and what a distribution identifies.

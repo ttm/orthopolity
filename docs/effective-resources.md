@@ -47,6 +47,15 @@ holding $(X,Y)=(1,1)$ contributes $Q_0$. Replacing it by two objects each
 holding $(1/2,1/2)$ preserves both constituent totals but gives only $Q_0/2$.
 Thus nonlinear composition can depend on actual assembly or fragmentation;
 arbitrary regrouping of the same observations cannot be treated as invariant.
+The [capacity and hierarchy theorem](resource-capacity.md#5-a-restriction-on-nonlinear-effective-resources)
+makes this restriction general. Homogeneous degree $h$ gives total
+$r^{1-h}Q_{\rm parent}$ under subdivision into $r$ equal proportional
+constituent vectors. Invariance for such a split requires $h=1$; invariance
+under every heterogeneous split on the full nonnegative cone requires a
+finite nonnegative $F$ to be a nonnegative linear combination. These
+conditions apply when the same resource is asserted to survive regrouping.
+Nonlinear requirements attached to a fixed physical object partition remain
+admissible, with their own balance and interaction terms.
 
 ## 2. Class means and the surviving constituent budgets
 

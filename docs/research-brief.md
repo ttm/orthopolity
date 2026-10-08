@@ -1,8 +1,9 @@
 # Orthopolity: research direction
 
 Established 5 October 2026; extended 6 October with the investigators' general-law,
-composite-resource and inverse-inference clarification, and 7 October with the
-linguistic resource application. This brief sets the active
+composite-resource and inverse-inference clarification, 7 October with the
+linguistic resource application, and 8 October with the capacity/hierarchy
+foundation. This brief sets the active
 direction for the repository and article.
 The [handoff](ongoing-research.md) records execution status; the
 [evidence ledger](evidence.md) and individual studies record findings.
@@ -23,6 +24,29 @@ no longer the organizing task. Specific equations, derivations, and empirical
 claims remain accountable to their assumptions and evidence. A failed model is
 information about that formulation; a successful example establishes the result
 for its stated setting.
+
+## Mathematical core and the box intuition
+
+The investigators' 7 October clarification puts the elementary resource-incidence
+principle at the center: a system supports more units when each needs less
+substance, as with small and large boxes, including nested boxes.
+Develop the strongest established statement before its physical extensions.
+The [capacity and hierarchy derivation](resource-capacity.md) now proves:
+
+- A finite additive budget gives $N_{\ge t}\le B/t$.
+- Every complete partition level obeys $N_j\bar q_j=B$, including nested levels.
+- Incomplete or overlapping descriptions obey $N_j\bar q_j=B\gamma_j$,
+  with independently defined resource coverage/multiplicity $\gamma_j$.
+- An effective resource invariant under subdivision has additional composition
+  restrictions; unrestricted split/merge invariance forces a linear form.
+
+The general natural-law ambition remains central. The article can state that
+it establishes this mathematical foundation. Calling the full physical extension
+established additionally requires evidence for its allocation conditions in the
+claimed domain. A count bound, a complete hierarchy and a mixed population's
+class distribution have distinct premises; specify which is being explained.
+Simple foundations can support important scientific consequences, while their
+established mathematical precedents must remain attributed.
 
 ## Effective resources and inverse use of the law
 

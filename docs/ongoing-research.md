@@ -1,6 +1,6 @@
 # Ongoing research: resume here
 
-Last updated: 7 October 2026. This is the mutable handoff document for ongoing
+Last updated: 8 October 2026. This is the mutable handoff document for ongoing
 work. It records the current objective, decisions, completed work and exact next
 steps. Immutable executed studies belong in the run registry; this document does
 not replace their frozen protocols or results.
@@ -41,6 +41,34 @@ retrospective validation, not global blinding or prospective data collection.
 
 ## Current state
 
+- **Capacity and complete-hierarchy foundation, completed 8 October:** the user's
+  clarification centers the simple resource-incidence principle and asks for
+  the strongest established law claim, including nested boxes.
+  [The derivation](resource-capacity.md) proves finite-resource threshold bounds,
+  complete-level count/mean-resource equality, and a coverage/multiplicity
+  correction. Homogeneous composites scale as $r^{1-h}$ under proportional
+  subdivision; arbitrary split/merge invariance on the full nonnegative
+  constituent cone forces a finite nonnegative composite to be linear.
+  Nonlinear resources at fixed physical partitions remain admissible.
+  The manuscript opening, Sections 2.1–2.2, discussion and conclusion now
+  lead with the established mathematical foundation and develop the general
+  natural-law extension. Capacity, complete descriptions and coexisting
+  classes have separate premises. Established accounting and geometric
+  precedents are cited; this revision does not claim new empirical evidence
+  or establish universal natural allocation by the box proof alone.
+  Independent mathematical review found the proofs sound; its two precision
+  corrections (nonempty level collections and finite composite functions)
+  were incorporated. Completed empirical algorithms, protocols and outputs
+  remain unchanged.
+  Independent framing review also clarified count upper bounds and joint
+  feasibility in the sharpness statement. Exact-arithmetic examples verify
+  volume closure, 20 hierarchy levels, 81 coverage/multiplicity cases and
+  12 homogeneous subdivisions. All 249 local documentation links resolve;
+  the registry audit retains 27 valid records and 677 file references.
+  The rebuilt PDF has 29 pages, no overfull boxes or LaTeX warnings, and
+  three underfull-spacing diagnostics in the existing exploratory table.
+  All pages were visually inspected, with detailed checks of the new proofs.
+
 - **Inverse identification and linguistic transfer, completed 7 October:**
   [the general result](effective-resources.md) establishes compatibility,
   rank and target identification, parameter-free cross-environment contrasts,
@@ -73,6 +101,12 @@ retrospective validation, not global blinding or prospective data collection.
   empirical methods and results moved to [supporting material](empirical-studies.md)
   without changing any earlier result. Main article Figures 1–5 remain;
   Figure 6 reports the linguistic comparison.
+  The final 29-page PDF was rebuilt and every page visually checked, with
+  detailed review of the new theorem, result table and linguistic figure.
+  No overfull boxes or LaTeX warnings remain; three underfull-spacing
+  diagnostics in the exploratory table have no clipping or legibility issue.
+  All 288 local links across the revised documentation resolve. Both new
+  make replay targets and idempotent registration targets pass offline.
 
 - **General-law and effective-resource revision, 6 October:** the manuscript now
   opens with the explicit general natural-law proposal and develops its basis,
@@ -133,7 +167,7 @@ retrospective validation, not global blinding or prospective data collection.
   distinction. The PDF was rebuilt and visually checked. This is a conceptual
   and editorial revision, with no new study or change to registered results.
 - Branch: `py314-and-package-names`. The inverse-resource and linguistic
-  revision is in the working tree. The preceding physical and empirical
+  revision is implemented in the repository. The preceding physical and empirical
   milestones remain in the recorded repository history. All earlier registered
   inputs, algorithms and results are unchanged. Run the full suite with
   `make test PY=python3.11`; replay the new studies with

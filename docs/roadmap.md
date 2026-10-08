@@ -1,6 +1,6 @@
 # Research roadmap
 
-## Active direction: updated 7 October 2026
+## Active direction: updated 8 October 2026
 
 The [research brief](research-brief.md) sets the current purpose: develop
 orthopolity as a proposed general natural law about Nature's tendency to
@@ -29,6 +29,13 @@ establish cross-environment contrasts, partial identification and conditioning;
 [the linguistic study](linguistic-resources.md) supplies a frozen transfer
 gain for a letter/phoneme composite and records its substantial remaining
 lexical and allocation discrepancies.
+
+The [capacity and hierarchy foundation](resource-capacity.md), developed from
+the investigators' nested-box clarification, now anchors the opening and
+Sections 2.1–2.2. It establishes the count bound, full-level equality,
+coverage correction and subdivision restriction on composite resources.
+Use these results to identify what each application actually compares:
+separate attainable capacities, complete descriptions, or competing classes.
 
 The next sequence is:
 

@@ -1,8 +1,8 @@
 # Orthopolity: a general law of resource allocation
 
-**Effective resources, constrained distributions, and inverse inference**
+**Resource capacity, complete hierarchies, and effective-resource inference**
 
-> Research manuscript, revised 7 October 2026. The analyses of Sections 3 and 4 are exploratory
+> Research manuscript, revised 8 October 2026. The analyses of Sections 3 and 4 are exploratory
 > or governed by a locally recorded plan. Section 5 distinguishes forecasts frozen before
 > outcome decoding from a plant transfer study frozen after raw outcome exposure.
 > None is an externally preregistered study.
@@ -12,43 +12,54 @@
 
 ## Abstract
 
-We propose orthopolity as a new general natural law: Nature tends to distribute resources
-equally among concentrations of those resources. Its expression depends on the comparison
-measure, interactions, and system and medium constraints. The operative resource may
-combine several constituents nonlinearly, so equality in one separately measured resource
-is only one possible manifestation. We formulate neutral and constrained allocation,
-forward prediction, and inverse inference of effective resources. A distribution identifies
-effective resource divided by its constraint profile, conditional on the measure.
-A shared product-resource family yields identification conditions, uncertainty bounds,
-and parameter-free predictions across environments. A reproducible synthetic study
-demonstrates recovery, partial identification, instability and detection of changed
-composition. A class-exchange mechanism proves equalization, an unequal equilibrium
-with opposing contributions, and recovery after release. Electromagnetic transport and
-thermal radiation supply established physical realizations with explicit measures and
-quantitative departures. A retrospective FIRAS calculation preserves the published
-product's reconstruction and uncertainty assumptions. Retained empirical studies provide
-conditional budget-closure successes, failed response forecasts and unresolved natural
-size-class neutrality. A new linguistic application infers a letter/phoneme resource
-combination and predicts withheld genres better than letter-only models, while training
-word frequencies remain substantially more predictive. City and linguistic Zipf relations
-supply distinct inverse targets. The contribution is the general-law proposal and its
-mathematical, physical and inferential framework; established component results retain
-their precedents, and the law's broader empirical scope remains to be determined.
+Orthopolity expresses a general resource-allocation principle: Nature tends to distribute
+resources equally among concentrations of those resources. We establish its mathematical
+foundation in finite resource capacity and complete hierarchies. A resource budget bounds
+the number of units above any resource threshold; at every complete partition level,
+total resource is identical and count is inversely proportional to mean resource per unit.
+A coverage identity extends this result to incomplete and overlapping descriptions,
+including nested boxes. These exact consequences of additive accounting anchor a general
+natural-law formulation whose expression depends on physical constraints and the comparison
+measure. Their extension to equal allocation among coexisting resource classes requires
+additional physical conditions. Effective resources may combine constituents nonlinearly;
+we derive a restriction on combinations that remain invariant under subdivision. Forward
+allocation and inverse inference then connect resource requirements to abundance.
+A shared product-resource family supplies identification conditions and predictions across
+environments, demonstrated in a reproducible synthetic study. Class exchange proves
+equalization, constrained equilibrium and recovery. Electromagnetic transport and thermal
+radiation supply established physical realizations. Retained empirical studies include
+conditional budget-closure successes and failed response forecasts. A frozen linguistic
+application predicts withheld genres better with combined letter/phoneme cost than with
+letter-only models, while lexical frequencies remain more predictive. The contribution
+connects an exact capacity and hierarchy principle to a testable allocation framework.
+Its component mathematics retains its established foundations; the broader physical
+scope of orthopolity remains an empirical claim.
 
 ## 1. Introduction
 
-We propose **orthopolity as a general natural law** governing the allocation of resources
-among their concentrations. Its central statement is:
+Orthopolity names a general principle connecting the resource held by a unit to the
+number of such units that a system can support. Its natural-law formulation is:
 
 **Nature tends to distribute resources equally among concentrations of those resources.**
 
-The law concerns a physical tendency whose observed expression depends on the system.
-Equal resource allocation can require unequal numbers of objects: concentrations that
-require more effective resource can be less abundant. This article develops the proposal's
-basis, mathematical consequences, mechanisms, physical realizations, empirical evidence,
-and inverse use for identifying the resources underlying observed systems. The general
-statement is a proposed law; each worked result specifies the conditions under which it
-has been derived or observed.
+The elementary intuition is geometric. A box of volume $V$ accommodates $V/v$ smaller
+boxes of volume $v$ when they tile it exactly. Halving the side of three-dimensional
+cubes multiplies their number by eight while leaving their combined volume unchanged.
+The same relation holds at every level of a complete nested subdivision. More generally,
+for a fixed additive budget, increasing the requirement per unit lowers the
+budget's upper bound on count.
+This is the mathematical starting point, before a stochastic model or fitted distribution.
+
+This paper establishes the resource-capacity bound and the complete-hierarchy equality
+under explicit assumptions, then develops **orthopolity as a general natural law** through
+mechanisms, known physical realizations, empirical comparisons and inverse inference.
+The elementary mathematics is established accounting; the generalizing claim concerns its
+organizing role across natural systems. A capacity bound, an equality across complete
+descriptions of the same system, and an abundance distribution among coexisting classes
+are related statements with different conditions. Section 2.1 connects them precisely.
+The broader claim of a physical allocation tendency remains subject to those conditions
+and to evidence about its scope. A simple mathematical foundation can have far-reaching
+physical consequences without making every extension an automatic theorem.
 
 The term follows Fabbri's [2024 essay](https://ttm.github.io/2024/08/14/power.html) and
 an earlier manuscript by Fabbri and Oliveira Jr. (2017). The earlier account assumes
@@ -140,6 +151,68 @@ accounting equivalence, not a derivation of the allocation assumption. The count
 total, and constants also satisfy $N=CZ$ and $R=C\mu(D)$. For a finite observed population,
 the identity is exact for class totals; a smooth density is a population model or approximation.
 
+**Finite capacity and complete hierarchies.** The box intuition has an exact formulation
+that precedes the neutral-allocation postulate. Let $\nu$ be a nonnegative additive
+resource measure on a system $\Omega$, with $B=\nu(\Omega)\in(0,\infty)$.
+This physical resource measure differs from the class comparison measure $\mu$.
+For disjoint units $A_i\subseteq\Omega$ with requirements $q_i=\nu(A_i)$,
+finite additivity gives the capacity bound
+
+$$N_{\ge t}=\#\{i:q_i\ge t\}\le B/t,\qquad t>0.$$
+
+Indeed, $tN_{\ge t}\le\sum_{q_i\ge t}q_i\le B$. Equal units of resource
+$q$ therefore obey $Nq\le B$, with equality when they exhaust the budget.
+In a cube of side $L$, cubes of side $\ell=L/m$, for integer $m\ge1$,
+tile it with $N=m^3$ and $N\ell^3=L^3$. For other side lengths an aligned
+grid accommodates $\lfloor L/\ell\rfloor^3$ cubes; the volume bound remains
+$N\ell^3\le L^3$. The grid construction is not a claim about optimal packing
+under arbitrary shape or orientation constraints.
+
+**Hierarchy theorem.** Suppose each level $j$ consists of a nonempty finite collection of
+positive-resource sets $A_{ji}$, and define the multiplicity
+$m_j(x)=\sum_i\mathbf 1_{A_{ji}}(x)$. If $N_j$ is their number and
+$\bar q_j=N_j^{-1}\sum_i\nu(A_{ji})$, then
+
+$$N_j\bar q_j=\int_\Omega m_j(x)\,d\nu(x)=B\gamma_j,
+\qquad \gamma_j=B^{-1}\int_\Omega m_j\,d\nu.$$
+
+This follows by integrating the finite sum of indicator functions. In particular,
+if every level completely partitions the same resource, $m_j=1$ almost
+everywhere and
+
+$$N_j\bar q_j=B,\qquad
+\frac{N_j}{N_h}=\frac{\bar q_h}{\bar q_j}.$$
+
+No equal-size assumption is needed for the mean-resource relation. Nesting between
+levels is allowed: a unit cube, its eight half-side subcubes, and its sixty-four
+quarter-side subcubes each account for one unit of volume at their respective levels.
+Within-level disjointness permits the same matter to be represented at several
+resolutions. Summing $J$ complete levels counts that underlying resource $J$ times;
+it does not create $J$ independent physical budgets. Hollow containers likewise
+require a choice between enclosed volume and wall material.
+
+For incomplete disjoint levels, $\gamma_j$ is the occupied resource fraction;
+for overlapping descriptions it is the mean multiplicity and may exceed one.
+The exact ratio becomes $N_j/N_h=(\gamma_j/\gamma_h)(\bar q_h/\bar q_j)$.
+Thus independently measured coverage supplies a quantitative correction to the
+inverse relation. A bound $m_j\le M$ also gives $N_{j,\ge t}\le MB/t$.
+Arbitrary overlap with no multiplicity bound has no finite capacity bound based
+on $B$ alone. Complete partitions fix the comparison structurally: one full
+accounting per level. Equal steps in logarithmic size arise when each refinement
+uses the same scale factor.
+
+This theorem establishes an exact inverse count--mean-resource relation across
+complete descriptions. A mixed population's size classes usually account for
+different parts of one budget. Writing their fractions as $f_j$ gives
+$N_j\bar q_j=Bf_j$, with $\sum_jf_j\le1$ for disjoint classes. Equal
+allocation across equally weighted classes then means equal $f_j$; finite
+capacity alone leaves those fractions undetermined. Sections 2.5 and 2.8 supply
+additional symmetry and dynamical conditions for that allocation statement.
+Additivity and multiplicity accounting are established mathematics (Tao, 2011);
+inverse-scale covering counts also have a developed geometric theory (Bishop and
+Peres, 2017). The [capacity and hierarchy derivation](resource-capacity.md)
+gives proofs, examples, and the implications for composite resources.
+
 ### 2.2 Effective resources in systems with coupled requirements
 
 An effective resource can combine several constituent requirements. For an object $i$,
@@ -170,6 +243,27 @@ stock, an accumulated requirement, an opportunity cost, or another explicitly de
 quantity, with its appropriate balance law.
 Collective interaction terms must be included or assigned to objects through a physical
 accounting convention without double counting.
+
+The hierarchy theorem yields a further restriction when an effective resource is
+required to describe the same underlying constituents at different resolutions.
+Let $F$ be homogeneous of degree $h$, and split a parent constituent vector into
+$r$ identical proportional parts. Their effective total is
+
+$$\sum_{i=1}^{r}Q_0F(\mathbf x/r)
+=r^{1-h}Q_0F(\mathbf x).$$
+
+Exact level invariance in this proportional subdivision therefore requires $h=1$
+for a positive parent and $r>1$. For product resources this becomes
+$\sum_\ell\theta_\ell=1$. Arbitrary heterogeneous subdivision is more
+restrictive: invariance requires $F(\mathbf x+\mathbf y)=F(\mathbf x)+F(\mathbf y)$.
+If all nonnegative constituent vectors are admissible, $F$ is finite and nonnegative,
+and $F(0)=0$,
+additivity implies $F(\mathbf x)=\sum_\ell c_\ell x_\ell$ with $c_\ell\ge0$.
+Thus nonlinear composition remains admissible on a physically specified object
+partition, or on a restricted family of constituent proportions, while invariance
+under every regrouping imposes a linear form. The supporting derivation proves
+these statements. They give a consistency test for applying a composite at several
+resolutions, without imposing homogeneity on resources defined only at one level.
 
 For algae, nutrient stocks per cell and available nutrient budgets differ; light can be
 an absorbed photon flux or an exposure integrated over a specified interval. Space and
@@ -380,6 +474,11 @@ constant density multiplier. It also survives $z=(k/k_0)^c$ for constant $c>0$, 
 $d\ln z=c\,d\ln k$. It is not invariant under arbitrary nonlinear coordinates. In general,
 $dR/dv=(dR/du)|du/dv|$. Choosing a transformation after observing $R$ can therefore manufacture
 flatness; the coordinate and measure must be fixed independently.
+More precisely, changing coordinates while carrying the same measure along
+preserves the allocation statement. Replacing that measure by a uniform
+measure in the new coordinate changes the hypothesis. The complete hierarchy
+in Section 2.1 chooses its levels through the construction of the system;
+that structural choice is separate from relabeling those levels.
 
 Under $O_{\log}$ and the power-cost assumption, the slope of abundance per log interval is
 $-d$, the ordinary density exponent is $d+1$, and the survival function on $[a,b]$ is
@@ -1059,8 +1158,12 @@ word frequencies; its resource profile remains descriptive.*
 
 The positive results concern conditional budget closure: a separately measured or geometric
 cost, declared shared resource conditions, and abundance or resource shares predicted from them. The runtime
-experiment and the algal lineages are the clearest cases; in the lineages the closure holds with
-cost proportional to volume, so the abundance gradient carries no information beyond geometry.
+experiment and the algal lineages are the clearest cases. In the lineages,
+volume scaling supplies the cost exponent; the empirical content is the
+approximately constant attained biovolume across separately grown lineages.
+The capacity theorem makes inverse-volume abundance conditional on that
+common attained budget. The biological observation concerns whether the
+lineages actually reach it.
 A rule that goes beyond closure, by predicting how a restriction redistributes resource among
 coexisting classes, failed in the grazed, dynamically changing food webs tested. The plant
 study now observes coexisting class stocks directly, but it does not
@@ -1075,7 +1178,15 @@ baseline and uneven resource shares retain the limits of that candidate.
 
 ## 6. Discussion
 
-Orthopolity is advanced here as a general natural-law proposal about resource allocation.
+Orthopolity has an exact mathematical core in finite capacity and complete resource
+hierarchies. The hierarchy theorem establishes inverse mean-resource incidence across
+full descriptions of the same resource, including nested units. Its coverage factor
+quantifies incomplete and repeated accounting. This distinguishes a result guaranteed
+by the construction from a physical claim that comparable natural concentrations
+receive comparable resources. Both belong in the framework: the exact result anchors
+the generalization and specifies which premise a natural application must establish.
+
+The general natural-law formulation concerns resource allocation.
 Its neutral expression is equal effective resource per physically specified comparison
 measure; its observed expression includes the effects of the system and medium. Effective
 resources can combine several constituents nonlinearly. A distribution that is not flat
@@ -1163,12 +1274,18 @@ resources through which natural systems are organized.
 
 ## 7. Conclusion
 
-We propose orthopolity as a general natural law: Nature tends to distribute resources
-equally among concentrations of those resources. The law's expression depends on the
-system's construction, medium, resource interactions and comparison measure. Its operative
-resource may be a nonlinear combination of several constituents. The framework therefore
-has both a forward use, predicting allocation from a resource model, and an inverse use,
-inferring effective resource structure from observed distributions.
+This paper establishes the mathematical foundation of orthopolity in finite resource
+capacity and complete resource hierarchies. Larger requirements impose inverse capacity
+bounds; complete descriptions of the same resource obey exact inverse relations between
+count and mean resource per unit. The result includes nested units and quantifies the
+effects of incomplete coverage and overlap. Requiring a composite resource to remain
+unchanged under subdivision further restricts its admissible form.
+
+The general natural-law formulation states that Nature tends to distribute resources
+equally among concentrations of those resources. Its expression depends on the system's
+construction, medium, interactions and comparison measure. Nonlinear effective resources
+remain possible within their declared physical partitions and constitutive conditions.
+Forward prediction and inverse inference connect that formulation to observable systems.
 
 The neutral allocation relation gives inverse-cost abundance under a declared measure.
 The class-exchange model supplies a mechanism, a constrained unequal equilibrium with
@@ -1182,11 +1299,12 @@ inverse application: a combined symbolic cost improves prediction over letter-on
 models, while a lexical baseline and residual allocation differences delimit
 its explanatory scope.
 
-Together these results provide the proposed law's mathematical and inferential foundation
-and several physical and empirical connections. They establish the stated conditional
-results rather than a universal identification of resources or mechanisms. The central
-research task is now to determine effective resources and constraints in further systems
-and test the new consequences that follow from the common allocation law.
+The exact geometric results and specified physical mechanisms establish the stated
+capacity, hierarchy and dynamical relations. The broader natural-law claim concerns
+their reach across independently characterized systems. Its scientific significance
+rests on that explanatory reach and on further consequences that can be tested.
+Identifying resources, coverage and constraints independently connects the simple core
+to those consequences.
 
 ## Data and code availability
 
@@ -1217,6 +1335,10 @@ The supplied 2017 manuscript was inspected privately and is not redistributed.
 Arranz, I., Fournier, B., Lester, N. P., Shuter, B. J., and Peres-Neto, P. R. (2022).
 Species compositions mediate biomass conservation: The case of lake fish communities.
 *Ecology*, 103, e3608. <https://doi.org/10.1002/ecy.3608>.
+
+Bishop, C. J., and Peres, Y. (2017). *Fractals in Probability and Analysis*.
+Cambridge University Press. Section 1.1.
+<https://www.math.stonybrook.edu/~bishop/fractalbook.pdf>.
 
 Boyd, S., and Vandenberghe, L. (2004). *Convex Optimization*. Cambridge University Press.
 Sections 4.7 and 5.6. <https://web.stanford.edu/~boyd/cvxbook/>.
@@ -1341,6 +1463,10 @@ Poynting, J. H. (1884). On the transfer of energy in the electromagnetic field.
 Sheldon, R. W., Prakash, A., and Sutcliffe, W. H., Jr. (1972). The size distribution of
 particles in the ocean. *Limnology and Oceanography*, 17, 327–340.
 <https://doi.org/10.4319/lo.1972.17.3.0327>.
+
+Tao, T. (2011). *An Introduction to Measure Theory*. Graduate Studies in
+Mathematics, 126. American Mathematical Society. Exercise 1.4.34.
+<https://terrytao.wordpress.com/wp-content/uploads/2012/12/gsm-126-tao5-measure-book.pdf>.
 
 Tong, D. (n.d.). *Statistical Physics*. University of Cambridge Part II Mathematical
 Tripos lecture notes, Sections 1.3, 2.2.1 and 3.2. Accessed 6 October 2026.

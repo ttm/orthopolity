@@ -6,7 +6,18 @@ mathematical developments, and study-specific findings. The
 purpose and priorities; the assessments here describe the work evaluated at
 their respective dates.
 
-**7 October update:** the manuscript now combines the general-law proposal,
+**8 October geometric-foundation update:** the manuscript now leads with an
+exact resource-capacity and complete-hierarchy foundation, developed from the
+investigators' nested-box intuition. The [supporting derivation](resource-capacity.md)
+proves inverse threshold bounds, equal resource at every complete level,
+coverage/overlap corrections and subdivision restrictions on nonlinear
+composites. This strengthens the conceptual organization and makes the
+mathematical/physical distinction precise. The component accounting facts are
+established mathematics; this revision adds no new empirical observation.
+The potentially substantial contribution lies in the generalization and
+its independently supported consequences, whose scope remains to be established.
+
+**7 October inverse-resource update:** the manuscript now combines the general-law proposal,
 worked mechanisms and physical realizations with a conditional identification
 and transfer result and an executed inverse-resource application. The
 [synthetic demonstration](inverse-resources.md) verifies recovery, uncertainty,
