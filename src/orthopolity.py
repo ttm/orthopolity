@@ -118,6 +118,51 @@ def gibrat_zeta(g, sigma2, d=0.0, h=0.0):
     return float((-b + np.sqrt(b * b + 2 * sigma2 * (d + h))) / sigma2)
 
 
+def resource_exponents(exponent, kind='density'):
+    """Orthopolic resource exponents implied by a power-law exponent.
+
+    kind: 'density' (dN/dk ∝ k^-alpha), 'survival' (P(K>k) ∝ k^-zeta) or
+    'rank' (k ∝ rank^-r). The resource q ∝ k^d making the system
+    log-orthopolic has d_log = alpha - 1; linear-orthopolic, d_lin = alpha.
+    """
+    x = float(exponent)
+    if not np.isfinite(x) or x <= 0:
+        raise ValueError('A positive finite exponent is required')
+    alpha = {'density': lambda: x, 'survival': lambda: x + 1, 'rank': lambda: 1 + 1 / x}.get(kind)
+    if alpha is None:
+        raise ValueError("kind must be 'density', 'survival' or 'rank'")
+    alpha = alpha()
+    return dict(alpha=alpha, d_log=alpha - 1, d_lin=alpha)
+
+
+def simple_rationals(max_denominator, lo, hi):
+    """Sorted distinct fractions p/q in [lo, hi] with 1 <= q <= max_denominator."""
+    if max_denominator < 1 or not hi > lo:
+        raise ValueError('max_denominator >= 1 and hi > lo required')
+    vals = {p / q for q in range(1, int(max_denominator) + 1)
+            for p in range(int(np.floor(lo * q)), int(np.ceil(hi * q)) + 1) if lo <= p / q <= hi}
+    return np.array(sorted(vals))
+
+
+def chance_match(candidates, tolerance, lo, hi):
+    """Fraction of [lo, hi] lying within tolerance of some candidate exponent.
+
+    It is the probability that an exponent drawn uniformly from [lo, hi]
+    'matches' a candidate by chance, the baseline any claimed pattern of
+    exponent-to-resource matches must beat.
+    """
+    c = np.sort(np.asarray(candidates, float))
+    if tolerance < 0 or not hi > lo:
+        raise ValueError('Nonnegative tolerance and hi > lo required')
+    covered, end = 0.0, lo
+    for a, b in zip(np.maximum(c - tolerance, lo), np.minimum(c + tolerance, hi)):
+        if b <= end or a >= b:
+            continue
+        covered += b - max(a, end)
+        end = b
+    return float(covered / (hi - lo))
+
+
 def residual_audio(phi, sample_rate=22050, seconds_per_bin=0.3):
     """Illustrative mapping only: one octave per factor 2 in Phi, 440 Hz at 1.
 
