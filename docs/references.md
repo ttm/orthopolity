@@ -186,9 +186,28 @@ abstracts and search extracts only; read the full texts before any priority stat
   7, 595–601. **Malcai, O., Biham, O. & Solomon, S. (1999).** *Phys. Rev. E* 60, 1299–1303. — Floor
   relative to the mean sets the exponent; limits $N\to\infty$ and floor $\to0$ do not commute.
 - **Gabaix, X. (1999).** Zipf's law for cities: an explanation. *QJE* 114, 739–767. — Gibrat growth
-  with normalization gives $\zeta\to1$; finite floor gives $\zeta>1$.
+  with normalization gives $\zeta\to1$; a finite floor gives $\zeta>1$. The closed form
+  $\zeta=1/(1-s_{\min}/\bar s)$ was not found in the retrieved text; it is an identity for a Pareto
+  tail at fixed mean (Levy and Solomon; Rozenfeld et al. 2011).
 - **Reed, W. J. (2001).** The Pareto, Zipf and other power laws. *Economics Letters* 74, 15–19. —
-  Geometric Brownian motion observed at exponential times gives a double Pareto law.
+  Geometric Brownian motion observed at exponential times gives a double Pareto law; the exponent
+  equation used in `gibrat_zeta`.
+- **Reed, W. J. & Hughes, B. D. (2002).** From gene families and genera to incomes and internet file
+  sizes: why power laws are so common in nature. *Phys. Rev. E* 66, 067103. — The same mechanism
+  argued across domains; prior art for any cross-domain claim.
+- **Blank, A. & Solomon, S. (2000).** Power laws in cities population, financial markets and internet
+  sites. *Physica A* 287, 279–288. — $\zeta\approx1$ over a broad range when the number of units varies.
+- **Luttmer, E. G. J. (2007).** Selection, growth, and the size distribution of firms. *QJE* 122,
+  1103–1144. — Tail index just above 1 when the entrant–incumbent productivity-growth gap is small.
+- **Beare, B. K. & Toda, A. A. (2022).** Determination of Pareto exponents in economic models driven
+  by Markov multiplicative processes. *Econometrica* 90, 1811–1833.
+- **Gabaix, X., Lasry, J.-M., Lions, P.-L. & Moll, B. (2016).** The dynamics of inequality.
+  *Econometrica* 84, 2071–2111. — Random-growth tails relax too slowly to explain observed changes.
+- **Ioannides, Y. M. & Overman, H. G. (2003).** Zipf's law for cities: an empirical examination.
+  *Reg. Sci. Urban Econ.* 33, 127–137. — Local exponents from size-dependent growth moments.
+- **Amaral, L. A. N. et al. (1997).** Scaling behavior in economics I. *J. Phys. I France* 7, 621.
+  **Rozenfeld, H. D. et al. (2008).** *PNAS* 105, 18702–18707. — Growth volatility falls with size for
+  firms (exponent 0.18–0.20) and cities: Gibrat fails in the variance.
 - **Saichev, A., Malevergne, Y. & Sornette, D. (2010).** *Theory of Zipf's Law and Beyond.* LNEMS 632,
   Springer. **Malevergne, Y., Saichev, A. & Sornette, D. (2013).** Zipf's law and maximum sustainable
   growth. *J. Econ. Dyn. Control* 37, 1195–1212. — Balance condition for $\zeta=1$ with births and
@@ -204,6 +223,13 @@ abstracts and search extracts only; read the full texts before any priority stat
 - **Eeckhout, J. (2004).** Gibrat's law for (all) cities. *AER* 94, 1429–1451. **Soo, K. T. (2005).**
   *Reg. Sci. Urban Econ.* 35, 239–263. **Schwarzkopf, Y. & Farmer, J. D. (2010).** *Phys. Rev. E* 81,
   066113. — Counterexamples and slow relaxation within the proportional-growth class.
+- **Montroll, E. W. & Shlesinger, M. F. (1982).** On 1/f noise and other distributions with long
+  tails. *PNAS* 79, 3380–3383. **Perline, R. (2005).** Strong, weak and false inverse power laws.
+  *Statistical Science* 20, 68–88. — Broad lognormals mimic power laws over wide ranges.
+- **Aban, I. B., Meerschaert, M. M. & Panorska, A. K. (2006).** Parameter estimation for the truncated
+  Pareto distribution. *JASA* 101, 270–277.
+- **Corominas-Murtra, B., Hanel, R. & Thurner, S. (2015).** *PNAS* 112, 5348–5353. — Zipf from
+  sample-space-reducing processes.
 - **Corominas-Murtra, B. & Solé, R. V. (2010)** *Phys. Rev. E* 82, 011102; **Mazzarisi, O. et al.
   (2021)** *Phys. Rev. Lett.* 127, 128301; **Hernando, A. et al. (2010)** *Physica A* 389, 490–498. —
   Other routes to $\zeta=1$; observing $\zeta\approx1$ does not identify the mechanism.
@@ -225,7 +251,7 @@ abstracts and search extracts only; read the full texts before any priority stat
   claim; logarithmic orthopolity in area for $d=3$.
 - **Dohnanyi, J. S. (1969).** *JGR* 74, 2531–2554. **O'Brien, D. P. & Greenberg, R. (2003).** *Icarus*
   164, 334–345. — Cascade exponents that differ from 1.
-- **Cael, B. B. & Seekell, D. A. (2016).** *Sci. Rep.* 6, 29633; corrigendum (2017) 7, 42039. — Lake
+- **Cael, B. B. & Seekell, D. A. (2016).** *Sci. Rep.* 6, 29633; corrigendum (2017) *Sci. Rep.* 7, 42155. — Lake
   areas $\tau=2.14$ against percolation 2.055.
 - **Andersen, K. H. & Beyer, J. E. (2006).** *Am. Nat.* 168, 54–61. **Hartvig, M., Andersen, K. H. &
   Beyer, J. E. (2011).** *J. Theor. Biol.* 272, 113–122. — $\lambda=2+q-n\approx2.05$.
@@ -235,7 +261,8 @@ abstracts and search extracts only; read the full texts before any priority stat
 - **Platt, T. & Denman, K. (1977).** Organisation in the pelagic ecosystem. *Helgoländer wiss.
   Meeresunters.* 30, 575–581.
 - **Schwamborn, R. (2025).** Towards a compleat theory of ecosystem size spectra. arXiv:2509.00023
-  (not peer reviewed). — Slope −1 as an equilibrium constant.
+  (not peer reviewed). — Treats a slope near −1 as constant across systems, with stress-driven
+  departures; quote its own wording.
 - **Frank, S. A. (2016).** The invariances of power law size distributions. *F1000Research* 5, 2074.
   **Frank, S. A. (2019).** *F1000Research* 8, 334. — Conserved totals and scale invariance.
 - **Harte, J. (2011).** *Maximum Entropy and Ecology.* Oxford University Press. **Xiao, X., McGlinn,

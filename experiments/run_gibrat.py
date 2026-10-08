@@ -4,9 +4,14 @@ Units enter at size 1, grow as geometric Brownian motion with drift g and
 variance rate sigma2 relative to entrants, and exit at hazard h; entry is
 constant (d = 0). The stationary upper tail is Pareto with exponent zeta,
 the positive root of (sigma2/2) z^2 + (g - sigma2/2) z - h = 0, equivalently
-(zeta - 1)(g + sigma2 zeta/2) = phi with phi = h - g the share of the
-normalized total injected by entry per unit time (gibrat_zeta in src/).
-zeta = 1, equal resource per logarithmic size interval, holds iff phi = 0.
+(zeta - 1)(g + sigma2 zeta/2) = phi with phi = h - g (gibrat_zeta in src/).
+
+The resource budget dQ/dt = (g - h) Q + J_R makes phi = J_R/Q in a stationary
+population, the entry flux over the total: the inverse residence time of a
+resource unit. With positive entry phi > 0, so zeta > 1 strictly; zeta = 1,
+equal resource per logarithmic size interval, is the limit of long residence,
+zeta - 1 ≈ 1/(m tau_res) with m = g + sigma2/2 the resource-weighted log
+growth rate. At phi <= 0 the total grows without bound; no stationary total.
 
 Two checks: an exact stationary sampler over a grid of phi, and a
 time-stepped population started empty, which tests that the dynamics reach
@@ -76,12 +81,15 @@ def main():
         zs, ses, ns = tail_fit(x)
         s = resource_spectrum(x[x >= 1], x[x >= 1], edges)
         profiles[phi] = s
+        entry_share = STEP['birth_rate'] / x.sum()   # J_R / Q, entrants have size 1
         rows.append(dict(phi=phi, g=g, sigma2=SIGMA2, h=H, predicted_zeta=predicted,
                          exact_sampler=dict(zeta=z, se=se, n_tail=n),
                          time_stepped=dict(zeta=zs, se=ses, n_tail=ns, population=len(x)),
-                         stepped_log_resource_slope=resource_slope(s)))
+                         stepped_log_resource_slope=resource_slope(s),
+                         stepped_entry_flux_share=float(entry_share),
+                         log_transport_per_residence=float((g + SIGMA2 / 2) / entry_share)))
         print(f"phi={phi:+.2f}  predicted zeta={predicted:.3f}  exact={z:.3f}±{se:.3f}  "
-              f"stepped={zs:.3f}±{ses:.3f} (n={len(x)})")
+              f"stepped={zs:.3f}±{ses:.3f} (n={len(x)})  J_R/Q={entry_share:.4f}")
 
     fig, axes = plt.subplots(1, 2, figsize=(11, 4.2), layout='constrained')
     ax = axes[0]
@@ -115,6 +123,8 @@ def main():
     plt.close(fig)
     (OUT / 'gibrat.json').write_text(json.dumps(dict(
         model='GBM growth relative to entrants, constant entry, exit hazard h; d = 0',
+        budget_identity='Stationary phi equals J_R/Q; compare stepped_entry_flux_share with phi '
+                        'for phi > 0. For phi <= 0 the total is not stationary and J_R/Q decays with time.',
         seed=SEED, exact_sample_size=N_EXACT, time_stepping=STEP, rows=rows,
         note='Simulation of a stated model. It checks the algebra and the approach to the '
              'stationary state; it does not show that any real system satisfies the model.'),

@@ -1,5 +1,6 @@
 {
   "model": "GBM growth relative to entrants, constant entry, exit hazard h; d = 0",
+  "budget_identity": "Stationary phi equals J_R/Q; compare stepped_entry_flux_share with phi for phi > 0. For phi <= 0 the total is not stationary and J_R/Q decays with time.",
   "seed": 20261008,
   "exact_sample_size": 400000,
   "time_stepping": {
@@ -25,7 +26,9 @@
         "n_tail": 11996,
         "population": 20023
       },
-      "stepped_log_resource_slope": 0.20500419304194265
+      "stepped_log_resource_slope": 0.20500419304194265,
+      "stepped_entry_flux_share": 0.0013509467309056038,
+      "log_transport_per_residence": 88.82659638219658
     },
     {
       "phi": -0.01,
@@ -44,7 +47,9 @@
         "n_tail": 11128,
         "population": 20069
       },
-      "stepped_log_resource_slope": 0.10080809664772145
+      "stepped_log_resource_slope": 0.10080809664772145,
+      "stepped_entry_flux_share": 0.003941403965704113,
+      "log_transport_per_residence": 27.908836789417766
     },
     {
       "phi": 0.0,
@@ -63,7 +68,9 @@
         "n_tail": 10010,
         "population": 20150
       },
-      "stepped_log_resource_slope": -0.01819719696353511
+      "stepped_log_resource_slope": -0.01819719696353511,
+      "stepped_entry_flux_share": 0.0046526564737439996,
+      "log_transport_per_residence": 21.49309766674647
     },
     {
       "phi": 0.01,
@@ -82,7 +89,9 @@
         "n_tail": 8970,
         "population": 19940
       },
-      "stepped_log_resource_slope": -0.100807757873782
+      "stepped_log_resource_slope": -0.100807757873782,
+      "stepped_entry_flux_share": 0.015237762742636904,
+      "log_transport_per_residence": 5.906378877272468
     },
     {
       "phi": 0.02,
@@ -101,7 +110,9 @@
         "n_tail": 7990,
         "population": 20098
       },
-      "stepped_log_resource_slope": -0.21806075379511045
+      "stepped_log_resource_slope": -0.21806075379511045,
+      "stepped_entry_flux_share": 0.02313294731525085,
+      "log_transport_per_residence": 3.4582709634780704
     },
     {
       "phi": 0.05,
@@ -120,7 +131,9 @@
         "n_tail": 5490,
         "population": 20071
       },
-      "stepped_log_resource_slope": -0.6340681472197527
+      "stepped_log_resource_slope": -0.6340681472197527,
+      "stepped_entry_flux_share": 0.04975485966994945,
+      "log_transport_per_residence": 1.0049269625455022
     }
   ],
   "note": "Simulation of a stated model. It checks the algebra and the approach to the stationary state; it does not show that any real system satisfies the model."

@@ -8,7 +8,9 @@ and the supplied 2017 manuscript by Renato Fabbri and Osvaldo N. Oliveira Jr.
 test of a conditional hypothesis. The current evidence does not establish a new natural law,
 a cosmological principle, or equal resource allocation in an average ecosystem.
 
-The revised [scientific manuscript](docs/paper.md) is the main document.
+The revised [scientific manuscript](docs/paper.md) is the main document. The
+[research programme](docs/research-program.md) sets out the form in which orthopolity could be
+established, as the long-residence limit of proportional growth, and the tests that would decide it.
 
 ## What the hypothesis says
 
@@ -98,6 +100,8 @@ Git records commit order, not independently verified blinding or external prereg
 | [docs/value.md](docs/value.md) / [docs/criticism.md](docs/criticism.md) | Reasons to pursue a limited study and limits on its contribution |
 | [docs/not-worth-pursuing.md](docs/not-worth-pursuing.md) | Claims and directions the present evidence does not justify |
 | [docs/roadmap.md](docs/roadmap.md) | Remaining scientific and submission work |
+| [docs/research-program.md](docs/research-program.md) | Testable formulation, mechanism, prior art, pre-registered tests and falsification criteria |
+| [docs/zeta-compilation.md](docs/zeta-compilation.md) | Provisional compilation of published exponents across 49 systems |
 | [docs/references.md](docs/references.md) | Annotated literature and primary sources |
 | [src/](src/) / [tests/](tests/) | Accounting, distribution fitting, equivalence diagnostics, meta-analysis, and regression checks |
 | [experiments/](experiments/) / [results/](results/) | Reproducible analyses and outputs |

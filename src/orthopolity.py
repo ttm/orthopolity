@@ -104,9 +104,12 @@ def gibrat_zeta(g, sigma2, d=0.0, h=0.0):
     normalized size distribution has P(S>s) ~ s^-zeta, with zeta the positive
     root of (sigma2/2) z^2 + (g - sigma2/2) z - (d + h) = 0 (Reed 2001;
     Saichev, Malevergne and Sornette 2010). Equivalently
-    (zeta - 1)(g + sigma2 zeta / 2) = phi with phi = d + h - g, the share of
-    the normalized total injected by entry per unit time. zeta = 1, equal
-    resource per log-size interval in the upper tail, iff phi = 0.
+    (zeta - 1)(g + sigma2 zeta / 2) = phi with phi = d + h - g. In a
+    stationary population the resource budget makes phi = J_R/Q, entry flux
+    over the normalized total, so positive entry gives zeta > 1; zeta = 1,
+    equal resource per log-size interval, is the long-residence limit
+    phi -> 0+, with zeta - 1 ~ phi/(g + sigma2/2). phi < 0 has no
+    stationary total.
     """
     g, sigma2, d, h = (float(v) for v in (g, sigma2, d, h))
     if not np.isfinite([g, sigma2, d, h]).all() or sigma2 <= 0 or d + h <= 0:
