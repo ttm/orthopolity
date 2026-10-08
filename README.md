@@ -4,9 +4,12 @@ A critical investigation of the idea that equal resource allocation can produce 
 object abundance. The starting points are [Fabbri's 2024 essay](https://ttm.github.io/2024/08/14/power.html)
 and the supplied 2017 manuscript by Renato Fabbri and Osvaldo N. Oliveira Jr.
 
-**Assessment:** the idea merits a scientific document as a precise synthesis and reproducible
-test of a conditional hypothesis. The current evidence does not establish a new natural law,
-a cosmological principle, or equal resource allocation in an average ecosystem.
+**Status:** see [docs/status.md](docs/status.md) for the authors' intent, results, current
+assessment and next steps. In brief, the repository holds a reproducible critical analysis
+(September 2026), a research programme for establishing orthopolity as the long-residence limit
+of proportional growth, and a catalogue reading 59 power laws as orthopolic resources, which
+fall into a few rules where exponents are dimension counts. No pre-registered test has yet been
+run; the evidence does not yet establish a general law.
 
 The revised [scientific manuscript](docs/paper.md) is the main document. The
 [research programme](docs/research-program.md) sets out the form in which orthopolity could be
@@ -100,6 +103,7 @@ Git records commit order, not independently verified blinding or external prereg
 | [docs/value.md](docs/value.md) / [docs/criticism.md](docs/criticism.md) | Reasons to pursue a limited study and limits on its contribution |
 | [docs/not-worth-pursuing.md](docs/not-worth-pursuing.md) | Claims and directions the present evidence does not justify |
 | [docs/roadmap.md](docs/roadmap.md) | Remaining scientific and submission work |
+| [docs/status.md](docs/status.md) | Start here: intent, history, results, assessment, next steps |
 | [docs/glossary.md](docs/glossary.md) | Etymology and word forms (orthopolity, orthopolic), reference measures, resource exponents |
 | [docs/research-program.md](docs/research-program.md) | Testable formulation, mechanism, prior art, pre-registered tests and falsification criteria |
 | [docs/resource-catalogue.md](docs/resource-catalogue.md) | Orthopolic resources inferred for 59 power laws, the rules they follow, and predictions to test |

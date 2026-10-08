@@ -75,7 +75,7 @@ primary sources.
 for 25 cases. Bars are the reported range or uncertainty of the observation. (B) The probability
 that an exponent drawn at random from [1, 4.5] lies within a tolerance of some simple fraction.*
 
-Sixteen of 25 cases fall within the observational range. The nine outside it are informative:
+Seventeen of 25 cases fall within the observational range. The eight outside it are informative:
 
 | Case | Rule value | Observed | Reading |
 |---|---|---|---|

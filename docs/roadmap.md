@@ -1,5 +1,8 @@
 # Remaining work
 
+> Superseded for next steps by [status.md](status.md) (8 October 2026). The submission
+> requirements below still apply.
+
 The repository now contains a complete critical manuscript, corrected definitions, a direct
 audit of the supplied essay, and reproducible exploratory analyses. It is a research draft,
 not a submission-ready announcement of a new law.
