@@ -46,6 +46,12 @@ $\zeta=0.666$ for seismic moment and $\zeta=0.998$ for rupture area converted by
 scaling ([resource_choice.json](../results/resource_choice.json)). Choosing a resource after
 seeing the data can produce orthopolity anywhere.
 
+That freedom is valuable for exploration: reading an exponent as a candidate resource suggests
+how a system is organized, and across 59 power laws the readings fall into a few rules in which
+exponents are dimension counts, such as $\alpha=1+d_s/D_k$ for objects tiling a support of
+dimension $d_s$ ([resource-catalogue.md](resource-catalogue.md)). Confirmation is a separate step:
+the resource is fixed by the rule below before the data are examined.
+
 **Resource rule**, frozen and published before any test system's size distribution is examined:
 
 1. *Unit.* Defined by a published operational algorithm that uses no size statistics (a legal
