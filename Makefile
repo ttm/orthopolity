@@ -23,6 +23,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: class-exchange class-exchange-report class-exchange-registry
 .PHONY: thermal-sources thermal-radiation thermal-radiation-registry
 .PHONY: inverse-resources inverse-resources-registry linguistic-sources linguistic-resources linguistic-resources-registry
+.PHONY: cell-division-sources cell-division cell-division-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -96,6 +97,15 @@ inverse-resources: ## conditional identification and synthetic cross-environment
 
 inverse-resources-registry: ## archive/audit the retained synthetic identification study
 	$(PY) experiments/register_inverse_resources.py
+
+cell-division-sources: ## offline: audit the published bacterial calibration/target figures
+	$(PY) experiments/fetch_cell_division.py
+
+cell-division: cell-division-sources ## replay the frozen published-summary transfer
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_cell_division.py --stage evaluate --output-dir $(STUDY_OUTPUT_ROOT)/cell-division
+
+cell-division-registry: ## archive/audit the retained bacterial summary comparison
+	$(PY) experiments/register_cell_division.py
 
 linguistic-sources: ## offline: verify pinned corpus and pronunciation source files
 	$(PY) experiments/fetch_linguistic_resources.py

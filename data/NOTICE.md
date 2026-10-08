@@ -1,5 +1,16 @@
 # Third-party data notice
 
+`data/cell-division/2026-10-08/` retains the XML and original Figure 1/2 images
+of Gangan, M. S., and Athale, C. A. (2017), *Threshold effect of growth rate on
+population variability of Escherichia coli cell lengths*, Royal Society Open
+Science 4, 160417, DOI [10.1098/rsos.160417](https://doi.org/10.1098/rsos.160417).
+Copyright 2017 The Authors; [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+The figures are unchanged; JSON transcriptions, analytic forecasts and comparison
+plots are identified as derived work in [the report](../docs/cell-division.md).
+Europe PMC and the official NCBI open-access S3 archive supply these copies.
+Dryad dataset/file metadata are retained as provenance; the raw workbook was
+not downloaded. Source-specific terms do not become the package MIT licence.
+
 `data/measure-candidates/2026-10-04/` retains provider metadata and two
 biological archives. [Ghedini, Malerba and Marshall (2020)](https://doi.org/10.26180/5e30e9e2b02b3)
 and [Ghedini, Loreau and Marshall (2020)](https://doi.org/10.26180/5e2a1a8d74be7)

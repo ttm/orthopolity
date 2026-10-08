@@ -34,10 +34,17 @@ retained history; neither mechanism proves external preregistration or blinding.
 
 ## Catalogue
 
-The inverse-resource and linguistic studies completed on 7 October bring the
-catalogue to **27 records and 677 file references**. The earlier records and
+The bacterial summary transfer completed on 8 October brings the
+catalogue to **28 records and 704 file references**. The earlier records and
 all their retained inputs and results remain intact.
 
+- `cell-division-summary-2026-10-08` records a retrospective comparison using
+  printed lognormal birth and batch-population moments. Four forecasts were
+  frozen before numerical target-figure retrieval; qualitative findings were
+  already known. Mean transfer is close, variability is overpredicted, and
+  joint superiority is not established. The protocol's overly strong word
+  "rejects" is explicitly clarified in the registry summary and
+  [report](cell-division.md); the frozen protocol is unchanged.
 - `inverse-resources-2026-10-06` is a constructed simulation: fixed constituent
   exponents, known offsets, analytic predictions, 20,000 correlated Gaussian
   replicates, partial identification and conditioning examples. It adds no

@@ -28,6 +28,16 @@ proposal, effective resources and forward/inverse inference. It sets six connect
 structure. Specific derivations and empirical findings retain their stated scope.
 The [handoff](docs/ongoing-research.md) records current execution status.
 
+The **8 October biological mechanism and transfer** now connects growth/division
+to mass allocation across logarithmic cell sizes. A known lineage/population
+sampling relation determines the constraint envelope from birth measurements.
+In a [published-summary comparison](docs/cell-division.md), birth-calibrated
+predictions match separate bacterial population mean lengths within 2.72% and
+0.447%, without target fitting. Variability is overpredicted; the declared
+two-endpoint superiority criterion is not met. The study retains all four
+forecasts and explicitly treats length as a mass proxy.
+Replay it with `make cell-division PY=python3.11`.
+
 The **8 October geometric foundation** makes the elementary box argument explicit:
 each complete subdivision represents the same volume, with more units at smaller
 volume per unit. A coverage theorem handles missing and repeated resource accounting.
@@ -56,8 +66,8 @@ over word types, and compares its contribution with
 
 Reproduce the new studies offline with
 `make inverse-resources linguistic-resources PY=python3.11`.
-The retained registry now contains 27 records and 677 file references.
-All 393 tests pass. Earlier detailed empirical accounts remain available in
+The retained registry now contains 28 records and 704 file references.
+All 398 tests pass, including five new numerical tests. Earlier detailed empirical accounts remain available in
 [the supporting report](docs/empirical-studies.md); their conclusions are
 unchanged.
 

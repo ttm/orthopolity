@@ -6,6 +6,23 @@ mathematical developments, and study-specific findings. The
 purpose and priorities; the assessments here describe the work evaluated at
 their respective dates.
 
+**8 October mechanism-to-data update:** [growth and division](cell-division.md)
+provide a precise natural-system mechanism: mass-weighted population sampling
+equals chronological lineage sampling under common exponential growth and
+symmetric division. Birth events then predict the resource envelope per
+logarithmic size. A frozen transfer of published bacterial fitted summaries
+predicts separate population mean lengths within 2.72% and 0.447%, with no
+population-fitted scale. Variability is overpredicted, and the declared joint
+superiority criterion fails in both media. The existing theory receives explicit
+credit; length is a proxy and the raw workbook was unavailable.
+
+This is a useful increment in mechanistic specificity and executed prediction.
+It does not change the broader assessment to an established universal natural
+law. The strongest new empirical fact is the close conditional mean transfer;
+the full profile and the dynamics' applicability remain unvalidated. The next
+improvement requires independently identified growth, partition and observation
+effects, rather than stronger language about the same summary comparison.
+
 **8 October geometric-foundation update:** the manuscript now leads with an
 exact resource-capacity and complete-hierarchy foundation, developed from the
 investigators' nested-box intuition. The [supporting derivation](resource-capacity.md)

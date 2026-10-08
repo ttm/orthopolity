@@ -1,0 +1,11 @@
+{
+  "filename": "dataset.json",
+  "url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.2bs69",
+  "final_url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.2bs69",
+  "retrieval_started_utc": "2026-10-08T07:30:43.009766+00:00",
+  "retrieved_at_utc": "2026-10-08T07:30:43.988620+00:00",
+  "sha256": "c98e71f28943d7d922a2ecf2ae4d144f2eb76561b59f4f7619ac6e30e144fa85",
+  "size_bytes": 7473,
+  "tls_verification": true,
+  "scope": "Opaque source; worksheet outcomes not decoded by retrieval"
+}

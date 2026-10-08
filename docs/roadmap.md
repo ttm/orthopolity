@@ -37,14 +37,23 @@ coverage correction and subdivision restriction on composite resources.
 Use these results to identify what each application actually compares:
 separate attainable capacities, complete descriptions, or competing classes.
 
+The [bacterial growth/division connection](cell-division.md) is now executed.
+It derives a resource envelope from known cell dynamics and transfers birth-size
+calibration to separate population summaries. Mean predictions are close;
+variability is overpredicted and joint superiority is not established. This
+replaces the generic search for a first mechanism-to-data connection with a
+concrete result and a specific unresolved observation/dynamics problem.
+
 The next sequence is:
 
 1. Extend beyond symbolic-count inference to independently measured physical
    requirements or constraints. Keep the successful and failed linguistic
    forecasts frozen; additional context, duration or phonetic measurements
    require a separate analysis with new predictions.
-2. Select a mechanism-to-data connection from the evidence map where kinetics or
-   a constraint can be characterized independently of the allocation explained.
+2. Extend the bacterial connection only with archived data that independently
+   identify growth-rate variation, daughter partition, width and the lineage
+   sampling process. Preserve the published-summary forecasts; obtain an
+   uncertainty model and a new full-profile target before claiming validation.
 3. Extend the physics programme to gravity and relativity through worked equations
    and primary-source review; thermal radiation supplies the first quantum case.
 4. Continue developing the article's explanatory argument and empirical scope,

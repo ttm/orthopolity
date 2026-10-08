@@ -1,0 +1,11 @@
+{
+  "filename": "article.xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5367290/fullTextXML",
+  "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5367290/fullTextXML",
+  "retrieval_started_utc": "2026-10-08T07:47:05.236299+00:00",
+  "retrieved_at_utc": "2026-10-08T07:47:08.789798+00:00",
+  "sha256": "cb3efb171cb8da9141b4e172ab85764a199cd70ae7aa5484afb5ca747264f008",
+  "size_bytes": 175617,
+  "tls_verification": true,
+  "scope": "Published source; download does not decode numerical figure annotations"
+}

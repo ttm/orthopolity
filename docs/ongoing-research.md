@@ -41,6 +41,32 @@ retrospective validation, not global blinding or prospective data collection.
 
 ## Current state
 
+- **Bacterial mechanism and summary transfer, completed 8 October:**
+  [The new report](cell-division.md) derives the mass-weighted population/lineage
+  identity and the birth/division crossing envelope, crediting established
+  growth-fragmentation theory. The raw Dryad workbook returned HTTP 403;
+  official NCBI source figures instead supply published fitted moments.
+  Calibration, code and four forecasts were frozen before target Figure 1
+  retrieval, with prior qualitative exposure disclosed. Primary population
+  mean predictions are 2.72% and 0.447% high; CVs are 4.61% and 19.69% high.
+  The lineage comparator is much worse for means but slightly better for CV,
+  so joint superiority fails in both media. No statistical rejection or raw
+  biomass profile is claimed. The frozen protocol's word "rejects" was too
+  strong; report and registry clarify it without changing the protocol.
+  Independent review verified all printed moments/counts and analytic formulas.
+  All 398 tests pass, including five new numerical checks. All five output
+  artifacts reproduce byte for byte, including figures and provenance.
+  The registry retains 28 runs / 704 references.
+  New manuscript Sections 2.12 and 5.6 integrate mechanism and measured results;
+  the former synthesis is now 5.7. A separate source/figure report preserves
+  the four-model comparison without extending the main figure sequence.
+  The rebuilt 31-page PDF was visually checked throughout, with the new
+  equations and table inspected closely. No overfull boxes or LaTeX warnings
+  remain; three earlier underfull-spacing diagnostics are confined to the
+  exploratory table. Registration is idempotent and prior records remain intact.
+  Next scientific work requires independently identified growth/partition/
+  observation effects and a new full-profile test, not reopening this freeze.
+
 - **Capacity and complete-hierarchy foundation, completed 8 October:** the user's
   clarification centers the simple resource-incidence principle and asks for
   the strongest established law claim, including nested boxes.

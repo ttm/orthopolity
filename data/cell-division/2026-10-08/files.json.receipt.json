@@ -1,0 +1,11 @@
+{
+  "filename": "files.json",
+  "url": "https://datadryad.org/api/v2/versions/27668/files",
+  "final_url": "https://datadryad.org/api/v2/versions/27668/files",
+  "retrieval_started_utc": "2026-10-08T07:30:43.989508+00:00",
+  "retrieved_at_utc": "2026-10-08T07:30:44.818117+00:00",
+  "sha256": "624ec458199e1969fd85e3a9c219988598fdc988143a05d9659595d94230e413",
+  "size_bytes": 5447,
+  "tls_verification": true,
+  "scope": "Opaque source; worksheet outcomes not decoded by retrieval"
+}

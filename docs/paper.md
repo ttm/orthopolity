@@ -17,17 +17,19 @@ resources equally among concentrations of those resources. We establish its math
 foundation in finite resource capacity and complete hierarchies. A resource budget bounds
 the number of units above any resource threshold; at every complete partition level,
 total resource is identical and count is inversely proportional to mean resource per unit.
-A coverage identity extends this result to incomplete and overlapping descriptions,
-including nested boxes. These exact consequences of additive accounting anchor a general
+A coverage identity extends this result to incomplete and overlapping descriptions.
+These exact consequences of additive accounting anchor a general
 natural-law formulation whose expression depends on physical constraints and the comparison
 measure. Their extension to equal allocation among coexisting resource classes requires
-additional physical conditions. Effective resources may combine constituents nonlinearly;
+physical conditions. Effective resources may combine constituents nonlinearly;
 we derive a restriction on combinations that remain invariant under subdivision. Forward
 allocation and inverse inference then connect resource requirements to abundance.
 A shared product-resource family supplies identification conditions and predictions across
-environments, demonstrated in a reproducible synthetic study. Class exchange proves
+environments, demonstrated synthetically. Class exchange proves
 equalization, constrained equilibrium and recovery. Electromagnetic transport and thermal
-radiation supply established physical realizations. Retained empirical studies include
+radiation supply established physical realizations. Growth and division connect a
+population's mass allocation to lineage sampling; an independently calibrated bacterial
+comparison predicts mean length closely but overpredicts variability. Retained studies include
 conditional budget-closure successes and failed response forecasts. A frozen linguistic
 application predicts withheld genres better with combined letter/phoneme cost than with
 letter-only models, while lexical frequencies remain more predictive. The contribution
@@ -877,6 +879,46 @@ channels are correlated. The Planck template is part of the distributed product,
 panels B and C illustrate the published result rather than provide a new independent
 model test. All 43 channels are retained.*
 
+### 2.12 Growth, division, and the observation of resource allocation
+
+A biological mechanism makes the comparison measure and a nonconstant constraint
+profile explicit. Let additive cell mass $x$ grow as $\dot x=gx$, with common
+deterministic $g$, conservative symmetric binary division, and no death. Assume
+a balanced asynchronous population with finite mean mass and a stationary
+chronological lineage following physiologically equivalent daughters. Established
+growth-fragmentation theory gives
+
+$$p_L(x)=\frac{xp_P(x)}{E_P[x]}.$$
+
+The mass-weighted population size distribution equals the chronological lineage
+size distribution (Genthon, 2022). This is a known sampling transformation, not
+a new cell-division law. For lineage birth and division sizes $B,D$, stationarity
+implies $D\overset d=2B$. Monotone growth gives the fraction of cycles crossing $x$,
+
+$$H(x)=P(B\le x<D)=F_B(x)-F_B(x/2).$$
+
+Each crossing occupies time $dx/(gx)$; mean cycle duration is $\ln2/g$. Therefore
+
+$$p_L(x)=\frac{H(x)}{x\ln2},\qquad
+p_P(x)=\frac{2H(x)}{E[B^{-1}]x^2},\qquad
+\frac{x^2p_P(x)}{E_P[x]}=\frac{H(x)}{\ln2}.$$
+
+The last expression is the normalized mass share per logarithmic size.
+Independently measured birth/division events specify its envelope, instead of
+defining a constraint from the population residual. Every interval crossed by
+all cycles has $H=1$ and equal mass per equal logarithmic width. Fixed birth mass
+$b$ yields the familiar inverse-square density $2b/x^2$ on $[b,2b)$; variable
+birth sizes generally remove an exact plateau. The framework thus predicts
+both the neutral form and an event-determined departure.
+
+These conditions matter: growth noise changes the sampling transformation;
+asymmetric division requires mass-biased daughter tracking; old-pole retention
+need not sample equivalent physiology. Perfectly synchronized deterministic
+cycles need not converge to a balanced phase distribution. The
+[derivation and comparison](cell-division.md) retain these qualifications and
+the population balance proof. Section 5.6 tests a length-proxy version against
+separate published bacterial cultures, without claiming length is measured mass.
+
 ## 3. Empirical sources and analysis
 
 The applications distinguish a measured resource, a geometric or instrumental
@@ -1154,7 +1196,54 @@ Aggregation conceals variation among words of the same length. The fitted
 composite improves prediction over letter-only costs but trails training
 word frequencies; its resource profile remains descriptive.*
 
-### 5.6 What the tests establish
+### 5.6 Birth-calibrated predictions of bacterial population summaries
+
+Gangan and Athale (2017) provide mother-machine birth/division lengths and
+separate mid-log batch snapshots of *E. coli* MG1655 in LB and M9+succinate.
+We use their printed fitted lognormal birth moments to predict batch mean
+length and coefficient of variation (CV) from Section 2.12. For birth mean
+$m$ and squared CV $c^2$,
+
+$$E_P[x]=\frac{2m\ln2}{1+c^2},\qquad
+\operatorname{CV}_P^2=\frac{1+c^2}{2(\ln2)^2}-1.$$
+
+Calibration, algorithms and all forecasts were frozen before acquiring the
+numerical target figure. Published qualitative results had already been read:
+this is a retrospective summary transfer, not external preregistration or
+global blinding. No target scale or shape is fitted. The raw workbook could
+not be downloaded; official source images, transcriptions and receipts are
+retained in the [study report](cell-division.md).
+
+| Endpoint | Published | Population | Lineage |
+|---|---:|---:|---:|
+| LB mean | 3.2842 | 3.3737 | 3.9517 |
+| LB CV | 0.3957 | 0.4139 | 0.4126 |
+| M9 mean | 2.0094 | 2.0184 | 2.1515 |
+| M9 CV | 0.2146 | 0.2568 | 0.2549 |
+
+*Table 4. Frozen predictions against published fitted summaries. Means are in
+micrometres; CV is dimensionless. M9 denotes M9+succinate.*
+
+Mean errors are 2.72% and 0.447%, versus 20.32% and 7.07% for the lineage
+comparator. CV is overpredicted by 4.61% and 19.69%; the lineage comparator
+is slightly closer on CV. The declared requirement of improvement on both
+endpoints therefore fails in both media. This is not statistical model rejection;
+the two CV formulas are structurally very close. All four forecasts, including fixed-birth
+and division-calibrated sensitivities, remain in the report; division calibration
+improves LB but worsens the M9 mean. These are comparisons to rounded fitted
+summaries, with no sampling confidence interval or full-distribution test.
+
+The calibration also diagnoses model limitations: division means are 0.9644
+and 1.0849 times twice the birth means, whereas exact stationary symmetric
+division requires equality. Common individual growth and comparable old-pole
+physiology are not established. Length is only a resource proxy: even at
+constant diameter $d$, spherocylinder volume is proportional to $L-d/3$.
+The mean transfer is a quantitative success of the conditional approximation;
+the variability and calibration mismatches prevent treating it as a validated
+biomass-allocation profile. Resolving these departures requires additional
+independent information about the dynamics and observation process.
+
+### 5.7 What the tests establish
 
 The positive results concern conditional budget closure: a separately measured or geometric
 cost, declared shared resource conditions, and abundance or resource shares predicted from them. The runtime
@@ -1175,6 +1264,10 @@ Identifying such a regime, or independently characterizing its constrained
 allocation, remains a central empirical task. The linguistic study separately
 shows a gain from an inferred composite in a frozen genre transfer. Its lexical
 baseline and uneven resource shares retain the limits of that candidate.
+The bacterial comparison adds a mechanism-derived prediction between separate
+experimental settings: mean length transfers closely, while variability and
+the joint comparison fail. Its resource proxy and unverified growth assumptions
+leave the natural-allocation qualification task open.
 
 ## 6. Discussion
 
@@ -1203,6 +1296,11 @@ thermal energy per mode. Their measures and equality conditions follow from thei
 respective equations. Quantization restricts available mode energies; it is a different
 kind of constraint from an additive transport bias. The framework can encompass these
 mechanisms without asserting that their dynamics are identical.
+Growth and division add an observation-sensitive realization: mass weighting
+of population counts gives a chronological lineage law under the stated
+conditions. Birth/division events then determine the allocation envelope.
+The bacterial transfer supplies a numerical mean prediction and a variability
+discrepancy that an unconstrained inverse-square label would conceal.
 
 The inverse direction is central to the proposed law's scientific use. An abundance
 profile constrains effective resource divided by its allocation distortion, conditional
@@ -1239,7 +1337,9 @@ The proposal builds on established work. Reversible transport and equipartition 
 mechanisms and limiting cases; ecological size-spectrum models already connect resource
 use and abundance (Cuesta, Delius and Law, 2018; Arranz et al., 2022). Independent metabolic
 measurements already support cost-to-capacity predictions (Marshall et al., 2022).
-Proportional-growth models address city-size scaling (Gabaix, 1999). The contribution
+Proportional-growth models address city-size scaling (Gabaix, 1999).
+The lineage/population transformation and inverse-square cell-cycle limit
+likewise have established derivations (Genthon, 2022). The contribution
 sought from orthopolity is a general allocation account that connects these results,
 organizes their constraints, and generates further forward and inverse predictions.
 These relationships require explicit derivations and comparisons, not an assumption
@@ -1298,6 +1398,9 @@ candidate nonlinear combinations. The linguistic transfer provides an executed
 inverse application: a combined symbolic cost improves prediction over letter-only
 models, while a lexical baseline and residual allocation differences delimit
 its explanatory scope.
+The bacterial comparison connects known growth-fragmentation dynamics to a
+resource measure and independently calibrated population means; overpredicted
+variability retains the approximation's limits.
 
 The exact geometric results and specified physical mechanisms establish the stated
 capacity, hierarchy and dynamical relations. The broader natural-law claim concerns
@@ -1322,6 +1425,9 @@ The inverse-resource simulation and linguistic transfer likewise retain configur
 algorithms, predictions, all scored outcomes and source hashes. The linguistic
 protocol and training fit were frozen before test-file acquisition; this is a
 retrospective public-corpus study, not external preregistration.
+The bacterial summary transfer retains official figure images, manual numerical
+transcriptions, calibration diagnostics and four frozen forecasts. Its numerical
+target figure was retrieved after the freeze; qualitative outcomes were already known.
 Plant sources are pinned to author commit defccc3dcbbbf3ba57ff1572377de88fba83ff7f,
 with acquisition checksums and complete inclusion ledgers. The registry-verify target audits
 the registry offline, and each study report gives its replay
@@ -1394,6 +1500,15 @@ Economics*, 114(3), 739--767. <https://doi.org/10.1162/003355399556133>.
 Gaedke, U. (1993). Ecosystem analysis based on biomass size distributions: A case study
 of a plankton community in a large lake. *Limnology and Oceanography*, 38, 112–127.
 <https://doi.org/10.4319/lo.1993.38.1.0112>.
+
+Gangan, M. S., and Athale, C. A. (2017). Threshold effect of growth rate on
+population variability of *Escherichia coli* cell lengths.
+*Royal Society Open Science*, 4, 160417. <https://doi.org/10.1098/rsos.160417>.
+
+Genthon, A. (2022). Analytical cell size distribution: lineage-population bias
+and parameter inference. *Journal of the Royal Society Interface*, 19, 20220405.
+<https://doi.org/10.1098/rsif.2022.0405>. Revised exposition:
+<https://arxiv.org/abs/2206.06146v2>.
 
 Harcourt, R., Garcia, N. S., and Martiny, A. C. (2024). *Synechococcus* batch culture data
 (cell quotas and ratios (C, N, P), size, and diameter) from laboratory experiments in 2021 to

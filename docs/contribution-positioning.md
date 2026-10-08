@@ -43,6 +43,7 @@ inversion alone does not establish that scope.
 | Additive measures, covering counts and resource hierarchies | Finite-budget count bounds, level-wise conservation and geometric scaling | A capacity-to-allocation foundation, explicit overlap corrections, and subdivision consistency conditions for composite resources |
 | Resource-weighted distributions and ecological size spectra | Allocation identities, inverse-cost abundance conditional on equality, and observed biomass patterns | Explicit resource, measure, constraint and observation definitions across applications; the proposal of a general allocation tendency |
 | Reversible transport and statistical mechanics | Detailed balance, convergence, classical equipartition and quantum occupancy | Worked realizations of equality, constrained outcomes and recovery, with the physical comparison measure identified in each case |
+| Growth-fragmentation and lineage sampling | Inverse-square strong-sizer limit, mass-weighted lineage/population transformation | Explicit resource per logarithmic size, a birth/division crossing envelope, and a frozen transfer between published experimental summaries |
 | Inverse optimization | Inference of objectives from choices across conditions under a restricted model family | Inference of candidate effective resource requirements from allocation profiles, followed by predictions with a shared composition rule |
 | Inverse statistical mechanics | Inference of interactions from ensemble observations | An allocation-level inverse problem that can be formulated before a complete microscopic interaction model is available; its resource/constraint ambiguity remains explicit |
 | Linear inverse problems | Rank, null spaces, conditioning and covariance propagation | Conditional identification and parameter-free transfer relations for resource-composition models; no claim that the underlying linear algebra is new |
@@ -54,6 +55,14 @@ Exercise 1.4.34, supplies standard indicator-integral and additivity foundations
 Section 1.1, treats the geometric covering-count setting. An asymptotic box
 dimension does not by itself imply an exact resource plateau. In this paper,
 exactness follows from the specified complete partitions.
+
+[Genthon (2022)](https://doi.org/10.1098/rsif.2022.0405) explicitly derives the
+lineage/population size tilt and treats the inverse-square limiting profile.
+Neither is claimed here as new. The [bacterial comparison](cell-division.md)
+adds an executed independent-experiment summary transfer to the orthopolity
+formulation: close mean predictions, overpredicted variability, and no joint
+superiority under the declared criterion. It does not demonstrate a previously
+unknown cell-size law or a measured biomass plateau.
 
 [Keshavarz, Wang and Boyd (2011)](https://stanford.edu/~boyd/papers/imputed_objective.html)
 infer a parameterized convex objective from optimal or nearly optimal decisions

@@ -1,0 +1,11 @@
+{
+  "filename": "figure1.jpg",
+  "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5367290.1/rsos160417-g1.jpg",
+  "final_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5367290.1/rsos160417-g1.jpg",
+  "retrieval_started_utc": "2026-10-08T07:48:15.061605+00:00",
+  "retrieved_at_utc": "2026-10-08T07:48:16.191464+00:00",
+  "sha256": "a67778f56adde84c8c77e580bcb0642562bb7ccbf6acfaf0202aed136fb78a1d",
+  "size_bytes": 141461,
+  "tls_verification": true,
+  "scope": "Published source; download does not decode numerical figure annotations"
+}
