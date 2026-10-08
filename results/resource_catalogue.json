@@ -1,0 +1,366 @@
+{
+  "status": "Exploratory synthesis. Rule cases restate published derivations as orthopolic rules; inputs are independent of the observed exponent only where inputs_status says so. Exponents were checked against abstracts and search extracts, often from recollection when the search budget ran out; verify against primary sources before citing.",
+  "rule_cases": [
+    {
+      "id": "craters",
+      "rule": "territory",
+      "predicted_alpha": 3.0,
+      "observed_alpha": 2.92,
+      "observed_halfwidth": 0.09,
+      "residual": -0.08000000000000007,
+      "agrees": true,
+      "inputs_status": "geometry fixed before data",
+      "grade": "derived"
+    },
+    {
+      "id": "eq_moment",
+      "rule": "territory",
+      "predicted_alpha": 1.6666666666666665,
+      "observed_alpha": 1.666,
+      "observed_halfwidth": 0.017,
+      "residual": -0.0006666666666665932,
+      "agrees": true,
+      "inputs_status": "geometry plus measured constant stress drop",
+      "grade": "suggestive"
+    },
+    {
+      "id": "eq_moment_large",
+      "rule": "coordinate",
+      "predicted_alpha": 1.5,
+      "observed_alpha": 1.678,
+      "observed_halfwidth": 0.04,
+      "residual": 0.17799999999999994,
+      "agrees": false,
+      "inputs_status": "measured large-event scaling",
+      "grade": "failed reading"
+    },
+    {
+      "id": "perc2d",
+      "rule": "territory",
+      "predicted_alpha": 2.0549450549450547,
+      "observed_alpha": 2.0549,
+      "observed_halfwidth": 0.0001,
+      "residual": -4.505494505480101e-05,
+      "agrees": true,
+      "inputs_status": "theorem (hyperscaling)",
+      "grade": "derived"
+    },
+    {
+      "id": "perc3d",
+      "rule": "territory",
+      "predicted_alpha": 2.1891077728011417,
+      "observed_alpha": 2.18906,
+      "observed_halfwidth": 0.0001,
+      "residual": -4.77728011416545e-05,
+      "agrees": true,
+      "inputs_status": "independently simulated D_f",
+      "grade": "derived"
+    },
+    {
+      "id": "lakes",
+      "rule": "territory",
+      "predicted_alpha": 2.0549450549450547,
+      "observed_alpha": 2.14,
+      "observed_halfwidth": 0.02,
+      "residual": 0.08505494505494537,
+      "agrees": false,
+      "inputs_status": "percolation theory",
+      "grade": "motivated"
+    },
+    {
+      "id": "imf",
+      "rule": "territory",
+      "predicted_alpha": 2.327433628318584,
+      "observed_alpha": 2.35,
+      "observed_halfwidth": 0.3,
+      "residual": 0.022566371681416175,
+      "agrees": true,
+      "inputs_status": "measured velocity spectrum",
+      "grade": "motivated"
+    },
+    {
+      "id": "rivers",
+      "rule": "territory",
+      "predicted_alpha": 1.43,
+      "observed_alpha": 1.44,
+      "observed_halfwidth": 0.02,
+      "residual": 0.010000000000000009,
+      "agrees": true,
+      "inputs_status": "Hack exponent measured separately",
+      "grade": "derived"
+    },
+    {
+      "id": "halos",
+      "rule": "press_schechter",
+      "predicted_alpha": 1.9166666666666667,
+      "observed_alpha": 1.9,
+      "observed_halfwidth": 0.04,
+      "residual": -0.01666666666666683,
+      "agrees": true,
+      "inputs_status": "spectral index from P(k); scale-dependent",
+      "grade": "derived"
+    },
+    {
+      "id": "gsmf",
+      "rule": "coordinate",
+      "predicted_alpha": 1.54,
+      "observed_alpha": 1.47,
+      "observed_halfwidth": 0.15,
+      "residual": -0.07000000000000006,
+      "agrees": true,
+      "inputs_status": "feedback scaling from theory",
+      "grade": "motivated"
+    },
+    {
+      "id": "k41",
+      "rule": "transport",
+      "predicted_alpha": 1.6666666666666665,
+      "observed_alpha": 1.69,
+      "observed_halfwidth": 0.02,
+      "residual": 0.023333333333333428,
+      "agrees": false,
+      "inputs_status": "theory (Kolmogorov 1941)",
+      "grade": "derived"
+    },
+    {
+      "id": "kraichnan",
+      "rule": "transport",
+      "predicted_alpha": 3,
+      "observed_alpha": 3.0,
+      "observed_halfwidth": 0.3,
+      "residual": 0.0,
+      "agrees": true,
+      "inputs_status": "theory (Kraichnan 1967)",
+      "grade": "derived"
+    },
+    {
+      "id": "batchelor",
+      "rule": "transport",
+      "predicted_alpha": 1,
+      "observed_alpha": 1.0,
+      "observed_halfwidth": 0.1,
+      "residual": 0.0,
+      "agrees": true,
+      "inputs_status": "theory (Batchelor 1959)",
+      "grade": "derived"
+    },
+    {
+      "id": "dohnanyi",
+      "rule": "transport",
+      "predicted_alpha": 3.5,
+      "observed_alpha": 3.5,
+      "observed_halfwidth": 0.3,
+      "residual": 0.0,
+      "agrees": true,
+      "inputs_status": "theory (Dohnanyi 1969)",
+      "grade": "derived"
+    },
+    {
+      "id": "mrn",
+      "rule": "transport",
+      "predicted_alpha": 3.5,
+      "observed_alpha": 3.5,
+      "observed_halfwidth": 0.2,
+      "residual": 0.0,
+      "agrees": true,
+      "inputs_status": "analogy to Dohnanyi",
+      "grade": "suggestive"
+    },
+    {
+      "id": "sheldon",
+      "rule": "transport",
+      "predicted_alpha": 2.0,
+      "observed_alpha": 2.04,
+      "observed_halfwidth": 0.015,
+      "residual": 0.040000000000000036,
+      "agrees": false,
+      "inputs_status": "canonical TE and PPMR, not system-specific",
+      "grade": "derived"
+    },
+    {
+      "id": "dsa",
+      "rule": "rate_ratio",
+      "predicted_alpha": 2.3333333333333335,
+      "observed_alpha": 2.7,
+      "observed_halfwidth": 0.05,
+      "residual": 0.3666666666666667,
+      "agrees": false,
+      "inputs_status": "theory; source index usually fitted",
+      "grade": "failed reading"
+    },
+    {
+      "id": "firms",
+      "rule": "growth",
+      "predicted_alpha": 2,
+      "observed_alpha": 2.059,
+      "observed_halfwidth": 0.054,
+      "residual": 0.05900000000000016,
+      "agrees": false,
+      "inputs_status": "limit only; correction not measured",
+      "grade": "derived"
+    },
+    {
+      "id": "metros",
+      "rule": "growth",
+      "predicted_alpha": 2,
+      "observed_alpha": 2.005,
+      "observed_halfwidth": 0.12,
+      "residual": 0.004999999999999893,
+      "agrees": true,
+      "inputs_status": "limit only",
+      "grade": "derived"
+    },
+    {
+      "id": "words",
+      "rule": "growth",
+      "predicted_alpha": 2,
+      "observed_alpha": 1.95,
+      "observed_halfwidth": 0.02,
+      "residual": -0.050000000000000044,
+      "agrees": false,
+      "inputs_status": "limit only; depends on lower cutoff (2.20 at x_min = 1)",
+      "grade": "motivated"
+    },
+    {
+      "id": "weblinks",
+      "rule": "growth",
+      "predicted_alpha": 2,
+      "observed_alpha": 2.1,
+      "observed_halfwidth": 0.1,
+      "residual": 0.10000000000000009,
+      "agrees": false,
+      "inputs_status": "limit only",
+      "grade": "motivated"
+    },
+    {
+      "id": "avalanches",
+      "rule": "martingale",
+      "predicted_alpha": 1.5,
+      "observed_alpha": 1.5,
+      "observed_halfwidth": 0.1,
+      "residual": 0.0,
+      "agrees": true,
+      "inputs_status": "theory (critical branching)",
+      "grade": "derived"
+    },
+    {
+      "id": "returns",
+      "rule": "coordinate",
+      "predicted_alpha": 4.0,
+      "observed_alpha": 4.0,
+      "observed_halfwidth": 0.1,
+      "residual": 0.0,
+      "agrees": true,
+      "inputs_status": "impact and trade-size laws from separate data",
+      "grade": "motivated"
+    },
+    {
+      "id": "omori",
+      "rule": "rate_ratio",
+      "predicted_alpha": 1,
+      "observed_alpha": 1.1,
+      "observed_halfwidth": 0.25,
+      "residual": 0.10000000000000009,
+      "agrees": true,
+      "inputs_status": "theory (rate-and-state nucleation)",
+      "grade": "motivated"
+    },
+    {
+      "id": "flicker",
+      "rule": "rate_ratio",
+      "predicted_alpha": 1,
+      "observed_alpha": 1.0,
+      "observed_halfwidth": 0.2,
+      "residual": 0.0,
+      "agrees": true,
+      "inputs_status": "theory (Dutta-Horn)",
+      "grade": "motivated"
+    }
+  ],
+  "rule_summary": {
+    "n": 25,
+    "agree": 17,
+    "disagree": [
+      "eq_moment_large",
+      "lakes",
+      "k41",
+      "sheldon",
+      "dsa",
+      "firms",
+      "words",
+      "weblinks"
+    ]
+  },
+  "catalogue": {
+    "n_cases": 59,
+    "grades": {
+      "suggestive": 18,
+      "derived": 23,
+      "motivated": 15,
+      "none": 1,
+      "numerology": 2
+    },
+    "grades_by_domain": {
+      "bio-eco": {
+        "suggestive": 8,
+        "motivated": 2,
+        "derived": 3,
+        "numerology": 2
+      },
+      "geo-astro": {
+        "suggestive": 6,
+        "derived": 5,
+        "motivated": 3,
+        "none": 1
+      },
+      "physics-laws": {
+        "derived": 10,
+        "motivated": 4
+      },
+      "social-info": {
+        "motivated": 6,
+        "derived": 5,
+        "suggestive": 4
+      }
+    },
+    "exponent_checks": {
+      "confirmed": 28,
+      "could_not_verify": 25,
+      "corrected": 6
+    },
+    "distribution_algebra_mismatches": []
+  },
+  "chance_match": {
+    "range": [
+      1.0,
+      4.5
+    ],
+    "by_max_denominator": {
+      "1": {
+        "0.02": 0.03999999999999991,
+        "0.05": 0.09999999999999977,
+        "0.1": 0.20000000000000004
+      },
+      "2": {
+        "0.02": 0.07999999999999982,
+        "0.05": 0.19999999999999954,
+        "0.1": 0.4000000000000001
+      },
+      "3": {
+        "0.02": 0.15999999999999964,
+        "0.05": 0.3999999999999991,
+        "0.1": 0.7333333333333334
+      },
+      "4": {
+        "0.02": 0.23999999999999946,
+        "0.05": 0.5666666666666658,
+        "0.1": 0.9000000000000001
+      },
+      "6": {
+        "0.02": 0.466666666666666,
+        "0.05": 0.8666666666666657,
+        "0.1": 1.0
+      }
+    }
+  }
+}

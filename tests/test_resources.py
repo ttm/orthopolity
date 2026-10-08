@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from orthopolity import resource_exponents, simple_rationals, chance_match
+from orthopolity import resource_exponents, rule_alpha, simple_rationals, chance_match
 
 
 class ResourceExponents(unittest.TestCase):
@@ -19,6 +19,28 @@ class ResourceExponents(unittest.TestCase):
         for args in [(0, 'density'), (np.nan, 'density'), (2, 'spectrum')]:
             with self.assertRaises(ValueError):
                 resource_exponents(*args)
+
+
+class Rules(unittest.TestCase):
+    def test_known_exponents(self):
+        # Craters tiling a surface: alpha = 3 in diameter.
+        self.assertAlmostEqual(rule_alpha('territory', d_s=2, D_k=1), 3)
+        # 2D critical percolation hyperscaling: tau = 187/91.
+        self.assertAlmostEqual(rule_alpha('territory', d_s=2, D_k=91 / 48), 187 / 91)
+        # Kolmogorov 5/3, Kraichnan enstrophy 3, Batchelor 1, Dohnanyi 3.5 in diameter.
+        self.assertAlmostEqual(rule_alpha('transport', z=2 / 3), 5 / 3)
+        self.assertAlmostEqual(rule_alpha('transport', w=2), 3)
+        self.assertAlmostEqual(rule_alpha('transport'), 1)
+        self.assertAlmostEqual(rule_alpha('transport', w=3, z=-0.5), 3.5)
+        # Critical branching: Zipf in duration, size ∝ duration^2 gives 3/2.
+        self.assertAlmostEqual(rule_alpha('martingale', c=2), 1.5)
+        # Inverse cubic law: Zipf fund assets through V ∝ S^(2/3), r ∝ V^(1/2).
+        self.assertAlmostEqual(rule_alpha('coordinate', zeta_x=1, c=1 / 3), 4)
+        self.assertAlmostEqual(rule_alpha('press_schechter', n_eff=-3), 2)
+
+    def test_unknown_rule(self):
+        with self.assertRaises(ValueError):
+            rule_alpha('friction')
 
 
 class ChanceMatch(unittest.TestCase):

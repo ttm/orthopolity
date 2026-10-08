@@ -135,6 +135,37 @@ def resource_exponents(exponent, kind='density'):
     return dict(alpha=alpha, d_log=alpha - 1, d_lin=alpha)
 
 
+def rule_alpha(rule, **p):
+    """Density exponent alpha that an orthopolic rule predicts from stated inputs.
+
+    territory:   objects tile a support of dimension d_s; content k ∝ L^D_k.
+                 zeta = d_s/D_k, alpha = 1 + d_s/D_k.
+    transport:   stock per log class = flux/log-speed. Resource per object
+                 ∝ k^w, log-speed ∝ k^z, flux per log class ∝ k^d_F:
+                 alpha = 1 + w + z - d_F.
+    coordinate:  k ∝ x^c with x of survival exponent zeta_x: alpha = 1 + zeta_x/c.
+    martingale:  conserved expectation makes the carrier Zipf (zeta_x = 1).
+    growth:      proportional growth with entry: alpha = 2 + phi_over_m (first order).
+    rate_ratio:  alpha = 1 + ratio + offset, e.g. log-uniform times (ratio 0).
+    press_schechter: alpha = 2 - (n_eff + 3)/6.
+    """
+    if rule == 'territory':
+        return 1 + p['d_s'] / p['D_k']
+    if rule == 'transport':
+        return 1 + p.get('w', 0) + p.get('z', 0) - p.get('d_F', 0)
+    if rule == 'coordinate':
+        return 1 + p['zeta_x'] / p['c']
+    if rule == 'martingale':
+        return 1 + 1 / p['c']
+    if rule == 'growth':
+        return 2 + p.get('phi_over_m', 0)
+    if rule == 'rate_ratio':
+        return 1 + p.get('ratio', 0) + p.get('offset', 0)
+    if rule == 'press_schechter':
+        return 2 - (p['n_eff'] + 3) / 6
+    raise ValueError(f'Unknown rule {rule!r}')
+
+
 def simple_rationals(max_denominator, lo, hi):
     """Sorted distinct fractions p/q in [lo, hi] with 1 <= q <= max_denominator."""
     if max_denominator < 1 or not hi > lo:
