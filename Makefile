@@ -9,7 +9,7 @@
 PY ?= python3
 export PYTHONPATH := src
 
-.PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory resource gibrat catalogue analyses paper clean
+.PHONY: all install data restore-data test pilot gof independent ensemble strata variance theory resource gibrat catalogue aftershocks analyses paper clean
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -37,7 +37,7 @@ restore-data:    ## explicitly permit network restoration of missing snapshots
 test:            ## accounting, estimator, goodness-of-fit and meta-analysis checks
 	$(PY) -m unittest discover -s tests -v
 
-analyses: pilot gof independent ensemble strata variance theory resource gibrat catalogue
+analyses: pilot gof independent ensemble strata variance theory resource gibrat catalogue aftershocks
 
 pilot:           ## the three original pilots -> results/results.json
 	$(PY) experiments/run_pilot.py
@@ -68,6 +68,9 @@ gibrat:          ## simulated check of the Gibrat deviation law (not empirical e
 
 catalogue:       ## orthopolic rules against published exponents -> results/resource_catalogue.json
 	$(PY) experiments/run_catalogue.py
+
+aftershocks:     ## pre-registered productivity test (configs/prereg_2026-10-08_*) -> results/aftershock_productivity.json
+	$(PY) experiments/run_aftershocks.py
 
 paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
 

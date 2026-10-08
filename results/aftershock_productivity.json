@@ -1,0 +1,122 @@
+{
+  "preregistration": "configs/prereg_2026-10-08_aftershock_productivity.json",
+  "catalogue_events": 6639,
+  "b_value": 0.99831638693147,
+  "primary": {
+    "n_mainshocks": 427,
+    "n_aftershocks": 1015,
+    "mainshocks_with_aftershocks": 252,
+    "magnitude_range": [
+      6.5,
+      9.1
+    ],
+    "alpha": 0.6274324614992433,
+    "alpha_ci95": [
+      0.5112967697489602,
+      0.7078190517918762
+    ],
+    "log_K": -0.0692430088836309,
+    "negative_binomial_alpha": 0.6169080949084504,
+    "negative_binomial_shape": 0.7952192225843103,
+    "hypotheses_in_interval": {
+      "H_area": false,
+      "H_moment": false,
+      "H_width": false
+    },
+    "verdict": "inconclusive"
+  },
+  "sensitivity": {
+    "rupture_length_windows": {
+      "n_mainshocks": 494,
+      "n_aftershocks": 1149,
+      "mainshocks_with_aftershocks": 263,
+      "magnitude_range": [
+        6.5,
+        9.1
+      ],
+      "alpha": 0.8999300742065722,
+      "alpha_ci95": [
+        0.7567947836316146,
+        0.9651146788255902
+      ],
+      "log_K": -0.6763131915895656,
+      "negative_binomial_alpha": 0.8286857032894985,
+      "negative_binomial_shape": 0.846715202012376,
+      "hypotheses_in_interval": {
+        "H_area": false,
+        "H_moment": false,
+        "H_width": false
+      },
+      "verdict": "inconclusive"
+    },
+    "exclude_first_day": {
+      "n_mainshocks": 427,
+      "n_aftershocks": 821,
+      "mainshocks_with_aftershocks": 227,
+      "magnitude_range": [
+        6.5,
+        9.1
+      ],
+      "alpha": 0.640654805733815,
+      "alpha_ci95": [
+        0.506810367701107,
+        0.718237728568398
+      ],
+      "log_K": -0.30924485280646963,
+      "negative_binomial_alpha": 0.5986859017473034,
+      "negative_binomial_shape": 0.6946788599906227,
+      "hypotheses_in_interval": {
+        "H_area": false,
+        "H_moment": false,
+        "H_width": false
+      },
+      "verdict": "inconclusive"
+    },
+    "shallow_mainshocks": {
+      "n_mainshocks": 306,
+      "n_aftershocks": 878,
+      "mainshocks_with_aftershocks": 200,
+      "magnitude_range": [
+        6.5,
+        9.1
+      ],
+      "alpha": 0.6183091959792923,
+      "alpha_ci95": [
+        0.5121749236627428,
+        0.7095770408283438
+      ],
+      "log_K": 0.1102792384317107,
+      "negative_binomial_alpha": 0.6447141798126839,
+      "negative_binomial_shape": 0.9986712533575142,
+      "hypotheses_in_interval": {
+        "H_area": false,
+        "H_moment": false,
+        "H_width": false
+      },
+      "verdict": "inconclusive"
+    },
+    "all_magnitude_types": {
+      "n_mainshocks": 429,
+      "n_aftershocks": 1300,
+      "mainshocks_with_aftershocks": 263,
+      "magnitude_range": [
+        6.5,
+        9.1
+      ],
+      "alpha": 0.702386412340278,
+      "alpha_ci95": [
+        0.5640988048980802,
+        0.7877539533370289
+      ],
+      "log_K": 0.01245164441529649,
+      "negative_binomial_alpha": 0.6917211155580074,
+      "negative_binomial_shape": 0.7421807101423249,
+      "hypotheses_in_interval": {
+        "H_area": false,
+        "H_moment": false,
+        "H_width": true
+      },
+      "verdict": "consistent with H_width"
+    }
+  }
+}
