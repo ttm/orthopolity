@@ -100,6 +100,7 @@ Git records commit order, not independently verified blinding or external prereg
 | [docs/value.md](docs/value.md) / [docs/criticism.md](docs/criticism.md) | Reasons to pursue a limited study and limits on its contribution |
 | [docs/not-worth-pursuing.md](docs/not-worth-pursuing.md) | Claims and directions the present evidence does not justify |
 | [docs/roadmap.md](docs/roadmap.md) | Remaining scientific and submission work |
+| [docs/glossary.md](docs/glossary.md) | Etymology and word forms (orthopolity, orthopolic), reference measures, resource exponents |
 | [docs/research-program.md](docs/research-program.md) | Testable formulation, mechanism, prior art, pre-registered tests and falsification criteria |
 | [docs/zeta-compilation.md](docs/zeta-compilation.md) | Provisional compilation of published exponents across 49 systems |
 | [docs/references.md](docs/references.md) | Annotated literature and primary sources |

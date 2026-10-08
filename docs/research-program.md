@@ -40,7 +40,7 @@ total resource in every factor-of-ten class. It is the marginal case between bot
 cutoff dominates the total.
 
 **Vacuity lemma.** For any power law $dN/dk\propto k^{-\alpha}$, the weight $q\propto k^{\alpha-1}$
-is exactly orthopolitic. "Orthopolity holds for some resource" is therefore empty. The
+is exactly orthopolic. "Orthopolity holds for some resource" is therefore empty. The
 repository's earthquake catalogue shows this concretely: one fit, $b=0.998$ [0.973, 1.024], gives
 $\zeta=0.666$ for seismic moment and $\zeta=0.998$ for rupture area converted by self-similar
 scaling ([resource_choice.json](../results/resource_choice.json)). Choosing a resource after
