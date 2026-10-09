@@ -18,3 +18,5 @@ results/lake-gyration-2026-10-09/*.csv -text
 results/uk-lake-gyration-2026-10-09/*.csv -text
 data/hydrobasins/** -text
 results/lake-metric-followup-2026-10-09/*.csv -text
+data/seismic-regional/** -text
+results/seismic-qualification-2026-10-10/*.csv -text

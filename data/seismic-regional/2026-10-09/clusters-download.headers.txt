@@ -1,0 +1,24 @@
+HTTP/2 200 
+server: GitHub.com
+content-type: text/plain; charset=utf-8
+last-modified: Wed, 15 Jun 2022 00:06:37 GMT
+access-control-allow-origin: *
+strict-transport-security: max-age=31556952
+etag: "62a9228d-cb26a4"
+expires: Fri, 09 Oct 2026 18:00:50 GMT
+cache-control: max-age=600
+x-proxy-cache: MISS
+x-github-request-id: 71C8:24589A:4E376F:4EFC00:6AC92978
+x-github-edge-region: fra
+accept-ranges: bytes
+age: 107
+date: Fri, 09 Oct 2026 17:52:37 GMT
+via: 1.1 varnish
+x-served-by: cache-bgy-lime1210041-BGY
+x-cache: HIT
+x-cache-hits: 0
+x-timer: S1791568357.270143,VS0,VE2
+vary: Accept-Encoding
+x-fastly-request-id: 38c2c00def5a82ebbeee74b0d301c43ecc3d75e5
+content-length: 13313700
+

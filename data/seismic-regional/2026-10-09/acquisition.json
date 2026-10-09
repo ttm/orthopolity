@@ -1,0 +1,25 @@
+{
+  "retrieved_utc": "2026-10-09T17:54:23.100524+00:00",
+  "scope": "Complete public catalogues. The newest regional file is retained for future work; the matching 1981-2018 source and published labels are used for current qualification. No b, D2 or completeness fit preceded the execution freeze.",
+  "newest_prefix_matches_previous_audit": true,
+  "files": [
+    {
+      "path": "data/seismic-regional/2026-10-09/raw/sc_1981_2025_1d_3d_gc_soda_noqb_10_1_SCSN.gc",
+      "url": "https://service.scedc.caltech.edu/ftp/catalogs/hauksson/Socal_DD/sc_1981_2025_1d_3d_gc_soda_noqb_10_1_SCSN.gc",
+      "bytes": 152809713,
+      "sha256": "0435c757694bcf75ec53eca97e89c752a3c82d360ab81e413322ee9c20a43844"
+    },
+    {
+      "path": "data/seismic-regional/2026-10-09/raw/hs_1981_all_comb_K4_A.cat_so_SCSN_v01",
+      "url": "https://service.scedc.caltech.edu/ftp/catalogs/hauksson/Socal_DD/hs_1981_all_comb_K4_A.cat_so_SCSN_v01",
+      "bytes": 98943312,
+      "sha256": "c26fbc6a607aacfcbce754314d66b0412c8fcb7c51b18cb2eec3fc3c1f3d3ecc"
+    },
+    {
+      "path": "data/seismic-regional/2026-10-09/raw/ZBZ_JGR2020_data.txt",
+      "url": "https://zaliapin.github.io/pubs/ZBZ_JGR2020_data.txt",
+      "bytes": 13313700,
+      "sha256": "ec3ed2671686a93bcbd960f65732f93f152a2bf4056d767500d1c644cd1adc4d"
+    }
+  ]
+}

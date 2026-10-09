@@ -33,3 +33,6 @@ results/lake-gyration-2026-10-09/implementation/data/
 
 # HydroBASINS source archives remain local; restore from publisher URLs/digests.
 data/hydrobasins/2026-10-09/raw/
+
+# Complete regional earthquake sources; publisher URLs and hashes are tracked.
+data/seismic-regional/2026-10-09/raw/
