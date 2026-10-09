@@ -1,0 +1,23 @@
+{
+  "source_verification": {
+    "files": 3,
+    "verification": "All full-source sizes and SHA256 digests pass"
+  },
+  "unique_event_ids": true,
+  "event_quality_and_selection_flags_verified": 123275,
+  "cluster_counts_verified": 26137,
+  "completeness_checks_against_original": 28,
+  "range_checks_against_original": 16,
+  "capped_samples_replayed": 2,
+  "maximum_range_bound_difference_km": 0.0,
+  "qualified_cluster_ids": [
+    2112,
+    15732,
+    39006,
+    41355,
+    44940,
+    76958
+  ],
+  "b_D2_or_regression_computed": false,
+  "outcome": "All retained selection and qualification checks pass"
+}

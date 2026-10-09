@@ -295,3 +295,19 @@ files from the publisher, and `make hydrobasins-sources` verifies them offline.
 See [source audit](../docs/hydrobasins-source-2026-10-09.md) for attribution,
 the source-license link and the declared handling of invalid basin topology.
 The follow-up reuses the unchanged, previously verified HydroLAKES v1.0 source.
+
+## 10 October 2026 earthquake qualification
+
+Zaliapin and Ben-Zion (2020), https://doi.org/10.1029/2018JB017120,
+supply the complete 1981–2018 sequence
+membership at https://zaliapin.github.io/pubs/ZBZ_JGR2020_data.txt . The retained
+description says 2019; reports use the final publication year, 2020. All 123,275
+events match the original relocated catalogue, `hs_1981_all_comb_K4_A.cat_so_SCSN_v01`,
+from https://service.scedc.caltech.edu/ftp/catalogs/hauksson/Socal_DD/ . Attribute
+SCEDC/SCSN and Hauksson, Yang and Shearer (2012), https://doi.org/10.1785/0120120010.
+The newer 1981–2025 regional catalogue was also acquired in full but is not used
+for the qualification. `data/seismic-regional/2026-10-09/acquisition.json`
+pins all three files, URLs, byte counts and SHA256 digests. Raw catalogues remain
+local and ignored; `make restore-seismic-sources` restores missing files, and
+`make seismic-sources` verifies them offline. Derived rows retain source IDs and
+exclusion reasons. See the [qualification report](../docs/seismic-qualification-results-2026-10-10.md).

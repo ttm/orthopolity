@@ -57,6 +57,13 @@ overlaps the [1.9, 2.1] equivalence band; the frozen decision remains
 **inconclusive**. Two local projections agree closely. Incomplete basin coverage,
 invalid source topologies and an iid adequacy diagnostic further qualify inference.
 
+The [seismic qualification](docs/seismic-qualification-results-2026-10-10.md)
+has also run on available Southern California catalogues. Of 40 sequences with
+enough raw events, **six** pass quality, completeness and location-resolution
+gates; the registered minimum is ten. The test stops before b or D2 fitting and
+does not favour either hypothesis. Source bytes, exclusions and deterministic
+samples are retained for reproduction.
+
 The **8 October biological mechanism and transfer** now connects growth/division
 to mass allocation across logarithmic cell sizes. A known lineage/population
 sampling relation determines the constraint envelope from birth measurements.
@@ -95,8 +102,9 @@ over word types, and compares its contribution with
 
 Reproduce the new studies offline with
 `make inverse-resources linguistic-resources PY=python3.11`.
-The retained registry now contains 32 records and 785 file references.
-All 442 tests pass, including the local-geometry and catchment checks. Earlier detailed empirical accounts remain available in
+The retained registry now contains 33 records and 813 file references.
+All 464 tests pass, including the seismic qualification and local lake geometry
+checks. Earlier detailed empirical accounts remain available in
 [the supporting report](docs/empirical-studies.md); their conclusions are
 unchanged.
 

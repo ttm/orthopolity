@@ -1,13 +1,13 @@
 # Project status and handoff
 
-Last updated 9 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 10 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
-the package layout for all runners. The suite now passes 442 tests; the
-32-run registry verifies all 785 file references. The broader programme and subsequent
+the package layout for all runners. The suite now passes 464 tests; the
+33-run registry verifies all 813 file references. The broader programme and subsequent
 studies are in [research-brief.md](research-brief.md) and
 [ongoing-research.md](ongoing-research.md).
 The [flare-ribbon test has now run](flare-ribbons-run-2026-10-09.md):
@@ -21,6 +21,13 @@ The [local-geometry and catchment follow-up](lake-metric-followup-results-2026-1
 now gives ζ=1.859, iid [1.844,1.874], basin [1.785,1.924]. The original iid
 equivalence disappears. Exact 2 is excluded under these resampling assumptions,
 but the basin interval overlaps [1.9,2.1], so the follow-up rule is inconclusive.
+
+The [seismic qualification](seismic-qualification-results-2026-10-10.md) is complete:
+full catalogues and published memberships were acquired, then source/quality
+choices were frozen at `6ae7a8c`. The sequence count falls 40→28→16→6 through
+raw, quality, completeness and resolution gates. The minimum is ten; no b or
+D2 was fitted. This is an eligibility limitation and does not favour either
+hypothesis. Data access is no longer the barrier for this cohort.
 
 ## 1. What the authors intend
 
@@ -58,6 +65,7 @@ discards the authors' programme.
 | 8–9 Oct 2026 | Four locally registered tests | [preregistered-tests.md](preregistered-tests.md): aftershock and flare runs inconclusive; global lake conditional equivalence; seismicity awaits qualified clusters |
 | 9 Oct 2026 | Merge development branch into main and run lake continuation | Both histories preserved; global and separately frozen UK analyses completed; 430 tests and 31 registry entries verified |
 | 9 Oct 2026 | Local lake geometry and hydrological uncertainty follow-up | 1.43M polygons processed; ζ=1.859, basin [1.785,1.924]; declared equivalence unestablished; 442 tests and 32 registry entries verified |
+| 10 Oct 2026 | Frozen Southern California sequence qualification | 123,275 published events joined to original relocations; 6 eligible sequences versus minimum 10; no b/D2 fitting; 464 tests and 33 registry entries verified |
 
 ## 3. Results to carry forward
 
@@ -99,6 +107,7 @@ grow proportionally sit near ζ = 1; event catalogues and cascades mostly below 
 | Global lake radius, survival ζ | 1.930; iid [1.919, 1.941], Country [1.595, 2.030] | `results/lake-gyration-2026-10-09/result.json` |
 | UK lake radius, survival ζ | 1.441; iid [1.191, 1.714], grid [1.166, 2.009] | `results/uk-lake-gyration-2026-10-09/result.json` |
 | Global local-geometry radius, survival ζ | 1.859; iid [1.844,1.874], matched basin [1.785,1.924] | `results/lake-metric-followup-2026-10-09/result.json` |
+| Southern California b/D2 eligibility | 6 sequences pass, minimum 10; no fitted response or hypothesis preference | `results/seismic-qualification-2026-10-10/result.json` |
 
 ## 4. Current assessment
 
@@ -121,15 +130,22 @@ The [research brief](research-brief.md) explains the general-law programme;
   goodness-of-fit diagnostic (p=0.014) prevent a fully qualified positive claim.
 - The separately frozen UK replication triggers its either-interval departure
   rule, but its spatial interval includes 2. It is not a robust spatial rejection.
+- The seismic source/quality supplement fails the minimum-ten eligibility gate.
+  Location errors reduce 16 sufficiently populated sequences to six with a usable
+  distance span. The error proxy can be conservative; unknown covariance,
+  magnitude-dependent memberships and nonuniform magnitude scales limit a future
+  physical comparison. Neither prediction has been tested on this real cohort.
 - The manuscript has been substantially developed on the merged branch; the
   earlier claim that it still has only September's framing is superseded.
 
 ## 5. Next steps, in priority order
 
-1. **Qualify the remaining seismicity test.** Relocated catalogues are downloaded;
-   freeze quality/magnitude filters and physical clusters before b or D2 fits.
-   Require ten eligible clusters and sufficient dimension contrast. See
-   [available data](accessible-datasets-2026-10-09.md).
+1. **Act on the seismic eligibility finding.** This qualification is complete and
+   its six-sequence result must remain recorded. A different regional catalogue
+   or covariance model needs independent magnitude calibration and enough
+   qualified sequences; the required D2 contrast remains unassessed. Do not
+   relax filters or treat waveform processing groups as physical sequences to
+   force a fit. See [available data](accessible-datasets-2026-10-09.md).
 2. **Explain the lake departure with independently justified inputs.** Physical
    geometry and hydrological uncertainty have now been evaluated. Source
    topology, mapping completeness and classification remain unresolved. The
@@ -152,7 +168,7 @@ The [research brief](research-brief.md) explains the general-law programme;
   exponent was examined and the reading passes a second, different prediction. Grades:
   derived, motivated, suggestive, numerology. Source tags in documents: verified, repository result,
   own derivation, unverified.
-- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 442 tests and
+- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 464 tests and
   regenerates every analysis. The September results were produced with Python 3.11; results
   added on 8–9 October (Gibrat, resource choice, catalogue, aftershocks) with Python 3.13 and the
   pinned packages. Other versions change the older files by at most about $4\times10^{-8}$
@@ -161,6 +177,10 @@ The [research brief](research-brief.md) explains the general-law programme;
 - The registering session had restricted source access. The 9 October local
   continuation acquired full public datasets using approved network access;
   acquisition receipts distinguish full files, samples and metadata-only reads.
+- `make seismic-qualification` reproduces eligibility to `build/reproductions`;
+  `make restore-seismic-sources` restores missing raw catalogues by checksum.
+  The full registered b/D2 response calculation was not run because only six
+  sequences pass. No outcome-dependent estimator or threshold adjustment is pending.
 
 ## 7. Document map
 
@@ -169,6 +189,7 @@ The [research brief](research-brief.md) explains the general-law programme;
 | Current | this file; [preregistered-tests.md](preregistered-tests.md); [glossary.md](glossary.md); [research-program.md](research-program.md); [resource-catalogue.md](resource-catalogue.md); [zeta-compilation.md](zeta-compilation.md); [references.md](references.md); [concept.md](concept.md) |
 | Evidence and audit history | [evidence.md](evidence.md); [source-audit.md](source-audit.md); [lake results](lake-gyration-results-2026-10-09.md) |
 | Latest lake follow-up | [metric/basin results](lake-metric-followup-results-2026-10-09.md); [frozen protocol](lake-metric-followup-protocol-2026-10-09.md); [basin sources](hydrobasins-source-2026-10-09.md) |
+| Latest seismic qualification | [results](seismic-qualification-results-2026-10-10.md); [frozen supplement](seismic-qualification-protocol-2026-10-10.md); `results/seismic-qualification-2026-10-10/` |
 | Unified manuscript and programme | [paper.md](paper.md) and `paper.pdf`; [research-brief.md](research-brief.md); [ongoing-research.md](ongoing-research.md) |
 | Still applicable scope limits | [not-worth-pursuing.md](not-worth-pursuing.md) (cosmological, social and normative claims) |
 | Raw provenance | [archive/2026-10-08/](archive/2026-10-08/README.md): full research dossiers, paper design (resource rule, gates, candidate datasets, falsification criteria), hostile referee report, fact-check, and the complete catalogue workflow output |

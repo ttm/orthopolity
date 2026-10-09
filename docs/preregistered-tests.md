@@ -14,13 +14,15 @@ record. The `declared_utc` fields say 23:55; the commit time is authoritative.
 | Aftershock productivity | rupture area: α = 1.0 | seismic moment: α = 1.5 | **run** | inconclusive by the registered rule: α = 0.63 [0.51, 0.71] excludes both |
 | Flare ribbon areas | space-filling territory: α = 2 | fractal area (FD-SOC): α = 7/3 | **run** | α = 3.163 [2.962, 3.457]; registered verdict inconclusive |
 | Lake radius of gyration | ζ_R = 2 | inherited from area (e.g. 2.28) | **run, spatially qualified** | ζ = 1.930; iid equivalence passes, spatial equivalence not established |
-| b-value against hypocentre dimension | b = D2/2 | b = 1 (FD-SOC) | catalogues acquired; clustering/eligibility pending | — |
+| b-value against hypocentre dimension | b = D2/2 | b = 1 (FD-SOC) | **qualification run; response fitting stopped** | 6 eligible sequences, minimum 10; inconclusive at the eligibility gate |
 
 The registering session could reach only GitHub and PyPI. The local continuation
 now has accessible inputs and completed flare/lake calculations. Original
 registrations and implementation histories are preserved; the
 [lake result report](lake-gyration-results-2026-10-09.md) distinguishes literal
-script verdicts from their uncertainty and geometry qualifications.
+script verdicts from their uncertainty and geometry qualifications. The
+[seismic qualification](seismic-qualification-results-2026-10-10.md) now documents
+an insufficient usable cohort, without calculating either response.
 
 ## Aftershock productivity (run)
 
@@ -89,10 +91,17 @@ anew with this result disclosed.
 - **Reproduce:** `make restore-hydrolakes lake-gyration uk-lake-gyration` with the
   dependencies and qualification details in the [lake report](lake-gyration-results-2026-10-09.md).
 
-## b-value against hypocentre dimension (pending qualified clusters)
+## b-value against hypocentre dimension (qualification inconclusive)
 
 - **Registration:** [configs/prereg_2026-10-08_volumetric_seismicity.json](../configs/prereg_2026-10-08_volumetric_seismicity.json),
   with Amendment 1.
+- **Qualification completed 10 October:** a source/quality supplement was frozen
+  at `6ae7a8c` before completeness or distance-range calculations. Published
+  1981–2018 Southern California memberships give 40 sequences with ≥200 raw
+  events, 28 after quality cuts, 16 above completeness, and **6** with a resolved
+  factor-three distance span. The minimum is ten. No b, D2 or regression was
+  calculated; neither prediction is favoured. See the
+  [report and reproduction steps](seismic-qualification-results-2026-10-10.md).
 - **Amendment 1 (before data access):** the correlation-dimension range runs from the 200th-closest
   pair distance (or three location errors) to 0.1 of the 90th-percentile pair distance, and
   clusters spanning less than a factor of 3 are excluded. The registered range was biased by
@@ -101,7 +110,12 @@ anew with this result disclosed.
   simulated b = 1 world.
 - **Data requirement found in validation:** a volumetric cluster needs roughly 3,000 events above
   completeness to have a usable scaling range; planar clusters need about 1,000.
-- **To run:**
+  These simulation observations are not additional hard eligibility thresholds.
+- **To run with a future qualified cohort:** retain the original predictions and
+  disclose this qualification outcome. Freeze magnitude calibration, location
+  uncertainty and membership before response fitting. The original instructions
+  below remain for a suitable input; this six-sequence cohort must not be passed
+  through as a qualified comparison.
   1. Obtain a relocated catalogue with hypocentres and a cluster identifier, for example the
      Southern California relocated catalogue (Hauksson, Yang and Shearer 2012, updated; SCEDC) with
      nearest-neighbour clusters (Zaliapin and Ben-Zion 2013). Record the catalogue version and the

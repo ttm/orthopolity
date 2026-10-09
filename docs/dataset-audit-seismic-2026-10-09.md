@@ -1,5 +1,11 @@
 # Earthquake catalogue availability, 9 October 2026
 
+**10 October follow-up:** the full regional catalogue, matching older source and
+published sequence memberships have now been acquired. A separately frozen
+[qualification run](seismic-qualification-results-2026-10-10.md) found six eligible
+sequences, below the required ten, and stopped before b or D2. The initial
+sample-only access audit below remains historical; its raw receipts are unchanged.
+
 Two complete public catalogues were downloaded and checked; the regional catalogue
 is also reachable. This audit calculated no b-values, completeness thresholds,
 correlation dimensions, or productivity fits. Acquisition details, hashes and

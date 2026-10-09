@@ -1,0 +1,39 @@
+{
+  "title": "Qualification of published Southern California sequences for the registered b versus D2 comparison",
+  "status": "Commit before real completeness or scaling-range calculations; this is an eligibility assessment, not a newly fitted hypothesis comparison.",
+  "prior_exposure": "Original b/D2 predictions, idealized synthetic validation, published clustering method and source metadata known. Published catalogue has 123275 events, 26137 clusters, 40 with at least 200 raw events. Matching source IDs, coordinates and magnitudes agree exactly; one malformed source clock record is retained because time is not used in this analysis. No real Mc, b, D2 or regression calculated before this freeze.",
+  "original_registration": "configs/prereg_2026-10-08_volumetric_seismicity.json including Amendment1",
+  "acquisition_manifest": "data/seismic-regional/2026-10-09/acquisition.json",
+  "published_catalogue": "data/seismic-regional/2026-10-09/raw/ZBZ_JGR2020_data.txt",
+  "matching_relocations": "data/seismic-regional/2026-10-09/raw/hs_1981_all_comb_K4_A.cat_so_SCSN_v01",
+  "cluster_definition": "Use published index of largest event in cluster unchanged; no reclustering, geographical partition or threshold search. These labels were constructed using time, space and magnitude, so they are externally fixed but not magnitude independent.",
+  "join": "Exact unique SCSN event ID. Require every published event to match and source latitude/longitude/depth/magnitude to agree within half the published last decimal (0.000005 degrees,0.0005km,0.005 magnitude); otherwise abort. Published membership, magnitudes and coordinates retained.",
+  "event_quality": {
+    "location_method": "ct",
+    "event_types": [
+      "le",
+      "eq"
+    ],
+    "absolute_error_km": "Both horizontal and vertical error must be finite and strictly between0 and99km. Values0 or>=99 are not usable error bounds. No cuts on depth, magnitude type, time subperiod or response outcome beyond published cohort and original completeness rule.",
+    "relative_error_policy": "Retain but do not use relative errors across published sequences; precision relative to a waveform component does not establish precision between components.",
+    "location_error_measure": "sqrt(absolute_horizontal_error_km^2+absolute_vertical_error_km^2); conservative resolution proxy, not a fitted covariance model. Record number and largest share of (processing_box,waveform_cluster) components in each complete sequence."
+  },
+  "source_magnitude_floor": 2.0,
+  "completeness": "Round published preferred magnitude to0.1 with numpy.round; MAXC mode +0.2, at least source floor2.0. Ties choose lowest magnitude, as original. Hold this rule fixed.",
+  "minimum_complete_events": 200,
+  "minimum_clusters": 10,
+  "minimum_D2_range_for_later_comparison": 0.5,
+  "D2_cap": 3000,
+  "seed": 202610092,
+  "sampling": "Canonical lexicographic order of decimal-string event IDs; each cluster uses default_rng(SeedSequence([base_seed,cluster_id])); sample without replacement above 3000 complete events. Retain sampled event IDs.",
+  "coordinates": "Original local equirectangular coordinates:111.195km/degree,cos(mean latitude) for longitude, depth_km as z; calculate before cap using all complete events.",
+  "range": "Positive pair distances of capped hypocentres. lower=max(200th closest pair,3*median location error over ALL complete events); upper=0.1*90th-percentile pair distance; require upper/lower>=3 with finite positive bounds;15 geometric radii. Degenerate geometry fails explicitly.",
+  "diagnostic_only": "Report upper/(200th positive pair distance) as an error-free geometric upper bound on qualification. Never use it to replace the actual error floor or to claim resolved D2.",
+  "decision": "If fewer than10 sequences survive every eligibility gate, report registered comparison inconclusive due to insufficient qualified clusters; calculate no b,D2 or regression. If at least10 pass, freeze the execution wrapper before computing those responses and apply the original D2-range and regression rules with stated limitations.",
+  "limitations": [
+    "Absolute errors may be conservative for within-component distances because common translation errors cancel; unknown between-component covariance prevents treating relative errors as general sequence errors.",
+    "Preferred magnitude is not homogeneous moment magnitude; original territory derivation assumes a moment-magnitude relationship. The old relocation file has no magnitude-type column; do not infer one.",
+    "Quality cuts, time-varying detection and magnitude-dependent published clustering are not calibrated by the original idealized synthetic worlds.",
+    "Eligibility failure is an observation-design limitation, not a rejection of either physical hypothesis."
+  ]
+}

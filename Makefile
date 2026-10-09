@@ -28,6 +28,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: hydrolakes-sources restore-hydrolakes lake-gyration uk-lake-gyration
 .PHONY: geometry-registry
 .PHONY: hydrobasins-sources restore-hydrobasins lake-metric-followup metric-followup-registry
+.PHONY: seismic-sources restore-seismic-sources seismic-qualification seismic-qualification-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -117,6 +118,20 @@ lake-metric-followup: hydrolakes-sources hydrobasins-sources ## frozen physical-
 
 metric-followup-registry: ## register retained follow-up without changing prior records
 	$(PY) experiments/register_metric_followup.py
+
+seismic-sources: ## verify all three pinned full catalogues offline
+	$(PY) experiments/fetch_seismic_qualification.py
+
+restore-seismic-sources: ## restore missing public earthquake catalogues by checksum
+	$(PY) experiments/fetch_seismic_qualification.py --restore
+
+seismic-qualification: seismic-sources ## replay frozen eligibility gates; never fit b or D2
+	$(PY) experiments/qualify_volumetric_seismicity.py --output $(STUDY_OUTPUT_ROOT)/seismic-qualification
+	$(PY) experiments/verify_seismic_qualification.py --directory $(STUDY_OUTPUT_ROOT)/seismic-qualification
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/plot_seismic_qualification.py --directory $(STUDY_OUTPUT_ROOT)/seismic-qualification
+
+seismic-qualification-registry: ## append the retained eligibility finding and verify history
+	$(PY) experiments/register_seismic_qualification.py
 
 class-exchange:   ## conservative class exchange, constrained equilibrium, and recovery
 	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_class_exchange.py --output $(STUDY_OUTPUT_ROOT)/class-exchange

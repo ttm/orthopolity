@@ -14,12 +14,21 @@ gives ζ=1.859, iid [1.844,1.874], basin [1.785,1.924]. It removes the earlier
 iid equivalence; exact 2 is excluded, but the basin interval overlaps the
 declared equivalence band, giving an inconclusive frozen verdict. Both local
 projections agree. Source topology, 31 unmatched outlets and an iid adequacy
-diagnostic remain qualifications. All 442 tests and the 32-run/785-reference
-registry pass. Next: qualify physical earthquake clusters or design an
-independently constrained explanation of the observed lake departure, disclosing
-the known results. The earlier programme below retains its history and findings.
+diagnostic remain qualifications.
 
-Last updated: 9 October 2026. This is the mutable handoff document for ongoing
+**10 October seismic continuation:** complete Southern California catalogues and
+published 1981–2018 memberships were acquired and pinned. The
+[frozen qualification](seismic-qualification-results-2026-10-10.md) gives
+40 sequences with ≥200 raw events, 28 after quality cuts, 16 above completeness,
+and **6** with adequate resolution. The registered minimum is ten, so no b, D2
+or regression was calculated. Neither hypothesis is favoured. All 464 tests and
+the 33-run/813-reference registry pass. Next: obtain independently justified
+location covariance and magnitude calibration for another seismic cohort, or
+design a constrained explanation of the known lake departure. Preserve these
+outcomes rather than relaxing filters to obtain a fit. The earlier programme
+below retains its history and findings.
+
+Last updated: 10 October 2026. This is the mutable handoff document for ongoing
 work. It records the current objective, decisions, completed work and exact next
 steps. Immutable executed studies belong in the run registry; this document does
 not replace their frozen protocols or results.

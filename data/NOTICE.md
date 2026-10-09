@@ -146,3 +146,14 @@ WWF with partner support; publisher: https://www.hydrosheds.org/products/hydroba
 The source uses the HydroSHEDS license agreement linked from the publisher.
 The source archives are local, ignored downloads; the repository retains
 checksums and derived analytical output. See `docs/hydrobasins-source-2026-10-09.md`.
+
+## Southern California sequence qualification
+
+Attribute Zaliapin and Ben-Zion (2020), doi:10.1029/2018JB017120, for published
+sequence memberships, and SCEDC/SCSN with Hauksson, Yang and Shearer (2012),
+doi:10.1785/0120120010, for the underlying relocated catalogue. Original source
+descriptions are retained under `seismic-regional/2026-10-09/`; its manifest pins
+three complete downloads. The large raw files remain local and are restored from
+their public source URLs. No blanket CC0 or software-license permission is
+inferred for these sources. The separate Ridgecrest CaltechDATA v2 deposit's CC0
+statement does not apply to this regional catalogue or author-hosted clustering.

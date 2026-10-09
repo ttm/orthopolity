@@ -1,6 +1,6 @@
 # Continuing the registered tests with accessible data
 
-Updated 9 October 2026. The user's quoted handoff was recovered from Git commit
+Updated 10 October 2026. The user's quoted handoff was recovered from Git commit
 `f84667064f0477325ab05b3689c36d7a0b7a8c23` (`origin/main` in this checkout).
 The initial audit ran on `py314-and-package-names`, which contained a different
 research history. At the user's subsequent request, both histories were merged
@@ -19,6 +19,7 @@ explicitly limited access samples are retained under
 | [HydroLAKES v1.0](dataset-audit-lakes-2026-10-09.md) | Full 820.3 MB archive downloaded and verified; 1,427,688 polygons | Original calculation run on 119,683 eligible lakes: ζ = 1.930; ordinary equivalence passes, spatial equivalence not established. |
 | [Ridgecrest AWR v2](dataset-audit-seismic-2026-10-09.md) | Full 19.73 MB CSV; 222,864 events; publisher checksum verified | Magnitude–hypocentre candidate. Needs physical cluster definition and eligibility checks. |
 | [Ridgecrest QTM](dataset-audit-seismic-2026-10-09.md) | Full 4.46 MB archive; 111,918 detections, 46,512 marked relocated | Alternative with location-error fields. Relocation components do not supply the required qualifying physical clusters. |
+| [Southern California published sequences](seismic-qualification-results-2026-10-10.md) | Full 13.31 MB sequence catalogue and matching 98.94 MB relocated source; newer regional file also acquired | Frozen qualification completed: 6 usable sequences, minimum 10. No b or D2 fitted; neither hypothesis favoured. |
 | [USFS FPA FOD v7](dataset-audit-wildfire-2026-10-09.md) | Successful 1,000-record API sample plus metadata; full inventory advertised at ~2.66 million fires | New-domain candidate: burned-area allocation and transfer across years. Needs complete cohorts and a new protocol; no fit run. |
 
 The [flare result report](flare-ribbons-run-2026-10-09.md) retains the exact
@@ -31,13 +32,16 @@ resource interpretation.
 ## Next scientific work
 
 1. The [original and regional lake runs](lake-gyration-results-2026-10-09.md)
-   are complete. Specify a follow-up for physical distance, full polygon geometry,
-   adequacy and hydrological dependence; preserve the completed primary result.
+   and [physical-geometry/catchment follow-up](lake-metric-followup-results-2026-10-09.md)
+   are complete. The latter removes iid equivalence and gives an inconclusive
+   basin-based verdict. Mapping completeness and source topology remain unresolved.
 2. Interpret the UK difference with its sampling limits and overlapping geography.
    It cannot isolate the effects of projection, geometry, mapping and cohort.
-3. For seismicity, freeze a defensible physical clustering procedure before fitting
-   b or D2. The original rule needs at least ten qualified clusters and sufficient
-   dimension contrast; hundreds of thousands of detections alone do not satisfy it.
+3. Seismic qualification now fails the minimum-ten condition: six sequences pass
+   all frozen gates. A further catalogue or covariance model needs independently
+   justified magnitude and uncertainty conventions. Preserve this finding; do
+   not relax the observed filters to force a response fit. Sufficient dimension
+   contrast would remain necessary even with ten sequences.
 4. Register wildfire area allocation as a new test only after defining the resource,
    population and observation period. Include model alternatives, goodness of fit,
    dependence and a withheld-year prediction; merely finding a power law is not a

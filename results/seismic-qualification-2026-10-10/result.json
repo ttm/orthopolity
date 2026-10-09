@@ -1,0 +1,56 @@
+{
+  "config_sha256": "6d1ce0d457f8efb52e6a50bfcc59bf6a813c03f4e4a0c7694dffd93ca3498abe",
+  "source_verification": {
+    "files": 3,
+    "verification": "All full-source sizes and SHA256 digests pass"
+  },
+  "max_join_differences": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "depth_km": 0.0,
+    "mag": 0.0
+  },
+  "n_invalid_published_clock_fields": 1,
+  "n_original_relocation_events": 634252,
+  "event_quality_exclusion_counts": {
+    "not_cross_correlation_relocated": 24534,
+    "not_local_or_authoritative_earthquake": 8865,
+    "unusable_absolute_horizontal_error": 1484,
+    "unusable_absolute_vertical_error": 1478
+  },
+  "n_published_events": 123275,
+  "n_published_clusters": 26137,
+  "n_quality_events": 96441,
+  "n_clusters_at_least_200_raw": 40,
+  "n_clusters_at_least_200_quality": 28,
+  "n_clusters_at_least_200_complete": 16,
+  "n_resolution_qualified_clusters": 6,
+  "minimum_clusters": 10,
+  "n_geometrically_possible_ignoring_error": 16,
+  "qualification_reasons": {
+    "fewer_than_200_raw_events": 26097,
+    "fewer_than_200_quality_events": 12,
+    "fewer_than_200_complete_events": 12,
+    "scaling_range_too_short": 10,
+    "qualified": 6
+  },
+  "qualified_cluster_ids": [
+    2112,
+    15732,
+    39006,
+    41355,
+    44940,
+    76958
+  ],
+  "b_D2_or_regression_computed": false,
+  "verdict": "inconclusive (too few resolution-qualified clusters)",
+  "inference": "Eligibility assessment only. Failure cannot favour b=D2/2 or b=1. Preferred magnitudes and magnitude-dependent published clustering further qualify any later physical interpretation.",
+  "resolution_diagnostics": {
+    "largest_scaling_ratio": 8.753777990527816,
+    "median_absolute_error_range_km": [
+      0.447213595499958,
+      4.757062335348337
+    ],
+    "all_ranged_sequences_span_multiple_waveform_components": true
+  }
+}
