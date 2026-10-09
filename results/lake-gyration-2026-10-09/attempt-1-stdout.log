@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/Users/renatofabbri/rep/orthopolity/results/lake-gyration-2026-10-09/implementation/experiments/run_lake_gyration.py", line 147, in <module>
+    main()
+  File "/Users/renatofabbri/rep/orthopolity/results/lake-gyration-2026-10-09/implementation/experiments/run_lake_gyration.py", line 134, in main
+    t, projection = table_from_shapefile(args.shapefile, ROOT / 'data' / 'derived' / 'hydrolakes_rg.csv')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/renatofabbri/rep/orthopolity/results/lake-gyration-2026-10-09/implementation/experiments/run_lake_gyration.py", line 65, in table_from_shapefile
+    for sr in shp.iterShapeRecords():
+  File "/Users/renatofabbri/rep/orthopolity/build/main-venv-2026-10-09/lib/python3.11/site-packages/shapefile.py", line 4215, in iterShapeRecords
+    for shape, record in zip(
+  File "/Users/renatofabbri/rep/orthopolity/build/main-venv-2026-10-09/lib/python3.11/site-packages/shapefile.py", line 3282, in iterRecords
+    r = self._record(
+        ^^^^^^^^^^^^^
+  File "/Users/renatofabbri/rep/orthopolity/build/main-venv-2026-10-09/lib/python3.11/site-packages/shapefile.py", line 3187, in _record
+    value = _decode_C_or_M_field(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/renatofabbri/rep/orthopolity/build/main-venv-2026-10-09/lib/python3.11/site-packages/shapefile.py", line 503, in _decode_C_or_M_field
+    retval = _try_to_decode_dbf_name_or_text_field(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/renatofabbri/rep/orthopolity/build/main-venv-2026-10-09/lib/python3.11/site-packages/shapefile.py", line 491, in _try_to_decode_dbf_name_or_text_field
+    raise dbfFileException(
+shapefile.dbfFileException: Could not decode field name or text/memo field: b'Pal\x92yeozero                             ' using encoding='utf-8' and encodingErrors='strict' no matter how many trailing pad bytes (if any) ({pad_bytes!r}) were used. 

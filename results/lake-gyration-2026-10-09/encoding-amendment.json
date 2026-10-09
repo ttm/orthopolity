@@ -1,0 +1,13 @@
+{
+  "recorded_utc": "2026-10-09T07:31:57.792789+00:00",
+  "stage": "After initial decoding failure, before any fitted lake outcome or real-radius table was inspected. Some early radii were computed in memory by the failed process; no table was written.",
+  "failure": "Default UTF-8 could not decode 0x92 in a lake-name field. Original attempts and source snapshots retained.",
+  "dbf_ldid": 87,
+  "encoding": "latin1",
+  "basis": "DBF LDID 0x57; GDAL treats this as ISO-8859-1. Use one-to-one decoding; do not ignore or replace bytes.",
+  "documentation": "https://gdal.org/en/stable/drivers/vector/shapefile.html#encoding",
+  "unchanged": "Geometry, numeric fields, selection, statistical estimators, bootstrap, decision rule and row membership. Country grouping preserves byte-string equality.",
+  "adapted_script": "results/lake-gyration-2026-10-09/implementation/experiments/run_lake_gyration_latin1.py",
+  "adapted_script_sha256": "d425d733abdb2d6f3b3c652f8e242c89aeae6de6b95383daf54238ed67bdbc1c",
+  "diff": "One Reader argument: encoding=latin1. Original source remains byte-identical to f846670."
+}

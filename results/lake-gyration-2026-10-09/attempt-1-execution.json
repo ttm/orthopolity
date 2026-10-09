@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/Users/renatofabbri/rep/orthopolity/build/main-venv-2026-10-09/bin/python",
+    "results/lake-gyration-2026-10-09/implementation/experiments/run_lake_gyration.py",
+    "--shapefile",
+    "data/hydrolakes/2026-10-09/extracted/HydroLAKES_polys_v10_shp/HydroLAKES_polys_v10.shp",
+    "--output",
+    "results/lake-gyration-2026-10-09/result.json"
+  ],
+  "plan_commit": "d3f471c0817ec9bb65c4bbb663f570115b5f4073",
+  "before_run_sha256": "6e37ebef89f681498a28de91d293b2a9a4d6abe7bc4c0cb5a56c62b6e0cbccf5",
+  "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "pandas": "2.3.3",
+  "pyshp": "3.1.6",
+  "pyproj": "3.7.2",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "exit_code": 1,
+  "elapsed_seconds": 5.095647332957014
+}

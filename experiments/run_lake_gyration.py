@@ -51,7 +51,7 @@ def ring_gyration(x, y):
     return abs(a), float(np.sqrt(max(rg2, 0.0)))
 
 
-def table_from_shapefile(path, out):
+def table_from_shapefile(path, out, encoding='utf-8'):
     import shapefile                                  # pyshp
     try:
         from pyproj import Transformer
@@ -60,7 +60,7 @@ def table_from_shapefile(path, out):
     except ImportError:
         sys.exit('pyproj is required for the pre-registered EPSG:6933 projection (pip install pyproj).')
     rows = []
-    with shapefile.Reader(str(path)) as shp:
+    with shapefile.Reader(str(path), encoding=encoding) as shp:
         fields = [f[0] for f in shp.fields[1:]]
         for sr in shp.iterShapeRecords():
             rec = dict(zip(fields, sr.record))
@@ -117,6 +117,7 @@ def analyse(t, rng, n_boot=N_BOOT):
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--shapefile')
+    ap.add_argument('--encoding', default='utf-8', help='DBF text encoding; HydroLAKES v1.0 uses LDID 0x57 (latin1)')
     ap.add_argument('--table')
     ap.add_argument('--synthetic', type=float, help='simulate radii with this zeta (checking only)')
     ap.add_argument('--output', default=str(ROOT / 'results' / 'lake_gyration.json'))
@@ -131,7 +132,7 @@ def main(argv=None):
         print(json.dumps(res, indent=1))
         return res
     if args.shapefile:
-        t, projection = table_from_shapefile(args.shapefile, ROOT / 'data' / 'derived' / 'hydrolakes_rg.csv')
+        t, projection = table_from_shapefile(args.shapefile, ROOT / 'data' / 'derived' / 'hydrolakes_rg.csv', args.encoding)
     elif args.table and Path(args.table).exists():
         t = pd.read_csv(args.table)
     else:

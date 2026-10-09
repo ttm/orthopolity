@@ -38,3 +38,17 @@ Large archive and extracted geometries are retained locally but excluded from
 Git. Restoration must use the recorded public URL and verify SHA-256 before
 extraction. Original and derived artifact hashes, software versions, exit status
 and result bytes will be retained after the run.
+
+## Execution amendment: DBF decoding
+
+The first attempt stopped on a non-UTF-8 lake-name byte before any table or fit
+was produced. Some early radii were computed inside the failed process but were
+not inspected. The DBF language-driver byte is 87/0x57, which
+[GDAL interprets as ISO-8859-1](https://gdal.org/en/stable/drivers/vector/shapefile.html#encoding).
+Repeat with explicit `latin1` decoding. This preserves every byte distinctly,
+all numeric fields, geometry and Country group equality; it does not assert
+that every displayed name has the intended typography. No error replacement,
+row omission or scientific estimator change is permitted. The original failed
+attempt, source and [amendment](../results/lake-gyration-2026-10-09/encoding-amendment.json)
+are retained. The adapted snapshot changes one Reader argument; the active
+runner exposes the same correction as `--encoding latin1`.
