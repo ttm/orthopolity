@@ -1,0 +1,18 @@
+HTTP/2 200 
+date: Fri, 09 Oct 2026 01:03:32 GMT
+content-type: application/zip
+content-length: 820295132
+strict-transport-security: max-age=63072000
+x-bz-file-name: HydroLAKES_polys_v10_shp.zip
+x-bz-file-id: 4_z2dd0aced54377d2670d40d12_f216bba830412b32b_d20220410_m201900_c000_v0001074_t0012_u01649621940244
+x-bz-content-sha1: none
+x-bz-upload-timestamp: 1649621940244
+accept-ranges: bytes
+x-bz-info-src_last_modified_millis: 1649618552000
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=aySfcpWpqMJkq3AdDEzrt%2F5EOxzo3ujV3uXNOxdzc8VwsGAJZVdy%2FFkDyHXQW6eyymNqrMbo7nVBJmUs7hdmWtPmUUiNNmijcUNsayo%2BMlAQgiMWhbWwQEyNmMS1Ciar1EighmbF"}]}
+cf-cache-status: BYPASS
+server: cloudflare
+cf-ray: a47977517be5ee55-MXP
+alt-svc: h3=":443"; ma=86400
+

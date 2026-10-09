@@ -1,0 +1,51 @@
+{
+  "client_date": "2026-10-09",
+  "retrieved_utc": "2026-10-09T01:07:46.658168+00:00",
+  "url": "https://data.hydrosheds.org/file/hydrolakes/HydroLAKES_polys_v10_shp.zip",
+  "bytes": 820295132,
+  "sha256": "9ef63498569dd7ccd0b8d8852da026e009a75f42d293f00e483f3b9fcfe8e1f9",
+  "archive_crc": "pass",
+  "members": [
+    {
+      "name": "HydroLAKES_polys_v10_shp/",
+      "bytes": 0,
+      "crc32": "00000000"
+    },
+    {
+      "name": "HydroLAKES_polys_v10_shp/HydroLAKES_polys_v10.dbf",
+      "bytes": 376910338,
+      "crc32": "16a8cb8f"
+    },
+    {
+      "name": "HydroLAKES_polys_v10_shp/HydroLAKES_polys_v10.prj",
+      "bytes": 219,
+      "crc32": "2825f405"
+    },
+    {
+      "name": "HydroLAKES_polys_v10_shp/HydroLAKES_polys_v10.sbn",
+      "bytes": 12028484,
+      "crc32": "fe35fdd2"
+    },
+    {
+      "name": "HydroLAKES_polys_v10_shp/HydroLAKES_polys_v10.sbx",
+      "bytes": 165964,
+      "crc32": "b5a59d1e"
+    },
+    {
+      "name": "HydroLAKES_polys_v10_shp/HydroLAKES_polys_v10.shp",
+      "bytes": 1112048460,
+      "crc32": "5e3ecf3a"
+    },
+    {
+      "name": "HydroLAKES_polys_v10_shp/HydroLAKES_polys_v10.shx",
+      "bytes": 11421604,
+      "crc32": "80f9a6a6"
+    },
+    {
+      "name": "HydroLAKES_TechDoc_v10.pdf",
+      "bytes": 989557,
+      "crc32": "3dbb82ed"
+    }
+  ],
+  "scope": "Full source acquisition and archive validation; no radius or fitted outcome inspected."
+}

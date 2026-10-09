@@ -1,0 +1,41 @@
+{
+  "recorded_utc": "2026-10-09T07:27:51.142221+00:00",
+  "client_date": "2026-10-09",
+  "source_commit": "f84667064f0477325ab05b3689c36d7a0b7a8c23",
+  "continuation": "Exact original script with amended R selection, original bootstrap and original literal verdict; no changed statistical rule.",
+  "input_archive": "data/hydrolakes/2026-10-09/HydroLAKES_polys_v10_shp.zip",
+  "input_sha256": "9ef63498569dd7ccd0b8d8852da026e009a75f42d293f00e483f3b9fcfe8e1f9",
+  "sources": [
+    {
+      "path": "results/lake-gyration-2026-10-09/implementation/src/gof.py",
+      "git_path": "src/gof.py",
+      "sha256": "859a5e7deb32efc98bc41c58093126e63e0b0162108c3c275979c9f4e7c4333c"
+    },
+    {
+      "path": "results/lake-gyration-2026-10-09/implementation/experiments/run_lake_gyration.py",
+      "git_path": "experiments/run_lake_gyration.py",
+      "sha256": "3d303f242424fca53615a21c12c10e17a5b51d6c0f00074a0fab8a7773a98d0e"
+    },
+    {
+      "path": "results/lake-gyration-2026-10-09/implementation/configs/prereg_2026-10-08_lake_gyration.json",
+      "git_path": "configs/prereg_2026-10-08_lake_gyration.json",
+      "sha256": "003fd1d7df9644f0a4feba7070170ad470338b0750a287738df48db87a772705"
+    }
+  ],
+  "prior_exposure": [
+    "Original lake registration, source metadata and prior synthetic-validation findings read.",
+    "Downloaded full archive, verified CRC, counted DBF records and read schema. No real lake radius or fitted exponent computed or inspected.",
+    "Published area exponent 2.14 and original predicted radius survival exponent 2 were known.",
+    "Prior flare result 3.163 and aftershock results are known."
+  ],
+  "known_limitations_before_run": [
+    "Actual HydroLAKES DBF has no basin identifier; original runner never implements registered HydroBASINS level-3 bootstrap. Complete two-interval registered decision cannot be asserted.",
+    "Original runner has optional Country-block interval, explicitly unregistered, at 500 draws; it does not use that interval in verdict.",
+    "Largest ring only, ignores holes and other exterior components; EPSG6933 preserves area but distorts distances; no longitude-wrap correction.",
+    "Radius selection R>=1km does not establish mapping completeness for very slender lakes.",
+    "Lake_type1 means not flagged as reservoir/regulated, not verified absence of artificial impoundment.",
+    "No power-law goodness-of-fit gate in original lake script. Any result is an exponent comparison conditional on fitted form."
+  ],
+  "reporting_rule": "Report literal script verdict and iid/Country intervals separately; do not claim completed spatially qualified confirmation. Geometry/adequacy follow-ups remain separately declared.",
+  "additional_hydrolakes_outcome_analyses_planned": false
+}
