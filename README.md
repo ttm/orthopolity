@@ -8,8 +8,9 @@ and the supplied 2017 manuscript by Renato Fabbri and Osvaldo N. Oliveira Jr.
 assessment and next steps. In brief, the repository holds a reproducible critical analysis
 (September 2026), a research programme for establishing orthopolity as the long-residence limit
 of proportional growth, and a catalogue reading 59 power laws as orthopolic resources, which
-fall into a few rules where exponents are dimension counts. No pre-registered test has yet been
-run; the evidence does not yet establish a general law.
+fall into a few rules where exponents are dimension counts. Four tests are pre-registered; the one
+run so far (aftershock productivity) is inconclusive, and three await data. The evidence does
+not yet establish a general law.
 
 The revised [scientific manuscript](docs/paper.md) is the main document. The
 [research programme](docs/research-program.md) sets out the form in which orthopolity could be
@@ -104,6 +105,7 @@ Git records commit order, not independently verified blinding or external prereg
 | [docs/not-worth-pursuing.md](docs/not-worth-pursuing.md) | Claims and directions the present evidence does not justify |
 | [docs/roadmap.md](docs/roadmap.md) | Remaining scientific and submission work |
 | [docs/status.md](docs/status.md) | Start here: intent, history, results, assessment, next steps |
+| [docs/preregistered-tests.md](docs/preregistered-tests.md) | Pre-registered tests: status, results, instructions for the pending ones |
 | [docs/glossary.md](docs/glossary.md) | Etymology and word forms (orthopolity, orthopolic), reference measures, resource exponents |
 | [docs/research-program.md](docs/research-program.md) | Testable formulation, mechanism, prior art, pre-registered tests and falsification criteria |
 | [docs/resource-catalogue.md](docs/resource-catalogue.md) | Orthopolic resources inferred for 59 power laws, the rules they follow, and predictions to test |

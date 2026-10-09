@@ -121,7 +121,9 @@ packing arguments. New readings proposed for biology and social systems mostly g
 
 ## Predictions to test before looking
 
-These follow from the rules and have not been checked against data in this work. They come from
+These follow from the rules. Four were then pre-registered and one was run; see
+[preregistered-tests.md](preregistered-tests.md) for status and results (aftershock productivity:
+inconclusive, seismic-moment reading excluded). They come from
 the pattern analysis and need source verification; each has a rival prediction, so the outcome
 discriminates.
 
