@@ -1,0 +1,13 @@
+{
+  "completed_utc": "2026-10-09T12:56:20.077037+00:00",
+  "seconds": 601.6503895829665,
+  "python": "3.11.6",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "pandas": "2.3.3",
+  "pyproj": "3.7.2",
+  "PROJ": "9.5.1",
+  "pyshp": "3.1.6",
+  "shapely": "2.1.2"
+}

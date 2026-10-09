@@ -1,0 +1,17 @@
+{
+  "original_freeze_commit": "60d4243",
+  "topology_amendment_commit": "964a7b0",
+  "reason_for_followup": "Original global outcome already known; evaluate local physical-distance geometry and hydrological dependence",
+  "code_review": "Independent read-only review checked moment formulas, likelihood, unequal-cluster bootstrap, full-versus-matched interpretation; found topology-gate bug corrected before fitting.",
+  "validation": {
+    "repository_tests": 442,
+    "new_tests": 12,
+    "passed": true,
+    "basin_archive_checks": "All nine archives pass SHA256/size/CRC",
+    "basin_count": 292,
+    "raw_invalid_basin_topology": 209,
+    "basin_conversion_error_features": 0,
+    "basin_raw_dateline_jump_features": 0
+  },
+  "prior_runs": "Unchanged; 31 runs and 751 file references verified during this follow-up"
+}

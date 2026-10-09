@@ -1,0 +1,22 @@
+{
+  "likelihood_score_checks": {
+    "all": {
+      "score_root_zeta": 1.858781325115501,
+      "absolute_difference": 1.0101432490472462e-07
+    },
+    "matched": {
+      "score_root_zeta": 1.8585500962884827,
+      "absolute_difference": 1.0092495483782216e-07
+    }
+  },
+  "selected_rows": 70486,
+  "unique_ids": true,
+  "complete_derived_table_sha256": "e361263dd5c60c092b29c079f32a72673db140b47ca0ab9dbbdfbce8b74b22c7",
+  "independent_geometry_check": {
+    "deterministic_candidates": 71,
+    "valid_geometry_checked": 71,
+    "invalid_geometry_reported_not_repaired": 0,
+    "maximum_absolute_radius_difference_km": 4.085620730620576e-14
+  },
+  "tests": "442 repository tests passed after the topology amendment"
+}

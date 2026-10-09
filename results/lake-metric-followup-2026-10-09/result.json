@@ -1,0 +1,144 @@
+{
+  "data_kind": "Outcome-exposed global follow-up",
+  "config_sha256": "649a803f3f57461bc95485366143eb7314dd9e75b17d328894790efba8fe58b3",
+  "derived_table_sha256": "e361263dd5c60c092b29c079f32a72673db140b47ca0ab9dbbdfbce8b74b22c7",
+  "n_input": 1427688,
+  "primary_all_lakes_country_blocks": {
+    "n": 70486,
+    "zeta_R": 1.858781224101176,
+    "iid_ci95": [
+      1.8442576900961947,
+      1.8739192771048196
+    ],
+    "block_ci95": [
+      1.6070891125089704,
+      1.9538974391933805
+    ],
+    "n_blocks": 167,
+    "largest_block_share": 0.5366739494367676
+  },
+  "matched_lakes_basin_blocks": {
+    "n": 70455,
+    "zeta_R": 1.8585499953635278,
+    "iid_ci95": [
+      1.8429064968673596,
+      1.8726026131563924
+    ],
+    "block_ci95": [
+      1.7851258110875257,
+      1.92436553867725
+    ],
+    "n_blocks": 246,
+    "largest_block_share": 0.0717337307501242
+  },
+  "matched_exponent_verdict": "inconclusive",
+  "global_positive_interpretation_allowed": false,
+  "qualification_gates": {
+    "complete_basin_coverage": false,
+    "valid_selected_topology": false,
+    "local_extent_at_most_200km": true,
+    "relative_projection_discrepancy_at_most_0_001": true,
+    "iid_gof_not_rejected": false
+  },
+  "basin_coverage": {
+    "n_matched": 70455,
+    "n_unmatched": 31,
+    "fraction": 0.9995601963510484,
+    "n_multiple_matches": 0
+  },
+  "geometry": {
+    "n_invalid_selected_topology": 379,
+    "n_selected_with_conversion_errors": 0,
+    "selected_max_center_distance_km": 85.31075321461041,
+    "full_source_max_center_distance_km": 1088.6485373095784,
+    "selected_aeqd_over_laea": {
+      "min": 0.9999976427516697,
+      "p01": 0.9999991833323715,
+      "median": 0.9999999528136514,
+      "p99": 1.0000009810242034,
+      "max": 1.0000089907114895
+    },
+    "selected_laea_over_geodesic_area": {
+      "min": 0.9999982002089873,
+      "p01": 0.999999974446577,
+      "median": 0.9999999998413283,
+      "p99": 1.0000000215211595,
+      "max": 1.000001510255955
+    },
+    "selected_laea_over_source_area": {
+      "min": 0.9705003231802826,
+      "p01": 0.9947675968857058,
+      "median": 1.0046211309066568,
+      "p99": 1.009377980639706,
+      "max": 1.0305527131845065
+    },
+    "full_source_holes": 216330,
+    "full_source_shells": 1427688,
+    "selected_with_holes": 29112,
+    "selected_with_multiple_shells": 0
+  },
+  "alternatives": {
+    "rg_aeqd_km": {
+      "n": 70486,
+      "zeta_R": 1.8587814363380135,
+      "iid_ci95": [
+        1.8444189214445235,
+        1.8726044802343982
+      ],
+      "block_ci95": [
+        1.6072996902730528,
+        1.9453069728896977
+      ],
+      "n_blocks": 167,
+      "largest_block_share": 0.5366739494367676,
+      "entered_relative_to_primary": 0,
+      "left_relative_to_primary": 0
+    },
+    "rg_laea_largest_km": {
+      "n": 70199,
+      "zeta_R": 1.861360134739162,
+      "iid_ci95": [
+        1.8477027849941348,
+        1.8760368622506247
+      ],
+      "block_ci95": [
+        1.610538289927034,
+        1.9600164464801377
+      ],
+      "n_blocks": 167,
+      "largest_block_share": 0.5358480890041168,
+      "entered_relative_to_primary": 35,
+      "left_relative_to_primary": 322
+    }
+  },
+  "goodness_of_fit": {
+    "alpha": 2.8587812240955746,
+    "n": 70486,
+    "ks": 0.004618446345241556,
+    "p_value": 0.013986013986013986,
+    "exceedances": 13,
+    "n_boot": 1000,
+    "ks_synthetic_median": 0.00267704449968334,
+    "ruled_out": true,
+    "note": "Approximate iid parametric bootstrap, p=(exceedances+1)/(B+1). p <= 0.1 rejects the fitted power law under those assumptions; p > 0.1 is non-rejection, not support.",
+    "interpretation": "Descriptive iid diagnostic; not spatially calibrated."
+  },
+  "lake_type_1": {
+    "n": 66074,
+    "zeta_R": 1.9751794292916856,
+    "note": "Not certified natural lakes; point estimate only"
+  },
+  "original_comparison": {
+    "n_original_selected": 119683,
+    "entered": 3676,
+    "left": 52873,
+    "current_selected_laea_over_epsg6933_radius": {
+      "min": 0.1500859109792893,
+      "p01": 0.4198810144858987,
+      "median": 0.8894714756994457,
+      "p99": 1.4951643055422479,
+      "max": 2.3949275903163207
+    },
+    "original_table_sha256": "e10a85d76217921083b9bddb736b54486f59806cae58d624965b658e7303ec45"
+  }
+}

@@ -1,0 +1,6 @@
+....................................................................................................................................................................................................Possible issue encountered when converting Shape #-1 to GeoJSON: Shapefile format requires that all polygon interior holes be contained by an exterior ring, but the Shape contained interior holes (defined by counter-clockwise orientation in the shapefile format) that were orphaned, i.e. not contained by any exterior rings. The rings were still included but were encoded as GeoJSON exterior rings instead of holes.
+......................................................................................................................................................................................................................................................
+----------------------------------------------------------------------
+Ran 442 tests in 35.344s
+
+OK

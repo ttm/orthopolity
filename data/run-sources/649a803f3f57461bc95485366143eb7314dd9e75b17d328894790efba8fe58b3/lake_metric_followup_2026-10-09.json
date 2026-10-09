@@ -1,0 +1,28 @@
+{
+  "title": "Global lake local-metric geometry and hydrological uncertainty follow-up",
+  "status": "Freeze in git before new real-data geometry or fitting; retrospective follow-up to known results, not independent confirmation.",
+  "prior_exposure": "Original global zeta=1.9295, iid interval [1.9185,1.9408], Country interval [1.5945,2.0296]; UK zeta=1.4413. Full source schema known; no new local-projection radii inspected before freeze.",
+  "source": "Pinned HydroLAKES v1.0 polygons; all 1427688 features; DBF latin1; HydroBASINS standard level 3 v1.c all nine regions.",
+  "geometry": "WGS84 ellipsoidal Lambert azimuthal equal area centred at each feature's first vertex; all clockwise exterior rings add, counterclockwise holes subtract. Moments about full-area centroid. Straight projected source segments; no geometry repair or selective omission.",
+  "sensitivity": "Repeat all features with WGS84 geodesic azimuthal equidistant coordinates about same centre; also LAEA largest exterior ring. Each has its own radius-selected cohort.",
+  "rg_range_km": [
+    1.0,
+    20.0
+  ],
+  "reference_measure": "Log-orthopolic territory allocation per d ln R; density alpha=zeta+1; territory prediction zeta=2.",
+  "equivalence_band": [
+    1.9,
+    2.1
+  ],
+  "seed": 202610091,
+  "bootstrap_draws": 1000,
+  "gof_draws": 1000,
+  "minimum_lakes": 100,
+  "minimum_blocks": 10,
+  "basin_join": "WGS84 Pour_long,Pour_lat point intersects closed basin polygon; boundary/overlap ties choose smallest HYBAS_ID. Unmatched ID=0; no nearest assignment. All lakes retained in global point/iid fit. Basin interval fits matched lakes only and reports coverage and its point/iid estimate.",
+  "block_rule": "Resample K occupied level-3 basin IDs uniformly with replacement; keep every selected lake in each sampled basin, including multiplicities. Percentile 95% interval. Country resampling on the full selected cohort is a declared sensitivity.",
+  "decision": "Matched-cohort exponent equivalence requires both iid and basin intervals wholly in [1.9,2.1]. Robust departure requires both intervals wholly below1.9 or both wholly above2.1; otherwise inconclusive. Global positive interpretation additionally requires100% basin coverage, no invalid selected topology, no selected maximum centre distance over200km, maximum selected |AEQD/LAEA radius-1|<=0.001, and nonrejection by descriptive iid bounded refitted KS (p>0.1). Failure of a geometry/coverage gate is qualification, not evidence against the exponent. Spatial independence remains an assumption.",
+  "diagnostics": "Record selected polygon topological validity, full-source and selected max centre distance, LAEA/geodesic area ratio, AEQD/LAEA radius ratios, source Lake_area ratio, holes/components counts, cohort changes relative to original EPSG6933 and both alternatives. Original radii used only for comparisons after current fit choices frozen. Report Lake_type1 point estimate without describing it as verified natural lakes.",
+  "limitations": "Prior outcome exposure; mapping completeness, radius selection and elongated lakes; heterogeneous mapping dates; basin dependence between blocks; coastal outlet mismatches; uniform area and local planar-distance approximation; exponent equivalence does not identify a resource allocation mechanism. A large-sample iid GOF rejection is not a spatially calibrated significance result.",
+  "basin_topology": "Before outcomes,209/292 basins invalid in GEOS. Apply Shapely2.1.2 make_valid(linework) to basin overlay only; retain polygonal parts, require valid nonempty. Query equivalent outlet longitudes lambda and lambda+-360, deduplicate pairs. No lake geometry repair."
+}

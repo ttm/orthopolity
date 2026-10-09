@@ -284,3 +284,14 @@ The two lake result directories and flare result directory preserve exposure
 records, exact execution or source hashes, all outcomes and qualifications.
 Their three run-registry entries supplement the earlier 28 records. The global
 raw archive must be verified separately from the retained selected fitting table.
+
+## 9 October 2026 metric lake and hydrological follow-up
+
+HydroBASINS standard level-3 v1.c, Lehner and Grill (2013), was acquired as
+nine complete publisher archives (25,305,725 bytes; 292 basin features).
+`data/hydrobasins/2026-10-09/acquisition.json` pins URLs, SHA256, sizes and schema.
+Archives remain local and ignored; `make restore-hydrobasins` restores missing
+files from the publisher, and `make hydrobasins-sources` verifies them offline.
+See [source audit](../docs/hydrobasins-source-2026-10-09.md) for attribution,
+the source-license link and the declared handling of invalid basin topology.
+The follow-up reuses the unchanged, previously verified HydroLAKES v1.0 source.

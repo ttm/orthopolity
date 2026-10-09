@@ -9,10 +9,15 @@ excludes both registered predictions; the rule labels this inconclusive.
 The [lake continuation](lake-gyration-results-2026-10-09.md) is complete:
 global ζ = 1.930 passes the ordinary equivalence criterion but lacks spatial
 equivalence; UK ζ = 1.441 triggers its departure rule while the spatial interval
-includes 2. All 430 tests and the 31-run/751-reference registry pass. The next
-registered-test work is global lake geometry/dependence or qualification of
-physical earthquake clusters. The earlier programme below retains its history
-and findings.
+includes 2. The [completed local-geometry/catchment follow-up](lake-metric-followup-results-2026-10-09.md)
+gives ζ=1.859, iid [1.844,1.874], basin [1.785,1.924]. It removes the earlier
+iid equivalence; exact 2 is excluded, but the basin interval overlaps the
+declared equivalence band, giving an inconclusive frozen verdict. Both local
+projections agree. Source topology, 31 unmatched outlets and an iid adequacy
+diagnostic remain qualifications. All 442 tests and the 32-run/785-reference
+registry pass. Next: qualify physical earthquake clusters or design an
+independently constrained explanation of the observed lake departure, disclosing
+the known results. The earlier programme below retains its history and findings.
 
 Last updated: 9 October 2026. This is the mutable handoff document for ongoing
 work. It records the current objective, decisions, completed work and exact next

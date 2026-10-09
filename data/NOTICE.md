@@ -135,3 +135,14 @@ extend automatically to every SCEDC product. Preserve SCEDC/SCSN and original
 paper attribution for their catalogues. RibbonDB's retained README identifies
 Kazachenko et al. (2017); no explicit blanket reuse licence was established by
 this audit. Source-specific notices and metadata remain with each acquisition.
+
+## HydroBASINS follow-up source
+
+HydroBASINS standard level-3 v1.c is attributed to Lehner, B. and Grill, G.
+(2013), *Global river hydrography and network routing: baseline data and new
+approaches to study the world's large river systems*, Hydrological Processes
+27(15), 2171–2186, https://doi.org/10.1002/hyp.9740. Data developed on behalf of
+WWF with partner support; publisher: https://www.hydrosheds.org/products/hydrobasins.
+The source uses the HydroSHEDS license agreement linked from the publisher.
+The source archives are local, ignored downloads; the repository retains
+checksums and derived analytical output. See `docs/hydrobasins-source-2026-10-09.md`.

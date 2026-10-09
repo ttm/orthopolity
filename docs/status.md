@@ -6,8 +6,8 @@ to the files that hold the details.
 
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
-the package layout for all runners. The merged suite passes 430 tests; the
-31-run registry verifies all 751 file references. The broader programme and subsequent
+the package layout for all runners. The suite now passes 442 tests; the
+32-run registry verifies all 785 file references. The broader programme and subsequent
 studies are in [research-brief.md](research-brief.md) and
 [ongoing-research.md](ongoing-research.md).
 The [flare-ribbon test has now run](flare-ribbons-run-2026-10-09.md):
@@ -17,6 +17,10 @@ has now been analysed. [Lake results](lake-gyration-results-2026-10-09.md):
 global ζ = 1.930 passes the original iid equivalence rule, but spatial
 equivalence is not established; UK ζ = 1.441 triggers its departure rule,
 while its spatial interval still includes 2.
+The [local-geometry and catchment follow-up](lake-metric-followup-results-2026-10-09.md)
+now gives ζ=1.859, iid [1.844,1.874], basin [1.785,1.924]. The original iid
+equivalence disappears. Exact 2 is excluded under these resampling assumptions,
+but the basin interval overlaps [1.9,2.1], so the follow-up rule is inconclusive.
 
 ## 1. What the authors intend
 
@@ -53,6 +57,7 @@ discards the authors' programme.
 | 8 Oct 2026 | Resource catalogue of 59 power laws | [resource-catalogue.md](resource-catalogue.md): a few rules, exponents as dimension counts under the log measure |
 | 8–9 Oct 2026 | Four locally registered tests | [preregistered-tests.md](preregistered-tests.md): aftershock and flare runs inconclusive; global lake conditional equivalence; seismicity awaits qualified clusters |
 | 9 Oct 2026 | Merge development branch into main and run lake continuation | Both histories preserved; global and separately frozen UK analyses completed; 430 tests and 31 registry entries verified |
+| 9 Oct 2026 | Local lake geometry and hydrological uncertainty follow-up | 1.43M polygons processed; ζ=1.859, basin [1.785,1.924]; declared equivalence unestablished; 442 tests and 32 registry entries verified |
 
 ## 3. Results to carry forward
 
@@ -93,6 +98,7 @@ grow proportionally sit near ζ = 1; event catalogues and cascades mostly below 
 | Flare ribbon area, density α | 3.163 [2.962, 3.457], both proposed exponents excluded | `results/flare-ribbons-2026-10-09/result.json` |
 | Global lake radius, survival ζ | 1.930; iid [1.919, 1.941], Country [1.595, 2.030] | `results/lake-gyration-2026-10-09/result.json` |
 | UK lake radius, survival ζ | 1.441; iid [1.191, 1.714], grid [1.166, 2.009] | `results/uk-lake-gyration-2026-10-09/result.json` |
+| Global local-geometry radius, survival ζ | 1.859; iid [1.844,1.874], matched basin [1.785,1.924] | `results/lake-metric-followup-2026-10-09/result.json` |
 
 ## 4. Current assessment
 
@@ -107,7 +113,12 @@ The [research brief](research-brief.md) explains the general-law programme;
   intervals exclude both specified rival readings under the implemented analyses.
 - Global lake ζ is practically equivalent to 2 under its declared iid margin,
   but Country uncertainty does not establish equivalence and the basin interval
-  is absent. The literal script's positive verdict remains qualified.
+  is absent from that original analysis. The literal script's positive verdict
+  remains recorded. Its local-geometry follow-up moves ζ to 1.859 and removes
+  iid equivalence. The basin interval excludes exact 2 but overlaps the margin,
+  so the follow-up is inconclusive under its frozen rule. LAEA and geodesic
+  AEQD agree; 379 invalid selected polygons, 31 unmatched outlets and an iid
+  goodness-of-fit diagnostic (p=0.014) prevent a fully qualified positive claim.
 - The separately frozen UK replication triggers its either-interval departure
   rule, but its spatial interval includes 2. It is not a robust spatial rejection.
 - The manuscript has been substantially developed on the merged branch; the
@@ -115,13 +126,15 @@ The [research brief](research-brief.md) explains the general-law programme;
 
 ## 5. Next steps, in priority order
 
-1. **Resolve the global lake observation model.** Declare a follow-up for physical
-   distance, complete polygon geometry, distribution adequacy and hydrological
-   dependence before further fitting. Preserve the completed original result.
-2. **Qualify the remaining seismicity test.** Relocated catalogues are downloaded;
+1. **Qualify the remaining seismicity test.** Relocated catalogues are downloaded;
    freeze quality/magnitude filters and physical clusters before b or D2 fits.
    Require ten eligible clusters and sufficient dimension contrast. See
    [available data](accessible-datasets-2026-10-09.md).
+2. **Explain the lake departure with independently justified inputs.** Physical
+   geometry and hydrological uncertainty have now been evaluated. Source
+   topology, mapping completeness and classification remain unresolved. The
+   declared Lake_type1 point sensitivity is already known (ζ=1.975); it cannot
+   be promoted to a new blind confirmatory test. Preserve all completed outputs.
 3. **Follow up aftershocks** with finite-fault rupture windows under a new protocol,
    disclosing the earlier result. Wildfire allocation is another available-data
    route requiring a separate resource and held-out prediction design.
@@ -139,7 +152,7 @@ The [research brief](research-brief.md) explains the general-law programme;
   exponent was examined and the reading passes a second, different prediction. Grades:
   derived, motivated, suggestive, numerology. Source tags in documents: verified, repository result,
   own derivation, unverified.
-- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 430 tests and
+- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 442 tests and
   regenerates every analysis. The September results were produced with Python 3.11; results
   added on 8–9 October (Gibrat, resource choice, catalogue, aftershocks) with Python 3.13 and the
   pinned packages. Other versions change the older files by at most about $4\times10^{-8}$
@@ -155,6 +168,7 @@ The [research brief](research-brief.md) explains the general-law programme;
 |---|---|
 | Current | this file; [preregistered-tests.md](preregistered-tests.md); [glossary.md](glossary.md); [research-program.md](research-program.md); [resource-catalogue.md](resource-catalogue.md); [zeta-compilation.md](zeta-compilation.md); [references.md](references.md); [concept.md](concept.md) |
 | Evidence and audit history | [evidence.md](evidence.md); [source-audit.md](source-audit.md); [lake results](lake-gyration-results-2026-10-09.md) |
+| Latest lake follow-up | [metric/basin results](lake-metric-followup-results-2026-10-09.md); [frozen protocol](lake-metric-followup-protocol-2026-10-09.md); [basin sources](hydrobasins-source-2026-10-09.md) |
 | Unified manuscript and programme | [paper.md](paper.md) and `paper.pdf`; [research-brief.md](research-brief.md); [ongoing-research.md](ongoing-research.md) |
 | Still applicable scope limits | [not-worth-pursuing.md](not-worth-pursuing.md) (cosmological, social and normative claims) |
 | Raw provenance | [archive/2026-10-08/](archive/2026-10-08/README.md): full research dossiers, paper design (resource rule, gates, candidate datasets, falsification criteria), hostile referee report, fact-check, and the complete catalogue workflow output |

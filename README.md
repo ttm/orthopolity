@@ -50,6 +50,13 @@ A separately frozen UK replication gives 1.441; its spatial interval includes 2.
 Both runs retain their original decision rules, limitations and reproduction
 commands. The development branch is merged into `main`.
 
+The [local-geometry and catchment follow-up](docs/lake-metric-followup-results-2026-10-09.md)
+weakens that original agreement: ζ = **1.859**, iid interval [1.844, 1.874],
+catchment interval [1.785, 1.924]. The spatial interval excludes exact 2 but
+overlaps the [1.9, 2.1] equivalence band; the frozen decision remains
+**inconclusive**. Two local projections agree closely. Incomplete basin coverage,
+invalid source topologies and an iid adequacy diagnostic further qualify inference.
+
 The **8 October biological mechanism and transfer** now connects growth/division
 to mass allocation across logarithmic cell sizes. A known lineage/population
 sampling relation determines the constraint envelope from birth measurements.
@@ -88,8 +95,8 @@ over word types, and compares its contribution with
 
 Reproduce the new studies offline with
 `make inverse-resources linguistic-resources PY=python3.11`.
-The retained registry now contains 31 records and 751 file references.
-All 430 tests pass, including eleven new lake geometry and sampling checks. Earlier detailed empirical accounts remain available in
+The retained registry now contains 32 records and 785 file references.
+All 442 tests pass, including the local-geometry and catchment checks. Earlier detailed empirical accounts remain available in
 [the supporting report](docs/empirical-studies.md); their conclusions are
 unchanged.
 

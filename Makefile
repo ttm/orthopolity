@@ -27,6 +27,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: cell-division-sources cell-division cell-division-registry
 .PHONY: hydrolakes-sources restore-hydrolakes lake-gyration uk-lake-gyration
 .PHONY: geometry-registry
+.PHONY: hydrobasins-sources restore-hydrobasins lake-metric-followup metric-followup-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -43,7 +44,7 @@ PAPER_ENV := SOURCE_DATE_EPOCH=$(PAPER_EPOCH) FORCE_SOURCE_DATE=1
 all: data test analyses
 
 install:
-	$(PY) -m pip install -r requirements.txt -e ".[analyses]"
+	$(PY) -m pip install -r requirements.txt -e ".[analyses,geospatial]"
 
 data:            ## verify every raw input against data/snapshot_checksums.json
 	$(PY) experiments/fetch_data.py
@@ -104,6 +105,18 @@ uk-lake-gyration: ## separate frozen regional replication; does not overwrite re
 
 geometry-registry: ## archive the retained flare and lake calculations
 	$(PY) experiments/register_geometry_tests.py
+
+hydrobasins-sources: ## verify local publisher basin archives without networking
+	$(PY) experiments/fetch_hydrobasins.py
+
+restore-hydrobasins: ## restore missing catchment archives from pinned publisher URLs
+	$(PY) experiments/fetch_hydrobasins.py --restore
+
+lake-metric-followup: hydrolakes-sources hydrobasins-sources ## frozen physical-geometry/catchment follow-up
+	$(PY) experiments/run_lake_metric_followup.py --derive --output $(STUDY_OUTPUT_ROOT)/lake-metric-followup
+
+metric-followup-registry: ## register retained follow-up without changing prior records
+	$(PY) experiments/register_metric_followup.py
 
 class-exchange:   ## conservative class exchange, constrained equilibrium, and recovery
 	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_class_exchange.py --output $(STUDY_OUTPUT_ROOT)/class-exchange
