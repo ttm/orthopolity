@@ -1,0 +1,1178 @@
+{
+  "source": "HydroBASINS standard level3 v1.c",
+  "retrieved_utc_date": "2026-10-09",
+  "landing_page": "https://www.hydrosheds.org/products/hydrobasins",
+  "license": "HydroSHEDS license agreement; see bundled technical documentation and HydroSHEDS Technical Documentation",
+  "archives": [
+    {
+      "path": "data/hydrobasins/2026-10-09/raw/hybas_af_lev03_v1c.zip",
+      "url": "https://data.hydrosheds.org/file/hydrobasins/standard/hybas_af_lev03_v1c.zip",
+      "sha256": "2a21ec9b349499afa5fe60666ce0395a5658969fd9995f5c0cbf7ed61bb70a5c",
+      "bytes": 3095427,
+      "members": [
+        {
+          "name": "hybas_af_lev03_v1c.dbf",
+          "bytes": 6428,
+          "crc32": "9cdf6b32"
+        },
+        {
+          "name": "hybas_af_lev03_v1c.prj",
+          "bytes": 219,
+          "crc32": "2825f405"
+        },
+        {
+          "name": "hybas_af_lev03_v1c.sbn",
+          "bytes": 692,
+          "crc32": "e356d940"
+        },
+        {
+          "name": "hybas_af_lev03_v1c.sbx",
+          "bytes": 196,
+          "crc32": "395fffa5"
+        },
+        {
+          "name": "hybas_af_lev03_v1c.shp",
+          "bytes": 5324404,
+          "crc32": "f3f48073"
+        },
+        {
+          "name": "hybas_af_lev03_v1c.shp.xml",
+          "bytes": 3601,
+          "crc32": "01ee6210"
+        },
+        {
+          "name": "hybas_af_lev03_v1c.shx",
+          "bytes": 492,
+          "crc32": "764d5487"
+        },
+        {
+          "name": "HydroBASINS_TechDoc_v1c.pdf",
+          "bytes": 269329,
+          "crc32": "bfa2e1a5"
+        }
+      ],
+      "feature_count": 49,
+      "invalid_planar_geographic_topology": 25,
+      "schema": [
+        [
+          "HYBAS_ID",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_DOWN",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_SINK",
+          "N",
+          11,
+          0
+        ],
+        [
+          "MAIN_BAS",
+          "N",
+          11,
+          0
+        ],
+        [
+          "DIST_SINK",
+          "N",
+          10,
+          1
+        ],
+        [
+          "DIST_MAIN",
+          "N",
+          10,
+          1
+        ],
+        [
+          "SUB_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "UP_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "PFAF_ID",
+          "N",
+          8,
+          0
+        ],
+        [
+          "ENDO",
+          "N",
+          6,
+          0
+        ],
+        [
+          "COAST",
+          "N",
+          6,
+          0
+        ],
+        [
+          "ORDER",
+          "N",
+          6,
+          0
+        ],
+        [
+          "SORT",
+          "N",
+          11,
+          0
+        ]
+      ]
+    },
+    {
+      "path": "data/hydrobasins/2026-10-09/raw/hybas_ar_lev03_v1c.zip",
+      "url": "https://data.hydrosheds.org/file/hydrobasins/standard/hybas_ar_lev03_v1c.zip",
+      "sha256": "9856e9eed6424a5a7d10a261925ccbdb9fdf9b51ca45cd61a803de87e0b4bfe9",
+      "bytes": 2485609,
+      "members": [
+        {
+          "name": "hybas_ar_lev03_v1c.dbf",
+          "bytes": 2768,
+          "crc32": "4e27dcd7"
+        },
+        {
+          "name": "hybas_ar_lev03_v1c.prj",
+          "bytes": 219,
+          "crc32": "2825f405"
+        },
+        {
+          "name": "hybas_ar_lev03_v1c.sbn",
+          "bytes": 340,
+          "crc32": "d2469f14"
+        },
+        {
+          "name": "hybas_ar_lev03_v1c.sbx",
+          "bytes": 148,
+          "crc32": "b7327c05"
+        },
+        {
+          "name": "hybas_ar_lev03_v1c.shp",
+          "bytes": 4449292,
+          "crc32": "6070841e"
+        },
+        {
+          "name": "hybas_ar_lev03_v1c.shp.xml",
+          "bytes": 3602,
+          "crc32": "20bc51ae"
+        },
+        {
+          "name": "hybas_ar_lev03_v1c.shx",
+          "bytes": 252,
+          "crc32": "19ac0bcb"
+        },
+        {
+          "name": "HydroBASINS_TechDoc_v1c.pdf",
+          "bytes": 269329,
+          "crc32": "bfa2e1a5"
+        }
+      ],
+      "feature_count": 19,
+      "invalid_planar_geographic_topology": 18,
+      "schema": [
+        [
+          "HYBAS_ID",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_DOWN",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_SINK",
+          "N",
+          11,
+          0
+        ],
+        [
+          "MAIN_BAS",
+          "N",
+          11,
+          0
+        ],
+        [
+          "DIST_SINK",
+          "N",
+          10,
+          1
+        ],
+        [
+          "DIST_MAIN",
+          "N",
+          10,
+          1
+        ],
+        [
+          "SUB_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "UP_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "PFAF_ID",
+          "N",
+          8,
+          0
+        ],
+        [
+          "ENDO",
+          "N",
+          6,
+          0
+        ],
+        [
+          "COAST",
+          "N",
+          6,
+          0
+        ],
+        [
+          "ORDER",
+          "N",
+          6,
+          0
+        ],
+        [
+          "SORT",
+          "N",
+          11,
+          0
+        ]
+      ]
+    },
+    {
+      "path": "data/hydrobasins/2026-10-09/raw/hybas_as_lev03_v1c.zip",
+      "url": "https://data.hydrosheds.org/file/hydrobasins/standard/hybas_as_lev03_v1c.zip",
+      "sha256": "8685de538821bbfdd3aaa8d215abc93b8ad77ae9d10f909c6bc03a93d80c3e8d",
+      "bytes": 3277341,
+      "members": [
+        {
+          "name": "hybas_as_lev03_v1c.dbf",
+          "bytes": 5940,
+          "crc32": "2cfd0163"
+        },
+        {
+          "name": "hybas_as_lev03_v1c.prj",
+          "bytes": 219,
+          "crc32": "2825f405"
+        },
+        {
+          "name": "hybas_as_lev03_v1c.sbn",
+          "bytes": 660,
+          "crc32": "0647f3ad"
+        },
+        {
+          "name": "hybas_as_lev03_v1c.sbx",
+          "bytes": 196,
+          "crc32": "cf9b1b2f"
+        },
+        {
+          "name": "hybas_as_lev03_v1c.shp",
+          "bytes": 6246588,
+          "crc32": "3c63b474"
+        },
+        {
+          "name": "hybas_as_lev03_v1c.shp.xml",
+          "bytes": 3595,
+          "crc32": "9901fae0"
+        },
+        {
+          "name": "hybas_as_lev03_v1c.shx",
+          "bytes": 460,
+          "crc32": "f9888d65"
+        },
+        {
+          "name": "HydroBASINS_TechDoc_v1c.pdf",
+          "bytes": 269329,
+          "crc32": "bfa2e1a5"
+        }
+      ],
+      "feature_count": 45,
+      "invalid_planar_geographic_topology": 29,
+      "schema": [
+        [
+          "HYBAS_ID",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_DOWN",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_SINK",
+          "N",
+          11,
+          0
+        ],
+        [
+          "MAIN_BAS",
+          "N",
+          11,
+          0
+        ],
+        [
+          "DIST_SINK",
+          "N",
+          10,
+          1
+        ],
+        [
+          "DIST_MAIN",
+          "N",
+          10,
+          1
+        ],
+        [
+          "SUB_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "UP_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "PFAF_ID",
+          "N",
+          8,
+          0
+        ],
+        [
+          "ENDO",
+          "N",
+          6,
+          0
+        ],
+        [
+          "COAST",
+          "N",
+          6,
+          0
+        ],
+        [
+          "ORDER",
+          "N",
+          6,
+          0
+        ],
+        [
+          "SORT",
+          "N",
+          11,
+          0
+        ]
+      ]
+    },
+    {
+      "path": "data/hydrobasins/2026-10-09/raw/hybas_au_lev03_v1c.zip",
+      "url": "https://data.hydrosheds.org/file/hydrobasins/standard/hybas_au_lev03_v1c.zip",
+      "sha256": "1b76e59db5e46433e481da4a05b480ab7c11db53870d3c0f23c68474c7a7f0a3",
+      "bytes": 3007229,
+      "members": [
+        {
+          "name": "hybas_au_lev03_v1c.dbf",
+          "bytes": 6184,
+          "crc32": "b3f644f2"
+        },
+        {
+          "name": "hybas_au_lev03_v1c.prj",
+          "bytes": 219,
+          "crc32": "2825f405"
+        },
+        {
+          "name": "hybas_au_lev03_v1c.sbn",
+          "bytes": 668,
+          "crc32": "0aa8c7e4"
+        },
+        {
+          "name": "hybas_au_lev03_v1c.sbx",
+          "bytes": 188,
+          "crc32": "ffba0768"
+        },
+        {
+          "name": "hybas_au_lev03_v1c.shp",
+          "bytes": 5327280,
+          "crc32": "bf64554c"
+        },
+        {
+          "name": "hybas_au_lev03_v1c.shp.xml",
+          "bytes": 3607,
+          "crc32": "ea842523"
+        },
+        {
+          "name": "hybas_au_lev03_v1c.shx",
+          "bytes": 476,
+          "crc32": "95014ab1"
+        },
+        {
+          "name": "HydroBASINS_TechDoc_v1c.pdf",
+          "bytes": 269329,
+          "crc32": "bfa2e1a5"
+        }
+      ],
+      "feature_count": 47,
+      "invalid_planar_geographic_topology": 33,
+      "schema": [
+        [
+          "HYBAS_ID",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_DOWN",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_SINK",
+          "N",
+          11,
+          0
+        ],
+        [
+          "MAIN_BAS",
+          "N",
+          11,
+          0
+        ],
+        [
+          "DIST_SINK",
+          "N",
+          10,
+          1
+        ],
+        [
+          "DIST_MAIN",
+          "N",
+          10,
+          1
+        ],
+        [
+          "SUB_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "UP_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "PFAF_ID",
+          "N",
+          8,
+          0
+        ],
+        [
+          "ENDO",
+          "N",
+          6,
+          0
+        ],
+        [
+          "COAST",
+          "N",
+          6,
+          0
+        ],
+        [
+          "ORDER",
+          "N",
+          6,
+          0
+        ],
+        [
+          "SORT",
+          "N",
+          11,
+          0
+        ]
+      ]
+    },
+    {
+      "path": "data/hydrobasins/2026-10-09/raw/hybas_eu_lev03_v1c.zip",
+      "url": "https://data.hydrosheds.org/file/hydrobasins/standard/hybas_eu_lev03_v1c.zip",
+      "sha256": "418df2b925e5774ec64445267de1d3813f807b72b9eb0e90fbbbe809bd98260b",
+      "bytes": 4367364,
+      "members": [
+        {
+          "name": "hybas_eu_lev03_v1c.dbf",
+          "bytes": 6550,
+          "crc32": "dbd94c49"
+        },
+        {
+          "name": "hybas_eu_lev03_v1c.prj",
+          "bytes": 219,
+          "crc32": "2825f405"
+        },
+        {
+          "name": "hybas_eu_lev03_v1c.sbn",
+          "bytes": 700,
+          "crc32": "a421e67b"
+        },
+        {
+          "name": "hybas_eu_lev03_v1c.sbx",
+          "bytes": 196,
+          "crc32": "d0613d2e"
+        },
+        {
+          "name": "hybas_eu_lev03_v1c.shp",
+          "bytes": 8130472,
+          "crc32": "3c58461e"
+        },
+        {
+          "name": "hybas_eu_lev03_v1c.shp.xml",
+          "bytes": 3600,
+          "crc32": "0d59ddd8"
+        },
+        {
+          "name": "hybas_eu_lev03_v1c.shx",
+          "bytes": 500,
+          "crc32": "1c9fa859"
+        },
+        {
+          "name": "HydroBASINS_TechDoc_v1c.pdf",
+          "bytes": 269329,
+          "crc32": "bfa2e1a5"
+        }
+      ],
+      "feature_count": 50,
+      "invalid_planar_geographic_topology": 39,
+      "schema": [
+        [
+          "HYBAS_ID",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_DOWN",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_SINK",
+          "N",
+          11,
+          0
+        ],
+        [
+          "MAIN_BAS",
+          "N",
+          11,
+          0
+        ],
+        [
+          "DIST_SINK",
+          "N",
+          10,
+          1
+        ],
+        [
+          "DIST_MAIN",
+          "N",
+          10,
+          1
+        ],
+        [
+          "SUB_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "UP_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "PFAF_ID",
+          "N",
+          8,
+          0
+        ],
+        [
+          "ENDO",
+          "N",
+          6,
+          0
+        ],
+        [
+          "COAST",
+          "N",
+          6,
+          0
+        ],
+        [
+          "ORDER",
+          "N",
+          6,
+          0
+        ],
+        [
+          "SORT",
+          "N",
+          11,
+          0
+        ]
+      ]
+    },
+    {
+      "path": "data/hydrobasins/2026-10-09/raw/hybas_gr_lev03_v1c.zip",
+      "url": "https://data.hydrosheds.org/file/hydrobasins/standard/hybas_gr_lev03_v1c.zip",
+      "sha256": "329cb5bdc911e7890ac6bd5c84336d66337d325fe72ceab218106d0d4fffe830",
+      "bytes": 972762,
+      "members": [
+        {
+          "name": "hybas_gr_lev03_v1c.dbf",
+          "bytes": 938,
+          "crc32": "e71bbcc2"
+        },
+        {
+          "name": "hybas_gr_lev03_v1c.prj",
+          "bytes": 219,
+          "crc32": "2825f405"
+        },
+        {
+          "name": "hybas_gr_lev03_v1c.sbn",
+          "bytes": 156,
+          "crc32": "19a1631d"
+        },
+        {
+          "name": "hybas_gr_lev03_v1c.sbx",
+          "bytes": 116,
+          "crc32": "00e34ba9"
+        },
+        {
+          "name": "hybas_gr_lev03_v1c.shp",
+          "bytes": 1460240,
+          "crc32": "85cc0bfa"
+        },
+        {
+          "name": "hybas_gr_lev03_v1c.shp.xml",
+          "bytes": 3607,
+          "crc32": "43ca84a1"
+        },
+        {
+          "name": "hybas_gr_lev03_v1c.shx",
+          "bytes": 132,
+          "crc32": "12a85d60"
+        },
+        {
+          "name": "HydroBASINS_TechDoc_v1c.pdf",
+          "bytes": 269329,
+          "crc32": "bfa2e1a5"
+        }
+      ],
+      "feature_count": 4,
+      "invalid_planar_geographic_topology": 3,
+      "schema": [
+        [
+          "HYBAS_ID",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_DOWN",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_SINK",
+          "N",
+          11,
+          0
+        ],
+        [
+          "MAIN_BAS",
+          "N",
+          11,
+          0
+        ],
+        [
+          "DIST_SINK",
+          "N",
+          10,
+          1
+        ],
+        [
+          "DIST_MAIN",
+          "N",
+          10,
+          1
+        ],
+        [
+          "SUB_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "UP_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "PFAF_ID",
+          "N",
+          8,
+          0
+        ],
+        [
+          "ENDO",
+          "N",
+          6,
+          0
+        ],
+        [
+          "COAST",
+          "N",
+          6,
+          0
+        ],
+        [
+          "ORDER",
+          "N",
+          6,
+          0
+        ],
+        [
+          "SORT",
+          "N",
+          11,
+          0
+        ]
+      ]
+    },
+    {
+      "path": "data/hydrobasins/2026-10-09/raw/hybas_na_lev03_v1c.zip",
+      "url": "https://data.hydrosheds.org/file/hydrobasins/standard/hybas_na_lev03_v1c.zip",
+      "sha256": "9c0a26757743500643fe4c50e4cb6fb23efbe31d212027f2c5a2d38f78e2ded8",
+      "bytes": 3728058,
+      "members": [
+        {
+          "name": "hybas_na_lev03_v1c.dbf",
+          "bytes": 3988,
+          "crc32": "16f10576"
+        },
+        {
+          "name": "hybas_na_lev03_v1c.prj",
+          "bytes": 219,
+          "crc32": "2825f405"
+        },
+        {
+          "name": "hybas_na_lev03_v1c.sbn",
+          "bytes": 420,
+          "crc32": "92d332f0"
+        },
+        {
+          "name": "hybas_na_lev03_v1c.sbx",
+          "bytes": 148,
+          "crc32": "a1508290"
+        },
+        {
+          "name": "hybas_na_lev03_v1c.shp",
+          "bytes": 7147928,
+          "crc32": "2601c065"
+        },
+        {
+          "name": "hybas_na_lev03_v1c.shp.xml",
+          "bytes": 3615,
+          "crc32": "e8adf29b"
+        },
+        {
+          "name": "hybas_na_lev03_v1c.shx",
+          "bytes": 332,
+          "crc32": "cc4f5aee"
+        },
+        {
+          "name": "HydroBASINS_TechDoc_v1c.pdf",
+          "bytes": 269329,
+          "crc32": "bfa2e1a5"
+        }
+      ],
+      "feature_count": 29,
+      "invalid_planar_geographic_topology": 25,
+      "schema": [
+        [
+          "HYBAS_ID",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_DOWN",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_SINK",
+          "N",
+          11,
+          0
+        ],
+        [
+          "MAIN_BAS",
+          "N",
+          11,
+          0
+        ],
+        [
+          "DIST_SINK",
+          "N",
+          10,
+          1
+        ],
+        [
+          "DIST_MAIN",
+          "N",
+          10,
+          1
+        ],
+        [
+          "SUB_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "UP_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "PFAF_ID",
+          "N",
+          8,
+          0
+        ],
+        [
+          "ENDO",
+          "N",
+          6,
+          0
+        ],
+        [
+          "COAST",
+          "N",
+          6,
+          0
+        ],
+        [
+          "ORDER",
+          "N",
+          6,
+          0
+        ],
+        [
+          "SORT",
+          "N",
+          11,
+          0
+        ]
+      ]
+    },
+    {
+      "path": "data/hydrobasins/2026-10-09/raw/hybas_sa_lev03_v1c.zip",
+      "url": "https://data.hydrosheds.org/file/hydrobasins/standard/hybas_sa_lev03_v1c.zip",
+      "sha256": "9eedb5240e9c2c77a55586c8b7b736ff34e067798e4a6d0bc1211549af2fe2aa",
+      "bytes": 2664726,
+      "members": [
+        {
+          "name": "hybas_sa_lev03_v1c.dbf",
+          "bytes": 4232,
+          "crc32": "a8af69b6"
+        },
+        {
+          "name": "hybas_sa_lev03_v1c.prj",
+          "bytes": 219,
+          "crc32": "2825f405"
+        },
+        {
+          "name": "hybas_sa_lev03_v1c.sbn",
+          "bytes": 468,
+          "crc32": "833eb378"
+        },
+        {
+          "name": "hybas_sa_lev03_v1c.sbx",
+          "bytes": 164,
+          "crc32": "9a148f9a"
+        },
+        {
+          "name": "hybas_sa_lev03_v1c.shp",
+          "bytes": 4780996,
+          "crc32": "e68a7152"
+        },
+        {
+          "name": "hybas_sa_lev03_v1c.shp.xml",
+          "bytes": 3616,
+          "crc32": "4b301583"
+        },
+        {
+          "name": "hybas_sa_lev03_v1c.shx",
+          "bytes": 348,
+          "crc32": "cd459141"
+        },
+        {
+          "name": "HydroBASINS_TechDoc_v1c.pdf",
+          "bytes": 269329,
+          "crc32": "bfa2e1a5"
+        }
+      ],
+      "feature_count": 31,
+      "invalid_planar_geographic_topology": 22,
+      "schema": [
+        [
+          "HYBAS_ID",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_DOWN",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_SINK",
+          "N",
+          11,
+          0
+        ],
+        [
+          "MAIN_BAS",
+          "N",
+          11,
+          0
+        ],
+        [
+          "DIST_SINK",
+          "N",
+          10,
+          1
+        ],
+        [
+          "DIST_MAIN",
+          "N",
+          10,
+          1
+        ],
+        [
+          "SUB_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "UP_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "PFAF_ID",
+          "N",
+          8,
+          0
+        ],
+        [
+          "ENDO",
+          "N",
+          6,
+          0
+        ],
+        [
+          "COAST",
+          "N",
+          6,
+          0
+        ],
+        [
+          "ORDER",
+          "N",
+          6,
+          0
+        ],
+        [
+          "SORT",
+          "N",
+          11,
+          0
+        ]
+      ]
+    },
+    {
+      "path": "data/hydrobasins/2026-10-09/raw/hybas_si_lev03_v1c.zip",
+      "url": "https://data.hydrosheds.org/file/hydrobasins/standard/hybas_si_lev03_v1c.zip",
+      "sha256": "af0f99dfce4e5965db3e6e97b9256c2f1f7a341ad0d100fde4803a08c611571b",
+      "bytes": 1707209,
+      "members": [
+        {
+          "name": "hybas_si_lev03_v1c.dbf",
+          "bytes": 2646,
+          "crc32": "8b695f69"
+        },
+        {
+          "name": "hybas_si_lev03_v1c.prj",
+          "bytes": 219,
+          "crc32": "2825f405"
+        },
+        {
+          "name": "hybas_si_lev03_v1c.sbn",
+          "bytes": 300,
+          "crc32": "67bba4ae"
+        },
+        {
+          "name": "hybas_si_lev03_v1c.sbx",
+          "bytes": 132,
+          "crc32": "3d148d58"
+        },
+        {
+          "name": "hybas_si_lev03_v1c.shp",
+          "bytes": 2972564,
+          "crc32": "3e20285d"
+        },
+        {
+          "name": "hybas_si_lev03_v1c.shp.xml",
+          "bytes": 3602,
+          "crc32": "d4ed9829"
+        },
+        {
+          "name": "hybas_si_lev03_v1c.shx",
+          "bytes": 244,
+          "crc32": "15e4c7a5"
+        },
+        {
+          "name": "HydroBASINS_TechDoc_v1c.pdf",
+          "bytes": 269329,
+          "crc32": "bfa2e1a5"
+        }
+      ],
+      "feature_count": 18,
+      "invalid_planar_geographic_topology": 15,
+      "schema": [
+        [
+          "HYBAS_ID",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_DOWN",
+          "N",
+          11,
+          0
+        ],
+        [
+          "NEXT_SINK",
+          "N",
+          11,
+          0
+        ],
+        [
+          "MAIN_BAS",
+          "N",
+          11,
+          0
+        ],
+        [
+          "DIST_SINK",
+          "N",
+          10,
+          1
+        ],
+        [
+          "DIST_MAIN",
+          "N",
+          10,
+          1
+        ],
+        [
+          "SUB_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "UP_AREA",
+          "N",
+          10,
+          1
+        ],
+        [
+          "PFAF_ID",
+          "N",
+          8,
+          0
+        ],
+        [
+          "ENDO",
+          "N",
+          6,
+          0
+        ],
+        [
+          "COAST",
+          "N",
+          6,
+          0
+        ],
+        [
+          "ORDER",
+          "N",
+          6,
+          0
+        ],
+        [
+          "SORT",
+          "N",
+          11,
+          0
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "n": 20000,
+  "zeta_R": 2.3014289117234976,
+  "iid_ci95": [
+    2.2697393462447537,
+    2.3354483271652344
+  ],
+  "block_ci95": [
+    2.271371728710627,
+    2.3326005881279843
+  ],
+  "n_blocks": 100,
+  "largest_block_share": 0.01,
+  "data_kind": "Synthetic only",
+  "true_zeta_R": 2.3,
+  "verdict": "robust exponent departure under declared resampling"
+}

@@ -1,0 +1,19 @@
+HTTP/2 200 
+date: Fri, 09 Oct 2026 07:48:06 GMT
+content-type: application/zip
+content-length: 972762
+strict-transport-security: max-age=63072000
+x-bz-file-name: standard/hybas_gr_lev03_v1c.zip
+x-bz-file-id: 4_zedb01c9d54477d2670d40d12_f1093dbb87510ee3c_d20241206_m215541_c000_v0001078_t0034_u01733522141556
+x-bz-content-sha1: e1b78b5449c52022db1ebe27244c0e2c9f0742e7
+x-bz-upload-timestamp: 1733522141556
+accept-ranges: bytes
+x-bz-info-src_last_modified_millis: 1649619629000
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=EUyY9Hx5SJmzYBpsvGAyaOmtyi4j9rHaMVk5A1Xr0URXXqgrB29WUwVcLY7A4oOJCF2l%2BRdRcxkFy7Bm5qmCedQyhdCNBg1MikcqK4TgACY%2B2M0VK%2BfCGXgkTIs%2BQktgoeeaUc0i"}]}
+last-modified: Fri, 09 Oct 2026 07:48:06 GMT
+cf-cache-status: MISS
+server: cloudflare
+cf-ray: a47bc7efbcd3ee95-MXP
+alt-svc: h3=":443"; ma=86400
+

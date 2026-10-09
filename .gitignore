@@ -30,3 +30,6 @@ data/derived/
 data/hydrolakes/2026-10-09/HydroLAKES_polys_v10_shp.zip
 data/hydrolakes/2026-10-09/extracted/
 results/lake-gyration-2026-10-09/implementation/data/
+
+# HydroBASINS source archives remain local; restore from publisher URLs/digests.
+data/hydrobasins/2026-10-09/raw/

@@ -1,0 +1,17 @@
+{
+  "n": 20000,
+  "zeta_R": 2.001624185124982,
+  "iid_ci95": [
+    1.973529820975386,
+    2.032214472923484
+  ],
+  "block_ci95": [
+    1.9743424168289905,
+    2.029234202524364
+  ],
+  "n_blocks": 100,
+  "largest_block_share": 0.01,
+  "data_kind": "Synthetic only",
+  "true_zeta_R": 2.0,
+  "verdict": "conditional exponent equivalence"
+}
