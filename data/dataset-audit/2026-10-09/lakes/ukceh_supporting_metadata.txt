@@ -1,0 +1,34 @@
+Spatial inventory of UK waterbodies, v3.6
+Data access
+Data can be accessed from https://doi.org/10.5285/b6b92ce3-dcd7-4f0b-8e43-e937ddf1d4eb and is made available under the terms of the Open Government Licence
+When using this data, you must cite:
+Taylor, P.J. (2021). Spatial inventory of UK waterbodies. NERC EDS Environmental Information Data Centre. (Dataset). https://doi.org/10.5285/b6b92ce3-dcd7-4f0b-8e43-e937ddf1d4eb 
+Data description
+This dataset contains the polygons that go with the UK Lakes Portal (https://eip.ceh.ac.uk/apps/lakes/) and the underlying database that informs it. The polygons themselves were originally from OS PANORAMA data and have been edited in places over time. For the most part, the polygons represent this OS data from ~1993, and although changes have been made to some polygon outlines, few new lakes have been added. The main places where additions have been made are in Northern Ireland, where a number of Water Framework Directive (WFD) lakes have been added to the database, and some large lakes where their basins have been split and added individually.
+Changes to the polygons have occurred when projects have focused on certain areas and improvements have been re-incorporated, or when specific work has focused on improving certain areas. The dataset is regularly used for research into lakes and ponds across the UK by many institutions / individuals and the water body ID (WBID) is commonly used as a common identifier. Work has also been done to help increase the number of lake names in the database using local knowledge and maps. This work and the general management of the dataset and portal lie with Philip Taylor (https://www.ceh.ac.uk/staff/philip-taylor).
+Quality Control
+The dataset is originally based on Ordnance Survey data and where changes have been made, these have been checked and approved before publishing here – if the original data had quality issues, some of these will still be replicated here. Also, as it has been nearly 30 years since the original dataset was created and real world changes to lake outlines will have occurred, particularly for managed waterbodies. New, larger waterbodies (such as reservoirs) will also not be reflected in the dataset, and ponds (<1ha) are generally poorly represented. Where crowd-sourced data has been incorporated, this has been checked before publishing.
+Dataset details
+The dataset is in GeoPackage format (.gpkg), which is widely accepted in GIS software. It is projected in OSGB 1936 / British National Grid (EPSG: 27700) and saved as ‘uklakes_v3_6_poly.gpkg’ – the versioning ties in with the underlying database, which is updated regularly.
+The attributes in the data are as follows:
+Attribute label
+Attribute name
+Description
+WBID
+Water Body ID
+This identifier is used across lots of institutions to keep research in sync.
+NAME
+Water Body Name
+The name from multiple sources: OS data, maps, crowd-sourcing.
+POLY_AREA_HA
+Polygon Area (hectares)
+Computed from the spatial data. This could differ from the (historical) value in the database / portal which can come from other sources.
+POLY_PERIMETER_KM
+Polygon Perimeter (kilometres)
+Computed from the spatial data. This could differ from the (historical) value in the database / portal which can come from other sources.
+geom
+Geometry
+This details the polygon geometries to GIS software, and normally won’t appear in the attribute table.
+References
+The original development of this dataset is detailed in Hughes et al. (2004), although this version of the dataset has been changed and improved since then.
+Hughes, M., Hornby, D.D., Bennion, H. et al. The Development of a GIS-based Inventory of Standing Waters in Great Britain together with a Risk-based Prioritisation Protocol. Water, Air, & Soil Pollution: Focus 4, 73–84 (2004). https://doi.org/10.1023/B:WAFO.0000028346.27904.83 

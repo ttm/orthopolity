@@ -1,0 +1,90 @@
+{
+  "audit_date": "2026-10-09",
+  "files": [
+    {
+      "file": "AWR_Hypocenter_Catalog_v2.csv",
+      "bytes": 19728609,
+      "sha256": "fa87745528bddc66e7b1d25a94cba8d2448d38f67c6157c566ae451a84fa3ea8"
+    },
+    {
+      "file": "NOTES_hys_1981_2022_rev_A.pdf",
+      "bytes": 525598,
+      "sha256": "f3a3fae99da442e9a3cbb29cdef771c26bc904dbb9f9953cdcd7ae40018adbed"
+    },
+    {
+      "file": "audit-summary.json",
+      "bytes": 3345,
+      "sha256": "296ec205d3885ab74797e9067d2d45d0890f2676df1d4642426b9e1d769abe66"
+    },
+    {
+      "file": "cahuilla-swarm.html",
+      "bytes": 14271,
+      "sha256": "3308e7c3e15715d25449af4157d8cdf9a97c4a3fa7034c2c682239f8068412c2"
+    },
+    {
+      "file": "caltech-v2-resume.headers.txt",
+      "bytes": 2282,
+      "sha256": "ed628d4be3338f3252e1f18b5de9d3c391fdd434fbab697f85fc3dcc3e78376e"
+    },
+    {
+      "file": "caltech-v2-schema.html",
+      "bytes": 15045,
+      "sha256": "f69ec4dc98266a65158a605c6ee1aafa0f97e4c02259da3e616f5ccfcab79d9e"
+    },
+    {
+      "file": "caltech-v2.headers.txt",
+      "bytes": 2221,
+      "sha256": "476e384a0abcf936efc7d258f624a9a44044e357113419a8e11fe05365586cfe"
+    },
+    {
+      "file": "caltech-v2.metadata.json",
+      "bytes": 8750,
+      "sha256": "5ec7d7b775359114e7e82378aa49e1da34bc8cad807679150b01e38ca4d7d16d"
+    },
+    {
+      "file": "ncedc-2024-first-4000B.ehpcsv",
+      "bytes": 4000,
+      "sha256": "8d8ee23e8fa7ba8e4a7036a8b1f1aedff56e7bede207aca102160a9e0c8326ea"
+    },
+    {
+      "file": "ncedc-2024-sample.headers.txt",
+      "bytes": 364,
+      "sha256": "e11e72fe9cfc6b4353f77fd0554b16023c9aa79e5dd2550aa17d8c97de175964"
+    },
+    {
+      "file": "ridgecrest-qtm.headers.txt",
+      "bytes": 302,
+      "sha256": "e2f8b781ab3d0bc95883fd3ff80fffe69d5c9a690629a7ca02c9f0630baad163"
+    },
+    {
+      "file": "ridgecrest-qtm.html",
+      "bytes": 13762,
+      "sha256": "c509dafa1c3b5d628aa0e63e1dc4410baa9453ddb8b50ee652729dc9d0fb5385"
+    },
+    {
+      "file": "ridgecrest_qtm.tar.gz",
+      "bytes": 4460469,
+      "sha256": "dcb0035f69c6ea9a960e45544f31bdacb38cb7f502c3d29af827da4ff6850849"
+    },
+    {
+      "file": "scedc-citation.html",
+      "bytes": 12953,
+      "sha256": "5128f41bdd6f62e8b4ce41d163fc8a2a4974b57d850ae7702cbc41ea027f21d7"
+    },
+    {
+      "file": "scedc-regional-first-1MB.gc",
+      "bytes": 1000000,
+      "sha256": "4eb17bd0e69a6f380ba8ce2f955d8b5af54d2a0a6d13c2f08168b53367cc7bb6"
+    },
+    {
+      "file": "scedc-regional-sample.headers.txt",
+      "bytes": 730,
+      "sha256": "a21d68fcfbd5bb6d166dc5efb6502685fb22e860eef94958baf78723f311150a"
+    },
+    {
+      "file": "scedc-regional.html",
+      "bytes": 15633,
+      "sha256": "cd48a8dfacb367c4d5580735b302efe88d6e6c36acbfebfdab8e6da5c580ae97"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "preregistration": "configs/prereg_2026-10-08_flare_ribbons.json",
+  "input": "data/dataset-audit/2026-10-09/flare/ribbondb_v1.0.csv",
+  "primary": {
+    "column": " S_RBN [cm^2]",
+    "n": 3137,
+    "x_min": 3.87652e+18,
+    "alpha": 3.1626489853674786,
+    "n_tail": 565,
+    "ks": 0.02667706224684352,
+    "alpha_ci95": [
+      2.962392591422185,
+      3.4574550755576476
+    ],
+    "gof_p": 0.7924151696606786,
+    "lognormal_comparison": {
+      "favours": "inconclusive",
+      "p_value": 0.7993754216421702
+    },
+    "hypotheses_in_interval": {
+      "H_territory": false,
+      "H_fractal": false
+    },
+    "verdict": "inconclusive"
+  },
+  "secondary": {
+    "column": " PHI_RBN [Mx]",
+    "n": 3137,
+    "x_min": 3.118e+21,
+    "alpha": 3.1200157228191947,
+    "n_tail": 346,
+    "ks": 0.04257052455789864,
+    "alpha_ci95": [
+      2.5698660910536213,
+      3.384170098283165
+    ],
+    "gof_p": 0.49101796407185627,
+    "lognormal_comparison": {
+      "favours": "inconclusive",
+      "p_value": 0.9172946107063289
+    },
+    "hypotheses_in_interval": {
+      "H_territory": false,
+      "H_fractal": false
+    },
+    "verdict": "inconclusive"
+  }
+}

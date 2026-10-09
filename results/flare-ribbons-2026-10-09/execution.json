@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/Users/renatofabbri/rep/orthopolity/build/dataset-audit-venv-2026-10-09/bin/python",
+    "results/flare-ribbons-2026-10-09/implementation/experiments/run_flare_ribbons.py",
+    "--input",
+    "data/dataset-audit/2026-10-09/flare/ribbondb_v1.0.csv",
+    "--column",
+    " S_RBN [cm^2]",
+    "--secondary",
+    " PHI_RBN [Mx]",
+    "--output",
+    "results/flare-ribbons-2026-10-09/result.json"
+  ],
+  "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "pandas": "2.2.3",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "before_run_sha256": "a837b1a87aa48ff74e46c650c3605a6578a8af050b993294ad8eddb5d9f6112f",
+  "exit_code": 0,
+  "elapsed_seconds": 31.664533374947496,
+  "result_sha256": "95af3ab2f92340c7a92996db1240f70ae7da4979030241438296c7c2368bfb45"
+}

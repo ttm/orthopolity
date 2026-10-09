@@ -1,0 +1,42 @@
+{
+  "n_rows": 3137,
+  "columns": [
+    "INDEX",
+    "KEY",
+    "TSTART [UT]",
+    "TPEAK [UT]",
+    "TFINAL [UT]",
+    "IXPEAK [W/m^2]",
+    "LAT [deg]",
+    "LON [deg]",
+    "ARNUM",
+    "PHI_AR [Mx]",
+    "PHI_RBN [Mx]",
+    "DPHI_RBN [Mx]",
+    "S_AR [cm^2]",
+    "S_RBN [cm^2]",
+    "DS_RBN [cm^2]",
+    "R_PHI [%]",
+    "R_S[%]"
+  ],
+  "unique_keys": 3135,
+  "finite_positive_area_count": 3137,
+  "scope": "acquisition and schema audit only; no fitted exponents, distribution plots, or outcome tests computed",
+  "duplicates_except_index": [
+    {
+      "key": "20140414_0857_12036_C1.8",
+      "indices": [
+        1941,
+        1942
+      ]
+    },
+    {
+      "key": "20141215_2116_12242_C4.5",
+      "indices": [
+        2441,
+        2442
+      ]
+    }
+  ],
+  "archive_csv_identical_to_direct_download": true
+}

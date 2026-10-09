@@ -28,6 +28,14 @@ proposal, effective resources and forward/inverse inference. It sets six connect
 structure. Specific derivations and empirical findings retain their stated scope.
 The [handoff](docs/ongoing-research.md) records current execution status.
 
+The **9 October dataset continuation** recovered the separately developed
+registered-test protocols from Git and [verified accessible data sources](docs/accessible-datasets-2026-10-09.md).
+The original [flare-ribbon test](docs/flare-ribbons-run-2026-10-09.md) now runs:
+area density exponent 3.163 [2.962, 3.457], excluding both proposed values under
+its implemented uncertainty model and yielding the registered verdict
+*inconclusive*. Lake polygons, relocated earthquake catalogues and a wildfire
+API sample are retained for follow-up designs.
+
 The **8 October biological mechanism and transfer** now connects growth/division
 to mass allocation across logarithmic cell sizes. A known lineage/population
 sampling relation determines the constraint envelope from birth measurements.

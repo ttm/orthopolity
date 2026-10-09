@@ -1,0 +1,121 @@
+{
+  "audit_date": "2026-10-09",
+  "scope": "Availability and schema only. No b, D2, completeness, productivity, or hypothesis statistics computed.",
+  "caltech_v2": {
+    "doi": "10.22002/5af05-cah73",
+    "url": "https://data.caltech.edu/api/records/5af05-cah73/files/AWR_Hypocenter_Catalog_v2.csv/content",
+    "bytes": 19728609,
+    "rows": 222864,
+    "columns": [
+      "evid",
+      "time",
+      "latitude",
+      "longitude",
+      "depth_km",
+      "magnitude_gamma",
+      "qnpair",
+      "qndiffP",
+      "qndiffS",
+      "rmsP",
+      "rmsS"
+    ],
+    "min_time": "2019-04-04T01:47:41.335000",
+    "max_time": "2023-05-01T20:55:26.801000",
+    "missing_by_column": {
+      "evid": 0,
+      "time": 0,
+      "latitude": 0,
+      "longitude": 0,
+      "depth_km": 0,
+      "magnitude_gamma": 0,
+      "qnpair": 0,
+      "qndiffP": 0,
+      "qndiffS": 0,
+      "rmsP": 0,
+      "rmsS": 0
+    },
+    "duplicate_event_ids": 0,
+    "nonfinite_location_or_magnitude_rows": 0,
+    "publisher_md5_verified": true,
+    "license": "CC0-1.0",
+    "download_note": "Initial curl timed out after 60 seconds at 17,869,268 bytes. HTTP range resume completed and publisher MD5 matched."
+  },
+  "ridgecrest_qtm": {
+    "url": "https://service.scedc.caltech.edu/ftp/QTMcatalog-ridgecrest/ridgecrest_qtm.tar.gz",
+    "archive_bytes": 4460469,
+    "uncompressed_bytes": 19921404,
+    "archive_integrity": "Python tarfile decompression succeeded",
+    "rows": 111918,
+    "column_counts": {
+      "25": 111918
+    },
+    "first_time_fields": [
+      "2019",
+      "7",
+      "4",
+      "11",
+      "51",
+      "8.099"
+    ],
+    "last_time_fields": [
+      "2019",
+      "7",
+      "25",
+      "14",
+      "59",
+      "51.550"
+    ],
+    "relocated_nbranch_greater_than_1": 46512,
+    "positive_horizontal_error_rows": 46221,
+    "positive_vertical_error_rows": 46260,
+    "growclust_components": 68112,
+    "growclust_components_with_3000_raw_events": 0,
+    "caution": "GrowClust connected components are relocation groups, not preregistered physical clusters; counts are before completeness cuts."
+  },
+  "scedc_regional": {
+    "url": "https://scedc.caltech.edu/ftp/catalogs/hauksson/Socal_DD/sc_1981_2025_1d_3d_gc_soda_noqb_10_1_SCSN.gc",
+    "resolved_url": "https://service.scedc.caltech.edu/ftp/catalogs/hauksson/Socal_DD/sc_1981_2025_1d_3d_gc_soda_noqb_10_1_SCSN.gc",
+    "http_status": 206,
+    "sample_byte_range": "0-999999",
+    "full_bytes_from_content_range": 152809713,
+    "sample_bytes": 1000000,
+    "complete_rows": 5291,
+    "trailing_partial_row_excluded": true,
+    "rows_with_gc_marker": 3937,
+    "column_counts": {
+      "29": 3937,
+      "18": 1149,
+      "19": 205
+    },
+    "full_download": false
+  },
+  "ncedc_2024": {
+    "url": "https://www.ncedc.org/pub/catalogs/NCSS-catalogs/2024.ehpcsv",
+    "sample_bytes": 4000,
+    "columns": [
+      "time",
+      "latitude",
+      "longitude",
+      "depth",
+      "mag",
+      "magType",
+      "nst",
+      "gap",
+      "dmin",
+      "rms",
+      "net",
+      "id",
+      "updated",
+      "place",
+      "type",
+      "horizontalError",
+      "depthError",
+      "magError",
+      "magNst",
+      "status",
+      "locationSource",
+      "magSource"
+    ],
+    "scope": "Routine catalog sample, not verified double-difference relocated catalog. Transport and schema only."
+  }
+}

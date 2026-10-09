@@ -1,0 +1,152 @@
+{
+"@context": "https://w3id.org/ro/crate/1.2/context",
+"@graph": [
+{
+"@type": "CreativeWork",
+"@id": "ro-crate-metadata.json",
+"conformsTo": { "@id": "https://w3id.org/ro/crate/1.2" },
+"about": { "@id": "https://catalogue.ceh.ac.uk/id/b6b92ce3-dcd7-4f0b-8e43-e937ddf1d4eb" }
+},
+{
+"@type":"Dataset",
+"name":"Spatial inventory of UK waterbodies",
+"@id": "https://catalogue.ceh.ac.uk/id/b6b92ce3-dcd7-4f0b-8e43-e937ddf1d4eb",
+"identifier": {"@id": "https://doi.org/10.5285/b6b92ce3-dcd7-4f0b-8e43-e937ddf1d4eb"},
+"citation":"Taylor, P.J. (2021). Spatial inventory of UK waterbodies. NERC EDS Environmental Information Data Centre. (Dataset). https://doi.org/10.5285/b6b92ce3-dcd7-4f0b-8e43-e937ddf1d4eb",
+"hasPart": [
+{"@id":
+"data/uklakes_v3_6_poly.gpkg"
+} ,
+{"@id":
+"supporting-documents/uklakes_v3_6_poly_metadata.docx"
+} ],
+"description":"The dataset is the lake polygons from the UK Lakes Portal (https://uklakes.ceh.ac.uk/), originally based on OS PANORAMA but this dataset includes data from a number of sources. It has a basic set of attributes including the water body ID (WBID) as well as the computed area and perimeter of each lake. The WBID is commonly used across research institutions and is the same ID as used on the UK Lakes Portal, where more information can be found on each lake in this dataset. This is v3.6, which follows the same versioning as the underlying database. Although the database has seen the majority of the changes since version 1, the polygons have also been changed and improved over that time, mostly fixing issues with lake outlines, but also some new sites being added.",
+"isAccessibleForFree": true,
+"dateCreated":"2021-11-22",
+"datePublished":"2021-11-23",
+"keywords": [
+"freshwater"
+,
+"lake polygons"
+,
+"Lakes"
+,
+"llyn"
+,
+"loch"
+,
+"lough"
+,
+"standing waters"
+,
+"waterbodies"
+,
+{"@type": "DefinedTerm","@id": "http://onto.nerc.ac.uk/CEHMD/topic/11","name": "Land cover" }
+,
+{"@type": "DefinedTerm","@id": "http://onto.nerc.ac.uk/CEHMD/topic/18","name": "Mapping" }
+,
+{"@type": "DefinedTerm","@id": "http://onto.nerc.ac.uk/CEHMD/topic/9","name": "Hydrology" }
+],
+"creator": [
+{"@id": "https://orcid.org/0000-0003-1663-9426"}
+],
+"@reverse": {
+"citation":[
+{"@id": "https://www.gov.uk/government/publications/riverine-natural-capital-condition-and-ecosystem-service-mapping"}
+]
+},
+"spatialCoverage": [ {"@id": "#bbox0"}],
+"license": {"@id": "https://spdx.org/licenses/OGL-UK-3.0"},
+"distribution": [ {"@id": "#distribution0"}],
+"publisher":{"@id":"https://ror.org/04xw4m193"},
+"provider" : {"@id":"https://ror.org/04xw4m193"},
+"includedInDataCatalog":{ "@id": "#eidc-dataCatalogue"}
+},
+{
+"@id": "#eidc-dataCatalogue",
+"@type":"DataCatalog",
+"name":"Environmental Information Data Centre",
+"alternateName":"EIDC",
+"url":"https://catalogue.ceh.ac.uk/eidc/documents"
+},
+{
+"@id": "https://ror.org/04xw4m193",
+"@type":"Organization",
+"name":"NERC EDS Environmental Information Data Centre",
+"email": "info@eidc.ac.uk"
+}
+,{
+"@id": "https://spdx.org/licenses/OGL-UK-3.0",
+"@type": "CreativeWork",
+"name": "Open Government Licence v3",
+"alternateName":"OGL-UK-3.0",
+"sameAs": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+}
+,{
+"@id": "https://doi.org/10.5285/b6b92ce3-dcd7-4f0b-8e43-e937ddf1d4eb",
+"@type":"PropertyValue",
+"propertyID": "https://registry.identifiers.org/registry/doi",
+"value": "10.5285/b6b92ce3-dcd7-4f0b-8e43-e937ddf1d4eb",
+"url": "https://doi.org/10.5285/b6b92ce3-dcd7-4f0b-8e43-e937ddf1d4eb"
+}
+, {
+"@id": "#bbox0",
+"@type":"Place",
+"geo": {
+"@id": "#geoshape0"
+}
+},
+{
+"@id": "#geoshape0",
+"@type": "GeoShape",
+"box":"-8.648 49.864, 1.768 60.861"
+}
+,
+{
+"@id": "https://orcid.org/0000-0003-1663-9426",
+"@type": "Person",
+"name": "Taylor, P.J."
+, "familyName": "Taylor"
+, "givenName": "P.J."
+,"affiliation":{
+"@id": "https://ror.org/00pggkr55"
+}
+}
+, {
+"@id": "https://www.gov.uk/government/publications/riverine-natural-capital-condition-and-ecosystem-service-mapping",
+"@type": "CreativeWork"
+,"citation": "Environment Agency (2026) Riverine Natural Capital Condition and Ecosystem Service Mapping Project: Methodology Report. Environment Agency, Bristol."
+,"url": "https://www.gov.uk/government/publications/riverine-natural-capital-condition-and-ecosystem-service-mapping"
+}
+, {
+"@id":
+"data/uklakes_v3_6_poly.gpkg"
+,"name": "uklakes_v3_6_poly.gpkg","@type": "File"
+,"sha256": "88611daab49affbe65fbf5facaf0acd7dbfe3e12e89ca5cddd5c7c1415dbb58c"
+,"lastModified": "2021-11-23T12:34:10"
+,"bytes": 29741056
+,"contentUrl": "data/uklakes_v3_6_poly.gpkg"
+}
+, {
+"@id":
+"supporting-documents/uklakes_v3_6_poly_metadata.docx"
+,"name": "uklakes_v3_6_poly_metadata.docx","@type": "File"
+,"sha256": "ad1df9dc411faaa0715d31063348a0d9c86c9edb80452de3431f0f9058c05d46"
+,"lastModified": "2021-11-25T09:51:41"
+,"bytes": 21190
+,"contentUrl": "supporting-documents/uklakes_v3_6_poly_metadata.docx"
+}
+, {
+"@id": "#distribution0",
+"@type":"DataDownload",
+"contentUrl":"https://data-package.ceh.ac.uk/data/b6b92ce3-dcd7-4f0b-8e43-e937ddf1d4eb"
+,"encodingFormat":"application/zip"
+}
+, {
+"@id": "https://ror.org/00pggkr55",
+"@type": "Organization",
+"name": "UK Centre for Ecology & Hydrology",
+"identifier": "https://ror.org/00pggkr55"
+}
+]
+}

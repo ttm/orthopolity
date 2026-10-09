@@ -1,0 +1,19 @@
+HTTP/2 301 
+content-length: 0
+location: https://service.scedc.caltech.edu/ftp/catalogs/hauksson/Socal_DD/sc_1981_2025_1d_3d_gc_soda_noqb_10_1_SCSN.gc
+date: Fri, 09 Oct 2026 00:18:10 GMT
+server: AmazonS3
+x-cache: Miss from cloudfront
+via: 1.1 db839d572ca9d3b94384cd70c92268b4.cloudfront.net (CloudFront)
+x-amz-cf-pop: MXP63-P5
+x-amz-cf-id: zFdLuOEYj9ATkruig8vxmiP0V_9m2cYZPRqH03prkXhJ1nlFnRqptg==
+
+HTTP/1.1 206 Partial Content
+Date: Fri, 09 Oct 2026 00:18:09 GMT
+Server: Apache/2.4.37 (Red Hat Enterprise Linux) mod_jk/1.2.48 PHP/8.2.1 OpenSSL/1.1.1k
+Last-Modified: Thu, 26 Feb 2026 23:03:30 GMT
+ETag: "91bb0f1-64bc221055480"
+Accept-Ranges: bytes
+Content-Length: 1000000
+Content-Range: bytes 0-999999/152809713
+

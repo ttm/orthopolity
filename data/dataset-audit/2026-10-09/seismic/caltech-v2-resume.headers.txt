@@ -1,0 +1,40 @@
+HTTP/2 302 
+date: Fri, 09 Oct 2026 00:19:21 GMT
+content-type: text/plain; charset=utf-8
+content-length: 423
+location: https://caltech2.osn.mghpcc.org/caltechdata/b5/c3/cd6d-755b-4874-aa62-d0dd376e8b5c/data?response-content-type=text%2Fplain&response-content-disposition=inline&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=P8ERST8CRWUQEKBPZDRB%2F20261009%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261009T001921Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=6f5983772a9e018ec0a2050eb98347bfdb306450c10cff4c0093f0627cbf1779
+server: cloudflare
+set-cookie: __cf_bm=hHvusJiQSoAeCaejqc41zpo0l4bjd5rubZz_D.kGyeE-1791505160.8009932-1.0.1.1-OYGNrEcPSoor0DkKBjbP7RTuzrU2yD.ZX3OjoPp6IieC.h9ZSSfjci4OlXQMyZMZmpssa7nvTarHLGqXtg9kwBldH8h.GGyDQykVFqkzUqAwCXkC_QSvPypK0ySVQ_SR; HttpOnly; SameSite=None; Secure; Path=/; Domain=data.caltech.edu; Expires=Fri, 09 Oct 2026 00:49:21 GMT
+content-security-policy: default-src 'self' data: 'unsafe-inline' blob: maxcdn.bootstrapcdn.com cdnjs.cloudflare.com media.library.caltech.edu https://cdn.matomo.cloud https://caltechlibrary.matomo.cloud https://caltech2.osn.mghpcc.org; script-src 'self' blob: 'wasm-unsafe-eval' 'unsafe-inline' cdn.matomo.cloud media.library.caltech.edu
+x-content-type-options: nosniff
+x-download-options: noopen
+x-permitted-cross-domain-policies: none
+x-frame-options: sameorigin
+x-xss-protection: 1; mode=block
+content-disposition: inline
+cache-control: no-cache
+x-ratelimit-limit: 500
+x-ratelimit-remaining: 499
+x-ratelimit-reset: 1791505222
+retry-after: 60
+permissions-policy: interest-cohort=()
+strict-transport-security: max-age=31556926; includeSubDomains
+referrer-policy: strict-origin-when-cross-origin
+x-request-id: 68c35429ee72aa451630ae45dde87da3
+cf-cache-status: DYNAMIC
+cf-ray: a4793696f94bc99e-MXP
+
+HTTP/1.1 206 Partial Content
+content-length: 1859341
+content-range: bytes 17869268-19728608/19728609
+accept-ranges: bytes
+last-modified: Thu, 11 Dec 2025 15:51:19 GMT
+x-rgw-object-type: Normal
+etag: "9c0feed366771d17e1cdbe93b4e1fe35"
+x-amz-meta-mtime: 1752775200
+content-disposition: inline
+x-amz-request-id: tx0000009f2bb0915dff774-006ac83309-438115-default
+content-type: text/plain
+server: Ceph Object Gateway (squid)
+date: Fri, 09 Oct 2026 00:19:21 GMT
+

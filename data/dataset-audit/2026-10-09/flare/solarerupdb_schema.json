@@ -1,0 +1,33 @@
+{
+  "n_rows": 480,
+  "columns": [
+    "",
+    "Flaredir",
+    "GOES Peak X-ray flux [W/m^2]",
+    "GOES start time",
+    "GOES peak time",
+    "GOES end time",
+    "GOES duration [sec]",
+    "GOES rise duration [sec]",
+    "GOES fluence [W/m^2 s]",
+    "Peak temperature [MK]",
+    "Peak EM [1e48 cm-3]",
+    "Lon [deg]",
+    "Lat [deg]",
+    "NOAA AR",
+    "Unsigned AR flux [Mx]",
+    "Reconnection flux [Mx]",
+    "Reconnection flux error [Mx]",
+    "Reconnection flux imbalance [Mx]",
+    "Reconnection flux rate [Mx/s]",
+    "Reconnection flux rate error [Mx/s]",
+    "Reconnection flux rate imbalance [Mx/s]",
+    "AR area [cm^2]",
+    "Ribbon area [cm^2]",
+    "Area: rbn error [cm^2]",
+    "Flux: ratio [%]",
+    "Area: ratio [%]",
+    "Eruptivity"
+  ],
+  "scope": "schema audit only; no outcome tests"
+}

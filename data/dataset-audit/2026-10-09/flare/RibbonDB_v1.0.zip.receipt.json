@@ -1,0 +1,10 @@
+{
+  "source_url": "https://solarmuri.ssl.berkeley.edu/~kazachenko/RibbonDB/RibbonDB_v1.0.zip",
+  "access_date_client": "2026-10-09",
+  "retrieved_at_utc": "2026-10-09T00:19:34.151443+00:00",
+  "exit_code": 0,
+  "curl_report": "200\nhttps://solarmuri.ssl.berkeley.edu/~kazachenko/RibbonDB/RibbonDB_v1.0.zip\n4795062\n",
+  "stderr": "",
+  "bytes": 4795062,
+  "sha256": "b074c447ad25744d49fdbc2cb8c885c9cacb32b20ba695306b000a6e0d37eaba"
+}

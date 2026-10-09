@@ -1,0 +1,100 @@
+{
+  "retrieved_client_date": "2026-10-09",
+  "source_landing_page": "https://catalogue.ceh.ac.uk/documents/b6b92ce3-dcd7-4f0b-8e43-e937ddf1d4eb",
+  "download_url": "https://data-package.ceh.ac.uk/data/b6b92ce3-dcd7-4f0b-8e43-e937ddf1d4eb.zip",
+  "files": {
+    "ukceh_lakes_v3_6.zip": {
+      "bytes": 8587716,
+      "sha256": "edfd526159a0a9005a51da57d01866cae78899c76c7e4872af196631a3a4b674"
+    },
+    "uklakes_v3_6_poly.gpkg": {
+      "bytes": 29741056,
+      "sha256": "88611daab49affbe65fbf5facaf0acd7dbfe3e12e89ca5cddd5c7c1415dbb58c"
+    }
+  },
+  "archive_crc": "pass",
+  "sqlite_integrity": "ok",
+  "record_count": 41830,
+  "unique_wbids": 41830,
+  "null_geometry_count": 0,
+  "nonpositive_or_null_area_count": 0,
+  "nonpositive_or_null_perimeter_count": 0,
+  "geometry_columns": [
+    [
+      "uklakes_v3_6_poly",
+      "geom",
+      "MULTIPOLYGON",
+      27700,
+      0,
+      0
+    ]
+  ],
+  "schema": [
+    [
+      0,
+      "fid",
+      "INTEGER",
+      1,
+      null,
+      1
+    ],
+    [
+      1,
+      "geom",
+      "MULTIPOLYGON",
+      0,
+      null,
+      0
+    ],
+    [
+      2,
+      "WBID",
+      "MEDIUMINT",
+      0,
+      null,
+      0
+    ],
+    [
+      3,
+      "NAME",
+      "TEXT",
+      0,
+      null,
+      0
+    ],
+    [
+      4,
+      "POLY_AREA_HA",
+      "REAL",
+      0,
+      null,
+      0
+    ],
+    [
+      5,
+      "POLY_PERIMETER_KM",
+      "REAL",
+      0,
+      null,
+      0
+    ]
+  ],
+  "geometry_structure": {
+    "geometry_records_parsed": 41830,
+    "records_with_multiple_polygons": 5,
+    "polygons": 41839,
+    "rings": 45061,
+    "interior_rings": 3222,
+    "vertices_including_closing_duplicates": 1254053,
+    "unclosed_rings": 0,
+    "rings_with_nonfinite_coordinates": 0,
+    "rings_fewer_than_four_vertices": 0
+  },
+  "not_checked": [
+    "self-intersections or other topological validity",
+    "physical completeness",
+    "reservoir membership",
+    "radius of gyration",
+    "exponent or hypothesis test"
+  ]
+}

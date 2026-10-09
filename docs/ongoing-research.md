@@ -1,5 +1,12 @@
 # Ongoing research: resume here
 
+**9 October continuation:** the user's handoff from `origin/main` at `f846670`
+was recovered without merging branches. See
+[accessible datasets and next tests](accessible-datasets-2026-10-09.md) and the
+[completed flare analysis](flare-ribbons-run-2026-10-09.md). The area interval
+excludes both registered predictions; the rule labels this inconclusive.
+The earlier programme below retains its separate history and findings.
+
 Last updated: 8 October 2026. This is the mutable handoff document for ongoing
 work. It records the current objective, decisions, completed work and exact next
 steps. Immutable executed studies belong in the run registry; this document does
