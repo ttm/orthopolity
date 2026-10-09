@@ -49,7 +49,14 @@ def read_basins():
             raise ValueError(f'Basin checksum mismatch: {path}')
         with shapefile.Reader(str(path)) as reader:
             for row in reader.iterShapeRecords():
-                geometry = shape(row.shape.__geo_interface__)
+                converted = row.shape.__geo_interface__
+                if row.shape._errors:
+                    raise ValueError('Basin ring organisation changed source interpretation')
+                pts = np.asarray(row.shape.points)
+                ends = list(row.shape.parts)+[len(pts)]
+                if any(np.any(np.abs(np.diff(pts[s:e, 0])) > 180) for s, e in zip(ends[:-1], ends[1:])):
+                    raise ValueError('Unresolved date-line-crossing basin ring')
+                geometry = shape(converted)
                 # Retain polygonal pieces of the deterministic linework repair;
                 # dangling zero-area lines cannot define a basin interior.
                 if not geometry.is_valid:
@@ -135,6 +142,7 @@ def analyse(table, output):
     goodness = powerlaw_gof(sample.rg_laea_km.to_numpy(), lo, hi, CONFIG['gof_draws'], seed+4)
     goodness['interpretation'] = 'Descriptive iid diagnostic; not spatially calibrated.'
     geometry = dict(n_invalid_selected_topology=int((sample.topology_valid != True).sum()),
+                    n_selected_with_conversion_errors=int((sample.topology_conversion_errors > 0).sum()),
                     selected_max_center_distance_km=float(sample.max_center_distance_km.max()),
                     full_source_max_center_distance_km=float(table.max_center_distance_km.max()),
                     selected_aeqd_over_laea=quantiles(sample.rg_aeqd_km/sample.rg_laea_km),

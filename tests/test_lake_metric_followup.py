@@ -79,6 +79,16 @@ class LocalLakeGeometry(unittest.TestCase):
         np.testing.assert_array_equal(ids, [10, 10])
         np.testing.assert_array_equal(counts, [1, 1])
 
+    def test_orphan_hole_cannot_pass_topology_via_library_repair(self):
+        from pyproj import Proj
+        proj = Proj(proj='laea', lon_0=20, lat_0=40, ellps='WGS84')
+        rings = [rectangle(6000, 6000), rectangle(6000, 6000, (12000, 0)),
+                 rectangle(1000, 1000, (6000, 5000))[::-1]]
+        pts = np.concatenate([np.column_stack(proj(r[:, 0], r[:, 1], inverse=True)) for r in rings])
+        result = local_geometry(pts, [0, 5, 10], check_topology=True)
+        self.assertGreater(result['topology_conversion_errors'], 0)
+        self.assertFalse(result['topology_valid'])
+
 
 class LakeFollowupInference(unittest.TestCase):
     def test_sufficient_statistic_matches_existing_mle(self):

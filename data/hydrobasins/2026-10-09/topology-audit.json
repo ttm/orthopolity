@@ -1,0 +1,1467 @@
+{
+  "n": 292,
+  "conversion_error_features": 0,
+  "longitude_jump_features": 0,
+  "features": [
+    {
+      "HYBAS_ID": 1030000010,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030003990,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030008100,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030008110,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030011530,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030011660,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030011670,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030012590,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030012600,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030015030,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030015850,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030015860,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030018110,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030020040,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030020050,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030021940,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030022420,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030022430,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030023300,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030023310,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030027410,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030027420,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030027430,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030029810,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030031860,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030034170,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030034260,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030034270,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030034490,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030034610,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030034900,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030035180,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040030,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040040,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040050,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040110,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040140,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040160,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040180,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040190,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040200,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040210,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040220,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040250,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040260,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040280,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040300,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040310,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 1030040370,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030000010,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030005510,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030005520,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030008900,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030009560,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030009570,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030010700,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030016860,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030020760,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030022890,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030024130,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030028930,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030030130,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030030970,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030032840,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030038870,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030044560,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030047650,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 8030051550,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030000010,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030000880,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030000890,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030003020,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030006940,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030007850,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030007860,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030009880,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030009890,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030011690,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030015090,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030017020,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030017030,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030018350,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030022790,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030024190,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030025450,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030025460,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030029530,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030031750,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030033640,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030033650,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030034510,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030037060,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030039450,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030045890,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030046100,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030046370,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030047490,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030047500,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030048470,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030048900,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030050210,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030050220,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030050230,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030050240,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030050270,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030050290,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030050320,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030050390,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030050410,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030050430,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030050450,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030050470,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 4030050980,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030000010,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030005830,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030006690,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030006900,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030007690,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030011800,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030014020,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030015660,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030022170,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030022200,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030022430,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030022500,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030031240,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030037270,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030038940,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030040040,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030040360,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030049720,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030050310,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030050550,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030050850,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030053140,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030054880,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030055000,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030055010,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030055130,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030055420,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030055870,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030055950,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030055960,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030067860,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030073410,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030073420,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030077640,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030079480,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030079490,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030079570,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030079730,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030081550,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030082270,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030084940,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030085040,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030087520,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030087540,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030087590,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030087600,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 5030087690,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030000010,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030003440,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030005690,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030006590,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030006600,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030007930,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030007940,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030008490,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030008500,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030009230,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030012730,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030014550,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030016230,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030018240,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030020320,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030024230,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030026030,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030028220,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030030090,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030033480,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030037990,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030041390,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030045150,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030046500,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030047500,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030048590,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030048790,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030054200,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030056060,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030056770,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030057170,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030059370,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030059450,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030059500,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030059510,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030062160,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030062920,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030065840,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030066850,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030068680,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030068690,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030071190,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030073570,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030073580,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030078740,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030085510,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030085530,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030085570,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030085580,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 2030085720,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 9030000010,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 9030005280,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 9030010370,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 9030013780,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030000010,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030008710,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030008720,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030014250,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030014930,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030014940,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030021430,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030022240,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030022250,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030024600,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030027430,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030029460,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030033480,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030034520,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030034530,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030038340,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030042040,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030046750,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030047060,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030047070,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030047840,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030049270,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030049280,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030065090,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030065760,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030069860,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030070790,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030072800,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 7030073620,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030000010,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030000740,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030000750,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030004470,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030004480,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030006540,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030007000,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030007010,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030007950,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030007960,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030008320,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030009760,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030009770,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030011780,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030011790,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030014330,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030016970,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030016980,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030017370,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030018850,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030018860,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030021870,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030026140,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030029280,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030032290,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030034810,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030035460,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030040020,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030040110,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030040460,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 6030040470,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030000010,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030001840,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030001850,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030003790,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030004740,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030004750,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030005240,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030008670,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030009130,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030009140,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030009320,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030011770,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030012270,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030017830,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030020970,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030022480,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030024180,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    },
+    {
+      "HYBAS_ID": 3030024310,
+      "conversion_errors": {},
+      "longitude_jumps_over_180": 0
+    }
+  ]
+}

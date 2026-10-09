@@ -1,0 +1,27 @@
+{
+  "archive_sha256": "9ef63498569dd7ccd0b8d8852da026e009a75f42d293f00e483f3b9fcfe8e1f9",
+  "archive_bytes": 820295132,
+  "extracted_file_checks": "all pass"
+}
+Geometry: 50,000 features, elapsed 58.4s
+Geometry: 100,000 features, elapsed 87.2s
+Geometry: 150,000 features, elapsed 108.2s
+Geometry: 200,000 features, elapsed 127.4s
+Traceback (most recent call last):
+  File "/Users/renatofabbri/rep/orthopolity/experiments/run_lake_metric_followup.py", line 233, in <module>
+    main()
+  File "/Users/renatofabbri/rep/orthopolity/experiments/run_lake_metric_followup.py", line 214, in main
+    derive()
+  File "/Users/renatofabbri/rep/orthopolity/experiments/run_lake_metric_followup.py", line 89, in derive
+    geometry = local_geometry(row.shape.points, row.shape.parts, check_topology=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/renatofabbri/rep/orthopolity/src/orthopolity/geodesic_lake_geometry.py", line 73, in local_geometry
+    alternative = signed_ring_moments([aeqd[s:e] for s, e in spans])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/renatofabbri/rep/orthopolity/src/orthopolity/geodesic_lake_geometry.py", line 46, in signed_ring_moments
+    return dict(full=finish(np.sum(totals, axis=0)),
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/renatofabbri/rep/orthopolity/src/orthopolity/geodesic_lake_geometry.py", line 41, in finish
+    if not np.isfinite([area, *center, radius2]).all() or radius2 <= 0:
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

@@ -83,13 +83,16 @@ def local_geometry(points, parts, check_topology=False):
                max_center_distance_km=float(distance.max()/1000),
                n_shells=primary['n_shells'], n_holes=primary['n_holes'])
     out['topology_valid'] = None
+    out['topology_conversion_errors'] = 0
     if check_topology and 1 <= out['rg_laea_km'] <= 20:
         # pyshp's ring organisation uses ESRI winding and containment. Projected
         # coordinates prevent geographic date-line edges from confusing GEOS.
         import shapefile
         from shapely.geometry import shape
         shp = shapefile.Shape(shapeType=5, points=xy.tolist(), parts=starts)
-        out['topology_valid'] = bool(shape(shp.__geo_interface__).is_valid)
+        converted = shp.__geo_interface__
+        out['topology_conversion_errors'] = sum(shp._errors.values())
+        out['topology_valid'] = bool(not shp._errors and shape(converted).is_valid)
     return out
 
 

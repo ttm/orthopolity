@@ -1,0 +1,13 @@
+{
+  "recorded_utc": "2026-10-09T12:46:02.772723+00:00",
+  "original_freeze_commit": "60d4243",
+  "reason": "Independent code review found pyshp GeoJSON conversion may promote orphan holes into exterior rings and falsely pass topology validation. Geometry formulas and inference unchanged.",
+  "action": "Interrupted first derivation before any exponent fit. Require no pyshp conversion errors for selected lake validity; reject basin conversion errors and unresolved raw longitude jumps. Added synthetic orphan-hole regression.",
+  "prior_exposure": "Some real local radii were computed into a partial table but no fitting or new exponent output occurred; only progress counters and traceback were inspected.",
+  "partial_table": {
+    "path": "data/derived/lake_metric_followup_2026-10-09.attempt-1.csv",
+    "bytes": 33524463,
+    "sha256": "3418143532b36fa24c0f1daf8188c5d652f426e461b6153282127ea9798c0777"
+  },
+  "supersedes": "Topology gate implementation only; original declared no-repair rule remains in force."
+}
