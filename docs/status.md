@@ -6,15 +6,17 @@ to the files that hold the details.
 
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
-the package layout for all runners. The merged suite passes 419 tests; the
-28-run registry verifies all 704 file references. The prior assessment below
-records the earlier catalogue session; the broader programme and subsequent
+the package layout for all runners. The merged suite passes 430 tests; the
+31-run registry verifies all 751 file references. The broader programme and subsequent
 studies are in [research-brief.md](research-brief.md) and
 [ongoing-research.md](ongoing-research.md).
 The [flare-ribbon test has now run](flare-ribbons-run-2026-10-09.md):
 α = 3.163 [2.962, 3.457], registered verdict inconclusive, both predictions
 excluded under the implemented uncertainty model. The full HydroLAKES archive
-is downloaded and verified; the lake analyses are the next continuation.
+has now been analysed. [Lake results](lake-gyration-results-2026-10-09.md):
+global ζ = 1.930 passes the original iid equivalence rule, but spatial
+equivalence is not established; UK ζ = 1.441 triggers its departure rule,
+while its spatial interval still includes 2.
 
 ## 1. What the authors intend
 
@@ -49,7 +51,8 @@ discards the authors' programme.
 | 8 Oct 2026 | Research programme with adversarial review | [research-program.md](research-program.md): orthopolity as the long-residence limit of proportional growth; resource rule; pre-registered tests |
 | 8 Oct 2026 | Glossary and terminology test | [glossary.md](glossary.md), `tests/test_terminology.py` |
 | 8 Oct 2026 | Resource catalogue of 59 power laws | [resource-catalogue.md](resource-catalogue.md): a few rules, exponents as dimension counts under the log measure |
-| 8–9 Oct 2026 | Four pre-registered tests ("go for them", lead author) | [preregistered-tests.md](preregistered-tests.md): aftershock test run (inconclusive; moment reading excluded); three tests ready to run where their data are reachable |
+| 8–9 Oct 2026 | Four locally registered tests | [preregistered-tests.md](preregistered-tests.md): aftershock and flare runs inconclusive; global lake conditional equivalence; seismicity awaits qualified clusters |
+| 9 Oct 2026 | Merge development branch into main and run lake continuation | Both histories preserved; global and separately frozen UK analyses completed; 430 tests and 31 registry entries verified |
 
 ## 3. Results to carry forward
 
@@ -85,50 +88,49 @@ exponent $\alpha=d+1$. Linear-orthopolic: $\alpha=d$. Always state the measure.
 Literature compilation of 49 exponents: [zeta-compilation.md](zeta-compilation.md). Stocks that
 grow proportionally sit near ζ = 1; event catalogues and cascades mostly below 1.
 
+| New continuation | Value | File |
+|---|---|---|
+| Flare ribbon area, density α | 3.163 [2.962, 3.457], both proposed exponents excluded | `results/flare-ribbons-2026-10-09/result.json` |
+| Global lake radius, survival ζ | 1.930; iid [1.919, 1.941], Country [1.595, 2.030] | `results/lake-gyration-2026-10-09/result.json` |
+| UK lake radius, survival ζ | 1.441; iid [1.191, 1.714], grid [1.166, 2.009] | `results/uk-lake-gyration-2026-10-09/result.json` |
+
 ## 4. Current assessment
 
-Rigor and reproducibility are strong. As a scientific contribution the work is a promising
-framework and agenda, not yet a result:
+The unified repository contains mathematical foundations, explicit mechanisms,
+resource-transfer applications and negative or qualified empirical comparisons.
+The [research brief](research-brief.md) explains the general-law programme;
+[ongoing research](ongoing-research.md) connects its broader studies.
 
-- The mechanisms and most rules are published (proportional growth; hyperscaling and box counting;
-  Kolmogorov-type flux closures). The new element is the unifying reading and its classification.
-- Agreement in the catalogue mostly restates known derivations; new readings in biology and social
-  systems grade suggestive; 25 of 59 exponents are unverified.
-- One pre-registered test has been run (aftershock productivity). Its registered verdict is
-  inconclusive: it excludes the seismic-moment reading, and also, narrowly, the self-similar area
-  reading, with a strong dependence on the aftershock window. Three further tests are registered
-  and validated but await data. The decisive evidence would still be predictions fixed before
-  the data, with rivals, passing in several systems.
-- The only manuscript, [paper.md](paper.md), still has the critical framing of September and does
-  not reflect the authors' direction or the catalogue.
+- Catalogue matches alone do not identify resources or independently establish
+  a law; several listed exponents remain unverified.
+- Aftershock and flare registered decision rules are inconclusive. Their primary
+  intervals exclude both specified rival readings under the implemented analyses.
+- Global lake ζ is practically equivalent to 2 under its declared iid margin,
+  but Country uncertainty does not establish equivalence and the basin interval
+  is absent. The literal script's positive verdict remains qualified.
+- The separately frozen UK replication triggers its either-interval departure
+  rule, but its spatial interval includes 2. It is not a robust spatial rejection.
+- The manuscript has been substantially developed on the merged branch; the
+  earlier claim that it still has only September's framing is superseded.
 
 ## 5. Next steps, in priority order
 
-1. **Run the three registered tests** where their data are reachable (this cloud session could
-   reach only GitHub and PyPI). Step-by-step instructions, including what to record before running,
-   are in [preregistered-tests.md](preregistered-tests.md):
-   - flare ribbon areas (RibbonDB): α = 2 against 7/3;
-   - lake radius of gyration (HydroLAKES): ζ_R = 2;
-   - b against hypocentre dimension (relocated regional catalogue with clusters): b = D2/2 against 1.
-
-   Do not change hypotheses, estimators or decision rules; any change before data access goes in
-   an `amendments` entry with its reason, as done for the lake and volumetric tests.
-2. **Follow up the aftershock test** with windows from finite-fault rupture extents, registered anew
-   and disclosing the present result; it is then a replication, not a blind test.
-3. **Verify the catalogue.** Check the 25 unverified and 6 corrected exponents in
-   [configs/resource_catalogue.json](../configs/resource_catalogue.json) against primary sources,
-   update `exponent_check`, and rerun `make catalogue`. Full-text priority checks are needed for
-   Reed and Hughes 2002, Saichev et al. 2010, Aschwanden 2014 and 2025, Frank 2016 and 2019, and
-   Gabaix 1999 before any novelty statement.
-4. **Agree the paper's framing with the authors**, in light of the test outcomes: (a) a synthesis
-   paper presenting the orthopolic reading, rules, chance baseline, predictions and test results;
-   (b) a Registered Report of the multi-domain growth test in
-   [research-program.md](research-program.md); (c) (a) followed by (b). Keep exploration and
-   confirmation separate.
-5. **Rewrite the manuscript** for the chosen framing, keeping the accounting and measure sections of
-   [paper.md](paper.md); regenerate `docs/paper.pdf` with `make paper`.
-6. **Submission requirements** still open from [roadmap.md](roadmap.md): authorship and
-   declarations, data notices and licences (GLOSSAQUA licence conflict), venue formatting.
+1. **Resolve the global lake observation model.** Declare a follow-up for physical
+   distance, complete polygon geometry, distribution adequacy and hydrological
+   dependence before further fitting. Preserve the completed original result.
+2. **Qualify the remaining seismicity test.** Relocated catalogues are downloaded;
+   freeze quality/magnitude filters and physical clusters before b or D2 fits.
+   Require ten eligible clusters and sufficient dimension contrast. See
+   [available data](accessible-datasets-2026-10-09.md).
+3. **Follow up aftershocks** with finite-fault rupture windows under a new protocol,
+   disclosing the earlier result. Wildfire allocation is another available-data
+   route requiring a separate resource and held-out prediction design.
+4. **Synthesize the paper and verify the catalogue.** Incorporate both branches'
+   scoped findings and retain the distinction between derivations, conditional
+   exponent agreement and empirical resource identification. Regenerate the PDF
+   whenever the manuscript changes.
+5. **Submission work:** reconcile attribution, data notices, authorship and venue
+   requirements recorded in the broader handoff and roadmap.
 
 ## 6. Conventions and environment
 
@@ -137,22 +139,22 @@ framework and agenda, not yet a result:
   exponent was examined and the reading passes a second, different prediction. Grades:
   derived, motivated, suggestive, numerology. Source tags in documents: verified, repository result,
   own derivation, unverified.
-- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 96 tests and
+- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 430 tests and
   regenerates every analysis. The September results were produced with Python 3.11; results
   added on 8–9 October (Gibrat, resource choice, catalogue, aftershocks) with Python 3.13 and the
   pinned packages. Other versions change the older files by at most about $4\times10^{-8}$
   relative. Do not commit such noise; restore those files with `git checkout -- <file>`.
 - Raw inputs in `data/raw` are frozen and checksummed; analyses never download.
-- In cloud sessions, web search is limited (about 200 queries per turn, shared by subagents) and
-  full-text fetches from arXiv, DOI and PMC hosts were blocked. Verification relied on abstracts and
-  search extracts; record that in any value's check field.
+- The registering session had restricted source access. The 9 October local
+  continuation acquired full public datasets using approved network access;
+  acquisition receipts distinguish full files, samples and metadata-only reads.
 
 ## 7. Document map
 
 | Status | Documents |
 |---|---|
 | Current | this file; [preregistered-tests.md](preregistered-tests.md); [glossary.md](glossary.md); [research-program.md](research-program.md); [resource-catalogue.md](resource-catalogue.md); [zeta-compilation.md](zeta-compilation.md); [references.md](references.md); [concept.md](concept.md) |
-| Accurate for the September analyses | [evidence.md](evidence.md); [source-audit.md](source-audit.md) |
-| Earlier framing, to be revised | [paper.md](paper.md) and `paper.pdf`; [value.md](value.md); [criticism.md](criticism.md); [roadmap.md](roadmap.md) (next steps now here) |
+| Evidence and audit history | [evidence.md](evidence.md); [source-audit.md](source-audit.md); [lake results](lake-gyration-results-2026-10-09.md) |
+| Unified manuscript and programme | [paper.md](paper.md) and `paper.pdf`; [research-brief.md](research-brief.md); [ongoing-research.md](ongoing-research.md) |
 | Still applicable scope limits | [not-worth-pursuing.md](not-worth-pursuing.md) (cosmological, social and normative claims) |
 | Raw provenance | [archive/2026-10-08/](archive/2026-10-08/README.md): full research dossiers, paper design (resource rule, gates, candidate datasets, falsification criteria), hostile referee report, fact-check, and the complete catalogue workflow output |

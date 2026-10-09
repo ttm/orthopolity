@@ -1,0 +1,62 @@
+{
+  "title": "UKCEH regional replication of the lake radius-of-gyration prediction",
+  "declared_utc": "2026-10-09T01:06:36Z",
+  "status": "Prospective regional protocol; commit before any real radius or exponent calculation. The commit time is authoritative.",
+  "relationship_to_original": "Separate regional replication, not a replacement for the global HydroLAKES preregistration.",
+  "prior_exposure": [
+    "The global lake prediction and published lake-area exponents were known.",
+    "The UKCEH archive, schema, feature count, ring structure and publisher documentation were inspected before this protocol.",
+    "No UKCEH radius, radius-selected sample count, spatial-block count, fitted exponent or hypothesis verdict has been computed or inspected."
+  ],
+  "data": {
+    "source": "Taylor, P.J. (2021), Spatial inventory of UK waterbodies v3.6, UKCEH, doi:10.5285/b6b92ce3-dcd7-4f0b-8e43-e937ddf1d4eb",
+    "landing_page": "https://catalogue.ceh.ac.uk/documents/b6b92ce3-dcd7-4f0b-8e43-e937ddf1d4eb",
+    "gpkg_path": "data/dataset-audit/2026-10-09/lakes/uklakes_v3_6_poly.gpkg",
+    "gpkg_sha256": "88611daab49affbe65fbf5facaf0acd7dbfe3e12e89ca5cddd5c7c1415dbb58c",
+    "expected_records": 41830,
+    "license": "Open Government Licence; attribute UKCEH and Ordnance Survey as stated by the publisher."
+  },
+  "geometry": {
+    "crs": "EPSG:27700, British National Grid, metres",
+    "measure": "Uniform planar area on all polygon components, subtracting every interior ring; Rg about the full geometry centroid.",
+    "invalid_geometry_policy": "Abort for invalid WKB, nonfinite or unclosed coordinates, duplicate/missing WBID, nonpositive component area or second moment. No silent repairs or exclusions. Self-intersection, ring containment and component-overlap topology are not tested."
+  },
+  "hypothesis": {
+    "reference_measure": "log-orthopolic territory allocation per d ln R",
+    "zeta_R": 2.0,
+    "density_alpha": 3.0,
+    "equivalence_band": [1.9, 2.1]
+  },
+  "analysis": {
+    "rg_range_km": [1.0, 20.0],
+    "range_inclusive": true,
+    "estimator": "Bounded power-law MLE; zeta_R = alpha - 1",
+    "seed": 20261009,
+    "iid_bootstrap_draws": 1000,
+    "block_bootstrap_draws": 1000,
+    "interval_percentiles": [2.5, 97.5],
+    "block_side_m": 100000.0,
+    "block_origin_m": [0.0, 0.0],
+    "block_rule": "floor(centroid east/100000), floor(centroid north/100000), applied after radius selection; sample K occupied cells uniformly with replacement, retaining all lakes in each sampled cell.",
+    "minimum_lakes": 100,
+    "minimum_occupied_blocks": 10,
+    "gof_bootstrap_draws": 1000,
+    "gof_rule": "Bounded KS parametric bootstrap with refitting; descriptive iid diagnostic, p <= 0.1 flags inadequacy; not a spatially calibrated significance test."
+  },
+  "decision": {
+    "insufficient": "Fewer than 100 selected lakes or fewer than 10 occupied blocks, or either interval unavailable.",
+    "supports": "Both 95% intervals lie within [1.9, 2.1]. This is conditional exponent agreement, not proof of territory allocation.",
+    "against": "Either 95% interval lies entirely outside [1.9, 2.1].",
+    "inconclusive": "Otherwise.",
+    "adequacy_qualification": "Record the exponent decision separately. If the iid goodness-of-fit diagnostic rejects the power law, describe the fitted exponent only and make no positive support claim. Non-rejection does not establish adequacy."
+  },
+  "limitations": [
+    "A UK inventory is a regional observation, not global coverage or an independent replication dataset without geographical overlap.",
+    "Most outlines date to about 1993 with selective revisions; small ponds are poorly represented and some large lakes are split into basins.",
+    "R >= 1 km does not guarantee area-based detection completeness for elongated lakes.",
+    "No reservoir classification is supplied; no natural-only sensitivity or classification inferred from names.",
+    "British National Grid distances have projection distortion; this analysis uses the supplied metric coordinates without claiming geodesic exactness.",
+    "A fixed 100 km grid does not guarantee independence, and blocks differ in lake count. No alternate origin or block size will be selected after seeing outcomes.",
+    "The geometric feature, including any mapped split basins, is the observation unit; no outcome-driven joining is permitted."
+  ]
+}

@@ -25,6 +25,8 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: thermal-sources thermal-radiation thermal-radiation-registry
 .PHONY: inverse-resources inverse-resources-registry linguistic-sources linguistic-resources linguistic-resources-registry
 .PHONY: cell-division-sources cell-division cell-division-registry
+.PHONY: hydrolakes-sources restore-hydrolakes lake-gyration uk-lake-gyration
+.PHONY: geometry-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -86,6 +88,23 @@ catalogue:       ## orthopolic rules against published exponents -> results/reso
 
 aftershocks:     ## pre-registered productivity test (configs/prereg_2026-10-08_*) -> results/aftershock_productivity.json
 	$(PY) experiments/run_aftershocks.py
+
+hydrolakes-sources: ## offline verification of the separately retained global polygons
+	$(PY) experiments/fetch_hydrolakes.py
+
+restore-hydrolakes: ## explicitly download/extract missing HydroLAKES source bytes
+	$(PY) experiments/fetch_hydrolakes.py --restore
+
+lake-gyration: hydrolakes-sources ## original global calculation with recorded DBF decoding correction
+	mkdir -p $(STUDY_OUTPUT_ROOT)/lake-gyration
+	$(PY) experiments/run_lake_gyration.py --shapefile data/hydrolakes/2026-10-09/extracted/HydroLAKES_polys_v10_shp/HydroLAKES_polys_v10.shp --encoding latin1 --output $(STUDY_OUTPUT_ROOT)/lake-gyration/result.json
+
+uk-lake-gyration: ## separate frozen regional replication; does not overwrite retained result
+	$(PY) experiments/run_uk_lake_gyration.py --output $(STUDY_OUTPUT_ROOT)/uk-lake-gyration/result.json
+
+geometry-registry: ## archive the retained flare and lake calculations
+	$(PY) experiments/register_geometry_tests.py
+
 class-exchange:   ## conservative class exchange, constrained equilibrium, and recovery
 	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_class_exchange.py --output $(STUDY_OUTPUT_ROOT)/class-exchange
 

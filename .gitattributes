@@ -10,3 +10,9 @@ results/ghedini-cost-calibration/*.json -text
 # Pinned plant CSVs include CR-only files. Never normalize their source bytes.
 data/plant-sources/2026-10-03/* -text
 data/plant-sources/2026-10-03/*.csv -diff
+# Newly acquired source bytes and retained selected tables are checksum-pinned.
+data/dataset-audit/** -text
+data/hydrolakes/2026-10-09/* -text
+data/hydrolakes/2026-10-09/*.headers -diff
+results/lake-gyration-2026-10-09/*.csv -text
+results/uk-lake-gyration-2026-10-09/*.csv -text

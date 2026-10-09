@@ -2,6 +2,11 @@
 
 The original HydroLAKES download is reachable from this environment when network access is enabled. A smaller alternative has also been downloaded and structurally checked: UKCEH's **41,830-waterbody UK inventory**, an **8.59 MB ZIP** containing actual lake geometries. Neither dataset was used to estimate radii, fit exponents, or evaluate the hypothesis during this audit.
 
+**Subsequent continuation:** the full HydroLAKES archive was acquired and both
+the global calculation and a separately frozen UK replication have now run.
+See the [lake result report](lake-gyration-results-2026-10-09.md). The partial
+download statements below describe the initial availability audit.
+
 The recovered registration is at git commit `f846670`, file `configs/prereg_2026-10-08_lake_gyration.json`. Its amendment selects **1–20 km radius of gyration**, and its prediction is a **survival exponent** of 2 (density exponent 3). Changing from global HydroLAKES to a regional inventory would require a separately declared replication or amendment; this audit does not make that change.
 
 ## Verified small alternative: UKCEH Spatial inventory of UK waterbodies v3.6

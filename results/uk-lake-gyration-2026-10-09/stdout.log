@@ -1,0 +1,184 @@
+{
+  "data_kind": "UKCEH regional replication",
+  "input_sha256": "88611daab49affbe65fbf5facaf0acd7dbfe3e12e89ca5cddd5c7c1415dbb58c",
+  "config_sha256": "380a30bc78fc3515c4a02a243a489bbbc0565e1aa5bfa5b445146e93d8c40bc6",
+  "protocol": "docs/uk-lake-gyration-protocol-2026-10-09.md",
+  "n_input": 41830,
+  "n_selected": 148,
+  "n_occupied_blocks": 29,
+  "rg_range_km": [
+    1.0,
+    20.0
+  ],
+  "zeta_R": 1.441320400817614,
+  "iid_ci95": [
+    1.191252096139552,
+    1.7143715619363893
+  ],
+  "block_ci95": [
+    1.1656690348781447,
+    2.0087003597428406
+  ],
+  "blocks": [
+    {
+      "easting_index": 0,
+      "northing_index": 4,
+      "n": 1
+    },
+    {
+      "easting_index": 0,
+      "northing_index": 5,
+      "n": 5
+    },
+    {
+      "easting_index": 0,
+      "northing_index": 8,
+      "n": 5
+    },
+    {
+      "easting_index": 1,
+      "northing_index": 5,
+      "n": 2
+    },
+    {
+      "easting_index": 1,
+      "northing_index": 7,
+      "n": 8
+    },
+    {
+      "easting_index": 1,
+      "northing_index": 8,
+      "n": 3
+    },
+    {
+      "easting_index": 1,
+      "northing_index": 9,
+      "n": 4
+    },
+    {
+      "easting_index": 2,
+      "northing_index": 0,
+      "n": 2
+    },
+    {
+      "easting_index": 2,
+      "northing_index": 2,
+      "n": 5
+    },
+    {
+      "easting_index": 2,
+      "northing_index": 3,
+      "n": 6
+    },
+    {
+      "easting_index": 2,
+      "northing_index": 5,
+      "n": 2
+    },
+    {
+      "easting_index": 2,
+      "northing_index": 6,
+      "n": 5
+    },
+    {
+      "easting_index": 2,
+      "northing_index": 7,
+      "n": 27
+    },
+    {
+      "easting_index": 2,
+      "northing_index": 8,
+      "n": 23
+    },
+    {
+      "easting_index": 2,
+      "northing_index": 9,
+      "n": 15
+    },
+    {
+      "easting_index": 3,
+      "northing_index": 4,
+      "n": 4
+    },
+    {
+      "easting_index": 3,
+      "northing_index": 5,
+      "n": 9
+    },
+    {
+      "easting_index": 3,
+      "northing_index": 6,
+      "n": 3
+    },
+    {
+      "easting_index": 3,
+      "northing_index": 7,
+      "n": 2
+    },
+    {
+      "easting_index": 3,
+      "northing_index": 9,
+      "n": 2
+    },
+    {
+      "easting_index": 3,
+      "northing_index": 10,
+      "n": 2
+    },
+    {
+      "easting_index": 4,
+      "northing_index": 2,
+      "n": 1
+    },
+    {
+      "easting_index": 4,
+      "northing_index": 3,
+      "n": 4
+    },
+    {
+      "easting_index": 4,
+      "northing_index": 5,
+      "n": 1
+    },
+    {
+      "easting_index": 4,
+      "northing_index": 12,
+      "n": 1
+    },
+    {
+      "easting_index": 5,
+      "northing_index": 1,
+      "n": 1
+    },
+    {
+      "easting_index": 5,
+      "northing_index": 2,
+      "n": 2
+    },
+    {
+      "easting_index": 6,
+      "northing_index": 2,
+      "n": 1
+    },
+    {
+      "easting_index": 6,
+      "northing_index": 3,
+      "n": 2
+    }
+  ],
+  "goodness_of_fit": {
+    "alpha": 2.441320400817614,
+    "n": 148,
+    "ks": 0.03784942237291117,
+    "p_value": 0.9340659340659341,
+    "exceedances": 934,
+    "n_boot": 1000,
+    "ks_synthetic_median": 0.055236528567052356,
+    "ruled_out": false,
+    "note": "Approximate iid parametric bootstrap, p=(exceedances+1)/(B+1). p <= 0.1 rejects the fitted power law under those assumptions; p > 0.1 is non-rejection, not support.",
+    "interpretation": "Descriptive iid diagnostic; spatial dependence prevents treating this as a calibrated spatial significance test."
+  },
+  "uncertainty_note": "Iid and occupied-grid-cell resampling intervals; neither models mapping error or guarantees spatial independence.",
+  "exponent_verdict": "against H_territory",
+  "qualified_verdict": "against H_territory"
+}

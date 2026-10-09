@@ -15,8 +15,8 @@ explicitly limited access samples are retained under
 | Dataset | Access demonstrated here | Test and readiness |
 |---|---|---|
 | [RibbonDB v1.0](dataset-audit-flare-2026-10-09.md) | Full 656 KB CSV, 3,137 rows; documentation and archive | **Original test run:** area α = 3.163 [2.962, 3.457]. Registered verdict inconclusive; excludes both 2 and 7/3 under the implemented uncertainty model. |
-| [UKCEH UK waterbody inventory v3.6](dataset-audit-lakes-2026-10-09.md) | Full 8.59 MB ZIP; 41,830 polygon features; structural checks pass | Small regional lake replication. Needs format/CRS adapter and a separately declared protocol; sample within R = 1–20 km is not yet known. |
-| [HydroLAKES v1.0](dataset-audit-lakes-2026-10-09.md) | Official server returned ZIP bytes; advertised size 820.3 MB; only first 4 KB saved | Exact original lake source. Full download/hash and projection/dependence review remain. |
+| [UKCEH UK waterbody inventory v3.6](dataset-audit-lakes-2026-10-09.md) | Full 8.59 MB ZIP; 41,830 polygons; 148 meet the fixed radius range | Separate frozen replication run: ζ = 1.441; ordinary interval excludes 2, spatial interval includes it. |
+| [HydroLAKES v1.0](dataset-audit-lakes-2026-10-09.md) | Full 820.3 MB archive downloaded and verified; 1,427,688 polygons | Original calculation run on 119,683 eligible lakes: ζ = 1.930; ordinary equivalence passes, spatial equivalence not established. |
 | [Ridgecrest AWR v2](dataset-audit-seismic-2026-10-09.md) | Full 19.73 MB CSV; 222,864 events; publisher checksum verified | Magnitude–hypocentre candidate. Needs physical cluster definition and eligibility checks. |
 | [Ridgecrest QTM](dataset-audit-seismic-2026-10-09.md) | Full 4.46 MB archive; 111,918 detections, 46,512 marked relocated | Alternative with location-error fields. Relocation components do not supply the required qualifying physical clusters. |
 | [USFS FPA FOD v7](dataset-audit-wildfire-2026-10-09.md) | Successful 1,000-record API sample plus metadata; full inventory advertised at ~2.66 million fires | New-domain candidate: burned-area allocation and transfer across years. Needs complete cohorts and a new protocol; no fit run. |
@@ -30,12 +30,11 @@ resource interpretation.
 
 ## Next scientific work
 
-1. For the original lake hypothesis, acquire the full HydroLAKES source. Preserve
-   the registered radius range and decision rule. Inspect the distance projection
-   and spatial uncertainty implementation before issuing a physical interpretation.
-2. Use the small UKCEH polygon source for a separately declared regional replication,
-   accounting for reservoirs, basin splits, mapping history and actual radius
-   eligibility. Compute radius from geometry rather than from square root of area.
+1. The [original and regional lake runs](lake-gyration-results-2026-10-09.md)
+   are complete. Specify a follow-up for physical distance, full polygon geometry,
+   adequacy and hydrological dependence; preserve the completed primary result.
+2. Interpret the UK difference with its sampling limits and overlapping geography.
+   It cannot isolate the effects of projection, geometry, mapping and cohort.
 3. For seismicity, freeze a defensible physical clustering procedure before fitting
    b or D2. The original rule needs at least ten qualified clusters and sufficient
    dimension contrast; hundreds of thousands of detections alone do not satisfy it.
@@ -50,5 +49,8 @@ disabling certificate verification. Some browser/API routes still fail; successf
 payload downloads, metadata-only access and partial samples are distinguished in
 the linked audits. Dryad WUMI and LAGOS remain candidates, not verified full payloads.
 
-This work adds one completed registered analysis and several usable data routes.
-It does not add empirical support for either flare prediction.
+This work adds the completed original flare and global-lake calculations, a
+separately frozen UK replication and several usable data routes. The global
+lake ordinary-bootstrap result supplies conditional exponent agreement, with
+the spatial and geometric limits stated in the report. Neither flare prediction
+is supported by its implemented analysis.

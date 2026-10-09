@@ -1,0 +1,10 @@
+{
+  "n_input": 41830,
+  "unique_lake_ids": 41830,
+  "n_selected": 148,
+  "independent_score_root_zeta": 1.441321628172453,
+  "absolute_optimizer_difference": 1.227354839095085e-06,
+  "matches_mle_within_bounded_optimizer_default_1e_5": true,
+  "spatial_ci_contains_prediction": true,
+  "interpretation": "Frozen either-interval rule calls a departure; this is not a spatially robust rejection."
+}

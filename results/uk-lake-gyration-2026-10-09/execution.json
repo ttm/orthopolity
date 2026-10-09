@@ -1,0 +1,49 @@
+{
+  "command": [
+    "/Users/renatofabbri/rep/orthopolity/build/main-venv-2026-10-09/bin/python",
+    "experiments/run_uk_lake_gyration.py",
+    "--output",
+    "results/uk-lake-gyration-2026-10-09/result.json"
+  ],
+  "protocol_commit": "c4ebb718a1ac47b83b3fc42d41506b61e411212c",
+  "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "sources": [
+    {
+      "path": "configs/uk_lake_gyration_2026-10-09.json",
+      "sha256": "380a30bc78fc3515c4a02a243a489bbbc0565e1aa5bfa5b445146e93d8c40bc6"
+    },
+    {
+      "path": "docs/uk-lake-gyration-protocol-2026-10-09.md",
+      "sha256": "f4161d3e2ad126cd302ccd3ad302f58f6a5cae5954bda27066ca9a3267980f28"
+    },
+    {
+      "path": "experiments/run_uk_lake_gyration.py",
+      "sha256": "66d97ce61a7727e338c45eef3dc9fd8c4569964dcb116f6684206191768c183b"
+    },
+    {
+      "path": "src/orthopolity/lake_geometry.py",
+      "sha256": "c26e2115e27e4a2408845ad04f7541e996e55f95fed185eede53fe643ea08d28"
+    },
+    {
+      "path": "src/orthopolity/goodness_of_fit.py",
+      "sha256": "859a5e7deb32efc98bc41c58093126e63e0b0162108c3c275979c9f4e7c4333c"
+    },
+    {
+      "path": "tests/test_lake_geometry.py",
+      "sha256": "9cdab6090585fabb64038601f4f316b9a37a28781ce788613ae3fab2ca084a3c"
+    }
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 2.9636400419985875,
+  "results/uk-lake-gyration-2026-10-09/result.json": {
+    "bytes": 3679,
+    "sha256": "20cb409734e908fdeee725385e14de213b3be3c01d84038b6860dfbdca9dece4"
+  },
+  "data/derived/ukceh_rg_2026-10-09.csv": {
+    "bytes": 2897606,
+    "sha256": "21b6e6d87b89ce28e0dbda90356bc727a36bc5f3124dbe75ce5f93b8d51dea7c"
+  }
+}

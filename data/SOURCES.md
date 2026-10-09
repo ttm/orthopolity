@@ -257,3 +257,30 @@ exact SI constants and preserve their discrepancy from the posted reconstruction
 `make thermal-radiation PY=python3.11` reproduces the calculation and figure.
 See [the report](../docs/thermal-radiation.md) and
 [specification](../docs/thermal-radiation-protocol.md).
+
+## 9 October 2026 registered-test continuation
+
+Acquisition receipts under `data/dataset-audit/2026-10-09/` distinguish full
+public files from access samples. See `docs/accessible-datasets-2026-10-09.md`.
+
+- RibbonDB v1.0: Kazachenko et al. (2017), direct source
+  https://solarmuri.ssl.berkeley.edu/~kazachenko/RibbonDB/ribbondb_v1.0.csv .
+  Original bytes, documentation and checksums are retained; both duplicate event
+  pairs remain in the original analysis.
+- HydroLAKES v1.0: Messager et al. (2016),
+  https://www.hydrosheds.org/products/hydrolakes . The full 820,295,132-byte
+  archive SHA-256 is in `data/hydrolakes/2026-10-09/acquisition.json`.
+  The archive/extracted geometries are excluded from Git and restored with
+  `make restore-hydrolakes`; selected fitting rows are retained with the result.
+- UKCEH: Taylor, P.J. (2021), Spatial inventory of UK waterbodies v3.6,
+  https://doi.org/10.5285/b6b92ce3-dcd7-4f0b-8e43-e937ddf1d4eb . Original ZIP,
+  GeoPackage, publisher metadata and checksums are retained.
+- Ridgecrest AWR v2: https://data.caltech.edu/records/5af05-cah73 ; SCEDC
+  Ridgecrest QTM and regional samples: details in `docs/dataset-audit-seismic-2026-10-09.md`.
+- USFS FPA FOD v7: https://doi.org/10.2737/RDS-2013-0009.7 . Only a deterministic
+  1,000-record API access sample was acquired; it is not a complete analysis cohort.
+
+The two lake result directories and flare result directory preserve exposure
+records, exact execution or source hashes, all outcomes and qualifications.
+Their three run-registry entries supplement the earlier 28 records. The global
+raw archive must be verified separately from the retained selected fitting table.

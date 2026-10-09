@@ -43,6 +43,13 @@ its implemented uncertainty model and yielding the registered verdict
 *inconclusive*. Lake polygons, relocated earthquake catalogues and a wildfire
 API sample are retained for follow-up designs.
 
+The [lake continuation](docs/lake-gyration-results-2026-10-09.md) is also complete.
+Global HydroLAKES gives survival exponent 1.930: it passes the declared ordinary
+bootstrap equivalence margin, while spatial equivalence remains unestablished.
+A separately frozen UK replication gives 1.441; its spatial interval includes 2.
+Both runs retain their original decision rules, limitations and reproduction
+commands. The development branch is merged into `main`.
+
 The **8 October biological mechanism and transfer** now connects growth/division
 to mass allocation across logarithmic cell sizes. A known lineage/population
 sampling relation determines the constraint envelope from birth measurements.
@@ -81,8 +88,8 @@ over word types, and compares its contribution with
 
 Reproduce the new studies offline with
 `make inverse-resources linguistic-resources PY=python3.11`.
-The retained registry now contains 28 records and 704 file references.
-All 398 tests pass, including five new numerical tests. Earlier detailed empirical accounts remain available in
+The retained registry now contains 31 records and 751 file references.
+All 430 tests pass, including eleven new lake geometry and sampling checks. Earlier detailed empirical accounts remain available in
 [the supporting report](docs/empirical-studies.md); their conclusions are
 unchanged.
 

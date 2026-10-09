@@ -20,6 +20,7 @@ dependencies = ["numpy>=2.0", "scipy>=1.13"]
 
 [project.optional-dependencies]
 analyses = ["pandas>=2.2", "matplotlib>=3.9"]
+geospatial = ["pyshp>=2.3", "pyproj>=3.6"]
 
 [project.urls]
 Repository = "https://github.com/ttm/orthopolity"

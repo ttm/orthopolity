@@ -1,0 +1,15 @@
+{
+  "n_input": 1427688,
+  "unique_lake_ids": 1427688,
+  "n_selected": 119683,
+  "nonfinite_radii": 0,
+  "nonpositive_radii": 0,
+  "selected_missing_country": 0,
+  "n_selected_countries": 166,
+  "largest_country_fraction": 0.5490002757283825,
+  "independent_score_root_zeta": 1.9295124880116332,
+  "matches_original_mle_within_1e_6": true,
+  "natural_type1_selected": 115240,
+  "literal_verdict": "supports H_territory",
+  "qualified_assessment": "Global exponent agrees under iid equivalence criterion; Country interval does not establish equivalence. No registered basin interval is available; spatially qualified confirmation not established."
+}

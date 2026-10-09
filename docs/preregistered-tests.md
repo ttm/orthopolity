@@ -12,13 +12,15 @@ record. The `declared_utc` fields say 23:55; the commit time is authoritative.
 | Test | Orthopolic prediction | Rival | Status | Result |
 |---|---|---|---|---|
 | Aftershock productivity | rupture area: α = 1.0 | seismic moment: α = 1.5 | **run** | inconclusive by the registered rule: α = 0.63 [0.51, 0.71] excludes both |
-| Flare ribbon areas | space-filling territory: α = 2 | fractal area (FD-SOC): α = 7/3 | ready; data not reachable here | — |
-| Lake radius of gyration | ζ_R = 2 | inherited from area (e.g. 2.28) | ready; data not reachable here | — |
-| b-value against hypocentre dimension | b = D2/2 | b = 1 (FD-SOC) | ready; data not reachable here | — |
+| Flare ribbon areas | space-filling territory: α = 2 | fractal area (FD-SOC): α = 7/3 | **run** | α = 3.163 [2.962, 3.457]; registered verdict inconclusive |
+| Lake radius of gyration | ζ_R = 2 | inherited from area (e.g. 2.28) | **run, spatially qualified** | ζ = 1.930; iid equivalence passes, spatial equivalence not established |
+| b-value against hypocentre dimension | b = D2/2 | b = 1 (FD-SOC) | catalogues acquired; clustering/eligibility pending | — |
 
-The registering session could reach only GitHub and PyPI. The three pending tests have scripts
-that print download instructions and run end to end once the data are present; each was
-validated on synthetic data before any real data were touched.
+The registering session could reach only GitHub and PyPI. The local continuation
+now has accessible inputs and completed flare/lake calculations. Original
+registrations and implementation histories are preserved; the
+[lake result report](lake-gyration-results-2026-10-09.md) distinguishes literal
+script verdicts from their uncertainty and geometry qualifications.
 
 ## Aftershock productivity (run)
 
@@ -55,38 +57,39 @@ the range expected for a mixture of self-similar ruptures (α = 1) and width-sat
 (α = 0.75). A follow-up test should define windows from finite-fault rupture extents, registered
 anew with this result disclosed.
 
-## Flare ribbon areas (ready)
+## Flare ribbon areas (run)
 
-- **Registration:** [configs/prereg_2026-10-08_flare_ribbons.json](../configs/prereg_2026-10-08_flare_ribbons.json).
-- **What it discriminates:** both hypotheses give the same distribution of linear sizes,
-  N(L) ∝ L⁻³. They differ in how measured area scales with size: space-filling (A ∝ L², α_A = 2)
-  against fractal (A ∝ L^1.5, α_A = 7/3).
-- **Synthetic check:** with about 1,000 tail events, true α = 2 is estimated as 1.98 and supports
-  the territory hypothesis; true 7/3 is estimated as 2.30 and supports the fractal one.
-- **To run:**
-  1. Obtain the RibbonDB flare table (Kazachenko et al. 2017, ApJ 845, 49; reported host
-     `http://solarmuri.ssl.berkeley.edu/~kazachenko/RibbonDB/`, verify) as CSV in `data/raw/`;
-     add its SHA-256 to `data/snapshot_checksums.json` and provenance to `data/SOURCES.md`.
-  2. Record in the registration's `prior_exposure` whether a published ribbon-area index was read.
-  3. `python experiments/run_flare_ribbons.py --input data/raw/<file>.csv --column <area column> --secondary <flux column>`
-  4. Commit `results/flare_ribbons.json` and update this document and [status.md](status.md).
+- **Registration:** [original configuration](../configs/prereg_2026-10-08_flare_ribbons.json).
+- **Result:** α = 3.16265 [2.96239, 3.45746]; 565 tail events from 3,137 rows.
+  Both 2 and 7/3 are excluded, so the registered rule calls it inconclusive.
+- **Secondary flux:** α = 3.12002 [2.56987, 3.38417], also inconclusive.
+- **Scope:** both hypotheses assume the same linear-size distribution. Marginal
+  area alone does not isolate geometry. The original GOF implementation also
+  differs in support from the primary exponent estimator.
+- **Reproduce:** [run report](flare-ribbons-run-2026-10-09.md), including exact
+  source snapshots, exposure history, checksums and command. Source acquisition
+  and duplicate rows are documented in the [data audit](dataset-audit-flare-2026-10-09.md).
 
-## Lake radius of gyration (ready)
+## Lake radius of gyration (run, spatial qualification incomplete)
 
-- **Registration:** [configs/prereg_2026-10-08_lake_gyration.json](../configs/prereg_2026-10-08_lake_gyration.json),
-  with Amendment 1.
-- **Amendment 1 (before data access):** select lakes directly on radius of gyration, 1–20 km.
-  Synthetic validation showed that the registered selection on area biased the fit (true 2.0
-  estimated as 1.43); selecting on R recovers 2.00 [1.97, 2.03] and correctly rejects a true 2.3.
-- **To run:**
-  1. Download `HydroLAKES_polys_v10_shp.zip` (Messager et al. 2016, CC BY 4.0) from
-     <https://www.hydrosheds.org/products/hydrolakes> and unzip; record checksum and provenance.
-  2. `pip install pyshp pyproj`
-  3. `python experiments/run_lake_gyration.py --shapefile <path>/HydroLAKES_polys_v10.shp`
-     (writes the per-lake table to `data/derived/`, which is not tracked, then analyses it).
-  4. Commit `results/lake_gyration.json` and update the documents.
+- **Registration:** [original configuration](../configs/prereg_2026-10-08_lake_gyration.json),
+  with its original Amendment 1 selecting R directly on 1–20 km.
+- **Global result:** ζ = 1.92951; iid 95% interval [1.91852, 1.94083]. The script
+  reports support under the predeclared [1.9, 2.1] equivalence band. Exact 2 is
+  outside that interval; equivalence within a margin is the registered criterion.
+- **Spatial qualification:** Country interval [1.59451, 2.02960] does not establish
+  equivalence. No basin-ID field exists in this source, and the original runner
+  omits the registered basin calculation. Complete spatial confirmation is absent.
+- **Execution:** the original source and failed UTF-8 attempt were retained; a
+  committed Latin-1 input-decoding correction preceded the successful run. No
+  geometry, estimator or decision rule was changed.
+- **Separate regional replication:** UKCEH gives ζ = 1.44132 with iid interval
+  [1.19125, 1.71437] and spatial interval [1.16567, 2.00870]. Its separately frozen
+  either-interval rule calls a departure; spatial rejection is not established.
+- **Reproduce:** `make restore-hydrolakes lake-gyration uk-lake-gyration` with the
+  dependencies and qualification details in the [lake report](lake-gyration-results-2026-10-09.md).
 
-## b-value against hypocentre dimension (ready)
+## b-value against hypocentre dimension (pending qualified clusters)
 
 - **Registration:** [configs/prereg_2026-10-08_volumetric_seismicity.json](../configs/prereg_2026-10-08_volumetric_seismicity.json),
   with Amendment 1.

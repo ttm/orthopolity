@@ -1,0 +1,22 @@
+{
+  "preregistration": "configs/prereg_2026-10-08_lake_gyration.json",
+  "projection": "EPSG:6933",
+  "n": 119683,
+  "rg_range_km": [
+    1.0,
+    20.0
+  ],
+  "zeta_R": 1.9295123582908533,
+  "zeta_R_ci95": [
+    1.9185215017922508,
+    1.9408259469247129
+  ],
+  "area_radius_dimension_D": 1.790256426536638,
+  "implied_zeta_A_if_territory": 1.117158397173931,
+  "country_block_ci95_not_preregistered": [
+    1.5945100503298335,
+    2.0295986005684266
+  ],
+  "verdict": "supports H_territory",
+  "natural_lakes_only_zeta_R": 2.0040671464057054
+}

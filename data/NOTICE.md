@@ -121,3 +121,17 @@ license and README. The dictionary supplies canonical pronunciation-symbol
 counts; it is not a recording of the corpus being spoken. The source manifest
 and per-file receipts retain exact URLs, sizes, hashes and retrieval times.
 The repository's software license does not replace these source terms.
+
+## 9 October dataset continuation
+
+HydroLAKES v1.0 is supplied under CC BY 4.0; attribute Messager et al. (2016)
+and HydroSHEDS as specified in its technical documentation. The large archive
+is locally retained and restored from its public source, not committed here.
+UKCEH Spatial inventory of UK waterbodies v3.6 is supplied under the Open
+Government Licence; attribute Taylor, P.J. (2021), UKCEH, and the underlying
+Ordnance Survey contribution according to the retained publisher metadata.
+The CaltechDATA Ridgecrest v2 deposit identifies CC0; that statement does not
+extend automatically to every SCEDC product. Preserve SCEDC/SCSN and original
+paper attribution for their catalogues. RibbonDB's retained README identifies
+Kazachenko et al. (2017); no explicit blanket reuse licence was established by
+this audit. Source-specific notices and metadata remain with each acquisition.
