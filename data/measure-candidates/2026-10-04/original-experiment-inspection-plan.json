@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-05",
+  "purpose": "Check the directly linked original community experiment for an actual-size observation bridge",
+  "source": "Figshare article 11704749; DOI 10.26180/5e2a1a8d74be7, cited by Ecology 2020 DOI 10.1002/ecy.3015",
+  "allowed": [
+    "Retain exact public article metadata with a retrieval receipt",
+    "Acquire the one XLSX as opaque bytes after verifying the provider file identifier, length and MD5",
+    "Read workbook sheet names and first-row text headers only using the tested header parser"
+  ],
+  "prohibited": [
+    "Interpreting or emitting any numerical community data row",
+    "Reading later worksheet rows",
+    "Fitting cost curves, assigning bins from community outcomes or computing a law score"
+  ],
+  "rationale": "The original methods describe microscopy of community cells. A table header may identify retained cell-level measurements or uncertainty fields; the 2020 derived-estimate workbook headers alone cannot establish absence of such records."
+}

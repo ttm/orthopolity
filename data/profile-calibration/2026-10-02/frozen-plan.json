@@ -1,0 +1,1234 @@
+{
+  "run_id": "profile-calibration-2026-10-02",
+  "frozen_utc": "2026-10-02T08:52:16.786142+00:00",
+  "config": {
+    "run_id": "profile-calibration-2026-10-02",
+    "description": "Prospectively frozen repeated-sampling benchmark of complete-profile equivalence/departure/unresolved rules; separate development/evaluation streams, no tuning from evaluation.",
+    "development_seed": 202610020,
+    "evaluation_seed": 202610021,
+    "bootstrap_seed": 202610022,
+    "resource": "Generated additive per-block resource totals in arbitrary resource units; zero bins retained. Population estimand is normalized arithmetic mean raw resource per fixed log-bin width.",
+    "log_widths": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      3.0
+    ],
+    "factor": 1.5,
+    "alpha": 0.05,
+    "development_replicates": 200,
+    "evaluation_replicates": 2000,
+    "bootstrap_replicates": 499,
+    "bootstrap_chunk": 32,
+    "block_counts": [
+      12,
+      24,
+      48
+    ],
+    "profile_shapes": [
+      {
+        "name": "flat",
+        "shape": "flat",
+        "departure_margin_multiple": 0.0
+      },
+      {
+        "name": "gradient_inside",
+        "shape": "gradient",
+        "departure_margin_multiple": 0.9
+      },
+      {
+        "name": "gradient_boundary",
+        "shape": "gradient",
+        "departure_margin_multiple": 1.0
+      },
+      {
+        "name": "gradient_outside",
+        "shape": "gradient",
+        "departure_margin_multiple": 1.1
+      },
+      {
+        "name": "curved_material",
+        "shape": "hump",
+        "departure_margin_multiple": 2.0
+      },
+      {
+        "name": "structural_zero",
+        "shape": "zero",
+        "departure_margin_multiple": null
+      }
+    ],
+    "observation_families": [
+      {
+        "name": "iid_bounded_dense",
+        "kind": "bounded",
+        "noise_half_width": 0.3,
+        "independent_blocks": true,
+        "correct_observation": true
+      },
+      {
+        "name": "iid_sparse_pareto",
+        "kind": "compound_pareto",
+        "pareto_shape": 1.5,
+        "expected_resource_scale": 4.0,
+        "independent_blocks": true,
+        "correct_observation": true
+      },
+      {
+        "name": "serial_lognormal",
+        "kind": "ar_lognormal",
+        "ar_correlation": 0.8,
+        "log_sd": 0.45,
+        "independent_blocks": false,
+        "correct_observation": true
+      },
+      {
+        "name": "detection_corrected",
+        "kind": "detection",
+        "noise_half_width": 0.3,
+        "inclusion_probabilities": [
+          1.0,
+          0.9,
+          0.8,
+          0.7,
+          0.6,
+          0.5
+        ],
+        "inverse_probability_correction": true,
+        "independent_blocks": true,
+        "correct_observation": true
+      },
+      {
+        "name": "detection_misspecified",
+        "kind": "detection",
+        "noise_half_width": 0.3,
+        "inclusion_probabilities": [
+          1.0,
+          0.9,
+          0.8,
+          0.7,
+          0.6,
+          0.5
+        ],
+        "inverse_probability_correction": false,
+        "independent_blocks": true,
+        "correct_observation": false
+      }
+    ],
+    "known_bound_base_multiplier": 4.0,
+    "raw_input_examples_per_scenario": 8,
+    "monte_carlo_interval_level": 0.95,
+    "eligibility": {
+      "maximum_false_decision_mc_upper": 0.065,
+      "minimum_coverage_mc_lower": 0.925,
+      "rules": "A family/block-count/method passes only if every frozen profile shape has false-equivalence and false-departure Wilson upper bounds <=0.065 and coverage Wilson lower bound >=0.925. Centered and known-bound methods use simultaneous full-vector coverage; the percentile extension uses Delta interval coverage and is not a simultaneous-vector method. Coverage/decision criteria are operational tolerances, not a theorem or universal certification. Missing reference methods are unavailable, not passing.",
+      "application": "Any eligibility is restricted to the simulated observation model. Twelve observed seasonal months, unknown fluence tails, independence and absent physical resource bounds cannot be certified by a favorable simulated family. Solar's robust primary verdict remains unresolved unless its sampling assumptions are independently justified."
+    },
+    "stream_recipe": "SeedSequence([stage_data_seed, block_count_index, profile_index, observation_family_index]); independent bootstrap stream SeedSequence([bootstrap_seed, stage_index, block_count_index, profile_index, observation_family_index]). Corrected/misspecified detection share family index 3 for paired identical latent resources/inclusion draws, while all outer datasets within a scenario are independent. Stage indices: development 0, evaluation 1.",
+    "interpretation": "Calibrates statistical operating characteristics for declared complete-profile targets and observation processes. Generating profiles and resource allocation are imposed; this is method validation, not evidence for autonomous allocation or a novel natural law."
+  },
+  "config_reference": {
+    "path": "configs/profile_calibration_2026-10-02.json",
+    "sha256": "75b4116241136893baf9ff5e92377a0334e3f2f093d242dd3727e789581ab8f9"
+  },
+  "sources": [
+    {
+      "path": "experiments/run_profile_calibration.py",
+      "sha256": "49934f36ad96fb10ec34cd0316ddaf7955314794a12548045841fce9eb85a59d"
+    },
+    {
+      "path": "src/orthopolity/profile_calibration.py",
+      "sha256": "acc3d0fe0fa01649a2a6bea9f81588c789d8b04eef5aac75add91e4b4ebeb689"
+    },
+    {
+      "path": "src/orthopolity/goodness_of_fit.py",
+      "sha256": "c292925bd36d62b24091344503a6031c7ddfc2628ab784d9abcaf5b26d638488"
+    },
+    {
+      "path": "src/orthopolity/interventions.py",
+      "sha256": "cdc73d83e6219fe114bc0f7c5a2a9708e00a33e433ae05980e1d3804505c8841"
+    },
+    {
+      "path": "src/orthopolity/figures.py",
+      "sha256": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40"
+    }
+  ],
+  "source_sha256": {
+    "experiments/run_profile_calibration.py": "49934f36ad96fb10ec34cd0316ddaf7955314794a12548045841fce9eb85a59d",
+    "src/orthopolity/profile_calibration.py": "acc3d0fe0fa01649a2a6bea9f81588c789d8b04eef5aac75add91e4b4ebeb689",
+    "src/orthopolity/goodness_of_fit.py": "c292925bd36d62b24091344503a6031c7ddfc2628ab784d9abcaf5b26d638488",
+    "src/orthopolity/interventions.py": "cdc73d83e6219fe114bc0f7c5a2a9708e00a33e433ae05980e1d3804505c8841",
+    "src/orthopolity/figures.py": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40"
+  },
+  "environment": {
+    "python": "3.11.6",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.7",
+    "architecture": "arm64",
+    "system": "Darwin",
+    "system_release": "25.6.0",
+    "logical_cpus": 10,
+    "input_dtype": "float64",
+    "random_bit_generator": "PCG64"
+  },
+  "seeds": {
+    "development": 202610020,
+    "evaluation": 202610021,
+    "bootstrap": 202610022,
+    "recipe": "SeedSequence([stage_data_seed, block_count_index, profile_index, observation_family_index]); independent bootstrap stream SeedSequence([bootstrap_seed, stage_index, block_count_index, profile_index, observation_family_index]). Corrected/misspecified detection share family index 3 for paired identical latent resources/inclusion draws, while all outer datasets within a scenario are independent. Stage indices: development 0, evaluation 1."
+  },
+  "development_manifest_sha256": "c8c73a6d6c8ea3f5519a2a89f9b47b9362f0c6dc6728da89f8d3b2888ef59ce9",
+  "development_source_sha256": {
+    "experiments/run_profile_calibration.py": "ba1a24bc0e8a882c033cf211228de40bf3d4eea9ee0340c945940c396d6a7ae5",
+    "src/orthopolity/profile_calibration.py": "acc3d0fe0fa01649a2a6bea9f81588c789d8b04eef5aac75add91e4b4ebeb689",
+    "src/orthopolity/goodness_of_fit.py": "c292925bd36d62b24091344503a6031c7ddfc2628ab784d9abcaf5b26d638488",
+    "src/orthopolity/interventions.py": "cdc73d83e6219fe114bc0f7c5a2a9708e00a33e433ae05980e1d3804505c8841",
+    "src/orthopolity/figures.py": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40"
+  },
+  "development_source_note": "Exact original development source snapshots retained; final runner adds completion/output-integrity guards before evaluation. Generation, bootstrap methods, observations, scenarios, margins and decision criteria unchanged.",
+  "development_role": "Separate implementation/development sample, retained before final evaluation. No interval multiplier, scenario, margin, eligibility criterion or tuning parameter selected from evaluation.",
+  "populations": [
+    {
+      "name": "flat",
+      "phi": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "log_phi": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_abs_log_departure": 0.0,
+      "departure_infinite": false,
+      "truth_relation": "inside"
+    },
+    {
+      "name": "gradient_inside",
+      "phi": [
+        0.694253162661607,
+        0.7654149091409831,
+        0.8438708163593333,
+        0.9303685441692923,
+        1.0257323884170308,
+        1.2467867264172512
+      ],
+      "log_phi": [
+        -0.36491859729734805,
+        -0.2673372272921053,
+        -0.16975585728686274,
+        -0.0721744872816202,
+        0.025406882723622567,
+        0.22056962273410768
+      ],
+      "max_abs_log_departure": 0.36491859729734805,
+      "departure_infinite": false,
+      "truth_relation": "inside"
+    },
+    {
+      "name": "gradient_boundary",
+      "phi": [
+        0.6666666666666669,
+        0.7424943490231851,
+        0.826946787497045,
+        0.9210049749891488,
+        1.025761484027524,
+        1.2723752459321434
+      ],
+      "log_phi": [
+        -0.4054651081081641,
+        -0.29774001907742925,
+        -0.19001493004669434,
+        -0.08228984101595933,
+        0.025435248014775414,
+        0.2408854260762453
+      ],
+      "max_abs_log_departure": 0.4054651081081641,
+      "departure_infinite": false,
+      "truth_relation": "boundary"
+    },
+    {
+      "name": "gradient_outside",
+      "phi": [
+        0.6401763338614789,
+        0.7201762348258169,
+        0.8101733565804018,
+        0.911417005965919,
+        1.0253126099703371,
+        1.297581486265349
+      ],
+      "log_phi": [
+        -0.44601161891898056,
+        -0.32825932633205746,
+        -0.21050703374513427,
+        -0.09275474115821136,
+        0.024997551428711923,
+        0.2605021366025578
+      ],
+      "max_abs_log_departure": 0.44601161891898056,
+      "departure_infinite": false,
+      "truth_relation": "outside"
+    },
+    {
+      "name": "curved_material",
+      "phi": [
+        1.753851356563772,
+        1.1732135766812581,
+        0.6644054478223063,
+        0.4444444444444444,
+        0.4444444444444444,
+        1.1732135766812581
+      ],
+      "log_phi": [
+        0.5618141449562581,
+        0.15974663040440276,
+        -0.4088627016644732,
+        -0.8109302162163288,
+        -0.8109302162163288,
+        0.15974663040440276
+      ],
+      "max_abs_log_departure": 0.8109302162163288,
+      "departure_infinite": false,
+      "truth_relation": "outside"
+    },
+    {
+      "name": "structural_zero",
+      "phi": [
+        1.1428571428571428,
+        1.1428571428571428,
+        0.0,
+        1.1428571428571428,
+        1.1428571428571428,
+        1.1428571428571428
+      ],
+      "log_phi": [
+        0.13353139262452257,
+        0.13353139262452257,
+        null,
+        0.13353139262452257,
+        0.13353139262452257,
+        0.13353139262452257
+      ],
+      "max_abs_log_departure": null,
+      "departure_infinite": true,
+      "truth_relation": "outside"
+    }
+  ],
+  "scenarios": [
+    {
+      "index": 0,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 1,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 2,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 3,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 4,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 5,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 6,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 7,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 8,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 9,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 10,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 11,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 12,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 13,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 14,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 15,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 16,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 17,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 18,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 19,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 20,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 21,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 22,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 23,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 24,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 25,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 26,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 27,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 28,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 29,
+      "n_index": 0,
+      "n_blocks": 12,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 30,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 31,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 32,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 33,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 34,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 35,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 36,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 37,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 38,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 39,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 40,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 41,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 42,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 43,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 44,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 45,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 46,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 47,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 48,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 49,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 50,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 51,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 52,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 53,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 54,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 55,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 56,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 57,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 58,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 59,
+      "n_index": 1,
+      "n_blocks": 24,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 60,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 61,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 62,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 63,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 64,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 0,
+      "profile": "flat",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 65,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 66,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 67,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 68,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 69,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 1,
+      "profile": "gradient_inside",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 70,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 71,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 72,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 73,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 74,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 2,
+      "profile": "gradient_boundary",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 75,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 76,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 77,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 78,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 79,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 3,
+      "profile": "gradient_outside",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 80,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 81,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 82,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 83,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 84,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 4,
+      "profile": "curved_material",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 85,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 0,
+      "family": "iid_bounded_dense",
+      "paired_seed_family_index": 0
+    },
+    {
+      "index": 86,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 1,
+      "family": "iid_sparse_pareto",
+      "paired_seed_family_index": 1
+    },
+    {
+      "index": 87,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 2,
+      "family": "serial_lognormal",
+      "paired_seed_family_index": 2
+    },
+    {
+      "index": 88,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 3,
+      "family": "detection_corrected",
+      "paired_seed_family_index": 3
+    },
+    {
+      "index": 89,
+      "n_index": 2,
+      "n_blocks": 48,
+      "profile_index": 5,
+      "profile": "structural_zero",
+      "family_index": 4,
+      "family": "detection_misspecified",
+      "paired_seed_family_index": 3
+    }
+  ],
+  "methods": [
+    "centered_bootstrap",
+    "percentile_delta_extension",
+    "known_bound"
+  ],
+  "complete_profile_target": "phi_j = (sum widths)*E[R_j]/(width_j*sum E[R]); Delta=max abs log phi. Structural zero target has infinite Delta."
+}

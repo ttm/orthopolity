@@ -1,0 +1,9 @@
+{
+  "amends": "configs/dunaliella_size_budget_2026-10-02.json",
+  "run_id": "dunaliella-size-budget-2026-10-02",
+  "amendment": 1,
+  "recorded": "2 October 2026, after the protocol commit and before the forecast stage wrote any output; no small- or large-selected outcome had been inspected",
+  "finding": "The archive holds two cell-size summaries with identical Area, Major, Minor, Perimeter and Circularity on all 89 lineage-histories. Their volumes differ by exactly 8 on every row. The per-cell table in 'Analysis of cell size/CombData.RData' equals (4 pi/3) Major Minor^2, which treats measured full axes as semi-axes. The summary in 'Analysis of demographic rates/All analysis Fig. 3/SummaryData.RData' equals (pi/6) Major Minor^2, the prolate-spheroid volume from full axes that the methods describe.",
+  "resolution": "The size coordinate uses the Fig. 3 summary, (pi/6) L W^2, which the authors' own demographic analysis also uses. The runner verifies the exact factor of 8 and the identical shape columns instead of requiring equal volumes.",
+  "effect": "None on any forecast, score or verdict: a uniform volume factor shifts every log volume by log 8, which every model's fitted intercept absorbs, and slopes are unchanged. Reported absolute volumes are the physically plausible 73-1350 cubic micrometres."
+}

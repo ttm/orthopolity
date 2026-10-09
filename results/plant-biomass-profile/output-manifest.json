@@ -1,0 +1,13 @@
+{
+  "artifacts": [
+    {
+      "path": "results/plant-biomass-profile/study.json",
+      "sha256": "8d7c0ac94f8607263ae169f822ed389c7c3832319a389a58793db8c30e9f943b"
+    }
+  ],
+  "membership": {
+    "path": "data/plant-biomass-profile/2026-10-03/evaluation-membership.json",
+    "sha256": "5a5de952f3c49c7f2748a208910dbace004ad69b657971cd90af69e4e20db7f0"
+  },
+  "run_id": "plant-biomass-profile-2026-10-03"
+}

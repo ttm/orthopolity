@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-04",
+  "stage": "After sheet-name inventory; before any worksheet cell inspection",
+  "scope": "First-row text headers of species metabolism in 1. Data summary.xlsx only",
+  "permitted": [
+    "Resolve the named sheet through workbook relationships",
+    "Read row 1 text cells and the shared-string entries they reference",
+    "Record numeric/formula cell presence without interpreting or emitting their contents"
+  ],
+  "prohibited": [
+    "Community worksheet contents",
+    "Data rows in any worksheet",
+    "Numerical calibration fitting or community scoring"
+  ],
+  "purpose": "Determine whether the independently measured calibration has identifiable fields before specifying a numerical analysis",
+  "status": "Local pre-inspection record; not a previously committed or externally timestamped preregistration"
+}

@@ -1,0 +1,12 @@
+{
+  "amends": ["configs/chemostat_response_2026-10-02.json", "configs/chemostat_response_2026-10-02_amendment-1.json"],
+  "run_id": "chemostat-resource-response-2026-10-02",
+  "amendment": 2,
+  "recorded": "2 October 2026, before the prediction freeze and before any main-workbook outcome value (development or held-out) was decoded",
+  "motivation": "Synthetic end-to-end tests of the runner showed that the two-budget reweighting saturates: with measured C:N ratios of about 7-14, no strength moves a composition by more than roughly 0.04-0.09 TV from its baseline. That bound is a prediction of the rule and is retained before the freeze.",
+  "unchanged": "All fields of the configuration and amendment 1 remain in force; nothing here changes a forecast, score or verdict.",
+  "additions": {
+    "two_budget_capacity": "For each held-out vessel and variant, the maximum TV from its baseline composition attainable by the two-budget model over its candidate strengths is retained at the freeze. Evaluation reports each vessel's maximum observed departure from baseline on days 0-12 against that capacity. Descriptive only: an observed departure above capacity is redistribution the rule cannot produce at any strength, subject to observation error.",
+    "budget_diagnostic": "Reconstructed baseline algal nitrogen (pre-pulse preliminary densities times observed group biovolume, in micromol N/L) is reported for every vessel against the published 80 micromol N/L inflow concentration, as a descriptive check on quota transfer; no forecast or score uses it."
+  }
+}

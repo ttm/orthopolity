@@ -1,0 +1,11 @@
+{
+  "filename": "en_ewt-ud-test.conllu",
+  "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/b7711cce01cdd4f5fcc0a8199b8a50d951b16c0c/en_ewt-ud-test.conllu",
+  "final_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/b7711cce01cdd4f5fcc0a8199b8a50d951b16c0c/en_ewt-ud-test.conllu",
+  "content_type": "text/plain; charset=utf-8",
+  "role": "Official test split, acquired after frozen fit",
+  "stage": "test",
+  "retrieved_at_utc": "2026-10-07T13:39:49.860679+00:00",
+  "size_bytes": 1900101,
+  "sha256": "fa024f43dc5da3c5ac02563bc9bd0e974f46cbb1560823976a8f342a37dc494a"
+}

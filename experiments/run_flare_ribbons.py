@@ -25,7 +25,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
-from gof import csn_powerlaw, powerlaw_gof, fit_powerlaw, fit_lognormal, vuong   # noqa: E402
+from orthopolity.goodness_of_fit import csn_powerlaw, powerlaw_gof, fit_powerlaw, fit_lognormal, vuong   # noqa: E402
 
 PREREG = json.loads((ROOT / 'configs' / 'prereg_2026-10-08_flare_ribbons.json').read_text())
 H = {k: v['alpha_area'] for k, v in PREREG['hypotheses'].items() if isinstance(v, dict)}

@@ -1,0 +1,15 @@
+{
+  "run_id": "cell-division-summary-2026-10-08",
+  "source_directory": "data/cell-division/2026-10-08",
+  "calibration": {
+    "LB": {"birth_mean": 2.7391, "birth_variance": 0.9419, "birth_n": 153, "division_mean": 5.2833, "division_variance": 3.2094, "division_n": 110, "panels": "Figure 2b,c"},
+    "M9-succinate": {"birth_mean": 1.4913, "birth_variance": 0.0540, "birth_n": 133, "division_mean": 3.2358, "division_variance": 0.2084, "division_n": 68, "panels": "Figure 2d,e"}
+  },
+  "calibration_units": {"mean": "micrometres", "variance": "square micrometres"},
+  "parameter_meaning": "Arithmetic mean and variance of the source lognormal fits, not log-space parameters and not necessarily empirical sample moments",
+  "models": ["birth_population", "birth_lineage", "fixed_birth_population", "division_population"],
+  "endpoints": ["mean", "cv"],
+  "score": "Absolute natural logarithm of predicted / published fitted endpoint, reported separately per medium and endpoint",
+  "primary_comparison": "birth_population versus birth_lineage; improvement requires smaller error on both endpoints in each medium; no pooled winner or significance test",
+  "exposure": "Retrospective public-paper reanalysis. Qualitative batch findings, calibration figure and article text read before freeze. Source article XML retained before freeze contains qualitative target information. Figure 1 numerical target annotations not read before freeze; it is acquired afterwards. No external preregistration, global blinding, raw-cell likelihood, or new measurements."
+}

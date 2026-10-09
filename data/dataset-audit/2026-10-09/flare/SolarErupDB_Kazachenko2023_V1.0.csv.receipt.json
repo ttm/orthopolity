@@ -1,0 +1,10 @@
+{
+  "source_url": "https://solarmuri.ssl.berkeley.edu/~kazachenko/SolarErupDB/SolarErupDB_Kazachenko2023_V1.0.csv",
+  "access_date_client": "2026-10-09",
+  "retrieved_at_utc": "2026-10-09T00:19:36.215660+00:00",
+  "exit_code": 0,
+  "curl_report": "200\nhttps://solarmuri.ssl.berkeley.edu/~kazachenko/SolarErupDB/SolarErupDB_Kazachenko2023_V1.0.csv\n214084\n",
+  "stderr": "",
+  "bytes": 214084,
+  "sha256": "4338ef4a83bfbaf0ba327bdb41cf46affd5445e4dba0179246ad1e55ea824cc6"
+}

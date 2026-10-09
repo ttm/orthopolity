@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "run_id": "workload-transfer-2026-10-01b",
+  "evidence_kind": "actual_measurement",
+  "resources": [
+    {
+      "name": "peak resident memory",
+      "definition": "Total fresh-child process peak resident memory in bytes, including import and warm-up",
+      "units": "bytes"
+    },
+    {
+      "name": "workload processor time",
+      "definition": "Child user plus system CPU seconds for input construction, computation, and verification, excluding import and warm-up",
+      "units": "CPU seconds"
+    }
+  ],
+  "data_inputs": [
+    {
+      "path": "data/workload-transfer/2026-10-01b/transfer-specification.json",
+      "sha256": "ce392dd6a4c1f60d89816ef978d508b2ad4691031f43435bee4e967ac1182391"
+    },
+    {
+      "path": "data/workload-transfer/2026-10-01b/study-specification.json",
+      "sha256": "51a002df3ca151f240cad16b763afe69d4dd643154b8266b6dbe991251383050"
+    },
+    {
+      "path": "data/workload-transfer/2026-10-01b/calibration-manifest.json",
+      "sha256": "dd57b44240efcf1b6e7bc15f3077262dd0f421f2d92943d46fe56754e03a5b95"
+    },
+    {
+      "path": "data/workload-transfer/2026-10-01b/calibration.jsonl",
+      "sha256": "d88dec24f377051e147ed40623cce4dad6f41afb68d9a939766ac223f830b37e"
+    },
+    {
+      "path": "data/workload-transfer/2026-10-01b/frozen-plan.json",
+      "sha256": "377ae90db7dc613f7f7e78956547c1c67f538095d5bde3f1e7610a4b6f9ac316"
+    },
+    {
+      "path": "data/workload-transfer/2026-10-01b/validation.jsonl",
+      "sha256": "17d0ff4b4e0ec38c63d96efc2a57b6ba9be67e5b468c6b52ae4b29a5399a3962"
+    },
+    {
+      "path": "data/workload-transfer/2026-10-01b/hardware-metadata.json",
+      "sha256": "8c3262f05ba17b83d45ea2e406bd458b57e6dd148f13f74cc379b0ae563e54b3"
+    },
+    {
+      "path": "data/workload-pilot/2026-10-01/frozen-plan.json",
+      "sha256": "6071cc9709034a2bc152052cb04059b9d1d6c9255845dee04362318edc3aca82"
+    },
+    {
+      "path": "data/workload-pilot/2026-10-01/calibration.jsonl",
+      "sha256": "920968e75914865eb18f064cf120dc616815a066d56fc9662b45a9b9bb7d35f3"
+    },
+    {
+      "path": "data/workload-pilot/2026-10-01/validation.jsonl",
+      "sha256": "3a45d7fa8540477434b5a44534c458311be8dba8a51f6827c3d42bb603743e8b"
+    }
+  ],
+  "generated_seeds": {
+    "ordering_and_bootstrap_seed": 202610015,
+    "matrix_seed_rule": "SeedSequence([1729,size])",
+    "probe_seed_rule": "SeedSequence([1730,size])"
+  },
+  "algorithms": [
+    {
+      "name": "experiments/workload_worker.py",
+      "sources": [
+        {
+          "path": "data/run-sources/754ed12cec237c5b21113f3240d013b921575b343bd2e476995fc9e1af55e572/workload_worker.py",
+          "sha256": "754ed12cec237c5b21113f3240d013b921575b343bd2e476995fc9e1af55e572",
+          "original_path": "experiments/workload_worker.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        }
+      ]
+    },
+    {
+      "name": "src/orthopolity/workload.py",
+      "sources": [
+        {
+          "path": "data/run-sources/ac56fe83e64d6351d81dcfa0ff52f7277fcabdcda8df8944439b9a6946e2aafe/workload.py",
+          "sha256": "ac56fe83e64d6351d81dcfa0ff52f7277fcabdcda8df8944439b9a6946e2aafe",
+          "original_path": "src/orthopolity/workload.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        }
+      ]
+    },
+    {
+      "name": "src/orthopolity/workload_prediction.py",
+      "sources": [
+        {
+          "path": "data/run-sources/b3995b98e122b723496f7cb8f8216cf65aacad94216356c9b947f319441d6fbd/workload_prediction.py",
+          "sha256": "b3995b98e122b723496f7cb8f8216cf65aacad94216356c9b947f319441d6fbd",
+          "original_path": "src/orthopolity/workload_prediction.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        }
+      ]
+    },
+    {
+      "name": "src/orthopolity/workload_analysis.py",
+      "sources": [
+        {
+          "path": "data/run-sources/b63eb6a121e94aab43b4142eabf36043d6037d7dc63745ea9d65397ade56517c/workload_analysis.py",
+          "sha256": "b63eb6a121e94aab43b4142eabf36043d6037d7dc63745ea9d65397ade56517c",
+          "original_path": "src/orthopolity/workload_analysis.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        }
+      ]
+    },
+    {
+      "name": "experiments/run_workload_pilot.py",
+      "sources": [
+        {
+          "path": "data/run-sources/9009b1348c000c7c5ebed0d9f5612fd8b1cee46413be62f4547b5846284d3596/run_workload_pilot.py",
+          "sha256": "9009b1348c000c7c5ebed0d9f5612fd8b1cee46413be62f4547b5846284d3596",
+          "original_path": "experiments/run_workload_pilot.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        }
+      ]
+    },
+    {
+      "name": "experiments/run_workload_transfer.py",
+      "sources": [
+        {
+          "path": "data/run-sources/d9557e6f2e8f09a4dc969cdcb15d1802d5e6096c41d0f69fa6be1d3257dbac97/run_workload_transfer.py",
+          "sha256": "d9557e6f2e8f09a4dc969cdcb15d1802d5e6096c41d0f69fa6be1d3257dbac97",
+          "original_path": "experiments/run_workload_transfer.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        }
+      ]
+    },
+    {
+      "name": "src/orthopolity/workload_transfer.py",
+      "sources": [
+        {
+          "path": "data/run-sources/e87142f262ea6abf63f47a1b14501f27dd20cab7da17edd9c00f80c705762500/workload_transfer.py",
+          "sha256": "e87142f262ea6abf63f47a1b14501f27dd20cab7da17edd9c00f80c705762500",
+          "original_path": "src/orthopolity/workload_transfer.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        }
+      ]
+    },
+    {
+      "name": "src/orthopolity/run_registry.py",
+      "sources": [
+        {
+          "path": "data/run-sources/33824ebac344210cf59ef2dc83d795e35676d859830c96e7171db9ff6bb1781e/run_registry.py",
+          "sha256": "33824ebac344210cf59ef2dc83d795e35676d859830c96e7171db9ff6bb1781e",
+          "original_path": "src/orthopolity/run_registry.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        }
+      ]
+    }
+  ],
+  "configs": [
+    {
+      "path": "data/run-sources/4bc66602174ae1b3d6277fa86de1626fc014dde56dd8026e2a0ac31ecdb13249/workload_transfer_2026-10-01.json",
+      "sha256": "4bc66602174ae1b3d6277fa86de1626fc014dde56dd8026e2a0ac31ecdb13249",
+      "original_path": "configs/workload_transfer_2026-10-01.json",
+      "provenance": "Content-addressed byte snapshot at registration"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "results/workload-transfer/comparison.csv",
+      "sha256": "75b005b4028b2e317b5966d6e1ca1e158d85d8f8ce8c64f6fa1442c6614e3f37"
+    },
+    {
+      "path": "results/workload-transfer/comparison.png",
+      "sha256": "b75099283120084668a2b2a59f2a63c738af4469a893e9e95833b842b84fcbb8"
+    },
+    {
+      "path": "results/workload-transfer/comparison.svg",
+      "sha256": "8b687392e77f3e3368c1e6c23b9477c5b8a1583259e8fab4b2bff12f1c0bccbb"
+    },
+    {
+      "path": "results/workload-transfer/cost-changes.png",
+      "sha256": "206a80de262099e50066284aa5d32996369cd91d8a6c9226c0c29ab50c5a17a9"
+    },
+    {
+      "path": "results/workload-transfer/cost-changes.svg",
+      "sha256": "c36a3430117220cf9760ef268fdfc517e0f5c19f5339743f4cd2d05bd2774759"
+    },
+    {
+      "path": "results/workload-transfer/opportunities.csv",
+      "sha256": "7fa50ede775451142ce2e1c7b84f7b324ffc1b4451e012381677b2f0625d3013"
+    },
+    {
+      "path": "results/workload-transfer/study.json",
+      "sha256": "cf5de9cf54917bbb704f56e5aa964d8d2711682d6c6d0175f1a4e31425d49ebc"
+    }
+  ],
+  "relationships": [
+    {
+      "run_id": "workload-pilot-2026-10-01",
+      "type": "transfer_replication"
+    }
+  ],
+  "summary": {
+    "aligned": {
+      "original_error": 0.13095238095238096,
+      "local_error": 0.0,
+      "original_tolerance": 0.03571428571428571,
+      "original_pass": false,
+      "local_pass": true,
+      "local_mse_improvement": 0.002858087679516251
+    },
+    "opposed": {
+      "original_error": 0.0,
+      "local_error": 0.0,
+      "original_tolerance": 0.03571428571428571,
+      "original_pass": true,
+      "local_pass": true,
+      "local_mse_improvement": 0.0
+    },
+    "permuted": {
+      "original_error": 0.0,
+      "local_error": 0.0,
+      "original_tolerance": 0.03571428571428571,
+      "original_pass": true,
+      "local_pass": true,
+      "local_mse_improvement": 0.0
+    },
+    "cpu_tightened": {
+      "original_error": 0.1071428571428571,
+      "local_error": 0.04761904761904767,
+      "original_tolerance": 0.03571428571428571,
+      "original_pass": false,
+      "local_pass": false,
+      "local_mse_improvement": 0.0013227513227513205
+    }
+  },
+  "hardware_metadata": {
+    "collected_utc": "2026-10-01T20:54:32.208531+00:00",
+    "recording_scope": "Current metadata collector process; not a historical hardware reconstruction",
+    "os": {
+      "system": "Darwin",
+      "release": "25.6.0",
+      "version": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+      "build": "25G83",
+      "product_version": "26.6.2"
+    },
+    "cpu": {
+      "model": "Apple M1 Max",
+      "architecture": "arm64",
+      "logical_count": 10
+    },
+    "total_ram_bytes": 34359738368,
+    "python_version": "3.11.6",
+    "availability": {
+      "cpu_model": true,
+      "total_ram": true,
+      "os_build": true
+    },
+    "numpy": {
+      "available": true,
+      "version": "2.3.5",
+      "blas": {
+        "name": "accelerate",
+        "version": "unknown"
+      }
+    },
+    "requested_thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "runtime_thread_verification": {
+      "inspection_available": false,
+      "blas_count_available": false,
+      "libraries": [],
+      "thread_count_verified": false,
+      "verified_single_thread": false,
+      "scope": "Optional threadpoolctl is unavailable; requested environment is not runtime verification"
+    },
+    "collection_context": "Read-only host metadata collected before calibration; workers run under the ordinary workspace execution context"
+  }
+}

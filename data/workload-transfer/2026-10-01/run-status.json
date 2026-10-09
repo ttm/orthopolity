@@ -1,0 +1,8 @@
+{
+  "run_id": "workload-transfer-precheck-2026-10-01",
+  "status": "incomplete_before_forecast_freeze",
+  "calibration_tasks": 72,
+  "validation_tasks": 0,
+  "reason": "Exact resource-description guard rejected import versus imports wording; no validation or comparison freeze was produced",
+  "next_run": "workload-transfer-2026-10-01b"
+}

@@ -1,0 +1,217 @@
+{
+  "run_id": "inverse-resources-2026-10-06",
+  "scope": "Algebraic and simulated consequences of declared assumptions; no new natural observations or empirical validation of the proposed general law",
+  "status": "analytic_predictions_from_fixed_inputs_before_stochastic_simulation",
+  "model": "b=alpha-v=D theta; two calibration environments, one held-out environment",
+  "design": [
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      2.0
+    ],
+    [
+      2.0,
+      1.0
+    ]
+  ],
+  "known_constraint_slopes": [
+    0.15,
+    -0.1,
+    0.2
+  ],
+  "true_slopes": [
+    1.65,
+    1.9,
+    2.7
+  ],
+  "true_corrected_slopes": [
+    1.5,
+    2.0,
+    2.5
+  ],
+  "joint_corrected_slope_covariance": [
+    [
+      0.0004,
+      0.00014,
+      8e-05
+    ],
+    [
+      0.00014,
+      0.0004,
+      0.00016
+    ],
+    [
+      8e-05,
+      0.00016,
+      0.0004
+    ]
+  ],
+  "exact_recovered_coefficients": [
+    0.9999999999999987,
+    0.5
+  ],
+  "coefficient_covariance": [
+    [
+      0.0014399999999999988,
+      -0.0007799999999999997
+    ],
+    [
+      -0.0007799999999999997,
+      0.0005199999999999998
+    ]
+  ],
+  "calibration_estimator": [
+    [
+      1.999999999999999,
+      -0.9999999999999998
+    ],
+    [
+      -0.9999999999999998,
+      0.9999999999999998
+    ]
+  ],
+  "heldout_weights": [
+    2.9999999999999982,
+    -0.9999999999999998
+  ],
+  "contrast_weights": [
+    -2.9999999999999982,
+    0.9999999999999998,
+    1.0
+  ],
+  "heldout_mean_prediction": 2.699999999999998,
+  "contrast_variance": 0.0033999999999999963,
+  "contrast_standard_error": 0.058309518948452974,
+  "prediction_variance": 0.0031599999999999966,
+  "shared_composition_expected_z_mean": 0.0,
+  "shared_composition_expected_z_variance": 1.0,
+  "interval_probability": 0.95,
+  "standard_normal_critical_value": 1.959963984540054,
+  "expected_coverage_monte_carlo_standard_error": 0.0015411035007422448,
+  "changed_heldout_composition": {
+    "coefficient": [
+      1.0,
+      0.8
+    ],
+    "true_slopes": [
+      1.65,
+      1.9,
+      3.0
+    ],
+    "mean_residual": 0.2999999999999998,
+    "expected_z_mean": 5.144957554275265,
+    "expected_z_variance": 1.0,
+    "expected_interval_coverage": 0.0007237861230751518,
+    "expected_two_sided_rejection_probability": 0.9992762138769249
+  },
+  "partial_identification": {
+    "design": [
+      [
+        1.0,
+        1.0
+      ],
+      [
+        2.0,
+        2.0
+      ]
+    ],
+    "rank": 1,
+    "compatible_coefficients": [
+      [
+        1.0,
+        0.5
+      ],
+      [
+        0.25,
+        1.25
+      ]
+    ],
+    "identical_corrected_slopes": [
+      [
+        1.5,
+        3.0
+      ],
+      [
+        1.5,
+        3.0
+      ]
+    ],
+    "identified_target": [
+      3.0,
+      3.0
+    ],
+    "target_weights": [
+      0.5999999999999998,
+      1.1999999999999995
+    ],
+    "target_prediction": 4.499999999999998,
+    "unidentifiable_target": [
+      1.0,
+      0.0
+    ],
+    "unidentifiable_target_rejected": true
+  },
+  "conditioning": [
+    {
+      "name": "separated",
+      "design": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          2.0
+        ]
+      ],
+      "rank": 2,
+      "singular_values": [
+        2.618033988749895,
+        0.38196601125010515
+      ],
+      "condition_number": 6.854101966249685,
+      "corrected_slope_perturbation": [
+        0.0,
+        0.001
+      ],
+      "coefficient_perturbation": [
+        -0.0009999999999999998,
+        0.001
+      ],
+      "coefficient_perturbation_l2": 0.0014142135623730948,
+      "coefficient_error_bound": 0.002618033988749895
+    },
+    {
+      "name": "nearly_proportional",
+      "design": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0001
+        ]
+      ],
+      "rank": 2,
+      "singular_values": [
+        2.00005000125,
+        4.9998750000065936e-05
+      ],
+      "condition_number": 40002.00007494912,
+      "corrected_slope_perturbation": [
+        0.0,
+        0.001
+      ],
+      "coefficient_perturbation": [
+        -9.999999999986965,
+        9.999999999986969
+      ],
+      "coefficient_perturbation_l2": 14.14213562371252,
+      "coefficient_error_bound": 20.00050001247394
+    }
+  ]
+}

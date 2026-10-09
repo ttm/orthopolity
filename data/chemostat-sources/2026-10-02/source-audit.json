@@ -1,0 +1,44 @@
+{
+  "auditor_source_reference": {
+    "path": "experiments/fetch_chemostat_sources.py",
+    "sha256": "076fea2523ad115e9c36222e8f152c29d4bc9587db7d0501e78d490e0f8796e5"
+  },
+  "full_data_fitted_posteriors_used": false,
+  "input_references": [
+    {
+      "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/data/Chemostat_experimental_timeseries.xlsx",
+      "sha256": "675854e62ade20d4ab535cd6f9abd833507a4df286eb4a85d27cadaa2ef2329f"
+    },
+    {
+      "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/data/algae_stoichiometry_preliminary_experiments.xlsx",
+      "sha256": "aae542acaddc7e9b4ff97b02fe0a73d2bf5463815086495f0315255dc4bf1fda"
+    },
+    {
+      "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/data/algae_no-rotifer_chemostat_preliminary_experiments.xlsx",
+      "sha256": "4ce7ec70f990029a341075548b8376b17e71bd816fa3f98418f2b13e90ef5ba8"
+    },
+    {
+      "path": "data/chemostat-sources/2026-10-02/acquisition.json",
+      "sha256": "26e1c572c7c8c92c070d73ae7877ee565bfa53c13da013ff544516b3b229bc02"
+    },
+    {
+      "path": "data/chemostat-sources/2026-10-02/archive-members.json",
+      "sha256": "88fbb9653397bd80600e8eaf4d6eeb1b14b44f5dd3fbb02592b5296f21c84919"
+    }
+  ],
+  "main_outcome_values_inspected": false,
+  "main_rows": 456,
+  "main_vessels": 24,
+  "main_workbook": {
+    "path": "data/chemostat-sources/2026-10-02/zenodo/extracted/scripts_data_plankton_responses_Npulse/data/Chemostat_experimental_timeseries.xlsx",
+    "sha256": "675854e62ade20d4ab535cd6f9abd833507a4df286eb4a85d27cadaa2ef2329f"
+  },
+  "preliminary_replicate_identifier_present": false,
+  "preliminary_stoichiometry_rows": 20,
+  "schema_version": 1,
+  "software": {
+    "openpyxl": "3.1.5",
+    "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]"
+  },
+  "source_selection": "author_public_zenodo_bundle"
+}

@@ -1,0 +1,590 @@
+[
+  {
+    "culture_id": "BL107:16:1",
+    "diameter_um": 0.945,
+    "quotas": {
+      "QC": 15.16047268,
+      "QN": 2.027043908,
+      "QP": 0.181613615
+    },
+    "replicate": "1",
+    "source_line": 2,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "BL107:16:2",
+    "diameter_um": 0.946,
+    "quotas": {
+      "QC": 15.34782263,
+      "QN": 2.15378448,
+      "QP": 0.19160964
+    },
+    "replicate": "2",
+    "source_line": 3,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "BL107:16:3",
+    "diameter_um": 0.952,
+    "quotas": {
+      "QC": 15.58776172,
+      "QN": 2.254799719,
+      "QP": 0.206257678
+    },
+    "replicate": "3",
+    "source_line": 4,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "BL107:18:1",
+    "diameter_um": 0.908,
+    "quotas": {
+      "QC": 12.88299996,
+      "QN": 1.766722681,
+      "QP": 0.138821014
+    },
+    "replicate": "1",
+    "source_line": 5,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "BL107:18:2",
+    "diameter_um": 0.906,
+    "quotas": {
+      "QC": 11.40587649,
+      "QN": 1.657835189,
+      "QP": 0.115389905
+    },
+    "replicate": "2",
+    "source_line": 6,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "BL107:18:3",
+    "diameter_um": 0.901,
+    "quotas": {
+      "QC": 10.05503484,
+      "QN": 1.558128815,
+      "QP": 0.11886007
+    },
+    "replicate": "3",
+    "source_line": 7,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "BL107:20:1",
+    "diameter_um": 0.938,
+    "quotas": {
+      "QC": 13.66963128,
+      "QN": 1.73146241,
+      "QP": 0.111810682
+    },
+    "replicate": "1",
+    "source_line": 8,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "BL107:20:2",
+    "diameter_um": 0.934,
+    "quotas": {
+      "QC": 14.43039242,
+      "QN": 2.014699459,
+      "QP": 0.123222749
+    },
+    "replicate": "2",
+    "source_line": 9,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "BL107:20:3",
+    "diameter_um": 0.95,
+    "quotas": {
+      "QC": 13.3976039,
+      "QN": 1.918855732,
+      "QP": 0.134092876
+    },
+    "replicate": "3",
+    "source_line": 10,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "BL107:22:1",
+    "diameter_um": 0.926,
+    "quotas": {
+      "QC": 11.90190251,
+      "QN": 1.485001443,
+      "QP": 0.117311792
+    },
+    "replicate": "1",
+    "source_line": 11,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "BL107:22:2",
+    "diameter_um": 0.925,
+    "quotas": {
+      "QC": 11.41648047,
+      "QN": 1.449367499,
+      "QP": 0.080576934
+    },
+    "replicate": "2",
+    "source_line": 12,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "BL107:22:3",
+    "diameter_um": 0.928,
+    "quotas": {
+      "QC": 10.21455834,
+      "QN": 1.505706298,
+      "QP": 0.118319193
+    },
+    "replicate": "3",
+    "source_line": 13,
+    "split": "training",
+    "strain": "BL107",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "CC9311:16:1",
+    "diameter_um": 1.231,
+    "quotas": {
+      "QC": 40.52804204,
+      "QN": 4.232764189,
+      "QP": 0.375625168
+    },
+    "replicate": "1",
+    "source_line": 17,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "CC9311:16:2",
+    "diameter_um": 1.236,
+    "quotas": {
+      "QC": 38.81140874,
+      "QN": 4.19531824,
+      "QP": 0.437049035
+    },
+    "replicate": "2",
+    "source_line": 18,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "CC9311:18:1",
+    "diameter_um": 1.28,
+    "quotas": {
+      "QC": 43.14893054,
+      "QN": 4.543922062,
+      "QP": 0.474537356
+    },
+    "replicate": "1",
+    "source_line": 19,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "CC9311:18:2",
+    "diameter_um": 1.298,
+    "quotas": {
+      "QC": 42.71322879,
+      "QN": 4.767536405,
+      "QP": 0.285075762
+    },
+    "replicate": "2",
+    "source_line": 20,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "CC9311:18:3",
+    "diameter_um": 1.252,
+    "quotas": {
+      "QC": 32.48666984,
+      "QN": 3.51290967,
+      "QP": 0.32016632
+    },
+    "replicate": "3",
+    "source_line": 21,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "CC9311:20:1",
+    "diameter_um": 1.114,
+    "quotas": {
+      "QC": 21.65548228,
+      "QN": 2.510828811,
+      "QP": 0.267736703
+    },
+    "replicate": "1",
+    "source_line": 22,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "CC9311:20:2",
+    "diameter_um": 1.116,
+    "quotas": {
+      "QC": 22.67895136,
+      "QN": 2.880858688,
+      "QP": 0.26790038
+    },
+    "replicate": "2",
+    "source_line": 23,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "CC9311:20:3",
+    "diameter_um": 1.115,
+    "quotas": {
+      "QC": 20.93434023,
+      "QN": 2.8265583,
+      "QP": 0.250535749
+    },
+    "replicate": "3",
+    "source_line": 24,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "CC9311:22:1",
+    "diameter_um": 1.058,
+    "quotas": {
+      "QC": 14.20653261,
+      "QN": 1.269576071,
+      "QP": 0.19769244
+    },
+    "replicate": "1",
+    "source_line": 25,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "CC9311:22:2",
+    "diameter_um": 1.058,
+    "quotas": {
+      "QC": 17.33040161,
+      "QN": 2.181509929,
+      "QP": 0.149407797
+    },
+    "replicate": "2",
+    "source_line": 26,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "CC9311:22:3",
+    "diameter_um": 1.055,
+    "quotas": {
+      "QC": 16.70995047,
+      "QN": 2.367822101,
+      "QP": 0.206872911
+    },
+    "replicate": "3",
+    "source_line": 27,
+    "split": "training",
+    "strain": "CC9311",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "CC9902:16:1",
+    "diameter_um": 0.688,
+    "quotas": {
+      "QC": 7.317218004,
+      "QN": 1.022388485,
+      "QP": 0.066693752
+    },
+    "replicate": "1",
+    "source_line": 31,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "CC9902:16:2",
+    "diameter_um": 0.643,
+    "quotas": {
+      "QC": 6.446780453,
+      "QN": 0.93840174,
+      "QP": 0.041449227
+    },
+    "replicate": "2",
+    "source_line": 32,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "CC9902:16:3",
+    "diameter_um": 0.701,
+    "quotas": {
+      "QC": 6.450303557,
+      "QN": 0.9545805,
+      "QP": 0.06978601
+    },
+    "replicate": "3",
+    "source_line": 33,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "CC9902:18:3",
+    "diameter_um": 0.657,
+    "quotas": {
+      "QC": 7.031497028,
+      "QN": 1.03046782,
+      "QP": 0.052638148
+    },
+    "replicate": "3",
+    "source_line": 34,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "CC9902:20:1",
+    "diameter_um": 0.642,
+    "quotas": {
+      "QC": 5.971860775,
+      "QN": 1.044388508,
+      "QP": 0.069548365
+    },
+    "replicate": "1",
+    "source_line": 35,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "CC9902:20:2",
+    "diameter_um": 0.638,
+    "quotas": {
+      "QC": 5.727602562,
+      "QN": 1.092212843,
+      "QP": 0.064633698
+    },
+    "replicate": "2",
+    "source_line": 36,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "CC9902:20:3",
+    "diameter_um": 0.643,
+    "quotas": {
+      "QC": 6.583040439,
+      "QN": 1.021844983,
+      "QP": 0.059446331
+    },
+    "replicate": "3",
+    "source_line": 37,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "CC9902:22:1",
+    "diameter_um": 0.671,
+    "quotas": {
+      "QC": 7.052784558,
+      "QN": 1.191280256,
+      "QP": 0.056532372
+    },
+    "replicate": "1",
+    "source_line": 38,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "CC9902:22:2",
+    "diameter_um": 0.663,
+    "quotas": {
+      "QC": 6.00258135,
+      "QN": 0.870348086,
+      "QP": 0.056532372
+    },
+    "replicate": "2",
+    "source_line": 39,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "CC9902:22:3",
+    "diameter_um": 0.652,
+    "quotas": {
+      "QC": 2.946481241,
+      "QN": 0.710817555,
+      "QP": 0.056532372
+    },
+    "replicate": "3",
+    "source_line": 40,
+    "split": "training",
+    "strain": "CC9902",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "ROS8604:16:2",
+    "diameter_um": 1.232,
+    "quotas": {
+      "QC": 32.736275,
+      "QN": 4.742407221,
+      "QP": 0.436021135
+    },
+    "replicate": "2",
+    "source_line": 43,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 16.0
+  },
+  {
+    "culture_id": "ROS8604:18:1",
+    "diameter_um": 1.213,
+    "quotas": {
+      "QC": 31.52711145,
+      "QN": 4.94082512,
+      "QP": 0.315263158
+    },
+    "replicate": "1",
+    "source_line": 44,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "ROS8604:18:2",
+    "diameter_um": 1.259,
+    "quotas": {
+      "QC": 34.7700338,
+      "QN": 5.437555255,
+      "QP": 0.368899427
+    },
+    "replicate": "2",
+    "source_line": 45,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "ROS8604:18:3",
+    "diameter_um": 1.21,
+    "quotas": {
+      "QC": 17.20471707,
+      "QN": 2.85054203,
+      "QP": 0.242331445
+    },
+    "replicate": "3",
+    "source_line": 46,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 18.0
+  },
+  {
+    "culture_id": "ROS8604:20:1",
+    "diameter_um": 1.245,
+    "quotas": {
+      "QC": 32.63978759,
+      "QN": 3.599879088,
+      "QP": 0.433599345
+    },
+    "replicate": "1",
+    "source_line": 47,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "ROS8604:20:2",
+    "diameter_um": 1.243,
+    "quotas": {
+      "QC": 42.3686826,
+      "QN": 6.905583626,
+      "QP": 0.433599345
+    },
+    "replicate": "2",
+    "source_line": 48,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "ROS8604:20:3",
+    "diameter_um": 1.24,
+    "quotas": {
+      "QC": 36.47018427,
+      "QN": 6.617938869,
+      "QP": 0.462656026
+    },
+    "replicate": "3",
+    "source_line": 49,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 20.0
+  },
+  {
+    "culture_id": "ROS8604:22:1",
+    "diameter_um": 1.198,
+    "quotas": {
+      "QC": 29.7234334,
+      "QN": 4.569289805,
+      "QP": 0.367117117
+    },
+    "replicate": "1",
+    "source_line": 50,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 22.0
+  },
+  {
+    "culture_id": "ROS8604:22:2",
+    "diameter_um": 1.198,
+    "quotas": {
+      "QC": 31.66132573,
+      "QN": 5.317850592,
+      "QP": 0.367117117
+    },
+    "replicate": "2",
+    "source_line": 51,
+    "split": "training",
+    "strain": "ROS8604",
+    "temperature_degC": 22.0
+  }
+]

@@ -1,0 +1,10 @@
+HTTP/1.1 206 Partial Content
+Date: Fri, 09 Oct 2026 00:19:39 GMT
+Server: Apache/2.4.62 (Red Hat Enterprise Linux) OpenSSL/3.5.5 mod_fcgid/2.3.9 mod_wsgi/4.7.1 Python/3.9
+Last-Modified: Thu, 08 Oct 2026 08:01:40 GMT
+ETag: "467e61-65d4fa44f4046"
+Accept-Ranges: bytes
+Content-Length: 4000
+Access-Control-Allow-Origin: *
+Content-Range: bytes 0-3999/4619873
+

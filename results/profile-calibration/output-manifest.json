@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "run_id": "profile-calibration-2026-10-02",
+  "completed_utc": "2026-10-02T08:54:45.821963+00:00",
+  "artifacts": [
+    {
+      "path": "results/profile-calibration/study.json",
+      "sha256": "38877cbea23061d00c184b092e5b21ba4948e9ea312b9a36e8aaa5c7ddb447c2"
+    },
+    {
+      "path": "results/profile-calibration/calibration.png",
+      "sha256": "b57b85972dddd5b92a1563e764d3f4df3d129a6ea563c019171993bc7c8b3463"
+    },
+    {
+      "path": "results/profile-calibration/calibration.svg",
+      "sha256": "007a7f426156ec113430967ede52fd419476bfa56f4c2844f960b7a225903121"
+    }
+  ]
+}

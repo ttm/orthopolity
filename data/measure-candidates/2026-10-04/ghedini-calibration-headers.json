@@ -1,0 +1,67 @@
+{
+  "cells": [
+    {
+      "cell": "A1",
+      "header": "Light",
+      "omitted_nontext_or_formula": false
+    },
+    {
+      "cell": "B1",
+      "header": "species",
+      "omitted_nontext_or_formula": false
+    },
+    {
+      "cell": "C1",
+      "header": "biomass_density_concentration_%",
+      "omitted_nontext_or_formula": false
+    },
+    {
+      "cell": "D1",
+      "header": "OD",
+      "omitted_nontext_or_formula": false
+    },
+    {
+      "cell": "E1",
+      "header": "cell_vol_um3",
+      "omitted_nontext_or_formula": false
+    },
+    {
+      "cell": "F1",
+      "header": "cellsuL",
+      "omitted_nontext_or_formula": false
+    },
+    {
+      "cell": "G1",
+      "header": "cells.5ml",
+      "omitted_nontext_or_formula": false
+    },
+    {
+      "cell": "H1",
+      "header": "metab_umolO2_min",
+      "omitted_nontext_or_formula": false
+    },
+    {
+      "cell": "I1",
+      "header": "metab_umolO2_min_cell",
+      "omitted_nontext_or_formula": false
+    },
+    {
+      "cell": "J1",
+      "header": "average metabolism across species_umol_min_cell",
+      "omitted_nontext_or_formula": false
+    },
+    {
+      "cell": "K1",
+      "header": "metab_per_unit_vol_umolO2_min_um3",
+      "omitted_nontext_or_formula": false
+    },
+    {
+      "cell": "L1",
+      "header": "av_metab_unit_vol_umolO2_min_um3",
+      "omitted_nontext_or_formula": false
+    }
+  ],
+  "row": 1,
+  "sheet": "species metabolism",
+  "workbook": "1. Data summary.xlsx"
+}

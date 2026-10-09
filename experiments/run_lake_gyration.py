@@ -26,7 +26,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
-from gof import fit_powerlaw                        # noqa: E402
+from orthopolity.goodness_of_fit import fit_powerlaw   # noqa: E402
 
 PREREG = json.loads((ROOT / 'configs' / 'prereg_2026-10-08_lake_gyration.json').read_text())
 SEED, N_BOOT = 20261008, 1000

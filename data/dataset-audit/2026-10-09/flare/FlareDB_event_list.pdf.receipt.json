@@ -1,0 +1,26 @@
+{
+  "source_url": "https://zenodo.org/api/records/16790538/files/FlareDB_event_list.pdf/content",
+  "access_date_client": "2026-10-09",
+  "retrieved_at_utc": "2026-10-09T00:18:39.482613+00:00",
+  "command": [
+    "curl",
+    "--fail",
+    "--location",
+    "--max-time",
+    "40",
+    "--silent",
+    "--show-error",
+    "--dump-header",
+    "<path>.headers",
+    "--output",
+    "FlareDB_event_list.pdf",
+    "--write-out",
+    "%{http_code}\\n%{url_effective}\\n%{size_download}\\n",
+    "https://zenodo.org/api/records/16790538/files/FlareDB_event_list.pdf/content"
+  ],
+  "exit_code": 0,
+  "curl_report": "200\nhttps://zenodo.org/api/records/16790538/files/FlareDB_event_list.pdf/content\n252463\n",
+  "stderr": "",
+  "bytes": 252463,
+  "sha256": "52ce53b1015e3a3fe478977b432e8c07487e7b31c26890fa9eb78d16c484526d"
+}

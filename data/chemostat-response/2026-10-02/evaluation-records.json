@@ -1,0 +1,1682 @@
+[
+  {
+    "biovolumes": [
+      2758147.98369354,
+      18661158.0163065,
+      4177998.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "1",
+    "decoded": true,
+    "source_row": 252,
+    "time": 1.0,
+    "total_algae": 25597304.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      205271.053334174,
+      21907195.9466658,
+      8486620.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "1",
+    "decoded": true,
+    "source_row": 253,
+    "time": 2.0,
+    "total_algae": 30599087.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      52319.104668665,
+      14736103.8953313,
+      17480575.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "1",
+    "decoded": true,
+    "source_row": 254,
+    "time": 3.0,
+    "total_algae": 32268998.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      31772.7759300901,
+      9406902.22406991,
+      23021274.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "1",
+    "decoded": true,
+    "source_row": 255,
+    "time": 4.0,
+    "total_algae": 32459949.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      40176.0845868578,
+      7591901.91541314,
+      19084834.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "1",
+    "decoded": true,
+    "source_row": 256,
+    "time": 5.0,
+    "total_algae": 26716912.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      48986.7595567724,
+      7583091.24044323,
+      19084834.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "1",
+    "decoded": true,
+    "source_row": 257,
+    "time": 8.0,
+    "total_algae": 26716912.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      69800.1221268347,
+      11653373.8778732,
+      17900485.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "1",
+    "decoded": true,
+    "source_row": 258,
+    "time": 10.0,
+    "total_algae": 29623660.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      27388.2039527027,
+      5777080.7960473,
+      16211748.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "1",
+    "decoded": true,
+    "source_row": 259,
+    "time": 12.0,
+    "total_algae": 22016216.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      19795.0671335059,
+      4737538.93286649,
+      6643163.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "2",
+    "decoded": true,
+    "source_row": 270,
+    "time": 1.0,
+    "total_algae": 11400497.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      437998.558993267,
+      4363820.44100673,
+      3573751.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "2",
+    "decoded": true,
+    "source_row": 271,
+    "time": 2.0,
+    "total_algae": 8375571.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      969070.574040219,
+      3600598.42595978,
+      2312797.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "2",
+    "decoded": true,
+    "source_row": 272,
+    "time": 3.0,
+    "total_algae": 6882466.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      410381.889351082,
+      3717476.11064892,
+      2210605.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "2",
+    "decoded": true,
+    "source_row": 273,
+    "time": 4.0,
+    "total_algae": 6338463.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      1420208.08413967,
+      15803437.9158603,
+      2958473.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "2",
+    "decoded": true,
+    "source_row": 274,
+    "time": 5.0,
+    "total_algae": 20182119.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      935756.57103559,
+      16287889.4289644,
+      2958473.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "2",
+    "decoded": true,
+    "source_row": 275,
+    "time": 8.0,
+    "total_algae": 20182119.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      127277.82157962,
+      5808656.17842038,
+      6463181.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "2",
+    "decoded": true,
+    "source_row": 276,
+    "time": 10.0,
+    "total_algae": 12399115.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      126580.588262077,
+      3263772.41173792,
+      1307752.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "2",
+    "decoded": true,
+    "source_row": 277,
+    "time": 12.0,
+    "total_algae": 4698105.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      95061.0219580651,
+      2798328.97804193,
+      1992996.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "3",
+    "decoded": true,
+    "source_row": 284,
+    "time": 1.0,
+    "total_algae": 4886385.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      176385.192283759,
+      4054226.80771624,
+      7229379.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "3",
+    "decoded": true,
+    "source_row": 285,
+    "time": 2.0,
+    "total_algae": 11459991.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      179392.857594482,
+      13031135.1424055,
+      6166973.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "3",
+    "decoded": true,
+    "source_row": 286,
+    "time": 3.0,
+    "total_algae": 19377502.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      414446.697493171,
+      4512204.30250683,
+      3175338.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "3",
+    "decoded": true,
+    "source_row": 287,
+    "time": 4.0,
+    "total_algae": 8101988.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      510729.452662412,
+      4784349.54733759,
+      2537390.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "3",
+    "decoded": true,
+    "source_row": 288,
+    "time": 5.0,
+    "total_algae": 7832469.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      639911.129867639,
+      7302604.87013236,
+      3964264.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "3",
+    "decoded": true,
+    "source_row": 289,
+    "time": 6.0,
+    "total_algae": 11906780.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      769714.847266881,
+      11506250.1527331,
+      3634186.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "3",
+    "decoded": true,
+    "source_row": 290,
+    "time": 7.0,
+    "total_algae": 15910151.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      395595.757082963,
+      18944368.242917,
+      8895723.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "3",
+    "decoded": true,
+    "source_row": 291,
+    "time": 8.0,
+    "total_algae": 28235687.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      1130066.65429234,
+      6401769.34570766,
+      3043080.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "3",
+    "decoded": true,
+    "source_row": 292,
+    "time": 9.0,
+    "total_algae": 10574916.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      1052996.14122262,
+      6478839.85877738,
+      3043080.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "3",
+    "decoded": true,
+    "source_row": 293,
+    "time": 12.0,
+    "total_algae": 10574916.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      628614.395083407,
+      3179852.60491659,
+      2861537.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "3",
+    "decoded": true,
+    "source_row": 294,
+    "time": 14.0,
+    "total_algae": 6670004.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      361992.738260084,
+      2840510.26173992,
+      1343653.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "3",
+    "decoded": true,
+    "source_row": 295,
+    "time": 16.0,
+    "total_algae": 4546156.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      72247.5255640318,
+      3224915.47443597,
+      1281293.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "4",
+    "decoded": true,
+    "source_row": 302,
+    "time": 1.0,
+    "total_algae": 4578456.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      139134.644059248,
+      7253644.35594075,
+      1380044.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "4",
+    "decoded": true,
+    "source_row": 303,
+    "time": 2.0,
+    "total_algae": 8772823.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      414045.756681155,
+      16644786.2433188,
+      5335409.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "4",
+    "decoded": true,
+    "source_row": 304,
+    "time": 3.0,
+    "total_algae": 22394241.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      927573.513811513,
+      33153336.4861885,
+      5860996.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "4",
+    "decoded": true,
+    "source_row": 305,
+    "time": 4.0,
+    "total_algae": 39941906.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      1584959.64085861,
+      40608385.3591414,
+      5009736.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "4",
+    "decoded": true,
+    "source_row": 306,
+    "time": 5.0,
+    "total_algae": 47203081.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      2025227.15372613,
+      71051266.8462739,
+      7891625.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "4",
+    "decoded": true,
+    "source_row": 307,
+    "time": 6.0,
+    "total_algae": 80968119.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      408761.847382431,
+      53788250.1526176,
+      10210896.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "4",
+    "decoded": true,
+    "source_row": 308,
+    "time": 7.0,
+    "total_algae": 64407908.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      66924.6059412421,
+      59307434.3940588,
+      50315071.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "4",
+    "decoded": true,
+    "source_row": 309,
+    "time": 8.0,
+    "total_algae": 109689430.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      9280.58346973184,
+      10612020.4165303,
+      7891467.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "4",
+    "decoded": true,
+    "source_row": 310,
+    "time": 9.0,
+    "total_algae": 18512768.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      10469.1247931848,
+      10610831.8752068,
+      7891467.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "4",
+    "decoded": true,
+    "source_row": 311,
+    "time": 12.0,
+    "total_algae": 18512768.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      90816.4402455856,
+      26048145.5597544,
+      39552311.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "4",
+    "decoded": true,
+    "source_row": 312,
+    "time": 14.0,
+    "total_algae": 65691273.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      67415.8586115614,
+      30925435.1413884,
+      27013019.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "4",
+    "decoded": true,
+    "source_row": 313,
+    "time": 16.0,
+    "total_algae": 58005870.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      533945.661919505,
+      3125130.3380805,
+      1291214.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "5",
+    "decoded": true,
+    "source_row": 324,
+    "time": 1.0,
+    "total_algae": 4950290.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      131651.036624091,
+      5925578.96337591,
+      2156990.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "5",
+    "decoded": true,
+    "source_row": 325,
+    "time": 2.0,
+    "total_algae": 8214219.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      186770.410698096,
+      6796543.5893019,
+      2368868.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "5",
+    "decoded": true,
+    "source_row": 326,
+    "time": 3.0,
+    "total_algae": 9352182.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      356519.717446809,
+      5803931.28255319,
+      4561073.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "5",
+    "decoded": true,
+    "source_row": 327,
+    "time": 4.0,
+    "total_algae": 10721524.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      1092870.01940623,
+      18818125.9805938,
+      5321441.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "5",
+    "decoded": true,
+    "source_row": 328,
+    "time": 5.0,
+    "total_algae": 25232437.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      1020727.75119617,
+      18890268.2488038,
+      5321441.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "5",
+    "decoded": true,
+    "source_row": 329,
+    "time": 8.0,
+    "total_algae": 25232437.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      1479269.09818182,
+      4105088.90181818,
+      4048318.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "5",
+    "decoded": true,
+    "source_row": 330,
+    "time": 10.0,
+    "total_algae": 9632677.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      718854.581779538,
+      7512189.41822046,
+      2221821.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "5",
+    "decoded": true,
+    "source_row": 331,
+    "time": 12.0,
+    "total_algae": 10452866.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      238994.960212202,
+      5767745.0397878,
+      8196962.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "6",
+    "decoded": true,
+    "source_row": 338,
+    "time": 1.0,
+    "total_algae": 14203702.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      1755818.31849654,
+      11899045.6815035,
+      12960334.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "6",
+    "decoded": true,
+    "source_row": 339,
+    "time": 2.0,
+    "total_algae": 26615199.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      23833.6898198465,
+      4537063.31018015,
+      3332341.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "6",
+    "decoded": true,
+    "source_row": 340,
+    "time": 3.0,
+    "total_algae": 7893238.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      3451042.33813495,
+      37680808.6618651,
+      17626543.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "6",
+    "decoded": true,
+    "source_row": 341,
+    "time": 4.0,
+    "total_algae": 58758394.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      5123157.42993736,
+      41260533.5700626,
+      19548689.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "6",
+    "decoded": true,
+    "source_row": 342,
+    "time": 5.0,
+    "total_algae": 65932381.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      179793.136038186,
+      30638384.8639618,
+      35000923.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "6",
+    "decoded": true,
+    "source_row": 343,
+    "time": 6.0,
+    "total_algae": 65819101.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      2627587.80519064,
+      33658702.1948094,
+      16526347.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "6",
+    "decoded": true,
+    "source_row": 344,
+    "time": 7.0,
+    "total_algae": 52812638.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      5674530.25601951,
+      8334599.74398049,
+      11442500.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "6",
+    "decoded": true,
+    "source_row": 345,
+    "time": 8.0,
+    "total_algae": 25451631.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      2839535.15625,
+      8531889.84375,
+      4721323.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "6",
+    "decoded": true,
+    "source_row": 346,
+    "time": 9.0,
+    "total_algae": 16092748.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      1048218.22854366,
+      10323206.7714563,
+      4721323.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "6",
+    "decoded": true,
+    "source_row": 347,
+    "time": 12.0,
+    "total_algae": 16092748.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      1648323.87753337,
+      4235327.12246663,
+      4352536.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "6",
+    "decoded": true,
+    "source_row": 348,
+    "time": 14.0,
+    "total_algae": 10236187.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      457881.05123961,
+      10464841.9487604,
+      2823802.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "6",
+    "decoded": true,
+    "source_row": 349,
+    "time": 16.0,
+    "total_algae": 13746525.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      16668.1954985606,
+      5773256.80450144,
+      5143312.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "7",
+    "decoded": true,
+    "source_row": 360,
+    "time": 1.0,
+    "total_algae": 10933237.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      560817.774940144,
+      1178550.22505986,
+      1757591.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "7",
+    "decoded": true,
+    "source_row": 361,
+    "time": 2.0,
+    "total_algae": 3496959.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      422880.578748953,
+      3824904.42125105,
+      2265584.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "7",
+    "decoded": true,
+    "source_row": 362,
+    "time": 3.0,
+    "total_algae": 6513370.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      179921.57038072,
+      2502971.42961928,
+      1816787.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "7",
+    "decoded": true,
+    "source_row": 363,
+    "time": 4.0,
+    "total_algae": 4499680.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      58511.5117836765,
+      1813392.48821632,
+      1727005.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "7",
+    "decoded": true,
+    "source_row": 364,
+    "time": 5.0,
+    "total_algae": 3598909.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      160346.652390057,
+      1711557.34760994,
+      1727005.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "7",
+    "decoded": true,
+    "source_row": 365,
+    "time": 8.0,
+    "total_algae": 3598909.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      242347.420083587,
+      4514862.57991641,
+      2499859.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "7",
+    "decoded": true,
+    "source_row": 366,
+    "time": 10.0,
+    "total_algae": 7257069.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      169131.692152918,
+      3347958.30784708,
+      1410251.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "7",
+    "decoded": true,
+    "source_row": 367,
+    "time": 12.0,
+    "total_algae": 4927341.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      200842.938312728,
+      3767966.06168727,
+      1713068.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "8",
+    "decoded": true,
+    "source_row": 378,
+    "time": 1.0,
+    "total_algae": 5681877.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      734152.198852772,
+      8367159.80114723,
+      3370757.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "8",
+    "decoded": true,
+    "source_row": 379,
+    "time": 2.0,
+    "total_algae": 12472070.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      774621.95843537,
+      9884543.04156463,
+      3605499.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "8",
+    "decoded": true,
+    "source_row": 380,
+    "time": 3.0,
+    "total_algae": 14264664.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      450198.793187678,
+      3743878.20681232,
+      2600258.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "8",
+    "decoded": true,
+    "source_row": 381,
+    "time": 4.0,
+    "total_algae": 6794335.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      395028.417191977,
+      3895373.58280802,
+      1455347.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "8",
+    "decoded": true,
+    "source_row": 382,
+    "time": 5.0,
+    "total_algae": 5745749.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      598242.134748272,
+      3692159.86525173,
+      1455347.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "8",
+    "decoded": true,
+    "source_row": 383,
+    "time": 8.0,
+    "total_algae": 5745749.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      1525468.65326384,
+      5730863.34673616,
+      1928347.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "8",
+    "decoded": true,
+    "source_row": 384,
+    "time": 10.0,
+    "total_algae": 9184678.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      308447.871827819,
+      3675777.12817218,
+      1776320.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "8",
+    "decoded": true,
+    "source_row": 385,
+    "time": 12.0,
+    "total_algae": 5760544.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      16043.1310096154,
+      2653533.86899038,
+      1981836.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "9",
+    "decoded": true,
+    "source_row": 396,
+    "time": 1.0,
+    "total_algae": 4651413.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      263396.653402308,
+      3062813.34659769,
+      2843829.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "9",
+    "decoded": true,
+    "source_row": 397,
+    "time": 2.0,
+    "total_algae": 6170039.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      329304.509178939,
+      3916111.49082106,
+      1838759.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "9",
+    "decoded": true,
+    "source_row": 398,
+    "time": 3.0,
+    "total_algae": 6084175.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      289318.962549801,
+      3104095.0374502,
+      2677217.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "9",
+    "decoded": true,
+    "source_row": 399,
+    "time": 4.0,
+    "total_algae": 6070631.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      168537.877620283,
+      1731401.12237972,
+      1349051.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "9",
+    "decoded": true,
+    "source_row": 400,
+    "time": 5.0,
+    "total_algae": 3248990.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      424661.17456062,
+      1475277.82543938,
+      1349051.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "9",
+    "decoded": true,
+    "source_row": 401,
+    "time": 8.0,
+    "total_algae": 3248990.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      372408.753504553,
+      3087240.24649545,
+      2489208.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "9",
+    "decoded": true,
+    "source_row": 402,
+    "time": 10.0,
+    "total_algae": 5948857.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      218069.608502173,
+      2588768.39149783,
+      1935084.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "9",
+    "decoded": true,
+    "source_row": 403,
+    "time": 12.0,
+    "total_algae": 4741922.0,
+    "treatment": "13d"
+  },
+  {
+    "biovolumes": [
+      134421.812884546,
+      8502961.18711546,
+      9726736.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "10",
+    "decoded": true,
+    "source_row": 410,
+    "time": 1.0,
+    "total_algae": 18364119.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      42782.8601584199,
+      13202191.1398416,
+      21063780.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "10",
+    "decoded": true,
+    "source_row": 411,
+    "time": 2.0,
+    "total_algae": 34308754.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      1149325.07530982,
+      27556436.9246902,
+      22880955.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "10",
+    "decoded": true,
+    "source_row": 412,
+    "time": 3.0,
+    "total_algae": 51586717.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      2378462.49133111,
+      38008285.5086689,
+      14679113.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "10",
+    "decoded": true,
+    "source_row": 413,
+    "time": 4.0,
+    "total_algae": 55065860.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      159871.520737327,
+      4625248.47926267,
+      3163880.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "10",
+    "decoded": true,
+    "source_row": 414,
+    "time": 5.0,
+    "total_algae": 7949000.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      496837.374114617,
+      903504.625885383,
+      969767.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "10",
+    "decoded": true,
+    "source_row": 415,
+    "time": 6.0,
+    "total_algae": 2370110.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      783123.034981434,
+      1449322.96501857,
+      390442.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "10",
+    "decoded": true,
+    "source_row": 416,
+    "time": 7.0,
+    "total_algae": 2622888.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      1097295.76478318,
+      5277071.23521682,
+      3317755.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "10",
+    "decoded": true,
+    "source_row": 417,
+    "time": 8.0,
+    "total_algae": 9692121.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      527416.851683348,
+      4157823.14831665,
+      1809906.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "10",
+    "decoded": true,
+    "source_row": 418,
+    "time": 9.0,
+    "total_algae": 6495146.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      462131.519944382,
+      4223108.48005562,
+      1809906.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "10",
+    "decoded": true,
+    "source_row": 419,
+    "time": 12.0,
+    "total_algae": 6495146.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      1477850.41632653,
+      4683083.58367347,
+      2937326.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "10",
+    "decoded": true,
+    "source_row": 420,
+    "time": 14.0,
+    "total_algae": 9098260.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      371207.531080961,
+      4039864.46891904,
+      1642727.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "10",
+    "decoded": true,
+    "source_row": 421,
+    "time": 16.0,
+    "total_algae": 6053799.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      11442.1625813864,
+      9245750.83741861,
+      5487620.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "11",
+    "decoded": true,
+    "source_row": 428,
+    "time": 1.0,
+    "total_algae": 14744813.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      488571.494845361,
+      10343756.5051546,
+      13185486.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "11",
+    "decoded": true,
+    "source_row": 429,
+    "time": 2.0,
+    "total_algae": 24017814.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      2536191.39523212,
+      23213420.6047679,
+      24422792.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "11",
+    "decoded": true,
+    "source_row": 430,
+    "time": 3.0,
+    "total_algae": 50172404.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      1815384.16936591,
+      29527954.8306341,
+      20352929.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "11",
+    "decoded": true,
+    "source_row": 431,
+    "time": 4.0,
+    "total_algae": 51696268.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      4812868.00829876,
+      20962713.9917012,
+      24064103.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "11",
+    "decoded": true,
+    "source_row": 432,
+    "time": 5.0,
+    "total_algae": 49839685.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      1637671.75495496,
+      8690826.24504505,
+      20110935.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "11",
+    "decoded": true,
+    "source_row": 433,
+    "time": 6.0,
+    "total_algae": 30439432.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      5433129.9966611,
+      6710321.0033389,
+      5137695.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "11",
+    "decoded": true,
+    "source_row": 434,
+    "time": 7.0,
+    "total_algae": 17281145.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      1191338.06271653,
+      3515889.93728347,
+      4174163.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "11",
+    "decoded": true,
+    "source_row": 435,
+    "time": 8.0,
+    "total_algae": 8881392.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      636864.022937241,
+      4138094.97706276,
+      3198051.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "11",
+    "decoded": true,
+    "source_row": 436,
+    "time": 9.0,
+    "total_algae": 7973010.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      752870.98722822,
+      4022088.01277178,
+      3198051.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "11",
+    "decoded": true,
+    "source_row": 437,
+    "time": 12.0,
+    "total_algae": 7973010.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      638372.77352637,
+      3002019.22647363,
+      2651810.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "11",
+    "decoded": true,
+    "source_row": 438,
+    "time": 14.0,
+    "total_algae": 6292202.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      425025.957748496,
+      3601475.0422515,
+      1754283.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "11",
+    "decoded": true,
+    "source_row": 439,
+    "time": 16.0,
+    "total_algae": 5780784.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      85279.4206847288,
+      4395662.57931527,
+      2398258.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "12",
+    "decoded": true,
+    "source_row": 446,
+    "time": 1.0,
+    "total_algae": 6879200.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      596738.061440678,
+      7450700.93855932,
+      8273252.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "12",
+    "decoded": true,
+    "source_row": 447,
+    "time": 2.0,
+    "total_algae": 16320691.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      675467.253521127,
+      6997840.74647887,
+      11937976.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "12",
+    "decoded": true,
+    "source_row": 448,
+    "time": 3.0,
+    "total_algae": 19611285.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      597834.508896797,
+      3308944.4911032,
+      4005140.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "12",
+    "decoded": true,
+    "source_row": 449,
+    "time": 4.0,
+    "total_algae": 7911920.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      1527173.15531915,
+      22667367.8446808,
+      16752834.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "12",
+    "decoded": true,
+    "source_row": 450,
+    "time": 5.0,
+    "total_algae": 40947375.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      292971.471566609,
+      19810603.5284334,
+      20083097.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "12",
+    "decoded": true,
+    "source_row": 451,
+    "time": 6.0,
+    "total_algae": 40186672.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      631816.150568182,
+      9652543.84943182,
+      10576550.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "12",
+    "decoded": true,
+    "source_row": 452,
+    "time": 7.0,
+    "total_algae": 20860910.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      2481869.41435589,
+      3207588.58564411,
+      4124251.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "12",
+    "decoded": true,
+    "source_row": 453,
+    "time": 8.0,
+    "total_algae": 9813709.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      4067353.09341096,
+      8253710.90658904,
+      4113970.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "12",
+    "decoded": true,
+    "source_row": 454,
+    "time": 9.0,
+    "total_algae": 16435033.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      336945.34195559,
+      11984118.6580444,
+      4113970.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "12",
+    "decoded": true,
+    "source_row": 455,
+    "time": 12.0,
+    "total_algae": 16435033.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      361005.054333062,
+      8803543.94566694,
+      8475192.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "12",
+    "decoded": true,
+    "source_row": 456,
+    "time": 14.0,
+    "total_algae": 17639742.0,
+    "treatment": "9d"
+  },
+  {
+    "biovolumes": [
+      236081.098702688,
+      2303743.90129731,
+      1778221.0
+    ],
+    "category": "Polycultures",
+    "chemostat": "12",
+    "decoded": true,
+    "source_row": 457,
+    "time": 16.0,
+    "total_algae": 4318047.0,
+    "treatment": "9d"
+  }
+]

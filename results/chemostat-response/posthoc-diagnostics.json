@@ -1,0 +1,682 @@
+{
+  "heldout_table": [
+    {
+      "baseline_shares": [
+        0.094184149626423,
+        0.509157351397898,
+        0.3966584989756791
+      ],
+      "lowest_growth_group": "Cryptomonas",
+      "maximum_departure_total_variation": 0.4207593858567027,
+      "observed_recovery": "recovery_right_censored",
+      "time_weighted_total_variation": {
+        "development_mean_response": 0.3388604390950764,
+        "equal_group_stock": 0.4003446961394151,
+        "persistence": 0.31726541783169004,
+        "preliminary_no_herbivore": 0.24282030948261032,
+        "two_budget_cost_ratio": 0.3118176965018357
+      },
+      "treatment": "13d",
+      "two_budget_capacity_total_variation": 0.11884849823383142,
+      "vessel": "1"
+    },
+    {
+      "baseline_shares": [
+        0.027176135991589117,
+        0.2852381061459045,
+        0.6875857578625063
+      ],
+      "lowest_growth_group": "Monoraphidium + Chlorella",
+      "maximum_departure_total_variation": 0.49142953116962407,
+      "observed_recovery": "recovery_right_censored",
+      "time_weighted_total_variation": {
+        "development_mean_response": 0.28668071153861857,
+        "equal_group_stock": 0.28891537617463886,
+        "persistence": 0.28460747052361207,
+        "preliminary_no_herbivore": 0.37523462329444196,
+        "two_budget_cost_ratio": 0.30278131302166816
+      },
+      "treatment": "13d",
+      "two_budget_capacity_total_variation": 0.0901627493962974,
+      "vessel": "2"
+    },
+    {
+      "baseline_shares": [
+        0.007266329228609367,
+        0.5441742375156835,
+        0.448559433255707
+      ],
+      "lowest_growth_group": "Chlamydomonas",
+      "maximum_departure_total_variation": 0.29396425243042784,
+      "observed_recovery": "recovery_right_censored",
+      "time_weighted_total_variation": {
+        "development_mean_response": 0.1303151537607937,
+        "equal_group_stock": 0.2351787214337748,
+        "persistence": 0.13641120349827632,
+        "preliminary_no_herbivore": 0.17569908387644362,
+        "two_budget_cost_ratio": 0.13382006002164665
+      },
+      "treatment": "9d",
+      "two_budget_capacity_total_variation": 0.12444052595696253,
+      "vessel": "3"
+    },
+    {
+      "baseline_shares": [
+        0.14531170006382765,
+        0.63317317792911,
+        0.2215151220070624
+      ],
+      "lowest_growth_group": "Cryptomonas",
+      "maximum_departure_total_variation": 0.35591438107709206,
+      "observed_recovery": "recovery_right_censored",
+      "time_weighted_total_variation": {
+        "development_mean_response": 0.24573651284383224,
+        "equal_group_stock": 0.36359650197201443,
+        "persistence": 0.19892145521659577,
+        "preliminary_no_herbivore": 0.2380584110556435,
+        "two_budget_cost_ratio": 0.21098695528540712
+      },
+      "treatment": "9d",
+      "two_budget_capacity_total_variation": 0.11194256572800372,
+      "vessel": "4"
+    },
+    {
+      "baseline_shares": [
+        0.06826265434976443,
+        0.290004495888624,
+        0.6417328497616116
+      ],
+      "lowest_growth_group": "Monoraphidium + Chlorella",
+      "maximum_departure_total_variation": 0.36597037200596705,
+      "observed_recovery": "recovery_right_censored",
+      "time_weighted_total_variation": {
+        "development_mean_response": 0.2588307094967823,
+        "equal_group_stock": 0.2435457808910008,
+        "persistence": 0.28879015108665423,
+        "preliminary_no_herbivore": 0.3726514628996977,
+        "two_budget_cost_ratio": 0.30702841858282875
+      },
+      "treatment": "13d",
+      "two_budget_capacity_total_variation": 0.0902855534138374,
+      "vessel": "5"
+    },
+    {
+      "baseline_shares": [
+        0.007867873651891817,
+        0.4971898430863299,
+        0.49494228326177825
+      ],
+      "lowest_growth_group": "Chlamydomonas",
+      "maximum_departure_total_variation": 0.35256067102935335,
+      "observed_recovery": "recovery_right_censored",
+      "time_weighted_total_variation": {
+        "development_mean_response": 0.1766162434357662,
+        "equal_group_stock": 0.207059634999171,
+        "persistence": 0.17573057078571838,
+        "preliminary_no_herbivore": 0.20228429675613321,
+        "two_budget_cost_ratio": 0.17821180232389996
+      },
+      "treatment": "9d",
+      "two_budget_capacity_total_variation": 0.12253453233638045,
+      "vessel": "6"
+    },
+    {
+      "baseline_shares": [
+        0.030739519007686122,
+        0.1431052125537037,
+        0.8261552684386102
+      ],
+      "lowest_growth_group": "Monoraphidium + Chlorella",
+      "maximum_departure_total_variation": 0.4512347030245191,
+      "observed_recovery": "recovery_right_censored",
+      "time_weighted_total_variation": {
+        "development_mean_response": 0.273787372642409,
+        "equal_group_stock": 0.2680581424359825,
+        "persistence": 0.3052797541043246,
+        "preliminary_no_herbivore": 0.3895948512210488,
+        "two_budget_cost_ratio": 0.31608294967974765
+      },
+      "treatment": "13d",
+      "two_budget_capacity_total_variation": 0.05246749018773733,
+      "vessel": "7"
+    },
+    {
+      "baseline_shares": [
+        0.08199768228783728,
+        0.23477509483004644,
+        0.6832272228821163
+      ],
+      "lowest_growth_group": "Monoraphidium + Chlorella",
+      "maximum_departure_total_variation": 0.4419061711588278,
+      "observed_recovery": "recovery_right_censored",
+      "time_weighted_total_variation": {
+        "development_mean_response": 0.3073817470452113,
+        "equal_group_stock": 0.19050566674344338,
+        "persistence": 0.33778375517725506,
+        "preliminary_no_herbivore": 0.4228588643332987,
+        "two_budget_cost_ratio": 0.35332069160731905
+      },
+      "treatment": "13d",
+      "two_budget_capacity_total_variation": 0.0769529307646539,
+      "vessel": "8"
+    },
+    {
+      "baseline_shares": [
+        0.02766442607324301,
+        0.2606221685652557,
+        0.7117134053615013
+      ],
+      "lowest_growth_group": "Monoraphidium + Chlorella",
+      "maximum_departure_total_variation": 0.3290960344340408,
+      "observed_recovery": "recovery_right_censored",
+      "time_weighted_total_variation": {
+        "development_mean_response": 0.18756126676814375,
+        "equal_group_stock": 0.2210920872880595,
+        "persistence": 0.21457117949459162,
+        "preliminary_no_herbivore": 0.2996462886506353,
+        "two_budget_cost_ratio": 0.23167840026433514
+      },
+      "treatment": "13d",
+      "two_budget_capacity_total_variation": 0.08431031782714307,
+      "vessel": "9"
+    },
+    {
+      "baseline_shares": [
+        0.05816876624817117,
+        0.4051356691587914,
+        0.5366955645930375
+      ],
+      "lowest_growth_group": "Monoraphidium + Chlorella",
+      "maximum_departure_total_variation": 0.4425281311646367,
+      "observed_recovery": "recovery_right_censored",
+      "time_weighted_total_variation": {
+        "development_mean_response": 0.16426541705108696,
+        "equal_group_stock": 0.22263050352556166,
+        "persistence": 0.17436081259997463,
+        "preliminary_no_herbivore": 0.23165178737910955,
+        "two_budget_cost_ratio": 0.1806517616516777
+      },
+      "treatment": "9d",
+      "two_budget_capacity_total_variation": 0.11125903728302493,
+      "vessel": "10"
+    },
+    {
+      "baseline_shares": [
+        0.010724808819789381,
+        0.6448038299888058,
+        0.34447136119140487
+      ],
+      "lowest_growth_group": "Chlamydomonas",
+      "maximum_departure_total_variation": 0.48013549482746076,
+      "observed_recovery": "recovery_right_censored",
+      "time_weighted_total_variation": {
+        "development_mean_response": 0.31735680302739183,
+        "equal_group_stock": 0.23343153505102024,
+        "persistence": 0.3025145625536528,
+        "preliminary_no_herbivore": 0.22804569267579455,
+        "two_budget_cost_ratio": 0.27934914316112514
+      },
+      "treatment": "9d",
+      "two_budget_capacity_total_variation": 0.12064098942188706,
+      "vessel": "11"
+    },
+    {
+      "baseline_shares": [
+        0.011146573211418882,
+        0.5590248888082814,
+        0.4298285379802998
+      ],
+      "lowest_growth_group": "Chlamydomonas",
+      "maximum_departure_total_variation": 0.4098461891661428,
+      "observed_recovery": "recovery_right_censored",
+      "time_weighted_total_variation": {
+        "development_mean_response": 0.2338848832050492,
+        "equal_group_stock": 0.24296021841506912,
+        "persistence": 0.2277142525956929,
+        "preliminary_no_herbivore": 0.17259410008067666,
+        "two_budget_cost_ratio": 0.20852226272779872
+      },
+      "treatment": "9d",
+      "two_budget_capacity_total_variation": 0.12436242136239913,
+      "vessel": "12"
+    }
+  ],
+  "nitrogen_budget": {
+    "inflow_micromol_per_l": 80.0,
+    "scenarios": {
+      "lower": {
+        "maximum": 81.03100710774187,
+        "micromol_per_l": {
+          "1": 36.20616458036241,
+          "10": 24.085774625570025,
+          "11": 17.49748574192485,
+          "12": 9.60780204458852,
+          "2": 47.06011325335069,
+          "3": 8.477732979642465,
+          "4": 13.315136023966955,
+          "5": 13.380792259688262,
+          "6": 28.68975325386504,
+          "7": 38.93066929739851,
+          "8": 9.487707001371218,
+          "9": 7.79774570833755,
+          "Bc1": 11.716393277395344,
+          "Bc2": 11.045911077493257,
+          "Bc3": 6.972320155595569,
+          "Bc4": 19.909732029655416,
+          "Ce1": 46.012751024229566,
+          "Ce2": 78.54646269125625,
+          "Ce3": 51.782864133687795,
+          "Ce4": 59.198409615967364,
+          "Le1": 56.07984862380536,
+          "Le2": 31.40475241291209,
+          "Le3": 13.68257284642455,
+          "Le4": 59.35560961396749,
+          "Mi1": 81.03100710774187,
+          "Mi2": 53.60405082729637
+        },
+        "vessels_above_inflow": [
+          "Mi1"
+        ]
+      },
+      "midpoint": {
+        "maximum": 97.01815063940073,
+        "micromol_per_l": {
+          "1": 39.736325536197924,
+          "10": 27.376537279513183,
+          "11": 18.960297004803678,
+          "12": 10.631260047365064,
+          "2": 55.6265225751502,
+          "3": 9.424561146438279,
+          "4": 14.010221845290054,
+          "5": 15.626818810822014,
+          "6": 32.26657654921349,
+          "7": 47.769689671008344,
+          "8": 11.201840233782326,
+          "9": 9.276432416746276,
+          "Bc1": 13.098067712897235,
+          "Bc2": 12.386726069809454,
+          "Bc3": 8.021072099391828,
+          "Bc4": 23.511933463236623,
+          "Ce1": 54.79143250233115,
+          "Ce2": 97.01815063940073,
+          "Ce3": 62.99875413760982,
+          "Ce4": 69.64374075907769,
+          "Le1": 59.75370188567789,
+          "Le2": 32.82999158466192,
+          "Le3": 14.448610682971221,
+          "Le4": 61.67974250293371,
+          "Mi1": 88.37805103602781,
+          "Mi2": 58.83314070721844
+        },
+        "vessels_above_inflow": [
+          "Ce2",
+          "Mi1"
+        ]
+      },
+      "upper": {
+        "maximum": 115.48983858754518,
+        "micromol_per_l": {
+          "1": 43.266486492033444,
+          "10": 30.667299933456345,
+          "11": 20.423108267682505,
+          "12": 11.654718050141607,
+          "2": 64.1929318969497,
+          "3": 10.371389313234092,
+          "4": 14.705307666613153,
+          "5": 17.872845361955765,
+          "6": 35.843399844561944,
+          "7": 56.60871004461817,
+          "8": 12.915973466193435,
+          "9": 10.755119125155002,
+          "Bc1": 14.479742148399124,
+          "Bc2": 13.72754106212565,
+          "Bc3": 9.069824043188085,
+          "Bc4": 27.11413489681782,
+          "Ce1": 63.57011398043272,
+          "Ce2": 115.48983858754518,
+          "Ce3": 74.21464414153183,
+          "Ce4": 80.08907190218798,
+          "Le1": 63.4275551475504,
+          "Le2": 34.25523075641174,
+          "Le3": 15.214648519517892,
+          "Le4": 64.00387539189994,
+          "Mi1": 95.72509496431377,
+          "Mi2": 64.0622305871405
+        },
+        "vessels_above_inflow": [
+          "Ce2",
+          "Ce4",
+          "Mi1"
+        ]
+      }
+    },
+    "units_erratum": "The frozen field baseline_algal_nitrogen_umol_per_l holds nmol/L (pmol per um3 times um3 per mL); values here are divided by 1000"
+  },
+  "prepulse_variability": {
+    "biovolume-reference": {
+      "summary": {
+        "Monocultures": {
+          "mean_consecutive_total_variation": 0.12366298596229368,
+          "mean_total_variation_from_day0": 0.09737831141636356,
+          "vessels": 12
+        },
+        "Polycultures": {
+          "mean_consecutive_total_variation": 0.10299746781518243,
+          "mean_total_variation_from_day0": 0.15759925999630192,
+          "vessels": 12
+        }
+      },
+      "vessels": {
+        "1": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.05350567285220637,
+          "mean_total_variation_from_day0": 0.06325374189075421,
+          "samples": 7
+        },
+        "10": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.11994976841079535,
+          "mean_total_variation_from_day0": 0.10047628971066754,
+          "samples": 4
+        },
+        "11": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.11066558013258691,
+          "mean_total_variation_from_day0": 0.21663726726307475,
+          "samples": 4
+        },
+        "12": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.1644343030430784,
+          "mean_total_variation_from_day0": 0.15660749492034437,
+          "samples": 4
+        },
+        "2": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.0906044436629324,
+          "mean_total_variation_from_day0": 0.16539342014589561,
+          "samples": 7
+        },
+        "3": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.08414365443817362,
+          "mean_total_variation_from_day0": 0.11150741311010261,
+          "samples": 4
+        },
+        "4": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.1316023343862165,
+          "mean_total_variation_from_day0": 0.30286565788912323,
+          "samples": 4
+        },
+        "5": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.1373245107992019,
+          "mean_total_variation_from_day0": 0.13945802227143314,
+          "samples": 7
+        },
+        "6": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.060188301486915396,
+          "mean_total_variation_from_day0": 0.05779760553657795,
+          "samples": 4
+        },
+        "7": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.11112471018440227,
+          "mean_total_variation_from_day0": 0.290244525508838,
+          "samples": 7
+        },
+        "8": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.08610810573074801,
+          "mean_total_variation_from_day0": 0.16757043370979605,
+          "samples": 7
+        },
+        "9": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.08631822865493231,
+          "mean_total_variation_from_day0": 0.11937924799901567,
+          "samples": 7
+        },
+        "Bc1": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.05701860160867412,
+          "mean_total_variation_from_day0": 0.06458960412087354,
+          "samples": 4
+        },
+        "Bc2": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.12261091325956848,
+          "mean_total_variation_from_day0": 0.11426638483024325,
+          "samples": 4
+        },
+        "Bc3": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.13969862458958718,
+          "mean_total_variation_from_day0": 0.11703873335620348,
+          "samples": 4
+        },
+        "Bc4": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.19623387763060993,
+          "mean_total_variation_from_day0": 0.20425287734144115,
+          "samples": 4
+        },
+        "Ce1": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.17094377836894317,
+          "mean_total_variation_from_day0": 0.1006880280029337,
+          "samples": 4
+        },
+        "Ce2": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.0713604351580248,
+          "mean_total_variation_from_day0": 0.05593179626406497,
+          "samples": 4
+        },
+        "Ce3": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.11669503773159356,
+          "mean_total_variation_from_day0": 0.06598172443326714,
+          "samples": 4
+        },
+        "Ce4": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.13082575362711338,
+          "mean_total_variation_from_day0": 0.11444928654057418,
+          "samples": 4
+        },
+        "Le1": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.029560223492457655,
+          "mean_total_variation_from_day0": 0.0510173939198432,
+          "samples": 4
+        },
+        "Le2": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.3888534846981151,
+          "mean_total_variation_from_day0": 0.22243484884079248,
+          "samples": 4
+        },
+        "Le3": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.0480661702503128,
+          "mean_total_variation_from_day0": 0.04102013765597842,
+          "samples": 4
+        },
+        "Le4": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.012088931132523675,
+          "mean_total_variation_from_day0": 0.016868921690147223,
+          "samples": 4
+        }
+      }
+    },
+    "nitrogen-midpoint": {
+      "summary": {
+        "Monocultures": {
+          "mean_consecutive_total_variation": 0.14191021600631187,
+          "mean_total_variation_from_day0": 0.11390212415422461,
+          "vessels": 12
+        },
+        "Polycultures": {
+          "mean_consecutive_total_variation": 0.11662139392933642,
+          "mean_total_variation_from_day0": 0.1636532466186528,
+          "vessels": 12
+        }
+      },
+      "vessels": {
+        "1": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.06745119575045744,
+          "mean_total_variation_from_day0": 0.08239258288830863,
+          "samples": 7
+        },
+        "10": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.127664768874737,
+          "mean_total_variation_from_day0": 0.10447286464385024,
+          "samples": 4
+        },
+        "11": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.14232401430485755,
+          "mean_total_variation_from_day0": 0.24101356909299435,
+          "samples": 4
+        },
+        "12": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.20209237104506625,
+          "mean_total_variation_from_day0": 0.1716835862353524,
+          "samples": 4
+        },
+        "2": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.10372771669821555,
+          "mean_total_variation_from_day0": 0.16456699537438144,
+          "samples": 7
+        },
+        "3": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.10681120433457818,
+          "mean_total_variation_from_day0": 0.12250401035378052,
+          "samples": 4
+        },
+        "4": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.14804984145480835,
+          "mean_total_variation_from_day0": 0.34051096677267406,
+          "samples": 4
+        },
+        "5": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.15239573924796382,
+          "mean_total_variation_from_day0": 0.14207464942722695,
+          "samples": 7
+        },
+        "6": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.06599953945146114,
+          "mean_total_variation_from_day0": 0.06092187262523638,
+          "samples": 4
+        },
+        "7": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.10898040435411467,
+          "mean_total_variation_from_day0": 0.25966254586274545,
+          "samples": 7
+        },
+        "8": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.09356776305596597,
+          "mean_total_variation_from_day0": 0.15870058289133546,
+          "samples": 7
+        },
+        "9": {
+          "category": "Polycultures",
+          "mean_consecutive_total_variation": 0.08039216857981099,
+          "mean_total_variation_from_day0": 0.11533473325594797,
+          "samples": 7
+        },
+        "Bc1": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.10779588793553814,
+          "mean_total_variation_from_day0": 0.10815682125281374,
+          "samples": 4
+        },
+        "Bc2": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.12014456789750694,
+          "mean_total_variation_from_day0": 0.11007666443968904,
+          "samples": 4
+        },
+        "Bc3": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.1291442634716901,
+          "mean_total_variation_from_day0": 0.10684344525803635,
+          "samples": 4
+        },
+        "Bc4": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.2522391386026837,
+          "mean_total_variation_from_day0": 0.2813305605147145,
+          "samples": 4
+        },
+        "Ce1": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.2603541686981641,
+          "mean_total_variation_from_day0": 0.1432000749918079,
+          "samples": 4
+        },
+        "Ce2": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.09101835209641151,
+          "mean_total_variation_from_day0": 0.06434052644683608,
+          "samples": 4
+        },
+        "Ce3": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.09787145236217032,
+          "mean_total_variation_from_day0": 0.057822466812618,
+          "samples": 4
+        },
+        "Ce4": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.1148872401993985,
+          "mean_total_variation_from_day0": 0.10282021777990606,
+          "samples": 4
+        },
+        "Le1": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.04052159684399642,
+          "mean_total_variation_from_day0": 0.06905252427278054,
+          "samples": 4
+        },
+        "Le2": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.4059063864716304,
+          "mean_total_variation_from_day0": 0.2417253622688941,
+          "samples": 4
+        },
+        "Le3": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.0647425173249718,
+          "mean_total_variation_from_day0": 0.05570896028958517,
+          "samples": 4
+        },
+        "Le4": {
+          "category": "Monocultures",
+          "mean_consecutive_total_variation": 0.01829702017158033,
+          "mean_total_variation_from_day0": 0.025747865523013596,
+          "samples": 4
+        }
+      }
+    }
+  },
+  "prepulse_window_days": [
+    -6.0,
+    0.0
+  ],
+  "scope": "Post hoc: specified after the held-out evaluation; no forecast, score or verdict is changed"
+}

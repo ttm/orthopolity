@@ -1,0 +1,12 @@
+{
+  "bytes": 5046,
+  "completed_utc": "2026-10-04T20:38:52.831293+00:00",
+  "http_status": 200,
+  "name": "briddon-2025.json",
+  "requested_url": "https://api.figshare.com/v2/articles/28014971",
+  "scope": "metadata only",
+  "sha256": "6fe47c7b3bc02307bbecba908435611680fe7a0f13b7c1a7294c99afb8472ebc",
+  "started_utc": "2026-10-04T20:38:52.387117+00:00",
+  "tls_verification": true,
+  "transport": "system curl, TLS verification enabled, user config disabled"
+}

@@ -1,0 +1,26 @@
+{
+  "source_url": "https://zenodo.org/api/records/16790538",
+  "access_date_client": "2026-10-09",
+  "retrieved_at_utc": "2026-10-09T00:18:38.800017+00:00",
+  "command": [
+    "curl",
+    "--fail",
+    "--location",
+    "--max-time",
+    "40",
+    "--silent",
+    "--show-error",
+    "--dump-header",
+    "<path>.headers",
+    "--output",
+    "flaredb_zenodo_metadata.json",
+    "--write-out",
+    "%{http_code}\\n%{url_effective}\\n%{size_download}\\n",
+    "https://zenodo.org/api/records/16790538"
+  ],
+  "exit_code": 0,
+  "curl_report": "200\nhttps://zenodo.org/api/records/16790538\n15845\n",
+  "stderr": "",
+  "bytes": 15845,
+  "sha256": "43d15abc690f0718f947be05f3fe969d0309612f7464be24e8e934b66035bb07"
+}

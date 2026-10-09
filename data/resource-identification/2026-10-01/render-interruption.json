@@ -1,0 +1,9 @@
+{
+  "run_id": "resource-identification-2026-10-01",
+  "status": "simulation_and_numerical_analysis_complete_render_interrupted",
+  "reason": "Wilson interval endpoint roundoff produces negative Matplotlib yerr of magnitude at most 2.22e-16.",
+  "retained_source_directory": "frozen-sources",
+  "retained_result_directory": "interrupted-results",
+  "next_run": "resource-identification-2026-10-01-final",
+  "rerun_changes": "Plotting distances clipped at zero; design, sampling seeds, inference and tolerances unchanged. Same seed rerun is not independent replication."
+}

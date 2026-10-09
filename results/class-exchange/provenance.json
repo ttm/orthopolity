@@ -1,0 +1,24 @@
+{
+  "run_id": "class-exchange-2026-10-05",
+  "generated_utc": "2026-10-05T18:12:59.805399+00:00",
+  "config_sha256": "f1a9f929003e32df2515ec97c505f435b1a42a5c469cb9ec6b423f928c4d2f35",
+  "source_sha256": {
+    "experiments/run_class_exchange.py": "a9673efafc1d98efe4969a312125c5b7e0788ae1668d02279e63943b223f42fc",
+    "src/orthopolity/class_exchange.py": "e6bc1c08cfdbf71bff23afdd169b050dd857a5b1bed3ce74e23dd4026ff6a0d9"
+  },
+  "runtime": {
+    "python": "3.11.6",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3"
+  },
+  "predictions_written_before_stochastic_simulation": true,
+  "artifact_sha256": {
+    "class-exchange.png": "f35e7b4494287d069bc437238f10fd4bb89fa0bad8d626ad8963da195d3ee7e6",
+    "class-exchange.svg": "d0e2b8296544f140384e5c301c4e94f808f954e56d3774fc31593d1c46c8915f",
+    "config.json": "f1a9f929003e32df2515ec97c505f435b1a42a5c469cb9ec6b423f928c4d2f35",
+    "predictions.json": "4df8c0763149264317a97157f6aa6739c3a645edf6a8eb460a04a1a1166af189",
+    "quantum-counts.npz": "fe8018187467705243c8225f7d0810c5a1d82a83563c71a3b74eff49e9bbec5b",
+    "summary.json": "109f4e028b6a08994c1e32432c36f46958266c4b19f6a8543c70c889b7abc7cd",
+    "trajectories.csv": "c971695231a44bcaea5269412058edd64fd862964a564637c31f344177a607f5"
+  }
+}

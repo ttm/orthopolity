@@ -1,0 +1,10 @@
+{
+  "filename": "product-description.html",
+  "url": "https://lambda.gsfc.nasa.gov/product/cobe/firas_monopole_spect.html",
+  "final_url": "https://lambda.gsfc.nasa.gov/product/cobe/firas_monopole_spect.html",
+  "retrieved_at_utc": "2026-10-06T08:41:56.034317+00:00",
+  "content_type": "text/html",
+  "size_bytes": 11973,
+  "sha256": "e42bcf7e3e2eccac3ac8c210d4287e2477c394ad03d76ac7f719515d29753f2a",
+  "role": "Construction and calibration metadata"
+}

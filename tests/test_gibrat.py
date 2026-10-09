@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from orthopolity import gibrat_zeta
+from orthopolity.spectrum import gibrat_zeta
 
 
 def stationary_sizes(g, sigma2, d, h, n, rng):

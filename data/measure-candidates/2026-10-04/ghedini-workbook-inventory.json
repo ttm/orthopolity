@@ -1,0 +1,77 @@
+[
+  {
+    "workbook": "1. Data summary.xlsx",
+    "sheets": [
+      {
+        "name": "estimates_community_metab",
+        "sheetId": "10"
+      },
+      {
+        "name": "estimates_com_netproduction",
+        "sheetId": "11"
+      },
+      {
+        "name": "observed community rates",
+        "sheetId": "1"
+      },
+      {
+        "name": "species metabolism",
+        "sheetId": "2"
+      },
+      {
+        "name": "species photosynthesis",
+        "sheetId": "3"
+      }
+    ]
+  },
+  {
+    "workbook": "2. Community estimates from each approach.xlsx",
+    "sheets": [
+      {
+        "name": "mean rates per cell",
+        "sheetId": "1"
+      },
+      {
+        "name": "mean biomass-specific rates",
+        "sheetId": "2"
+      },
+      {
+        "name": "size across species",
+        "sheetId": "3"
+      },
+      {
+        "name": "size&dens across sp_species.den",
+        "sheetId": "5"
+      },
+      {
+        "name": "size&dens across sp_com.density",
+        "sheetId": "4"
+      },
+      {
+        "name": "mean individual sp rates",
+        "sheetId": "6"
+      },
+      {
+        "name": "density_ind_sp_species.dens",
+        "sheetId": "7"
+      },
+      {
+        "name": "density_ind_sp_community.dens",
+        "sheetId": "8"
+      }
+    ]
+  },
+  {
+    "workbook": "3. Community oxygen rates_all subsamples.xlsx",
+    "sheets": [
+      {
+        "name": "all subsamples",
+        "sheetId": "2"
+      },
+      {
+        "name": "variability among subsamples",
+        "sheetId": "1"
+      }
+    ]
+  }
+]

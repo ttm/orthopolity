@@ -1,0 +1,107 @@
+{
+  "config": {
+    "calibration_diagnostics": "Training pooled and within-strain demeaned log-quota/log-diameter slopes; leave-one-strain-out descriptive pooled slopes; no confidence intervals or independence claims",
+    "catalogue_url": "https://www.bco-dmo.org/dataset/926311",
+    "coordinate": "Cell_Diameter_um",
+    "coordinate_unit": "micrometres",
+    "data_url": "https://datadocs.bco-dmo.org/file/m7knBNyHR0kwkV/926311_v1_syn-batch-cultures.csv",
+    "dataset_doi": "10.26008/1912/bco-dmo.926311.1",
+    "dataset_version": "1 (2024-04-30)",
+    "evaluation_weighting": "Mean absolute log error and mean squared log error within each strain-temperature cell, then equal weight across observed cells; also report individual rows, per-strain/per-temperature results, and maximum error",
+    "excluded_claims": [
+      "neutrality test",
+      "nutrient-flux estimate",
+      "geometric dimension measurement",
+      "number of independent inputs",
+      "universal cost exponent",
+      "chemostat taxon cost calibration"
+    ],
+    "forecast_scope": "Quota prediction conditional on measured validation diameter, strain, and temperature, not a prediction of diameter itself or of allocation neutrality",
+    "freeze_scope": "Local retrospective protocol recorded before CSV acquisition; a second coefficient-and-prediction freeze precedes conversion of validation quota fields. Published metadata/methods were already inspected, not external preregistration or guaranteed external blinding.",
+    "license": "CC-BY-4.0",
+    "metadata_url": "https://www.bco-dmo.org/dataset/926311/description",
+    "missingness": "Keep every source culture in membership. Empty, N/A, NA, NaN are missing; nonpositive diameter or quota excluded separately by resource. No imputation or substitution from ratios. All four models score the same resource-specific common eligible rows.",
+    "model_rules": {
+      "fixed_cubic": "OLS training log-quota intercept with log-diameter coefficient fixed to 3; no strain term",
+      "pooled_free_power": "OLS training log-quota intercept and log-diameter coefficient; no strain term",
+      "strain_geometric_mean": "Mean training log quota separately for each strain",
+      "strain_temperature_trend": "OLS training log quota versus temperature separately for each strain; no validation refit"
+    },
+    "models": [
+      "fixed_cubic",
+      "pooled_free_power",
+      "strain_geometric_mean",
+      "strain_temperature_trend"
+    ],
+    "published_csv_md5": "0dea9ff74bffe353e442495b23312ac3",
+    "resource_unit": "fmol per cell",
+    "resources": [
+      "QC",
+      "QN",
+      "QP"
+    ],
+    "run_id": "archived-cost-transfer-2026-10-02",
+    "strains": [
+      "BL107",
+      "CC9311",
+      "CC9902",
+      "ROS8604"
+    ],
+    "training_temperatures_degC": [
+      16,
+      18,
+      20,
+      22
+    ],
+    "training_weighting": "Each eligible biological-culture row has equal weight within the specified fit; positive diameter and resource required in all fits for a common comparison population",
+    "validation_temperatures_degC": [
+      25,
+      27
+    ]
+  },
+  "config_reference": {
+    "path": "configs/archived_cost_transfer_2026-10-02.json",
+    "sha256": "79488018e9c38252922564d57b1744b359717118479246d1228cfa552e66e831"
+  },
+  "environment": {
+    "numpy": "2.3.5",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]"
+  },
+  "frozen_utc": "2026-10-02T14:29:40.499313+00:00",
+  "git_head_at_freeze": "ca0c683d7acb970ae75eeea191264b089e32fd78",
+  "metadata_references": [
+    {
+      "path": "data/archived-cost-transfer/2026-10-02/description.html",
+      "sha256": "80ab6d9c1fceae354bd61c7d864c7ea3125bb2796640e7a1099bfe5e05defb3a"
+    },
+    {
+      "path": "data/archived-cost-transfer/2026-10-02/catalogue.html",
+      "sha256": "eed5a88ffa6c96a66809259ee5974290b0dd4b8f7e73810cb21b4081ade5a0b1"
+    }
+  ],
+  "raw_csv_absent_at_freeze": true,
+  "run_id": "archived-cost-transfer-2026-10-02",
+  "scope": "Local retrospective protocol recorded before CSV acquisition; a second coefficient-and-prediction freeze precedes conversion of validation quota fields. Published metadata/methods were already inspected, not external preregistration or guaranteed external blinding.",
+  "source_references": [
+    {
+      "path": "experiments/run_archived_cost_transfer.py",
+      "sha256": "33273cfe328562796728525e72f3b9c7b234ef817bda0509e861fc01543a5d8a"
+    },
+    {
+      "path": "src/orthopolity/archived_cost_transfer.py",
+      "sha256": "ddabe2cf2b293eb4fbb8849f44e73328569537558e42aa7bad158936b21d74bd"
+    }
+  ],
+  "source_snapshot_references": [
+    {
+      "path": "data/archived-cost-transfer/2026-10-02/original-sources/experiments/run_archived_cost_transfer.py",
+      "sha256": "33273cfe328562796728525e72f3b9c7b234ef817bda0509e861fc01543a5d8a"
+    },
+    {
+      "path": "data/archived-cost-transfer/2026-10-02/original-sources/src/orthopolity/archived_cost_transfer.py",
+      "sha256": "ddabe2cf2b293eb4fbb8849f44e73328569537558e42aa7bad158936b21d74bd"
+    }
+  ],
+  "status": "frozen_before_acquisition"
+}

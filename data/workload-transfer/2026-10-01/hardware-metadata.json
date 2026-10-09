@@ -1,0 +1,48 @@
+{
+  "collected_utc": "2026-10-01T20:54:32.208531+00:00",
+  "recording_scope": "Current metadata collector process; not a historical hardware reconstruction",
+  "os": {
+    "system": "Darwin",
+    "release": "25.6.0",
+    "version": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+    "build": "25G83",
+    "product_version": "26.6.2"
+  },
+  "cpu": {
+    "model": "Apple M1 Max",
+    "architecture": "arm64",
+    "logical_count": 10
+  },
+  "total_ram_bytes": 34359738368,
+  "python_version": "3.11.6",
+  "availability": {
+    "cpu_model": true,
+    "total_ram": true,
+    "os_build": true
+  },
+  "numpy": {
+    "available": true,
+    "version": "2.3.5",
+    "blas": {
+      "name": "accelerate",
+      "version": "unknown"
+    }
+  },
+  "requested_thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "runtime_thread_verification": {
+    "inspection_available": false,
+    "blas_count_available": false,
+    "libraries": [],
+    "thread_count_verified": false,
+    "verified_single_thread": false,
+    "scope": "Optional threadpoolctl is unavailable; requested environment is not runtime verification"
+  },
+  "collection_context": "Read-only host metadata collected before calibration; workers run under the ordinary workspace execution context"
+}

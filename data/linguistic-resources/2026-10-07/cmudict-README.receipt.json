@@ -1,0 +1,11 @@
+{
+  "filename": "cmudict-README",
+  "url": "https://raw.githubusercontent.com/cmusphinx/cmudict/74790861f652b15e4ac49015a90074ad62a27690/README",
+  "final_url": "https://raw.githubusercontent.com/cmusphinx/cmudict/74790861f652b15e4ac49015a90074ad62a27690/README",
+  "content_type": "text/plain; charset=utf-8",
+  "role": "Dictionary metadata",
+  "stage": "train",
+  "retrieved_at_utc": "2026-10-07T07:22:07.793954+00:00",
+  "size_bytes": 1412,
+  "sha256": "00c34e7564f1f6a68de02e12c123d801471da92bc3091f7d89b605f238bf8554"
+}

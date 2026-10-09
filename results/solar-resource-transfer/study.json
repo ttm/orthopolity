@@ -1,0 +1,316 @@
+{
+  "run_id": "solar-resource-transfer-2026-10-01",
+  "analysed_utc": "2026-10-01T21:25:47.771848+00:00",
+  "evidence_kind": "actual_measurement",
+  "scope": "Previously inspected measured snapshots; frozen forecasts use only 2022/2023 cost and count summaries. No new observations, blinding or external preregistration.",
+  "frozen_plan": {
+    "path": "data/solar-resource-transfer/2026-10-01/frozen-plan.json",
+    "sha256": "2733d224d647c2b177daecc44b3652ea3bb2c09f3dc6715d0cda5dfd11c5f093"
+  },
+  "config": {
+    "run_id": "solar-resource-transfer-2026-10-01",
+    "status": "Retrospective temporal holdout by fitting; all years were previously inspected in this repository",
+    "training_years": [
+      2022,
+      2023
+    ],
+    "evaluation_years": [
+      2024
+    ],
+    "peak_irradiance_domain_W_m2": [
+      1e-05,
+      0.001
+    ],
+    "bins_per_decade": 4,
+    "training_only_pooling": "Starting at the highest fine bin, merge adjacent bins downward until each pooled class contains at least 20 complete training events for both declared resources; merge a remaining undersupported lowest class into its neighbor; retain original outer domain and actual pooled-bin widths",
+    "minimum_training_events_per_resource_per_pooled_bin": 20,
+    "primary_resource": "integrated_irrad_peak",
+    "sensitivity_resource": "integrated_irrad_end",
+    "resource_units": "J/m2",
+    "resource_definition": "NOAA supplied XRS-B integrated irradiance over start-to-peak or start-to-end event windows, without additional background subtraction; band-limited fluence received at the instrument, not total flare energy",
+    "eligibility": "Finite positive unsaturated peak irradiance within the closed fixed domain; resource-specific complete cases require finite positive fluence and a strictly positive corresponding event-window duration",
+    "cost_estimation": "Separate arithmetic mean supplied fluence in each fixed bin; no power-law cost model and no fit to evaluation outcomes",
+    "models": [
+      "log_resource_neutral",
+      "linear_resource_neutral",
+      "historical_count_shape"
+    ],
+    "conditioning": "Predict shape conditional on the number of eligible 2024 events in the fixed domain; no prediction of absolute event rate or total fluence",
+    "primary_scores": [
+      "count_cross_entropy_nats_per_event",
+      "count_total_variation",
+      "resource_share_total_variation"
+    ],
+    "uncertainty": "Resample 12 calendar-month blocks with replacement within each year, independently for each training year and the evaluation year; share the same draws across forecasts and resource definitions",
+    "bootstrap_replicates": 2000,
+    "seed": 202610019,
+    "zero_bin_policy": "Retain all bins; if a bootstrap training bin has no eligible events, mark that resource's replicate invalid rather than impute a mean cost or omit the bin; evaluation bins with zero events retain zero count/resource",
+    "intervals": "Nominal 95% percentile month-block intervals; not simultaneous inference, a formal null calibration, completeness correction, or equivalence test",
+    "limitations": [
+      "Retrospective reanalysis, not external preregistration or blinded validation",
+      "Instrument-derived peak and fluence share event definitions and measurements",
+      "No catalogue completeness, detection exposure or overlap correction",
+      "Missing end fluence can depend on peak irradiance",
+      "Temporal cost transfer may fail across solar-cycle phases",
+      "Month blocks do not cover all dependence or measurement uncertainty",
+      "Bin neutrality is a declared finite-class hypothesis; pooling uses training support only and binning is not changed after outcomes are scored",
+      "Broad pooled classes may have changing within-class size composition and therefore changing mean costs"
+    ]
+  },
+  "sources": [
+    {
+      "path": "experiments/run_solar_resource_transfer.py",
+      "sha256": "265493da22050fbb4407b750ae74f3e69832d380db45ee8e6a09f73116b9cd2a"
+    },
+    {
+      "path": "src/orthopolity/solar_resource_transfer.py",
+      "sha256": "ab07fbfc0c0781cecae0e0939ee6efce7c031880b439ccb4ae4607341cbc3e22"
+    },
+    {
+      "path": "src/orthopolity/figures.py",
+      "sha256": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40"
+    }
+  ],
+  "data_inputs": [
+    {
+      "path": "data/raw/noaa_2022.csv",
+      "sha256": "1a7978e87410a64db53e1459bd125727c114eb5d6f19dbb15e1fad3ef09991e9"
+    },
+    {
+      "path": "data/raw/noaa_2023.csv",
+      "sha256": "23902fe462a5eafc500ea15d897d59e57480526d83dda448b9047ead4a89dbe5"
+    },
+    {
+      "path": "data/raw/noaa_2024.csv",
+      "sha256": "74f23ea854f8f1f39b7b6521a08d7cf280a46e46f06ac6924b308d1ae070b4cd"
+    },
+    {
+      "path": "data/raw/noaa_metadata.json",
+      "sha256": "e7b8eb00a573056dce08c86c277fc186bed92a991f414eb8cde9855a4a3aa996"
+    }
+  ],
+  "training_membership": {
+    "path": "data/solar-resource-transfer/2026-10-01/training-membership.csv",
+    "sha256": "6fd3deccef9d0b4c1e40eebde38cb15412fc288813d5975a34dccbccf6c77aef"
+  },
+  "generated_artifacts": [
+    {
+      "path": "data/solar-resource-transfer/2026-10-01/validation-membership.csv",
+      "sha256": "9a6eb094131ef969176b7b24a39d16089625416f90676b0a87a3a4c6d4abc2c6"
+    },
+    {
+      "path": "results/solar-resource-transfer/rise-profiles.csv",
+      "sha256": "d2f5406ad18b8a01136c2985322564320011f35c85b7ad86d0a2a87df5950bc0"
+    },
+    {
+      "path": "results/solar-resource-transfer/rise-bootstrap.csv",
+      "sha256": "b5f82e08fa4179bafced4d2d1ea8d60808a391003dcdade37575f900ae42e259"
+    },
+    {
+      "path": "results/solar-resource-transfer/end-profiles.csv",
+      "sha256": "8b7239c3e00400eabdc8582cf5eb01dc5ef379bebd4a16aaa0c073480f5107ee"
+    },
+    {
+      "path": "results/solar-resource-transfer/end-bootstrap.csv",
+      "sha256": "0e31266a9c1a4a3a5cb6dc1a924d0294757fccfb86b9692ad29d1180f1647ce8"
+    },
+    {
+      "path": "results/solar-resource-transfer/profiles.png",
+      "sha256": "088872643ce7eb4ac9ebf911032d68c270e86207d5a850e64e3aabd5e8c9604d"
+    },
+    {
+      "path": "results/solar-resource-transfer/profiles.svg",
+      "sha256": "97b9cf48814e4c7dcbef529350ad12a40c1996e7ec2243cc8d40d35fba6d450e"
+    }
+  ],
+  "pooled_edges_W_m2": [
+    1e-05,
+    1.778279410038923e-05,
+    3.1622776601683795e-05,
+    5.623413251903491e-05,
+    0.0001,
+    0.001
+  ],
+  "results": {
+    "integrated_irrad_peak": {
+      "training_complete_n": 573,
+      "evaluation_complete_n": 936,
+      "training_all_peak_n": 573,
+      "evaluation_all_peak_n": 936,
+      "training_missing_fraction": 0.0,
+      "evaluation_missing_fraction": 0.0,
+      "cost_ratio_by_bin": [
+        0.9418008181926986,
+        1.0809559608373507,
+        0.9301996827594291,
+        1.2471979886046727,
+        1.6104868001309511
+      ],
+      "resource_share_max_to_min": 2.622628489970736,
+      "scores": {
+        "log_resource_neutral": {
+          "count_cross_entropy_nats_per_event": 1.3376517931403045,
+          "count_total_variation": 0.16683359225313363,
+          "resource_share_total_variation": 0.1424709224048688,
+          "count_cross_entropy_nats_per_event_ci": [
+            1.2576505776902756,
+            1.419313096714717
+          ],
+          "count_total_variation_ci": [
+            0.09472991111920488,
+            0.251355785418644
+          ],
+          "resource_share_total_variation_ci": [
+            0.037868646404563104,
+            0.3414060694269488
+          ]
+        },
+        "linear_resource_neutral": {
+          "count_cross_entropy_nats_per_event": 2.5830444119009037,
+          "count_total_variation": 0.6853533919220638,
+          "resource_share_total_variation": 0.551561831495778,
+          "count_cross_entropy_nats_per_event_ci": [
+            2.3296417517261325,
+            2.9088585786734846
+          ],
+          "count_total_variation_ci": [
+            0.6162991012869369,
+            0.761066781494521
+          ],
+          "resource_share_total_variation_ci": [
+            0.4307053711627105,
+            0.7500433404387087
+          ]
+        },
+        "historical_count_shape": {
+          "count_cross_entropy_nats_per_event": 1.267645359870592,
+          "count_total_variation": 0.022447084619859496,
+          "resource_share_total_variation": 0.1783243625691334,
+          "count_cross_entropy_nats_per_event_ci": [
+            1.143503614443415,
+            1.4021277973648665
+          ],
+          "count_total_variation_ci": [
+            0.016266971203346938,
+            0.10327345366685041
+          ],
+          "resource_share_total_variation_ci": [
+            0.03753571072466957,
+            0.33629107558179344
+          ]
+        }
+      },
+      "paired_cross_entropy_differences": {
+        "linear_resource_neutral": {
+          "value": 1.2453926187605993,
+          "ci": [
+            0.9971021484467234,
+            1.5389469282661024
+          ]
+        },
+        "historical_count_shape": {
+          "value": -0.07000643326971256,
+          "ci": [
+            -0.16342709855968074,
+            0.008968071793712793
+          ]
+        }
+      },
+      "valid_bootstrap_replicates": 2000,
+      "invalid_training_bin_or_empty_evaluation_replicates": 0
+    },
+    "integrated_irrad_end": {
+      "training_complete_n": 532,
+      "evaluation_complete_n": 825,
+      "training_all_peak_n": 573,
+      "evaluation_all_peak_n": 936,
+      "training_missing_fraction": 0.07155322862129143,
+      "evaluation_missing_fraction": 0.11858974358974361,
+      "cost_ratio_by_bin": [
+        0.8986868548586878,
+        1.010813781384163,
+        0.8186825395169566,
+        1.4033894266158635,
+        1.5871846276954777
+      ],
+      "resource_share_max_to_min": 3.5747607458026636,
+      "scores": {
+        "log_resource_neutral": {
+          "count_cross_entropy_nats_per_event": 1.3345126144358856,
+          "count_total_variation": 0.1560084929204112,
+          "resource_share_total_variation": 0.09159490802487472,
+          "count_cross_entropy_nats_per_event_ci": [
+            1.256626841588262,
+            1.4163081838566354
+          ],
+          "count_total_variation_ci": [
+            0.07934374623204411,
+            0.2427702950555605
+          ],
+          "resource_share_total_variation_ci": [
+            0.030346355476453514,
+            0.3064329379515223
+          ]
+        },
+        "linear_resource_neutral": {
+          "count_cross_entropy_nats_per_event": 2.4842663074869806,
+          "count_total_variation": 0.6609599898870462,
+          "resource_share_total_variation": 0.4922831916264669,
+          "count_cross_entropy_nats_per_event_ci": [
+            2.244778950090934,
+            2.826984155717712
+          ],
+          "count_total_variation_ci": [
+            0.5820867081801133,
+            0.7425336617257249
+          ],
+          "resource_share_total_variation_ci": [
+            0.3654856894016565,
+            0.7129556775492008
+          ]
+        },
+        "historical_count_shape": {
+          "count_cross_entropy_nats_per_event": 1.2835779525042774,
+          "count_total_variation": 0.025479608111187064,
+          "resource_share_total_variation": 0.21883143639843497,
+          "count_cross_entropy_nats_per_event_ci": [
+            1.1629147012111438,
+            1.419723349122535
+          ],
+          "count_total_variation_ci": [
+            0.020103133896779094,
+            0.10321164597885243
+          ],
+          "resource_share_total_variation_ci": [
+            0.054882169616795866,
+            0.3816438427021828
+          ]
+        }
+      },
+      "paired_cross_entropy_differences": {
+        "linear_resource_neutral": {
+          "value": 1.149753693051095,
+          "ci": [
+            0.899798446727698,
+            1.4585148887987023
+          ]
+        },
+        "historical_count_shape": {
+          "value": -0.05093466193160823,
+          "ci": [
+            -0.13897290356339118,
+            0.02387945696815354
+          ]
+        }
+      },
+      "valid_bootstrap_replicates": 2000,
+      "invalid_training_bin_or_empty_evaluation_replicates": 0
+    }
+  },
+  "environment": {
+    "python": "3.11.6",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.7"
+  },
+  "interpretation": "Compare full conditional profiles and diagnose cost transfer; scores are descriptive retrospective predictions. No formal universal-law test or proof of neutrality."
+}

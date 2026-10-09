@@ -1,0 +1,12 @@
+{
+  "bytes": 1879319,
+  "completed_utc": "2026-10-04T20:39:03.428391+00:00",
+  "http_status": 200,
+  "name": "ghedini-source.zip",
+  "requested_url": "https://ndownloader.figshare.com/files/22484462",
+  "scope": "opaque ZIP; members undecoded",
+  "sha256": "8c2f07bcd198d6f32e4b4c602719d37e883d7d3e1e79b0c22c09ca2a6f20d7ec",
+  "started_utc": "2026-10-04T20:38:54.371652+00:00",
+  "tls_verification": true,
+  "transport": "system curl, TLS verification enabled, user config disabled"
+}

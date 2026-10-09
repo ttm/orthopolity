@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "filename": "dataset.json",
+      "url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.2bs69",
+      "final_url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.2bs69",
+      "retrieval_started_utc": "2026-10-08T07:30:43.009766+00:00",
+      "retrieved_at_utc": "2026-10-08T07:30:43.988620+00:00",
+      "sha256": "c98e71f28943d7d922a2ecf2ae4d144f2eb76561b59f4f7619ac6e30e144fa85",
+      "size_bytes": 7473,
+      "tls_verification": true,
+      "scope": "Opaque source; worksheet outcomes not decoded by retrieval"
+    },
+    {
+      "filename": "files.json",
+      "url": "https://datadryad.org/api/v2/versions/27668/files",
+      "final_url": "https://datadryad.org/api/v2/versions/27668/files",
+      "retrieval_started_utc": "2026-10-08T07:30:43.989508+00:00",
+      "retrieved_at_utc": "2026-10-08T07:30:44.818117+00:00",
+      "sha256": "624ec458199e1969fd85e3a9c219988598fdc988143a05d9659595d94230e413",
+      "size_bytes": 5447,
+      "tls_verification": true,
+      "scope": "Opaque source; worksheet outcomes not decoded by retrieval"
+    },
+    {
+      "filename": "article.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5367290/fullTextXML",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5367290/fullTextXML",
+      "retrieval_started_utc": "2026-10-08T07:47:05.236299+00:00",
+      "retrieved_at_utc": "2026-10-08T07:47:08.789798+00:00",
+      "sha256": "cb3efb171cb8da9141b4e172ab85764a199cd70ae7aa5484afb5ca747264f008",
+      "size_bytes": 175617,
+      "tls_verification": true,
+      "scope": "Published source; download does not decode numerical figure annotations"
+    },
+    {
+      "filename": "figure2.jpg",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5367290.1/rsos160417-g2.jpg",
+      "final_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5367290.1/rsos160417-g2.jpg",
+      "retrieval_started_utc": "2026-10-08T07:47:08.792452+00:00",
+      "retrieved_at_utc": "2026-10-08T07:47:10.001375+00:00",
+      "sha256": "b6e2d9fec30f1f5ab8fb3225b87f686b613af257a5e7afd67aeed5b146d4caf2",
+      "size_bytes": 137333,
+      "tls_verification": true,
+      "scope": "Published source; download does not decode numerical figure annotations"
+    }
+  ]
+}

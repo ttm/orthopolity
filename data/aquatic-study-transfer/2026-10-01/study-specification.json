@@ -1,0 +1,96 @@
+{
+  "config": {
+    "study": "Retrospective leave-study-out prediction of aquatic biomass slopes",
+    "run_id": "aquatic-study-transfer-2026-10-01",
+    "status": "Exploratory held-out-by-fitting reanalysis; all source data have previously been inspected",
+    "input": "data/raw/GLOSSAQUA_Size.txt",
+    "predicted_nbss_slope": -1.0,
+    "resource": "Reported biomass; object cost proportional to body mass in each source study's units",
+    "coordinate": "Reported body mass; slopes invariant to constant changes of mass units",
+    "reference_measure": "d ln body mass",
+    "inclusion": {
+      "XaxisParameterType": "body mass",
+      "SizeSpectrumMethod": "Normalized biomass spectrum (linear)",
+      "finite_slope_and_positive_ordered_bounds": true
+    },
+    "excluded_studies": {
+      "StudyID_07": "Known invalid upper size bounds; no correction inferred from slopes"
+    },
+    "primary_errors": "Directly reported finite positive SlopeSE only",
+    "sensitivity_errors": "Direct SE preferred; otherwise ordered confidence-bound width divided by 3.92 under an unverified 95%-Gaussian assumption",
+    "training_weights": "Equal total weight per study, then equal weight per row within study",
+    "location_estimator": "Weighted mean; the held-out study is excluded from every fitted quantity",
+    "shared_spread_estimator": "max(0, weighted centered slope variance minus weighted squared standard error)",
+    "models": [
+      "fixed_neutral_shared_scatter",
+      "training_location_shared_scatter",
+      "fixed_neutral_measurement_only"
+    ],
+    "primary_score": "Mean held-out log predictive density per study, aggregated with equal study weights",
+    "point_sensitivity": "All eligible slopes, comparing -1 against the training median of study medians by held-study mean absolute error",
+    "predictive_interval_level": 0.95,
+    "endpoint_drift_factors": [
+      1.25,
+      2.0
+    ],
+    "inference": "Descriptive overlapping-fold transport scores; no independent-fold p-value or population equivalence verdict",
+    "randomness": "Deterministic selection, fitting, and scoring; no random seed"
+  },
+  "config_sha256": "2c02a879bc3a18eecfaec7d601b41be94089d63e06f2f0fc0cb18d68552f1dc0",
+  "input": {
+    "path": "data/raw/GLOSSAQUA_Size.txt",
+    "sha256": "735f53d82fd40919539ffa7303bd3243388a38f0d375375e362b2cb256500b98"
+  },
+  "source_sha256": {
+    "experiments/run_aquatic_study_transfer.py": "4be520898f86191ecf3aa792adc583fc7a2cb670e025df97d438fda894f2a8cb",
+    "src/orthopolity/aquatic_study_transfer.py": "de2c5d73c807dfd006e9c2427bb3720f14122b42eafce2e4851be94b20512e7c",
+    "src/orthopolity/run_registry.py": "33824ebac344210cf59ef2dc83d795e35676d859830c96e7171db9ff6bb1781e",
+    "src/orthopolity/figures.py": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40"
+  },
+  "assessment_status": "Retrospective reanalysis, held-out by fitting only; source results already inspected",
+  "specified_utc": "2026-10-01T21:26:25.457804+00:00",
+  "hardware_metadata": {
+    "collected_utc": "2026-10-01T21:26:25.473036+00:00",
+    "recording_scope": "Current metadata collector process; not a historical hardware reconstruction",
+    "os": {
+      "system": "Darwin",
+      "release": "25.6.0",
+      "version": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:49 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T6000",
+      "build": null,
+      "product_version": "26.6.2"
+    },
+    "cpu": {
+      "model": null,
+      "architecture": "arm64",
+      "logical_count": 10
+    },
+    "total_ram_bytes": null,
+    "python_version": "3.11.6",
+    "availability": {
+      "cpu_model": false,
+      "total_ram": false,
+      "os_build": false
+    },
+    "numpy": {
+      "available": true,
+      "version": "2.3.5",
+      "blas": {
+        "name": "accelerate",
+        "version": "unknown"
+      }
+    },
+    "requested_thread_environment": {},
+    "runtime_thread_verification": {
+      "inspection_available": false,
+      "blas_count_available": false,
+      "libraries": [],
+      "thread_count_verified": false,
+      "verified_single_thread": false,
+      "scope": "Optional threadpoolctl is unavailable; requested environment is not runtime verification"
+    }
+  },
+  "numerical_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.16.3"
+  }
+}

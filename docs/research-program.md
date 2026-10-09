@@ -121,7 +121,7 @@ cases: a reflecting floor at fixed mean gives $\zeta=1/(1-s_{\min}/\bar s)$ (an 
 Pareto tail; Levy and Solomon 1996; Rozenfeld et al. 2011); Kesten processes give $\zeta=1$ iff
 $E[A]=1$ (Kesten 1973; Goldie 1991); Simon's model gives $\zeta=1/(1-\alpha)$.
 
-`gibrat_zeta` in [src/orthopolity.py](../src/orthopolity.py) implements the exponent equation,
+`gibrat_zeta` in [src/orthopolity/spectrum.py](../src/orthopolity/spectrum.py) implements the exponent equation,
 with tests. [run_gibrat.py](../experiments/run_gibrat.py) simulates a population from empty: the
 tail exponent follows the law from $\zeta=0.81$ at $\phi=-0.02$ to 1.60 at $\phi=0.05$, with
 $0.988\pm0.010$ at $\phi=0$, and the entry-flux share $J_R/Q$ converges to $\phi$ where the

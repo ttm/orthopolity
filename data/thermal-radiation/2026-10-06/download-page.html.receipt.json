@@ -1,0 +1,10 @@
+{
+  "filename": "download-page.html",
+  "url": "https://lambda.gsfc.nasa.gov/product/cobe/firas_monopole_get.html",
+  "final_url": "https://lambda.gsfc.nasa.gov/product/cobe/firas_monopole_get.html",
+  "retrieved_at_utc": "2026-10-06T08:41:56.750473+00:00",
+  "content_type": "text/html",
+  "size_bytes": 12141,
+  "sha256": "4c19e7c4f6faecfc6c36aaee9de561e5f385e2cc2ca3de57ac8a81f641fb7a68",
+  "role": "Download listing and delivery metadata"
+}

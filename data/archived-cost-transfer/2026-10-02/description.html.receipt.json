@@ -1,0 +1,41 @@
+{
+  "bytes": 67095,
+  "final_url": "https://www.bco-dmo.org/dataset/926311/description",
+  "http_status": 200,
+  "md5": "78e79b36cf6d18eab4caf25a564055d8",
+  "requested_url": "https://www.bco-dmo.org/dataset/926311/description",
+  "response_headers": {
+    "Access-Control-Allow-Headers": "origin, x-requested-with, content-type",
+    "Access-Control-Allow-Methods": "GET",
+    "Access-Control-Allow-Origin": "*",
+    "Cache-Control": "no-cache, must-revalidate",
+    "Cf-Cache-Status": "DYNAMIC",
+    "Cf-Ray": "a4446677fad7d26d-FRA",
+    "Connection": "close",
+    "Content-Location": "https://osprey.bco-dmo.org/dataset/926311/description",
+    "Content-Type": "text/html; charset=utf-8",
+    "Date": "Fri, 02 Oct 2026 14:29:39 GMT",
+    "Expires": "Sun, 19 Nov 1978 05:00:00 GMT",
+    "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Z%2FlSNDamMpna7UsltaC2FVD0bAOK0AFFkGqIx6b3qi%2BcO9U9316a0%2BulvGc5FxY%2Bfz11JDd2c0cWmVVUFmtg994M4uqExm%2FSud54uVnRq4O6KEYNC%2Bf3cKzH5bDzGU5wSifyWw%3D%3D\"}]}",
+    "Server": "Vercel",
+    "Server-Timing": "cfCacheStatus;desc=\"DYNAMIC\"",
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload",
+    "Transfer-Encoding": "chunked",
+    "Vary": "Accept-Encoding",
+    "X-Content-Type-Options": "nosniff",
+    "X-Drupal-Cache": "MISS",
+    "X-Vercel-Cache": "MISS",
+    "X-Vercel-Id": "fra1::28lqm-1790951376561-24b8f7de6034"
+  },
+  "retrieval_finished_utc": "2026-10-02T14:29:39.910094+00:00",
+  "retrieval_started_utc": "2026-10-02T14:29:36.164727+00:00",
+  "sha256": "80ab6d9c1fceae354bd61c7d864c7ea3125bb2796640e7a1099bfe5e05defb3a",
+  "tls": {
+    "ca_file": "/etc/ssl/cert.pem",
+    "ca_file_sha256": "9dae8d76e55cb08991f2b672d58999ea15560d910759c16b544f843bdffbb994",
+    "certificate_verification": true,
+    "hostname_verification": true,
+    "openssl": "OpenSSL 3.0.11 19 Sep 2023"
+  }
+}

@@ -11,6 +11,12 @@ Conservation fixes total resource, not its allocation across classes. A scale-fr
 is an additional assumption; neither its exponent nor the reference measure follows from
 the allocation identity.
 
+A deeper mechanism is not a prerequisite for an empirical law. Resource symmetry is a
+legitimate additional postulate: exchangeable allocations over declared classes imply
+equal expected resources. Its scope must be specified independently and tested. This
+does not establish typical equality, time-average equality, or convergence without
+additional assumptions or evidence; see [the assessment](scientific-assessment.md).
+
 The 2017 text's explicit linear uniform density and the repository's logarithmic resource
 spectrum have different predictions. The switch cannot be presented as a harmless correction
 of notation. General products of independent inputs do not establish summed tail exponents,

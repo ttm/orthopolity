@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "run_id": "plant-biomass-profile-2026-10-03",
+  "evidence_kind": "actual_measurement",
+  "resources": [
+    {
+      "name": "Aboveground plant dry mass",
+      "definition": "Directly harvested and weighed ramet/stem-cluster dry mass; bin stock is its sum, with q(m)=m an identity rather than an independently tested cost law. No limiting nutrient or opportunity budget is measured",
+      "units": "grams"
+    }
+  ],
+  "data_inputs": [
+    {
+      "path": "data/plant-biomass-profile/2026-10-03/calibration.json",
+      "sha256": "f537c6d2adcbb17dab759fd5eab3624e05355839752efeb505356385a742d22c"
+    },
+    {
+      "path": "data/plant-biomass-profile/2026-10-03/development-membership.json",
+      "sha256": "705d2e6b40c56f788e287686a92144e0641de7f6f262d47e5f9afbb3b3c08812"
+    },
+    {
+      "path": "data/plant-biomass-profile/2026-10-03/evaluation-membership.json",
+      "sha256": "5a5de952f3c49c7f2748a208910dbace004ad69b657971cd90af69e4e20db7f0"
+    },
+    {
+      "path": "data/plant-biomass-profile/2026-10-03/frozen-forecasts.json",
+      "sha256": "8f337aad869b856601bbf971f646df2f085bda872b1e90adc7144f7bcd0f65e1"
+    },
+    {
+      "path": "data/plant-sources/2026-10-03/BFECPrairie1.csv",
+      "sha256": "05d5063600c66d679284d50559105da3408b9839ace7ffec4be035f86c379b84"
+    },
+    {
+      "path": "data/plant-sources/2026-10-03/BFECPrairie2.csv",
+      "sha256": "a25882f1b6d510a5e72c0f70539778cadf64a949d30ef3c387bb435e4471f332"
+    },
+    {
+      "path": "data/plant-sources/2026-10-03/BFECPrairie3.csv",
+      "sha256": "ef0e667a57f1969c992bc507f13a7730260355eb4c0e6094d22f7fc453b6a610"
+    },
+    {
+      "path": "data/plant-sources/2026-10-03/BFECWetland1.csv",
+      "sha256": "27e15754efed5c4e532f16f00f13a6d9fe3ccc983c9d1a046fcc2dbf97fbe275"
+    },
+    {
+      "path": "data/plant-sources/2026-10-03/BFECWetland2.csv",
+      "sha256": "84ddfd8153b3404c41d79ceb1e438fe0eb1df7c694c7e2e12feb1821dbfa255b"
+    },
+    {
+      "path": "data/plant-sources/2026-10-03/RMBLAlpine1.csv",
+      "sha256": "79c0871f53bc86d48f8cc9f4f5cc4b9f917e3a8b4f8dc18a14f18401dd6e4d72"
+    },
+    {
+      "path": "data/plant-sources/2026-10-03/RMBLAlpine2.csv",
+      "sha256": "209e1c4ad49ed2623680eb4f43a35c1f5a376efc1a723a9bbbd658121a9af83b"
+    },
+    {
+      "path": "data/plant-sources/2026-10-03/RMBLAlpine3.csv",
+      "sha256": "e26f335743ab1a8313c17aa59ad5cf62279325682ce3a620cf9b643f20e94c08"
+    },
+    {
+      "path": "data/plant-sources/2026-10-03/RMBLGrassSage.csv",
+      "sha256": "068bf9d59057244745d235fac3b91dc1375edad90d9eed0e5114a3ef0221be00"
+    },
+    {
+      "path": "data/plant-sources/2026-10-03/RMBLWetMeadow.csv",
+      "sha256": "83d5d637edec2061dd844e824e784ef6d0c3884c53d312e35f2950d04900a54b"
+    },
+    {
+      "path": "data/plant-sources/2026-10-03/acquisition.json",
+      "sha256": "308b465bf88551acbe5e4ee56e73105fea132de197c9a89187f8751da549c46a"
+    },
+    {
+      "path": "data/neutrality-audit/2026-10-03/exposure.json",
+      "sha256": "99921f024fcb798001f70655759f7beef370756bb2ffc13ca3056b59cb0b976e"
+    },
+    {
+      "path": "data/neutrality-audit/2026-10-03/acquisition.json",
+      "sha256": "b9b0fb428ef3503b7c0ca7e92d51a0b8a88a92449a19367e6ad6217033298ac1"
+    },
+    {
+      "path": "data/neutrality-audit/2026-10-03/plant-commit.json",
+      "sha256": "4f011298d3f08e2eb24abe63e9843ea9efb54caf1f14f5b176b3fe2bb7e90e3c"
+    },
+    {
+      "path": "data/neutrality-audit/2026-10-03/plant-repository.json",
+      "sha256": "d702ecc8213475e2c00f7d64010fe9034b12bb0c55818d934ac2356ea2e43c0e"
+    },
+    {
+      "path": "data/neutrality-audit/2026-10-03/plant-resolved-tree.json",
+      "sha256": "f491f2515a1a82cb95660a9f2e97de050819f8d10cca6fc0e76f472ed17d97ed"
+    }
+  ],
+  "generated_seeds": {
+    "master_seed": 2026100301,
+    "recipe": "NumPy SeedSequence: reference [seed,n,0]; census [seed,n,block,int(100*exponent),1]",
+    "scope": "Synthetic calibration only; deterministic empirical fitting and scoring"
+  },
+  "algorithms": [
+    {
+      "name": "Retrospective Ohio-to-Colorado transfer of five development-only count and expected-stock templates, with separate synthetic finite-census and dependence calibration",
+      "sources": [
+        {
+          "path": "data/run-sources/ecb91c83658b50faa6945b43c1cb7cd83b4fd9f9fa4c2836e6f92b620c94f22b/run_plant_biomass_profile.py",
+          "sha256": "ecb91c83658b50faa6945b43c1cb7cd83b4fd9f9fa4c2836e6f92b620c94f22b",
+          "original_path": "experiments/run_plant_biomass_profile.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/783b028a1762b3ad3200be66c8464b11d463129b0887562fd1397dbe41e56881/fetch_plant_sources.py",
+          "sha256": "783b028a1762b3ad3200be66c8464b11d463129b0887562fd1397dbe41e56881",
+          "original_path": "experiments/fetch_plant_sources.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/0856f7cd752c172cd3d657f637195969279905ea8e857bd62b661fd1560f0946/plant_profiles.py",
+          "sha256": "0856f7cd752c172cd3d657f637195969279905ea8e857bd62b661fd1560f0946",
+          "original_path": "src/orthopolity/plant_profiles.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        },
+        {
+          "path": "data/run-sources/711be20f62e66401982bdf70fadfc826c218777d5f17d9d1ce5fcdd26cb26725/plant_observation.py",
+          "sha256": "711be20f62e66401982bdf70fadfc826c218777d5f17d9d1ce5fcdd26cb26725",
+          "original_path": "src/orthopolity/plant_observation.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        }
+      ],
+      "source_provenance": "Protocol and algorithm commits precede formal fitting/scoring; forecasts and calibration were committed and pushed before scoring. Raw plant outcomes had been exposed earlier, as retained in exposure.json; no blinding claim"
+    },
+    {
+      "name": "Presentation figure from retained outputs; computes no fit, forecast, score or verdict",
+      "sources": [
+        {
+          "path": "data/run-sources/d08abc6288932ae692e69574408d8570cb2ffc3d3837e1c958c8b31053d47279/report_plant_biomass_profile.py",
+          "sha256": "d08abc6288932ae692e69574408d8570cb2ffc3d3837e1c958c8b31053d47279",
+          "original_path": "experiments/report_plant_biomass_profile.py",
+          "provenance": "Content-addressed byte snapshot at registration"
+        }
+      ],
+      "source_provenance": "Content-addressed snapshot at registration; presentation and labelled post-hoc diagnostics only"
+    }
+  ],
+  "configs": [
+    {
+      "path": "data/run-sources/20a53ad1aeb002f40c8b37bc2af810ba4a6911436f988086901be66f0be7e0af/plant_biomass_profile_2026-10-03.json",
+      "sha256": "20a53ad1aeb002f40c8b37bc2af810ba4a6911436f988086901be66f0be7e0af",
+      "original_path": "configs/plant_biomass_profile_2026-10-03.json",
+      "provenance": "Content-addressed byte snapshot at registration"
+    },
+    {
+      "path": "data/run-sources/0d8cc42ce6a089827042bbd78f5c620c06994f724bb24b5484c8d86356d78a62/plant_biomass_profile_2026-10-03_amendment-1.json",
+      "sha256": "0d8cc42ce6a089827042bbd78f5c620c06994f724bb24b5484c8d86356d78a62",
+      "original_path": "configs/plant_biomass_profile_2026-10-03_amendment-1.json",
+      "provenance": "Content-addressed byte snapshot at registration"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "results/plant-biomass-profile/figure-manifest.json",
+      "sha256": "586507ed0cef451a7d41490da2bf8a2247496da5029d4726ed02d57996da610a"
+    },
+    {
+      "path": "results/plant-biomass-profile/mass-profile.png",
+      "sha256": "3054eb22d892e1ba511c38e5808b7438b4babed9a9ce72f6bd8752d600458b5f"
+    },
+    {
+      "path": "results/plant-biomass-profile/mass-profile.svg",
+      "sha256": "5cd86ab26d0b74bcd1e274c662c2812a688765f3480683e822f5501195ba155d"
+    },
+    {
+      "path": "results/plant-biomass-profile/output-manifest.json",
+      "sha256": "2de32363f9c4168ee884563faae11affc8ee262cfa857b5f3869af2021171d25"
+    },
+    {
+      "path": "results/plant-biomass-profile/study.json",
+      "sha256": "8d7c0ac94f8607263ae169f822ed389c7c3832319a389a58793db8c30e9f943b"
+    }
+  ],
+  "relationships": [
+    {
+      "run_id": "profile-calibration-2026-10-02",
+      "type": "extends_finite_census_observation_diagnostics"
+    },
+    {
+      "run_id": "dunaliella-size-budget-2026-10-02",
+      "type": "examines_coexisting_stocks_after_separate_lineage_budget_closure"
+    }
+  ],
+  "hardware_metadata": {
+    "recorded_environment": {
+      "numpy": "2.3.5",
+      "python": "3.11.6",
+      "scipy": "1.16.3"
+    },
+    "scope": "Software environment recorded by the frozen plan; no additional host facts probed"
+  },
+  "summary": {
+    "interpretation": "Directly weighed coexisting aboveground ramets give realized stock profiles. Development-only templates transfer across locales; expected ecological neutrality remains unresolved. Raw plant outcomes were exposed before the protocol: this is retrospective, not blinded.",
+    "statistical_scope": "Five evaluation plots nested within one locale; point template discrepancies, no ecological significance/equivalence claim.",
+    "results": {
+      "equal_plot_mean_scores": {
+        "bounded_pareto": {
+          "count_logloss": 1.8301563519357433,
+          "count_logloss_infinite": false,
+          "count_tv": 0.26658175717487836,
+          "stock_tv": 0.47024942211768106
+        },
+        "bounded_weibull": {
+          "count_logloss": 1.8348269427321924,
+          "count_logloss_infinite": false,
+          "count_tv": 0.27126276910282543,
+          "stock_tv": 0.5305122627183328
+        },
+        "empirical": {
+          "count_logloss": 1.8296852456525514,
+          "count_logloss_infinite": false,
+          "count_tv": 0.2597809399478094,
+          "stock_tv": 0.5099486458134143
+        },
+        "linear_neutral": {
+          "count_logloss": 2.0794415416798357,
+          "count_logloss_infinite": false,
+          "count_tv": 0.4122941861041773,
+          "stock_tv": 0.507194916463925
+        },
+        "log_neutral": {
+          "count_logloss": 2.422152410733721,
+          "count_logloss_infinite": false,
+          "count_tv": 0.49498556272921307,
+          "stock_tv": 0.4932861426974885
+        }
+      },
+      "ranking_by_stock_tv": [
+        "bounded_pareto",
+        "log_neutral",
+        "linear_neutral",
+        "empirical",
+        "bounded_weibull"
+      ],
+      "differences_from_log_neutral": {
+        "bounded_pareto": {
+          "comparator_better_plots": 3,
+          "log_neutral_better_plots": 2,
+          "mean_stock_tv_difference": -0.023036720579807345,
+          "per_plot_difference": {
+            "RMBLAlpine1": 0.025620122335270223,
+            "RMBLAlpine2": -0.031147531067509338,
+            "RMBLAlpine3": -0.4788910499537057,
+            "RMBLGrassSage": -0.014153014587359847,
+            "RMBLWetMeadow": 0.3833878703742679
+          }
+        },
+        "bounded_weibull": {
+          "comparator_better_plots": 2,
+          "log_neutral_better_plots": 3,
+          "mean_stock_tv_difference": 0.037226120020844425,
+          "per_plot_difference": {
+            "RMBLAlpine1": 0.26512030786070284,
+            "RMBLAlpine2": -0.13249860476933295,
+            "RMBLAlpine3": 0.04940594023598477,
+            "RMBLGrassSage": -0.02510240701133748,
+            "RMBLWetMeadow": 0.02920536378820493
+          }
+        },
+        "empirical": {
+          "comparator_better_plots": 2,
+          "log_neutral_better_plots": 3,
+          "mean_stock_tv_difference": 0.01666250311592591,
+          "per_plot_difference": {
+            "RMBLAlpine1": 0.12697539106913636,
+            "RMBLAlpine2": -0.020631857666815634,
+            "RMBLAlpine3": 0.052106579331787306,
+            "RMBLGrassSage": 0.006580491130120214,
+            "RMBLWetMeadow": -0.0817180882845987
+          }
+        },
+        "linear_neutral": {
+          "comparator_better_plots": 1,
+          "log_neutral_better_plots": 4,
+          "mean_stock_tv_difference": 0.013908773766436566,
+          "per_plot_difference": {
+            "RMBLAlpine1": 0.06407201202329321,
+            "RMBLAlpine2": 0.042426015269401596,
+            "RMBLAlpine3": -0.5315447570644756,
+            "RMBLGrassSage": 0.059420531749551087,
+            "RMBLWetMeadow": 0.4351700668544125
+          }
+        }
+      },
+      "coverage": {
+        "RMBLAlpine1": {
+          "raw_count": 938,
+          "in_domain_count": 883,
+          "below_count": 55,
+          "above_count": 0,
+          "raw_mass": 291.481,
+          "below_mass": 0.32100000000000006,
+          "above_mass": 0.0,
+          "count_coverage": 0.94136460554371,
+          "mass_coverage": 0.998898727532841
+        },
+        "RMBLAlpine2": {
+          "raw_count": 281,
+          "in_domain_count": 244,
+          "below_count": 37,
+          "above_count": 0,
+          "raw_mass": 547.585,
+          "below_mass": 0.23700000000000004,
+          "above_mass": 0.0,
+          "count_coverage": 0.8683274021352313,
+          "mass_coverage": 0.9995671904818428
+        },
+        "RMBLAlpine3": {
+          "raw_count": 160,
+          "in_domain_count": 143,
+          "below_count": 16,
+          "above_count": 1,
+          "raw_mass": 459.317,
+          "below_mass": 0.097,
+          "above_mass": 112.55,
+          "count_coverage": 0.89375,
+          "mass_coverage": 0.7547510760542284
+        },
+        "RMBLGrassSage": {
+          "raw_count": 226,
+          "in_domain_count": 219,
+          "below_count": 7,
+          "above_count": 0,
+          "raw_mass": 188.01399999999998,
+          "below_mass": 0.055,
+          "above_mass": 0.0,
+          "count_coverage": 0.9690265486725663,
+          "mass_coverage": 0.9997074685927645
+        },
+        "RMBLWetMeadow": {
+          "raw_count": 618,
+          "in_domain_count": 589,
+          "below_count": 29,
+          "above_count": 0,
+          "raw_mass": 196.52100000000002,
+          "below_mass": 0.16300000000000003,
+          "above_mass": 0.0,
+          "count_coverage": 0.9530744336569579,
+          "mass_coverage": 0.9991705721017092
+        }
+      },
+      "ecological_neutrality_decision": "unresolved: ecological dependence, inclusion and regional replication not calibrated"
+    },
+    "report": "results/plant-biomass-profile/study.json",
+    "registration_scope": "Retrospective analysis of existing public measurements; zero new observations"
+  }
+}

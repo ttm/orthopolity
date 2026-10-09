@@ -1,0 +1,60 @@
+{
+  "client_date": "2026-10-05",
+  "config_reference": {
+    "original_path": "configs/ghedini_cost_calibration_2026-10-05.json",
+    "path": "data/run-sources/0540c2bc354db1b4a6cc61a5655b378ea948f8703edee38cb1a93247e2d06f47/ghedini_cost_calibration_2026-10-05.json",
+    "provenance": "Content-addressed byte snapshot at registration",
+    "sha256": "0540c2bc354db1b4a6cc61a5655b378ea948f8703edee38cb1a93247e2d06f47"
+  },
+  "created_utc": "2026-10-05T08:35:48.450750+00:00",
+  "git_head_at_freeze": "8e209fa5fb29dec116ede9c616749a881aa7dcfe",
+  "input_references": {
+    "calibration_rows": {
+      "path": "data/measure-candidates/2026-10-04/ghedini-calibration-rows.json",
+      "sha256": "1ee736b9c439f2a2aa6f13af0b887512c2831adbdb8eda438e3c2bb61be436f9"
+    },
+    "fold_membership": {
+      "path": "data/ghedini-cost-calibration/2026-10-05/fold-membership.json",
+      "sha256": "910c2ad2fb9cd92d8f18fbecd67890b5f3e734149dbefca55ab0de9853c76177"
+    },
+    "group_ledger": {
+      "path": "data/ghedini-cost-calibration/2026-10-05/group-ledger.json",
+      "sha256": "36802ac176f5c1b098a3f24edc95709edd0332c3a2d59d280c26915bb7446225"
+    },
+    "prior_exposure": {
+      "original_path": "data/measure-candidates/2026-10-04/exposure.json",
+      "path": "data/run-sources/eb32a231ca6cc0a8f0bfc64591eabb7b637d21d19de84773d03d6c1bcfec94bb/exposure.json",
+      "provenance": "Content-addressed byte snapshot at registration",
+      "sha256": "eb32a231ca6cc0a8f0bfc64591eabb7b637d21d19de84773d03d6c1bcfec94bb"
+    },
+    "raw_source": {
+      "path": "data/measure-candidates/2026-10-04/ghedini-source.zip",
+      "sha256": "8c2f07bcd198d6f32e4b4c602719d37e883d7d3e1e79b0c22c09ca2a6f20d7ec"
+    },
+    "raw_source_receipt": {
+      "path": "data/measure-candidates/2026-10-04/ghedini-source.zip.receipt.json",
+      "sha256": "f678f75415aae64ad16bb2db9ab2756dc81899aabf37d87a41c5d5b9e2bd790e"
+    }
+  },
+  "run_id": "ghedini-cost-calibration-2026-10-05",
+  "scope": "Calibration observations already exposed; analysis choices recorded before fitting. No community observations read.",
+  "software": {
+    "numpy": "2.3.5",
+    "python": "3.11.6",
+    "scipy": "1.16.3"
+  },
+  "source_references": [
+    {
+      "original_path": "src/orthopolity/cost_calibration.py",
+      "path": "data/run-sources/e6bca728408dfbdae33862bdec4070f58749a3025e157d3194e0603312db6ae3/cost_calibration.py",
+      "provenance": "Content-addressed byte snapshot at registration",
+      "sha256": "e6bca728408dfbdae33862bdec4070f58749a3025e157d3194e0603312db6ae3"
+    },
+    {
+      "original_path": "experiments/run_ghedini_cost_calibration.py",
+      "path": "data/run-sources/b86f4c457c0ebda30547d9800b0b3a7636a36e5fa22927f6d4284c98f973441a/run_ghedini_cost_calibration.py",
+      "provenance": "Content-addressed byte snapshot at registration",
+      "sha256": "b86f4c457c0ebda30547d9800b0b3a7636a36e5fa22927f6d4284c98f973441a"
+    }
+  ]
+}

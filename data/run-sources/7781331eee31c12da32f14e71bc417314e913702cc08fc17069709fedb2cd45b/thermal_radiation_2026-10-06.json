@@ -1,0 +1,17 @@
+{
+  "run_id": "thermal-radiation-2026-10-06",
+  "analysis_kind": "retrospective_published_product_description",
+  "temperature_kelvin": 2.725,
+  "temperature_origin": "NASA LAMBDA monopole product reconstruction; not independently fitted or independently calibrated here",
+  "source_directory": "data/thermal-radiation/2026-10-06",
+  "spectrum_filename": "firas_monopole_spec_v1.txt",
+  "source_manifest": "sources.json",
+  "expected_rows": 43,
+  "theory_x_min": 0.0001,
+  "theory_x_max": 15.0,
+  "theory_points": 600,
+  "selection": "All published monopole rows; no exclusions, fitted temperature, or selected frequency window",
+  "inference": "Descriptive transformed spectrum and published residual audit only; no new goodness-of-fit p-value or independent confirmation from reconstructed intensity",
+  "exposure": "Published blackbody agreement and source construction were known before acquisition; retrospective analysis, not blinded or externally preregistered",
+  "correlation_filename": "correlation.json"
+}

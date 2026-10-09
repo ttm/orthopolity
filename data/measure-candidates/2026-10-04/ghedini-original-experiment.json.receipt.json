@@ -1,0 +1,12 @@
+{
+  "bytes": 4368,
+  "completed_utc": "2026-10-05T07:54:10.702041+00:00",
+  "http_status": 200,
+  "name": "ghedini-original-experiment.json",
+  "requested_url": "https://api.figshare.com/v2/articles/11704749",
+  "scope": "metadata only",
+  "sha256": "bdbcdb9dc4f1bdef872386d2959e64b2498db1f74810d3614447761707523596",
+  "started_utc": "2026-10-05T07:54:10.325966+00:00",
+  "tls_verification": true,
+  "transport": "system curl, TLS verification enabled, user config disabled"
+}

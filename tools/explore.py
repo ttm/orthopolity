@@ -11,7 +11,7 @@ import matplotlib
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
-from orthopolity import resource_spectrum,residual_audio
+from orthopolity.spectrum import resource_spectrum,residual_audio
 
 def build_viewer():
     import matplotlib.pyplot as plt

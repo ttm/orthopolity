@@ -1,0 +1,2627 @@
+<?xml version="1.0" encoding="UTF-8"?><md:MetaData xmlns:md="http://www.pangaea.de/MetaData" version="2026-04-13">
+<md:citation id="dataset816451">
+<md:author id="dataset.author30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:author>
+<md:year>2013</md:year>
+<md:title>Biomass and stable isotope composition of plankton in five size fractions along a zonal transect (24°N) from the Canary Islands to Florida in January-March 2011</md:title>
+<md:type id="dataset.reftype10" includeInCitation="true">dataset</md:type>
+<md:URI>https://doi.org/10.1594/PANGAEA.816451</md:URI>
+<md:dateTime>2013-07-09T13:33:29</md:dateTime>
+<md:supplementTo id="ref59645">
+<md:author id="ref59645.author48011">
+<md:lastName>Mompeán</md:lastName>
+<md:firstName>Carmen</md:firstName>
+<md:eMail>carmenmompeandelarosa@gmail.com</md:eMail>
+</md:author>
+<md:author id="ref59645.author30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:author>
+<md:author id="ref59645.author48012">
+<md:lastName>Benítez-Barrios</md:lastName>
+<md:firstName>Verónica M</md:firstName>
+</md:author>
+<md:author id="ref59645.author48013">
+<md:lastName>Domínguez-Yanes</md:lastName>
+<md:firstName>J Francisco</md:firstName>
+</md:author>
+<md:author id="ref59645.author47856">
+<md:lastName>Escánez</md:lastName>
+<md:firstName>José</md:firstName>
+</md:author>
+<md:author id="ref59645.author48014">
+<md:lastName>Eugenio</md:lastName>
+<md:firstName>Fraile-Nuez</md:firstName>
+</md:author>
+<md:year>2013</md:year>
+<md:title>Spatial patterns of plankton biomass and stable isotopes reflect the influence of the nitrogen-fixer Trichodesmium along the subtropical North Atlantic</md:title>
+<md:type id="ref59645.reftype1">journal article</md:type>
+<md:source id="ref59645.journal9533" relatedTermIds="33987,34022" type="journal">Journal of Plankton Research</md:source>
+<md:volume>35(3)</md:volume>
+<md:URI>https://doi.org/10.1093/plankt/fbt011</md:URI>
+<md:pages>513-525</md:pages>
+</md:supplementTo>
+</md:citation>
+<md:abstract>The spatial variability of biomass and stable isotopes in plankton size fractions in the upper 200 m was studied in a high spatial resolution transect along 24°N from Canary Islands to Florida (January - March  2011) during Leg 8 of the Malaspina-2010 expedition (http://www.expedicionmalaspina.es) to determine nitrogen and carbon sources. Plankton samples were collected by vertical tows of a microplankton net (40 mm mesh size) and a mesoplankton net (200 mm mesh size) through the upper 200 m of the  water column. Sampling was between 10:00 and 16:00 h GMT.  Plankton was separated into  five size fractions  (40 - 200,  200 - 500,  500 - 1000,  1000 - 2000 and &gt; 2000 mm) by gentle filtration of the samples by a graded series of nylon sieves (2000, 1000, 500, 200 and 40 mm).  Large gelatinous organisms  were  removed before filtration. Aliquots for each size fraction were collected on pre-weighed glass-fibre filters, dried (60°C, 48 h) and stored in a desiccator before determination of biomass (dry weight), carbon and nitrogen content and natural abundance of stable carbon and nitrogen isotopes ashore. Vertical advection of waters predominated in lateral zones while the central Atlantic (30-70°W) was characterized by a strong stratification and oligotrophic surface waters. Plankton biomass was low in the central zone and high in both eastern and western sides, with most of the variability due to either large (&gt;2000 µm) and small plankton (&lt;500 µm). Carbon isotopes reflected mainly the advection the deep water in lateral zones. Stable nitrogen isotopes showed a nearly symmetrical spatial distribution in all fractions, with the lowest values (delta15N &lt;1per mill) in the central zone, and were inversely correlated to carbon stable isotopes (delta13C) and to the abundance of the nitrogen-fixer Trichodesmium. Diazotrophy was estimated to account for &gt;50% of organic nitrogen in the central zone, and even &gt;30% in eastern and western zones. The impact of diazotrophy increased with the size of the organisms, supporting the wide participation of all trophic levels in the processing of recently fixed nitrogen. These results indicate that atmospheric sources of carbon and nitrogen prevail over deep water sources in the subtropical North Atlantic and that the zone influenced by diazotrophy is much larger than reported in previous studies.</md:abstract>
+<md:extent>
+<md:geographic>
+<md:westBoundLongitude>-79.56579999999997</md:westBoundLongitude>
+<md:eastBoundLongitude>-15.347800000000007</md:eastBoundLongitude>
+<md:southBoundLatitude>24.4865</md:southBoundLatitude>
+<md:northBoundLatitude>27.1285</md:northBoundLatitude>
+<md:meanLongitude>-48.42110697674417</md:meanLongitude>
+<md:meanLatitude>25.089402325581396</md:meanLatitude>
+</md:geographic>
+<md:temporal>
+<md:minDateTime>2011-01-29T11:23:00</md:minDateTime>
+<md:maxDateTime>2011-03-13T21:33:00</md:maxDateTime>
+</md:temporal>
+<md:elevation geocodeId="geocode1619" name="DEPTH, water" unit="m">
+<md:min>100.0</md:min>
+<md:max>100.0</md:max>
+</md:elevation>
+<md:topoType id="topotype1">not specified</md:topoType>
+</md:extent>
+<md:project id="project4147" type="EU">
+<md:label>EURO-BASIN</md:label>
+<md:name>Basin Scale Analysis, Synthesis and Integration</md:name>
+<md:URI>https://cordis.europa.eu/project/id/264933</md:URI>
+</md:project>
+<md:project id="project4180" type="International">
+<md:label>MALASPINA-2010</md:label>
+<md:name>Malaspina circumnavigation expedition</md:name>
+<md:URI>http://www.expedicionmalaspina.es/</md:URI>
+<md:institution id="project4180.inst12421">
+<md:name>Consejo Superior Investigaciones Científicas</md:name>
+<md:optionalName>CSIC</md:optionalName>
+<md:ROR>https://ror.org/02gfc7t72</md:ROR>
+</md:institution>
+</md:project>
+<md:award id="award7">
+<md:funder id="award7.funder20486" semanticURI="doi:10.13039/100011102">
+<md:name>Seventh Framework Programme of the European Commission</md:name>
+<md:optionalName>FP7</md:optionalName>
+<md:crossrefFunderId>https://doi.org/10.13039/100011102</md:crossrefFunderId>
+</md:funder>
+<md:number>264933</md:number>
+<md:title>Basin Scale Analysis, Synthesis and Integration</md:title>
+<md:URI>https://cordis.europa.eu/project/id/264933</md:URI>
+</md:award>
+<md:award id="award1615">
+<md:funder id="award1615.funder20675" semanticURI="https://doi.org/10.13039/501100004837">
+<md:name>Spanish Ministry of Science, Innovation and Universities</md:name>
+<md:optionalName>MICINN</md:optionalName>
+<md:URI>https://www.ciencia.gob.es</md:URI>
+<md:crossrefFunderId>https://doi.org/10.13039/501100004837</md:crossrefFunderId>
+</md:funder>
+<md:number>CSD2008-00077</md:number>
+<md:title>Circumnavigation expedition Malaspina 2010: Global Change and Exploration of Biodiversity of the Global Ocean</md:title>
+</md:award>
+<md:event displayTypeName="Event" id="event2687772" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_012-1</md:label>
+<md:optionalLabel>station: 012</md:optionalLabel>
+<md:latitude>27.1285</md:latitude>
+<md:longitude>-15.3478</md:longitude>
+<md:location id="event2687772.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-01-29T11:23:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687772.campaign3392908" legacyId="event2687772.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687772.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687772.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687772.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687773" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_016-1</md:label>
+<md:optionalLabel>station: 016</md:optionalLabel>
+<md:latitude>26.663</md:latitude>
+<md:longitude>-16.7797</md:longitude>
+<md:location id="event2687773.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-01-30T07:39:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687773.campaign3392908" legacyId="event2687773.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687773.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687773.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687773.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687774" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_020-1</md:label>
+<md:optionalLabel>station: 020</md:optionalLabel>
+<md:latitude>26.1837</md:latitude>
+<md:longitude>-18.2703</md:longitude>
+<md:location id="event2687774.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-01-31T09:07:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687774.campaign3392908" legacyId="event2687774.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687774.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687774.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687774.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687775" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_024-1</md:label>
+<md:optionalLabel>station: 024</md:optionalLabel>
+<md:latitude>25.6257</md:latitude>
+<md:longitude>-20.0092</md:longitude>
+<md:location id="event2687775.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-01T08:57:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687775.campaign3392908" legacyId="event2687775.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687775.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687775.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687775.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687776" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_027-1</md:label>
+<md:optionalLabel>station: 027</md:optionalLabel>
+<md:latitude>25.1563</md:latitude>
+<md:longitude>-21.4565</md:longitude>
+<md:location id="event2687776.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-02T12:17:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687776.campaign3392908" legacyId="event2687776.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687776.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687776.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687776.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687777" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_030-1</md:label>
+<md:optionalLabel>station: 030</md:optionalLabel>
+<md:latitude>24.6612</md:latitude>
+<md:longitude>-22.9763</md:longitude>
+<md:location id="event2687777.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-03T08:38:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687777.campaign3392908" legacyId="event2687777.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687777.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687777.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687777.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687778" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_033-1</md:label>
+<md:optionalLabel>station: 033</md:optionalLabel>
+<md:latitude>24.5012</md:latitude>
+<md:longitude>-24.708</md:longitude>
+<md:location id="event2687778.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-04T06:11:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687778.campaign3392908" legacyId="event2687778.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687778.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687778.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687778.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687779" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_037-1</md:label>
+<md:optionalLabel>station: 037</md:optionalLabel>
+<md:latitude>24.5012</md:latitude>
+<md:longitude>-27.1497</md:longitude>
+<md:location id="event2687779.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-05T12:41:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687779.campaign3392908" legacyId="event2687779.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687779.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687779.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687779.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687780" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_039-1</md:label>
+<md:optionalLabel>station: 039</md:optionalLabel>
+<md:latitude>24.501</md:latitude>
+<md:longitude>-28.3718</md:longitude>
+<md:location id="event2687780.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-06T12:50:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687780.campaign3392908" legacyId="event2687780.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687780.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687780.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687780.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687781" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_040-1</md:label>
+<md:optionalLabel>station: 040</md:optionalLabel>
+<md:latitude>24.499</md:latitude>
+<md:longitude>-28.9843</md:longitude>
+<md:location id="event2687781.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-07T06:33:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687781.campaign3392908" legacyId="event2687781.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687781.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687781.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687781.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687782" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_043-1</md:label>
+<md:optionalLabel>station: 043</md:optionalLabel>
+<md:latitude>24.4992</md:latitude>
+<md:longitude>-30.8183</md:longitude>
+<md:location id="event2687782.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-08T06:21:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687782.campaign3392908" legacyId="event2687782.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687782.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687782.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687782.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687783" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_045-1</md:label>
+<md:optionalLabel>station: 045</md:optionalLabel>
+<md:latitude>24.501</md:latitude>
+<md:longitude>-32.0403</md:longitude>
+<md:location id="event2687783.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-09T07:19:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687783.campaign3392908" legacyId="event2687783.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687783.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687783.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687783.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687784" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_048-1</md:label>
+<md:optionalLabel>station: 048</md:optionalLabel>
+<md:latitude>24.5008</md:latitude>
+<md:longitude>-33.8727</md:longitude>
+<md:location id="event2687784.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-10T07:20:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687784.campaign3392908" legacyId="event2687784.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687784.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687784.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687784.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687785" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_052-1</md:label>
+<md:optionalLabel>station: 052</md:optionalLabel>
+<md:latitude>24.4998</md:latitude>
+<md:longitude>-34.7195</md:longitude>
+<md:location id="event2687785.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-11T11:28:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687785.campaign3392908" legacyId="event2687785.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687785.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687785.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687785.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687786" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_055-1</md:label>
+<md:optionalLabel>station: 055</md:optionalLabel>
+<md:latitude>24.5017</md:latitude>
+<md:longitude>-37.1078</md:longitude>
+<md:location id="event2687786.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-12T07:50:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687786.campaign3392908" legacyId="event2687786.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687786.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687786.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687786.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687787" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_059-1</md:label>
+<md:optionalLabel>station: 059</md:optionalLabel>
+<md:latitude>24.4998</md:latitude>
+<md:longitude>-38.9537</md:longitude>
+<md:location id="event2687787.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-13T11:48:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687787.campaign3392908" legacyId="event2687787.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687787.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687787.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687787.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687788" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_061-1</md:label>
+<md:optionalLabel>station: 061-1</md:optionalLabel>
+<md:latitude>24.5022</md:latitude>
+<md:longitude>-39.876</md:longitude>
+<md:location id="event2687788.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-14T03:29:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687788.campaign3392908" legacyId="event2687788.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687788.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687788.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687788.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687789" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_064-1</md:label>
+<md:optionalLabel>station: 064</md:optionalLabel>
+<md:latitude>24.4998</md:latitude>
+<md:longitude>-41.2633</md:longitude>
+<md:location id="event2687789.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-15T07:28:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687789.campaign3392908" legacyId="event2687789.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687789.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687789.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687789.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687790" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_068-1</md:label>
+<md:optionalLabel>station: 068</md:optionalLabel>
+<md:latitude>24.5002</md:latitude>
+<md:longitude>-43.1097</md:longitude>
+<md:location id="event2687790.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-16T08:17:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687790.campaign3392908" legacyId="event2687790.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687790.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687790.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687790.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687791" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_071-1</md:label>
+<md:optionalLabel>station: 071-1</md:optionalLabel>
+<md:latitude>24.4998</md:latitude>
+<md:longitude>-44.4953</md:longitude>
+<md:location id="event2687791.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-17T02:08:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687791.campaign3392908" legacyId="event2687791.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687791.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687791.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687791.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687792" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_075-1</md:label>
+<md:optionalLabel>station: 075</md:optionalLabel>
+<md:latitude>24.5</md:latitude>
+<md:longitude>-46.3437</md:longitude>
+<md:location id="event2687792.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-18T08:55:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687792.campaign3392908" legacyId="event2687792.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687792.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687792.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687792.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687793" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_078-1</md:label>
+<md:optionalLabel>station: 078-1</md:optionalLabel>
+<md:latitude>24.5007</md:latitude>
+<md:longitude>-47.7278</md:longitude>
+<md:location id="event2687793.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-19T03:15:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687793.campaign3392908" legacyId="event2687793.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687793.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687793.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687793.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687794" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_082-1</md:label>
+<md:optionalLabel>station: 082</md:optionalLabel>
+<md:latitude>24.5</md:latitude>
+<md:longitude>-49.5755</md:longitude>
+<md:location id="event2687794.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-20T11:57:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687794.campaign3392908" legacyId="event2687794.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687794.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687794.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687794.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687795" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_085-1</md:label>
+<md:optionalLabel>station: 085</md:optionalLabel>
+<md:latitude>24.5002</md:latitude>
+<md:longitude>-50.9612</md:longitude>
+<md:location id="event2687795.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-21T08:53:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687795.campaign3392908" legacyId="event2687795.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687795.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687795.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687795.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687796" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_088-1</md:label>
+<md:optionalLabel>station: 088</md:optionalLabel>
+<md:latitude>24.5</md:latitude>
+<md:longitude>-52.3467</md:longitude>
+<md:location id="event2687796.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-22T08:35:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687796.campaign3392908" legacyId="event2687796.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687796.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687796.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687796.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687797" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_091-1</md:label>
+<md:optionalLabel>station: 091</md:optionalLabel>
+<md:latitude>24.4865</md:latitude>
+<md:longitude>-54.0342</md:longitude>
+<md:location id="event2687797.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-23T08:13:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687797.campaign3392908" legacyId="event2687797.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687797.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687797.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687797.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687798" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_094-1</md:label>
+<md:optionalLabel>station: 094</md:optionalLabel>
+<md:latitude>24.5005</md:latitude>
+<md:longitude>-55.8743</md:longitude>
+<md:location id="event2687798.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-24T08:32:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687798.campaign3392908" legacyId="event2687798.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687798.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687798.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687798.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687799" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_097-1</md:label>
+<md:optionalLabel>station: 097</md:optionalLabel>
+<md:latitude>24.5008</md:latitude>
+<md:longitude>-57.7157</md:longitude>
+<md:location id="event2687799.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-25T07:43:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687799.campaign3392908" legacyId="event2687799.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687799.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687799.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687799.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687800" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_100-1</md:label>
+<md:optionalLabel>station: 100</md:optionalLabel>
+<md:latitude>24.5</md:latitude>
+<md:longitude>-59.553</md:longitude>
+<md:location id="event2687800.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-26T07:20:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687800.campaign3392908" legacyId="event2687800.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687800.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687800.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687800.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687801" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_104-1</md:label>
+<md:optionalLabel>station: 104</md:optionalLabel>
+<md:latitude>24.5012</md:latitude>
+<md:longitude>-62.0047</md:longitude>
+<md:location id="event2687801.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-27T15:39:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687801.campaign3392908" legacyId="event2687801.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687801.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687801.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687801.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687802" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_107-1</md:label>
+<md:optionalLabel>station: 107</md:optionalLabel>
+<md:latitude>24.5015</md:latitude>
+<md:longitude>-63.843</md:longitude>
+<md:location id="event2687802.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-02-28T15:36:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687802.campaign3392908" legacyId="event2687802.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687802.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687802.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687802.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687803" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_110-1</md:label>
+<md:optionalLabel>station: 110</md:optionalLabel>
+<md:latitude>24.5007</md:latitude>
+<md:longitude>-65.682</md:longitude>
+<md:location id="event2687803.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-03-01T15:02:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687803.campaign3392908" legacyId="event2687803.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687803.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687803.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687803.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687804" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_113-1</md:label>
+<md:optionalLabel>station: 113</md:optionalLabel>
+<md:latitude>24.4997</md:latitude>
+<md:longitude>-67.5202</md:longitude>
+<md:location id="event2687804.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-03-02T13:25:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687804.campaign3392908" legacyId="event2687804.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687804.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687804.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687804.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687805" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_116-1</md:label>
+<md:optionalLabel>station: 116</md:optionalLabel>
+<md:latitude>24.5007</md:latitude>
+<md:longitude>-69.1327</md:longitude>
+<md:location id="event2687805.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-03-03T11:19:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687805.campaign3392908" legacyId="event2687805.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687805.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687805.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687805.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687806" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_120-1</md:label>
+<md:optionalLabel>station: 120</md:optionalLabel>
+<md:latitude>26.2038</md:latitude>
+<md:longitude>-70.322</md:longitude>
+<md:location id="event2687806.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-03-05T07:26:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687806.campaign3392908" legacyId="event2687806.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687806.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687806.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687806.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687807" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_125-1</md:label>
+<md:optionalLabel>station: 125</md:optionalLabel>
+<md:latitude>26.2032</md:latitude>
+<md:longitude>-72.2647</md:longitude>
+<md:location id="event2687807.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-03-06T15:42:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687807.campaign3392908" legacyId="event2687807.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687807.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687807.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687807.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687808" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_128-1</md:label>
+<md:optionalLabel>station: 128</md:optionalLabel>
+<md:latitude>26.2035</md:latitude>
+<md:longitude>-73.4317</md:longitude>
+<md:location id="event2687808.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-03-07T09:40:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687808.campaign3392908" legacyId="event2687808.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687808.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687808.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687808.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687809" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_133-1</md:label>
+<md:optionalLabel>station: 133</md:optionalLabel>
+<md:latitude>26.2038</md:latitude>
+<md:longitude>-75.1557</md:longitude>
+<md:location id="event2687809.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-03-08T13:38:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687809.campaign3392908" legacyId="event2687809.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687809.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687809.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687809.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687810" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_137-1</md:label>
+<md:optionalLabel>station: 137</md:optionalLabel>
+<md:latitude>26.2042</md:latitude>
+<md:longitude>-75.8622</md:longitude>
+<md:location id="event2687810.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-03-09T08:54:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687810.campaign3392908" legacyId="event2687810.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687810.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687810.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687810.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687811" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_143-1</md:label>
+<md:optionalLabel>station: 143</md:optionalLabel>
+<md:latitude>26.2037</md:latitude>
+<md:longitude>-76.6218</md:longitude>
+<md:location id="event2687811.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-03-10T11:03:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687811.campaign3392908" legacyId="event2687811.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687811.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687811.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687811.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687812" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_149-1</md:label>
+<md:optionalLabel>station: 149</md:optionalLabel>
+<md:latitude>26.203</md:latitude>
+<md:longitude>-76.9525</md:longitude>
+<md:location id="event2687812.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-03-11T10:40:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687812.campaign3392908" legacyId="event2687812.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687812.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687812.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687812.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687813" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_157-1</md:label>
+<md:optionalLabel>station: 157</md:optionalLabel>
+<md:latitude>27.0003</md:latitude>
+<md:longitude>-79.3063</md:longitude>
+<md:location id="event2687813.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-03-13T15:55:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687813.campaign3392908" legacyId="event2687813.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687813.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687813.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687813.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:event displayTypeName="Event" id="event2687814" typeName="Generic Event">
+<md:label>MALASPINA_LEG8_161-1</md:label>
+<md:optionalLabel>station: 161-1</md:optionalLabel>
+<md:latitude>27.0012</md:latitude>
+<md:longitude>-79.5658</md:longitude>
+<md:location id="event2687814.loc1.term23747">
+<md:name>Subtropical North Atlantic</md:name>
+</md:location>
+<md:dateTime>2011-03-13T21:33:00</md:dateTime>
+<md:campaign displayTypeName="Campaign" id="event2687814.campaign3392908" legacyId="event2687814.campaign38674" typeName="Generic Campaign">
+<md:label>MALASPINA_LEG8</md:label>
+<md:name warning="deprecated">MALASPINA_LEG8</md:name>
+<md:dateTime>2011-01-17T00:00:00</md:dateTime>
+<md:start warning="deprecated">2011-01-17</md:start>
+<md:dateTime2>2011-03-16T00:00:00</md:dateTime2>
+<md:end warning="deprecated">2011-03-16</md:end>
+<md:basis id="event2687814.campaign3392908.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:responsible>Duarte, Carlos</md:responsible>
+<md:chiefScientist warning="deprecated">Duarte, Carlos</md:chiefScientist>
+</md:campaign>
+<md:basis id="event2687814.basis4926">
+<md:name>Sarmiento de Gamboa</md:name>
+<md:URI>https://www.utm.csic.es/en/instalaciones/sdg</md:URI>
+</md:basis>
+<md:method id="event2687814.method11344">
+<md:name>Multiple opening/closing net</md:name>
+<md:optionalName>MSN</md:optionalName>
+</md:method>
+<md:comment>used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</md:comment>
+</md:event>
+<md:size unit="data points">1161</md:size>
+<md:license id="license101">
+<md:label>CC-BY-3.0</md:label>
+<md:name>Creative Commons Attribution 3.0 Unported</md:name>
+<md:URI>https://creativecommons.org/licenses/by/3.0/</md:URI>
+</md:license>
+<md:comment>Data were collected in the framework of EURO-BASIN and MALASPINA-2010</md:comment>
+<md:matrixColumn behaviour="7" col="0" id="col0.ds1475834" source="event" type="string">
+<md:parameter id="col0.ds1475834.geocode500000">
+<md:name>Event label</md:name>
+<md:shortName>Event</md:shortName>
+</md:parameter>
+<md:caption>Event</md:caption>
+</md:matrixColumn>
+<md:matrixColumn behaviour="4" col="1" format="yyyy-MM-dd" id="col1.ds1475834" source="event" type="datetime">
+<md:parameter id="col1.ds1475834.geocode1599">
+<md:name>Date/Time of event</md:name>
+<md:shortName>Date/Time</md:shortName>
+</md:parameter>
+<md:caption>Date/Time</md:caption>
+</md:matrixColumn>
+<md:matrixColumn behaviour="2" col="2" format="###0.0000" id="col2.ds1475834" source="event" type="numeric">
+<md:parameter id="col2.ds1475834.geocode1600">
+<md:name>Latitude of event</md:name>
+<md:shortName>Latitude</md:shortName>
+</md:parameter>
+<md:caption>Latitude</md:caption>
+</md:matrixColumn>
+<md:matrixColumn behaviour="3" col="3" format="###0.0000" id="col3.ds1475834" source="event" type="numeric">
+<md:parameter id="col3.ds1475834.geocode1601">
+<md:name>Longitude of event</md:name>
+<md:shortName>Longitude</md:shortName>
+</md:parameter>
+<md:caption>Longitude</md:caption>
+</md:matrixColumn>
+<md:matrixColumn behaviour="1" col="4" format="##0" id="col4.ds1475833" source="geocode" type="numeric">
+<md:parameter id="col4.ds1475833.geocode1619">
+<md:name>DEPTH, water</md:name>
+<md:shortName>Depth water</md:shortName>
+<md:unit>m</md:unit>
+<md:term endOffset="5" fragment="1" id="col4.ds1475833.geocode1619.term1073131" semanticURI="urn:obo:pato:term:0001595" startOffset="0" terminologyId="14" terminologyLabel="PATO">
+<md:name>depth</md:name>
+<md:URI>http://purl.obolibrary.org/obo/PATO_0001595</md:URI>
+</md:term>
+<md:term endOffset="12" fragment="2" id="col4.ds1475833.geocode1619.term2606205" semanticURI="http://purl.obolibrary.org/obo/CHEBI_15377" startOffset="7" terminologyId="16" terminologyLabel="ChEBI">
+<md:name>water</md:name>
+<md:URI>http://purl.obolibrary.org/obo/CHEBI_15377</md:URI>
+</md:term>
+<md:term id="col4.ds1475833.geocode1619.term43863" semanticURI="http://qudt.org/1.1/vocab/quantity#Length" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Length</md:name>
+<md:optionalName>L</md:optionalName>
+<md:URI>http://dbpedia.org/resource/Length</md:URI>
+</md:term>
+</md:parameter>
+<md:caption>Depth water [m]</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="5" format="#0" id="col5.ds12136032" source="data" type="numeric">
+<md:parameter id="col5.ds12136032.param3">
+<md:name>Depth, top/min</md:name>
+<md:shortName>Depth top</md:shortName>
+<md:unit>m</md:unit>
+<md:term endOffset="5" fragment="1" id="col5.ds12136032.param3.term1073131" semanticURI="urn:obo:pato:term:0001595" startOffset="0" terminologyId="14" terminologyLabel="PATO">
+<md:name>depth</md:name>
+<md:URI>http://purl.obolibrary.org/obo/PATO_0001595</md:URI>
+</md:term>
+<md:term id="col5.ds12136032.param3.term43863" semanticURI="http://qudt.org/1.1/vocab/quantity#Length" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Length</md:name>
+<md:optionalName>L</md:optionalName>
+<md:URI>http://dbpedia.org/resource/Length</md:URI>
+</md:term>
+</md:parameter>
+<md:PI id="col5.ds12136032.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:caption>Depth top [m]</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="6" format="##0" id="col6.ds12136033" source="data" type="numeric">
+<md:parameter id="col6.ds12136033.param4">
+<md:name>Depth, bottom/max</md:name>
+<md:shortName>Depth bot</md:shortName>
+<md:unit>m</md:unit>
+<md:term endOffset="5" fragment="1" id="col6.ds12136033.param4.term1073131" semanticURI="urn:obo:pato:term:0001595" startOffset="0" terminologyId="14" terminologyLabel="PATO">
+<md:name>depth</md:name>
+<md:URI>http://purl.obolibrary.org/obo/PATO_0001595</md:URI>
+</md:term>
+<md:term endOffset="17" fragment="2" id="col6.ds12136033.param4.term38561" startOffset="14" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>maximal</md:name>
+<md:optionalName>max</md:optionalName>
+</md:term>
+<md:term id="col6.ds12136033.param4.term43863" semanticURI="http://qudt.org/1.1/vocab/quantity#Length" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Length</md:name>
+<md:optionalName>L</md:optionalName>
+<md:URI>http://dbpedia.org/resource/Length</md:URI>
+</md:term>
+</md:parameter>
+<md:PI id="col6.ds12136033.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:caption>Depth bot [m]</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="7" format="#0.00" id="col7.ds12136034" source="data" type="numeric">
+<md:parameter id="col7.ds12136034.param128283">
+<md:name>Plankton, biomass as dry weight</md:name>
+<md:shortName>Plank biom dw</md:shortName>
+<md:unit>mg/m**3</md:unit>
+<md:term endOffset="8" fragment="1" id="col7.ds12136034.param128283.term44375" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+<md:term endOffset="17" fragment="2" id="col7.ds12136034.param128283.term40594" startOffset="10" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>biomass</md:name>
+</md:term>
+<md:term endOffset="31" fragment="3" id="col7.ds12136034.param128283.term38519" startOffset="21" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>dry weight</md:name>
+<md:URI>https://en.wikipedia.org/wiki/Dry_matter</md:URI>
+</md:term>
+<md:term id="col7.ds12136034.param128283.term43792" semanticURI="http://qudt.org/1.1/vocab/quantity#Density" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Density</md:name>
+<md:URI>http://dbpedia.org/resource/Density</md:URI>
+</md:term>
+</md:parameter>
+<md:method id="col7.ds12136034.method775">
+<md:name>Weighed (scale)</md:name>
+</md:method>
+<md:PI id="col7.ds12136034.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 40-200 µm; precision ± 0.001 mg</md:comment>
+<md:caption>Plank biom dw [mg/m**3] (size fraction 40-200 µm; prec...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="8" format="#0.00" id="col8.ds12136035" source="data" type="numeric">
+<md:parameter id="col8.ds12136035.param128285">
+<md:name>Plankton, biomass as nitrogen</md:name>
+<md:shortName>Plank N</md:shortName>
+<md:unit>mg/m**3</md:unit>
+<md:term endOffset="8" fragment="1" id="col8.ds12136035.param128285.term44375" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+<md:term endOffset="17" fragment="2" id="col8.ds12136035.param128285.term40594" startOffset="10" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>biomass</md:name>
+</md:term>
+<md:term endOffset="29" fragment="3" id="col8.ds12136035.param128285.term38548" semanticURI="http://purl.obolibrary.org/obo/CHEBI_25555" startOffset="21" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>nitrogen</md:name>
+<md:optionalName>N</md:optionalName>
+<md:URI>https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:25555</md:URI>
+</md:term>
+<md:term id="col8.ds12136035.param128285.term43792" semanticURI="http://qudt.org/1.1/vocab/quantity#Density" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Density</md:name>
+<md:URI>http://dbpedia.org/resource/Density</md:URI>
+</md:term>
+</md:parameter>
+<md:method id="col8.ds12136035.method291">
+<md:name>Element analyser CHNS-O, Carlo Erba EA1108</md:name>
+<md:term id="col8.ds12136035.method291.term2299842" semanticURI="SDN:L22::TOOL1182" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>Carlo Erba EA 1108 elemental analyser</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L22/current/TOOL1182/</md:URI>
+</md:term>
+<md:term id="col8.ds12136035.method291.term67625" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chemical property sensors</md:name>
+</md:term>
+</md:method>
+<md:PI id="col8.ds12136035.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 40-200 µm</md:comment>
+<md:caption>Plank N [mg/m**3] (size fraction 40-200 µm, Elem...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="9" format="#0.00" id="col9.ds12136036" source="data" type="numeric">
+<md:parameter id="col9.ds12136036.param128284">
+<md:name>Plankton, biomass as carbon</md:name>
+<md:shortName>Plank C</md:shortName>
+<md:unit>mg/m**3</md:unit>
+<md:term endOffset="8" fragment="1" id="col9.ds12136036.param128284.term44375" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+<md:term endOffset="17" fragment="2" id="col9.ds12136036.param128284.term40594" startOffset="10" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>biomass</md:name>
+</md:term>
+<md:term endOffset="27" fragment="3" id="col9.ds12136036.param128284.term38477" semanticURI="http://purl.obolibrary.org/obo/CHEBI_27594" startOffset="21" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>carbon</md:name>
+<md:optionalName>C</md:optionalName>
+<md:URI>https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27594</md:URI>
+</md:term>
+<md:term id="col9.ds12136036.param128284.term43792" semanticURI="http://qudt.org/1.1/vocab/quantity#Density" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Density</md:name>
+<md:URI>http://dbpedia.org/resource/Density</md:URI>
+</md:term>
+</md:parameter>
+<md:method id="col9.ds12136036.method291">
+<md:name>Element analyser CHNS-O, Carlo Erba EA1108</md:name>
+<md:term id="col9.ds12136036.method291.term2299842" semanticURI="SDN:L22::TOOL1182" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>Carlo Erba EA 1108 elemental analyser</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L22/current/TOOL1182/</md:URI>
+</md:term>
+<md:term id="col9.ds12136036.method291.term67625" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chemical property sensors</md:name>
+</md:term>
+</md:method>
+<md:PI id="col9.ds12136036.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 40-200 µm</md:comment>
+<md:caption>Plank C [mg/m**3] (size fraction 40-200 µm, Elem...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="10" format="#0.00" id="col10.ds12136037" source="data" type="numeric">
+<md:parameter id="col10.ds12136037.param128286">
+<md:name>δ15N, plankton</md:name>
+<md:shortName>δ15N plank</md:shortName>
+<md:unit>‰ air</md:unit>
+<md:term endOffset="4" fragment="1" id="col10.ds12136037.param128286.term1073092" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>δ15N</md:name>
+<md:URI>http://en.wikipedia.org/wiki/List_of_elements_by_stability_of_isotopes</md:URI>
+</md:term>
+<md:term endOffset="14" fragment="2" id="col10.ds12136037.param128286.term44375" startOffset="6" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+</md:parameter>
+<md:method id="col10.ds12136037.method547">
+<md:name>Mass spectrometer Finnigan Delta Plus</md:name>
+<md:term id="col10.ds12136037.method547.term68027" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chromatographs &amp; spectrometers</md:name>
+</md:term>
+<md:term id="col10.ds12136037.method547.term2299515" semanticURI="SDN:L05::LAB16" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>mass spectrometers</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L05/current/LAB16/</md:URI>
+</md:term>
+</md:method>
+<md:PI id="col10.ds12136037.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 40-200 µm</md:comment>
+<md:caption>δ15N plank [‰ air] (size fraction 40-200 µm, Mass...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="11" format="##0.00" id="col11.ds12136038" source="data" type="numeric">
+<md:parameter id="col11.ds12136038.param128287">
+<md:name>δ13C, plankton</md:name>
+<md:shortName>δ13C plank</md:shortName>
+<md:unit>‰ PDB</md:unit>
+<md:term endOffset="4" fragment="1" id="col11.ds12136038.param128287.term1073089" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>δ13C</md:name>
+<md:URI>http://en.wikipedia.org/wiki/List_of_elements_by_stability_of_isotopes</md:URI>
+</md:term>
+<md:term endOffset="14" fragment="2" id="col11.ds12136038.param128287.term44375" startOffset="6" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+</md:parameter>
+<md:method id="col11.ds12136038.method547">
+<md:name>Mass spectrometer Finnigan Delta Plus</md:name>
+<md:term id="col11.ds12136038.method547.term68027" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chromatographs &amp; spectrometers</md:name>
+</md:term>
+<md:term id="col11.ds12136038.method547.term2299515" semanticURI="SDN:L05::LAB16" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>mass spectrometers</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L05/current/LAB16/</md:URI>
+</md:term>
+</md:method>
+<md:PI id="col11.ds12136038.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 40-200 µm</md:comment>
+<md:caption>δ13C plank [‰ PDB] (size fraction 40-200 µm, Mass...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="12" format="#0.00" id="col12.ds12136039" source="data" type="numeric">
+<md:parameter id="col12.ds12136039.param128283">
+<md:name>Plankton, biomass as dry weight</md:name>
+<md:shortName>Plank biom dw</md:shortName>
+<md:unit>mg/m**3</md:unit>
+<md:term endOffset="8" fragment="1" id="col12.ds12136039.param128283.term44375" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+<md:term endOffset="17" fragment="2" id="col12.ds12136039.param128283.term40594" startOffset="10" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>biomass</md:name>
+</md:term>
+<md:term endOffset="31" fragment="3" id="col12.ds12136039.param128283.term38519" startOffset="21" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>dry weight</md:name>
+<md:URI>https://en.wikipedia.org/wiki/Dry_matter</md:URI>
+</md:term>
+<md:term id="col12.ds12136039.param128283.term43792" semanticURI="http://qudt.org/1.1/vocab/quantity#Density" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Density</md:name>
+<md:URI>http://dbpedia.org/resource/Density</md:URI>
+</md:term>
+</md:parameter>
+<md:method id="col12.ds12136039.method775">
+<md:name>Weighed (scale)</md:name>
+</md:method>
+<md:PI id="col12.ds12136039.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 200-500 µm; precision ± 0.001 mg</md:comment>
+<md:caption>Plank biom dw [mg/m**3] (size fraction 200-500 µm; pre...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="13" format="#0.00" id="col13.ds12136040" source="data" type="numeric">
+<md:parameter id="col13.ds12136040.param128285">
+<md:name>Plankton, biomass as nitrogen</md:name>
+<md:shortName>Plank N</md:shortName>
+<md:unit>mg/m**3</md:unit>
+<md:term endOffset="8" fragment="1" id="col13.ds12136040.param128285.term44375" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+<md:term endOffset="17" fragment="2" id="col13.ds12136040.param128285.term40594" startOffset="10" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>biomass</md:name>
+</md:term>
+<md:term endOffset="29" fragment="3" id="col13.ds12136040.param128285.term38548" semanticURI="http://purl.obolibrary.org/obo/CHEBI_25555" startOffset="21" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>nitrogen</md:name>
+<md:optionalName>N</md:optionalName>
+<md:URI>https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:25555</md:URI>
+</md:term>
+<md:term id="col13.ds12136040.param128285.term43792" semanticURI="http://qudt.org/1.1/vocab/quantity#Density" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Density</md:name>
+<md:URI>http://dbpedia.org/resource/Density</md:URI>
+</md:term>
+</md:parameter>
+<md:method id="col13.ds12136040.method291">
+<md:name>Element analyser CHNS-O, Carlo Erba EA1108</md:name>
+<md:term id="col13.ds12136040.method291.term2299842" semanticURI="SDN:L22::TOOL1182" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>Carlo Erba EA 1108 elemental analyser</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L22/current/TOOL1182/</md:URI>
+</md:term>
+<md:term id="col13.ds12136040.method291.term67625" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chemical property sensors</md:name>
+</md:term>
+</md:method>
+<md:PI id="col13.ds12136040.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 200-500 µm</md:comment>
+<md:caption>Plank N [mg/m**3] (size fraction 200-500 µm, Ele...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="14" format="#0.00" id="col14.ds12136041" source="data" type="numeric">
+<md:parameter id="col14.ds12136041.param128284">
+<md:name>Plankton, biomass as carbon</md:name>
+<md:shortName>Plank C</md:shortName>
+<md:unit>mg/m**3</md:unit>
+<md:term endOffset="8" fragment="1" id="col14.ds12136041.param128284.term44375" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+<md:term endOffset="17" fragment="2" id="col14.ds12136041.param128284.term40594" startOffset="10" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>biomass</md:name>
+</md:term>
+<md:term endOffset="27" fragment="3" id="col14.ds12136041.param128284.term38477" semanticURI="http://purl.obolibrary.org/obo/CHEBI_27594" startOffset="21" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>carbon</md:name>
+<md:optionalName>C</md:optionalName>
+<md:URI>https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27594</md:URI>
+</md:term>
+<md:term id="col14.ds12136041.param128284.term43792" semanticURI="http://qudt.org/1.1/vocab/quantity#Density" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Density</md:name>
+<md:URI>http://dbpedia.org/resource/Density</md:URI>
+</md:term>
+</md:parameter>
+<md:method id="col14.ds12136041.method291">
+<md:name>Element analyser CHNS-O, Carlo Erba EA1108</md:name>
+<md:term id="col14.ds12136041.method291.term2299842" semanticURI="SDN:L22::TOOL1182" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>Carlo Erba EA 1108 elemental analyser</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L22/current/TOOL1182/</md:URI>
+</md:term>
+<md:term id="col14.ds12136041.method291.term67625" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chemical property sensors</md:name>
+</md:term>
+</md:method>
+<md:PI id="col14.ds12136041.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 200-500 µm</md:comment>
+<md:caption>Plank C [mg/m**3] (size fraction 200-500 µm, Ele...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="15" format="#0.00" id="col15.ds12136042" source="data" type="numeric">
+<md:parameter id="col15.ds12136042.param128286">
+<md:name>δ15N, plankton</md:name>
+<md:shortName>δ15N plank</md:shortName>
+<md:unit>‰ air</md:unit>
+<md:term endOffset="4" fragment="1" id="col15.ds12136042.param128286.term1073092" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>δ15N</md:name>
+<md:URI>http://en.wikipedia.org/wiki/List_of_elements_by_stability_of_isotopes</md:URI>
+</md:term>
+<md:term endOffset="14" fragment="2" id="col15.ds12136042.param128286.term44375" startOffset="6" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+</md:parameter>
+<md:method id="col15.ds12136042.method547">
+<md:name>Mass spectrometer Finnigan Delta Plus</md:name>
+<md:term id="col15.ds12136042.method547.term68027" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chromatographs &amp; spectrometers</md:name>
+</md:term>
+<md:term id="col15.ds12136042.method547.term2299515" semanticURI="SDN:L05::LAB16" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>mass spectrometers</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L05/current/LAB16/</md:URI>
+</md:term>
+</md:method>
+<md:PI id="col15.ds12136042.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 200-500 µm</md:comment>
+<md:caption>δ15N plank [‰ air] (size fraction 200-500 µm, Mas...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="16" format="##0.00" id="col16.ds12136043" source="data" type="numeric">
+<md:parameter id="col16.ds12136043.param128287">
+<md:name>δ13C, plankton</md:name>
+<md:shortName>δ13C plank</md:shortName>
+<md:unit>‰ PDB</md:unit>
+<md:term endOffset="4" fragment="1" id="col16.ds12136043.param128287.term1073089" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>δ13C</md:name>
+<md:URI>http://en.wikipedia.org/wiki/List_of_elements_by_stability_of_isotopes</md:URI>
+</md:term>
+<md:term endOffset="14" fragment="2" id="col16.ds12136043.param128287.term44375" startOffset="6" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+</md:parameter>
+<md:method id="col16.ds12136043.method547">
+<md:name>Mass spectrometer Finnigan Delta Plus</md:name>
+<md:term id="col16.ds12136043.method547.term68027" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chromatographs &amp; spectrometers</md:name>
+</md:term>
+<md:term id="col16.ds12136043.method547.term2299515" semanticURI="SDN:L05::LAB16" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>mass spectrometers</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L05/current/LAB16/</md:URI>
+</md:term>
+</md:method>
+<md:PI id="col16.ds12136043.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 200-500 µm</md:comment>
+<md:caption>δ13C plank [‰ PDB] (size fraction 200-500 µm, Mas...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="17" format="#0.00" id="col17.ds12136044" source="data" type="numeric">
+<md:parameter id="col17.ds12136044.param128283">
+<md:name>Plankton, biomass as dry weight</md:name>
+<md:shortName>Plank biom dw</md:shortName>
+<md:unit>mg/m**3</md:unit>
+<md:term endOffset="8" fragment="1" id="col17.ds12136044.param128283.term44375" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+<md:term endOffset="17" fragment="2" id="col17.ds12136044.param128283.term40594" startOffset="10" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>biomass</md:name>
+</md:term>
+<md:term endOffset="31" fragment="3" id="col17.ds12136044.param128283.term38519" startOffset="21" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>dry weight</md:name>
+<md:URI>https://en.wikipedia.org/wiki/Dry_matter</md:URI>
+</md:term>
+<md:term id="col17.ds12136044.param128283.term43792" semanticURI="http://qudt.org/1.1/vocab/quantity#Density" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Density</md:name>
+<md:URI>http://dbpedia.org/resource/Density</md:URI>
+</md:term>
+</md:parameter>
+<md:method id="col17.ds12136044.method775">
+<md:name>Weighed (scale)</md:name>
+</md:method>
+<md:PI id="col17.ds12136044.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 500-1000 µm; precision ± 0.001 mg</md:comment>
+<md:caption>Plank biom dw [mg/m**3] (size fraction 500-1000 µm; pr...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="18" format="#0.00" id="col18.ds12136045" source="data" type="numeric">
+<md:parameter id="col18.ds12136045.param128285">
+<md:name>Plankton, biomass as nitrogen</md:name>
+<md:shortName>Plank N</md:shortName>
+<md:unit>mg/m**3</md:unit>
+<md:term endOffset="8" fragment="1" id="col18.ds12136045.param128285.term44375" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+<md:term endOffset="17" fragment="2" id="col18.ds12136045.param128285.term40594" startOffset="10" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>biomass</md:name>
+</md:term>
+<md:term endOffset="29" fragment="3" id="col18.ds12136045.param128285.term38548" semanticURI="http://purl.obolibrary.org/obo/CHEBI_25555" startOffset="21" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>nitrogen</md:name>
+<md:optionalName>N</md:optionalName>
+<md:URI>https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:25555</md:URI>
+</md:term>
+<md:term id="col18.ds12136045.param128285.term43792" semanticURI="http://qudt.org/1.1/vocab/quantity#Density" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Density</md:name>
+<md:URI>http://dbpedia.org/resource/Density</md:URI>
+</md:term>
+</md:parameter>
+<md:method id="col18.ds12136045.method291">
+<md:name>Element analyser CHNS-O, Carlo Erba EA1108</md:name>
+<md:term id="col18.ds12136045.method291.term2299842" semanticURI="SDN:L22::TOOL1182" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>Carlo Erba EA 1108 elemental analyser</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L22/current/TOOL1182/</md:URI>
+</md:term>
+<md:term id="col18.ds12136045.method291.term67625" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chemical property sensors</md:name>
+</md:term>
+</md:method>
+<md:PI id="col18.ds12136045.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 500-1000 µm</md:comment>
+<md:caption>Plank N [mg/m**3] (size fraction 500-1000 µm, El...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="19" format="#0.00" id="col19.ds12136046" source="data" type="numeric">
+<md:parameter id="col19.ds12136046.param128284">
+<md:name>Plankton, biomass as carbon</md:name>
+<md:shortName>Plank C</md:shortName>
+<md:unit>mg/m**3</md:unit>
+<md:term endOffset="8" fragment="1" id="col19.ds12136046.param128284.term44375" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+<md:term endOffset="17" fragment="2" id="col19.ds12136046.param128284.term40594" startOffset="10" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>biomass</md:name>
+</md:term>
+<md:term endOffset="27" fragment="3" id="col19.ds12136046.param128284.term38477" semanticURI="http://purl.obolibrary.org/obo/CHEBI_27594" startOffset="21" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>carbon</md:name>
+<md:optionalName>C</md:optionalName>
+<md:URI>https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27594</md:URI>
+</md:term>
+<md:term id="col19.ds12136046.param128284.term43792" semanticURI="http://qudt.org/1.1/vocab/quantity#Density" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Density</md:name>
+<md:URI>http://dbpedia.org/resource/Density</md:URI>
+</md:term>
+</md:parameter>
+<md:method id="col19.ds12136046.method291">
+<md:name>Element analyser CHNS-O, Carlo Erba EA1108</md:name>
+<md:term id="col19.ds12136046.method291.term2299842" semanticURI="SDN:L22::TOOL1182" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>Carlo Erba EA 1108 elemental analyser</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L22/current/TOOL1182/</md:URI>
+</md:term>
+<md:term id="col19.ds12136046.method291.term67625" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chemical property sensors</md:name>
+</md:term>
+</md:method>
+<md:PI id="col19.ds12136046.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 500-1000 µm</md:comment>
+<md:caption>Plank C [mg/m**3] (size fraction 500-1000 µm, El...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="20" format="#0.00" id="col20.ds12136047" source="data" type="numeric">
+<md:parameter id="col20.ds12136047.param128286">
+<md:name>δ15N, plankton</md:name>
+<md:shortName>δ15N plank</md:shortName>
+<md:unit>‰ air</md:unit>
+<md:term endOffset="4" fragment="1" id="col20.ds12136047.param128286.term1073092" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>δ15N</md:name>
+<md:URI>http://en.wikipedia.org/wiki/List_of_elements_by_stability_of_isotopes</md:URI>
+</md:term>
+<md:term endOffset="14" fragment="2" id="col20.ds12136047.param128286.term44375" startOffset="6" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+</md:parameter>
+<md:method id="col20.ds12136047.method547">
+<md:name>Mass spectrometer Finnigan Delta Plus</md:name>
+<md:term id="col20.ds12136047.method547.term68027" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chromatographs &amp; spectrometers</md:name>
+</md:term>
+<md:term id="col20.ds12136047.method547.term2299515" semanticURI="SDN:L05::LAB16" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>mass spectrometers</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L05/current/LAB16/</md:URI>
+</md:term>
+</md:method>
+<md:PI id="col20.ds12136047.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 500-1000 µm</md:comment>
+<md:caption>δ15N plank [‰ air] (size fraction 500-1000 µm, Ma...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="21" format="##0.00" id="col21.ds12136048" source="data" type="numeric">
+<md:parameter id="col21.ds12136048.param128287">
+<md:name>δ13C, plankton</md:name>
+<md:shortName>δ13C plank</md:shortName>
+<md:unit>‰ PDB</md:unit>
+<md:term endOffset="4" fragment="1" id="col21.ds12136048.param128287.term1073089" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>δ13C</md:name>
+<md:URI>http://en.wikipedia.org/wiki/List_of_elements_by_stability_of_isotopes</md:URI>
+</md:term>
+<md:term endOffset="14" fragment="2" id="col21.ds12136048.param128287.term44375" startOffset="6" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+</md:parameter>
+<md:method id="col21.ds12136048.method547">
+<md:name>Mass spectrometer Finnigan Delta Plus</md:name>
+<md:term id="col21.ds12136048.method547.term68027" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chromatographs &amp; spectrometers</md:name>
+</md:term>
+<md:term id="col21.ds12136048.method547.term2299515" semanticURI="SDN:L05::LAB16" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>mass spectrometers</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L05/current/LAB16/</md:URI>
+</md:term>
+</md:method>
+<md:PI id="col21.ds12136048.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 500-1000 µm</md:comment>
+<md:caption>δ13C plank [‰ PDB] (size fraction 500-1000 µm, Ma...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="22" format="#0.00" id="col22.ds12136049" source="data" type="numeric">
+<md:parameter id="col22.ds12136049.param128283">
+<md:name>Plankton, biomass as dry weight</md:name>
+<md:shortName>Plank biom dw</md:shortName>
+<md:unit>mg/m**3</md:unit>
+<md:term endOffset="8" fragment="1" id="col22.ds12136049.param128283.term44375" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+<md:term endOffset="17" fragment="2" id="col22.ds12136049.param128283.term40594" startOffset="10" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>biomass</md:name>
+</md:term>
+<md:term endOffset="31" fragment="3" id="col22.ds12136049.param128283.term38519" startOffset="21" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>dry weight</md:name>
+<md:URI>https://en.wikipedia.org/wiki/Dry_matter</md:URI>
+</md:term>
+<md:term id="col22.ds12136049.param128283.term43792" semanticURI="http://qudt.org/1.1/vocab/quantity#Density" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Density</md:name>
+<md:URI>http://dbpedia.org/resource/Density</md:URI>
+</md:term>
+</md:parameter>
+<md:method id="col22.ds12136049.method775">
+<md:name>Weighed (scale)</md:name>
+</md:method>
+<md:PI id="col22.ds12136049.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 1000-2000 µm; precision ± 0.001 mg</md:comment>
+<md:caption>Plank biom dw [mg/m**3] (size fraction 1000-2000 µm; p...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="23" format="#0.00" id="col23.ds12136050" source="data" type="numeric">
+<md:parameter id="col23.ds12136050.param128285">
+<md:name>Plankton, biomass as nitrogen</md:name>
+<md:shortName>Plank N</md:shortName>
+<md:unit>mg/m**3</md:unit>
+<md:term endOffset="8" fragment="1" id="col23.ds12136050.param128285.term44375" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+<md:term endOffset="17" fragment="2" id="col23.ds12136050.param128285.term40594" startOffset="10" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>biomass</md:name>
+</md:term>
+<md:term endOffset="29" fragment="3" id="col23.ds12136050.param128285.term38548" semanticURI="http://purl.obolibrary.org/obo/CHEBI_25555" startOffset="21" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>nitrogen</md:name>
+<md:optionalName>N</md:optionalName>
+<md:URI>https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:25555</md:URI>
+</md:term>
+<md:term id="col23.ds12136050.param128285.term43792" semanticURI="http://qudt.org/1.1/vocab/quantity#Density" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Density</md:name>
+<md:URI>http://dbpedia.org/resource/Density</md:URI>
+</md:term>
+</md:parameter>
+<md:method id="col23.ds12136050.method291">
+<md:name>Element analyser CHNS-O, Carlo Erba EA1108</md:name>
+<md:term id="col23.ds12136050.method291.term2299842" semanticURI="SDN:L22::TOOL1182" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>Carlo Erba EA 1108 elemental analyser</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L22/current/TOOL1182/</md:URI>
+</md:term>
+<md:term id="col23.ds12136050.method291.term67625" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chemical property sensors</md:name>
+</md:term>
+</md:method>
+<md:PI id="col23.ds12136050.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 1000-2000 µm</md:comment>
+<md:caption>Plank N [mg/m**3] (size fraction 1000-2000 µm, E...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="24" format="#0.00" id="col24.ds12136051" source="data" type="numeric">
+<md:parameter id="col24.ds12136051.param128284">
+<md:name>Plankton, biomass as carbon</md:name>
+<md:shortName>Plank C</md:shortName>
+<md:unit>mg/m**3</md:unit>
+<md:term endOffset="8" fragment="1" id="col24.ds12136051.param128284.term44375" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+<md:term endOffset="17" fragment="2" id="col24.ds12136051.param128284.term40594" startOffset="10" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>biomass</md:name>
+</md:term>
+<md:term endOffset="27" fragment="3" id="col24.ds12136051.param128284.term38477" semanticURI="http://purl.obolibrary.org/obo/CHEBI_27594" startOffset="21" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>carbon</md:name>
+<md:optionalName>C</md:optionalName>
+<md:URI>https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27594</md:URI>
+</md:term>
+<md:term id="col24.ds12136051.param128284.term43792" semanticURI="http://qudt.org/1.1/vocab/quantity#Density" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Density</md:name>
+<md:URI>http://dbpedia.org/resource/Density</md:URI>
+</md:term>
+</md:parameter>
+<md:method id="col24.ds12136051.method291">
+<md:name>Element analyser CHNS-O, Carlo Erba EA1108</md:name>
+<md:term id="col24.ds12136051.method291.term2299842" semanticURI="SDN:L22::TOOL1182" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>Carlo Erba EA 1108 elemental analyser</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L22/current/TOOL1182/</md:URI>
+</md:term>
+<md:term id="col24.ds12136051.method291.term67625" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chemical property sensors</md:name>
+</md:term>
+</md:method>
+<md:PI id="col24.ds12136051.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 1000-2000 µm</md:comment>
+<md:caption>Plank C [mg/m**3] (size fraction 1000-2000 µm, E...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="25" format="#0.00" id="col25.ds12136052" source="data" type="numeric">
+<md:parameter id="col25.ds12136052.param128286">
+<md:name>δ15N, plankton</md:name>
+<md:shortName>δ15N plank</md:shortName>
+<md:unit>‰ air</md:unit>
+<md:term endOffset="4" fragment="1" id="col25.ds12136052.param128286.term1073092" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>δ15N</md:name>
+<md:URI>http://en.wikipedia.org/wiki/List_of_elements_by_stability_of_isotopes</md:URI>
+</md:term>
+<md:term endOffset="14" fragment="2" id="col25.ds12136052.param128286.term44375" startOffset="6" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+</md:parameter>
+<md:method id="col25.ds12136052.method547">
+<md:name>Mass spectrometer Finnigan Delta Plus</md:name>
+<md:term id="col25.ds12136052.method547.term68027" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chromatographs &amp; spectrometers</md:name>
+</md:term>
+<md:term id="col25.ds12136052.method547.term2299515" semanticURI="SDN:L05::LAB16" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>mass spectrometers</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L05/current/LAB16/</md:URI>
+</md:term>
+</md:method>
+<md:PI id="col25.ds12136052.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 1000-2000 µm</md:comment>
+<md:caption>δ15N plank [‰ air] (size fraction 1000-2000 µm, M...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="26" format="##0.00" id="col26.ds12136053" source="data" type="numeric">
+<md:parameter id="col26.ds12136053.param128287">
+<md:name>δ13C, plankton</md:name>
+<md:shortName>δ13C plank</md:shortName>
+<md:unit>‰ PDB</md:unit>
+<md:term endOffset="4" fragment="1" id="col26.ds12136053.param128287.term1073089" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>δ13C</md:name>
+<md:URI>http://en.wikipedia.org/wiki/List_of_elements_by_stability_of_isotopes</md:URI>
+</md:term>
+<md:term endOffset="14" fragment="2" id="col26.ds12136053.param128287.term44375" startOffset="6" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+</md:parameter>
+<md:method id="col26.ds12136053.method547">
+<md:name>Mass spectrometer Finnigan Delta Plus</md:name>
+<md:term id="col26.ds12136053.method547.term68027" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chromatographs &amp; spectrometers</md:name>
+</md:term>
+<md:term id="col26.ds12136053.method547.term2299515" semanticURI="SDN:L05::LAB16" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>mass spectrometers</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L05/current/LAB16/</md:URI>
+</md:term>
+</md:method>
+<md:PI id="col26.ds12136053.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 1000-2000 µm</md:comment>
+<md:caption>δ13C plank [‰ PDB] (size fraction 1000-2000 µm, M...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="27" format="#0.00" id="col27.ds12136054" source="data" type="numeric">
+<md:parameter id="col27.ds12136054.param128283">
+<md:name>Plankton, biomass as dry weight</md:name>
+<md:shortName>Plank biom dw</md:shortName>
+<md:unit>mg/m**3</md:unit>
+<md:term endOffset="8" fragment="1" id="col27.ds12136054.param128283.term44375" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+<md:term endOffset="17" fragment="2" id="col27.ds12136054.param128283.term40594" startOffset="10" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>biomass</md:name>
+</md:term>
+<md:term endOffset="31" fragment="3" id="col27.ds12136054.param128283.term38519" startOffset="21" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>dry weight</md:name>
+<md:URI>https://en.wikipedia.org/wiki/Dry_matter</md:URI>
+</md:term>
+<md:term id="col27.ds12136054.param128283.term43792" semanticURI="http://qudt.org/1.1/vocab/quantity#Density" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Density</md:name>
+<md:URI>http://dbpedia.org/resource/Density</md:URI>
+</md:term>
+</md:parameter>
+<md:method id="col27.ds12136054.method775">
+<md:name>Weighed (scale)</md:name>
+</md:method>
+<md:PI id="col27.ds12136054.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 2000-5000 µm; precision ± 0.001 mg</md:comment>
+<md:caption>Plank biom dw [mg/m**3] (size fraction 2000-5000 µm; p...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="28" format="#0.00" id="col28.ds12136055" source="data" type="numeric">
+<md:parameter id="col28.ds12136055.param128285">
+<md:name>Plankton, biomass as nitrogen</md:name>
+<md:shortName>Plank N</md:shortName>
+<md:unit>mg/m**3</md:unit>
+<md:term endOffset="8" fragment="1" id="col28.ds12136055.param128285.term44375" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+<md:term endOffset="17" fragment="2" id="col28.ds12136055.param128285.term40594" startOffset="10" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>biomass</md:name>
+</md:term>
+<md:term endOffset="29" fragment="3" id="col28.ds12136055.param128285.term38548" semanticURI="http://purl.obolibrary.org/obo/CHEBI_25555" startOffset="21" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>nitrogen</md:name>
+<md:optionalName>N</md:optionalName>
+<md:URI>https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:25555</md:URI>
+</md:term>
+<md:term id="col28.ds12136055.param128285.term43792" semanticURI="http://qudt.org/1.1/vocab/quantity#Density" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Density</md:name>
+<md:URI>http://dbpedia.org/resource/Density</md:URI>
+</md:term>
+</md:parameter>
+<md:method id="col28.ds12136055.method291">
+<md:name>Element analyser CHNS-O, Carlo Erba EA1108</md:name>
+<md:term id="col28.ds12136055.method291.term2299842" semanticURI="SDN:L22::TOOL1182" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>Carlo Erba EA 1108 elemental analyser</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L22/current/TOOL1182/</md:URI>
+</md:term>
+<md:term id="col28.ds12136055.method291.term67625" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chemical property sensors</md:name>
+</md:term>
+</md:method>
+<md:PI id="col28.ds12136055.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 2000-5000 µm</md:comment>
+<md:caption>Plank N [mg/m**3] (size fraction 2000-5000 µm, E...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="29" format="#0.00" id="col29.ds12136056" source="data" type="numeric">
+<md:parameter id="col29.ds12136056.param128284">
+<md:name>Plankton, biomass as carbon</md:name>
+<md:shortName>Plank C</md:shortName>
+<md:unit>mg/m**3</md:unit>
+<md:term endOffset="8" fragment="1" id="col29.ds12136056.param128284.term44375" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+<md:term endOffset="17" fragment="2" id="col29.ds12136056.param128284.term40594" startOffset="10" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>biomass</md:name>
+</md:term>
+<md:term endOffset="27" fragment="3" id="col29.ds12136056.param128284.term38477" semanticURI="http://purl.obolibrary.org/obo/CHEBI_27594" startOffset="21" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>carbon</md:name>
+<md:optionalName>C</md:optionalName>
+<md:URI>https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27594</md:URI>
+</md:term>
+<md:term id="col29.ds12136056.param128284.term43792" semanticURI="http://qudt.org/1.1/vocab/quantity#Density" terminologyId="13" terminologyLabel="PAN-Quantity">
+<md:name>Density</md:name>
+<md:URI>http://dbpedia.org/resource/Density</md:URI>
+</md:term>
+</md:parameter>
+<md:method id="col29.ds12136056.method291">
+<md:name>Element analyser CHNS-O, Carlo Erba EA1108</md:name>
+<md:term id="col29.ds12136056.method291.term2299842" semanticURI="SDN:L22::TOOL1182" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>Carlo Erba EA 1108 elemental analyser</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L22/current/TOOL1182/</md:URI>
+</md:term>
+<md:term id="col29.ds12136056.method291.term67625" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chemical property sensors</md:name>
+</md:term>
+</md:method>
+<md:PI id="col29.ds12136056.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 2000-5000 µm</md:comment>
+<md:caption>Plank C [mg/m**3] (size fraction 2000-5000 µm, E...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="30" format="#0.00" id="col30.ds12136057" source="data" type="numeric">
+<md:parameter id="col30.ds12136057.param128286">
+<md:name>δ15N, plankton</md:name>
+<md:shortName>δ15N plank</md:shortName>
+<md:unit>‰ air</md:unit>
+<md:term endOffset="4" fragment="1" id="col30.ds12136057.param128286.term1073092" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>δ15N</md:name>
+<md:URI>http://en.wikipedia.org/wiki/List_of_elements_by_stability_of_isotopes</md:URI>
+</md:term>
+<md:term endOffset="14" fragment="2" id="col30.ds12136057.param128286.term44375" startOffset="6" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+</md:parameter>
+<md:method id="col30.ds12136057.method547">
+<md:name>Mass spectrometer Finnigan Delta Plus</md:name>
+<md:term id="col30.ds12136057.method547.term68027" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chromatographs &amp; spectrometers</md:name>
+</md:term>
+<md:term id="col30.ds12136057.method547.term2299515" semanticURI="SDN:L05::LAB16" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>mass spectrometers</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L05/current/LAB16/</md:URI>
+</md:term>
+</md:method>
+<md:PI id="col30.ds12136057.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 2000-5000 µm</md:comment>
+<md:caption>δ15N plank [‰ air] (size fraction 2000-5000 µm, M...)</md:caption>
+</md:matrixColumn>
+<md:matrixColumn col="31" format="##0.00" id="col31.ds12136058" source="data" type="numeric">
+<md:parameter id="col31.ds12136058.param128287">
+<md:name>δ13C, plankton</md:name>
+<md:shortName>δ13C plank</md:shortName>
+<md:unit>‰ PDB</md:unit>
+<md:term endOffset="4" fragment="1" id="col31.ds12136058.param128287.term1073089" startOffset="0" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>δ13C</md:name>
+<md:URI>http://en.wikipedia.org/wiki/List_of_elements_by_stability_of_isotopes</md:URI>
+</md:term>
+<md:term endOffset="14" fragment="2" id="col31.ds12136058.param128287.term44375" startOffset="6" terminologyId="18" terminologyLabel="PAN-MicroBio">
+<md:name>plankton</md:name>
+</md:term>
+</md:parameter>
+<md:method id="col31.ds12136058.method547">
+<md:name>Mass spectrometer Finnigan Delta Plus</md:name>
+<md:term id="col31.ds12136058.method547.term68027" terminologyId="3" terminologyLabel="PAN-M&amp;D">
+<md:name>Chromatographs &amp; spectrometers</md:name>
+</md:term>
+<md:term id="col31.ds12136058.method547.term2299515" semanticURI="SDN:L05::LAB16" terminologyId="21" terminologyLabel="NERC-L05-L22">
+<md:name>mass spectrometers</md:name>
+<md:URI>http://vocab.nerc.ac.uk/collection/L05/current/LAB16/</md:URI>
+</md:term>
+</md:method>
+<md:PI id="col31.ds12136058.pi30726">
+<md:lastName>Bode</md:lastName>
+<md:firstName>Antonio</md:firstName>
+<md:eMail>antonio.bode@ieo.csic.es</md:eMail>
+<md:orcid>0000-0002-9535-2548</md:orcid>
+</md:PI>
+<md:comment>size fraction 2000-5000 µm</md:comment>
+<md:caption>δ13C plank [‰ PDB] (size fraction 2000-5000 µm, M...)</md:caption>
+</md:matrixColumn>
+<md:keywords>
+<md:techKeyword type="autoGenerated">supplement</md:techKeyword>
+<md:techKeyword type="autoGenerated">citable</md:techKeyword>
+<md:techKeyword id="keywords.term33871" type="fromDatabase">deNBIchemical</md:techKeyword>
+<md:techKeyword type="autoGenerated">author30726</md:techKeyword>
+<md:techKeyword type="autoGenerated">author47856</md:techKeyword>
+<md:techKeyword type="autoGenerated">author48011</md:techKeyword>
+<md:techKeyword type="autoGenerated">author48012</md:techKeyword>
+<md:techKeyword type="autoGenerated">author48013</md:techKeyword>
+<md:techKeyword type="autoGenerated">author48014</md:techKeyword>
+<md:techKeyword type="autoGenerated">award1615</md:techKeyword>
+<md:techKeyword type="autoGenerated">award7</md:techKeyword>
+<md:techKeyword type="autoGenerated">basis4926</md:techKeyword>
+<md:techKeyword type="autoGenerated">campaign3392908</md:techKeyword>
+<md:techKeyword type="autoGenerated">campaign38674</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687772</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687773</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687774</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687775</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687776</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687777</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687778</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687779</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687780</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687781</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687782</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687783</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687784</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687785</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687786</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687787</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687788</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687789</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687790</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687791</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687792</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687793</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687794</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687795</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687796</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687797</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687798</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687799</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687800</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687801</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687802</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687803</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687804</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687805</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687806</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687807</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687808</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687809</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687810</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687811</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687812</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687813</md:techKeyword>
+<md:techKeyword type="autoGenerated">event2687814</md:techKeyword>
+<md:techKeyword type="autoGenerated">funder20486</md:techKeyword>
+<md:techKeyword type="autoGenerated">funder20675</md:techKeyword>
+<md:techKeyword type="autoGenerated">geocode1599</md:techKeyword>
+<md:techKeyword type="autoGenerated">geocode1600</md:techKeyword>
+<md:techKeyword type="autoGenerated">geocode1601</md:techKeyword>
+<md:techKeyword type="autoGenerated">geocode1619</md:techKeyword>
+<md:techKeyword type="autoGenerated">geocode500000</md:techKeyword>
+<md:techKeyword type="autoGenerated">inst12421</md:techKeyword>
+<md:techKeyword type="autoGenerated">journal9533</md:techKeyword>
+<md:techKeyword type="autoGenerated">license101</md:techKeyword>
+<md:techKeyword type="autoGenerated">method11344</md:techKeyword>
+<md:techKeyword type="autoGenerated">method291</md:techKeyword>
+<md:techKeyword type="autoGenerated">method547</md:techKeyword>
+<md:techKeyword type="autoGenerated">method775</md:techKeyword>
+<md:techKeyword type="autoGenerated">param128283</md:techKeyword>
+<md:techKeyword type="autoGenerated">param128284</md:techKeyword>
+<md:techKeyword type="autoGenerated">param128285</md:techKeyword>
+<md:techKeyword type="autoGenerated">param128286</md:techKeyword>
+<md:techKeyword type="autoGenerated">param128287</md:techKeyword>
+<md:techKeyword type="autoGenerated">param3</md:techKeyword>
+<md:techKeyword type="autoGenerated">param4</md:techKeyword>
+<md:techKeyword type="autoGenerated">pi30726</md:techKeyword>
+<md:techKeyword type="autoGenerated">project4147</md:techKeyword>
+<md:techKeyword type="autoGenerated">project4180</md:techKeyword>
+<md:techKeyword type="autoGenerated">ref59645</md:techKeyword>
+<md:techKeyword type="autoGenerated">term1073089</md:techKeyword>
+<md:techKeyword type="autoGenerated">term1073092</md:techKeyword>
+<md:techKeyword type="autoGenerated">term1073131</md:techKeyword>
+<md:techKeyword type="autoGenerated">term2299515</md:techKeyword>
+<md:techKeyword type="autoGenerated">term2299842</md:techKeyword>
+<md:techKeyword type="autoGenerated">term23747</md:techKeyword>
+<md:techKeyword type="autoGenerated">term2606205</md:techKeyword>
+<md:techKeyword type="autoGenerated">term33871</md:techKeyword>
+<md:techKeyword type="autoGenerated">term38477</md:techKeyword>
+<md:techKeyword type="autoGenerated">term38519</md:techKeyword>
+<md:techKeyword type="autoGenerated">term38548</md:techKeyword>
+<md:techKeyword type="autoGenerated">term38561</md:techKeyword>
+<md:techKeyword type="autoGenerated">term40594</md:techKeyword>
+<md:techKeyword type="autoGenerated">term43792</md:techKeyword>
+<md:techKeyword type="autoGenerated">term43863</md:techKeyword>
+<md:techKeyword type="autoGenerated">term44375</md:techKeyword>
+<md:techKeyword type="autoGenerated">term67625</md:techKeyword>
+<md:techKeyword type="autoGenerated">term68027</md:techKeyword>
+<md:techKeyword type="autoGenerated">topotype1</md:techKeyword>
+</md:keywords>
+<md:technicalInfo>
+<md:entry key="xmlLastModified" value="2026-06-10T06:13:10Z"/>
+<md:entry key="lastModified" value="2021-02-19T08:20:24"/>
+<md:entry key="filename" value="biomass_isotops_plankton_malaspina_2010"/>
+<md:entry key="mimeType" value="text/tab-separated-values"/>
+<md:entry key="status" value="published"/>
+<md:entry key="status_num" value="4"/>
+<md:entry key="DOIRegistryStatus" value="registered"/>
+<md:entry key="DOIRegistryStatus_num" value="4"/>
+<md:entry key="DOIRegistrationDate" value="2013-08-14T03:09:22"/>
+<md:entry key="loginOption" value="unrestricted"/>
+<md:entry key="loginOption_num" value="1"/>
+</md:technicalInfo>
+</md:MetaData>

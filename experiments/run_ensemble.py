@@ -14,8 +14,8 @@ Four descriptive questions:
      spectra spanning more decades should sit closer to it and scatter less.
      If the dispersion is intrinsic, span should not matter.
 
-Estimators live in src/meta.py and are unit-tested; this script only selects
-data and reports.
+Estimators live in src/orthopolity/meta_analysis.py and are unit-tested; this
+script only selects data and reports.
 """
 from pathlib import Path
 import sys, json, csv, io
@@ -27,8 +27,9 @@ from scipy.stats import spearmanr
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
-from meta import (random_effects, digit_preference, round_number_excess,  # noqa: E402
-                  latent_shape, predicted_pass_fraction)
+from orthopolity.meta_analysis import (random_effects, digit_preference,  # noqa: E402
+                                       round_number_excess, latent_shape,
+                                       predicted_pass_fraction)
 RAW, OUT = ROOT / 'data' / 'raw', ROOT / 'results'
 PRE = json.loads((ROOT / 'configs' / 'prereg_2026-09-09.json').read_text())
 SEED = PRE['common']['seed']

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-04",
+  "stage": "After headers; before numerical calibration inspection",
+  "workbook": "1. Data summary.xlsx",
+  "sheet": "species metabolism",
+  "columns": "A:I",
+  "purpose": "Qualify the separately measured calibration, without fitting a cost curve or opening community observations",
+  "source_basis": "Ghedini et al. 2020 methods identify separate monoculture assays from Malerba et al. 2017. The named sheet has species, dilution, volume, calibration cell counts and oxygen rates.",
+  "allowed": [
+    "Decode only the named calibration worksheet and its referenced shared strings",
+    "Retain rows, cell references, missingness and primitive types in columns A:I",
+    "Describe species, light and dilution coverage, replication labels and size support",
+    "Check supplied per-cell rates against bulk oxygen rate divided by calibration cell number",
+    "Describe signs and missing values; do not discard observations to obtain positive costs"
+  ],
+  "stop_conditions": [
+    "A formula occurs in selected data cells: establish dependencies before interpreting its cached value",
+    "Unknown units or source linkage: do not guess calibration meaning",
+    "No independent size-bin observation bridge: do not substitute taxon means for measured size distributions"
+  ],
+  "deferred": [
+    "Any power or non-power fitting, bin selection, discrimination threshold or community forecast requires a separate numerical protocol",
+    "Community sheets and all other workbook contents remain unopened",
+    "No law score, no new registered empirical study, no claim that published summaries were unseen"
+  ]
+}

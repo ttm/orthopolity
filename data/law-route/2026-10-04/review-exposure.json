@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "review_date_local": "2026-10-04",
+  "timezone": "Europe/Rome",
+  "scope": "Methods-only feasibility review for a proposed chemical-stock study; no evaluated result or registry entry",
+  "article": {
+    "title": "Spatial patterns of plankton biomass and stable isotopes reflect the influence of the nitrogen-fixer Trichodesmium along the subtropical North Atlantic",
+    "doi": "10.1093/plankt/fbt011",
+    "retrieved_url": "https://www.researchgate.net/publication/256125879_Spatial_patterns_of_plankton_biomass_and_stable_isotopes_reflect_the_influence_of_the_nitrogen-fixer_Trichodesmium_along_the_subtropical_North_Atlantic"
+  },
+  "request": {
+    "tool": "web.run via functions.exec",
+    "open_reference": "turn72view0",
+    "requested_lineno": 440,
+    "response_length": "long",
+    "returned_reference": "turn73view0",
+    "returned_line_range": [184, 1081],
+    "retrieval_utc": null
+  },
+  "exposed": {
+    "published_table": "Beginning of Table I, starting at returned line 1010",
+    "categories": ["dry-weight biomass summaries", "delta15N summaries", "delta13C summaries"],
+    "coverage_reported": "Complete 40–200 micrometre row for western/central/eastern areas and beginning of 200–500 micrometre row, including its first dry-weight summary",
+    "elemental_nitrogen_stock_values_seen": false,
+    "raw_pangaea_observation_rows_retrieved": false,
+    "outcome_fits_or_scores_computed": false
+  },
+  "later_agent_clock_reading_utc": "2026-10-03 23:34:43 UTC",
+  "clock_scope": "Later audit clock reading, not the unknown source-retrieval time",
+  "interpretation": "Published summaries have been read; future analysis must retain retrospective/public-summary exposure qualification. A protocol freeze cannot establish global blinding. Raw chemical-stock outcomes remain unacquired for this proposal."
+}

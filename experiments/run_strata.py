@@ -12,7 +12,7 @@ from scipy.stats import spearmanr
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
-from meta import latent_shape, random_effects                          # noqa: E402
+from orthopolity.meta_analysis import latent_shape, random_effects  # noqa: E402
 sys.path.insert(0, str(ROOT / 'experiments'))
 from run_ensemble import load, PREDICTED, INVALID_SPAN_STUDIES                               # noqa: E402
 

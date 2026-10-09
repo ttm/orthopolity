@@ -1,0 +1,51 @@
+{
+  "client_date": "2026-10-09",
+  "recorded_utc": "2026-10-09T00:26:05.050700+00:00",
+  "source_commit": "f84667064f0477325ab05b3689c36d7a0b7a8c23",
+  "purpose": "Continuation of locally committed registered flare analysis; no claim of external registration or blinding.",
+  "input": "data/dataset-audit/2026-10-09/flare/ribbondb_v1.0.csv",
+  "input_sha256": "1fc2b1a869a85a0668207f98438c452198df141b8d1d452dac19968136d18e00",
+  "primary_column": " S_RBN [cm^2]",
+  "secondary_column": " PHI_RBN [Mx]",
+  "rows_preserved": 3137,
+  "duplicate_keys_retained": [
+    "20140414_0857_12036_C1.8",
+    "20141215_2116_12242_C4.5"
+  ],
+  "n_boot": 2000,
+  "n_gof": 500,
+  "seed": 20261008,
+  "prior_exposure": [
+    "Original handoff and registration read before acquisition.",
+    "Schema, row counts, positive/finite checks, duplicate event keys and source methods inspected before analysis.",
+    "Source-audit agent encountered published reconnection-flux/energy frequency exponent 1.6; no published ribbon-area index located or read.",
+    "No empirical area or flux exponent, histogram, fitted tail or hypothesis outcome computed before this record."
+  ],
+  "implementation_caveats_known_before_run": [
+    "Preserve original script unchanged, including its bounded fixed-threshold goodness-of-fit calculation while primary CSN estimate is unbounded and reselects threshold in its uncertainty bootstrap.",
+    "Repeated flares within active regions are treated as independent by original bootstrap; no dependence correction added.",
+    "CSV contains two duplicate event pairs; all source rows remain in registered primary."
+  ],
+  "sources": [
+    {
+      "path": "results/flare-ribbons-2026-10-09/implementation/src/gof.py",
+      "git_path": "src/gof.py",
+      "sha256": "859a5e7deb32efc98bc41c58093126e63e0b0162108c3c275979c9f4e7c4333c"
+    },
+    {
+      "path": "results/flare-ribbons-2026-10-09/implementation/experiments/run_flare_ribbons.py",
+      "git_path": "experiments/run_flare_ribbons.py",
+      "sha256": "e183feeacb574ee742d22f077d5fd19a6f5f154fcefc6fd39b3e7abb9cfceb37"
+    },
+    {
+      "path": "results/flare-ribbons-2026-10-09/implementation/configs/prereg_2026-10-08_flare_ribbons.json",
+      "git_path": "configs/prereg_2026-10-08_flare_ribbons.json",
+      "sha256": "6887541d963f1c8ad3a32d35c3ee8dd685de54308c77d4042a771aa3c2af3a6b"
+    },
+    {
+      "path": "results/flare-ribbons-2026-10-09/implementation/requirements.txt",
+      "git_path": "requirements.txt",
+      "sha256": "d0066322d3ef6a963dfc3d2534ab36e16274c51b251f0aa9d5e6e4cdfab4504c"
+    }
+  ]
+}

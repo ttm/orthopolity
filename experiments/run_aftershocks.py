@@ -23,7 +23,7 @@ from scipy.special import gammaln
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
-from orthopolity import rounded_gr_b                   # noqa: E402
+from orthopolity.spectrum import rounded_gr_b          # noqa: E402
 
 RAW, OUT = ROOT / 'data' / 'raw', ROOT / 'results'
 PREREG = json.loads((ROOT / 'configs' / 'prereg_2026-10-08_aftershock_productivity.json').read_text())

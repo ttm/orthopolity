@@ -1,0 +1,11 @@
+{
+  "filename": "ewt-LICENSE.txt",
+  "url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/b7711cce01cdd4f5fcc0a8199b8a50d951b16c0c/LICENSE.txt",
+  "final_url": "https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/b7711cce01cdd4f5fcc0a8199b8a50d951b16c0c/LICENSE.txt",
+  "content_type": "text/plain; charset=utf-8",
+  "role": "CC BY-SA 4.0 annotations/database license",
+  "stage": "train",
+  "retrieved_at_utc": "2026-10-07T07:21:58.954644+00:00",
+  "size_bytes": 20014,
+  "sha256": "b3d1b0f4c6ae151f7eb78738f46ebd5ee140f8a7f76501ba26af123140d35ae7"
+}

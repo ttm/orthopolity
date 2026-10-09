@@ -1,0 +1,46 @@
+{
+  "run_id": "linguistic-resources-2026-10-07",
+  "completed_at_utc": "2026-10-07T13:40:17.367952+00:00",
+  "python": "3.11.6",
+  "numpy": "2.3.5",
+  "scipy": "1.16.3",
+  "source_hashes": {
+    "data/linguistic-resources/2026-10-07/ewt-README.md": "c2dc7edaf5937d18cb3ff142410fde7460e32faa69b2bd0a041abc3f957da281",
+    "data/linguistic-resources/2026-10-07/ewt-LICENSE.txt": "b3d1b0f4c6ae151f7eb78738f46ebd5ee140f8a7f76501ba26af123140d35ae7",
+    "data/linguistic-resources/2026-10-07/en_ewt-ud-train.conllu": "d68e06122a702464c613076523d56740f047e5bbe89dd90ec32737e04d952143",
+    "data/linguistic-resources/2026-10-07/cmudict.dict": "81917843c7f44ce2b094ac63873c2c7a4cf802040792c455ba3ca406891c3d22",
+    "data/linguistic-resources/2026-10-07/cmudict-LICENSE": "bd4ce8e44170a5f9f481310ca85c51de3c4f851a65e679b40e603b143bd3542a",
+    "data/linguistic-resources/2026-10-07/cmudict-README": "00c34e7564f1f6a68de02e12c123d801471da92bc3091f7d89b605f238bf8554",
+    "data/linguistic-resources/2026-10-07/en_ewt-ud-test.conllu": "fa024f43dc5da3c5ac02563bc9bd0e974f46cbb1560823976a8f342a37dc494a"
+  },
+  "freeze_sha256": "5fc000ebbab90d77efd693ad055308ebac4cf67dfbd71a8917e5ad4138ab1f98",
+  "frozen_files": {
+    "configs/linguistic_resources_2026-10-07.json": "3d465e8536976c4060076abc036b3ca21b6454039ed9d10b09cbac55d790f616",
+    "docs/linguistic-protocol.md": "86fa5b8e1e72024f07dab2ea5f57c2c84e0ac161099ffdf5a9e50c75fe5b23ec",
+    "src/orthopolity/linguistic_resources.py": "bec31592b1c3d10470e19ea662000e0a5325d762dd49a299aaf60a7bbe48e51f",
+    "experiments/run_linguistic_resources.py": "4eee579344b6dc695d65899d7f6a11e301bccc16ff04698d24dae963fca8c7eb",
+    "experiments/fetch_linguistic_resources.py": "22c74e4ea68ccb56a77c415e23ee8baaa5b3d4d33c73f4da3eca9500404c17a8",
+    "tests/test_linguistic_resources.py": "0eb4e886004454c7e5c74bbfc58165993b8e4dd5d7bda95b4a13caf44cb123cf",
+    "data/linguistic-resources/2026-10-07/ewt-README.md": "c2dc7edaf5937d18cb3ff142410fde7460e32faa69b2bd0a041abc3f957da281",
+    "data/linguistic-resources/2026-10-07/ewt-LICENSE.txt": "b3d1b0f4c6ae151f7eb78738f46ebd5ee140f8a7f76501ba26af123140d35ae7",
+    "data/linguistic-resources/2026-10-07/en_ewt-ud-train.conllu": "d68e06122a702464c613076523d56740f047e5bbe89dd90ec32737e04d952143",
+    "data/linguistic-resources/2026-10-07/cmudict.dict": "81917843c7f44ce2b094ac63873c2c7a4cf802040792c455ba3ca406891c3d22",
+    "data/linguistic-resources/2026-10-07/cmudict-LICENSE": "bd4ce8e44170a5f9f481310ca85c51de3c4f851a65e679b40e603b143bd3542a",
+    "data/linguistic-resources/2026-10-07/cmudict-README": "00c34e7564f1f6a68de02e12c123d801471da92bc3091f7d89b605f238bf8554",
+    "data/linguistic-resources/2026-10-07/frozen-fit.json": "2d1d0225b52cd773a3c8446d1c80847e53bf8d528749d4383038bbeb927482b5"
+  },
+  "outputs": {
+    "config.json": "8cb7700b47bb1356c48ec1ecaa78f50b7dd849efccbc97fc95e19f6b519fc5f6",
+    "coverage.csv": "10b8e2c8d7ad1efa4153956b6237af92e02a533e3839bf336c54db80f4782c6d",
+    "documents.csv": "11c9d52ed3412b7efef623749896dc2b63ef882b294c85eb5c0f466578d83a01",
+    "duplicate-exclusions.csv": "1e0f4f67665dba14520c7d461415c195f108fb3be2f875b86ca86e690cea478e",
+    "length-profiles.csv": "53fda8a230f46c61248e0f8cd4f6b1d2185447273f1c03ff9a8a45c7106bd6fb",
+    "linguistic-resources.png": "ba546c6c72142f1ed10476ffc76430c68e8b19973b8c045a74c8ceefbddcd304",
+    "linguistic-resources.svg": "2ccab243c4d5079f1453ec7b4699b871673e59aa96d3279fa6e8576dd367c12a",
+    "scores.csv": "865458b7156d2bf671b4ca3c3bee870509c8ae9b7ce051ae0cd1a73e1d262d42",
+    "summary.json": "89c3e04e05ab886f7d7ba36522405aabc4d808bb718d0e559a164460aca0f03e",
+    "type-profiles.csv": "1909602cc2c65a5612ddd05b024e712dcfde75e473a838554ebcfad75b4cfb95",
+    "vocabulary-and-forecasts.csv": "1fabf7f3b7de30d10a6c731e0e6bba648148f695e51c802f524f4239c00002db",
+    "word-exclusions.csv": "66b32eb8a0ed88d28e27b85c9ee69e8223bf44a8d002d35e3ec19622388fac42"
+  }
+}

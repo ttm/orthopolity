@@ -1,0 +1,12 @@
+{
+  "bytes": 4361,
+  "completed_utc": "2026-10-04T20:38:53.903427+00:00",
+  "http_status": 200,
+  "name": "hengill-datacite.json",
+  "requested_url": "https://api.datacite.org/dois/10.5526/ERDR-00000148",
+  "scope": "metadata only",
+  "sha256": "fe49851408de5116773a84698b24ae94c1b91de503e1c61edd3dee2bc91de548",
+  "started_utc": "2026-10-04T20:38:53.346482+00:00",
+  "tls_verification": true,
+  "transport": "system curl, TLS verification enabled, user config disabled"
+}

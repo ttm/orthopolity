@@ -1,0 +1,33 @@
+{
+  "amends": "configs/chemostat_response_2026-10-02.json",
+  "run_id": "chemostat-resource-response-2026-10-02",
+  "amendment": 1,
+  "recorded": "2 October 2026, before the prediction freeze and before any main-workbook outcome value (development or held-out) was decoded",
+  "inspected_before_writing": "Preliminary stoichiometry and no-herbivore calibration tables; main-workbook headers, identifiers, dates and times; main-workbook cell types and formula structure. Structure shows one row without algal group values: development vessel Le3, day 13 (source row 219). The authors' README and response script were read; published summaries had been read during screening.",
+  "unchanged": "Every field of the original configuration remains in force; this file resolves points it left open and adds declared secondary analyses.",
+  "implementation_specifications": {
+    "reader": "Cells are decoded from the first worksheet's XML. Before the freeze, a polyculture row's outcome cells are decoded only if its standardized time is at most 0; other polyculture outcome cells are skipped undecoded. Monoculture rows are decoded in full. Absent or empty values and textual NA, N/A or NaN are missing; any other text or an error cell in a numeric field is an error.",
+    "baseline": "Each vessel's latest observation at or before day 0 whose three algal group biovolumes are present, finite and nonnegative and whose resource total is positive.",
+    "development_support": "Development and no-herbivore trajectories use every observation from the baseline onward, including days 13-19, solely to bracket linear interpolation; no forecast or score lies outside days 0-12.",
+    "interpolation": "Linear in resource-share change and in log total-stock factor at the integer prediction-grid days; no extrapolation; a missing observation is not bridged.",
+    "averaging": "Equal weight per vessel among complete interpolated contributors; the total-stock factor is the exponentiated mean log factor (geometric mean).",
+    "forecast_times": "Each held-out vessel's own observation days within 0-12; all are integers on the prediction grid.",
+    "score_support": "Observed rows with complete, positive-total resource composition at which every composition model is available; day 0 included.",
+    "composition_only_models": "equal_group_stock and two_budget_cost_ratio issue no total-stock forecast; total-stock errors compare persistence, development_mean_response and preliminary_no_herbivore.",
+    "pooled_scenarios": "lower and upper are the two constituent species' densities of the analysed resource, ordered by value; midpoint is their arithmetic mean, equivalent to an equal-biovolume Monoraphidium/Chlorella mixture. Each scenario reruns calibration, forecasts and evaluation.",
+    "pooled_envelope": "For each scored observed row, the exact TV range over pooled densities between the two constituent species, against the frozen midpoint forecast of the same resource, integrated over the same adjacent-row support; the bounds hold even if the unknown mixture varies over time.",
+    "recovery": "Observed and model-forecast recovery status per held-out vessel on days 0-12 with the configured margin and run length; agreement is descriptive."
+  },
+  "additions": {
+    "two_budget_cost_ratio": "Secondary model derived from the orthopolic two-budget allocation rule N_j = w_j/(lambda_1 q_1j + lambda_2 q_2j). With nitrogen binding at baseline, a binding secondary carbon budget multiplies each group's resource share by 1/(1 + kappa r_j) before renormalizing, where r_j = rho_C,j/rho_N,j is the separately measured C:N cost ratio. The baseline share replaces the unknown weights w_j. kappa(t) >= 0 is fitted per prediction-grid day on development vessels only, minimizing their mean TV over kappa in {0} plus 801 log-spaced values on [1e-4, 1e4], with ties resolved to the smallest value; kappa = 0 is persistence. At least 3 complete development contributors are required. The pooled group's ratio follows the scenario's constituent species; the midpoint and biovolume-reference variants use the ratio of midpoint densities.",
+    "cost_ratio_ordinal_endpoint": "The rule's parameter-free prediction: the group with the largest measured C:N ratio has the lowest time-weighted mean log resource-share growth factor log(s_j(t)/s_j(baseline)) on days 0-12. This group ordering does not depend on the resource conversion. Report the count of held-out vessels satisfying it against a 1/3 reference, overall and among vessels with an observed departure beyond the recovery margin; no significance claim.",
+    "biovolume_reference": "Unit densities, equal to the authors' biovolume shares, run through the same forecasts and scores to show whether the resource conversion changes the conclusions.",
+    "quota_resolution_diagnostic": "Stored N quotas have 0.01 pmol/cell resolution, a 10-25% relative resolution for Monoraphidium and Chlorella cells. Densities from N = C/(C:N ratio) are reported as a diagnostic only and never replace the frozen estimator."
+  },
+  "primary_comparison": "Nitrogen midpoint variant; the original four models are the primary set and two_budget_cost_ratio is secondary. All five models are scored on one common support.",
+  "decision_rule": {
+    "practical_margin_tv": 0.02,
+    "pairwise_verdict": "Model A outperforms model B when A's primary score is at least 0.02 lower in all three nitrogen pooled-density scenarios and A has the lower time-weighted vessel score in a strict majority of scored held-out vessels in the nitrogen midpoint variant. The converse defines B outperforming A; otherwise the pair is not distinguished. These are descriptive verdicts, not significance tests.",
+    "pairs": [["development_mean_response", "persistence"], ["preliminary_no_herbivore", "persistence"], ["equal_group_stock", "persistence"], ["two_budget_cost_ratio", "persistence"], ["development_mean_response", "preliminary_no_herbivore"], ["development_mean_response", "two_budget_cost_ratio"]]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "run_id": "dimensionality-intervention-2026-10-02",
+  "config_reference": "configs/dimensionality_intervention_2026-10-02.json",
+  "config": {
+    "run_id": "dimensionality-intervention-2026-10-02",
+    "study": "Measured non-unit CPU cost dimensions and runtime allocation restrictions",
+    "evidence_kind": "actual_controlled_runtime_measurements",
+    "seed": 202610023,
+    "sizes": [
+      16,
+      24,
+      36,
+      54,
+      81
+    ],
+    "log_bin_edges": [
+      13.063945294843618,
+      19.595917942265423,
+      29.393876913398138,
+      44.09081537009721,
+      66.13622305514582,
+      99.20433458271873
+    ],
+    "kernels": [
+      "quadratic",
+      "cubic"
+    ],
+    "quadratic_repeats": 16,
+    "conditions": {
+      "equal_threads": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "restricted_classes": [
+        2,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    "trial_seconds": 4,
+    "trial_replicates_per_condition": 4,
+    "calibration_blocks": 12,
+    "calibration_jobs_per_block": 3,
+    "calibration_bootstrap_replicates": 1000,
+    "synchronization_lead_seconds": 0.25,
+    "maximum_start_lag_seconds": 0.1,
+    "maximum_stop_lag_seconds": 0.1,
+    "maximum_absolute_cpu_share_error_tolerance": 0.1,
+    "count_total_variation_tolerance": 0.1,
+    "dimension_criterion": "Independent nominal calibration interval must exclude one for a non-unit-cost example; no pure-power fit to abundance is a primary endpoint",
+    "primary_endpoint": "Actual per-thread user+system CPU resource shares by the fixed size classes, including completed jobs, censored partial jobs and loop overhead",
+    "secondary_endpoint": "Complete count shares from independent full CPU-cost calibration, conditioned on observed total completed jobs; pure-degree approximation and unit-degree alternative separately compared",
+    "allocation_hypothesis": "Continuously runnable pure-Python threads receive equal CPU time under the unmodified CPython GIL/OS mechanism; class CPU share proportional to declared thread count",
+    "competing_hypotheses": [
+      "equal job service per runnable thread",
+      "equal CPU resource per active class",
+      "unit cost degree with equal runnable-thread CPU",
+      "power-cost approximation from independent calibration"
+    ],
+    "restriction": "Replace the largest-size thread with a second smallest-size thread, keeping total runnable count five",
+    "measurement_scope": "Single process, five workload threads plus an ordinarily blocked controller; no per-class CPU quotas, manual job targets, priority or affinity changes, or switch-interval changes",
+    "uncertainty_scope": "Nominal block resampling for calibration dimension; all four actual allocation trials retained; frozen profile tolerances are exploratory engineering criteria without a claimed population false-positive rate",
+    "natural_dataset_candidate": {
+      "url": "https://doi.pangaea.de/10.1594/PANGAEA.912143",
+      "finding": "Primary metadata supplies cell volume, carbon per cell, counts and Si:N/grazing treatments. It does not directly supply per-cell nitrogen/silica requirements needed to predict a nutrient-budget intervention without further physiological assumptions. No natural outcome data were downloaded or analyzed for this study."
+    }
+  },
+  "config_sha256": "77b2d8a8d77ff01845f60a485b01b1a43f4f6702e6828b06d0d8aa301910cade",
+  "sources": [
+    {
+      "path": "experiments/run_dimensionality_intervention.py",
+      "sha256": "d741b7df6432b37df7692112b93a6bd363d3e5a3bbd502372a4bf9c803519b32"
+    },
+    {
+      "path": "src/orthopolity/dimensionality_intervention.py",
+      "sha256": "d03a5f49ccebea569120fd033aefc43cf6195dff7116d7bc236f2a2aa0a392dd"
+    },
+    {
+      "path": "src/orthopolity/figures.py",
+      "sha256": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40"
+    }
+  ],
+  "started_utc": "2026-10-02T08:44:31.589208+00:00",
+  "hardware_metadata": {
+    "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "implementation": "CPython",
+    "system": "Darwin",
+    "architecture": "arm64",
+    "logical_cpu_count": 10,
+    "gil_enabled": true,
+    "switch_interval_seconds": 0.005,
+    "thread_cpu_clock": {
+      "implementation": "clock_gettime(CLOCK_THREAD_CPUTIME_ID)",
+      "resolution": 4.2000000000000006e-08,
+      "monotonic": true,
+      "adjustable": false
+    },
+    "priority_affinity_and_switch_interval_changed": false
+  },
+  "seeds": {
+    "base": 202610023,
+    "cost_bootstrap": 202620023,
+    "worker_order": {
+      "quadratic": {
+        "equal_threads": [
+          202613023,
+          202613123,
+          202613223,
+          202613323
+        ],
+        "restricted_classes": [
+          202613024,
+          202613124,
+          202613224,
+          202613324
+        ]
+      },
+      "cubic": {
+        "equal_threads": [
+          202613033,
+          202613133,
+          202613233,
+          202613333
+        ],
+        "restricted_classes": [
+          202613034,
+          202613134,
+          202613234,
+          202613334
+        ]
+      }
+    }
+  },
+  "original_source_snapshots": [
+    {
+      "path": "data/dimensionality-intervention/2026-10-02/original-sources/experiments/run_dimensionality_intervention.py",
+      "sha256": "d741b7df6432b37df7692112b93a6bd363d3e5a3bbd502372a4bf9c803519b32"
+    },
+    {
+      "path": "data/dimensionality-intervention/2026-10-02/original-sources/src/orthopolity/dimensionality_intervention.py",
+      "sha256": "d03a5f49ccebea569120fd033aefc43cf6195dff7116d7bc236f2a2aa0a392dd"
+    },
+    {
+      "path": "data/dimensionality-intervention/2026-10-02/original-sources/src/orthopolity/figures.py",
+      "sha256": "2504bc2724b67f805e38f3095003f6421f0e4e717470165f45ceebfefa6a4d40"
+    }
+  ],
+  "original_configuration_snapshot": "data/dimensionality-intervention/2026-10-02/original-config.json"
+}

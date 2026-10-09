@@ -4,6 +4,18 @@ Last updated 9 October 2026. **Read this first in a new session.** It records wh
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
+**Unified main, 9 October:** at the user's request, `py314-and-package-names`
+was merged with the current `origin/main`, preserving both histories and using
+the package layout for all runners. The merged suite passes 419 tests; the
+28-run registry verifies all 704 file references. The prior assessment below
+records the earlier catalogue session; the broader programme and subsequent
+studies are in [research-brief.md](research-brief.md) and
+[ongoing-research.md](ongoing-research.md).
+The [flare-ribbon test has now run](flare-ribbons-run-2026-10-09.md):
+α = 3.163 [2.962, 3.457], registered verdict inconclusive, both predictions
+excluded under the implemented uncertainty model. The full HydroLAKES archive
+is downloaded and verified; the lake analyses are the next continuation.
+
 ## 1. What the authors intend
 
 Positions stated by the lead author (Renato Fabbri), on behalf of himself and more senior

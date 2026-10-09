@@ -1,0 +1,48 @@
+{
+  "artifacts": [
+    {
+      "path": "results/chemostat-response/posthoc-diagnostics.json",
+      "sha256": "f2234783bb4a7280244e04728b8351a8bc8eb575120d12abd1f4443688f16f47"
+    },
+    {
+      "path": "results/chemostat-response/heldout-trajectories.png",
+      "sha256": "33da397d721d6624294620f2a28720801317d11b4818d0cbdd6df0ac8f0fa023"
+    },
+    {
+      "path": "results/chemostat-response/heldout-trajectories.svg",
+      "sha256": "135a8ac38bd2b89bb429eb7e8b836aae6806ae25b700237ce771bd3deae9c941"
+    },
+    {
+      "path": "results/chemostat-response/scores.png",
+      "sha256": "a0f7f5d0909556cc483f3df6d22740c0a73a0eb9199b6b9826bf3624720f9f92"
+    },
+    {
+      "path": "results/chemostat-response/scores.svg",
+      "sha256": "2081c8fac4909f6cd224b4303ccdf5c029ee2b1fb2207cdc0492685515036806"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "results/chemostat-response/study.json",
+      "sha256": "55d6a3dfcb0bf2b92a919d45793f38b0aa4342e25110177972562a83baa8302c"
+    },
+    {
+      "path": "data/chemostat-response/2026-10-02/frozen-forecasts.json",
+      "sha256": "d878089a00148d136c795b106e9eebb806a6043ba02cff5ee94e7ccddf756e7b"
+    },
+    {
+      "path": "data/chemostat-response/2026-10-02/evaluation-records.json",
+      "sha256": "3156657e67176b1b007bf989cae85e41d4a09a189c71a5c1df84f00b8a065526"
+    },
+    {
+      "path": "data/chemostat-response/2026-10-02/development-records.json",
+      "sha256": "46ea35456e4359ce3591188fe6cdf7aa939f9e6cf538c77795bed4c786fbf1a8"
+    }
+  ],
+  "run_id": "chemostat-resource-response-2026-10-02",
+  "scope": "Post hoc: specified after the held-out evaluation; no forecast, score or verdict is changed",
+  "source": {
+    "path": "experiments/report_chemostat_response.py",
+    "sha256": "df2a0603e3fb127d906fbd980fe89f87887694ef7deae1cd2c104b3190af536d"
+  }
+}

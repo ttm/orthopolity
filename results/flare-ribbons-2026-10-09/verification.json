@@ -1,0 +1,18 @@
+{
+  "source_bytes_match_git": true,
+  "before_run_record_unchanged": true,
+  "independent_mle_checks": {
+    "primary": {
+      "n": 3137,
+      "n_tail": 565,
+      "independent_mle": 3.1626489853674786,
+      "matches_output": true
+    },
+    "secondary": {
+      "n": 3137,
+      "n_tail": 346,
+      "independent_mle": 3.120015722819195,
+      "matches_output": true
+    }
+  }
+}

@@ -16,9 +16,9 @@ import matplotlib.pyplot as plt
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
-from orthopolity import resource_spectrum, rounded_gr_b          # noqa: E402
-from gof import (compare_alternatives, flatness_equivalence,      # noqa: E402
-                 discrete_gr_gof)
+from orthopolity.spectrum import resource_spectrum, rounded_gr_b  # noqa: E402
+from orthopolity.goodness_of_fit import (compare_alternatives,    # noqa: E402
+                                         flatness_equivalence, discrete_gr_gof)
 
 RAW, OUT = ROOT / 'data' / 'raw', ROOT / 'results'
 SPEC = json.loads((ROOT / 'configs' / 'pilot.json').read_text())

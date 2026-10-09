@@ -1,0 +1,143 @@
+{
+  "outcomes": {
+    "biovolume": {
+      "all_lineage_replete_fit": {
+        "implied_cost_dimension": 1.0225369831909545,
+        "intercept": 11.893739568331059,
+        "lineages": 30,
+        "slope": -0.022536983190954606
+      },
+      "large_over_small": {
+        "capacity_ratio": 0.9748256700806556,
+        "cell_number_ratio": 0.09330381174551364,
+        "volume_ratio": 10.447865439190146
+      },
+      "treatment_summaries": {
+        "C|N-Deplete": {
+          "lineages": 10,
+          "mean_log_k": 11.853178040689809,
+          "mean_log_volume": 5.850190008747872,
+          "sd_log_k": 0.09864888741455018
+        },
+        "C|P-Deplete": {
+          "lineages": 10,
+          "mean_log_k": 12.19701045014681,
+          "mean_log_volume": 5.927159883468893,
+          "sd_log_k": 0.1633448113131201
+        },
+        "C|Replete": {
+          "lineages": 10,
+          "mean_log_k": 11.889274832552319,
+          "mean_log_volume": 5.217055467402383,
+          "sd_log_k": 0.20212579479287024
+        },
+        "L|N-Deplete": {
+          "lineages": 10,
+          "mean_log_k": 11.629241173064084,
+          "mean_log_volume": 6.758531016698082,
+          "sd_log_k": 0.07076075198404636
+        },
+        "L|P-Deplete": {
+          "lineages": 10,
+          "mean_log_k": 11.95002482893786,
+          "mean_log_volume": 7.070469040911787,
+          "sd_log_k": 0.09628989232845116
+        },
+        "L|Replete": {
+          "lineages": 10,
+          "mean_log_k": 11.697432904982703,
+          "mean_log_volume": 6.808486077890518,
+          "sd_log_k": 0.13643123072094374
+        },
+        "S|N-Deplete": {
+          "lineages": 9,
+          "mean_log_k": 11.601340933794383,
+          "mean_log_volume": 4.914690258663666,
+          "sd_log_k": 0.15359267839362895
+        },
+        "S|P-Deplete": {
+          "lineages": 10,
+          "mean_log_k": 11.73471843348878,
+          "mean_log_volume": 4.521630787698376,
+          "sd_log_k": 0.16731006292158207
+        },
+        "S|Replete": {
+          "lineages": 10,
+          "mean_log_k": 11.72292952887088,
+          "mean_log_volume": 4.4620883845368,
+          "sd_log_k": 0.21726769745897492
+        }
+      }
+    },
+    "optical_density": {
+      "all_lineage_replete_fit": {
+        "implied_cost_dimension": 1.011753539062586,
+        "intercept": -0.543474135205186,
+        "lineages": 30,
+        "slope": -0.011753539062585942
+      },
+      "large_over_small": {
+        "capacity_ratio": 0.9869080078821363,
+        "cell_number_ratio": 0.09446025253926267,
+        "volume_ratio": 10.447865439190146
+      },
+      "treatment_summaries": {
+        "C|N-Deplete": {
+          "lineages": 10,
+          "mean_log_k": -0.5640672041651631,
+          "mean_log_volume": 5.850190008747872,
+          "sd_log_k": 0.051675176524507045
+        },
+        "C|P-Deplete": {
+          "lineages": 10,
+          "mean_log_k": -0.384304382702723,
+          "mean_log_volume": 5.927159883468893,
+          "sd_log_k": 0.08509252165556247
+        },
+        "C|Replete": {
+          "lineages": 10,
+          "mean_log_k": -0.5453037224078936,
+          "mean_log_volume": 5.217055467402383,
+          "sd_log_k": 0.10589918369852526
+        },
+        "L|N-Deplete": {
+          "lineages": 10,
+          "mean_log_k": -0.6818764670166239,
+          "mean_log_volume": 6.758531016698082,
+          "sd_log_k": 0.03741972779478695
+        },
+        "L|P-Deplete": {
+          "lineages": 10,
+          "mean_log_k": -0.5131910896627063,
+          "mean_log_volume": 7.070469040911787,
+          "sd_log_k": 0.05043628528246887
+        },
+        "L|Replete": {
+          "lineages": 10,
+          "mean_log_k": -0.6460425666483035,
+          "mean_log_volume": 6.808486077890518,
+          "sd_log_k": 0.07200555042208028
+        },
+        "S|N-Deplete": {
+          "lineages": 9,
+          "mean_log_k": -0.6967447313262833,
+          "mean_log_volume": 4.914690258663666,
+          "sd_log_k": 0.08105832730417041
+        },
+        "S|P-Deplete": {
+          "lineages": 10,
+          "mean_log_k": -0.62647131364687,
+          "mean_log_volume": 4.521630787698376,
+          "sd_log_k": 0.08807877173702999
+        },
+        "S|Replete": {
+          "lineages": 10,
+          "mean_log_k": -0.6328641189890745,
+          "mean_log_volume": 4.4620883845368,
+          "sd_log_k": 0.11455950019829918
+        }
+      }
+    }
+  },
+  "scope": "Post hoc: specified after the held-out evaluation; no forecast, score or verdict is changed"
+}

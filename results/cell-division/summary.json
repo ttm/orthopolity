@@ -1,0 +1,114 @@
+{
+  "calibration_diagnostics": {
+    "LB": {
+      "division_to_birth_cv": 0.9570004495986651,
+      "division_to_twice_birth_mean": 0.9644226205687999
+    },
+    "M9-succinate": {
+      "division_to_birth_cv": 0.9053892310872772,
+      "division_to_twice_birth_mean": 1.084892375779521
+    }
+  },
+  "empirical_scope": "Published lognormal summaries of cell length; independent experimental settings, not independently measured biomass or verified common growth",
+  "exposure": "Retrospective public-paper reanalysis. Qualitative batch findings, calibration figure and article text read before freeze. Source article XML retained before freeze contains qualitative target information. Figure 1 numerical target annotations not read before freeze; it is acquired afterwards. No external preregistration, global blinding, raw-cell likelihood, or new measurements.",
+  "observed": {
+    "LB": {
+      "cv": 0.39569404408362974,
+      "mean": 3.2842
+    },
+    "M9-succinate": {
+      "cv": 0.21457212239783122,
+      "mean": 2.0094
+    }
+  },
+  "population_improves_both_endpoints_over_lineage": {
+    "LB": false,
+    "M9-succinate": false
+  },
+  "predictions": {
+    "LB": {
+      "birth_lineage": {
+        "cv": 0.41261288059898477,
+        "mean": 3.9516859864989597,
+        "variance": 2.6585841810566646
+      },
+      "birth_population": {
+        "cv": 0.413925230188815,
+        "mean": 3.373662560804126,
+        "variance": 1.9500559905344081
+      },
+      "division_population": {
+        "cv": 0.40042466663171067,
+        "mean": 3.28446458657576,
+        "variance": 1.7297001083165464
+      },
+      "fixed_birth_population": {
+        "cv": 0.20170396749395852,
+        "mean": 3.7971988845434925,
+        "variance": 0.5866182512216568
+      }
+    },
+    "M9-succinate": {
+      "birth_lineage": {
+        "cv": 0.2548844159741738,
+        "mean": 2.1514911144777114,
+        "variance": 0.3007223311663782
+      },
+      "birth_population": {
+        "cv": 0.25681352202178576,
+        "mean": 2.018372987261659,
+        "variance": 0.268682032087741
+      },
+      "division_population": {
+        "cv": 0.24778617580934448,
+        "mean": 2.199115064297811,
+        "variance": 0.29692724806625886
+      },
+      "fixed_birth_population": {
+        "cv": 0.20170396749395852,
+        "mean": 2.067380780738093,
+        "variance": 0.17388808743475342
+      }
+    }
+  },
+  "run_id": "cell-division-summary-2026-10-08",
+  "scores": {
+    "LB": {
+      "birth_lineage": {
+        "cv": 0.04186852159382959,
+        "mean": 0.18501922879560742
+      },
+      "birth_population": {
+        "cv": 0.045044057423371295,
+        "mean": 0.026875876429647182
+      },
+      "division_population": {
+        "cv": 0.011884353835335272,
+        "mean": 8.05602333368376e-05
+      },
+      "fixed_birth_population": {
+        "cv": 0.6738401816433386,
+        "mean": 0.14514056819222418
+      }
+    },
+    "M9-succinate": {
+      "birth_lineage": {
+        "cv": 0.17216425490200882,
+        "mean": 0.06832497332218716
+      },
+      "birth_population": {
+        "cv": 0.17970430946892002,
+        "mean": 0.004455564965745928
+      },
+      "division_population": {
+        "cv": 0.14392026313582754,
+        "mean": 0.09021886589558059
+      },
+      "fixed_birth_population": {
+        "cv": 0.061844801769505665,
+        "mean": 0.02844631271880366
+      }
+    }
+  },
+  "uncertainty": "No sampling uncertainty estimated from rounded fitted moments; no significance test"
+}

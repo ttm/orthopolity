@@ -1,0 +1,12 @@
+{
+  "bytes": 466041,
+  "completed_utc": "2026-10-05T07:54:14.387685+00:00",
+  "http_status": 200,
+  "name": "ghedini-original-experiment.xlsx",
+  "requested_url": "https://ndownloader.figshare.com/files/21286929",
+  "scope": "opaque ZIP; members undecoded",
+  "sha256": "04180442be31173ed2df817b9d746e546c5b8655883c2c3261b6ef788bc58677",
+  "started_utc": "2026-10-05T07:54:10.702364+00:00",
+  "tls_verification": true,
+  "transport": "system curl, TLS verification enabled, user config disabled"
+}

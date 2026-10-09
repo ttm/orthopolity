@@ -1,0 +1,12 @@
+{
+  "bytes": 13147,
+  "completed_utc": "2026-10-04T20:38:54.371061+00:00",
+  "http_status": 200,
+  "name": "seaflow-datacite.json",
+  "requested_url": "https://api.datacite.org/dois/10.5281/zenodo.10896099",
+  "scope": "metadata only",
+  "sha256": "37861912e42fce6cb890be588fffbbc3f196ac9c4b6b423ab5c00ade1db01ac1",
+  "started_utc": "2026-10-04T20:38:53.903640+00:00",
+  "tls_verification": true,
+  "transport": "system curl, TLS verification enabled, user config disabled"
+}

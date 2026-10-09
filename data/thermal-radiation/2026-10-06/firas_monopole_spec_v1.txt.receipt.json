@@ -1,0 +1,10 @@
+{
+  "filename": "firas_monopole_spec_v1.txt",
+  "url": "https://lambda.gsfc.nasa.gov/data/cobe/firas/monopole_spec/firas_monopole_spec_v1.txt",
+  "final_url": "https://lambda.gsfc.nasa.gov/data/cobe/firas/monopole_spec/firas_monopole_spec_v1.txt",
+  "retrieved_at_utc": "2026-10-06T08:41:55.329515+00:00",
+  "content_type": "text/plain",
+  "size_bytes": 2388,
+  "sha256": "df793c3dca09ebfa7dbc5aa0ec1951daa8884431bc30eff28a710d7516cf50fa",
+  "role": "Published reconstructed CMB monopole and original fitted residuals"
+}

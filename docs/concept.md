@@ -1,8 +1,9 @@
 # Orthopolity: definitions and limits
 
-This is a reconstruction of the idea, not a claim that the source essays already supplied
-these distinctions. [The source audit](source-audit.md) identifies where the reconstruction
-changes the original statements. The [manuscript](paper.md) gives the full argument.
+The [manuscript](paper.md) proposes orthopolity as a general natural law of
+resource allocation. These definitions make the proposal operational, including
+effective combinations of several resources and inverse inference from distributions.
+[The source audit](source-audit.md) identifies distinctions added to the original essays.
 
 ## 1. Specify what is equal
 
@@ -17,10 +18,43 @@ requires an error model. Resources need not be dynamically conserved for their t
 be additive. Currency, energy, biomass, and person-hours cannot be combined without a
 defined resource model and compatible units.
 
-**Orthopolity relative to $\mu$** is the hypothesis $\mathcal O_\mu(k)=C>0$ on $D$.
-It is equivalent to inverse mean-cost abundance. For positive finite
+The **neutral allocation form of orthopolity relative to $\mu$** is the hypothesis
+$\mathcal O_\mu(k)=C>0$ on $D$.
+It is equivalent to inverse mean-cost abundance. For $0<\mu(D)<\infty$ and positive finite
 $Z=\int_D1/\bar q\,d\mu$, object density is $p_N=1/(Z\bar q)$ and resource-weighted
 size density is uniform with respect to $\mu$. This equivalence is not a generative mechanism.
+
+### The tendency, its neutral signature, and constrained outcomes
+
+The broader principle concerns an underlying resource-equalizing tendency. The
+flat profile above describes its neutral allocation form. The actual outcome
+also depends on the system's construction, medium, other dynamics, and initial
+and boundary conditions. A constrained model may predict a non-flat profile
+while retaining an equalizing contribution to its dynamics.
+
+The [research brief](research-brief.md#the-tendency-and-the-constraints-of-the-system)
+uses supported trees and thrown, caught, or lodged apples to illustrate this
+distinction: gravity continues to act when another interaction or an initial
+condition changes the motion. Age and height distributions motivate analogous
+work on the processes and constraints that shape observed distributions.
+
+A departure from the neutral signature tests the specified allocation model and
+its applicability. It does not alone establish the absence of the broader
+tendency, and many such departures do not imply a general absence of evidence.
+A physical explanation should identify the constraint, derive its effect, and
+predict a response to changing it where possible. Until then, an unexplained
+departure remains unresolved; the existence of a constraint is not itself a
+quantitative explanation.
+
+The [class-exchange demonstration](class-exchange.md) now supplies an explicit
+example: a nonuniform fixed point in which equalizing and constraint currents
+cancel, followed by recovery under a proved spectral bound when the constraint
+is removed. The [electromagnetic derivation](physical-realizations.md) supplies
+a separate physical realization with an absorbing medium and causal recovery.
+The [thermal-radiation derivation](thermal-radiation.md) adds equality of classical
+mean energy per mode and its quantitative quantum departure. Independently counted
+modes fix the measure; a quantum restriction on allowed states supplies a different
+kind of constraint from the additive opposing currents above.
 
 ## 2. Linear and logarithmic allocation differ
 
@@ -62,7 +96,27 @@ Selecting the coordinate or measure to flatten the observed data defeats a test.
 ## 3. The hypothesis needs independent content
 
 For any positive $n_\mu$, one can choose $\bar q=C/n_\mu$. This proves that resource
-definition must precede, or be independently justified from, the abundance being explained.
+inversion from one profile cannot independently validate itself on that profile.
+It does not prohibit inverse inference: the inferred quantity can identify candidate
+resource structure, which independent measurements or predictions can then test.
+A forward test fixes its resource model before evaluating its new outcomes.
+
+For a potentially nonlinear combination, define
+$Q_i=Q_0F(\mathbf q_i/\mathbf s;z_i,\theta)$ and use
+$\bar q_{\mathrm{eff}}(k)=E[Q_i\mid k]$. Constituents enter in compatible
+dimensionless ratios; nonlinear composition is within the declared objects,
+while the effective total sums across them. The mean of the nonlinear function
+is generally not its value at mean inputs, and constituent conservation does
+not automatically conserve the effective total.
+
+With a specified constrained profile $a(k)>0$, the allocation law gives
+$\bar q_{\mathrm{eff}}n_\mu=Ca$. Observed abundance thus identifies
+$\bar q_{\mathrm{eff}}/a$ up to scale. Under logarithmic allocation, a Pareto
+density exponent $1+\alpha$ implies $\bar q_{\mathrm{eff}}/a\propto k^\alpha$.
+This constrains an effective combination without uniquely identifying its parts.
+The [full inverse formulation](effective-resources.md) shows how independent
+constituent information across environments can identify a nonlinear candidate
+and predict another profile without refitting.
 
 The exact case $q=k=m$ is informative: mean resource is fixed by definition and cannot be
 adjusted to fit abundance. When fluence is modelled from peak irradiance, the cost exponent
@@ -74,6 +128,13 @@ objects. Oscillation frequency is cycles per time, not a probability of observin
 A deterministic power response, such as a psychophysical law, is not a size distribution.
 
 ## 4. Neither conservation nor uniformity of ignorance derives it
+
+A natural law can be an empirically supported postulate without a deeper
+mechanistic derivation. The relevant distinction here is between conservation
+alone and an additional physical symmetry of resource allocations. The
+[scientific assessment](scientific-assessment.md#alternative-route-test-resource-symmetry-as-a-candidate-law)
+formalizes the latter and distinguishes equal expectations from typical or
+long-time allocations.
 
 A finite budget fixes $\int_D\mathcal O_\mu\,d\mu$, not its shape. All normalized
 $\mathcal O(u)\propto e^{\beta u}$ on a bounded log-domain can have the same budget.
@@ -115,6 +176,13 @@ $$E[\mathcal O_i(u)]=Ae^{\tau^2u^2/2}.$$
 Even equal-total normalized spectra with opposite slopes average to a nonconstant cosh
 profile on a symmetric domain. Therefore the earlier claim that orthopolity “holds in the
 mean” does not follow from the observed median slope near −1.
+
+More generally, a positive, fixed-weight arithmetic mixture of exact power spectra on
+a common log-domain is flat only if every contributing spectrum is flat. The
+[scientific assessment](scientific-assessment.md#a-mathematical-strengthening-available-now)
+gives a proof, an exact log-curvature identity, and a quantitative restriction for
+approximate flatness. These statements require exact power shapes; arbitrary curved
+profiles can average to a flat profile.
 
 Mean and variance do not imply Gaussian shape. Choosing a Gaussian is an extra assumption.
 A fitted dispersion and a matching in-sample fraction do not independently validate it.

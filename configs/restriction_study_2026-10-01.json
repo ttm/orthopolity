@@ -1,0 +1,14 @@
+{
+  "description": "Exploratory comparison of two imposed optimization closures; frozen inputs for this deterministic benchmark, not an external preregistration",
+  "domain": [1.0, 64.0],
+  "classes": 48,
+  "class_measure": "logarithmic width; midpoint costs define the finite model exactly",
+  "primary_cost_exponent": 2.0,
+  "auxiliary_cost_exponent": 3.0,
+  "primary_budget": 1.0,
+  "auxiliary_budgets": [20.0, 12.0, 8.0, 5.0, 2.0, 0.5],
+  "intervention": [12.0, 8.0],
+  "scope_budget": 2.0,
+  "primary_outputs": ["full primary-resource profiles", "budget use and feasibility", "multiplier-determined intervention ratios", "cross-model prediction discrepancy"],
+  "interpretation": "Proportional fairness has two upper bounds; relative entropy fixes primary total exactly. Compare equal primary totals only where proportional fairness binds the primary bound. No empirical fit or natural-objective claim."
+}

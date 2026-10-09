@@ -1,0 +1,57 @@
+{
+  "client_date": "2026-10-09",
+  "recorded_utc": "2026-10-09T00:26:56.739562+00:00",
+  "dataset": "USFS FPA FOD Seventh Edition, FPA_FOD_20260615",
+  "citation": "https://doi.org/10.2737/RDS-2013-0009.7",
+  "sample_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_FireOccurrenceCurrentEdition_01/MapServer/0/query?f=json&where=fire_year+%3D+2020&outFields=fod_id%2Cfire_year%2Cdiscovery_date%2Ccont_date%2Cfire_size%2Clatitude%2Clongitude%2Cstate%2Cnwcg_general_cause%2Cmtbs_id&orderByFields=fod_id+ASC&resultRecordCount=1000&returnGeometry=false",
+  "sample_rows": 1000,
+  "sample_only": true,
+  "exceeded_transfer_limit": true,
+  "selection": "First 1000 records of fire_year=2020 in ascending fod_id order; deterministic transport/schema sample, NOT a scientific analysis cohort.",
+  "null_counts": {
+    "fod_id": 0,
+    "fire_year": 0,
+    "discovery_date": 0,
+    "cont_date": 108,
+    "fire_size": 0,
+    "latitude": 0,
+    "longitude": 0,
+    "state": 0,
+    "nwcg_general_cause": 0,
+    "mtbs_id": 973
+  },
+  "scope": "Schema and access checks only; no distribution, quantiles, exponent or model fitting.",
+  "wumi_access": "Metadata API accessible; API payload download returned 401 and public file_stream returned 403. WUMI not counted as payload-verified.",
+  "files": [
+    {
+      "file": "fpa-fod-v7-2020-first1000.json",
+      "bytes": 243261,
+      "sha256": "ed46aff840ecff4eaecb3e18a6d2276cb80669a572cf507942d9d598a842c6a8"
+    },
+    {
+      "file": "fpa-fod-v7-layer.json",
+      "bytes": 39132,
+      "sha256": "ff6fc0c6deb55769ea12f9465fa5370263deffac8e8ce9739ae69d3c4559b611"
+    },
+    {
+      "file": "fpa-fod-v7-service.json",
+      "bytes": 18291,
+      "sha256": "cf1e47792814d94ff4c6c1f21a4b8f20a40bcb039eccd95794c4b829aa33b08f"
+    },
+    {
+      "file": "sample.headers.txt",
+      "bytes": 360,
+      "sha256": "217d88569aa8fdc1bea9457b28019cb12692ef0c39f234a870a11269434a50dc"
+    },
+    {
+      "file": "wumi-dataset-metadata.json",
+      "bytes": 10492,
+      "sha256": "aa5794fb1beaf23c9696b841439a22dd75325ee486646509d27d7264d56164e1"
+    },
+    {
+      "file": "wumi-file-metadata.json",
+      "bytes": 2739,
+      "sha256": "58afd9120b5e3624abf3e48c7ce5bbab12ca3f46113c4bcaffeb17e612b07cdf"
+    }
+  ]
+}

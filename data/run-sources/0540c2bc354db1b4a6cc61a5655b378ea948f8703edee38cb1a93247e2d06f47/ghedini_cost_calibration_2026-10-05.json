@@ -1,0 +1,73 @@
+{
+  "run_id": "ghedini-cost-calibration-2026-10-05",
+  "scope": "Retrospective calibration-only numerical gate, with previously exposed monoculture readings; no community outcomes, allocation-law verdict or external preregistration",
+  "input": {
+    "path": "data/measure-candidates/2026-10-04/ghedini-calibration-rows.json",
+    "sha256": "1ee736b9c439f2a2aa6f13af0b887512c2831adbdb8eda438e3c2bb61be436f9",
+    "raw_source": "data/measure-candidates/2026-10-04/ghedini-source.zip",
+    "raw_source_receipt": "data/measure-candidates/2026-10-04/ghedini-source.zip.receipt.json"
+  },
+  "grouping": "Arithmetic mean within species and recorded optical density; preserve all signed values and the missing row. Retain source-row memberships, usable counts, mean, sample SD and range. No division of SD by square root of row count.",
+  "coordinate": "Recorded fixed mean cell volume per species, in cubic micrometres",
+  "response": "Blank-corrected respiration, micromoles O2 per minute per cell; positive expected mean with potentially signed assay error",
+  "assay_condition": "OD750; equal nominal dilution/OD is not assumed equal physical biovolume concentration across species",
+  "diagnostic_domain_um3": [2.002144, 728.9686366],
+  "domain_scope": "Calibration mean-size span only. It is not a bound on all community cells and cannot authorize community forecasts.",
+  "size_reference": "Geometric mean of diagnostic domain endpoints; fixed in every fold",
+  "rate_scale_umol_min_cell": 1e-9,
+  "od_reference": 0.4,
+  "models": {
+    "power": "q(V,z) = A (V/V0)^d (z/0.4)^beta; A>0,d>0",
+    "additive": "q(V,z) = [A (V/V0)^d + C] (z/0.4)^beta; A>0,d>0,C>=0"
+  },
+  "cost_interpretation": "Positive conditional mean respiration functions. An additive fitted term does not establish a physical overhead intervention. Biological cost variation must not be conflated with assay error or deterministic individual q(V).",
+  "loss": "Squared residuals of signed species-by-OD arithmetic means on the original rate scale; working zero-centred additive error. This is a fitting loss without an iid likelihood, confidence interval or effective-sample-size claim.",
+  "fit_weightings": {
+    "equal_groups": "One equal weight for each species-by-OD mean, regardless of repeated-window row counts; divide all residuals by the fixed rate_scale so weighted SSE is dimensionless",
+    "species_rms": "Residuals divided by the per-species sqrt(mean over TRAINING groups of mean_rate^2 + sample_sd^2), floored at 1e-15 in rate units. Descriptive scale only; no standard error. Training scales recomputed within every fold."
+  },
+  "optimization": {
+    "log_scaled_amplitude_bounds": [-20, 20],
+    "degree_bounds": [0.01, 4.0],
+    "scaled_overhead_bounds": [0.0, 100.0],
+    "od_exponent_bounds": [-4.0, 4.0],
+    "degree_starts": [0.5, 1.0, 2.0],
+    "od_exponent_starts": [0.0, -0.5],
+    "scaled_overhead_starts": [0.0, 0.1, 1.0],
+    "max_nfev": 4000,
+    "ftol": 1e-10,
+    "xtol": 1e-10,
+    "gtol": 1e-10,
+    "nested_candidate": "Include the fitted power curve as an exact C=0 additive candidate; fitted additive loss cannot exceed power loss",
+    "near_optimal_tolerance": "Retain all converged starts within 1 percent of best weighted SSE plus 1e-12 absolute SSE. These are optimization/identification sensitivity candidates, not confidence draws.",
+    "technical_boundary_relative_tolerance": 1e-5
+  },
+  "folds": {
+    "species": "Hold out each entire species, including all four OD groups; explicitly flag the two endpoint-size folds as extrapolations",
+    "optical_density": "Hold out each entire OD level across all species; both models use the same common OD power multiplier to predict the omitted condition",
+    "condition_sensitivity": "Fit each OD level separately, with beta fixed to zero and an OD-specific amplitude. These test stability of shape under the common-multiplier assumption."
+  },
+  "prediction_metrics": "Pool squared held-out errors across groups for raw-rate RMSE; also report every fold, species-balanced scale RMSE and boundary/interior species summaries. Both models score the same finite group means. Metric scales may use observed held-out data for scoring, never for forecast fitting.",
+  "moment_forecasts": "Deterministically integrate normalized S and Q count densities over the fixed calibration domain. Shared budget and common OD multiplier cancel. Retain both mean-volume predictions and abs(m_Q/m_S-1) for every fit and near-optimal candidate. These are conditional diagnostics, not community forecasts.",
+  "numerical_gate": {
+    "purpose": "Pragmatic screen for this one additive family; thresholds are design choices, not natural constants or calibrated significance levels",
+    "minimum_species_cv_rmse_improvement": 0.10,
+    "density_cv_additive_must_not_be_worse": true,
+    "minimum_relative_moment_separation": 0.10,
+    "minimum_relative_crossfit_range_separation": 0.10,
+    "crossfit_range_separation": "Across the union of both weightings and the declared robust additive-fit candidates, require min(m_Q)/max(m_S)-1 >= the crossfit margin. A positive paired gap alone does not demonstrate discrimination under calibration sensitivity. These are deterministic ranges without confidence coverage.",
+    "robust_fit_set": "For both weightings: full fit, four interior species deletions, all four OD deletions, all four separate-OD fits, and their near-optimal additive candidates. Endpoint species deletions are reported but excluded from this within-domain stability gate.",
+    "bounds": "Flag technical-boundary solutions. Any robust-fit-set best solution hitting a bound other than the nested C=0 boundary prevents qualification.",
+    "pass_label": "conditional additive-family separation demonstrated; biological uncertainty and community-domain coverage still unresolved",
+    "fail_label": "this additive calibration route does not qualify a discriminating community forecast",
+    "remaining_requirements_even_if_passed": [
+      "Supported community size-domain coverage and observation model",
+      "Biological cost variability and calibration dependence/transfer uncertainty",
+      "Outcome-independent eligibility and community forecasts frozen before numerical community access"
+    ]
+  },
+  "uncertainty": "All deletion, condition, weighting and near-optimal ranges are deterministic sensitivity ranges. No bootstrap p-values, posterior probabilities, iid confidence intervals or inferred 231-independent-observation precision.",
+  "no_model_expansion_after_results": "Do not add other curves, clip negative values, revise weights/domain/margins or select an OD condition to rescue this gate. A later hypothesis needs a new protocol and run identifier.",
+  "sources_to_freeze": ["src/orthopolity/cost_calibration.py", "experiments/run_ghedini_cost_calibration.py"],
+  "reporting": "Register the completed calibration diagnostic as actual published measurement analysis; label it separately from an allocation study. Do not revise the paper unless a conclusion changes."
+}

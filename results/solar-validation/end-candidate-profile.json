@@ -1,0 +1,77 @@
+{
+  "n_blocks": 12,
+  "n_bins": 6,
+  "factor": 1.5,
+  "alpha": 0.05,
+  "log_widths": [
+    0.5756462732485108,
+    0.5756462732485126,
+    0.5756462732485108,
+    0.5756462732485126,
+    0.5756462732485108,
+    1.7269388197455342
+  ],
+  "seed": 202610022,
+  "point": {
+    "phi": [
+      1.6766974713692973,
+      1.175442668265084,
+      1.5044014006059185,
+      1.2870478824495313,
+      0.7886990615227434,
+      0.5225705052624756
+    ],
+    "log_phi": [
+      0.5168260678608262,
+      0.1616448155968309,
+      0.408395078619938,
+      0.2523511326224024,
+      -0.23737044848286404,
+      -0.648995365945136
+    ],
+    "max_abs_log_departure": 0.648995365945136,
+    "zero_bins": 0,
+    "zero_total": false
+  },
+  "centered_bootstrap": {
+    "decision": "unresolved",
+    "departure_lower": 0.0,
+    "departure_upper": 1.9333111327362857,
+    "departure_upper_unbounded": false,
+    "simultaneous_log_lower": [
+      -0.7674896989303236,
+      -1.122670951194319,
+      -0.8759206881712118,
+      -1.0319646341687474,
+      -1.5216862152740138,
+      -1.9333111327362857
+    ],
+    "simultaneous_log_upper": [
+      1.8011418346519759,
+      1.4459605823879806,
+      1.6927108454110877,
+      1.5366668994135522,
+      1.0469453183082857,
+      0.6353204008460138
+    ],
+    "radius": 1.2843157667911498,
+    "radius_unbounded": false,
+    "nominal_level": 0.95,
+    "bootstrap_replicates": 499,
+    "zero_bootstrap_profiles": 1,
+    "assumptions": "Approximate IID whole-block bootstrap; positive population bin means and sufficient moments/regularity for joint mean-vector approximation. Verify sampling design and calibrated regimes separately."
+  },
+  "percentile_max": {
+    "departure_upper": 1.9163727072408439,
+    "departure_upper_unbounded": false,
+    "equivalent": false,
+    "interpretation": "Historical whole-profile percentile-maximum upper component only; lower percentile and three-way extension are evaluated separately in the benchmark."
+  },
+  "bounded_reference": {
+    "available": false,
+    "decision": "unresolved",
+    "reason": "No independently established almost-sure block-resource bounds supplied"
+  },
+  "interval_endpoint_policy": "None in a log lower endpoint means minus infinity; in a log upper or departure upper endpoint it means plus infinity; explicit unbounded/zero flags are retained.",
+  "target": "Normalized mean block-resource totals per fixed logarithmic bin width, pooled before normalization; population total resource assumed positive."
+}

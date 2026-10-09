@@ -1,0 +1,48 @@
+{
+  "freeze_sha256": "291bacee33afbd0546cd1ade5dbc6d0e12c9a23ae179f78eaf3b91c78d3b31f6",
+  "frozen_files": {
+    "configs/cell_division_2026-10-08.json": "2dcc4e1473c05abc718c735530c97f457515d76ab2d40f586932fdbbe3513129",
+    "data/cell-division/2026-10-08/article.xml": "cb3efb171cb8da9141b4e172ab85764a199cd70ae7aa5484afb5ca747264f008",
+    "data/cell-division/2026-10-08/article.xml.receipt.json": "43815b943399ab501113273c246693f68cb925740f49b254f72a71fbea2a9743",
+    "data/cell-division/2026-10-08/dataset.json": "c98e71f28943d7d922a2ecf2ae4d144f2eb76561b59f4f7619ac6e30e144fa85",
+    "data/cell-division/2026-10-08/dataset.json.receipt.json": "8e5daf99626629606c9d5375a0c684dc67fb935774897e3a9bd3cf64d4b481a2",
+    "data/cell-division/2026-10-08/figure2.jpg": "b6e2d9fec30f1f5ab8fb3225b87f686b613af257a5e7afd67aeed5b146d4caf2",
+    "data/cell-division/2026-10-08/figure2.jpg.receipt.json": "be541fcf2afc3379432f923a858013084117b5eddc1b63da1a511ac9c1bf5f47",
+    "data/cell-division/2026-10-08/files.json": "624ec458199e1969fd85e3a9c219988598fdc988143a05d9659595d94230e413",
+    "data/cell-division/2026-10-08/files.json.receipt.json": "0b0ea16cc491209139021d77d527e1adf0bfdc0d6043c0f9900ef647a2f05be2",
+    "data/cell-division/2026-10-08/predictions.json": "f671ea1241c4b770084bb8b4da5d00bb330e5dd0da369cacb7d59069dac7b7ee",
+    "data/cell-division/2026-10-08/sources-calibration.json": "87d3b86eff085cfb875aa3a8081b70947c458f2322c48eff49c2aafd974ef261",
+    "docs/cell-division-protocol.md": "48bd56c81368fa8cfa8190ca6d05afcf6143c33b8adc74f6bd90ce63bf84c941",
+    "experiments/fetch_cell_division.py": "491a2e8b36791831fcef75c9a963b4ca8139aa2848ee048e0760916dd016de86",
+    "experiments/run_cell_division.py": "7c95ce7c6bc95ac1048a2cf930cdb17550da7e82ca0773efe5f708bd5169f6f5",
+    "src/orthopolity/cell_division.py": "ce0490dcc641a9027fa715248b17ff4f7274e5a600c8b1c60961c6adf305e2f6",
+    "tests/test_cell_division.py": "a71b044dfb07e10d0bb9874266396d319fd80d6f0447d0cd3ecc5a626990e649"
+  },
+  "numpy": "2.3.5",
+  "outputs": {
+    "cell-division.pdf": "d4b4b90131288e49cd6e7b4bace694f5f1093c0db223975067cdb046c3f02120",
+    "cell-division.png": "8015fedf1e6178c8f43502de9a9ff6ea97f0c69eb0c2371881a66606e336ff41",
+    "config.json": "066dbf7f5a8e48cbbc4d30a0982ea881c6b20d695ae63924276bac6b0bced845",
+    "summary.json": "1ebf306bcf0f281844394b51911c069ffa32520063d74f664be30e47cebeaaa9"
+  },
+  "python": "3.11.6",
+  "run_id": "cell-division-summary-2026-10-08",
+  "scipy": "1.16.3",
+  "source_hashes": {
+    "data/cell-division/2026-10-08/article.xml": "cb3efb171cb8da9141b4e172ab85764a199cd70ae7aa5484afb5ca747264f008",
+    "data/cell-division/2026-10-08/article.xml.receipt.json": "43815b943399ab501113273c246693f68cb925740f49b254f72a71fbea2a9743",
+    "data/cell-division/2026-10-08/dataset.json": "c98e71f28943d7d922a2ecf2ae4d144f2eb76561b59f4f7619ac6e30e144fa85",
+    "data/cell-division/2026-10-08/dataset.json.receipt.json": "8e5daf99626629606c9d5375a0c684dc67fb935774897e3a9bd3cf64d4b481a2",
+    "data/cell-division/2026-10-08/figure1.jpg": "a67778f56adde84c8c77e580bcb0642562bb7ccbf6acfaf0202aed136fb78a1d",
+    "data/cell-division/2026-10-08/figure1.jpg.receipt.json": "afa9b65b08eb441430bb5637cbc8dce771a67cb8a226ef073f1831122cb4b512",
+    "data/cell-division/2026-10-08/figure2.jpg": "b6e2d9fec30f1f5ab8fb3225b87f686b613af257a5e7afd67aeed5b146d4caf2",
+    "data/cell-division/2026-10-08/figure2.jpg.receipt.json": "be541fcf2afc3379432f923a858013084117b5eddc1b63da1a511ac9c1bf5f47",
+    "data/cell-division/2026-10-08/files.json": "624ec458199e1969fd85e3a9c219988598fdc988143a05d9659595d94230e413",
+    "data/cell-division/2026-10-08/files.json.receipt.json": "0b0ea16cc491209139021d77d527e1adf0bfdc0d6043c0f9900ef647a2f05be2",
+    "data/cell-division/2026-10-08/freeze.json": "291bacee33afbd0546cd1ade5dbc6d0e12c9a23ae179f78eaf3b91c78d3b31f6",
+    "data/cell-division/2026-10-08/predictions.json": "f671ea1241c4b770084bb8b4da5d00bb330e5dd0da369cacb7d59069dac7b7ee",
+    "data/cell-division/2026-10-08/sources-calibration.json": "87d3b86eff085cfb875aa3a8081b70947c458f2322c48eff49c2aafd974ef261",
+    "data/cell-division/2026-10-08/sources-evaluation.json": "e71135ab59e9e444fd65a9f08586a0f38418aeba9a0fee49d4a8d198605b22d7",
+    "data/cell-division/2026-10-08/targets.json": "49b0854359b26f47486298cd450531a8a1bd8152a1705a323e2b39b0259cee0c"
+  }
+}

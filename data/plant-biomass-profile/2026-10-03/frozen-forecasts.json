@@ -1,0 +1,774 @@
+{
+  "amendment_references": [
+    {
+      "path": "configs/plant_biomass_profile_2026-10-03_amendment-1.json",
+      "sha256": "0d8cc42ce6a089827042bbd78f5c620c06994f724bb24b5484c8d86356d78a62"
+    }
+  ],
+  "calibration_reference": {
+    "path": "data/plant-biomass-profile/2026-10-03/calibration.json",
+    "sha256": "f537c6d2adcbb17dab759fd5eab3624e05355839752efeb505356385a742d22c"
+  },
+  "config_reference": {
+    "path": "configs/plant_biomass_profile_2026-10-03.json",
+    "sha256": "20a53ad1aeb002f40c8b37bc2af810ba4a6911436f988086901be66f0be7e0af"
+  },
+  "development_membership_reference": {
+    "path": "data/plant-biomass-profile/2026-10-03/development-membership.json",
+    "sha256": "705d2e6b40c56f788e287686a92144e0641de7f6f262d47e5f9afbb3b3c08812"
+  },
+  "environment": {
+    "numpy": "2.3.5",
+    "python": "3.11.6",
+    "scipy": "1.16.3"
+  },
+  "forecasts": {
+    "bins": [
+      {
+        "linear_width": 0.02162277660168379,
+        "log10_width": 0.49999999999999994,
+        "lower": 0.01,
+        "upper": 0.03162277660168379,
+        "upper_inclusive": false
+      },
+      {
+        "linear_width": 0.06837722339831621,
+        "log10_width": 0.5,
+        "lower": 0.03162277660168379,
+        "upper": 0.1,
+        "upper_inclusive": false
+      },
+      {
+        "linear_width": 0.21622776601683794,
+        "log10_width": 0.49999999999999994,
+        "lower": 0.1,
+        "upper": 0.31622776601683794,
+        "upper_inclusive": false
+      },
+      {
+        "linear_width": 0.683772233983162,
+        "log10_width": 0.49999999999999994,
+        "lower": 0.31622776601683794,
+        "upper": 1.0,
+        "upper_inclusive": false
+      },
+      {
+        "linear_width": 2.1622776601683795,
+        "log10_width": 0.5,
+        "lower": 1.0,
+        "upper": 3.1622776601683795,
+        "upper_inclusive": false
+      },
+      {
+        "linear_width": 6.83772233983162,
+        "log10_width": 0.49999999999999994,
+        "lower": 3.1622776601683795,
+        "upper": 10.0,
+        "upper_inclusive": false
+      },
+      {
+        "linear_width": 21.622776601683793,
+        "log10_width": 0.49999999999999994,
+        "lower": 10.0,
+        "upper": 31.622776601683793,
+        "upper_inclusive": false
+      },
+      {
+        "linear_width": 68.3772233983162,
+        "log10_width": 0.5,
+        "lower": 31.622776601683793,
+        "upper": 100.0,
+        "upper_inclusive": true
+      }
+    ],
+    "development_profiles": {
+      "BFECPrairie1": {
+        "above_count": 0,
+        "above_mass": 0.0,
+        "below_count": 10,
+        "below_mass": 0.06309999999999999,
+        "count_coverage": 0.9590163934426229,
+        "count_shares": [
+          0.1623931623931624,
+          0.2222222222222222,
+          0.2606837606837607,
+          0.24786324786324787,
+          0.06837606837606838,
+          0.029914529914529916,
+          0.008547008547008548,
+          0.0
+        ],
+        "counts": [
+          38,
+          52,
+          61,
+          58,
+          16,
+          7,
+          2,
+          0
+        ],
+        "in_domain_count": 234,
+        "in_domain_mass": 156.63699000000003,
+        "mass_coverage": 0.9995973199504865,
+        "raw_count": 244,
+        "raw_mass": 156.70009,
+        "stock_shares": [
+          0.004786225782300846,
+          0.020592964663072238,
+          0.07340475579874206,
+          0.21412694408900465,
+          0.19391524313637534,
+          0.27994198560633726,
+          0.2132318809241674,
+          0.0
+        ],
+        "stocks": [
+          0.7497,
+          3.22562,
+          11.497900000000003,
+          33.540199999999984,
+          30.374299999999998,
+          43.849270000000004,
+          33.400000000000006,
+          0.0
+        ]
+      },
+      "BFECPrairie2": {
+        "above_count": 0,
+        "above_mass": 0.0,
+        "below_count": 4,
+        "below_mass": 0.0368,
+        "count_coverage": 0.9875,
+        "count_shares": [
+          0.12974683544303797,
+          0.14556962025316456,
+          0.15822784810126583,
+          0.2563291139240506,
+          0.2088607594936709,
+          0.0949367088607595,
+          0.0031645569620253164,
+          0.0031645569620253164
+        ],
+        "counts": [
+          41,
+          46,
+          50,
+          81,
+          66,
+          30,
+          1,
+          1
+        ],
+        "in_domain_count": 316,
+        "in_domain_mass": 419.72090000000003,
+        "mass_coverage": 0.9999123303753571,
+        "raw_count": 320,
+        "raw_mass": 419.7577,
+        "stock_shares": [
+          0.0020237257663366292,
+          0.006619160494509565,
+          0.021978652957238966,
+          0.11562111870054596,
+          0.29052591853300613,
+          0.3580951055808753,
+          0.039788345064541666,
+          0.1653479729029458
+        ],
+        "stocks": [
+          0.8493999999999998,
+          2.7782,
+          9.224900000000002,
+          48.52859999999998,
+          121.93980000000002,
+          150.3,
+          16.69999999999999,
+          69.40000000000003
+        ]
+      },
+      "BFECPrairie3": {
+        "above_count": 0,
+        "above_mass": 0.0,
+        "below_count": 9,
+        "below_mass": 0.058,
+        "count_coverage": 0.9714285714285714,
+        "count_shares": [
+          0.058823529411764705,
+          0.08823529411764706,
+          0.13071895424836602,
+          0.1437908496732026,
+          0.23202614379084968,
+          0.28431372549019607,
+          0.0457516339869281,
+          0.016339869281045753
+        ],
+        "counts": [
+          18,
+          27,
+          40,
+          44,
+          71,
+          87,
+          14,
+          5
+        ],
+        "in_domain_count": 306,
+        "in_domain_mass": 1123.903,
+        "mass_coverage": 0.9999483967860094,
+        "raw_count": 315,
+        "raw_mass": 1123.961,
+        "stock_shares": [
+          0.00028917086261002947,
+          0.0014307284525443926,
+          0.007364514553302197,
+          0.02301711090725801,
+          0.1275368070020277,
+          0.4125364911384701,
+          0.18634526289190453,
+          0.2414799141918832
+        ],
+        "stocks": [
+          0.32499999999999996,
+          1.6080000000000005,
+          8.277,
+          25.869,
+          143.33899999999997,
+          463.65099999999995,
+          209.4340000000002,
+          271.4000000000001
+        ]
+      },
+      "BFECWetland1": {
+        "above_count": 0,
+        "above_mass": 0.0,
+        "below_count": 28,
+        "below_mass": 0.2097,
+        "count_coverage": 0.9841897233201581,
+        "count_shares": [
+          0.10613884107860011,
+          0.23178427997705106,
+          0.3717728055077453,
+          0.24325874928284566,
+          0.019506597819850834,
+          0.024670109007458405,
+          0.002868617326448652,
+          0.0
+        ],
+        "counts": [
+          185,
+          404,
+          648,
+          424,
+          34,
+          43,
+          5,
+          0
+        ],
+        "in_domain_count": 1743,
+        "in_domain_mass": 757.3895399999999,
+        "mass_coverage": 0.9997232045797722,
+        "raw_count": 1771,
+        "raw_mass": 757.59924,
+        "stock_shares": [
+          0.005094340225506683,
+          0.03405927681546803,
+          0.16176616328765264,
+          0.2909300807085343,
+          0.07521572056566825,
+          0.33813511604609714,
+          0.09479930235107283,
+          0.0
+        ],
+        "stocks": [
+          3.8584000000000023,
+          25.796139999999994,
+          122.5200000000001,
+          220.34739999999965,
+          56.967600000000004,
+          256.1000000000001,
+          71.79999999999995,
+          0.0
+        ]
+      },
+      "BFECWetland2": {
+        "above_count": 0,
+        "above_mass": 0.0,
+        "below_count": 4,
+        "below_mass": 0.030699999999999998,
+        "count_coverage": 0.9973579920739762,
+        "count_shares": [
+          0.051655629139072845,
+          0.21324503311258278,
+          0.35033112582781456,
+          0.29072847682119207,
+          0.0880794701986755,
+          0.005298013245033113,
+          0.0,
+          0.0006622516556291391
+        ],
+        "counts": [
+          78,
+          322,
+          529,
+          439,
+          133,
+          8,
+          0,
+          1
+        ],
+        "in_domain_count": 1510,
+        "in_domain_mass": 660.14192,
+        "mass_coverage": 0.9999534970111301,
+        "raw_count": 1514,
+        "raw_mass": 660.17262,
+        "stock_shares": [
+          0.002676394191115753,
+          0.030348171193248844,
+          0.14988477023243738,
+          0.3749849729282457,
+          0.31046733102482027,
+          0.08316393541558471,
+          0.0,
+          0.048474425014548385
+        ],
+        "stocks": [
+          1.7668000000000001,
+          20.034099999999984,
+          98.94522000000006,
+          247.54330000000013,
+          204.95250000000044,
+          54.90000000000009,
+          0.0,
+          32.0
+        ]
+      }
+    },
+    "development_units": [
+      "BFECPrairie1",
+      "BFECPrairie2",
+      "BFECPrairie3",
+      "BFECWetland1",
+      "BFECWetland2"
+    ],
+    "domain": {
+      "bin_log10_width": 0.5,
+      "edges": [
+        0.01,
+        0.03162277660168379,
+        0.1,
+        0.31622776601683794,
+        1.0,
+        3.1622776601683795,
+        10.0,
+        31.622776601683793,
+        100.0
+      ],
+      "lower": 0.01,
+      "upper": 100.0
+    },
+    "models": {
+      "bounded_pareto": {
+        "count_log_shares": [
+          -1.457953657025039,
+          -1.6677913586059379,
+          -1.877629060186837,
+          -2.087466761767736,
+          -2.297304463348635,
+          -2.507142164929534,
+          -2.7169798665104334,
+          -2.926817568091332
+        ],
+        "count_shares": [
+          0.23271199637790171,
+          0.18866329538214685,
+          0.15295231693449202,
+          0.1240008620025573,
+          0.10052945967443397,
+          0.08150082264932339,
+          0.06607400570964882,
+          0.05356724126949598
+        ],
+        "stock_shares": [
+          0.00083837714118956,
+          0.002149354607089289,
+          0.005510318686004608,
+          0.01412685087941386,
+          0.036217127745454894,
+          0.09285015842009245,
+          0.23804074081269963,
+          0.6102670717080558
+        ]
+      },
+      "bounded_weibull": {
+        "count_log_shares": [
+          -2.0516157331540334,
+          -1.7352424904675414,
+          -1.5336148533947858,
+          -1.5181925949419228,
+          -1.8024884831660517,
+          -2.563171941563376,
+          -4.068508374513162,
+          -6.723137135013731
+        ],
+        "count_shares": [
+          0.12852707028279084,
+          0.17635743010518837,
+          0.21575433567440175,
+          0.21910754537276053,
+          0.16488805610728843,
+          0.07705992280292964,
+          0.017102880583019443,
+          0.0012027590716209068
+        ],
+        "stock_shares": [
+          0.002070779588696627,
+          0.008912009774494118,
+          0.03401437058500337,
+          0.10681652472493536,
+          0.24499491582838126,
+          0.3411383606296862,
+          0.2187555435608989,
+          0.043297495307904145
+        ]
+      },
+      "empirical": {
+        "count_log_shares": [
+          -2.2844288062195583,
+          -1.7157298792763709,
+          -1.3721511640216166,
+          -1.4462033533740821,
+          -2.094416230229172,
+          -2.4313341912036894,
+          -4.335992258567899,
+          -5.266538362236863
+        ],
+        "count_shares": [
+          0.10183221142325224,
+          0.17983241684667967,
+          0.25356092132323116,
+          0.2354625613379227,
+          0.12314210931636108,
+          0.08791945293559854,
+          0.013088880073956744,
+          0.005161446742997801
+        ],
+        "stock_shares": [
+          0.002973971365573988,
+          0.018610060323768614,
+          0.08287977136587465,
+          0.20373604546671772,
+          0.19953220405237954,
+          0.2943745267574729,
+          0.10683295824633728,
+          0.09106046242187547
+        ]
+      },
+      "linear_neutral": {
+        "count_log_shares": [
+          -2.0794415416798357,
+          -2.0794415416798357,
+          -2.0794415416798357,
+          -2.0794415416798357,
+          -2.0794415416798357,
+          -2.0794415416798357,
+          -2.0794415416798357,
+          -2.0794415416798357
+        ],
+        "count_shares": [
+          0.12500000000000003,
+          0.12500000000000003,
+          0.12500000000000003,
+          0.12500000000000003,
+          0.12500000000000003,
+          0.12500000000000003,
+          0.12500000000000003,
+          0.12500000000000003
+        ],
+        "stock_shares": [
+          0.0002162493909559335,
+          0.0006838406180449668,
+          0.0021624939095593334,
+          0.006838406180449663,
+          0.021624939095593338,
+          0.06838406180449662,
+          0.21624939095593335,
+          0.6838406180449667
+        ]
+      },
+      "log_neutral": {
+        "count_log_shares": [
+          -0.38003040306583813,
+          -1.5313229495628606,
+          -2.682615496059884,
+          -3.8339080425569065,
+          -4.985200589053929,
+          -6.136493135550952,
+          -7.287785682047975,
+          -8.439078228544997
+        ],
+        "count_shares": [
+          0.6838406180449667,
+          0.21624939095593362,
+          0.06838406180449665,
+          0.02162493909559336,
+          0.006838406180449669,
+          0.002162493909559335,
+          0.0006838406180449668,
+          0.00021624939095593387
+        ],
+        "stock_shares": [
+          0.12500000000000003,
+          0.12500000000000003,
+          0.12500000000000003,
+          0.12500000000000003,
+          0.12500000000000003,
+          0.12500000000000003,
+          0.12500000000000003,
+          0.12500000000000003
+        ]
+      }
+    },
+    "parameters": {
+      "bounded_pareto": {
+        "alpha": 1.1822627117836915,
+        "bounds": [
+          -2.0,
+          4.0
+        ],
+        "mean_log_mass": -1.2317292474851462,
+        "optimizer_message": "Solution found.",
+        "optimizer_status": 0,
+        "optimizer_success": true
+      },
+      "bounded_weibull": {
+        "negative_loglikelihood": 0.6954282290034048,
+        "restart_statuses": [
+          {
+            "iterations": 12,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "start_scale": 0.0809,
+            "start_shape": 0.3,
+            "status": 0,
+            "success": true,
+            "usable": true
+          },
+          {
+            "iterations": 9,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "start_scale": 0.2107,
+            "start_shape": 0.3,
+            "status": 0,
+            "success": true,
+            "usable": true
+          },
+          {
+            "iterations": 10,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "start_scale": 0.5184,
+            "start_shape": 0.3,
+            "status": 0,
+            "success": true,
+            "usable": true
+          },
+          {
+            "iterations": 23,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "start_scale": 0.0809,
+            "start_shape": 0.8,
+            "status": 0,
+            "success": true,
+            "usable": true
+          },
+          {
+            "iterations": 9,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "start_scale": 0.2107,
+            "start_shape": 0.8,
+            "status": 0,
+            "success": true,
+            "usable": true
+          },
+          {
+            "iterations": 8,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "start_scale": 0.5184,
+            "start_shape": 0.8,
+            "status": 0,
+            "success": true,
+            "usable": true
+          },
+          {
+            "iterations": 17,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "start_scale": 0.0809,
+            "start_shape": 1.5,
+            "status": 0,
+            "success": true,
+            "usable": true
+          },
+          {
+            "iterations": 15,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "start_scale": 0.2107,
+            "start_shape": 1.5,
+            "status": 0,
+            "success": true,
+            "usable": true
+          },
+          {
+            "iterations": 17,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "start_scale": 0.5184,
+            "start_shape": 1.5,
+            "status": 0,
+            "success": true,
+            "usable": true
+          },
+          {
+            "iterations": 15,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "start_scale": 0.0809,
+            "start_shape": 3.5,
+            "status": 0,
+            "success": true,
+            "usable": true
+          },
+          {
+            "iterations": 19,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "start_scale": 0.2107,
+            "start_shape": 3.5,
+            "status": 0,
+            "success": true,
+            "usable": true
+          },
+          {
+            "iterations": 16,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "start_scale": 0.5184,
+            "start_shape": 3.5,
+            "status": 0,
+            "success": true,
+            "usable": true
+          }
+        ],
+        "restarts": 12,
+        "scale": 0.3569672269464092,
+        "scale_bounds": [
+          0.0001,
+          10000.0
+        ],
+        "shape": 0.4315740644309116,
+        "shape_bounds": [
+          0.1,
+          5.0
+        ],
+        "start_scale_log_quantiles": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "start_shapes": [
+          0.3,
+          0.8,
+          1.5,
+          3.5
+        ],
+        "successful_restarts": 12
+      },
+      "empirical": {
+        "count_pseudocount": 0.5,
+        "plot_weighting": "equal"
+      }
+    }
+  },
+  "frozen_utc": "2026-10-03T21:34:45.869922+00:00",
+  "implementation_commit": "7cad34ef4f658f5e06a85f46c3532031e6cde039",
+  "input_references": {
+    "BFECPrairie1": {
+      "path": "data/plant-sources/2026-10-03/BFECPrairie1.csv",
+      "sha256": "05d5063600c66d679284d50559105da3408b9839ace7ffec4be035f86c379b84"
+    },
+    "BFECPrairie2": {
+      "path": "data/plant-sources/2026-10-03/BFECPrairie2.csv",
+      "sha256": "a25882f1b6d510a5e72c0f70539778cadf64a949d30ef3c387bb435e4471f332"
+    },
+    "BFECPrairie3": {
+      "path": "data/plant-sources/2026-10-03/BFECPrairie3.csv",
+      "sha256": "ef0e667a57f1969c992bc507f13a7730260355eb4c0e6094d22f7fc453b6a610"
+    },
+    "BFECWetland1": {
+      "path": "data/plant-sources/2026-10-03/BFECWetland1.csv",
+      "sha256": "27e15754efed5c4e532f16f00f13a6d9fe3ccc983c9d1a046fcc2dbf97fbe275"
+    },
+    "BFECWetland2": {
+      "path": "data/plant-sources/2026-10-03/BFECWetland2.csv",
+      "sha256": "84ddfd8153b3404c41d79ceb1e438fe0eb1df7c694c7e2e12feb1821dbfa255b"
+    },
+    "RMBLAlpine1": {
+      "path": "data/plant-sources/2026-10-03/RMBLAlpine1.csv",
+      "sha256": "79c0871f53bc86d48f8cc9f4f5cc4b9f917e3a8b4f8dc18a14f18401dd6e4d72"
+    },
+    "RMBLAlpine2": {
+      "path": "data/plant-sources/2026-10-03/RMBLAlpine2.csv",
+      "sha256": "209e1c4ad49ed2623680eb4f43a35c1f5a376efc1a723a9bbbd658121a9af83b"
+    },
+    "RMBLAlpine3": {
+      "path": "data/plant-sources/2026-10-03/RMBLAlpine3.csv",
+      "sha256": "e26f335743ab1a8313c17aa59ad5cf62279325682ce3a620cf9b643f20e94c08"
+    },
+    "RMBLGrassSage": {
+      "path": "data/plant-sources/2026-10-03/RMBLGrassSage.csv",
+      "sha256": "068bf9d59057244745d235fac3b91dc1375edad90d9eed0e5114a3ef0221be00"
+    },
+    "RMBLWetMeadow": {
+      "path": "data/plant-sources/2026-10-03/RMBLWetMeadow.csv",
+      "sha256": "83d5d637edec2061dd844e824e784ef6d0c3884c53d312e35f2950d04900a54b"
+    },
+    "acquisition": {
+      "path": "data/plant-sources/2026-10-03/acquisition.json",
+      "sha256": "308b465bf88551acbe5e4ee56e73105fea132de197c9a89187f8751da549c46a"
+    },
+    "exposure": {
+      "path": "data/neutrality-audit/2026-10-03/exposure.json",
+      "sha256": "99921f024fcb798001f70655759f7beef370756bb2ffc13ca3056b59cb0b976e"
+    },
+    "metadata:acquisition.json": {
+      "path": "data/neutrality-audit/2026-10-03/acquisition.json",
+      "sha256": "b9b0fb428ef3503b7c0ca7e92d51a0b8a88a92449a19367e6ad6217033298ac1"
+    },
+    "metadata:plant-commit.json": {
+      "path": "data/neutrality-audit/2026-10-03/plant-commit.json",
+      "sha256": "4f011298d3f08e2eb24abe63e9843ea9efb54caf1f14f5b176b3fe2bb7e90e3c"
+    },
+    "metadata:plant-repository.json": {
+      "path": "data/neutrality-audit/2026-10-03/plant-repository.json",
+      "sha256": "d702ecc8213475e2c00f7d64010fe9034b12bb0c55818d934ac2356ea2e43c0e"
+    },
+    "metadata:plant-resolved-tree.json": {
+      "path": "data/neutrality-audit/2026-10-03/plant-resolved-tree.json",
+      "sha256": "f491f2515a1a82cb95660a9f2e97de050819f8d10cca6fc0e76f472ed17d97ed"
+    }
+  },
+  "protocol_commit": "6a2d2b388e0446660c6a8bbb4540e74dfc345596",
+  "run_id": "plant-biomass-profile-2026-10-03",
+  "scope": "Retrospective after published results and accidental raw plant-outcome exposure. This protocol precedes retained raw acquisition, formal development fitting and evaluation; it cannot establish unseen outcomes. Preliminary synthetic pilot results were read before this final calibration specification.",
+  "source_references": [
+    {
+      "path": "experiments/run_plant_biomass_profile.py",
+      "sha256": "ecb91c83658b50faa6945b43c1cb7cd83b4fd9f9fa4c2836e6f92b620c94f22b"
+    },
+    {
+      "path": "experiments/fetch_plant_sources.py",
+      "sha256": "783b028a1762b3ad3200be66c8464b11d463129b0887562fd1397dbe41e56881"
+    },
+    {
+      "path": "src/orthopolity/plant_profiles.py",
+      "sha256": "0856f7cd752c172cd3d657f637195969279905ea8e857bd62b661fd1560f0946"
+    },
+    {
+      "path": "src/orthopolity/plant_observation.py",
+      "sha256": "711be20f62e66401982bdf70fadfc826c218777d5f17d9d1ce5fcdd26cb26725"
+    }
+  ]
+}

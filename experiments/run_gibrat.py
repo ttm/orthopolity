@@ -29,7 +29,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
-from orthopolity import gibrat_zeta, resource_spectrum      # noqa: E402
+from orthopolity.spectrum import gibrat_zeta, resource_spectrum   # noqa: E402
 
 OUT = ROOT / 'results'
 SEED = 20261008

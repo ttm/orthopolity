@@ -1,0 +1,28 @@
+{
+  "description": "Frozen before the exploratory forecast run; capacity-only family selection, bootstrap calibration, no natural-system evidence",
+  "seed": 202610012,
+  "outer_replicates": 24,
+  "training_capacity_samples": 4000,
+  "selection_capacity_samples": 4000,
+  "realized_output_samples": 16000,
+  "bootstrap_replicates": 100,
+  "confidence": 0.95,
+  "domain": [1.0, 12.0],
+  "bins": 6,
+  "selection_thresholds": [1.5, 2.0, 3.0, 4.0, 6.0, 8.0, 12.0],
+  "prediction_survival_grid_size": 257,
+  "oracle_cdf_grid_size": 1025,
+  "parameter_grid": [0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9],
+  "interpolation_audit_parameter": 0.525,
+  "interpolation_audit_absolute_tolerance": 0.0003,
+  "scenarios": [
+    {"id": "gaussian_half", "family": "gaussian", "parameter": 0.5, "df": 4},
+    {"id": "student4_half", "family": "student", "parameter": 0.5, "df": 4},
+    {"id": "student10_half", "family": "student", "parameter": 0.5, "df": 10},
+    {"id": "common_shock_half", "family": "common_shock", "parameter": 0.5, "df": 4},
+    {"id": "gaussian_hidden_resource", "family": "gaussian", "parameter": 0.5, "df": 4, "hidden_independent_resource": true}
+  ],
+  "assumptions": ["unit-Pareto capacity marginals known", "two observed resources", "Student candidate df fixed at four", "output size is constructed from the bottleneck; an omitted third requirement is explicitly tested"],
+  "band_target": "true population resource profile and bounded continuous CDF, not a noisy output realization",
+  "uncertainty": "centered bootstrap sup bands; empirical coverage reported separately for each target; neither bootstrap validity nor joint 95% coverage is assumed"
+}

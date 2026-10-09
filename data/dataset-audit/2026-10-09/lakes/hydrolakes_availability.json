@@ -1,0 +1,9 @@
+{
+  "url": "https://data.hydrosheds.org/file/hydrolakes/HydroLAKES_polys_v10_shp.zip",
+  "retrieved_client_date": "2026-10-09",
+  "bytes_saved": 4096,
+  "body_intentionally_incomplete": true,
+  "sha256": "68325f6f67b92ef00b4754cad6e20b4f885414261c1347b596bf2baa7adba628",
+  "zip_magic": "504b0304",
+  "note": "curl reads from response and is terminated after first 4096 bytes. This verifies transport, not full archive integrity."
+}

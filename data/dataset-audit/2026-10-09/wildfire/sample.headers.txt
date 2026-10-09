@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Cache-Control: must-revalidate,max-age=0,public
+Transfer-Encoding: chunked
+Content-Type: application/json; charset=UTF-8
+ETag: "c11e8187"
+Vary: Origin
+Server: Microsoft-IIS/10.0
+X-Content-Type-Options: nosniff
+X-Powered-By: ASP.NET
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Date: Fri, 09 Oct 2026 00:20:30 GMT
+

@@ -1,0 +1,29 @@
+{
+  "run_id": "inverse-resources-2026-10-06",
+  "generated_utc": "2026-10-07T07:27:12.768048+00:00",
+  "config_sha256": "3f942dc23b0820a8753d22d9e44aecab20a813c2a0a2a95507b2492b3cafe060",
+  "source_sha256": {
+    "experiments/run_inverse_resources.py": "dee80bc86a34416ab089a12085cb68705bffae3c82e1075d9fcaaa7a01ee310e",
+    "src/orthopolity/inverse_resources.py": "62f30df35eb7d58bc323b1f62429e2e7c10ea115cbd5d49eafdfe90aa877b28f",
+    "tests/test_inverse_resources.py": "908ba8fbaf49ca34ded2056a9c03230e59aca4c910d7f70fe7afd5b184fa8838"
+  },
+  "input_sha256": {},
+  "runtime": {
+    "python": "3.11.6",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.7"
+  },
+  "predictions_written_before_stochastic_simulation": true,
+  "empirical_inputs": false,
+  "retrospective_configuration": true,
+  "exposure": "Mathematical example and analytic expectations known before simulation; no empirical holdout or external preregistration claimed",
+  "artifact_sha256": {
+    "config.json": "3f942dc23b0820a8753d22d9e44aecab20a813c2a0a2a95507b2492b3cafe060",
+    "inverse-resources.png": "5023a98cd36b78d68abb5f3dc21d7e05d003f04c9468b6e19094445cb08cac64",
+    "inverse-resources.svg": "00b62cda7e6f2b501bd1da4e8c3ddbc6ac4cc942d1720ef8811cef93f34c3a79",
+    "predictions.json": "163bed2e39299dddd8351baff91b6646e7397004d927c310391155092c679281",
+    "replicates.csv.gz": "373de9bb6b858cf0b1b384b33471cfdb654d81156d0051c15b77c53dca01ff2e",
+    "summary.json": "a0a4e89b79d307cab9caf95273dcfeca58455d92c8e293a991b8ae3f3027b698"
+  }
+}

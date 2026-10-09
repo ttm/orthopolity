@@ -1,0 +1,24 @@
+{
+  "source": "Gangan and Athale (2017), Figure 1b; printed arithmetic moments of fitted lognormal distributions",
+  "source_sha256": "a67778f56adde84c8c77e580bcb0642562bb7ccbf6acfaf0202aed136fb78a1d",
+  "transcribed_at_utc": "2026-10-08T07:48:36.709337+00:00",
+  "measurements": {
+    "LB": {
+      "mean": 3.2842,
+      "variance": 1.6888,
+      "n": 1217,
+      "panel": "Figure 1b, upper left histogram, LB"
+    },
+    "M9-succinate": {
+      "mean": 2.0094,
+      "variance": 0.1859,
+      "n": 3665,
+      "panel": "Figure 1b, middle right histogram, succinate"
+    }
+  },
+  "units": {
+    "mean": "micrometres",
+    "variance": "square micrometres"
+  },
+  "method": "Manual transcription of numerical annotations from original-resolution official NCBI image; no curve digitization or outcome fit"
+}

@@ -4,7 +4,7 @@ from pathlib import Path
 
 import numpy as np
 
-from gof import csn_powerlaw
+from orthopolity.goodness_of_fit import csn_powerlaw
 
 ROOT = Path(__file__).resolve().parents[1]
 

@@ -1,0 +1,23 @@
+{
+  "exposure": "Retrospective public-paper reanalysis. Qualitative batch findings, calibration figure and article text read before freeze. Source article XML retained before freeze contains qualitative target information. Figure 1 numerical target annotations not read before freeze; it is acquired afterwards. No external preregistration, global blinding, raw-cell likelihood, or new measurements.",
+  "files": {
+    "configs/cell_division_2026-10-08.json": "2dcc4e1473c05abc718c735530c97f457515d76ab2d40f586932fdbbe3513129",
+    "data/cell-division/2026-10-08/article.xml": "cb3efb171cb8da9141b4e172ab85764a199cd70ae7aa5484afb5ca747264f008",
+    "data/cell-division/2026-10-08/article.xml.receipt.json": "43815b943399ab501113273c246693f68cb925740f49b254f72a71fbea2a9743",
+    "data/cell-division/2026-10-08/dataset.json": "c98e71f28943d7d922a2ecf2ae4d144f2eb76561b59f4f7619ac6e30e144fa85",
+    "data/cell-division/2026-10-08/dataset.json.receipt.json": "8e5daf99626629606c9d5375a0c684dc67fb935774897e3a9bd3cf64d4b481a2",
+    "data/cell-division/2026-10-08/figure2.jpg": "b6e2d9fec30f1f5ab8fb3225b87f686b613af257a5e7afd67aeed5b146d4caf2",
+    "data/cell-division/2026-10-08/figure2.jpg.receipt.json": "be541fcf2afc3379432f923a858013084117b5eddc1b63da1a511ac9c1bf5f47",
+    "data/cell-division/2026-10-08/files.json": "624ec458199e1969fd85e3a9c219988598fdc988143a05d9659595d94230e413",
+    "data/cell-division/2026-10-08/files.json.receipt.json": "0b0ea16cc491209139021d77d527e1adf0bfdc0d6043c0f9900ef647a2f05be2",
+    "data/cell-division/2026-10-08/predictions.json": "f671ea1241c4b770084bb8b4da5d00bb330e5dd0da369cacb7d59069dac7b7ee",
+    "data/cell-division/2026-10-08/sources-calibration.json": "87d3b86eff085cfb875aa3a8081b70947c458f2322c48eff49c2aafd974ef261",
+    "docs/cell-division-protocol.md": "48bd56c81368fa8cfa8190ca6d05afcf6143c33b8adc74f6bd90ce63bf84c941",
+    "experiments/fetch_cell_division.py": "491a2e8b36791831fcef75c9a963b4ca8139aa2848ee048e0760916dd016de86",
+    "experiments/run_cell_division.py": "7c95ce7c6bc95ac1048a2cf930cdb17550da7e82ca0773efe5f708bd5169f6f5",
+    "src/orthopolity/cell_division.py": "ce0490dcc641a9027fa715248b17ff4f7274e5a600c8b1c60961c6adf305e2f6",
+    "tests/test_cell_division.py": "a71b044dfb07e10d0bb9874266396d319fd80d6f0447d0cd3ecc5a626990e649"
+  },
+  "frozen_at_utc": "2026-10-08T07:48:13.128884+00:00",
+  "run_id": "cell-division-summary-2026-10-08"
+}

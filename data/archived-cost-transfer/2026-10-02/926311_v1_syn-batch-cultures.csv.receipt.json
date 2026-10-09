@@ -1,0 +1,30 @@
+{
+  "bytes": 15990,
+  "final_url": "https://s3.amazonaws.com/bcodmo-files-prod/m7knBNyHR0kwkV/926311_v1_syn-batch-cultures.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAXLAGZQJYZSMZVHVQ%2F20261002%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261002T143001Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=46e336522f4afc4e0f1aed632658abe49cd549d2bd290d454b27d16f7df1b715",
+  "http_status": 200,
+  "md5": "0dea9ff74bffe353e442495b23312ac3",
+  "requested_url": "https://datadocs.bco-dmo.org/file/m7knBNyHR0kwkV/926311_v1_syn-batch-cultures.csv",
+  "response_headers": {
+    "Accept-Ranges": "bytes",
+    "Connection": "close",
+    "Content-Length": "15990",
+    "Content-Type": "binary/octet-stream",
+    "Date": "Fri, 02 Oct 2026 14:30:04 GMT",
+    "ETag": "\"0dea9ff74bffe353e442495b23312ac3\"",
+    "Last-Modified": "Thu, 02 May 2024 15:25:53 GMT",
+    "Server": "AmazonS3",
+    "x-amz-id-2": "Kdle43QWxmvhitEqSXQLLoTZOK3kAYtFuhq+WwipeWAyxRBiIBQbnz+606wln7TK/UJiX04SJ3wHTfPDve0qmTVj6oPwS3X2",
+    "x-amz-request-id": "MX8AQ6PD78XSH86H",
+    "x-amz-server-side-encryption": "AES256"
+  },
+  "retrieval_finished_utc": "2026-10-02T14:30:03.448416+00:00",
+  "retrieval_started_utc": "2026-10-02T14:30:01.042228+00:00",
+  "sha256": "4192fd69842c7ce4dc9a66a689a32f3c393bf833f7126119efaa5989babbc766",
+  "tls": {
+    "ca_file": "/etc/ssl/cert.pem",
+    "ca_file_sha256": "9dae8d76e55cb08991f2b672d58999ea15560d910759c16b544f843bdffbb994",
+    "certificate_verification": true,
+    "hostname_verification": true,
+    "openssl": "OpenSSL 3.0.11 19 Sep 2023"
+  }
+}

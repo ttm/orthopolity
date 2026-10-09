@@ -1,0 +1,1802 @@
+[
+  {
+    "split": "calibration",
+    "block_id": 0,
+    "order_in_block": 0,
+    "kernel": "quadratic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.0024346250000000097,
+      0.0024033749999999993,
+      0.0025015000000000037
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.598345+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 0,
+    "order_in_block": 1,
+    "kernel": "quadratic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.001084874999999999,
+      0.001043833000000008,
+      0.0010546250000000035
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.601577+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 0,
+    "order_in_block": 2,
+    "kernel": "cubic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.006989291000000009,
+      0.007293332999999999,
+      0.007309834000000001
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.623277+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 0,
+    "order_in_block": 3,
+    "kernel": "quadratic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.0002613330000000025,
+      0.000279417000000004,
+      0.00024354100000001377
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.624092+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 0,
+    "order_in_block": 4,
+    "kernel": "quadratic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0004958340000000006,
+      0.000491750000000013,
+      0.0004989580000000216
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.625587+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 0,
+    "order_in_block": 5,
+    "kernel": "cubic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.0002864999999999951,
+      0.00028041600000000555,
+      0.0002788340000000056
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.626436+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 0,
+    "order_in_block": 6,
+    "kernel": "cubic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.022627625000000012,
+      0.022565165999999998,
+      0.022423624999999975
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.694374+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 0,
+    "order_in_block": 7,
+    "kernel": "cubic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0022969999999999935,
+      0.002420958000000001,
+      0.002420791999999977
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.701621+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 0,
+    "order_in_block": 8,
+    "kernel": "quadratic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.005833167,
+      0.005491167000000019,
+      0.005587625000000013
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.720482+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 0,
+    "order_in_block": 9,
+    "kernel": "cubic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0008463750000000103,
+      0.000812832999999985,
+      0.0007837920000000054
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.722946+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 1,
+    "order_in_block": 0,
+    "kernel": "cubic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.007174666999999996,
+      0.007046832999999975,
+      0.007116082999999995
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.744490+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 1,
+    "order_in_block": 1,
+    "kernel": "quadratic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.001048166000000017,
+      0.0010378749999999937,
+      0.0010371670000000055
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.747625+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 1,
+    "order_in_block": 2,
+    "kernel": "quadratic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0004946670000000042,
+      0.0004955419999999877,
+      0.0004962500000000036
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.749115+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 1,
+    "order_in_block": 3,
+    "kernel": "quadratic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.0023785419999999835,
+      0.0023998329999999624,
+      0.0023762499999999687
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.756349+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 1,
+    "order_in_block": 4,
+    "kernel": "cubic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.022606999999999988,
+      0.02337508399999999,
+      0.022298916999999974
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.824989+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 1,
+    "order_in_block": 5,
+    "kernel": "cubic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.0002915000000000001,
+      0.00030091600000003993,
+      0.0002991250000000112
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.825893+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 1,
+    "order_in_block": 6,
+    "kernel": "cubic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0007948749999999727,
+      0.0007810420000000096,
+      0.0007733329999999872
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.828246+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 1,
+    "order_in_block": 7,
+    "kernel": "quadratic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.005078333999999962,
+      0.004955749999999981,
+      0.0051436250000000405
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.843496+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 1,
+    "order_in_block": 8,
+    "kernel": "quadratic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.00026362499999998956,
+      0.00025445899999998467,
+      0.00025374999999999703
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.844283+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 1,
+    "order_in_block": 9,
+    "kernel": "cubic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0023892919999999873,
+      0.002426833000000017,
+      0.002393249999999958
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.851556+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 2,
+    "order_in_block": 0,
+    "kernel": "quadratic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.002385207999999972,
+      0.0022481250000000452,
+      0.002240083000000004
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.858486+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 2,
+    "order_in_block": 1,
+    "kernel": "cubic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.022387999999999963,
+      0.02236766699999998,
+      0.022545000000000037
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.926059+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 2,
+    "order_in_block": 2,
+    "kernel": "cubic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.0002811249999999932,
+      0.00028050000000001685,
+      0.00028162500000000756
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.926908+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 2,
+    "order_in_block": 3,
+    "kernel": "quadratic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.005093750000000008,
+      0.005028874999999988,
+      0.005077292000000011
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.942207+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 2,
+    "order_in_block": 4,
+    "kernel": "cubic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.007256959000000007,
+      0.007158624999999974,
+      0.007187874999999955
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.963890+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 2,
+    "order_in_block": 5,
+    "kernel": "cubic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.002340624999999985,
+      0.0022454580000000335,
+      0.0023402920000000216
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.970882+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 2,
+    "order_in_block": 6,
+    "kernel": "quadratic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0011423750000000288,
+      0.0011099589999999937,
+      0.0011074999999999835
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.974310+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 2,
+    "order_in_block": 7,
+    "kernel": "quadratic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.00024262499999999632,
+      0.00023958299999998767,
+      0.000242333000000039
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.975041+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 2,
+    "order_in_block": 8,
+    "kernel": "quadratic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0004998330000000051,
+      0.0004936249999999975,
+      0.0004932500000000006
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.976530+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 2,
+    "order_in_block": 9,
+    "kernel": "cubic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.000781500000000046,
+      0.0007768329999999768,
+      0.000772415999999998
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.978863+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 3,
+    "order_in_block": 0,
+    "kernel": "quadratic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.0023167910000000402,
+      0.0023839999999999972,
+      0.002412499999999984
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.986070+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 3,
+    "order_in_block": 1,
+    "kernel": "quadratic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0005310829999999878,
+      0.0005269589999999935,
+      0.0005147500000000083
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:31.987659+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 3,
+    "order_in_block": 2,
+    "kernel": "cubic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.007327000000000028,
+      0.00705816700000006,
+      0.007097792000000047
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.009210+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 3,
+    "order_in_block": 3,
+    "kernel": "quadratic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0010624999999999662,
+      0.001073875000000002,
+      0.0011222499999999913
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.012488+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 3,
+    "order_in_block": 4,
+    "kernel": "cubic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.022335042000000027,
+      0.022630458000000075,
+      0.02243579200000001
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.080378+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 3,
+    "order_in_block": 5,
+    "kernel": "quadratic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.00024762499999997356,
+      0.0002434580000000297,
+      0.00024204199999999787
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.081124+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 3,
+    "order_in_block": 6,
+    "kernel": "quadratic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.005176958000000065,
+      0.005059958000000031,
+      0.005095625000000048
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.096665+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 3,
+    "order_in_block": 7,
+    "kernel": "cubic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.002503499999999992,
+      0.0023290000000000255,
+      0.00233950000000005
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.104019+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 3,
+    "order_in_block": 8,
+    "kernel": "cubic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.000769624999999996,
+      0.0007719999999999949,
+      0.0007662500000000794
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.106338+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 3,
+    "order_in_block": 9,
+    "kernel": "cubic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.0002805830000000009,
+      0.0002790419999999516,
+      0.0002794160000000323
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.107180+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 4,
+    "order_in_block": 0,
+    "kernel": "quadratic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.00024370800000006465,
+      0.0002424170000000503,
+      0.0002399160000000622
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.107932+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 4,
+    "order_in_block": 1,
+    "kernel": "quadratic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0010375830000000086,
+      0.00103829100000008,
+      0.0010425419999999797
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.111053+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 4,
+    "order_in_block": 2,
+    "kernel": "quadratic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0005042079999999505,
+      0.0005032499999999551,
+      0.0005021670000000533
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.112565+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 4,
+    "order_in_block": 3,
+    "kernel": "cubic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.0003235419999999545,
+      0.0002969579999999583,
+      0.00028916599999995185
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.113511+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 4,
+    "order_in_block": 4,
+    "kernel": "cubic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0024204999999999366,
+      0.0023858749999999818,
+      0.002423583000000007
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.120775+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 4,
+    "order_in_block": 5,
+    "kernel": "cubic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0008071250000000196,
+      0.0007933750000000961,
+      0.000882208000000051
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.123294+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 4,
+    "order_in_block": 6,
+    "kernel": "quadratic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.0049590840000000025,
+      0.004986166999999986,
+      0.005294832999999999
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.138645+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 4,
+    "order_in_block": 7,
+    "kernel": "cubic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.00721975000000008,
+      0.007092042000000021,
+      0.00696399999999997
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.160052+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 4,
+    "order_in_block": 8,
+    "kernel": "cubic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.022762249999999984,
+      0.023084500000000063,
+      0.022427332999999994
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.229306+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 4,
+    "order_in_block": 9,
+    "kernel": "quadratic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.0022724999999998996,
+      0.0022578329999999314,
+      0.0024232909999999386
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.236282+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 5,
+    "order_in_block": 0,
+    "kernel": "quadratic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0011065000000000103,
+      0.0010606670000000706,
+      0.0010669159999999733
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.239602+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 5,
+    "order_in_block": 1,
+    "kernel": "cubic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.00028791599999999917,
+      0.0002882499999999899,
+      0.0002815000000000456
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.240467+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 5,
+    "order_in_block": 2,
+    "kernel": "cubic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0022706249999999706,
+      0.0023929160000000227,
+      0.0024327499999999835
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.247602+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 5,
+    "order_in_block": 3,
+    "kernel": "quadratic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.000265541999999952,
+      0.00024279199999999168,
+      0.00024137499999998813
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.248377+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 5,
+    "order_in_block": 4,
+    "kernel": "quadratic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.004936041999999974,
+      0.005024625000000005,
+      0.005058041999999929
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.263432+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 5,
+    "order_in_block": 5,
+    "kernel": "cubic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.007798583000000026,
+      0.007421667000000021,
+      0.0072045419999999805
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.287043+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 5,
+    "order_in_block": 6,
+    "kernel": "quadratic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0005292080000000032,
+      0.0005173750000000421,
+      0.0005177090000000328
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.288628+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 5,
+    "order_in_block": 7,
+    "kernel": "cubic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0008123750000000873,
+      0.000885292000000093,
+      0.0007803339999999936
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.291176+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 5,
+    "order_in_block": 8,
+    "kernel": "cubic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.022244209000000015,
+      0.023707708999999966,
+      0.022939374999999984
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.360536+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 5,
+    "order_in_block": 9,
+    "kernel": "quadratic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.002423959000000031,
+      0.002367166000000087,
+      0.0022614170000000433
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.367650+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 6,
+    "order_in_block": 0,
+    "kernel": "quadratic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.00024087500000002926,
+      0.00024054200000001025,
+      0.00023933300000000823
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.368398+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 6,
+    "order_in_block": 1,
+    "kernel": "cubic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0007710410000000278,
+      0.0007733749999999651,
+      0.0008094589999999569
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.370793+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 6,
+    "order_in_block": 2,
+    "kernel": "cubic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0023371660000000016,
+      0.002258333999999973,
+      0.0022672910000000046
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.377677+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 6,
+    "order_in_block": 3,
+    "kernel": "quadratic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.0022705419999999865,
+      0.0023619999999999752,
+      0.002384625000000029
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.384745+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 6,
+    "order_in_block": 4,
+    "kernel": "cubic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.0003212910000000013,
+      0.00029999999999996696,
+      0.00030008399999992275
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.385681+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 6,
+    "order_in_block": 5,
+    "kernel": "cubic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.0074541670000000115,
+      0.006879999999999997,
+      0.00720283300000002
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.407340+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 6,
+    "order_in_block": 6,
+    "kernel": "quadratic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.00506491600000003,
+      0.005248417000000005,
+      0.005024166999999968
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.422786+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 6,
+    "order_in_block": 7,
+    "kernel": "quadratic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0010447080000000053,
+      0.0010892080000000082,
+      0.0011311250000000106
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.426110+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 6,
+    "order_in_block": 8,
+    "kernel": "cubic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.02307608399999994,
+      0.022515207999999953,
+      0.022962833999999988
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.495568+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 6,
+    "order_in_block": 9,
+    "kernel": "quadratic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0005184590000000266,
+      0.0005193749999999886,
+      0.0005068329999999843
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.497131+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 7,
+    "order_in_block": 0,
+    "kernel": "cubic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.007433958000000018,
+      0.007085209000000092,
+      0.007291249999999971
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.519114+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 7,
+    "order_in_block": 1,
+    "kernel": "quadratic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.00026450000000011187,
+      0.00025787500000018504,
+      0.0002598339999999588
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.519916+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 7,
+    "order_in_block": 2,
+    "kernel": "quadratic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0005310000000000592,
+      0.0005165000000000308,
+      0.000509291999999828
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.521477+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 7,
+    "order_in_block": 3,
+    "kernel": "cubic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.00231420800000004,
+      0.0024127499999999635,
+      0.00226841599999994
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.528532+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 7,
+    "order_in_block": 4,
+    "kernel": "quadratic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.004970249999999954,
+      0.005258999999999903,
+      0.004943292000000099
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.543755+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 7,
+    "order_in_block": 5,
+    "kernel": "cubic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.022819208000000035,
+      0.022906791999999898,
+      0.02312070799999999
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.612914+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 7,
+    "order_in_block": 6,
+    "kernel": "quadratic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0010702090000000997,
+      0.001121375000000091,
+      0.0010817499999999924
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.616243+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 7,
+    "order_in_block": 7,
+    "kernel": "cubic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0008021670000000203,
+      0.0007959580000000965,
+      0.0007921669999999548
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.618640+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 7,
+    "order_in_block": 8,
+    "kernel": "quadratic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.0023328339999999503,
+      0.0023178749999999138,
+      0.0024097499999999883
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.625758+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 7,
+    "order_in_block": 9,
+    "kernel": "cubic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.00031391599999985864,
+      0.00030274999999990726,
+      0.00030287500000003575
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.626693+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 8,
+    "order_in_block": 0,
+    "kernel": "cubic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.002446166999999999,
+      0.0023489999999999345,
+      0.002312542000000084
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.633846+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 8,
+    "order_in_block": 1,
+    "kernel": "quadratic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.000251334000000103,
+      0.00024812500000015447,
+      0.0002795840000000549
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.634648+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 8,
+    "order_in_block": 2,
+    "kernel": "cubic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.00031670799999994337,
+      0.0003123339999999697,
+      0.00028637499999994986
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.635592+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 8,
+    "order_in_block": 3,
+    "kernel": "quadratic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0010944999999999983,
+      0.0010823330000000464,
+      0.0010786249999998887
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.638851+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 8,
+    "order_in_block": 4,
+    "kernel": "cubic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0007969580000000143,
+      0.000791500000000056,
+      0.0007912089999999594
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.641233+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 8,
+    "order_in_block": 5,
+    "kernel": "quadratic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.000509875000000104,
+      0.0005042920000000173,
+      0.0005016670000002055
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.642752+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 8,
+    "order_in_block": 6,
+    "kernel": "cubic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.023010291999999932,
+      0.023103000000000096,
+      0.023037583000000028
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.712257+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 8,
+    "order_in_block": 7,
+    "kernel": "cubic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.007377625000000165,
+      0.007392916999999999,
+      0.007326917000000099
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.734428+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 8,
+    "order_in_block": 8,
+    "kernel": "quadratic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.002286832999999877,
+      0.002333916999999852,
+      0.002311833000000041
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.741382+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 8,
+    "order_in_block": 9,
+    "kernel": "quadratic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.005250417000000063,
+      0.005147208999999986,
+      0.005117041999999961
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.756934+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 9,
+    "order_in_block": 0,
+    "kernel": "quadratic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.001045625000000161,
+      0.0010385000000001643,
+      0.0010385420000000867
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.760085+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 9,
+    "order_in_block": 1,
+    "kernel": "quadratic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.005029457999999876,
+      0.0049910839999998124,
+      0.005103333000000099
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.775271+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 9,
+    "order_in_block": 2,
+    "kernel": "cubic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.007168166999999892,
+      0.007431417000000051,
+      0.007214666999999952
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.797214+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 9,
+    "order_in_block": 3,
+    "kernel": "cubic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0023250000000001325,
+      0.002247832999999977,
+      0.0023395840000000057
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.804188+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 9,
+    "order_in_block": 4,
+    "kernel": "cubic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.000840082999999936,
+      0.0008130830000001588,
+      0.0007789169999998791
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.806643+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 9,
+    "order_in_block": 5,
+    "kernel": "cubic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.023061082999999982,
+      0.0224588750000001,
+      0.02265975000000009
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.875144+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 9,
+    "order_in_block": 6,
+    "kernel": "cubic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.00028791599999999917,
+      0.0002825419999998857,
+      0.00027933300000015926
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.876006+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 9,
+    "order_in_block": 7,
+    "kernel": "quadratic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.0023436249999999603,
+      0.0023917499999999148,
+      0.0023037909999998885
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.883092+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 9,
+    "order_in_block": 8,
+    "kernel": "quadratic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0004984159999998905,
+      0.0005006250000001433,
+      0.0004994160000000303
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.884594+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 9,
+    "order_in_block": 9,
+    "kernel": "quadratic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.00024283400000002509,
+      0.0002418330000000246,
+      0.00024129200000011508
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.885322+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 10,
+    "order_in_block": 0,
+    "kernel": "quadratic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.0022672919999999763,
+      0.002394041000000069,
+      0.0023658749999999618
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.892410+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 10,
+    "order_in_block": 1,
+    "kernel": "cubic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0024451670000000814,
+      0.0023547910000001337,
+      0.002389041999999897
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.899635+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 10,
+    "order_in_block": 2,
+    "kernel": "cubic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0008214589999999689,
+      0.0008030830000000933,
+      0.0008159170000001659
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.902087+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 10,
+    "order_in_block": 3,
+    "kernel": "quadratic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.00026133300000008575,
+      0.00025524999999992914,
+      0.0002542089999999497
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.902862+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 10,
+    "order_in_block": 4,
+    "kernel": "quadratic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.005021000000000164,
+      0.0052617079999999206,
+      0.005203707999999807
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.918403+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 10,
+    "order_in_block": 5,
+    "kernel": "cubic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.00030845899999998316,
+      0.0003679169999999399,
+      0.0002811250000001042
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.919394+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 10,
+    "order_in_block": 6,
+    "kernel": "cubic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.006930834000000052,
+      0.007362124999999997,
+      0.007357541999999828
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.941128+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 10,
+    "order_in_block": 7,
+    "kernel": "quadratic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0005038749999999315,
+      0.0004935829999999086,
+      0.0004927500000000418
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:32.942622+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 10,
+    "order_in_block": 8,
+    "kernel": "cubic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.02271145799999985,
+      0.022873042000000066,
+      0.023283582999999997
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:33.011959+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 10,
+    "order_in_block": 9,
+    "kernel": "quadratic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0011199589999999482,
+      0.0010992910000000577,
+      0.0010604579999999864
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:33.015309+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 11,
+    "order_in_block": 0,
+    "kernel": "cubic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.022989958000000144,
+      0.023548833999999852,
+      0.02298766699999999
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:33.085156+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 11,
+    "order_in_block": 1,
+    "kernel": "cubic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0022934169999999643,
+      0.0022692500000001115,
+      0.0022707090000000374
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:33.092002+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 11,
+    "order_in_block": 2,
+    "kernel": "quadratic",
+    "size": 36,
+    "job_cpu_seconds": [
+      0.0010434580000000526,
+      0.0010390829999999962,
+      0.0010882500000000128
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:33.095213+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 11,
+    "order_in_block": 3,
+    "kernel": "quadratic",
+    "size": 81,
+    "job_cpu_seconds": [
+      0.005227207999999983,
+      0.005144416999999901,
+      0.005024791999999945
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:33.110717+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 11,
+    "order_in_block": 4,
+    "kernel": "quadratic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.000241874999999947,
+      0.000240666000000056,
+      0.00024208399999992025
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:33.111446+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 11,
+    "order_in_block": 5,
+    "kernel": "quadratic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.002250499999999933,
+      0.002369375000000007,
+      0.0023859999999999992
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:33.118475+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 11,
+    "order_in_block": 6,
+    "kernel": "cubic",
+    "size": 16,
+    "job_cpu_seconds": [
+      0.00032545900000013894,
+      0.00029929200000000655,
+      0.0002974579999999172
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:33.119418+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 11,
+    "order_in_block": 7,
+    "kernel": "cubic",
+    "size": 54,
+    "job_cpu_seconds": [
+      0.007433166999999852,
+      0.007403583000000102,
+      0.0073403749999998436
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:33.141711+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 11,
+    "order_in_block": 8,
+    "kernel": "quadratic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0005002080000000575,
+      0.0004979580000001871,
+      0.0004963340000001537
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:33.143210+00:00"
+  },
+  {
+    "split": "calibration",
+    "block_id": 11,
+    "order_in_block": 9,
+    "kernel": "cubic",
+    "size": 24,
+    "job_cpu_seconds": [
+      0.0007727079999999553,
+      0.000769291999999977,
+      0.0007687499999999847
+    ],
+    "numerical_valid": true,
+    "status": "completed",
+    "measured_utc": "2026-10-02T08:44:33.145523+00:00"
+  }
+]

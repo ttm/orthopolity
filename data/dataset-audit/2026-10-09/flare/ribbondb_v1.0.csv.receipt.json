@@ -1,0 +1,26 @@
+{
+  "source_url": "https://solarmuri.ssl.berkeley.edu/~kazachenko/RibbonDB/ribbondb_v1.0.csv",
+  "access_date_client": "2026-10-09",
+  "retrieved_at_utc": "2026-10-09T00:18:37.956806+00:00",
+  "command": [
+    "curl",
+    "--fail",
+    "--location",
+    "--max-time",
+    "40",
+    "--silent",
+    "--show-error",
+    "--dump-header",
+    "<path>.headers",
+    "--output",
+    "ribbondb_v1.0.csv",
+    "--write-out",
+    "%{http_code}\\n%{url_effective}\\n%{size_download}\\n",
+    "https://solarmuri.ssl.berkeley.edu/~kazachenko/RibbonDB/ribbondb_v1.0.csv"
+  ],
+  "exit_code": 0,
+  "curl_report": "200\nhttps://solarmuri.ssl.berkeley.edu/~kazachenko/RibbonDB/ribbondb_v1.0.csv\n655830\n",
+  "stderr": "",
+  "bytes": 655830,
+  "sha256": "1fc2b1a869a85a0668207f98438c452198df141b8d1d452dac19968136d18e00"
+}

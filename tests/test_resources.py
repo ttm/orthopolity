@@ -1,6 +1,6 @@
 import unittest
 import numpy as np
-from orthopolity import resource_exponents, rule_alpha, simple_rationals, chance_match
+from orthopolity.spectrum import resource_exponents, rule_alpha, simple_rationals, chance_match
 
 
 class ResourceExponents(unittest.TestCase):

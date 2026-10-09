@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?><kml xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Style id="eventStyle">
+<BalloonStyle>
+<text>$[description]</text>
+</BalloonStyle>
+<LabelStyle>
+<scale>0</scale>
+</LabelStyle>
+<IconStyle>
+<scale>1.0</scale>
+<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction"/>
+<Icon>
+<href>https://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+</Icon>
+</IconStyle>
+<LineStyle>
+<color>ff00aaff</color>
+<colorMode>normal</colorMode>
+<width>2</width>
+</LineStyle>
+<ListStyle>
+<listItemType>checkHideChildren</listItemType>
+<ItemIcon>
+<href>https://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+</ItemIcon>
+</ListStyle>
+</Style>
+<Style id="eventStartStyle">
+<BalloonStyle>
+<text>$[description]</text>
+</BalloonStyle>
+<LabelStyle>
+<scale>0</scale>
+</LabelStyle>
+<IconStyle>
+<scale>1.0</scale>
+<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction"/>
+<Icon>
+<href>https://maps.google.com/mapfiles/kml/paddle/1.png</href>
+</Icon>
+</IconStyle>
+<LineStyle>
+<color>ff00aaff</color>
+<colorMode>normal</colorMode>
+<width>2</width>
+</LineStyle>
+<ListStyle>
+<listItemType>checkHideChildren</listItemType>
+<ItemIcon>
+<href>https://maps.google.com/mapfiles/kml/paddle/1.png</href>
+</ItemIcon>
+</ListStyle>
+</Style>
+<Style id="eventEndStyle">
+<BalloonStyle>
+<text>$[description]</text>
+</BalloonStyle>
+<LabelStyle>
+<scale>0</scale>
+</LabelStyle>
+<IconStyle>
+<scale>1.0</scale>
+<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction"/>
+<Icon>
+<href>https://maps.google.com/mapfiles/kml/paddle/2.png</href>
+</Icon>
+</IconStyle>
+<LineStyle>
+<color>ff00aaff</color>
+<colorMode>normal</colorMode>
+<width>2</width>
+</LineStyle>
+<ListStyle>
+<listItemType>checkHideChildren</listItemType>
+<ItemIcon>
+<href>https://maps.google.com/mapfiles/kml/paddle/2.png</href>
+</ItemIcon>
+</ListStyle>
+</Style>
+<name>Biomass and stable isotope composition of plankton in five size fractions along a zonal transect (24°N) from the Canary Islands to Florida in January-March 2011</name>
+<atom:author>
+<atom:name>Bode, Antonio</atom:name>
+</atom:author>
+<atom:link href="https://doi.pangaea.de/10.1594/PANGAEA.816451"/>
+<Snippet maxLines="1">https://doi.org/10.1594/PANGAEA.816451</Snippet>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><strong><a class="popover-link link-unstyled" href="#" data-title="&lt;span&gt;Bode, Antonio&lt;/span&gt;" data-content="&lt;div&gt;&lt;div&gt;&lt;a class=&quot;orcid-link text-nowrap wide-icon-link&quot; target=&quot;_blank&quot; href=&quot;https://orcid.org/0000-0002-9535-2548&quot;&gt;https://orcid.org/0000-0002-9535-2548&lt;/a&gt;&lt;/div&gt;&#10;&lt;div&gt;&lt;a class=&quot;mail-link text-nowrap wide-icon-link&quot; href=&quot;mailto:antonio.bode@ieo.csic.es&quot;&gt;antonio.bode@ieo.csic.es&lt;/a&gt;&lt;/div&gt;&#10;&lt;/div&gt;&#10;">Bode, Antonio</a> (2013):</strong> Biomass and stable isotope composition of plankton in five size fractions along a zonal transect (24°N) from the Canary Islands to Florida in January-March 2011 [dataset]. <em>PANGAEA</em>, <a id="citation-doi-link" rel="nofollow bookmark" href="https://doi.org/10.1594/PANGAEA.816451" data-pubstatus="4" class="text-linkwrap popover-link doi-link">https://doi.org/10.1594/PANGAEA.816451</a>,<hr class="spacer" aria-hidden="true" />
+<em>Supplement to:</em> <strong><a class="popover-link link-unstyled" href="#" data-title="&lt;span&gt;Mompeán, Carmen&lt;/span&gt;" data-content="&lt;div&gt;&lt;div&gt;&lt;a class=&quot;mail-link text-nowrap wide-icon-link&quot; href=&quot;mailto:carmenmompeandelarosa@gmail.com&quot;&gt;carmenmompeandelarosa@gmail.com&lt;/a&gt;&lt;/div&gt;&#10;&lt;/div&gt;&#10;">Mompeán, Carmen</a>; <a class="popover-link link-unstyled" href="#" data-title="&lt;span&gt;Bode, Antonio&lt;/span&gt;" data-content="&lt;div&gt;&lt;div&gt;&lt;a class=&quot;orcid-link text-nowrap wide-icon-link&quot; target=&quot;_blank&quot; href=&quot;https://orcid.org/0000-0002-9535-2548&quot;&gt;https://orcid.org/0000-0002-9535-2548&lt;/a&gt;&lt;/div&gt;&#10;&lt;div&gt;&lt;a class=&quot;mail-link text-nowrap wide-icon-link&quot; href=&quot;mailto:antonio.bode@ieo.csic.es&quot;&gt;antonio.bode@ieo.csic.es&lt;/a&gt;&lt;/div&gt;&#10;&lt;/div&gt;&#10;">Bode, Antonio</a>; Benítez-Barrios, Verónica M; Domínguez-Yanes, J Francisco; Escánez, José; Eugenio, Fraile-Nuez (2013):</strong> Spatial patterns of plankton biomass and stable isotopes reflect the influence of the nitrogen-fixer Trichodesmium along the subtropical North Atlantic. <em>Journal of Plankton Research</em>, <strong>35(3)</strong>, 513-525, <a class="text-linkwrap doi-link" href="https://doi.org/10.1093/plankt/fbt011" target="_blank">https://doi.org/10.1093/plankt/fbt011</a></div>
+]]></description>
+<Placemark id="event2687772">
+<name>MALASPINA_LEG8_012-1 (station: 012)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_012-1</strong> (station: 012)</div>
+<div><b>DATE/TIME:</b> 2011-01-29T11:23:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-15.3478,27.1285</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687773">
+<name>MALASPINA_LEG8_016-1 (station: 016)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_016-1</strong> (station: 016)</div>
+<div><b>DATE/TIME:</b> 2011-01-30T07:39:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-16.7797,26.663</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687774">
+<name>MALASPINA_LEG8_020-1 (station: 020)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_020-1</strong> (station: 020)</div>
+<div><b>DATE/TIME:</b> 2011-01-31T09:07:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-18.2703,26.1837</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687775">
+<name>MALASPINA_LEG8_024-1 (station: 024)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_024-1</strong> (station: 024)</div>
+<div><b>DATE/TIME:</b> 2011-02-01T08:57:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-20.0092,25.6257</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687776">
+<name>MALASPINA_LEG8_027-1 (station: 027)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_027-1</strong> (station: 027)</div>
+<div><b>DATE/TIME:</b> 2011-02-02T12:17:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-21.4565,25.1563</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687777">
+<name>MALASPINA_LEG8_030-1 (station: 030)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_030-1</strong> (station: 030)</div>
+<div><b>DATE/TIME:</b> 2011-02-03T08:38:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-22.9763,24.6612</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687778">
+<name>MALASPINA_LEG8_033-1 (station: 033)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_033-1</strong> (station: 033)</div>
+<div><b>DATE/TIME:</b> 2011-02-04T06:11:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-24.708,24.5012</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687779">
+<name>MALASPINA_LEG8_037-1 (station: 037)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_037-1</strong> (station: 037)</div>
+<div><b>DATE/TIME:</b> 2011-02-05T12:41:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-27.1497,24.5012</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687780">
+<name>MALASPINA_LEG8_039-1 (station: 039)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_039-1</strong> (station: 039)</div>
+<div><b>DATE/TIME:</b> 2011-02-06T12:50:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-28.3718,24.501</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687781">
+<name>MALASPINA_LEG8_040-1 (station: 040)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_040-1</strong> (station: 040)</div>
+<div><b>DATE/TIME:</b> 2011-02-07T06:33:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-28.9843,24.499</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687782">
+<name>MALASPINA_LEG8_043-1 (station: 043)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_043-1</strong> (station: 043)</div>
+<div><b>DATE/TIME:</b> 2011-02-08T06:21:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-30.8183,24.4992</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687783">
+<name>MALASPINA_LEG8_045-1 (station: 045)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_045-1</strong> (station: 045)</div>
+<div><b>DATE/TIME:</b> 2011-02-09T07:19:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-32.0403,24.501</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687784">
+<name>MALASPINA_LEG8_048-1 (station: 048)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_048-1</strong> (station: 048)</div>
+<div><b>DATE/TIME:</b> 2011-02-10T07:20:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-33.8727,24.5008</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687785">
+<name>MALASPINA_LEG8_052-1 (station: 052)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_052-1</strong> (station: 052)</div>
+<div><b>DATE/TIME:</b> 2011-02-11T11:28:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-34.7195,24.4998</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687786">
+<name>MALASPINA_LEG8_055-1 (station: 055)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_055-1</strong> (station: 055)</div>
+<div><b>DATE/TIME:</b> 2011-02-12T07:50:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-37.1078,24.5017</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687787">
+<name>MALASPINA_LEG8_059-1 (station: 059)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_059-1</strong> (station: 059)</div>
+<div><b>DATE/TIME:</b> 2011-02-13T11:48:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-38.9537,24.4998</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687788">
+<name>MALASPINA_LEG8_061-1 (station: 061-1)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_061-1</strong> (station: 061-1)</div>
+<div><b>DATE/TIME:</b> 2011-02-14T03:29:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-39.876,24.5022</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687789">
+<name>MALASPINA_LEG8_064-1 (station: 064)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_064-1</strong> (station: 064)</div>
+<div><b>DATE/TIME:</b> 2011-02-15T07:28:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-41.2633,24.4998</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687790">
+<name>MALASPINA_LEG8_068-1 (station: 068)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_068-1</strong> (station: 068)</div>
+<div><b>DATE/TIME:</b> 2011-02-16T08:17:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-43.1097,24.5002</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687791">
+<name>MALASPINA_LEG8_071-1 (station: 071-1)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_071-1</strong> (station: 071-1)</div>
+<div><b>DATE/TIME:</b> 2011-02-17T02:08:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-44.4953,24.4998</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687792">
+<name>MALASPINA_LEG8_075-1 (station: 075)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_075-1</strong> (station: 075)</div>
+<div><b>DATE/TIME:</b> 2011-02-18T08:55:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-46.3437,24.5</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687793">
+<name>MALASPINA_LEG8_078-1 (station: 078-1)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_078-1</strong> (station: 078-1)</div>
+<div><b>DATE/TIME:</b> 2011-02-19T03:15:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-47.7278,24.5007</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687794">
+<name>MALASPINA_LEG8_082-1 (station: 082)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_082-1</strong> (station: 082)</div>
+<div><b>DATE/TIME:</b> 2011-02-20T11:57:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-49.5755,24.5</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687795">
+<name>MALASPINA_LEG8_085-1 (station: 085)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_085-1</strong> (station: 085)</div>
+<div><b>DATE/TIME:</b> 2011-02-21T08:53:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-50.9612,24.5002</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687796">
+<name>MALASPINA_LEG8_088-1 (station: 088)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_088-1</strong> (station: 088)</div>
+<div><b>DATE/TIME:</b> 2011-02-22T08:35:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-52.3467,24.5</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687797">
+<name>MALASPINA_LEG8_091-1 (station: 091)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_091-1</strong> (station: 091)</div>
+<div><b>DATE/TIME:</b> 2011-02-23T08:13:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-54.0342,24.4865</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687798">
+<name>MALASPINA_LEG8_094-1 (station: 094)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_094-1</strong> (station: 094)</div>
+<div><b>DATE/TIME:</b> 2011-02-24T08:32:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-55.8743,24.5005</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687799">
+<name>MALASPINA_LEG8_097-1 (station: 097)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_097-1</strong> (station: 097)</div>
+<div><b>DATE/TIME:</b> 2011-02-25T07:43:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-57.7157,24.5008</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687800">
+<name>MALASPINA_LEG8_100-1 (station: 100)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_100-1</strong> (station: 100)</div>
+<div><b>DATE/TIME:</b> 2011-02-26T07:20:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-59.553,24.5</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687801">
+<name>MALASPINA_LEG8_104-1 (station: 104)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_104-1</strong> (station: 104)</div>
+<div><b>DATE/TIME:</b> 2011-02-27T15:39:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-62.0047,24.5012</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687802">
+<name>MALASPINA_LEG8_107-1 (station: 107)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_107-1</strong> (station: 107)</div>
+<div><b>DATE/TIME:</b> 2011-02-28T15:36:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-63.843,24.5015</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687803">
+<name>MALASPINA_LEG8_110-1 (station: 110)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_110-1</strong> (station: 110)</div>
+<div><b>DATE/TIME:</b> 2011-03-01T15:02:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-65.682,24.5007</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687804">
+<name>MALASPINA_LEG8_113-1 (station: 113)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_113-1</strong> (station: 113)</div>
+<div><b>DATE/TIME:</b> 2011-03-02T13:25:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-67.5202,24.4997</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687805">
+<name>MALASPINA_LEG8_116-1 (station: 116)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_116-1</strong> (station: 116)</div>
+<div><b>DATE/TIME:</b> 2011-03-03T11:19:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-69.1327,24.5007</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687806">
+<name>MALASPINA_LEG8_120-1 (station: 120)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_120-1</strong> (station: 120)</div>
+<div><b>DATE/TIME:</b> 2011-03-05T07:26:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-70.322,26.2038</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687807">
+<name>MALASPINA_LEG8_125-1 (station: 125)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_125-1</strong> (station: 125)</div>
+<div><b>DATE/TIME:</b> 2011-03-06T15:42:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-72.2647,26.2032</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687808">
+<name>MALASPINA_LEG8_128-1 (station: 128)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_128-1</strong> (station: 128)</div>
+<div><b>DATE/TIME:</b> 2011-03-07T09:40:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-73.4317,26.2035</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687809">
+<name>MALASPINA_LEG8_133-1 (station: 133)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_133-1</strong> (station: 133)</div>
+<div><b>DATE/TIME:</b> 2011-03-08T13:38:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-75.1557,26.2038</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687810">
+<name>MALASPINA_LEG8_137-1 (station: 137)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_137-1</strong> (station: 137)</div>
+<div><b>DATE/TIME:</b> 2011-03-09T08:54:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-75.8622,26.2042</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687811">
+<name>MALASPINA_LEG8_143-1 (station: 143)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_143-1</strong> (station: 143)</div>
+<div><b>DATE/TIME:</b> 2011-03-10T11:03:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-76.6218,26.2037</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687812">
+<name>MALASPINA_LEG8_149-1 (station: 149)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_149-1</strong> (station: 149)</div>
+<div><b>DATE/TIME:</b> 2011-03-11T10:40:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-76.9525,26.203</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687813">
+<name>MALASPINA_LEG8_157-1 (station: 157)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_157-1</strong> (station: 157)</div>
+<div><b>DATE/TIME:</b> 2011-03-13T15:55:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-79.3063,27.0003</coordinates>
+</Point>
+</Placemark>
+<Placemark id="event2687814">
+<name>MALASPINA_LEG8_161-1 (station: 161-1)</name>
+<Snippet maxLines="0"/>
+<description><![CDATA[<div style="font:normal 9pt sans-serif; margin:0; padding:0;"><div style="font-size:130%; font-weight:bold; margin-bottom:.3em;"><em>Event:</em> <strong>MALASPINA_LEG8_161-1</strong> (station: 161-1)</div>
+<div><b>DATE/TIME:</b> 2011-03-13T21:33:00</div>
+<div><b>LOCATION:</b> <span>Subtropical North Atlantic</span></div>
+<div><b>CAMPAIGN:</b> <span>MALASPINA_LEG8</span></div>
+<div><b>BASIS:</b> <span><a target="_blank" href="https://www.utm.csic.es/en/instalaciones/sdg">Sarmiento de Gamboa</a></span></div>
+<div><b>METHOD/DEVICE:</b> <span>Multiple opening/closing net</span> (MSN)</div>
+<div><b>COMMENT:</b> used two different nets: microplankton net (mesh size = 40 µm, net area = 0.071 square meter); mesoplankton net (mesh size 200 µm, net area = 0.196 square meter)</div>
+</div>
+]]></description>
+<styleUrl>#eventStyle</styleUrl>
+<Point>
+<coordinates>-79.5658,27.0012</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>

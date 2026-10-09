@@ -23,7 +23,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
-from orthopolity import rule_alpha, simple_rationals, chance_match   # noqa: E402
+from orthopolity.spectrum import rule_alpha, simple_rationals, chance_match   # noqa: E402
 
 OUT = ROOT / 'results'
 CFG = json.loads((ROOT / 'configs' / 'resource_catalogue.json').read_text())

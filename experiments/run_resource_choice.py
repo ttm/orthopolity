@@ -33,8 +33,8 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
-from orthopolity import rounded_gr_b                    # noqa: E402
-from gof import fit_powerlaw, powerlaw_gof              # noqa: E402
+from orthopolity.spectrum import rounded_gr_b           # noqa: E402
+from orthopolity.goodness_of_fit import fit_powerlaw, powerlaw_gof   # noqa: E402
 
 RAW, OUT = ROOT / 'data' / 'raw', ROOT / 'results'
 SPEC = json.loads((ROOT / 'configs' / 'pilot.json').read_text())

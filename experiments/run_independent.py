@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
-from gof import flatness_equivalence                                   # noqa: E402
+from orthopolity.goodness_of_fit import flatness_equivalence  # noqa: E402
 
 RAW, OUT = ROOT / 'data' / 'raw', ROOT / 'results'
 PRE = json.loads((ROOT / 'configs' / 'prereg_2026-09-09.json').read_text())

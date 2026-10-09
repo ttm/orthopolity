@@ -1,6 +1,7 @@
 # Source and revision audit
 
-Reviewed 9 September 2026. This records direct comparison with the two requested sources
+Source review: 9 September 2026; assessment correction: 28 September 2026 (§7).
+This records direct comparison with the two requested sources
 and the reasons for changing the repository's earlier conclusions. It accompanies the
 [revised manuscript](paper.md).
 
@@ -29,7 +30,8 @@ resource-weighted sampling.
 
 This insight belongs in a scientific synthesis with credit to established size-spectrum
 literature. The additional claim that real systems generally allocate resource this way
-requires empirical evidence or a dynamical argument.
+requires independent empirical evidence. A supported dynamical argument may add explanation,
+but a deeper mechanism is not necessary for an empirically established law.
 
 ## 2. Corrections to the 2017 manuscript
 
@@ -141,3 +143,44 @@ the allocation assumption, the dimensionality argument does not establish generi
 and the observational examples do not support the cosmological or social conclusions.
 The revised article states those limits rather than promoting an unverified weaker principle
 as a confirmed discovery.
+
+## 7. Correction to the scientific assessment, 28 September 2026
+
+The earlier assessment treated the lack of a deeper allocation mechanism as a principal
+obstacle to a natural law. That requirement was too strong. A law may be a primitive,
+empirically supported regularity. The proposed indifference to resource cost can be stated
+as a physical resource-symmetry postulate and tested on that basis.
+
+The [manuscript](paper.md), [concept note](concept.md), and
+[scientific assessment](scientific-assessment.md) now distinguish the postulate from its
+accounting consequence. Exchangeable resource allocations across declared cost classes
+give equal expected resources and inverse-cost expected counts. This does not by itself
+establish equal snapshots, long-time averages, or convergence. The reference measure and
+conditions identifying a neutral regime must be specified independently of the outcome.
+
+The ensemble counterexample has also been strengthened to a general restriction for
+positive fixed-weight mixtures of exact power spectra on a common domain. Its proof,
+log-curvature identity, and approximate-flatness bound use standard convexity and carry
+no mathematical priority claim. General curved profiles are outside that restriction.
+
+These changes correct the interpretation and clarify the research programme. They add
+no observations and do not change the numerical empirical results or their limitations.
+
+## 8. Consistency verification and external assessment, 29 September 2026
+
+The correction has been propagated to the manuscript, README, concept, criticism, value,
+scope decisions, references, and roadmap. The finite-measure condition for resource-weighted
+sampling and the different lower-cutoff requirements for finite resource versus finite
+count have been made explicit. Stale references to removed document sections were fixed.
+
+The [assessment](scientific-assessment.md) also evaluates an external critique: a Benford
+connection is useful with explicit boundary conditions, but significand uniformity is
+weaker than full log-size uniformity. A non-unit cost exponent is coordinate-dependent;
+scientific discrimination requires independently fixed measurements and alternatives.
+The flare interval includes $d=1$, and its mismatch tests the declared joint model.
+
+Fresh computational checks passed all 75 existing tests and all 11 frozen-input checksums.
+The available local test environment used Python 3.11.6, NumPy 2.3.5, and SciPy 1.16.3;
+the latter differs from the pinned analysis version 1.17.0. This was a consistency and
+regression check, not a full regeneration in the pinned environment. The numerical analysis
+outputs were not changed. The manuscript PDF was rebuilt from its Markdown source.

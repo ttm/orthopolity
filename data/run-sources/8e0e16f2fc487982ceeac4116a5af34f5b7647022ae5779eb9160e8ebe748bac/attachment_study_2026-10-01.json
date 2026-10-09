@@ -1,0 +1,22 @@
+{
+  "description": "Exploratory attachment transfer benchmark; specification saved before the benchmark run, not an external preregistration",
+  "seed": 202610011,
+  "replicates": 8,
+  "graph_sizes": [2000, 10000, 50000],
+  "seed_graph": "one undirected edge; two degree-one vertices",
+  "new_edges_per_vertex": 1,
+  "kernels": [
+    {"name": "uniform", "gamma": 0.0, "attractiveness": 0.0},
+    {"name": "sublinear", "gamma": 0.5, "attractiveness": 0.0},
+    {"name": "linear", "gamma": 1.0, "attractiveness": 0.0},
+    {"name": "superlinear", "gamma": 1.5, "attractiveness": 0.0},
+    {"name": "affine", "gamma": 1.0, "attractiveness": 0.5}
+  ],
+  "kernel_definition": "A(k)=k^gamma+attractiveness, k>=1",
+  "resource": "centered wedges q(k)=k(k-1)/2, fixed across all kernels and sizes",
+  "degree_domain": [2.0, 64.0],
+  "logarithmic_bins": 10,
+  "reference_max_degree": 1024,
+  "uncertainty": "Eight independent growth histories; sizes within a history are nested snapshots. Run quantiles describe Monte Carlo variation, not confidence intervals.",
+  "outputs": ["full fixed-domain resource profiles", "degree-count agreement with exact finite or limiting discrete reference", "empty and zero-resource bins", "degree concentration", "top and top-one-percent wedge shares", "wedge resource outside the declared domain"]
+}
