@@ -16,3 +16,6 @@ results/exploration/
 *.egg-info/
 build/
 dist/
+
+# Derived tables regenerated from large external downloads (e.g. HydroLAKES radii)
+data/derived/

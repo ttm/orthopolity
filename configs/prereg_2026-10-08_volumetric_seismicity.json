@@ -7,8 +7,14 @@
   ],
   "question": "When earthquakes in a cluster occupy a support of dimension D2 (from hypocentre correlation), does b follow the territory prediction b = D2/2, or the fractal-diffusive self-organized criticality prediction b = 1 independent of support?",
   "hypotheses": {
-    "H_territory": {"relation": "b = D2/2 (slope 0.5 on D2, intercept 0)", "why": "Territory rule: ruptures tile a support of dimension D2, so N(>L) ∝ L^-D2; with M0 ∝ L^3 and M ∝ (2/3) log10 M0, b = D2/2. A planar fault (D2 = 2) gives b = 1; a volume (D2 = 3) gives b = 1.5."},
-    "H_fdsoc": {"relation": "b = 1 (slope 0 on D2)", "why": "Fractal-diffusive self-organized criticality predicts energy exponent 5/3 in three dimensions, b = 1, independent of the hypocentre support."}
+    "H_territory": {
+      "relation": "b = D2/2 (slope 0.5 on D2, intercept 0)",
+      "why": "Territory rule: ruptures tile a support of dimension D2, so N(>L) ∝ L^-D2; with M0 ∝ L^3 and M ∝ (2/3) log10 M0, b = D2/2. A planar fault (D2 = 2) gives b = 1; a volume (D2 = 3) gives b = 1.5."
+    },
+    "H_fdsoc": {
+      "relation": "b = 1 (slope 0 on D2)",
+      "why": "Fractal-diffusive self-organized criticality predicts energy exponent 5/3 in three dimensions, b = 1, independent of the hypocentre support."
+    }
   },
   "data": {
     "source": "A relocated regional catalogue with hypocentres and a cluster identifier, for example the Southern California relocated catalogue (Hauksson, Yang and Shearer 2012, updated) with clusters from a nearest-neighbour declustering (Zaliapin and Ben-Zion 2013), or published swarm lists. Record exactly which catalogue and cluster definition were used before computing b or D2.",
@@ -24,5 +30,15 @@
     "support_H_territory": "Slope interval contains 0.5 and excludes 0, and the intercept interval contains 0.",
     "support_H_fdsoc": "Slope interval contains 0 and excludes 0.5, and the mean b interval contains 1.",
     "inconclusive": "Otherwise, including fewer than 10 qualifying clusters or a D2 range narrower than 0.5."
-  }
+  },
+  "amendments": [
+    {
+      "number": 1,
+      "declared_utc": "2026-10-09T00:45Z",
+      "before_data_access": true,
+      "change": "D2 fitting range: from the 200th-closest pair distance (or three times the median location error, if larger) to 0.1 of the 90th-percentile pair distance, 15 log-spaced radii; clusters whose range spans less than a factor of 3 are excluded. Hypocentres used for D2 are capped at 3,000 per cluster. Supersedes the range of 3 to 30 times the median nearest-neighbour distance.",
+      "reason": "Synthetic validation showed the registered range extends beyond the extent of clusters of a few hundred events, so boundary effects biased D2 strongly low (planes and volumes both estimated at 1.15-1.74). The amended range recovers D2 = 2 and 3 within about 0.1 for clusters of at least 1,000 events, and the full pipeline recovers slope 0.51 [0.47, 0.55] in a simulated territory world and -0.002 [-0.02, 0.02] in a simulated b = 1 world. Volumetric clusters need roughly 3,000 events above completeness to qualify.",
+      "unchanged": "Hypotheses, b estimator, Deming regression, bootstrap and decision rule."
+    }
+  ]
 }

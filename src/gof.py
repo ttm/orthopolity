@@ -295,6 +295,34 @@ def powerlaw_gof(x, lo, hi, n_boot=500, seed=0):
                      'p > 0.1 is non-rejection, not support.')
 
 
+def csn_powerlaw(x, quantiles=np.linspace(0.30, 0.90, 61)):
+    """Unbounded continuous power law above x_min chosen by minimum KS distance.
+
+    Candidate x_min values are the given sample quantiles (Clauset, Shalizi and
+    Newman 2009). Returns the MLE alpha = 1 + n / sum(ln(x/x_min)) above x_min.
+    """
+    x = np.sort(np.asarray(x, float))
+    if x.ndim != 1 or len(x) < 10 or np.any(~np.isfinite(x)) or np.any(x <= 0):
+        raise ValueError('At least ten positive finite observations required')
+    best = None
+    for xmin in np.unique(np.quantile(x, quantiles)):
+        t = x[x >= xmin]
+        if len(t) < 10:
+            continue
+        s = np.log(t / xmin).sum()
+        if s <= 0:
+            continue
+        alpha = 1 + len(t) / s
+        cdf = 1 - (t / xmin) ** (1 - alpha)
+        n = len(t)
+        ks = float(max(np.max(np.arange(1, n + 1) / n - cdf), np.max(cdf - np.arange(n) / n)))
+        if best is None or ks < best['ks']:
+            best = dict(x_min=float(xmin), alpha=float(alpha), n_tail=int(n), ks=ks)
+    if best is None:
+        raise ValueError('No admissible x_min candidate')
+    return best
+
+
 def vuong(x, fit1, fit2, lo, hi):
     """Vuong test for two non-nested models on the same support.
 

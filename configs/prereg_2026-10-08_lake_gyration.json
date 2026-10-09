@@ -7,8 +7,14 @@
   ],
   "question": "Do lakes tile the land surface as a two-dimensional territory, so that the count per logarithmic class of linear size falls as L^-2 whatever the fractal dimension of their area?",
   "hypotheses": {
-    "H_territory": {"zeta_R": 2.0, "why": "Territory rule with support dimension d_s = 2 and linear size R (D_k = 1): survival exponent zeta_R = 2, density exponent 3. Independent of the area-size dimension D, because the territory is counted, not the water area."},
-    "H_area_inherited": {"zeta_R": "zeta_A x D", "why": "If the area distribution were primary, zeta_R would equal the fitted area exponent times the fitted area-radius dimension D (from log A on log R), e.g. 1.14 x 2 = 2.28 for compact lakes. This is an identity check that the territory hypothesis must also satisfy, with zeta_A = 2/D."}
+    "H_territory": {
+      "zeta_R": 2.0,
+      "why": "Territory rule with support dimension d_s = 2 and linear size R (D_k = 1): survival exponent zeta_R = 2, density exponent 3. Independent of the area-size dimension D, because the territory is counted, not the water area."
+    },
+    "H_area_inherited": {
+      "zeta_R": "zeta_A x D",
+      "why": "If the area distribution were primary, zeta_R would equal the fitted area exponent times the fitted area-radius dimension D (from log A on log R), e.g. 1.14 x 2 = 2.28 for compact lakes. This is an identity check that the territory hypothesis must also satisfy, with zeta_A = 2/D."
+    }
   },
   "data": {
     "source": "HydroLAKES v1.0 polygons (Messager et al. 2016, Nature Communications 7, 13603; CC BY 4.0), https://www.hydrosheds.org/products/hydrolakes, shapefile HydroLAKES_polys_v10_shp.zip, about 1.43 million lakes of at least 10 ha.",
@@ -29,5 +35,15 @@
   "limitations": [
     "Polygon generalization at 10 ha affects small lakes; the fixed range mitigates but does not remove it.",
     "Reservoirs are included in HydroLAKES; a sensitivity excluding them (Lake_type != 1) is reported."
+  ],
+  "amendments": [
+    {
+      "number": 1,
+      "declared_utc": "2026-10-09T00:20Z",
+      "before_data_access": true,
+      "change": "Replace the estimator range: select lakes directly on radius of gyration, 1 km <= R <= 20 km, and fit the bounded power law on that fixed interval. Supersedes the area-range selection (1-1000 km^2) with quantile R bounds.",
+      "reason": "Synthetic validation of experiments/run_lake_gyration.py showed that selecting on area and then bounding R by quantiles of the selected set biases the fitted zeta_R strongly downwards (true 2.0 estimated as 1.43), because scatter of area at given R depletes the smallest radii, where most lakes lie. Selecting on R itself recovers the truth (2.00 [1.97, 2.03]; a true 2.3 is correctly rejected). R >= 1 km is far above the 10 ha mapping limit (R about 0.2 km); R <= 20 km excludes the few largest lakes.",
+      "unchanged": "Hypotheses, data source, projection, bootstrap, decision rule and equivalence margin."
+    }
   ]
 }
