@@ -17,6 +17,7 @@ def validate_model(model):
 
 def observed_bins(ticks, model):
     """Original source tenths -> published proxy hundredths -> registered tenths."""
+    ticks = np.asarray(ticks)
     return np.round(np.round(model['intercept'] + model['slope'] * BIN * ticks, 2), 1)
 
 
