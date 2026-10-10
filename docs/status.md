@@ -6,8 +6,8 @@ to the files that hold the details.
 
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
-the package layout for all runners. The suite now passes 473 tests; the
-33-run registry verifies all 813 file references. The broader programme and subsequent
+the package layout for all runners. The suite now passes 480 tests; the
+registry verifies 34 runs and 832 file references, including the new Italian simulation. The broader programme and subsequent
 studies are in [research-brief.md](research-brief.md) and
 [ongoing-research.md](ongoing-research.md).
 The [flare-ribbon test has now run](flare-ribbons-run-2026-10-09.md):
@@ -37,6 +37,15 @@ quarantined. Only 699 matched events have direct moment-tensor provenance
 Four timestamp discrepancies were checked against INGV; official times agree
 with HORUS. No physical clusters, completeness or response fits were calculated
 for these new sources. The source audit leaves the 33-run registry unchanged.
+
+The [Italian magnitude validation](italian-magnitude-validation-results-2026-10-10.md)
+has now run under a design committed before the ensemble. It fails in 45 of 56
+required synthetic scenarios, including 30 of 32 noiseless proxy cases. Empty
+converted-magnitude bins can invalidate the registered uniform-bin correction;
+exact source-bin integration confirms the large biases. The stop rule ends this
+bounded Italian attempt before real sequence construction or Mc/b/D2 fitting.
+This is a simulation finding, not a physical hypothesis test. The manuscript
+now integrates the geometry outcomes, seismic eligibility and estimator limits.
 
 ## 1. What the authors intend
 
@@ -118,6 +127,7 @@ grow proportionally sit near ζ = 1; event catalogues and cascades mostly below 
 | UK lake radius, survival ζ | 1.441; iid [1.191, 1.714], grid [1.166, 2.009] | `results/uk-lake-gyration-2026-10-09/result.json` |
 | Global local-geometry radius, survival ζ | 1.859; iid [1.844,1.874], matched basin [1.785,1.924] | `results/lake-metric-followup-2026-10-09/result.json` |
 | Southern California b/D2 eligibility | 6 sequences pass, minimum 10; no fitted response or hypothesis preference | `results/seismic-qualification-2026-10-10/result.json` |
+| Italian magnitude prerequisite (simulation) | 45/56 required scenarios fail; real Italian sequence/response fitting not run | `results/italian-magnitude-validation-2026-10-10/summary.json` |
 
 ## 4. Current assessment
 
@@ -147,17 +157,24 @@ The [research brief](research-brief.md) explains the general-law programme;
   physical comparison. Neither prediction has been tested on this real cohort.
 - The manuscript has been substantially developed on the merged branch; the
   earlier claim that it still has only September's framing is superseded.
+- The Italian proxy route fails a necessary synthetic magnitude-estimator gate.
+  This does not reject either b/D2 relation. A source-bin likelihood helps in
+  noiseless single-source simulations but remains unvalidated for detection,
+  measurement errors and shared calibration uncertainty. No automatic estimator
+  replacement or real-data rerun is pending.
 
 ## 5. Next steps, in priority order
 
-1. **Act on the seismic eligibility finding.** This qualification is complete and
-   its six-sequence result must remain recorded. The newly acquired CLASS/HORUS
-   pairing supplies documented magnitude calibration and absolute-error fields.
-   Freeze physical clustering/event/identity conventions and validate the
-   converted-magnitude estimator before real fitting; direct moment estimates
-   alone cannot supply ten groups. The required D2 contrast remains unassessed. Do not
-   relax filters or treat waveform processing groups as physical sequences to
-   force a fit. See [available data](accessible-datasets-2026-10-09.md).
+1. **Resolve the seismic observation model before another real test.** Both the
+   six-sequence Southern California eligibility finding and the failed Italian
+   synthetic prerequisite are complete and retained. A new design would need
+   source-aware bins, detection and shared calibration uncertainty, or a narrower
+   independently justified homogeneous cohort. Validate it before freezing
+   physical sequence/event/identity conventions and running qualification. Direct
+   moment estimates alone cannot supply ten groups in the present crosswalk.
+   Do not relax gates or promote the noiseless grid diagnostic automatically.
+   The required D2 contrast remains unassessed; more data hosts are not the
+   immediate remedy. See [validation results](italian-magnitude-validation-results-2026-10-10.md).
 2. **Explain the lake departure with independently justified inputs.** Physical
    geometry and hydrological uncertainty have now been evaluated. Source
    topology, mapping completeness and classification remain unresolved. The
@@ -166,8 +183,9 @@ The [research brief](research-brief.md) explains the general-law programme;
 3. **Follow up aftershocks** with finite-fault rupture windows under a new protocol,
    disclosing the earlier result. Wildfire allocation is another available-data
    route requiring a separate resource and held-out prediction design.
-4. **Synthesize the paper and verify the catalogue.** Incorporate both branches'
-   scoped findings and retain the distinction between derivations, conditional
+4. **Verify the catalogue and refine the paper.** The new Section 5.7 now
+   synthesizes the completed geometry tests, seismic eligibility and Italian
+   estimator limitation. Preserve the distinction between derivations, conditional
    exponent agreement and empirical resource identification. Regenerate the PDF
    whenever the manuscript changes.
 5. **Submission work:** reconcile attribution, data notices, authorship and venue
@@ -180,7 +198,7 @@ The [research brief](research-brief.md) explains the general-law programme;
   exponent was examined and the reading passes a second, different prediction. Grades:
   derived, motivated, suggestive, numerology. Source tags in documents: verified, repository result,
   own derivation, unverified.
-- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 473 tests and
+- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 480 tests and
   regenerates every analysis. The September results were produced with Python 3.11; results
   added on 8–9 October (Gibrat, resource choice, catalogue, aftershocks) with Python 3.13 and the
   pinned packages. Other versions change the older files by at most about $4\times10^{-8}$
@@ -196,6 +214,9 @@ The [research brief](research-brief.md) explains the general-law programme;
 - `make seismic-candidate-audit` reproduces the Italian source crosswalk and
   Northern California inventory without fitting. `make restore-seismic-candidates`
   restores exact raw inputs; later changes at the rolling HORUS URL fail hashes.
+- `make italian-magnitude-validation` reproduces the 72-cell synthetic check to
+  an empty output directory under `build/reproductions`. It refuses to overwrite
+  completed runs. No real earthquake rows enter this calculation.
 
 ## 7. Document map
 
@@ -206,6 +227,7 @@ The [research brief](research-brief.md) explains the general-law programme;
 | Latest lake follow-up | [metric/basin results](lake-metric-followup-results-2026-10-09.md); [frozen protocol](lake-metric-followup-protocol-2026-10-09.md); [basin sources](hydrobasins-source-2026-10-09.md) |
 | Latest seismic qualification | [results](seismic-qualification-results-2026-10-10.md); [frozen supplement](seismic-qualification-protocol-2026-10-10.md); `results/seismic-qualification-2026-10-10/` |
 | Next seismic inputs | [source/calibration audit](seismic-candidate-audit-2026-10-10.md); `data/seismic-candidates/2026-10-10/` |
+| Italian magnitude prerequisite | [failed validation](italian-magnitude-validation-results-2026-10-10.md); [frozen design](italian-magnitude-validation-protocol-2026-10-10.md); `results/italian-magnitude-validation-2026-10-10/` |
 | Unified manuscript and programme | [paper.md](paper.md) and `paper.pdf`; [research-brief.md](research-brief.md); [ongoing-research.md](ongoing-research.md) |
 | Still applicable scope limits | [not-worth-pursuing.md](not-worth-pursuing.md) (cosmological, social and normative claims) |
 | Raw provenance | [archive/2026-10-08/](archive/2026-10-08/README.md): full research dossiers, paper design (resource rule, gates, candidate datasets, falsification criteria), hostile referee report, fact-check, and the complete catalogue workflow output |

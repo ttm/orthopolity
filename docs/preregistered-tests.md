@@ -107,6 +107,13 @@ anew with this result disclosed.
   supplies a documented Italian magnitude-calibration route. Physical memberships
   and validation of proxy-magnitude rounding/uncertainty remain necessary; the
   original registration has not been rewritten around these known source findings.
+- **Italian attempt stopped at synthetic validation:** the
+  [frozen magnitude check](italian-magnitude-validation-results-2026-10-10.md)
+  fails in 45 of 56 required scenarios, including 30 of 32 noiseless proxy cases.
+  Conversion and rounding can leave empty magnitude bins which the registered
+  correction mishandles. No real Italian sequence, Mc, b, D2 or regression was
+  calculated. A new estimator/cohort needs separate validation; the physical
+  predictions and existing qualification thresholds remain unchanged.
 - **Amendment 1 (before data access):** the correlation-dimension range runs from the 200th-closest
   pair distance (or three location errors) to 0.1 of the 90th-percentile pair distance, and
   clusters spanning less than a factor of 3 are excluded. The registered range was biased by

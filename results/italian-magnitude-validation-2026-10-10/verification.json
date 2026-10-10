@@ -1,0 +1,9 @@
+{
+  "verified": true,
+  "replicates": 28800,
+  "cells": 72,
+  "failed_gate_cells": 45,
+  "original_runner_samples_verified": 72,
+  "max_relative_bootstrap_se_difference": 0.12300498434477292,
+  "note": "Source/artifact hashes; CSV-derived decisions; original point/MAXC and independent event bootstrap on first sample in every cell. Population integration is separately tested against exact geometric tails."
+}

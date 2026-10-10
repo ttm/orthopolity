@@ -1,0 +1,46 @@
+{
+  "run_id": "italian-magnitude-validation-2026-10-10",
+  "declared_utc": "2026-10-10T12:35:03Z",
+  "stage": "Necessary synthetic magnitude-estimator gate, before Italian sequence definitions or real response fitting",
+  "prior_exposure": "CLASS/HORUS source counts, provenance, identity and timestamp audit are known. HORUS paper reports national b-values and conversion artefacts; these were read as methods background. No Italian cluster, Mc, b, D2 or regression has been calculated here.",
+  "target": "Log-orthopolic rupture territory predicts b=D2/2 versus b=1. Test b=1 and 1.5, the distinct magnitude marginals for ideal planes and volumes. This is not an end-to-end D2/regression validation.",
+  "seed": 202610103,
+  "replicates": 400,
+  "events_per_replicate": 7000,
+  "bootstrap_resamples": 500,
+  "true_b": [1.0, 1.5],
+  "true_lower_mw": [1.0, 1.5, 2.0, 2.5],
+  "source_bin_width": 0.1,
+  "proxy_output_decimals": 2,
+  "registered_rounding_decimals": 1,
+  "completeness_increment": 0.2,
+  "minimum_complete_events": 200,
+  "source": {
+    "paper": "Lolli, Randazzo, Vannucci and Gasperini (2020), doi:10.1785/0220200148, Tables 7 and 9; author manuscript pages 35 and 37 (PDF pages 37 and 39), equation 4 on manuscript page 13",
+    "path": "data/seismic-candidates/2026-10-10/metadata/horus-methods.pdf",
+    "url": "https://cris.unibo.it/bitstream/11585/791000/7/SRL-D-20-00148_R3.pdf"
+  },
+  "models": [
+    {"name": "direct_control", "intercept": 0.0, "slope": 1.0, "source_sigma": 0.0, "gate": true},
+    {"name": "ml_before_2011", "intercept": -0.164, "slope": 1.066, "source_sigma": 0.0, "gate": true},
+    {"name": "ml_from_2011", "intercept": -0.030, "slope": 1.035, "source_sigma": 0.0, "gate": true},
+    {"name": "md_before_2013_04", "intercept": -1.905, "slope": 1.718, "source_sigma": 0.0, "gate": true},
+    {"name": "md_from_2013_04", "intercept": -1.132, "slope": 1.718, "source_sigma": 0.0, "gate": true},
+    {"name": "ml_before_2011_noise", "intercept": -0.164, "slope": 1.066, "source_sigma": 0.18, "gate": true},
+    {"name": "ml_from_2011_noise", "intercept": -0.030, "slope": 1.035, "source_sigma": 0.16, "gate": true},
+    {"name": "ml_from_2011_shared_low_slope", "intercept": -0.030, "slope": 1.035, "true_slope": 1.00364, "source_sigma": 0.0, "gate": false},
+    {"name": "ml_from_2011_shared_high_slope", "intercept": -0.030, "slope": 1.035, "true_slope": 1.06636, "source_sigma": 0.0, "gate": false}
+  ],
+  "observation_model": "Mtrue = lower + Exponential(rate=b ln(10)). Source magnitude = (Mtrue-intercept)/true_slope + Normal(0,source_sigma), rounded to 0.1; true_slope defaults to the published slope. Published proxy = round(intercept + nominal_slope * rounded_source, 2). The registered pipeline rounds that proxy to 0.1, estimates MAXC+0.2, selects inclusively with 1e-9 tolerance and applies its 0.05 bin correction. Normal error, hard lower support and homogeneous single-proxy populations are declared simulation assumptions, not claimed facts about Italy. No jitter, ML/Md averaging, detection-time variation, direct-measurement switching, geographical errors or source-mixture frequencies are fitted.",
+  "uncertainty": "Use the registered 500-resample conditional iid bootstrap SE, implemented by multinomial resampling of observed rounded-bin counts (same distribution as event resampling). For coverage diagnostics only use b_hat +/- 1.96 SE; these are not new registered real-data b intervals. Record mean bias, RMSE, Monte Carlo standard errors, Wilson coverage intervals and eligibility rate in each cell. Common calibration slopes are perturbed by +/-1.96*0.016 in two separate diagnostic cells; event bootstrap cannot estimate this shared uncertainty.",
+  "analytic_check": "Independently enumerate rounded source-bin probabilities from exponential or exponentially modified Gaussian CDFs, transform bins and compute infinite-population MAXC+0.2 and Aki-Utsu limit. Retain tail mass below 1e-12; record mode gap because sample modes can fluctuate. An exact geometric source-grid point estimate is a diagnostic only, with no automatic estimator replacement.",
+  "gate": {
+    "max_absolute_mean_bias": 0.05,
+    "minimum_coverage": 0.90,
+    "minimum_eligibility_rate": 0.95,
+    "rule": "Every cell of every model marked gate=true must pass all three thresholds. These are engineering validation criteria, not a multiple-testing hypothesis claim. Failure ends this bounded Italian attempt before real sequence construction or Mc/b/D2 fitting. Passing is necessary, not sufficient: clustering and shared-calibration uncertainty would still need validation and a separate freeze.",
+    "failure_scope": "A failed single-proxy scenario does not prove every real mixture is biased, reject either physical prediction, or rule out a revised estimator. Do not tune gates, exclude failed scenarios or promote the diagnostic grid estimator within this run."
+  },
+  "covariance_caution": "Table 9 prints post-2011 ML SEs 0.065 and 0.016 with covariance -0.0011. Their product is 0.00104, so the printed matrix is not positive semidefinite. Do not silently clip it or claim joint coefficient-uncertainty propagation. The marginal slope perturbation is a sensitivity, not such a propagation.",
+  "provenance": "Config, protocol and implementation must be committed before the validation ensemble runs. Raw Italian data are not an input to this runner. Retain results and append a simulation-only registry record, preserving all earlier records."
+}

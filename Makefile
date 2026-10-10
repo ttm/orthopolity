@@ -30,6 +30,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: hydrobasins-sources restore-hydrobasins lake-metric-followup metric-followup-registry
 .PHONY: seismic-sources restore-seismic-sources seismic-qualification seismic-qualification-registry
 .PHONY: seismic-candidate-sources restore-seismic-candidates seismic-candidate-audit
+.PHONY: italian-magnitude-validation italian-magnitude-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -143,6 +144,14 @@ restore-seismic-candidates: ## retrieve missing exact source snapshots, refusing
 seismic-candidate-audit: seismic-candidate-sources ## source compatibility only; no b or D2
 	$(PY) experiments/audit_seismic_candidates.py --output $(STUDY_OUTPUT_ROOT)/seismic-candidates
 	$(PY) experiments/verify_seismic_candidates.py --directory $(STUDY_OUTPUT_ROOT)/seismic-candidates
+
+italian-magnitude-validation: ## synthetic prerequisite only; use an empty output directory
+	OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 $(PY) experiments/validate_italian_magnitudes.py --output $(STUDY_OUTPUT_ROOT)/italian-magnitude-validation
+	$(PY) experiments/verify_italian_magnitudes.py --directory $(STUDY_OUTPUT_ROOT)/italian-magnitude-validation
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/plot_italian_magnitudes.py --directory $(STUDY_OUTPUT_ROOT)/italian-magnitude-validation
+
+italian-magnitude-registry: ## append completed simulation without a real earthquake fit
+	$(PY) experiments/register_italian_magnitudes.py
 
 class-exchange:   ## conservative class exchange, constrained equilibrium, and recovery
 	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_class_exchange.py --output $(STUDY_OUTPUT_ROOT)/class-exchange

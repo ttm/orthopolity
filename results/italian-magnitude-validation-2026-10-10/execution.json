@@ -1,0 +1,25 @@
+{
+  "config_sha256": "ea17797a0aa4f87782d6e7a075eb8ad35f810a643c83f8cd5cfc8284bbfcb16c",
+  "source_sha256": {
+    "src/orthopolity/magnitude_validation.py": "ad359d5d1b3017c7c20ae4688ac69f02f0e7a00d5b0ec954b46130565c70ee2c",
+    "experiments/validate_italian_magnitudes.py": "62538eb0b327a4852922f2f236d26baf89268005e935dd28ef5666cc7fe75441",
+    "tests/test_magnitude_validation.py": "9f034d7ea0aabc54280eebe60ab8bf495a30fc79c517a1fb86ec04ff07a89a96",
+    "experiments/run_volumetric_b.py": "d0becdc70cda4828de9aa4651d22175a305f786028d3e755736f23676dc5ec68",
+    "docs/italian-magnitude-validation-protocol-2026-10-10.md": "db201e7fd29244e727602625d822a0341bdeaf8976a4ca1e611df783f0abcfd4"
+  },
+  "methods_pdf_sha256": "8c3be3e864c21424c82109a22c333919faa46efc8e6b38e4fa3ab9d5ee260ef1",
+  "git_commit": "42a79c9bc425b1069dbbb16874962957760f926a",
+  "runtime": {
+    "python": "3.11.6",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.3.3"
+  },
+  "elapsed_seconds": 39.785470625036396,
+  "artifact_sha256": {
+    "cells.csv": "32f28cbdc89b6e570487ae02b04c065c35d5499291673058a3957347b5e20bcd",
+    "config.json": "ea17797a0aa4f87782d6e7a075eb8ad35f810a643c83f8cd5cfc8284bbfcb16c",
+    "replicates.csv.gz": "092a808b3ab3b689f137bbce202dd9678578267bdb7c12729db9acc4cddc5312",
+    "summary.json": "b9698d212c0c79c2b90d7e3fa9031ce19ea95fb32a275ac1910501bb32de3a0c"
+  }
+}

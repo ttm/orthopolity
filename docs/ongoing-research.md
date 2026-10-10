@@ -29,11 +29,16 @@ complete CLASS/HORUS and Northern California inputs. The Italian crosswalk has
 magnitudes. Most events require calibrated proxies; direct measurements alone
 cannot supply ten disjoint 200-event groups. Ambiguous identifiers and four large
 timestamp discrepancies are retained; current INGV times agree with HORUS.
-All 473 tests and the unchanged 33-run/813-reference registry pass. Next: freeze
-physical sequence and event/identity conventions for CLASS/HORUS and validate
-proxy-magnitude uncertainty/rounding before fitting; or design a constrained
-explanation of the known lake departure. Preserve these outcomes. The earlier
-programme below retains its history and findings.
+The [Italian magnitude check](italian-magnitude-validation-results-2026-10-10.md)
+was then frozen and run: 45 of 56 required scenarios fail, including 30 of 32
+noiseless converted-magnitude cases. An independent source-bin integration
+reproduces the large biases. The bounded attempt stops before real Italian
+sequence construction or Mc/b/D2 fitting. All 480 tests pass; the new registry
+entry is simulation only, preserving the previous 33 records. The manuscript
+now includes the completed geometry results and seismic limitations. Next work
+should address the observation model or explain the known lake departure, with
+a separate frozen design; additional catalogue hunting does not fix this
+estimator. Preserve these outcomes. The earlier programme retains its history.
 
 Last updated: 10 October 2026. This is the mutable handoff document for ongoing
 work. It records the current objective, decisions, completed work and exact next

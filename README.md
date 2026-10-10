@@ -69,6 +69,12 @@ Italian CLASS/HORUS and Northern California catalogues. It links 295,193 Italian
 records to magnitude provenance while quarantining ambiguous identifiers. Only
 699 have direct moment-tensor provenance, so a viable comparison needs validated
 proxy calibration and a frozen physical sequence definition before fitting.
+The [Italian magnitude validation](docs/italian-magnitude-validation-results-2026-10-10.md)
+now fails its synthetic prerequisite: 45 of 56 required cases fail, including
+30 of 32 noiseless proxy cases. Converted magnitude bins invalidate the original
+uniform-bin estimator in these scenarios. The bounded attempt stops before real
+Italian sequence construction or response fitting; neither physical hypothesis
+is favoured. The manuscript incorporates these limits and the completed geometry tests.
 
 The **8 October biological mechanism and transfer** now connects growth/division
 to mass allocation across logarithmic cell sizes. A known lineage/population
@@ -109,7 +115,7 @@ over word types, and compares its contribution with
 Reproduce the new studies offline with
 `make inverse-resources linguistic-resources PY=python3.11`.
 The retained registry now contains 33 records and 813 file references.
-All 473 tests pass, including source identity checks, seismic qualification and local lake geometry
+All 480 tests pass, including magnitude-estimator validation, source identity checks, seismic qualification and local lake geometry
 checks. Earlier detailed empirical accounts remain available in
 [the supporting report](docs/empirical-studies.md); their conclusions are
 unchanged.

@@ -1243,7 +1243,60 @@ the variability and calibration mismatches prevent treating it as a validated
 biomass-allocation profile. Resolving these departures requires additional
 independent information about the dynamics and observation process.
 
-### 5.7 What the tests establish
+### 5.7 Geometric resource predictions and seismic eligibility
+
+Separate repository registrations compare physical resource readings using
+earthquake aftershocks, flare ribbons and lake geometry. They concern
+log-orthopolic allocation per logarithmic size coordinate. Inputs, estimator
+amendments, prior exposure and decision rules are retained in the
+[test ledger](preregistered-tests.md). These studies supply negative or qualified
+comparisons; the literal registered decisions remain distinct from whether an
+interval excludes an individual predicted value.
+
+| Comparison | Result | Scope of the decision |
+|---|---|---|
+| Aftershock productivity: rupture area predicts $\alpha=1$, moment predicts $1.5$ | Primary $\alpha=0.63$, 95% interval $[0.51,0.71]$; rupture-length-window sensitivity $0.90$, $[0.76,0.97]$ | Both predictions excluded under these counting schemes; registered verdict inconclusive; strong window dependence |
+| Flare ribbon area: density exponents $2$ and $7/3$ | $\alpha=3.163$, $[2.962,3.457]$ | Both excluded; registered verdict inconclusive |
+| Global lake radius: survival exponent $\zeta_R=2$ | Original geometry $1.930$, iid $[1.919,1.941]$; local-geometry follow-up $1.859$, basin $[1.785,1.924]$ | Original iid equivalence disappears with physical local geometry; follow-up inconclusive against the $[1.9,2.1]$ margin |
+
+*Table 5. Retained geometric predictions. Intervals condition on each study's
+declared sampling and measurement assumptions; they do not establish a universal
+resource law.*
+
+The [lake follow-up](lake-metric-followup-results-2026-10-09.md) independently
+changes projection and quantifies basin dependence. Two local projections agree
+closely, identifying the original global projection as a material source of
+the change. Exact 2 lies outside the basin interval, while practical equivalence
+and practical departure are both unestablished under the frozen margin.
+Invalid source topology, unmatched basin outlets and an iid goodness-of-fit
+diagnostic remain qualifications. The separately frozen UK result likewise
+does not establish a robust spatial rejection: its iid interval excludes 2,
+but its spatial interval includes it.
+
+The seismic comparison predicts $b=D_2/2$ for rupture territory, using
+hypocentre correlation dimension, against $b=1$ independent of that dimension.
+The [Southern California qualification](seismic-qualification-results-2026-10-10.md)
+uses published sequence memberships. Forty sequences have at least 200 raw
+events; quality, completeness and location-resolution gates reduce this to six,
+below the registered minimum ten. No b or $D_2$ was fitted.
+
+A subsequent CLASS/HORUS source audit establishes 295,193 unambiguous Italian
+location/provenance links, of which only 699 have direct moment-tensor magnitudes.
+The calibrated proxies require an observation model. A separately frozen
+[synthetic check](italian-magnitude-validation-results-2026-10-10.md), using
+the published conversions of Lolli et al. (2020), fails its necessary validation
+gate in 45 of 56 required scenarios, including 30 of 32 noiseless proxy cases.
+For example, true $b=1.5$ gives mean $1.158$ under one earlier-ML conversion and
+lower-support choice; exact source-bin integration gives $1.158$ as well.
+Conversion leaves gaps in rounded magnitude classes which the uniform-bin
+correction does not represent. This is a controlled counterexample to the
+estimator's adequacy, not an observed Italian exponent or a test of either
+physical relation. The Italian attempt therefore stops before real sequence
+construction or response fitting. A revised likelihood would need to represent
+original magnitude bins, detection and calibration uncertainty before another
+physical comparison.
+
+### 5.8 What the tests establish
 
 The positive results concern conditional budget closure: a separately measured or geometric
 cost, declared shared resource conditions, and abundance or resource shares predicted from them. The runtime
@@ -1428,6 +1481,10 @@ retrospective public-corpus study, not external preregistration.
 The bacterial summary transfer retains official figure images, manual numerical
 transcriptions, calibration diagnostics and four frozen forecasts. Its numerical
 target figure was retrieved after the freeze; qualitative outcomes were already known.
+The geometric tests, seismic eligibility assessment and Italian synthetic
+magnitude validation retain separate configurations, source receipts and
+reproduction targets. Their outputs preserve failures and stopping decisions;
+no real Italian b/D2 result is implied by the simulation record.
 Plant sources are pinned to author commit defccc3dcbbbf3ba57ff1572377de88fba83ff7f,
 with acquisition checksums and complete inclusion ledgers. The registry-verify target audits
 the registry offline, and each study report gives its replay
@@ -1543,6 +1600,10 @@ Keshavarz, A., Wang, Y., and Boyd, S. (2011). Imputing a Convex Objective Functi
 Levin, D. A., and Peres, Y. (2017). *Markov Chains and Mixing Times*, second edition,
 with contributions by E. L. Wilmer. American Mathematical Society.
 <https://pages.uoregon.edu/dlevin/MARKOV/mcmt2e.pdf>.
+
+Lolli, B., Randazzo, D., Vannucci, G., and Gasperini, P. (2020). The Homogenized
+Instrumental Seismic Catalog (HORUS) of Italy from 1960 to Present.
+*Seismological Research Letters*. <https://doi.org/10.1785/0220200148>.
 
 Malerba, M. E., Palacios, M. M., and Marshall, D. J. (2018). Do larger individuals cope with
 resource fluctuations better? An artificial selection approach. *Proceedings of the Royal
