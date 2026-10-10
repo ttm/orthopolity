@@ -1,5 +1,16 @@
 # Orthopolity: research direction
 
+**10 October author instruction:** retain the exact title and the claim of a
+general law, with the ambition to establish it. Reorganize the article so the
+central relations, ideal systems, known physical realizations, models and
+empirical findings stand out; move technical and secondary detail into supporting
+material. Explain when a different independently specified resource, metric or
+constraint accounts for a departure, and investigate actual failures of specified
+relations. A failure must remain a failure until an independently supported
+explanation predicts further observations. Further suitable empirical study is
+authorized. The editorial task is clarification and evidence development, not
+renaming the central claim as merely a proposal.
+
 Established 5 October 2026; extended 6 October with the investigators' general-law,
 composite-resource and inverse-inference clarification, 7 October with the
 linguistic resource application, and 8 October with the capacity/hierarchy
