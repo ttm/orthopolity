@@ -311,3 +311,32 @@ pins all three files, URLs, byte counts and SHA256 digests. Raw catalogues remai
 local and ignored; `make restore-seismic-sources` restores missing files, and
 `make seismic-sources` verifies them offline. Derived rows retain source IDs and
 exclusion reasons. See the [qualification report](../docs/seismic-qualification-results-2026-10-10.md).
+
+## Further seismic sources and calibration, 10 October 2026
+
+`data/seismic-candidates/2026-10-10/acquisition.json` pins complete CLASS 1.0,
+HORUS and Northern California NCAeqDD v202112.1 downloads plus publisher schemas.
+The [source audit](../docs/seismic-candidate-audit-2026-10-10.md) reports identity,
+error-field and magnitude-provenance checks only; no exponent has been fitted.
+
+- CLASS locations: Latorre, Di Stefano, Castello, Michele and Chiaraluce (2022),
+  https://doi.org/10.13127/class.1.0; associated paper (2023),
+  https://doi.org/10.1016/j.tecto.2022.229664. Publisher schema and full gzip:
+  https://ingv.github.io/class/locations/ .
+- HORUS: Lolli, Randazzo, Vannucci and Gasperini (2020),
+  https://doi.org/10.13127/HORUS and https://doi.org/10.1785/0220200148;
+  https://horus.bo.ingv.it/ . Audit uses the original-input `_o` catalogue and
+  provenance files, retaining the randomized-input variants without using them.
+- NCAeqDD v202112.1: Waldhauser and Schaff (2008),
+  https://doi.org/10.1029/2007JB005479, catalogue version released June 2022;
+  https://nocaldd.ldeo.columbia.edu/catalog/ . Preserve NCSS/NCSN and NCEDC
+  source attribution and the publisher's geoid depth convention.
+- Four current INGV event-service lookups document large time discrepancies in
+  exact-ID matches. Their URLs, payload hashes and results are in
+  `data/seismic-candidates/2026-10-10/identity-lookups.json`; no source record was
+  silently corrected from the live service.
+
+`make seismic-candidate-sources` verifies publisher bytes offline;
+`make restore-seismic-candidates` restores missing exact snapshots. The rolling
+HORUS URL may change; a later revision requires a new acquisition, never an
+automatic replacement of these retained bytes.

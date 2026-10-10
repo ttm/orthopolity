@@ -1,0 +1,32 @@
+[
+  {
+    "member": "HORUS_Ita_Catalog.txt",
+    "bytes": 135843058,
+    "sha256": "0b2fb288741207373cd54c2f633546c44b23304645bcca0930bfd6c521b52e1b",
+    "crc32": "1a812ea4"
+  },
+  {
+    "member": "HORUS_Ita_Catalog_o.txt",
+    "bytes": 135843058,
+    "sha256": "7f49b4c302427c88a8de0d0c3df838fc6715c71c8fda08a816e8ec4362ccd556",
+    "crc32": "9e684997"
+  },
+  {
+    "member": "HORUS_Ita_DataOrigin.txt",
+    "bytes": 179969974,
+    "sha256": "10192b1bc224f9bd8bb0d418154a86caf3c23d037818c21e34f766dd00f7c52c",
+    "crc32": "2f2f422d"
+  },
+  {
+    "member": "HORUS_Ita_DataOrigin_o.txt",
+    "bytes": 179969974,
+    "sha256": "2cd12f6c2f122487c2aeac97d9133dfcfae78e68e13563a52c602ea7cc00cab2",
+    "crc32": "c28b687e"
+  },
+  {
+    "member": "README.txt",
+    "bytes": 1703,
+    "sha256": "4b86f95d87e5afc626bcb062d9f577d137813333c347588e6d8fccadf2593bff",
+    "crc32": "850d2bea"
+  }
+]

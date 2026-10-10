@@ -1,0 +1,2 @@
+#EventID|Time|Latitude|Longitude|Depth/Km|Author|Catalog|Contributor|ContributorID|MagType|Magnitude|MagAuthor|EventLocationName|EventType
+7702801|2016-09-05T02:09:26.210000|42.7772|13.1802|11|SURVEY-INGV||||ML|1.8|SURVEY-INGV|7 km E Norcia (PG)|earthquake

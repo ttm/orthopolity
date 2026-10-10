@@ -29,6 +29,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: geometry-registry
 .PHONY: hydrobasins-sources restore-hydrobasins lake-metric-followup metric-followup-registry
 .PHONY: seismic-sources restore-seismic-sources seismic-qualification seismic-qualification-registry
+.PHONY: seismic-candidate-sources restore-seismic-candidates seismic-candidate-audit
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -132,6 +133,16 @@ seismic-qualification: seismic-sources ## replay frozen eligibility gates; never
 
 seismic-qualification-registry: ## append the retained eligibility finding and verify history
 	$(PY) experiments/register_seismic_qualification.py
+
+seismic-candidate-sources: ## verify newer Italian/calibration and Northern California inputs
+	$(PY) experiments/fetch_seismic_candidates.py
+
+restore-seismic-candidates: ## retrieve missing exact source snapshots, refusing revised bytes
+	$(PY) experiments/fetch_seismic_candidates.py --restore
+
+seismic-candidate-audit: seismic-candidate-sources ## source compatibility only; no b or D2
+	$(PY) experiments/audit_seismic_candidates.py --output $(STUDY_OUTPUT_ROOT)/seismic-candidates
+	$(PY) experiments/verify_seismic_candidates.py --directory $(STUDY_OUTPUT_ROOT)/seismic-candidates
 
 class-exchange:   ## conservative class exchange, constrained equilibrium, and recovery
 	MPLCONFIGDIR=build/matplotlib $(PY) experiments/run_class_exchange.py --output $(STUDY_OUTPUT_ROOT)/class-exchange

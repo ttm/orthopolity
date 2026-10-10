@@ -21,12 +21,19 @@ published 1981–2018 memberships were acquired and pinned. The
 [frozen qualification](seismic-qualification-results-2026-10-10.md) gives
 40 sequences with ≥200 raw events, 28 after quality cuts, 16 above completeness,
 and **6** with adequate resolution. The registered minimum is ten, so no b, D2
-or regression was calculated. Neither hypothesis is favoured. All 464 tests and
-the 33-run/813-reference registry pass. Next: obtain independently justified
-location covariance and magnitude calibration for another seismic cohort, or
-design a constrained explanation of the known lake departure. Preserve these
-outcomes rather than relaxing filters to obtain a fit. The earlier programme
-below retains its history and findings.
+or regression was calculated. Neither hypothesis is favoured.
+
+The [subsequent source audit](seismic-candidate-audit-2026-10-10.md) downloaded
+complete CLASS/HORUS and Northern California inputs. The Italian crosswalk has
+295,193 unambiguous location/provenance matches, including 699 direct moment-tensor
+magnitudes. Most events require calibrated proxies; direct measurements alone
+cannot supply ten disjoint 200-event groups. Ambiguous identifiers and four large
+timestamp discrepancies are retained; current INGV times agree with HORUS.
+All 473 tests and the unchanged 33-run/813-reference registry pass. Next: freeze
+physical sequence and event/identity conventions for CLASS/HORUS and validate
+proxy-magnitude uncertainty/rounding before fitting; or design a constrained
+explanation of the known lake departure. Preserve these outcomes. The earlier
+programme below retains its history and findings.
 
 Last updated: 10 October 2026. This is the mutable handoff document for ongoing
 work. It records the current objective, decisions, completed work and exact next

@@ -1,0 +1,15 @@
+{
+  "class_rows_independently_checked": 422557,
+  "status_counts": {
+    "ambiguous_class_identifiers": 347,
+    "matched_catalogue_and_provenance": 295193,
+    "missing_ingv_id": 79568,
+    "no_unique_horus_match": 47449
+  },
+  "direct_mt_provenance": 699,
+  "northern_california_rows_independently_checked": 879626,
+  "official_identity_lookups_matching_horus": 4,
+  "quarry_blasts_among_time_discrepancies": 1,
+  "response_estimators_called": false,
+  "valid": true
+}

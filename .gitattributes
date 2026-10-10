@@ -20,3 +20,6 @@ data/hydrobasins/** -text
 results/lake-metric-followup-2026-10-09/*.csv -text
 data/seismic-regional/** -text
 results/seismic-qualification-2026-10-10/*.csv -text
+data/seismic-candidates/2026-10-10/metadata/* -text
+data/seismic-candidates/2026-10-10/metadata/*.html -diff
+data/seismic-candidates/2026-10-10/audit/*.csv -text

@@ -1,0 +1,2 @@
+#EventID|Time|Latitude|Longitude|Depth/Km|Author|Catalog|Contributor|ContributorID|MagType|Magnitude|MagAuthor|EventLocationName|EventType
+7213521|2016-08-25T23:59:55.500000|42.8367|13.2327|8|BULLETIN-INGV||||ML|1.9|BULLETIN-INGV|8 km W Montegallo (AP)|earthquake

@@ -1,0 +1,190 @@
+{
+  "scope": "Source structure and exact-ID compatibility audit, not a qualified seismic cohort",
+  "source_verification": {
+    "files": 7,
+    "valid": true
+  },
+  "horus_archive_members_verified": 5,
+  "class_catalogue": {
+    "n_rows": 422557,
+    "time_range": [
+      "1981-01-01T04:47:22.200",
+      "2018-12-31T23:53:26.251"
+    ],
+    "duplicate_class_id_rows": 43,
+    "duplicate_positive_ingv_id_rows": 334,
+    "missing_ingv_id_rows": 79568,
+    "magnitude_type_counts": {
+      "CSI1_WEB_MCSTI": 646,
+      "CSI1_WEB_MbISC": 91,
+      "CSI1_WEB_MlMDN": 6393,
+      "CSI1_WEB_MlREG": 31753,
+      "CSI1_WEB_MwHVD": 6,
+      "CSI1_WEB_MwMDN": 6,
+      "INGV_M": 1161,
+      "INGV_ML": 282440,
+      "INGV_Md": 27791,
+      "INGV_Mw": 22,
+      "INGV_mb": 2,
+      "missing": 72246
+    },
+    "preferred_ingv_magnitude_type_counts": {
+      "M": 1178,
+      "ML": 281962,
+      "Md": 59270,
+      "Mw": 560,
+      "mb": 3,
+      "missing": 79584
+    },
+    "quality_classes": {
+      "A": {
+        "n": 101906,
+        "numeric_quality": {
+          "n": 101906,
+          "minimum": 0.00385,
+          "median": 0.17579,
+          "maximum": 0.24999
+        }
+      },
+      "B": {
+        "n": 176658,
+        "numeric_quality": {
+          "n": 176658,
+          "minimum": 0.25,
+          "median": 0.36628499999999997,
+          "maximum": 0.49999
+        }
+      },
+      "C": {
+        "n": 81311,
+        "numeric_quality": {
+          "n": 81311,
+          "minimum": 0.5,
+          "median": 0.59136,
+          "maximum": 0.74999
+        }
+      },
+      "D": {
+        "n": 46666,
+        "numeric_quality": {
+          "n": 46666,
+          "minimum": 0.75,
+          "median": 0.85402,
+          "maximum": 1.0
+        }
+      },
+      "E": {
+        "n": 16016,
+        "numeric_quality": {
+          "n": 0,
+          "minimum": null,
+          "median": null,
+          "maximum": null
+        }
+      }
+    },
+    "quality_documentation_caveat": "Observed A:0..0.25 through D:0.75..1 matches the page narrative, while its qmd_num field description reverses the direction. Preserve letter classes; no numerical-quality eligibility cut selected."
+  },
+  "horus": {
+    "n_catalogue_rows": 532037,
+    "n_provenance_rows": 523241,
+    "year_range": [
+      1960,
+      2026
+    ],
+    "n_catalogue_positive_ids": 429163,
+    "n_provenance_positive_ids": 428903,
+    "n_duplicate_catalogue_id_rows": 0,
+    "n_duplicate_provenance_id_rows": 0,
+    "variant": "Original input (_o); no random magnitude decimal jitter"
+  },
+  "crosswalk": {
+    "status_counts": {
+      "ambiguous_class_identifiers": 347,
+      "matched_catalogue_and_provenance": 295193,
+      "missing_ingv_id": 79568,
+      "no_unique_horus_match": 47449
+    },
+    "n_matched_catalogue_and_provenance": 295193,
+    "n_direct_mt_provenance": 699,
+    "n_proxy_provenance": 294484,
+    "n_missing_magnitude_provenance": 10,
+    "direct_mt_maximum_disjoint_200_event_groups": 3,
+    "direct_mt_bound_caveat": "Upper bound before completeness, quality, sequence independence and resolution; not a cluster count",
+    "n_positive_finite_location_errors": 295193,
+    "n_letters_A_or_B_and_positive_errors": 243550,
+    "n_direct_mt_letters_A_or_B": 540,
+    "final_provenance_counts": {
+      "": 10,
+      "Md": 12029,
+      "Md,Ml": 77843,
+      "Ml": 204612,
+      "Mw ETHZ": 9,
+      "Mw ETHZ,RCMT": 2,
+      "Mw ETHZ,RCMT,TDMT": 1,
+      "Mw GCMT": 1,
+      "Mw GFZP": 10,
+      "Mw GFZP,RCMT,TDMT": 2,
+      "Mw NEIC,RCMT,GCMT,TDMT": 2,
+      "Mw RCMT": 67,
+      "Mw RCMT,ETHZ": 1,
+      "Mw RCMT,GFZP": 12,
+      "Mw RCMT,GFZP,TDMT": 2,
+      "Mw RCMT,NEIC,TDMT": 1,
+      "Mw RCMT,TDMT": 109,
+      "Mw RCMT,TDMT,GCMT,GFZP": 2,
+      "Mw RCMT,TDMT,GFZP": 41,
+      "Mw RCMT,TDMT,GFZP,GCMT": 1,
+      "Mw TDMT": 347,
+      "Mw TDMT,GCMT,RCMT,GFZP": 2,
+      "Mw TDMT,GFZP": 3,
+      "Mw TDMT,GFZP,RCMT": 4,
+      "Mw TDMT,NEIC,GCMT,RCMT": 1,
+      "Mw TDMT,NEIC,RCMT": 1,
+      "Mw TDMT,RCMT": 51,
+      "Mw TDMT,RCMT,GCMT,GFZP": 5,
+      "Mw TDMT,RCMT,GFZP": 22
+    },
+    "n_horus_non_earthquake_flag": 1230,
+    "non_earthquake_flag_caveat": "HORUS records this flag only since May 2012; blank before then is not a verified earthquake classification",
+    "class_horus_absolute_time_difference_s": {
+      "n": 295193,
+      "minimum": 0.0,
+      "median": 0.454,
+      "maximum": 86400.242
+    },
+    "n_class_horus_time_difference_above_60s": 4,
+    "n_invalid_class_or_horus_times": 0,
+    "n_horus_provenance_time_disagreements": 0,
+    "n_invalid_horus_or_provenance_times": 0,
+    "n_horus_provenance_mw_difference_above_half_cent": 656,
+    "horus_provenance_mw_absolute_difference": {
+      "n": 295183,
+      "minimum": 0.0,
+      "median": 0.0024999999999999467,
+      "maximum": 0.0147996653
+    }
+  },
+  "northern_california": {
+    "n_rows": 879626,
+    "n_unique_event_ids": 879626,
+    "year_range": [
+      1984,
+      2021
+    ],
+    "n_all_positive_finite_relative_error_fields": 868195,
+    "n_any_missing_negative_or_zero_error": 11431,
+    "n_negative_depth": 28707,
+    "error_confidence": "95 percent relative-location ellipses and vertical errors; not converted to absolute or one-sigma precision",
+    "magnitude": "Publisher documents NCSN ML, not a homogeneous Mw scale",
+    "physical_sequence_labels": false
+  },
+  "fitted_responses": {
+    "completeness": false,
+    "b": false,
+    "D2": false,
+    "regression": false
+  },
+  "next_design": "CLASS/HORUS offers documented absolute location errors and independent magnitude calibration, but requires duplicate reconciliation, justified physical sequence labels and validation of proxy-magnitude uncertainty/rounding before registered response fitting.",
+  "crosswalk_sha256": "e23f80cb8128c09c1fa7bf68393a7a49b3bf8378950e6760fbacc787b62bdc1d"
+}

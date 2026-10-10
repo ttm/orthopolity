@@ -1,0 +1,2 @@
+#EventID|Time|Latitude|Longitude|Depth/Km|Author|Catalog|Contributor|ContributorID|MagType|Magnitude|MagAuthor|EventLocationName|EventType
+10858781|2016-12-01T11:56:21.980000|42.967|13.0428|5|SURVEY-INGV||||ML|1.1|SURVEY-INGV|5 km SE Monte Cavallo (MC)|earthquake

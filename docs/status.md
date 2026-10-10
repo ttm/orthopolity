@@ -6,7 +6,7 @@ to the files that hold the details.
 
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
-the package layout for all runners. The suite now passes 464 tests; the
+the package layout for all runners. The suite now passes 473 tests; the
 33-run registry verifies all 813 file references. The broader programme and subsequent
 studies are in [research-brief.md](research-brief.md) and
 [ongoing-research.md](ongoing-research.md).
@@ -28,6 +28,15 @@ choices were frozen at `6ae7a8c`. The sequence count falls 40→28→16→6 thro
 raw, quality, completeness and resolution gates. The minimum is ten; no b or
 D2 was fitted. This is an eligibility limitation and does not favour either
 hypothesis. Data access is no longer the barrier for this cohort.
+
+The [next-source audit](seismic-candidate-audit-2026-10-10.md) acquired full CLASS,
+HORUS and Northern California catalogues. CLASS/HORUS provides 295,193
+unambiguous location/magnitude-provenance links; 347 ambiguous CLASS rows are
+quarantined. Only 699 matched events have direct moment-tensor provenance
+(at most three disjoint 200-event groups), so proxy calibration is necessary.
+Four timestamp discrepancies were checked against INGV; official times agree
+with HORUS. No physical clusters, completeness or response fits were calculated
+for these new sources. The source audit leaves the 33-run registry unchanged.
 
 ## 1. What the authors intend
 
@@ -66,6 +75,7 @@ discards the authors' programme.
 | 9 Oct 2026 | Merge development branch into main and run lake continuation | Both histories preserved; global and separately frozen UK analyses completed; 430 tests and 31 registry entries verified |
 | 9 Oct 2026 | Local lake geometry and hydrological uncertainty follow-up | 1.43M polygons processed; ζ=1.859, basin [1.785,1.924]; declared equivalence unestablished; 442 tests and 32 registry entries verified |
 | 10 Oct 2026 | Frozen Southern California sequence qualification | 123,275 published events joined to original relocations; 6 eligible sequences versus minimum 10; no b/D2 fitting; 464 tests and 33 registry entries verified |
+| 10 Oct 2026 | Italian calibration crosswalk and Northern California source audit | Three complete new sources; 295,193 unambiguous CLASS/HORUS links; direct-Mw-only route insufficient; identity issues retained; 473 tests pass |
 
 ## 3. Results to carry forward
 
@@ -141,9 +151,11 @@ The [research brief](research-brief.md) explains the general-law programme;
 ## 5. Next steps, in priority order
 
 1. **Act on the seismic eligibility finding.** This qualification is complete and
-   its six-sequence result must remain recorded. A different regional catalogue
-   or covariance model needs independent magnitude calibration and enough
-   qualified sequences; the required D2 contrast remains unassessed. Do not
+   its six-sequence result must remain recorded. The newly acquired CLASS/HORUS
+   pairing supplies documented magnitude calibration and absolute-error fields.
+   Freeze physical clustering/event/identity conventions and validate the
+   converted-magnitude estimator before real fitting; direct moment estimates
+   alone cannot supply ten groups. The required D2 contrast remains unassessed. Do not
    relax filters or treat waveform processing groups as physical sequences to
    force a fit. See [available data](accessible-datasets-2026-10-09.md).
 2. **Explain the lake departure with independently justified inputs.** Physical
@@ -168,7 +180,7 @@ The [research brief](research-brief.md) explains the general-law programme;
   exponent was examined and the reading passes a second, different prediction. Grades:
   derived, motivated, suggestive, numerology. Source tags in documents: verified, repository result,
   own derivation, unverified.
-- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 464 tests and
+- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 473 tests and
   regenerates every analysis. The September results were produced with Python 3.11; results
   added on 8–9 October (Gibrat, resource choice, catalogue, aftershocks) with Python 3.13 and the
   pinned packages. Other versions change the older files by at most about $4\times10^{-8}$
@@ -181,6 +193,9 @@ The [research brief](research-brief.md) explains the general-law programme;
   `make restore-seismic-sources` restores missing raw catalogues by checksum.
   The full registered b/D2 response calculation was not run because only six
   sequences pass. No outcome-dependent estimator or threshold adjustment is pending.
+- `make seismic-candidate-audit` reproduces the Italian source crosswalk and
+  Northern California inventory without fitting. `make restore-seismic-candidates`
+  restores exact raw inputs; later changes at the rolling HORUS URL fail hashes.
 
 ## 7. Document map
 
@@ -190,6 +205,7 @@ The [research brief](research-brief.md) explains the general-law programme;
 | Evidence and audit history | [evidence.md](evidence.md); [source-audit.md](source-audit.md); [lake results](lake-gyration-results-2026-10-09.md) |
 | Latest lake follow-up | [metric/basin results](lake-metric-followup-results-2026-10-09.md); [frozen protocol](lake-metric-followup-protocol-2026-10-09.md); [basin sources](hydrobasins-source-2026-10-09.md) |
 | Latest seismic qualification | [results](seismic-qualification-results-2026-10-10.md); [frozen supplement](seismic-qualification-protocol-2026-10-10.md); `results/seismic-qualification-2026-10-10/` |
+| Next seismic inputs | [source/calibration audit](seismic-candidate-audit-2026-10-10.md); `data/seismic-candidates/2026-10-10/` |
 | Unified manuscript and programme | [paper.md](paper.md) and `paper.pdf`; [research-brief.md](research-brief.md); [ongoing-research.md](ongoing-research.md) |
 | Still applicable scope limits | [not-worth-pursuing.md](not-worth-pursuing.md) (cosmological, social and normative claims) |
 | Raw provenance | [archive/2026-10-08/](archive/2026-10-08/README.md): full research dossiers, paper design (resource rule, gates, candidate datasets, falsification criteria), hostile referee report, fact-check, and the complete catalogue workflow output |

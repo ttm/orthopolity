@@ -1,0 +1,42 @@
+{
+  "retrieved_utc": "2026-10-10T07:08:52.708885+00:00",
+  "selection": "Post-audit identity diagnostic: four exact-ID matches with absolute CLASS/HORUS time differences above60s. Does not define a new inference cut or alter source bytes.",
+  "files": [
+    {
+      "event_id": 5684511,
+      "path": "data/seismic-candidates/2026-10-10/metadata/ingv-event-5684511.txt",
+      "url": "https://webservices.ingv.it/fdsnws/event/1/query?eventid=5684511&format=text",
+      "sha256": "c65ac5319eefe5a047ca4dc6decad64f4fab8af5ee28cef76c428e5d481d6256",
+      "bytes": 265,
+      "official_time": "2015-07-01T05:38:42.790000",
+      "event_type": "quarry blast"
+    },
+    {
+      "event_id": 7213521,
+      "path": "data/seismic-candidates/2026-10-10/metadata/ingv-event-7213521.txt",
+      "url": "https://webservices.ingv.it/fdsnws/event/1/query?eventid=7213521&format=text",
+      "sha256": "1779df235ca32fde601e51249bc9f4ed26e1860a4fff8691d9ca63ecacf69e5b",
+      "bytes": 264,
+      "official_time": "2016-08-25T23:59:55.500000",
+      "event_type": "earthquake"
+    },
+    {
+      "event_id": 7702801,
+      "path": "data/seismic-candidates/2026-10-10/metadata/ingv-event-7702801.txt",
+      "url": "https://webservices.ingv.it/fdsnws/event/1/query?eventid=7702801&format=text",
+      "sha256": "b606cb1ed82ffb982dac105bb2c938f21f3c3eb63b9f4c8cba5b13df8be76770",
+      "bytes": 257,
+      "official_time": "2016-09-05T02:09:26.210000",
+      "event_type": "earthquake"
+    },
+    {
+      "event_id": 10858781,
+      "path": "data/seismic-candidates/2026-10-10/metadata/ingv-event-10858781.txt",
+      "url": "https://webservices.ingv.it/fdsnws/event/1/query?eventid=10858781&format=text",
+      "sha256": "189dc233cc5be1e6f0fe1922e1e29a7edd069202722b1dbae5f9000c336f00c0",
+      "bytes": 264,
+      "official_time": "2016-12-01T11:56:21.980000",
+      "event_type": "earthquake"
+    }
+  ]
+}

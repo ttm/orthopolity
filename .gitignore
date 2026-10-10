@@ -36,3 +36,6 @@ data/hydrobasins/2026-10-09/raw/
 
 # Complete regional earthquake sources; publisher URLs and hashes are tracked.
 data/seismic-regional/2026-10-09/raw/
+
+# Candidate catalogues for the next seismic design; receipts are tracked.
+data/seismic-candidates/2026-10-10/raw/

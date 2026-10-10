@@ -64,6 +64,12 @@ gates; the registered minimum is ten. The test stops before b or D2 fitting and
 does not favour either hypothesis. Source bytes, exclusions and deterministic
 samples are retained for reproduction.
 
+A [new source audit](docs/seismic-candidate-audit-2026-10-10.md) acquired complete
+Italian CLASS/HORUS and Northern California catalogues. It links 295,193 Italian
+records to magnitude provenance while quarantining ambiguous identifiers. Only
+699 have direct moment-tensor provenance, so a viable comparison needs validated
+proxy calibration and a frozen physical sequence definition before fitting.
+
 The **8 October biological mechanism and transfer** now connects growth/division
 to mass allocation across logarithmic cell sizes. A known lineage/population
 sampling relation determines the constraint envelope from birth measurements.
@@ -103,7 +109,7 @@ over word types, and compares its contribution with
 Reproduce the new studies offline with
 `make inverse-resources linguistic-resources PY=python3.11`.
 The retained registry now contains 33 records and 813 file references.
-All 464 tests pass, including the seismic qualification and local lake geometry
+All 473 tests pass, including source identity checks, seismic qualification and local lake geometry
 checks. Earlier detailed empirical accounts remain available in
 [the supporting report](docs/empirical-studies.md); their conclusions are
 unchanged.

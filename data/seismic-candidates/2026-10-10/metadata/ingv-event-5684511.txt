@@ -1,0 +1,2 @@
+#EventID|Time|Latitude|Longitude|Depth/Km|Author|Catalog|Contributor|ContributorID|MagType|Magnitude|MagAuthor|EventLocationName|EventType
+5684511|2015-07-01T05:38:42.790000|43.5775|12.5307|0|BULLETIN-INGV||||Md|1.2|BULLETIN-INGV|2 km SE Piobbico (PU)|quarry blast

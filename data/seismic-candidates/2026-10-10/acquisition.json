@@ -1,0 +1,57 @@
+{
+  "acquisition_recorded_utc": "2026-10-10T06:58:23.132934+00:00",
+  "scope": "Source structure, calibration provenance and ID compatibility only; no physical sequence definition, completeness, b, D2, regression or hypothesis decision.",
+  "files": [
+    {
+      "path": "data/seismic-candidates/2026-10-10/raw/CLASS1.0_full.csv.gz",
+      "url": "https://ingv.github.io/class/locations/files/CLASS1.0_full.csv.gz",
+      "role": "full_catalogue",
+      "bytes": 21979365,
+      "sha256": "886af34d1ec1be9ba16ac084f1123248ceaaa1002f11011f578a1314a794d5d7"
+    },
+    {
+      "path": "data/seismic-candidates/2026-10-10/raw/HORUS_Ita_Catalog.zip",
+      "url": "https://horus.bo.ingv.it/DataFolder/HORUS_Ita_Catalog.zip",
+      "role": "full_catalogue_bundle",
+      "bytes": 61118210,
+      "sha256": "722951aa949e5a0e8c7ee3da4102ab5226721c36d44159b61d4cdb56a82b79b9"
+    },
+    {
+      "path": "data/seismic-candidates/2026-10-10/raw/NCAeqDD.v202112.1.gz",
+      "url": "https://nocaldd.ldeo.columbia.edu/catalog/NCAeqDD.v202112.1.gz",
+      "role": "full_catalogue",
+      "bytes": 26082007,
+      "sha256": "0ec76b3508b334f977c1db9047e443bb91de523f4a8b8fb153a3fa5fdd7751cd"
+    },
+    {
+      "path": "data/seismic-candidates/2026-10-10/metadata/class.html",
+      "url": "https://ingv.github.io/class/locations/",
+      "role": "publisher_schema",
+      "bytes": 27914,
+      "sha256": "563fce2758d4a06c1395745f9aed0a42f074d9aa066013adaba0b6ba72399daf"
+    },
+    {
+      "path": "data/seismic-candidates/2026-10-10/metadata/horus.html",
+      "url": "https://horus.bo.ingv.it/",
+      "role": "publisher_description",
+      "bytes": 6292,
+      "sha256": "997d6082509e852831188dc46b6dcb21c034505fdc52dec1895328d94b1a74a2"
+    },
+    {
+      "path": "data/seismic-candidates/2026-10-10/metadata/nocaldd-README.txt",
+      "url": "https://nocaldd.ldeo.columbia.edu/catalog/README",
+      "role": "publisher_schema",
+      "bytes": 4858,
+      "sha256": "ad9f8a347d4a56ca78ca6b9cd9eed596c94b70bad67e2fab0909fcd72405dece"
+    },
+    {
+      "path": "data/seismic-candidates/2026-10-10/metadata/horus-methods.pdf",
+      "url": "https://cris.unibo.it/bitstream/11585/791000/7/SRL-D-20-00148_R3.pdf",
+      "role": "author_methods_manuscript",
+      "bytes": 6171491,
+      "sha256": "8c3be3e864c21424c82109a22c333919faa46efc8e6b38e4fa3ab9d5ee260ef1"
+    }
+  ],
+  "horus_variant": "Original-input _o files, without publisher random decimal jitter; this choice is for source auditing and does not approve the original Aki-Utsu estimator for transformed magnitudes.",
+  "restore_policy": "Pin these exact bytes; HORUS is a rolling URL, so later publisher changes must fail checksum verification rather than silently replace this snapshot."
+}

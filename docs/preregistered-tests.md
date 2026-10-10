@@ -102,6 +102,11 @@ anew with this result disclosed.
   factor-three distance span. The minimum is ten. No b, D2 or regression was
   calculated; neither prediction is favoured. See the
   [report and reproduction steps](seismic-qualification-results-2026-10-10.md).
+- **Further inputs acquired, no new response calculation:** the
+  [CLASS/HORUS and Northern California source audit](seismic-candidate-audit-2026-10-10.md)
+  supplies a documented Italian magnitude-calibration route. Physical memberships
+  and validation of proxy-magnitude rounding/uncertainty remain necessary; the
+  original registration has not been rewritten around these known source findings.
 - **Amendment 1 (before data access):** the correlation-dimension range runs from the 200th-closest
   pair distance (or three location errors) to 0.1 of the 90th-percentile pair distance, and
   clusters spanning less than a factor of 3 are excluded. The registered range was biased by

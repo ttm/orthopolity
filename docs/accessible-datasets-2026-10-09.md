@@ -20,6 +20,8 @@ explicitly limited access samples are retained under
 | [Ridgecrest AWR v2](dataset-audit-seismic-2026-10-09.md) | Full 19.73 MB CSV; 222,864 events; publisher checksum verified | Magnitude–hypocentre candidate. Needs physical cluster definition and eligibility checks. |
 | [Ridgecrest QTM](dataset-audit-seismic-2026-10-09.md) | Full 4.46 MB archive; 111,918 detections, 46,512 marked relocated | Alternative with location-error fields. Relocation components do not supply the required qualifying physical clusters. |
 | [Southern California published sequences](seismic-qualification-results-2026-10-10.md) | Full 13.31 MB sequence catalogue and matching 98.94 MB relocated source; newer regional file also acquired | Frozen qualification completed: 6 usable sequences, minimum 10. No b or D2 fitted; neither hypothesis favoured. |
+| [Italian CLASS + HORUS](seismic-candidate-audit-2026-10-10.md) | Full 21.98 MB CLASS gzip and 61.12 MB HORUS ZIP; 295,193 unambiguous location/provenance links | Independent magnitude calibration is available. Freeze physical sequences and validate proxy uncertainty/rounding; only 699 matched direct-Mw events, too few for ten groups. |
+| [Northern California NCAeqDD v202112.1](seismic-candidate-audit-2026-10-10.md) | Full 26.08 MB gzip; 879,626 unique IDs | Relative errors at 95% confidence and ML magnitudes. Absolute/relative covariance, Mw calibration and physical memberships remain unresolved. |
 | [USFS FPA FOD v7](dataset-audit-wildfire-2026-10-09.md) | Successful 1,000-record API sample plus metadata; full inventory advertised at ~2.66 million fires | New-domain candidate: burned-area allocation and transfer across years. Needs complete cohorts and a new protocol; no fit run. |
 
 The [flare result report](flare-ribbons-run-2026-10-09.md) retains the exact
@@ -38,10 +40,10 @@ resource interpretation.
 2. Interpret the UK difference with its sampling limits and overlapping geography.
    It cannot isolate the effects of projection, geometry, mapping and cohort.
 3. Seismic qualification now fails the minimum-ten condition: six sequences pass
-   all frozen gates. A further catalogue or covariance model needs independently
-   justified magnitude and uncertainty conventions. Preserve this finding; do
-   not relax the observed filters to force a response fit. Sufficient dimension
-   contrast would remain necessary even with ten sequences.
+   all frozen gates. CLASS/HORUS is the best documented acquired follow-up route,
+   with independent calibration and an audited exact-ID crosswalk. Define physical
+   sequences and validate the proxy estimator before fitting. Preserve the earlier
+   finding; sufficient dimension contrast remains necessary even with ten sequences.
 4. Register wildfire area allocation as a new test only after defining the resource,
    population and observation period. Include model alternatives, goodness of fit,
    dependence and a withheld-year prediction; merely finding a power law is not a

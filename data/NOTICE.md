@@ -157,3 +157,16 @@ three complete downloads. The large raw files remain local and are restored from
 their public source URLs. No blanket CC0 or software-license permission is
 inferred for these sources. The separate Ridgecrest CaltechDATA v2 deposit's CC0
 statement does not apply to this regional catalogue or author-hosted clustering.
+
+## Italian and Northern California candidate audit
+
+CLASS 1.0 and HORUS identify CC BY 4.0 on their retained publisher pages.
+Attribute CLASS to Latorre et al. (dataset 2022; paper 2023), and HORUS to
+Lolli et al. (2020), using the DOIs in `data/SOURCES.md`. The derived Italian
+crosswalk retains source-row numbers, event identifiers, original error and
+magnitude fields, and explicit ambiguity/provenance flags. It is not a newly
+endorsed publisher catalogue. For NCAeqDD, cite Waldhauser and Schaff (2008)
+with version v202112.1 and retain NCEDC/NCSS/NCSN attribution. Its raw catalogue
+remains local and ignored. No blanket reuse license was inferred for NCAeqDD;
+the Italian sources' CC BY terms do not extend to it or to the retained author
+manuscript. The repository software license does not replace source-specific terms.

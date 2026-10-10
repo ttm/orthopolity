@@ -1,0 +1,89 @@
+{
+  "completed_utc": "2026-10-10T07:12:47.109461+00:00",
+  "scope": "Nonconfirmatory source and identity audit; no completeness, b, D2 or hypothesis fit.",
+  "source_and_method_files": [
+    {
+      "path": "experiments/audit_seismic_candidates.py",
+      "bytes": 9105,
+      "sha256": "112934363c608257af622911ab26f09d9b6805e1c47419b65b72d76e57ab113a"
+    },
+    {
+      "path": "experiments/fetch_seismic_candidates.py",
+      "bytes": 1672,
+      "sha256": "a8cb10504807527f67312184130f7d3352e4b9cff1bbed1c47b10ba9a4bed88b"
+    },
+    {
+      "path": "experiments/verify_seismic_candidates.py",
+      "bytes": 5983,
+      "sha256": "b0de6b3635730ca9c49fbff1adcd21dc2fc4dcf56116752f7d88701f9d307245"
+    },
+    {
+      "path": "src/orthopolity/seismic_source_audit.py",
+      "bytes": 7823,
+      "sha256": "3fd04750baba4522aa118920f4b598d18c62f5e22840a201c43a94dd6ddbd7a6"
+    },
+    {
+      "path": "tests/test_seismic_source_audit.py",
+      "bytes": 4037,
+      "sha256": "805273c288e35fff37dfa9db8e4fcd799177415b8b3448054d9688518cc8ee52"
+    },
+    {
+      "path": "docs/seismic-candidate-audit-2026-10-10.md",
+      "bytes": 10147,
+      "sha256": "b38e215448822010706e2814b8de5ff189d6c685d978f5c8c472ea66be7fd2fd"
+    },
+    {
+      "path": "data/seismic-candidates/2026-10-10/acquisition.json",
+      "bytes": 2740,
+      "sha256": "bef1526bcf8f6ceb2781ecc1dc390dfdaa1e3907804ed5973e7eacafa8524cea"
+    },
+    {
+      "path": "data/seismic-candidates/2026-10-10/horus-members.json",
+      "bytes": 887,
+      "sha256": "56f45e046e4fcd4e64fcd209613d2163b2da8ecb6d7860d445552a9c04bac507"
+    },
+    {
+      "path": "data/seismic-candidates/2026-10-10/identity-lookups.json",
+      "bytes": 1892,
+      "sha256": "1ba14b5d1f7bffdbbd90519cfcf27950dfed7f011733cae80ed885e6fb75d1b6"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "data/seismic-candidates/2026-10-10/audit/audit.json",
+      "bytes": 5824,
+      "sha256": "768b05b6cf5489c40e115736c04b19194229f1f5f5b4c84ee792021adb22bcbd"
+    },
+    {
+      "path": "data/seismic-candidates/2026-10-10/audit/class-horus-crosswalk.csv.gz",
+      "bytes": 22731326,
+      "sha256": "e23f80cb8128c09c1fa7bf68393a7a49b3bf8378950e6760fbacc787b62bdc1d"
+    },
+    {
+      "path": "data/seismic-candidates/2026-10-10/audit/class-horus-time-discrepancies.csv",
+      "bytes": 1690,
+      "sha256": "85cd3b0b47a1112739716a218f86600f2bc1996f7ab01b495cb7b44255673a0d"
+    },
+    {
+      "path": "data/seismic-candidates/2026-10-10/audit/class-identifier-collisions.csv",
+      "bytes": 63379,
+      "sha256": "64e677aa78807ae66bde7d8b469b24405d96f823062e8047b6f0f43623b5d8ce"
+    },
+    {
+      "path": "data/seismic-candidates/2026-10-10/audit/crosswalk-by-year.csv",
+      "bytes": 3081,
+      "sha256": "0eace143703294cf7ae5de78bab16182154122fdc4642701d8677e0ba8e8f5c7"
+    },
+    {
+      "path": "data/seismic-candidates/2026-10-10/audit/full-tests.log",
+      "bytes": 990,
+      "sha256": "5c73392cd9f12ad36d7798f025c781260054c3812c50c9644984540bebfde949"
+    },
+    {
+      "path": "data/seismic-candidates/2026-10-10/audit/verification.json",
+      "bytes": 471,
+      "sha256": "0bed97d31d450edcf9afd2c93d2f5d5dfdccd2ec3a7298d0657bcc73fbc1faa6"
+    }
+  ],
+  "validation": "473 tests pass; fresh audit and independent verification reproduce exactly; all33priorrunrecords/813references verify and remain unchanged."
+}
