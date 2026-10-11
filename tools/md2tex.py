@@ -175,10 +175,13 @@ def heading(level: int, text: str, out: list[str], anchor: str | None = None) ->
     out.append(rf"\{cmd}*{{{body}}}")
 
 
-def emit_table(rows: list[str], out: list[str]) -> None:
+def emit_table(rows: list[str], out: list[str], caption: str | None = None) -> None:
     cells = [[c.strip() for c in row.strip().strip("|").split("|")] for row in rows]
     header, body = cells[0], cells[2:]  # cells[1] is the alignment rule
     spec = "".join(r">{\raggedright\arraybackslash}X" for _ in header)
+    # Tables in this manuscript are shorter than a page. Keep their captions
+    # attached instead of leaving a caption alone on the following page.
+    out.append(r"\par\medskip\noindent\begin{minipage}{\linewidth}")
     out.append(r"\begin{center}\small")
     out.append(rf"\begin{{tabularx}}{{\linewidth}}{{@{{}}{spec}@{{}}}}")
     out.append(r"\toprule")
@@ -190,6 +193,9 @@ def emit_table(rows: list[str], out: list[str]) -> None:
     out.append(r"\bottomrule")
     out.append(r"\end{tabularx}")
     out.append(r"\end{center}")
+    if caption:
+        out.append(r"{\small\emph{" + inline(caption) + r"}}\par")
+    out.append(r"\end{minipage}\par\medskip")
 
 
 def convert(md: str, md_dir: str, root: str) -> str:
@@ -295,7 +301,20 @@ def convert(md: str, md_dir: str, root: str) -> str:
                 rows.append(lines[i].strip())
                 i += 1
             if len(rows) >= 2:
-                emit_table(rows, out)
+                caption = None
+                j = i
+                while j < len(lines) and not lines[j].strip():
+                    j += 1
+                if j < len(lines) and lines[j].strip().startswith("*Table "):
+                    parts = []
+                    while j < len(lines) and lines[j].strip():
+                        parts.append(lines[j].strip())
+                        j += 1
+                    candidate = " ".join(parts)
+                    if candidate.endswith("*"):
+                        caption = candidate[1:-1]
+                        i = j
+                emit_table(rows, out, caption)
             continue
 
         # Flat Markdown lists. Wrapped item lines remain in the same item;

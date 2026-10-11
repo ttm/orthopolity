@@ -234,17 +234,17 @@ disconnected components equalize only within their separately conserved budgets.
 These are established reversible-chain tools applied to resource classes (Levin
 and Peres, 2017).
 
+This construction shows how an active equalizing process can have an unequal
+outcome. Identifying that decomposition in a natural system requires evidence
+about its kinetics or response to intervention; a stationary profile alone is
+insufficient.
+
 ![Equalization, a specified constraint, and recovery](../results/class-exchange-presentation/class-exchange.png)
 
 *Figure 1. Resource exchange on fixed logarithmic size classes. The model predicts
 neutral allocation, a nonuniform constrained equilibrium and recovery after release.
 The detailed model, spectral bounds and finite-packet simulations are in the
 [supporting material](supporting-material.md) and [model report](class-exchange.md).*
-
-This construction shows how an active equalizing process can have an unequal
-outcome. Identifying that decomposition in a natural system requires evidence
-about its kinetics or response to intervention; a stationary profile alone is
-insufficient.
 
 ### 3.2 Gravity and radiating waves: what geometry preserves
 

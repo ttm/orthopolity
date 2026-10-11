@@ -19,7 +19,7 @@ physiology/opportunity changes and predict independent responses, or establish
 another qualified natural allocation regime. The previous seismic and lake
 priorities remain alternatives, with their gates and failures preserved.
 
-All **499 tests pass**; the registry verifies **35 records and 853 file references**.
+All **500 tests pass**; the registry verifies **35 records and 853 file references**.
 The earlier 34 records are unchanged. The historical progress entries below
 retain their original section numbering; use the revision map for navigation.
 

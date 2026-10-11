@@ -78,6 +78,17 @@ Paragraph after.
             self.assertNotIn("\x00", tex)
             self.assertNotIn("ζ", tex)
 
+    def test_table_caption_stays_inside_the_unbreakable_table_block(self):
+        md = "# Paper\n\n| A | B |\n|---|---|\n| one | two |\n\n*Table 1. A caption\ncontinued here.*\n\nNext paragraph.\n"
+        tex = MD2TEX.convert(md, str(ROOT/'docs'), str(ROOT))
+        start = tex.index(r'\begin{minipage}')
+        caption = tex.index('Table 1. A caption continued here.')
+        end = tex.index(r'\end{minipage}')
+        self.assertLess(start, caption)
+        self.assertLess(caption, end)
+        self.assertLess(end, tex.index('Next paragraph.'))
+        self.assertEqual(tex.count('Table 1.'), 1)
+
 
 if __name__ == "__main__":
     unittest.main()

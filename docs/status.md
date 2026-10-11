@@ -6,7 +6,7 @@ to the files that hold the details.
 
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
-the package layout for all runners. The suite now passes **499 tests**; the
+the package layout for all runners. The suite now passes **500 tests**; the
 registry verifies **35 runs and 853 file references**, including the Italian simulation
 and retrospective chemostat diagnosis. The broader programme and subsequent
 studies are in [research-brief.md](research-brief.md) and
@@ -108,7 +108,7 @@ discards the authors' programme.
 | 10 Oct 2026 | Frozen Southern California sequence qualification | 123,275 published events joined to original relocations; 6 eligible sequences versus minimum 10; no b/D2 fitting; 464 tests and 33 registry entries verified |
 | 10 Oct 2026 | Italian calibration crosswalk and Northern California source audit | Three complete new sources; 295,193 unambiguous CLASS/HORUS links; direct-Mw-only route insufficient; identity issues retained; 473 tests pass |
 | 10 Oct 2026 | Italian synthetic magnitude gate | 45/56 required scenarios fail; no real Italian b/D2 fit; 480 tests, 34 registry records |
-| 10–11 Oct 2026 | Main article/support reorganization and chemostat failure diagnosis | Title/general-law ambition retained; technical details preserved; arbitrary C:N prices insufficient in 8/12 vessels under transferred quotas; 499 tests, 35 records |
+| 10–11 Oct 2026 | Main article/support reorganization and chemostat failure diagnosis | Title/general-law ambition retained; technical details preserved; arbitrary C:N prices insufficient in 8/12 vessels under transferred quotas; 500 tests, 35 records |
 
 ## 3. Results to carry forward
 
@@ -232,7 +232,7 @@ The [research brief](research-brief.md) explains the general-law programme;
   exponent was examined and the reading passes a second, different prediction. Grades:
   derived, motivated, suggestive, numerology. Source tags in documents: verified, repository result,
   own derivation, unverified.
-- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 499 tests and
+- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 500 tests and
   regenerates every analysis. The September results were produced with Python 3.11; results
   added on 8–9 October (Gibrat, resource choice, catalogue, aftershocks) with Python 3.13 and the
   pinned packages. Other versions change the older files by at most about $4\times10^{-8}$

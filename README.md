@@ -12,7 +12,7 @@ diagnoses a failed chemostat forecast: even arbitrary nonnegative C:N prices
 cannot accommodate eight of twelve primary vessels under fixed opportunities
 and transferred quota measurements. It is a retrospective conditional result,
 with every pooled-species mixture allowed, not a statistical rejection or new
-confirmation. The suite passes 499 tests; 35 registry entries verify offline.
+confirmation. The suite passes 500 tests; 35 registry entries verify offline.
 
 Orthopolity expresses the general natural-law principle that Nature tends to
 distribute resources equally among concentrations of those resources. The
