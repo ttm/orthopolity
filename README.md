@@ -1,5 +1,19 @@
 # Orthopolity
 
+The revised [article](docs/paper.md) retains the title **Orthopolity: a general
+law of resource allocation** and the ambition to establish it. Detailed
+derivations, observation models and full empirical comparisons now reside in
+[supporting material](docs/supporting-material.md). `make paper` builds both
+PDFs. The [revision map](docs/manuscript-revision-2026-10-11.md) documents the
+reorganization and interpretation corrections.
+
+The latest [empirical follow-up](docs/chemostat-capacity-followup-results-2026-10-11.md)
+diagnoses a failed chemostat forecast: even arbitrary nonnegative C:N prices
+cannot accommodate eight of twelve primary vessels under fixed opportunities
+and transferred quota measurements. It is a retrospective conditional result,
+with every pooled-species mixture allowed, not a statistical rejection or new
+confirmation. The suite passes 499 tests; 35 registry entries verify offline.
+
 Orthopolity expresses the general natural-law principle that Nature tends to
 distribute resources equally among concentrations of those resources. The
 [mathematical foundation](docs/resource-capacity.md) establishes inverse

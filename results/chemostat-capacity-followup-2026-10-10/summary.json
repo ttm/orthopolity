@@ -1,0 +1,176 @@
+{
+  "comparisons": [
+    {
+      "category": "Polycultures",
+      "mode": "fixed_prepulse_densities",
+      "n_rows": 36,
+      "n_rows_exceeding": 15,
+      "n_scored": 36,
+      "n_unscored": 0,
+      "n_vessels_exceeding": 8,
+      "scored_vessels": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "vessels_exceeding": [
+        "11",
+        "12",
+        "2",
+        "3",
+        "5",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "category": "Monocultures",
+      "mode": "fixed_prepulse_densities",
+      "n_rows": 36,
+      "n_rows_exceeding": 6,
+      "n_scored": 36,
+      "n_unscored": 0,
+      "n_vessels_exceeding": 6,
+      "scored_vessels": [
+        "Bc1",
+        "Bc2",
+        "Bc3",
+        "Bc4",
+        "Ce1",
+        "Ce2",
+        "Ce3",
+        "Ce4",
+        "Le1",
+        "Le2",
+        "Le3",
+        "Le4"
+      ],
+      "vessels_exceeding": [
+        "Bc1",
+        "Bc2",
+        "Bc4",
+        "Ce1",
+        "Ce2",
+        "Ce3"
+      ]
+    },
+    {
+      "category": "Polycultures",
+      "mode": "measured_preliminary_density_changes",
+      "n_rows": 36,
+      "n_rows_exceeding": 17,
+      "n_scored": 36,
+      "n_unscored": 0,
+      "n_vessels_exceeding": 8,
+      "scored_vessels": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "vessels_exceeding": [
+        "1",
+        "11",
+        "12",
+        "2",
+        "5",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "category": "Monocultures",
+      "mode": "measured_preliminary_density_changes",
+      "n_rows": 36,
+      "n_rows_exceeding": 9,
+      "n_scored": 36,
+      "n_unscored": 0,
+      "n_vessels_exceeding": 8,
+      "scored_vessels": [
+        "Bc1",
+        "Bc2",
+        "Bc3",
+        "Bc4",
+        "Ce1",
+        "Ce2",
+        "Ce3",
+        "Ce4",
+        "Le1",
+        "Le2",
+        "Le3",
+        "Le4"
+      ],
+      "vessels_exceeding": [
+        "Bc1",
+        "Bc2",
+        "Bc3",
+        "Bc4",
+        "Ce1",
+        "Ce2",
+        "Ce3",
+        "Ce4"
+      ]
+    }
+  ],
+  "evidence_kind": "retrospective_conditional_diagnostic",
+  "interpretation_limit": "Exceedance excludes the conjunction of fixed aggregate opportunities, two-resource proportional allocation and transferred preliminary densities for the recorded observations. Preliminary cultures do not measure main-vessel physiology. Unknown assay errors are not covered.",
+  "n_main_records": 456,
+  "original_forecasts_or_verdicts_changed": false,
+  "prices_or_opportunities_fitted": false,
+  "primary": {
+    "category": "Polycultures",
+    "mode": "measured_preliminary_density_changes",
+    "n_rows": 36,
+    "n_rows_exceeding": 17,
+    "n_scored": 36,
+    "n_unscored": 0,
+    "n_vessels_exceeding": 8,
+    "scored_vessels": [
+      "1",
+      "10",
+      "11",
+      "12",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "vessels_exceeding": [
+      "1",
+      "11",
+      "12",
+      "2",
+      "5",
+      "7",
+      "8",
+      "9"
+    ]
+  },
+  "prior_exposure": "All source outcomes and the failed 2026-10-02 forecasts were previously inspected. This freezes a new diagnostic, not unseen outcomes or confirmation.",
+  "run_id": "chemostat-capacity-followup-2026-10-10",
+  "statistical_rejection_claimed": false,
+  "verdict": "conditional bound exceeded in recorded primary observations"
+}

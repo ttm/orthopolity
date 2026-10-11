@@ -1,0 +1,32 @@
+{
+  "run_id": "chemostat-capacity-followup-2026-10-10",
+  "evidence_kind": "retrospective_conditional_diagnostic",
+  "question": "Can fixed class opportunities and any nonnegative two-resource prices accommodate early nitrogen-share redistribution when measured preliminary quota changes and every pooled-species mixture are allowed?",
+  "prior_exposure": "All source outcomes and the failed 2026-10-02 forecasts were previously inspected. This freezes a new diagnostic, not unseen outcomes or confirmation.",
+  "inputs": [
+    {"path": "data/chemostat-sources/2026-10-02/preliminary-stoichiometry.json", "sha256": "32f943b411edd75d20ca1b547fec1aff21982d7c7385414fc33692d503289257", "size_bytes": 7828},
+    {"path": "data/chemostat-response/2026-10-02/development-records.json", "sha256": "46ea35456e4359ce3591188fe6cdf7aa939f9e6cf538c77795bed4c786fbf1a8", "size_bytes": 146839},
+    {"path": "data/chemostat-response/2026-10-02/evaluation-records.json", "sha256": "3156657e67176b1b007bf989cae85e41d4a09a189c71a5c1df84f00b8a065526", "size_bytes": 32224}
+  ],
+  "species": ["Cr", "Ca", "Mo", "Co"],
+  "groups": ["Cryptomonas", "Chlamydomonas", "Monoraphidium_Chlorella"],
+  "preliminary_times_days": [-4, 0, 1, 2, 3],
+  "baseline_calibration_days": [-4, 0],
+  "target_days": [1, 2, 3],
+  "baseline_observation_day": 0,
+  "primary_category": "Polycultures",
+  "secondary_category": "Monocultures",
+  "modes": ["fixed_prepulse_densities", "measured_preliminary_density_changes"],
+  "primary_mode": "measured_preliminary_density_changes",
+  "expected_main_records": 456,
+  "expected_vessels_per_category": 12,
+  "baseline_estimator": "Separate species medians of N/volume and C/volume at days -4 and 0",
+  "postpulse_estimator": "Exact species N/volume and C/volume at matching preliminary day; no interpolation or extrapolation",
+  "pooling": "Allow every Mo/Co biovolume mixture independently at baseline and target; no fitted mixture",
+  "missingness": "Retain missing, invalid or zero-total baseline/target rows as unscored; no fallback or imputation",
+  "bound": "K=max(1,max_i_ne_j max(1,r0_hi_i/r0_lo_j)*max(1,rt_hi_j/rt_lo_i)); TV_upper=(sqrt(K)-1)/(sqrt(K)+1)",
+  "decision": "Conditional bound exceedance if a feasible dual lower certificate for minimum observed TV over both pooled-mixture segments exceeds TV_upper by more than numerical_tolerance; otherwise bound not exceeded, not support",
+  "numerical_tolerance": 1e-8,
+  "sampling_scope": "Descriptive same-vessel point comparisons; no p-values, independence claims, confidence intervals, fitted prices or new neutrality verdict",
+  "interpretation_limit": "Exceedance excludes the conjunction of fixed aggregate opportunities, two-resource proportional allocation and transferred preliminary densities for the recorded observations. Preliminary cultures do not measure main-vessel physiology. Unknown assay errors are not covered."
+}

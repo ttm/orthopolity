@@ -1,0 +1,47 @@
+{
+  "artifact_sha256": {
+    "bounds.json": "7ba2190be7918765a1ae2da5884570e81718d2b847022b0ad2d9d9c9b9dd8545",
+    "execution.json": "93b77f9317532748818979652ac3efa21ce090baff6627d8a8d6cf83c11f6228",
+    "ledger.json": "cd97ff7e2a49c2e74b3f0f694d49fbe6b4cf3e66e7f5c505ac0fbd02c526df23",
+    "quota-calibration.json": "7bce607f4838817ee3f74cd5da601fc4ba2beea13c36bbfdf633eab1f0eb8923",
+    "summary.json": "1b630b78d3c2891bdf32d6fd4ec0db20820ea630c4eea00907f83b8e5fdfae26"
+  },
+  "freeze_commit": "13374c5",
+  "independent_minimum_max_error": 5.551115123125783e-17,
+  "ledger_rows": 144,
+  "method": "Zero-residual line-arrangement vertices and extreme-price enumeration; no LP solver",
+  "primary": {
+    "category": "Polycultures",
+    "mode": "measured_preliminary_density_changes",
+    "n_rows": 36,
+    "n_rows_exceeding": 17,
+    "n_scored": 36,
+    "n_unscored": 0,
+    "n_vessels_exceeding": 8,
+    "scored_vessels": [
+      "1",
+      "10",
+      "11",
+      "12",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "vessels_exceeding": [
+      "1",
+      "11",
+      "12",
+      "2",
+      "5",
+      "7",
+      "8",
+      "9"
+    ]
+  },
+  "verified": true
+}

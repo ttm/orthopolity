@@ -2,7 +2,7 @@
 #
 #   make install   editable install, so `import orthopolity` works without PYTHONPATH
 #   make all       verify data, run tests, run every analysis
-#   make paper     typeset docs/paper.md into docs/paper.pdf (needs pdflatex)
+#   make paper     typeset the main article and supporting material (needs pdflatex)
 #
 # Historical downloaded inputs live in checksummed data/raw/. Later studies
 # retain their own measured/generated inputs and acquisition receipts. Analysis
@@ -31,10 +31,14 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: seismic-sources restore-seismic-sources seismic-qualification seismic-qualification-registry
 .PHONY: seismic-candidate-sources restore-seismic-candidates seismic-candidate-audit
 .PHONY: italian-magnitude-validation italian-magnitude-registry
+.PHONY: chemostat-capacity chemostat-capacity-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
 PAPER_PDF := docs/paper.pdf
+SUPPORT_SRC := docs/supporting-material.md
+SUPPORT_TEX := build/supporting-material.tex
+SUPPORT_PDF := docs/supporting-material.pdf
 
 # The PDF is tracked, so its bytes must not change unless the manuscript does:
 # date it from the manuscript's last commit rather than from the clock.
@@ -43,6 +47,24 @@ ifeq ($(PAPER_EPOCH),)
 PAPER_EPOCH := 0
 endif
 PAPER_ENV := SOURCE_DATE_EPOCH=$(PAPER_EPOCH) FORCE_SOURCE_DATE=1
+SUPPORT_EPOCH := $(shell git log -1 --format=%ct -- $(SUPPORT_SRC) 2>/dev/null)
+ifeq ($(SUPPORT_EPOCH),)
+SUPPORT_EPOCH := 0
+endif
+SUPPORT_ENV := SOURCE_DATE_EPOCH=$(SUPPORT_EPOCH) FORCE_SOURCE_DATE=1
+
+PAPER_IMAGES := results/class-exchange-presentation/class-exchange.png
+SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
+ results/theory.png results/class-exchange-presentation/class-exchange.png \
+ results/thermal-radiation/thermal-radiation.png \
+ results/dunaliella-size-budget/size-budget.png \
+ results/plant-biomass-profile/mass-profile.png \
+ results/linguistic-resources/linguistic-resources.png \
+ results/cell-division/cell-division.png \
+ results/lake-metric-followup-2026-10-09/interval-comparison.png \
+ results/lake-metric-followup-2026-10-09/survival.png \
+ results/italian-magnitude-validation-2026-10-10/validation.png \
+ results/chemostat-capacity-followup-2026-10-10/capacity.png
 
 all: data test analyses
 
@@ -329,15 +351,29 @@ ghedini-cost-calibration: ## offline: exact replay of the frozen respiration cal
 ghedini-cost-calibration-report: ## figures from retained calibration results; no refitting
 	MPLCONFIGDIR=build/matplotlib $(PY) experiments/report_ghedini_cost_calibration.py --verify
 
-paper: $(PAPER_PDF)  ## typeset the manuscript; requires a TeX installation
+chemostat-capacity: ## reproduce the retrospective diagnosis to an unused directory
+	$(PY) experiments/run_chemostat_capacity.py --freeze-commit 13374c5 --output $(STUDY_OUTPUT_ROOT)/chemostat-capacity
+	$(PY) experiments/verify_chemostat_capacity.py --directory $(STUDY_OUTPUT_ROOT)/chemostat-capacity
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/plot_chemostat_capacity.py --directory $(STUDY_OUTPUT_ROOT)/chemostat-capacity
+
+chemostat-capacity-registry: ## append/audit the retained conditional follow-up
+	$(PY) experiments/register_chemostat_capacity.py
+
+paper: $(PAPER_PDF) $(SUPPORT_PDF)  ## typeset both manuscripts; requires a TeX installation
 
 # tools/md2tex.py handles the Markdown subset the manuscript uses, so no Pandoc
 # is required. Two passes settle the PDF outline and any page references.
-$(PAPER_PDF): $(PAPER_SRC) tools/md2tex.py results/theory.png results/class-exchange-presentation/class-exchange.png results/thermal-radiation/thermal-radiation.png results/linguistic-resources/linguistic-resources.png
+$(PAPER_PDF): $(PAPER_SRC) tools/md2tex.py Makefile $(PAPER_IMAGES)
 	$(PY) tools/md2tex.py $(PAPER_SRC) $(PAPER_TEX)
 	$(PAPER_ENV) pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build $(PAPER_TEX) > build/paper.pass1.log
 	$(PAPER_ENV) pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build $(PAPER_TEX) > build/paper.pass2.log
 	cp build/paper.pdf $@
+
+$(SUPPORT_PDF): $(SUPPORT_SRC) tools/md2tex.py Makefile $(SUPPORT_IMAGES)
+	$(PY) tools/md2tex.py $(SUPPORT_SRC) $(SUPPORT_TEX)
+	$(SUPPORT_ENV) pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build $(SUPPORT_TEX) > build/supporting-material.pass1.log
+	$(SUPPORT_ENV) pdflatex -interaction=nonstopmode -halt-on-error -output-directory=build $(SUPPORT_TEX) > build/supporting-material.pass2.log
+	cp build/supporting-material.pdf $@
 
 clean:           ## remove generated exploration and typesetting output; never touches data/raw
 	rm -rf results/exploration build __pycache__ src/orthopolity/__pycache__ tests/__pycache__

@@ -2,7 +2,7 @@
 
 **Capacity, physical realizations, and effective-resource inference**
 
-> Research manuscript, revised 10 October 2026. Detailed derivations, complete
+> Research manuscript, revised 11 October 2026. Detailed derivations, complete
 > comparisons and analysis histories are retained in the [supporting material](supporting-material.md).
 > Empirical studies include exploration, locally frozen forecasts and retrospective
 > reanalyses; none is externally preregistered. Authorship and submission declarations
@@ -23,7 +23,9 @@ variation supply independently specified departures. The framework also supports
 inference: restricted combinations of measured resource requirements produce identifiable
 predictions across environments. Tests show accurate allocation forecasts in an engineered
 system, approximate budget closure across separately grown algal cultures, and predictive
-gains from combined symbolic costs in language. Other forecasts fail, and some natural
+gains from combined symbolic costs in language. A conditional redistribution bound
+shows why changing resource prices alone cannot explain one biological failure.
+Other forecasts fail, and some natural
 catalogues cannot support the intended test after observation and estimator checks.
 These outcomes distinguish an established conditional relation, a physically explained
 departure and an unresolved failure. The contribution is a common account of resource
@@ -98,7 +100,7 @@ $$N_j\bar q_j=\int_\Omega m_j\,d\nu=B\gamma_j,\qquad
 
 Every complete partition has $\gamma_j=1$ and therefore
 $N_j\bar q_j=B$. The inverse count--mean-resource relation holds exactly even
-for unequal units and nested levels. Incomplete coverage has $\gamma_j<1$;
+for unequal units and nested levels. Incomplete disjoint coverage has $\gamma_j<1$;
 overlap can give $\gamma_j>1$. Independently measured coverage consequently
 predicts a correction to the inverse relation.
 
@@ -155,8 +157,10 @@ $$Q_i=Q_0F(q_{i1}/s_1,\ldots,q_{im}/s_m;z_i,\theta),\qquad
 
 The total $\sum_iQ_i$ is additive over the declared object partition, but a
 nonlinear $F$ need not preserve that total when objects are split or merged.
-Proportional subdivision requires degree-one homogeneity for invariance; invariance
-under every admissible heterogeneous subdivision forces a nonnegative linear form.
+Proportional subdivision requires degree-one homogeneity for invariance. If all
+nonnegative constituent vectors and their subdivisions are admissible, invariance
+under every heterogeneous subdivision forces a finite nonnegative $F$, with
+$F(0)=0$, to be a nonnegative linear form.
 Nonlinear effective resources therefore need a specified physical partition or
 restricted composition domain. With heterogeneous objects, averaging follows
 composition: $E[F(X,Y)]$ generally differs from $F(E[X],E[Y])$.
@@ -178,9 +182,9 @@ abundance contains information about an effective resource, but cannot by itself
 separate that resource from an unrestricted constraint. Multiplying both by the
 same positive function leaves the prediction unchanged.
 
-Restrictions shared across environments make the inverse use predictive. Suppose
-$Q=Q_0\prod_{\ell=1}^mX_\ell^{\theta_\ell}$, independently measured constituent
-requirements scale as $X_{s\ell}\propto k^{D_{s\ell}}$, and a known allocation
+Restrictions shared across environments make the inverse use predictive. Consider
+the composition $Q=Q_0\prod_{\ell=1}^mX_\ell^{\theta_\ell}$. Suppose independently
+measured constituent requirements scale as $X_{s\ell}\propto k^{D_{s\ell}}$, and a known allocation
 factor is $a_s\propto k^{-v_s}$. Under logarithmic allocation, a count density
 $k^{-(1+\alpha_s)}$ implies
 
@@ -244,12 +248,14 @@ insufficient.
 
 ### 3.2 Gravity and radiating waves: what geometry preserves
 
-For a Newtonian gravitational field $\mathbf g$, Gauss's law gives
+For a Newtonian gravitational field $\mathbf g$, the Poisson equation
+(Chao, 2014) gives the integral relation
 $\oint_S\mathbf g\cdot\mathbf n\,dA=-4\pi GM_{\mathrm{enc}}$.
 Every enclosing surface outside a fixed isolated source has the same inward
 field flux. Spherical symmetry additionally gives $|\mathbf g|=GM/r^2$:
 the conserved enclosed-source quantity is distributed over an area growing
-as $r^2$. This is a geometric realization with specified symmetry. The field
+as $r^2$. Inward flux per solid angle is $d\Psi/d\Omega=GM$, an explicit
+angular equality. This is a geometric realization with specified symmetry. The field
 flux is not an energy throughput, and nested surfaces are not independent
 mass or energy shares. Distributed sources change $M_{\mathrm{enc}}(r)$;
 nonspherical sources need not give uniform local fields. The
@@ -372,9 +378,9 @@ of a conditional resource law; it does not establish the same mechanism in natur
 
 Thirty size-selected *Dunaliella* lineages were regrown separately in the same
 medium (Malerba et al., 2018). Large-selected and small-selected treatment means
-differ by a factor of 10.4 in cell volume, while their total biovolumes differ
-by only 2.5%. Controls have mean log capacity 11.89 versus 11.72 and 11.70
-for the two extremes, approximately 19--21% higher. Thus the close extreme-treatment
+differ by a factor of 10.4 in cell volume, while their geometric mean total
+biovolumes differ by only 2.5%. Control geometric mean capacity is approximately
+18--21% higher than the two extremes. Thus the close extreme-treatment
 comparison does not establish uniform capacity across all lineages or treatments.
 
 Frozen equal-biovolume forecasts give held-out errors of 0.124 and 0.179 log units,
@@ -401,13 +407,25 @@ and unverified physiological equivalence limit the conclusion. The mean succeeds
 conditionally while the fuller prediction remains unsuccessful.
 
 A nutrient-pulse experiment provides a direct failed response forecast. In twelve
-held-out chemostat polycultures, the frozen two-budget C:N reweighting rule predicts
-redistribution of 0.05--0.12 against observed changes of 0.29--0.49. The predicted
+held-out chemostat polycultures, the frozen two-budget C:N reweighting rule allows
+at most 0.05--0.12 total variation, whereas observed maxima over days 0--12
+were 0.29--0.49. The predicted
 direction holds in only four vessels, and none of the frozen forecasts improves
-appreciably on persistence. No vessel recovers its original composition within
-twelve days ([response report](chemostat-response.md); Wojcik et al., 2025).
-This failure motivates testing the resource and constraint model, rather than
-assigning every discrepancy an unspecified compensating force.
+appreciably on persistence. None met the declared recovery criterion by day 12
+([response report](chemostat-response.md); Wojcik et al., 2025).
+
+A [retrospective follow-up](chemostat-capacity-followup-results-2026-10-11.md)
+asks whether freely changing both nonnegative resource prices can explain the
+failure while allocation opportunities stay fixed. Measured preliminary quota
+changes and every pooled-species mixture imply upper redistribution bounds of
+0.190, 0.175 and 0.155 on days 1--3. Even the minimum observed changes over all
+mixtures exceed these bounds in 17 of 36 comparisons, involving eight of twelve
+vessels. Price adjustment alone cannot explain these recorded profiles under
+the transferred quotas. The result excludes that conjunction of assumptions;
+separate-culture quotas do not establish mixed-vessel physiology, and assay
+uncertainty is unavailable. This is a conditional diagnosis, not a statistical
+rejection of the law. It identifies what a revised explanation must change:
+resource physiology, allocation opportunities or the specified relation itself.
 
 ### 4.4 Effective-resource inference and competing forecasts
 
@@ -543,6 +561,10 @@ Cambridge University Press. Section 1.1.
 
 Boyd, S., and Vandenberghe, L. (2004). *Convex Optimization*. Cambridge University Press.
 Sections 4.7 and 5.6. <https://web.stanford.edu/~boyd/cvxbook/>.
+
+Chao, B. F. (2014). On the gravitational energy associated with Earth's changing
+oblateness. *Geophysical Journal International*, 199(2), 800–804.
+<https://doi.org/10.1093/gji/ggu301>.
 
 Condon, J. J., and Ransom, S. M. (2016). *Essential Radio Astronomy*.
 Princeton University Press. Chapter 2, radiation and absorption.

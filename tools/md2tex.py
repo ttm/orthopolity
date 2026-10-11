@@ -1,7 +1,7 @@
 """Convert the manuscript Markdown into LaTeX for a print-ready PDF.
 
-The manuscript uses a narrow Markdown subset -- headings, paragraphs, inline and
-display math, two pipe tables, one figure, links and a leading note block -- so a
+The manuscripts use a narrow Markdown subset -- headings, paragraphs, inline and
+display math, pipe tables, figures, flat lists, links and a leading note block -- so a
 small dedicated converter avoids adding a Pandoc dependency to the reproduce path.
 
     python3 tools/md2tex.py docs/paper.md build/paper.tex
@@ -35,6 +35,7 @@ PREAMBLE = r"""\documentclass[11pt,a4paper]{article}
 % Byte-reproducible output: a fixed trailer id, with document timestamps coming
 % from SOURCE_DATE_EPOCH, so rebuilding an unchanged manuscript changes nothing.
 \ifdefined\pdfvariable\pdfvariable trailerid{}\fi
+\ifdefined\pdftrailerid\pdftrailerid{}\fi
 
 \setlength{\parskip}{0.4em}
 \setlength{\parindent}{0pt}
@@ -84,6 +85,7 @@ UNICODE_TEXT = [
     ("\u00d7", r"$\times$"),
     ("\u00b0", r"\textdegree{}"),
     ("\u00a0", "~"),
+    ("\u03b6", r"$\zeta$"),
 ]
 
 UNICODE_MATH = [
@@ -93,13 +95,11 @@ UNICODE_MATH = [
     ("\u00a0", " "),
 ]
 
-SENTINEL = "\x00"
-
-
 def escape_text(text: str) -> str:
     """Escape LaTeX specials in ordinary prose, then map the Unicode we use."""
-    for src, dst in TEXT_SPECIALS:
-        text = text.replace(src, dst)
+    # Translate once: sequential replacement would escape braces introduced by
+    # the backslash replacement itself.
+    text = text.translate(str.maketrans(dict(TEXT_SPECIALS)))
     for src, dst in UNICODE_TEXT:
         text = text.replace(src, dst)
     return text
@@ -111,40 +111,66 @@ def fix_math(text: str) -> str:
     return text
 
 
+INLINE_TOKEN = re.compile(
+    r"(?P<code>`[^`]+`)"
+    r"|(?P<math>\$[^$]+\$)"
+    r"|(?P<autolink><(?:https?|mailto):[^>]+>)"
+    r"|(?P<link>\[[^\]]+\]\([^)\s]+\))"
+    r"|(?P<strong>\*\*.+?\*\*)"
+    r"|(?P<emphasis>(?<!\*)\*[^*]+\*(?!\*))",
+    re.S,
+)
+
+
+def link_target(target: str) -> str:
+    """Only the two typeset manuscripts have companion PDF targets."""
+    path, separator, fragment = target.partition("#")
+    if path in {"paper.md", "supporting-material.md", "./paper.md", "./supporting-material.md"}:
+        return path[:-3] + ".pdf" + ("#nameddest=" + fragment if separator else "")
+    return target
+
+
 def inline(text: str) -> str:
-    """Convert one run of Markdown prose, protecting math and links from escaping."""
-    protected: list[str] = []
+    """Parse protected inline constructs before escaping the surrounding prose."""
+    out: list[str] = []
+    cursor = 0
+    for match in INLINE_TOKEN.finditer(text):
+        out.append(escape_text(text[cursor:match.start()]))
+        token = match.group()
+        kind = match.lastgroup
+        if kind == "code":
+            out.append(r"\texttt{" + escape_text(token[1:-1]) + "}")
+        elif kind == "math":
+            out.append("$" + fix_math(token[1:-1]) + "$")
+        elif kind == "autolink":
+            out.append(r"\url{" + token[1:-1] + "}")
+        elif kind == "link":
+            label, target = re.fullmatch(r"\[([^\]]+)\]\(([^)\s]+)\)", token).groups()
+            if target.startswith("#"):
+                out.append(r"\hyperlink{" + target[1:] + "}{" + inline(label) + "}")
+            else:
+                out.append(r"\href{" + link_target(target) + "}{" + inline(label) + "}")
+        elif kind == "strong":
+            out.append(r"\textbf{" + inline(token[2:-2]) + "}")
+        elif kind == "emphasis":
+            out.append(r"\emph{" + inline(token[1:-1]) + "}")
+        cursor = match.end()
+    out.append(escape_text(text[cursor:]))
+    return "".join(out)
 
-    def stash(latex: str) -> str:
-        protected.append(latex)
-        return f"{SENTINEL}{len(protected) - 1}{SENTINEL}"
 
-    # Inline math first: its content must reach LaTeX unescaped.
-    text = re.sub(r"\$([^$]+)\$", lambda m: stash("$" + fix_math(m.group(1)) + "$"), text)
-    # Autolinks <https://...>.
-    text = re.sub(r"<((?:https?|mailto):[^>]+)>", lambda m: stash(r"\url{" + m.group(1) + "}"), text)
-    # Inline links [text](target); the label still needs escaping, the target does not.
-    text = re.sub(
-        r"\[([^\]]+)\]\(([^)\s]+)\)",
-        lambda m: stash(r"\href{" + m.group(2) + "}{" + inline(m.group(1)) + "}"),
-        text,
-    )
-
-    text = escape_text(text)
-    text = re.sub(r"\*\*(.+?)\*\*", r"\\textbf{\1}", text, flags=re.S)
-    text = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"\\emph{\1}", text, flags=re.S)
-
-    return re.sub(
-        rf"{SENTINEL}(\d+){SENTINEL}", lambda m: protected[int(m.group(1))], text
-    )
+def heading_slug(text: str) -> str:
+    """Match the punctuation-free heading anchors used in the Markdown contents."""
+    return re.sub(r"\s", "-", re.sub(r"[^\w\s-]", "", text.lower()))
 
 
-def heading(level: int, text: str, out: list[str]) -> None:
+def heading(level: int, text: str, out: list[str], anchor: str | None = None) -> None:
     """Sections are numbered in the source, so emit starred ones plus a bookmark."""
     cmd = {2: "section", 3: "subsection", 4: "subsubsection"}[level]
     body = inline(text)
     # Keep a preceding section's figure from interrupting the next section.
     out.append(r"\FloatBarrier")
+    out.append(r"\hypertarget{" + (anchor or heading_slug(text)) + "}{}")
     out.append(rf"\phantomsection\addcontentsline{{toc}}{{{cmd}}}{{{body}}}")
     out.append(rf"\{cmd}*{{{body}}}")
 
@@ -152,7 +178,7 @@ def heading(level: int, text: str, out: list[str]) -> None:
 def emit_table(rows: list[str], out: list[str]) -> None:
     cells = [[c.strip() for c in row.strip().strip("|").split("|")] for row in rows]
     header, body = cells[0], cells[2:]  # cells[1] is the alignment rule
-    spec = "".join("X" for _ in header)
+    spec = "".join(r">{\raggedright\arraybackslash}X" for _ in header)
     out.append(r"\begin{center}\small")
     out.append(rf"\begin{{tabularx}}{{\linewidth}}{{@{{}}{spec}@{{}}}}")
     out.append(r"\toprule")
@@ -176,6 +202,7 @@ def convert(md: str, md_dir: str, root: str) -> str:
     in_abstract = False
     in_references = False
     pending_figure: str | None = None
+    heading_counts: dict[str, int] = {}
 
     def close_environments() -> None:
         nonlocal in_abstract, in_references
@@ -233,7 +260,10 @@ def convert(md: str, md_dir: str, root: str) -> str:
                 out.append(r"\begin{abstract}")
                 in_abstract = True
             else:
-                heading(level, text, out)
+                slug = heading_slug(text)
+                count = heading_counts.get(slug, 0)
+                heading_counts[slug] = count + 1
+                heading(level, text, out, slug + (f"-{count}" if count else ""))
                 if section == "references":
                     out.append(r"\begin{referencelist}")
                     in_references = True
@@ -268,6 +298,32 @@ def convert(md: str, md_dir: str, root: str) -> str:
                 emit_table(rows, out)
             continue
 
+        # Flat Markdown lists. Wrapped item lines remain in the same item;
+        # a blank line, another list type, or a block marker ends the list.
+        list_match = re.match(r"^([-+*]|\d+[.)])\s+(.*)$", stripped)
+        if list_match:
+            ordered = list_match.group(1)[0].isdigit()
+            environment = "enumerate" if ordered else "itemize"
+            out.append(r"\begin{" + environment + "}")
+            if ordered and int(re.match(r"\d+", list_match.group(1)).group()) != 1:
+                out.append(r"\setcounter{enumi}{" + str(int(re.match(r"\d+", list_match.group(1)).group()) - 1) + "}")
+            while i < len(lines):
+                item_match = re.match(r"^([-+*]|\d+[.)])\s+(.*)$", lines[i].strip())
+                if not item_match or item_match.group(1)[0].isdigit() != ordered:
+                    break
+                item = [item_match.group(2)]
+                i += 1
+                while i < len(lines):
+                    continuation = lines[i].strip()
+                    if (not continuation or continuation.startswith(("#", "|", "$$", ">", "!["))
+                            or re.match(r"^([-+*]|\d+[.)])\s+", continuation)):
+                        break
+                    item.append(continuation)
+                    i += 1
+                out.append(r"\item " + inline(" ".join(item)))
+            out.append(r"\end{" + environment + "}")
+            continue
+
         # Figures: the image line, with the following italic paragraph as caption.
         m = re.match(r"^!\[([^\]]*)\]\(([^)]+)\)\s*$", stripped)
         if m:
@@ -282,7 +338,8 @@ def convert(md: str, md_dir: str, root: str) -> str:
         para = []
         while i < len(lines):
             nxt = lines[i].strip()
-            if not nxt or nxt.startswith(("#", "|", "$$", ">", "![")):
+            if (not nxt or nxt.startswith(("#", "|", "$$", ">", "!["))
+                    or re.match(r"^([-+*]|\d+[.)])\s+", nxt)):
                 break
             para.append(nxt)
             i += 1

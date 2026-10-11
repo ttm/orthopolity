@@ -1,13 +1,14 @@
 # Project status and handoff
 
-Last updated 10 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 11 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
-the package layout for all runners. The suite now passes 480 tests; the
-registry verifies 34 runs and 832 file references, including the new Italian simulation. The broader programme and subsequent
+the package layout for all runners. The suite now passes **499 tests**; the
+registry verifies **35 runs and 853 file references**, including the Italian simulation
+and retrospective chemostat diagnosis. The broader programme and subsequent
 studies are in [research-brief.md](research-brief.md) and
 [ongoing-research.md](ongoing-research.md).
 The [flare-ribbon test has now run](flare-ribbons-run-2026-10-09.md):
@@ -49,6 +50,27 @@ now integrates the geometry outcomes, seismic eligibility and estimator limits.
 
 ## 1. What the authors intend
 
+**10–11 October clarification and completion:** retain the exact title
+*Orthopolity: a general law of resource allocation*, the general-law claim and
+the ambition to establish it. Make the mathematical core, ideal mechanisms,
+gravity/radiation, models and empirical consequences clear; move detailed
+material to a companion document. Explain independently specified resource,
+metric or constraint effects, and investigate actual failures. Further empirical
+work is authorized. The [reorganized article](paper.md),
+[supporting material](supporting-material.md), and [revision map](manuscript-revision-2026-10-11.md)
+implement this instruction. `make paper` now builds both PDFs.
+
+The [new chemostat diagnosis](chemostat-capacity-followup-results-2026-10-11.md)
+finds that **8/12 primary vessels** exceed a conservative two-resource
+redistribution bound even with arbitrary nonnegative prices, measured
+preliminary quota changes and every pooled-species mixture: **17/36** day/vessel
+comparisons. Independent geometric verification reproduces all 144 entries.
+This excludes fixed opportunities, the allocation family and transferred
+point quotas jointly; it does not establish main-vessel physiology or a
+statistical rejection. All outcomes were previously exposed, and the new
+protocol freeze at `13374c5` is a retrospective diagnostic freeze. The earlier
+forecast remains unsuccessful.
+
 Positions stated by the lead author (Renato Fabbri), on behalf of himself and more senior
 co-authors, in the 8 October 2026 session:
 
@@ -85,6 +107,8 @@ discards the authors' programme.
 | 9 Oct 2026 | Local lake geometry and hydrological uncertainty follow-up | 1.43M polygons processed; ζ=1.859, basin [1.785,1.924]; declared equivalence unestablished; 442 tests and 32 registry entries verified |
 | 10 Oct 2026 | Frozen Southern California sequence qualification | 123,275 published events joined to original relocations; 6 eligible sequences versus minimum 10; no b/D2 fitting; 464 tests and 33 registry entries verified |
 | 10 Oct 2026 | Italian calibration crosswalk and Northern California source audit | Three complete new sources; 295,193 unambiguous CLASS/HORUS links; direct-Mw-only route insufficient; identity issues retained; 473 tests pass |
+| 10 Oct 2026 | Italian synthetic magnitude gate | 45/56 required scenarios fail; no real Italian b/D2 fit; 480 tests, 34 registry records |
+| 10–11 Oct 2026 | Main article/support reorganization and chemostat failure diagnosis | Title/general-law ambition retained; technical details preserved; arbitrary C:N prices insufficient in 8/12 vessels under transferred quotas; 499 tests, 35 records |
 
 ## 3. Results to carry forward
 
@@ -165,7 +189,15 @@ The [research brief](research-brief.md) explains the general-law programme;
 
 ## 5. Next steps, in priority order
 
-1. **Resolve the seismic observation model before another real test.** Both the
+1. **Turn a failure explanation into a new prediction.** The chemostat bound
+   rules out price adjustment alone under the recorded assumptions. Seek
+   elemental quotas measured in the same mixed vessels and information about
+   changing grazing/opportunities. A new model must predict an independent
+   trajectory or intervention; transferred preliminary assays are not a proven
+   physiology envelope. Alternatively, identify an independently eligible natural
+   allocation regime with measured resources and a calibrated observation design.
+   The current retrospective result must not be promoted to blind confirmation.
+2. **Resolve the seismic observation model before another real test.** Both the
    six-sequence Southern California eligibility finding and the failed Italian
    synthetic prerequisite are complete and retained. A new design would need
    source-aware bins, detection and shared calibration uncertainty, or a narrower
@@ -175,20 +207,22 @@ The [research brief](research-brief.md) explains the general-law programme;
    Do not relax gates or promote the noiseless grid diagnostic automatically.
    The required D2 contrast remains unassessed; more data hosts are not the
    immediate remedy. See [validation results](italian-magnitude-validation-results-2026-10-10.md).
-2. **Explain the lake departure with independently justified inputs.** Physical
+3. **Explain the lake departure with independently justified inputs.** Physical
    geometry and hydrological uncertainty have now been evaluated. Source
    topology, mapping completeness and classification remain unresolved. The
    declared Lake_type1 point sensitivity is already known (ζ=1.975); it cannot
    be promoted to a new blind confirmatory test. Preserve all completed outputs.
-3. **Follow up aftershocks** with finite-fault rupture windows under a new protocol,
+4. **Follow up aftershocks** with finite-fault rupture windows under a new protocol,
    disclosing the earlier result. Wildfire allocation is another available-data
    route requiring a separate resource and held-out prediction design.
-4. **Verify the catalogue and refine the paper.** The new Section 5.7 now
-   synthesizes the completed geometry tests, seismic eligibility and Italian
-   estimator limitation. Preserve the distinction between derivations, conditional
-   exponent agreement and empirical resource identification. Regenerate the PDF
-   whenever the manuscript changes.
-5. **Submission work:** reconcile attribution, data notices, authorship and venue
+5. **Review the shortened article and supporting material together.** Main
+   Sections 2–3 develop the exact and physical content; Section 4 assesses
+   predictions, including the new diagnosis; Section 5 distinguishes explanations
+   from failures. Full comparisons and derivations remain in S1–S5. The
+   [revision map](manuscript-revision-2026-10-11.md) resolves historical section
+   numbers and records interpretation corrections. Preserve the general-law
+   claim and scope-specific evidence; build both PDFs after manuscript changes.
+6. **Submission work:** reconcile attribution, data notices, authorship and venue
    requirements recorded in the broader handoff and roadmap.
 
 ## 6. Conventions and environment
@@ -198,7 +232,7 @@ The [research brief](research-brief.md) explains the general-law programme;
   exponent was examined and the reading passes a second, different prediction. Grades:
   derived, motivated, suggestive, numerology. Source tags in documents: verified, repository result,
   own derivation, unverified.
-- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 480 tests and
+- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 499 tests and
   regenerates every analysis. The September results were produced with Python 3.11; results
   added on 8–9 October (Gibrat, resource choice, catalogue, aftershocks) with Python 3.13 and the
   pinned packages. Other versions change the older files by at most about $4\times10^{-8}$
@@ -217,6 +251,9 @@ The [research brief](research-brief.md) explains the general-law programme;
 - `make italian-magnitude-validation` reproduces the 72-cell synthetic check to
   an empty output directory under `build/reproductions`. It refuses to overwrite
   completed runs. No real earthquake rows enter this calculation.
+- `make chemostat-capacity` reproduces the completed conditional diagnosis,
+  verifies it independently, and renders its figure in an unused build directory.
+  The new source/protocol freeze is `13374c5`; no network access is required.
 
 ## 7. Document map
 
@@ -228,6 +265,7 @@ The [research brief](research-brief.md) explains the general-law programme;
 | Latest seismic qualification | [results](seismic-qualification-results-2026-10-10.md); [frozen supplement](seismic-qualification-protocol-2026-10-10.md); `results/seismic-qualification-2026-10-10/` |
 | Next seismic inputs | [source/calibration audit](seismic-candidate-audit-2026-10-10.md); `data/seismic-candidates/2026-10-10/` |
 | Italian magnitude prerequisite | [failed validation](italian-magnitude-validation-results-2026-10-10.md); [frozen design](italian-magnitude-validation-protocol-2026-10-10.md); `results/italian-magnitude-validation-2026-10-10/` |
-| Unified manuscript and programme | [paper.md](paper.md) and `paper.pdf`; [research-brief.md](research-brief.md); [ongoing-research.md](ongoing-research.md) |
+| Unified manuscript and programme | [paper.md](paper.md) and `paper.pdf`; [supporting-material.md](supporting-material.md) and `supporting-material.pdf`; [revision map](manuscript-revision-2026-10-11.md); [research-brief.md](research-brief.md); [ongoing-research.md](ongoing-research.md) |
+| Chemostat failure diagnosis | [result](chemostat-capacity-followup-results-2026-10-11.md); [frozen protocol](chemostat-capacity-followup-protocol-2026-10-10.md); `results/chemostat-capacity-followup-2026-10-10/` |
 | Still applicable scope limits | [not-worth-pursuing.md](not-worth-pursuing.md) (cosmological, social and normative claims) |
 | Raw provenance | [archive/2026-10-08/](archive/2026-10-08/README.md): full research dossiers, paper design (resource rule, gates, candidate datasets, falsification criteria), hostile referee report, fact-check, and the complete catalogue workflow output |

@@ -1,0 +1,53 @@
+{
+  "completed_at_utc": "2026-10-11T14:20:37.561960+00:00",
+  "freeze_commit": "13374c5",
+  "inputs": [
+    {
+      "path": "data/chemostat-sources/2026-10-02/preliminary-stoichiometry.json",
+      "sha256": "32f943b411edd75d20ca1b547fec1aff21982d7c7385414fc33692d503289257",
+      "size_bytes": 7828
+    },
+    {
+      "path": "data/chemostat-response/2026-10-02/development-records.json",
+      "sha256": "46ea35456e4359ce3591188fe6cdf7aa939f9e6cf538c77795bed4c786fbf1a8",
+      "size_bytes": 146839
+    },
+    {
+      "path": "data/chemostat-response/2026-10-02/evaluation-records.json",
+      "sha256": "3156657e67176b1b007bf989cae85e41d4a09a189c71a5c1df84f00b8a065526",
+      "size_bytes": 32224
+    }
+  ],
+  "numpy": "2.3.5",
+  "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "scipy": "1.17.0",
+  "sources": [
+    {
+      "path": "configs/chemostat_capacity_followup_2026-10-10.json",
+      "sha256": "4b8f7919ee48bee0fa7bbaf869851ef26244176ea41d7657957f5cbada03abaa",
+      "size_bytes": 2899
+    },
+    {
+      "path": "docs/chemostat-capacity-followup-protocol-2026-10-10.md",
+      "sha256": "7951f3e5a6987e481f3eb78e92aefdef88bab679b4de3ce875e4b91d90f855dc",
+      "size_bytes": 10541
+    },
+    {
+      "path": "src/orthopolity/chemostat_capacity.py",
+      "sha256": "3a8c719a2d84df26a77e5ce14631a98da18f1c4691270a3491abc29db6f97a42",
+      "size_bytes": 7847
+    },
+    {
+      "path": "experiments/run_chemostat_capacity.py",
+      "sha256": "34ad5776cc6ffbf0f77e374d36be2fea7c254ae26816a8880b8272e542ac7ba9",
+      "size_bytes": 9365
+    },
+    {
+      "path": "tests/test_chemostat_capacity.py",
+      "sha256": "b7ccb92b0ee1ee9297c26e1c076057010efd8ebacc526c70fac67577eb66eb90",
+      "size_bytes": 7500
+    }
+  ],
+  "started_at_utc": "2026-10-11T14:20:37.416230+00:00",
+  "system": "Darwin"
+}

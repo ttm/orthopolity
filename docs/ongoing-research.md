@@ -1,5 +1,28 @@
 # Ongoing research: resume here
 
+**11 October current priority:** the author's instruction to retain the exact
+title and general-law ambition while shortening the article is implemented.
+The [main article](paper.md) now centers capacity, allocation, identifiable
+resource combinations, physical realizations and evidence. Detailed derivations
+and all comparisons are in [supporting material](supporting-material.md).
+`make paper` builds both PDFs. The [revision map](manuscript-revision-2026-10-11.md)
+records moved sections and corrected biological interpretations.
+
+The [chemostat diagnosis](chemostat-capacity-followup-results-2026-10-11.md)
+was frozen at `13374c5` and executed after synthetic checks. Under transferred
+preliminary quotas and fixed opportunities, even arbitrary nonnegative C:N
+prices cannot explain 17/36 early comparisons in 8/12 primary vessels, allowing
+all pooled-species mixtures. Independent geometric verification covers all
+144 entries. This is retrospective and conditional, not a new blind confirmation
+or a statistical rejection of the law. Next work should measure same-vessel
+physiology/opportunity changes and predict independent responses, or establish
+another qualified natural allocation regime. The previous seismic and lake
+priorities remain alternatives, with their gates and failures preserved.
+
+All **499 tests pass**; the registry verifies **35 records and 853 file references**.
+The earlier 34 records are unchanged. The historical progress entries below
+retain their original section numbering; use the revision map for navigation.
+
 **9 October continuation:** the user's handoff from `origin/main` at `f846670`
 was recovered, and the user subsequently requested merging the development
 branch and continuing on `main`. Both histories are now retained together. See
@@ -40,7 +63,7 @@ should address the observation model or explain the known lake departure, with
 a separate frozen design; additional catalogue hunting does not fix this
 estimator. Preserve these outcomes. The earlier programme retains its history.
 
-Last updated: 10 October 2026. This is the mutable handoff document for ongoing
+Last updated: 11 October 2026. This is the mutable handoff document for ongoing
 work. It records the current objective, decisions, completed work and exact next
 steps. Immutable executed studies belong in the run registry; this document does
 not replace their frozen protocols or results.
@@ -48,8 +71,8 @@ not replace their frozen protocols or results.
 ## Objective and standing instructions
 
 Develop the [research brief](research-brief.md), established by the user's
-5 October clarification and extended 6 October. The paper centrally proposes
-orthopolity as a new general natural law: Nature tends to distribute resources
+5 October clarification and extended 6 and 10 October. The paper states
+orthopolity as a general natural law and seeks to establish it: Nature tends to distribute resources
 equally among concentrations of those resources. The operative resource may
 combine many constituents nonlinearly. Forward prediction and inverse inference
 of effective resources are equally central uses of the law. Work now

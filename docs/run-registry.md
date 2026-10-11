@@ -34,6 +34,18 @@ retained history; neither mechanism proves external preregistration or blinding.
 
 ## Catalogue
 
+As of 11 October 2026 the registry verifies **35 records and 853 file references**.
+The latest entry, `chemostat-capacity-followup-2026-10-10`, retains a
+[retrospective conditional diagnosis](chemostat-capacity-followup-results-2026-10-11.md)
+of previously exposed measurements. It extends the allowed price and quota
+scenarios without replacing the original chemostat forecast. The primary
+result is 17/36 comparisons in 8/12 vessels beyond a conservative bound,
+conditional on transferred quota values and fixed opportunities. The algorithm
+was frozen at `13374c5`; an independent geometric verifier checks all entries.
+Its `actual_measurement` evidence kind denotes reanalysis of published data,
+not new collection or independent confirmation. The previous 34 records are
+byte-for-byte preserved.
+
 The bacterial summary transfer completed on 8 October brings the
 catalogue to **28 records and 704 file references**. The earlier records and
 all their retained inputs and results remain intact.
