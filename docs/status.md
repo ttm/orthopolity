@@ -6,11 +6,26 @@ to the files that hold the details.
 
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
-the package layout for all runners. The suite now passes **508 tests**; the
-registry verifies **36 runs and 876 file references**, including the Italian simulation,
-retrospective chemostat diagnosis and independent-assay pilot. The broader programme and subsequent
+the package layout for all runners. The suite now passes **531 tests**; the
+registry verifies **37 runs and 902 file references**, including the Italian simulation,
+retrospective chemostat diagnosis, independent-assay pilot and field-stock audit. The broader programme and subsequent
 studies are in [research-brief.md](research-brief.md) and
 [ongoing-research.md](ongoing-research.md).
+
+**Latest, 12 October:** the [field-quota audit](field-resources-results-2026-10-12.md)
+matches separately assayed cyanobacterial quotas to ambient counts and bulk
+chemistry. All **18 primary C/N comparisons**, from nine nominal sampling
+matches at eight stations, fit the conservative partial-stock bound. Eight
+additional date-offset records yield 15 C/N comparisons and one 5.5% carbon
+excess. Incomplete group coverage makes compatibility permissive; this is not
+community closure or an allocation test. The design was committed at `52d2cc2`
+before numerical comparisons, and independent Decimal verification checks 391
+quantities. A post-run Pacific phosphorus unit concern is retained explicitly:
+the literal frozen calculation follows the printed uM label, but its nine P
+comparisons remain physically unit-unqualified; no factor-1,000 correction was
+applied. Article section 4.3 and supporting S5.12 include the result. Next work
+needs independently specified allocation opportunities/constraints or a new
+intervention, plus resolution of source conventions before expanding this cohort.
 
 **12 October continuation:** two same-experiment public phosphorus archives
 were acquired and a [locally frozen count-transfer pilot](paired-phosphorus-results-2026-10-12.md)
@@ -125,6 +140,7 @@ discards the authors' programme.
 | 10 Oct 2026 | Italian synthetic magnitude gate | 45/56 required scenarios fail; no real Italian b/D2 fit; 480 tests, 34 registry records |
 | 10–11 Oct 2026 | Main article/support reorganization and chemostat failure diagnosis | Title/general-law ambition retained; technical details preserved; arbitrary C:N prices insufficient in 8/12 vessels under transferred quotas; 500 tests, 35 records |
 | 12 Oct 2026 | Independent phosphorus assays, sample audit and count-transfer pilot | One qualifying test culture; measured quota worsens prediction; stock/quota/count calibration does not transfer; 508 tests, 36 records |
+| 12 Oct 2026 | Sorted field quotas, ambient counts and bulk-stock compatibility | 18/18 primary C/N comparisons compatible; one slight excess in date sensitivity; P unit concern retained; 531 tests, 37 records |
 
 ## 3. Results to carry forward
 
@@ -202,6 +218,12 @@ The [research brief](research-brief.md) explains the general-law programme;
   noiseless single-source simulations but remains unvalidated for detection,
   measurement errors and shared calibration uncertainty. No automatic estimator
   replacement or real-data rerun is pending.
+- Independent field quotas clear a conservative C/N stock prerequisite for
+  nine nominal sample matches. Only three contain both cyanobacterial groups,
+  so compatibility does not establish community closure or a binding resource.
+  Pacific P remains unit-unqualified after numerical inspection. There is still
+  no independently justified equal-opportunity measure for a natural-community
+  allocation test; fitting it from the observed counts would be circular.
 
 ## 5. Next steps, in priority order
 
@@ -218,9 +240,13 @@ The [research brief](research-brief.md) explains the general-law programme;
    Do not rescue it by relabelling cells, averaging only detected phosphorus
    values, or fitting a new target-specific calibration. Resolve sample identity,
    assay compatibility and uncertainty before an expanded prediction. The
-   sorted-cell [BCO-DMO 849153 candidate](paired-resource-candidate-audit-2026-10-12.md)
-   offers group-specific chemistry for a different natural-community route;
-   its ambient-abundance crosswalk and opportunity assumptions remain unaudited.
+   sorted-cell [field route](field-resources-results-2026-10-12.md) now has an
+   audited ambient-count crosswalk and compatible primary partial C/N stocks.
+   Before an allocation prediction, establish independent opportunity/constraint
+   information and a binding-resource interpretation; two named taxa do not
+   automatically constitute equal opportunities. Resolve date/aliquot conventions
+   and Pacific P units before broadening the source join. Preserve its literal
+   frozen results and post-run unit qualification.
 2. **Resolve the seismic observation model before another real test.** Both the
    six-sequence Southern California eligibility finding and the failed Italian
    synthetic prerequisite are complete and retained. A new design would need

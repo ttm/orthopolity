@@ -1,0 +1,12 @@
+{
+  "all_coverage_flags_and_summaries_checked": true,
+  "checked_elements": 43,
+  "checked_samples": 17,
+  "execution_freeze_verified": true,
+  "independently_checked_numbers": 391,
+  "input_checksums_verified": true,
+  "maximum_relative_discrepancy": 2.9767034068136273e-15,
+  "method": "40-digit Decimal arithmetic from original rows; no analysis-module import",
+  "qualification_unchanged": true,
+  "verified": true
+}

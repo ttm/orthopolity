@@ -2247,6 +2247,75 @@ $1.7\times10^{-16}$ and checks the unchanged qualification ledger. The
 [amendment](paired-phosphorus-amendment-2026-10-12.md), full source audit and
 original unsuccessful predictions are retained.
 
+### S5.12. Independently assayed field quotas and partial-stock compatibility
+
+Lomas and Martiny's [sorted-cell quota archive](https://www.bco-dmo.org/dataset/849153)
+divides elemental chemistry by direct post-sort counts, distinct from ambient
+seawater abundance. Its combination with
+[Pacific](https://www.bco-dmo.org/dataset/829895) and
+[Atlantic](https://www.bco-dmo.org/dataset/538091) bulk/count archives therefore
+avoids defining quota as bulk stock divided by the response. These are published
+observations: Lomas et al. (2021) already analysed their stoichiometry and modelled
+community contributions. Our [new audit](field-resources-results-2026-10-12.md)
+asks whether the independently measured inputs satisfy a necessary stock bound.
+It is not a new collection or a test of equal allocation. The finite measure
+counts cells, without imposing equal opportunities on named taxa.
+
+The [protocol](field-resources-protocol-2026-10-12.md), inputs, matching audit,
+code and 13 synthetic checks were frozen at `52d2cc2` before numerical response
+comparison; public findings and metadata were already exposed. Of 96 quota
+records, nine have a unique exact cruise/station/depth match, the same reported
+calendar date and coordinate differences each at most 0.02 degrees. Eight
+additional records pass only with a one-day date offset. These are nominal
+sampling matches, not proven common aliquots or time-zone corrections. All
+other rows remain in the exclusion ledger. Only Prochlorococcus and
+Synechococcus have usable group definitions across the files.
+
+For available groups, $S_e=10^{-6}\sum_jN_jq_{je}$ converts ambient counts
+(cells/mL) and quotas (fmol/cell) to partial standing stock (micromol/L).
+Missing groups are recorded, not imputed as zero. With accurate representative
+inputs and complete capture, filtered bulk stock $B_e$ must satisfy $S_e\leq B_e$.
+More generally, if every included group retains at least elemental fraction $r$,
+the necessary condition is $rS_e\leq B_e$. Counts describe whole water while
+bulk chemistry uses GF/F filtration; complete capture is not established.
+
+| Records | Element | Scored | Partial/bulk range | Above bulk |
+|---|---|---:|---:|---:|
+| Primary, same reported date | C | 9 | 0.0669--0.4397 | 0 |
+| Primary, same reported date | N | 9 | 0.0397--0.2717 | 0 |
+| Additional one-day offsets | C | 8 | 0.1356--1.0554 | 1 |
+| Additional one-day offsets | N | 7 | 0.1099--0.8114 | 0 |
+
+*Table S20. Carbon/nitrogen compatibility at nine primary sampling records
+(eight stations), plus eight date-offset records (12 stations combined).
+Only three primary records contain both cyanobacterial groups; the others
+contain Synechococcus alone. One additional N record has no usable quota.
+Repeated elements and depths are not independent inferential replicates.*
+
+The sole C/N excess is Pacific station 7, 5 m, with quota and bulk dates differing
+by one day: Prochlorococcus alone implies 1.80481 micromol C/L against bulk 1.71.
+Its ratio 1.05544 allows a common minimum elemental retention no greater than
+$\min(1,B/S)=0.94747$. The minimum symmetric relative adjustment to the two
+aggregate quantities is $\max(0,(S-B)/(S+B))=0.02697$. Neither quantity is a
+measured recovery or confidence interval. Other particulate material makes the
+bound conservative; the comparison identifies no unique cause of the excess.
+
+Phosphorus remains unit-unqualified. Atlantic P was excluded before execution
+because the metadata use micromol/kg. The frozen Pacific calculation follows
+the printed micromolar label and records nine ratios below one, but inspection
+then exposed bulk C:P near 0.1, far below the original study's scale. An nM
+interpretation would change those ratios by 1,000; it is not an independently
+confirmed correction. The literal calculation and this post-run qualification
+are both retained. No P result is counted as physically qualified evidence.
+
+The primary C/N comparisons clear a necessary observation check without
+establishing full-community closure, assay accuracy or a binding resource.
+Incomplete taxon coverage makes the check permissive. Independently specified
+opportunities and constraints, followed by another abundance prediction, remain
+necessary for a natural-community allocation test. Sorting and shared assay
+effects, nominal sample identity, missingness and unresolved units cannot be
+replaced by a target-fitted resource or calibration.
+
 ## References
 
 Arranz, I., Fournier, B., Lester, N. P., Shuter, B. J., and Peres-Neto, P. R. (2022).
@@ -2358,6 +2427,12 @@ with contributions by E. L. Wilmer. American Mathematical Society.
 Lolli, B., Randazzo, D., Vannucci, G., and Gasperini, P. (2020). The Homogenized
 Instrumental Seismic Catalog (HORUS) of Italy from 1960 to Present.
 *Seismological Research Letters*. <https://doi.org/10.1785/0220200148>.
+
+Lomas, M. W., Baer, S. E., Mouginot, C., Terpis, K. X., Lomas, D. A., Altabet,
+M. A., and Martiny, A. C. (2021). Varying influence of phytoplankton biodiversity
+and stoichiometric plasticity on bulk particulate stoichiometry across ocean
+basins. *Communications Earth & Environment*, 2, 143.
+<https://doi.org/10.1038/s43247-021-00212-9>.
 
 Malerba, M. E., Palacios, M. M., and Marshall, D. J. (2018). Do larger individuals cope with
 resource fluctuations better? An artificial selection approach. *Proceedings of the Royal

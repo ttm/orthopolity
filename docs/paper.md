@@ -435,7 +435,12 @@ and an independently measured X-ray quota predicts 4.24 million. Bulk stock,
 single-cell quota and counts fail to close consistently across the two cultures
 (supporting section S5.11). Independent measurement avoids circularity but
 does not guarantee compatible inputs. This unsuccessful accounting transfer
-does not test equal allocation.
+does not test equal allocation. A subsequent
+[field-data audit](field-resources-results-2026-10-12.md) finds partial stocks
+from separately assayed cyanobacterial quotas and ambient counts below measured
+bulk chemistry in all 18 primary carbon/nitrogen comparisons. It clears a
+necessary measurement check; incomplete group coverage, filtration and undefined
+allocation opportunities still prevent an allocation test (supporting S5.12).
 
 ### 4.4 Effective-resource inference and competing forecasts
 

@@ -1,5 +1,20 @@
 # Ongoing research: resume here
 
+**Latest field continuation, 12 October:** the
+[sorted-quota stock audit](field-resources-results-2026-10-12.md) is complete.
+Separately measured cyanobacterial quotas and ambient counts yield partial
+stocks below bulk chemistry in all 18 primary C/N comparisons (nine nominal
+sampling matches, eight stations). The additional one-day-offset sensitivity
+has one 5.5% carbon excess among 15 C/N comparisons. This is observation
+qualification with incomplete group coverage, not equal allocation. The frozen
+Pacific P calculation follows the publisher's micromolar label, but numerical
+inspection exposed a unit concern; all nine P comparisons remain unqualified,
+with no unverified correction. Freeze `52d2cc2`, 391 independently verified
+numbers, **531 passing tests**, **37 registry records / 902 references**.
+The previous 36 records are unchanged. Article 4.3 and supporting S5.12 record
+the result. Next: independently specified opportunities/constraints or an
+intervention, plus sample/date/unit clarification before expanding these joins.
+
 **12 October continuation:** the [paired-phosphorus pilot](paired-phosphorus-results-2026-10-12.md)
 has run on newly acquired public counts/chemistry and independent single-cell
 X-ray assays from the same experiment. Identity and complete-assay gates leave
@@ -9,11 +24,11 @@ and the raw accounting ratio changes from 4.11 to 0.50 across cultures.
 This diagnoses failed measurement transfer under the sample/assay assumptions,
 not equal allocation. The original volume-comparator stop and pre-response
 amendment are preserved. Article section 4.3 and supporting section S5.11 now
-state this limitation. All **508 tests pass** and the registry verifies
+state this limitation. At that stage **508 tests passed** and the registry verified
 **36 records / 876 references**, preserving the previous 35 records.
 The [candidate audit](paired-resource-candidate-audit-2026-10-12.md) identifies
-accessible alternatives, including sorted-cell field quotas; no other new
-candidate response has been fitted. Next work requires compatible resource,
+accessible alternatives, including the field quotas now audited above. Further
+prediction requires compatible resource,
 count and group measurements before a larger prediction, not a target-fitted
 rescaling of this failed pilot.
 

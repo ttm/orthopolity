@@ -1,0 +1,1200 @@
+{
+  "coordinate_tolerance_degrees": "0.02",
+  "numerical_responses_examined": false,
+  "records": [
+    {
+      "bulk_dataset": "538091",
+      "candidate_bulk_rows": [],
+      "cruise": "AE1319",
+      "depth_m": "5",
+      "quota_date": "2013-08-26",
+      "quota_lat": "55.00",
+      "quota_lon": "-49.00",
+      "quota_row": 2,
+      "station": "4",
+      "status": "no_exact_station_depth"
+    },
+    {
+      "bulk_dataset": "538091",
+      "bulk_date": "2013-08-27",
+      "bulk_lat": "53",
+      "bulk_lon": "-46",
+      "bulk_row": 272,
+      "candidate_bulk_rows": [
+        272
+      ],
+      "cruise": "AE1319",
+      "date_offset_days": 0,
+      "depth_m": "25",
+      "latitude_difference_degrees": "0.00",
+      "longitude_difference_degrees": "0.00",
+      "quota_date": "2013-08-27",
+      "quota_lat": "53.00",
+      "quota_lon": "-46.00",
+      "quota_row": 3,
+      "station": "5",
+      "status": "primary"
+    },
+    {
+      "bulk_dataset": "538091",
+      "bulk_date": "2013-08-28",
+      "bulk_lat": "51",
+      "bulk_lon": "-43",
+      "bulk_row": 281,
+      "candidate_bulk_rows": [
+        281
+      ],
+      "cruise": "AE1319",
+      "date_offset_days": 0,
+      "depth_m": "20",
+      "latitude_difference_degrees": "0.00",
+      "longitude_difference_degrees": "0.00",
+      "quota_date": "2013-08-28",
+      "quota_lat": "51.00",
+      "quota_lon": "-43.00",
+      "quota_row": 4,
+      "station": "6",
+      "status": "primary"
+    },
+    {
+      "bulk_dataset": "538091",
+      "bulk_date": "2013-08-29",
+      "bulk_lat": "49",
+      "bulk_lon": "-40.01",
+      "bulk_row": 287,
+      "candidate_bulk_rows": [
+        287
+      ],
+      "cruise": "AE1319",
+      "date_offset_days": 0,
+      "depth_m": "5",
+      "latitude_difference_degrees": "0.00",
+      "longitude_difference_degrees": "0.01",
+      "quota_date": "2013-08-29",
+      "quota_lat": "49.00",
+      "quota_lon": "-40.00",
+      "quota_row": 5,
+      "station": "7",
+      "status": "primary"
+    },
+    {
+      "bulk_dataset": "538091",
+      "bulk_date": "2013-08-30",
+      "bulk_lat": "47.01",
+      "bulk_lon": "-42.49",
+      "bulk_row": 298,
+      "candidate_bulk_rows": [
+        298
+      ],
+      "cruise": "AE1319",
+      "date_offset_days": 0,
+      "depth_m": "45",
+      "latitude_difference_degrees": "0.01",
+      "longitude_difference_degrees": "0.49",
+      "quota_date": "2013-08-30",
+      "quota_lat": "47.00",
+      "quota_lon": "-42.00",
+      "quota_row": 6,
+      "station": "8",
+      "status": "coordinate_discrepancy"
+    },
+    {
+      "bulk_dataset": "538091",
+      "bulk_date": "2013-08-31",
+      "bulk_lat": "45",
+      "bulk_lon": "-45",
+      "bulk_row": 305,
+      "candidate_bulk_rows": [
+        305
+      ],
+      "cruise": "AE1319",
+      "date_offset_days": 0,
+      "depth_m": "40",
+      "latitude_difference_degrees": "0.00",
+      "longitude_difference_degrees": "0.00",
+      "quota_date": "2013-08-31",
+      "quota_lat": "45.00",
+      "quota_lon": "-45.00",
+      "quota_row": 7,
+      "station": "9",
+      "status": "primary"
+    },
+    {
+      "bulk_dataset": "538091",
+      "bulk_date": "2013-09-01",
+      "bulk_lat": "43",
+      "bulk_lon": "-47.5",
+      "bulk_row": 313,
+      "candidate_bulk_rows": [
+        313
+      ],
+      "cruise": "AE1319",
+      "date_offset_days": 0,
+      "depth_m": "20",
+      "latitude_difference_degrees": "0.00",
+      "longitude_difference_degrees": "0.00",
+      "quota_date": "2013-09-01",
+      "quota_lat": "43.00",
+      "quota_lon": "-47.50",
+      "quota_row": 8,
+      "station": "10",
+      "status": "primary"
+    },
+    {
+      "bulk_dataset": "538091",
+      "bulk_date": "2013-09-08",
+      "bulk_lat": "31.67",
+      "bulk_lon": "-64.17",
+      "bulk_row": 360,
+      "candidate_bulk_rows": [
+        360
+      ],
+      "cruise": "AE1319",
+      "date_offset_days": 0,
+      "depth_m": "5",
+      "latitude_difference_degrees": "0.00",
+      "longitude_difference_degrees": "0.00",
+      "quota_date": "2013-09-08",
+      "quota_lat": "31.67",
+      "quota_lon": "-64.17",
+      "quota_row": 9,
+      "station": "16",
+      "status": "primary"
+    },
+    {
+      "bulk_dataset": "538091",
+      "bulk_date": "2013-09-06",
+      "bulk_lat": "33",
+      "bulk_lon": "-60",
+      "bulk_row": 351,
+      "candidate_bulk_rows": [
+        351
+      ],
+      "cruise": "AE1319",
+      "date_offset_days": -1,
+      "depth_m": "5",
+      "latitude_difference_degrees": "0",
+      "longitude_difference_degrees": "0",
+      "quota_date": "2013-09-07",
+      "quota_lat": "33",
+      "quota_lon": "-60",
+      "quota_row": 10,
+      "station": "15",
+      "status": "date_offset_sensitivity"
+    },
+    {
+      "bulk_dataset": "538091",
+      "bulk_date": "2013-09-06",
+      "bulk_lat": "33",
+      "bulk_lon": "-60",
+      "bulk_row": 354,
+      "candidate_bulk_rows": [
+        354
+      ],
+      "cruise": "AE1319",
+      "date_offset_days": -1,
+      "depth_m": "70",
+      "latitude_difference_degrees": "0",
+      "longitude_difference_degrees": "0",
+      "quota_date": "2013-09-07",
+      "quota_lat": "33",
+      "quota_lon": "-60",
+      "quota_row": 11,
+      "station": "15",
+      "status": "date_offset_sensitivity"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "1",
+      "quota_date": "2010-10-31",
+      "quota_lat": "34.67",
+      "quota_lon": "-64.17",
+      "quota_row": 12,
+      "station": "15",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "30",
+      "quota_date": "2010-10-31",
+      "quota_lat": "34.67",
+      "quota_lon": "-64.17",
+      "quota_row": 13,
+      "station": "15",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "100",
+      "quota_date": "2010-10-31",
+      "quota_lat": "34.67",
+      "quota_lon": "-64.17",
+      "quota_row": 14,
+      "station": "15",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "1",
+      "quota_date": "2010-11-01",
+      "quota_lat": "35.67",
+      "quota_lon": "-64.17",
+      "quota_row": 15,
+      "station": "16",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "30",
+      "quota_date": "2010-11-01",
+      "quota_lat": "35.67",
+      "quota_lon": "-64.17",
+      "quota_row": 16,
+      "station": "16",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "100",
+      "quota_date": "2010-11-01",
+      "quota_lat": "35.67",
+      "quota_lon": "-64.17",
+      "quota_row": 17,
+      "station": "16",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "1",
+      "quota_date": "2010-11-02",
+      "quota_lat": "36.67",
+      "quota_lon": "-64.17",
+      "quota_row": 18,
+      "station": "17",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "30",
+      "quota_date": "2010-11-02",
+      "quota_lat": "36.67",
+      "quota_lon": "-64.17",
+      "quota_row": 19,
+      "station": "17",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "100",
+      "quota_date": "2010-11-02",
+      "quota_lat": "36.67",
+      "quota_lon": "-64.17",
+      "quota_row": 20,
+      "station": "17",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "1",
+      "quota_date": "2010-11-03",
+      "quota_lat": "37.67",
+      "quota_lon": "-64.17",
+      "quota_row": 21,
+      "station": "18",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "30",
+      "quota_date": "2010-11-03",
+      "quota_lat": "37.67",
+      "quota_lon": "-64.17",
+      "quota_row": 22,
+      "station": "18",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "100",
+      "quota_date": "2010-11-03",
+      "quota_lat": "37.67",
+      "quota_lon": "-64.17",
+      "quota_row": 23,
+      "station": "18",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "1",
+      "quota_date": "2010-11-04",
+      "quota_lat": "38.67",
+      "quota_lon": "-64.17",
+      "quota_row": 24,
+      "station": "19",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "30",
+      "quota_date": "2010-11-04",
+      "quota_lat": "38.67",
+      "quota_lon": "-64.17",
+      "quota_row": 25,
+      "station": "19",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "100",
+      "quota_date": "2010-11-04",
+      "quota_lat": "38.67",
+      "quota_lon": "-64.17",
+      "quota_row": 26,
+      "station": "19",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "1",
+      "quota_date": "2010-11-05",
+      "quota_lat": "35.67",
+      "quota_lon": "-64.17",
+      "quota_row": 27,
+      "station": "21",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "30",
+      "quota_date": "2010-11-05",
+      "quota_lat": "35.67",
+      "quota_lon": "-64.17",
+      "quota_row": 28,
+      "station": "21",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1032",
+      "depth_m": "100",
+      "quota_date": "2010-11-05",
+      "quota_lat": "35.67",
+      "quota_lon": "-64.17",
+      "quota_row": 29,
+      "station": "21",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1123",
+      "depth_m": "1",
+      "quota_date": "2011-11-05",
+      "quota_lat": "31.67",
+      "quota_lon": "-64.17",
+      "quota_row": 30,
+      "station": "2",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1123",
+      "depth_m": "30",
+      "quota_date": "2011-10-05",
+      "quota_lat": "31.67",
+      "quota_lon": "-64.17",
+      "quota_row": 31,
+      "station": "2",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1123",
+      "depth_m": "100",
+      "quota_date": "2011-10-05",
+      "quota_lat": "31.67",
+      "quota_lon": "-64.17",
+      "quota_row": 32,
+      "station": "2",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1123",
+      "depth_m": "1",
+      "quota_date": "2011-10-11",
+      "quota_lat": "23.67",
+      "quota_lon": "-65.07",
+      "quota_row": 33,
+      "station": "10",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1123",
+      "depth_m": "40",
+      "quota_date": "2011-10-11",
+      "quota_lat": "23.67",
+      "quota_lon": "-65.07",
+      "quota_row": 34,
+      "station": "10",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1123",
+      "depth_m": "120",
+      "quota_date": "2011-10-11",
+      "quota_lat": "23.67",
+      "quota_lon": "-65.07",
+      "quota_row": 35,
+      "station": "10",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1123",
+      "depth_m": "1",
+      "quota_date": "2011-10-14",
+      "quota_lat": "38.67",
+      "quota_lon": "-64.17",
+      "quota_row": 36,
+      "station": "18",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1123",
+      "depth_m": "40",
+      "quota_date": "2011-10-14",
+      "quota_lat": "38.67",
+      "quota_lon": "-64.17",
+      "quota_row": 37,
+      "station": "18",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1123",
+      "depth_m": "80",
+      "quota_date": "2011-10-14",
+      "quota_lat": "38.67",
+      "quota_lon": "-64.17",
+      "quota_row": 38,
+      "station": "18",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1226",
+      "depth_m": "1",
+      "quota_date": "2012-09-27",
+      "quota_lat": "33.67",
+      "quota_lon": "-64.17",
+      "quota_row": 39,
+      "station": "1",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1226",
+      "depth_m": "80",
+      "quota_date": "2012-09-27",
+      "quota_lat": "33.67",
+      "quota_lon": "-64.17",
+      "quota_row": 40,
+      "station": "1",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1226",
+      "depth_m": "1",
+      "quota_date": "2012-10-01",
+      "quota_lat": "31.67",
+      "quota_lon": "-64.17",
+      "quota_row": 41,
+      "station": "2",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1226",
+      "depth_m": "80",
+      "quota_date": "2012-10-01",
+      "quota_lat": "31.67",
+      "quota_lon": "-64.17",
+      "quota_row": 42,
+      "station": "2",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1226",
+      "depth_m": "1",
+      "quota_date": "2012-10-01",
+      "quota_lat": "30.67",
+      "quota_lon": "-64.17",
+      "quota_row": 43,
+      "station": "3",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1226",
+      "depth_m": "80",
+      "quota_date": "2012-10-01",
+      "quota_lat": "30.67",
+      "quota_lon": "-64.17",
+      "quota_row": 44,
+      "station": "3",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1226",
+      "depth_m": "1",
+      "quota_date": "2012-10-02",
+      "quota_lat": "29.67",
+      "quota_lon": "-64.17",
+      "quota_row": 45,
+      "station": "4",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1226",
+      "depth_m": "1",
+      "quota_date": "2012-09-28",
+      "quota_lat": "34.67",
+      "quota_lon": "-64.17",
+      "quota_row": 46,
+      "station": "15",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1226",
+      "depth_m": "80",
+      "quota_date": "2012-09-28",
+      "quota_lat": "34.67",
+      "quota_lon": "-64.17",
+      "quota_row": 47,
+      "station": "15",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1226",
+      "depth_m": "1",
+      "quota_date": "2012-09-29",
+      "quota_lat": "35.67",
+      "quota_lon": "-64.17",
+      "quota_row": 48,
+      "station": "16",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1226",
+      "depth_m": "80",
+      "quota_date": "2012-09-29",
+      "quota_lat": "35.67",
+      "quota_lon": "-64.17",
+      "quota_row": 49,
+      "station": "16",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1226",
+      "depth_m": "1",
+      "quota_date": "2012-10-10",
+      "quota_lat": "33.67",
+      "quota_lon": "-64.17",
+      "quota_row": 50,
+      "station": "1",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "AE1226",
+      "depth_m": "80",
+      "quota_date": "2012-10-10",
+      "quota_lat": "33.67",
+      "quota_lon": "-64.17",
+      "quota_row": 51,
+      "station": "1",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NB Pier",
+      "depth_m": "3",
+      "quota_date": "2013-03-15",
+      "quota_lat": "33.61",
+      "quota_lon": "-117.93",
+      "quota_row": 52,
+      "station": "nd",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NB Pier",
+      "depth_m": "2",
+      "quota_date": "2013-04-15",
+      "quota_lat": "33.61",
+      "quota_lon": "-117.93",
+      "quota_row": 53,
+      "station": "nd",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NB Pier",
+      "depth_m": "4",
+      "quota_date": "2013-05-15",
+      "quota_lat": "33.61",
+      "quota_lon": "-117.93",
+      "quota_row": 54,
+      "station": "nd",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NB Pier",
+      "depth_m": "2",
+      "quota_date": "2013-09-15",
+      "quota_lat": "33.61",
+      "quota_lon": "-117.93",
+      "quota_row": 55,
+      "station": "nd",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "SPOTS",
+      "depth_m": "nd",
+      "quota_date": "2013-05-19",
+      "quota_lat": "33.55",
+      "quota_lon": "-118.40",
+      "quota_row": 56,
+      "station": "nd",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "1",
+      "quota_date": "2014-05-13",
+      "quota_lat": "23.32",
+      "quota_lon": "-110.72",
+      "quota_row": 57,
+      "station": "UW",
+      "status": "nonunique_quota_identity"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "1",
+      "quota_date": "2014-05-13",
+      "quota_lat": "23.28",
+      "quota_lon": "-110.64",
+      "quota_row": 58,
+      "station": "UW",
+      "status": "nonunique_quota_identity"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "1",
+      "quota_date": "2014-05-13",
+      "quota_lat": "23.18",
+      "quota_lon": "-110.56",
+      "quota_row": 59,
+      "station": "UW",
+      "status": "nonunique_quota_identity"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "1",
+      "quota_date": "2014-05-13",
+      "quota_lat": "23.93",
+      "quota_lon": "-110.09",
+      "quota_row": 60,
+      "station": "UW",
+      "status": "nonunique_quota_identity"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "1",
+      "quota_date": "2014-05-13",
+      "quota_lat": "22.74",
+      "quota_lon": "-109.98",
+      "quota_row": 61,
+      "station": "UW",
+      "status": "nonunique_quota_identity"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "1",
+      "quota_date": "2014-05-13",
+      "quota_lat": "22.65",
+      "quota_lon": "-109.81",
+      "quota_row": 62,
+      "station": "UW",
+      "status": "nonunique_quota_identity"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "1",
+      "quota_date": "2014-05-14",
+      "quota_lat": "21.26",
+      "quota_lon": "-108.59",
+      "quota_row": 63,
+      "station": "UW",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "100",
+      "quota_date": "2014-05-22",
+      "quota_lat": "18.20",
+      "quota_lon": "-104.89",
+      "quota_row": 64,
+      "station": "8T",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "5",
+      "quota_date": "2014-05-22",
+      "quota_lat": "18.20",
+      "quota_lon": "-104.89",
+      "quota_row": 65,
+      "station": "8T",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "101",
+      "quota_date": "2014-05-24",
+      "quota_lat": "18.20",
+      "quota_lon": "-106.30",
+      "quota_row": 66,
+      "station": "10T",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "50",
+      "quota_date": "2014-05-24",
+      "quota_lat": "18.20",
+      "quota_lon": "-106.30",
+      "quota_row": 67,
+      "station": "10T",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "6",
+      "quota_date": "2014-05-24",
+      "quota_lat": "18.20",
+      "quota_lon": "-106.30",
+      "quota_row": 68,
+      "station": "10T",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "140",
+      "quota_date": "2014-05-25",
+      "quota_lat": "18.20",
+      "quota_lon": "-107.50",
+      "quota_row": 69,
+      "station": "11T",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "50",
+      "quota_date": "2014-05-25",
+      "quota_lat": "18.20",
+      "quota_lon": "-107.50",
+      "quota_row": 70,
+      "station": "11T",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "100",
+      "quota_date": "2014-06-01",
+      "quota_lat": "22.92",
+      "quota_lon": "-108.00",
+      "quota_row": 71,
+      "station": "13F",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "39",
+      "quota_date": "2014-06-01",
+      "quota_lat": "22.92",
+      "quota_lon": "-108.00",
+      "quota_row": 72,
+      "station": "13F",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "6",
+      "quota_date": "2014-06-01",
+      "quota_lat": "22.92",
+      "quota_lon": "-108.00",
+      "quota_row": 73,
+      "station": "15F",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "92",
+      "quota_date": "2014-06-03",
+      "quota_lat": "20.87",
+      "quota_lon": "-107.71",
+      "quota_row": 74,
+      "station": "15F",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "NH1410",
+      "depth_m": "11",
+      "quota_date": "2014-06-03",
+      "quota_lat": "20.87",
+      "quota_lon": "-107.71",
+      "quota_row": 75,
+      "station": "40",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "bulk_dataset": "829895",
+      "bulk_date": "2014-09-21T03:17:00",
+      "bulk_lat": "18.0010",
+      "bulk_lon": "-157.65",
+      "bulk_row": 10,
+      "candidate_bulk_rows": [
+        10
+      ],
+      "cruise": "NH1418",
+      "date_offset_days": 1,
+      "depth_m": "5",
+      "latitude_difference_degrees": "0.0010",
+      "longitude_difference_degrees": "0.65",
+      "quota_date": "2014-09-20",
+      "quota_lat": "18.00",
+      "quota_lon": "-157.00",
+      "quota_row": 76,
+      "station": "2",
+      "status": "coordinate_discrepancy"
+    },
+    {
+      "bulk_dataset": "829895",
+      "bulk_date": "2014-09-21T03:17:00",
+      "bulk_lat": "18.0020",
+      "bulk_lon": "-157.65",
+      "bulk_row": 15,
+      "candidate_bulk_rows": [
+        15
+      ],
+      "cruise": "NH1418",
+      "date_offset_days": 1,
+      "depth_m": "140",
+      "latitude_difference_degrees": "0.0020",
+      "longitude_difference_degrees": "0.65",
+      "quota_date": "2014-09-20",
+      "quota_lat": "18.00",
+      "quota_lon": "-157.00",
+      "quota_row": 77,
+      "station": "2",
+      "status": "coordinate_discrepancy"
+    },
+    {
+      "bulk_dataset": "829895",
+      "bulk_date": "2014-09-23T06:50:00",
+      "bulk_lat": "11.9990",
+      "bulk_lon": "-155.22",
+      "bulk_row": 26,
+      "candidate_bulk_rows": [
+        26
+      ],
+      "cruise": "NH1418",
+      "date_offset_days": 1,
+      "depth_m": "20",
+      "latitude_difference_degrees": "0.0010",
+      "longitude_difference_degrees": "0.00",
+      "quota_date": "2014-09-22",
+      "quota_lat": "12.00",
+      "quota_lon": "-155.22",
+      "quota_row": 78,
+      "station": "5",
+      "status": "date_offset_sensitivity"
+    },
+    {
+      "bulk_dataset": "829895",
+      "bulk_date": "2014-09-23T06:50:00",
+      "bulk_lat": "12.0000",
+      "bulk_lon": "-155.22",
+      "bulk_row": 28,
+      "candidate_bulk_rows": [
+        28
+      ],
+      "cruise": "NH1418",
+      "date_offset_days": 1,
+      "depth_m": "80",
+      "latitude_difference_degrees": "0.0000",
+      "longitude_difference_degrees": "0.00",
+      "quota_date": "2014-09-22",
+      "quota_lat": "12.00",
+      "quota_lon": "-155.22",
+      "quota_row": 79,
+      "station": "5",
+      "status": "date_offset_sensitivity"
+    },
+    {
+      "bulk_dataset": "829895",
+      "bulk_date": "2014-09-24T03:25:00",
+      "bulk_lat": "10.0040",
+      "bulk_lon": "-154.52",
+      "bulk_row": 38,
+      "candidate_bulk_rows": [
+        38
+      ],
+      "cruise": "NH1418",
+      "date_offset_days": 1,
+      "depth_m": "5",
+      "latitude_difference_degrees": "0.0040",
+      "longitude_difference_degrees": "0.00",
+      "quota_date": "2014-09-23",
+      "quota_lat": "10.00",
+      "quota_lon": "-154.52",
+      "quota_row": 80,
+      "station": "7",
+      "status": "date_offset_sensitivity"
+    },
+    {
+      "bulk_dataset": "829895",
+      "bulk_date": "2014-09-24T03:25:00",
+      "bulk_lat": "10.0020",
+      "bulk_lon": "-154.52",
+      "bulk_row": 40,
+      "candidate_bulk_rows": [
+        40
+      ],
+      "cruise": "NH1418",
+      "date_offset_days": 1,
+      "depth_m": "50",
+      "latitude_difference_degrees": "0.0020",
+      "longitude_difference_degrees": "0.00",
+      "quota_date": "2014-09-23",
+      "quota_lat": "10.00",
+      "quota_lon": "-154.52",
+      "quota_row": 81,
+      "station": "7",
+      "status": "date_offset_sensitivity"
+    },
+    {
+      "bulk_dataset": "829895",
+      "candidate_bulk_rows": [],
+      "cruise": "NH1418",
+      "depth_m": "5",
+      "quota_date": "2014-09-21",
+      "quota_lat": "16",
+      "quota_lon": "-156.57",
+      "quota_row": 82,
+      "station": "3",
+      "status": "no_exact_station_depth"
+    },
+    {
+      "bulk_dataset": "829895",
+      "candidate_bulk_rows": [],
+      "cruise": "NH1418",
+      "depth_m": "140",
+      "quota_date": "2014-09-21",
+      "quota_lat": "16",
+      "quota_lon": "-156.57",
+      "quota_row": 83,
+      "station": "3",
+      "status": "no_exact_station_depth"
+    },
+    {
+      "bulk_dataset": "829895",
+      "bulk_date": "2014-09-26T15:05:00",
+      "bulk_lat": "3.0010",
+      "bulk_lon": "-151.74",
+      "bulk_row": 73,
+      "candidate_bulk_rows": [
+        73
+      ],
+      "cruise": "NH1418",
+      "date_offset_days": 0,
+      "depth_m": "80",
+      "latitude_difference_degrees": "0.0010",
+      "longitude_difference_degrees": "0.00",
+      "quota_date": "2014-09-26",
+      "quota_lat": "3.00",
+      "quota_lon": "-151.74",
+      "quota_row": 84,
+      "station": "12",
+      "status": "primary"
+    },
+    {
+      "bulk_dataset": "829895",
+      "bulk_date": "2014-09-29T01:50:00",
+      "bulk_lat": "-3.0001",
+      "bulk_lon": "-149.67",
+      "bulk_row": 100,
+      "candidate_bulk_rows": [
+        100
+      ],
+      "cruise": "NH1418",
+      "date_offset_days": 1,
+      "depth_m": "80",
+      "latitude_difference_degrees": "0.0001",
+      "longitude_difference_degrees": "0.00",
+      "quota_date": "2014-09-28",
+      "quota_lat": "-3.00",
+      "quota_lon": "-149.67",
+      "quota_row": 85,
+      "station": "16",
+      "status": "date_offset_sensitivity"
+    },
+    {
+      "bulk_dataset": "829895",
+      "bulk_date": "2014-09-27T20:24:00",
+      "bulk_lat": "-0.0003",
+      "bulk_lon": "-150.70",
+      "bulk_row": 88,
+      "candidate_bulk_rows": [
+        88
+      ],
+      "cruise": "NH1418",
+      "date_offset_days": 0,
+      "depth_m": "50",
+      "latitude_difference_degrees": "0.0003",
+      "longitude_difference_degrees": "0.00",
+      "quota_date": "2014-09-27",
+      "quota_lat": "0.00",
+      "quota_lon": "-150.70",
+      "quota_row": 86,
+      "station": "14",
+      "status": "primary"
+    },
+    {
+      "bulk_dataset": "829895",
+      "bulk_date": "2014-09-27T20:24:00",
+      "bulk_lat": "0.0001",
+      "bulk_lon": "-150.70",
+      "bulk_row": 86,
+      "candidate_bulk_rows": [
+        86
+      ],
+      "cruise": "NH1418",
+      "date_offset_days": 0,
+      "depth_m": "5",
+      "latitude_difference_degrees": "0.0001",
+      "longitude_difference_degrees": "0.00",
+      "quota_date": "2014-09-27",
+      "quota_lat": "0.00",
+      "quota_lon": "-150.70",
+      "quota_row": 87,
+      "station": "14",
+      "status": "primary"
+    },
+    {
+      "bulk_dataset": "829895",
+      "bulk_date": "2014-09-29T01:50:00",
+      "bulk_lat": "-3.0001",
+      "bulk_lon": "-149.67",
+      "bulk_row": 97,
+      "candidate_bulk_rows": [
+        97
+      ],
+      "cruise": "NH1418",
+      "date_offset_days": 1,
+      "depth_m": "5",
+      "latitude_difference_degrees": "0.0001",
+      "longitude_difference_degrees": "0.00",
+      "quota_date": "2014-09-28",
+      "quota_lat": "-3.00",
+      "quota_lon": "-149.67",
+      "quota_row": 88,
+      "station": "16",
+      "status": "date_offset_sensitivity"
+    },
+    {
+      "cruise": "RR1604",
+      "depth_m": "20",
+      "quota_date": "2016-03-29",
+      "quota_lat": "-20.76",
+      "quota_lon": "95.00",
+      "quota_row": 89,
+      "station": "97",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "RR1604",
+      "depth_m": "20",
+      "quota_date": "2016-04-07",
+      "quota_lat": "-4.53",
+      "quota_lon": "94.87",
+      "quota_row": 90,
+      "station": "127",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "RR1604",
+      "depth_m": "82",
+      "quota_date": "2016-04-07",
+      "quota_lat": "-4.53",
+      "quota_lon": "94.87",
+      "quota_row": 91,
+      "station": "127",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "RR1604",
+      "depth_m": "25",
+      "quota_date": "2016-04-01",
+      "quota_lat": "-15.17",
+      "quota_lon": "95.00",
+      "quota_row": 92,
+      "station": "107",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "RR1604",
+      "depth_m": "80",
+      "quota_date": "2016-04-01",
+      "quota_lat": "-15.17",
+      "quota_lon": "95.00",
+      "quota_row": 93,
+      "station": "107",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "RR1604",
+      "depth_m": "20",
+      "quota_date": "2016-04-15",
+      "quota_lat": "7.98",
+      "quota_lon": "88.2",
+      "quota_row": 94,
+      "station": "162",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "SO243",
+      "depth_m": "10",
+      "quota_date": "2015-10-17",
+      "quota_lat": "-14.00",
+      "quota_lon": "-76.50",
+      "quota_row": 95,
+      "station": "15",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "SO243",
+      "depth_m": "20",
+      "quota_date": "2015-10-10",
+      "quota_lat": "-10.00",
+      "quota_lon": "-81.90",
+      "quota_row": 96,
+      "station": "5",
+      "status": "no_qualified_bulk_source"
+    },
+    {
+      "cruise": "SO243",
+      "depth_m": "12",
+      "quota_date": "2015-10-12",
+      "quota_lat": "-9.18",
+      "quota_lon": "-79.46",
+      "quota_row": 97,
+      "station": "7",
+      "status": "no_qualified_bulk_source"
+    }
+  ],
+  "status_counts": {
+    "coordinate_discrepancy": 3,
+    "date_offset_sensitivity": 8,
+    "no_exact_station_depth": 3,
+    "no_qualified_bulk_source": 67,
+    "nonunique_quota_identity": 6,
+    "primary": 9
+  }
+}

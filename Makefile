@@ -33,6 +33,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: italian-magnitude-validation italian-magnitude-registry
 .PHONY: chemostat-capacity chemostat-capacity-registry
 .PHONY: paired-phosphorus paired-phosphorus-sources paired-phosphorus-registry
+.PHONY: field-resources field-resources-sources field-resources-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -68,6 +69,16 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/chemostat-capacity-followup-2026-10-10/capacity.png
 
 all: data test analyses
+
+field-resources-sources: ## verify sorted quotas, ambient counts and bulk-stock sources
+	$(PY) experiments/fetch_field_resources.py --stage verify
+
+field-resources: field-resources-sources ## replay nominal matches and conditional stock bounds
+	$(PY) experiments/run_field_resources.py --stage evaluate --freeze-commit 52d2cc2 --output $(STUDY_OUTPUT_ROOT)/field-resources
+	$(PY) experiments/verify_field_resources.py --directory $(STUDY_OUTPUT_ROOT)/field-resources
+
+field-resources-registry: ## register the retained audit with the post-run P unit qualification
+	$(PY) experiments/register_field_resources.py
 
 paired-phosphorus-sources: ## verify the two independently assayed phosphorus archives
 	$(PY) experiments/fetch_paired_phosphorus.py --stage verify

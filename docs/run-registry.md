@@ -34,8 +34,18 @@ retained history; neither mechanism proves external preregistration or blinding.
 
 ## Catalogue
 
-As of 12 October 2026 the registry verifies **36 records and 876 file references**.
-The latest entry, `paired-phosphorus-pilot-2026-10-12`, records a
+As of 12 October 2026 the registry verifies **37 records and 902 file references**.
+The latest entry, `field-resources-2026-10-12`, records the
+[field-quota compatibility audit](field-resources-results-2026-10-12.md).
+All 18 primary C/N comparisons satisfy a conservative partial-stock bound;
+one of 15 additional date-offset C/N comparisons exceeds it by 5.5%. Its literal
+frozen outputs include Pacific P under the printed uM label, with a separately
+recorded post-run unit concern that prevents counting those nine comparisons
+as qualified physical evidence. No source unit was silently corrected. The
+audit is not an equal-allocation test. The previous 36 records are byte-for-byte
+preserved.
+
+The preceding entry, `paired-phosphorus-pilot-2026-10-12`, records a
 [same-experiment independent-assay transfer](paired-phosphorus-results-2026-10-12.md).
 It has one calibration culture and one test culture. Both fixed and independently
 measured phosphorus costs miss the declared count-prediction accuracy target;
