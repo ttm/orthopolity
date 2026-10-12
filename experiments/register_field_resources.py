@@ -16,6 +16,17 @@ def main():
     execution = json.loads((directory / "execution.json").read_text())
     if verify(directory) != json.loads((directory / "verification.json").read_text()):
         raise ValueError("Independent verification differs")
+    # Once registered, audit the original snapshots. Later prose corrections
+    # must not replace historical source digests or trigger a new empirical run.
+    registry = ROOT / "results/run-registry.jsonl"
+    if registry.exists():
+        retained = [json.loads(line) for line in registry.read_text().splitlines()]
+        if any(entry["run_id"] == result["run_id"] for entry in retained):
+            checked = verify_registry(ROOT)
+            print(json.dumps(dict(run_id=result["run_id"], appended=False,
+                                  source_scope="Original registered snapshots"), indent=2))
+            print(json.dumps(checked, indent=2))
+            return
     config = "configs/field_resources_2026-10-12.json"
     sources = [item["path"] for item in execution["sources"] if item["path"] != config]
     sources += ["experiments/verify_field_resources.py", "experiments/register_field_resources.py",

@@ -84,8 +84,8 @@ bulk C of `1.71 micromol/L`. S/B=**1.05544**. Its maximum compatible common
 minimum elemental retention is `min(1,B/S)`=**0.94747**. Alternatively, adjusting
 the aggregate S downward and B upward by **2.6974% each** reaches equality.
 That is the algebraic allowance `(S-B)/(S+B)`, not a measured error bar or
-a common error on each underlying count and quota. Uncounted particulate
-material would make the available allowance smaller. This slight excess in a
+a common error on each underlying count and quota. Other particulate material
+would tighten the retention bound. This slight excess in a
 date-discordant record identifies no unique mechanism and no rejection of the law.
 
 ## Post-run phosphorus unit qualification
