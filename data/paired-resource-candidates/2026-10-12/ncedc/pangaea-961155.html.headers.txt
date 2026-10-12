@@ -1,0 +1,17 @@
+HTTP/2 200 
+server: nginx/1.31.6
+date: Sun, 11 Oct 2026 22:40:31 GMT
+content-type: text/html;charset=utf-8
+x-powered-by: Jetty(12.1.10)
+vary: Origin, Cookie, Authorization, Accept
+set-cookie: pansessid=8cad91c2fdd45bc83b23af9bf1ce59ba; Path=/; Domain=.pangaea.de; Secure; HttpOnly; SameSite=Lax
+cache-control: public
+x-cid: 8cad91c2fdd45bc83b23af9bf1ce59ba
+link: <https://doi.org/10.1594/PANGAEA.961155>;rel="cite-as", <https://doi.pangaea.de/10.1594/PANGAEA.961155?format=metadata_panmd>;rel="describedby";type="application/vnd.pangaea.metadata+xml", <https://doi.pangaea.de/10.1594/PANGAEA.961155?format=metadata_jsonld>;rel="describedby";type="application/ld+json", <https://doi.pangaea.de/10.1594/PANGAEA.961155?format=metadata_datacite4>;rel="describedby";type="application/vnd.datacite.datacite+xml", <https://doi.pangaea.de/10.1594/PANGAEA.961155?format=metadata_iso19139>;rel="describedby";type="application/vnd.iso19139.metadata+xml", <https://doi.pangaea.de/10.1594/PANGAEA.961155?format=metadata_dif>;rel="describedby";type="application/vnd.nasa.dif-metadata+xml", <https://doi.pangaea.de/10.1594/PANGAEA.961155?format=citation_text>;rel="describedby";type="text/x-bibliography", <https://doi.pangaea.de/10.1594/PANGAEA.961155?format=citation_ris>;rel="describedby";type="application/x-research-info-systems", <https://doi.pangaea.de/10.1594/PANGAEA.961155?format=citation_bibtex>;rel="describedby";type="application/x-bibtex", <https://doi.pangaea.de/10.1594/PANGAEA.961155?format=textfile>;rel="item";type="text/tab-separated-values", <https://doi.pangaea.de/10.1594/PANGAEA.961155?format=html>;rel="item";type="text/html", <https://orcid.org/0000-0003-1201-009X>;rel="author", <https://orcid.org/0009-0003-5843-0708>;rel="author", <https://orcid.org/0000-0003-2061-2154>;rel="author", <https://creativecommons.org/licenses/by/4.0/>;rel="license", <https://schema.org/Dataset>;rel="type", <https://schema.org/AboutPage>;rel="type", <https://doi.pangaea.de/10.1594/PANGAEA.961155?format=linkset>;rel="linkset";type="application/linkset", <https://doi.pangaea.de/10.1594/PANGAEA.961155?format=linkset_json>;rel="linkset";type="application/linkset+json"
+x-robots-tag: index,follow,archive
+alt-svc: h3=":443"; ma=2592000
+strict-transport-security: max-age=31536000
+x-ua-compatible: IE=Edge
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+

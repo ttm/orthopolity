@@ -1,16 +1,31 @@
 # Project status and handoff
 
-Last updated 11 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 12 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
-the package layout for all runners. The suite now passes **500 tests**; the
-registry verifies **35 runs and 853 file references**, including the Italian simulation
-and retrospective chemostat diagnosis. The broader programme and subsequent
+the package layout for all runners. The suite now passes **508 tests**; the
+registry verifies **36 runs and 876 file references**, including the Italian simulation,
+retrospective chemostat diagnosis and independent-assay pilot. The broader programme and subsequent
 studies are in [research-brief.md](research-brief.md) and
 [ongoing-research.md](ongoing-research.md).
+
+**12 October continuation:** two same-experiment public phosphorus archives
+were acquired and a [locally frozen count-transfer pilot](paired-phosphorus-results-2026-10-12.md)
+completed. Strict identity/completeness checks leave one calibration culture
+and one test culture. Observed count is 34.9 million/mL; fixed quota predicts
+5.55 million, independently assayed quota 4.24 million. Both miss the declared
+accuracy target. Raw stock/quota accounting gives 4.11 times the calibration
+count but 0.50 times the test count, so its cross-method offset does not transfer.
+This is a measurement-compatibility limitation under the assumed sample matches,
+not an equal-allocation test or a population-level rejection. The first freeze
+at `83a8c36` stopped on a missing volume comparator; the pre-response amendment
+at `1569c4f` removed that comparator, preserving the two cost predictions.
+The main article and supporting section S5.11 include the result. Other
+[accessible paired-resource candidates](paired-resource-candidate-audit-2026-10-12.md)
+are recorded, with bulk and group-specific chemistry distinguished.
 The [flare-ribbon test has now run](flare-ribbons-run-2026-10-09.md):
 α = 3.163 [2.962, 3.457], registered verdict inconclusive, both predictions
 excluded under the implemented uncertainty model. The full HydroLAKES archive
@@ -109,6 +124,7 @@ discards the authors' programme.
 | 10 Oct 2026 | Italian calibration crosswalk and Northern California source audit | Three complete new sources; 295,193 unambiguous CLASS/HORUS links; direct-Mw-only route insufficient; identity issues retained; 473 tests pass |
 | 10 Oct 2026 | Italian synthetic magnitude gate | 45/56 required scenarios fail; no real Italian b/D2 fit; 480 tests, 34 registry records |
 | 10–11 Oct 2026 | Main article/support reorganization and chemostat failure diagnosis | Title/general-law ambition retained; technical details preserved; arbitrary C:N prices insufficient in 8/12 vessels under transferred quotas; 500 tests, 35 records |
+| 12 Oct 2026 | Independent phosphorus assays, sample audit and count-transfer pilot | One qualifying test culture; measured quota worsens prediction; stock/quota/count calibration does not transfer; 508 tests, 36 records |
 
 ## 3. Results to carry forward
 
@@ -197,6 +213,14 @@ The [research brief](research-brief.md) explains the general-law programme;
    physiology envelope. Alternatively, identify an independently eligible natural
    allocation regime with measured resources and a calibrated observation design.
    The current retrospective result must not be promoted to blind confirmation.
+   The new same-experiment phosphorus pilot already tried independent single-cell
+   costs, but fails measurement transfer with only one eligible target culture.
+   Do not rescue it by relabelling cells, averaging only detected phosphorus
+   values, or fitting a new target-specific calibration. Resolve sample identity,
+   assay compatibility and uncertainty before an expanded prediction. The
+   sorted-cell [BCO-DMO 849153 candidate](paired-resource-candidate-audit-2026-10-12.md)
+   offers group-specific chemistry for a different natural-community route;
+   its ambient-abundance crosswalk and opportunity assumptions remain unaudited.
 2. **Resolve the seismic observation model before another real test.** Both the
    six-sequence Southern California eligibility finding and the failed Italian
    synthetic prerequisite are complete and retained. A new design would need

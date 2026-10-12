@@ -1,0 +1,8 @@
+{
+  "independently_checked_numbers": 16,
+  "maximum_relative_discrepancy": 1.6858752143071132e-16,
+  "method": "40-digit Decimal arithmetic from original rows; no analysis-module import",
+  "qualification_unchanged": true,
+  "test_cultures": 1,
+  "verified": true
+}

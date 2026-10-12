@@ -1,0 +1,46 @@
+{
+  "freeze_commit": "1569c4f943f7bdc3f0510de1f75f492d449ab4f6",
+  "inputs": [
+    {
+      "path": "data/paired-phosphorus/2026-10-12/1005084.csv",
+      "sha256": "0ae72380eb3fc61b93dad5b0a84cb0a5bc41e8cfdd24ffe7f33eba37bcb01642"
+    },
+    {
+      "path": "data/paired-phosphorus/2026-10-12/1005186.csv",
+      "sha256": "e0f0c21b67833d9895535d90b1af377f18bc34ab9a0522e92be96127b840d9b9"
+    }
+  ],
+  "outcomes_unopened_until_local_freeze": true,
+  "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "randomized_analysis": false,
+  "sources": [
+    {
+      "path": "configs/paired_phosphorus_2026-10-12.json",
+      "sha256": "e8986ce88df62eb7b36d7c771b12178c5a35d4f2dae5e8b1ceef9738b7c6473d"
+    },
+    {
+      "path": "docs/paired-phosphorus-protocol-2026-10-12.md",
+      "sha256": "6489699cd957140e3dba5aea5dc46cee33df8c5d28cde0c0718baaedda2aba3f"
+    },
+    {
+      "path": "docs/paired-phosphorus-amendment-2026-10-12.md",
+      "sha256": "31b93f2cb21a332abaabec88dbe52eacf87da58e46724b9d525198b6ed1187d6"
+    },
+    {
+      "path": "src/orthopolity/paired_phosphorus.py",
+      "sha256": "2c59b14e9de459892a406f667b83e760ff6d21fa18fdc37ae38793db2585b999"
+    },
+    {
+      "path": "experiments/run_paired_phosphorus.py",
+      "sha256": "ce2a3f9c1806471529f04a2491695d6cc68e6cfbec4cb200d82938b40c18a13c"
+    },
+    {
+      "path": "experiments/fetch_paired_phosphorus.py",
+      "sha256": "4be7c78a302b87d5119c164509901864b93880d255bf2db114b68ac660a7ec1b"
+    },
+    {
+      "path": "tests/test_paired_phosphorus.py",
+      "sha256": "db3d3f2f6a4b6eb0da0d7db0c3371e86d525d68fbd5559d5c852cd4a382ec184"
+    }
+  ]
+}

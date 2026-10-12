@@ -1,0 +1,21 @@
+HTTP/2 200 
+date: Sun, 11 Oct 2026 22:40:32 GMT
+content-type: application/json; charset=utf-8
+content-length: 22630
+set-cookie: AWSALBTG=SPKx1sIT51t4Rg3iCJGnjdtiT2lFdz8gujYV6+LO5r3JxEBkfAJvDjf9Xn5AcXbGkp5qyJvc2iy4gDKIONphEbl0OvF+OTBzup1VGwqC4g99pnIcgB9W/AYZcp3p29uZ5yqqMu+4F0RcLr9tYZlcXUSyzt/1O0Llc4seTVJ2biDGbWMO1vk=; Expires=Sun, 18 Oct 2026 22:40:32 GMT; Path=/
+set-cookie: AWSALBTGCORS=SPKx1sIT51t4Rg3iCJGnjdtiT2lFdz8gujYV6+LO5r3JxEBkfAJvDjf9Xn5AcXbGkp5qyJvc2iy4gDKIONphEbl0OvF+OTBzup1VGwqC4g99pnIcgB9W/AYZcp3p29uZ5yqqMu+4F0RcLr9tYZlcXUSyzt/1O0Llc4seTVJ2biDGbWMO1vk=; Expires=Sun, 18 Oct 2026 22:40:32 GMT; Path=/; SameSite=None; Secure
+set-cookie: AWSALB=s8UUwo5prtxevirOKGA2OCrPOaJQyp8k7qRPlCet2HuKlzX/MvUpITfvwO73ucch86jmVX8Z8ncA96Gzd9mogDGj9y3yrVBrsYvTDXx09r5jAA+C0sPrhq/GDNOy; Expires=Sun, 18 Oct 2026 22:40:32 GMT; Path=/
+set-cookie: AWSALBCORS=s8UUwo5prtxevirOKGA2OCrPOaJQyp8k7qRPlCet2HuKlzX/MvUpITfvwO73ucch86jmVX8Z8ncA96Gzd9mogDGj9y3yrVBrsYvTDXx09r5jAA+C0sPrhq/GDNOy; Expires=Sun, 18 Oct 2026 22:40:32 GMT; Path=/; SameSite=None; Secure
+server: Apache/2.4.68 (Amazon Linux) OpenSSL/3.5.8
+x-frame-options: SAMEORIGIN
+x-xss-protection: 0
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+x-api-version: 2.1.0
+etag: W/"3f0434b59d3a9a23c0926f6848a4357d"
+cache-control: max-age=0, private, must-revalidate
+content-security-policy-report-only: default-src 'self' https://datadryad.org; connect-src 'self' https: https://blog.datadryad.org https://*.google-analytics.com https://cdn.jsdelivr.net https://*.awswaf.com https://*.datacite.org https://*.amazonaws.com https://doi.org https://datadryad.org; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://*.google-analytics.com https://cdnjs.cloudflare.com https://www.google.com https://www.recaptcha.net https://www.gstatic.com https://datadryad.org; script-src-elem 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.google-analytics.com https://*.awswaf.com https://*.proxy.hfzk.net.cn https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://js.stripe.com https://www.google.com https://www.recaptcha.net https://www.gstatic.com https://datadryad.org; script-src-attr 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.googleapis.com https://datadryad.org; style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.googleapis.com https://datadryad.org; style-src-attr 'unsafe-inline'; font-src 'self' data: https://fonts.gstatic.com https://fonts.gstatic.cn https://*.googleapis.com chrome-extension: moz-extension: safari-web-extension: https://*.proxy.hfzk.net.cn https://cdn.scite.ai https://datadryad.org; img-src 'self' https: data:; media-src 'self' data: https://datadryad.org; worker-src 'self' blob: https://cdnjs.cloudflare.com https://datadryad.org; child-src blob:; frame-src 'self' https:; object-src 'none'; report-uri /csp-violation-report-endpoint
+x-request-id: af900193-a1d2-44a9-826e-8fafa6255697
+x-runtime: 0.148571
+

@@ -1,5 +1,22 @@
 # Ongoing research: resume here
 
+**12 October continuation:** the [paired-phosphorus pilot](paired-phosphorus-results-2026-10-12.md)
+has run on newly acquired public counts/chemistry and independent single-cell
+X-ray assays from the same experiment. Identity and complete-assay gates leave
+one calibration culture and one test culture. Observed count is 34.9 million/mL;
+fixed and measured quota predictions are 5.55 and 4.24 million/mL. Both miss,
+and the raw accounting ratio changes from 4.11 to 0.50 across cultures.
+This diagnoses failed measurement transfer under the sample/assay assumptions,
+not equal allocation. The original volume-comparator stop and pre-response
+amendment are preserved. Article section 4.3 and supporting section S5.11 now
+state this limitation. All **508 tests pass** and the registry verifies
+**36 records / 876 references**, preserving the previous 35 records.
+The [candidate audit](paired-resource-candidate-audit-2026-10-12.md) identifies
+accessible alternatives, including sorted-cell field quotas; no other new
+candidate response has been fitted. Next work requires compatible resource,
+count and group measurements before a larger prediction, not a target-fitted
+rescaling of this failed pilot.
+
 **11 October current priority:** the author's instruction to retain the exact
 title and general-law ambition while shortening the article is implemented.
 The [main article](paper.md) now centers capacity, allocation, identifiable
@@ -19,7 +36,7 @@ physiology/opportunity changes and predict independent responses, or establish
 another qualified natural allocation regime. The previous seismic and lake
 priorities remain alternatives, with their gates and failures preserved.
 
-All **500 tests pass**; the registry verifies **35 records and 853 file references**.
+At that stage, **500 tests passed**; the registry verified **35 records and 853 file references**.
 The earlier 34 records are unchanged. The historical progress entries below
 retain their original section numbering; use the revision map for navigation.
 

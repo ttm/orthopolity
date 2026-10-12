@@ -32,6 +32,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: seismic-candidate-sources restore-seismic-candidates seismic-candidate-audit
 .PHONY: italian-magnitude-validation italian-magnitude-registry
 .PHONY: chemostat-capacity chemostat-capacity-registry
+.PHONY: paired-phosphorus paired-phosphorus-sources paired-phosphorus-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -67,6 +68,16 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/chemostat-capacity-followup-2026-10-10/capacity.png
 
 all: data test analyses
+
+paired-phosphorus-sources: ## verify the two independently assayed phosphorus archives
+	$(PY) experiments/fetch_paired_phosphorus.py --stage verify
+
+paired-phosphorus: paired-phosphorus-sources ## replay the limited conditional count pilot
+	$(PY) experiments/run_paired_phosphorus.py --output $(STUDY_OUTPUT_ROOT)/paired-phosphorus
+	$(PY) experiments/verify_paired_phosphorus.py --directory $(STUDY_OUTPUT_ROOT)/paired-phosphorus
+
+paired-phosphorus-registry: ## append the retained pilot, preserving prior runs
+	$(PY) experiments/register_paired_phosphorus.py
 
 install:
 	$(PY) -m pip install -r requirements.txt -e ".[analyses,geospatial]"

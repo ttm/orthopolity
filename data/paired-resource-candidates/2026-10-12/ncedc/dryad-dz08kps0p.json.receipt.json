@@ -1,0 +1,11 @@
+{
+  "url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.dz08kps0p",
+  "started_at_utc": "2026-10-11T22:40:31.926036+00:00",
+  "completed_at_utc": "2026-10-11T22:40:33.055696+00:00",
+  "curl_exit_code": 0,
+  "http_result": "200\nhttps://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.dz08kps0p",
+  "error": "",
+  "scope": "metadata_only; no raw response tables decoded",
+  "size_bytes": 22630,
+  "sha256": "3f0434b59d3a9a23c0926f6848a4357d71fcea4c02ef0f587f7bd81a0c5119e1"
+}

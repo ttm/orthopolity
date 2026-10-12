@@ -1,0 +1,11 @@
+{
+  "url": "https://doi.pangaea.de/10.1594/PANGAEA.961155",
+  "started_at_utc": "2026-10-11T22:40:31.307409+00:00",
+  "completed_at_utc": "2026-10-11T22:40:31.924207+00:00",
+  "curl_exit_code": 0,
+  "http_result": "200\nhttps://doi.pangaea.de/10.1594/PANGAEA.961155",
+  "error": "",
+  "scope": "metadata_only; no raw response tables decoded",
+  "size_bytes": 373622,
+  "sha256": "2dc6c9df15f624e68e65eb742de8700fcee391c11507660103223e34167dc56c"
+}

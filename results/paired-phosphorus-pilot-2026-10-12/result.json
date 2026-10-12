@@ -1,0 +1,247 @@
+{
+  "calibration": {
+    "bottle": "c",
+    "day": 1,
+    "mean_p_fg": 1.0611428571428572,
+    "n_xrma_cells": 35,
+    "observed_cells_ml": 54500000.0,
+    "raw_capacity_cells_ml": 224084409.80217043,
+    "raw_predicted_over_observed": 4.1116405468288155,
+    "tpp_uM": 7.677,
+    "treatment": "High-P"
+  },
+  "inference_scope": "Conditional measurement-transfer pilot; no equal-allocation test, confidence interval, or population-level verdict",
+  "n_target_cultures": 1,
+  "qualification": [
+    {
+      "bottle": "a",
+      "conflicting_ids": [],
+      "day": 1,
+      "duplicate_ids": [],
+      "eligible": false,
+      "exclusion_reasons": [
+        "incomplete_phosphorus_assay"
+      ],
+      "n_cells": 33,
+      "n_missing_phosphorus": 2,
+      "treatment": "High-P"
+    },
+    {
+      "bottle": "c",
+      "conflicting_ids": [],
+      "day": 1,
+      "duplicate_ids": [],
+      "eligible": true,
+      "exclusion_reasons": [],
+      "n_cells": 35,
+      "n_missing_phosphorus": 0,
+      "treatment": "High-P"
+    },
+    {
+      "bottle": "b",
+      "conflicting_ids": [
+        "BIO5_EFB_EFB2_T2_B_1",
+        "BIO5_EFB_EFB2_T2_B_10",
+        "BIO5_EFB_EFB2_T2_B_11",
+        "BIO5_EFB_EFB2_T2_B_12",
+        "BIO5_EFB_EFB2_T2_B_13",
+        "BIO5_EFB_EFB2_T2_B_14",
+        "BIO5_EFB_EFB2_T2_B_15",
+        "BIO5_EFB_EFB2_T2_B_16",
+        "BIO5_EFB_EFB2_T2_B_17",
+        "BIO5_EFB_EFB2_T2_B_18",
+        "BIO5_EFB_EFB2_T2_B_19",
+        "BIO5_EFB_EFB2_T2_B_2",
+        "BIO5_EFB_EFB2_T2_B_20",
+        "BIO5_EFB_EFB2_T2_B_21",
+        "BIO5_EFB_EFB2_T2_B_22",
+        "BIO5_EFB_EFB2_T2_B_23",
+        "BIO5_EFB_EFB2_T2_B_24",
+        "BIO5_EFB_EFB2_T2_B_25",
+        "BIO5_EFB_EFB2_T2_B_26",
+        "BIO5_EFB_EFB2_T2_B_27",
+        "BIO5_EFB_EFB2_T2_B_28",
+        "BIO5_EFB_EFB2_T2_B_29",
+        "BIO5_EFB_EFB2_T2_B_3",
+        "BIO5_EFB_EFB2_T2_B_30",
+        "BIO5_EFB_EFB2_T2_B_31",
+        "BIO5_EFB_EFB2_T2_B_32",
+        "BIO5_EFB_EFB2_T2_B_33",
+        "BIO5_EFB_EFB2_T2_B_34",
+        "BIO5_EFB_EFB2_T2_B_35",
+        "BIO5_EFB_EFB2_T2_B_4",
+        "BIO5_EFB_EFB2_T2_B_5",
+        "BIO5_EFB_EFB2_T2_B_6",
+        "BIO5_EFB_EFB2_T2_B_8",
+        "BIO5_EFB_EFB2_T2_B_9"
+      ],
+      "day": 2,
+      "duplicate_ids": [],
+      "eligible": false,
+      "exclusion_reasons": [
+        "identifier_field_conflict"
+      ],
+      "n_cells": 34,
+      "n_missing_phosphorus": 0,
+      "treatment": "High-P"
+    },
+    {
+      "bottle": "c",
+      "conflicting_ids": [],
+      "day": 2,
+      "duplicate_ids": [],
+      "eligible": false,
+      "exclusion_reasons": [
+        "incomplete_phosphorus_assay"
+      ],
+      "n_cells": 34,
+      "n_missing_phosphorus": 2,
+      "treatment": "High-P"
+    },
+    {
+      "bottle": "a",
+      "conflicting_ids": [],
+      "day": 1,
+      "duplicate_ids": [],
+      "eligible": false,
+      "exclusion_reasons": [
+        "incomplete_phosphorus_assay"
+      ],
+      "n_cells": 34,
+      "n_missing_phosphorus": 10,
+      "treatment": "Low-P"
+    },
+    {
+      "bottle": "c",
+      "conflicting_ids": [],
+      "day": 1,
+      "duplicate_ids": [],
+      "eligible": false,
+      "exclusion_reasons": [
+        "incomplete_phosphorus_assay"
+      ],
+      "n_cells": 32,
+      "n_missing_phosphorus": 18,
+      "treatment": "Low-P"
+    },
+    {
+      "bottle": "b",
+      "conflicting_ids": [],
+      "day": 2,
+      "duplicate_ids": [],
+      "eligible": true,
+      "exclusion_reasons": [],
+      "n_cells": 33,
+      "n_missing_phosphorus": 0,
+      "treatment": "Low-P"
+    },
+    {
+      "bottle": "c",
+      "conflicting_ids": [],
+      "day": 2,
+      "duplicate_ids": [
+        "BIO5_EFB_EFB3_T2_C_24"
+      ],
+      "eligible": false,
+      "exclusion_reasons": [
+        "nonunique_cell_identifier",
+        "incomplete_phosphorus_assay"
+      ],
+      "n_cells": 26,
+      "n_missing_phosphorus": 4,
+      "treatment": "Low-P"
+    },
+    {
+      "bottle": "a",
+      "conflicting_ids": [
+        "BIO5_EFB_EFB2_T4_B_1"
+      ],
+      "day": 1,
+      "duplicate_ids": [
+        "BIO5_EFB_EFB2_T4_B_1"
+      ],
+      "eligible": false,
+      "exclusion_reasons": [
+        "identifier_field_conflict",
+        "nonunique_cell_identifier"
+      ],
+      "n_cells": 32,
+      "n_missing_phosphorus": 0,
+      "treatment": "Mid-P"
+    },
+    {
+      "bottle": "c",
+      "conflicting_ids": [],
+      "day": 1,
+      "duplicate_ids": [],
+      "eligible": false,
+      "exclusion_reasons": [
+        "incomplete_phosphorus_assay"
+      ],
+      "n_cells": 34,
+      "n_missing_phosphorus": 2,
+      "treatment": "Mid-P"
+    },
+    {
+      "bottle": "c",
+      "conflicting_ids": [],
+      "day": 2,
+      "duplicate_ids": [],
+      "eligible": false,
+      "exclusion_reasons": [
+        "incomplete_phosphorus_assay"
+      ],
+      "n_cells": 35,
+      "n_missing_phosphorus": 1,
+      "treatment": "Mid-P"
+    },
+    {
+      "bottle": "b",
+      "conflicting_ids": [],
+      "day": 4,
+      "duplicate_ids": [
+        "BIO5_EFB_EFB2_T4_B_1"
+      ],
+      "eligible": false,
+      "exclusion_reasons": [
+        "nonunique_cell_identifier",
+        "incomplete_phosphorus_assay"
+      ],
+      "n_cells": 35,
+      "n_missing_phosphorus": 1,
+      "treatment": "Mid-P"
+    }
+  ],
+  "run_id": "paired-phosphorus-pilot-2026-10-12",
+  "targets": [
+    {
+      "measured_improves_on_fixed": false,
+      "models": {
+        "fixed_quota": {
+          "absolute_log_error": 1.8384155118217704,
+          "predicted_cells_ml": 5551517.51986453,
+          "predicted_over_observed": 0.15906926991015846,
+          "within_pilot_factor": false
+        },
+        "measured_quota": {
+          "absolute_log_error": 2.1077185283266284,
+          "predicted_cells_ml": 4240869.423271232,
+          "predicted_over_observed": 0.12151488318828746,
+          "within_pilot_factor": false
+        }
+      },
+      "sample": {
+        "bottle": "b",
+        "day": 2,
+        "mean_p_fg": 1.3890909090909092,
+        "n_xrma_cells": 33,
+        "observed_cells_ml": 34900000.0,
+        "raw_capacity_cells_ml": 17436930.674528535,
+        "raw_predicted_over_observed": 0.49962552076012995,
+        "tpp_uM": 0.782,
+        "treatment": "Low-P"
+      }
+    }
+  ],
+  "uncertainty": "Cell sampling, bulk-assay error, preparation losses and instrument calibration are not quantified"
+}

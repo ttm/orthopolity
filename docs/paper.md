@@ -427,6 +427,16 @@ uncertainty is unavailable. This is a conditional diagnosis, not a statistical
 rejection of the law. It identifies what a revised explanation must change:
 resource physiology, allocation opportunities or the specified relation itself.
 
+A subsequent [independent-assay pilot](paired-phosphorus-results-2026-10-12.md)
+tests whether same-culture phosphorus measurements improve a cell-count
+prediction. Strict sample checks leave one calibration and one test culture.
+Observed abundance is 34.9 million cells/mL; fixed quota predicts 5.55 million
+and an independently measured X-ray quota predicts 4.24 million. Bulk stock,
+single-cell quota and counts fail to close consistently across the two cultures
+(supporting section S5.11). Independent measurement avoids circularity but
+does not guarantee compatible inputs. This unsuccessful accounting transfer
+does not test equal allocation.
+
 ### 4.4 Effective-resource inference and competing forecasts
 
 On a fixed vocabulary, a counting measure over word types and candidate symbolic

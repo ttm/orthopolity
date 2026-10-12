@@ -34,8 +34,17 @@ retained history; neither mechanism proves external preregistration or blinding.
 
 ## Catalogue
 
-As of 11 October 2026 the registry verifies **35 records and 853 file references**.
-The latest entry, `chemostat-capacity-followup-2026-10-10`, retains a
+As of 12 October 2026 the registry verifies **36 records and 876 file references**.
+The latest entry, `paired-phosphorus-pilot-2026-10-12`, records a
+[same-experiment independent-assay transfer](paired-phosphorus-results-2026-10-12.md).
+It has one calibration culture and one test culture. Both fixed and independently
+measured phosphorus costs miss the declared count-prediction accuracy target;
+the measured cost worsens the prediction. The stopped original design and its
+pre-response amendment remain recorded. This is an actual-measurement pilot,
+not an equal-allocation test or a population-level verdict. The previous
+35 records are byte-for-byte preserved.
+
+The preceding entry, `chemostat-capacity-followup-2026-10-10`, retains a
 [retrospective conditional diagnosis](chemostat-capacity-followup-results-2026-10-11.md)
 of previously exposed measurements. It extends the allowed price and quota
 scenarios without replacing the original chemostat forecast. The primary

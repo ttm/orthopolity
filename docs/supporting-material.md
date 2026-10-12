@@ -2194,6 +2194,59 @@ than using the LP solver. It reproduces quota conversions, checks extreme
 prices, source identities and every verdict. The maximum numerical difference
 in the minima is $5.6\times10^{-17}$. Frozen prior results remain intact.
 
+### S5.11. Independent phosphorus assays and a failed count transfer
+
+The [paired-phosphorus pilot](paired-phosphorus-results-2026-10-12.md) uses
+Filella and colleagues' same-experiment culture counts/bulk phosphorus
+([BCO-DMO 1005084](https://doi.org/10.26008/1912/bco-dmo.1005084.1)) and
+single-cell X-ray microanalysis
+([BCO-DMO 1005186](https://doi.org/10.26008/1912/bco-dmo.1005186.1)). The
+single-cell quota is independent of the Coulter count it predicts; it is not
+bulk chemistry divided by that response. The finite measure counts cells in
+one monoculture, so this is a resource-accounting transfer, not an equal-
+allocation or log-size-spectrum test.
+
+Of 12 culture/day samples, complete phosphorus assays and unambiguous identity
+checks leave only High-P/day 1/bottle c (35 assayed cells) and Low-P/day 2/bottle
+b (33). Ten samples are excluded for missing assays or conflicting/nonunique
+identifiers; none is relabelled using its values. The first culture calibrates
+and the second tests. Individual assayed cells are not independent population
+responses, and the completeness-selected pair cannot establish a treatment
+effect. Metadata and identifiers were inspected before the local design freeze
+at `83a8c36`. A missing-volume stop led to a documented amendment at `1569c4f`
+removing the optional size comparator before numerical response exposure.
+The two retained cost predictions were unchanged.
+
+Let $Q$ be measured bulk particulate P and $q$ the mean XRMA quota. The fixed-
+quota forecast is $\widehat N_1=N_0Q_1/Q_0$; the measured-quota forecast is
+$\widehat N_1=N_0(Q_1/Q_0)(q_0/q_1)$. These condition on current stock, not
+feed supply or future resource availability. $Q$ changes from 7.677 to 0.782
+micromoles/L, while $q$ changes from 1.061 to 1.389 fg/cell.
+
+| Prediction | Million cells/mL | Predicted / observed | Absolute log error |
+|---|---:|---:|---:|
+| Fixed phosphorus quota | 5.552 | 0.1591 | 1.8384 |
+| Independent XRMA quota | 4.241 | 0.1215 | 2.1077 |
+
+*Table S19. One independent test culture contained 34.9 million cells/mL.
+Both predictions miss the declared factor-1.25 accuracy target; the independently
+assayed quota worsens this prediction. This is a descriptive pilot, not an
+equivalence test or a population-level rejection.*
+
+Raw accounting, $N=10^6(30.973761998)Q/q$ in the reported units, implies
+4.112 times the observed calibration count but 0.500 times the test count.
+Thus a constant cross-method calibration cannot reconcile the point estimates.
+Unrepresented particles, preparation losses, cell sampling, sample correspondence
+or other assay effects remain possible; none is identified by this comparison.
+Bulk-assay uncertainties are unavailable, and dilution rates also differ between
+treatments. Independent costs must be compatible with the populations and stocks
+they explain before allocation can be assessed. A separate Decimal-arithmetic
+verification reproduces 16 numerical quantities to relative error below
+$1.7\times10^{-16}$ and checks the unchanged qualification ledger. The
+[protocol](paired-phosphorus-protocol-2026-10-12.md),
+[amendment](paired-phosphorus-amendment-2026-10-12.md), full source audit and
+original unsuccessful predictions are retained.
+
 ## References
 
 Arranz, I., Fournier, B., Lester, N. P., Shuter, B. J., and Peres-Neto, P. R. (2022).
