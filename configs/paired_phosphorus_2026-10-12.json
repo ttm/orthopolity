@@ -1,0 +1,37 @@
+{
+  "run_id": "paired-phosphorus-pilot-2026-10-12",
+  "inputs": [
+    {
+      "path": "data/paired-phosphorus/2026-10-12/1005084.csv",
+      "sha256": "0ae72380eb3fc61b93dad5b0a84cb0a5bc41e8cfdd24ffe7f33eba37bcb01642"
+    },
+    {
+      "path": "data/paired-phosphorus/2026-10-12/1005186.csv",
+      "sha256": "e0f0c21b67833d9895535d90b1af377f18bc34ab9a0522e92be96127b840d9b9"
+    }
+  ],
+  "minimum_cells": 20,
+  "calibration_key": [
+    "High-P",
+    1,
+    "c"
+  ],
+  "expected_eligible_keys": [
+    [
+      "High-P",
+      1,
+      "c"
+    ],
+    [
+      "Low-P",
+      2,
+      "b"
+    ]
+  ],
+  "pilot_factor": 1.25,
+  "models": [
+    "fixed_quota",
+    "volume_scaled_quota",
+    "measured_quota"
+  ]
+}

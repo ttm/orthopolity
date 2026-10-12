@@ -1,0 +1,200 @@
+[
+  {
+    "treatment": "High-P",
+    "day": 1,
+    "bottle": "a",
+    "n_cells": 33,
+    "n_missing_phosphorus": 2,
+    "conflicting_ids": [],
+    "duplicate_ids": [],
+    "eligible": false,
+    "exclusion_reasons": [
+      "incomplete_phosphorus_assay"
+    ]
+  },
+  {
+    "treatment": "High-P",
+    "day": 1,
+    "bottle": "c",
+    "n_cells": 35,
+    "n_missing_phosphorus": 0,
+    "conflicting_ids": [],
+    "duplicate_ids": [],
+    "eligible": true,
+    "exclusion_reasons": []
+  },
+  {
+    "treatment": "High-P",
+    "day": 2,
+    "bottle": "b",
+    "n_cells": 34,
+    "n_missing_phosphorus": 0,
+    "conflicting_ids": [
+      "BIO5_EFB_EFB2_T2_B_1",
+      "BIO5_EFB_EFB2_T2_B_10",
+      "BIO5_EFB_EFB2_T2_B_11",
+      "BIO5_EFB_EFB2_T2_B_12",
+      "BIO5_EFB_EFB2_T2_B_13",
+      "BIO5_EFB_EFB2_T2_B_14",
+      "BIO5_EFB_EFB2_T2_B_15",
+      "BIO5_EFB_EFB2_T2_B_16",
+      "BIO5_EFB_EFB2_T2_B_17",
+      "BIO5_EFB_EFB2_T2_B_18",
+      "BIO5_EFB_EFB2_T2_B_19",
+      "BIO5_EFB_EFB2_T2_B_2",
+      "BIO5_EFB_EFB2_T2_B_20",
+      "BIO5_EFB_EFB2_T2_B_21",
+      "BIO5_EFB_EFB2_T2_B_22",
+      "BIO5_EFB_EFB2_T2_B_23",
+      "BIO5_EFB_EFB2_T2_B_24",
+      "BIO5_EFB_EFB2_T2_B_25",
+      "BIO5_EFB_EFB2_T2_B_26",
+      "BIO5_EFB_EFB2_T2_B_27",
+      "BIO5_EFB_EFB2_T2_B_28",
+      "BIO5_EFB_EFB2_T2_B_29",
+      "BIO5_EFB_EFB2_T2_B_3",
+      "BIO5_EFB_EFB2_T2_B_30",
+      "BIO5_EFB_EFB2_T2_B_31",
+      "BIO5_EFB_EFB2_T2_B_32",
+      "BIO5_EFB_EFB2_T2_B_33",
+      "BIO5_EFB_EFB2_T2_B_34",
+      "BIO5_EFB_EFB2_T2_B_35",
+      "BIO5_EFB_EFB2_T2_B_4",
+      "BIO5_EFB_EFB2_T2_B_5",
+      "BIO5_EFB_EFB2_T2_B_6",
+      "BIO5_EFB_EFB2_T2_B_8",
+      "BIO5_EFB_EFB2_T2_B_9"
+    ],
+    "duplicate_ids": [],
+    "eligible": false,
+    "exclusion_reasons": [
+      "identifier_field_conflict"
+    ]
+  },
+  {
+    "treatment": "High-P",
+    "day": 2,
+    "bottle": "c",
+    "n_cells": 34,
+    "n_missing_phosphorus": 2,
+    "conflicting_ids": [],
+    "duplicate_ids": [],
+    "eligible": false,
+    "exclusion_reasons": [
+      "incomplete_phosphorus_assay"
+    ]
+  },
+  {
+    "treatment": "Low-P",
+    "day": 1,
+    "bottle": "a",
+    "n_cells": 34,
+    "n_missing_phosphorus": 10,
+    "conflicting_ids": [],
+    "duplicate_ids": [],
+    "eligible": false,
+    "exclusion_reasons": [
+      "incomplete_phosphorus_assay"
+    ]
+  },
+  {
+    "treatment": "Low-P",
+    "day": 1,
+    "bottle": "c",
+    "n_cells": 32,
+    "n_missing_phosphorus": 18,
+    "conflicting_ids": [],
+    "duplicate_ids": [],
+    "eligible": false,
+    "exclusion_reasons": [
+      "incomplete_phosphorus_assay"
+    ]
+  },
+  {
+    "treatment": "Low-P",
+    "day": 2,
+    "bottle": "b",
+    "n_cells": 33,
+    "n_missing_phosphorus": 0,
+    "conflicting_ids": [],
+    "duplicate_ids": [],
+    "eligible": true,
+    "exclusion_reasons": []
+  },
+  {
+    "treatment": "Low-P",
+    "day": 2,
+    "bottle": "c",
+    "n_cells": 26,
+    "n_missing_phosphorus": 4,
+    "conflicting_ids": [],
+    "duplicate_ids": [
+      "BIO5_EFB_EFB3_T2_C_24"
+    ],
+    "eligible": false,
+    "exclusion_reasons": [
+      "nonunique_cell_identifier",
+      "incomplete_phosphorus_assay"
+    ]
+  },
+  {
+    "treatment": "Mid-P",
+    "day": 1,
+    "bottle": "a",
+    "n_cells": 32,
+    "n_missing_phosphorus": 0,
+    "conflicting_ids": [
+      "BIO5_EFB_EFB2_T4_B_1"
+    ],
+    "duplicate_ids": [
+      "BIO5_EFB_EFB2_T4_B_1"
+    ],
+    "eligible": false,
+    "exclusion_reasons": [
+      "identifier_field_conflict",
+      "nonunique_cell_identifier"
+    ]
+  },
+  {
+    "treatment": "Mid-P",
+    "day": 1,
+    "bottle": "c",
+    "n_cells": 34,
+    "n_missing_phosphorus": 2,
+    "conflicting_ids": [],
+    "duplicate_ids": [],
+    "eligible": false,
+    "exclusion_reasons": [
+      "incomplete_phosphorus_assay"
+    ]
+  },
+  {
+    "treatment": "Mid-P",
+    "day": 2,
+    "bottle": "c",
+    "n_cells": 35,
+    "n_missing_phosphorus": 1,
+    "conflicting_ids": [],
+    "duplicate_ids": [],
+    "eligible": false,
+    "exclusion_reasons": [
+      "incomplete_phosphorus_assay"
+    ]
+  },
+  {
+    "treatment": "Mid-P",
+    "day": 4,
+    "bottle": "b",
+    "n_cells": 35,
+    "n_missing_phosphorus": 1,
+    "conflicting_ids": [],
+    "duplicate_ids": [
+      "BIO5_EFB_EFB2_T4_B_1"
+    ],
+    "eligible": false,
+    "exclusion_reasons": [
+      "nonunique_cell_identifier",
+      "incomplete_phosphorus_assay"
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+README: Synechococcus cellular P allocation 
+
+This dataset contains measurements of cellular physiology, nutrient conditions, growth dynamics, and intracellular phosphorus (P) allocation in Synechococcus sp. WH8102 grown under controlled laboratory phosphorus treatments. Experiments were conducted in continuous cultures under three phosphorus conditions (Low-P, Mid-P, High-P), with multiple biological replicates and repeated sampling over time.
+
+The dataset is now provided as a single integrated table, combining population-level measurements with intracellular phosphorus pool quantifications. Each row represents a single sample defined by treatment, day, and biological replicate (bottle).
+
+Dataset structure
+
+The table includes two main types of measurements:
+
+Physiological and environmental variables
+Intracellular phosphorus pool composition
+Variables included
+Experimental metadata
+treatment: Phosphorus supply level (Low-P, Mid-P, High-P)
+day: Sampling day of the experiment
+bottle: Biological replicate identifier
+Cell physiology and environmental conditions
+cell_mL: Cell abundance (cells mL⁻¹)
+FLUO_RFU: In vivo fluorescence (RFU), proxy for biomass
+SRP_µM: Soluble reactive phosphorus concentration in the medium (µM)
+biovolume_µm3: Average cellular biovolume (µm³)
+growth_rates_1_day: Specific growth rate (d⁻¹), calculated from fluorescence changes and corrected for dilution
+Intracellular phosphorus pools
+
+Intracellular phosphorus is partitioned into major biochemical pools:
+
+ATP (adenosine triphosphate)
+DNA
+RNA
+P_lipid (phospholipid-associated phosphorus)
+free_Pi (inorganic phosphate)
+PolyP (polyphosphate storage)
+TPP (total particulate phosphorus)
+
+Each pool is reported in three complementary formats:
+
+_uM: bulk concentration in the culture (µM)
+_fmol_cell: per-cell quota (fmol cell⁻¹)
+_fmol_um3: normalized to cell biovolume (fmol µm⁻³)
+
+Notes
+
+All measurements originate from steady-state continuous culture experiments.
+Missing values indicate measurements not collected or lost for a given sample.
+Units are consistent across all variables and are explicitly provided in column names.
+
+Summary
+
+Together, these measurements provide a comprehensive view of how phosphorus availability shapes cellular physiology, growth, and intracellular phosphorus allocation in Synechococcus sp. WH8102, linking environmental nutrient conditions to cellular biochemical composition and population dynamics.
