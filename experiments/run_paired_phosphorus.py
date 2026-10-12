@@ -16,6 +16,7 @@ from fetch_paired_phosphorus import verify, encode
 
 CONFIG = "configs/paired_phosphorus_2026-10-12.json"
 FROZEN = [CONFIG, "docs/paired-phosphorus-protocol-2026-10-12.md",
+          "docs/paired-phosphorus-amendment-2026-10-12.md",
           "src/orthopolity/paired_phosphorus.py", "experiments/run_paired_phosphorus.py",
           "experiments/fetch_paired_phosphorus.py", "tests/test_paired_phosphorus.py"]
 

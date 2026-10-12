@@ -74,7 +74,6 @@ def predict(calibration, target):
     multiplier = calibration["observed_cells_ml"] * target["tpp_uM"] / calibration["tpp_uM"]
     predictions = {
         "fixed_quota": multiplier,
-        "volume_scaled_quota": multiplier * calibration["mean_volume_um3"] / target["mean_volume_um3"],
         "measured_quota": multiplier * calibration["mean_p_fg"] / target["mean_p_fg"],
     }
     return predictions
@@ -93,12 +92,11 @@ def analyse(cells, bulk, config):
         # Only complete, unambiguous samples reach this point. No per-cell quota
         # calculated from bulk chemistry divided by the response count is used.
         p_fg = mean(positive(r["P_fg_cell"]) for r in rows)
-        volume = mean(positive(r["Volume_um3"]) for r in rows)
         tpp = positive(target["TPP_value_uM"])
         observed = positive(target["cell"])
         raw_prediction = tpp * P_MOLAR_MASS * 1e6 / p_fg
         samples.append(dict(treatment=sample[0], day=sample[1], bottle=sample[2],
-                            n_xrma_cells=len(rows), mean_p_fg=p_fg, mean_volume_um3=volume,
+                            n_xrma_cells=len(rows), mean_p_fg=p_fg,
                             tpp_uM=tpp, observed_cells_ml=observed,
                             raw_capacity_cells_ml=raw_prediction,
                             raw_predicted_over_observed=raw_prediction / observed))

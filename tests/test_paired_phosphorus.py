@@ -11,7 +11,7 @@ class PhosphorusTest(unittest.TestCase):
         calibration = dict(observed_cells_ml=1000, tpp_uM=2, mean_p_fg=10, mean_volume_um3=1)
         target = dict(tpp_uM=1, mean_p_fg=2, mean_volume_um3=2)
         predictions = predict(calibration, target)
-        self.assertEqual(predictions, dict(fixed_quota=500, volume_scaled_quota=250, measured_quota=2500))
+        self.assertEqual(predictions, dict(fixed_quota=500, measured_quota=2500))
         # Target counts and any quota derived from them are unavailable inputs.
         target["observed_cells_ml"] = object()
         self.assertEqual(predict(calibration, target), predictions)
@@ -20,7 +20,7 @@ class PhosphorusTest(unittest.TestCase):
         calibration = dict(observed_cells_ml=100, tpp_uM=3, mean_p_fg=7, mean_volume_um3=2)
         target = dict(tpp_uM=5, mean_p_fg=9, mean_volume_um3=3)
         expected = predict(calibration, target)
-        for field in ("tpp_uM", "mean_p_fg", "mean_volume_um3"):
+        for field in ("tpp_uM", "mean_p_fg"):
             first, second = copy.deepcopy(calibration), copy.deepcopy(target)
             first[field] *= 1e6
             second[field] *= 1e6

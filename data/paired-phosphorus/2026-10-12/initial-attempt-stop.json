@@ -1,0 +1,10 @@
+{
+  "freeze_commit": "83a8c36",
+  "date": "2026-10-12",
+  "status": "stopped_before_count_prediction",
+  "exception": "ValueError: could not convert string to float: ''",
+  "location": "mean imaged volume for High-P/day 1/bottle c",
+  "exposure": "High-P phosphorus mean computed internally but not displayed; no numerical quota/volume/count or bulk-stock summary was returned; neither abundance response parsed numerically",
+  "reason": "Required volume comparator input missing; original stop rule obeyed",
+  "followup": "Separate dated pre-response amendment removes optional volume comparator; same sample gate and two remaining predictions"
+}

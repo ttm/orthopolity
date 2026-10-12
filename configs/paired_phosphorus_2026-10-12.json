@@ -31,7 +31,7 @@
   "pilot_factor": 1.25,
   "models": [
     "fixed_quota",
-    "volume_scaled_quota",
     "measured_quota"
-  ]
+  ],
+  "design_revision": 2
 }
