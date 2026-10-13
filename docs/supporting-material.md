@@ -2,7 +2,7 @@
 
 **Accounting proofs, physical derivations, observation models and complete comparisons**
 
-Prepared 10 October 2026; revised 12 October 2026 as a companion to
+Prepared 10 October 2026; revised 13 October 2026 as a companion to
 [the main article](paper.md).
 This document preserves the substantive technical material of the article at
 source commit **`f137d4efb050ccfcb5c5f814d32da651c645421c`**, supplemented by
@@ -2378,6 +2378,9 @@ No sensitivity replaces the primary result.
 | 295 K baseline sensitivity | 10/11 | 26/28 | 74.47 K | 79.77 K |
 | Publisher calibration-row mask | 11/11 | 28/28 | 67.85 K | 75.92 K |
 | All damping rows, secondary | 11/11 | 28/28 | 70.61 K | 75.92 K |
+
+*Table S21. Cantilever thermal forecasts on the same targets within each analysis.
+The primary score is conditional on physically admissible modes.*
 
 Errors average conditions within mode, modes within preparation, then the two
 preparations equally. Comparators share each analysis's exact scored rows.

@@ -2,7 +2,7 @@
 
 **Capacity, physical realizations, and effective-resource inference**
 
-> Research manuscript, revised 12 October 2026. Detailed derivations, complete
+> Research manuscript, revised 13 October 2026. Detailed derivations, complete
 > comparisons and analysis histories are retained in the [supporting material](supporting-material.md).
 > Empirical studies include exploration, locally frozen forecasts and retrospective
 > reanalyses; none is externally preregistered. Authorship and submission declarations
@@ -325,12 +325,7 @@ Let additive cell mass $x$ grow as $\dot x=gx$, with common deterministic $g$,
 conservative symmetric binary division and no death. In a balanced asynchronous
 population with a stationary lineage of physiologically equivalent daughters,
 established growth-fragmentation theory gives
-$p_L(x)=xp_P(x)/E_P[x]$ (Fontana, A., and Bellon, L. (2023). Linking fluctuation and dissipation in spatially
-extended out-of-equilibrium systems. *Physical Review E*, **107**, 034118.
-<https://doi.org/10.1103/PhysRevE.107.034118>. Data:
-<https://doi.org/10.5281/zenodo.7640708>.
-
-Genthon, 2022). For lineage birth mass $B$ and division
+$p_L(x)=xp_P(x)/E_P[x]$ (Genthon, 2022). For lineage birth mass $B$ and division
 mass $D$, stationarity requires $D\overset d=2B$. The fraction of cycles crossing
 size $x$ is
 
@@ -622,6 +617,11 @@ of a plankton community in a large lake. *Limnology and Oceanography*, 38, 112â€
 Gangan, M. S., and Athale, C. A. (2017). Threshold effect of growth rate on
 population variability of *Escherichia coli* cell lengths.
 *Royal Society Open Science*, 4, 160417. <https://doi.org/10.1098/rsos.160417>.
+
+Fontana, A., and Bellon, L. (2023). Linking fluctuation and dissipation in spatially
+extended out-of-equilibrium systems. *Physical Review E*, **107**, 034118.
+<https://doi.org/10.1103/PhysRevE.107.034118>. Data:
+<https://doi.org/10.5281/zenodo.7640708>.
 
 Genthon, A. (2022). Analytical cell size distribution: lineage-population bias
 and parameter inference. *Journal of the Royal Society Interface*, 19, 20220405.
