@@ -23,6 +23,9 @@ conflict discovered before fitting. Design `0428b64` and forecasts `6733362`
 precede numerical outcome evaluation; independent verification uses QR fitting
 and spatial integration. Main section 3.3 and supporting S5.13 carry the result.
 This is a useful constraint-transfer audit, not universal or blind confirmation.
+Offline reproduction matches forecasts, results, verification and presentation
+figure byte-for-byte. The rebuilt article remains 12 pages; supporting material
+is 53 pages. Both were visually checked and repeat-build hashes agree.
 
 **Requested research order:** physics, chemistry, broader natural phenomena,
 biology, then human phenomena including language/culture. The
