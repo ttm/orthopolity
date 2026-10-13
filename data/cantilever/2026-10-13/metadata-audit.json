@@ -1,0 +1,456 @@
+{
+  "column_convention": "MATLAB columns use one-based indexing; D denotes flexural modes and T denotes torsional modes.",
+  "doi": "10.5281/zenodo.7640708",
+  "exposure": {
+    "inspected": [
+      "publisher metadata",
+      "paper text, including reported findings",
+      "plotting script",
+      "MATLAB field names, dtypes and dimensions"
+    ],
+    "not_inspected": [
+      "numerical TFLUC response arrays",
+      "numerical TTHEO publisher prediction arrays"
+    ],
+    "scripts_executed": false
+  },
+  "interpretation_limits": [
+    "Loss angle, resonance frequency and fluctuation amplitude are extracted from shared spectra; independent observables do not imply independent statistical errors.",
+    "Equilibrium amplitudes are used for calibration under equipartition; their equality cannot be counted as a new empirical test.",
+    "Distributed homogeneous losses, a linear temperature profile and a quadratic local loss law are hypotheses of the forward model.",
+    "Archive contains reduced figure data rather than the individual time recordings or their joint covariance."
+  ],
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "mode_selection_provenance": "plots.m loops and article Figures 5--9. C30 flexural mode 3 has its own figure; it is not excluded. C30C contains additional archived columns not used in these published figures.",
+  "paper_doi": "10.1103/PhysRevE.107.034118",
+  "paper_version": "arXiv:2208.08356v2",
+  "publication_date": "2023-02-14",
+  "published_mode_selection": {
+    "C30": {
+      "flexural": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "torsional": [
+        1
+      ]
+    },
+    "C30C": {
+      "flexural": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "torsional": [
+        1
+      ],
+      "unplotted_archive_columns": {
+        "flexural": [
+          5
+        ],
+        "torsional": [
+          2
+        ]
+      }
+    }
+  },
+  "publisher_mask_policy": "Recorded only; no assignment is applied to the retained MATLAB archive or its schema audit. Analyses must declare whether they apply any publisher mask.",
+  "publisher_script_nan_assignments": [
+    "C30C.AVG_D_PHI(1,4) = NaN;",
+    "C30C.AVG_T_PHI(1:3,2)=NaN;"
+  ],
+  "schema": {
+    "C100": {
+      "AVG_D_PHI": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          10,
+          12
+        ],
+        "units": "dimensionless loss angle"
+      },
+      "AVG_D_PHI_ERR": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          10,
+          12
+        ],
+        "units": "dimensionless loss angle"
+      },
+      "AVG_D_TFLUC": {
+        "dtype": "float64",
+        "role": "response",
+        "shape": [
+          10,
+          12
+        ],
+        "units": "K"
+      },
+      "AVG_D_TFLUC_ERR": {
+        "dtype": "float64",
+        "role": "response",
+        "shape": [
+          10,
+          12
+        ],
+        "units": "K"
+      },
+      "AVG_TAVG": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          10
+        ],
+        "units": "K"
+      },
+      "AVG_TAVG_ERR": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          10
+        ],
+        "units": "K"
+      },
+      "AVG_TMAX": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          10
+        ],
+        "units": "K"
+      },
+      "AVG_TMAX_ERR": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          10
+        ],
+        "units": "K"
+      },
+      "AVG_T_PHI": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          10,
+          8
+        ],
+        "units": "dimensionless loss angle"
+      },
+      "AVG_T_PHI_ERR": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          10,
+          8
+        ],
+        "units": "dimensionless loss angle"
+      },
+      "AVG_T_TFLUC": {
+        "dtype": "float64",
+        "role": "response",
+        "shape": [
+          10,
+          8
+        ],
+        "units": "K"
+      },
+      "AVG_T_TFLUC_ERR": {
+        "dtype": "float64",
+        "role": "response",
+        "shape": [
+          10,
+          8
+        ],
+        "units": "K"
+      }
+    },
+    "C30": {
+      "AVG_D_PHI": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          11,
+          5
+        ],
+        "units": "dimensionless loss angle"
+      },
+      "AVG_D_PHI_ERR": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          11,
+          5
+        ],
+        "units": "dimensionless loss angle"
+      },
+      "AVG_D_TAVG": {
+        "dtype": "float64",
+        "role": "publisher_prediction_grid",
+        "shape": [
+          549
+        ],
+        "units": "K"
+      },
+      "AVG_D_TFLUC": {
+        "dtype": "float64",
+        "role": "response",
+        "shape": [
+          11,
+          5
+        ],
+        "units": "K"
+      },
+      "AVG_D_TFLUC_ERR": {
+        "dtype": "float64",
+        "role": "response",
+        "shape": [
+          11,
+          5
+        ],
+        "units": "K"
+      },
+      "AVG_D_TTHEO": {
+        "dtype": "float64",
+        "role": "publisher_prediction_excluded_from_forward_inputs",
+        "shape": [
+          549,
+          5
+        ],
+        "units": "K"
+      },
+      "AVG_TAVG": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          11
+        ],
+        "units": "K"
+      },
+      "AVG_TAVG_ERR": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          11
+        ],
+        "units": "K"
+      },
+      "AVG_TMAX": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          11
+        ],
+        "units": "K"
+      },
+      "AVG_TMAX_ERR": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          11
+        ],
+        "units": "K"
+      },
+      "AVG_T_PHI": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          11
+        ],
+        "units": "dimensionless loss angle"
+      },
+      "AVG_T_PHI_ERR": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          11
+        ],
+        "units": "dimensionless loss angle"
+      },
+      "AVG_T_TAVG": {
+        "dtype": "float64",
+        "role": "publisher_prediction_grid",
+        "shape": [
+          549
+        ],
+        "units": "K"
+      },
+      "AVG_T_TFLUC": {
+        "dtype": "float64",
+        "role": "response",
+        "shape": [
+          11
+        ],
+        "units": "K"
+      },
+      "AVG_T_TFLUC_ERR": {
+        "dtype": "float64",
+        "role": "response",
+        "shape": [
+          11
+        ],
+        "units": "K"
+      },
+      "AVG_T_TTHEO": {
+        "dtype": "float64",
+        "role": "publisher_prediction_excluded_from_forward_inputs",
+        "shape": [
+          549
+        ],
+        "units": "K"
+      }
+    },
+    "C30C": {
+      "AVG_D_PHI": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          7,
+          5
+        ],
+        "units": "dimensionless loss angle"
+      },
+      "AVG_D_PHI_ERR": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          7,
+          5
+        ],
+        "units": "dimensionless loss angle"
+      },
+      "AVG_D_TAVG": {
+        "dtype": "float64",
+        "role": "publisher_prediction_grid",
+        "shape": [
+          549
+        ],
+        "units": "K"
+      },
+      "AVG_D_TFLUC": {
+        "dtype": "float64",
+        "role": "response",
+        "shape": [
+          7,
+          5
+        ],
+        "units": "K"
+      },
+      "AVG_D_TFLUC_ERR": {
+        "dtype": "float64",
+        "role": "response",
+        "shape": [
+          7,
+          5
+        ],
+        "units": "K"
+      },
+      "AVG_D_TTHEO": {
+        "dtype": "float64",
+        "role": "publisher_prediction_excluded_from_forward_inputs",
+        "shape": [
+          549,
+          5
+        ],
+        "units": "K"
+      },
+      "AVG_TAVG": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          7
+        ],
+        "units": "K"
+      },
+      "AVG_TAVG_ERR": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          7
+        ],
+        "units": "K"
+      },
+      "AVG_TMAX": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          7
+        ],
+        "units": "K"
+      },
+      "AVG_TMAX_ERR": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          7
+        ],
+        "units": "K"
+      },
+      "AVG_T_PHI": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          7,
+          2
+        ],
+        "units": "dimensionless loss angle"
+      },
+      "AVG_T_PHI_ERR": {
+        "dtype": "float64",
+        "role": "potential_predictor",
+        "shape": [
+          7,
+          2
+        ],
+        "units": "dimensionless loss angle"
+      },
+      "AVG_T_TAVG": {
+        "dtype": "float64",
+        "role": "publisher_prediction_grid",
+        "shape": [
+          549
+        ],
+        "units": "K"
+      },
+      "AVG_T_TFLUC": {
+        "dtype": "float64",
+        "role": "response",
+        "shape": [
+          7,
+          2
+        ],
+        "units": "K"
+      },
+      "AVG_T_TFLUC_ERR": {
+        "dtype": "float64",
+        "role": "response",
+        "shape": [
+          7,
+          2
+        ],
+        "units": "K"
+      },
+      "AVG_T_TTHEO": {
+        "dtype": "float64",
+        "role": "publisher_prediction_excluded_from_forward_inputs",
+        "shape": [
+          549,
+          2
+        ],
+        "units": "K"
+      }
+    }
+  },
+  "schema_version": 1,
+  "source_concept_id": "7640707",
+  "source_version_id": "7640708",
+  "title": "A. Fontana and L. Bellon, Dataset for Phys. Rev. E 107, 034118 (2023) : Linking fluctuation and dissipation in spatially extended out-of-equilibrium systems",
+  "unit_provenance": "Article definitions and plot axis labels: TAVG, TMAX, TFLUC, TTHEO and their uncertainties are kelvin; PHI and its uncertainty are dimensionless loss angles."
+}

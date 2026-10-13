@@ -1,6 +1,6 @@
 # Project status and handoff
 
-Last updated 12 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 13 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
@@ -11,6 +11,19 @@ registry verifies **37 runs and 902 file references**, including the Italian sim
 retrospective chemostat diagnosis, independent-assay pilot and field-stock audit. The broader programme and subsequent
 studies are in [research-brief.md](research-brief.md) and
 [ongoing-research.md](ongoing-research.md).
+
+**13 October, physics-first continuation:** the previous field audit and article
+were pushed to `origin/main` at `93ffa06`. Following the author’s requested order
+(physics, chemistry, broader nature, biology, human phenomena), the
+[accessible physics-source audit](physics-candidate-audit-2026-10-12.md) selects
+Fontana and Bellon’s heated-cantilever data. The
+[local protocol](cantilever-protocol-2026-10-13.md) fixes a cold-to-hot damping
+and mode-energy prediction with all eleven published mode cases retained.
+Predictor inspection found a 295 K paper / 300 K archive convention discrepancy;
+300 K is primary and 295 K a fixed, unmodified-data sensitivity. Synthetic
+checks precede real fits; the analysis and forecasts are committed separately
+before fluctuation evaluation. This is retrospective cross-observable transfer,
+conditional on equilibrium calibration, rather than a new equipartition test.
 
 **Latest, 12 October:** the [field-quota audit](field-resources-results-2026-10-12.md)
 matches separately assayed cyanobacterial quotas to ambient counts and bulk
