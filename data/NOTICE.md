@@ -170,3 +170,17 @@ with version v202112.1 and retain NCEDC/NCSS/NCSN attribution. Its raw catalogue
 remains local and ignored. No blanket reuse license was inferred for NCAeqDD;
 the Italian sources' CC BY terms do not extend to it or to the retained author
 manuscript. The repository software license does not replace source-specific terms.
+
+## Heated-cantilever damping and fluctuation data (13 October 2026)
+
+`cantilever/2026-10-13/` retains Alex Fontana and Ludovic Bellon's dataset for
+*Linking fluctuation and dissipation in spatially extended out-of-equilibrium
+systems*, Physical Review E 107, 034118 (2023), DOI
+<https://doi.org/10.1103/PhysRevE.107.034118>. Pinned Zenodo version 7640708,
+<https://doi.org/10.5281/zenodo.7640708>, is licensed CC BY 4.0 by its publisher
+metadata. `data.mat`, `plots.m` and `Functions.zip` are unchanged original
+files; scripts are retained for source auditing, not executed or relicensed.
+The retained arXiv v2 HTML also carries CC BY 4.0. Metadata, acquisition receipts
+and hashes identify the exact files. The derived audit, forecasts, verification
+and plots are this project's reanalysis, with source conventions and failures
+recorded in `docs/cantilever-results-2026-10-13.md`.

@@ -1,0 +1,87 @@
+{
+  "analyses": [
+    {
+      "all_phi": false,
+      "name": "primary",
+      "publisher_mask": false,
+      "t0_K": 300
+    },
+    {
+      "all_phi": false,
+      "name": "paper_baseline_sensitivity",
+      "publisher_mask": false,
+      "t0_K": 295
+    },
+    {
+      "all_phi": false,
+      "name": "publisher_mask_sensitivity",
+      "publisher_mask": true,
+      "t0_K": 300
+    },
+    {
+      "all_phi": true,
+      "name": "all_damping_secondary",
+      "publisher_mask": false,
+      "t0_K": 300
+    }
+  ],
+  "date": "2026-10-13",
+  "inputs": [
+    {
+      "path": "data/cantilever/2026-10-13/Functions.zip",
+      "sha256": "dc55a43b9bef8eeec56c665da5497634761e55d55be52191d5045bbf45e10372"
+    },
+    {
+      "path": "data/cantilever/2026-10-13/acquisition.json",
+      "sha256": "1ed3b05e9c2049838f42b46b65590a82e51dfd05900e0c80c82ef8abc227e27e"
+    },
+    {
+      "path": "data/cantilever/2026-10-13/data.mat",
+      "sha256": "1d7baef0e229f99292a39713dee0e1983c3246d317e416307894bb9968db7568"
+    },
+    {
+      "path": "data/cantilever/2026-10-13/metadata-audit.json",
+      "sha256": "99eedf475c3edd129f7234628a32d8955d5c6c7a731119671dcf98cf484724be"
+    },
+    {
+      "path": "data/cantilever/2026-10-13/paper.html",
+      "sha256": "43e65f5c34251af04387bb4cd0731a685445d4dd62c3dd16204c964ba05372fa"
+    },
+    {
+      "path": "data/cantilever/2026-10-13/plots.m",
+      "sha256": "bb20d13f30a09c0fc6c271c58001cd25b26b1c09d592e65223a26f28a5e7fc1c"
+    },
+    {
+      "path": "data/cantilever/2026-10-13/record.json",
+      "sha256": "d508c7b3c206a09cb1b5ba810f95a4559eba73e581355b88f48a541d8fe4395b"
+    }
+  ],
+  "modes": {
+    "C30": {
+      "flexural": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "torsional": [
+        1
+      ]
+    },
+    "C30C": {
+      "flexural": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "torsional": [
+        1
+      ]
+    }
+  },
+  "quadrature_order": 256,
+  "schema_version": 1,
+  "t0_convention": "Archive300K primary; paper295K sensitivity without response rescaling"
+}

@@ -1,0 +1,75 @@
+{
+  "chronology": "Published findings and predictor arrays exposed before freeze; numerical damping fitted after freeze; fluctuation outcomes scored after prediction commit.",
+  "freeze_commit": "0428b64f709783e21addde91bb66335f1868bee3",
+  "inputs": [
+    {
+      "path": "data/cantilever/2026-10-13/Functions.zip",
+      "sha256": "dc55a43b9bef8eeec56c665da5497634761e55d55be52191d5045bbf45e10372"
+    },
+    {
+      "path": "data/cantilever/2026-10-13/acquisition.json",
+      "sha256": "1ed3b05e9c2049838f42b46b65590a82e51dfd05900e0c80c82ef8abc227e27e"
+    },
+    {
+      "path": "data/cantilever/2026-10-13/data.mat",
+      "sha256": "1d7baef0e229f99292a39713dee0e1983c3246d317e416307894bb9968db7568"
+    },
+    {
+      "path": "data/cantilever/2026-10-13/metadata-audit.json",
+      "sha256": "99eedf475c3edd129f7234628a32d8955d5c6c7a731119671dcf98cf484724be"
+    },
+    {
+      "path": "data/cantilever/2026-10-13/paper.html",
+      "sha256": "43e65f5c34251af04387bb4cd0731a685445d4dd62c3dd16204c964ba05372fa"
+    },
+    {
+      "path": "data/cantilever/2026-10-13/plots.m",
+      "sha256": "bb20d13f30a09c0fc6c271c58001cd25b26b1c09d592e65223a26f28a5e7fc1c"
+    },
+    {
+      "path": "data/cantilever/2026-10-13/record.json",
+      "sha256": "d508c7b3c206a09cb1b5ba810f95a4559eba73e581355b88f48a541d8fe4395b"
+    }
+  ],
+  "prediction_commit": "67333626178194be83b162d5e8b062e62fff67c7",
+  "predictions": {
+    "path": "results/cantilever-forecast-2026-10-13/predictions.json",
+    "sha256": "195accca9bb5e20de3090f43a4c49c0c87740722f2689c1c79624dba6c8ed308"
+  },
+  "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "sources": [
+    {
+      "path": "configs/cantilever_2026-10-13.json",
+      "sha256": "a6f74c63316323d6be94e44b41752686aefa894f75d0dedd5da61a6df72be4f7"
+    },
+    {
+      "path": "docs/cantilever-protocol-2026-10-13.md",
+      "sha256": "fa1a109457caacb5119f2ec2068e08f37dd32ea14935eb14a61245991fcd3982"
+    },
+    {
+      "path": "src/orthopolity/cantilever.py",
+      "sha256": "6d18cc9f78de4657b3d21ecd56992ea400478d1d538b18bc356d0c18517a2469"
+    },
+    {
+      "path": "tests/test_cantilever.py",
+      "sha256": "14989fa21a54113bdc6a7c9fe23713038b3833e15cb9681ea397347d2f5cfdf9"
+    },
+    {
+      "path": "experiments/run_cantilever.py",
+      "sha256": "a2e10a9033365c53da6783e1137ce520c523e23a804bbe1462585907d89e292c"
+    },
+    {
+      "path": "experiments/fetch_cantilever.py",
+      "sha256": "1f33ab5798cad92ec93dadcef66ec3ec1d54fdcedbe9b34101cf1b4d0806d86b"
+    },
+    {
+      "path": "tests/test_cantilever_runner.py",
+      "sha256": "4ba414d37e7aaf16bac1c0441bea9386d281af597a813287e5aff8af360cdcec"
+    },
+    {
+      "path": "data/cantilever/2026-10-13/predictor-audit.json",
+      "sha256": "97728de1db2a445824677104e729e90bb893feb620399ca15d2395e8afd4125a"
+    }
+  ],
+  "uncertainty": "Reported errors retained; no joint covariance, significance test or full prediction interval."
+}

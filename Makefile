@@ -34,6 +34,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: chemostat-capacity chemostat-capacity-registry
 .PHONY: paired-phosphorus paired-phosphorus-sources paired-phosphorus-registry
 .PHONY: field-resources field-resources-sources field-resources-registry
+.PHONY: cantilever-sources cantilever-transfer cantilever-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -66,9 +67,23 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/lake-metric-followup-2026-10-09/interval-comparison.png \
  results/lake-metric-followup-2026-10-09/survival.png \
  results/italian-magnitude-validation-2026-10-10/validation.png \
- results/chemostat-capacity-followup-2026-10-10/capacity.png
+ results/chemostat-capacity-followup-2026-10-10/capacity.png \
+ results/cantilever-transfer-2026-10-13/cantilever-presentation.png
 
 all: data test analyses
+
+cantilever-sources: ## verify the pinned mechanical damping and thermal-noise archive
+	$(PY) experiments/fetch_cantilever.py --stage verify
+
+cantilever-transfer: cantilever-sources ## replay sealed cold-to-hot forecasts in fresh directories
+	$(PY) experiments/run_cantilever.py --stage predict --freeze-commit 0428b64 --output $(STUDY_OUTPUT_ROOT)/cantilever-forecast
+	cmp results/cantilever-forecast-2026-10-13/predictions.json $(STUDY_OUTPUT_ROOT)/cantilever-forecast/predictions.json
+	$(PY) experiments/run_cantilever.py --stage evaluate --freeze-commit 0428b64 --prediction-commit 6733362 --predictions results/cantilever-forecast-2026-10-13/predictions.json --output $(STUDY_OUTPUT_ROOT)/cantilever-transfer
+	$(PY) experiments/verify_cantilever.py --directory $(STUDY_OUTPUT_ROOT)/cantilever-transfer --write
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/plot_cantilever.py --result $(STUDY_OUTPUT_ROOT)/cantilever-transfer/result.json --output $(STUDY_OUTPUT_ROOT)/cantilever-transfer/cantilever-presentation.png
+
+cantilever-registry: ## append the retained comparison with all physical failures
+	$(PY) experiments/register_cantilever.py
 
 field-resources-sources: ## verify sorted quotas, ambient counts and bulk-stock sources
 	$(PY) experiments/fetch_field_resources.py --stage verify

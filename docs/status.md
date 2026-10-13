@@ -6,24 +6,30 @@ to the files that hold the details.
 
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
-the package layout for all runners. The suite now passes **531 tests**; the
-registry verifies **37 runs and 902 file references**, including the Italian simulation,
-retrospective chemostat diagnosis, independent-assay pilot and field-stock audit. The broader programme and subsequent
+the package layout for all runners. The suite now passes **558 tests**; the
+registry verifies **38 runs and 929 file references**, including the Italian simulation,
+retrospective chemostat diagnosis, independent-assay pilot, field-stock audit and cantilever transfer. The broader programme and subsequent
 studies are in [research-brief.md](research-brief.md) and
 [ongoing-research.md](ongoing-research.md).
 
-**13 October, physics-first continuation:** the previous field audit and article
-were pushed to `origin/main` at `93ffa06`. Following the author’s requested order
-(physics, chemistry, broader nature, biology, human phenomena), the
-[accessible physics-source audit](physics-candidate-audit-2026-10-12.md) selects
-Fontana and Bellon’s heated-cantilever data. The
-[local protocol](cantilever-protocol-2026-10-13.md) fixes a cold-to-hot damping
-and mode-energy prediction with all eleven published mode cases retained.
-Predictor inspection found a 295 K paper / 300 K archive convention discrepancy;
-300 K is primary and 295 K a fixed, unmodified-data sensitivity. Synthetic
-checks precede real fits; the analysis and forecasts are committed separately
-before fluctuation evaluation. This is retrospective cross-observable transfer,
-conditional on equilibrium calibration, rather than a new equipartition test.
+**Latest, 13 October:** the [cantilever transfer](cantilever-results-2026-10-13.md)
+is complete. Cold-condition damping predicts hot-condition damping and mode
+energy under a fixed local-loss model. Ten of eleven primary modes qualify
+physically; thermal MAE is 74.00 K versus 78.94 K for uniform local loss on the
+same 26 targets. One fit requires negative local dissipation; several others
+miss strongly despite good damping predictions. A source point below its
+published plotting range is retained, alongside the 295/300 K convention
+conflict discovered before fitting. Design `0428b64` and forecasts `6733362`
+precede numerical outcome evaluation; independent verification uses QR fitting
+and spatial integration. Main section 3.3 and supporting S5.13 carry the result.
+This is a useful constraint-transfer audit, not universal or blind confirmation.
+
+**Requested research order:** physics, chemistry, broader natural phenomena,
+biology, then human phenomena including language/culture. The
+[physics-source audit](physics-candidate-audit-2026-10-12.md) retains the alternatives.
+The next bounded search should prioritize a chemical system with independently
+specified stoichiometry/chemical potentials or transport constraints and an
+unused response target. Resolve source and calibration conventions before fitting.
 
 **Latest, 12 October:** the [field-quota audit](field-resources-results-2026-10-12.md)
 matches separately assayed cyanobacterial quotas to ambient counts and bulk
@@ -154,6 +160,7 @@ discards the authors' programme.
 | 10–11 Oct 2026 | Main article/support reorganization and chemostat failure diagnosis | Title/general-law ambition retained; technical details preserved; arbitrary C:N prices insufficient in 8/12 vessels under transferred quotas; 500 tests, 35 records |
 | 12 Oct 2026 | Independent phosphorus assays, sample audit and count-transfer pilot | One qualifying test culture; measured quota worsens prediction; stock/quota/count calibration does not transfer; 508 tests, 36 records |
 | 12 Oct 2026 | Sorted field quotas, ambient counts and bulk-stock compatibility | 18/18 primary C/N comparisons compatible; one slight excess in date sensitivity; P unit concern retained; 531 tests, 37 records |
+| 13 Oct 2026 | Frozen cantilever damping-to-energy extrapolation | 10/11 modes physically admissible; 74.00 K thermal MAE vs 78.94 K geometry-only; strong mode failures retained; 558 tests, 38 records |
 
 ## 3. Results to carry forward
 
@@ -200,6 +207,11 @@ grow proportionally sit near ζ = 1; event catalogues and cascades mostly below 
 
 ## 4. Current assessment
 
+The cantilever study now adds real-physics extrapolation with both conditional
+successes and clear local-model failures. Its global damping/thermal mismatch
+makes spatial constraints testable, while the modest aggregate improvement and
+source qualifications prevent treating it as decisive general-law evidence.
+
 The unified repository contains mathematical foundations, explicit mechanisms,
 resource-transfer applications and negative or qualified empirical comparisons.
 The [research brief](research-brief.md) explains the general-law programme;
@@ -239,6 +251,15 @@ The [research brief](research-brief.md) explains the general-law programme;
   allocation test; fitting it from the observed counts would be circular.
 
 ## 5. Next steps, in priority order
+
+**Author-directed domain sequence takes priority:** the first independent physics
+forecast is now complete. Seek a chemical forward prediction next, then broader
+nature, biology and human phenomena. Require independent resource/constraint
+inputs, a genuine unused observable, competing predictions and reachable data;
+do not count mass-balance identities or target-calibrated equilibrium constants
+as confirmation. The cantilever follow-up would require independently measured
+spatial dissipation or resolved raw calibration, not extra fitting flexibility.
+The existing candidate repairs below remain available in that sequence.
 
 1. **Turn a failure explanation into a new prediction.** The chemostat bound
    rules out price adjustment alone under the recorded assumptions. Seek

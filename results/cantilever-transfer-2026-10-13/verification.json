@@ -1,0 +1,14 @@
+{
+  "all_mode_membership_physical_gates_comparators_and_scores_checked": true,
+  "checked_analysis_modes": 44,
+  "checked_analysis_targets": 112,
+  "checked_prediction_seal_numbers": 2829,
+  "committed_prediction_seal_verified": true,
+  "execution_freeze_verified": true,
+  "independently_checked_numbers": 4811,
+  "input_checksums_verified": true,
+  "maximum_absolute_discrepancy": 1.6844978745211847e-09,
+  "maximum_relative_discrepancy": 2.7404054169526363e-09,
+  "method": "Independent roots/adaptive quadrature, QR weighted fits, analytic local/global extrema, direct spatial integration and source-cell outcome replay; no production-module import or publisher TTHEO use",
+  "verified": true
+}

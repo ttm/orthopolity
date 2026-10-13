@@ -34,8 +34,16 @@ retained history; neither mechanism proves external preregistration or blinding.
 
 ## Catalogue
 
-As of 12 October 2026 the registry verifies **37 records and 902 file references**.
-The latest entry, `field-resources-2026-10-12`, records the
+As of 13 October 2026 the registry verifies **38 records and 929 file references**.
+The latest entry, `cantilever-transfer-2026-10-13`, records the
+[physics extrapolation](cantilever-results-2026-10-13.md): 10/11 primary modes
+physically admissible, conditional thermal MAE 74.00 K versus 78.94 K for uniform
+local loss. One local-loss failure and large mode-specific errors are preserved,
+as are the baseline convention and archived plotting qualifications. The previous
+37 records remain byte-for-byte unchanged. The presentation PNG wraps the footer;
+the first registered figure and source snapshot are preserved.
+
+The preceding entry, `field-resources-2026-10-12`, records the
 [field-quota compatibility audit](field-resources-results-2026-10-12.md).
 All 18 primary C/N comparisons satisfy a conservative partial-stock bound;
 one of 15 additional date-offset C/N comparisons exceeds it by 5.5%. Its literal

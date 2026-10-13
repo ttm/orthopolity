@@ -2316,6 +2316,109 @@ necessary for a natural-community allocation test. Sorting and shared assay
 effects, nominal sample identity, missingness and unresolved units cannot be
 replaced by a target-fitted resource or calibration.
 
+### S5.13. Damping-calibrated forecasts of cantilever mode energy
+
+The resource is mean harmonic energy, with potential energy per mode coordinate
+$k_B T_{\rm fluc}/2$; the reference measure counts specified mechanical modes.
+Fontana and Bellon (2023) provide reduced damping and fluctuation measurements
+for heated cantilevers. Their extended fluctuation--dissipation relation is
+
+$$T_{\rm fluc}=\int_0^1 T(z)w(z)\,dz,\qquad
+w(z)=\frac{d(z)\rho(z)}{\int_0^1 d(u)\rho(u)\,du},$$
+
+where $\rho$ is normalized squared mechanical strain and $d$ is local loss.
+The known physics supplies the prediction; this is not a consequence of neutral
+allocation alone. It identifies how a thermal gradient and spatial coupling
+change mode energies before those energies are fitted.
+
+Our [protocol](cantilever-protocol-2026-10-13.md) was committed at `0428b64`
+before numerical damping fits; predictions were sealed at `6733362` before
+scoring numerical fluctuation responses. Published qualitative results were
+already known, including problematic modes. No publisher theoretical curve was
+used as input or validation oracle. The reduced archive inherits equilibrium
+normalization under equipartition and common spectral fits, so this is a
+retrospective transfer conditional on calibration, not statistically independent
+measurements or a new equilibrium test.
+
+For a linear temperature profile $T=T_0+\Delta z$ and local loss
+$d=A+B\Delta z+C\Delta^2z^2$, define
+$\mu_r=\int_0^1 z^r\rho(z)\,dz$. Global damping has the quadratic form
+$\Phi=a+b\Delta+c\Delta^2$, with
+$A=a$, $B=b/\mu_1$, $C=c/\mu_2$. Thus
+
+$$T_{\rm pred}=T_0+\Delta
+\frac{a\mu_1+b\Delta\mu_2/\mu_1+c\Delta^2\mu_3/\mu_2}
+{a+b\Delta+c\Delta^2}.$$
+
+Use clamped-free beam curvature for flexure and
+$\rho(z)=2\cos^2((m-1/2)\pi z)$ for torsion. The denominator is fitted damping,
+never observed heldout damping. Exact quadratic extrema must give nonnegative
+local loss throughout the complete temperature domain, not merely positive
+global damping. Undefined or physically invalid predictions remain failures.
+
+The lower eight of eleven C30 conditions and five of seven C30C conditions
+calibrate inverse-variance weighted quadratic fits. All eleven published mode
+cases remain: C30 flexural 1--5 plus torsional 1; C30C flexural 1--4 plus
+torsional 1. The remaining three/two conditions yield 28 targets. The source
+identifies C30C as the coated C30 sample; these are two preparations, not two
+independent specimens. Missing raw ramp identifiers and covariance prevent
+independent-replicate significance claims.
+
+A predictor-only audit found the article's 295 K base conflicts with the
+archive's 300 K plotting and temperature-column convention. Primary uses
+$T_0=300$ K, $\Delta=2(T_{\rm avg}-T_0)$; a fixed 295 K sensitivity leaves
+observations unchanged. It is not a recalibration of their unknown raw
+normalization. The publisher-mask sensitivity removes the first C30C
+flexural-4 calibration loss, matching an unexplained plotting-script mask.
+No sensitivity replaces the primary result.
+
+| Frozen analysis | Admissible modes | Scored targets | Thermal MAE | Uniform-loss MAE |
+|---|---:|---:|---:|---:|
+| Primary, 300 K | 10/11 | 26/28 | 74.00 K | 78.94 K |
+| 295 K baseline sensitivity | 10/11 | 26/28 | 74.47 K | 79.77 K |
+| Publisher calibration-row mask | 11/11 | 28/28 | 67.85 K | 75.92 K |
+| All damping rows, secondary | 11/11 | 28/28 | 70.61 K | 75.92 K |
+
+Errors average conditions within mode, modes within preparation, then the two
+preparations equally. Comparators share each analysis's exact scored rows.
+Primary spatial-average and cold-clamp errors are 78.77 K and 163.39 K.
+The primary damping mean absolute relative error, over all eleven fits, is
+11.78%. The all-damping secondary has no heldout damping claim. No nominal
+p-values or full prediction intervals are justified by the reduced archive.
+
+C30 flexural modes 4 and 5 forecast damping within 1.76% and 2.86%, with thermal
+MAEs 11.39 K and 6.51 K. C30 flexural 3 instead has 34.98% damping error and
+255.57 K thermal error. C30C flexural 3 predicts damping within 3.26% yet misses
+thermal motion by 180.85 K; C30C torsional 1 gives 2.56% and 66.11 K.
+Global damping agreement therefore cannot by itself justify the assumed spatial
+weighting. C30C flexural 4 requires negative local loss in the primary, despite
+positive global damping; the masked sensitivity repairs that case only.
+
+A post-response source check qualifies the C30C flexural-3 discrepancy. Its final
+archived temperature is $161.12\pm81.79$ K, against a 466.39 K forecast.
+The plotting script correctly maps this column to mode 3, but sets the panel's
+range to 250--550 K; the entire displayed error bar falls below it. No response
+mask or justified correction was found. Retaining this point is necessary for
+an archive audit, but its origin needs raw data or author clarification before
+claiming a new physical violation. Neither it nor the other finite observation
+below the model's base was excluded from scoring.
+
+![Heated-cantilever hot-condition forecasts and mode-specific errors](../results/cantilever-transfer-2026-10-13/cantilever-presentation.png)
+
+**Figure S13.** Primary forecasts from colder-condition damping. Points show
+archived fluctuation temperatures and reported errors; lines show sealed
+forecasts. Shading marks the allowed temperature envelope for nonnegative local
+loss. The dashed C30C flexural-4 curve is retained algebra with invalid local
+loss. Its failed case remains visible in the error comparison. Shared errors
+are not independent confidence intervals.
+
+The [full report](cantilever-results-2026-10-13.md) includes all mode errors,
+three comparators, four frozen analyses and the raw plotting discrepancy.
+Independent QR fitting and adaptive spatial integration verify all results,
+physical gates and source/forecast hashes. This study adds an executable
+natural-physics transfer and failure diagnosis. Its modest conditional gain is
+not evidence of uniform predictive success or universal equal allocation.
+
 ## References
 
 Arranz, I., Fournier, B., Lester, N. P., Shuter, B. J., and Peres-Neto, P. R. (2022).
@@ -2384,6 +2487,11 @@ of a plankton community in a large lake. *Limnology and Oceanography*, 38, 112â€
 Gangan, M. S., and Athale, C. A. (2017). Threshold effect of growth rate on
 population variability of *Escherichia coli* cell lengths.
 *Royal Society Open Science*, 4, 160417. <https://doi.org/10.1098/rsos.160417>.
+
+Fontana, A., and Bellon, L. (2023). Linking fluctuation and dissipation in spatially
+extended out-of-equilibrium systems. *Physical Review E*, **107**, 034118.
+<https://doi.org/10.1103/PhysRevE.107.034118>. Data:
+<https://doi.org/10.5281/zenodo.7640708>.
 
 Genthon, A. (2022). Analytical cell size distribution: lineage-population bias
 and parameter inference. *Journal of the Royal Society Interface*, 19, 20220405.

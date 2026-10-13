@@ -306,13 +306,31 @@ this calculation preserves established observational evidence and its correlated
 errors, without claiming a new independent confirmation (Fixsen et al., 1996).
 The full derivation and spectrum are retained in the supporting material.
 
+A nonequilibrium test asks more: can independently fitted damping predict mode
+energy under a temperature gradient? Using Fontana and Bellon's (2023) cantilever
+archive, we fixed a quadratic local-loss model on colder conditions and sealed
+hot-condition forecasts before evaluating fluctuations. Ten of eleven mode fits
+have nonnegative inferred local loss. On their 26 targets, mean absolute error
+is 74.0 K, versus 78.9 K for uniform local loss on the same modes. Individual
+transfers range from close agreement to large errors; one fit requires negative
+local dissipation. Thus measured global damping does not by itself identify an
+adequate spatial energy weighting. The retrospective design, calibration
+conventions, all failures and a source point hidden by the plotting range are
+reported in supporting section S5.13. Equilibrium normalization was inherited,
+so this is not a new test of equipartition.
+
 ### 3.4 Cell growth and division: a measurable constraint envelope
 
 Let additive cell mass $x$ grow as $\dot x=gx$, with common deterministic $g$,
 conservative symmetric binary division and no death. In a balanced asynchronous
 population with a stationary lineage of physiologically equivalent daughters,
 established growth-fragmentation theory gives
-$p_L(x)=xp_P(x)/E_P[x]$ (Genthon, 2022). For lineage birth mass $B$ and division
+$p_L(x)=xp_P(x)/E_P[x]$ (Fontana, A., and Bellon, L. (2023). Linking fluctuation and dissipation in spatially
+extended out-of-equilibrium systems. *Physical Review E*, **107**, 034118.
+<https://doi.org/10.1103/PhysRevE.107.034118>. Data:
+<https://doi.org/10.5281/zenodo.7640708>.
+
+Genthon, 2022). For lineage birth mass $B$ and division
 mass $D$, stationarity requires $D\overset d=2B$. The fraction of cycles crossing
 size $x$ is
 
@@ -350,6 +368,7 @@ Freezing a later analysis does not erase earlier exposure.
 | Size-selected algal cultures | Equal-biovolume forecasts transfer across selection treatments | Separate populations; binding resource unmeasured |
 | Linguistic genre transfer | Combined letter/phoneme cost improves over letter-only models | Lexical frequencies predict better; physical cost unidentified |
 | Bacterial summary transfer | Population mean predictions are close | Variability and the joint comparison fail |
+| Cantilever energy transfer | Some damping-to-energy forecasts transfer | Small average gain; spatial-loss and observation failures remain |
 | Chemostat nutrient pulse | Frozen two-budget reweighting fails | Constraint response needs explanation |
 | Flare and lake geometry | Predicted exponents excluded or equivalence unresolved | Measurement and dependence affect interpretation |
 | Seismicity | Qualification or estimator prerequisites fail | No real b--dimension comparison established |
@@ -506,8 +525,8 @@ and population sampling are examples. The correction is justified independently
 of the desired result. Second, a physical constraint can produce a predicted
 non-neutral profile: measured absorption, quantum level spacing and birth-cycle
 crossings supply such explanations. Third, a specified resource model can fail
-its own forecast. The chemostat reweighting failure and bacterial variability
-error remain failures until a revised explanation succeeds on additional evidence.
+its own forecast. The chemostat reweighting, bacterial variability and cantilever
+spatial-loss errors remain failures until a revised explanation succeeds on additional evidence.
 
 Observed inequality is therefore not by itself a diagnosis. Conversely, an
 arbitrary choice of resource, measure or constraint can make any positive profile
