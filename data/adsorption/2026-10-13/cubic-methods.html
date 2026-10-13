@@ -1,0 +1,1049 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Cubic Equations of State (Cubic) &#8212; IDAES v2.13.0</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../_static/styles/theme.css?digest=cb8930eaaf36d9849b67" rel="stylesheet" />
+<link href="../../../../../_static/styles/pydata-sphinx-theme.css?digest=cb8930eaaf36d9849b67" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/css/custom.css?v=228f40dd" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/css/badge_only.css?v=cfef51d4" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../../../../_static/scripts/fontawesome.js?digest=cb8930eaaf36d9849b67"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../_static/scripts/bootstrap.js?digest=cb8930eaaf36d9849b67" />
+<link rel="preload" as="script" href="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=cb8930eaaf36d9849b67" />
+
+    <script src="../../../../../_static/documentation_options.js?v=dca6a994"></script>
+    <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'explanations/components/property_package/general/eos/cubic';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="../../../../../_static/idaes-logo.ico"/>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <link rel="next" title="State Definition" href="../state_definition.html" />
+    <link rel="prev" title="Ideal Gases and Liquids (Ideal)" href="ideal.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="2.13.0" />
+  
+    
+    <script src="../../../../../_static/searchtools.js"></script>
+    <script src="../../../../../_static/language_data.js"></script>
+    <script src="../../../../../searchindex.js"></script>
+  
+  <script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="idaes-pse" /><meta name="readthedocs-version-slug" content="stable" /><meta name="readthedocs-resolver-filename" content="/explanations/components/property_package/general/eos/cubic.html" /><meta name="readthedocs-http-status" content="200" /></head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../../../_static/idaes-logo-text.png" class="logo__image only-light" alt="IDAES v2.13.0 - Home"/>
+    <img src="../../../../../_static/idaes-logo-text.png" class="logo__image only-dark pst-js-only" alt="IDAES v2.13.0 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../tutorials/index.html">Getting Started</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../tutorials/getting_started/index.html">Getting Started</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../tutorials/getting_started/linux.html">Linux Installation Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../tutorials/getting_started/windows.html">Windows Installation Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../tutorials/getting_started/mac_osx.html">Mac/OSX Installation Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../tutorials/getting_started/binaries.html">Binary Packages</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../tutorials/tutorials_examples.html">Tutorials and Examples</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../tutorials/advanced_install/index.html">Advanced User Installation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../tutorials/advanced_install/terms_commands.html">Terminology and Commands</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../how_to_guides/index.html">How-To-Guides</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../how_to_guides/custom_models/general_model_development.html">Developing Custom Models</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../how_to_guides/custom_models/unit_model_development.html">Custom Unit Models</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../how_to_guides/custom_models/property_package_development.html">Custom Property Packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../how_to_guides/custom_models/reaction_package_development.html">Custom Reaction Packages</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../how_to_guides/workflow/index.html">Workflow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../how_to_guides/workflow/general.html">General Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../how_to_guides/workflow/data_rec_parmest.html">Data Reconciliation and Parameter Estimation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../how_to_guides/opt_dependencies.html">Installing optional dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../how_to_guides/versioned_idaes_install.html">Installing Specific IDAES Versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../how_to_guides/structfs/index.html">Flowsheet Runner</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../../../index.html">Explanations</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../../why_idaes.html">Why IDAES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../concepts.html">Concepts</a></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../../../index.html">Components</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../flowsheet/index.html">Flowsheet</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../flowsheet/time_domain.html">Time Domain</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 current active has-children"><a class="reference internal" href="../../index.html">Property Package</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../../comp.html">Component Object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../phase.html">Phase Object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../physical_param.html">Physical Parameter Block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reaction_block.html">Reaction Block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../reaction_param.html">Reaction Parameter Block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../state_block.html">State Block</a></li>
+<li class="toctree-l4 current active"><a class="reference internal" href="../index.html">Modular Property Package Framework</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../general_reactions/index.html">Generic Reaction Package Framework</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../unit_model/index.html">Unit Model</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../unit_model/control_volume.html">Control Volume</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../ui/index.html">User Interfaces</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../conventions.html">Conventions</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../model_diagnostics/index.html">Model Diagnostics Workflow</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../model_diagnostics/svd_analysis.html">SVD Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../model_diagnostics/degeneracy_hunter.html">Degeneracy Hunter</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../scaling_toolbox/index.html">Scaling Toolbox</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../scaling_toolbox/scaling_theory.html">Scaling Theory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../scaling_toolbox/diagnosing_scaling_issues.html">Diagnosing Scaling Issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../scaling_toolbox/scaling_toolbox.html">Scaling Toolbox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../scaling_toolbox/applying_scaling_tools.html">Applying Scaling Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../scaling_toolbox/scaling_workflow.html">Scaling Workflow</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../modeling_extensions/index.html">Modeling Extensions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../../modeling_extensions/surrogate/index.html">Surrogate Modeling</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../modeling_extensions/surrogate/api/index.html">IDAES Surrogates API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../modeling_extensions/surrogate/sampling/index.html">Sampling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../modeling_extensions/surrogate/plotting/index.html">Visualizing Surrogate Model Results</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../modeling_extensions/matopt/index.html">MatOpt: Nanomaterials Optimization</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../../modeling_extensions/caprese/index.html">Caprese</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../modeling_extensions/caprese/nmpc.html">Nonlinear Model Predictive Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../modeling_extensions/caprese/mhe.html">Moving Horizon Estimation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../modeling_extensions/uncertainty_propagation/index.html">Uncertainty Propagation Toolbox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../modeling_extensions/diagnostics/index.html">Degeneracy Hunter</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../related_packages/index.html">Related Packages</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../related_packages/pecos.html">Pecos: Data Quality Control and Fault Detection</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../faq.html">Troubleshooting and FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../license.html">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../copyright.html">Copyright</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../examples/index.html">Examples</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../examples/structfs/index.html">Structured Flowsheet Examples</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../examples/structfs/flash_flowsheet_nb.html">Structured Flowsheet Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../examples/structfs/hda_flowsheet_nb.html">Running the HDA flowsheet</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../../../../reference_guides/index.html">Reference Guides</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../../../../../reference_guides/model_libraries/index.html">Model Libraries</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3 current active has-children"><a class="reference internal" href="../../../../../reference_guides/model_libraries/generic/index.html">Generic IDAES Model Library</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l4 current active"><a class="reference internal" href="../../../../../reference_guides/model_libraries/generic/property_models/index.html">Property Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/model_libraries/generic/unit_models/index.html">Unit Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/model_libraries/generic/control/index.html">Control Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/model_libraries/generic/costing/index.html">Process Costing Libraries</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../../../reference_guides/model_libraries/power_generation/index.html">Power Generation Model Library</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/model_libraries/power_generation/unit_models/index.html">Unit Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/model_libraries/power_generation/properties/index.html">Property Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/model_libraries/power_generation/flowsheets/index.html">Flowsheet Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/model_libraries/power_generation/costing/index.html">Power Plant Costing Libraries</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../../../reference_guides/model_libraries/gas_solid_contactors/index.html">Gas Solid Contactors Model Library</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/model_libraries/gas_solid_contactors/flowsheets/index.html">Flowsheet Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/model_libraries/gas_solid_contactors/unit_models/index.html">Unit Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/model_libraries/gas_solid_contactors/properties/index.html">Property Packages</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../../../reference_guides/model_libraries/models_extra/index.html">Additional IDAES Model Libraries</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/model_libraries/models_extra/phe.html">Plate Heat Exchanger</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/model_libraries/models_extra/temperature_swing_adsorption/fixed_bed_tsa0d.html">Fixed Bed Temperature Swing Adsorption (TSA)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/model_libraries/models_extra/membrane_model/1d_membrane.html">One-dimensional membrane class for CO2 gas separation</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../reference_guides/core/index.html">Core</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/core/process_block.html">Process Block</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/core/flowsheet_block.html">Flowsheet Block</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/core/control_volume_0d.html">0D Control Volume Class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/core/control_volume_1d.html">1D Control Volume Class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/core/physical_property_class.html">Physical Property Package Classes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/core/reaction_property_class.html">Reaction Property Package Classes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/core/unit_model_block.html">Unit Model Class</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../../../reference_guides/core/property_metadata.html">Property Metadata Classes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/uom.html">Unit Sets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/property_set.html">Property Sets</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/core/comp.html">Component Class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/core/phase.html">Phase Class</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../../../reference_guides/core/util/index.html">Utility Methods</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/util/dyn_utils.html">Utilities for Dynamic Flowsheets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/util/initialization.html">Initialization Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/util/math.html">Mathematical Utility Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/util/misc.html">Miscellaneous Utility Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/util/model_diagnostics.html">Model Diagnostic Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/util/model_serializer.html">Model State Serialization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/util/model_statistics.html">Model Statistics Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/util/phase_equilibria.html">Phase Equilibria</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/util/scaling.html">Scaling Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/util/structfs/structfs.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">structfs</span></code></a></li>
+
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/util/tables.html">Table Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/util/tags.html">Tagging Classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/util/utility_minimization.html">Utility minimization</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../../../reference_guides/core/solvers.html">Solvers</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/homotopy.html">Homotopy Meta-Solver</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/core/var_like_expr.html">Variable-Like Expressions</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../../../reference_guides/core/costing/index.html">Costing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/costing/costing_framework.html">IDAES Process Costing Framework</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/core/costing/costing_libraries.html">Available Costing Libraries</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../reference_guides/scaling/scaling.html">Scaling Toolbox</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/scaling/scaling_utils.html">Scaling Utility Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/scaling/custom_scaler.html">CustomScalerBase Class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/scaling/autoscaler.html">AutoScaler Class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/scaling/arc_constraint_scaler.html">ArcConstraintScaler Class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/scaling/scaling_profiler.html">Scaling Profiler Utility</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../reference_guides/initialization/index.html">Initializing Models</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../../../reference_guides/initialization/general_initializers.html">Common Use Initializers</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/initialization/bt_initializer.html">Block Triangularization Initializer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/initialization/from_data_initializer.html">Initialize From Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/initialization/single_cv_initializer.html">Single Control Volume Initializer</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/initialization/specific_initializers.html">Model Specific Initializers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/initialization/developing_initializers.html">Developing Custom Initializers</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../reference_guides/commands/index.html">Command-line interface</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/commands/bin_directory.html">idaes bin-directory: Show IDAES executable file directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/commands/copyright.html">idaes copyright: Show IDAES copyright information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/commands/data_directory.html">idaes data-directory: Show IDAES data directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/commands/env_info.html">idaes environment-info: Get information about the IDAES environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/commands/get_extensions.html">idaes get-extensions: Get solvers and libraries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/commands/lib_directory.html">idaes lib-directory: Show IDAES library file directory</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../reference_guides/configuration.html">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../reference_guides/logging.html">Logging</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../reference_guides/developer/index.html">Developer Documentation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/developer/howto.html">IDAES Contributor Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/developer/repos.html">Github Repository Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/developer/devsw.html">Collaborative Software Development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/developer/standards.html">Developer Standards</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/developer/testing.html">Testing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/developer/codereview.html">Code Review</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/developer/docker.html">Docker Container</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/developer/glossary.html">Glossary</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../reference_guides/apps/grid_integration/index.html">Grid integration (Double loop)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/apps/grid_integration/Introduction.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/apps/grid_integration/Implementation.html">Implementation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/apps/grid_integration/Bidder.html">Bidder</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/apps/grid_integration/Tracker.html">Tracker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../reference_guides/apps/grid_integration/Coordinator.html">Coordinator</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../../../../reference_guides/apps/grid_integration/multiperiod/index.html">Multi-Period Modeling</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../reference_guides/apps/grid_integration/multiperiod/Price_Taker.html">Price Taker</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../archived_features/index.html">Archived Features Page</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../archived_features/helmet.html">HELMET: HELMholtz Energy Thermodynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../archived_features/ripe.html">RIPE: Reaction Identification and Parameter Estimation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../faq.html">Troubleshooting and FAQ</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/idaes/idaes-pse" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../../../_sources/explanations/components/property_package/general/eos/cubic.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Cubic Equations of State (Cubic)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-cubic-equation-of-state">General Cubic Equation of State</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#property-package-options">Property Package Options</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-parameters">Required Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-properties">Calculation of Properties</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#critical-properties-of-mixtures">Critical Properties of Mixtures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-density-by-phase">Mass Density by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#molar-density-by-phase">Molar Density by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#molar-enthalpy-by-phase">Molar Enthalpy by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#component-molar-enthalpy-by-phase">Component Molar Enthalpy by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#molar-isobaric-heat-capacity-c-p">Molar Isobaric Heat Capacity (<span class="math notranslate nohighlight">\(C_p\)</span>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#molar-isochoric-heat-capacity-c-v">Molar Isochoric Heat Capacity (<span class="math notranslate nohighlight">\(C_v\)</span>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#molar-entropy-by-phase">Molar Entropy by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#component-molar-entropy-by-phase">Component Molar Entropy by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#component-fugacity-by-phase">Component Fugacity by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#component-fugacity-coefficient-by-phase">Component Fugacity Coefficient by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#molar-gibbs-energy-by-phase">Molar Gibbs Energy by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#component-gibbs-energy-by-phase">Component Gibbs Energy by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heat-capacity-ratio">Heat Capacity Ratio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#isothermal-speed-of-sound">Isothermal Speed of Sound</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#isentropic-speed-of-sound">Isentropic Speed of Sound</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="cubic-equations-of-state-cubic">
+<h1><a class="toc-backref" href="#id1" role="doc-backlink">Cubic Equations of State (<code class="docutils literal notranslate"><span class="pre">Cubic</span></code>)</a><a class="headerlink" href="#cubic-equations-of-state-cubic" title="Link to this heading">#</a></h1>
+<nav class="contents" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#cubic-equations-of-state-cubic" id="id1">Cubic Equations of State (<code class="docutils literal notranslate"><span class="pre">Cubic</span></code>)</a></p>
+<ul>
+<li><p><a class="reference internal" href="#introduction" id="id2">Introduction</a></p></li>
+<li><p><a class="reference internal" href="#general-cubic-equation-of-state" id="id3">General Cubic Equation of State</a></p></li>
+<li><p><a class="reference internal" href="#property-package-options" id="id4">Property Package Options</a></p></li>
+<li><p><a class="reference internal" href="#required-parameters" id="id5">Required Parameters</a></p></li>
+<li><p><a class="reference internal" href="#calculation-of-properties" id="id6">Calculation of Properties</a></p></li>
+<li><p><a class="reference internal" href="#critical-properties-of-mixtures" id="id7">Critical Properties of Mixtures</a></p></li>
+<li><p><a class="reference internal" href="#mass-density-by-phase" id="id8">Mass Density by Phase</a></p></li>
+<li><p><a class="reference internal" href="#molar-density-by-phase" id="id9">Molar Density by Phase</a></p></li>
+<li><p><a class="reference internal" href="#molar-enthalpy-by-phase" id="id10">Molar Enthalpy by Phase</a></p></li>
+<li><p><a class="reference internal" href="#component-molar-enthalpy-by-phase" id="id11">Component Molar Enthalpy by Phase</a></p></li>
+<li><p><a class="reference internal" href="#molar-isobaric-heat-capacity-c-p" id="id12">Molar Isobaric Heat Capacity (<span class="math notranslate nohighlight">\(C_p\)</span>)</a></p></li>
+<li><p><a class="reference internal" href="#molar-isochoric-heat-capacity-c-v" id="id13">Molar Isochoric Heat Capacity (<span class="math notranslate nohighlight">\(C_v\)</span>)</a></p></li>
+<li><p><a class="reference internal" href="#molar-entropy-by-phase" id="id14">Molar Entropy by Phase</a></p></li>
+<li><p><a class="reference internal" href="#component-molar-entropy-by-phase" id="id15">Component Molar Entropy by Phase</a></p></li>
+<li><p><a class="reference internal" href="#component-fugacity-by-phase" id="id16">Component Fugacity by Phase</a></p></li>
+<li><p><a class="reference internal" href="#component-fugacity-coefficient-by-phase" id="id17">Component Fugacity Coefficient by Phase</a></p></li>
+<li><p><a class="reference internal" href="#molar-gibbs-energy-by-phase" id="id18">Molar Gibbs Energy by Phase</a></p></li>
+<li><p><a class="reference internal" href="#component-gibbs-energy-by-phase" id="id19">Component Gibbs Energy by Phase</a></p></li>
+<li><p><a class="reference internal" href="#heat-capacity-ratio" id="id20">Heat Capacity Ratio</a></p></li>
+<li><p><a class="reference internal" href="#isothermal-speed-of-sound" id="id21">Isothermal Speed of Sound</a></p></li>
+<li><p><a class="reference internal" href="#isentropic-speed-of-sound" id="id22">Isentropic Speed of Sound</a></p></li>
+</ul>
+</li>
+</ul>
+</nav>
+<section id="introduction">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Introduction</a><a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>This module implements a general form of a cubic equation of state which can be used for most cubic-type equations of state. The following forms are currently supported:</p>
+<ul class="simple">
+<li><p>Peng-Robinson</p></li>
+<li><p>Soave-Redlich-Kwong</p></li>
+</ul>
+</section>
+<section id="general-cubic-equation-of-state">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">General Cubic Equation of State</a><a class="headerlink" href="#general-cubic-equation-of-state" title="Link to this heading">#</a></h2>
+<p>All equations come from “The Properties of Gases and Liquids, 4th Edition” by Reid, Prausnitz and Poling. The general cubic equation of state is represented by the following equations:</p>
+<div class="math notranslate nohighlight">
+\[P = \frac{RT}{V-b}-\frac{a}{V^2-ubV+wb^2}\]</div>
+<p>An equivalent form of the previous equation  is:</p>
+<div class="math notranslate nohighlight">
+\[0 = Z^3 - (1+B-uB)Z^2 + (A-uB-(u-w)B^2)Z - AB-wB^2-wB^3\]</div>
+<div class="math notranslate nohighlight">
+\[A = \frac{a_mP}{R^2T^2}\]</div>
+<div class="math notranslate nohighlight">
+\[B = \frac{b_mP}{RT}\]</div>
+<p>where <span class="math notranslate nohighlight">\(Z\)</span> is the compressibility factor of the mixture, <span class="math notranslate nohighlight">\(a_m\)</span> and <span class="math notranslate nohighlight">\(b_m\)</span> are properties of the mixture and <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(w\)</span> are parameters which depend on the specific equation of state being used as show in the table below.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Equation</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(u\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(w\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\Omega_A\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\Omega_B\)</span></p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(\alpha_j\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Peng-Robinson</p></td>
+<td><p>2</p></td>
+<td><p>-1</p></td>
+<td><p>0.45724</p></td>
+<td><p>0.07780</p></td>
+<td><p><span class="math notranslate nohighlight">\((1+(1-T_r^2)(0.37464+1.54226\omega_j-0.26992\omega_j^2))^2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Soave-Redlich-Kwong</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0.42748</p></td>
+<td><p>0.08664</p></td>
+<td><p><span class="math notranslate nohighlight">\((1+(1-T_r^2)(0.48+1.574\omega_j-0.176\omega_j^2))^2\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The properties <span class="math notranslate nohighlight">\(a_m\)</span> and <span class="math notranslate nohighlight">\(b_m\)</span> are calculated from component specific properties <span class="math notranslate nohighlight">\(a_j\)</span> and <span class="math notranslate nohighlight">\(b_j\)</span> as shown below:</p>
+<div class="math notranslate nohighlight">
+\[a_j = \frac{\Omega_AR^2T_{c,j}^2}{P_{c, j}}\alpha_j\]</div>
+<div class="math notranslate nohighlight">
+\[b_j = \frac{\Omega_BRT_{c,j}}{P_{c,j}}\]</div>
+<div class="math notranslate nohighlight">
+\[a_m = \sum_i{\sum_j{y_iy_j(a_ia_j)^{1/2}(1-\kappa_{ij})}}\]</div>
+<div class="math notranslate nohighlight">
+\[b_m = \sum_i{y_ib_i}\]</div>
+<p>where <span class="math notranslate nohighlight">\(P_{c,j}\)</span> and <span class="math notranslate nohighlight">\(T_{c,j}\)</span> are the component critical pressures and temperatures, <span class="math notranslate nohighlight">\(y_j\)</span> is the mole fraction of component <span class="math notranslate nohighlight">\(j\)</span>, <span class="math notranslate nohighlight">\(\kappa_{ij}\)</span> are a set of binary interaction parameters which are specific to the equation of state and <span class="math notranslate nohighlight">\(\Omega_A\)</span>, <span class="math notranslate nohighlight">\(\Omega_B\)</span> and <span class="math notranslate nohighlight">\(\alpha_j\)</span> are taken from the table above. <span class="math notranslate nohighlight">\(\omega_j\)</span> is the Pitzer acentric factor of each component.</p>
+<p>The cubic equation of state is solved for each phase via a call to an external function which automatically identifies the correct root of the cubic and returns the value of <span class="math notranslate nohighlight">\(Z\)</span> as a function of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> along with the first and second partial derivatives.</p>
+</section>
+<section id="property-package-options">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Property Package Options</a><a class="headerlink" href="#property-package-options" title="Link to this heading">#</a></h2>
+<p>When using the general cubic equation of state module, users must specify the type of cubic to use. This is done by providing a <cite>type</cite> option in the <cite>equation_of_state_options</cite> argument in the <cite>Phase</cite> definition, as shown in the example below.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">idaes.models.properties.modular_properties.eos.ceos</span><span class="w"> </span><span class="kn">import</span> <span class="n">Cubic</span><span class="p">,</span> <span class="n">CubicType</span>
+
+<span class="n">configuration</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"phases"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"Liquid"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"type"</span><span class="p">:</span> <span class="n">LiquidPhase</span><span class="p">,</span>
+            <span class="s2">"equation_of_state"</span><span class="p">:</span> <span class="n">Cubic</span><span class="p">,</span>
+            <span class="s2">"equation_of_state_options"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"type"</span><span class="p">:</span> <span class="n">CubicType</span><span class="o">.</span><span class="n">PR</span><span class="p">}}}</span>
+</pre></div>
+</div>
+</section>
+<section id="required-parameters">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Required Parameters</a><a class="headerlink" href="#required-parameters" title="Link to this heading">#</a></h2>
+<p>Cubic equations of state require the following parameters to be defined:</p>
+<ol class="arabic simple">
+<li><p><cite>omega</cite> (Pitzer acentricity factor) needs to be defined for each component (in the <cite>parameter_data</cite> for each component).</p></li>
+<li><p><cite>kappa</cite> (binary interaction parameters) needs to be defined for each component pair in the system. This parameter needs to be defined in the general <cite>parameter_data</cite> argument for the overall property package (as it can be used in multiple phases).</p></li>
+<li><p>Component critical properties (<cite>compress_fact_crit</cite>, <cite>dens_mol_crit</cite>, <cite>pressure_crit</cite>, and <cite>temperature_crit</cite>) are often required as well.</p></li>
+</ol>
+</section>
+<section id="calculation-of-properties">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Calculation of Properties</a><a class="headerlink" href="#calculation-of-properties" title="Link to this heading">#</a></h2>
+<p>Many thermophysical properties are calculated using an ideal and residual term, such that:</p>
+<div class="math notranslate nohighlight">
+\[p = p^0 + p^r\]</div>
+<p>The residual term is derived from the partial derivatives of the cubic equation of state, whilst the ideal term is determined using pure component properties for the ideal gas phase defined for each component.</p>
+</section>
+<section id="critical-properties-of-mixtures">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Critical Properties of Mixtures</a><a class="headerlink" href="#critical-properties-of-mixtures" title="Link to this heading">#</a></h2>
+<p>The critical properties of the mixture are calculated by solving the cubic equation of state at the critical point using the following constraints.</p>
+<div class="math notranslate nohighlight">
+\[\Omega_A R^2 T_c^2 = a_{c,m}P_c\]</div>
+<div class="math notranslate nohighlight">
+\[\Omega_BRT_c = b_{c,m}P_c\]</div>
+<div class="math notranslate nohighlight">
+\[0 = Z_c^3 - (1+B_c-uB_c)Z_c^2 + (A_c-uB_c-(u-w)B_c^2)Z_c - A_cB_c-wB_c^2-wB_c^3\]</div>
+<div class="math notranslate nohighlight">
+\[P_c = Z_cRT_c\rho_{c}\]</div>
+<p>with the following expressions:</p>
+<div class="math notranslate nohighlight">
+\[a_{c,j} = \frac{\Omega_AR^2T_{c,j}^2}{P_{c, j}}\alpha_j(T_c)\]</div>
+<div class="math notranslate nohighlight">
+\[a_{c,m} = \sum_i{\sum_j{y_iy_j(a_{c,i}a_{c,j})^{1/2}(1-\kappa_{ij})}}\]</div>
+<div class="math notranslate nohighlight">
+\[b_{c,m} = \sum_i{y_ib_i}\]</div>
+<div class="math notranslate nohighlight">
+\[A_c = \frac{a_{c,m}P_c}{R^2T_c^2}\]</div>
+<div class="math notranslate nohighlight">
+\[B_c = \frac{b_{c,m}P_c}{RT_c}\]</div>
+</section>
+<section id="mass-density-by-phase">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Mass Density by Phase</a><a class="headerlink" href="#mass-density-by-phase" title="Link to this heading">#</a></h2>
+<p>The following equation is used for both liquid and vapor phases, where <span class="math notranslate nohighlight">\(p\)</span> indicates a given phase:</p>
+<div class="math notranslate nohighlight">
+\[\rho_{mass, p} = \rho_{mol, p} \times MW_p\]</div>
+<p>where <span class="math notranslate nohighlight">\(MW_p\)</span> is the mixture molecular weight of phase <span class="math notranslate nohighlight">\(p\)</span>.</p>
+</section>
+<section id="molar-density-by-phase">
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Molar Density by Phase</a><a class="headerlink" href="#molar-density-by-phase" title="Link to this heading">#</a></h2>
+<p>Molar density is calculated using the following equation</p>
+<div class="math notranslate nohighlight">
+\[\rho_{mol, Vap} = \frac{P}{ZRT}\]</div>
+</section>
+<section id="molar-enthalpy-by-phase">
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Molar Enthalpy by Phase</a><a class="headerlink" href="#molar-enthalpy-by-phase" title="Link to this heading">#</a></h2>
+<p>The residual enthalpy term is given by:</p>
+<div class="math notranslate nohighlight">
+\[h_{i}^{r}b_m\sqrt{u^2-4w} = \left(T\frac{da}{dT}-a_m\right)\ln{\left(\frac{2Z+B(u+\sqrt{u^2-4w})}{2Z+B(u-\sqrt{u^2-4w})}\right)} +RT(Z-1)b_m\sqrt{u^2-4w}\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{da}{dT}\sqrt{T} = -\frac{R}{2}\sqrt{\Omega_A}\sum_i{\sum_j{y_iy_j(1-k_{ij})\left(f_{w,j}\sqrt{a_i\frac{T_{c,j}}{P_{c,j}}}+f_{w,i}\sqrt{a_j\frac{T_{c,i}}{P_{c,i}}}\right)}}\]</div>
+<p>The ideal component is calculated from the weighted sum of the (ideal) component molar enthalpies.</p>
+</section>
+<section id="component-molar-enthalpy-by-phase">
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Component Molar Enthalpy by Phase</a><a class="headerlink" href="#component-molar-enthalpy-by-phase" title="Link to this heading">#</a></h2>
+<p>Component molar enthalpies by phase are calculated using the pure component method provided by the users in the property package configuration arguments.</p>
+</section>
+<section id="molar-isobaric-heat-capacity-c-p">
+<h2><a class="toc-backref" href="#id12" role="doc-backlink">Molar Isobaric Heat Capacity (<span class="math notranslate nohighlight">\(C_p\)</span>)</a><a class="headerlink" href="#molar-isobaric-heat-capacity-c-p" title="Link to this heading">#</a></h2>
+<p>The ideal molar isobaric heat capacity term is calculated from the weighted sum of the (ideal) component molar isobaric heat capacity:</p>
+<div class="math notranslate nohighlight">
+\[C_{p, ig}^0 = \sum_j y_j C_{p, ig, j}\]</div>
+<p>The residual molar isobaric heat capacity term is given by:</p>
+<div class="math notranslate nohighlight">
+\[C_p^r = R \left[ T \left(\frac{\partial Z}{\partial T}\right)_P + Z - 1 \right] +  \frac{ T \frac{d^2a_m}{dT^2}}{\sqrt{u^2 - 4w} \cdot b_m} \ln \left[ \frac{2Z + uB + \sqrt{u^2 - 4w} B}{2Z + uB - \sqrt{u^2 - 4w} B} \right]\]</div>
+<div class="math notranslate nohighlight">
+\[+ \left(a_m - T \frac{da_m}{dT}\right) \cdot \frac{B}{b_m} \cdot \frac{\left(\frac{\partial Z}{\partial T}\right)_P + \frac{Z}{T}}{Z^2 + Z uB + wB^2}\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{da_m}{dT}\sqrt{T} = -\frac{R}{2}\sqrt{\Omega_A}\sum_i{\sum_j{y_iy_j(1-k_{ij})\left(f_{w,j}\sqrt{a_i\frac{T_{c,j}}{P_{c,j}}}+f_{w,i}\sqrt{a_j\frac{T_{c,i}}{P_{c,i}}}\right)}}\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{d^2a_m}{dT^2} = - \frac{1}{2T} \frac{da_m}{dT} + \frac{R^2 \Omega_A }{2T} \sum_i\sum_j y_iy_j(1-k_{ij}) f(\omega_i)f(\omega_j) \sqrt{\frac{T_{c,i} T_{c,j}}{P_{c,i} P_{c,j}}}\]</div>
+<div class="math notranslate nohighlight">
+\[\left(\frac{\partial B}{\partial T}\right)_P = - \frac{b_m P}{R T^2} = - \frac{B}{T}\]</div>
+<div class="math notranslate nohighlight">
+\[\left(\frac{\partial A}{\partial T}\right)_P = - \frac{2a_mP}{R^2 T^3} + \frac{P}{R^2T^2} \frac{da_m}{dT} = \frac{A}{a_m} \frac{da_m}{dT} - \frac{2A}{T}\]</div>
+<div class="math notranslate nohighlight">
+\[\left(\frac{\partial Z}{\partial T}\right)_P = -\frac{Z^2 \left(\frac{\partial K_2}{\partial T}\right)_P + Z \left(\frac{\partial K_3}{\partial T}\right)_P + \left(\frac{\partial K_4}{\partial T}\right)_P }{3Z^2 + 2K_2 Z + K_3}\]</div>
+<div class="math notranslate nohighlight">
+\[\left(\frac{\partial K_2}{\partial T}\right)_P = (u - 1) \left(\frac{\partial B}{\partial T}\right)_P\]</div>
+<div class="math notranslate nohighlight">
+\[\left(\frac{\partial K_3}{\partial T}\right)_P = \left(\frac{\partial A}{\partial T}\right)_P - u \left(\frac{\partial B}{\partial T}\right)_P - 2(u-w)B \left(\frac{\partial B}{\partial T}\right)_P\]</div>
+<div class="math notranslate nohighlight">
+\[\left(\frac{\partial K_4}{\partial T}\right)_P = - \left[ A \left(\frac{\partial B}{\partial T}\right)_P + B \left(\frac{\partial A}{\partial T}\right)_P + 2wB \left(\frac{\partial B}{\partial T}\right)_P + 3wB^2 \left(\frac{\partial B}{\partial T}\right)_P \right]\]</div>
+<div class="math notranslate nohighlight">
+\[K_2 = (u - 1) B - 1\]</div>
+<div class="math notranslate nohighlight">
+\[K_3 = A - u B - (u - w) B^2\]</div>
+<div class="math notranslate nohighlight">
+\[K_4 = - [AB + w B^2 + w B^3]\]</div>
+</section>
+<section id="molar-isochoric-heat-capacity-c-v">
+<h2><a class="toc-backref" href="#id13" role="doc-backlink">Molar Isochoric Heat Capacity (<span class="math notranslate nohighlight">\(C_v\)</span>)</a><a class="headerlink" href="#molar-isochoric-heat-capacity-c-v" title="Link to this heading">#</a></h2>
+<p>The molar isochoric heat capacity is determined from the value of molar isobaric heat capacity using</p>
+<div class="math notranslate nohighlight">
+\[C_v = C_p + T  \left(\frac{\partial P}{\partial T}\right)_V^2 \bigg/  \left(\frac{\partial P}{\partial V}\right)_T\]</div>
+<p>where <span class="math notranslate nohighlight">\(V\)</span> denotes the molar volume of the mixture,</p>
+<div class="math notranslate nohighlight">
+\[\left(\frac{\partial P}{\partial T}\right)_V = \frac{R}{V-b_m} - \frac{1}{V^2 + ub_m V + wb_m^2} \frac{da_m}{dT}\]</div>
+<div class="math notranslate nohighlight">
+\[\left(\frac{\partial P}{\partial V}\right)_T = -\frac{RT}{(V-b_m)^2} + \frac{a_m (2V + ub_m)}{(V^2 + ub_mV +wb_m^2)^2}\]</div>
+</section>
+<section id="molar-entropy-by-phase">
+<h2><a class="toc-backref" href="#id14" role="doc-backlink">Molar Entropy by Phase</a><a class="headerlink" href="#molar-entropy-by-phase" title="Link to this heading">#</a></h2>
+<p>The residual entropy term is given by:</p>
+<div class="math notranslate nohighlight">
+\[s_{i}^{r}b_m\sqrt{u^2-4w} = R\ln{\frac{Z-B}{Z}}b_m\sqrt{u^2-4w} + R\ln{\frac{ZP^{ref}}{P}}b_m\sqrt{u^2-4w} + \frac{da}{dT}\ln{\left(\frac{2Z+B(u+\sqrt{u^2-4w})}{2Z+B(u-\sqrt{u^2-4w})}\right)}\]</div>
+<p>The ideal component is calculated from the weighted sum of the (ideal) components molar enthalpies.</p>
+</section>
+<section id="component-molar-entropy-by-phase">
+<h2><a class="toc-backref" href="#id15" role="doc-backlink">Component Molar Entropy by Phase</a><a class="headerlink" href="#component-molar-entropy-by-phase" title="Link to this heading">#</a></h2>
+<p>Component molar entropies by phase are calculated using the pure component methods provided by the users in the property package configuration arguments.</p>
+</section>
+<section id="component-fugacity-by-phase">
+<h2><a class="toc-backref" href="#id16" role="doc-backlink">Component Fugacity by Phase</a><a class="headerlink" href="#component-fugacity-by-phase" title="Link to this heading">#</a></h2>
+<p>Fugacity is calculated from the system pressure and fugacity coefficients as follows:</p>
+<div class="math notranslate nohighlight">
+\[f_{i, p} = \phi_{i, p} P\]</div>
+</section>
+<section id="component-fugacity-coefficient-by-phase">
+<h2><a class="toc-backref" href="#id17" role="doc-backlink">Component Fugacity Coefficient by Phase</a><a class="headerlink" href="#component-fugacity-coefficient-by-phase" title="Link to this heading">#</a></h2>
+<p>The fugacity coefficient is calculated from the departure function of the cubic equation of state as shown below:</p>
+<div class="math notranslate nohighlight">
+\[\ln{\phi_{i}} = \frac{b_i}{b_m}(Z-1) - \ln{(Z-B)} + \frac{A}{B\sqrt{u^2-4w}}\left(\frac{b_i}{b_m}-\delta_i\right)\ln{\left(\frac{2Z+B(u+\sqrt{u^2-4w})}{2Z+B(u-\sqrt{u^2-4w})}\right)}\]</div>
+<div class="math notranslate nohighlight">
+\[\delta_i = \frac{2a_i^{1/2}}{a_m} \sum_j{x_j a_j^{1/2}(1-k_{ij})}\]</div>
+</section>
+<section id="molar-gibbs-energy-by-phase">
+<h2><a class="toc-backref" href="#id18" role="doc-backlink">Molar Gibbs Energy by Phase</a><a class="headerlink" href="#molar-gibbs-energy-by-phase" title="Link to this heading">#</a></h2>
+<p>For both liquid and vapor phases, the molar Gibbs energy is calculated as the weighted sum of the component molar Gibbs energies for the given phase:</p>
+<div class="math notranslate nohighlight">
+\[g_{mol, p} = \sum_j{x_{p, j} \times g_{mol, p, j}}\]</div>
+<p>where <span class="math notranslate nohighlight">\(x_{p, j}\)</span> is the mole fraction of component <span class="math notranslate nohighlight">\(j\)</span> in the phase <span class="math notranslate nohighlight">\(p\)</span>.</p>
+</section>
+<section id="component-gibbs-energy-by-phase">
+<h2><a class="toc-backref" href="#id19" role="doc-backlink">Component Gibbs Energy by Phase</a><a class="headerlink" href="#component-gibbs-energy-by-phase" title="Link to this heading">#</a></h2>
+<p>Component molar Gibbs energies are calculated using the definition of Gibbs energy:</p>
+<div class="math notranslate nohighlight">
+\[g_{mol, p, j} = h_{mol, p, j} - s_{mol, p, j} \times T\]</div>
+</section>
+<section id="heat-capacity-ratio">
+<h2><a class="toc-backref" href="#id20" role="doc-backlink">Heat Capacity Ratio</a><a class="headerlink" href="#heat-capacity-ratio" title="Link to this heading">#</a></h2>
+<p>The heat capacity ratio (<span class="math notranslate nohighlight">\(\gamma\)</span>) is given by:</p>
+<div class="math notranslate nohighlight">
+\[\gamma = \frac{C_p}{C_v}\]</div>
+</section>
+<section id="isothermal-speed-of-sound">
+<h2><a class="toc-backref" href="#id21" role="doc-backlink">Isothermal Speed of Sound</a><a class="headerlink" href="#isothermal-speed-of-sound" title="Link to this heading">#</a></h2>
+<p>The isothermal speed of sound (<span class="math notranslate nohighlight">\(c_T\)</span>) can be obtained from</p>
+<div class="math notranslate nohighlight">
+\[c_T^2 = \left(\frac{\partial P}{\partial \rho}\right)_T = \left[ \frac{RT}{(V-b_m)^2} - \frac{a_m (2V + ub_m)}{(V^2 + ub_mV +wb_m^2)^2} \right] \frac{mw}{\rho^2}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\rho\)</span> denotes the mass density of the mixture.</p>
+</section>
+<section id="isentropic-speed-of-sound">
+<h2><a class="toc-backref" href="#id22" role="doc-backlink">Isentropic Speed of Sound</a><a class="headerlink" href="#isentropic-speed-of-sound" title="Link to this heading">#</a></h2>
+<p>The isentropic speed of sound (<span class="math notranslate nohighlight">\(c_s\)</span>) is determined from</p>
+<div class="math notranslate nohighlight">
+\[c_s^2 = \gamma c_T^2\]</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="ideal.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Ideal Gases and Liquids (<code class="docutils literal notranslate"><span class="pre">Ideal</span></code>)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../state_definition.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">State Definition</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-cubic-equation-of-state">General Cubic Equation of State</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#property-package-options">Property Package Options</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-parameters">Required Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-of-properties">Calculation of Properties</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#critical-properties-of-mixtures">Critical Properties of Mixtures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-density-by-phase">Mass Density by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#molar-density-by-phase">Molar Density by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#molar-enthalpy-by-phase">Molar Enthalpy by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#component-molar-enthalpy-by-phase">Component Molar Enthalpy by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#molar-isobaric-heat-capacity-c-p">Molar Isobaric Heat Capacity (<span class="math notranslate nohighlight">\(C_p\)</span>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#molar-isochoric-heat-capacity-c-v">Molar Isochoric Heat Capacity (<span class="math notranslate nohighlight">\(C_v\)</span>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#molar-entropy-by-phase">Molar Entropy by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#component-molar-entropy-by-phase">Component Molar Entropy by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#component-fugacity-by-phase">Component Fugacity by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#component-fugacity-coefficient-by-phase">Component Fugacity Coefficient by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#molar-gibbs-energy-by-phase">Molar Gibbs Energy by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#component-gibbs-energy-by-phase">Component Gibbs Energy by Phase</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heat-capacity-ratio">Heat Capacity Ratio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#isothermal-speed-of-sound">Isothermal Speed of Sound</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#isentropic-speed-of-sound">Isentropic Speed of Sound</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The IDAES project
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2016-2026, David Miller et al..
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p>This work was sponsored by the Department of Energy,
+    Fossil Energy and Carbon Management</p>
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../../../_static/scripts/bootstrap.js?digest=cb8930eaaf36d9849b67"></script>
+<script defer src="../../../../../_static/scripts/pydata-sphinx-theme.js?digest=cb8930eaaf36d9849b67"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

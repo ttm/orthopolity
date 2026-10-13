@@ -1,0 +1,40 @@
+data_RM8850_CO2_393K_CW				
+_exptl_adsorptive CURLTUGMZLYLDI-UHFFFAOYSA-N			
+_exptl_adsorptive_name CO2			
+_exptl_temperature 393
+_exptl_porevolume 0.358
+_adsnt_material_id 'Zeolite Na-Y (RM8850)'
+_adsnt_info 'Zeolite Na-Y (RM8850) - pellet form - no binder'
+_exptl_method 'static gravimetric with density measurement'
+_exptl_instrument 'Rubotherm ISOSORP'								
+_adsnt_degas_summary 'Vacuum at 633K for 16 h'				
+_exptl_operator 'Carsten Wedler'
+_exptl_isotherm_type absolute
+_exptl_comment 'Conversion from excess to absolute by considering pore volume and experimentally determined gas phase density'
+_units_temperature K				
+_units_pressure MegaPA				
+_units_loading MilliMOL-PER-GM	
+_units_porevolume CentiM3-PER-GM			
+				
+loop_				
+_adsorp_pressure				
+_adsorp_amount	
+_adsorp_amount_uncertainty
+_adsorp_amount_excess				
+_adsorption_amount_excess_uncertainty				
+
+3.018	6.111	0.021	5.764	0.021
+2.501	5.926	0.021	5.642	0.021
+2.002	5.693	0.021	5.467	0.020
+1.502	5.362	0.020	5.195	0.020
+0.997	4.843	0.020	4.733	0.020
+0.752	4.445	0.020	4.362	0.020
+0.503	3.840	0.019	3.786	0.019
+0.258	2.819	0.019	2.791	0.019
+0.105	1.711	0.018	1.699	0.018
+0.079	1.417	0.018	1.408	0.018
+0.052	1.064	0.017	1.058	0.017
+0.029	0.759	0.017	0.755	0.017
+
+
+

@@ -1,0 +1,42 @@
+data_RM8850_CH4_298K_CW				
+_exptl_adsorptive VNWKTOKETHGBQD-UHFFFAOYSA-N
+_exptl_adsorptive_name CH4			
+_exptl_temperature 298
+_exptl_porevolume 0.358
+_adsnt_material_id 'Zeolite Na-Y (RM8850)'
+_adsnt_info 'Zeolite Na-Y (RM8850) - pellet form - no binder'
+_exptl_method 'static gravimetric with density measurement'
+_exptl_instrument 'Rubotherm ISOSORP'								
+_adsnt_degas_summary 'Vacuum at 633K for 16 h'				
+_exptl_operator 'Carsten Wedler'
+_exptl_isotherm_type absolute
+_exptl_comment 'Conversion from excess to absolute by considering pore volume and experimentally determined gas phase density'
+_units_temperature K				
+_units_pressure MegaPA				
+_units_loading MilliMOL-PER-GM	
+_units_porevolume CentiM3-PER-GM		
+				
+loop_				
+_adsorp_pressure				
+_adsorp_amount	
+_adsorp_amount_uncertainty
+_adsorp_amount_excess				
+_adsorption_amount_excess_uncertainty				
+
+2.999	4.209	0.048	3.753	0.048
+2.490	3.985	0.048	3.610	0.048
+2.005	3.713	0.048	3.414	0.048
+1.505	3.323	0.048	3.101	0.048
+1.007	2.737	0.048	2.590	0.048
+0.751	2.305	0.047	2.195	0.047
+0.503	1.752	0.047	1.679	0.047
+0.251	1.012	0.047	0.976	0.046
+0.105	0.509	0.046	0.494	0.046
+0.075	0.395	0.046	0.384	0.046
+0.046	0.283	0.046	0.276	0.046
+0.027	0.207	0.046	0.203	0.046
+
+
+
+
+

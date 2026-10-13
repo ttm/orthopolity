@@ -4,6 +4,17 @@ Last updated 13 October 2026. **Read this first in a new session.** It records w
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
+**Chemistry continuation, 13 October:** a reachable, pinned RM8850 zeolite
+archive provides separate pure CO2/CH4 and mixture measurements. The
+[source audit](adsorption-source-audit-2026-10-13.md) qualifies 72 calibration
+observations and 45 mixture conditions at three shared temperatures. The
+[protocol](adsorption-protocol-2026-10-13.md) freezes a common-capacity
+Langmuir transfer, no-competition ablation and separate-pure-capacity IAST,
+with Peng–Robinson fugacity and a fully recalibrated ideal-gas sensitivity.
+Twenty-three synthetic/independent-implementation checks pass before any
+real uptake fitting. Numerical mixtures remain unevaluated at this design
+commit; published qualitative conclusions are already known.
+
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
 the package layout for all runners. The suite now passes **558 tests**; the

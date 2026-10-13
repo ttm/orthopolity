@@ -1,0 +1,434 @@
+{
+  "doi": "10.5281/zenodo.17604326",
+  "exposure": "Methods and published findings known; AIF header and row-count audit does not inspect numerical uptake responses.",
+  "files": {
+    "RM8850_CH4_298K_CW.aif": {
+      "headers": {
+        "_adsnt_degas_summary": "Vacuum at 633K for 16 h",
+        "_adsnt_info": "Zeolite Na-Y (RM8850) - pellet form - no binder",
+        "_adsnt_material_id": "Zeolite Na-Y (RM8850)",
+        "_exptl_adsorptive": "VNWKTOKETHGBQD-UHFFFAOYSA-N",
+        "_exptl_adsorptive_name": "CH4",
+        "_exptl_comment": "Conversion from excess to absolute by considering pore volume and experimentally determined gas phase density",
+        "_exptl_instrument": "Rubotherm ISOSORP",
+        "_exptl_isotherm_type": "absolute",
+        "_exptl_method": "static gravimetric with density measurement",
+        "_exptl_operator": "Carsten Wedler",
+        "_exptl_porevolume": "0.358",
+        "_exptl_temperature": "298",
+        "_units_loading": "MilliMOL-PER-GM",
+        "_units_porevolume": "CentiM3-PER-GM",
+        "_units_pressure": "MegaPA",
+        "_units_temperature": "K"
+      },
+      "loops": [
+        {
+          "columns": [
+            "_adsorp_pressure",
+            "_adsorp_amount",
+            "_adsorp_amount_uncertainty",
+            "_adsorp_amount_excess",
+            "_adsorption_amount_excess_uncertainty"
+          ],
+          "n_rows": 12
+        }
+      ],
+      "uptake_values_inspected": false
+    },
+    "RM8850_CH4_333K_CW.aif": {
+      "headers": {
+        "_adsnt_degas_summary": "Vacuum at 633K for 16 h",
+        "_adsnt_info": "Zeolite Na-Y (RM8850) - pellet form - no binder",
+        "_adsnt_material_id": "Zeolite Na-Y (RM8850)",
+        "_exptl_adsorptive": "VNWKTOKETHGBQD-UHFFFAOYSA-N",
+        "_exptl_adsorptive_name": "CH4",
+        "_exptl_comment": "Conversion from excess to absolute by considering pore volume and experimentally determined gas phase density",
+        "_exptl_instrument": "Rubotherm ISOSORP",
+        "_exptl_isotherm_type": "absolute",
+        "_exptl_method": "static gravimetric with density measurement",
+        "_exptl_operator": "Carsten Wedler",
+        "_exptl_porevolume": "0.358",
+        "_exptl_temperature": "333",
+        "_units_loading": "MilliMOL-PER-GM",
+        "_units_porevolume": "CentiM3-PER-GM",
+        "_units_pressure": "MegaPA",
+        "_units_temperature": "K"
+      },
+      "loops": [
+        {
+          "columns": [
+            "_adsorp_pressure",
+            "_adsorp_amount",
+            "_adsorp_amount_uncertainty",
+            "_adsorp_amount_excess",
+            "_adsorption_amount_excess_uncertainty"
+          ],
+          "n_rows": 12
+        }
+      ],
+      "uptake_values_inspected": false
+    },
+    "RM8850_CH4_353K_CW.aif": {
+      "headers": {
+        "_adsnt_degas_summary": "Vacuum at 633K for 16 h",
+        "_adsnt_info": "Zeolite Na-Y (RM8850) - pellet form - no binder",
+        "_adsnt_material_id": "Zeolite Na-Y (RM8850)",
+        "_exptl_adsorptive": "VNWKTOKETHGBQD-UHFFFAOYSA-N",
+        "_exptl_adsorptive_name": "CH4",
+        "_exptl_comment": "Conversion from excess to absolute by considering pore volume and experimentally determined gas phase density",
+        "_exptl_instrument": "Rubotherm ISOSORP",
+        "_exptl_isotherm_type": "absolute",
+        "_exptl_method": "static gravimetric with density measurement",
+        "_exptl_operator": "Carsten Wedler",
+        "_exptl_porevolume": "0.358",
+        "_exptl_temperature": "353",
+        "_units_loading": "MilliMOL-PER-GM",
+        "_units_porevolume": "CentiM3-PER-GM",
+        "_units_pressure": "MegaPA",
+        "_units_temperature": "K"
+      },
+      "loops": [
+        {
+          "columns": [
+            "_adsorp_pressure",
+            "_adsorp_amount",
+            "_adsorp_amount_uncertainty",
+            "_adsorp_amount_excess",
+            "_adsorption_amount_excess_uncertainty"
+          ],
+          "n_rows": 12
+        }
+      ],
+      "uptake_values_inspected": false
+    },
+    "RM8850_CH4_393K_CW.aif": {
+      "headers": {
+        "_adsnt_degas_summary": "Vacuum at 633K for 16 h",
+        "_adsnt_info": "Zeolite Na-Y (RM8850) - pellet form - no binder",
+        "_adsnt_material_id": "Zeolite Na-Y (RM8850)",
+        "_exptl_adsorptive": "VNWKTOKETHGBQD-UHFFFAOYSA-N",
+        "_exptl_adsorptive_name": "CH4",
+        "_exptl_comment": "Conversion from excess to absolute by considering pore volume and experimentally determined gas phase density",
+        "_exptl_instrument": "Rubotherm ISOSORP",
+        "_exptl_isotherm_type": "absolute",
+        "_exptl_method": "static gravimetric with density measurement",
+        "_exptl_operator": "Carsten Wedler",
+        "_exptl_porevolume": "0.358",
+        "_exptl_temperature": "393",
+        "_units_loading": "MilliMOL-PER-GM",
+        "_units_porevolume": "CentiM3-PER-GM",
+        "_units_pressure": "MegaPA",
+        "_units_temperature": "K"
+      },
+      "loops": [
+        {
+          "columns": [
+            "_adsorp_pressure",
+            "_adsorp_amount",
+            "_adsorp_amount_uncertainty",
+            "_adsorp_amount_excess",
+            "_adsorption_amount_excess_uncertainty"
+          ],
+          "n_rows": 12
+        }
+      ],
+      "uptake_values_inspected": false
+    },
+    "RM8850_CO2_298K_CW.aif": {
+      "headers": {
+        "_adsnt_degas_summary": "Vacuum at 633K for 16 h",
+        "_adsnt_info": "Zeolite Na-Y (RM8850) - pellet form - no binder",
+        "_adsnt_material_id": "Zeolite Na-Y (RM8850)",
+        "_exptl_adsorptive": "CURLTUGMZLYLDI-UHFFFAOYSA-N",
+        "_exptl_adsorptive_name": "CO2",
+        "_exptl_comment": "Conversion from excess to absolute by considering pore volume and experimentally determined gas phase density",
+        "_exptl_instrument": "Rubotherm ISOSORP",
+        "_exptl_isotherm_type": "absolute",
+        "_exptl_method": "static gravimetric with density measurement",
+        "_exptl_operator": "Carsten Wedler",
+        "_exptl_porevolume": "0.358",
+        "_exptl_temperature": "298",
+        "_units_loading": "MilliMOL-PER-GM",
+        "_units_porevolume": "CentiM3-PER-GM",
+        "_units_pressure": "MegaPA",
+        "_units_temperature": "K"
+      },
+      "loops": [
+        {
+          "columns": [
+            "_adsorp_pressure",
+            "_adsorp_amount",
+            "_adsorp_amount_uncertainty",
+            "_adsorp_amount_excess",
+            "_adsorption_amount_excess_uncertainty"
+          ],
+          "n_rows": 12
+        }
+      ],
+      "uptake_values_inspected": false
+    },
+    "RM8850_CO2_333K_CW.aif": {
+      "headers": {
+        "_adsnt_degas_summary": "Vacuum at 633K for 16 h",
+        "_adsnt_info": "Zeolite Na-Y (RM8850) - pellet form - no binder",
+        "_adsnt_material_id": "Zeolite Na-Y (RM8850)",
+        "_exptl_adsorptive": "CURLTUGMZLYLDI-UHFFFAOYSA-N",
+        "_exptl_adsorptive_name": "CO2",
+        "_exptl_comment": "Conversion from excess to absolute by considering pore volume and experimentally determined gas phase density",
+        "_exptl_instrument": "Rubotherm ISOSORP",
+        "_exptl_isotherm_type": "absolute",
+        "_exptl_method": "static gravimetric with density measurement",
+        "_exptl_operator": "Carsten Wedler",
+        "_exptl_porevolume": "0.358",
+        "_exptl_temperature": "333",
+        "_units_loading": "MilliMOL-PER-GM",
+        "_units_porevolume": "CentiM3-PER-GM",
+        "_units_pressure": "MegaPA",
+        "_units_temperature": "K"
+      },
+      "loops": [
+        {
+          "columns": [
+            "_adsorp_pressure",
+            "_adsorp_amount",
+            "_adsorp_amount_uncertainty",
+            "_adsorp_amount_excess",
+            "_adsorption_amount_excess_uncertainty"
+          ],
+          "n_rows": 12
+        }
+      ],
+      "uptake_values_inspected": false
+    },
+    "RM8850_CO2_353K_CW.aif": {
+      "headers": {
+        "_adsnt_degas_summary": "Vacuum at 633K for 16 h",
+        "_adsnt_info": "Zeolite Na-Y (RM8850) - pellet form - no binder",
+        "_adsnt_material_id": "Zeolite Na-Y (RM8850)",
+        "_exptl_adsorptive": "CURLTUGMZLYLDI-UHFFFAOYSA-N",
+        "_exptl_adsorptive_name": "CO2",
+        "_exptl_comment": "Conversion from excess to absolute by considering pore volume and experimentally determined gas phase density",
+        "_exptl_instrument": "Rubotherm ISOSORP",
+        "_exptl_isotherm_type": "absolute",
+        "_exptl_method": "static gravimetric with density measurement",
+        "_exptl_operator": "Carsten Wedler",
+        "_exptl_porevolume": "0.358",
+        "_exptl_temperature": "353",
+        "_units_loading": "MilliMOL-PER-GM",
+        "_units_porevolume": "CentiM3-PER-GM",
+        "_units_pressure": "MegaPA",
+        "_units_temperature": "K"
+      },
+      "loops": [
+        {
+          "columns": [
+            "_adsorp_pressure",
+            "_adsorp_amount",
+            "_adsorp_amount_uncertainty",
+            "_adsorp_amount_excess",
+            "_adsorption_amount_excess_uncertainty"
+          ],
+          "n_rows": 12
+        }
+      ],
+      "uptake_values_inspected": false
+    },
+    "RM8850_CO2_393K_CW.aif": {
+      "headers": {
+        "_adsnt_degas_summary": "Vacuum at 633K for 16 h",
+        "_adsnt_info": "Zeolite Na-Y (RM8850) - pellet form - no binder",
+        "_adsnt_material_id": "Zeolite Na-Y (RM8850)",
+        "_exptl_adsorptive": "CURLTUGMZLYLDI-UHFFFAOYSA-N",
+        "_exptl_adsorptive_name": "CO2",
+        "_exptl_comment": "Conversion from excess to absolute by considering pore volume and experimentally determined gas phase density",
+        "_exptl_instrument": "Rubotherm ISOSORP",
+        "_exptl_isotherm_type": "absolute",
+        "_exptl_method": "static gravimetric with density measurement",
+        "_exptl_operator": "Carsten Wedler",
+        "_exptl_porevolume": "0.358",
+        "_exptl_temperature": "393",
+        "_units_loading": "MilliMOL-PER-GM",
+        "_units_porevolume": "CentiM3-PER-GM",
+        "_units_pressure": "MegaPA",
+        "_units_temperature": "K"
+      },
+      "loops": [
+        {
+          "columns": [
+            "_adsorp_pressure",
+            "_adsorp_amount",
+            "_adsorp_amount_uncertainty",
+            "_adsorp_amount_excess",
+            "_adsorption_amount_excess_uncertainty"
+          ],
+          "n_rows": 12
+        }
+      ],
+      "uptake_values_inspected": false
+    },
+    "RM8850_CO2_CH4_298K_CW.aif": {
+      "headers": {
+        "_adsnt_degas_summary": "Vacuum at 633K for 16 h",
+        "_adsnt_info": "Zeolite Na-Y (RM8850) - pellet form - no binder",
+        "_adsnt_material_id": "Zeolite Na-Y (RM8850)",
+        "_exptl_adsorptive1": "CURLTUGMZLYLDI-UHFFFAOYSA-N",
+        "_exptl_adsorptive2": "VNWKTOKETHGBQD-UHFFFAOYSA-N",
+        "_exptl_adsorptive_name1": "CO2",
+        "_exptl_adsorptive_name2": "CH4",
+        "_exptl_comment": "Conversion from excess to absolute by considering pore volume and experimentally determined gas phase density",
+        "_exptl_instrument": "Rubotherm ISOSORP",
+        "_exptl_isotherm_type": "absolute",
+        "_exptl_method": "static gravimetric with density measurement",
+        "_exptl_operator": "Carsten Wedler",
+        "_exptl_porevolume": "0.358",
+        "_exptl_temperature": "298",
+        "_units_loading": "MilliMOL-PER-GM",
+        "_units_molefraction": "UNITLESS",
+        "_units_porevolume": "CentiM3-PER-GM",
+        "_units_pressure": "MegaPA",
+        "_units_temperature": "K"
+      },
+      "loops": [
+        {
+          "columns": [
+            "_adsorp_pressure",
+            "_adsorp_molefraction1",
+            "_adsorp_molefraction2",
+            "_adsorp_amount1",
+            "_adsorp_amount1_uncertainty",
+            "_adsorp_amount2",
+            "_adsorp_amount2_uncertainty",
+            "_adsorb_amount1_excess",
+            "_adsorb_amount2_excess"
+          ],
+          "n_rows": 18
+        }
+      ],
+      "uptake_values_inspected": false
+    },
+    "RM8850_CO2_CH4_313K_CW.aif": {
+      "headers": {
+        "_adsnt_degas_summary": "Vacuum at 633K for 16 h",
+        "_adsnt_info": "Zeolite Na-Y (RM8850) - pellet form - no binder",
+        "_adsnt_material_id": "Zeolite Na-Y (RM8850)",
+        "_exptl_adsorptive1": "CURLTUGMZLYLDI-UHFFFAOYSA-N",
+        "_exptl_adsorptive2": "VNWKTOKETHGBQD-UHFFFAOYSA-N",
+        "_exptl_adsorptive_name1": "CO2",
+        "_exptl_adsorptive_name2": "CH4",
+        "_exptl_comment": "Conversion from excess to absolute by considering pore volume and experimentally determined gas phase density",
+        "_exptl_instrument": "Rubotherm ISOSORP",
+        "_exptl_isotherm_type": "absolute",
+        "_exptl_method": "static gravimetric with density measurement",
+        "_exptl_operator": "Carsten Wedler",
+        "_exptl_porevolume": "0.358",
+        "_exptl_temperature": "313",
+        "_units_loading": "MilliMOL-PER-GM",
+        "_units_molefraction": "UNITLESS",
+        "_units_porevolume": "CentiM3-PER-GM",
+        "_units_pressure": "MegaPA",
+        "_units_temperature": "K"
+      },
+      "loops": [
+        {
+          "columns": [
+            "_adsorp_pressure",
+            "_adsorp_molefraction1",
+            "_adsorp_molefraction2",
+            "_adsorp_amount1",
+            "_adsorp_amount1_uncertainty",
+            "_adsorp_amount2",
+            "_adsorp_amount2_uncertainty",
+            "_adsorb_amount1_excess",
+            "_adsorb_amount2_excess"
+          ],
+          "n_rows": 9
+        }
+      ],
+      "uptake_values_inspected": false
+    },
+    "RM8850_CO2_CH4_333K_CW.aif": {
+      "headers": {
+        "_adsnt_degas_summary": "Vacuum at 633K for 16 h",
+        "_adsnt_info": "Zeolite Na-Y (RM8850) - pellet form - no binder",
+        "_adsnt_material_id": "Zeolite Na-Y (RM8850)",
+        "_exptl_adsorptive1": "CURLTUGMZLYLDI-UHFFFAOYSA-N",
+        "_exptl_adsorptive2": "VNWKTOKETHGBQD-UHFFFAOYSA-N",
+        "_exptl_adsorptive_name1": "CO2",
+        "_exptl_adsorptive_name2": "CH4",
+        "_exptl_comment": "Conversion from excess to absolute by considering pore volume and experimentally determined gas phase density",
+        "_exptl_instrument": "Rubotherm ISOSORP",
+        "_exptl_isotherm_type": "absolute",
+        "_exptl_method": "static gravimetric with density measurement",
+        "_exptl_operator": "Carsten Wedler",
+        "_exptl_porevolume": "0.358",
+        "_exptl_temperature": "333",
+        "_units_loading": "MilliMOL-PER-GM",
+        "_units_molefraction": "UNITLESS",
+        "_units_porevolume": "CentiM3-PER-GM",
+        "_units_pressure": "MegaPA",
+        "_units_temperature": "K"
+      },
+      "loops": [
+        {
+          "columns": [
+            "_adsorp_pressure",
+            "_adsorp_molefraction1",
+            "_adsorp_molefraction2",
+            "_adsorp_amount1",
+            "_adsorp_amount1_uncertainty",
+            "_adsorp_amount2",
+            "_adsorp_amount2_uncertainty",
+            "_adsorb_amount1_excess",
+            "_adsorb_amount2_excess"
+          ],
+          "n_rows": 18
+        }
+      ],
+      "uptake_values_inspected": false
+    },
+    "RM8850_CO2_CH4_353K_CW.aif": {
+      "headers": {
+        "_adsnt_degas_summary": "Vacuum at 633K for 16 h",
+        "_adsnt_info": "Zeolite Na-Y (RM8850) - pellet form - no binder",
+        "_adsnt_material_id": "Zeolite Na-Y (RM8850)",
+        "_exptl_adsorptive1": "CURLTUGMZLYLDI-UHFFFAOYSA-N",
+        "_exptl_adsorptive2": "VNWKTOKETHGBQD-UHFFFAOYSA-N",
+        "_exptl_adsorptive_name1": "CO2",
+        "_exptl_adsorptive_name2": "CH4",
+        "_exptl_comment": "Conversion from excess to absolute by considering pore volume and experimentally determined gas phase density",
+        "_exptl_instrument": "Rubotherm ISOSORP",
+        "_exptl_isotherm_type": "absolute",
+        "_exptl_method": "static gravimetric with density measurement",
+        "_exptl_operator": "Carsten Wedler",
+        "_exptl_porevolume": "0.358",
+        "_exptl_temperature": "353",
+        "_units_loading": "MilliMOL-PER-GM",
+        "_units_molefraction": "UNITLESS",
+        "_units_porevolume": "CentiM3-PER-GM",
+        "_units_pressure": "MegaPA",
+        "_units_temperature": "K"
+      },
+      "loops": [
+        {
+          "columns": [
+            "_adsorp_pressure",
+            "_adsorp_molefraction1",
+            "_adsorp_molefraction2",
+            "_adsorp_amount1",
+            "_adsorp_amount1_uncertainty",
+            "_adsorp_amount2",
+            "_adsorp_amount2_uncertainty",
+            "_adsorb_amount1_excess",
+            "_adsorb_amount2_excess"
+          ],
+          "n_rows": 9
+        }
+      ],
+      "uptake_values_inspected": false
+    }
+  },
+  "license": {
+    "id": "cc-by-4.0"
+  },
+  "record": "17604326"
+}
