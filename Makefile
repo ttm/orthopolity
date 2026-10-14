@@ -35,6 +35,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: paired-phosphorus paired-phosphorus-sources paired-phosphorus-registry
 .PHONY: field-resources field-resources-sources field-resources-registry
 .PHONY: cantilever-sources cantilever-transfer cantilever-registry
+.PHONY: adsorption-sources adsorption-transfer adsorption-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -68,9 +69,28 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/lake-metric-followup-2026-10-09/survival.png \
  results/italian-magnitude-validation-2026-10-10/validation.png \
  results/chemostat-capacity-followup-2026-10-10/capacity.png \
- results/cantilever-transfer-2026-10-13/cantilever-presentation.png
+ results/cantilever-transfer-2026-10-13/cantilever-presentation.png \
+ results/adsorption-transfer-2026-10-13/adsorption.png
 
 all: data test analyses
+
+adsorption-sources: ## verify the pinned pure/binary chemical adsorption archive
+	$(PY) experiments/fetch_adsorption.py --stage verify
+
+adsorption-transfer: adsorption-sources ## replay sealed pure-to-mixture forecasts in fresh directories
+	$(PY) experiments/run_adsorption.py --stage predict --freeze-commit 08efaa1 --output $(STUDY_OUTPUT_ROOT)/adsorption-forecast
+	cmp results/adsorption-forecast-2026-10-13/predictions.json $(STUDY_OUTPUT_ROOT)/adsorption-forecast/predictions.json
+	$(PY) experiments/run_adsorption.py --stage evaluate --freeze-commit 08efaa1 --prediction-commit 158a22c --predictions results/adsorption-forecast-2026-10-13/predictions.json --output $(STUDY_OUTPUT_ROOT)/adsorption-transfer
+	cmp results/adsorption-transfer-2026-10-13/result.json $(STUDY_OUTPUT_ROOT)/adsorption-transfer/result.json
+	$(PY) experiments/verify_adsorption.py --result $(STUDY_OUTPUT_ROOT)/adsorption-transfer/result.json --predictions results/adsorption-forecast-2026-10-13/predictions.json --output $(STUDY_OUTPUT_ROOT)/adsorption-transfer/verification.json
+	cmp results/adsorption-transfer-2026-10-13/verification.json $(STUDY_OUTPUT_ROOT)/adsorption-transfer/verification.json
+	$(PY) experiments/audit_adsorption_coverage.py --predictions results/adsorption-forecast-2026-10-13/predictions.json --output $(STUDY_OUTPUT_ROOT)/adsorption-transfer/coverage-audit.json
+	cmp results/adsorption-transfer-2026-10-13/coverage-audit.json $(STUDY_OUTPUT_ROOT)/adsorption-transfer/coverage-audit.json
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/plot_adsorption.py --result $(STUDY_OUTPUT_ROOT)/adsorption-transfer/result.json --output $(STUDY_OUTPUT_ROOT)/adsorption-transfer/adsorption.png
+	cmp results/adsorption-transfer-2026-10-13/adsorption.png $(STUDY_OUTPUT_ROOT)/adsorption-transfer/adsorption.png
+
+adsorption-registry: ## append the verified chemical competition transfer
+	$(PY) experiments/register_adsorption.py
 
 cantilever-sources: ## verify the pinned mechanical damping and thermal-noise archive
 	$(PY) experiments/fetch_cantilever.py --stage verify

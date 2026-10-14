@@ -1,0 +1,106 @@
+{
+  "binary_interaction_coefficient": 0,
+  "critical_constants": [
+    [
+      304.1282,
+      7377300,
+      0.22394
+    ],
+    [
+      190.564,
+      4599200,
+      0.01142
+    ]
+  ],
+  "inputs": [
+    {
+      "path": "data/adsorption/2026-10-13/CH4-properties.html",
+      "sha256": "ca523e896a25df667a10f0469f0da0699b52dc7ee1c4674794183cbd8af372c5"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/CO2-properties.html",
+      "sha256": "c03e4ed13796dec57054c28fd7b241bf90fdac13381d52ce607bcc654cb85575"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/RM8850_CH4_298K_CW.aif",
+      "sha256": "4a3bada00223109b721e6f6d7394d0eff94734dd6cd3005d9fb79c2d8f262111"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/RM8850_CH4_333K_CW.aif",
+      "sha256": "5c0d8ca2a67bff04f7159095f43459e5f59f49a3e60e52141c2089ff280768a9"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/RM8850_CH4_353K_CW.aif",
+      "sha256": "c9ae72be7f8d042e6850acf23e0669efc64d7d9cc14d4ff7a267bb068be778c8"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/RM8850_CH4_393K_CW.aif",
+      "sha256": "a6929a3ae7e43931752c6e97f3f40584e5b83e61b5a1f38ee7fc19a0d6925c48"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/RM8850_CO2+CH4_unary and binary data.xlsx",
+      "sha256": "274799f257acaeaf0e68ae6a2c5a7352fb2cc036b983adcb8550b7e99adcc644"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/RM8850_CO2_298K_CW.aif",
+      "sha256": "74668558694fedc69108c0802f52d5cf22dade72b716dea64f4a399fe1d7e636"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/RM8850_CO2_333K_CW.aif",
+      "sha256": "396c68fba301c705098ebb8639dd3a6c66d4a4e50e3f939747c147be263ced0c"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/RM8850_CO2_353K_CW.aif",
+      "sha256": "aa3f4b444b419ddba689f4391345459715cf5794ac88fb6b4fc23ee2cc157014"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/RM8850_CO2_393K_CW.aif",
+      "sha256": "495c57c7cbccefb58f168dc6c9d8e1ff98b41229fc3deef440bbc712bc00795a"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/RM8850_CO2_CH4_298K_CW.aif",
+      "sha256": "a49e0f55e6309b56ad9113a678cfdd7b7e2e4dc659a5829e776d72a7e1b6141a"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/RM8850_CO2_CH4_313K_CW.aif",
+      "sha256": "9a4a8b4246c827107baca222490ea329a915845843bab443041c2d8612ed9521"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/RM8850_CO2_CH4_333K_CW.aif",
+      "sha256": "85535ad6e16da1175dc3618e0c7a20ad31a223d4042ee57fe0bbe2f609f31a29"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/RM8850_CO2_CH4_353K_CW.aif",
+      "sha256": "c08833d1df85453a004bb9f8c720ec8f91cf97719645774649caef3eac647f18"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/acquisition.json",
+      "sha256": "893e9ac8bcb003ebde08b5f5f4d9dfa07f2e1689c945ed0f3d0669ee16be4177"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/cubic-methods.html",
+      "sha256": "856b33fe3f5ad07c000ac8d5543f655549a8c8478890ec42ab79753689194dbb"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/metadata-audit.json",
+      "sha256": "9755874993e41df68a4dab0e2aaaff21e4076c2562664dcd1e8749dbd53eb5d1"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/paper.xml",
+      "sha256": "09816885c3779ef23c162f1a3b6b7860a25ba509aead1c2a9a8a78147b67bc89"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/predictor-audit.json",
+      "sha256": "361bd2841f5b33d85e9ab78fb573bf474cf95dd166a18d0f2991fbdde062daff"
+    },
+    {
+      "path": "data/adsorption/2026-10-13/record.json",
+      "sha256": "b25bd12478cf94ce7c10b3d58e291c380df28afa6aadd4a617daa8a17dd320b8"
+    }
+  ],
+  "temperatures_K": [
+    298,
+    333,
+    353
+  ]
+}

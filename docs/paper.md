@@ -2,7 +2,7 @@
 
 **Capacity, physical realizations, and effective-resource inference**
 
-> Research manuscript, revised 13 October 2026. Detailed derivations, complete
+> Research manuscript, revised 14 October 2026. Detailed derivations, complete
 > comparisons and analysis histories are retained in the [supporting material](supporting-material.md).
 > Empirical studies include exploration, locally frozen forecasts and retrospective
 > reanalyses; none is externally preregistered. Authorship and submission declarations
@@ -22,8 +22,9 @@ transport or statistical equality is present. Absorption, quantization and cell-
 variation supply independently specified departures. The framework also supports inverse
 inference: restricted combinations of measured resource requirements produce identifiable
 predictions across environments. Tests show accurate allocation forecasts in an engineered
-system, approximate budget closure across separately grown algal cultures, and predictive
-gains from combined symbolic costs in language. A conditional redistribution bound
+system, pure-to-mixture chemical competition, approximate budget closure across
+separately grown algal cultures, and predictive gains from combined symbolic costs
+in language. A conditional redistribution bound
 shows why changing resource prices alone cannot explain one biological failure.
 Other forecasts fail, and some natural
 catalogues cannot support the intended test after observation and estimator checks.
@@ -364,6 +365,7 @@ Freezing a later analysis does not erase earlier exposure.
 | Linguistic genre transfer | Combined letter/phoneme cost improves over letter-only models | Lexical frequencies predict better; physical cost unidentified |
 | Bacterial summary transfer | Population mean predictions are close | Variability and the joint comparison fail |
 | Cantilever energy transfer | Some damping-to-energy forecasts transfer | Small average gain; spatial-loss and observation failures remain |
+| Chemical competition | Pure-gas calibration predicts mixture uptake | Established adsorption theory performs similarly; finite-accuracy transfer |
 | Chemostat nutrient pulse | Frozen two-budget reweighting fails | Constraint response needs explanation |
 | Flare and lake geometry | Predicted exponents excluded or equivalence unresolved | Measurement and dependence affect interpretation |
 | Seismicity | Qualification or estimator prerequisites fail | No real b--dimension comparison established |
@@ -505,6 +507,22 @@ can leave gaps that invalidate a uniform-bin correction. Neither attempt
 produces a real b--dimension hypothesis comparison. These are eligibility and
 measurement findings, not physical evidence against either relation.
 
+### 4.6 Chemical competition from pure-gas calibration
+
+For CO2 and CH4 on reference zeolite RM8850, we calibrated a shared-capacity
+Langmuir model from pure gases and sealed predictions before evaluating 45
+mixture conditions at three temperatures (Wedler et al., 2024). Counting measure
+over species and vacancies defines the comparison; calibrated binding affinities
+and reservoir fugacities specify the unequal allocation. Capacity is effective
+within each temperature. Balanced component MAE is 0.247 mmol/g, versus 0.620
+when competition is omitted: a 60% improvement. All temperatures pass the frozen
+tolerance, defined relative to maximum pure loading. Established IAST gives
+0.243 mmol/g, so no predictive advantage over adsorption theory is demonstrated.
+Only 39/90 component predictions lie within reported observation uncertainties;
+calibration-range extrapolations also remain. This supports transferable
+constraints at finite accuracy, with the retrospective chronology, established
+mechanisms and complete diagnostics in supporting section S5.14.
+
 ## 5. Learning from validity, departures and failure
 
 A general law earns scientific content through its domains, consequences and
@@ -518,8 +536,9 @@ change can alter the apparent distribution without changing the physical system:
 radial power and flux density, mode energy and spectral radiance, or lineage
 and population sampling are examples. The correction is justified independently
 of the desired result. Second, a physical constraint can produce a predicted
-non-neutral profile: measured absorption, quantum level spacing and birth-cycle
-crossings supply such explanations. Third, a specified resource model can fail
+non-neutral profile: measured absorption, quantum level spacing, birth-cycle
+crossings and pure-calibrated adsorption affinities supply such explanations.
+Third, a specified resource model can fail
 its own forecast. The chemostat reweighting, bacterial variability and cantilever
 spatial-loss errors remain failures until a revised explanation succeeds on additional evidence.
 
@@ -678,6 +697,12 @@ Mathematics, 126. American Mathematical Society. Exercise 1.4.34.
 Tong, D. (n.d.). *Statistical Physics*. University of Cambridge Part II Mathematical
 Tripos lecture notes, Sections 1.3, 2.2.1 and 3.2. Accessed 6 October 2026.
 <https://davidtong.org/pdfs/teaching/statistical-physics/statphys.pdf>.
+
+Wedler, C., Ferre, A., Azzan, H., Danaci, D., Petit, C., and Pini, R. (2024).
+Binary adsorption equilibria of three CO2+CH4 mixtures on NIST reference zeolite Y
+(RM 8850) at temperatures from 298 to 353 K and pressures up to 3 MPa.
+*Journal of Chemical & Engineering Data*, 69, 4216--4229.
+<https://doi.org/10.1021/acs.jced.4c00358>.
 
 Wojcik, L. A. M., Pfennig, A., Flamm, S., Klauschies, T., Rosenbaum, B., Weithoff, G., and
 Gaedke, U. (2025). Top-down control and species composition influence nonlinearly the

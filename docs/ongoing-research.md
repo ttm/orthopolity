@@ -1,5 +1,22 @@
 # Ongoing research: resume here
 
+**Latest, 14 October:** the [chemical competition transfer](adsorption-results-2026-10-13.md)
+is complete after the [cantilever study](cantilever-results-2026-10-13.md).
+Pure CO2/CH4 calibration predicts 45 binary conditions at three temperatures.
+Shared-capacity loading MAE is 0.247 mmol/g, versus 0.620 without competition
+and 0.243 for established IAST. The declared engineering criterion passes;
+39/90 component forecasts lie within reported observation U. Temperature-specific
+effective capacities, upper and lower calibration extrapolation and known
+publication outcomes limit the claim. Design `08efaa1`, forecast `158a22c`,
+3,294 independently verified entries; **582 tests**, **39 records / 972 references**.
+All previous 38 registry records are byte-preserved. Main 4.6 and supporting
+S5.14 explain the transfer and its limits. In the author's requested sequence,
+broader natural phenomena come next: seek independently measured resource or
+constraint inputs that discriminate rival predictions on an unused response.
+Keep physics, chemistry, biology and human/language results in their declared
+domains; another successful reconstruction of known theory is not automatically
+new general-law evidence.
+
 **Latest field continuation, 12 October:** the
 [sorted-quota stock audit](field-resources-results-2026-10-12.md) is complete.
 Separately measured cyanobacterial quotas and ambient counts yield partial

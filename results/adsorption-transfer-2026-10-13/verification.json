@@ -1,0 +1,178 @@
+{
+  "checked_numbers": 3294,
+  "discrepancies": [],
+  "independent_fits": [
+    {
+      "affinities": [
+        38.620393827937065,
+        0.48573346983463384
+      ],
+      "analysis": "peng_robinson",
+      "capacities": [
+        7.890625734069933,
+        7.890625734069933
+      ],
+      "model": "shared_fit",
+      "temperature_K": 298,
+      "weighted_sse": 5986.261983829669
+    },
+    {
+      "affinities": [
+        38.513265361784065,
+        0.8545344758773062
+      ],
+      "analysis": "peng_robinson",
+      "capacities": [
+        7.895733211424086,
+        5.968503847355529
+      ],
+      "model": "separate_fit",
+      "temperature_K": 298,
+      "weighted_sse": 5312.595536740071
+    },
+    {
+      "affinities": [
+        13.282860287951346,
+        0.2815069575588574
+      ],
+      "analysis": "peng_robinson",
+      "capacities": [
+        7.416684473307098,
+        7.416684473307098
+      ],
+      "model": "shared_fit",
+      "temperature_K": 333,
+      "weighted_sse": 4027.7322624668464
+    },
+    {
+      "affinities": [
+        13.277491701927735,
+        0.3738945592101443
+      ],
+      "analysis": "peng_robinson",
+      "capacities": [
+        7.417614031341667,
+        6.208486342499648
+      ],
+      "model": "separate_fit",
+      "temperature_K": 333,
+      "weighted_sse": 3976.0590074683446
+    },
+    {
+      "affinities": [
+        7.909282135323237,
+        0.2202934494713178
+      ],
+      "analysis": "peng_robinson",
+      "capacities": [
+        7.128531268730913,
+        7.128531268730913
+      ],
+      "model": "shared_fit",
+      "temperature_K": 353,
+      "weighted_sse": 4642.719622148023
+    },
+    {
+      "affinities": [
+        7.908083073626247,
+        0.26163877965311333
+      ],
+      "analysis": "peng_robinson",
+      "capacities": [
+        7.1288699704812535,
+        6.33820090377456
+      ],
+      "model": "separate_fit",
+      "temperature_K": 353,
+      "weighted_sse": 4633.425438091179
+    },
+    {
+      "affinities": [
+        38.70132998681345,
+        0.46878239066496163
+      ],
+      "analysis": "ideal",
+      "capacities": [
+        7.8778939721763805,
+        7.8778939721763805
+      ],
+      "model": "shared_fit",
+      "temperature_K": 298,
+      "weighted_sse": 6168.238353252891
+    },
+    {
+      "affinities": [
+        38.57812352024309,
+        0.8770335059291006
+      ],
+      "analysis": "ideal",
+      "capacities": [
+        7.883782468159868,
+        5.81590367584301
+      ],
+      "model": "separate_fit",
+      "temperature_K": 298,
+      "weighted_sse": 5297.205155295667
+    },
+    {
+      "affinities": [
+        13.326674438308405,
+        0.27484192110339895
+      ],
+      "analysis": "ideal",
+      "capacities": [
+        7.393894058388105,
+        7.393894058388105
+      ],
+      "model": "shared_fit",
+      "temperature_K": 333,
+      "weighted_sse": 4045.7839955700288
+    },
+    {
+      "affinities": [
+        13.319936882440265,
+        0.38874943325737105
+      ],
+      "analysis": "ideal",
+      "capacities": [
+        7.395060362484939,
+        5.97018136114933
+      ],
+      "model": "separate_fit",
+      "temperature_K": 333,
+      "weighted_sse": 3964.1103454234526
+    },
+    {
+      "affinities": [
+        7.9441025150232125,
+        0.21642352870450762
+      ],
+      "analysis": "ideal",
+      "capacities": [
+        7.0985760207373305,
+        7.0985760207373305
+      ],
+      "model": "shared_fit",
+      "temperature_K": 353,
+      "weighted_sse": 4641.4360234731685
+    },
+    {
+      "affinities": [
+        7.942438800288232,
+        0.27343974503406177
+      ],
+      "analysis": "ideal",
+      "capacities": [
+        7.099044096924712,
+        6.063135927712673
+      ],
+      "model": "separate_fit",
+      "temperature_K": 353,
+      "weighted_sse": 4623.202990805244
+    }
+  ],
+  "maximum_scaled_difference": 8.22556427461727e-08,
+  "method": "Independent AIF parsing; PR Gibbs derivative; pure-fit variable projection; IAST composition root; scalar score summation",
+  "scope": "Verifies source values, numerical forecasts, pure fits and scores; does not independently certify source metrology or physical assumptions",
+  "verified": true
+}

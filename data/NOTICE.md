@@ -184,3 +184,17 @@ The retained arXiv v2 HTML also carries CC BY 4.0. Metadata, acquisition receipt
 and hashes identify the exact files. The derived audit, forecasts, verification
 and plots are this project's reanalysis, with source conventions and failures
 recorded in `docs/cantilever-results-2026-10-13.md`.
+
+## RM8850 pure and mixed gas adsorption (13 October 2026)
+
+`adsorption/2026-10-13/` retains Carsten Wedler's versioned archive,
+<https://doi.org/10.5281/zenodo.17604326>, for Wedler et al. (2024),
+*Binary Adsorption Equilibria of Three CO2+CH4 Mixtures on NIST Reference
+Zeolite Y (RM 8850) at Temperatures from 298 to 353 K and Pressures up to
+3 MPa*, <https://doi.org/10.1021/acs.jced.4c00358>. Publisher metadata identifies
+CC BY 4.0. All twelve AIFs and the workbook are unchanged publisher originals;
+the workbook is retained but not used for analysis. Retained article XML and
+CoolProp/IDAES documentation keep their own notices and are not relicensed as
+project software. Acquisitions and checksums identify each exact source. Derived
+forecasts, plots and audits are this project's reanalysis, documented in
+`docs/adsorption-results-2026-10-13.md`; they are not author-endorsed data.

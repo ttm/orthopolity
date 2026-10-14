@@ -340,3 +340,15 @@ error-field and magnitude-provenance checks only; no exponent has been fitted.
 `make restore-seismic-candidates` restores missing exact snapshots. The rolling
 HORUS URL may change; a later revision requires a new acquisition, never an
 automatic replacement of these retained bytes.
+
+## RM8850 adsorption transfer
+
+Pinned author archive: Carsten Wedler, Zenodo record 17604326,
+<https://doi.org/10.5281/zenodo.17604326>, released 13 November 2025.
+Paper: Wedler et al. (2024), J. Chem. Eng. Data 69, 4216--4229,
+<https://doi.org/10.1021/acs.jced.4c00358>. `adsorption/2026-10-13/`
+retains all thirteen publisher files, metadata, full paper XML, independent
+gas-property documentation, acquisition receipts and predictor-only audits.
+`experiments/fetch_adsorption.py --stage verify` verifies original size/MD5
+and retained SHA-256 checksums offline. Source URLs and TLS-verified retrieval
+details are in `acquisition.json`; no rolling source replaces pinned bytes.

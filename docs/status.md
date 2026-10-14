@@ -1,25 +1,32 @@
 # Project status and handoff
 
-Last updated 13 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 14 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
-**Chemistry continuation, 13 October:** a reachable, pinned RM8850 zeolite
-archive provides separate pure CO2/CH4 and mixture measurements. The
-[source audit](adsorption-source-audit-2026-10-13.md) qualifies 72 calibration
-observations and 45 mixture conditions at three shared temperatures. The
-[protocol](adsorption-protocol-2026-10-13.md) freezes a common-capacity
-Langmuir transfer, no-competition ablation and separate-pure-capacity IAST,
-with Peng–Robinson fugacity and a fully recalibrated ideal-gas sensitivity.
-Twenty-three synthetic/independent-implementation checks pass before any
-real uptake fitting. Numerical mixtures remain unevaluated at this design
-commit; published qualitative conclusions are already known.
+**Latest chemistry result, 14 October:** the
+[pure-to-mixture adsorption transfer](adsorption-results-2026-10-13.md) is
+complete. Seventy-two pure calibration observations predict 90 component
+targets at 45 mixture conditions. Shared-capacity Langmuir passes the frozen
+engineering rule at all three temperatures: balanced MAE **0.247 mmol/g**,
+versus **0.620 without competition** (60.1% gain) and **0.243 for IAST**.
+Only **39/90** shared forecasts fall within reported observation U. Effective
+capacities vary with temperature; 29 upper IAST extrapolations and a post-run
+audit of lower calibration coverage remain explicit. The design `08efaa1`
+preceded pure fitting; sealed forecasts `158a22c` preceded numerical mixture
+evaluation. Published qualitative outcomes were known. Independent Gibbs,
+variable-projection and composition-root verification checks 3,294 entries;
+offline forecasts, results, verification, coverage audit and figure replay
+byte-for-byte. Main 4.6 and supporting S5.14 carry the result. This adds a
+useful chemical constraint transfer, without an advantage over established
+adsorption theory or a demonstration of universal neutrality.
 
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
-the package layout for all runners. The suite now passes **558 tests**; the
-registry verifies **38 runs and 929 file references**, including the Italian simulation,
-retrospective chemostat diagnosis, independent-assay pilot, field-stock audit and cantilever transfer. The broader programme and subsequent
+the package layout for all runners. The suite now passes **582 tests**; the
+registry verifies **39 runs and 972 file references**, including the Italian simulation,
+retrospective chemostat diagnosis, independent-assay pilot, field-stock audit,
+cantilever transfer and chemical competition. The broader programme and subsequent
 studies are in [research-brief.md](research-brief.md) and
 [ongoing-research.md](ongoing-research.md).
 
@@ -41,9 +48,12 @@ is 53 pages. Both were visually checked and repeat-build hashes agree.
 **Requested research order:** physics, chemistry, broader natural phenomena,
 biology, then human phenomena including language/culture. The
 [physics-source audit](physics-candidate-audit-2026-10-12.md) retains the alternatives.
-The next bounded search should prioritize a chemical system with independently
-specified stoichiometry/chemical potentials or transport constraints and an
-unused response target. Resolve source and calibration conventions before fitting.
+The first physics and chemistry transfers are complete. Next, prioritize broader
+natural phenomena with independently specified resources/constraints that make
+competing models predict different unused responses. Chemistry alternatives
+remain in the [source audit](adsorption-source-audit-2026-10-13.md). Resolve
+source and calibration conventions before fitting; a catalogue of familiar
+formulae alone would add less than a discriminating prediction.
 
 **Latest, 12 October:** the [field-quota audit](field-resources-results-2026-10-12.md)
 matches separately assayed cyanobacterial quotas to ambient counts and bulk
@@ -175,6 +185,7 @@ discards the authors' programme.
 | 12 Oct 2026 | Independent phosphorus assays, sample audit and count-transfer pilot | One qualifying test culture; measured quota worsens prediction; stock/quota/count calibration does not transfer; 508 tests, 36 records |
 | 12 Oct 2026 | Sorted field quotas, ambient counts and bulk-stock compatibility | 18/18 primary C/N comparisons compatible; one slight excess in date sensitivity; P unit concern retained; 531 tests, 37 records |
 | 13 Oct 2026 | Frozen cantilever damping-to-energy extrapolation | 10/11 modes physically admissible; 74.00 K thermal MAE vs 78.94 K geometry-only; strong mode failures retained; 558 tests, 38 records |
+| 13–14 Oct 2026 | Pure-calibrated chemical competition transfer | 60.1% lower mixture MAE than omitting competition; IAST slightly better; all three engineering gates pass, measurement-scale errors and extrapolation remain; 582 tests, 39 records |
 
 ## 3. Results to carry forward
 
@@ -220,6 +231,13 @@ grow proportionally sit near ζ = 1; event catalogues and cascades mostly below 
 | Italian magnitude prerequisite (simulation) | 45/56 required scenarios fail; real Italian sequence/response fitting not run | `results/italian-magnitude-validation-2026-10-10/summary.json` |
 
 ## 4. Current assessment
+
+The chemistry study adds a substantial, real-data prediction gain from including
+independently calibrated competition. It passes its declared finite-accuracy
+criterion, while IAST performs slightly better and measurement-scale discrepancies
+remain. This strengthens the framework's concrete account of constrained
+allocation. It does not establish a new advantage beyond known adsorption
+physics or settle the law's broad neutral-allocation claim.
 
 The cantilever study now adds real-physics extrapolation with both conditional
 successes and clear local-model failures. Its global damping/thermal mismatch
@@ -267,8 +285,8 @@ The [research brief](research-brief.md) explains the general-law programme;
 ## 5. Next steps, in priority order
 
 **Author-directed domain sequence takes priority:** the first independent physics
-forecast is now complete. Seek a chemical forward prediction next, then broader
-nature, biology and human phenomena. Require independent resource/constraint
+and chemistry forecasts are complete. Seek a discriminating prediction in broader
+nature next, then biology and human phenomena. Require independent resource/constraint
 inputs, a genuine unused observable, competing predictions and reachable data;
 do not count mass-balance identities or target-calibrated equilibrium constants
 as confirmation. The cantilever follow-up would require independently measured

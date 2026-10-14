@@ -2,7 +2,7 @@
 
 **Accounting proofs, physical derivations, observation models and complete comparisons**
 
-Prepared 10 October 2026; revised 13 October 2026 as a companion to
+Prepared 10 October 2026; revised 14 October 2026 as a companion to
 [the main article](paper.md).
 This document preserves the substantive technical material of the article at
 source commit **`f137d4efb050ccfcb5c5f814d32da651c645421c`**, supplemented by
@@ -2422,6 +2422,104 @@ physical gates and source/forecast hashes. This study adds an executable
 natural-physics transfer and failure diagnosis. Its modest conditional gain is
 not evidence of uniform predictive success or universal equal allocation.
 
+### S5.14. Pure-to-mixture chemical competition
+
+The public RM8850 zeolite archive (Wedler et al., 2024; Zenodo 17604326)
+provides pure CO2/CH4 calibration and separate binary equilibrium measurements.
+The source-qualified intersection at 298, 333 and 353 K supplies 72 pure
+observations and 45 mixture conditions, or 90 component targets. Absolute
+uptake, equilibrium gas composition and nominal temperature are used. Every
+eligible pressure/composition row is retained. The [design](adsorption-protocol-2026-10-13.md)
+was committed at `08efaa1` before pure fitting, and predictions at `158a22c`
+before numerical mixture evaluation. Published qualitative results were known;
+this is a retrospective transfer audit, not a blind experiment.
+
+The physical approximation is a finite capacity of interchangeable one-molecule
+sites, with counting measure over species and vacancies. The known competitive
+Langmuir model (Langmuir, 1918) has
+
+$$q_i=Q\frac{b_i f_i}{1+\sum_j b_j f_j},\qquad
+q_0=\frac{Q}{1+\sum_j b_j f_j}.$$
+
+Here $Q$ is an effective capacity fitted separately at each temperature, $b_i$
+is a pure-calibrated affinity, and $f_i$ is reservoir fugacity. Vacancies and
+occupied sites sum to $Q$; equal occupied shares require equal $b_i f_i$. This
+states the resource and the independently calibrated constraint factor. It
+does not derive allocation from conservation or relabel affinity as a physical
+additive resource. Similar molecular covolumes motivate testing common capacity,
+but the source establishes cage volume rather than identical binding sites.
+
+Primary fugacity uses Peng--Robinson (1976), independent critical constants and
+fixed zero binary interaction. Pure calibration uses pure fugacity; mixtures
+use mixture fugacity coefficients. The ideal-gas sensitivity recalibrates and
+predicts throughout using pressure. Fits use positive logarithmic parameters,
+fixed multistart weighted least squares and U/2 weights. All three primary
+common-capacity fits pass the declared local identifiability gate and pure
+RMSE <=5% of the relevant maximum pure loading. The gate measures numerical
+sensitivity; unknown covariance prevents a confidence-interval interpretation.
+
+The no-competition ablation applies the same fitted pure curves independently
+at component fugacity. IAST (Myers and Prausnitz, 1965) instead uses separately
+fitted pure capacities, one additional pure-fit parameter per temperature.
+For Langmuir curves, spreading pressure is
+$\Pi_i=Q_i\ln(1+b_i f_i^0)$. Equal spreading pressure and $\sum_i f_i/f_i^0=1$
+determine adsorbed fractions; reciprocal total uptake is $\sum_i x_i/q_i^0$.
+Equal-capacity IAST coincides with competitive Langmuir and supplies a numerical
+check, not an additional independent hypothesis. No mixture target calibrates
+any of these models.
+
+| Model | Balanced component MAE | Total-loading MAE | Adsorbed CO2 fraction MAE | Within reported U |
+|---|---:|---:|---:|---:|
+| Shared capacity | 0.24746 | 0.25543 | 0.04975 | 39/90 |
+| No competition | 0.61997 | 1.20808 | 0.09402 | 20/90 |
+| Separate-capacity IAST | 0.24280 | 0.22859 | 0.04983 | 38/90 |
+
+*Table S22. All primary mixture targets. Loading errors are mmol/g; composition
+error is dimensionless. Component MAE weights the six temperature-by-gas
+cells equally. The other means weight temperatures equally. Reported U does
+not include the full prediction uncertainty or covariance.*
+
+Shared component MAEs for CO2/CH4 are 0.465/0.238, 0.301/0.163 and
+0.181/0.137 mmol/g at the three temperatures. These are 2.56--5.69% of
+the corresponding pure maxima. All meet the frozen 10% engineering criterion;
+the 60.1% improvement over omitting competition exceeds its required 20%.
+This is not a 10%-relative-error guarantee for individual mixture points.
+Only 39/90 predictions fall inside reported measurement error bars. Positive
+CO2 and negative CH4 biases partially cancel in total loading, reinforcing
+the need for the declared component score. The pure residuals also exceed
+reported errors despite meeting the engineering tolerance.
+
+Common effective capacities are 7.891, 7.417 and 7.129 mmol/g; separate CH4
+capacities are 5.969, 6.208 and 6.338. Their variation precludes claiming a
+single temperature-invariant site count. The frozen IAST flags retain 29
+upper standard-state extrapolations, reaching 115.7 times measured pure
+fugacity coverage. A post-response audit of sealed predictors additionally
+finds 12 mixture CO2 conditions below pure calibration coverage and 11 lower
+IAST standard-state extrapolations. At 298 K the first pure CO2 measurement
+already corresponds to about 0.56 fitted occupancy. The dilute response is
+therefore partly extrapolated. No affected row is removed and no forecast
+is changed by this coverage diagnosis.
+
+![Primary sealed adsorption forecasts and established comparators](../results/adsorption-transfer-2026-10-13/adsorption.png)
+
+**Figure S14.** All primary component forecasts, with the same observations
+for all models. Blue circles: shared capacity; orange squares: IAST; gray
+crosses: no competition. Horizontal bars show reported expanded observation
+uncertainty, once per observation at the shared forecast. The diagonal is exact
+prediction. Gas composition and uptake errors are related, so these are not
+independent uncertainty intervals.
+
+Ideal-gas sensitivity gives shared, ablation and IAST component MAEs of
+0.26401, 0.63130 and 0.25912 mmol/g, respectively, also meeting the pragmatic
+transfer rule. Independent Gibbs differentiation, variable-projection pure
+fitting and an adsorbed-composition IAST solver verify 3,294 entries. The
+[full report](adsorption-results-2026-10-13.md) preserves all source conventions,
+fit diagnostics, per-sweep errors, coverage limitations and reproduction steps.
+The gain establishes a useful chemistry instance of constrained allocation
+at finite accuracy. Established IAST performs similarly and slightly better
+on loading error; this comparison demonstrates no additional predictive
+advantage over adsorption theory and does not establish universal neutrality.
+
 ## References
 
 Arranz, I., Fournier, B., Lester, N. P., Shuter, B. J., and Peres-Neto, P. R. (2022).
@@ -2438,7 +2536,10 @@ Sections 4.7 and 5.6. <https://web.stanford.edu/~boyd/cvxbook/>.
 CMU Sphinx contributors (accessed 7 October 2026). *CMU Pronouncing Dictionary*.
 [Pinned source](https://github.com/cmusphinx/cmudict/tree/74790861f652b15e4ac49015a90074ad62a27690).
 
-Clauset, A., Shalizi, C. R., and Newman, M. E. J. (2009). Power-law distributions in
+Clauset, A., Shalizi, C. R., and Myers, A. L., and Prausnitz, J. M. (1965). Thermodynamics of mixed-gas adsorption.
+*AIChE Journal*, 11, 121--127. <https://doi.org/10.1002/aic.690110125>.
+
+Newman, M. E. J. (2009). Power-law distributions in
 empirical data. *SIAM Review*, 51, 661–703. <https://doi.org/10.1137/070710111>.
 
 Condon, J. J., and Ransom, S. M. (2016). *Essential Radio Astronomy*.
@@ -2531,6 +2632,10 @@ Keshavarz, A., Wang, Y., and Boyd, S. (2011). Imputing a Convex Objective Functi
 *Proceedings IEEE Multi-Conference on Systems and Control*, 613–619.
 <https://stanford.edu/~boyd/papers/imputed_objective.html>.
 
+Langmuir, I. (1918). The adsorption of gases on plane surfaces of glass, mica
+and platinum. *Journal of the American Chemical Society*, 40, 1361--1403.
+<https://doi.org/10.1021/ja02242a004>.
+
 Levin, D. A., and Peres, Y. (2017). *Markov Chains and Mixing Times*, second edition,
 with contributions by E. L. Wilmer. American Mathematical Society.
 <https://pages.uoregon.edu/dlevin/MARKOV/mcmt2e.pdf>.
@@ -2568,6 +2673,10 @@ Product description and reconstruction provenance.
 Planck, M. (1901). Ueber das Gesetz der Energieverteilung im Normalspectrum.
 *Annalen der Physik*, 309, 553--563. <https://doi.org/10.1002/andp.19013090310>.
 
+Peng, D.-Y., and Robinson, D. B. (1976). A new two-constant equation of state.
+*Industrial & Engineering Chemistry Fundamentals*, 15, 59--64.
+<https://doi.org/10.1021/i160057a011>.
+
 Perkins, D. M., et al. (2018). Bending the rules: exploitation of allochthonous resources
 by a top-predator modifies size-abundance scaling in stream food webs.
 *Ecology Letters*, 21, 1771–1780. <https://doi.org/10.1111/ele.13147>.
@@ -2590,6 +2699,12 @@ Tripos lecture notes, Sections 1.3, 2.2.1 and 3.2. Accessed 6 October 2026.
 
 Visser, M. (2013). Zipf's law, power laws and maximum entropy. *New Journal of Physics*,
 15, 043021. <https://arxiv.org/abs/1212.5567>.
+
+Wedler, C., Ferre, A., Azzan, H., Danaci, D., Petit, C., and Pini, R. (2024).
+Binary adsorption equilibria of three CO2+CH4 mixtures on NIST reference zeolite Y
+(RM 8850) at temperatures from 298 to 353 K and pressures up to 3 MPa.
+*Journal of Chemical & Engineering Data*, 69, 4216--4229.
+<https://doi.org/10.1021/acs.jced.4c00358>. Data: <https://doi.org/10.5281/zenodo.17604326>.
 
 Wojcik, L. A. M., Pfennig, A., Flamm, S., Klauschies, T., Rosenbaum, B., Weithoff, G., and
 Gaedke, U. (2025). Top-down control and species composition influence nonlinearly the
