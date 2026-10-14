@@ -431,32 +431,23 @@ appreciably on persistence. None met the declared recovery criterion by day 12
 ([response report](chemostat-response.md); Wojcik et al., 2025).
 
 A [retrospective follow-up](chemostat-capacity-followup-results-2026-10-11.md)
-asks whether freely changing both nonnegative resource prices can explain the
-failure while allocation opportunities stay fixed. Measured preliminary quota
-changes and every pooled-species mixture imply upper redistribution bounds of
-0.190, 0.175 and 0.155 on days 1--3. Even the minimum observed changes over all
-mixtures exceed these bounds in 17 of 36 comparisons, involving eight of twelve
-vessels. Price adjustment alone cannot explain these recorded profiles under
-the transferred quotas. The result excludes that conjunction of assumptions;
-separate-culture quotas do not establish mixed-vessel physiology, and assay
-uncertainty is unavailable. This is a conditional diagnosis, not a statistical
-rejection of the law. It identifies what a revised explanation must change:
-resource physiology, allocation opportunities or the specified relation itself.
+allows arbitrary nonnegative C:N prices, measured preliminary quota changes
+and every pooled-species mixture. Even so, observed redistribution exceeds the
+resulting bound in 17/36 comparisons across eight of twelve vessels. Under
+transferred quotas and fixed allocation opportunities, price adjustment alone
+cannot explain the failure. Separate-culture quotas do not establish mixed-vessel
+physiology, and assay uncertainty is unavailable. This conditional diagnosis
+identifies what a revised explanation must change: physiology, opportunities
+or the specified relation. Complete bounds are in supporting section S5.10.
 
 A subsequent [independent-assay pilot](paired-phosphorus-results-2026-10-12.md)
-tests whether same-culture phosphorus measurements improve a cell-count
-prediction. Strict sample checks leave one calibration and one test culture.
-Observed abundance is 34.9 million cells/mL; fixed quota predicts 5.55 million
-and an independently measured X-ray quota predicts 4.24 million. Bulk stock,
-single-cell quota and counts fail to close consistently across the two cultures
-(supporting section S5.11). Independent measurement avoids circularity but
-does not guarantee compatible inputs. This unsuccessful accounting transfer
-does not test equal allocation. A subsequent
-[field-data audit](field-resources-results-2026-10-12.md) finds partial stocks
-from separately assayed cyanobacterial quotas and ambient counts below measured
-bulk chemistry in all 18 primary carbon/nitrogen comparisons. It clears a
-necessary measurement check; incomplete group coverage, filtration and undefined
-allocation opportunities still prevent an allocation test (supporting S5.12).
+also fails: one eligible test culture has 34.9 million cells/mL, versus 5.55
+million predicted from fixed phosphorus quota and 4.24 million from an independent
+X-ray quota. Measurement independence does not guarantee compatible inputs
+(supporting S5.11). A [field audit](field-resources-results-2026-10-12.md)
+passes all 18 primary carbon/nitrogen partial-stock checks, but incomplete group
+coverage and undefined allocation opportunities still prevent an allocation
+test (supporting S5.12).
 
 ### 4.4 Effective-resource inference and competing forecasts
 
