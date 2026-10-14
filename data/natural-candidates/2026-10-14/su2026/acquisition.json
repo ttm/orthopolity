@@ -1,0 +1,24 @@
+{
+  "complete_for_selected_files": true,
+  "files": [
+    {
+      "name": "record.json",
+      "url": "https://zenodo.org/api/records/19312642",
+      "final_url": "https://zenodo.org/api/records/19312642",
+      "bytes": 5169,
+      "sha256": "cf25041392fd67923d3d093588dcf4acc4f290e48fd24b7def39863e66c76d5c",
+      "retrieved_utc": "2026-10-14T19:27:39.740708+00:00",
+      "tls_verified": true
+    },
+    {
+      "name": "datasets.xlsx",
+      "url": "https://zenodo.org/api/records/19312642/files/datasets.xlsx/content",
+      "final_url": "https://zenodo.org/api/records/19312642/files/datasets.xlsx/content",
+      "bytes": 113216,
+      "sha256": "adf0e193dcff783c8f967fa029b7f5a30d4a5dbbf238203cf9ee15d00cba5c00",
+      "retrieved_utc": "2026-10-14T19:27:40.859624+00:00",
+      "tls_verified": true
+    }
+  ],
+  "numerical_workbook_responses_inspected": false
+}

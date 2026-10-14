@@ -1,0 +1,54 @@
+{
+  "freeze_commit": "bdc1b78157bb0f940e0cea448b1c8576ec6b8ee0",
+  "python": "3.11.6 (v3.11.6:8b6ee5ba3b, Oct  2 2023, 11:18:21) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "sources": [
+    {
+      "path": "configs/saltation_qualification_2026-10-14.json",
+      "sha256": "43187edd33664ead543b9ce9241855f1155e571f6884fd8e10175d1058e70ef8"
+    },
+    {
+      "path": "src/orthopolity/saltation.py",
+      "sha256": "e079c0beb5ce2c443ebd125ec0aa379b901228490b617683c3a7e636f54899c3"
+    },
+    {
+      "path": "experiments/qualify_saltation.py",
+      "sha256": "92d55a07dc843297db6618adffb18757ce5e5bd2655cd6913eff7678943b7b09"
+    },
+    {
+      "path": "experiments/fetch_saltation.py",
+      "sha256": "5aa0364542ec83c13752a41c2cc6d2c447910f4589e308c52093a4be1d34190f"
+    },
+    {
+      "path": "tests/test_saltation.py",
+      "sha256": "cbab72c4f0f6240b67d477e2ef80e6ea70529c9e8132f2e23a4d5bcbd0c4afe0"
+    },
+    {
+      "path": "docs/saltation-qualification-protocol-2026-10-14.md",
+      "sha256": "a2cdd6aeb0c70a095b7555c23e6e137911956178be4b12a1b2d1172d5666e34e"
+    },
+    {
+      "path": "docs/natural-source-audit-2026-10-14.md",
+      "sha256": "31ba3c4874dd07b978c14f1a72e06cfb3844dc72c33ebc39f2bebc38cf5e210d"
+    },
+    {
+      "path": "data/saltation/2026-10-14/SaltationWind_ThreeSites_30minute.xlsx",
+      "sha256": "b61f400c5f6602cc049ea2fb124f7583b72e2497844f3d98786edf9695112da5"
+    },
+    {
+      "path": "data/saltation/2026-10-14/acquisition.json",
+      "sha256": "bf35f0c9b0ee7af809ddfef1e14063e63f91ef92d6c7579715c802fd9893308a"
+    },
+    {
+      "path": "data/saltation/2026-10-14/paper.xml",
+      "sha256": "6fd17239eaf76ad6803a8c1b8c5cfb1fee7b4e761a246f4ebb4632ec8989e712"
+    },
+    {
+      "path": "data/saltation/2026-10-14/predictor-audit.json",
+      "sha256": "39b7b769adab93c6ec5ed65dd8448d3c163dc83fe5c4a079605870f01c6a9a54"
+    },
+    {
+      "path": "data/saltation/2026-10-14/record.json",
+      "sha256": "efc5320eb53d1fdd5d092ffce59074e1f97666cb9285648b522637133f79a8a8"
+    }
+  ]
+}

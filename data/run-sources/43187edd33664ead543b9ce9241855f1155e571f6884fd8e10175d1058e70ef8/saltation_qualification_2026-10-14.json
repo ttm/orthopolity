@@ -1,0 +1,16 @@
+{
+  "run_id": "saltation-qualification-2026-10-14",
+  "primary_site": "Oceano",
+  "max_abs_theta_degrees": 20,
+  "max_abs_zL": 0.15,
+  "minimum_days_per_split": 5,
+  "exponents": [0, 0.5],
+  "thresholds_Pa": [0.04, 0.08, 0.12],
+  "noise_cv": [0, 0.1, 0.25, 0.5],
+  "replicates": 500,
+  "seed": 20261014,
+  "required_correct_fraction": 0.8,
+  "primary_noise_cv": 0.5,
+  "tie_relative_tolerance": 1e-12,
+  "workbook": "data/saltation/2026-10-14/SaltationWind_ThreeSites_30minute.xlsx"
+}

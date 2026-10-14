@@ -36,6 +36,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: field-resources field-resources-sources field-resources-registry
 .PHONY: cantilever-sources cantilever-transfer cantilever-registry
 .PHONY: adsorption-sources adsorption-transfer adsorption-registry
+.PHONY: saltation-sources saltation-qualification saltation-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -73,6 +74,21 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/adsorption-transfer-2026-10-13/adsorption.png
 
 all: data test analyses
+
+saltation-sources: ## verify original wind/sand archive without reading response columns
+	$(PY) experiments/fetch_saltation.py --stage verify
+
+saltation-qualification: saltation-sources ## reproduce synthetic design gate; never fit real sand flux
+	$(PY) experiments/qualify_saltation.py --freeze-commit bdc1b78 --output $(STUDY_OUTPUT_ROOT)/saltation-qualification
+	cmp results/saltation-qualification-2026-10-14/result.json $(STUDY_OUTPUT_ROOT)/saltation-qualification/result.json
+	cmp results/saltation-qualification-2026-10-14/summary.json $(STUDY_OUTPUT_ROOT)/saltation-qualification/summary.json
+	$(PY) experiments/verify_saltation_qualification.py --result $(STUDY_OUTPUT_ROOT)/saltation-qualification/result.json --output $(STUDY_OUTPUT_ROOT)/saltation-qualification/verification.json
+	cmp results/saltation-qualification-2026-10-14/verification.json $(STUDY_OUTPUT_ROOT)/saltation-qualification/verification.json
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/plot_saltation_qualification.py --summary $(STUDY_OUTPUT_ROOT)/saltation-qualification/summary.json --output $(STUDY_OUTPUT_ROOT)/saltation-qualification/selection.png
+	cmp results/saltation-qualification-2026-10-14/selection.png $(STUDY_OUTPUT_ROOT)/saltation-qualification/selection.png
+
+saltation-registry: ## archive the completed design qualification as simulation only
+	$(PY) experiments/register_saltation_qualification.py
 
 adsorption-sources: ## verify the pinned pure/binary chemical adsorption archive
 	$(PY) experiments/fetch_adsorption.py --stage verify

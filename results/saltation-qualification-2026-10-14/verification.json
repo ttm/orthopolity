@@ -1,0 +1,1332 @@
+{
+  "actual_flux_values_read": false,
+  "checked_numbers": 32184,
+  "discrepancies": [],
+  "gate": {
+    "action": "stop_before_real_response_fitting",
+    "minimum_correct_fraction": 0.546,
+    "passed": false,
+    "primary_noise_cv": 0.5,
+    "required_correct_fraction": 0.8
+  },
+  "independent_fits": [
+    {
+      "coefficient": 0.9999999999999999,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 9.68190006978686e-34,
+      "replicate": 0,
+      "scenario": "cv=0/threshold=0.04/truth=0",
+      "threshold": 0.04000000000000002
+    },
+    {
+      "coefficient": 1.7865227488726927,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 4.234196869884811e-05,
+      "replicate": 0,
+      "scenario": "cv=0/threshold=0.04/truth=0",
+      "threshold": 0.0
+    },
+    {
+      "coefficient": 0.9999999999999999,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 9.68190006978686e-34,
+      "replicate": 17,
+      "scenario": "cv=0/threshold=0.04/truth=0",
+      "threshold": 0.04000000000000002
+    },
+    {
+      "coefficient": 1.7865227488726927,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 4.234196869884811e-05,
+      "replicate": 17,
+      "scenario": "cv=0/threshold=0.04/truth=0",
+      "threshold": 0.0
+    },
+    {
+      "coefficient": 0.9999999999999999,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 9.68190006978686e-34,
+      "replicate": 499,
+      "scenario": "cv=0/threshold=0.04/truth=0",
+      "threshold": 0.04000000000000002
+    },
+    {
+      "coefficient": 1.7865227488726927,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 4.234196869884811e-05,
+      "replicate": 499,
+      "scenario": "cv=0/threshold=0.04/truth=0",
+      "threshold": 0.0
+    },
+    {
+      "coefficient": 0.5492082533331087,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 6.086923776200603e-06,
+      "replicate": 0,
+      "scenario": "cv=0/threshold=0.04/truth=0.5",
+      "threshold": 0.06755376136204581
+    },
+    {
+      "coefficient": 0.9999999999999994,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 2.602394706895817e-34,
+      "replicate": 0,
+      "scenario": "cv=0/threshold=0.04/truth=0.5",
+      "threshold": 0.03999999999999997
+    },
+    {
+      "coefficient": 0.5492082533331087,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 6.086923776200603e-06,
+      "replicate": 17,
+      "scenario": "cv=0/threshold=0.04/truth=0.5",
+      "threshold": 0.06755376136204581
+    },
+    {
+      "coefficient": 0.9999999999999994,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 2.602394706895817e-34,
+      "replicate": 17,
+      "scenario": "cv=0/threshold=0.04/truth=0.5",
+      "threshold": 0.03999999999999997
+    },
+    {
+      "coefficient": 0.5492082533331087,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 6.086923776200603e-06,
+      "replicate": 499,
+      "scenario": "cv=0/threshold=0.04/truth=0.5",
+      "threshold": 0.06755376136204581
+    },
+    {
+      "coefficient": 0.9999999999999994,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 2.602394706895817e-34,
+      "replicate": 499,
+      "scenario": "cv=0/threshold=0.04/truth=0.5",
+      "threshold": 0.03999999999999997
+    },
+    {
+      "coefficient": 0.9999999999999993,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 1.9155386455158566e-33,
+      "replicate": 0,
+      "scenario": "cv=0/threshold=0.08/truth=0",
+      "threshold": 0.08
+    },
+    {
+      "coefficient": 1.8495770188653757,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 1.4285061595315136e-05,
+      "replicate": 0,
+      "scenario": "cv=0/threshold=0.08/truth=0",
+      "threshold": 0.05889737344892002
+    },
+    {
+      "coefficient": 0.9999999999999993,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 1.9155386455158566e-33,
+      "replicate": 17,
+      "scenario": "cv=0/threshold=0.08/truth=0",
+      "threshold": 0.08
+    },
+    {
+      "coefficient": 1.8495770188653757,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 1.4285061595315136e-05,
+      "replicate": 17,
+      "scenario": "cv=0/threshold=0.08/truth=0",
+      "threshold": 0.05889737344892002
+    },
+    {
+      "coefficient": 0.9999999999999993,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 1.9155386455158566e-33,
+      "replicate": 499,
+      "scenario": "cv=0/threshold=0.08/truth=0",
+      "threshold": 0.08
+    },
+    {
+      "coefficient": 1.8495770188653757,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 1.4285061595315136e-05,
+      "replicate": 499,
+      "scenario": "cv=0/threshold=0.08/truth=0",
+      "threshold": 0.05889737344892002
+    },
+    {
+      "coefficient": 0.5239425706470462,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 3.244675739914799e-06,
+      "replicate": 0,
+      "scenario": "cv=0/threshold=0.08/truth=0.5",
+      "threshold": 0.09415992018113734
+    },
+    {
+      "coefficient": 1.0,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 2.049830206579988e-35,
+      "replicate": 0,
+      "scenario": "cv=0/threshold=0.08/truth=0.5",
+      "threshold": 0.08000000000000002
+    },
+    {
+      "coefficient": 0.5239425706470462,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 3.244675739914799e-06,
+      "replicate": 17,
+      "scenario": "cv=0/threshold=0.08/truth=0.5",
+      "threshold": 0.09415992018113734
+    },
+    {
+      "coefficient": 1.0,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 2.049830206579988e-35,
+      "replicate": 17,
+      "scenario": "cv=0/threshold=0.08/truth=0.5",
+      "threshold": 0.08000000000000002
+    },
+    {
+      "coefficient": 0.5239425706470462,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 3.244675739914799e-06,
+      "replicate": 499,
+      "scenario": "cv=0/threshold=0.08/truth=0.5",
+      "threshold": 0.09415992018113734
+    },
+    {
+      "coefficient": 1.0,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 2.049830206579988e-35,
+      "replicate": 499,
+      "scenario": "cv=0/threshold=0.08/truth=0.5",
+      "threshold": 0.08000000000000002
+    },
+    {
+      "coefficient": 1.0000000000000002,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 8.061437377066151e-35,
+      "replicate": 0,
+      "scenario": "cv=0/threshold=0.12/truth=0",
+      "threshold": 0.12
+    },
+    {
+      "coefficient": 1.94796943986628,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 5.285775487562167e-06,
+      "replicate": 0,
+      "scenario": "cv=0/threshold=0.12/truth=0",
+      "threshold": 0.11286093829654732
+    },
+    {
+      "coefficient": 1.0000000000000002,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 8.061437377066151e-35,
+      "replicate": 17,
+      "scenario": "cv=0/threshold=0.12/truth=0",
+      "threshold": 0.12
+    },
+    {
+      "coefficient": 1.94796943986628,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 5.285775487562167e-06,
+      "replicate": 17,
+      "scenario": "cv=0/threshold=0.12/truth=0",
+      "threshold": 0.11286093829654732
+    },
+    {
+      "coefficient": 1.0000000000000002,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 8.061437377066151e-35,
+      "replicate": 499,
+      "scenario": "cv=0/threshold=0.12/truth=0",
+      "threshold": 0.12
+    },
+    {
+      "coefficient": 1.94796943986628,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 5.285775487562167e-06,
+      "replicate": 499,
+      "scenario": "cv=0/threshold=0.12/truth=0",
+      "threshold": 0.11286093829654732
+    },
+    {
+      "coefficient": 0.5091343693487994,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 1.159709739275622e-06,
+      "replicate": 0,
+      "scenario": "cv=0/threshold=0.12/truth=0.5",
+      "threshold": 0.12589503039634267
+    },
+    {
+      "coefficient": 1.0000000000000002,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 1.937929969138285e-35,
+      "replicate": 0,
+      "scenario": "cv=0/threshold=0.12/truth=0.5",
+      "threshold": 0.12
+    },
+    {
+      "coefficient": 0.5091343693487994,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 1.159709739275622e-06,
+      "replicate": 17,
+      "scenario": "cv=0/threshold=0.12/truth=0.5",
+      "threshold": 0.12589503039634267
+    },
+    {
+      "coefficient": 1.0000000000000002,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 1.937929969138285e-35,
+      "replicate": 17,
+      "scenario": "cv=0/threshold=0.12/truth=0.5",
+      "threshold": 0.12
+    },
+    {
+      "coefficient": 0.5091343693487994,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 1.159709739275622e-06,
+      "replicate": 499,
+      "scenario": "cv=0/threshold=0.12/truth=0.5",
+      "threshold": 0.12589503039634267
+    },
+    {
+      "coefficient": 1.0000000000000002,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 1.937929969138285e-35,
+      "replicate": 499,
+      "scenario": "cv=0/threshold=0.12/truth=0.5",
+      "threshold": 0.12
+    },
+    {
+      "coefficient": 0.9860454482944817,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 8.797170922131002e-05,
+      "replicate": 0,
+      "scenario": "cv=0.1/threshold=0.04/truth=0",
+      "threshold": 0.03696594714025643
+    },
+    {
+      "coefficient": 1.8011704205454664,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.00016654080979506696,
+      "replicate": 0,
+      "scenario": "cv=0.1/threshold=0.04/truth=0",
+      "threshold": 0.0
+    },
+    {
+      "coefficient": 1.0158363245729984,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 9.987284517576642e-05,
+      "replicate": 17,
+      "scenario": "cv=0.1/threshold=0.04/truth=0",
+      "threshold": 0.040995869752314645
+    },
+    {
+      "coefficient": 1.802124398858305,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.00012500569085628226,
+      "replicate": 17,
+      "scenario": "cv=0.1/threshold=0.04/truth=0",
+      "threshold": 0.0
+    },
+    {
+      "coefficient": 1.0181462877253267,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 5.980412446577674e-05,
+      "replicate": 499,
+      "scenario": "cv=0.1/threshold=0.04/truth=0",
+      "threshold": 0.04063806540636678
+    },
+    {
+      "coefficient": 1.8114420700558642,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 8.54398322196846e-05,
+      "replicate": 499,
+      "scenario": "cv=0.1/threshold=0.04/truth=0",
+      "threshold": 0.0
+    },
+    {
+      "coefficient": 0.5340521690063806,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 1.6483358839694075e-05,
+      "replicate": 0,
+      "scenario": "cv=0.1/threshold=0.04/truth=0.5",
+      "threshold": 0.06414914877153825
+    },
+    {
+      "coefficient": 0.9576988531983913,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 1.666605939627972e-05,
+      "replicate": 0,
+      "scenario": "cv=0.1/threshold=0.04/truth=0.5",
+      "threshold": 0.03351319792417172
+    },
+    {
+      "coefficient": 0.5645705519998402,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 3.0134657355519962e-05,
+      "replicate": 17,
+      "scenario": "cv=0.1/threshold=0.04/truth=0.5",
+      "threshold": 0.06935147595429945
+    },
+    {
+      "coefficient": 1.0343764785236913,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 1.9392707549737885e-05,
+      "replicate": 17,
+      "scenario": "cv=0.1/threshold=0.04/truth=0.5",
+      "threshold": 0.043065430031856256
+    },
+    {
+      "coefficient": 0.5657908825536343,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 2.035299863836237e-05,
+      "replicate": 499,
+      "scenario": "cv=0.1/threshold=0.04/truth=0.5",
+      "threshold": 0.06907408492574743
+    },
+    {
+      "coefficient": 1.035600334014014,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 9.703123707584785e-06,
+      "replicate": 499,
+      "scenario": "cv=0.1/threshold=0.04/truth=0.5",
+      "threshold": 0.04257001960361948
+    },
+    {
+      "coefficient": 0.9743206417345389,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 4.458482082440122e-05,
+      "replicate": 0,
+      "scenario": "cv=0.1/threshold=0.08/truth=0",
+      "threshold": 0.07712775594225928
+    },
+    {
+      "coefficient": 1.77446933829727,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 7.541902821342556e-05,
+      "replicate": 0,
+      "scenario": "cv=0.1/threshold=0.08/truth=0",
+      "threshold": 0.05343570761329534
+    },
+    {
+      "coefficient": 1.022016582128206,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 5.0545388137844325e-05,
+      "replicate": 17,
+      "scenario": "cv=0.1/threshold=0.08/truth=0",
+      "threshold": 0.0811168280863299
+    },
+    {
+      "coefficient": 1.9073179215883471,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 5.289339502671411e-05,
+      "replicate": 17,
+      "scenario": "cv=0.1/threshold=0.08/truth=0",
+      "threshold": 0.0612789991324808
+    },
+    {
+      "coefficient": 1.02549927040699,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 2.484846712398388e-05,
+      "replicate": 499,
+      "scenario": "cv=0.1/threshold=0.08/truth=0",
+      "threshold": 0.08101451207575255
+    },
+    {
+      "coefficient": 1.915171698625496,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 2.6003103244493892e-05,
+      "replicate": 499,
+      "scenario": "cv=0.1/threshold=0.08/truth=0",
+      "threshold": 0.06121938174151754
+    },
+    {
+      "coefficient": 0.5032313123185859,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 8.20966176289772e-06,
+      "replicate": 0,
+      "scenario": "cv=0.1/threshold=0.08/truth=0.5",
+      "threshold": 0.09074407161159916
+    },
+    {
+      "coefficient": 0.9552560104822928,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 8.955815889685567e-06,
+      "replicate": 0,
+      "scenario": "cv=0.1/threshold=0.08/truth=0.5",
+      "threshold": 0.07545332197596075
+    },
+    {
+      "coefficient": 0.5376501423348469,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 1.7311580666513015e-05,
+      "replicate": 17,
+      "scenario": "cv=0.1/threshold=0.08/truth=0.5",
+      "threshold": 0.09525562680246664
+    },
+    {
+      "coefficient": 1.0365605285434623,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 1.0622455510849745e-05,
+      "replicate": 17,
+      "scenario": "cv=0.1/threshold=0.08/truth=0.5",
+      "threshold": 0.08225223983061838
+    },
+    {
+      "coefficient": 0.5400196632820524,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 1.0835764754432275e-05,
+      "replicate": 499,
+      "scenario": "cv=0.1/threshold=0.08/truth=0.5",
+      "threshold": 0.09524298966250479
+    },
+    {
+      "coefficient": 1.040297317881622,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 4.395234607034784e-06,
+      "replicate": 499,
+      "scenario": "cv=0.1/threshold=0.08/truth=0.5",
+      "threshold": 0.08216706662072909
+    },
+    {
+      "coefficient": 0.964529119562059,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 1.8831704779396376e-05,
+      "replicate": 0,
+      "scenario": "cv=0.1/threshold=0.12/truth=0",
+      "threshold": 0.11793178354612337
+    },
+    {
+      "coefficient": 1.8645685063050428,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 3.236275124992755e-05,
+      "replicate": 0,
+      "scenario": "cv=0.1/threshold=0.12/truth=0",
+      "threshold": 0.11000515207166062
+    },
+    {
+      "coefficient": 1.0320696432858156,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 2.1667383939181115e-05,
+      "replicate": 17,
+      "scenario": "cv=0.1/threshold=0.12/truth=0",
+      "threshold": 0.1212668607009462
+    },
+    {
+      "coefficient": 2.024633389778265,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 1.8314374593312723e-05,
+      "replicate": 17,
+      "scenario": "cv=0.1/threshold=0.12/truth=0",
+      "threshold": 0.1147352944586266
+    },
+    {
+      "coefficient": 1.0478888546534355,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 7.633606923189536e-06,
+      "replicate": 499,
+      "scenario": "cv=0.1/threshold=0.12/truth=0",
+      "threshold": 0.1219329477075181
+    },
+    {
+      "coefficient": 2.0488413286902953,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 8.242006304806566e-06,
+      "replicate": 499,
+      "scenario": "cv=0.1/threshold=0.12/truth=0",
+      "threshold": 0.11527421952856318
+    },
+    {
+      "coefficient": 0.48740575317016716,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 3.1761143847608144e-06,
+      "replicate": 0,
+      "scenario": "cv=0.1/threshold=0.12/truth=0.5",
+      "threshold": 0.12366367532735076
+    },
+    {
+      "coefficient": 0.9505019431677342,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 3.994352732202075e-06,
+      "replicate": 0,
+      "scenario": "cv=0.1/threshold=0.12/truth=0.5",
+      "threshold": 0.11706469033960475
+    },
+    {
+      "coefficient": 0.5289767797659286,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 8.455781980162614e-06,
+      "replicate": 17,
+      "scenario": "cv=0.1/threshold=0.12/truth=0.5",
+      "threshold": 0.12735663426566055
+    },
+    {
+      "coefficient": 1.047972082720978,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 4.997518985553335e-06,
+      "replicate": 17,
+      "scenario": "cv=0.1/threshold=0.12/truth=0.5",
+      "threshold": 0.12217638850381443
+    },
+    {
+      "coefficient": 0.5347039827178292,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 3.721405225444143e-06,
+      "replicate": 499,
+      "scenario": "cv=0.1/threshold=0.12/truth=0.5",
+      "threshold": 0.12769244979603106
+    },
+    {
+      "coefficient": 1.0557018986269362,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 1.470472622575184e-06,
+      "replicate": 499,
+      "scenario": "cv=0.1/threshold=0.12/truth=0.5",
+      "threshold": 0.12237160727091026
+    },
+    {
+      "coefficient": 0.9755977791138355,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.0002761427807990542,
+      "replicate": 0,
+      "scenario": "cv=0.25/threshold=0.04/truth=0",
+      "threshold": 0.0392845614226784
+    },
+    {
+      "coefficient": 1.7534378274596703,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.00031280365381589374,
+      "replicate": 0,
+      "scenario": "cv=0.25/threshold=0.04/truth=0",
+      "threshold": 0.0
+    },
+    {
+      "coefficient": 1.1738006248652428,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.0007192362507666821,
+      "replicate": 17,
+      "scenario": "cv=0.25/threshold=0.04/truth=0",
+      "threshold": 0.04534811375660685
+    },
+    {
+      "coefficient": 2.0270825779957917,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.0007974702554246373,
+      "replicate": 17,
+      "scenario": "cv=0.25/threshold=0.04/truth=0",
+      "threshold": 0.0019071890125531717
+    },
+    {
+      "coefficient": 0.9157265512582228,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.00046047318895357016,
+      "replicate": 499,
+      "scenario": "cv=0.25/threshold=0.04/truth=0",
+      "threshold": 0.03996030969511872
+    },
+    {
+      "coefficient": 1.6344602259877592,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.0005135967800369665,
+      "replicate": 499,
+      "scenario": "cv=0.25/threshold=0.04/truth=0",
+      "threshold": 0.0
+    },
+    {
+      "coefficient": 0.5383844104191996,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 5.154163819042973e-05,
+      "replicate": 0,
+      "scenario": "cv=0.25/threshold=0.04/truth=0.5",
+      "threshold": 0.0674657850955941
+    },
+    {
+      "coefficient": 0.9801258973332381,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 4.485397379638626e-05,
+      "replicate": 0,
+      "scenario": "cv=0.25/threshold=0.04/truth=0.5",
+      "threshold": 0.03982039111096831
+    },
+    {
+      "coefficient": 0.6408566086391293,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.00013417012742685983,
+      "replicate": 17,
+      "scenario": "cv=0.25/threshold=0.04/truth=0.5",
+      "threshold": 0.07121586611026971
+    },
+    {
+      "coefficient": 1.1416596076083394,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.0001376721681599871,
+      "replicate": 17,
+      "scenario": "cv=0.25/threshold=0.04/truth=0.5",
+      "threshold": 0.04222250759035609
+    },
+    {
+      "coefficient": 0.4997037792270999,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 8.056523652936504e-05,
+      "replicate": 499,
+      "scenario": "cv=0.25/threshold=0.04/truth=0.5",
+      "threshold": 0.06706385965217991
+    },
+    {
+      "coefficient": 0.8931851411206436,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 8.203236256619232e-05,
+      "replicate": 499,
+      "scenario": "cv=0.25/threshold=0.04/truth=0.5",
+      "threshold": 0.037055969735938644
+    },
+    {
+      "coefficient": 0.9869337664208622,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.00011313429436276651,
+      "replicate": 0,
+      "scenario": "cv=0.25/threshold=0.08/truth=0",
+      "threshold": 0.08055474719912667
+    },
+    {
+      "coefficient": 1.8262894802232972,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.00012749538986909522,
+      "replicate": 0,
+      "scenario": "cv=0.25/threshold=0.08/truth=0",
+      "threshold": 0.059681291392211136
+    },
+    {
+      "coefficient": 1.1405798349054288,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.0003619557491924688,
+      "replicate": 17,
+      "scenario": "cv=0.25/threshold=0.08/truth=0",
+      "threshold": 0.08084746621949475
+    },
+    {
+      "coefficient": 2.083964668994203,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.0004076287522443544,
+      "replicate": 17,
+      "scenario": "cv=0.25/threshold=0.08/truth=0",
+      "threshold": 0.05876528108575488
+    },
+    {
+      "coefficient": 0.9139057136888125,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.00021716496040802936,
+      "replicate": 499,
+      "scenario": "cv=0.25/threshold=0.08/truth=0",
+      "threshold": 0.07975291940632169
+    },
+    {
+      "coefficient": 1.6627115628101783,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.00025015647392765056,
+      "replicate": 499,
+      "scenario": "cv=0.25/threshold=0.08/truth=0",
+      "threshold": 0.05685699355508154
+    },
+    {
+      "coefficient": 0.5169014942218114,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 2.3151174068497567e-05,
+      "replicate": 0,
+      "scenario": "cv=0.25/threshold=0.08/truth=0.5",
+      "threshold": 0.09458979272852046
+    },
+    {
+      "coefficient": 0.9855939566998165,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 2.0461306358226327e-05,
+      "replicate": 0,
+      "scenario": "cv=0.25/threshold=0.08/truth=0.5",
+      "threshold": 0.08044397850260832
+    },
+    {
+      "coefficient": 0.5874737585245068,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 7.094450886166089e-05,
+      "replicate": 17,
+      "scenario": "cv=0.25/threshold=0.08/truth=0.5",
+      "threshold": 0.0936229636664409
+    },
+    {
+      "coefficient": 1.111071010531905,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 7.41583140293592e-05,
+      "replicate": 17,
+      "scenario": "cv=0.25/threshold=0.08/truth=0.5",
+      "threshold": 0.07869407469143891
+    },
+    {
+      "coefficient": 0.4697197929028236,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 3.835043563580683e-05,
+      "replicate": 499,
+      "scenario": "cv=0.25/threshold=0.08/truth=0.5",
+      "threshold": 0.09258166559842378
+    },
+    {
+      "coefficient": 0.8857444211743263,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 4.142244370741776e-05,
+      "replicate": 499,
+      "scenario": "cv=0.25/threshold=0.08/truth=0.5",
+      "threshold": 0.07715457381266665
+    },
+    {
+      "coefficient": 0.985535640099234,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 3.5764645826847186e-05,
+      "replicate": 0,
+      "scenario": "cv=0.25/threshold=0.12/truth=0",
+      "threshold": 0.12013218228977524
+    },
+    {
+      "coefficient": 1.9157784143749454,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 4.319706085280856e-05,
+      "replicate": 0,
+      "scenario": "cv=0.25/threshold=0.12/truth=0",
+      "threshold": 0.11287530655904765
+    },
+    {
+      "coefficient": 1.1019463213738163,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.00015234573716376562,
+      "replicate": 17,
+      "scenario": "cv=0.25/threshold=0.12/truth=0",
+      "threshold": 0.11820808712434802
+    },
+    {
+      "coefficient": 2.123093686723037,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.0001748416138604207,
+      "replicate": 17,
+      "scenario": "cv=0.25/threshold=0.12/truth=0",
+      "threshold": 0.11010419018692241
+    },
+    {
+      "coefficient": 0.8865012342545046,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 7.996113816121474e-05,
+      "replicate": 499,
+      "scenario": "cv=0.25/threshold=0.12/truth=0",
+      "threshold": 0.11773694737597662
+    },
+    {
+      "coefficient": 1.6981405347217127,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.00010001733606353665,
+      "replicate": 499,
+      "scenario": "cv=0.25/threshold=0.12/truth=0",
+      "threshold": 0.109181944108975
+    },
+    {
+      "coefficient": 0.5009365161801134,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 8.024757076199787e-06,
+      "replicate": 0,
+      "scenario": "cv=0.25/threshold=0.12/truth=0.5",
+      "threshold": 0.1259422972763968
+    },
+    {
+      "coefficient": 0.9812310896310807,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 7.504076513827445e-06,
+      "replicate": 0,
+      "scenario": "cv=0.25/threshold=0.12/truth=0.5",
+      "threshold": 0.11987223272421195
+    },
+    {
+      "coefficient": 0.5548617602046082,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 3.1136688352145176e-05,
+      "replicate": 17,
+      "scenario": "cv=0.25/threshold=0.12/truth=0.5",
+      "threshold": 0.12372268517999942
+    },
+    {
+      "coefficient": 1.0776078252096557,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 3.364482508128134e-05,
+      "replicate": 17,
+      "scenario": "cv=0.25/threshold=0.12/truth=0.5",
+      "threshold": 0.11688169144049532
+    },
+    {
+      "coefficient": 0.44407003403194545,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 1.3790305100825165e-05,
+      "replicate": 499,
+      "scenario": "cv=0.25/threshold=0.12/truth=0.5",
+      "threshold": 0.12305474328169469
+    },
+    {
+      "coefficient": 0.8578291171467661,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 1.6520520593902162e-05,
+      "replicate": 499,
+      "scenario": "cv=0.25/threshold=0.12/truth=0.5",
+      "threshold": 0.11578294286663783
+    },
+    {
+      "coefficient": 0.9088988178281273,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.001408182465100426,
+      "replicate": 0,
+      "scenario": "cv=0.5/threshold=0.04/truth=0",
+      "threshold": 0.041659928671006256
+    },
+    {
+      "coefficient": 1.6838013734299144,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.001345470295484037,
+      "replicate": 0,
+      "scenario": "cv=0.5/threshold=0.04/truth=0",
+      "threshold": 0.007282876062173807
+    },
+    {
+      "coefficient": 0.8529818342806798,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.0009554196899962059,
+      "replicate": 17,
+      "scenario": "cv=0.5/threshold=0.04/truth=0",
+      "threshold": 0.03204855367714929
+    },
+    {
+      "coefficient": 1.6154888061127721,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.0010515342918760585,
+      "replicate": 17,
+      "scenario": "cv=0.5/threshold=0.04/truth=0",
+      "threshold": 0.0
+    },
+    {
+      "coefficient": 1.696828271749816,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.0031485755473551944,
+      "replicate": 499,
+      "scenario": "cv=0.5/threshold=0.04/truth=0",
+      "threshold": 0.07169371024296962
+    },
+    {
+      "coefficient": 3.099738666647848,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.0030301951014362434,
+      "replicate": 499,
+      "scenario": "cv=0.5/threshold=0.04/truth=0",
+      "threshold": 0.04563494647101851
+    },
+    {
+      "coefficient": 0.5454766272731009,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.00029970513900866747,
+      "replicate": 0,
+      "scenario": "cv=0.5/threshold=0.04/truth=0.5",
+      "threshold": 0.07653285179952095
+    },
+    {
+      "coefficient": 1.0252390947949832,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.0002669972542642721,
+      "replicate": 0,
+      "scenario": "cv=0.5/threshold=0.04/truth=0.5",
+      "threshold": 0.05469020320663394
+    },
+    {
+      "coefficient": 0.45394108740911926,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.0001746921290974204,
+      "replicate": 17,
+      "scenario": "cv=0.5/threshold=0.04/truth=0.5",
+      "threshold": 0.058896740194033244
+    },
+    {
+      "coefficient": 0.8049241787910097,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.00017796083299910026,
+      "replicate": 17,
+      "scenario": "cv=0.5/threshold=0.04/truth=0.5",
+      "threshold": 0.024835712771444803
+    },
+    {
+      "coefficient": 0.9237032654622684,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.0006789451810020484,
+      "replicate": 499,
+      "scenario": "cv=0.5/threshold=0.04/truth=0.5",
+      "threshold": 0.09025294564855277
+    },
+    {
+      "coefficient": 1.7996137161042103,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.0006358356476067775,
+      "replicate": 499,
+      "scenario": "cv=0.5/threshold=0.04/truth=0.5",
+      "threshold": 0.07693916355864384
+    },
+    {
+      "coefficient": 0.962299485704139,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.0006775946738493248,
+      "replicate": 0,
+      "scenario": "cv=0.5/threshold=0.08/truth=0",
+      "threshold": 0.08571450493121929
+    },
+    {
+      "coefficient": 1.8917571951927046,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.0006109958189911001,
+      "replicate": 0,
+      "scenario": "cv=0.5/threshold=0.08/truth=0",
+      "threshold": 0.07216873810707287
+    },
+    {
+      "coefficient": 0.8386468364066685,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.00046197966143540157,
+      "replicate": 17,
+      "scenario": "cv=0.5/threshold=0.08/truth=0",
+      "threshold": 0.07384124193303251
+    },
+    {
+      "coefficient": 1.50743329183382,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.0004943225912681398,
+      "replicate": 17,
+      "scenario": "cv=0.5/threshold=0.08/truth=0",
+      "threshold": 0.04752203112683548
+    },
+    {
+      "coefficient": 1.5903430531009006,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.0017213642865278294,
+      "replicate": 499,
+      "scenario": "cv=0.5/threshold=0.08/truth=0",
+      "threshold": 0.09565757034557537
+    },
+    {
+      "coefficient": 3.0992805912356807,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.0016356115758814369,
+      "replicate": 499,
+      "scenario": "cv=0.5/threshold=0.08/truth=0",
+      "threshold": 0.08373524972223315
+    },
+    {
+      "coefficient": 0.5280661565667232,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.000166308846070144,
+      "replicate": 0,
+      "scenario": "cv=0.5/threshold=0.08/truth=0.5",
+      "threshold": 0.1015833512595832
+    },
+    {
+      "coefficient": 1.0719804078877657,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.0001427435102431738,
+      "replicate": 0,
+      "scenario": "cv=0.5/threshold=0.08/truth=0.5",
+      "threshold": 0.09406825982789876
+    },
+    {
+      "coefficient": 0.4332637640492613,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 9.182961700673512e-05,
+      "replicate": 17,
+      "scenario": "cv=0.5/threshold=0.08/truth=0.5",
+      "threshold": 0.08826862172284224
+    },
+    {
+      "coefficient": 0.8101982901981944,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 9.456340173151797e-05,
+      "replicate": 17,
+      "scenario": "cv=0.5/threshold=0.08/truth=0.5",
+      "threshold": 0.0708009057348452
+    },
+    {
+      "coefficient": 0.8803280406310683,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.000395216950887365,
+      "replicate": 499,
+      "scenario": "cv=0.5/threshold=0.08/truth=0.5",
+      "threshold": 0.11114526004616783
+    },
+    {
+      "coefficient": 1.6781484923040633,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.0003664156399373088,
+      "replicate": 499,
+      "scenario": "cv=0.5/threshold=0.08/truth=0.5",
+      "threshold": 0.09944651225910402
+    },
+    {
+      "coefficient": 2.099849909291985,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.00025745536175505914,
+      "replicate": 0,
+      "scenario": "cv=0.5/threshold=0.12/truth=0",
+      "threshold": 0.17749315768222582
+    },
+    {
+      "coefficient": 2.436739966341684,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.00023850996354905606,
+      "replicate": 0,
+      "scenario": "cv=0.5/threshold=0.12/truth=0",
+      "threshold": 0.13664779945475322
+    },
+    {
+      "coefficient": 0.8297053647793167,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.00019603859703512254,
+      "replicate": 17,
+      "scenario": "cv=0.5/threshold=0.12/truth=0",
+      "threshold": 0.11616964624808737
+    },
+    {
+      "coefficient": 1.591462684772103,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.00021190868836787642,
+      "replicate": 17,
+      "scenario": "cv=0.5/threshold=0.12/truth=0",
+      "threshold": 0.10742432346920065
+    },
+    {
+      "coefficient": 1.6629485925474854,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.0007962950207187422,
+      "replicate": 499,
+      "scenario": "cv=0.5/threshold=0.12/truth=0",
+      "threshold": 0.13202581515230083
+    },
+    {
+      "coefficient": 3.1991374241076436,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.0007612542420040606,
+      "replicate": 499,
+      "scenario": "cv=0.5/threshold=0.12/truth=0",
+      "threshold": 0.12456952264589459
+    },
+    {
+      "coefficient": 1.117948582547775,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 5.377413422185488e-05,
+      "replicate": 0,
+      "scenario": "cv=0.5/threshold=0.12/truth=0.5",
+      "threshold": 0.18099988277701454
+    },
+    {
+      "coefficient": 2.163527720917648,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 4.979601383877828e-05,
+      "replicate": 0,
+      "scenario": "cv=0.5/threshold=0.12/truth=0.5",
+      "threshold": 0.17874938507624907
+    },
+    {
+      "coefficient": 0.4163313269101086,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 4.1533334663094854e-05,
+      "replicate": 17,
+      "scenario": "cv=0.5/threshold=0.12/truth=0.5",
+      "threshold": 0.1217207586779594
+    },
+    {
+      "coefficient": 0.8064384337748882,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 4.348122263691817e-05,
+      "replicate": 17,
+      "scenario": "cv=0.5/threshold=0.12/truth=0.5",
+      "threshold": 0.114446456932552
+    },
+    {
+      "coefficient": 0.8965710475177169,
+      "exponent": 0.0,
+      "model_exponent": 0,
+      "mse": 0.00018753748161180522,
+      "replicate": 499,
+      "scenario": "cv=0.5/threshold=0.12/truth=0.5",
+      "threshold": 0.14076124391996553
+    },
+    {
+      "coefficient": 1.7758093361424339,
+      "exponent": 0.5,
+      "model_exponent": 0.5,
+      "mse": 0.00017780848829012958,
+      "replicate": 499,
+      "scenario": "cv=0.5/threshold=0.12/truth=0.5",
+      "threshold": 0.136766947172417
+    }
+  ],
+  "inputs": [
+    {
+      "name": "result.json",
+      "sha256": "c75c492db7f8e216fb1879261d1f9da7a632123ca665ca8370f07cd26d382284"
+    },
+    {
+      "name": "saltation_qualification_2026-10-14.json",
+      "sha256": "43187edd33664ead543b9ce9241855f1155e571f6884fd8e10175d1058e70ef8"
+    }
+  ],
+  "maximum_absolute_difference": 2.842170943040401e-14,
+  "maximum_scaled_difference": 1.3535114726360166e-14,
+  "method": "Independent PCG64 draw reconstruction, product-moment noise, scalar weighted score sums, and active-set weighted two-column least squares",
+  "representative_replicates": [
+    0,
+    17,
+    499
+  ],
+  "scenarios_checked": 24,
+  "scope": "Checks all saved synthetic prediction scores, selection counts and gate; independently fits three replicates per scenario. Uses saved wind predictors and does not certify workbook extraction, metrology, temporal independence, or noise realism.",
+  "scores_checked": 24000,
+  "verified": true
+}

@@ -4,15 +4,29 @@ Last updated 14 October 2026. **Read this first in a new session.** It records w
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
-**Broader nature, 14 October — design qualification in progress:** the
-[source audit](natural-source-audit-2026-10-14.md) acquired the small original
-three-site wind/sand workbook and methods. Its date and wind columns support
-a fixed Oceano chronological split. Before opening numerical sand responses,
-the [qualification protocol](saltation-qualification-protocol-2026-10-14.md)
-tests whether the actual wind range can distinguish linear and 3/2 transport
-laws in simulated worlds with field-scale variability. Failure stops real
-response fitting. This is a proposed constitutive transfer; neither
-log-orthopolic nor linear-orthopolic size allocation is measured.
+**Broader nature, 14 October — qualification complete:** the
+[sand-transport design](saltation-qualification-results-2026-10-14.md) fails
+its frozen discrimination gate in all six primary scenarios. Using 107 earlier
+and 53 later Oceano wind intervals, correct selection of linear versus 3/2
+transport is only **54.6–67.2%** at synthetic CV=0.5; the requirement was 80%
+in every scenario. Both laws are recovered without noise. Design `bdc1b78`
+preceded the 12,000 synthetic datasets; **no numerical sand-response arrays
+were read or fitted**. Independent reconstruction checks 24,000 scores and
+144 representative fits, 32,184 numbers total. Result, summary, verification
+and figure replay byte-for-byte; **591 tests pass**. The registry now contains
+**40 runs / 993 references**, preserving all previous 39 entries. This is a
+design limitation under specified scenarios, not a rejection of either
+physical law or a direct log-/linear-orthopolic allocation test. It stays in
+the research record; the article and supporting PDFs retain their existing
+12/55-page content. The [source audit](natural-source-audit-2026-10-14.md)
+records other accessible leads; further work should prioritize separately
+measured grain incidence/cost or a controlled resource intervention. The
+[subsequent particle-tracking audit](natural-next-design-2026-10-14.md)
+downloaded Su's original workbook but leaves independent collision costs
+unqualified; published and text-encoded Table 1 aggregates are exposed.
+It also records the original wind-angle convention's dependence on transport
+context. Neither follow-up changes the frozen simulation or its stop rule.
+`make all` passes; historical numerical/rendering noise was discarded.
 
 **Latest chemistry result, 14 October:** the
 [pure-to-mixture adsorption transfer](adsorption-results-2026-10-13.md) is
@@ -38,10 +52,10 @@ repeat-build hashes. All 38 earlier registry records are byte-preserved.
 
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
-the package layout for all runners. The suite now passes **582 tests**; the
-registry verifies **39 runs and 972 file references**, including the Italian simulation,
+the package layout for all runners. The suite now passes **591 tests**; the
+registry verifies **40 runs and 993 file references**, including the Italian simulation,
 retrospective chemostat diagnosis, independent-assay pilot, field-stock audit,
-cantilever transfer and chemical competition. The broader programme and subsequent
+cantilever transfer, chemical competition and saltation design qualification. The broader programme and subsequent
 studies are in [research-brief.md](research-brief.md) and
 [ongoing-research.md](ongoing-research.md).
 
@@ -63,9 +77,10 @@ is 53 pages. Both were visually checked and repeat-build hashes agree.
 **Requested research order:** physics, chemistry, broader natural phenomena,
 biology, then human phenomena including language/culture. The
 [physics-source audit](physics-candidate-audit-2026-10-12.md) retains the alternatives.
-The first physics and chemistry transfers are complete. Next, prioritize broader
-natural phenomena with independently specified resources/constraints that make
-competing models predict different unused responses. Chemistry alternatives
+The first physics and chemistry transfers are complete. The first broader-natural
+candidate stops at its simulation qualification; do not fit real sand responses
+or change its failed gate. Continue with independently specified resources/costs
+that make competing models predict different unused responses. Chemistry alternatives
 remain in the [source audit](adsorption-source-audit-2026-10-13.md). Resolve
 source and calibration conventions before fitting; a catalogue of familiar
 formulae alone would add less than a discriminating prediction.
@@ -201,6 +216,7 @@ discards the authors' programme.
 | 12 Oct 2026 | Sorted field quotas, ambient counts and bulk-stock compatibility | 18/18 primary C/N comparisons compatible; one slight excess in date sensitivity; P unit concern retained; 531 tests, 37 records |
 | 13 Oct 2026 | Frozen cantilever damping-to-energy extrapolation | 10/11 modes physically admissible; 74.00 K thermal MAE vs 78.94 K geometry-only; strong mode failures retained; 558 tests, 38 records |
 | 13–14 Oct 2026 | Pure-calibrated chemical competition transfer | 60.1% lower mixture MAE than omitting competition; IAST slightly better; all three engineering gates pass, measurement-scale errors and extrapolation remain; 582 tests, 39 records |
+| 14 Oct 2026 | Sand-transport predictor-only simulation qualification | All six primary discrimination scenarios fail; 54.6–67.2% correct selection versus 80%; no real sand-flux fit; 591 tests, 40 records |
 
 ## 3. Results to carry forward
 
@@ -306,6 +322,14 @@ inputs, a genuine unused observable, competing predictions and reachable data;
 do not count mass-balance identities or target-calibrated equilibrium constants
 as confirmation. The cantilever follow-up would require independently measured
 spatial dissipation or resolved raw calibration, not extra fitting flexibility.
+The saltation design fails before actual-response fitting. Its original data are
+accessible, but the fixed chronological comparison selects rival laws poorly
+under the declared variability. Preserve that stop; seek separately measured
+particle motion/incidence or an independently justified intervention.
+The [particle-tracking follow-up](natural-next-design-2026-10-14.md) lists
+specific reachable archives and missing cost/replication information. Do not
+use accepted feed/output equality or track-derived flux identities as independent
+tests; Su's Table 1 aggregate outcomes are already known.
 The existing candidate repairs below remain available in that sequence.
 
 1. **Turn a failure explanation into a new prediction.** The chemostat bound
@@ -363,7 +387,7 @@ The existing candidate repairs below remain available in that sequence.
   exponent was examined and the reading passes a second, different prediction. Grades:
   derived, motivated, suggestive, numerology. Source tags in documents: verified, repository result,
   own derivation, unverified.
-- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 500 tests and
+- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 591 tests and
   regenerates every analysis. The September results were produced with Python 3.11; results
   added on 8–9 October (Gibrat, resource choice, catalogue, aftershocks) with Python 3.13 and the
   pinned packages. Other versions change the older files by at most about $4\times10^{-8}$
@@ -394,6 +418,7 @@ The existing candidate repairs below remain available in that sequence.
 | Evidence and audit history | [evidence.md](evidence.md); [source-audit.md](source-audit.md); [lake results](lake-gyration-results-2026-10-09.md) |
 | Latest lake follow-up | [metric/basin results](lake-metric-followup-results-2026-10-09.md); [frozen protocol](lake-metric-followup-protocol-2026-10-09.md); [basin sources](hydrobasins-source-2026-10-09.md) |
 | Latest seismic qualification | [results](seismic-qualification-results-2026-10-10.md); [frozen supplement](seismic-qualification-protocol-2026-10-10.md); `results/seismic-qualification-2026-10-10/` |
+| Natural transport design qualification | [failed simulation gate](saltation-qualification-results-2026-10-14.md); [protocol](saltation-qualification-protocol-2026-10-14.md); [source audit](natural-source-audit-2026-10-14.md) |
 | Next seismic inputs | [source/calibration audit](seismic-candidate-audit-2026-10-10.md); `data/seismic-candidates/2026-10-10/` |
 | Italian magnitude prerequisite | [failed validation](italian-magnitude-validation-results-2026-10-10.md); [frozen design](italian-magnitude-validation-protocol-2026-10-10.md); `results/italian-magnitude-validation-2026-10-10/` |
 | Unified manuscript and programme | [paper.md](paper.md) and `paper.pdf`; [supporting-material.md](supporting-material.md) and `supporting-material.pdf`; [revision map](manuscript-revision-2026-10-11.md); [research-brief.md](research-brief.md); [ongoing-research.md](ongoing-research.md) |

@@ -1,0 +1,1008 @@
+{
+  "scope": "Workbook sheet inventory and nonnumeric text cells in first 8 rows only",
+  "sheets": [
+    {
+      "name": "Figure 8",
+      "dimension": "A1:O102",
+      "text_labels_first_8_rows": [
+        {
+          "cell": "A1",
+          "text": "Train  loss"
+        },
+        {
+          "cell": "E1",
+          "text": "Validation loss"
+        },
+        {
+          "cell": "I1",
+          "text": "mAP50"
+        },
+        {
+          "cell": "M1",
+          "text": "number of annotated"
+        },
+        {
+          "cell": "N1",
+          "text": "MAP50"
+        },
+        {
+          "cell": "O1",
+          "text": "Recall"
+        },
+        {
+          "cell": "A2",
+          "text": "DEM-train detection_loss"
+        },
+        {
+          "cell": "B2",
+          "text": "EXP-train detection_loss"
+        },
+        {
+          "cell": "C2",
+          "text": "DEM-train class_loss"
+        },
+        {
+          "cell": "D2",
+          "text": "EXP-train class_loss"
+        },
+        {
+          "cell": "E2",
+          "text": "DEM-train validation_loss"
+        },
+        {
+          "cell": "F2",
+          "text": "EXP-train validation_loss"
+        },
+        {
+          "cell": "G2",
+          "text": "DEM-validation class_loss"
+        },
+        {
+          "cell": "H2",
+          "text": "EXP-validation class_loss"
+        },
+        {
+          "cell": "I2",
+          "text": "DEM-mAP50"
+        },
+        {
+          "cell": "J2",
+          "text": "EXP-mAP50"
+        },
+        {
+          "cell": "K2",
+          "text": "DEM-Recall"
+        },
+        {
+          "cell": "L2",
+          "text": "EXP-Recall"
+        }
+      ]
+    },
+    {
+      "name": "Figure9",
+      "dimension": "A1:T161",
+      "text_labels_first_8_rows": [
+        {
+          "cell": "A1",
+          "text": "Coordinates"
+        },
+        {
+          "cell": "E1",
+          "text": "Area"
+        },
+        {
+          "cell": "G1",
+          "text": "xz"
+        },
+        {
+          "cell": "I1",
+          "text": "Area"
+        },
+        {
+          "cell": "K1",
+          "text": "Rotation"
+        },
+        {
+          "cell": "M1",
+          "text": "Spherexz"
+        },
+        {
+          "cell": "O1",
+          "text": "SphereArea"
+        },
+        {
+          "cell": "Q1",
+          "text": "gravelxz"
+        },
+        {
+          "cell": "S1",
+          "text": "gravelArea"
+        },
+        {
+          "cell": "A2",
+          "text": "DEM-simulation"
+        },
+        {
+          "cell": "C2",
+          "text": "DEM-detection"
+        },
+        {
+          "cell": "E2",
+          "text": "DEM-simulation"
+        },
+        {
+          "cell": "F2",
+          "text": "DEM-detection"
+        },
+        {
+          "cell": "A3",
+          "text": "x"
+        },
+        {
+          "cell": "B3",
+          "text": "z"
+        },
+        {
+          "cell": "C3",
+          "text": "x"
+        },
+        {
+          "cell": "D3",
+          "text": "z"
+        },
+        {
+          "cell": "G3",
+          "text": "R2"
+        },
+        {
+          "cell": "H3",
+          "text": "std R2"
+        },
+        {
+          "cell": "I3",
+          "text": "R2"
+        },
+        {
+          "cell": "J3",
+          "text": "std R2"
+        },
+        {
+          "cell": "K3",
+          "text": "R2"
+        },
+        {
+          "cell": "L3",
+          "text": "std R2"
+        },
+        {
+          "cell": "M3",
+          "text": "R2"
+        },
+        {
+          "cell": "N3",
+          "text": "std R2"
+        },
+        {
+          "cell": "O3",
+          "text": "R2"
+        },
+        {
+          "cell": "P3",
+          "text": "std R2"
+        },
+        {
+          "cell": "Q3",
+          "text": "R2"
+        },
+        {
+          "cell": "R3",
+          "text": "std R2"
+        },
+        {
+          "cell": "S3",
+          "text": "R2"
+        },
+        {
+          "cell": "T3",
+          "text": "std R2"
+        }
+      ]
+    },
+    {
+      "name": "Figure10",
+      "dimension": "A1:X2999",
+      "text_labels_first_8_rows": [
+        {
+          "cell": "A1",
+          "text": "Sphere-Tau:0.072"
+        },
+        {
+          "cell": "C1",
+          "text": "Sphere-Tau:0.156"
+        },
+        {
+          "cell": "E1",
+          "text": "uniform-5mm-zerconia"
+        },
+        {
+          "cell": "I1",
+          "text": "uniform-5mm-gravel"
+        },
+        {
+          "cell": "M1",
+          "text": "nature-uniform-5mm-gravel"
+        },
+        {
+          "cell": "Q1",
+          "text": "Benavides-2021"
+        },
+        {
+          "cell": "S1",
+          "text": "Gao-2008"
+        },
+        {
+          "cell": "U1",
+          "text": "Lajeunesse"
+        },
+        {
+          "cell": "W1",
+          "text": "nature-uniform-5mm-gravel"
+        },
+        {
+          "cell": "A2",
+          "text": "Frames"
+        },
+        {
+          "cell": "B2",
+          "text": "actual Z(m)"
+        },
+        {
+          "cell": "C2",
+          "text": "Frames"
+        },
+        {
+          "cell": "D2",
+          "text": "actual Z(m)"
+        },
+        {
+          "cell": "E4",
+          "text": "shields with correction"
+        },
+        {
+          "cell": "F4",
+          "text": "error of shield"
+        },
+        {
+          "cell": "G4",
+          "text": "flux"
+        },
+        {
+          "cell": "H4",
+          "text": "error of flux"
+        },
+        {
+          "cell": "I4",
+          "text": "shields with correction"
+        },
+        {
+          "cell": "J4",
+          "text": "error of shield"
+        },
+        {
+          "cell": "K4",
+          "text": "flux"
+        },
+        {
+          "cell": "L4",
+          "text": "error of flux"
+        },
+        {
+          "cell": "M4",
+          "text": "shields with correction"
+        },
+        {
+          "cell": "N4",
+          "text": "error of shield"
+        },
+        {
+          "cell": "O4",
+          "text": "flux"
+        },
+        {
+          "cell": "P4",
+          "text": "error of flux"
+        },
+        {
+          "cell": "Q4",
+          "text": "shields"
+        },
+        {
+          "cell": "R4",
+          "text": "flux"
+        },
+        {
+          "cell": "S4",
+          "text": "shields"
+        },
+        {
+          "cell": "T4",
+          "text": "flux"
+        },
+        {
+          "cell": "U4",
+          "text": "shields"
+        },
+        {
+          "cell": "V4",
+          "text": "flux"
+        },
+        {
+          "cell": "W4",
+          "text": "shape-corrected"
+        },
+        {
+          "cell": "X4",
+          "text": "flux"
+        }
+      ]
+    },
+    {
+      "name": "Figure11",
+      "dimension": "A1:AC37",
+      "text_labels_first_8_rows": [
+        {
+          "cell": "A1",
+          "text": "sphere1.51"
+        },
+        {
+          "cell": "C1",
+          "text": "sphere1.81"
+        },
+        {
+          "cell": "E1",
+          "text": "sphere2.02"
+        },
+        {
+          "cell": "G1",
+          "text": "sphere2.29"
+        },
+        {
+          "cell": "I1",
+          "text": "sphere2.47"
+        },
+        {
+          "cell": "K1",
+          "text": "sphere2.66"
+        },
+        {
+          "cell": "M1",
+          "text": "sphere3.03"
+        },
+        {
+          "cell": "P1",
+          "text": "sphere1.51"
+        },
+        {
+          "cell": "R1",
+          "text": "sphere1.81"
+        },
+        {
+          "cell": "T1",
+          "text": "sphere2.02"
+        },
+        {
+          "cell": "V1",
+          "text": "sphere2.29"
+        },
+        {
+          "cell": "X1",
+          "text": "sphere2.47"
+        },
+        {
+          "cell": "Z1",
+          "text": "sphere2.66"
+        },
+        {
+          "cell": "AB1",
+          "text": "sphere3.03"
+        },
+        {
+          "cell": "A3",
+          "text": "layer"
+        },
+        {
+          "cell": "B3",
+          "text": "velocity"
+        },
+        {
+          "cell": "C3",
+          "text": "layer"
+        },
+        {
+          "cell": "D3",
+          "text": "velocity"
+        },
+        {
+          "cell": "E3",
+          "text": "layer"
+        },
+        {
+          "cell": "F3",
+          "text": "velocity"
+        },
+        {
+          "cell": "G3",
+          "text": "layer"
+        },
+        {
+          "cell": "H3",
+          "text": "velocity"
+        },
+        {
+          "cell": "I3",
+          "text": "layer"
+        },
+        {
+          "cell": "J3",
+          "text": "velocity"
+        },
+        {
+          "cell": "K3",
+          "text": "layer"
+        },
+        {
+          "cell": "L3",
+          "text": "velocity"
+        },
+        {
+          "cell": "M3",
+          "text": "layer"
+        },
+        {
+          "cell": "N3",
+          "text": "velocity"
+        },
+        {
+          "cell": "P3",
+          "text": "layer-h/d"
+        },
+        {
+          "cell": "Q3",
+          "text": "shear rate"
+        },
+        {
+          "cell": "R3",
+          "text": "layer-h/d"
+        },
+        {
+          "cell": "S3",
+          "text": "shear rate"
+        },
+        {
+          "cell": "T3",
+          "text": "layer-h/d"
+        },
+        {
+          "cell": "U3",
+          "text": "shear rate"
+        },
+        {
+          "cell": "V3",
+          "text": "layer-h/d"
+        },
+        {
+          "cell": "W3",
+          "text": "shear rate"
+        },
+        {
+          "cell": "X3",
+          "text": "layer-h/d"
+        },
+        {
+          "cell": "Y3",
+          "text": "shear rate"
+        },
+        {
+          "cell": "Z3",
+          "text": "layer-h/d"
+        },
+        {
+          "cell": "AA3",
+          "text": "shear rate"
+        }
+      ]
+    },
+    {
+      "name": "Figure12",
+      "dimension": "A1:AC34",
+      "text_labels_first_8_rows": [
+        {
+          "cell": "A1",
+          "text": "sphere1.51"
+        },
+        {
+          "cell": "C1",
+          "text": "sphere1.81"
+        },
+        {
+          "cell": "E1",
+          "text": "sphere2.02"
+        },
+        {
+          "cell": "G1",
+          "text": "sphere2.29"
+        },
+        {
+          "cell": "I1",
+          "text": "sphere2.47"
+        },
+        {
+          "cell": "K1",
+          "text": "sphere2.66"
+        },
+        {
+          "cell": "M1",
+          "text": "sphere3.03"
+        },
+        {
+          "cell": "P1",
+          "text": "sphere1.51"
+        },
+        {
+          "cell": "R1",
+          "text": "sphere1.81"
+        },
+        {
+          "cell": "T1",
+          "text": "sphere2.02"
+        },
+        {
+          "cell": "V1",
+          "text": "sphere2.29"
+        },
+        {
+          "cell": "X1",
+          "text": "sphere2.47"
+        },
+        {
+          "cell": "Z1",
+          "text": "sphere2.66"
+        },
+        {
+          "cell": "AB1",
+          "text": "sphere3.03"
+        },
+        {
+          "cell": "P2",
+          "text": "shear rate"
+        },
+        {
+          "cell": "Q2",
+          "text": "temperature"
+        },
+        {
+          "cell": "R2",
+          "text": "shear rate"
+        },
+        {
+          "cell": "S2",
+          "text": "temperature"
+        },
+        {
+          "cell": "T2",
+          "text": "shear rate"
+        },
+        {
+          "cell": "U2",
+          "text": "temperature"
+        },
+        {
+          "cell": "V2",
+          "text": "shear rate"
+        },
+        {
+          "cell": "W2",
+          "text": "temperature"
+        },
+        {
+          "cell": "X2",
+          "text": "shear rate"
+        },
+        {
+          "cell": "Y2",
+          "text": "temperature"
+        },
+        {
+          "cell": "Z2",
+          "text": "shear rate"
+        },
+        {
+          "cell": "AA2",
+          "text": "temperature"
+        },
+        {
+          "cell": "AB2",
+          "text": "shear rate"
+        },
+        {
+          "cell": "AC2",
+          "text": "temperature"
+        },
+        {
+          "cell": "A3",
+          "text": "layer"
+        },
+        {
+          "cell": "B3",
+          "text": "mean granular temperature"
+        },
+        {
+          "cell": "C3",
+          "text": "layer"
+        },
+        {
+          "cell": "D3",
+          "text": "mean granular temperature"
+        },
+        {
+          "cell": "E3",
+          "text": "layer"
+        },
+        {
+          "cell": "F3",
+          "text": "mean granular temperature"
+        },
+        {
+          "cell": "G3",
+          "text": "layer"
+        },
+        {
+          "cell": "H3",
+          "text": "mean granular temperature"
+        },
+        {
+          "cell": "I3",
+          "text": "layer"
+        },
+        {
+          "cell": "J3",
+          "text": "mean granular temperature"
+        },
+        {
+          "cell": "K3",
+          "text": "layer"
+        },
+        {
+          "cell": "L3",
+          "text": "mean granular temperature"
+        },
+        {
+          "cell": "M3",
+          "text": "layer"
+        },
+        {
+          "cell": "N3",
+          "text": "mean granular temperature"
+        },
+        {
+          "cell": "P3",
+          "text": "--"
+        },
+        {
+          "cell": "R3",
+          "text": "--"
+        }
+      ]
+    },
+    {
+      "name": "Figure13",
+      "dimension": "A1:W59",
+      "text_labels_first_8_rows": [
+        {
+          "cell": "A1",
+          "text": "gravel2.03"
+        },
+        {
+          "cell": "C1",
+          "text": "gravel2.49"
+        },
+        {
+          "cell": "E1",
+          "text": "gravel2.94"
+        },
+        {
+          "cell": "G1",
+          "text": "gravel3.15"
+        },
+        {
+          "cell": "I1",
+          "text": "grave3.78"
+        },
+        {
+          "cell": "K1",
+          "text": "gravel4.18"
+        },
+        {
+          "cell": "P1",
+          "text": "gravel4.33"
+        },
+        {
+          "cell": "A2",
+          "text": "shear rate"
+        },
+        {
+          "cell": "B2",
+          "text": "rotating velocity"
+        },
+        {
+          "cell": "C2",
+          "text": "shear rate"
+        },
+        {
+          "cell": "D2",
+          "text": "rotating velocity"
+        },
+        {
+          "cell": "E2",
+          "text": "shear rate"
+        },
+        {
+          "cell": "F2",
+          "text": "rotating velocity"
+        },
+        {
+          "cell": "G2",
+          "text": "shear rate"
+        },
+        {
+          "cell": "H2",
+          "text": "rotating velocity"
+        },
+        {
+          "cell": "I2",
+          "text": "shear rate"
+        },
+        {
+          "cell": "J2",
+          "text": "rotating velocity"
+        },
+        {
+          "cell": "K2",
+          "text": "shear rate"
+        },
+        {
+          "cell": "L2",
+          "text": "rotating velocity"
+        },
+        {
+          "cell": "P2",
+          "text": "shear rate"
+        },
+        {
+          "cell": "Q2",
+          "text": "rotating velocity"
+        }
+      ]
+    },
+    {
+      "name": "Table1",
+      "dimension": "A1:H9",
+      "text_labels_first_8_rows": [
+        {
+          "cell": "B2",
+          "text": "8.7/9.1"
+        },
+        {
+          "cell": "C2",
+          "text": "0.017/0.014"
+        },
+        {
+          "cell": "D2",
+          "text": "4.0/3.4"
+        },
+        {
+          "cell": "E2",
+          "text": "0.61/0.72"
+        },
+        {
+          "cell": "F2",
+          "text": "1.37/1.76"
+        },
+        {
+          "cell": "G2",
+          "text": "0.072/0.095"
+        },
+        {
+          "cell": "H2",
+          "text": "0.044/0.054"
+        },
+        {
+          "cell": "B3",
+          "text": "19.8/31.2"
+        },
+        {
+          "cell": "C3",
+          "text": "0.023/0.023"
+        },
+        {
+          "cell": "D3",
+          "text": "6.4/6.0"
+        },
+        {
+          "cell": "E3",
+          "text": "0.82/0.87"
+        },
+        {
+          "cell": "F3",
+          "text": "1.45/1.61"
+        },
+        {
+          "cell": "G3",
+          "text": "0.086/0.145"
+        },
+        {
+          "cell": "H3",
+          "text": "0.099/0.145"
+        },
+        {
+          "cell": "B4",
+          "text": "36.1/46.1"
+        },
+        {
+          "cell": "C4",
+          "text": "0.025/0.028"
+        },
+        {
+          "cell": "D4",
+          "text": "7.0/7.0"
+        },
+        {
+          "cell": "E4",
+          "text": "0.88/0.87"
+        },
+        {
+          "cell": "F4",
+          "text": "1.49/1.49"
+        },
+        {
+          "cell": "G4",
+          "text": "0.096/0.173"
+        },
+        {
+          "cell": "H4",
+          "text": "0.157/0.231"
+        },
+        {
+          "cell": "B5",
+          "text": "40.2/55.6"
+        },
+        {
+          "cell": "C5",
+          "text": "0.027/0.027"
+        },
+        {
+          "cell": "D5",
+          "text": "7.4/6.8"
+        },
+        {
+          "cell": "E5",
+          "text": "0.86/0.94"
+        },
+        {
+          "cell": "F5",
+          "text": "1.43/1.62"
+        },
+        {
+          "cell": "G5",
+          "text": "0.109/0.178"
+        },
+        {
+          "cell": "H5",
+          "text": "0.195/0.280"
+        },
+        {
+          "cell": "B6",
+          "text": "53.3/71.8"
+        },
+        {
+          "cell": "C6",
+          "text": "0.028/0.031"
+        },
+        {
+          "cell": "D6",
+          "text": "7.8/7.8"
+        },
+        {
+          "cell": "E6",
+          "text": "0.93/0.93"
+        },
+        {
+          "cell": "F6",
+          "text": "1.50/1.50"
+        },
+        {
+          "cell": "G6",
+          "text": "0.117/0.223"
+        },
+        {
+          "cell": "H6",
+          "text": "0.255/0.361"
+        },
+        {
+          "cell": "B7",
+          "text": "56.9/76.7"
+        },
+        {
+          "cell": "C7",
+          "text": "0.031/0.032"
+        },
+        {
+          "cell": "D7",
+          "text": "8.4/8.1"
+        },
+        {
+          "cell": "E7",
+          "text": "0.89/0.93"
+        },
+        {
+          "cell": "F7",
+          "text": "1.37/1.48"
+        },
+        {
+          "cell": "G7",
+          "text": "0.134/0.251"
+        },
+        {
+          "cell": "H7",
+          "text": "0.276/0.397"
+        },
+        {
+          "cell": "B8",
+          "text": "60.3/83.9"
+        },
+        {
+          "cell": "C8",
+          "text": "0.033/0.036"
+        },
+        {
+          "cell": "D8",
+          "text": "8.8/8.6"
+        },
+        {
+          "cell": "E8",
+          "text": "0.90/0.91"
+        },
+        {
+          "cell": "F8",
+          "text": "1.34/1.40"
+        },
+        {
+          "cell": "G8",
+          "text": "0.156/0.294"
+        },
+        {
+          "cell": "H8",
+          "text": "0.304/0.428"
+        }
+      ]
+    },
+    {
+      "name": "Table2",
+      "dimension": "A1:B8",
+      "text_labels_first_8_rows": [
+        {
+          "cell": "A1",
+          "text": "θ_DEM (°)"
+        },
+        {
+          "cell": "B1",
+          "text": "I"
+        }
+      ]
+    }
+  ],
+  "typed_numeric_cells_read": false,
+  "numeric_response_strings_exposed": true,
+  "exposure_note": "The text-cell pass exposed slash-separated numerical pairs in Table1 B2:H8, matching the already exposed published Table 1 aggregates. Do not describe those targets as withheld or blind. Numerical figure arrays were not converted or fitted."
+}

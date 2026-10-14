@@ -1,5 +1,24 @@
 # Ongoing research: resume here
 
+**Latest, 14 October — broader-natural design stops before response fitting:**
+the [saltation qualification](saltation-qualification-results-2026-10-14.md)
+uses an accessible original workbook and a fixed chronological Oceano split.
+At synthetic CV=0.5 all six model/threshold scenarios fail the declared 80%
+selection gate (54.6–67.2%); noiseless recovery succeeds. Freeze `bdc1b78`
+preceded the ensemble. No numerical sand-flux, height or activity arrays were
+read or fitted. Independent verification covers 24,000 scores and 144 fits;
+all retained outputs replay byte-for-byte. **591 tests**, **40 registry records /
+993 references**, with previous entries preserved. This is a design-specific
+simulation limitation, not an empirical model rejection or new evidence of
+log-/linear-orthopolic allocation. Manuscript content is unchanged. Continue
+the source search for independently measured grain incidence and resource cost
+or a controlled resource intervention; do not rescue the failed split by
+changing its filtering, weighting or assumed variability after inspection.
+The [particle-tracking follow-up](natural-next-design-2026-10-14.md) retains a
+downloaded Su et al. workbook and other concrete public leads. Independent
+collision-cost calibration remains unqualified. Published and text-encoded
+Su Table 1 aggregates were exposed; they cannot later be called blind targets.
+
 **Latest, 14 October:** the [chemical competition transfer](adsorption-results-2026-10-13.md)
 is complete after the [cantilever study](cantilever-results-2026-10-13.md).
 Pure CO2/CH4 calibration predicts 45 binary conditions at three temperatures.
@@ -112,7 +131,7 @@ should address the observation model or explain the known lake departure, with
 a separate frozen design; additional catalogue hunting does not fix this
 estimator. Preserve these outcomes. The earlier programme retains its history.
 
-Last updated: 11 October 2026. This is the mutable handoff document for ongoing
+Last updated: 14 October 2026. This is the mutable handoff document for ongoing
 work. It records the current objective, decisions, completed work and exact next
 steps. Immutable executed studies belong in the run registry; this document does
 not replace their frozen protocols or results.

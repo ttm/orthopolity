@@ -1,0 +1,255 @@
+{
+  "actual_flux_values_read": false,
+  "calibration_intervals": 107,
+  "gate": {
+    "action": "stop_before_real_response_fitting",
+    "minimum_correct_fraction": 0.546,
+    "passed": false,
+    "primary_noise_cv": 0.5,
+    "required_correct_fraction": 0.8
+  },
+  "prediction_intervals": 53,
+  "run_id": "saltation-qualification-2026-10-14",
+  "scenarios": [
+    {
+      "correct": 500,
+      "correct_fraction": 1.0,
+      "generating_exponent": 0,
+      "monte_carlo_standard_error": 0.0,
+      "noise_cv": 0,
+      "replicates": 500,
+      "threshold_Pa": 0.04,
+      "ties": 0
+    },
+    {
+      "correct": 500,
+      "correct_fraction": 1.0,
+      "generating_exponent": 0.5,
+      "monte_carlo_standard_error": 0.0,
+      "noise_cv": 0,
+      "replicates": 500,
+      "threshold_Pa": 0.04,
+      "ties": 0
+    },
+    {
+      "correct": 500,
+      "correct_fraction": 1.0,
+      "generating_exponent": 0,
+      "monte_carlo_standard_error": 0.0,
+      "noise_cv": 0,
+      "replicates": 500,
+      "threshold_Pa": 0.08,
+      "ties": 0
+    },
+    {
+      "correct": 500,
+      "correct_fraction": 1.0,
+      "generating_exponent": 0.5,
+      "monte_carlo_standard_error": 0.0,
+      "noise_cv": 0,
+      "replicates": 500,
+      "threshold_Pa": 0.08,
+      "ties": 0
+    },
+    {
+      "correct": 500,
+      "correct_fraction": 1.0,
+      "generating_exponent": 0,
+      "monte_carlo_standard_error": 0.0,
+      "noise_cv": 0,
+      "replicates": 500,
+      "threshold_Pa": 0.12,
+      "ties": 0
+    },
+    {
+      "correct": 500,
+      "correct_fraction": 1.0,
+      "generating_exponent": 0.5,
+      "monte_carlo_standard_error": 0.0,
+      "noise_cv": 0,
+      "replicates": 500,
+      "threshold_Pa": 0.12,
+      "ties": 0
+    },
+    {
+      "correct": 490,
+      "correct_fraction": 0.98,
+      "generating_exponent": 0,
+      "monte_carlo_standard_error": 0.006260990336999414,
+      "noise_cv": 0.1,
+      "replicates": 500,
+      "threshold_Pa": 0.04,
+      "ties": 0
+    },
+    {
+      "correct": 444,
+      "correct_fraction": 0.888,
+      "generating_exponent": 0.5,
+      "monte_carlo_standard_error": 0.014103616557464968,
+      "noise_cv": 0.1,
+      "replicates": 500,
+      "threshold_Pa": 0.04,
+      "ties": 0
+    },
+    {
+      "correct": 465,
+      "correct_fraction": 0.93,
+      "generating_exponent": 0,
+      "monte_carlo_standard_error": 0.011410521460476728,
+      "noise_cv": 0.1,
+      "replicates": 500,
+      "threshold_Pa": 0.08,
+      "ties": 0
+    },
+    {
+      "correct": 406,
+      "correct_fraction": 0.812,
+      "generating_exponent": 0.5,
+      "monte_carlo_standard_error": 0.017473179447370188,
+      "noise_cv": 0.1,
+      "replicates": 500,
+      "threshold_Pa": 0.08,
+      "ties": 0
+    },
+    {
+      "correct": 417,
+      "correct_fraction": 0.834,
+      "generating_exponent": 0,
+      "monte_carlo_standard_error": 0.016639951923007473,
+      "noise_cv": 0.1,
+      "replicates": 500,
+      "threshold_Pa": 0.12,
+      "ties": 0
+    },
+    {
+      "correct": 374,
+      "correct_fraction": 0.748,
+      "generating_exponent": 0.5,
+      "monte_carlo_standard_error": 0.019416281827373642,
+      "noise_cv": 0.1,
+      "replicates": 500,
+      "threshold_Pa": 0.12,
+      "ties": 0
+    },
+    {
+      "correct": 390,
+      "correct_fraction": 0.78,
+      "generating_exponent": 0,
+      "monte_carlo_standard_error": 0.018525657883055057,
+      "noise_cv": 0.25,
+      "replicates": 500,
+      "threshold_Pa": 0.04,
+      "ties": 0
+    },
+    {
+      "correct": 312,
+      "correct_fraction": 0.624,
+      "generating_exponent": 0.5,
+      "monte_carlo_standard_error": 0.021662132858977667,
+      "noise_cv": 0.25,
+      "replicates": 500,
+      "threshold_Pa": 0.04,
+      "ties": 0
+    },
+    {
+      "correct": 380,
+      "correct_fraction": 0.76,
+      "generating_exponent": 0,
+      "monte_carlo_standard_error": 0.019099738218101316,
+      "noise_cv": 0.25,
+      "replicates": 500,
+      "threshold_Pa": 0.08,
+      "ties": 0
+    },
+    {
+      "correct": 288,
+      "correct_fraction": 0.576,
+      "generating_exponent": 0.5,
+      "monte_carlo_standard_error": 0.022100859711784968,
+      "noise_cv": 0.25,
+      "replicates": 500,
+      "threshold_Pa": 0.08,
+      "ties": 0
+    },
+    {
+      "correct": 339,
+      "correct_fraction": 0.678,
+      "generating_exponent": 0,
+      "monte_carlo_standard_error": 0.020895741192884256,
+      "noise_cv": 0.25,
+      "replicates": 500,
+      "threshold_Pa": 0.12,
+      "ties": 0
+    },
+    {
+      "correct": 276,
+      "correct_fraction": 0.552,
+      "generating_exponent": 0.5,
+      "monte_carlo_standard_error": 0.02223942445298439,
+      "noise_cv": 0.25,
+      "replicates": 500,
+      "threshold_Pa": 0.12,
+      "ties": 0
+    },
+    {
+      "correct": 327,
+      "correct_fraction": 0.654,
+      "generating_exponent": 0,
+      "monte_carlo_standard_error": 0.021273645667821018,
+      "noise_cv": 0.5,
+      "replicates": 500,
+      "threshold_Pa": 0.04,
+      "ties": 0
+    },
+    {
+      "correct": 290,
+      "correct_fraction": 0.58,
+      "generating_exponent": 0.5,
+      "monte_carlo_standard_error": 0.02207260745811423,
+      "noise_cv": 0.5,
+      "replicates": 500,
+      "threshold_Pa": 0.04,
+      "ties": 0
+    },
+    {
+      "correct": 336,
+      "correct_fraction": 0.672,
+      "generating_exponent": 0,
+      "monte_carlo_standard_error": 0.02099599961897504,
+      "noise_cv": 0.5,
+      "replicates": 500,
+      "threshold_Pa": 0.08,
+      "ties": 0
+    },
+    {
+      "correct": 273,
+      "correct_fraction": 0.546,
+      "generating_exponent": 0.5,
+      "monte_carlo_standard_error": 0.02226584828835407,
+      "noise_cv": 0.5,
+      "replicates": 500,
+      "threshold_Pa": 0.08,
+      "ties": 0
+    },
+    {
+      "correct": 295,
+      "correct_fraction": 0.59,
+      "generating_exponent": 0,
+      "monte_carlo_standard_error": 0.02199545407578575,
+      "noise_cv": 0.5,
+      "replicates": 500,
+      "threshold_Pa": 0.12,
+      "ties": 0
+    },
+    {
+      "correct": 281,
+      "correct_fraction": 0.562,
+      "generating_exponent": 0.5,
+      "monte_carlo_standard_error": 0.022188104921331157,
+      "noise_cv": 0.5,
+      "replicates": 500,
+      "threshold_Pa": 0.12,
+      "ties": 0
+    }
+  ]
+}
