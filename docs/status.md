@@ -4,6 +4,16 @@ Last updated 14 October 2026. **Read this first in a new session.** It records w
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
+**Broader nature, 14 October — design qualification in progress:** the
+[source audit](natural-source-audit-2026-10-14.md) acquired the small original
+three-site wind/sand workbook and methods. Its date and wind columns support
+a fixed Oceano chronological split. Before opening numerical sand responses,
+the [qualification protocol](saltation-qualification-protocol-2026-10-14.md)
+tests whether the actual wind range can distinguish linear and 3/2 transport
+laws in simulated worlds with field-scale variability. Failure stops real
+response fitting. This is a proposed constitutive transfer; neither
+log-orthopolic nor linear-orthopolic size allocation is measured.
+
 **Latest chemistry result, 14 October:** the
 [pure-to-mixture adsorption transfer](adsorption-results-2026-10-13.md) is
 complete. Seventy-two pure calibration observations predict 90 component
