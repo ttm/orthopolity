@@ -2455,7 +2455,7 @@ use mixture fugacity coefficients. The ideal-gas sensitivity recalibrates and
 predicts throughout using pressure. Fits use positive logarithmic parameters,
 fixed multistart weighted least squares and U/2 weights. All three primary
 common-capacity fits pass the declared local identifiability gate and pure
-RMSE <=5% of the relevant maximum pure loading. The gate measures numerical
+RMSE $\le 5\%$ of the relevant maximum pure loading. The gate measures numerical
 sensitivity; unknown covariance prevents a confidence-interval interpretation.
 
 The no-competition ablation applies the same fitted pure curves independently

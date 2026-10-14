@@ -540,33 +540,21 @@ law. An application must state which inputs were independently known, what was
 learned from calibration, what transfers unchanged and what observation would
 contradict the specified model.
 
-This also separates a failed test from an unavailable one. Insufficient resolved
-sequences or a biased estimator cannot decide between physical resource models.
-Improved measurements may open that comparison. A well-qualified forecast that
-fails, however, should narrow the claimed domain or challenge its assumptions;
-it must not be discarded because the general-law programme anticipates equality.
-
-The most informative next comparisons change resource requirements or constraints
-in ways that make competing explanations predict different outcomes. They can
-include relaxation rates, complete allocation profiles or cross-environment
-contrasts such as (4). Success supports the specified shared relation; a failure
-can locate an omitted interaction or an actual boundary. The framework's value
-is demonstrated when it makes that difference testable.
+An unavailable test cannot decide between physical resource models; a qualified
+forecast that fails should narrow the claimed domain or challenge its assumptions.
+The next comparisons should change independently specified requirements or
+constraints so that rival explanations predict different relaxation rates,
+allocation profiles or cross-environment contrasts such as (4). A success supports
+the specified relation; a failure can identify a missing interaction or a boundary.
 
 ## 6. Contribution and conclusion
 
-The article develops orthopolity as a general law linking resource concentration,
-incidence and allocation. Its exact foundation is finite capacity and complete
-resource accounting. The allocation extension has concrete realizations through
-specified symmetries and dynamics. Gravity and radiation identify geometric and
-transport equalities; thermal modes and growth--division models show how
-independently specified constraints alter the observable profile.
-
-The inverse formulation makes abundance informative without treating an arbitrary
-fit as resource discovery. Restricted compositions and independently characterized
-environments generate additional predictions. The established statistical
-machinery is part of this account; the scientific task is to identify physical
-resources and restrictions that transfer between settings.
+Orthopolity links resource concentration, incidence and allocation as a general
+law. Finite capacity and complete accounting establish its exact core; specified
+symmetries and dynamics realize its allocation extension. Known physical laws
+clarify which equalities hold and how independently specified constraints alter
+the observable profile. Restricted inverse inference then makes abundance
+informative through predictions that transfer between environments.
 
 The empirical results establish useful conditional successes, failed forecasts
 and observation boundaries. They do not yet demonstrate a common neutral regime
