@@ -20,6 +20,11 @@ offline forecasts, results, verification, coverage audit and figure replay
 byte-for-byte. Main 4.6 and supporting S5.14 carry the result. This adds a
 useful chemical constraint transfer, without an advantage over established
 adsorption theory or a demonstration of universal neutrality.
+`make all` passes, including all 582 tests. The article remains **12 pages**
+after removing repeated discussion and condensing biological detail already
+preserved in the supplement; supporting material is **55 pages**. Both PDFs
+were rebuilt and visually checked, with no typesetting warnings and matching
+repeat-build hashes. All 38 earlier registry records are byte-preserved.
 
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
