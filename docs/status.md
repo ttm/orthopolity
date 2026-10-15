@@ -1,8 +1,25 @@
 # Project status and handoff
 
-Last updated 14 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 15 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**15 October — next natural transfer qualified for calibration:** the
+[narrow-to-wide channel protocol](grain-channel-protocol-2026-10-15.md)
+uses 19 old sphere runs, a 29-run pooled sensitivity, and nine wide targets.
+Thirty public source files have been acquired and checked against 29 publisher
+digests; the checksum file itself has a local digest. Primitive hydraulic and
+independent grain-assay inputs pass physical qualification. Three old runs lack
+water discharge. Width is resolved as 6.5 cm from original measurement programs,
+tables and paper despite stale 5-cm README labels. Source normalization, diameter
+and slope differences are fixed explicitly. Eight target values remain
+numerically withheld; one was accidentally exposed during metadata inspection.
+This is a retrospective constitutive transfer, not neutral log-/linear-orthopolic
+size allocation. Freeze the design before old-response fits, then seal forecasts
+before target evaluation. The [independent review](grain-channel-design-review-2026-10-15.md)
+separates geometry and shape claims. Su's tracking archive does not qualify
+independent collision costs; this separate archive supplies measured grain
+properties instead. Seven new software tests pass; real calibration is pending.
 
 **Broader nature, 14 October — qualification complete:** the
 [sand-transport design](saltation-qualification-results-2026-10-14.md) fails

@@ -1,0 +1,70 @@
+file(s),variable,description,units,type,notes
+"1_var_density.csv, 1_var_density_WF.csv",(index),Granular material code (see naming conventions in top-level README),,string,
+"1_var_density.csv, 1_var_density_WF.csv",grain_mass,Mean mass of a single grain,kg,float,columns prefixed with d are 1-sigma uncertainties of the unprefixed column
+"1_var_density.csv, 1_var_density_WF.csv",total_grain_ro,Grain (sediment) density,kg/m^3,float,
+"1_var_density.csv, 1_var_density_WF.csv",grain_vol,Mean volume of a single grain,m^3,float,
+"2_var_shape.csv, 2_var_shape_WF.csv",A,Long grain axis,m,float,
+"2_var_shape.csv, 2_var_shape_WF.csv",B,Middle (intermediate) grain axis,m,float,
+"2_var_shape.csv, 2_var_shape_WF.csv",C,Short grain axis,m,float,
+"2_var_shape.csv, 2_var_shape_WF.csv",dn,Volume-equivalent sphere (VES) diameter,m,float,uncertainty column is ddn
+"2_var_shape.csv, 2_var_shape_WF.csv",CSF,Corey shape factor C/sqrt(A*B),dimensionless,float,
+"2_var_shape.csv, 2_var_shape_WF.csv","A_vec, B_vec, C_vec",Individual per-grain axis measurements (array),m,string (array),same scale and units as the scalar A/B/C columns
+"2_var_shape.csv, 2_var_shape_WF.csv",hole_props,Hole length/diameter for grains with holes (dict),m,string (dict),d-prefixed keys are 1-sigma uncertainties
+"2_var_shape.csv, 2_var_shape_WF.csv",n,Number of grains measured,count,int,
+"3_var_ARS.csv, 3_var_ARS_WF.csv",mean_angle,Mean angle of repose,degrees,float,mean over repeated AoR photos of arctan of the fitted pile-flank slope
+"3_var_ARS.csv, 3_var_ARS_WF.csv",std_angle,Standard deviation (1-sigma) of the per-photo repose-angle measurements,degrees,float,
+"4_var_settling_velocities.csv, 4_var_settling_velocities_WF.csv",vel_mean,Mean measured settling velocity,m/s,float,
+"4_var_settling_velocities.csv, 4_var_settling_velocities_WF.csv",vels,Individual settling velocity measurements (array),m/s,string (array),
+"4_var_settling_velocities.csv, 4_var_settling_velocities_WF.csv",CD,Drag coefficient from measured settling velocity,dimensionless,float,
+"5_var_VES_settling_velocity.csv, 5_var_VES_settling_velocity_WF.csv",ws_sphere,Settling velocity of volume-equivalent sphere,m/s,float,
+"5_var_VES_settling_velocity.csv, 5_var_VES_settling_velocity_WF.csv",CD_VES,Drag coefficient of volume-equivalent sphere,dimensionless,float,
+"5_var_VES_settling_velocity.csv, 5_var_VES_settling_velocity_WF.csv",Re,Particle Reynolds number,dimensionless,float,
+"gb_5_data_WF.csv, ng_5_data_WF.csv",name,Experiment run ID (material_flumewidthcm_runnumber),,string,
+"gb_5_data_WF.csv, ng_5_data_WF.csv",date,Date of experiment,DD_MM_YYYY,string,
+"gb_5_data_WF.csv, ng_5_data_WF.csv",discharge,Water discharge,L/s,float,"empty in the released files - discharge was set by pump calibration, not measured per run; divided by 1000 to m^3/s in the analysis pipeline"
+"gb_5_data_WF.csv, ng_5_data_WF.csv",water_slope,Water surface slope,degrees,float,
+"gb_5_data_WF.csv, ng_5_data_WF.csv",bed_slope,Bed slope,degrees,float,
+"gb_5_data_WF.csv, ng_5_data_WF.csv",flow_depth,Flow depth,m,float,
+"gb_5_data_WF.csv, ng_5_data_WF.csv",mass_flux,Measured sediment mass flux,kg/s,float,
+"gb_5_data_WF.csv, ng_5_data_WF.csv",feed_flux,Sediment feed rate,kg/s,float,
+"gb_5_data_WF.csv, ng_5_data_WF.csv",shear_stress,Bed shear stress (rho*g*R*tan(water_slope)),Pa,float,
+"gb_5_data_WF.csv, ng_5_data_WF.csv",reynolds_stress,Reynolds-stress-derived bed stress,Pa,float,not populated (NaN) in the released files - LDV Reynolds-stress estimates were not carried into the summary table
+"gb_5_data_WF.csv, ng_5_data_WF.csv",tau8,Dimensionless shear stress (Shields number),dimensionless,float,
+"gb_5_data_WF.csv, ng_5_data_WF.csv",q8,Dimensionless sediment flux from measured flux (Einstein number),dimensionless,float,
+"gb_5_data_WF.csv, ng_5_data_WF.csv",q8_feed,Dimensionless sediment flux from feed rate,dimensionless,float,
+"Brownlie_1981_Gilbert_1914.csv, Smart_1983_MPM_1948.csv",ID,Run ID in original source,,int,"Literature compilations: Gilbert (1914) via Brownlie (1981); Meyer-Peter & Mueller (1948) via Smart (1983)"
+"Brownlie_1981_Gilbert_1914.csv, Smart_1983_MPM_1948.csv",Q,Water discharge,L/s,float,divided by 1000 to m^3/s in the analysis pipeline
+"Brownlie_1981_Gilbert_1914.csv, Smart_1983_MPM_1948.csv",B,Flume width,m,float,
+"Brownlie_1981_Gilbert_1914.csv, Smart_1983_MPM_1948.csv",H,Flow depth,m,float,
+"Brownlie_1981_Gilbert_1914.csv, Smart_1983_MPM_1948.csv",S,Slope,m/m,float,
+"Brownlie_1981_Gilbert_1914.csv, Smart_1983_MPM_1948.csv",Dm,Mean grain diameter,mm,float,divided by 1000 to m in the analysis pipeline
+"Brownlie_1981_Gilbert_1914.csv, Smart_1983_MPM_1948.csv",D90,90th-percentile grain diameter,mm,float,
+"Brownlie_1981_Gilbert_1914.csv, Smart_1983_MPM_1948.csv","sigmag / σg",Geometric standard deviation of grain size distribution,dimensionless,float,
+"Brownlie_1981_Gilbert_1914.csv, Smart_1983_MPM_1948.csv",GS,Specific gravity of sediment,dimensionless,float,
+"Brownlie_1981_Gilbert_1914.csv, Smart_1983_MPM_1948.csv",Rb,Bed hydraulic radius (sidewall-corrected),m,float,inferred from value range; not used in the analysis pipeline
+"Brownlie_1981_Gilbert_1914.csv, Smart_1983_MPM_1948.csv",tau8,Dimensionless shear stress (Shields number),dimensionless,float,
+"Brownlie_1981_Gilbert_1914.csv, Smart_1983_MPM_1948.csv",q8,Dimensionless sediment flux (Einstein number),dimensionless,float,
+Guo_2015_Song_1994.csv,So,Channel slope,percent (%),float,"Song (1994) data as compiled by Guo (2015); divided by 100 to m/m in the analysis pipeline"
+Guo_2015_Song_1994.csv,Q,Discharge,L/s,float,"confirmed from Guo (2015) Table 1 col. 2; not used in the analysis pipeline (Q reconstructed from V, h, ar)"
+Guo_2015_Song_1994.csv,h,Flow depth,cm,float,divided by 100 to m in the analysis pipeline
+Guo_2015_Song_1994.csv,ar,Aspect ratio,dimensionless,float,
+Guo_2015_Song_1994.csv,dhdx,Streamwise depth gradient dh/dx,percent (%),float,per Guo (2015) Table 1 col. 5
+Guo_2015_Song_1994.csv,T,Water temperature,deg C,float,
+Guo_2015_Song_1994.csv,V,Mean velocity,cm/s,float,divided by 100 to m/s in the analysis pipeline
+Guo_2015_Song_1994.csv,R,Reynolds number (Re = 4RV/nu),dimensionless,float,"tabulated in units of 10^5 per Guo (2015) Table 1 col. 8 (e.g. 3.42 = 3.42e5); this is the Reynolds number, NOT a hydraulic radius"
+Guo_2015_Song_1994.csv,F,Froude number,dimensionless,float,
+Guo_2015_Song_1994.csv,"ubc, ub1a, ub2a, ub4, ub15",Bed-shear velocity: ubc measured (log-law) plus four predicted estimates,cm/s,float,"per Guo (2015) Table 1: ubc = centreline bed-shear velocity from the log-law (ADV-measured benchmark, col. 10); ub1a/ub2a/ub4/ub15 = predictions from Guo Eqs. 1a (flow-depth method), 2a (hydraulic-radius method), 4 (Einstein-Johnson sidewall correction), 15 (Guo cross-sectional velocity method). ubc is used in the analysis: (ubc/100)^2*rho -> Pa"
+Guo_2015_Song_1994.csv,flow_type,Uniform or non-uniform flow,,string,
+Guo_2015_Song_1994.csv,data_source,Original data source,,string,
+Williams_1970.csv,width,Flume width,ft,float,"Williams (1970) USGS flume experiments; source in US customary units, multiplied by 0.3048 to m in the analysis pipeline"
+Williams_1970.csv,unit_discharge,Discharge per unit width,ft^2/s,float,multiplied by 0.3048^2 to m^2/s in the analysis pipeline
+Williams_1970.csv,slope,Slope,m/m,float,
+Williams_1970.csv,depth,Flow depth,ft,float,multiplied by 0.3048 to m in the analysis pipeline
+Williams_1970.csv,mean_velocity,Mean flow velocity,ft/s,float,multiplied by 0.3048 to m/s in the analysis pipeline
+Williams_1970.csv,sed_trans_measure_period,Duration of sediment transport measurement,s,float,
+Williams_1970.csv,unit_transport_rate,Sediment transport rate per unit width,lb/ft/s,float,multiplied by 0.45359237/0.3048 to kg/m/s in the analysis pipeline
+Williams_1970.csv,mass_flux_in,Sediment feed rate,lb/s,float,multiplied by 0.45359237 to kg/s in the analysis pipeline
+Williams_1970.csv,surface_velocity,Water surface velocity,ft/s,float,multiplied by 0.3048 to m/s in the analysis pipeline
+Williams_1970.csv,water_temp,Water temperature,deg F,float,
+HG_data_comp_simplified.csv,(all columns),River hydraulic geometry compilation - fully documented in 03_original_archive/river_data/readme.md,SI units,,"width/depth/d50/d84 (m), velocity (m/s), slope (m/m), discharge (m^3/s)"
+Deal_2023_exp_data.txt,(all columns),Per-experiment metadata from Deal et al. (2023) grain shape experiments. Self-descriptive column names; d-prefix = 1-sigma uncertainty,SI units,,"CSV format despite .txt extension; angle_of_repose and flume_slope in degrees; water_slope and bed_slope are gradients (m/m)"

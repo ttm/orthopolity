@@ -37,6 +37,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: cantilever-sources cantilever-transfer cantilever-registry
 .PHONY: adsorption-sources adsorption-transfer adsorption-registry
 .PHONY: saltation-sources saltation-qualification saltation-registry
+.PHONY: grain-channel-sources
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -74,6 +75,9 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/adsorption-transfer-2026-10-13/adsorption.png
 
 all: data test analyses
+
+grain-channel-sources: ## verify public grain/channel sources without converting transport columns
+	$(PY) experiments/audit_grain_channel.py --stage verify
 
 saltation-sources: ## verify original wind/sand archive without reading response columns
 	$(PY) experiments/fetch_saltation.py --stage verify

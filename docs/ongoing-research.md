@@ -1,6 +1,16 @@
 # Ongoing research: resume here
 
-**Latest, 14 October — broader-natural design stops before response fitting:**
+**15 October — next natural transfer ready for design freeze:** the
+[grain/channel protocol](grain-channel-protocol-2026-10-15.md) qualifies 19
+narrow sphere calibration runs, 10 additional gravel sensitivity runs and
+nine wide targets. Original public sources, publisher digests, response-isolated
+predictor audit and software checks are retained. Eight of nine target numbers
+remain withheld; the accidental first-target exposure is explicit. This is a
+conditional constitutive transfer with separate grain assays and hydraulic
+inputs, not neutral log-/linear-orthopolic size allocation. Commit the design,
+fit only old responses, commit forecasts, then evaluate the fixed new cohort.
+
+**14 October — broader-natural design stops before response fitting:**
 the [saltation qualification](saltation-qualification-results-2026-10-14.md)
 uses an accessible original workbook and a fixed chronological Oceano split.
 At synthetic CV=0.5 all six model/threshold scenarios fail the declared 80%

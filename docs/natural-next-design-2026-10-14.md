@@ -81,8 +81,15 @@ measurement, but the published preprocessing is not wholly response-agnostic.
 This is an additional qualification of a study already stopped at its synthetic
 gate; no filters, simulations or verdict were changed after this observation.
 
-Next priority: establish an independent shape/collision-cost source for the
-Su archive, or find a particle-tracking experiment with both measured costs
-and size-specific incidence under an unused intervention. Until then, preserve
-the completed results and avoid adding another bulk-flux exponent comparison
-to the article as if it established general allocation.
+**15 October resolution:** Su's published methods do not supply the independent
+collision costs required for that proposed transfer. Its stress correction is
+hydraulic; transport thresholds are fitted to flux. Shape projections come from
+the tracking videos, and dry DEM friction/restitution parameters validate the
+detector rather than measure the wet experimental grains. Stop this particular
+sphere-to-gravel cost prediction; the archive remains useful for tracking work.
+
+A separate [narrow-to-wide channel design](grain-channel-protocol-2026-10-15.md)
+now uses Deal's accessible original grain assays and hydraulic measurements.
+It tests a conditional constitutive transfer rather than size-specific neutral
+allocation. This supplies a concrete next prediction without relabelling bulk
+flux as a direct log-/linear-orthopolic abundance test.
