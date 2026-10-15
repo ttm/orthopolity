@@ -4,22 +4,29 @@ Last updated 15 October 2026. **Read this first in a new session.** It records w
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
-**15 October — next natural transfer qualified for calibration:** the
-[narrow-to-wide channel protocol](grain-channel-protocol-2026-10-15.md)
-uses 19 old sphere runs, a 29-run pooled sensitivity, and nine wide targets.
-Thirty public source files have been acquired and checked against 29 publisher
-digests; the checksum file itself has a local digest. Primitive hydraulic and
-independent grain-assay inputs pass physical qualification. Three old runs lack
-water discharge. Width is resolved as 6.5 cm from original measurement programs,
-tables and paper despite stale 5-cm README labels. Source normalization, diameter
-and slope differences are fixed explicitly. Eight target values remain
-numerically withheld; one was accidentally exposed during metadata inspection.
-This is a retrospective constitutive transfer, not neutral log-/linear-orthopolic
-size allocation. Freeze the design before old-response fits, then seal forecasts
-before target evaluation. The [independent review](grain-channel-design-review-2026-10-15.md)
-separates geometry and shape claims. Su's tracking archive does not qualify
-independent collision costs; this separate archive supplies measured grain
-properties instead. Seven new software tests pass; real calibration is pending.
+**15 October — natural constraint transfer complete:** the
+[narrow-to-wide channel study](grain-channel-results-2026-10-15.md) calibrates
+19 old sphere runs and predicts all nine wider-channel sphere/gravel runs.
+Balanced MAE is **0.04751**, versus **0.08283** without shape correction and
+**0.20859** with hydraulic-radius correction: gains of **42.6% and 77.2%**.
+The frozen rules pass, but the old-maximum accuracy tolerance exceeds every
+wide observation; lowest-flux errors exceed fourfold. Separate old-material
+fits perform better (MAE **0.04297**). Pooling 29 old runs gives MAE 0.03478,
+with only 19.6% shape gain. Shared input uncertainty is not propagated.
+This is useful established-model constraint transfer, not neutral
+log-/linear-orthopolic size allocation or a new universal-law confirmation.
+Design `290acd9` precedes calibration; forecasts `e86cffc` precede evaluation.
+Published qualitative outcomes and one numerical target were already exposed;
+eight target values were numerically withheld. Thirty public source files,
+29 publisher checksums, physical predictor qualification and source conventions
+are retained. Independent calculation verifies **2,467 quantities**; forecasts,
+results, verification and figure replay byte-for-byte. **598 tests** and
+`make all` pass; registry **41 runs / 1,042 references**, with the earlier 40
+entries byte-preserved. Main section 4.6 and supporting S5.15 carry the result.
+The article remains **12 pages**, supporting material **57 pages**; both were
+rebuilt and visually checked. Repeated cell-cycle detail stays in S5.6, and
+merged bibliography entries were repaired. Su's separate tracking archive does
+not qualify the proposed independent collision-cost prediction.
 
 **Broader nature, 14 October — qualification complete:** the
 [sand-transport design](saltation-qualification-results-2026-10-14.md) fails
@@ -69,10 +76,10 @@ repeat-build hashes. All 38 earlier registry records are byte-preserved.
 
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
-the package layout for all runners. The suite now passes **591 tests**; the
-registry verifies **40 runs and 993 file references**, including the Italian simulation,
+the package layout for all runners. The suite now passes **598 tests**; the
+registry verifies **41 runs and 1,042 file references**, including the Italian simulation,
 retrospective chemostat diagnosis, independent-assay pilot, field-stock audit,
-cantilever transfer, chemical competition and saltation design qualification. The broader programme and subsequent
+cantilever transfer, chemical competition, saltation design qualification and grain/channel transfer. The broader programme and subsequent
 studies are in [research-brief.md](research-brief.md) and
 [ongoing-research.md](ongoing-research.md).
 
@@ -94,10 +101,12 @@ is 53 pages. Both were visually checked and repeat-build hashes agree.
 **Requested research order:** physics, chemistry, broader natural phenomena,
 biology, then human phenomena including language/culture. The
 [physics-source audit](physics-candidate-audit-2026-10-12.md) retains the alternatives.
-The first physics and chemistry transfers are complete. The first broader-natural
-candidate stops at its simulation qualification; do not fit real sand responses
-or change its failed gate. Continue with independently specified resources/costs
-that make competing models predict different unused responses. Chemistry alternatives
+The first physics, chemistry and broader-natural transfers are complete. The
+saltation candidate remains stopped at simulation qualification; do not fit its
+real responses or change its failed gate. Next prioritize a biological prediction
+with separately measured costs, opportunities and a compatible intervention;
+then extend human/language work. A later grain/channel follow-up needs shared
+input uncertainty, a target-relevant tolerance and a separate cohort. Chemistry alternatives
 remain in the [source audit](adsorption-source-audit-2026-10-13.md). Resolve
 source and calibration conventions before fitting; a catalogue of familiar
 formulae alone would add less than a discriminating prediction.
@@ -234,6 +243,7 @@ discards the authors' programme.
 | 13 Oct 2026 | Frozen cantilever damping-to-energy extrapolation | 10/11 modes physically admissible; 74.00 K thermal MAE vs 78.94 K geometry-only; strong mode failures retained; 558 tests, 38 records |
 | 13–14 Oct 2026 | Pure-calibrated chemical competition transfer | 60.1% lower mixture MAE than omitting competition; IAST slightly better; all three engineering gates pass, measurement-scale errors and extrapolation remain; 582 tests, 39 records |
 | 14 Oct 2026 | Sand-transport predictor-only simulation qualification | All six primary discrimination scenarios fail; 54.6–67.2% correct selection versus 80%; no real sand-flux fit; 591 tests, 40 records |
+| 15 Oct 2026 | Grain-assay and hydraulic narrow-to-wide transfer | 42.6% shape and 77.2% wall-correction gains; permissive accuracy pass, low-flux failures and better material-label benchmark; 598 tests, 41 records |
 
 ## 3. Results to carry forward
 
@@ -332,9 +342,11 @@ The [research brief](research-brief.md) explains the general-law programme;
 
 ## 5. Next steps, in priority order
 
-**Author-directed domain sequence takes priority:** the first independent physics
-and chemistry forecasts are complete. Seek a discriminating prediction in broader
-nature next, then biology and human phenomena. Require independent resource/constraint
+**Author-directed domain sequence takes priority:** physics, chemistry and a
+broader-natural conditional forecast are complete. Seek a new independently
+qualified biological intervention next, then human/language phenomena. The
+grain/channel study adds relative predictive improvement but a weak absolute
+accuracy gate; a later extension needs separate data and shared-input uncertainty. Require independent resource/constraint
 inputs, a genuine unused observable, competing predictions and reachable data;
 do not count mass-balance identities or target-calibrated equilibrium constants
 as confirmation. The cantilever follow-up would require independently measured
@@ -404,8 +416,9 @@ The existing candidate repairs below remain available in that sequence.
   exponent was examined and the reading passes a second, different prediction. Grades:
   derived, motivated, suggestive, numerology. Source tags in documents: verified, repository result,
   own derivation, unverified.
-- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 591 tests and
-  regenerates every analysis. The September results were produced with Python 3.11; results
+- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 598 tests and
+  regenerates the legacy analyses. Later frozen studies have named replay targets;
+  `make grain-channel-transfer` replays the new study to a fresh STUDY_OUTPUT_ROOT. The September results were produced with Python 3.11; results
   added on 8–9 October (Gibrat, resource choice, catalogue, aftershocks) with Python 3.13 and the
   pinned packages. Other versions change the older files by at most about $4\times10^{-8}$
   relative. Do not commit such noise; restore those files with `git checkout -- <file>`.

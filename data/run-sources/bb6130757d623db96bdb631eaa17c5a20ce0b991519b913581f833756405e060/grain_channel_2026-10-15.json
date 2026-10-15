@@ -1,0 +1,15 @@
+{
+  "primary_calibration": "narrow spheres with complete hydraulic predictors",
+  "sensitivity_calibration": "narrow spheres and gravel with complete hydraulic predictors",
+  "prediction_cohort": "all nine published wide-flume runs",
+  "calibration_loss": "mean squared dimensionless flux error, material-balanced for pooled fit",
+  "evaluation_loss": "mean absolute dimensionless flux error, material-balanced",
+  "maximum_normalized_mae": 0.2,
+  "minimum_relative_gain": 0.2,
+  "normalization": "largest dimensionless flux in primary narrow-sphere calibration",
+  "fitted_parameters": ["nonnegative amplitude", "nonnegative threshold"],
+  "models": ["guo_shape", "guo_unity", "radius_shape", "depth_shape"],
+  "reference_measure": "equal weight per grain cohort, then per run; neither log-orthopolic nor linear-orthopolic size allocation",
+  "exposed_target": "gb_5_01",
+  "retain_exposed_target": true
+}

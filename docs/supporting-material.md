@@ -2520,6 +2520,92 @@ at finite accuracy. Established IAST performs similarly and slightly better
 on loading error; this comparison demonstrates no additional predictive
 advantage over adsorption theory and does not establish universal neutrality.
 
+### S5.15. Grain properties and a narrow-to-wide channel forecast
+
+The new natural-system comparison uses [Deal et al. (2026)](https://doi.org/10.1029/2025JF008712)
+and its [public original archive](https://doi.org/10.20383/103.01325), including
+the older Deal et al. (2023) experiments. Of the published narrow sphere/gravel
+cohort, three rows lack water discharge. Predictor-only qualification leaves
+19 spheres for primary calibration and ten gravel runs for a pooled sensitivity
+and material-specific benchmark. All four new sphere and five new gravel runs
+are retained. The width changes from 0.0105 to 0.065 m. Both original measurement
+programs confirm the latter value; README descriptions of a 5-cm channel are stale.
+
+The [protocol](grain-channel-protocol-2026-10-15.md) and implementation were
+committed at `290acd9` before old-response fitting, and all forecasts at
+`e86cffc` before numerical target evaluation. Published qualitative outcomes
+and fitted wide-channel constants were already known, but those constants
+were not used. A metadata inspection accidentally exposed one numerical target;
+the other eight remained withheld. This is retrospective local freezing, not
+blind confirmation. All 30 retained source files have checked local digests;
+29 also match publisher checksums, excluding the checksum file itself.
+
+For mass flux $\dot m$, the fixed constitutive prediction is
+
+$$q^*=\frac{\dot m}{\rho_sW\sqrt{g r_fD^3}}
+=A\left[F_{\rm shape}F_{\rm wall}\frac{HS}{r_fD}-t\right]_+^{3/2},
+\qquad r_f=\rho_s/\rho_f-1.$$
+
+Water discharge, width, depth, water-surface slope and grain size determine the
+Guo wall correction. Separate grain assays supply settling speed, Corey shape
+factor and repose angle; archived theoretical equivalent-sphere settling speed
+and per-run measured bed slope complete the prescribed shape correction.
+The actual source pipeline uses volume-equivalent diameter D rather than an
+independently measured D50. That convention is retained, and measured mass flux
+is normalized consistently instead of importing precomputed flux or
+flux-inferred stress. All included Guo factors are physically admissible;
+all primary target stresses fall within calibration support.
+
+Each candidate independently fits nonnegative amplitude A and threshold t on
+the same permitted old observations; exponent 3/2 is fixed. The reference
+measure gives equal weight to each grain cohort and then to runs within that
+cohort. It is an observation measure, **neither log-orthopolic nor
+linear-orthopolic size allocation**. No grain-size abundance distribution is
+tested, and boundary momentum conservation alone does not determine transport.
+
+| Prediction | Primary balanced MAE | Pooled-calibration MAE |
+|---|---:|---:|
+| Guo + measured shape | 0.04751 | 0.03478 |
+| Guo + unit shape | 0.08283 | 0.04326 |
+| Hydraulic radius + measured shape | 0.20859 | 0.18475 |
+| No wall correction + measured shape | 0.06888 | 0.06888 |
+
+Errors are in dimensionless flux. The primary gain is 42.64% versus unit shape
+and 77.22% versus hydraulic radius, satisfying separate frozen 20% improvement
+rules. Shape slightly worsens sphere error and improves gravel error. A
+benchmark with separate Guo/unit-shape fits to old sphere and gravel data gives
+MAE 0.04297, 9.56% better than the primary full model, with four fitted
+parameters instead of two. The pooled shape gain is 19.61%; calibration choice
+therefore matters. The no-wall model extrapolates and predicts zero throughout.
+
+![Primary channel-transfer forecasts and calibration-only alternatives](../results/grain-channel-transfer-2026-10-15/transfer.png)
+
+*Figure S15. All nine primary forecasts against observations, and balanced
+errors for models fitted without the wider-channel responses. The diagonal
+denotes exact prediction. The material-specific benchmark has additional
+calibration parameters. Shared input uncertainties are not propagated.*
+
+The accuracy rule requires calibration RMSE and each target-cohort MAE to be
+at most 20% of the largest old sphere flux, with at least three active
+calibration points. The primary fit has 19 active points and passes. However,
+the resulting tolerance, **0.23155**, exceeds the largest wide observation,
+**0.18134**; even zero forecasts satisfy the target-error portion of that rule.
+The nominal accuracy pass is consequently weak. Primary MAE is 83.11% of the
+wide sphere mean and 55.69% of the gravel mean. All sphere runs are overpredicted;
+the lowest sphere and gravel fluxes are overpredicted by factors 4.43 and 4.09.
+These descriptive diagnostics qualify the frozen pass rather than replacing it.
+
+Independent real-algebra hydraulics, force-balance drag coefficients,
+multi-start two-parameter fitting and separate scoring verify 2,467 quantities
+with maximum relative difference 1.93e-8. Forecasts, results, verification and
+figure replay byte-for-byte. Grain-batch and pump-calibration errors are shared;
+there is no population-level significance claim. Existing criticism of shape
+identification (Chen, Durán and Pähtz, 2026) remains relevant. The
+[full report](grain-channel-results-2026-10-15.md) retains every prediction,
+source convention, tolerance limitation and benchmark. This is a useful example
+of a constrained prediction improving under changed geometry, with documented
+failures. It establishes neither a new transport law nor universal neutrality.
+
 ## References
 
 Arranz, I., Fournier, B., Lester, N. P., Shuter, B. J., and Peres-Neto, P. R. (2022).
@@ -2536,10 +2622,11 @@ Sections 4.7 and 5.6. <https://web.stanford.edu/~boyd/cvxbook/>.
 CMU Sphinx contributors (accessed 7 October 2026). *CMU Pronouncing Dictionary*.
 [Pinned source](https://github.com/cmusphinx/cmudict/tree/74790861f652b15e4ac49015a90074ad62a27690).
 
-Clauset, A., Shalizi, C. R., and Myers, A. L., and Prausnitz, J. M. (1965). Thermodynamics of mixed-gas adsorption.
-*AIChE Journal*, 11, 121--127. <https://doi.org/10.1002/aic.690110125>.
+Chen, Y., Durán, O., and Pähtz, T. (2026). On the testing of grain shape corrections
+to bedload transport equations with grain-resolved numerical simulations.
+*Earth Surface Dynamics*, 14, 75--83. <https://doi.org/10.5194/esurf-14-75-2026>.
 
-Newman, M. E. J. (2009). Power-law distributions in
+Clauset, A., Shalizi, C. R., and Newman, M. E. J. (2009). Power-law distributions in
 empirical data. *SIAM Review*, 51, 661–703. <https://doi.org/10.1137/070710111>.
 
 Condon, J. J., and Ransom, S. M. (2016). *Essential Radio Astronomy*.
@@ -2552,6 +2639,13 @@ two sides of the same coin—a trait-based plankton size-spectrum model.
 
 Damuth, J. (1981). Population density and body size in mammals. *Nature*, 290, 699–700.
 <https://doi.org/10.1038/290699a0>.
+
+Deal, E., et al. (2023). Grain shape effects in bed load sediment transport.
+*Nature*, 613, 298--302. <https://doi.org/10.1038/s41586-022-05564-6>.
+
+Deal, E., et al. (2026). Generalizing sediment transport experiments from narrow
+flumes to wider channels. *Journal of Geophysical Research: Earth Surface*, 131.
+<https://doi.org/10.1029/2025JF008712>. Data: <https://doi.org/10.20383/103.01325>.
 
 Dillon, K. T., et al. (2019). On the relationships between size and abundance in plants:
 beyond forest communities. *Ecosphere*, 10, e02856. <https://doi.org/10.1002/ecs2.2856>.
@@ -2658,6 +2752,9 @@ Society B*, 285, 20181347. <https://doi.org/10.1098/rspb.2018.1347>. Data:
 Marshall, D. J., et al. (2022). Long-term experimental evolution decouples size and
 production costs in *Escherichia coli*. *Proceedings of the National Academy of Sciences*,
 119, e2200713119. <https://doi.org/10.1073/pnas.2200713119>.
+
+Myers, A. L., and Prausnitz, J. M. (1965). Thermodynamics of mixed-gas adsorption.
+*AIChE Journal*, 11, 121--127. <https://doi.org/10.1002/aic.690110125>.
 
 Newman, M. E. J. (2005). Power laws, Pareto distributions and Zipf's law.
 *Contemporary Physics*, 46, 323–351. <https://arxiv.org/abs/cond-mat/0412004>.

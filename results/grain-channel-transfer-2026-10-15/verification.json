@@ -1,0 +1,204 @@
+{
+  "checked_numbers": 2467,
+  "decision": {
+    "calibration_adequate": true,
+    "geometry_advantage": true,
+    "pragmatic_accuracy": true,
+    "shape_advantage": true
+  },
+  "maximum_absolute_difference": 9.121116875121515e-07,
+  "maximum_relative_difference": 1.923551702166918e-08,
+  "optimization_diagnostics": {
+    "material_label": {
+      "gravel": {
+        "active_calibration_count": 10,
+        "amplitude": 5.25098022666849,
+        "maximum_near_optimal_forecast_spread": 2.8876876168038024e-09,
+        "maximum_near_optimal_forecast_spread_over_calibration_max": 4.7695827172599945e-09,
+        "mse": 0.002692405377868691,
+        "near_optimal_amplitude_range": [
+          5.250980183082034,
+          5.250980279408316
+        ],
+        "near_optimal_threshold_range": [
+          0.08151994291946806,
+          0.08151994515039482
+        ],
+        "starts": 88,
+        "successful_fits": 88,
+        "threshold": 0.08151994389716208
+      },
+      "sphere": {
+        "active_calibration_count": 19,
+        "amplitude": 8.98676050238692,
+        "maximum_near_optimal_forecast_spread": 2.22605153754607e-09,
+        "maximum_near_optimal_forecast_spread_over_calibration_max": 1.922714891581804e-09,
+        "mse": 0.009860207733517014,
+        "near_optimal_amplitude_range": [
+          8.986760502311764,
+          8.986760593508777
+        ],
+        "near_optimal_threshold_range": [
+          0.06465298230482198,
+          0.06465298341966001
+        ],
+        "starts": 124,
+        "successful_fits": 124,
+        "threshold": 0.06465298230577146
+      }
+    },
+    "pooled": {
+      "depth_shape": {
+        "active_calibration_count": 22,
+        "amplitude": 3.261034325243475,
+        "maximum_near_optimal_forecast_spread": 0.0,
+        "maximum_near_optimal_forecast_spread_over_calibration_max": 0.0,
+        "mse": 0.00901953489260593,
+        "near_optimal_amplitude_range": [
+          3.2610340588342757,
+          3.261034852413143
+        ],
+        "near_optimal_threshold_range": [
+          0.7317840508262204,
+          0.7317840999013654
+        ],
+        "starts": 164,
+        "successful_fits": 164,
+        "threshold": 0.731784067301033
+      },
+      "guo_shape": {
+        "active_calibration_count": 28,
+        "amplitude": 8.68104863102714,
+        "maximum_near_optimal_forecast_spread": 3.9721633482425744e-09,
+        "maximum_near_optimal_forecast_spread_over_calibration_max": 3.4308898480762946e-09,
+        "mse": 0.007715829235645447,
+        "near_optimal_amplitude_range": [
+          8.68104857765417,
+          8.68104874584502
+        ],
+        "near_optimal_threshold_range": [
+          0.07205431373780731,
+          0.07205431575325776
+        ],
+        "starts": 164,
+        "successful_fits": 164,
+        "threshold": 0.07205431437737815
+      },
+      "guo_unity": {
+        "active_calibration_count": 29,
+        "amplitude": 5.764051848947833,
+        "maximum_near_optimal_forecast_spread": 4.5639238777095414e-09,
+        "maximum_near_optimal_forecast_spread_over_calibration_max": 3.942013136583232e-09,
+        "mse": 0.018161414196338335,
+        "near_optimal_amplitude_range": [
+          5.764051775186395,
+          5.764051921685975
+        ],
+        "near_optimal_threshold_range": [
+          0.05906939862735059,
+          0.059069401781896805
+        ],
+        "starts": 164,
+        "successful_fits": 164,
+        "threshold": 0.059069400180114806
+      },
+      "radius_shape": {
+        "active_calibration_count": 23,
+        "amplitude": 84.31064358028217,
+        "maximum_near_optimal_forecast_spread": 1.7768824273067807e-08,
+        "maximum_near_optimal_forecast_spread_over_calibration_max": 1.5347525634284936e-08,
+        "mse": 0.002396582760267212,
+        "near_optimal_amplitude_range": [
+          84.31064101399623,
+          84.31064793985176
+        ],
+        "near_optimal_threshold_range": [
+          0.034904846301013946,
+          0.034904848265885385
+        ],
+        "starts": 164,
+        "successful_fits": 164,
+        "threshold": 0.034904847029071276
+      }
+    },
+    "sphere": {
+      "depth_shape": {
+        "active_calibration_count": 15,
+        "amplitude": 2.959809231062895,
+        "maximum_near_optimal_forecast_spread": 0.0,
+        "maximum_near_optimal_forecast_spread_over_calibration_max": 0.0,
+        "mse": 0.010921281296580834,
+        "near_optimal_amplitude_range": [
+          2.9598091482632665,
+          2.9598093378765147
+        ],
+        "near_optimal_threshold_range": [
+          0.7042359273568866,
+          0.7042359426878394
+        ],
+        "starts": 124,
+        "successful_fits": 124,
+        "threshold": 0.7042359340515396
+      },
+      "guo_shape": {
+        "active_calibration_count": 19,
+        "amplitude": 8.936116469273058,
+        "maximum_near_optimal_forecast_spread": 2.5063062736307984e-09,
+        "maximum_near_optimal_forecast_spread_over_calibration_max": 2.164780246052639e-09,
+        "mse": 0.009927323868876944,
+        "near_optimal_amplitude_range": [
+          8.93611638359313,
+          8.936116480766172
+        ],
+        "near_optimal_threshold_range": [
+          0.06644497435573292,
+          0.06644497555265792
+        ],
+        "starts": 124,
+        "successful_fits": 124,
+        "threshold": 0.0664449754112871
+      },
+      "guo_unity": {
+        "active_calibration_count": 19,
+        "amplitude": 8.98676050238692,
+        "maximum_near_optimal_forecast_spread": 2.3450234254429603e-09,
+        "maximum_near_optimal_forecast_spread_over_calibration_max": 2.0254748756525764e-09,
+        "mse": 0.009860207733517014,
+        "near_optimal_amplitude_range": [
+          8.986760502311764,
+          8.986760593508777
+        ],
+        "near_optimal_threshold_range": [
+          0.06465298230482198,
+          0.06465298341966001
+        ],
+        "starts": 124,
+        "successful_fits": 124,
+        "threshold": 0.06465298230577146
+      },
+      "radius_shape": {
+        "active_calibration_count": 15,
+        "amplitude": 84.08256431855827,
+        "maximum_near_optimal_forecast_spread": 7.844413230095881e-09,
+        "maximum_near_optimal_forecast_spread_over_calibration_max": 6.775481105820771e-09,
+        "mse": 0.0026288967593581705,
+        "near_optimal_amplitude_range": [
+          84.08256291601074,
+          84.08256550578763
+        ],
+        "near_optimal_threshold_range": [
+          0.033207045105503534,
+          0.03320704592827891
+        ],
+        "starts": 124,
+        "successful_fits": 124,
+        "threshold": 0.033207045551094404
+      }
+    }
+  },
+  "prediction_sha256": "9d42556fb06a48787536d72125c8c13567d9940a0dbb1e2b43891209817ea49e",
+  "result_sha256": "63f40dbd4e7766ccbc4efce8fa97f033e2b50f125df80acc9010993b23d07b53",
+  "scope": "Independent real-algebra hydraulics, force-balance drag ratio, multi-start two-parameter fitting, forecasts and optional source-response scores. Archived sphere-settling speed is a frozen input, not independently rederived.",
+  "status": "passed",
+  "study": "grain-channel-independent-verification-2026-10-15"
+}

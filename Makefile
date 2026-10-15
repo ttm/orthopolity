@@ -37,7 +37,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: cantilever-sources cantilever-transfer cantilever-registry
 .PHONY: adsorption-sources adsorption-transfer adsorption-registry
 .PHONY: saltation-sources saltation-qualification saltation-registry
-.PHONY: grain-channel-sources
+.PHONY: grain-channel-sources grain-channel-transfer grain-channel-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -72,12 +72,26 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/italian-magnitude-validation-2026-10-10/validation.png \
  results/chemostat-capacity-followup-2026-10-10/capacity.png \
  results/cantilever-transfer-2026-10-13/cantilever-presentation.png \
- results/adsorption-transfer-2026-10-13/adsorption.png
+ results/adsorption-transfer-2026-10-13/adsorption.png \
+ results/grain-channel-transfer-2026-10-15/transfer.png
 
 all: data test analyses
 
 grain-channel-sources: ## verify public grain/channel sources without converting transport columns
 	$(PY) experiments/audit_grain_channel.py --stage verify
+
+grain-channel-transfer: grain-channel-sources ## replay frozen narrow-to-wide forecasts and evaluation
+	$(PY) experiments/run_grain_channel.py --stage predict --freeze-commit 290acd9 --output $(STUDY_OUTPUT_ROOT)/grain-channel-forecast
+	cmp results/grain-channel-forecast-2026-10-15/predictions.json $(STUDY_OUTPUT_ROOT)/grain-channel-forecast/predictions.json
+	$(PY) experiments/run_grain_channel.py --stage evaluate --freeze-commit 290acd9 --prediction-commit e86cffc --predictions results/grain-channel-forecast-2026-10-15/predictions.json --output $(STUDY_OUTPUT_ROOT)/grain-channel-transfer
+	cmp results/grain-channel-transfer-2026-10-15/result.json $(STUDY_OUTPUT_ROOT)/grain-channel-transfer/result.json
+	$(PY) experiments/verify_grain_channel.py --predictions $(STUDY_OUTPUT_ROOT)/grain-channel-forecast/predictions.json --result $(STUDY_OUTPUT_ROOT)/grain-channel-transfer/result.json --output $(STUDY_OUTPUT_ROOT)/grain-channel-transfer/verification.json
+	cmp results/grain-channel-transfer-2026-10-15/verification.json $(STUDY_OUTPUT_ROOT)/grain-channel-transfer/verification.json
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/plot_grain_channel.py --result $(STUDY_OUTPUT_ROOT)/grain-channel-transfer/result.json --output $(STUDY_OUTPUT_ROOT)/grain-channel-transfer/transfer.png
+	cmp results/grain-channel-transfer-2026-10-15/transfer.png $(STUDY_OUTPUT_ROOT)/grain-channel-transfer/transfer.png
+
+grain-channel-registry: ## append the completed conditional transport comparison
+	$(PY) experiments/register_grain_channel.py
 
 saltation-sources: ## verify original wind/sand archive without reading response columns
 	$(PY) experiments/fetch_saltation.py --stage verify
@@ -148,7 +162,7 @@ paired-phosphorus-registry: ## append the retained pilot, preserving prior runs
 install:
 	$(PY) -m pip install -r requirements.txt -e ".[analyses,geospatial]"
 
-data:            ## verify every raw input against data/snapshot_checksums.json
+data: grain-channel-sources ## verify frozen legacy inputs and the new grain/channel archive
 	$(PY) experiments/fetch_data.py
 
 restore-data:    ## explicitly permit network restoration of missing snapshots

@@ -1,0 +1,1234 @@
+{
+  "decision": {
+    "calibration_adequate": true,
+    "geometry_advantage": true,
+    "pragmatic_accuracy": true,
+    "shape_advantage": true
+  },
+  "design_commit": "290acd9a9c37b630510b3d2177202e8b80827b5a",
+  "normalization": 1.157764756122897,
+  "observations": [
+    {
+      "dimensionless_flux": 0.05106868961856168,
+      "id": "gb_5_1",
+      "mass_flux": 0.011590933333333334
+    },
+    {
+      "dimensionless_flux": 0.026824397291708036,
+      "id": "gb_5_2",
+      "mass_flux": 0.0060882666666666665
+    },
+    {
+      "dimensionless_flux": 0.007750558651467725,
+      "id": "gb_5_3",
+      "mass_flux": 0.0017591249999999998
+    },
+    {
+      "dimensionless_flux": 0.181344604309137,
+      "id": "gb_5_4",
+      "mass_flux": 0.04115933333333333
+    },
+    {
+      "dimensionless_flux": 0.16422675156986694,
+      "id": "ng_5_1",
+      "mass_flux": 0.026513
+    },
+    {
+      "dimensionless_flux": 0.027425840670646382,
+      "id": "ng_5_2",
+      "mass_flux": 0.0044276666666666666
+    },
+    {
+      "dimensionless_flux": 0.008710847968032318,
+      "id": "ng_5_3",
+      "mass_flux": 0.0014062916666666668
+    },
+    {
+      "dimensionless_flux": 0.09975341717390189,
+      "id": "ng_5_4",
+      "mass_flux": 0.016104333333333335
+    },
+    {
+      "dimensionless_flux": 0.054979694751033044,
+      "id": "ng_5_5",
+      "mass_flux": 0.008876
+    }
+  ],
+  "prediction_commit": "e86cffc0ae0010512bd1bcef949fb40b89c4dc1d",
+  "prediction_sha256": "9d42556fb06a48787536d72125c8c13567d9940a0dbb1e2b43891209817ea49e",
+  "primary_relative_gains": {
+    "depth_shape": 0.31024180521192424,
+    "guo_unity": 0.4264134831203904,
+    "radius_shape": 0.7722183662581934
+  },
+  "reference_measure": "equal weight per grain cohort, then per run; neither log-orthopolic nor linear-orthopolic size allocation",
+  "scores": {
+    "material_label": {
+      "balanced_mae": 0.042972694864974986,
+      "groups": {
+        "gravel": {
+          "bias": 0.0024312929775998013,
+          "mae": 0.03188757903675601,
+          "mass_mae": 0.0051479760448275,
+          "n": 5,
+          "normalized_mae": 0.02754236460223629
+        },
+        "sphere": {
+          "bias": 0.054057810693193965,
+          "mae": 0.054057810693193965,
+          "mass_mae": 0.012269366701412779,
+          "n": 4,
+          "normalized_mae": 0.04669153246141457
+        }
+      },
+      "rows": [
+        {
+          "dimensionless_flux": 0.060273734573296905,
+          "error": 0.009205044954735224,
+          "extrapolates": false,
+          "grain": "sphere",
+          "id": "gb_5_1",
+          "mass_error": 0.0020892461349134063,
+          "mass_flux": 0.01368017946824674,
+          "observed_flux": 0.05106868961856168,
+          "observed_mass_flux": 0.011590933333333334,
+          "stress": 0.10021747604223046
+        },
+        {
+          "dimensionless_flux": 0.060933750821339505,
+          "error": 0.03410935352963147,
+          "extrapolates": false,
+          "grain": "sphere",
+          "id": "gb_5_2",
+          "mass_error": 0.007741715046108353,
+          "mass_flux": 0.01382998171277502,
+          "observed_flux": 0.026824397291708036,
+          "observed_mass_flux": 0.0060882666666666665,
+          "stress": 0.10047663271314075
+        },
+        {
+          "dimensionless_flux": 0.03432449534803144,
+          "error": 0.026573936696563716,
+          "extrapolates": false,
+          "grain": "sphere",
+          "id": "gb_5_3",
+          "mass_error": 0.006031420248976528,
+          "mass_flux": 0.007790545248976527,
+          "observed_flux": 0.007750558651467725,
+          "observed_mass_flux": 0.0017591249999999998,
+          "stress": 0.08908732583663469
+        },
+        {
+          "dimensionless_flux": 0.32768751190098244,
+          "error": 0.14634290759184546,
+          "extrapolates": false,
+          "grain": "sphere",
+          "id": "gb_5_4",
+          "mass_error": 0.03321508537565283,
+          "mass_flux": 0.07437441870898616,
+          "observed_flux": 0.181344604309137,
+          "observed_mass_flux": 0.04115933333333333,
+          "stress": 0.17461376350193727
+        },
+        {
+          "dimensionless_flux": 0.09058603642197642,
+          "error": -0.07364071514789051,
+          "extrapolates": false,
+          "grain": "gravel",
+          "id": "ng_5_1",
+          "mass_error": -0.011888661634309907,
+          "mass_flux": 0.014624338365690092,
+          "observed_flux": 0.16422675156986694,
+          "observed_mass_flux": 0.026513,
+          "stress": 0.148284696993337
+        },
+        {
+          "dimensionless_flux": 0.034156681190347586,
+          "error": 0.006730840519701204,
+          "extrapolates": false,
+          "grain": "gravel",
+          "id": "ng_5_2",
+          "mass_error": 0.0010866364523012444,
+          "mass_flux": 0.005514303118967911,
+          "observed_flux": 0.027425840670646382,
+          "observed_mass_flux": 0.0044276666666666666,
+          "stress": 0.11636625819000887
+        },
+        {
+          "dimensionless_flux": 0.029406459380766112,
+          "error": 0.020695611412733794,
+          "extrapolates": false,
+          "grain": "gravel",
+          "id": "ng_5_3",
+          "mass_error": 0.0033411288973366595,
+          "mass_flux": 0.004747420564003326,
+          "observed_flux": 0.008710847968032318,
+          "observed_mass_flux": 0.0014062916666666668,
+          "stress": 0.11305557761928457
+        },
+        {
+          "dimensionless_flux": 0.1379185868337081,
+          "error": 0.03816516965980622,
+          "extrapolates": false,
+          "grain": "gravel",
+          "id": "ng_5_4",
+          "mass_error": 0.006161439190130735,
+          "mass_flux": 0.02226577252346407,
+          "observed_flux": 0.09975341717390189,
+          "observed_mass_flux": 0.016104333333333335,
+          "stress": 0.16987978825554517
+        },
+        {
+          "dimensionless_flux": 0.07518525319468135,
+          "error": 0.020205558443648304,
+          "extrapolates": false,
+          "grain": "gravel",
+          "id": "ng_5_5",
+          "mass_error": 0.003262014050058954,
+          "mass_flux": 0.012138014050058954,
+          "observed_flux": 0.054979694751033044,
+          "observed_mass_flux": 0.008876,
+          "stress": 0.14048501855589351
+        }
+      ]
+    },
+    "pooled": {
+      "depth_shape": {
+        "balanced_mae": 0.06888318644720737,
+        "groups": {
+          "gravel": {
+            "bias": -0.07101931042669611,
+            "mae": 0.07101931042669611,
+            "mass_mae": 0.011465458333333333,
+            "n": 5,
+            "normalized_mae": 0.06134174498844167
+          },
+          "sphere": {
+            "bias": -0.06674706246771861,
+            "mae": 0.06674706246771861,
+            "mass_mae": 0.015149414583333333,
+            "n": 4,
+            "normalized_mae": 0.057651662062369255
+          }
+        },
+        "rows": [
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.05106868961856168,
+            "extrapolates": true,
+            "grain": "sphere",
+            "id": "gb_5_1",
+            "mass_error": -0.011590933333333334,
+            "mass_flux": 0.0,
+            "observed_flux": 0.05106868961856168,
+            "observed_mass_flux": 0.011590933333333334,
+            "stress": 0.13257658096432126
+          },
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.026824397291708036,
+            "extrapolates": true,
+            "grain": "sphere",
+            "id": "gb_5_2",
+            "mass_error": -0.0060882666666666665,
+            "mass_flux": 0.0,
+            "observed_flux": 0.026824397291708036,
+            "observed_mass_flux": 0.0060882666666666665,
+            "stress": 0.10523730046770305
+          },
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.007750558651467725,
+            "extrapolates": true,
+            "grain": "sphere",
+            "id": "gb_5_3",
+            "mass_error": -0.0017591249999999998,
+            "mass_flux": 0.0,
+            "observed_flux": 0.007750558651467725,
+            "observed_mass_flux": 0.0017591249999999998,
+            "stress": 0.09450560668396786
+          },
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.181344604309137,
+            "extrapolates": true,
+            "grain": "sphere",
+            "id": "gb_5_4",
+            "mass_error": -0.04115933333333333,
+            "mass_flux": 0.0,
+            "observed_flux": 0.181344604309137,
+            "observed_mass_flux": 0.04115933333333333,
+            "stress": 0.18182134348267157
+          },
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.16422675156986694,
+            "extrapolates": true,
+            "grain": "gravel",
+            "id": "ng_5_1",
+            "mass_error": -0.026513,
+            "mass_flux": 0.0,
+            "observed_flux": 0.16422675156986694,
+            "observed_mass_flux": 0.026513,
+            "stress": 0.17819588344131437
+          },
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.027425840670646382,
+            "extrapolates": true,
+            "grain": "gravel",
+            "id": "ng_5_2",
+            "mass_error": -0.0044276666666666666,
+            "mass_flux": 0.0,
+            "observed_flux": 0.027425840670646382,
+            "observed_mass_flux": 0.0044276666666666666,
+            "stress": 0.10897244577192945
+          },
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.008710847968032318,
+            "extrapolates": true,
+            "grain": "gravel",
+            "id": "ng_5_3",
+            "mass_error": -0.0014062916666666668,
+            "mass_flux": 0.0,
+            "observed_flux": 0.008710847968032318,
+            "observed_mass_flux": 0.0014062916666666668,
+            "stress": 0.10283921639219001
+          },
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.09975341717390189,
+            "extrapolates": true,
+            "grain": "gravel",
+            "id": "ng_5_4",
+            "mass_error": -0.016104333333333335,
+            "mass_flux": 0.0,
+            "observed_flux": 0.09975341717390189,
+            "observed_mass_flux": 0.016104333333333335,
+            "stress": 0.14971504111229395
+          },
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.054979694751033044,
+            "extrapolates": true,
+            "grain": "gravel",
+            "id": "ng_5_5",
+            "mass_error": -0.008876,
+            "mass_flux": 0.0,
+            "observed_flux": 0.054979694751033044,
+            "observed_mass_flux": 0.008876,
+            "stress": 0.14255234267128422
+          }
+        ]
+      },
+      "guo_shape": {
+        "balanced_mae": 0.03477776555193317,
+        "groups": {
+          "gravel": {
+            "bias": -0.0007850670412704472,
+            "mae": 0.03019832173241433,
+            "mass_mae": 0.004875259946616442,
+            "n": 5,
+            "normalized_mae": 0.026083296777440316
+          },
+          "sphere": {
+            "bias": 0.036627473526702724,
+            "mae": 0.039357209371452,
+            "mass_mae": 0.008932807820562015,
+            "n": 4,
+            "normalized_mae": 0.03399413323242863
+          }
+        },
+        "rows": [
+          {
+            "dimensionless_flux": 0.04560921792906314,
+            "error": -0.005459471689498542,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_1",
+            "mass_error": -0.0012391226965259364,
+            "mass_flux": 0.010351810636807398,
+            "observed_flux": 0.05106868961856168,
+            "observed_mass_flux": 0.011590933333333334,
+            "stress": 0.10227611119988905
+          },
+          {
+            "dimensionless_flux": 0.04625837248710677,
+            "error": 0.019433975195398735,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_2",
+            "mass_error": 0.004410880963933075,
+            "mass_flux": 0.010499147630599741,
+            "observed_flux": 0.026824397291708036,
+            "observed_mass_flux": 0.0060882666666666665,
+            "stress": 0.10256219914454838
+          },
+          {
+            "dimensionless_flux": 0.022586518070061394,
+            "error": 0.01483595941859367,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_3",
+            "mass_error": 0.0033672807710823974,
+            "mass_flux": 0.005126405771082397,
+            "observed_flux": 0.007750558651467725,
+            "observed_mass_flux": 0.0017591249999999998,
+            "stress": 0.09097127593769183
+          },
+          {
+            "dimensionless_flux": 0.29904403549145403,
+            "error": 0.11769943118231704,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_4",
+            "mass_error": 0.026713946850706653,
+            "mass_flux": 0.06787328018403999,
+            "observed_flux": 0.181344604309137,
+            "observed_mass_flux": 0.04115933333333333,
+            "stress": 0.17792489690020602
+          },
+          {
+            "dimensionless_flux": 0.08676827963565499,
+            "error": -0.07745847193421194,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_1",
+            "mass_error": -0.01250500571167953,
+            "mass_flux": 0.01400799428832047,
+            "observed_flux": 0.16422675156986694,
+            "observed_mass_flux": 0.026513,
+            "stress": 0.11845515620301199
+          },
+          {
+            "dimensionless_flux": 0.028329591249466886,
+            "error": 0.0009037505788205037,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_2",
+            "mass_error": 0.0001459027769058329,
+            "mass_flux": 0.0045735694435724995,
+            "observed_flux": 0.027425840670646382,
+            "observed_mass_flux": 0.0044276666666666666,
+            "stress": 0.09405546525253305
+          },
+          {
+            "dimensionless_flux": 0.02368853141114082,
+            "error": 0.014977683443108503,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_3",
+            "mass_error": 0.002418018485607055,
+            "mass_flux": 0.003824310152273722,
+            "observed_flux": 0.008710847968032318,
+            "observed_mass_flux": 0.0014062916666666668,
+            "stress": 0.09158169312294447
+          },
+          {
+            "dimensionless_flux": 0.14032114825659625,
+            "error": 0.04056773108269436,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_4",
+            "mass_error": 0.006549312118238514,
+            "mass_flux": 0.02265364545157185,
+            "observed_flux": 0.09975341717390189,
+            "observed_mass_flux": 0.016104333333333335,
+            "stress": 0.13598371371736262
+          },
+          {
+            "dimensionless_flux": 0.07206366637426939,
+            "error": 0.017083971623236348,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_5",
+            "mass_error": 0.0027580606406512765,
+            "mass_flux": 0.011634060640651277,
+            "observed_flux": 0.054979694751033044,
+            "observed_mass_flux": 0.008876,
+            "stress": 0.11305232373698355
+          }
+        ]
+      },
+      "guo_unity": {
+        "balanced_mae": 0.04325958973972486,
+        "groups": {
+          "gravel": {
+            "bias": 0.05927564633645867,
+            "mae": 0.06352696221189152,
+            "mass_mae": 0.010255882997279725,
+            "n": 5,
+            "normalized_mae": 0.054870354168172764
+          },
+          "sphere": {
+            "bias": 0.0215138042631365,
+            "mae": 0.022992217267558197,
+            "mass_mae": 0.005218486307839759,
+            "n": 4,
+            "normalized_mae": 0.019859144222487947
+          }
+        },
+        "rows": [
+          {
+            "dimensionless_flux": 0.04811186360971829,
+            "error": -0.002956826008843394,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_1",
+            "mass_error": -0.0006711034374046881,
+            "mass_flux": 0.010919829895928646,
+            "observed_flux": 0.05106868961856168,
+            "observed_mass_flux": 0.011590933333333334,
+            "stress": 0.10021747604223046
+          },
+          {
+            "dimensionless_flux": 0.04856710197647399,
+            "error": 0.021742704684765957,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_2",
+            "mass_error": 0.0049348875479248,
+            "mass_flux": 0.011023154214591466,
+            "observed_flux": 0.026824397291708036,
+            "observed_mass_flux": 0.0060882666666666665,
+            "stress": 0.10047663271314075
+          },
+          {
+            "dimensionless_flux": 0.02997774077361483,
+            "error": 0.022227182122147107,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_3",
+            "mass_error": 0.00504484818564886,
+            "mass_flux": 0.00680397318564886,
+            "observed_flux": 0.007750558651467725,
+            "observed_mass_flux": 0.0017591249999999998,
+            "stress": 0.08908732583663469
+          },
+          {
+            "dimensionless_flux": 0.22638676056361332,
+            "error": 0.04504215625447633,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_4",
+            "mass_error": 0.01022310606038069,
+            "mass_flux": 0.05138243939371402,
+            "observed_flux": 0.181344604309137,
+            "observed_mass_flux": 0.04115933333333333,
+            "stress": 0.17461376350193727
+          },
+          {
+            "dimensionless_flux": 0.1535984618812848,
+            "error": -0.010628289688582149,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_1",
+            "mass_error": -0.0017158461810863855,
+            "mass_flux": 0.024797153818913613,
+            "observed_flux": 0.16422675156986694,
+            "observed_mass_flux": 0.026513,
+            "stress": 0.148284696993337
+          },
+          {
+            "dimensionless_flux": 0.0790540440715841,
+            "error": 0.051628203400937725,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_2",
+            "mass_error": 0.008334930476821406,
+            "mass_flux": 0.012762597143488073,
+            "observed_flux": 0.027425840670646382,
+            "observed_mass_flux": 0.0044276666666666666,
+            "stress": 0.11636625819000887
+          },
+          {
+            "dimensionless_flux": 0.0723022391931623,
+            "error": 0.06359139122512998,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_3",
+            "mass_error": 0.01026628450867578,
+            "mass_flux": 0.011672576175342448,
+            "observed_flux": 0.008710847968032318,
+            "observed_mass_flux": 0.0014062916666666668,
+            "stress": 0.11305557761928457
+          },
+          {
+            "dimensionless_flux": 0.2126172972192547,
+            "error": 0.11286388004535282,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_4",
+            "mass_error": 0.018220905078119385,
+            "mass_flux": 0.03432523841145272,
+            "observed_flux": 0.09975341717390189,
+            "observed_mass_flux": 0.016104333333333335,
+            "stress": 0.16987978825554517
+          },
+          {
+            "dimensionless_flux": 0.13390274145048797,
+            "error": 0.07892304669945494,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_5",
+            "mass_error": 0.012741448741695667,
+            "mass_flux": 0.021617448741695668,
+            "observed_flux": 0.054979694751033044,
+            "observed_mass_flux": 0.008876,
+            "stress": 0.14048501855589351
+          }
+        ]
+      },
+      "radius_shape": {
+        "balanced_mae": 0.18474866878536927,
+        "groups": {
+          "gravel": {
+            "bias": 0.18319409661192826,
+            "mae": 0.18319409661192826,
+            "mass_mae": 0.02957511512005845,
+            "n": 5,
+            "normalized_mae": 0.1582308458113767
+          },
+          "sphere": {
+            "bias": 0.1825920549460286,
+            "mae": 0.18630324095881032,
+            "mass_mae": 0.04228478274783519,
+            "n": 4,
+            "normalized_mae": 0.1609163173896392
+          }
+        },
+        "rows": [
+          {
+            "dimensionless_flux": 0.15124163481912095,
+            "error": 0.10017294520055928,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_1",
+            "mass_error": 0.022736003964380507,
+            "mass_flux": 0.03432693729771384,
+            "observed_flux": 0.05106868961856168,
+            "observed_mass_flux": 0.011590933333333334,
+            "stress": 0.049668459727267335
+          },
+          {
+            "dimensionless_flux": 0.03505795124792221,
+            "error": 0.008233553956214171,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_2",
+            "mass_error": 0.0018687492417701328,
+            "mass_flux": 0.0079570159084368,
+            "observed_flux": 0.026824397291708036,
+            "observed_mass_flux": 0.0060882666666666665,
+            "stress": 0.04047588479527041
+          },
+          {
+            "dimensionless_flux": 0.00032818662590426625,
+            "error": -0.0074223720255634585,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_3",
+            "mass_error": -0.0016846372986283685,
+            "mass_flux": 7.448770137163143e-05,
+            "observed_flux": 0.007750558651467725,
+            "observed_mass_flux": 0.0017591249999999998,
+            "stress": 0.03515230005412252
+          },
+          {
+            "dimensionless_flux": 0.8107286969620414,
+            "error": 0.6293840926529044,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_4",
+            "mass_error": 0.14284974048656177,
+            "mass_flux": 0.1840090738198951,
+            "observed_flux": 0.181344604309137,
+            "observed_mass_flux": 0.04115933333333333,
+            "stress": 0.08012465983982148
+          },
+          {
+            "dimensionless_flux": 0.5590170772659843,
+            "error": 0.39479032569611733,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_1",
+            "mass_error": 0.06373551084171664,
+            "mass_flux": 0.09024851084171663,
+            "observed_flux": 0.16422675156986694,
+            "observed_mass_flux": 0.026513,
+            "stress": 0.07019837832536628
+          },
+          {
+            "dimensionless_flux": 0.04252664329073902,
+            "error": 0.015100802620092637,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_2",
+            "mass_error": 0.002437895020387027,
+            "mass_flux": 0.0068655616870536935,
+            "observed_flux": 0.027425840670646382,
+            "observed_mass_flux": 0.0044276666666666666,
+            "stress": 0.04124139141295734
+          },
+          {
+            "dimensionless_flux": 0.020110540001189437,
+            "error": 0.011399692033157119,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_3",
+            "mass_error": 0.0018403824711013222,
+            "mass_flux": 0.003246674137767989,
+            "observed_flux": 0.008710847968032318,
+            "observed_mass_flux": 0.0014062916666666668,
+            "stress": 0.038751009075317984
+          },
+          {
+            "dimensionless_flux": 0.38820488246274815,
+            "error": 0.28845146528884624,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_4",
+            "mass_error": 0.04656801420047339,
+            "mass_flux": 0.06267234753380672,
+            "observed_flux": 0.09975341717390189,
+            "observed_mass_flux": 0.016104333333333335,
+            "stress": 0.06258184998263092
+          },
+          {
+            "dimensionless_flux": 0.26120789217246104,
+            "error": 0.206228197421428,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_5",
+            "mass_error": 0.03329377306661385,
+            "mass_flux": 0.042169773066613854,
+            "observed_flux": 0.054979694751033044,
+            "observed_mass_flux": 0.008876,
+            "stress": 0.056156983476566516
+          }
+        ]
+      }
+    },
+    "sphere": {
+      "depth_shape": {
+        "balanced_mae": 0.06888318644720737,
+        "groups": {
+          "gravel": {
+            "bias": -0.07101931042669611,
+            "mae": 0.07101931042669611,
+            "mass_mae": 0.011465458333333333,
+            "n": 5,
+            "normalized_mae": 0.06134174498844167
+          },
+          "sphere": {
+            "bias": -0.06674706246771861,
+            "mae": 0.06674706246771861,
+            "mass_mae": 0.015149414583333333,
+            "n": 4,
+            "normalized_mae": 0.057651662062369255
+          }
+        },
+        "rows": [
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.05106868961856168,
+            "extrapolates": true,
+            "grain": "sphere",
+            "id": "gb_5_1",
+            "mass_error": -0.011590933333333334,
+            "mass_flux": 0.0,
+            "observed_flux": 0.05106868961856168,
+            "observed_mass_flux": 0.011590933333333334,
+            "stress": 0.13257658096432126
+          },
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.026824397291708036,
+            "extrapolates": true,
+            "grain": "sphere",
+            "id": "gb_5_2",
+            "mass_error": -0.0060882666666666665,
+            "mass_flux": 0.0,
+            "observed_flux": 0.026824397291708036,
+            "observed_mass_flux": 0.0060882666666666665,
+            "stress": 0.10523730046770305
+          },
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.007750558651467725,
+            "extrapolates": true,
+            "grain": "sphere",
+            "id": "gb_5_3",
+            "mass_error": -0.0017591249999999998,
+            "mass_flux": 0.0,
+            "observed_flux": 0.007750558651467725,
+            "observed_mass_flux": 0.0017591249999999998,
+            "stress": 0.09450560668396786
+          },
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.181344604309137,
+            "extrapolates": true,
+            "grain": "sphere",
+            "id": "gb_5_4",
+            "mass_error": -0.04115933333333333,
+            "mass_flux": 0.0,
+            "observed_flux": 0.181344604309137,
+            "observed_mass_flux": 0.04115933333333333,
+            "stress": 0.18182134348267157
+          },
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.16422675156986694,
+            "extrapolates": true,
+            "grain": "gravel",
+            "id": "ng_5_1",
+            "mass_error": -0.026513,
+            "mass_flux": 0.0,
+            "observed_flux": 0.16422675156986694,
+            "observed_mass_flux": 0.026513,
+            "stress": 0.17819588344131437
+          },
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.027425840670646382,
+            "extrapolates": true,
+            "grain": "gravel",
+            "id": "ng_5_2",
+            "mass_error": -0.0044276666666666666,
+            "mass_flux": 0.0,
+            "observed_flux": 0.027425840670646382,
+            "observed_mass_flux": 0.0044276666666666666,
+            "stress": 0.10897244577192945
+          },
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.008710847968032318,
+            "extrapolates": true,
+            "grain": "gravel",
+            "id": "ng_5_3",
+            "mass_error": -0.0014062916666666668,
+            "mass_flux": 0.0,
+            "observed_flux": 0.008710847968032318,
+            "observed_mass_flux": 0.0014062916666666668,
+            "stress": 0.10283921639219001
+          },
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.09975341717390189,
+            "extrapolates": true,
+            "grain": "gravel",
+            "id": "ng_5_4",
+            "mass_error": -0.016104333333333335,
+            "mass_flux": 0.0,
+            "observed_flux": 0.09975341717390189,
+            "observed_mass_flux": 0.016104333333333335,
+            "stress": 0.14971504111229395
+          },
+          {
+            "dimensionless_flux": 0.0,
+            "error": -0.054979694751033044,
+            "extrapolates": true,
+            "grain": "gravel",
+            "id": "ng_5_5",
+            "mass_error": -0.008876,
+            "mass_flux": 0.0,
+            "observed_flux": 0.054979694751033044,
+            "observed_mass_flux": 0.008876,
+            "stress": 0.14255234267128422
+          }
+        ]
+      },
+      "guo_shape": {
+        "balanced_mae": 0.0475127423350762,
+        "groups": {
+          "gravel": {
+            "bias": 0.016257834761771957,
+            "mae": 0.039550927570093916,
+            "mass_mae": 0.006385157915151166,
+            "n": 5,
+            "normalized_mae": 0.03416145409585743
+          },
+          "sphere": {
+            "bias": 0.05547455710005848,
+            "mae": 0.05547455710005848,
+            "mass_mae": 0.012590922106003336,
+            "n": 4,
+            "normalized_mae": 0.04791522354319261
+          }
+        },
+        "rows": [
+          {
+            "dimensionless_flux": 0.06060935700004661,
+            "error": 0.00954066738148493,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_1",
+            "mass_error": 0.002165421521489479,
+            "mass_flux": 0.013756354854822813,
+            "observed_flux": 0.05106868961856168,
+            "observed_mass_flux": 0.011590933333333334,
+            "stress": 0.10227611119988905
+          },
+          {
+            "dimensionless_flux": 0.0613366925254268,
+            "error": 0.034512295233718765,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_2",
+            "mass_error": 0.007833169721452088,
+            "mass_flux": 0.013921436388118755,
+            "observed_flux": 0.026824397291708036,
+            "observed_mass_flux": 0.0060882666666666665,
+            "stress": 0.10256219914454838
+          },
+          {
+            "dimensionless_flux": 0.034323919840396754,
+            "error": 0.02657336118892903,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_3",
+            "mass_error": 0.006031289627441566,
+            "mass_flux": 0.0077904146274415656,
+            "observed_flux": 0.007750558651467725,
+            "observed_mass_flux": 0.0017591249999999998,
+            "stress": 0.09097127593769183
+          },
+          {
+            "dimensionless_flux": 0.3326165089052382,
+            "error": 0.1512719045961012,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_4",
+            "mass_error": 0.03433380755363021,
+            "mass_flux": 0.07549314088696354,
+            "observed_flux": 0.181344604309137,
+            "observed_mass_flux": 0.04115933333333333,
+            "stress": 0.17792489690020602
+          },
+          {
+            "dimensionless_flux": 0.10599401954906203,
+            "error": -0.05823273202080491,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_1",
+            "mass_error": -0.00940117495663165,
+            "mass_flux": 0.017111825043368348,
+            "observed_flux": 0.16422675156986694,
+            "observed_mass_flux": 0.026513,
+            "stress": 0.11845515620301199
+          },
+          {
+            "dimensionless_flux": 0.04099774590826631,
+            "error": 0.01357190523761993,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_2",
+            "mass_error": 0.0021910676556975792,
+            "mass_flux": 0.006618734322364246,
+            "observed_flux": 0.027425840670646382,
+            "observed_mass_flux": 0.0044276666666666666,
+            "stress": 0.09405546525253305
+          },
+          {
+            "dimensionless_flux": 0.03561325448611551,
+            "error": 0.026902406518083195,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_3",
+            "mass_error": 0.004343162713722047,
+            "mass_flux": 0.005749454380388714,
+            "observed_flux": 0.008710847968032318,
+            "observed_mass_flux": 0.0014062916666666668,
+            "stress": 0.09158169312294447
+          },
+          {
+            "dimensionless_flux": 0.16386606624640337,
+            "error": 0.06411264907250148,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_4",
+            "mass_error": 0.010350437115819577,
+            "mass_flux": 0.026454770449152912,
+            "observed_flux": 0.09975341717390189,
+            "observed_mass_flux": 0.016104333333333335,
+            "stress": 0.13598371371736262
+          },
+          {
+            "dimensionless_flux": 0.08991463975249313,
+            "error": 0.034934945001460084,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_5",
+            "mass_error": 0.005639947133884977,
+            "mass_flux": 0.014515947133884977,
+            "observed_flux": 0.054979694751033044,
+            "observed_mass_flux": 0.008876,
+            "stress": 0.11305232373698355
+          }
+        ]
+      },
+      "guo_unity": {
+        "balanced_mae": 0.08283448257039255,
+        "groups": {
+          "gravel": {
+            "bias": 0.11161115444759115,
+            "mae": 0.11161115444759115,
+            "mass_mae": 0.018018663278558944,
+            "n": 5,
+            "normalized_mae": 0.09640227330926249
+          },
+          "sphere": {
+            "bias": 0.054057810693193965,
+            "mae": 0.054057810693193965,
+            "mass_mae": 0.012269366701412779,
+            "n": 4,
+            "normalized_mae": 0.04669153246141457
+          }
+        },
+        "rows": [
+          {
+            "dimensionless_flux": 0.060273734573296905,
+            "error": 0.009205044954735224,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_1",
+            "mass_error": 0.0020892461349134063,
+            "mass_flux": 0.01368017946824674,
+            "observed_flux": 0.05106868961856168,
+            "observed_mass_flux": 0.011590933333333334,
+            "stress": 0.10021747604223046
+          },
+          {
+            "dimensionless_flux": 0.060933750821339505,
+            "error": 0.03410935352963147,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_2",
+            "mass_error": 0.007741715046108353,
+            "mass_flux": 0.01382998171277502,
+            "observed_flux": 0.026824397291708036,
+            "observed_mass_flux": 0.0060882666666666665,
+            "stress": 0.10047663271314075
+          },
+          {
+            "dimensionless_flux": 0.03432449534803144,
+            "error": 0.026573936696563716,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_3",
+            "mass_error": 0.006031420248976528,
+            "mass_flux": 0.007790545248976527,
+            "observed_flux": 0.007750558651467725,
+            "observed_mass_flux": 0.0017591249999999998,
+            "stress": 0.08908732583663469
+          },
+          {
+            "dimensionless_flux": 0.32768751190098244,
+            "error": 0.14634290759184546,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_4",
+            "mass_error": 0.03321508537565283,
+            "mass_flux": 0.07437441870898616,
+            "observed_flux": 0.181344604309137,
+            "observed_mass_flux": 0.04115933333333333,
+            "stress": 0.17461376350193727
+          },
+          {
+            "dimensionless_flux": 0.21735001078129076,
+            "error": 0.05312325921142383,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_1",
+            "mass_error": 0.008576294410069244,
+            "mass_flux": 0.03508929441006924,
+            "observed_flux": 0.16422675156986694,
+            "observed_mass_flux": 0.026513,
+            "stress": 0.148284696993337
+          },
+          {
+            "dimensionless_flux": 0.10568326815553936,
+            "error": 0.07825742748489298,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_2",
+            "mass_error": 0.012633990230417905,
+            "mass_flux": 0.01706165689708457,
+            "observed_flux": 0.027425840670646382,
+            "observed_mass_flux": 0.0044276666666666666,
+            "stress": 0.11636625819000887
+          },
+          {
+            "dimensionless_flux": 0.09569872078721005,
+            "error": 0.08698787281917773,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_3",
+            "mass_error": 0.014043445723723558,
+            "mass_flux": 0.015449737390390225,
+            "observed_flux": 0.008710847968032318,
+            "observed_mass_flux": 0.0014062916666666668,
+            "stress": 0.11305557761928457
+          },
+          {
+            "dimensionless_flux": 0.3067557752172549,
+            "error": 0.20700235804335299,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_4",
+            "mass_error": 0.03341875465684134,
+            "mass_flux": 0.04952308799017468,
+            "observed_flux": 0.09975341717390189,
+            "observed_mass_flux": 0.016104333333333335,
+            "stress": 0.16987978825554517
+          },
+          {
+            "dimensionless_flux": 0.18766454943014127,
+            "error": 0.13268485467910823,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_5",
+            "mass_error": 0.021420831371742673,
+            "mass_flux": 0.030296831371742675,
+            "observed_flux": 0.054979694751033044,
+            "observed_mass_flux": 0.008876,
+            "stress": 0.14048501855589351
+          }
+        ]
+      },
+      "radius_shape": {
+        "balanced_mae": 0.20858899620033683,
+        "groups": {
+          "gravel": {
+            "bias": 0.21080609000217176,
+            "mae": 0.21080609000217176,
+            "mass_mae": 0.03403283454614159,
+            "n": 5,
+            "normalized_mae": 0.182080244615595
+          },
+          "sphere": {
+            "bias": 0.2061035771836099,
+            "mae": 0.20637190239850192,
+            "mass_mae": 0.0468397168684114,
+            "n": 4,
+            "normalized_mae": 0.17825028902209517
+          }
+        },
+        "rows": [
+          {
+            "dimensionless_flux": 0.1775851566892586,
+            "error": 0.12651646707069691,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_1",
+            "mass_error": 0.028715127533883483,
+            "mass_flux": 0.04030606086721682,
+            "observed_flux": 0.05106868961856168,
+            "observed_mass_flux": 0.011590933333333334,
+            "stress": 0.049668459727267335
+          },
+          {
+            "dimensionless_flux": 0.052107897385939544,
+            "error": 0.02528350009423151,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_2",
+            "mass_error": 0.005738533066238059,
+            "mass_flux": 0.011826799732904725,
+            "observed_flux": 0.026824397291708036,
+            "observed_mass_flux": 0.0060882666666666665,
+            "stress": 0.04047588479527041
+          },
+          {
+            "dimensionless_flux": 0.007213908221683628,
+            "error": -0.0005366504297840968,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_3",
+            "mass_error": -0.0001218022119109023,
+            "mass_flux": 0.0016373227880890975,
+            "observed_flux": 0.007750558651467725,
+            "observed_mass_flux": 0.0017591249999999998,
+            "stress": 0.03515230005412252
+          },
+          {
+            "dimensionless_flux": 0.8544955963084322,
+            "error": 0.6731509919992952,
+            "extrapolates": false,
+            "grain": "sphere",
+            "id": "gb_5_4",
+            "mass_error": 0.15278340466161316,
+            "mass_flux": 0.1939427379949465,
+            "observed_flux": 0.181344604309137,
+            "observed_mass_flux": 0.04115933333333333,
+            "stress": 0.08012465983982148
+          },
+          {
+            "dimensionless_flux": 0.5982130965137665,
+            "error": 0.4339863449438996,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_1",
+            "mass_error": 0.07006337185329088,
+            "mass_flux": 0.09657637185329088,
+            "observed_flux": 0.16422675156986694,
+            "observed_mass_flux": 0.026513,
+            "stress": 0.07019837832536628
+          },
+          {
+            "dimensionless_flux": 0.06055245244471138,
+            "error": 0.03312661177406499,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_2",
+            "mass_error": 0.005348007249550547,
+            "mass_flux": 0.009775673916217214,
+            "observed_flux": 0.027425840670646382,
+            "observed_mass_flux": 0.0044276666666666666,
+            "stress": 0.04124139141295734
+          },
+          {
+            "dimensionless_flux": 0.034708552420616795,
+            "error": 0.025997704452584477,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_3",
+            "mass_error": 0.004197106327455629,
+            "mass_flux": 0.005603397994122296,
+            "observed_flux": 0.008710847968032318,
+            "observed_mass_flux": 0.0014062916666666668,
+            "stress": 0.038751009075317984
+          },
+          {
+            "dimensionless_flux": 0.42331964610949324,
+            "error": 0.32356622893559134,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_4",
+            "mass_error": 0.05223699151182257,
+            "mass_flux": 0.0683413248451559,
+            "observed_flux": 0.09975341717390189,
+            "observed_mass_flux": 0.016104333333333335,
+            "stress": 0.06258184998263092
+          },
+          {
+            "dimensionless_flux": 0.29233325465575155,
+            "error": 0.23735355990471851,
+            "extrapolates": false,
+            "grain": "gravel",
+            "id": "ng_5_5",
+            "mass_error": 0.038318695788588326,
+            "mass_flux": 0.04719469578858833,
+            "observed_flux": 0.054979694751033044,
+            "observed_mass_flux": 0.008876,
+            "stress": 0.056156983476566516
+          }
+        ]
+      }
+    }
+  },
+  "study": "grain-channel-2026-10-15",
+  "uncertainty": "Descriptive finite-cohort errors; no population confidence interval or independent-replicate claim."
+}

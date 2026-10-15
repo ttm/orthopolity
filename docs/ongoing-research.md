@@ -1,14 +1,21 @@
 # Ongoing research: resume here
 
-**15 October — next natural transfer ready for design freeze:** the
-[grain/channel protocol](grain-channel-protocol-2026-10-15.md) qualifies 19
-narrow sphere calibration runs, 10 additional gravel sensitivity runs and
-nine wide targets. Original public sources, publisher digests, response-isolated
-predictor audit and software checks are retained. Eight of nine target numbers
-remain withheld; the accidental first-target exposure is explicit. This is a
-conditional constitutive transfer with separate grain assays and hydraulic
-inputs, not neutral log-/linear-orthopolic size allocation. Commit the design,
-fit only old responses, commit forecasts, then evaluate the fixed new cohort.
+**15 October — natural constraint transfer complete:**
+[Grain/channel results](grain-channel-results-2026-10-15.md): 19 old sphere
+runs predict nine wide targets, balanced MAE **0.04751**. Gains are **42.6%**
+versus unit shape and **77.2%** versus hydraulic radius. The declared accuracy
+tolerance exceeds all new observations, low-flux errors exceed fourfold, and
+separate old-material fits give lower MAE **0.04297**. Pooled calibration gives
+only 19.6% shape gain. Keep these limitations beside the nominal frozen pass.
+Design `290acd9`, forecasts `e86cffc`; published qualitative outcomes and one
+numerical target were known, eight were withheld. All artifacts replay exactly;
+independent verification checks 2,467 numbers. **598 tests**, **41 registry
+records / 1,042 references**, with earlier entries unchanged. Main 4.6 and
+supporting S5.15 retain the bounded transfer; PDFs are 12/57 pages and visually
+checked. This is neither log-orthopolic nor linear-orthopolic size allocation.
+Next follow the author-directed sequence into a biological intervention with
+independent compatible inputs; future sediment uncertainty/tolerance extensions
+need a separate cohort. Do not rebrand fitting these nine outcomes as confirmation.
 
 **14 October — broader-natural design stops before response fitting:**
 the [saltation qualification](saltation-qualification-results-2026-10-14.md)
@@ -426,6 +433,11 @@ retrospective validation, not global blinding or prospective data collection.
   manuscript/PDF and earlier registered studies remain unchanged.
 
 ## Next actions, in priority order
+
+**Current priority supersedes the older list below:** physics, chemistry and
+broader-natural transfers are now executed. Qualify an independent biological
+intervention, then human/language work. Preserve the failed and qualified studies;
+use the latest status and grain/channel report for specific source limitations.
 
 1. **Extend the completed inverse application.** The linguistic study now
    supplies an executed inference-and-transfer comparison. A next study should

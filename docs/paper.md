@@ -365,7 +365,7 @@ Freezing a later analysis does not erase earlier exposure.
 | Linguistic genre transfer | Combined letter/phoneme cost improves over letter-only models | Lexical frequencies predict better; physical cost unidentified |
 | Bacterial summary transfer | Population mean predictions are close | Variability and the joint comparison fail |
 | Cantilever energy transfer | Some damping-to-energy forecasts transfer | Small average gain; spatial-loss and observation failures remain |
-| Chemical competition | Pure-gas calibration predicts mixture uptake | Established adsorption theory performs similarly; finite-accuracy transfer |
+| Chemical / sediment constraints | Independent inputs improve transfer forecasts | Established rivals perform similarly or better; finite-accuracy limits |
 | Chemostat nutrient pulse | Frozen two-budget reweighting fails | Constraint response needs explanation |
 | Flare and lake geometry | Predicted exponents excluded or equivalence unresolved | Measurement and dependence affect interpretation |
 | Seismicity | Qualification or estimator prerequisites fail | No real b--dimension comparison established |
@@ -407,20 +407,13 @@ budget closure across separate cultures, not allocation among coexisting size
 classes; the limiting resource was not directly assayed
 ([full comparisons](dunaliella-size-budget.md)).
 
-The cell-cycle mechanism makes a different transfer. For fitted lognormal birth
-length with mean $m$ and squared coefficient of variation $c^2$, the population
-model predicts
-
-$$E_P[x]=\frac{2m\ln2}{1+c^2},\qquad
-\operatorname{CV}_P^2=\frac{1+c^2}{2(\ln2)^2}-1.$$
-
-Against separate *E. coli* batch-culture summaries in LB and M9+succinate
-(Gangan and Athale, 2017), mean errors are 2.72% and 0.447%, compared with
-20.32% and 7.07% for lineage sampling. Variability is overpredicted by 4.61%
-and 19.69%; the requirement of improvement on both endpoints fails. No target
-parameter is fitted, but rounded published summaries, a length proxy for mass,
-and unverified physiological equivalence limit the conclusion. The mean succeeds
-conditionally while the fuller prediction remains unsuccessful.
+The cell-cycle mechanism transfers a fitted lineage distribution to separate
+*E. coli* batch-culture summaries (Gangan and Athale, 2017). Mean errors are
+2.72% and 0.447%, versus 20.32% and 7.07% for lineage sampling, but variability
+is overpredicted by 4.61% and 19.69%; the joint criterion fails. No target
+parameter is fitted. Rounded summaries, length as a mass proxy and unverified
+physiological equivalence limit the result. Supporting material retains the
+distribution formulas and full comparison.
 
 A nutrient-pulse experiment provides a direct failed response forecast. In twelve
 held-out chemostat polycultures, the frozen two-budget C:N reweighting rule allows
@@ -498,7 +491,7 @@ can leave gaps that invalidate a uniform-bin correction. Neither attempt
 produces a real b--dimension hypothesis comparison. These are eligibility and
 measurement findings, not physical evidence against either relation.
 
-### 4.6 Chemical competition from pure-gas calibration
+### 4.6 Independent constraints in chemical and sediment transport
 
 For CO2 and CH4 on reference zeolite RM8850, we calibrated a shared-capacity
 Langmuir model from pure gases and sealed predictions before evaluating 45
@@ -513,6 +506,16 @@ Only 39/90 component predictions lie within reported observation uncertainties;
 calibration-range extrapolations also remain. This supports transferable
 constraints at finite accuracy, with the retrospective chronology, established
 mechanisms and complete diagnostics in supporting section S5.14.
+
+A retrospective sediment transfer calibrates 19 narrow-channel sphere runs
+and predicts nine wider-channel runs using separate grain assays (Deal et al.,
+2026). Measured shape reduces balanced flux error by 42.6% versus unit shape;
+the fuller wall correction reduces it by 77.2% versus hydraulic radius.
+The declared accuracy tolerance is permissive, low-flux errors exceed fourfold,
+and separate old-material fits predict better. This tests a constitutive
+constraint transfer under material-balanced counting measure, not neutral
+log-/linear-orthopolic size allocation. One target was exposed before freezing
+forecasts; complete comparisons and limitations are in supporting S5.15.
 
 ## 5. Learning from validity, departures and failure
 
@@ -596,6 +599,10 @@ oblateness. *Geophysical Journal International*, 199(2), 800–804.
 Condon, J. J., and Ransom, S. M. (2016). *Essential Radio Astronomy*.
 Princeton University Press. Chapter 2, radiation and absorption.
 <https://www.cv.nrao.edu/~sransom/web/Ch2.html>.
+
+Deal, E., et al. (2026). Generalizing sediment transport experiments from narrow
+flumes to wider channels. *Journal of Geophysical Research: Earth Surface*, 131.
+<https://doi.org/10.1029/2025JF008712>. Data: <https://doi.org/10.20383/103.01325>.
 
 Fabbri, R., and Oliveira Jr., O. N. (2017). *A simple model that explains why inequality
 is ubiquitous*. Supplied manuscript dated 17 March 2017, 13 pp.; publication status unverified.
