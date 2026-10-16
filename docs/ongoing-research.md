@@ -18,6 +18,11 @@ byte-for-byte. **604 tests**, **42 registry records / 1,061 references**,
 preserving previous entries. Main 4.3 and supporting S5.16 retain the failed
 prediction; visually checked PDFs are 12/59 pages. Next prioritize a
 human/language intervention with independent resource or constraint inputs.
+[Reachable source leads](human-prediction-source-leads-2026-10-16.md) retain
+human patch-foraging task/data and speech-duration alternatives. Start by
+auditing programmed foraging costs and chronology; no participant outcome
+arrays have been inspected and no human protocol is yet frozen. The completed
+biological study and PDFs are pushed through `b41968d`.
 
 **15 October — natural constraint transfer complete:**
 [Grain/channel results](grain-channel-results-2026-10-15.md): 19 old sphere

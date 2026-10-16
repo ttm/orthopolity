@@ -25,6 +25,11 @@ with all previous 41 entries preserved. Main 4.3 and supporting S5.16 retain
 the result. The article remains **12 pages**, supporting material **59 pages**,
 with visual checks and no typesetting warnings. Next in the requested domain
 order: a human/language intervention with independent costs or constraints.
+The [preliminary source leads](human-prediction-source-leads-2026-10-16.md)
+confirm accessible human-foraging and speech-duration archives. Prioritize the
+foraging task's programmed constraints; no participant outcome arrays were
+opened and no new human test is yet qualified. Completed biology and PDFs are
+pushed through `b41968d`.
 
 **15 October — natural constraint transfer complete:** the
 [narrow-to-wide channel study](grain-channel-results-2026-10-15.md) calibrates
