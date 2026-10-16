@@ -1,0 +1,16 @@
+{
+  "study": "burden-transfer-2026-10-16",
+  "date": "2026-10-16",
+  "source": "data/biology-candidates/2026-10-16/borkowski2018/source-data.xlsx",
+  "source_sha256": "5fb17309a34a0b0f937bb082c677dea60a4fa3379021c56616fd819583beb44b",
+  "reference_measure": "Equal weight per gene family, then per construct; counting measure over seven families, neither log-orthopolic nor linear-orthopolic size allocation",
+  "primary_model": "pool",
+  "maximum_family_balanced_mae": 0.10,
+  "minimum_relative_gain": 0.20,
+  "primary_comparators": ["constant", "direct_assay", "linear_burden", "affine"],
+  "required_calibration_n": 12,
+  "required_target_n": 10,
+  "required_family_n": 7,
+  "withheld_numerical_target_values": 10,
+  "uncertainty": "Descriptive cohort scores only. Triplicate normalized observations share controls; no population confidence interval or error-independent replicate claim."
+}

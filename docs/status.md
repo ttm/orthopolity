@@ -1,8 +1,22 @@
 # Project status and handoff
 
-Last updated 15 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 16 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**16 October — biological transfer design prepared:** the
+[source audit](biology-intervention-source-audit-2026-10-16.md) acquired the
+Borkowski 2018 workbook, methods and article. Publisher and Europe PMC workbook
+and supplement copies match. The [protocol](burden-transfer-protocol-2026-10-16.md)
+will calibrate twelve mKate initiation variants and predict ten new protein
+constructs from separate extract assays. Seven gene families define the
+counting measure; this tests neither log-orthopolic nor linear-orthopolic size
+allocation. The reciprocal free-pool model competes with four fixed alternatives,
+using a target-relevant 0.10 absolute-capacity tolerance. Assays are burden
+proxies, not independently measured absolute ribosome costs. Publication
+summaries are exposed; individual numerical cell targets remain withheld.
+Commit the tested design before calibration, independently verify and seal
+forecasts, then evaluate. The previous completed work is pushed through `0ef8aba`.
 
 **15 October — natural constraint transfer complete:** the
 [narrow-to-wide channel study](grain-channel-results-2026-10-15.md) calibrates

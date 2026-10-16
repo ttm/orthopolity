@@ -1,0 +1,38 @@
+{
+  "article_doi": "10.1038/s41467-018-03970-x",
+  "exposure": "Publication prose, methods, labels and nominal gene lengths examined. Published correlations/model constants known. No numerical calibration or target worksheet values inspected before design freeze.",
+  "files": [
+    {
+      "name": "source-data.xlsx",
+      "sha256": "5fb17309a34a0b0f937bb082c677dea60a4fa3379021c56616fd819583beb44b",
+      "size_bytes": 45841,
+      "url": "https://media.springernature.com/full/springer-static/esm/art%3A10.1038%2Fs41467-018-03970-x/MediaObjects/41467_2018_3970_MOESM4_ESM.xlsx"
+    },
+    {
+      "name": "supplement.pdf",
+      "sha256": "2171fba2d2dadebdd06188d0be5f56ec54314f9aa37e7be6cc8a7ebbb958edb1",
+      "size_bytes": 1980736,
+      "url": "https://media.springernature.com/full/springer-static/esm/art%3A10.1038%2Fs41467-018-03970-x/MediaObjects/41467_2018_3970_MOESM1_ESM.pdf"
+    },
+    {
+      "name": "article.xml",
+      "sha256": "4ccc86567827201768fc30f9211ea1104037d086af1f79a168ebe7f45924337e",
+      "size_bytes": 146441,
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5899134/fullTextXML"
+    }
+  ],
+  "independent_mirror": {
+    "bundle_sha256": "9fcee14447a9a9fc8021b32e34cbd48667fdb85cd719b68c2602dbf64447650e",
+    "byte_identical_files": [
+      "source-data.xlsx",
+      "supplement.pdf"
+    ],
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5899134/supplementaryFiles"
+  },
+  "retrieval_date": "2026-10-16",
+  "source_issues": [
+    "NCBI supplementary route returned an HTML challenge; old Springer CDN hostname did not resolve; current media.springernature.com worked.",
+    "Initial EuropePMC bundle timed out; second completed. Only publisher XLSX, methods PDF and article XML retained, with local SHA-256.",
+    "Workbook STD headings and paper SEM captions require later triplicate audit. Incubation descriptions include both 29 and 37 Celsius."
+  ]
+}

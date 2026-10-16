@@ -1,5 +1,17 @@
 # Ongoing research: resume here
 
+**16 October — biological prediction in preparation:**
+[Protocol](burden-transfer-protocol-2026-10-16.md) and
+[source audit](biology-intervention-source-audit-2026-10-16.md) retain the
+accessible Borkowski 2018 assay archive. Calibration uses twelve variants of
+one protein; ten new protein constructs supply separate assay predictors and
+withheld cell responses. Compare reciprocal free-pool transfer with linear,
+affine, constant and direct-assay alternatives, weighting seven gene families
+equally. This counting-measure comparison is neither log-orthopolic nor
+linear-orthopolic allocation across sizes. Absolute costs and congestion are
+not independently identified by these assays. Freeze design before calibration
+and forecasts before target evaluation; no numerical empirical result yet.
+
 **15 October — natural constraint transfer complete:**
 [Grain/channel results](grain-channel-results-2026-10-15.md): 19 old sphere
 runs predict nine wide targets, balanced MAE **0.04751**. Gains are **42.6%**
