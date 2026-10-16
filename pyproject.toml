@@ -19,7 +19,7 @@ classifiers = [
 dependencies = ["numpy>=2.0", "scipy>=1.13"]
 
 [project.optional-dependencies]
-analyses = ["pandas>=2.2", "matplotlib>=3.9"]
+analyses = ["pandas>=2.2", "matplotlib>=3.9", "openpyxl>=3.1.5"]
 geospatial = ["pyshp>=2.3", "pyproj>=3.6", "shapely>=2.1"]
 
 [project.urls]

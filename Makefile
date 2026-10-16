@@ -38,6 +38,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: adsorption-sources adsorption-transfer adsorption-registry
 .PHONY: saltation-sources saltation-qualification saltation-registry
 .PHONY: grain-channel-sources grain-channel-transfer grain-channel-registry
+.PHONY: burden-transfer-sources burden-transfer burden-transfer-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -73,9 +74,26 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/chemostat-capacity-followup-2026-10-10/capacity.png \
  results/cantilever-transfer-2026-10-13/cantilever-presentation.png \
  results/adsorption-transfer-2026-10-13/adsorption.png \
- results/grain-channel-transfer-2026-10-15/transfer.png
+ results/grain-channel-transfer-2026-10-15/transfer.png \
+ results/burden-transfer-2026-10-16/transfer.png
 
 all: data test analyses
+
+burden-transfer-sources: ## verify the biological source archive without opening numerical targets
+	$(PY) experiments/run_burden_transfer.py --stage verify
+
+burden-transfer: burden-transfer-sources ## replay the frozen assay-to-cell comparison
+	$(PY) experiments/run_burden_transfer.py --stage predict --freeze-commit b1dcb08 --output $(STUDY_OUTPUT_ROOT)/burden-transfer-forecast
+	cmp results/burden-transfer-forecast-2026-10-16/predictions.json $(STUDY_OUTPUT_ROOT)/burden-transfer-forecast/predictions.json
+	$(PY) experiments/run_burden_transfer.py --stage evaluate --freeze-commit b1dcb08 --prediction-commit bef1f23 --predictions results/burden-transfer-forecast-2026-10-16/predictions.json --output $(STUDY_OUTPUT_ROOT)/burden-transfer
+	cmp results/burden-transfer-2026-10-16/result.json $(STUDY_OUTPUT_ROOT)/burden-transfer/result.json
+	$(PY) experiments/verify_burden_transfer.py --predictions $(STUDY_OUTPUT_ROOT)/burden-transfer-forecast/predictions.json --result $(STUDY_OUTPUT_ROOT)/burden-transfer/result.json --output $(STUDY_OUTPUT_ROOT)/burden-transfer/verification.json
+	cmp results/burden-transfer-2026-10-16/verification.json $(STUDY_OUTPUT_ROOT)/burden-transfer/verification.json
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/plot_burden_transfer.py --result $(STUDY_OUTPUT_ROOT)/burden-transfer/result.json --output $(STUDY_OUTPUT_ROOT)/burden-transfer/transfer.png
+	cmp results/burden-transfer-2026-10-16/transfer.png $(STUDY_OUTPUT_ROOT)/burden-transfer/transfer.png
+
+burden-transfer-registry: ## append the failed biological resource-model transfer
+	$(PY) experiments/register_burden_transfer.py
 
 grain-channel-sources: ## verify public grain/channel sources without converting transport columns
 	$(PY) experiments/audit_grain_channel.py --stage verify
@@ -162,7 +180,7 @@ paired-phosphorus-registry: ## append the retained pilot, preserving prior runs
 install:
 	$(PY) -m pip install -r requirements.txt -e ".[analyses,geospatial]"
 
-data: grain-channel-sources ## verify frozen legacy inputs and the new grain/channel archive
+data: grain-channel-sources burden-transfer-sources ## verify frozen legacy inputs and recent public archives
 	$(PY) experiments/fetch_data.py
 
 restore-data:    ## explicitly permit network restoration of missing snapshots

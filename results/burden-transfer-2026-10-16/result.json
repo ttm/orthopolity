@@ -1,0 +1,350 @@
+{
+  "config": {
+    "date": "2026-10-16",
+    "maximum_family_balanced_mae": 0.1,
+    "minimum_relative_gain": 0.2,
+    "primary_comparators": [
+      "constant",
+      "direct_assay",
+      "linear_burden",
+      "affine"
+    ],
+    "primary_model": "pool",
+    "reference_measure": "Equal weight per gene family, then per construct; counting measure over seven families, neither log-orthopolic nor linear-orthopolic size allocation",
+    "required_calibration_n": 12,
+    "required_family_n": 7,
+    "required_target_n": 10,
+    "source": "data/biology-candidates/2026-10-16/borkowski2018/source-data.xlsx",
+    "source_sha256": "5fb17309a34a0b0f937bb082c677dea60a4fa3379021c56616fd819583beb44b",
+    "study": "burden-transfer-2026-10-16",
+    "uncertainty": "Descriptive cohort scores only. Triplicate normalized observations share controls; no population confidence interval or error-independent replicate claim.",
+    "withheld_numerical_target_values": 10
+  },
+  "decision": {
+    "absolute_accuracy": false,
+    "joint_rule": false,
+    "relative_advantages": {
+      "affine": false,
+      "constant": true,
+      "direct_assay": false,
+      "linear_burden": false
+    }
+  },
+  "design_commit": "b1dcb085642a10e5520930b66209d33b362ca5e1",
+  "gains": {
+    "affine": 0.03950713783106041,
+    "constant": 0.4961024637849305,
+    "direct_assay": -0.07600445169447378,
+    "linear_burden": 0.06996888541151758
+  },
+  "outcomes": [
+    {
+      "family": "Viob",
+      "id": "Viob",
+      "observed": 0.5495081105699886,
+      "replicates": [
+        0.546559395337912,
+        0.571191073077866,
+        0.530773863294188
+      ],
+      "reported_mean": 0.5495081105699886,
+      "reported_spread": 0.0203693127722653,
+      "row": 55,
+      "sample_sd": 0.0203693127722653
+    },
+    {
+      "family": "Viob",
+      "id": "V1",
+      "observed": 0.7834813305519722,
+      "replicates": [
+        0.750337546412632,
+        0.804644412191582,
+        0.795462033051703
+      ],
+      "reported_mean": 0.7834813305519722,
+      "reported_spread": 0.02906822736207893,
+      "row": 56,
+      "sample_sd": 0.02906822736207893
+    },
+    {
+      "family": "Viob",
+      "id": "V2",
+      "observed": 0.7255783420270828,
+      "replicates": [
+        0.7289182037811099,
+        0.7345684282421241,
+        0.7132483940580145
+      ],
+      "reported_mean": 0.7255783420270828,
+      "reported_spread": 0.011045450276240872,
+      "row": 57,
+      "sample_sd": 0.011045450276240872
+    },
+    {
+      "family": "Viob",
+      "id": "V3",
+      "observed": 0.7607439355013511,
+      "replicates": [
+        0.7619971275462142,
+        0.7591386235528403,
+        0.7610960554049986
+      ],
+      "reported_mean": 0.7607439355013511,
+      "reported_spread": 0.0014614214279057621,
+      "row": 58,
+      "sample_sd": 0.0014614214279057621
+    },
+    {
+      "family": "URA3",
+      "id": "URA3",
+      "observed": 0.6523636915099607,
+      "replicates": [
+        0.6757043329653402,
+        0.6362291353516593,
+        0.6451576062128827
+      ],
+      "reported_mean": 0.6523636915099607,
+      "reported_spread": 0.020700689738300092,
+      "row": 59,
+      "sample_sd": 0.020700689738300092
+    },
+    {
+      "family": "aspA",
+      "id": "aspA",
+      "observed": 0.8090078338882997,
+      "replicates": [
+        0.7931132016767267,
+        0.8231208153750239,
+        0.8107894846131485
+      ],
+      "reported_mean": 0.8090078338882997,
+      "reported_spread": 0.015082935040819272,
+      "row": 60,
+      "sample_sd": 0.015082935040819272
+    },
+    {
+      "family": "Leu2",
+      "id": "Leu2",
+      "observed": 0.5900610663831211,
+      "replicates": [
+        0.5949723928118015,
+        0.5797177745534855,
+        0.5954930317840761
+      ],
+      "reported_mean": 0.5900610663831211,
+      "reported_spread": 0.008961335315655614,
+      "row": 61,
+      "sample_sd": 0.008961335315655614
+    },
+    {
+      "family": "SuhB",
+      "id": "SuhB",
+      "observed": 0.4466666666666666,
+      "replicates": [
+        0.44,
+        0.52,
+        0.38
+      ],
+      "reported_mean": 0.4466666666666666,
+      "reported_spread": 0.0702376916856854,
+      "row": 62,
+      "sample_sd": 0.07023769168568493
+    },
+    {
+      "family": "Ste12",
+      "id": "Ste12",
+      "observed": 0.9672802850934583,
+      "replicates": [
+        0.9717830211627343,
+        0.9600124198806805,
+        0.9700454142369602
+      ],
+      "reported_mean": 0.9672802850934583,
+      "reported_spread": 0.006353834906609863,
+      "row": 63,
+      "sample_sd": 0.006353834906609863
+    },
+    {
+      "family": "atf1",
+      "id": "atf1",
+      "observed": 0.35117672299128316,
+      "replicates": [
+        0.3345537253620783,
+        0.36294179377858327,
+        0.356034649833188
+      ],
+      "reported_mean": 0.35117672299128316,
+      "reported_spread": 0.014804397894072438,
+      "row": 64,
+      "sample_sd": 0.014804397894072438
+    }
+  ],
+  "prediction_commit": "bef1f23a98077d7259e11e523255cbf6ad7e7850",
+  "scores": {
+    "affine": {
+      "construct_mae": 0.09634985645456422,
+      "errors": [
+        0.09672063219097315,
+        -0.02789270366105856,
+        0.09769017650815748,
+        -0.07278510410994965,
+        0.09059284113451505,
+        -0.13619011585528384,
+        0.0192461473695823,
+        0.1566497184462345,
+        -0.06556120377878394,
+        0.20016992149110385
+      ],
+      "family_balanced_bias": 0.04119150843419979,
+      "family_balanced_mae": 0.10602601459900546,
+      "maximum_absolute_error": 0.20016992149110385,
+      "physically_negative_predictions": 0
+    },
+    "constant": {
+      "construct_mae": 0.16837113376770424,
+      "errors": [
+        0.24499240357946317,
+        0.011019183597479554,
+        0.06892217212236895,
+        0.033756578648100666,
+        0.14213682263949112,
+        -0.01450731973884789,
+        0.20443944776633072,
+        0.3478338474827852,
+        -0.17277977094400654,
+        0.4433237911581686
+      ],
+      "family_balanced_bias": 0.1485884861215392,
+      "family_balanced_mae": 0.2020990834594976,
+      "maximum_absolute_error": 0.4433237911581686,
+      "physically_negative_predictions": 0
+    },
+    "direct_assay": {
+      "construct_mae": 0.08866888174019313,
+      "errors": [
+        0.034055107820816,
+        -0.07445834204622515,
+        0.0610883246395838,
+        -0.12930715389215575,
+        0.04216751463119317,
+        -0.19494122980206208,
+        -0.04885493878955893,
+        0.08766666666666684,
+        -0.09061361842679172,
+        0.1235359206868778
+      ],
+      "family_balanced_bias": -0.015456457271881455,
+      "family_balanced_mae": 0.09464387444326366,
+      "maximum_absolute_error": 0.19494122980206208,
+      "physically_negative_predictions": 0
+    },
+    "linear_burden": {
+      "construct_mae": 0.09870367379592859,
+      "errors": [
+        0.10187283425600846,
+        -0.027072039404577364,
+        0.09583016848824988,
+        -0.0692857517904597,
+        0.09191383871033887,
+        -0.13209105272321187,
+        0.025860741244203456,
+        0.16350159769258327,
+        -0.07052848995178163,
+        0.20908022369787144
+      ],
+      "family_balanced_bias": 0.044724737365329836,
+      "family_balanced_mae": 0.1094987346435449,
+      "maximum_absolute_error": 0.20908022369787144,
+      "physically_negative_predictions": 0
+    },
+    "pool": {
+      "construct_mae": 0.0932164004435426,
+      "errors": [
+        0.09189381131697139,
+        -0.02677985439159225,
+        0.09918869760916271,
+        -0.07454216048157258,
+        0.09136229397205897,
+        -0.13894383018578516,
+        0.010843400857040497,
+        0.14758884317222615,
+        -0.06655833793278831,
+        0.1844627745162279
+      ],
+      "family_balanced_bias": 0.03588503827317462,
+      "family_balanced_mae": 0.10183723022656453,
+      "maximum_absolute_error": 0.1844627745162279,
+      "physically_negative_predictions": 0
+    }
+  },
+  "source_summary_checks": [
+    {
+      "id": "Viob",
+      "reported_minus_recomputed_mean": 0.0,
+      "reported_minus_sample_sd": 0.0,
+      "reported_minus_sem": 0.008609084559990246
+    },
+    {
+      "id": "V1",
+      "reported_minus_recomputed_mean": 0.0,
+      "reported_minus_sample_sd": 0.0,
+      "reported_minus_sem": 0.012285678469717416
+    },
+    {
+      "id": "V2",
+      "reported_minus_recomputed_mean": 0.0,
+      "reported_minus_sample_sd": 0.0,
+      "reported_minus_sem": 0.004668356585932578
+    },
+    {
+      "id": "V3",
+      "reported_minus_recomputed_mean": 0.0,
+      "reported_minus_sample_sd": 0.0,
+      "reported_minus_sem": 0.0006176693731048831
+    },
+    {
+      "id": "URA3",
+      "reported_minus_recomputed_mean": 0.0,
+      "reported_minus_sample_sd": 0.0,
+      "reported_minus_sem": 0.00874914094548161
+    },
+    {
+      "id": "aspA",
+      "reported_minus_recomputed_mean": 0.0,
+      "reported_minus_sample_sd": 0.0,
+      "reported_minus_sem": 0.006374798434832626
+    },
+    {
+      "id": "Leu2",
+      "reported_minus_recomputed_mean": 0.0,
+      "reported_minus_sample_sd": 0.0,
+      "reported_minus_sem": 0.0037875059588633447
+    },
+    {
+      "id": "SuhB",
+      "reported_minus_recomputed_mean": 0.0,
+      "reported_minus_sample_sd": 4.718447854656915e-16,
+      "reported_minus_sem": 0.029685941483697263
+    },
+    {
+      "id": "Ste12",
+      "reported_minus_recomputed_mean": 0.0,
+      "reported_minus_sample_sd": 0.0,
+      "reported_minus_sem": 0.0026854466128922176
+    },
+    {
+      "id": "atf1",
+      "reported_minus_recomputed_mean": 0.0,
+      "reported_minus_sample_sd": 0.0,
+      "reported_minus_sem": 0.006257074784739386
+    }
+  ],
+  "study": "burden-transfer-2026-10-16",
+  "target_assays_outside_training_support": [
+    "Viob",
+    "Leu2",
+    "SuhB",
+    "Ste12",
+    "atf1"
+  ]
+}

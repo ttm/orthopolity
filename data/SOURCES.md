@@ -352,3 +352,18 @@ gas-property documentation, acquisition receipts and predictor-only audits.
 `experiments/fetch_adsorption.py --stage verify` verifies original size/MD5
 and retained SHA-256 checksums offline. Source URLs and TLS-verified retrieval
 details are in `acquisition.json`; no rolling source replaces pinned bytes.
+
+## Protein-expression assay transfer
+
+Borkowski et al. (2018), *Cell-free prediction of protein expression costs for
+growing cells*, Nature Communications 9, 1457,
+<https://doi.org/10.1038/s41467-018-03970-x>, Europe PMC article PMC5899134.
+`biology-candidates/2026-10-16/borkowski2018/` retains the unchanged source-data
+workbook, supplementary PDF and full article XML. Exact publisher/Europe PMC
+URLs, byte sizes and SHA-256 checksums are in `acquisition.json`; the two
+providers' workbook and supplementary PDF copies match. The frozen protocol
+identifies every calibration, predictor and target cell. `make
+burden-transfer-sources` verifies the original bytes offline, while `make
+burden-transfer` replays and compares the complete study. See
+`docs/biology-intervention-source-audit-2026-10-16.md` and
+`docs/burden-transfer-results-2026-10-16.md` for exposure chronology and results.

@@ -198,3 +198,19 @@ CoolProp/IDAES documentation keep their own notices and are not relicensed as
 project software. Acquisitions and checksums identify each exact source. Derived
 forecasts, plots and audits are this project's reanalysis, documented in
 `docs/adsorption-results-2026-10-13.md`; they are not author-endorsed data.
+
+## Protein-expression capacity assays (16 October 2026)
+
+`biology-candidates/2026-10-16/borkowski2018/` retains the original source-data
+workbook, supplementary methods PDF and article XML for Borkowski, O., Bricio,
+C., Murgiano, M., Rothschild-Mancinelli, B., Stan, G.-B., and Ellis, T. (2018),
+*Cell-free prediction of protein expression costs for growing cells*, Nature
+Communications 9, 1457, <https://doi.org/10.1038/s41467-018-03970-x>.
+Copyright the authors, 2018; the retained article specifies
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), with its stated
+exception for separately credited third-party material. Source files are
+unchanged. Publisher and Europe PMC workbook and supplement copies agree
+byte-for-byte. Acquisition URLs and hashes are retained. Forecasts, scores and
+figures are this project's reanalysis, not author-endorsed findings; the source
+SD/SEM and incubation-description discrepancies are recorded in
+`docs/burden-transfer-results-2026-10-16.md`.

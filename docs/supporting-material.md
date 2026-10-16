@@ -2,7 +2,7 @@
 
 **Accounting proofs, physical derivations, observation models and complete comparisons**
 
-Prepared 10 October 2026; revised 14 October 2026 as a companion to
+Prepared 10 October 2026; revised 16 October 2026 as a companion to
 [the main article](paper.md).
 This document preserves the substantive technical material of the article at
 source commit **`f137d4efb050ccfcb5c5f814d32da651c645421c`**, supplemented by
@@ -2606,6 +2606,91 @@ source convention, tolerance limitation and benchmark. This is a useful example
 of a constrained prediction improving under changed geometry, with documented
 failures. It establishes neither a new transport law nor universal neutrality.
 
+### S5.16. Independent protein assays and a failed workload transfer
+
+Borkowski et al. (2018) measured normalized reporter production capacity in
+cell extracts and living bacteria. We calibrate on twelve initiation-sequence
+variants expressing mKate, then predict ten different protein/mKate constructs
+from their separate extract assays. All new constructs share the BCD2
+initiation design. The empty insert is excluded in advance. Four Viob constructs
+form one family, and six other proteins each form one family. Primary errors
+give equal weight to these seven families, then to constructs within a family.
+This counting measure tests neither log-orthopolic nor linear-orthopolic
+allocation across sizes.
+
+If reporter production tracks a free pool and bound demand scales linearly
+with that pool, extract capacity $x$ defines relative workload $L=(1-x)/x$. The
+specified transfer assumes one common environment factor $k\geq0$:
+
+$$\widehat y=\frac{1}{1+k(1/x-1)}.$$
+
+This is conditional on a mass-action demand model; conservation alone does not
+imply it. Both workload and $k$ are inferred quantities, not independent absolute
+ribosome or energy measurements. Equal-weight least squares on the twelve
+calibration means gives $k=0.78346$ and RMSE 0.05543. Each alternative has its own
+calibration: linear burden $y=1-k(1-x)$, affine $y=a+bx$, a constant equal to mean
+calibration capacity, and direct $y=x$ without parameters. Direct transfer is
+the reciprocal model at $k=1$, so this comparison tests whether the fitted
+environment correction transfers. No forecast is clipped or refitted on targets.
+
+The design and synthetic checks were committed at `b1dcb08` before calibration;
+forecasts and their verification at `bef1f23` preceded all ten numerical target
+responses. The source's qualitative outcomes and correlations were known.
+This is retrospective archival validation. Original publisher workbook and
+supplement copies match Europe PMC byte-for-byte. Exact cells, source hashes
+and exposure chronology are in the [protocol](burden-transfer-protocol-2026-10-16.md)
+and [source audit](biology-intervention-source-audit-2026-10-16.md).
+
+| Fixed model | Family-balanced MAE | Construct MAE | Maximum error |
+|---|---:|---:|---:|
+| Reciprocal resource pool | 0.10184 | 0.09322 | 0.18446 |
+| Direct assay | 0.09464 | 0.08867 | 0.19494 |
+| Linear burden | 0.10950 | 0.09870 | 0.20908 |
+| Affine transfer | 0.10603 | 0.09635 | 0.20017 |
+| Constant capacity | 0.20210 | 0.16837 | 0.44332 |
+
+*Table S23. Errors on all ten new protein constructs. Primary weighting treats
+four related Viob constructs as one family. The frozen absolute accuracy limit
+is 0.10 capacity units; comparative advantage requires 20% lower error against
+each alternative.*
+
+The reciprocal model narrowly misses absolute accuracy and improves only
+3.95% over affine and 7.00% over linear transfer. Its 49.61% improvement over
+constant capacity shows useful assay information, while direct assay transfer
+predicts better by the primary error comparison. The reciprocal model is 7.60%
+worse than direct transfer. Ordinary construct weighting brings its error below
+0.10 but does not improve on direct transfer; it cannot replace the frozen
+family measure. The joint rule fails. Its signed bias is +0.03589, and the
+largest miss is an overprediction of atf1 by 0.18446 capacity units.
+
+![Sealed biological forecasts and declared alternatives](../results/burden-transfer-2026-10-16/transfer.png)
+
+*Figure S16. All ten forecasts from the reciprocal model and direct extract
+assays, compared with observed cell capacity. Connecting segments show the
+effect of the fitted correction. The right panel compares family-balanced
+errors; the dashed line is the frozen accuracy limit. Shared input errors are
+not propagated.*
+
+Five target assays extrapolate beyond calibration support, which spans
+0.59855--0.84955; target assays span 0.47471--0.87667. All were flagged before
+evaluation and retained. Reported target means match triplicate means exactly.
+Reported spreads match sample SD, although article captions say standard error.
+Three normalized measurements share controls and batches; no population
+confidence interval is inferred. Extract capacity uses a maximum production
+rate, while cell capacity uses a mid-exponential rate per optical density.
+The source's 29/37-degree incubation descriptions remain unresolved.
+
+Independent workbook extraction, 41-start least squares, centered affine
+regression and explicit family averaging check 195 quantities before outcomes
+and 334 after evaluation, with maximum absolute difference 6.25e-9. Forecasts,
+results, verification and figure reproduce byte-for-byte. The
+[complete report](burden-transfer-results-2026-10-16.md) preserves every error
+and source-summary check. The result limits the specified fitted workload
+transfer: the independent assay is useful, but its fitted environment correction
+adds no demonstrated predictive value. It does not reject the reciprocal
+functional family or establish an absolute resource cost or neutral biological
+allocation.
+
 ## References
 
 Arranz, I., Fournier, B., Lester, N. P., Shuter, B. J., and Peres-Neto, P. R. (2022).
@@ -2615,6 +2700,10 @@ Species compositions mediate biomass conservation: The case of lake fish communi
 Bishop, C. J., and Peres, Y. (2017). *Fractals in Probability and Analysis*.
 Cambridge University Press. Section 1.1.
 <https://www.math.stonybrook.edu/~bishop/fractalbook.pdf>.
+
+Borkowski, O., Bricio, C., Murgiano, M., Rothschild-Mancinelli, B., Stan, G.-B.,
+and Ellis, T. (2018). Cell-free prediction of protein expression costs for growing
+cells. *Nature Communications*, 9, 1457. <https://doi.org/10.1038/s41467-018-03970-x>.
 
 Boyd, S., and Vandenberghe, L. (2004). *Convex Optimization*. Cambridge University Press.
 Sections 4.7 and 5.6. <https://web.stanford.edu/~boyd/cvxbook/>.

@@ -2,7 +2,7 @@
 
 **Capacity, physical realizations, and effective-resource inference**
 
-> Research manuscript, revised 14 October 2026. Detailed derivations, complete
+> Research manuscript, revised 16 October 2026. Detailed derivations, complete
 > comparisons and analysis histories are retained in the [supporting material](supporting-material.md).
 > Empirical studies include exploration, locally frozen forecasts and retrospective
 > reanalyses; none is externally preregistered. Authorship and submission declarations
@@ -363,7 +363,7 @@ Freezing a later analysis does not erase earlier exposure.
 | Runtime resource competition | Calibrated costs predict allocation and a thread-count intervention | One engineered mechanism |
 | Size-selected algal cultures | Equal-biovolume forecasts transfer across selection treatments | Separate populations; binding resource unmeasured |
 | Linguistic genre transfer | Combined letter/phoneme cost improves over letter-only models | Lexical frequencies predict better; physical cost unidentified |
-| Bacterial summary transfer | Population mean predictions are close | Variability and the joint comparison fail |
+| Bacterial transfers | Population means and independent burden assays inform forecasts | Variability and fitted workload correction fail |
 | Cantilever energy transfer | Some damping-to-energy forecasts transfer | Small average gain; spatial-loss and observation failures remain |
 | Chemical / sediment constraints | Independent inputs improve transfer forecasts | Established rivals perform similarly or better; finite-accuracy limits |
 | Chemostat nutrient pulse | Frozen two-budget reweighting fails | Constraint response needs explanation |
@@ -393,19 +393,13 @@ of a conditional resource law; it does not establish the same mechanism in natur
 ### 4.3 Biological closure, predicted means and failed responses
 
 Thirty size-selected *Dunaliella* lineages were regrown separately in the same
-medium (Malerba et al., 2018). Large-selected and small-selected treatment means
-differ by a factor of 10.4 in cell volume, while their geometric mean total
-biovolumes differ by only 2.5%. Control geometric mean capacity is approximately
-18--21% higher than the two extremes. Thus the close extreme-treatment
-comparison does not establish uniform capacity across all lineages or treatments.
-
-Frozen equal-biovolume forecasts give held-out errors of 0.124 and 0.179 log units,
-outperforming a fitted size law and equal cell number under the declared comparisons.
-An assigned carbon-cost exponent is not distinguished from equal biovolume.
-The combined-data cost degree 1.02 is a post-hoc description. This is approximate
-budget closure across separate cultures, not allocation among coexisting size
-classes; the limiting resource was not directly assayed
-([full comparisons](dunaliella-size-budget.md)).
+medium (Malerba et al., 2018). Large- and small-selected treatments differ
+10.4-fold in mean cell volume but only 2.5% in geometric mean total biovolume;
+control capacity is 18--21% higher. Frozen equal-biovolume forecasts have
+held-out errors of 0.124 and 0.179 log units, outperforming fitted size and
+equal-count alternatives. This is approximate budget closure across separate
+cultures, with no directly assayed limiting resource or demonstrated allocation
+among coexisting classes. Supporting S5.3 retains all cost comparisons.
 
 The cell-cycle mechanism transfers a fitted lineage distribution to separate
 *E. coli* batch-culture summaries (Gangan and Athale, 2017). Mean errors are
@@ -441,6 +435,15 @@ X-ray quota. Measurement independence does not guarantee compatible inputs
 passes all 18 primary carbon/nitrogen partial-stock checks, but incomplete group
 coverage and undefined allocation opportunities still prevent an allocation
 test (supporting S5.12).
+
+A separate protein-expression assay predicts cell capacity after changing the
+expressed protein (Borkowski et al., 2018). Calibrating twelve initiation variants
+and withholding ten new-protein responses gives MAE 0.10184 for a fitted
+reciprocal workload model, versus 0.09464 for direct assay transfer, under
+counting measure balanced over seven gene families. The fitted correction fails
+its frozen accuracy and comparative-advantage criteria. Direct transfer is the
+same model with environment factor fixed at 1; the failure concerns the fitted
+correction. Neither identifies an absolute resource cost (supporting S5.16).
 
 ### 4.4 Effective-resource inference and competing forecasts
 
@@ -588,6 +591,10 @@ The supplied 2017 manuscript was inspected privately and is not redistributed.
 Bishop, C. J., and Peres, Y. (2017). *Fractals in Probability and Analysis*.
 Cambridge University Press. Section 1.1.
 <https://www.math.stonybrook.edu/~bishop/fractalbook.pdf>.
+
+Borkowski, O., Bricio, C., Murgiano, M., Rothschild-Mancinelli, B., Stan, G.-B.,
+and Ellis, T. (2018). Cell-free prediction of protein expression costs for growing
+cells. *Nature Communications*, 9, 1457. <https://doi.org/10.1038/s41467-018-03970-x>.
 
 Boyd, S., and Vandenberghe, L. (2004). *Convex Optimization*. Cambridge University Press.
 Sections 4.7 and 5.6. <https://web.stanford.edu/~boyd/cvxbook/>.

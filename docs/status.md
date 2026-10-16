@@ -4,19 +4,27 @@ Last updated 16 October 2026. **Read this first in a new session.** It records w
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
-**16 October — biological transfer design prepared:** the
-[source audit](biology-intervention-source-audit-2026-10-16.md) acquired the
-Borkowski 2018 workbook, methods and article. Publisher and Europe PMC workbook
-and supplement copies match. The [protocol](burden-transfer-protocol-2026-10-16.md)
-will calibrate twelve mKate initiation variants and predict ten new protein
-constructs from separate extract assays. Seven gene families define the
-counting measure; this tests neither log-orthopolic nor linear-orthopolic size
-allocation. The reciprocal free-pool model competes with four fixed alternatives,
-using a target-relevant 0.10 absolute-capacity tolerance. Assays are burden
-proxies, not independently measured absolute ribosome costs. Publication
-summaries are exposed; individual numerical cell targets remain withheld.
-Commit the tested design before calibration, independently verify and seal
-forecasts, then evaluate. The previous completed work is pushed through `0ef8aba`.
+**16 October — biological assay transfer complete:** the
+[new-protein comparison](burden-transfer-results-2026-10-16.md) calibrates
+twelve mKate initiation variants and predicts ten new protein constructs from
+separate extract assays. Family-balanced MAE is **0.10184**, versus **0.09464**
+for direct assay transfer. The fitted reciprocal correction narrowly misses
+the frozen **0.10** accuracy limit and fails the required advantage over three
+of four alternatives. Direct transfer is the same reciprocal family at k=1:
+this limits the fitted environment correction, not the entire functional form.
+Seven families define the counting measure; this tests neither log-orthopolic
+nor linear-orthopolic size allocation or an independently assayed absolute
+resource cost. Five assay inputs extrapolate; shared input errors are unpropagated.
+Design `b1dcb08` precedes calibration; forecasts `bef1f23` precede all ten
+numerical cell responses. Published qualitative outcomes were known.
+Independent verification checks **334 quantities**; forecasts, results,
+verification and figure replay byte-for-byte. Source spreads match sample SD
+despite SEM captions; conflicting incubation descriptions remain unresolved.
+**604 tests** and `make all` pass; registry **42 runs / 1,061 references**,
+with all previous 41 entries preserved. Main 4.3 and supporting S5.16 retain
+the result. The article remains **12 pages**, supporting material **59 pages**,
+with visual checks and no typesetting warnings. Next in the requested domain
+order: a human/language intervention with independent costs or constraints.
 
 **15 October — natural constraint transfer complete:** the
 [narrow-to-wide channel study](grain-channel-results-2026-10-15.md) calibrates
@@ -90,10 +98,11 @@ repeat-build hashes. All 38 earlier registry records are byte-preserved.
 
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
-the package layout for all runners. The suite now passes **598 tests**; the
-registry verifies **41 runs and 1,042 file references**, including the Italian simulation,
+the package layout for all runners. The suite now passes **604 tests**; the
+registry verifies **42 runs and 1,061 file references**, including the Italian simulation,
 retrospective chemostat diagnosis, independent-assay pilot, field-stock audit,
-cantilever transfer, chemical competition, saltation design qualification and grain/channel transfer. The broader programme and subsequent
+cantilever transfer, chemical competition, saltation design qualification,
+grain/channel transfer and biological assay transfer. The broader programme and subsequent
 studies are in [research-brief.md](research-brief.md) and
 [ongoing-research.md](ongoing-research.md).
 
@@ -115,11 +124,13 @@ is 53 pages. Both were visually checked and repeat-build hashes agree.
 **Requested research order:** physics, chemistry, broader natural phenomena,
 biology, then human phenomena including language/culture. The
 [physics-source audit](physics-candidate-audit-2026-10-12.md) retains the alternatives.
-The first physics, chemistry and broader-natural transfers are complete. The
+The first physics, chemistry, broader-natural and biological transfers are complete. The
 saltation candidate remains stopped at simulation qualification; do not fit its
-real responses or change its failed gate. Next prioritize a biological prediction
-with separately measured costs, opportunities and a compatible intervention;
-then extend human/language work. A later grain/channel follow-up needs shared
+real responses or change its failed gate. Next prioritize a human/language
+prediction with independently measured costs or constraints and a compatible
+intervention. Further biological work needs independent physiological inputs;
+do not tune a correction to the now-exposed ten protein targets and call it
+confirmation. A later grain/channel follow-up needs shared
 input uncertainty, a target-relevant tolerance and a separate cohort. Chemistry alternatives
 remain in the [source audit](adsorption-source-audit-2026-10-13.md). Resolve
 source and calibration conventions before fitting; a catalogue of familiar
@@ -258,6 +269,7 @@ discards the authors' programme.
 | 13–14 Oct 2026 | Pure-calibrated chemical competition transfer | 60.1% lower mixture MAE than omitting competition; IAST slightly better; all three engineering gates pass, measurement-scale errors and extrapolation remain; 582 tests, 39 records |
 | 14 Oct 2026 | Sand-transport predictor-only simulation qualification | All six primary discrimination scenarios fail; 54.6–67.2% correct selection versus 80%; no real sand-flux fit; 591 tests, 40 records |
 | 15 Oct 2026 | Grain-assay and hydraulic narrow-to-wide transfer | 42.6% shape and 77.2% wall-correction gains; permissive accuracy pass, low-flux failures and better material-label benchmark; 598 tests, 41 records |
+| 16 Oct 2026 | Extract-assay to living-cell protein-capacity transfer | Fitted correction MAE 0.10184 vs 0.09464 direct; accuracy and joint advantage fail; 604 tests, 42 records |
 
 ## 3. Results to carry forward
 
@@ -356,9 +368,12 @@ The [research brief](research-brief.md) explains the general-law programme;
 
 ## 5. Next steps, in priority order
 
-**Author-directed domain sequence takes priority:** physics, chemistry and a
-broader-natural conditional forecast are complete. Seek a new independently
-qualified biological intervention next, then human/language phenomena. The
+**Author-directed domain sequence takes priority:** physics, chemistry,
+broader-natural and biological conditional forecasts are complete. Seek a
+human/language intervention with independently measured costs or constraints.
+The biological assay transfers information, but its fitted correction fails;
+further work must distinguish an independent resource measurement from an
+inferred workload proxy. Preserve all ten now-exposed outcomes. The
 grain/channel study adds relative predictive improvement but a weak absolute
 accuracy gate; a later extension needs separate data and shared-input uncertainty. Require independent resource/constraint
 inputs, a genuine unused observable, competing predictions and reachable data;
@@ -430,9 +445,11 @@ The existing candidate repairs below remain available in that sequence.
   exponent was examined and the reading passes a second, different prediction. Grades:
   derived, motivated, suggestive, numerology. Source tags in documents: verified, repository result,
   own derivation, unverified.
-- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 598 tests and
+- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 604 tests and
   regenerates the legacy analyses. Later frozen studies have named replay targets;
-  `make grain-channel-transfer` replays the new study to a fresh STUDY_OUTPUT_ROOT. The September results were produced with Python 3.11; results
+  `make burden-transfer` replays the newest study to a fresh STUDY_OUTPUT_ROOT.
+  `make grain-channel-transfer` retains the preceding sediment comparison.
+  The September results were produced with Python 3.11; results
   added on 8–9 October (Gibrat, resource choice, catalogue, aftershocks) with Python 3.13 and the
   pinned packages. Other versions change the older files by at most about $4\times10^{-8}$
   relative. Do not commit such noise; restore those files with `git checkout -- <file>`.

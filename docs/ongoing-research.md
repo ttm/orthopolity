@@ -1,16 +1,23 @@
 # Ongoing research: resume here
 
-**16 October — biological prediction in preparation:**
-[Protocol](burden-transfer-protocol-2026-10-16.md) and
-[source audit](biology-intervention-source-audit-2026-10-16.md) retain the
-accessible Borkowski 2018 assay archive. Calibration uses twelve variants of
-one protein; ten new protein constructs supply separate assay predictors and
-withheld cell responses. Compare reciprocal free-pool transfer with linear,
-affine, constant and direct-assay alternatives, weighting seven gene families
-equally. This counting-measure comparison is neither log-orthopolic nor
-linear-orthopolic allocation across sizes. Absolute costs and congestion are
-not independently identified by these assays. Freeze design before calibration
-and forecasts before target evaluation; no numerical empirical result yet.
+**16 October — biological transfer complete, fitted correction fails:**
+[Results](burden-transfer-results-2026-10-16.md): twelve mKate variants
+calibrate forecasts for ten new protein constructs. Family-balanced MAE
+**0.10184** misses the frozen 0.10 limit; direct assay transfer gives **0.09464**.
+Gains over linear and affine alternatives are only 7.00% and 3.95%, versus the
+required 20%. Direct transfer is the reciprocal model at k=1, so failure limits
+the fitted correction rather than the entire functional family. Seven gene
+families define the counting measure; this is neither log-orthopolic nor
+linear-orthopolic size allocation. Absolute resource costs remain unidentified.
+Design `b1dcb08` precedes calibration, forecasts `bef1f23` precede all ten
+numerical cell targets; published qualitative outcomes were known. Five assay
+inputs extrapolate; normalized shared input errors are unpropagated. Source
+spreads match sample SD rather than caption SEM, and temperature descriptions
+conflict. Independent verification checks 334 quantities; all outputs replay
+byte-for-byte. **604 tests**, **42 registry records / 1,061 references**,
+preserving previous entries. Main 4.3 and supporting S5.16 retain the failed
+prediction; visually checked PDFs are 12/59 pages. Next prioritize a
+human/language intervention with independent resource or constraint inputs.
 
 **15 October — natural constraint transfer complete:**
 [Grain/channel results](grain-channel-results-2026-10-15.md): 19 old sphere
@@ -446,10 +453,12 @@ retrospective validation, not global blinding or prospective data collection.
 
 ## Next actions, in priority order
 
-**Current priority supersedes the older list below:** physics, chemistry and
-broader-natural transfers are now executed. Qualify an independent biological
-intervention, then human/language work. Preserve the failed and qualified studies;
-use the latest status and grain/channel report for specific source limitations.
+**Current priority supersedes the older list below:** physics, chemistry,
+broader-natural and biological transfers are now executed. Qualify a
+human/language intervention with independent costs or constraints. Preserve
+the failed and qualified studies; use the latest status and biological transfer
+report for source limitations. The ten new-protein responses are now exposed;
+fitting a revised correction to them would be exploratory.
 
 1. **Extend the completed inverse application.** The linguistic study now
    supplies an executed inference-and-transfer comparison. A next study should
