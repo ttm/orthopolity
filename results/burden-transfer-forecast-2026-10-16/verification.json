@@ -1,0 +1,12 @@
+{
+  "independent_methods": [
+    "openpyxl extraction",
+    "41-start log-parameter least squares",
+    "centered affine regression",
+    "explicit family-first averaging"
+  ],
+  "maximum_absolute_difference": 5.373444689205087e-09,
+  "numeric_checks": 195,
+  "numerical_outcomes_checked": false,
+  "prediction_sha256": "d8cc39bdeb8bddebba72afb5c40d9eb5af241c3fd625b9bc1d0060ac9ff3926f"
+}
