@@ -1,0 +1,43 @@
+{
+  "retrieved_utc": "2026-10-17T11:42:28.908179+00:00",
+  "commit": "00798db1687a429349370e40e1a726deb35c1ef6",
+  "purpose": "Original source preserved; only identity, canonical-count and independently estimated entropy columns inspected before design; no Duration field numerically decoded",
+  "files": [
+    {
+      "file": "tree.json",
+      "url": "https://api.github.com/repos/keruiduo/SupplMatInfoRate/git/trees/master?recursive=1",
+      "status": 200,
+      "bytes": 2517,
+      "sha256": "eba814c747b84c153ca4e6483544a106ab7fd5ac45d9cade13ddaff96c4eccdc"
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/keruiduo/SupplMatInfoRate/00798db1687a429349370e40e1a726deb35c1ef6/README.md",
+      "status": 200,
+      "bytes": 1779,
+      "sha256": "7d3143f1e4cec22bb35ed8d8581b5784976bd9b4e43d15e0bb4ca78db5cdbaa2"
+    },
+    {
+      "file": "article.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6984970/fullTextXML",
+      "status": 200,
+      "bytes": 124605,
+      "sha256": "a955108ccdc0863a444e0f6da2e0f9a5eba60d2b0e336f07bc98ce2eb5066177"
+    },
+    {
+      "file": "InfoRate.Rmd",
+      "url": "https://raw.githubusercontent.com/keruiduo/SupplMatInfoRate/00798db1687a429349370e40e1a726deb35c1ef6/InfoRate.Rmd",
+      "status": 200,
+      "bytes": 150828,
+      "sha256": "189caf9591518fee1af1430b2c4a3935382a0499e58855b502216c551fa523bb"
+    },
+    {
+      "file": "InfoRateData.csv",
+      "url": "https://raw.githubusercontent.com/keruiduo/SupplMatInfoRate/00798db1687a429349370e40e1a726deb35c1ef6/InfoRateData.csv",
+      "status": 200,
+      "bytes": 96064,
+      "sha256": "f4dde6def980ed4c461ad8fd666af64cbbaa967a2ac73702855fc70484c0732a",
+      "retrieved_utc": "2026-10-17T11:44:50.421562+00:00"
+    }
+  ]
+}

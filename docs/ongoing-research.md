@@ -1,5 +1,16 @@
 # Ongoing research: resume here
 
+**17 October — source qualification complete, speech design prepared:** the
+[human-source audit](human-source-qualification-2026-10-17.md) stops foraging
+without participant access. Fixed repeated blocks and programmed constraints
+do not themselves yield a distinct orthopolity forecast. The
+[speech protocol](speech-capacity-protocol-2026-10-17.md) freezes a seven-language
+calibration and ten-language/eight-family transfer using independent written
+entropy, with four rivals including same-text duration. Publisher/GitHub agree
+on 2,288 readings; the paper states 2,265 without an identified exclusion.
+No numerical duration has been decoded. Complete the design/forecast freezes
+before evaluation; known published equal-information-rate findings remain exposed.
+
 **16 October — biological transfer complete, fitted correction fails:**
 [Results](burden-transfer-results-2026-10-16.md): twelve mKate variants
 calibrate forecasts for ten new protein constructs. Family-balanced MAE

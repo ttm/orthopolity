@@ -1,8 +1,23 @@
 # Project status and handoff
 
-Last updated 16 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 17 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**17 October — human-source qualification and speech design:** the
+[methods/code audit](human-source-qualification-2026-10-17.md) stops the
+foraging candidate before participant-data access: fixed blocks do not supply
+the proposed cost intervention or a distinct allocation prediction. Independent
+written-corpus entropy qualifies a narrower [speech-capacity transfer](speech-capacity-protocol-2026-10-17.md).
+Seven Indo-European languages will calibrate predictions for ten languages in
+eight other families, with constant-syllabic, unigram, fitted-power and same-text
+alternatives. Predictor-only inspection finds 2,288 readings, matching publisher
+and GitHub bytes but differing from the article's 2,265; retain this discrepancy.
+Eight synthetic/access-control tests precede the local freeze. No numeric real
+duration has yet been decoded. Freeze design, independently verify and seal
+forecasts, then evaluate. The test concerns language-level geometric mean
+capacity under hierarchical counting measure, neither log-orthopolic nor
+linear-orthopolic size allocation. Published aggregate results are known.
 
 **16 October — biological assay transfer complete:** the
 [new-protein comparison](burden-transfer-results-2026-10-16.md) calibrates

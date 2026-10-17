@@ -1,0 +1,36 @@
+{
+  "retrieved_utc": "2026-10-17T11:41:17.734302+00:00",
+  "commit": "780c5b117dff0eec2a85d8e9c9473b7eaf7dfc0f",
+  "purpose": "Task metadata, program and published article only; no participant CSV or fitted model arrays acquired",
+  "transport": "System curl with TLS certificate verification; initial Python urllib attempt on 16 October failed local CA verification and acquired no files",
+  "files": [
+    {
+      "file": "tree.json",
+      "url": "https://api.github.com/repos/noraharhen/Harhen-Bornstein-2023-Overharvesting-as-Rational-Learning/git/trees/780c5b117dff0eec2a85d8e9c9473b7eaf7dfc0f?recursive=1",
+      "status": 200,
+      "bytes": 756932,
+      "sha256": "57b4249a0f051c4f7d9a6f3fc8f3fe97834d7080cc2ff03046d2f5cfc017593a"
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/noraharhen/Harhen-Bornstein-2023-Overharvesting-as-Rational-Learning/780c5b117dff0eec2a85d8e9c9473b7eaf7dfc0f/README.md",
+      "status": 200,
+      "bytes": 1949,
+      "sha256": "defc257e1241a2e9303cace8f30f7eb97006e77a2490c8bd89bf38fe8a52d66c"
+    },
+    {
+      "file": "task.js",
+      "url": "https://raw.githubusercontent.com/noraharhen/Harhen-Bornstein-2023-Overharvesting-as-Rational-Learning/780c5b117dff0eec2a85d8e9c9473b7eaf7dfc0f/experiment/run_exp/static/js/task.js",
+      "status": 200,
+      "bytes": 53973,
+      "sha256": "625b4c4dc0dd60076ea8d507d525b5e03e11fe5ca13eb541814b4b7c63b2e40c"
+    },
+    {
+      "file": "article.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10068834/fullTextXML",
+      "status": 200,
+      "bytes": 152498,
+      "sha256": "b753251c6e104485db3be4c31129f422b3a5106a92ed73e445b72607c6c3ad90"
+    }
+  ]
+}

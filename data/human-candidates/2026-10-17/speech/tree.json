@@ -1,0 +1,71 @@
+{
+  "sha": "00798db1687a429349370e40e1a726deb35c1ef6",
+  "url": "https://api.github.com/repos/keruiduo/SupplMatInfoRate/git/trees/00798db1687a429349370e40e1a726deb35c1ef6",
+  "tree": [
+    {
+      "path": ".Rhistory",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bad0f5197f88527b9c00dcf833aa31d1d6e8df2b",
+      "size": 134,
+      "url": "https://api.github.com/repos/keruiduo/SupplMatInfoRate/git/blobs/bad0f5197f88527b9c00dcf833aa31d1d6e8df2b"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72a270df943658f9daa1fad534a40b2f233fbdd0",
+      "size": 64,
+      "url": "https://api.github.com/repos/keruiduo/SupplMatInfoRate/git/blobs/72a270df943658f9daa1fad534a40b2f233fbdd0"
+    },
+    {
+      "path": "AutomaticSylDetect.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4bd61c98eedd546eedab3ba7083a3be594017cd",
+      "size": 70467,
+      "url": "https://api.github.com/repos/keruiduo/SupplMatInfoRate/git/blobs/f4bd61c98eedd546eedab3ba7083a3be594017cd"
+    },
+    {
+      "path": "BSD-3.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6946c832b948444411f773f612be7dfba3aa004d",
+      "size": 1512,
+      "url": "https://api.github.com/repos/keruiduo/SupplMatInfoRate/git/blobs/6946c832b948444411f773f612be7dfba3aa004d"
+    },
+    {
+      "path": "InfoRate.Rmd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8a26c664a895d96fa116060a52641380551c207",
+      "size": 150828,
+      "url": "https://api.github.com/repos/keruiduo/SupplMatInfoRate/git/blobs/b8a26c664a895d96fa116060a52641380551c207"
+    },
+    {
+      "path": "InfoRate.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1805e69b12d3e1d5d4b868ccbd7a27f1b85ccd50",
+      "size": 12213223,
+      "url": "https://api.github.com/repos/keruiduo/SupplMatInfoRate/git/blobs/1805e69b12d3e1d5d4b868ccbd7a27f1b85ccd50"
+    },
+    {
+      "path": "InfoRateData.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac14125a1b20fd78366f3a437a880df3ffdad5cb",
+      "size": 96064,
+      "url": "https://api.github.com/repos/keruiduo/SupplMatInfoRate/git/blobs/ac14125a1b20fd78366f3a437a880df3ffdad5cb"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "620797d4e8b8404e9967b8b054a2548ed079591a",
+      "size": 1779,
+      "url": "https://api.github.com/repos/keruiduo/SupplMatInfoRate/git/blobs/620797d4e8b8404e9967b8b054a2548ed079591a"
+    }
+  ],
+  "truncated": false
+}

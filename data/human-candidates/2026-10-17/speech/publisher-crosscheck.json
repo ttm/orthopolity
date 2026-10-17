@@ -1,0 +1,12 @@
+{
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6984970/supplementaryFiles",
+  "retrieved_utc": "2026-10-17T11:45:54.515052+00:00",
+  "archive_bytes": 8578817,
+  "archive_sha256": "79e4f9225ea68a4e6d7c9304d66135abf05d29162d4124e082a824749c96efbd",
+  "member": "aaw2594_Data_file_S1.csv",
+  "member_bytes": 96064,
+  "member_sha256": "f4dde6def980ed4c461ad8fd666af64cbbaa967a2ac73702855fc70484c0732a",
+  "github_bytes_match": true,
+  "numeric_duration_decoded": false,
+  "other_data_arrays_opened": false
+}
