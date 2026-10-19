@@ -214,3 +214,25 @@ byte-for-byte. Acquisition URLs and hashes are retained. Forecasts, scores and
 figures are this project's reanalysis, not author-endorsed findings; the source
 SD/SEM and incubation-description discrepancies are recorded in
 `docs/burden-transfer-results-2026-10-16.md`.
+
+## Human-source qualification and speech transfer (17 October 2026)
+
+Attribute Harhen, N. C., and Bornstein, A. M. (2023),
+<https://doi.org/10.1073/pnas.2216524120>, for the original foraging task and
+article in `human-candidates/2026-10-17/foraging/`. Source code is retained
+unchanged for the methods audit, not executed or relicensed as project software.
+No blanket reuse license is inferred for that repository. No participant data
+was acquired for this candidate.
+
+Attribute Coupé, C., Oh, Y. M., Dediu, D., and Pellegrino, F. (2019),
+*Different languages, similar encoding efficiency: Comparable information rates
+across the human communicative niche*, Science Advances 5, eaaw2594,
+<https://doi.org/10.1126/sciadv.aaw2594>, for the original speech data. Its
+repository README assigns [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+to the data and BSD-3 to RMarkdown code; the archived article separately states
+CC BY-NC 4.0. Preserve these distinct notices. Original files are unchanged;
+the original BSD copyright, conditions and disclaimer are retained separately
+in `human-candidates/2026-10-19/speech-notices/BSD-3.txt`.
+Forecasts, errors and figures are this project's reanalysis, not author-endorsed
+results. The source qualification and result reports retain measurement and
+published-count discrepancies.

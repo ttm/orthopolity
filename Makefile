@@ -39,6 +39,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: saltation-sources saltation-qualification saltation-registry
 .PHONY: grain-channel-sources grain-channel-transfer grain-channel-registry
 .PHONY: burden-transfer-sources burden-transfer burden-transfer-registry
+.PHONY: speech-capacity-sources speech-capacity speech-capacity-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -75,9 +76,26 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/cantilever-transfer-2026-10-13/cantilever-presentation.png \
  results/adsorption-transfer-2026-10-13/adsorption.png \
  results/grain-channel-transfer-2026-10-15/transfer.png \
- results/burden-transfer-2026-10-16/transfer.png
+ results/burden-transfer-2026-10-16/transfer.png \
+ results/speech-capacity-2026-10-17/transfer.png
 
 all: data test analyses
+
+speech-capacity-sources: ## verify the speech archive without decoding durations
+	$(PY) experiments/run_speech_capacity.py --stage verify
+
+speech-capacity: speech-capacity-sources ## replay frozen cross-family capacity forecasts
+	$(PY) experiments/run_speech_capacity.py --stage predict --freeze-commit eeab4d3 --output $(STUDY_OUTPUT_ROOT)/speech-capacity-forecast
+	cmp results/speech-capacity-forecast-2026-10-17/predictions.json $(STUDY_OUTPUT_ROOT)/speech-capacity-forecast/predictions.json
+	$(PY) experiments/run_speech_capacity.py --stage evaluate --freeze-commit eeab4d3 --prediction-commit 26b78d8 --predictions results/speech-capacity-forecast-2026-10-17/predictions.json --output $(STUDY_OUTPUT_ROOT)/speech-capacity
+	cmp results/speech-capacity-2026-10-17/result.json $(STUDY_OUTPUT_ROOT)/speech-capacity/result.json
+	$(PY) experiments/verify_speech_capacity.py --predictions $(STUDY_OUTPUT_ROOT)/speech-capacity-forecast/predictions.json --result $(STUDY_OUTPUT_ROOT)/speech-capacity/result.json --output $(STUDY_OUTPUT_ROOT)/speech-capacity/verification.json
+	cmp results/speech-capacity-2026-10-17/verification.json $(STUDY_OUTPUT_ROOT)/speech-capacity/verification.json
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/plot_speech_capacity.py --result $(STUDY_OUTPUT_ROOT)/speech-capacity/result.json --output $(STUDY_OUTPUT_ROOT)/speech-capacity/transfer.png
+	cmp results/speech-capacity-2026-10-17/transfer.png $(STUDY_OUTPUT_ROOT)/speech-capacity/transfer.png
+
+speech-capacity-registry: ## append the actual cross-family speech transfer
+	$(PY) experiments/register_speech_capacity.py
 
 burden-transfer-sources: ## verify the biological source archive without opening numerical targets
 	$(PY) experiments/run_burden_transfer.py --stage verify
@@ -180,7 +198,7 @@ paired-phosphorus-registry: ## append the retained pilot, preserving prior runs
 install:
 	$(PY) -m pip install -r requirements.txt -e ".[analyses,geospatial]"
 
-data: grain-channel-sources burden-transfer-sources ## verify frozen legacy inputs and recent public archives
+data: grain-channel-sources burden-transfer-sources speech-capacity-sources ## verify frozen legacy inputs and recent public archives
 	$(PY) experiments/fetch_data.py
 
 restore-data:    ## explicitly permit network restoration of missing snapshots

@@ -1,0 +1,14 @@
+{
+  "retrieved_utc": "2026-10-19T03:36:26.018421+00:00",
+  "purpose": "Original code license retained after study completion; no frozen analytical input changed",
+  "commit": "00798db1687a429349370e40e1a726deb35c1ef6",
+  "files": [
+    {
+      "file": "BSD-3.txt",
+      "url": "https://raw.githubusercontent.com/keruiduo/SupplMatInfoRate/00798db1687a429349370e40e1a726deb35c1ef6/BSD-3.txt",
+      "bytes": 1512,
+      "sha256": "b626b06818e417ddc27cab7897c22154973434a00d7c0874dd2408f24ce8dfe6",
+      "git_blob_sha1": "6946c832b948444411f773f612be7dfba3aa004d"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 **Capacity, physical realizations, and effective-resource inference**
 
-> Research manuscript, revised 16 October 2026. Detailed derivations, complete
+> Research manuscript, revised 19 October 2026. Detailed derivations, complete
 > comparisons and analysis histories are retained in the [supporting material](supporting-material.md).
 > Empirical studies include exploration, locally frozen forecasts and retrospective
 > reanalyses; none is externally preregistered. Authorship and submission declarations
@@ -23,8 +23,8 @@ variation supply independently specified departures. The framework also supports
 inference: restricted combinations of measured resource requirements produce identifiable
 predictions across environments. Tests show accurate allocation forecasts in an engineered
 system, pure-to-mixture chemical competition, approximate budget closure across
-separately grown algal cultures, and predictive gains from combined symbolic costs
-in language. A conditional redistribution bound
+separately grown algal cultures, and speech-duration gains from independently
+estimated contextual information. A conditional redistribution bound
 shows why changing resource prices alone cannot explain one biological failure.
 Other forecasts fail, and some natural
 catalogues cannot support the intended test after observation and estimator checks.
@@ -350,19 +350,18 @@ failure under changed assumptions ([derivation](cell-division.md)).
 
 ### 4.1 Predictions and comparisons
 
-A test specifies its objects, measure, resource or cost, constraints and observation
-model, then evaluates a forecast on additional observations. Prediction after
-independent calibration is distinct from an identity evaluated on the same data.
-Our studies retain frozen inputs, forecasts, comparators and outcomes in a
-[run registry](run-registry.md). Published summaries were sometimes known and
-some raw outcomes had been exposed; the supporting material records that chronology.
-Freezing a later analysis does not erase earlier exposure.
+A test specifies its objects, measure, costs, constraints and observation model
+before predicting an additional observable. Independent calibration is distinct
+from an identity evaluated on the same data. The [run registry](run-registry.md)
+preserves inputs, forecasts, comparators and outcomes. Supporting material
+discloses prior access to published summaries or raw outcomes; freezing a later
+analysis does not erase that exposure.
 
 | Evidence | Established outcome | Scope or unresolved limitation |
 |---|---|---|
 | Runtime resource competition | Calibrated costs predict allocation and a thread-count intervention | One engineered mechanism |
 | Size-selected algal cultures | Equal-biovolume forecasts transfer across selection treatments | Separate populations; binding resource unmeasured |
-| Linguistic genre transfer | Combined letter/phoneme cost improves over letter-only models | Lexical frequencies predict better; physical cost unidentified |
+| Language transfers | Entropy predicts speech; symbolic costs transfer across genres | Known capacity account; physical cost and neutrality unidentified |
 | Bacterial transfers | Population means and independent burden assays inform forecasts | Variability and fitted workload correction fail |
 | Cantilever energy transfer | Some damping-to-energy forecasts transfer | Small average gain; spatial-loss and observation failures remain |
 | Chemical / sediment constraints | Independent inputs improve transfer forecasts | Established rivals perform similarly or better; finite-accuracy limits |
@@ -392,40 +391,34 @@ of a conditional resource law; it does not establish the same mechanism in natur
 
 ### 4.3 Biological closure, predicted means and failed responses
 
-Thirty size-selected *Dunaliella* lineages were regrown separately in the same
-medium (Malerba et al., 2018). Large- and small-selected treatments differ
+In separately regrown *Dunaliella* cultures (Malerba et al., 2018), large- and
+small-selected treatments differ
 10.4-fold in mean cell volume but only 2.5% in geometric mean total biovolume;
 control capacity is 18--21% higher. Frozen equal-biovolume forecasts have
 held-out errors of 0.124 and 0.179 log units, outperforming fitted size and
 equal-count alternatives. This is approximate budget closure across separate
-cultures, with no directly assayed limiting resource or demonstrated allocation
-among coexisting classes. Supporting S5.3 retains all cost comparisons.
+cultures; a limiting resource and allocation among coexisting classes remain
+unmeasured (supporting S5.3).
 
-The cell-cycle mechanism transfers a fitted lineage distribution to separate
-*E. coli* batch-culture summaries (Gangan and Athale, 2017). Mean errors are
-2.72% and 0.447%, versus 20.32% and 7.07% for lineage sampling, but variability
-is overpredicted by 4.61% and 19.69%; the joint criterion fails. No target
-parameter is fitted. Rounded summaries, length as a mass proxy and unverified
-physiological equivalence limit the result. Supporting material retains the
-distribution formulas and full comparison.
+The cell-cycle mechanism predicts separate *E. coli* batch-culture means
+more accurately than lineage sampling (Gangan and Athale, 2017): errors
+are 2.72% and 0.447%, but variability is overpredicted and the joint criterion
+fails. Rounded summaries, length as a mass proxy and unverified physiological
+equivalence limit the transfer; supporting S5.6 retains all comparisons.
 
-A nutrient-pulse experiment provides a direct failed response forecast. In twelve
-held-out chemostat polycultures, the frozen two-budget C:N reweighting rule allows
-at most 0.05--0.12 total variation, whereas observed maxima over days 0--12
-were 0.29--0.49. The predicted
-direction holds in only four vessels, and none of the frozen forecasts improves
-appreciably on persistence. None met the declared recovery criterion by day 12
-([response report](chemostat-response.md); Wojcik et al., 2025).
+A nutrient-pulse forecast fails in twelve held-out chemostat polycultures:
+frozen C:N reweighting permits at most 0.05--0.12 total variation, versus
+observed maxima of 0.29--0.49 over days 0--12. Direction is correct in only
+four vessels. No forecast improves appreciably on persistence; no vessel meets
+the recovery criterion (Wojcik et al., 2025; supporting S5.3).
 
-A [retrospective follow-up](chemostat-capacity-followup-results-2026-10-11.md)
-allows arbitrary nonnegative C:N prices, measured preliminary quota changes
-and every pooled-species mixture. Even so, observed redistribution exceeds the
-resulting bound in 17/36 comparisons across eight of twelve vessels. Under
-transferred quotas and fixed allocation opportunities, price adjustment alone
-cannot explain the failure. Separate-culture quotas do not establish mixed-vessel
-physiology, and assay uncertainty is unavailable. This conditional diagnosis
-identifies what a revised explanation must change: physiology, opportunities
-or the specified relation. Complete bounds are in supporting section S5.10.
+A retrospective follow-up allows arbitrary nonnegative C:N prices, preliminary
+quota changes and all pooled-species mixtures. Redistribution still exceeds
+the bound in 17/36 comparisons across eight vessels. Under transferred quotas
+and fixed opportunities, price adjustment alone cannot explain the failure.
+Separate-culture quotas do not establish mixed-vessel physiology, and assay
+uncertainty is unavailable. A revised explanation must change physiology,
+opportunities or the specified relation (supporting S5.10).
 
 A subsequent [independent-assay pilot](paired-phosphorus-results-2026-10-12.md)
 also fails: one eligible test culture has 34.9 million cells/mL, versus 5.55
@@ -436,34 +429,36 @@ passes all 18 primary carbon/nitrogen partial-stock checks, but incomplete group
 coverage and undefined allocation opportunities still prevent an allocation
 test (supporting S5.12).
 
-A separate protein-expression assay predicts cell capacity after changing the
-expressed protein (Borkowski et al., 2018). Calibrating twelve initiation variants
-and withholding ten new-protein responses gives MAE 0.10184 for a fitted
-reciprocal workload model, versus 0.09464 for direct assay transfer, under
-counting measure balanced over seven gene families. The fitted correction fails
-its frozen accuracy and comparative-advantage criteria. Direct transfer is the
-same model with environment factor fixed at 1; the failure concerns the fitted
-correction. Neither identifies an absolute resource cost (supporting S5.16).
+After calibration on twelve initiation variants, a separate protein-expression
+assay predicts ten new-protein cell responses (Borkowski et al., 2018). Under
+counting measure balanced over seven gene families, fitted reciprocal workload
+MAE is 0.10184 versus 0.09464 for direct transfer. The fitted correction fails
+both accuracy and advantage criteria. Direct transfer fixes the same model's
+environment factor at 1; neither identifies absolute resource cost
+(supporting S5.16).
 
-### 4.4 Effective-resource inference and competing forecasts
+### 4.4 Information costs and language transfer
 
-On a fixed vocabulary, a counting measure over word types and candidate symbolic
-cost $Q_w=L_w^{\theta_L}P_w^{\theta_P}$ imply
-$p(w)\propto L_w^{-\theta_L}P_w^{-\theta_P}$. Here $L$ and $P$ are letter
-and dictionary phoneme counts. They do not measure acoustic energy or meaning.
-Training on three genres gives exponents 0.5153 and 1.8275. The vocabulary and
-forecasts are fixed before decoding two withheld genres
-([linguistic study](linguistic-resources.md)).
+Independent written-corpus entropy predicts pause-filtered speech duration
+through $\widehat D=NS\,ID/C$, where $NS$ counts canonical syllables and $ID$
+measures within-word conditional information (Coupé et al., 2019). Seven
+Indo-European languages calibrate $C=40.40$ bits/s; sealed forecasts predict
+ten languages from eight other families. Under counting measure balanced over
+families, languages, speakers and available texts, language log MAE
+is 0.0741: 52.0% below constant syllabic rate, 48.8% below unigram information,
+21.5% below a fitted exponent and 27.4% below same-text duration. All frozen
+criteria pass. Individual errors can cancel within a language; Thai's discrepancy
+slightly exceeds a factor of 1.20. This transfers an established capacity
+account, without identifying metabolic cost or neutral word allocation
+(supporting S5.17).
 
-The composite improves held-out log loss over fitted letter power by 0.1843 nats
-per token; the paired document-bootstrap interval is $[-0.1967,-0.1696]$ for
-composite minus letter-power loss. Smoothed training frequencies nevertheless
-perform much better: losses are 6.136 for frequencies, 7.055 for the composite
-and 7.239 for letter power. Inferred-cost shares also remain far from uniform.
-The result establishes transferable information in combined symbolic features,
-while physical resource identification and neutral allocation remain unresolved.
-Contextual and information-based explanations are relevant comparisons
-(Piantadosi et al., 2011).
+For written word types, a symbolic cost $Q_w=L_w^{\theta_L}P_w^{\theta_P}$ under
+counting measure gives $p(w)\propto1/Q_w$, with letter count $L$ and dictionary
+phoneme count $P$. The fixed composite improves held-out genres over letter
+power, but lexical frequencies predict better.
+Cost shares remain nonuniform, and these symbols do not measure acoustic energy.
+Supporting S5.5 retains all comparisons, including the contextual motivation
+of Piantadosi et al. (2011).
 
 ### 4.5 Geometric predictions and observation limits
 
@@ -606,6 +601,11 @@ oblateness. *Geophysical Journal International*, 199(2), 800–804.
 Condon, J. J., and Ransom, S. M. (2016). *Essential Radio Astronomy*.
 Princeton University Press. Chapter 2, radiation and absorption.
 <https://www.cv.nrao.edu/~sransom/web/Ch2.html>.
+
+Coupé, C., Oh, Y. M., Dediu, D., and Pellegrino, F. (2019). Different languages,
+similar encoding efficiency: Comparable information rates across the human
+communicative niche. *Science Advances*, 5, eaaw2594.
+<https://doi.org/10.1126/sciadv.aaw2594>.
 
 Deal, E., et al. (2026). Generalizing sediment transport experiments from narrow
 flumes to wider channels. *Journal of Geophysical Research: Earth Surface*, 131.

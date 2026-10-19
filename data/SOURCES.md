@@ -367,3 +367,24 @@ burden-transfer-sources` verifies the original bytes offline, while `make
 burden-transfer` replays and compares the complete study. See
 `docs/biology-intervention-source-audit-2026-10-16.md` and
 `docs/burden-transfer-results-2026-10-16.md` for exposure chronology and results.
+
+## Human-source qualification and speech-capacity transfer
+
+`human-candidates/2026-10-17/foraging/` retains only task/source metadata and
+the published article for Harhen and Bornstein (2023),
+<https://doi.org/10.1073/pnas.2216524120>, repository commit
+`780c5b117dff0eec2a85d8e9c9473b7eaf7dfc0f`. No participant data was acquired;
+the proposed intervention stops at source qualification.
+
+`human-candidates/2026-10-17/speech/` retains Coupé et al. (2019),
+<https://doi.org/10.1126/sciadv.aaw2594>, original data and analysis-source
+metadata at `keruiduo/SupplMatInfoRate` commit
+`00798db1687a429349370e40e1a726deb35c1ef6`. Publisher S1 and GitHub data agree
+byte-for-byte; both contain 2,288 readings despite the article's 2,265 statement.
+Receipts, exact URLs and SHA-256 values remain with the sources. The automatic
+speech-detection dataset and rendered original analysis report were not used.
+`make speech-capacity-sources` verifies bytes without interpreting durations;
+`make speech-capacity` reproduces the locally frozen comparison.
+The original BSD code notice and its checksum receipt were added separately in
+`human-candidates/2026-10-19/speech-notices/`, verified against the already
+archived repository tree; this does not change any frozen analytical input.

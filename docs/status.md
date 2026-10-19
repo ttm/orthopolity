@@ -1,23 +1,37 @@
 # Project status and handoff
 
-Last updated 17 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 19 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
-**17 October — human-source qualification and speech design:** the
-[methods/code audit](human-source-qualification-2026-10-17.md) stops the
-foraging candidate before participant-data access: fixed blocks do not supply
-the proposed cost intervention or a distinct allocation prediction. Independent
-written-corpus entropy qualifies a narrower [speech-capacity transfer](speech-capacity-protocol-2026-10-17.md).
-Seven Indo-European languages will calibrate predictions for ten languages in
-eight other families, with constant-syllabic, unigram, fitted-power and same-text
-alternatives. Predictor-only inspection finds 2,288 readings, matching publisher
-and GitHub bytes but differing from the article's 2,265; retain this discrepancy.
-Eight synthetic/access-control tests precede the local freeze. No numeric real
-duration has yet been decoded. Freeze design, independently verify and seal
-forecasts, then evaluate. The test concerns language-level geometric mean
-capacity under hierarchical counting measure, neither log-orthopolic nor
-linear-orthopolic size allocation. Published aggregate results are known.
+**17–19 October — speech-capacity transfer complete:** independent written-corpus
+entropy improves [speech-duration forecasts](speech-capacity-results-2026-10-17.md)
+from seven Indo-European calibration languages to ten languages in eight other
+families. Inferred capacity is **40.40 bits/s**; primary language log MAE is
+**0.07411**, with gains of **52.00%** over constant syllabic rate, **48.85%**
+over unigram entropy, **21.47%** over a fitted power and **27.38%** over
+same-text duration. All frozen rules pass. This is an average language-level
+result: individual errors can cancel, and Thai's discrepancy factor is 1.20144.
+Hierarchical counting measure balances families, languages, speakers and available
+texts; this is neither log-orthopolic nor linear-orthopolic size allocation.
+The established equal-information-rate account and publication aggregates were
+known; the result does not identify metabolic costs or a unique orthopolity
+mechanism. Uneven missing-text coverage, rounded entropy uncertainty and the
+2,288 archive rows versus 2,265 in the article remain qualifications.
+Design **eeab4d3** preceded calibration; verified forecasts **26b78d8** preceded
+all 1,499 numerical target durations. Independent calculation checks **25,472
+quantities**; forecasts, scores, verification and figure replay byte-for-byte.
+**612 tests** and `make all` pass; registry **43 runs / 1,086 references**,
+preserving the earlier 42 entries. Main 4.4 and supporting S5.17 carry the result.
+The main article remains **12 pages** after condensing repeated biological
+details retained in supporting material, now **60 pages**. Both PDFs are
+visually checked, build without typesetting warnings and reproduce byte-for-byte.
+The [foraging audit](human-source-qualification-2026-10-17.md) remains stopped
+before participant access: fixed repeated blocks do not supply the proposed
+cost intervention or a distinct allocation prediction. The first pass through
+the requested domain sequence is complete. Next seek a separate cohort or
+constraint intervention with predictions that distinguish competing mechanisms;
+do not fit a correction to these exposed speech targets and call it confirmation.
 
 **16 October — biological assay transfer complete:** the
 [new-protein comparison](burden-transfer-results-2026-10-16.md) calibrates
@@ -118,11 +132,11 @@ repeat-build hashes. All 38 earlier registry records are byte-preserved.
 
 **Unified main, 9 October:** at the user's request, `py314-and-package-names`
 was merged with the current `origin/main`, preserving both histories and using
-the package layout for all runners. The suite now passes **604 tests**; the
-registry verifies **42 runs and 1,061 file references**, including the Italian simulation,
+the package layout for all runners. The suite now passes **612 tests**; the
+registry verifies **43 runs and 1,086 file references**, including the Italian simulation,
 retrospective chemostat diagnosis, independent-assay pilot, field-stock audit,
 cantilever transfer, chemical competition, saltation design qualification,
-grain/channel transfer and biological assay transfer. The broader programme and subsequent
+grain/channel transfer, biological assay transfer and speech-capacity transfer. The broader programme and subsequent
 studies are in [research-brief.md](research-brief.md) and
 [ongoing-research.md](ongoing-research.md).
 
@@ -144,11 +158,11 @@ is 53 pages. Both were visually checked and repeat-build hashes agree.
 **Requested research order:** physics, chemistry, broader natural phenomena,
 biology, then human phenomena including language/culture. The
 [physics-source audit](physics-candidate-audit-2026-10-12.md) retains the alternatives.
-The first physics, chemistry, broader-natural and biological transfers are complete. The
+The first physics, chemistry, broader-natural, biological and human/language transfers are complete. The
 saltation candidate remains stopped at simulation qualification; do not fit its
-real responses or change its failed gate. Next prioritize a human/language
-prediction with independently measured costs or constraints and a compatible
-intervention. Further biological work needs independent physiological inputs;
+real responses or change its failed gate. Next prioritize a prediction with
+independently measured costs or constraints and a compatible intervention that
+distinguishes mechanisms. Further biological work needs independent physiological inputs;
 do not tune a correction to the now-exposed ten protein targets and call it
 confirmation. A later grain/channel follow-up needs shared
 input uncertainty, a target-relevant tolerance and a separate cohort. Chemistry alternatives
@@ -290,6 +304,7 @@ discards the authors' programme.
 | 14 Oct 2026 | Sand-transport predictor-only simulation qualification | All six primary discrimination scenarios fail; 54.6–67.2% correct selection versus 80%; no real sand-flux fit; 591 tests, 40 records |
 | 15 Oct 2026 | Grain-assay and hydraulic narrow-to-wide transfer | 42.6% shape and 77.2% wall-correction gains; permissive accuracy pass, low-flux failures and better material-label benchmark; 598 tests, 41 records |
 | 16 Oct 2026 | Extract-assay to living-cell protein-capacity transfer | Fitted correction MAE 0.10184 vs 0.09464 direct; accuracy and joint advantage fail; 604 tests, 42 records |
+| 17–19 Oct 2026 | Independent entropy predicts speech across language families | Primary log MAE 0.07411; all frozen rules pass; 52.00% gain over syllabic rate; known capacity account, not unique law evidence; 612 tests, 43 records |
 
 ## 3. Results to carry forward
 
@@ -335,6 +350,16 @@ grow proportionally sit near ζ = 1; event catalogues and cascades mostly below 
 | Italian magnitude prerequisite (simulation) | 45/56 required scenarios fail; real Italian sequence/response fitting not run | `results/italian-magnitude-validation-2026-10-10/summary.json` |
 
 ## 4. Current assessment
+
+The speech transfer adds an independent informational predictor that improves
+on all four declared alternatives in a fixed family split. It makes the value
+of specifying a resource before a target response concrete. The inferred
+capacity account is established in the source literature; this comparison does
+not distinguish its mechanism from orthopolity or establish neutral allocation.
+Taken with chemical competition and the failed biological correction, it gives
+the article useful predictive successes and informative limits. The next
+scientific gain should distinguish mechanisms or explain a departure with new
+inputs and unused outcomes, rather than accumulate another familiar exponent.
 
 The chemistry study adds a substantial, real-data prediction gain from including
 independently calibrated competition. It passes its declared finite-accuracy
@@ -388,9 +413,11 @@ The [research brief](research-brief.md) explains the general-law programme;
 
 ## 5. Next steps, in priority order
 
-**Author-directed domain sequence takes priority:** physics, chemistry,
-broader-natural and biological conditional forecasts are complete. Seek a
-human/language intervention with independently measured costs or constraints.
+**The first author-directed domain sequence is complete:** physics, chemistry,
+broader-natural, biological and human/language conditional forecasts are retained.
+Seek an independent cohort or intervention with separately measured costs or
+constraints and a prediction that distinguishes mechanisms. The speech result
+transfers a known capacity account; its target residuals are now exposed.
 The biological assay transfers information, but its fitted correction fails;
 further work must distinguish an independent resource measurement from an
 inferred workload proxy. Preserve all ten now-exposed outcomes. The
@@ -465,10 +492,10 @@ The existing candidate repairs below remain available in that sequence.
   exponent was examined and the reading passes a second, different prediction. Grades:
   derived, motivated, suggestive, numerology. Source tags in documents: verified, repository result,
   own derivation, unverified.
-- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 604 tests and
+- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 612 tests and
   regenerates the legacy analyses. Later frozen studies have named replay targets;
-  `make burden-transfer` replays the newest study to a fresh STUDY_OUTPUT_ROOT.
-  `make grain-channel-transfer` retains the preceding sediment comparison.
+  `make speech-capacity` replays the newest study to a fresh STUDY_OUTPUT_ROOT.
+  `make burden-transfer` and `make grain-channel-transfer` retain the preceding comparisons.
   The September results were produced with Python 3.11; results
   added on 8–9 October (Gibrat, resource choice, catalogue, aftershocks) with Python 3.13 and the
   pinned packages. Other versions change the older files by at most about $4\times10^{-8}$
@@ -500,6 +527,7 @@ The existing candidate repairs below remain available in that sequence.
 | Latest lake follow-up | [metric/basin results](lake-metric-followup-results-2026-10-09.md); [frozen protocol](lake-metric-followup-protocol-2026-10-09.md); [basin sources](hydrobasins-source-2026-10-09.md) |
 | Latest seismic qualification | [results](seismic-qualification-results-2026-10-10.md); [frozen supplement](seismic-qualification-protocol-2026-10-10.md); `results/seismic-qualification-2026-10-10/` |
 | Natural transport design qualification | [failed simulation gate](saltation-qualification-results-2026-10-14.md); [protocol](saltation-qualification-protocol-2026-10-14.md); [source audit](natural-source-audit-2026-10-14.md) |
+| Speech-capacity transfer | [results](speech-capacity-results-2026-10-17.md); [protocol](speech-capacity-protocol-2026-10-17.md); [human-source audit](human-source-qualification-2026-10-17.md) |
 | Next seismic inputs | [source/calibration audit](seismic-candidate-audit-2026-10-10.md); `data/seismic-candidates/2026-10-10/` |
 | Italian magnitude prerequisite | [failed validation](italian-magnitude-validation-results-2026-10-10.md); [frozen design](italian-magnitude-validation-protocol-2026-10-10.md); `results/italian-magnitude-validation-2026-10-10/` |
 | Unified manuscript and programme | [paper.md](paper.md) and `paper.pdf`; [supporting-material.md](supporting-material.md) and `supporting-material.pdf`; [revision map](manuscript-revision-2026-10-11.md); [research-brief.md](research-brief.md); [ongoing-research.md](ongoing-research.md) |

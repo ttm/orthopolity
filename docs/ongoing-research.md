@@ -1,15 +1,27 @@
 # Ongoing research: resume here
 
-**17 October — source qualification complete, speech design prepared:** the
-[human-source audit](human-source-qualification-2026-10-17.md) stops foraging
-without participant access. Fixed repeated blocks and programmed constraints
-do not themselves yield a distinct orthopolity forecast. The
-[speech protocol](speech-capacity-protocol-2026-10-17.md) freezes a seven-language
-calibration and ten-language/eight-family transfer using independent written
-entropy, with four rivals including same-text duration. Publisher/GitHub agree
-on 2,288 readings; the paper states 2,265 without an identified exclusion.
-No numerical duration has been decoded. Complete the design/forecast freezes
-before evaluation; known published equal-information-rate findings remain exposed.
+**17–19 October — speech-capacity transfer complete:** the
+[results](speech-capacity-results-2026-10-17.md) support independent contextual
+entropy as a predictor across language families. Seven training languages give
+capacity **40.40 bits/s**; ten target languages in eight other families give
+primary log MAE **0.07411**. Error falls **52.00%** against constant syllabic
+rate, **48.85%** against unigram entropy, **21.47%** against fitted power and
+**27.38%** against same-text duration. All frozen rules pass. This tests
+language geometric means under hierarchical counting measure, neither
+log-orthopolic nor linear-orthopolic size allocation. Reading error is larger;
+Thai's language factor is 1.20144. Known published capacity findings, uneven
+text coverage, unpropagated entropy uncertainty and the 2,288/2,265 source-count
+discrepancy remain explicit. Design **eeab4d3** preceded calibration and
+forecasts **26b78d8** preceded numerical target access. Independent verification
+checks **25,472 quantities**; all outputs replay byte-for-byte. **612 tests**,
+**43 registry records / 1,086 references**, previous entries unchanged.
+Main 4.4 and supporting S5.17 retain the result. The
+article remains 12 pages and supporting material is 60 pages, with visual and
+repeated-build checks. The
+[foraging candidate](human-source-qualification-2026-10-17.md) remains stopped
+before participant access, without the proposed intervention or distinct
+allocation prediction. The first requested domain pass is complete; next seek
+a separate cohort or constraint intervention that distinguishes mechanisms.
 
 **16 October — biological transfer complete, fitted correction fails:**
 [Results](burden-transfer-results-2026-10-16.md): twelve mKate variants
@@ -183,7 +195,7 @@ should address the observation model or explain the known lake departure, with
 a separate frozen design; additional catalogue hunting does not fix this
 estimator. Preserve these outcomes. The earlier programme retains its history.
 
-Last updated: 14 October 2026. This is the mutable handoff document for ongoing
+Last updated: 19 October 2026. This is the mutable handoff document for ongoing
 work. It records the current objective, decisions, completed work and exact next
 steps. Immutable executed studies belong in the run registry; this document does
 not replace their frozen protocols or results.
@@ -469,17 +481,21 @@ retrospective validation, not global blinding or prospective data collection.
 
 ## Next actions, in priority order
 
-**Current priority supersedes the older list below:** physics, chemistry,
-broader-natural and biological transfers are now executed. Qualify a
-human/language intervention with independent costs or constraints. Preserve
-the failed and qualified studies; use the latest status and biological transfer
-report for source limitations. The ten new-protein responses are now exposed;
-fitting a revised correction to them would be exploratory.
+**Current priority supersedes the older list below:** the first physics,
+chemistry, broader-natural, biological and human/language transfers are complete.
+Qualify a separate cohort or constraint intervention with independently measured
+inputs and a prediction that distinguishes mechanisms. The positive speech
+result transfers an established account; it does not uniquely identify the
+general law. Preserve failures and source qualifications. The ten speech
+languages and ten new-protein responses are now exposed; fitting corrections
+to them would be exploratory.
 
 1. **Extend the completed inverse application.** The linguistic study now
    supplies an executed inference-and-transfer comparison. A next study should
    independently characterize a physical requirement or constraint, or add
-   contextual/duration information with a separately frozen prediction.
+   a production-constraint intervention with a separately frozen prediction.
+   The independent-entropy speech comparison above has completed the first
+   contextual/duration extension; do not treat its target residuals as new data.
    Preserve the current six forecasts and their outcomes. City-size resource
    measurements remain a possible separate application; none has been fitted.
 

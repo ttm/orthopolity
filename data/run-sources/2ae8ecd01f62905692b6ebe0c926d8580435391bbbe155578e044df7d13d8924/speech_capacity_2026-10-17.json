@@ -1,0 +1,12 @@
+{
+  "study": "speech-capacity-2026-10-17",
+  "source": "data/human-candidates/2026-10-17/speech/InfoRateData.csv",
+  "source_sha256": "f4dde6def980ed4c461ad8fd666af64cbbaa967a2ac73702855fc70484c0732a",
+  "expected_rows": 2288,
+  "reference_measure": "Counting measure: equal source-defined families, languages within family, speakers within language, then available texts. Primary errors concern language geometric means; neither log-orthopolic nor linear-orthopolic size allocation.",
+  "maximum_average_factor": 1.2,
+  "minimum_syllabic_gain": 0.2,
+  "maximum_best_benchmark_ratio": 1.1,
+  "minimum_context_gain": 0.1,
+  "publication_exposure": "Known equal-information-rate conclusion, aggregate about 39 bits/s, rate and entropy ranges and reported correlations; no duration field numerically decoded before local design freeze."
+}

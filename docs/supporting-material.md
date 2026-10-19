@@ -2,7 +2,7 @@
 
 **Accounting proofs, physical derivations, observation models and complete comparisons**
 
-Prepared 10 October 2026; revised 16 October 2026 as a companion to
+Prepared 10 October 2026; revised 19 October 2026 as a companion to
 [the main article](paper.md).
 This document preserves the substantive technical material of the article at
 source commit **`f137d4efb050ccfcb5c5f814d32da651c645421c`**, supplemented by
@@ -2691,6 +2691,101 @@ adds no demonstrated predictive value. It does not reject the reciprocal
 functional family or establish an absolute resource cost or neutral biological
 allocation.
 
+### S5.17. Independent information costs predict speech across families
+
+Coupé et al. (2019) estimated syllable entropy from written corpora and measured
+recorded speech duration separately. Their $ID$ is conditional entropy given
+the preceding within-word syllable or a word-onset null; $ShE$ is unigram
+entropy. Neither uses speech duration. Canonical syllable count $NS$ describes
+each translated text, rather than each speaker's realized articulation.
+Recorded duration $D$ excludes manually identified pauses longer than 150 ms;
+it is neither elapsed reading time nor pure phonation time.
+
+The locally frozen hypothesis is a common information capacity:
+
+$$\widehat D=\frac{NS\,ID}{C}.$$
+
+Counting measure gives equal source-defined families, languages within family,
+speakers within language, then available texts. This is neither log-orthopolic
+nor linear-orthopolic size allocation. Equal capacity is tested, not imposed
+independently; $C$ is inferred, and these measurements do not identify metabolic
+cost. The source's constant-information-rate account already proposes this
+relation, so the comparison is a transfer test, not a distinct mechanism for
+orthopolity.
+
+Seven Indo-European languages provide 789 calibration readings from 70
+speakers. Ten languages in eight other families provide 1,499 target readings
+from 100 speakers. The publisher and repository files match byte-for-byte at
+2,288 rows, although the article states 2,265. No corresponding exclusion was
+identified, so every row is retained. The source has 15 shared translated text
+identities, but 261 calibration and one target speaker/text cells are absent.
+Declared weighting handles their contribution to the estimand, not possible
+selection bias.
+
+Design `eeab4d3` preceded numerical duration calibration; forecasts `26b78d8`
+preceded all target-duration decoding. Published aggregate rates, correlations
+and the equal-information-rate conclusion were known. Fits minimize weighted
+squared log-duration error. The information model gives $C=40.3967$ bits/s.
+All alternatives use calibration only: constant syllabic rate; constant
+unigram-information rate; an unconstrained fitted power of $ID$; and geometric
+duration for the corresponding translated text. The power exponent is 0.44019,
+estimated from only seven language-level predictor values. There is no target
+refitting, clipping or post hoc language exclusion.
+
+Let $e_l$ be the mean of $\ln\widehat D-\ln D$ within language $l$, first
+averaging each speaker's readings, then speakers. The primary error $E$ averages
+$|e_l|$ across languages and families. Thus opposite individual errors can
+cancel. The secondary reading error instead averages the absolute log residual
+before grouping.
+
+| Model | Primary language log MAE | Reading log MAE | Largest language discrepancy factor |
+|---|---:|---:|---:|
+| Conditional information | **0.07411** | **0.11005** | 1.20144 |
+| Constant syllabic rate | 0.15440 | 0.17611 | 1.46453 |
+| Unigram information | 0.14489 | 0.16766 | 1.38937 |
+| Fitted density power | 0.09438 | 0.13295 | 1.34228 |
+| Same-text duration | 0.10205 | 0.14968 | 1.20805 |
+
+*Table S24. All frozen forecasts on ten target languages. Primary and reading
+errors use hierarchical counting measure. The final column is
+$\exp(\max_l|e_l|)$, which is distinct from the average-accuracy criterion.*
+
+The conditional model reduces primary error by 52.00% against constant
+syllabic rate, 48.85% against unigram information, 21.47% against fitted power
+and 27.38% against same-text duration. All frozen requirements pass: $E$ is
+below $\ln(1.20)$, the syllabic gain exceeds 20%, and error is no more than
+1.10 times the best unigram, fitted-power or same-text benchmark. This is a tolerance,
+not a formal noninferiority test; here the model actually has lower descriptive
+error than every comparator. The separate 10% contextual-information gain
+criterion also passes. The same-text comparison shows that the gain is not
+fully reproduced by transferring the shared message's average duration.
+
+![Speech-capacity transfer and all declared alternatives](../results/speech-capacity-2026-10-17/transfer.png)
+
+*Figure S17. Observed and forecast geometric speech rates for every target
+language, and the five primary error scores. The reference line denotes exact
+prediction. Error bars are omitted because entropy/input uncertainty is not
+propagated; the right-panel dashed line is the frozen average-accuracy limit.*
+
+The average discrepancy factor $\exp(E)$ is 1.07693. It does not bound every
+language or reading: Thai's forecast/observed duration ratio is 0.83233, a
+factor of 1.20144 in the opposite direction. Hungarian is 0.85096, Basque
+0.89663 and Cantonese 0.89840; these departures remain. The complete
+[report](speech-capacity-results-2026-10-17.md) retains every language ratio.
+Basque, Japanese, Thai and Vietnamese lie outside calibration $ID$ support
+[5.29,7.09]; they were flagged before outcomes and retained. Shared texts,
+related languages, rehearsed reading, selected speakers and rounded entropy
+estimates limit generalization. No population confidence interval is inferred.
+
+Eight synthetic and access-control tests precede calibration. Independent
+tab-field decoding and 50-digit Decimal arithmetic verify 17,658 quantities
+before outcomes and 25,472 afterward, with maximum difference $1.45\times10^{-14}$.
+The result demonstrates useful cross-family prediction from independent
+contextual-information inputs in this cohort. It establishes neither a new
+language law nor universal neutral allocation; it supports a capacity relation
+whose independent entropy input predicts better than the declared
+alternatives and whose departures remain visible.
+
 ## References
 
 Arranz, I., Fournier, B., Lester, N. P., Shuter, B. J., and Peres-Neto, P. R. (2022).
@@ -2721,6 +2816,11 @@ empirical data. *SIAM Review*, 51, 661–703. <https://doi.org/10.1137/070710111
 Condon, J. J., and Ransom, S. M. (2016). *Essential Radio Astronomy*.
 Princeton University Press. Chapter 2, radiation and absorption.
 <https://www.cv.nrao.edu/~sransom/web/Ch2.html>.
+
+Coupé, C., Oh, Y. M., Dediu, D., and Pellegrino, F. (2019). Different languages,
+similar encoding efficiency: Comparable information rates across the human
+communicative niche. *Science Advances*, 5, eaaw2594.
+<https://doi.org/10.1126/sciadv.aaw2594>.
 
 Cuesta, J. A., Delius, G. W., and Law, R. (2018). Sheldon spectrum and the plankton paradox:
 two sides of the same coin—a trait-based plankton size-spectrum model.
