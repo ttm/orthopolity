@@ -1,5 +1,19 @@
 # Ongoing research: resume here
 
+**19 October — mechanism-level next prediction:** the
+[design derivation](equalization-release-design-2026-10-19.md) predicts a
+five-compartment chain's full trajectory from matched pair kinetics and
+independent geometry; the homogeneous slow-mode time ratio is **5.23607**.
+It also proves that differential losses can exactly mimic equalization in
+normalized shares, while common fractional loss cancels. Numerical checks
+verify the equations; there is no new empirical or registered simulation run.
+The [source audit](equalization-source-audit-2026-10-19.md) retains methods and
+metadata for optical traps, droplet networks and an open-flow chip. None yet
+qualifies the complete allocation-release test. No numerical response arrays
+were acquired; published numerical summaries are known. Next seek raw
+pair/network stocks, geometry and loss controls, or a true release cohort.
+The 43 registry entries, 612 tests and 12/60-page manuscripts are unchanged.
+
 **17–19 October — speech-capacity transfer complete:** the
 [results](speech-capacity-results-2026-10-17.md) support independent contextual
 entropy as a predictor across language families. Seven training languages give
@@ -489,6 +503,11 @@ result transfers an established account; it does not uniquely identify the
 general law. Preserve failures and source qualifications. The ten speech
 languages and ten new-protein responses are now exposed; fitting corrections
 to them would be exploratory.
+The immediate design is now [pair-to-network kinetic transfer](equalization-release-design-2026-10-19.md).
+Resolve absolute-stock or independently justified loss controls, matched
+geometry and separate kinetic calibration before target fitting. The
+[19 October source audit](equalization-source-audit-2026-10-19.md) records why
+the reachable archives do not yet establish all these conditions.
 
 1. **Extend the completed inverse application.** The linguistic study now
    supplies an executed inference-and-transfer comparison. A next study should

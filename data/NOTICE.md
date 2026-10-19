@@ -236,3 +236,19 @@ in `human-candidates/2026-10-19/speech-notices/BSD-3.txt`.
 Forecasts, errors and figures are this project's reanalysis, not author-endorsed
 results. The source qualification and result reports retain measurement and
 published-count discrepancies.
+
+## Equalization source qualification (19 October 2026)
+
+The sources in `physics-candidates/2026-10-19/relaxation/` retain their own
+rights and attribution. Di Terlizzi et al., *Variance sum rule for entropy
+production*, DOI 10.1126/science.adh1823: the unchanged arXiv v2 HTML declares
+CC BY-SA 4.0; Dryad metadata identifies DOI 10.5061/dryad.h44j0zpsw.
+Bachler, Ort, Krämer and Dittrich (2021), DOI 10.1021/acs.analchem.0c04939,
+and Fernandes, Karra, Swindle and Morgan (2023), DOI 10.1039/D3RA00470H:
+the unchanged article XML files retain their CC BY 4.0 notices.
+The Southampton dataset metadata identifies CC BY 4.0 and DOI
+10.5258/SOTON/D2378. Figshare metadata attributes the computational archive
+for Li, Cao and Ng (2024), DOI 10.1038/s41467-024-46058-5; that archive was
+not downloaded. Source pages, bibliographic metadata and existing rights
+notices are not relicensed as project software. The qualification judgments
+and analytic design are this project's work, not author-endorsed findings.

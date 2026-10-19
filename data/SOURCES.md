@@ -388,3 +388,13 @@ speech-detection dataset and rendered original analysis report were not used.
 The original BSD code notice and its checksum receipt were added separately in
 `human-candidates/2026-10-19/speech-notices/`, verified against the already
 archived repository tree; this does not change any frozen analytical input.
+
+## Equalization mechanism qualification (19 October 2026)
+
+`physics-candidates/2026-10-19/relaxation/` retains public dataset metadata and
+original methods for the optical-trap and compartmental exchange audit in
+`docs/equalization-source-audit-2026-10-19.md`. `acquisition.json` identifies
+successful retrievals and their hashes, failed README requests, and exposure
+limits. No experimental response workbook, raw trace archive, video or figure
+image was acquired. This is source/design qualification, not a new registered
+empirical result; the accompanying analytic checks use no source data.

@@ -1,0 +1,102 @@
+{
+  "recorded_utc": "2026-10-19T12:34:15.661836+00:00",
+  "purpose": "Source qualification for independently calibrated allocation kinetics; not an empirical run",
+  "files": [
+    {
+      "file": "dryad-dataset.json",
+      "url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.h44j0zpsw",
+      "bytes": 10880,
+      "sha256": "cd62a58950ac1474c989d1b9605feaa7b655d41bfc97fe93ecca5b849c80bc5a",
+      "download_completion_file_mtime_utc": "2026-10-19T12:25:10.637107+00:00",
+      "role": "Original public metadata or methods; published numerical summaries may be present"
+    },
+    {
+      "file": "dryad-page.html",
+      "url": "https://datadryad.org/dataset/doi:10.5061/dryad.h44j0zpsw",
+      "bytes": 53543,
+      "sha256": "6239c7fb1c2f61e67f3ff5ced581a7dd61322b55c30b3aa761fcdeb3beb58c2c",
+      "download_completion_file_mtime_utc": "2026-10-19T12:25:12.067975+00:00",
+      "role": "Original public metadata or methods; published numerical summaries may be present"
+    },
+    {
+      "file": "dryad-files.json",
+      "url": "https://datadryad.org/api/v2/versions/313315/files",
+      "bytes": 3353,
+      "sha256": "7e08286e663a84246a296d7a9496dfe69e3b5e1303f5870f53c98e7e8c97687d",
+      "download_completion_file_mtime_utc": "2026-10-19T12:26:19.705319+00:00",
+      "role": "Original public metadata or methods; published numerical summaries may be present"
+    },
+    {
+      "file": "variance-sum-rule-v2.html",
+      "url": "https://arxiv.org/html/2302.08565v2",
+      "bytes": 824578,
+      "sha256": "a4395d2a4f19e2f153f85d8d035c5ef7cf9d55a7e41a1f6e36b7b27e333aa4bb",
+      "download_completion_file_mtime_utc": "2026-10-19T12:26:21.278246+00:00",
+      "role": "Original public metadata or methods; published numerical summaries may be present"
+    },
+    {
+      "file": "droplet-permeation.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8014892/fullTextXML",
+      "bytes": 103023,
+      "sha256": "0828832a6af972bf35f72643a79fcb02f47508f1b86d45057f9b3f94c8c55f3d",
+      "download_completion_file_mtime_utc": "2026-10-19T12:26:54.227936+00:00",
+      "role": "Original public metadata or methods; published numerical summaries may be present"
+    },
+    {
+      "file": "non-equipartition-metadata.json",
+      "url": "https://api.figshare.com/v2/articles/25196924",
+      "bytes": 3232,
+      "sha256": "c74497f8c6b252adda0553eaad786ce10789ee6e65481ef5d670a96bd2760aa7",
+      "download_completion_file_mtime_utc": "2026-10-19T12:26:55.126253+00:00",
+      "role": "Original public metadata or methods; published numerical summaries may be present"
+    },
+    {
+      "file": "southampton-datacite.json",
+      "url": "https://api.datacite.org/dois/10.5258/SOTON/D2378",
+      "bytes": 9457,
+      "sha256": "3ad87659a1dd28992e906873de629c010b2fb1c3d9586d899c0912d1f5c35143",
+      "download_completion_file_mtime_utc": "2026-10-19T12:27:29.526640+00:00",
+      "role": "Original public metadata or methods; published numerical summaries may be present"
+    },
+    {
+      "file": "southampton-page.html",
+      "url": "https://eprints.soton.ac.uk/477186/",
+      "bytes": 47232,
+      "sha256": "6595586063a52f1db1e44502b71617c3a8ff81ee69b641b2d92866444078e27c",
+      "download_completion_file_mtime_utc": "2026-10-19T12:28:46.842998+00:00",
+      "role": "Original public metadata or methods; published numerical summaries may be present"
+    },
+    {
+      "file": "barrier-on-chip.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10173818/fullTextXML",
+      "bytes": 69133,
+      "sha256": "68766aa8c967a116d43ab0222489e410ff2c0fd441a6dfdcfc28ec8f601538a4",
+      "download_completion_file_mtime_utc": "2026-10-19T12:28:48.373327+00:00",
+      "role": "Original public metadata or methods; published numerical summaries may be present"
+    }
+  ],
+  "failed_requests": [
+    {
+      "url": "https://datadryad.org/api/v2/files/2936863/download",
+      "http_status": 401,
+      "requested_content": "README only; no retained body"
+    },
+    {
+      "url": "https://datadryad.org/downloads/file_stream/2936863",
+      "http_status": 403,
+      "requested_content": "README only; no retained body"
+    }
+  ],
+  "numerical_experimental_archives_requested": false,
+  "exposure": [
+    "Published qualitative and numerical outcomes appeared in web searches and full article methods/results text; no blindness is claimed",
+    "Switching-trap published entropy-production summaries and fitted parameter tables are exposed",
+    "Droplet pair and chain published permeability summaries, pH conditions and approximate equilibration time are exposed",
+    "Open-chip published peak and decay times and static endpoint descriptions are exposed",
+    "Non-equipartition article analytical and simulation conclusions are exposed"
+  ],
+  "source_version_notes": [
+    "Dryad dataset metadata identifies version 9 and version id 313315; its copied file entries retain links to earlier version 280180",
+    "arXiv identity is 2302.08565v2 dated 6 March 2024; the generated HTML displays a later date, which is not treated as a new scientific version"
+  ]
+}

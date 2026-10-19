@@ -4,6 +4,24 @@ Last updated 19 October 2026. **Read this first in a new session.** It records w
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
+**19 October — next mechanism test specified, sources audited:** the
+[exchange-design note](equalization-release-design-2026-10-19.md) turns the
+current mechanism into a pair-to-five-compartment forecast. With equal volumes
+and matched edge conductances, the slow relaxation time must increase by
+**3 + sqrt(5) = 5.23607**, with no target kinetic fit. This is an analytic
+model consequence, not a new observed result or a unique law prediction.
+An exact counterexample shows that differential losses without exchange can
+produce the same normalized trajectory as true equalization. Common fractional
+loss cancels, so normalization alone neither invalidates nor validates a study.
+The [source audit](equalization-source-audit-2026-10-19.md) finds real optical-trap
+data but no qualifying allocation-release design; a droplet network is a closer
+mapping, with raw fluorescence/geometry and loss controls still unidentified.
+An accessible chip workbook concerns an open outlet, not a closed allocation.
+No experimental response arrays were acquired or fitted; published numerical
+summaries were exposed and recorded. Analytic checks pass. Registry **43 /
+1,086**, tests **612**, and article PDFs remain unchanged. Next qualify raw
+pair/network measurements or a genuine release cohort before freezing a test.
+
 **17–19 October — speech-capacity transfer complete:** independent written-corpus
 entropy improves [speech-duration forecasts](speech-capacity-results-2026-10-17.md)
 from seven Indo-European calibration languages to ten languages in eight other
@@ -418,6 +436,11 @@ broader-natural, biological and human/language conditional forecasts are retaine
 Seek an independent cohort or intervention with separately measured costs or
 constraints and a prediction that distinguishes mechanisms. The speech result
 transfers a known capacity account; its target residuals are now exposed.
+The [19 October design](equalization-release-design-2026-10-19.md) now specifies
+a pair-to-network kinetic forecast and the absolute-stock/loss controls needed
+to identify exchange. Prioritize this qualification over another capacity fit;
+the [source audit](equalization-source-audit-2026-10-19.md) records the current
+optical-trap, droplet-network and open-chip limitations.
 The biological assay transfers information, but its fitted correction fails;
 further work must distinguish an independent resource measurement from an
 inferred workload proxy. Preserve all ten now-exposed outcomes. The

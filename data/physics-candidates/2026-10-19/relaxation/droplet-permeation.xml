@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?><article xml:lang="en" article-type="research-article"><front><journal-meta><journal-id journal-id-type="pmc-domain-id">822</journal-id><journal-id journal-id-type="pmc-domain">acssd</journal-id><journal-title-group><journal-title>Analytical Chemistry</journal-title><abbrev-journal-title>Anal Chem</abbrev-journal-title></journal-title-group></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC8014892</article-id><article-id pub-id-type="pmcaid">8014892</article-id><article-id pub-id-type="pmcaiid">8014892</article-id><article-id pub-id-type="pmid">33721989</article-id><article-id pub-id-type="doi">10.1021/acs.analchem.0c04939</article-id><title-group><article-title>Permeation Studies across Symmetric and Asymmetric
+Membranes in Microdroplet Arrays</article-title></title-group><contrib-group content-type="author"><contrib><name name-style="western"><surname>Bachler</surname><given-names initials="S">Simon</given-names></name><xref ref-type="aff" rid="aff1">†</xref></contrib><contrib><name name-style="western"><surname>Ort</surname><given-names initials="M">Marion</given-names></name><xref ref-type="aff" rid="aff1">†</xref></contrib><contrib><name name-style="western"><surname>Krämer</surname><given-names initials="SD">Stefanie D</given-names></name><xref ref-type="aff" rid="aff2">‡</xref></contrib><contrib><name name-style="western"><surname>Dittrich</surname><given-names initials="PS">Petra S</given-names></name><xref ref-type="aff" rid="aff1">†</xref><xref rid="cor1" ref-type="author-notes">*</xref></contrib></contrib-group><aff id="aff1"><label>†</label>Department
+of Biosystems Science and Engineering, ETH
+Zurich, 4058 Basel, Switzerland</aff><aff id="aff2"><label>‡</label>Institute of Pharmaceutical
+Sciences, Department
+of Chemistry and Applied Biosciences, ETH
+Zurich, Zürich 8093, Switzerland</aff><author-notes><fn id="cor1"><label>*</label><p>Email: <email>petra.dittrich@bsse.ethz.ch</email>.</p></fn></author-notes><pub-date><day>15</day><month>3</month><year>2021</year></pub-date><volume>93</volume><issue>12</issue><fpage>5137</fpage><page-range>5137–5144</page-range><pub-history><event event-type="pmc-release"><date><day>2</day><month>4</month><year>2021</year></date></event></pub-history><permissions><copyright-statement>© 2021 The Authors. Published by American
+Chemical Society</copyright-statement><license><license-p>Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://creativecommons.org/licenses/by/4.0/" ext-link-type="uri">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ac0c04939.pdf" content-type="pmc-pdf"><?cloudpmc-path ca1d/8014892/8a29f4910162/ac0c04939.pdf?><?cloudpmc-bucket app?><?size 3962574?></self-uri><abstract id="abstract1"><title>Abstract</title><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="ab-tgr1" xlink:href="ac0c04939_0007.jpg"><?cloudpmc-path blobs/ca1d/8014892/657312d3144a/ac0c04939_0007.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 375?><?original-width 1000?><?scaled-height 250?><?scaled-width 666?></graphic><p>We investigated the
+permeation of molecules across lipid membranes
+on an open microfluidic platform. An array of droplet pairs was created
+by spotting aqueous droplets, dispersed in a lipid oil solution, onto
+a plate with cavities surrounded by a hydrophobic substrate. Droplets
+in two adjacent cavities come in contact and form an artificial lipid
+bilayer, called a droplet interface bilayer (DIB). The method allows
+for monitoring permeation of fluorescently tagged compounds from a
+donor droplet to an acceptor droplet. A mathematical model was applied
+to describe the kinetics and determine the permeation coefficient.
+We also demonstrate that permeation kinetics can be followed over
+a series of droplets, all connected via DIBs. Moreover, by changing
+the lipid oil composition after spotting donor droplets, we were able
+to create asymmetric membranes that we used to mimic the asymmetry
+of the cellular plasma membrane. Finally, we developed a protocol
+to separate and extract the droplets for label-free analysis of permeating
+compounds by liquid chromatography–mass spectrometry. Our versatile
+platform has the potential to become a new tool for the screening
+of drug membrane permeability in the future.</p></abstract><custom-meta-group><custom-meta><meta-name>status</meta-name><meta-value>released</meta-value></custom-meta><custom-meta><meta-name>display-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>is-in-collection-domain</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>is-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-journal-matter</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-scanned</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-retracted</meta-name><meta-value>no</meta-value></custom-meta></custom-meta-group></article-meta><notes notes-type="article-notes"><sec id="historyarticle-meta1" sec-type="history" disp-level="2"><p>Received 2020 Nov 24; Accepted 2021 Feb 24; Issue date 2021 Mar 30.</p></sec></notes></front><body><sec id="sec1" disp-level="1"><title>Introduction</title><p>Most
+pharmaceutical small-molecule drugs are primarily administered
+orally and mainly absorbed in the small intestine.<sup><xref rid="ref1" ref-type="bibr">1</xref></sup> As the transcellular route is the most relevant for the
+absorption of these drugs, assays for predicting membrane permeability
+play an important role during the drug discovery and development process.<sup><xref rid="ref2" ref-type="bibr">2</xref>−<xref rid="ref5" ref-type="bibr">5</xref></sup> A commonly used cell-free <italic>in vitro</italic> permeability
+testing technique is the parallel artificial membrane permeability
+assay (PAMPA).<sup><xref rid="ref3" ref-type="bibr">3</xref>,<xref rid="ref4" ref-type="bibr">4</xref>,<xref rid="ref6" ref-type="bibr">6</xref>,<xref rid="ref7" ref-type="bibr">7</xref></sup> In this method, two-layered multiwell plates
+are used to measure permeation through barriers formed between the
+top and bottom wells. PAMPA is suitable for predicting purely lipoidal
+permeation; this is not possible in cell-based assays, in which carrier-mediated
+and lipoidal permeation coexist.<sup><xref rid="ref2" ref-type="bibr">2</xref>−<xref rid="ref4" ref-type="bibr">4</xref>,<xref rid="ref6" ref-type="bibr">6</xref>,<xref rid="ref7" ref-type="bibr">7</xref></sup> In PAMPA, the barriers formed between the
+donor and acceptor wells consist of porous filters with a typical
+thickness of ∼10 to 100 μm soaked in a mixture of lipid
+and hydrocarbon oil or pure hydrocarbon oil.<sup><xref rid="ref3" ref-type="bibr">3</xref>,<xref rid="ref4" ref-type="bibr">4</xref>,<xref rid="ref7" ref-type="bibr">7</xref></sup> Hence, the barriers in PAMPA are much thicker
+than a lipid bilayer (∼5 nm), and their structure is dissimilar
+to actual biological membranes. Furthermore, diffusion through such
+a thick barrier, measured by concentration changes in the acceptor
+and donor wells with volumes of several hundred microliters, leads
+to assay times in the range of 2–18 h, which can limit the
+throughput.<sup><xref rid="ref4" ref-type="bibr">4</xref>,<xref rid="ref7" ref-type="bibr">7</xref></sup> Common alternatives are <italic>in vitro</italic> cell-based permeation assays, using Caco-2 and Madin-Darby canine
+kidney (MDCK) cellular monolayers.<sup><xref rid="ref2" ref-type="bibr">2</xref>,<xref rid="ref4" ref-type="bibr">4</xref></sup> However, cellular
+monolayers are not always well suited for a systematic and mechanistic
+investigation of drug absorption and require a laborious cell culture.</p><p>Recently, microfluidic methods have been introduced to capture
+cell mimicking vesicles for permeation studies<sup><xref rid="ref8" ref-type="bibr">8</xref>−<xref rid="ref11" ref-type="bibr">11</xref></sup> as well as to create on-chip
+artificial cell membranes.<sup><xref rid="ref12" ref-type="bibr">12</xref>,<xref rid="ref13" ref-type="bibr">13</xref></sup> A significant advantage
+of microfluidic devices compared to traditional laboratory methods
+is the small size and, associated with this, the small sample volumes.<sup><xref rid="ref14" ref-type="bibr">14</xref>,<xref rid="ref15" ref-type="bibr">15</xref></sup> In this regard, droplet-based microfluidics is particularly intriguing
+as it enables the generation of nano- to picoliter-sized aqueous droplets
+continuously and at a high frequency. The aqueous phase is injected
+into a carrier fluid that is not miscible with water; often, surfactants
+are used for stabilization.<sup><xref rid="ref16" ref-type="bibr">16</xref></sup> When lipids
+are added to the oil phase, they form a monolayer at the droplet–oil
+interface. Two adjacent droplets that contact each other form the
+so-called droplet interface bilayer (DIB).<sup><xref rid="ref4" ref-type="bibr">4</xref>,<xref rid="ref12" ref-type="bibr">12</xref>,<xref rid="ref13" ref-type="bibr">13</xref>,<xref rid="ref17" ref-type="bibr">17</xref></sup> The DIBs allow
+translocation of membrane-permeable compounds from one donor droplet
+to the acceptor droplets by passive diffusion. Such droplet systems
+are therefore interesting approaches for permeation studies, however,
+require fluorescently labeled compounds<sup><xref rid="ref18" ref-type="bibr">18</xref></sup> or fluorogenic assays to visualize permeation of weakly basic or
+acidic compounds.<sup><xref rid="ref8" ref-type="bibr">8</xref></sup> Fluorescence spectroscopy
+is sufficiently sensitive and adaptable to the small volumes, but
+as the label—often a hydrophobic fluorophore—may influence
+the permeability,<sup><xref rid="ref10" ref-type="bibr">10</xref>,<xref rid="ref19" ref-type="bibr">19</xref></sup> label-free detection would be
+favorable.<sup><xref rid="ref20" ref-type="bibr">20</xref>,<xref rid="ref21" ref-type="bibr">21</xref></sup> In this context, open platforms
+with so-called static droplet arrays were introduced for miniaturizing
+biological and chemical processes and reactions, and they proved particularly
+versatile for implementing analytical methods beyond optical microscopy,
+such as mass spectrometry,<sup><xref rid="ref22" ref-type="bibr">22</xref>−<xref rid="ref24" ref-type="bibr">24</xref></sup> but were not used for permeability
+assays so far.</p><p>Here, we introduce a microfluidic method that
+combines the advantages
+of miniaturization and enables monitoring of fluorescent and nonfluorescent
+compounds. Our platform facilitates automated and precise positioning
+of droplet pairs to create DIBs. Permeation of compounds occurs along
+the concentration gradient from a donor droplet to an acceptor droplet
+that initially contains no drug. We precisely describe this process
+using a mathematical model and derive the permeability constants for
+fluorescent compounds. We also demonstrate the possibility to generate
+asymmetric lipid bilayers, thereby reflecting cell membranes in a
+more realistic model.<sup><xref rid="ref25" ref-type="bibr">25</xref></sup> Moreover, in contrast
+to previous approaches to form DIBs, we can uptake individual nanoliter
+droplets and developed a protocol to analyze them by liquid chromatography–mass
+spectrometry (LC–MS). We apply this new established method
+for label-free detection of a model permeant.</p></sec><sec id="sec2" disp-level="1"><title>Materials and Methods</title><sec id="sec2.1" disp-level="2"><title>Assay
+Preparation</title><p>The lipid-out approach was used to
+add phospholipids to the water/oil interface, i.e., lipids were dissolved
+in the oil phase. We purchased 1,2-dioleoyl-<italic>sn</italic>-glycero-3-phosphocholine
+(DOPC) and 1,2-dioleoyl-<italic>sn</italic>-glycero-3-phospho-L-serine
+(DOPS) as solutions in chloroform from Avanti Polar Lipids (Alabaster,
+AL, U.S.A.). We placed the required lipids in pear-shaped flasks and
+removed the chloroform with a rotary evaporator (Büchi Labortechnik
+AG, Flawil, Switzerland) forming a film. The lipid film was dissolved
+in a 1:1 (v/v) mix of hexadecane (reagent plus grade, Sigma–Aldrich)
+and squalane (Sigma–Aldrich) in an ultrasonication bath at
+50 °C for ∼30 min. The final phospholipid concentration
+in oil was 0.625 mM for donor droplets and 1.25 mM for acceptor droplets.
+Lower concentrations of phospholipids resulted in the formation of
+unstable DIBs (often droplet pair fused), while excessive phospholipids
+in the oil led to extraction of compounds into the oil, presumably
+by formation of inverse micelles.</p><p>We used either 100% DOPC or
+30% DOPC and 70% DOPS mixtures (mole percentage). We filtrated the
+phospholipid-oil solution before use (0.45 μm pore size, RC
+4 Male Luer Slip Minisart filters, Huberlab, Switzerland).</p><p>All
+aqueous solutions were prepared in LC–MS grade water
+(Fisher Scientific, Loughborough, U.K.). We used as buffers 20 mM
+2-morpholinoethanesulfonic acid (MES, pH 6.0, Alfa Aesar), 20 mM phosphate
+buffer (pH 7.0, Acros Organics), 50 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic
+acid (HEPES, pH 7.4, gibco, Paisley, U.K.), or 20 mM tris(hydroxymethyl)aminomethane
+(Tris, pH 8.0, VWR). The following fluorophores were dissolved in
+buffer: 50 μM rhodamine 6G (laser grade, Acros Organics), 50
+μM fluorescein (Honeywell Fluka, Seelze, Germany), ∼50
+μM PEG4-NBD, and 50 μM calcein (Sigma–Aldrich).
+PEG4-NBD was synthesized from succinimidyl 6-(<italic>N</italic>-(7-nitrobenz-2-oxa-1,3-diazol-4-yl)amino)hexanoate
+(NBD NHS-ester, Molecular Probes Life Technologies, Eugene, OR, U.S.A.)
+and amine-terminated poly(ethylene glycol)-4 alcohol (Amino-PEG4-OH,
+Quanta Biodesign, Plain City, OH, U.S.A.).<sup><xref rid="ref26" ref-type="bibr">26</xref></sup> A 1:1 molar ratio of the NBD NHS-ester and Amino-PEG4-OH was reacted
+in a 10:1 (v/v) solution of chloroform (Sigma–Aldrich) and
+triethylamine (Brenntag Schweizerhall, Basel, Switzerland). The reaction
+was held at 45 °C for 2 h, followed by 22 °C for 12 h.
+Afterward, the reaction products were separated with a preparative
+liquid chromatography system (Prep 150 LC system, Waters). The mass
+of the product PEG4-NBD was confirmed with an LC–MS system
+(Ultimate 3000 MSQ, Dionex).</p></sec><sec id="sec2.2" disp-level="2"><title>Fabrication of the Microarray Plates</title><p>We used a previously
+developed protocol for fabricating microarray plates with cavities.<sup><xref rid="ref24" ref-type="bibr">24</xref></sup> In brief, a 4 inch borofloat glass wafer was
+cleaned by oxygen plasma and subsequently spin-coated with SU-8 3025
+(MicroChem, Westborough, MA, U.S.A.) to obtain an approximately 35
+μm-high layer of photoresist. The wafer was soft baked at 65
+°C for 2 min and 95 °C for 12 min. Afterward, we exposed
+the photoresist to a UV light source through a foil mask (i-line illumination
+with 270 mJ/cm<sup>2</sup>). We conducted a ramp from room temperature
+to 95 °C for over 60 min, held at 95 °C for 5 min, and cooled
+down again to room temperature over 60 min for the post-exposure bake.
+The wafer was developed for 6 min with mr-Dev 600 (micro resist technology
+GmbH, Berlin, Germany), followed by rinsing with 2-propanol (Technic
+France, Saint-Denis, France) for another 10 s and spin-drying. A hard
+bake with a ramp over 4 h to 180 °C, held at 180 °C
+for 2 h, and cool down to room temperature over 4 h was used. As a
+final step, the wafer was diced in two 75 mm × 25 mm microarray
+plates; each contained more than 1500 cavities. The individual cavities
+had a diameter of 300 μm. The distance between two neighboring
+cavities was 310 μm.</p></sec><sec id="sec2.3" disp-level="2"><title>Device Operation</title><p>We placed the microarray
+plate in
+a removable temperature-controlled holder (<italic>T</italic> = 37
+°C) with a transparent bottom, which was mounted on a motorized
+XY stage (HLD117, Prior) of an inverted fluorescence microscope (Olympus
+IX73). We carried out the experiments in an oil bath to reduce droplet
+evaporation. The plate holder was filled with ∼4 mL of 1:1
+(v/v) hexadecane:squalane without phospholipids and 50 μL of
+water in all four edges to reduce droplet shrinkage. We used a self-made
+microfluidic T-junction device made of polycarbonate (PC) to generate
+droplets of ∼25 nL by continuously injecting the aqueous phase
+(flow rate: 0.5 μL/min) into the immiscible oil phase (flow
+rate: 2 μL/min). The droplets were transported through a capillary
+onto the microarray plate. In this time, the phospholipids in the
+oil aligned along the water/oil interface and formed a monolayer.<sup><xref rid="ref27" ref-type="bibr">27</xref>,<xref rid="ref28" ref-type="bibr">28</xref></sup> We mounted the end of the capillary on a motorized Z stage (M-403.2PD,
+Physik Instrumente, Karlsruhe, Germany). The generated droplets were
+detected in the capillary holder with a custom-made optical droplet
+detection system.<sup><xref rid="ref22" ref-type="bibr">22</xref></sup> This was utilized to
+selectively deposit a single droplet per predefined position by synchronizing
+droplet generation and capillary and microarray movements. All components
+of the microscope and the capillary were controlled by the software
+YouScope for automated microscopy (R2018, v2.1.0).<sup><xref rid="ref29" ref-type="bibr">29</xref></sup></p></sec><sec id="sec2.4" disp-level="2"><title>Image Acquisition and Analysis</title><p>Fluorescence
+and bright-field
+pictures were recorded using a light source (Lumen 300, Prior and
+TH4-200, Olympus) and a complementary metal oxide semiconductor (CMOS)
+camera (Zyla 4.2, Andor) connected to the Olympus IX73 microscope.
+To track fluorescein, calcein, and PEG4-NBD, a blue excitation filter
+set (exciter HQ470/40x, dichroic 500dcxr BS, and emitter E515lpv2;
+Chroma Technology Corp, Bellows Falls, VT, U.S.A.) was used. For rhodamine
+6G, a green excitation filter set (exciter 525/50m, dichroic Q565lp,
+and emitter 588 LP; Chroma Technology Corp.) was used. To minimize
+environmental influences and heat exchange, a black anodized lid was
+placed on top of the plate holder. The bright-field images were used
+to determine the diameter of the DIB.</p><p>The recorded fluorescence
+signals were evaluated using Fiji<sup><xref rid="ref30" ref-type="bibr">30</xref></sup> and
+OriginPro (2019, 9.6, OriginLab Corporation). First, we subtracted
+the background fluorescence for data evaluation. In a next step, we
+normalized the fluorescence to compensate for potential leakage into
+the oil phase, membrane partitioning, shrinkage of droplets, or fluorescence
+bleaching. For the normalization, the sum of fluorescence of all droplets
+in the first image was set to 100%. For the subsequent images, fluorescence
+of all droplets was normalized proportionally to keep a constant total
+signal over time. Donor and acceptor droplets spotted on adjacent
+cavities, which did not touch each other and therefore did not form
+a DIB, were excluded.</p></sec><sec id="sec2.5" disp-level="2"><title>Combination of the Droplet Spotter with LC–MS</title><p>For subsequent LC–MS analysis, we used a recently developed
+protocol to split the droplet pairs.<sup><xref rid="ref24" ref-type="bibr">24</xref></sup> The
+capillary used before for spotting of droplets was flushed with hexadecane/squalane
+(1:1) and placed between two connecting droplets to separate the droplet
+pairs. To extract individual droplets, the capillary was flushed with
+fluorinated oil (HFE-7500, 3 M Novec, Hadfield, U.K.) and connected
+to a 50 μL glass syringe (Hamilton, Switzerland). The center
+of the capillary was lowered to a height where it slightly squeezed
+the droplet. Subsequently, by slowly pulling the glass syringe, the
+droplet was aspirated. Afterward, the capillary was moved over a small
+tube (TreffLab Degersheim, Switzerland), and the aspirated droplet
+was ejected. Following this, the tube was centrifuged (3300 rounds
+per minute, MiniSpin, Eppendorf) to assure that the droplet moved
+to the bottom. The tube was then heated to 60 °C for 30 min
+to induce water/solvent evaporation. After this step, the samples
+were redissolved in LC–MS grade water/acetonitrile (2:1) (HiPerSolv
+Chromanorm, VWR).</p><p>The sample was analyzed in a 1260 II Infinity
+LC Quaternary system coupled to a single quadrupole atmospheric pressure
+ionization-electrospray (API-ES) G6130B mass spectrometer (Agilent).
+It was controlled through the Agilent OpenLAB CSD ChemStation (C.01.08).
+To separate the analytes, we used a reversed-phase 100 mm Poroshell
+120 SB-C8 column (Agilent) and the solvents acetonitrile, LC–MS
+grade water, and isopropanol (hypergrade for LC–MS, Merck,
+Germany) together with 5 mM ammonium formate (AF, Agilent) buffer.
+All analytes were detected with selected ion monitoring (SIM) in a
+positive mode. The signal was obtained by integration of the peak
+area in the SIM MS spectra.</p></sec><sec id="sec2.6" disp-level="2"><title>Permeability Calculations</title><p>In our
+fluorophore permeation
+studies, we were able to image the permeation process over a long
+time period. <xref rid="eq1" ref-type="disp-formula">Equations <xref rid="eq1" ref-type="disp-formula">1</xref></xref> and <xref rid="eq2" ref-type="disp-formula">2</xref> allow for extracting kinetic rate constants
+by plotting the mass of the model permeant in the acceptor (<italic>M</italic><sub>a</sub>) and donor droplets (<italic>M</italic><sub>d</sub>) over time (<italic>t</italic>). The rate constants (<italic>k</italic>) describe the fraction of the model permeant that is transferred
+over the barrier per time (mass transfer rate constants). As the permeation
+is equilibrative, the observed kinetics, <italic>i</italic>.<italic>e</italic>., change in fluorescence over time, are dependent on both <italic>k</italic><sub>da</sub> (donor to acceptor) and <italic>k</italic><sub>ad</sub> (acceptor to donor). As long as the fluorescence intensity
+is proportional to the concentration of the fluorophore, the intensity
+can be directly plotted and analyzed.<sup><xref rid="ref31" ref-type="bibr">31</xref></sup></p><disp-formula id="eq1"><label>1</label><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" xlink:href="ac0c04939_m001.jpg"><?cloudpmc-path blobs/ca1d/8014892/8a2bb5099ebb/ac0c04939_m001.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 38?><?original-width 303?><?scaled-height 38?><?scaled-width 303?></graphic></disp-formula><disp-formula id="eq2"><label>2</label><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" xlink:href="ac0c04939_m002.jpg"><?cloudpmc-path blobs/ca1d/8014892/08415a14e6bf/ac0c04939_m002.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 38?><?original-width 293?><?scaled-height 38?><?scaled-width 293?></graphic></disp-formula><p><xref rid="eq1" ref-type="disp-formula">Equations <xref rid="eq1" ref-type="disp-formula">1</xref></xref> and <xref rid="eq2" ref-type="disp-formula">2</xref> were fitted to
+the data with OriginPro. The iteration algorithm used was Levenberg
+Marquardt. Data from every droplet pair were individually fitted and
+evaluated. In the graphs, we show the fit for the mean values. The
+rate constant for the transport from the donor to acceptor compartment
+(<italic>k</italic><sub>da</sub>) can be converted into the apparent
+permeability coefficient (<italic>P</italic><sub>app</sub>).<sup><xref rid="ref31" ref-type="bibr">31</xref></sup> We used <xref rid="eq3" ref-type="disp-formula">eq <xref rid="eq3" ref-type="disp-formula">3</xref></xref> for the calculation of <italic>P</italic><sub>app</sub> from
+the fitted <italic>k</italic><sub>da</sub> (<italic>P</italic><sub>app,fit</sub>) under the assumption that volumes of the two compartments
+were equal (<italic>V</italic><sub>d</sub>). We further approximated
+that the area of the droplet interface bilayer is circular,<sup><xref rid="ref32" ref-type="bibr">32</xref></sup> and we calculated the area (<italic>A</italic>) for the individual droplet pairs via the measured droplet interface
+bilayer diameter from the bright-field images (as indicated in <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Table S1</ext-link>).</p><disp-formula id="eq3"><label>3</label><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" xlink:href="ac0c04939_m003.jpg"><?cloudpmc-path blobs/ca1d/8014892/27bbb4339d17/ac0c04939_m003.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 30?><?original-width 95?><?scaled-height 30?><?scaled-width 95?></graphic></disp-formula><p>To determine
+the <italic>P</italic><sub>app</sub> from MS measurements
+with fewer time points, we used <xref rid="eq4" ref-type="disp-formula">eq <xref rid="eq4" ref-type="disp-formula">4</xref></xref>. <italic>M</italic><sub>d</sub>(0) is the sample mass
+in the donor droplet at the start. Δ<italic>M</italic><sub>a</sub> represents the sample mass permeated into the acceptor droplet after
+a given time (Δ<italic>t</italic>). We differentiated between
+sink and nonsink conditions.<sup><xref rid="ref31" ref-type="bibr">31</xref>,<xref rid="ref33" ref-type="bibr">33</xref></sup> Under sink conditions,
+the transfer of substances back from the acceptor to the donor compartment
+can be neglected. We assumed approximately constant Δ<italic>M</italic><sub>a</sub>/Δ<italic>t</italic> as long as less
+than 10% of the initial donor content permeated into the acceptor
+compartment.</p><disp-formula id="eq4"><label>4</label><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" xlink:href="ac0c04939_m004.jpg"><?cloudpmc-path blobs/ca1d/8014892/10f9d12fad6f/ac0c04939_m004.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 33?><?original-width 160?><?scaled-height 33?><?scaled-width 160?></graphic></disp-formula></sec><sec id="sec2.7" disp-level="2"><title>Permeation Kinetics with Droplets in Series</title><p>For several
+acceptor droplets in series, the numerical solutions of a differential
+equation system according to <xref rid="eq5" ref-type="disp-formula">eqs <xref rid="eq5" ref-type="disp-formula">5</xref></xref> to <xref rid="eq7" ref-type="disp-formula">7</xref> were fitted to the normalized
+fluorescence data of donor and acceptor droplets. The solutions of
+the differential equation system and the fitting were performed with
+the Matlab (version 2018a, Mathworks) functions ode15s, fmincon (minimizing
+the sum of squared residues), and MultiStart.</p><disp-formula id="eq5"><label>5</label><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" xlink:href="ac0c04939_m005.jpg"><?cloudpmc-path blobs/ca1d/8014892/7b51b8702d48/ac0c04939_m005.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 31?><?original-width 160?><?scaled-height 31?><?scaled-width 160?></graphic></disp-formula><disp-formula id="eq6"><label>6</label><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" xlink:href="ac0c04939_m006.jpg"><?cloudpmc-path blobs/ca1d/8014892/e087b955b755/ac0c04939_m006.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 31?><?original-width 430?><?scaled-height 31?><?scaled-width 430?></graphic></disp-formula><disp-formula id="eq7"><label>7</label><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" xlink:href="ac0c04939_m007.jpg"><?cloudpmc-path blobs/ca1d/8014892/6978d17d3895/ac0c04939_m007.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 40?><?original-width 408?><?scaled-height 40?><?scaled-width 408?></graphic></disp-formula><p><italic>W</italic>(<italic>n</italic>) is the fluorescence in the water phase of droplet <italic>n</italic>, <italic>k</italic> is the mass transfer rate constant
+(the fit parameter), and <italic>N</italic> is the total number of
+donor and acceptor droplets. The expression <italic>N</italic> &gt;
+2
+equals 1 if <italic>N</italic> &gt; 2 and 0 if <italic>N</italic> ≤
+2, and <italic>n</italic> &lt; <italic>N</italic> equals 1 if <italic>n</italic> &lt; <italic>N</italic> and 0 if <italic>n</italic> ≥ <italic>N</italic>.</p></sec></sec><sec id="sec3" disp-level="1"><title>Result and Discussion</title><sec id="sec3.1" disp-level="2"><title>Spotting Platform for DIB
+Formation</title><p>We developed a
+microfluidic platform with the aim to understand key parameters of
+membrane permeation of molecules (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>). Aqueous droplets were created in a simple
+microfluidic T-junction and afterward were positioned on hydrophilic
+cavities on the surface of a plate. First, the donor droplets were
+deposited, containing the permeating compound, and in the second spotting
+procedure, the acceptor droplets were added to the cavities in close
+proximity of the donor droplets (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Video S1</ext-link> in the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Supporting Information</ext-link>). Droplets
+hosted by neighboring cavities contacted each other. As the droplet–oil
+interfaces consisted of a self-assembled phospholipid monolayer, the
+contact between this aqueous droplet and another droplet united the
+lipid monolayers, creating the DIB of roughly 5 nm thickness.<sup><xref rid="ref4" ref-type="bibr">4</xref>,<xref rid="ref34" ref-type="bibr">34</xref></sup> The droplets were covered by oil to prevent evaporation. The oil
+bath had a volume of ∼4 mL and did not contain phospholipids.
+Therefore, we expected that the few remaining phospholipids, which
+did not assemble to the monolayer of the aqueous droplets after droplet
+formation, were quickly diluted in the large volume of the oil bath.
+These diluted phospholipids were assumed to assemble on the surface
+of the four 50 μL water reservoirs at the edges of the plate
+holder. One 50 μL water reservoir had more than a 150 times
+larger area compared to the ∼25 nL droplet. The ∼25
+nL droplets were already saturated with phospholipids when spotted
+on the plate, whereas the 50 μL water reservoirs did not contain
+any phospholipids at the water/oil interface in the beginning of the
+experiment. It is also possible that the diluted phospholipids are
+remaining in the oil bath or assemble at the oil-air interface.</p><fig id="fig1" position="float"><?disp-level 3?><label>Figure 1</label><caption><p>Creation of
+droplet interface bilayers (DIBs) for permeation studies.
+(A) Creation and positioning of droplets on an open platform. Nanoliter
+droplets are formed at a microfluidic T-junction from an aqueous solution
+containing the model permeant and oil with phospholipids. The droplets
+are deposited on a glass plate into cavities, which are built in a
+layer of the photoresist SU-8. The enlarged schematic depicts the
+side view. Donor droplets with model permeants are spotted next to
+the acceptor droplets. The DIB forms in between these droplet pairs
+and facilitates passive permeation of compounds from the donor to
+acceptor droplet and vice versa. (B) Micrograph showing a droplet
+pair with the DIB. The small circles inside the droplets are shadows
+of the cavities. We measure either the fluorescence intensity in the
+donor and acceptor droplets or take mass spectra of the droplet contents.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr1" xlink:href="ac0c04939_0002.jpg"><?cloudpmc-path blobs/ca1d/8014892/98a2e8302a71/ac0c04939_0002.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 820?><?original-width 1875?><?scaled-height 328?><?scaled-width 750?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ac0c04939_0002.gif"><?cloudpmc-path blobs/ca1d/8014892/ded2ec132479/ac0c04939_0002.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>After formation of a DIB within less than 1 min,
+we monitored the
+permeation process. Previously, we proved the formation of unilamellar
+DIBs by forming alpha-hemolysin pores with our method.<sup><xref rid="ref24" ref-type="bibr">24</xref></sup> DIB membranes that could incorporate transmembrane
+proteins or toxins behaved like “oil-free” membrane
+structures, such as vesicles.<sup><xref rid="ref24" ref-type="bibr">24</xref>,<xref rid="ref35" ref-type="bibr">35</xref></sup> Even when a tiny amount
+of oil was still present in the membrane, it should not affect our
+measurement since the membrane of a biological cell also contains
+cholesterol precursors. The current size of the droplets can be reduced
+with other methods than the used T-junction to sizes of mammalian
+cells (15–20 μm). Furthermore, the spotting plate is
+scalable and could be fabricated with smaller droplet deposition sites
+(theoretically down the resolution of photolithography, i.e., ∼1
+to 2 μm). The number of deposited droplet pairs and networks
+could be increased up to several hundred thousands.</p></sec><sec id="sec3.2" disp-level="2"><title>Fluorophore
+Permeation Analysis with Symmetric Membranes</title><p>We optimized
+and evaluated the method with fluorescent dyes (rhodamine
+6G, fluorescein, PEG4-NBD, and calcein) and performed kinetic measurements
+to assess the respective <italic>P</italic><sub>app,fit</sub>. We
+chose a pH of 6 in these experiments as approximation to the pH of
+the small intestine where most drugs are absorbed<sup><xref rid="ref36" ref-type="bibr">36</xref></sup> and set the physiological temperature at 37 °C. <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>A,B and <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Figure S1</ext-link> show the permeation of rhodamine 6G
+from donor to acceptor droplets until an equilibrium is reached. Likewise,
+PEG4-NBD and fluorescein permeated across the DIB (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Figures S2 and S3</ext-link>), while no permeation was observed for calcein
+(<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Figure S4</ext-link>). This observation is in good
+agreement with the very low permeability coefficients (10<sup>–10</sup> to 10<sup>–11</sup> cm/s) reported for calcein permeation
+across liposome membranes.<sup><xref rid="ref37" ref-type="bibr">37</xref></sup> For isolated
+droplets that contain one of these fluorophores but are not connected
+to an acceptor droplet, the fluorescence intensity is constant, and
+therefore, we assume to have no leakage of permeants into the oil
+phase. Likewise, isolated acceptor droplets deposited near donor droplets
+do not exhibit a fluorescent signal over time (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Figures S1–S3</ext-link>).</p><fig id="fig2" position="float"><?disp-level 3?><label>Figure 2</label><caption><p>Permeation of different fluorophores across
+100% DOPC droplet interface
+bilayer (DIB) membranes. (A) Mean normalized fluorescence intensity
+(FI) over time of rhodamine 6G in donor and acceptor droplets at pH
+6.0. The color-shaded areas represent the standard deviation of every
+data point (<italic>N</italic> = 27). The fit is shown for the mean
+values. (B) Bright-field (top left) and fluorescent images of donor
+and acceptor droplets for the graphs shown in panel A. (C) Apparent
+permeability coefficients and standard deviations of fluorescein,
+PEG4-NBD, rhodamine 6G, and calcein (all at pH = 6.0, <italic>N</italic> = 27). (D) Mean <italic>P</italic><sub>app,fit</sub> and standard
+deviations of fluorescein at different pH (<italic>N</italic> = 27).</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr2" xlink:href="ac0c04939_0003.jpg"><?cloudpmc-path blobs/ca1d/8014892/4e8cce5d073c/ac0c04939_0003.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 1359?><?original-width 1875?><?scaled-height 544?><?scaled-width 750?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ac0c04939_0003.gif"><?cloudpmc-path blobs/ca1d/8014892/c4e7fbb7e78a/ac0c04939_0003.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>The apparent permeability coefficients were determined
+using <xref rid="eq1" ref-type="disp-formula">eqs <xref rid="eq1" ref-type="disp-formula">1</xref></xref>–<xref rid="eq3" ref-type="disp-formula">3</xref> (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>C);
+all fitting values are listed in the Supporting Information, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Table S1</ext-link>. In addition, we determined the <italic>P</italic><sub>app,fit</sub> of fluorescein at pH 6, 7, and 8 (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>D and Supporting
+Information <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Figures S3, S5, and S6</ext-link>). As
+expected, the <italic>P</italic><sub>app,fit</sub> of fluorescein
+dropped significantly for higher pH values, since the phenolic p<italic>K</italic><sub>a</sub> of fluorescein is 6.4, and the fraction of
+the di-anionic form (carboxylate and phenolate) increases from pH
+6 to 8, resulting in reduced permeability.</p><p>The <italic>P</italic><sub>app,fit</sub> values for fluorescein
+across 100% DOPC DIBs match well with findings in former studies with
+DIBs,<sup><xref rid="ref4" ref-type="bibr">4</xref>,<xref rid="ref12" ref-type="bibr">12</xref></sup> vesicles,<sup><xref rid="ref26" ref-type="bibr">26</xref></sup> or
+cell monolayers.<sup><xref rid="ref38" ref-type="bibr">38</xref>,<xref rid="ref39" ref-type="bibr">39</xref></sup> For example, our values at pH
+6, 7, and 8 were (193.03 ± 17.79) × 10<sup>–6</sup>, (7.05 ± 0.42) × 10<sup>–6</sup>, and (1.05 ±
+0.06) × 10<sup>–6</sup> cm/s, respectively, similar to
+the permeation constants reported by Schlicht and Zagnoni ((2.01 ±
+1.46) × 10<sup>–6</sup> cm/s at pH 7.4),<sup><xref rid="ref12" ref-type="bibr">12</xref></sup> and by Nisisako et al. ((60.0 ± 22.4) × 10<sup>–6</sup> cm/s at pH 6.4 and (5.1 ± 1.8) × 10<sup>–6</sup> cm/s at pH 7.5).<sup><xref rid="ref4" ref-type="bibr">4</xref></sup> Likewise,
+the determined permeability constants for PEG4-NBD and rhodamine 6G
+are in the same order of magnitude to previous results.<sup><xref rid="ref26" ref-type="bibr">26</xref>,<xref rid="ref40" ref-type="bibr">40</xref></sup></p></sec><sec id="sec3.3" disp-level="2"><title>Fluorophore Permeation Analysis with Asymmetric Membranes</title><p>Next, we varied the composition of the DIB. We created symmetric
+DIBs by spotting droplet pairs of the same type, e.g., all with a
+DOPC monolayer, and asymmetric DIBs by spotting donor and acceptor
+droplets with different lipid monolayers. We chose DOPC and, as a
+second monolayer, a formulation of 30% DOPC and 70% DOPS, because
+the negatively charged phosphatidylserine (PS) is an important constituent
+of the plasma membrane of cells. PS is located in the inner leaflet
+of healthy cells and transferred to the outer leaflet in apoptotic
+cells. The asymmetry due to PS may result in an asymmetric partitioning
+of the permeant between the two lipid layers. We monitored the influence
+of this asymmetry on the permeation kinetics of rhodamine 6G (Supporting
+Information, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Figures S7–S9</ext-link>). Depending
+on the membrane composition, extensive lag phases were observed in
+the fluorescence–time curves of both donor and acceptor droplets.
+Analysis with <xref rid="eq1" ref-type="disp-formula">eqs <xref rid="eq1" ref-type="disp-formula">1</xref></xref> and <xref rid="eq2" ref-type="disp-formula">2</xref> for the complete data set, including the lag phase,
+resulted in different rate constants for the four membrane compositions.
+Taking into account the differences in DIB diameters in <xref rid="eq3" ref-type="disp-formula">eq <xref rid="eq3" ref-type="disp-formula">3</xref></xref> still resulted in different <italic>P</italic><sub>app,fit</sub> values for the different membrane compositions
+(<xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref> and Supporting
+Information <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Table S1</ext-link>). The highest apparent
+rate constant and <italic>P</italic><sub>app,fit</sub> were observed
+for the permeation across the asymmetric lipid bilayer of 30% DOPC
+and 70% DOPS to 100% DOPC (Supporting Information, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Figure S7</ext-link>). The lowest <italic>P</italic><sub>app,fit</sub> and apparent rate constant for rhodamine 6G were found for the opposite
+composition, which also had the most prominent lag phase (Supporting
+Information, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Figure S8</ext-link>). For symmetric
+DIBs, the values for the <italic>P</italic><sub>app,fit</sub> were
+in between those for asymmetric DIBs (Supporting Information <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Figure S9</ext-link> and <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>A).</p><fig id="fig3" position="float"><?disp-level 3?><label>Figure 3</label><caption><p><italic>P</italic><sub>app,fit</sub> for rhodamine
+6G at pH 6.0
+across symmetric and asymmetric DIBs. The error bars represent the
+standard deviation, <italic>N</italic> = 27 droplet pairs.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr3" xlink:href="ac0c04939_0004.jpg"><?cloudpmc-path blobs/ca1d/8014892/66af26fe91ee/ac0c04939_0004.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 1858?><?original-width 2000?><?scaled-height 743?><?scaled-width 800?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ac0c04939_0004.gif"><?cloudpmc-path blobs/ca1d/8014892/3fbaf417e54a/ac0c04939_0004.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>In theory, the permeability coefficients across asymmetric
+membranes
+should be independent of the direction of the initial concentration
+gradient.<sup><xref rid="ref31" ref-type="bibr">31</xref></sup> The differences between the <italic>P</italic><sub>app,fit</sub> values of the two asymmetric bilayers
+in our experiments could result from interactions of cationic rhodamine
+6G with the negatively charged DOPS, visible by increased fluorescence
+at the lipid monolayer of the droplets. This accumulation or aggregation
+of the fluorophore is clearly visible in the Supporting Information <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Figures S8A and S9A</ext-link>, where the acceptor droplet’s
+monolayer comprises 30% DOPC and 70% DOPS. These interactions may
+result in the observed lag phase in the fluorescence–time curves
+(Supporting Information, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Figures S8 and S9</ext-link>), reducing the apparent rate constants when fitting the complete
+data set with <xref rid="eq1" ref-type="disp-formula">eqs <xref rid="eq1" ref-type="disp-formula">1</xref></xref> and <xref rid="eq2" ref-type="disp-formula">2</xref>. Further general sources of error could be leakage
+out of the droplet and bleaching, both reducing the observable fluorophore
+in the droplets over time.</p><p>It should be mentioned that the asymmetric
+membranes could equilibrate
+due to lipid flip-flop,<sup><xref rid="ref41" ref-type="bibr">41</xref></sup> resulting in
+equal lipid compositions on both sides of the DIB. Since the exchange
+of lipids is very slow in defect-free membranes (∼10<sup>–15</sup> s<sup>–1</sup>),<sup><xref rid="ref42" ref-type="bibr">42</xref></sup> we expect a
+stable asymmetric DIB for several hours and assume that lipid flip-flop
+has no influence on our results.</p></sec><sec id="sec3.4" disp-level="2"><title>Fluorophore Permeation
+over Multiple Compartments</title><p>Our
+platform allows for spotting droplet lines, instead of just pairs.
+With this, we can monitor how permeation and diffusion of compounds
+progress over several compartments. For creation of multiple droplets,
+connected via DIBs, we used a modified glass plate, where cavities
+were created in lines. Several fluorophore-free acceptor droplets
+were deposited in this line accordingly. The last droplet contained
+fluorescein, which permeates over the multiple compartments. Equilibrium
+was reached in all five droplets after approximately 30 min at pH
+6 (<xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>). We determined
+the <italic>P</italic><sub>app,fit</sub> using <xref rid="eq5" ref-type="disp-formula">eqs <xref rid="eq5" ref-type="disp-formula">5</xref></xref>–<xref rid="eq7" ref-type="disp-formula">7</xref> and <xref rid="eq3" ref-type="disp-formula">3</xref> to be (199.68 ± 9.73) × 10<sup>–6</sup> cm/s, similar to the value determined with the droplet pairs, <italic>i</italic>.<italic>e</italic>., (193.03 ± 17.79) × 10<sup>–6</sup> cm/s. Permeation at pH 7.4 was slower, which was
+expected from the experiments with the droplet pairs and from the
+ionization state of fluorescein (Supporting Information, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Figure S11</ext-link>). The <italic>P</italic><sub>app,fit</sub> at pH 7.4 was (19.01 ± 1.16) × 10<sup>–6</sup> cm/s,
+higher than determined with the droplet pairs at pH 7.0 (7.05 ±
+0.42) × 10<sup>–6</sup> cm/s. We did not further investigate
+the discrepancy at the higher pH. The lag phase observed at pH 7.0
+(Supporting Information <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">Figure S5</ext-link>) has
+a higher impact on the fit parameters in the assay with only two droplets
+(reducing the apparent rate constants) than with several droplets
+in series.</p><fig id="fig4" position="float"><?disp-level 3?><label>Figure 4</label><caption><p>Permeation of fluorescein over multiple compartments. (A) Mean
+fluorescence intensity (FI) and standard deviation (color-shaded areas)
+over time from one donor to four acceptor droplets (100% DOPC droplet
+interface bilayer, pH 6.0, <italic>N</italic> = 12 droplet networks).
+Black lines: fits according to <xref rid="eq5" ref-type="disp-formula">eqs <xref rid="eq5" ref-type="disp-formula">5</xref></xref>–<xref rid="eq7" ref-type="disp-formula">7</xref>. (B) Bright-field (top
+left) and fluorescent images of the permeation.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr4" xlink:href="ac0c04939_0005.jpg"><?cloudpmc-path blobs/ca1d/8014892/28d3fff7f2bb/ac0c04939_0005.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 711?><?original-width 2100?><?scaled-height 237?><?scaled-width 700?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ac0c04939_0005.gif"><?cloudpmc-path blobs/ca1d/8014892/cf4fbbdff4fd/ac0c04939_0005.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig></sec><sec id="sec3.5" disp-level="2"><title>Label-free Permeation Analysis</title><p>Finally, we developed
+a protocol to interface our platform with LC–MS and to measure
+the <italic>P</italic><sub>app</sub> of nonfluorescent compounds in
+the future. Here, we demonstrate the workflow (<xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref>A) and perform the MS analysis of donor and
+acceptor droplets for rhodamine 6G. In contrast to fluorescence microscopy,
+the analysis by MS was not done continuously but at a defined time
+point. For MS analysis, droplet pairs were separated by placing a
+capillary in between the pair (Supporting Information, Video S2),
+and the individual droplets were then aspirated into the capillary
+(Supporting Information, Video S3). These droplets were then transferred
+into a tube, where water was exchanged by a mixture of MS-grade water–acetonitrile.
+We performed this procedure for different time points and determined
+the MS signals (integrated peak area) for both donor and acceptor
+droplets (<xref rid="fig5" ref-type="fig">Figure <xref rid="fig5" ref-type="fig">5</xref></xref>B).
+We calculated the <italic>P</italic><sub>app</sub> by using <xref rid="eq3" ref-type="disp-formula">eq <xref rid="eq3" ref-type="disp-formula">3</xref></xref> (<italic>P</italic><sub>app.fit</sub> = 6.28 ± 0.68 × 10<sup>–6</sup> cm/s)
+as well as <xref rid="eq4" ref-type="disp-formula">eq <xref rid="eq4" ref-type="disp-formula">4</xref></xref> (<italic>P</italic><sub>app.sink</sub> = 9.42 ± 2.17 × 10<sup>–6</sup> cm/s using the first two data points), which assumes the sink condition
+(neglecting back-permeation into the donor droplet). The slightly
+lower value obtained when fitting all data (<italic>P</italic><sub>app.fit</sub> MS) can be presumably attributed to heat losses during
+sampling of the droplets (opening the lid positioned over the plate
+to allow separation and extraction of the droplet pairs). Since <italic>P<sub>app.sink</sub></italic> MS was calculated with the droplet
+pairs, which were separated first, only a minimal heat loss is expected
+at these data points. The results confirm that our method facilitates
+the determination of the permeation coefficient by either fluorescent
+microscopy or mass spectrometry.</p><fig id="fig5" position="float"><?disp-level 3?><label>Figure 5</label><caption><p>(A) Scheme of droplet separation and extraction
+for liquid chromatography–mass
+spectrometry (LC–MS) analysis. (From left to right: droplet
+spotting; the incubation step for allowing permeation; droplet separation;
+droplet aspiration; placing the droplet in a storage place to evaporate
+the remaining water/solvents and, following this, a defined volume
+of water/acetonitrile (2:1) is added for redissolution; LC–MS
+analysis). (B) Permeation of rhodamine 6G across droplet interface
+bilayer (DIB) membranes at pH 6.0 measured by MS (<italic>N</italic> = 4). (Black lines: fits according to <xref rid="eq1" ref-type="disp-formula">eqs <xref rid="eq1" ref-type="disp-formula">1</xref></xref> and <xref rid="eq2" ref-type="disp-formula">2</xref> (<italic>P</italic><sub>app,fit</sub>). (C) Apparent permeability coefficients (<italic>N</italic> = 27 for <italic>P</italic><sub>app,fit</sub> fluorescence; <italic>N</italic> = 4 for MS measurements).</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr5" xlink:href="ac0c04939_0006.jpg"><?cloudpmc-path blobs/ca1d/8014892/1572a9a9898a/ac0c04939_0006.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 1030?><?original-width 1854?><?scaled-height 412?><?scaled-width 741?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="ac0c04939_0006.gif"><?cloudpmc-path blobs/ca1d/8014892/235acbf54d0a/ac0c04939_0006.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig></sec></sec><sec id="sec4" disp-level="1"><title>Conclusions</title><p>We developed a versatile microfluidic method
+to determine the permeability
+coefficients of small molecules by monitoring their permeation across
+artificial lipid bilayers. The lipid bilayers are formed between two
+adjacent nanoliter droplets that are deposited on a glass substrate.
+We showed on-demand droplet generation, spotting, on-site continuous
+investigation of fluorescent molecules with a microscope, and subsequent
+LC–MS analysis, opening doors for permeability studies of nonfluorescent
+compounds. The method is suitable for a wide range of water-soluble
+and amphiphilic drugs. It may not be suitable for very lipophilic,
+apolar compounds with high partitioning to the oil phase, resulting
+in very low fluorescence in the water phase. For these compounds,
+the assay geometry may be modified to reach a minimal volume ratio
+between oil and water phases in order to be able to quantify the fluorescence
+in the water phase.</p><p>The method is much faster than the current
+state-of-the art PAMPA,
+i.e., normally less than 1 h for <italic>P</italic><sub>app.sink</sub> compared to 2–18 h of PAMPA assay time, which requires approximately
+8000 times smaller compartments (<italic>V</italic> = 25 nL vs ∼200
+μL) and can be equally parallelized as PAMPA. Therefore, it
+is ideally suited for rapid determination of drug permeability during
+the drug screening process.</p><p>Moreover, we can investigate specific
+aspects of the permeation
+process by systematic alterations of various parameters. For example,
+the membrane compositions can be changed and asymmetric membranes
+can be created, which leads to a better understanding of the permeation
+mechanisms. We believe that it is also possible to reconstitute membrane
+proteins into the DIB, which will ultimately enable studies on membrane
+transporters or determination of ligand–receptor binding.</p></sec><sec id="ack1" sec-type="ack" disp-level="1"><title>Acknowledgments</title><p>Funding from the European Research Council (ERC
+Consolidator grant no. 681587, HybCell) and the NCCR Molecular Systems
+Engineering (Swiss National Science Foundation, Grant No. 51NF40-182895)
+is gratefully acknowledged. We would like to thank Dominik Haidas
+for the Matlab data evaluation script, Marcel Grogg for the help with
+the synthesis and analysis of PEG4-NBD, and Chao-Chen Lin for the
+help with the optical microscope. We highly appreciate support from
+the team of the Department’s cleanroom facility and the workshop
+team for the fabrication of the spotting device parts. In addition,
+we thank Darius Rackus for proofreading.</p></sec><sec id="notes1" disp-level="1"><title>Supporting Information Available</title><p>The Supporting
+Information is
+available free of charge at <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://pubs.acs.org/doi/10.1021/acs.analchem.0c04939?goto=supporting-info" ext-link-type="uri">https://pubs.acs.org/doi/10.1021/acs.analchem.0c04939</ext-link>.</p><list list-type="simple" id="silist"><list-item><p>A summary of the fitting
+results and microcroscopy images
+and graphs for various conditions (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_001.pdf" ext-link-type="uri">PDF</ext-link>)</p></list-item><list-item><p>(Video 1) The spotting process (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_002.avi" ext-link-type="uri">AVI</ext-link>)</p></list-item><list-item><p>(Video 2) The
+process of splitting droplet pairs (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_003.avi" ext-link-type="uri">AVI</ext-link>)</p></list-item><list-item><p>(Video 3) The aspiration of droplets
+into a capillary
+(<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acs.analchem.0c04939/suppl_file/ac0c04939_si_004.avi" ext-link-type="uri">AVI</ext-link>)</p></list-item></list></sec><sec id="notes2" disp-level="1"><title>Author Contributions</title><p>P.S.D. designed
+the work; S.B. and M.O. developed the permeability testing platform
+and the methods; S.B. fabricated the microscopy slides and performed
+&amp; analyzed the fluorescence and mass spectrometry experiments;
+S.D.K. developed the kinetic model for data analysis; S.B. and P.S.D.
+wrote the manuscript, which all authors approved.</p></sec><sec id="NOTES-d7e1721-autogenerated" disp-level="1"><p>The authors declare no
+competing financial interest.</p></sec><sec id="sec17" disp-level="1"><title>Supplementary Material</title><supplementary-material id="sifile1" position="float"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ac0c04939_si_001.pdf" mimetype="application" mime-subtype="pdf"><?cloudpmc-path ca1d/8014892/3cc634dbdb84/ac0c04939_si_001.pdf?><?cloudpmc-bucket app?><?size 741729?><caption><p>ac0c04939_si_001.pdf</p></caption></media></supplementary-material><supplementary-material id="sifile2" position="float"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ac0c04939_si_002.avi" mimetype="video" mime-subtype="x-msvideo"><?cloudpmc-path ca1d/8014892/716e3f3ec1a3/ac0c04939_si_002.avi?><?cloudpmc-bucket app?><?size 17623958?><caption><p>ac0c04939_si_002.avi</p></caption></media></supplementary-material><supplementary-material id="sifile3" position="float"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ac0c04939_si_003.avi" mimetype="video" mime-subtype="x-msvideo"><?cloudpmc-path ca1d/8014892/4baecf9c790a/ac0c04939_si_003.avi?><?cloudpmc-bucket app?><?size 16935712?><caption><p>ac0c04939_si_003.avi</p></caption></media></supplementary-material><supplementary-material id="sifile4" position="float"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ac0c04939_si_004.avi" mimetype="video" mime-subtype="x-msvideo"><?cloudpmc-path ca1d/8014892/9fad8a4e030d/ac0c04939_si_004.avi?><?cloudpmc-bucket app?><?size 4628714?><caption><p>ac0c04939_si_004.avi</p></caption></media></supplementary-material></sec><sec id="ref-list1" sec-type="ref-list" disp-level="1"><title>References</title><sec id="ref-list1_sec2" disp-level="2"><ref-list><ref id="ref1"><mixed-citation id="cit1"><named-content content-type="citation-string">Wilson C. G. In Controlled Release
+in Oral Drug Delivery, Wilson C. G.; Crowley P. J., Eds.; Springer US: Boston, MA, 2011, pp. 27–48.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="title=Controlled Release in Oral Drug Delivery&amp;publication_year=2011&amp;"/></mixed-citation></ref><ref id="ref2"><mixed-citation id="cit2"><named-content content-type="citation-string">Sugano K.; Kansy M.; Artursson P.; Avdeef A.; Bendels S.; Di L.; Ecker G. F.; Faller B.; Fischer H.; Gerebtzoff G.; Lennernaes H.; Senner F.
+Coexistence of passive and carrier-mediated
+processes in drug transport. Nat. Rev. Drug
+Discovery
+2010, 9, 597–614. 10.1038/nrd3187.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/nrd3187"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20671764"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nat. Rev. Drug Discovery&amp;title=Coexistence of passive and carrier-mediated processes in drug transport&amp;author=K. Sugano&amp;author=M. Kansy&amp;author=P. Artursson&amp;author=A. Avdeef&amp;author=S. Bendels&amp;volume=9&amp;publication_year=2010&amp;pages=597-614&amp;pmid=20671764&amp;doi=10.1038/nrd3187&amp;"/></mixed-citation></ref><ref id="ref3"><mixed-citation id="cit3"><named-content content-type="citation-string">Avdeef A.Absorption and drug development:
+solubility, permeability, and charge state; John Wiley &amp; Sons, 2012, 10.1002/9781118286067.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1002/9781118286067"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="title=Absorption and drug development: solubility, permeability, and charge state&amp;publication_year=2012&amp;"/></mixed-citation></ref><ref id="ref4"><mixed-citation id="cit4"><named-content content-type="citation-string">Nisisako T.; Portonovo S. A.; Schmidt J. J.
+Microfluidic passive permeability
+assay using nanoliter droplet interface lipid bilayers. Analyst
+2013, 138, 6793–6800. 10.1039/c3an01314f.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1039/c3an01314f"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="24056299"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Analyst&amp;title=Microfluidic passive permeability assay using nanoliter droplet interface lipid bilayers&amp;author=T. Nisisako&amp;author=S. A. Portonovo&amp;author=J. J. Schmidt&amp;volume=138&amp;publication_year=2013&amp;pages=6793-6800&amp;pmid=24056299&amp;doi=10.1039/c3an01314f&amp;"/></mixed-citation></ref><ref id="ref5"><mixed-citation id="cit5"><named-content content-type="citation-string">Krämer S. D.; Lombardi D.; Primorac A.; Thomae A. V.; Wunderli-Allenspach H.
+Lipid-Bilayer
+Permeation of Drug-Like Compounds. Chem. Biodiversity
+2009, 6, 1900–1916. 10.1002/cbdv.200900122.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1002/cbdv.200900122"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="19937828"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Chem. Biodiversity&amp;title=Lipid-Bilayer Permeation of Drug-Like Compounds&amp;author=S. D. Krämer&amp;author=D. Lombardi&amp;author=A. Primorac&amp;author=A. V. Thomae&amp;author=H. Wunderli-Allenspach&amp;volume=6&amp;publication_year=2009&amp;pages=1900-1916&amp;pmid=19937828&amp;doi=10.1002/cbdv.200900122&amp;"/></mixed-citation></ref><ref id="ref6"><mixed-citation id="cit6"><named-content content-type="citation-string">Kansy M.; Senner F.; Gubernator K.
+Physicochemical
+High Throughput Screening:
+Parallel Artificial Membrane Permeation Assay in the Description of
+Passive Absorption Processes. J. Med. Chem.
+1998, 41, 1007–1010. 10.1021/jm970530e.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/jm970530e"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="9544199"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Med. Chem.&amp;title=Physicochemical High Throughput Screening: Parallel Artificial Membrane Permeation Assay in the Description of Passive Absorption Processes&amp;author=M. Kansy&amp;author=F. Senner&amp;author=K. Gubernator&amp;volume=41&amp;publication_year=1998&amp;pages=1007-1010&amp;pmid=9544199&amp;doi=10.1021/jm970530e&amp;"/></mixed-citation></ref><ref id="ref7"><mixed-citation id="cit7"><named-content content-type="citation-string">Faller B.
+Artificial
+membrane assays to assess permeability. Curr.
+Drug Metab.
+2008, 9, 886–892. 10.2174/138920008786485227.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.2174/138920008786485227"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="18991585"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Curr. Drug Metab.&amp;title=Artificial membrane assays to assess permeability&amp;author=B. Faller&amp;volume=9&amp;publication_year=2008&amp;pages=886-892&amp;pmid=18991585&amp;doi=10.2174/138920008786485227&amp;"/></mixed-citation></ref><ref id="ref8"><mixed-citation id="cit8"><named-content content-type="citation-string">Eyer K.; Paech F.; Schuler F.; Kuhn P.; Kissner R.; Belli S.; Dittrich P. S.; Krämer S. D.
+A liposomal
+fluorescence assay to study permeation kinetics of drug-like weak
+bases across the lipid bilayer. J. Controlled
+Release
+2014, 173, 102–109. 10.1016/j.jconrel.2013.10.037.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.jconrel.2013.10.037"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="24211703"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Controlled Release&amp;title=A liposomal fluorescence assay to study permeation kinetics of drug-like weak bases across the lipid bilayer&amp;author=K. Eyer&amp;author=F. Paech&amp;author=F. Schuler&amp;author=P. Kuhn&amp;author=R. Kissner&amp;volume=173&amp;publication_year=2014&amp;pages=102-109&amp;pmid=24211703&amp;doi=10.1016/j.jconrel.2013.10.037&amp;"/></mixed-citation></ref><ref id="ref9"><mixed-citation id="cit9"><named-content content-type="citation-string">Robinson T.; Kuhn P.; Eyer K.; Dittrich P. S.
+Microfluidic trapping
+of giant unilamellar vesicles to study transport through a membrane
+pore. Biomicrofluidics
+2013, 7, 044105 10.1063/1.4816712.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1063/1.4816712"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3739824"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="24404039"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biomicrofluidics&amp;title=Microfluidic trapping of giant unilamellar vesicles to study transport through a membrane pore&amp;author=T. Robinson&amp;author=P. Kuhn&amp;author=K. Eyer&amp;author=P. S. Dittrich&amp;volume=7&amp;publication_year=2013&amp;pages=044105&amp;pmid=24404039&amp;doi=10.1063/1.4816712&amp;"/></mixed-citation></ref><ref id="ref10"><mixed-citation id="cit10"><named-content content-type="citation-string">Lin C.-C.; Bachmann M.; Bachler S.; Venkatesan K.; Dittrich P. S.
+Tunable Membrane Potential Reconstituted in Giant Vesicles
+Promotes Permeation of Cationic Peptides at Nanomolar Concentrations. ACS Appl. Mater. Interfaces
+2018, 10, 41909–41916. 10.1021/acsami.8b12217.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/acsami.8b12217"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC6420060"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="30450894"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=ACS Appl. Mater. Interfaces&amp;title=Tunable Membrane Potential Reconstituted in Giant Vesicles Promotes Permeation of Cationic Peptides at Nanomolar Concentrations&amp;author=C.-C. Lin&amp;author=M. Bachmann&amp;author=S. Bachler&amp;author=K. Venkatesan&amp;author=P. S. Dittrich&amp;volume=10&amp;publication_year=2018&amp;pages=41909-41916&amp;pmid=30450894&amp;doi=10.1021/acsami.8b12217&amp;"/></mixed-citation></ref><ref id="ref11"><mixed-citation id="cit11"><named-content content-type="citation-string">Bachler S.; Lin C.-C.; Dittrich P. S.
+Combination of a microfluidic device
+and fluorescence correlation spectroscopy to study peptide translocation
+across model membranes. Proc. of the 21st International
+Conference on Miniaturized Systems for Chemistry and Life Sciences,
+MicroTAS 2017
+2017, 967–968.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Proc. of the 21st International Conference on Miniaturized Systems for Chemistry and Life Sciences, MicroTAS 2017&amp;title=Combination of a microfluidic device and fluorescence correlation spectroscopy to study peptide translocation across model membranes&amp;author=S. Bachler&amp;author=C.-C. Lin&amp;author=P. S. Dittrich&amp;publication_year=2017&amp;pages=967-968&amp;"/></mixed-citation></ref><ref id="ref12"><mixed-citation id="cit12"><named-content content-type="citation-string">Schlicht B.; Zagnoni M.
+Droplet-interface-bilayer
+assays in microfluidic passive
+networks. Sci. Rep.
+2015, 5, 9951–9951. 10.1038/srep09951.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/srep09951"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC4408985"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="25909686"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Sci. Rep.&amp;title=Droplet-interface-bilayer assays in microfluidic passive networks&amp;author=B. Schlicht&amp;author=M. Zagnoni&amp;volume=5&amp;publication_year=2015&amp;pages=9951-9951&amp;pmid=25909686&amp;doi=10.1038/srep09951&amp;"/></mixed-citation></ref><ref id="ref13"><mixed-citation id="cit13"><named-content content-type="citation-string">Funakoshi K.; Suzuki H.; Takeuchi S.
+Lipid Bilayer Formation by Contacting
+Monolayers in a Microfluidic Device for Membrane Protein Analysis. Anal. Chem.
+2006, 78, 8169–8174. 10.1021/ac0613479.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/ac0613479"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="17165804"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Anal. Chem.&amp;title=Lipid Bilayer Formation by Contacting Monolayers in a Microfluidic Device for Membrane Protein Analysis&amp;author=K. Funakoshi&amp;author=H. Suzuki&amp;author=S. Takeuchi&amp;volume=78&amp;publication_year=2006&amp;pages=8169-8174&amp;pmid=17165804&amp;doi=10.1021/ac0613479&amp;"/></mixed-citation></ref><ref id="ref14"><mixed-citation id="cit14"><named-content content-type="citation-string">Figeys D.; Pinto D.
+Lab-on-a-chip: a revolution
+in biological and medical sciences. Anal. Chem.
+2000, 72, 330A–335A. 10.1021/ac002800y.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/ac002800y"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="10815945"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Anal. Chem.&amp;title=Lab-on-a-chip: a revolution in biological and medical sciences&amp;author=D. Figeys&amp;author=D. Pinto&amp;volume=72&amp;publication_year=2000&amp;pages=330A-335A&amp;pmid=10815945&amp;doi=10.1021/ac002800y&amp;"/></mixed-citation></ref><ref id="ref15"><mixed-citation id="cit15"><named-content content-type="citation-string">Whitesides G. M.
+The origins
+and the future of microfluidics. Nature
+2006, 442, 368–373. 10.1038/nature05058.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/nature05058"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="16871203"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nature&amp;title=The origins and the future of microfluidics&amp;author=G. M. Whitesides&amp;volume=442&amp;publication_year=2006&amp;pages=368-373&amp;pmid=16871203&amp;doi=10.1038/nature05058&amp;"/></mixed-citation></ref><ref id="ref16"><mixed-citation id="cit16"><named-content content-type="citation-string">Thorsen T.; Roberts R. W.; Arnold F. H.; Quake S. R.
+Dynamic
+Pattern
+Formation in a Vesicle-Generating Microfluidic Device. Phys. Rev. Lett.
+2001, 86, 4163–4166. 10.1103/PhysRevLett.86.4163.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1103/PhysRevLett.86.4163"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="11328121"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Phys. Rev. Lett.&amp;title=Dynamic Pattern Formation in a Vesicle-Generating Microfluidic Device&amp;author=T. Thorsen&amp;author=R. W. Roberts&amp;author=F. H. Arnold&amp;author=S. R. Quake&amp;volume=86&amp;publication_year=2001&amp;pages=4163-4166&amp;pmid=11328121&amp;doi=10.1103/PhysRevLett.86.4163&amp;"/></mixed-citation></ref><ref id="ref17"><mixed-citation id="cit17"><named-content content-type="citation-string">Malmstadt N.; Nash M. A.; Purnell R. F.; Schmidt J. J.
+Automated Formation
+of Lipid-Bilayer Membranes in a Microfluidic Device. Nano Lett.
+2006, 6, 1961–1965. 10.1021/nl0611034.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/nl0611034"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="16968008"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nano Lett.&amp;title=Automated Formation of Lipid-Bilayer Membranes in a Microfluidic Device&amp;author=N. Malmstadt&amp;author=M. A. Nash&amp;author=R. F. Purnell&amp;author=J. J. Schmidt&amp;volume=6&amp;publication_year=2006&amp;pages=1961-1965&amp;pmid=16968008&amp;doi=10.1021/nl0611034&amp;"/></mixed-citation></ref><ref id="ref18"><mixed-citation id="cit18"><named-content content-type="citation-string">Korner J. L.; Stephenson E. B.; Elvira K. S.
+A bespoke microfluidic pharmacokinetic
+compartment model for drug absorption using artificial cell membranes. Lab Chip
+2020, 20, 1898–1906. 10.1039/D0LC00263A.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1039/D0LC00263A"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="32322848"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Lab Chip&amp;title=A bespoke microfluidic pharmacokinetic compartment model for drug absorption using artificial cell membranes&amp;author=J. L. Korner&amp;author=E. B. Stephenson&amp;author=K. S. Elvira&amp;volume=20&amp;publication_year=2020&amp;pages=1898-1906&amp;pmid=32322848&amp;doi=10.1039/D0LC00263A&amp;"/></mixed-citation></ref><ref id="ref19"><mixed-citation id="cit19"><named-content content-type="citation-string">Kitchens K. M.; Kolhatkar R. B.; Swaan P. W.; Eddington N. D.; Ghandehari H.
+Transport
+of Poly(Amidoamine) Dendrimers across Caco-2
+Cell Monolayers: Influence of Size, Charge and Fluorescent Labeling. Pharm. Res.
+2006, 23, 2818–2826. 10.1007/s11095-006-9122-2.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1007/s11095-006-9122-2"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="17094034"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Pharm. Res.&amp;title=Transport of Poly(Amidoamine) Dendrimers across Caco-2 Cell Monolayers: Influence of Size, Charge and Fluorescent Labeling&amp;author=K. M. Kitchens&amp;author=R. B. Kolhatkar&amp;author=P. W. Swaan&amp;author=N. D. Eddington&amp;author=H. Ghandehari&amp;volume=23&amp;publication_year=2006&amp;pages=2818-2826&amp;pmid=17094034&amp;doi=10.1007/s11095-006-9122-2&amp;"/></mixed-citation></ref><ref id="ref20"><mixed-citation id="cit20"><named-content content-type="citation-string">Lee Y.; Choi S. Q.
+Quantitative analysis
+for lipophilic drug transport
+through a model lipid membrane with membrane retention. Eur. J. Pharm. Sci.
+2019, 134, 176–184. 10.1016/j.ejps.2019.04.020.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.ejps.2019.04.020"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="31022441"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Eur. J. Pharm. Sci.&amp;title=Quantitative analysis for lipophilic drug transport through a model lipid membrane with membrane retention&amp;author=Y. Lee&amp;author=S. Q. Choi&amp;volume=134&amp;publication_year=2019&amp;pages=176-184&amp;pmid=31022441&amp;doi=10.1016/j.ejps.2019.04.020&amp;"/></mixed-citation></ref><ref id="ref21"><mixed-citation id="cit21"><named-content content-type="citation-string">Booth M. J.; Restrepo Schild V.; Downs F. G.; Bayley H.
+Functional aqueous
+droplet networks. Mol. BioSyst.
+2017, 13, 1658–1691. 10.1039/C7MB00192D.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1039/C7MB00192D"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="28766622"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Mol. BioSyst.&amp;title=Functional aqueous droplet networks&amp;author=M. J. Booth&amp;author=V. Restrepo Schild&amp;author=F. G. Downs&amp;author=H. Bayley&amp;volume=13&amp;publication_year=2017&amp;pages=1658-1691&amp;pmid=28766622&amp;doi=10.1039/C7MB00192D&amp;"/></mixed-citation></ref><ref id="ref22"><mixed-citation id="cit22"><named-content content-type="citation-string">Küster S. K.; Fagerer S. R.; Verboket P. E.; Eyer K.; Jefimovs K.; Zenobi R.; Dittrich P. S.
+Interfacing Droplet Microfluidics
+with Matrix-Assisted Laser Desorption/Ionization Mass Spectrometry:
+Label-Free Content Analysis of Single Droplets. Anal. Chem.
+2013, 85, 1285–1289. 10.1021/ac3033189.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/ac3033189"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23289755"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Anal. Chem.&amp;title=Interfacing Droplet Microfluidics with Matrix-Assisted Laser Desorption/Ionization Mass Spectrometry: Label-Free Content Analysis of Single Droplets&amp;author=S. K. Küster&amp;author=S. R. Fagerer&amp;author=P. E. Verboket&amp;author=K. Eyer&amp;author=K. Jefimovs&amp;volume=85&amp;publication_year=2013&amp;pages=1285-1289&amp;pmid=23289755&amp;doi=10.1021/ac3033189&amp;"/></mixed-citation></ref><ref id="ref23"><mixed-citation id="cit23"><named-content content-type="citation-string">Haidas D.; Bachler S.; Köhler M.; Blank L. M.; Zenobi R.; Dittrich P. S.
+Microfluidic Platform
+for Multimodal Analysis of Enzyme
+Secretion in Nanoliter Droplet Arrays. Anal.
+Chem.
+2019, 91, 2066–2073. 10.1021/acs.analchem.8b04506.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/acs.analchem.8b04506"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="30571917"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Anal. Chem.&amp;title=Microfluidic Platform for Multimodal Analysis of Enzyme Secretion in Nanoliter Droplet Arrays&amp;author=D. Haidas&amp;author=S. Bachler&amp;author=M. Köhler&amp;author=L. M. Blank&amp;author=R. Zenobi&amp;volume=91&amp;publication_year=2019&amp;pages=2066-2073&amp;pmid=30571917&amp;doi=10.1021/acs.analchem.8b04506&amp;"/></mixed-citation></ref><ref id="ref24"><mixed-citation id="cit24"><named-content content-type="citation-string">Bachler S.; Haidas D.; Ort M.; Duncombe T. A.; Dittrich P. S.
+Microfluidic
+platform enables tailored translocation and reaction cascades in nanoliter
+droplet networks. Commun. Biol.
+2020, 3, 769. 10.1038/s42003-020-01489-w.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/s42003-020-01489-w"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC7736871"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="33318607"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Commun. Biol.&amp;title=Microfluidic platform enables tailored translocation and reaction cascades in nanoliter droplet networks&amp;author=S. Bachler&amp;author=D. Haidas&amp;author=M. Ort&amp;author=T. A. Duncombe&amp;author=P. S. Dittrich&amp;volume=3&amp;publication_year=2020&amp;pages=769&amp;pmid=33318607&amp;doi=10.1038/s42003-020-01489-w&amp;"/></mixed-citation></ref><ref id="ref25"><mixed-citation id="cit25"><named-content content-type="citation-string">Doktorova M.
+On the Long
+and Winding Road to a Perfect Membrane Model. Biophys. J.
+2020, 118, 273–275. 10.1016/j.bpj.2019.11.3386.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.bpj.2019.11.3386"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC6976811"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="31968235"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biophys. J.&amp;title=On the Long and Winding Road to a Perfect Membrane Model&amp;author=M. Doktorova&amp;volume=118&amp;publication_year=2020&amp;pages=273-275&amp;pmid=31968235&amp;doi=10.1016/j.bpj.2019.11.3386&amp;"/></mixed-citation></ref><ref id="ref26"><mixed-citation id="cit26"><named-content content-type="citation-string">Li S.; Hu P.; Malmstadt N.
+Confocal Imaging
+to Quantify Passive Transport across
+Biomimetic Lipid Membranes. Anal. Chem.
+2010, 82, 7766–7771. 10.1021/ac1016826.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/ac1016826"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2939228"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20722391"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Anal. Chem.&amp;title=Confocal Imaging to Quantify Passive Transport across Biomimetic Lipid Membranes&amp;author=S. Li&amp;author=P. Hu&amp;author=N. Malmstadt&amp;volume=82&amp;publication_year=2010&amp;pages=7766-7771&amp;pmid=20722391&amp;doi=10.1021/ac1016826&amp;"/></mixed-citation></ref><ref id="ref27"><mixed-citation id="cit27"><named-content content-type="citation-string">Leptihn S.; Castell O. K.; Cronin B.; Lee E.-H.; Gross L. C. M.; Marshall D. P.; Thompson J. R.; Holden M.; Wallace M. I.
+Constructing
+droplet interface bilayers from the contact of aqueous droplets in
+oil. Nat. Protoc.
+2013, 8, 1048–1057. 10.1038/nprot.2013.061.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/nprot.2013.061"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23640169"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nat. Protoc.&amp;title=Constructing droplet interface bilayers from the contact of aqueous droplets in oil&amp;author=S. Leptihn&amp;author=O. K. Castell&amp;author=B. Cronin&amp;author=E.-H. Lee&amp;author=L. C. M. Gross&amp;volume=8&amp;publication_year=2013&amp;pages=1048-1057&amp;pmid=23640169&amp;doi=10.1038/nprot.2013.061&amp;"/></mixed-citation></ref><ref id="ref28"><mixed-citation id="cit28"><named-content content-type="citation-string">Venkatesan G. A.; Lee J.; Farimani A. B.; Heiranian M.; Collier C. P.; Aluru N. R.; Sarles S. A.
+Adsorption Kinetics Dictate Monolayer Self-Assembly
+for Both Lipid-In and Lipid-Out Approaches to Droplet Interface Bilayer
+Formation. Langmuir
+2015, 31, 12883–12893. 10.1021/acs.langmuir.5b02293.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/acs.langmuir.5b02293"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="26556227"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Langmuir&amp;title=Adsorption Kinetics Dictate Monolayer Self-Assembly for Both Lipid-In and Lipid-Out Approaches to Droplet Interface Bilayer Formation&amp;author=G. A. Venkatesan&amp;author=J. Lee&amp;author=A. B. Farimani&amp;author=M. Heiranian&amp;author=C. P. Collier&amp;volume=31&amp;publication_year=2015&amp;pages=12883-12893&amp;pmid=26556227&amp;doi=10.1021/acs.langmuir.5b02293&amp;"/></mixed-citation></ref><ref id="ref29"><mixed-citation id="cit29"><named-content content-type="citation-string">Lang M.; Rudolf F.; Stelling J.
+Use of YouScope to
+Implement Systematic
+Microscopy Protocols. Curr. Protoc. Mol. Biol.
+2012, 98, 14–21. 10.1002/0471142727.mb1421s98.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1002/0471142727.mb1421s98"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="22470060"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Curr. Protoc. Mol. Biol.&amp;title=Use of YouScope to Implement Systematic Microscopy Protocols&amp;author=M. Lang&amp;author=F. Rudolf&amp;author=J. Stelling&amp;volume=98&amp;publication_year=2012&amp;pages=14-21&amp;pmid=22470060&amp;doi=10.1002/0471142727.mb1421s98&amp;"/></mixed-citation></ref><ref id="ref30"><mixed-citation id="cit30"><named-content content-type="citation-string">Schindelin J.; Arganda-Carreras I.; Frise E.; Kaynig V.; Longair M.; Pietzsch T.; Preibisch S.; Rueden C.; Saalfeld S.; Schmid B.; Tinevez J.-Y.; White D. J.; Hartenstein V.; Eliceiri K.; Tomancak P.; Cardona A.
+Fiji: an open-source
+platform for biological-image analysis. Nat.
+Methods
+2012, 9, 676–682. 10.1038/nmeth.2019.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/nmeth.2019"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3855844"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="22743772"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nat. Methods&amp;title=Fiji: an open-source platform for biological-image analysis&amp;author=J. Schindelin&amp;author=I. Arganda-Carreras&amp;author=E. Frise&amp;author=V. Kaynig&amp;author=M. Longair&amp;volume=9&amp;publication_year=2012&amp;pages=676-682&amp;pmid=22743772&amp;doi=10.1038/nmeth.2019&amp;"/></mixed-citation></ref><ref id="ref31"><mixed-citation id="cit31"><named-content content-type="citation-string">Krämer S. D.
+Quantitative
+aspects of drug permeation across in vitro and in vivo barriers. Eur. J. Pharm. Sci.
+2016, 87, 30–46. 10.1016/j.ejps.2015.10.013.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.ejps.2015.10.013"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="26493585"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Eur. J. Pharm. Sci.&amp;title=Quantitative aspects of drug permeation across in vitro and in vivo barriers&amp;author=S. D. Krämer&amp;volume=87&amp;publication_year=2016&amp;pages=30-46&amp;pmid=26493585&amp;doi=10.1016/j.ejps.2015.10.013&amp;"/></mixed-citation></ref><ref id="ref32"><mixed-citation id="cit32"><named-content content-type="citation-string">Dixit S. S.; Pincus A.; Guo B.; Faris G. W.
+Droplet Shape Analysis
+and Permeability Studies in Droplet Lipid Bilayers. Langmuir
+2012, 28, 7442–7451. 10.1021/la3005739.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/la3005739"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3502024"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="22509902"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Langmuir&amp;title=Droplet Shape Analysis and Permeability Studies in Droplet Lipid Bilayers&amp;author=S. S. Dixit&amp;author=A. Pincus&amp;author=B. Guo&amp;author=G. W. Faris&amp;volume=28&amp;publication_year=2012&amp;pages=7442-7451&amp;pmid=22509902&amp;doi=10.1021/la3005739&amp;"/></mixed-citation></ref><ref id="ref33"><mixed-citation id="cit33"><named-content content-type="citation-string">Hubatsch I.; Ragnarsson E. G. E.; Artursson P.
+Determination of drug permeability
+and prediction of drug absorption in Caco-2 monolayers. Nat. Protoc.
+2007, 2, 2111–2119. 10.1038/nprot.2007.303.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/nprot.2007.303"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="17853866"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nat. Protoc.&amp;title=Determination of drug permeability and prediction of drug absorption in Caco-2 monolayers&amp;author=I. Hubatsch&amp;author=E. G. E. Ragnarsson&amp;author=P. Artursson&amp;volume=2&amp;publication_year=2007&amp;pages=2111-2119&amp;pmid=17853866&amp;doi=10.1038/nprot.2007.303&amp;"/></mixed-citation></ref><ref id="ref34"><mixed-citation id="cit34"><named-content content-type="citation-string">Bayley H.; Cronin B.; Heron A.; Holden M. A.; Hwang W. L.; Syeda R.; Thompson J.; Wallace M.
+Droplet interface bilayers. Mol.
+BioSyst.
+2008, 4, 1191–1208. 10.1039/b808893d.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1039/b808893d"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2763081"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="19396383"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Mol. BioSyst.&amp;title=Droplet interface bilayers&amp;author=H. Bayley&amp;author=B. Cronin&amp;author=A. Heron&amp;author=M. A. Holden&amp;author=W. L. Hwang&amp;volume=4&amp;publication_year=2008&amp;pages=1191-1208&amp;pmid=19396383&amp;doi=10.1039/b808893d&amp;"/></mixed-citation></ref><ref id="ref35"><mixed-citation id="cit35"><named-content content-type="citation-string">Trantidou T.; Friddin M. S.; Salehi-Reyhani A.; Ces O.; Elani Y.
+Droplet microfluidics
+for the construction of compartmentalised model membranes. Lab Chip
+2018, 18, 2488–2509. 10.1039/C8LC00028J.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1039/C8LC00028J"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="30066008"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Lab Chip&amp;title=Droplet microfluidics for the construction of compartmentalised model membranes&amp;author=T. Trantidou&amp;author=M. S. Friddin&amp;author=A. Salehi-Reyhani&amp;author=O. Ces&amp;author=Y. Elani&amp;volume=18&amp;publication_year=2018&amp;pages=2488-2509&amp;pmid=30066008&amp;doi=10.1039/C8LC00028J&amp;"/></mixed-citation></ref><ref id="ref36"><mixed-citation id="cit36"><named-content content-type="citation-string">Hermann K. F.; Neuhaus C. S.; Micallef V.; Wagner B.; Hatibovic M.; Aschmann H. E.; Paech F.; Alvarez-Sanchez R.; Krämer S. D.; Belli S.
+Kinetics of lipid bilayer
+permeation
+of a series of ionisable drugs and their correlation with human transporter-independent
+intestinal permeability. Eur. J. Pharm. Sci.
+2017, 104, 150–161. 10.1016/j.ejps.2017.03.040.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.ejps.2017.03.040"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="28366650"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Eur. J. Pharm. Sci.&amp;title=Kinetics of lipid bilayer permeation of a series of ionisable drugs and their correlation with human transporter-independent intestinal permeability&amp;author=K. F. Hermann&amp;author=C. S. Neuhaus&amp;author=V. Micallef&amp;author=B. Wagner&amp;author=M. Hatibovic&amp;volume=104&amp;publication_year=2017&amp;pages=150-161&amp;pmid=28366650&amp;doi=10.1016/j.ejps.2017.03.040&amp;"/></mixed-citation></ref><ref id="ref37"><mixed-citation id="cit37"><named-content content-type="citation-string">Shimanouchi T.; Ishii H.; Yoshimoto N.; Umakoshi H.; Kuboi R.
+Calcein permeation
+across phosphatidylcholine bilayer membrane: Effects of membrane fluidity,
+liposome size, and immobilization. Colloids
+Surf., B
+2009, 73, 156–160. 10.1016/j.colsurfb.2009.05.014.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.colsurfb.2009.05.014"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="19560324"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Colloids Surf., B&amp;title=Calcein permeation across phosphatidylcholine bilayer membrane: Effects of membrane fluidity, liposome size, and immobilization&amp;author=T. Shimanouchi&amp;author=H. Ishii&amp;author=N. Yoshimoto&amp;author=H. Umakoshi&amp;author=R. Kuboi&amp;volume=73&amp;publication_year=2009&amp;pages=156-160&amp;pmid=19560324&amp;doi=10.1016/j.colsurfb.2009.05.014&amp;"/></mixed-citation></ref><ref id="ref38"><mixed-citation id="cit38"><named-content content-type="citation-string">Simon M. J.; Kang W. H.; Gao S.; Banta S.; Morrison B. III
+TAT Is Not Capable
+of Transcellular Delivery Across
+an Intact Endothelial Monolayer <italic>In Vitro</italic>. Ann. Biomed. Eng.
+2011, 39, 394–401. 10.1007/s10439-010-0144-x.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1007/s10439-010-0144-x"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20737289"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Ann. Biomed. Eng.&amp;title=TAT Is Not Capable of Transcellular Delivery Across an Intact Endothelial Monolayer In Vitro&amp;author=M. J. Simon&amp;author=W. H. Kang&amp;author=S. Gao&amp;author=S. Banta&amp;author=B. Morrison&amp;volume=39&amp;publication_year=2011&amp;pages=394-401&amp;pmid=20737289&amp;doi=10.1007/s10439-010-0144-x&amp;"/></mixed-citation></ref><ref id="ref39"><mixed-citation id="cit39"><named-content content-type="citation-string">Berginc K.; Žakelj S.; Levstik L.; Uršič D.; Kristl A.
+Fluorescein transport
+properties across artificial
+lipid membranes, Caco-2 cell monolayers and rat jejunum. Eur. J. Pharm. Biopharm.
+2007, 66, 281–285. 10.1016/j.ejpb.2006.10.023.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.ejpb.2006.10.023"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="17129714"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Eur. J. Pharm. Biopharm.&amp;title=Fluorescein transport properties across artificial lipid membranes, Caco-2 cell monolayers and rat jejunum&amp;author=K. Berginc&amp;author=S. Žakelj&amp;author=L. Levstik&amp;author=D. Uršič&amp;author=A. Kristl&amp;volume=66&amp;publication_year=2007&amp;pages=281-285&amp;pmid=17129714&amp;doi=10.1016/j.ejpb.2006.10.023&amp;"/></mixed-citation></ref><ref id="ref40"><mixed-citation id="cit40"><named-content content-type="citation-string">Cruysberg L. P. J.; Nuijts R. M. M. A.; Geroski D. H.; Koole L. H.; Hendrikse F.; Edelhauser H. F.
+<italic>In Vitro</italic> Human Scleral
+Permeability of Fluorescein, Dexamethasone-Fluorescein, Methotrexate-Fluorescein
+and Rhodamine 6G and the Use of a Coated Coil as a New Drug Delivery
+System. J. Ocul. Pharmacol. Ther.
+2002, 18, 559–569. 10.1089/108076802321021108.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1089/108076802321021108"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="12537682"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Ocul. Pharmacol. Ther.&amp;title=In Vitro Human Scleral Permeability of Fluorescein, Dexamethasone-Fluorescein, Methotrexate-Fluorescein and Rhodamine 6G and the Use of a Coated Coil as a New Drug Delivery System&amp;author=L. P. J. Cruysberg&amp;author=R. M. M. A. Nuijts&amp;author=D. H. Geroski&amp;author=L. H. Koole&amp;author=F. Hendrikse&amp;volume=18&amp;publication_year=2002&amp;pages=559-569&amp;pmid=12537682&amp;doi=10.1089/108076802321021108&amp;"/></mixed-citation></ref><ref id="ref41"><mixed-citation id="cit41"><named-content content-type="citation-string">Taylor G.; Nguyen M.-A.; Koner S.; Freeman E.; Collier C. P.; Sarles S. A.
+Electrophysiological interrogation
+of asymmetric droplet
+interface bilayers reveals surface-bound alamethicin induces lipid
+flip-flop. Biochim. Biophys. Acta, Biomembr.
+2019, 1861, 335–343. 10.1016/j.bbamem.2018.07.001.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.bbamem.2018.07.001"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="30006208"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biochim. Biophys. Acta, Biomembr.&amp;title=Electrophysiological interrogation of asymmetric droplet interface bilayers reveals surface-bound alamethicin induces lipid flip-flop&amp;author=G. Taylor&amp;author=M.-A. Nguyen&amp;author=S. Koner&amp;author=E. Freeman&amp;author=C. P. Collier&amp;volume=1861&amp;publication_year=2019&amp;pages=335-343&amp;pmid=30006208&amp;doi=10.1016/j.bbamem.2018.07.001&amp;"/></mixed-citation></ref><ref id="ref42"><mixed-citation id="cit42"><named-content content-type="citation-string">Contreras F. X.; Sánchez-Magraner L.; Alonso A.; Goñi F. M.
+Transbilayer
+(flip-flop) lipid motion and lipid scrambling in membranes. FEBS Lett.
+2010, 584, 1779–1786. 10.1016/j.febslet.2009.12.049.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.febslet.2009.12.049"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20043909"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=FEBS Lett.&amp;title=Transbilayer (flip-flop) lipid motion and lipid scrambling in membranes&amp;author=F. X. Contreras&amp;author=L. Sánchez-Magraner&amp;author=A. Alonso&amp;author=F. M. Goñi&amp;volume=584&amp;publication_year=2010&amp;pages=1779-1786&amp;pmid=20043909&amp;doi=10.1016/j.febslet.2009.12.049&amp;"/></mixed-citation></ref></ref-list></sec></sec><sec id="_ad93_" xml:lang="en" sec-type="associated-data" disp-level="1"><title>Associated Data</title><sec id="_adsm93_" xml:lang="en" sec-type="supplementary-materials" disp-level="2"><title>Supplementary Materials</title><supplementary-material id="db_ds_supplementary-material1_reqid_" position="float"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ac0c04939_si_001.pdf" mimetype="application" mime-subtype="pdf"><?cloudpmc-path ca1d/8014892/3cc634dbdb84/ac0c04939_si_001.pdf?><?cloudpmc-bucket app?><?size 741729?><caption><p>ac0c04939_si_001.pdf</p></caption></media></supplementary-material><supplementary-material id="db_ds_supplementary-material2_reqid_" position="float"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ac0c04939_si_002.avi" mimetype="video" mime-subtype="x-msvideo"><?cloudpmc-path ca1d/8014892/716e3f3ec1a3/ac0c04939_si_002.avi?><?cloudpmc-bucket app?><?size 17623958?><caption><p>ac0c04939_si_002.avi</p></caption></media></supplementary-material><supplementary-material id="db_ds_supplementary-material3_reqid_" position="float"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ac0c04939_si_003.avi" mimetype="video" mime-subtype="x-msvideo"><?cloudpmc-path ca1d/8014892/4baecf9c790a/ac0c04939_si_003.avi?><?cloudpmc-bucket app?><?size 16935712?><caption><p>ac0c04939_si_003.avi</p></caption></media></supplementary-material><supplementary-material id="db_ds_supplementary-material4_reqid_" position="float"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="ac0c04939_si_004.avi" mimetype="video" mime-subtype="x-msvideo"><?cloudpmc-path ca1d/8014892/9fad8a4e030d/ac0c04939_si_004.avi?><?cloudpmc-bucket app?><?size 4628714?><caption><p>ac0c04939_si_004.avi</p></caption></media></supplementary-material></sec></sec></body></article>
