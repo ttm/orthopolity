@@ -252,3 +252,28 @@ for Li, Cao and Ng (2024), DOI 10.1038/s41467-024-46058-5; that archive was
 not downloaded. Source pages, bibliographic metadata and existing rights
 notices are not relicensed as project software. The qualification judgments
 and analytic design are this project's work, not author-endorsed findings.
+
+## Exchange qualification and membrane archive (19–20 October 2026)
+
+`physics-candidates/2026-10-19/exchange-followup/` retains unchanged article XML
+for Sun et al. (2024), *Reconfigurable droplet networks*,
+<https://doi.org/10.1038/s41467-024-45214-1>, and Bachler et al. (2020),
+*Microfluidic platform enables tailored translocation and reaction cascades in
+nanoliter droplet networks*, <https://doi.org/10.1038/s42003-020-01489-w>.
+Both retain their CC BY 4.0 notices. The inventories in
+`physics-candidates/2026-10-20/exchange-qualification/` are original publisher,
+BioStudies and DataCite metadata; their source notices remain applicable.
+
+`chemistry-candidates/2026-10-20/membrane-diffusion/` retains data from Benstead,
+Politi, Bergsman and Pozzo, *An automated sampling workflow for parallel
+long-term membrane diffusion cell testing*,
+<https://doi.org/10.1039/D5DD00523J>. Zenodo version 17238337,
+<https://doi.org/10.5281/zenodo.17238337>, assigns CC BY 4.0 to the dataset.
+The experimental ZIP matches Zenodo's MD5. Original source code, notebook,
+README and the MIT license are retained from repository commit
+`12be95974a58e1971483823948eff8802e06b729`; the original copyright and license
+remain in `LICENSE`. Source code is inspected for methods, not executed.
+Acquisition receipts distinguish retained raw files from inspected numerical
+values. The design inventory and qualification judgments are this project's
+work, not author-endorsed results. The article has separate CC BY-NC 3.0 terms;
+no article body is retained here, and its terms do not replace the data license.

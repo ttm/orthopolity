@@ -9,6 +9,12 @@ trace, response workbook, video or figure image was downloaded or decoded.
 Published numerical summaries and searchable article text were read and are
 explicitly exposed; this is not a blind source search.
 
+**20 October follow-up:** [public inventory checks](exchange-source-followup-2026-10-20.md)
+and a [sharper observation test](exchange-observability-2026-10-20.md) refine this
+audit. Initially empty acceptors can establish influx despite normalization;
+the outstanding gate is quantitative kinetic transfer, not a claim that no
+transport occurred.
+
 Original metadata and methods are retained in
 `data/physics-candidates/2026-10-19/relaxation/`, with exact URLs, byte sizes and
 hashes in `acquisition.json`. Chemistry/compartment alternatives are included
@@ -69,13 +75,16 @@ summed signal constant, compensating for several possible loss processes.
 Consequently the processed total cannot independently verify conservation.
 Normalization does not force equal shares; common fractional losses cancel,
 whereas unequal losses can mimic redistribution (proved in the design note).
+That counterexample assumes positive initial stocks. Here the preparation
+specifies fluorophore-free acceptors: reliable zero-to-positive observations
+would rule out loss alone, while leaving conservation and rate transfer open.
 
 The identified supplementary package supplies a PDF and process videos, not
 an identified raw fluorescence/geometry time-series archive. The source fits
 the chain response itself, which is not a transferred forecast. The higher-pH
 pair/chain comparison also uses different pH values. **Not yet qualified:**
 find raw stock/geometry measurements or independent observation/loss controls
-before treating the normalized curves as physical resource exchange evidence.
+before qualifying conservation and a quantitative pair-to-network forecast.
 Do not declare the experiment invalid or the law rejected from this audit.
 
 ## Accessible alternative with an open boundary

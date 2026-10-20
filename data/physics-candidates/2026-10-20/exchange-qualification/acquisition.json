@@ -1,0 +1,62 @@
+{
+  "recorded_utc": "2026-10-20T12:07:10.108066+00:00",
+  "purpose": "Public supplement and thesis inventories; no droplet response files acquired",
+  "files": [
+    {
+      "file": "acs-inventory.json",
+      "url": "https://api.figshare.com/v2/articles?resource_doi=10.1021%2Facs.analchem.0c04939",
+      "bytes": 4635,
+      "sha256": "9ce10defd63bb78119ba18d47815085689684bb8fa883384bda28988e47d84d4",
+      "download_completion_file_mtime_utc": "2026-10-19T23:05:51.513110+00:00"
+    },
+    {
+      "file": "acs-pdf-metadata.json",
+      "url": "https://api.figshare.com/v2/articles/14219948",
+      "bytes": 6588,
+      "sha256": "3ea6de36702371ea11052073d77f6532eb185e6936452e81e96bec1fd151eb9b",
+      "download_completion_file_mtime_utc": "2026-10-19T23:05:51.601920+00:00"
+    },
+    {
+      "file": "acs-spotting-metadata.json",
+      "url": "https://api.figshare.com/v2/articles/14219951",
+      "bytes": 6531,
+      "sha256": "35b293ca2ae42aa4028618ff73b51dcba4245c68a5808b94593e1f5d14c76c0e",
+      "download_completion_file_mtime_utc": "2026-10-19T23:05:51.717831+00:00"
+    },
+    {
+      "file": "acs-splitting-metadata.json",
+      "url": "https://api.figshare.com/v2/articles/14219954",
+      "bytes": 6531,
+      "sha256": "cc3947ef8ff8d403216af9bc30a45494f51e98f19a1036e38cc10b0485817b3e",
+      "download_completion_file_mtime_utc": "2026-10-19T23:05:51.636594+00:00"
+    },
+    {
+      "file": "acs-aspiration-metadata.json",
+      "url": "https://api.figshare.com/v2/articles/14219957",
+      "bytes": 6529,
+      "sha256": "74611cbc6803cc726dc21f33a86ad749af9ab3597982bbf8500db3d0adead3e9",
+      "download_completion_file_mtime_utc": "2026-10-19T23:05:52.787208+00:00"
+    },
+    {
+      "file": "biostudies-inventory.json",
+      "url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/S-EPMC8014892",
+      "bytes": 5515,
+      "sha256": "6d81bfbcfdb569a01bdf2f0a5df6156120f0b3bb46e7a33ccfad911c75039c3a",
+      "download_completion_file_mtime_utc": "2026-10-19T23:05:51.519260+00:00"
+    },
+    {
+      "file": "eth-thesis-metadata.json",
+      "url": "https://api.datacite.org/dois/10.3929/ethz-b-000454797",
+      "bytes": 13526,
+      "sha256": "91e9437862d4bc8211e70ba54bfa037dbca6eda70832648b70292b9775a33559",
+      "download_completion_file_mtime_utc": "2026-10-19T23:05:51.519071+00:00"
+    },
+    {
+      "file": "eth-article-metadata.json",
+      "url": "https://api.datacite.org/dois/10.3929/ethz-b-000487415",
+      "bytes": 10054,
+      "sha256": "f95e796cc13c0b7a471dc333754368e9f48a5925e33ca9b7c5f40fec4de28132",
+      "download_completion_file_mtime_utc": "2026-10-19T23:05:51.453187+00:00"
+    }
+  ]
+}

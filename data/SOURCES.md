@@ -398,3 +398,22 @@ successful retrievals and their hashes, failed README requests, and exposure
 limits. No experimental response workbook, raw trace archive, video or figure
 image was acquired. This is source/design qualification, not a new registered
 empirical result; the accompanying analytic checks use no source data.
+
+## Exchange follow-up and membrane pairs (20 October 2026)
+
+`physics-candidates/2026-10-19/exchange-followup/` and
+`physics-candidates/2026-10-20/exchange-qualification/` retain two original
+methods articles and the ACS/BioStudies/ETH metadata inventory. Their receipts
+list exact retrieval URLs and SHA-256 hashes. See
+`docs/exchange-source-followup-2026-10-20.md` for bounded availability findings.
+
+`chemistry-candidates/2026-10-20/membrane-diffusion/` retains the public data
+for Benstead et al. (2026), <https://doi.org/10.1039/D5DD00523J>, pinned at
+GitHub commit `12be95974a58e1971483823948eff8802e06b729` and matching Zenodo
+version <https://doi.org/10.5281/zenodo.17238337>. The unchanged experimental
+ZIP's MD5 agrees with the publisher; original code and its MIT notice accompany
+the source. `experiments/audit_membrane_exchange_inputs.py` reproduces the
+design-only inventory without returning numerical response fields. The raw
+archive and notebook have been downloaded, but response values and notebook
+outputs remain uninspected at this qualification checkpoint. Published
+aggregates are exposed; no preregistration or empirical verdict is asserted.

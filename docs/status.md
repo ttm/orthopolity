@@ -1,8 +1,33 @@
 # Project status and handoff
 
-Last updated 19 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 20 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**20 October — usable exchange archive located; observation argument refined:**
+the [follow-up audit](exchange-source-followup-2026-10-20.md) identifies raw
+both-chamber measurements for four automated membrane pairs and four later
+manual pairs with matching chemistry, plus independent optical standards.
+The retained public ZIP matches its publisher checksum; a design-only reader
+verifies 96 calibration and 64 potential target records without exposing their
+response values. This supports developing an **effective-conductance transfer
+between pairs**, not the five-node topology test. Sampling removal, optical
+intercept treatment, uncertain stirring/timing and misleading thickness units
+are explicit; no response was fitted and no protocol is yet frozen.
+The [observation note](exchange-observability-2026-10-20.md) corrects an overly
+broad implication of the earlier counterexample: loss alone cannot populate
+an initially empty recipient. It derives sharp total-retention bounds that
+can reject loss-only explanations of positive share trajectories. Sixteen
+analytic examples agree with independent linear programs to **1.12e-16**;
+continuous loss integration agrees to **2e-13**. These are methodological
+checks, not new empirical evidence. The original droplet inventories still
+do not identify the raw pair/network series. Ordinary volume-weighted
+compartments are neither log-orthopolic nor linear-orthopolic size allocation.
+Next freeze optical and physical qualification, estimators and comparisons
+for the new pair archive before calibration. All **612 tests pass**; registry
+verification retains **43 / 1,086**, and all 17 new original-source hashes
+verify. The design inventory reproduces byte-for-byte. Article PDFs remain
+unchanged; full analysis regeneration was not needed for this qualification.
 
 **19 October — next mechanism test specified, sources audited:** the
 [exchange-design note](equalization-release-design-2026-10-19.md) turns the

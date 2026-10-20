@@ -1,0 +1,176 @@
+{
+  "accno" : "S-EPMC8014892",
+  "attributes" : [ {
+    "name" : "DataSource",
+    "value" : "Europe PMC"
+  }, {
+    "name" : "Title",
+    "value" : "Permeation Studies across Symmetric and Asymmetric Membranes in Microdroplet Arrays."
+  }, {
+    "name" : "ReleaseDate",
+    "value" : "2021-01-01"
+  }, {
+    "name" : "AttachTo",
+    "value" : "EuropePMC"
+  } ],
+  "section" : {
+    "type" : "Study",
+    "attributes" : [ {
+      "name" : "Title",
+      "value" : "Permeation Studies across Symmetric and Asymmetric Membranes in Microdroplet Arrays."
+    }, {
+      "name" : "Abstract",
+      "value" : "We investigated the permeation of molecules across lipid membranes on an open microfluidic platform. An array of droplet pairs was created by spotting aqueous droplets, dispersed in a lipid oil solution, onto a plate with cavities surrounded by a hydrophobic substrate. Droplets in two adjacent cavities come in contact and form an artificial lipid bilayer, called a droplet interface bilayer (DIB). The method allows for monitoring permeation of fluorescently tagged compounds from a donor droplet to an acceptor droplet. A mathematical model was applied to describe the kinetics and determine the permeation coefficient. We also demonstrate that permeation kinetics can be followed over a series of droplets, all connected via DIBs. Moreover, by changing the lipid oil composition after spotting donor droplets, we were able to create asymmetric membranes that we used to mimic the asymmetry of the cellular plasma membrane. Finally, we developed a protocol to separate and extract the droplets for label-free analysis of permeating compounds by liquid chromatography-mass spectrometry. Our versatile platform has the potential to become a new tool for the screening of drug membrane permeability in the future."
+    } ],
+    "files" : [ {
+      "path" : "ac0c04939_si_001.pdf",
+      "size" : 741729,
+      "type" : "file"
+    }, {
+      "path" : "ac0c04939_si_002.avi",
+      "size" : 17623958,
+      "type" : "file"
+    }, {
+      "path" : "ac0c04939_si_003.avi",
+      "size" : 16935712,
+      "type" : "file"
+    }, {
+      "path" : "ac0c04939_si_004.avi",
+      "size" : 4628714,
+      "type" : "file"
+    } ],
+    "subsections" : [ {
+      "type" : "Funding",
+      "attributes" : [ {
+        "name" : "Agency",
+        "value" : "Swiss National Science Foundation"
+      }, {
+        "name" : "grant_id",
+        "value" : "182895"
+      } ]
+    }, {
+      "type" : "Funding",
+      "attributes" : [ {
+        "name" : "Agency",
+        "value" : "Swiss National Science Foundation"
+      }, {
+        "name" : "grant_id",
+        "value" : "NCCR Molecular Systems Engineering"
+      } ]
+    }, {
+      "type" : "Funding",
+      "attributes" : [ {
+        "name" : "Agency",
+        "value" : "European Research Council"
+      }, {
+        "name" : "grant_id",
+        "value" : "681587"
+      } ]
+    }, {
+      "type" : "Funding",
+      "attributes" : [ {
+        "name" : "Agency",
+        "value" : "European Research Council"
+      }, {
+        "name" : "grant_id",
+        "value" : "Consolidator Grant HybCell no. 681587"
+      } ]
+    }, {
+      "type" : "Publication",
+      "attributes" : [ {
+        "name" : "Journal",
+        "value" : "Analytical chemistry"
+      }, {
+        "name" : "Volume",
+        "value" : "93(12)"
+      }, {
+        "name" : "Pages",
+        "value" : "5137-5144"
+      }, {
+        "name" : "Publication date",
+        "value" : "2021 Mar"
+      } ],
+      "links" : [ [ {
+        "url" : "10.1021/acs.analchem.0c04939",
+        "attributes" : [ {
+          "name" : "Type",
+          "value" : "DOI"
+        } ]
+      }, {
+        "url" : "PMC8014892",
+        "attributes" : [ {
+          "name" : "Type",
+          "value" : "PMC"
+        } ]
+      }, {
+        "url" : "33721989",
+        "attributes" : [ {
+          "name" : "Type",
+          "value" : "PMID"
+        } ]
+      } ] ]
+    }, {
+      "accno" : "a1",
+      "type" : "Author",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Bachler S"
+      }, {
+        "name" : "affiliation",
+        "value" : "o1",
+        "reference" : true
+      } ]
+    }, {
+      "accno" : "a2",
+      "type" : "Author",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Ort M"
+      }, {
+        "name" : "affiliation",
+        "value" : "o1",
+        "reference" : true
+      } ]
+    }, {
+      "accno" : "a3",
+      "type" : "Author",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Kramer SD"
+      }, {
+        "name" : "ORCID",
+        "value" : "0000-0002-0426-4340"
+      }, {
+        "name" : "affiliation",
+        "value" : "o2",
+        "reference" : true
+      } ]
+    }, {
+      "accno" : "a4",
+      "type" : "Author",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Dittrich PS"
+      }, {
+        "name" : "affiliation",
+        "value" : "o1",
+        "reference" : true
+      } ]
+    }, {
+      "accno" : "o1",
+      "type" : "Organization",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Department of Biosystems Science and Engineering, ETH Zurich, 4058 Basel, Switzerland."
+      } ]
+    }, {
+      "accno" : "o2",
+      "type" : "Organization",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Institute of Pharmaceutical Sciences, Department of Chemistry and Applied Biosciences, ETH Zurich, Zürich 8093, Switzerland."
+      } ]
+    } ]
+  },
+  "type" : "submission"
+}

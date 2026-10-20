@@ -1,5 +1,26 @@
 # Ongoing research: resume here
 
+**20 October — raw pair measurements available:** the
+[source follow-up](exchange-source-followup-2026-10-20.md) retains a verified
+public membrane archive and identifies four automated calibration pairs
+(96 chamber records) and four later manual pairs (64 records), with separate
+optical standards. Only design fields were exposed; numerical responses and
+notebook outputs remain uninspected. This supports a conditional effective-
+conductance transfer across pairs, not the proposed five-node topology test.
+Freeze optical calibration, initial-condition handling, sampling corrections,
+comparisons and decision rules before fitting. Do not infer physical thickness
+from the mislabeled CSV fields or use post-experiment geometry as a prior input.
+The [observation refinement](exchange-observability-2026-10-20.md) proves that
+verified empty recipients gaining stock exclude loss alone, and derives sharp
+retention bounds for positive share paths. Sixteen cases match independent
+linear programs; the continuous construction agrees with ODE integration.
+These are analytic checks, not a new registry study. Reference measure:
+volume-weighted compartments, neither log-orthopolic nor linear-orthopolic size
+allocation. Original droplet raw series remain unidentified in the inspected
+inventories; all 43 studies and article PDFs are unchanged.
+All 612 tests, registry verification and 17 original-source hash checks pass;
+the design inventory reproduces byte-for-byte.
+
 **19 October — mechanism-level next prediction:** the
 [design derivation](equalization-release-design-2026-10-19.md) predicts a
 five-compartment chain's full trajectory from matched pair kinetics and

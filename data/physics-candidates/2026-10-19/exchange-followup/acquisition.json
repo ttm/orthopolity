@@ -1,0 +1,20 @@
+{
+  "recorded_utc": "2026-10-20T12:07:10.105874+00:00",
+  "purpose": "Follow-up methods qualification; published article summaries exposed, no experimental supplementary files requested",
+  "files": [
+    {
+      "file": "reconfigurable-networks.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10844234/fullTextXML",
+      "bytes": 101275,
+      "sha256": "5b304acb81ecf4729cf3dbdc968dd2c539ae4771c2381227c4772cfa1910fe8e",
+      "download_completion_file_mtime_utc": "2026-10-19T12:47:26.824824+00:00"
+    },
+    {
+      "file": "tailored-translocation.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7736871/fullTextXML",
+      "bytes": 111926,
+      "sha256": "e8d6f852a55f4884062edadbaf1cdc0347515f6600b5278069bbbdaa7151f40c",
+      "download_completion_file_mtime_utc": "2026-10-19T12:47:26.884403+00:00"
+    }
+  ]
+}

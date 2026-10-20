@@ -1,0 +1,75 @@
+{
+  "recorded_utc": "2026-10-20T12:07:10.109853+00:00",
+  "purpose": "Pinned raw archive acquired but response fields and notebook outputs not inspected; source code and explicit design columns only",
+  "files": [
+    {
+      "file": "repository-tree.json",
+      "url": "https://api.github.com/repos/pozzo-research-group/OT2-ADT/git/trees/12be95974a58e1971483823948eff8802e06b729?recursive=1",
+      "bytes": 53624,
+      "sha256": "164b9bbb4904490ba633fbb4aa7eb5cd1ebb5de42da92b6cf202e8347b120775",
+      "download_completion_file_mtime_utc": "2026-10-19T23:07:36.660869+00:00"
+    },
+    {
+      "file": "zenodo-record.json",
+      "url": "https://zenodo.org/api/records/17238337",
+      "bytes": 6987,
+      "sha256": "de09de2b9d781b3a8525a0335037f62a4ebb93b7ea093a54bb5bc647af1d5703",
+      "download_completion_file_mtime_utc": "2026-10-19T23:07:36.343280+00:00"
+    },
+    {
+      "file": "Membrane-Diffusion-Testing.zip",
+      "url": "https://raw.githubusercontent.com/pozzo-research-group/OT2-ADT/12be95974a58e1971483823948eff8802e06b729/OT2_ADT/ADT%20Data%20Analysis/Experimental%20Data/Membrane%20Diffusion%20Testing.zip",
+      "bytes": 52182,
+      "sha256": "b50871afca499ae8d74873260a35cff5338388d1c4e6d52c4c3b53eace697c07",
+      "download_completion_file_mtime_utc": "2026-10-19T23:07:36.195314+00:00"
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/pozzo-research-group/OT2-ADT/12be95974a58e1971483823948eff8802e06b729/README.md",
+      "bytes": 13220,
+      "sha256": "d6f9c0c30d2fbaf0562f194340a6a7fd4dfeca539478135e7c2118449bed3314",
+      "download_completion_file_mtime_utc": "2026-10-19T23:08:18.164545+00:00"
+    },
+    {
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/pozzo-research-group/OT2-ADT/12be95974a58e1971483823948eff8802e06b729/LICENSE",
+      "bytes": 1077,
+      "sha256": "a85053ea9b6b4034b36859903e869e426bff3c3ef88a6286eb955c6a25b522d2",
+      "download_completion_file_mtime_utc": "2026-10-19T23:08:18.163413+00:00"
+    },
+    {
+      "file": "ADT_OT2_Analysis.py",
+      "url": "https://raw.githubusercontent.com/pozzo-research-group/OT2-ADT/12be95974a58e1971483823948eff8802e06b729/OT2_ADT/ADT%20Data%20Analysis/ADT_OT2_Analysis.py",
+      "bytes": 18149,
+      "sha256": "03d8bb4ec23b6aa57e4c20ccf6ad50e881f1d40137f841a59aa9d9fd5cf649bc",
+      "download_completion_file_mtime_utc": "2026-10-19T23:08:18.168226+00:00"
+    },
+    {
+      "file": "ADT_Data_Analysis_Walkthrough.ipynb",
+      "url": "https://raw.githubusercontent.com/pozzo-research-group/OT2-ADT/12be95974a58e1971483823948eff8802e06b729/OT2_ADT/ADT%20Data%20Analysis/ADT_Data_Analysis_Walkthrough.ipynb",
+      "bytes": 231032,
+      "sha256": "081b88455dd622adb4c95eb0a439267c30decdb4c89a2867d8441b325f0036a7",
+      "download_completion_file_mtime_utc": "2026-10-19T23:08:18.197385+00:00"
+    }
+  ],
+  "source_commit": "12be95974a58e1971483823948eff8802e06b729",
+  "publisher_archive_md5": "92c9c740602a1f274a2e4550ca98409d",
+  "archive_md5_verified": true,
+  "numerical_response_files_acquired": true,
+  "numerical_response_values_inspected": false,
+  "notebook_outputs_inspected": false,
+  "source_code_executed": false,
+  "exposure": [
+    "Publication aggregates and automated-cohort diffusivity summaries known",
+    "CSV filenames and headers exposed; selected design columns whitelisted",
+    "Separate optical-standard row counts inspected, values uninspected",
+    "Notebook source inspected for methodology; outputs uninspected"
+  ],
+  "failed_requests": [
+    {
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2026/dd/d5dd00523j",
+      "http_status": 403,
+      "requested_content": "Public article HTML; no body retained"
+    }
+  ]
+}

@@ -8,6 +8,12 @@ specifies a prediction and an observation ambiguity that a usable dataset must
 resolve. The accompanying [source audit](equalization-source-audit-2026-10-19.md)
 finds accessible candidates, but none yet qualifies the complete test.
 
+**20 October qualification:** the positive-stock loss counterexample below
+does not cover an initially empty acceptor becoming occupied. The
+[observation note](exchange-observability-2026-10-20.md) distinguishes evidence
+of influx from conservative kinetic transfer and derives sharp retention
+bounds for rejecting loss-only explanations.
+
 The mathematical statements below are elementary consequences of the existing
 linear exchange model, not claims of new spectral theory. They add a concrete
 experimental design to the general-law programme. Ordinary diffusion makes the
@@ -85,7 +91,7 @@ or adjust geometry to reproduce a measured relaxation time. Uncertainty in
 pair calibration, geometry, timing and optical response must enter the target
 forecast before the target curves are decoded.
 
-## Why normalized shares cannot establish exchange by themselves
+## Why positive normalized shares need not establish exchange by themselves
 
 Suppose unobserved loss rates $\ell_i(t)\ge0$ accompany exchange:
 
@@ -123,6 +129,11 @@ $e^{-2}\simeq0.1353$ of the original total remains. An absolute stock or
 flux measurement distinguishes the systems immediately; normalized shares do
 not. This is a constructed identifiability counterexample, not a finding that
 any particular experiment suffered these losses.
+
+This example starts with both compartments occupied. A verified zero-to-positive
+stock change rules out loss alone; normalized observations can establish that
+narrower fact under a valid observation model. They still do not establish
+conservation or transferable rates. See the dated qualification above.
 
 ## What qualifies an empirical run
 

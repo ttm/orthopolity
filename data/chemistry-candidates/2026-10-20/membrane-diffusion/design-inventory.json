@@ -1,0 +1,206 @@
+{
+  "kind": "Design-only source inventory; no empirical result or preregistration",
+  "source_commit": "12be95974a58e1971483823948eff8802e06b729",
+  "archive_sha256": "b50871afca499ae8d74873260a35cff5338388d1c4e6d52c4c3b53eace697c07",
+  "inspected_sample_fields": [
+    "Time",
+    "Hcell",
+    "Sample",
+    "Total_Volume_mL",
+    "Radius_cm",
+    "Membrane_cm"
+  ],
+  "response_field_exclusion_check": "passed",
+  "selected_runs": [
+    {
+      "n_rows": 96,
+      "times_hours": [
+        0.0,
+        6.0,
+        12.0,
+        18.0,
+        24.0,
+        30.0,
+        36.0,
+        42.0,
+        48.0,
+        54.0,
+        60.0,
+        66.0
+      ],
+      "sample_ids": [
+        "PES_PEG25_AO_S1",
+        "PES_PEG25_AO_S2",
+        "PES_PEG25_AO_S3",
+        "PES_PEG25_AO_S4"
+      ],
+      "chamber_labels": [
+        "H1_C1",
+        "H1_C2",
+        "H2_C1",
+        "H2_C2",
+        "H3_C1",
+        "H3_C2",
+        "H4_C1",
+        "H4_C2"
+      ],
+      "total_volume_mL_values": [
+        22.0
+      ],
+      "radius_cm_values": [
+        0.81
+      ],
+      "thickness_entries_with_unresolved_csv_units": [
+        "0.11",
+        "0.12"
+      ],
+      "rows_per_sample_chamber": [
+        {
+          "sample": "PES_PEG25_AO_S1",
+          "chamber": "H1_C1",
+          "rows": 12
+        },
+        {
+          "sample": "PES_PEG25_AO_S1",
+          "chamber": "H1_C2",
+          "rows": 12
+        },
+        {
+          "sample": "PES_PEG25_AO_S2",
+          "chamber": "H2_C1",
+          "rows": 12
+        },
+        {
+          "sample": "PES_PEG25_AO_S2",
+          "chamber": "H2_C2",
+          "rows": 12
+        },
+        {
+          "sample": "PES_PEG25_AO_S3",
+          "chamber": "H3_C1",
+          "rows": 12
+        },
+        {
+          "sample": "PES_PEG25_AO_S3",
+          "chamber": "H3_C2",
+          "rows": 12
+        },
+        {
+          "sample": "PES_PEG25_AO_S4",
+          "chamber": "H4_C1",
+          "rows": 12
+        },
+        {
+          "sample": "PES_PEG25_AO_S4",
+          "chamber": "H4_C2",
+          "rows": 12
+        }
+      ],
+      "member": "Diffusion Testing/Sample Data/20250505_ot2_PES_PEG25_AO_metadata.csv"
+    },
+    {
+      "n_rows": 64,
+      "times_hours": [
+        0.0,
+        4.0,
+        21.3,
+        24.0,
+        27.5,
+        45.6,
+        48.0,
+        69.6
+      ],
+      "sample_ids": [
+        "PES_PEG25_AO_S5",
+        "PES_PEG25_AO_S6",
+        "PES_PEG25_AO_S7",
+        "PES_PEG25_AO_S8"
+      ],
+      "chamber_labels": [
+        "H1_C1",
+        "H1_C2",
+        "H2_C1",
+        "H2_C2",
+        "H3_C1",
+        "H3_C2",
+        "H4_C1",
+        "H4_C2"
+      ],
+      "total_volume_mL_values": [
+        22.0
+      ],
+      "radius_cm_values": [
+        0.81
+      ],
+      "thickness_entries_with_unresolved_csv_units": [
+        "0.11",
+        "0.12"
+      ],
+      "rows_per_sample_chamber": [
+        {
+          "sample": "PES_PEG25_AO_S5",
+          "chamber": "H1_C1",
+          "rows": 8
+        },
+        {
+          "sample": "PES_PEG25_AO_S5",
+          "chamber": "H1_C2",
+          "rows": 8
+        },
+        {
+          "sample": "PES_PEG25_AO_S6",
+          "chamber": "H2_C1",
+          "rows": 8
+        },
+        {
+          "sample": "PES_PEG25_AO_S6",
+          "chamber": "H2_C2",
+          "rows": 8
+        },
+        {
+          "sample": "PES_PEG25_AO_S7",
+          "chamber": "H3_C1",
+          "rows": 8
+        },
+        {
+          "sample": "PES_PEG25_AO_S7",
+          "chamber": "H3_C2",
+          "rows": 8
+        },
+        {
+          "sample": "PES_PEG25_AO_S8",
+          "chamber": "H4_C1",
+          "rows": 8
+        },
+        {
+          "sample": "PES_PEG25_AO_S8",
+          "chamber": "H4_C2",
+          "rows": 8
+        }
+      ],
+      "member": "Diffusion Testing/Sample Data/20250603_manual_PES_PEG25_AO_metadata.csv"
+    }
+  ],
+  "archive_member_count": 55,
+  "sample_file_count": 25,
+  "calibration_files": [
+    {
+      "member": "Diffusion Testing/UV_Vis_Calibration_Curves/20250505_ot2_calibration_AO.csv",
+      "header": [
+        "C_uM",
+        "Abs_raw",
+        "Abs"
+      ],
+      "n_rows": 5
+    },
+    {
+      "member": "Diffusion Testing/UV_Vis_Calibration_Curves/20250603_manual_calibration_AO.csv",
+      "header": [
+        "C_uM",
+        "Abs_raw",
+        "Abs"
+      ],
+      "n_rows": 5
+    }
+  ]
+}
