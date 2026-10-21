@@ -1,8 +1,21 @@
 # Project status and handoff
 
-Last updated 20 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 21 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**21 October — membrane qualification protocol prepared for freeze:** the
+[protocol](membrane-exchange-protocol-2026-10-20.md) fixes affine optical
+calibration, sampling removal, finite-rate confidence sets and a separate
+absolute-stock test. It releases 96 earlier measurements and eight later
+baseline inputs only after the design commit. Any mandatory failure stops
+before the 56 later responses. Primary grid/refinement calculations have an
+independent polynomial-root verifier and an independently constructed stock
+covariance; synthetic tests precede numerical source access. This is a
+conditional diffusion-model transfer using compartment volume, neither
+log-orthopolic nor linear-orthopolic size allocation. No empirical result is
+yet available from this design. Next commit the checked implementation, run
+qualification, and retain its decision without a post-result gate change.
 
 **20 October — usable exchange archive located; observation argument refined:**
 the [follow-up audit](exchange-source-followup-2026-10-20.md) identifies raw

@@ -1,5 +1,15 @@
 # Ongoing research: resume here
 
+**21 October — next execution fixed:** the
+[membrane protocol](membrane-exchange-protocol-2026-10-20.md) is ready for a
+pre-data design commit after synthetic verification. Qualify optical standards,
+four earlier pairs and the four later pairs' baselines before any later
+trajectory access. A failed mandatory gate stops the study with all 56 later
+responses unread. A pass requires independently checked, committed forecasts
+before release. Compartment volume is the reference measure; this is neither
+log-orthopolic nor linear-orthopolic size allocation. Published aggregate
+outcomes are known; selected raw numerical values remain uninspected.
+
 **20 October — raw pair measurements available:** the
 [source follow-up](exchange-source-followup-2026-10-20.md) retains a verified
 public membrane archive and identifies four automated calibration pairs
