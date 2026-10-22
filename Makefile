@@ -40,6 +40,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: grain-channel-sources grain-channel-transfer grain-channel-registry
 .PHONY: burden-transfer-sources burden-transfer burden-transfer-registry
 .PHONY: speech-capacity-sources speech-capacity speech-capacity-registry
+.PHONY: membrane-exchange-sources membrane-exchange membrane-exchange-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -77,9 +78,36 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/adsorption-transfer-2026-10-13/adsorption.png \
  results/grain-channel-transfer-2026-10-15/transfer.png \
  results/burden-transfer-2026-10-16/transfer.png \
- results/speech-capacity-2026-10-17/transfer.png
+ results/speech-capacity-2026-10-17/transfer.png \
+ results/membrane-exchange-transfer-2026-10-22/transfer.png
 
 all: data test analyses
+
+membrane-exchange-sources: ## verify original membrane bytes without numerical decoding
+	$(PY) experiments/run_membrane_exchange.py --stage verify
+
+membrane-exchange: membrane-exchange-sources ## replay qualification, sealed forecasts and later-pair evaluation
+	$(PY) experiments/run_membrane_exchange.py --stage qualify --freeze-commit 55b3970 --output $(STUDY_OUTPUT_ROOT)/membrane-qualification
+	cmp results/membrane-exchange-qualification-2026-10-20/qualification.json $(STUDY_OUTPUT_ROOT)/membrane-qualification/qualification.json
+	$(PY) experiments/verify_membrane_exchange.py --qualification $(STUDY_OUTPUT_ROOT)/membrane-qualification/qualification.json --output $(STUDY_OUTPUT_ROOT)/membrane-qualification/verification.json
+	cmp results/membrane-exchange-qualification-2026-10-20/verification.json $(STUDY_OUTPUT_ROOT)/membrane-qualification/verification.json
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/plot_membrane_exchange.py --qualification $(STUDY_OUTPUT_ROOT)/membrane-qualification/qualification.json --output $(STUDY_OUTPUT_ROOT)/membrane-qualification/qualification.png
+	cmp results/membrane-exchange-qualification-2026-10-20/qualification.png $(STUDY_OUTPUT_ROOT)/membrane-qualification/qualification.png
+	$(PY) experiments/run_membrane_transfer.py --stage predict --freeze-commit 8c7f60a --output $(STUDY_OUTPUT_ROOT)/membrane-forecast
+	cmp results/membrane-exchange-forecast-2026-10-22/predictions.json $(STUDY_OUTPUT_ROOT)/membrane-forecast/predictions.json
+	$(PY) experiments/verify_membrane_transfer.py --qualification $(STUDY_OUTPUT_ROOT)/membrane-qualification/qualification.json --predictions $(STUDY_OUTPUT_ROOT)/membrane-forecast/predictions.json --output $(STUDY_OUTPUT_ROOT)/membrane-forecast/verification.json
+	cmp results/membrane-exchange-forecast-2026-10-22/verification.json $(STUDY_OUTPUT_ROOT)/membrane-forecast/verification.json
+	$(PY) experiments/run_membrane_transfer.py --stage evaluate --freeze-commit 8c7f60a --prediction-commit 68694fd --predictions results/membrane-exchange-forecast-2026-10-22/predictions.json --output $(STUDY_OUTPUT_ROOT)/membrane-transfer
+	cmp results/membrane-exchange-transfer-2026-10-22/result.json $(STUDY_OUTPUT_ROOT)/membrane-transfer/result.json
+	$(PY) experiments/verify_membrane_transfer.py --qualification $(STUDY_OUTPUT_ROOT)/membrane-qualification/qualification.json --predictions $(STUDY_OUTPUT_ROOT)/membrane-forecast/predictions.json --result $(STUDY_OUTPUT_ROOT)/membrane-transfer/result.json --output $(STUDY_OUTPUT_ROOT)/membrane-transfer/verification.json
+	cmp results/membrane-exchange-transfer-2026-10-22/verification.json $(STUDY_OUTPUT_ROOT)/membrane-transfer/verification.json
+	$(PY) experiments/audit_membrane_released_targets.py --output $(STUDY_OUTPUT_ROOT)/membrane-transfer/source-audit.json
+	cmp results/membrane-exchange-transfer-2026-10-22/source-audit.json $(STUDY_OUTPUT_ROOT)/membrane-transfer/source-audit.json
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/plot_membrane_exchange.py --result $(STUDY_OUTPUT_ROOT)/membrane-transfer/result.json --forecast $(STUDY_OUTPUT_ROOT)/membrane-forecast/predictions.json --output $(STUDY_OUTPUT_ROOT)/membrane-transfer/transfer.png
+	cmp results/membrane-exchange-transfer-2026-10-22/transfer.png $(STUDY_OUTPUT_ROOT)/membrane-transfer/transfer.png
+
+membrane-exchange-registry: ## retain the complete pair transfer and all failed comparisons
+	$(PY) experiments/register_membrane_exchange.py
 
 speech-capacity-sources: ## verify the speech archive without decoding durations
 	$(PY) experiments/run_speech_capacity.py --stage verify
@@ -198,7 +226,7 @@ paired-phosphorus-registry: ## append the retained pilot, preserving prior runs
 install:
 	$(PY) -m pip install -r requirements.txt -e ".[analyses,geospatial]"
 
-data: grain-channel-sources burden-transfer-sources speech-capacity-sources ## verify frozen legacy inputs and recent public archives
+data: grain-channel-sources burden-transfer-sources speech-capacity-sources membrane-exchange-sources ## verify frozen legacy inputs and recent public archives
 	$(PY) experiments/fetch_data.py
 
 restore-data:    ## explicitly permit network restoration of missing snapshots

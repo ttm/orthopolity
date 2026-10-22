@@ -4,6 +4,31 @@ Last updated 22 October 2026. **Read this first in a new session.** It records w
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
+**22 October — membrane-pair transfer complete:** the
+[result](membrane-exchange-results-2026-10-22.md) predicts all 56 later chamber
+observations from four earlier pairs and eight target baselines, with no target
+rate fit. Primary contrast MAE is **0.042285 of initial total**, versus
+**0.547178** for persistence, **0.462221** for instant mixing and **0.041383**
+for empirical interpolation. Gains over the limiting models are **92.27% and
+90.85%**; the empirical alternative is better by 2.18%, so all-benchmark
+superiority fails. The separate target stock test gives **p=0.30855**;
+observed recovery is **94.82–106.51%** of sampling-adjusted initial stock.
+This is conditional diffusion transfer using compartment volume, neither
+log-orthopolic nor linear-orthopolic size allocation, and not a unique mechanism.
+Broad uncertainty, slightly extrapolated/negative baseline estimates and the
+common optical-noise assumption remain explicit. Method, batch and date are
+confounded. Design **55b3970** precedes calibration, implementation **8c7f60a**
+and independently verified forecasts **68694fd** precede numerical targets.
+Qualification, forecasts, results, source audit and both figures replay
+byte-for-byte. Independent transfer verification checks **7,496 quantities**;
+separate source decoding matches all released cells exactly. **662 tests** and
+`make all` pass; registry **44 runs / 1,128 references**, with the preceding
+43 entries byte-preserved. Main 4.6 and supporting S5.18 retain the result.
+The main article stays **12 pages** after condensing detail retained in the
+supporting material, now **62 pages**. Next seek the separately specified
+pair-to-network topology intervention with independent geometry and absolute
+stocks; do not refit these exposed targets as confirmation.
+
 **21 October — membrane qualification passes:** design **55b3970** was
 committed and pushed before numerical optical-standard, earlier-trajectory or
 target-baseline access. The frozen optical, baseline, finite-rate and stock
@@ -483,8 +508,10 @@ constraints and a prediction that distinguishes mechanisms. The speech result
 transfers a known capacity account; its target residuals are now exposed.
 The [19 October design](equalization-release-design-2026-10-19.md) now specifies
 a pair-to-network kinetic forecast and the absolute-stock/loss controls needed
-to identify exchange. Prioritize this qualification over another capacity fit;
-the [source audit](equalization-source-audit-2026-10-19.md) records the current
+to identify exchange. The [completed pair transfer](membrane-exchange-results-2026-10-22.md)
+is useful but slightly worse than empirical interpolation. A network topology
+change remains a distinct untested prediction; prioritize its qualification over another capacity fit.
+The [source audit](equalization-source-audit-2026-10-19.md) records the current
 optical-trap, droplet-network and open-chip limitations.
 The biological assay transfers information, but its fitted correction fails;
 further work must distinguish an independent resource measurement from an
@@ -562,7 +589,8 @@ The existing candidate repairs below remain available in that sequence.
   own derivation, unverified.
 - `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 612 tests and
   regenerates the legacy analyses. Later frozen studies have named replay targets;
-  `make speech-capacity` replays the newest study to a fresh STUDY_OUTPUT_ROOT.
+  `make membrane-exchange` replays the newest study to a fresh STUDY_OUTPUT_ROOT;
+  `make speech-capacity` retains the preceding language comparison.
   `make burden-transfer` and `make grain-channel-transfer` retain the preceding comparisons.
   The September results were produced with Python 3.11; results
   added on 8–9 October (Gibrat, resource choice, catalogue, aftershocks) with Python 3.13 and the
@@ -596,6 +624,7 @@ The existing candidate repairs below remain available in that sequence.
 | Latest seismic qualification | [results](seismic-qualification-results-2026-10-10.md); [frozen supplement](seismic-qualification-protocol-2026-10-10.md); `results/seismic-qualification-2026-10-10/` |
 | Natural transport design qualification | [failed simulation gate](saltation-qualification-results-2026-10-14.md); [protocol](saltation-qualification-protocol-2026-10-14.md); [source audit](natural-source-audit-2026-10-14.md) |
 | Speech-capacity transfer | [results](speech-capacity-results-2026-10-17.md); [protocol](speech-capacity-protocol-2026-10-17.md); [human-source audit](human-source-qualification-2026-10-17.md) |
+| Membrane-pair transfer | [results](membrane-exchange-results-2026-10-22.md); [protocol](membrane-exchange-protocol-2026-10-20.md); [source audit](exchange-source-followup-2026-10-20.md) |
 | Next seismic inputs | [source/calibration audit](seismic-candidate-audit-2026-10-10.md); `data/seismic-candidates/2026-10-10/` |
 | Italian magnitude prerequisite | [failed validation](italian-magnitude-validation-results-2026-10-10.md); [frozen design](italian-magnitude-validation-protocol-2026-10-10.md); `results/italian-magnitude-validation-2026-10-10/` |
 | Unified manuscript and programme | [paper.md](paper.md) and `paper.pdf`; [supporting-material.md](supporting-material.md) and `supporting-material.pdf`; [revision map](manuscript-revision-2026-10-11.md); [research-brief.md](research-brief.md); [ongoing-research.md](ongoing-research.md) |

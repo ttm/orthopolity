@@ -1,0 +1,22 @@
+{
+  "baseline_records": 8,
+  "design_commit": "55b3970965971760cf9bb45f4e066d0cdaaa58b0",
+  "exact_binary_float_matches": true,
+  "forecast_baseline_values_rechecked": 8,
+  "implementation_commit": "8c7f60ab5f2dda44e98b49abf159e24e7dcc270e",
+  "later_observation_records": 56,
+  "maximum_absolute_difference": 0.0,
+  "optical_standard_records": 5,
+  "prediction_commit": "68694fd30d06ec45fdf0e31a35a461d2de4f7ea1",
+  "prediction_sha256": "da366bc1c133d30392daa4d90b0eb0b185540e0bb0dccf463a29201a4aadab4e",
+  "production_reader_imported": false,
+  "qualification_sha256": "747e2fd2e1dafe6f11e920d858819a9fd6792e1ff2f53f17946624b8ae457ab7",
+  "result_sha256": "30b357fd0fc2f1b233c103f7ceb281d3ed7e884cad934993130f04599c161917",
+  "selected_members": [
+    "Diffusion Testing/Sample Data/20250603_manual_PES_PEG25_AO_metadata.csv",
+    "Diffusion Testing/UV_Vis_Calibration_Curves/20250603_manual_calibration_AO.csv"
+  ],
+  "source_derived_values_used": false,
+  "source_sha256": "b50871afca499ae8d74873260a35cff5338388d1c4e6d52c4c3b53eace697c07",
+  "unique_selected_numeric_values": 74
+}

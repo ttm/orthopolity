@@ -1,0 +1,10 @@
+{
+  "max_abs_diff": 4.3655745685100555e-11,
+  "numeric_checks": 7496,
+  "prediction_sha256": "da366bc1c133d30392daa4d90b0eb0b185540e0bb0dccf463a29201a4aadab4e",
+  "qualification_sha256": "747e2fd2e1dafe6f11e920d858819a9fd6792e1ff2f53f17946624b8ae457ab7",
+  "result_sha256": "30b357fd0fc2f1b233c103f7ceb281d3ed7e884cad934993130f04599c161917",
+  "stock_covariance_method": "Independent original-observation error map G G-transpose",
+  "target_later_responses_decoded": true,
+  "uncertainty_method": "Complex-step derivatives of an independent raw-baseline mixing matrix"
+}

@@ -34,7 +34,17 @@ retained history; neither mechanism proves external preregistration or blinding.
 
 ## Catalogue
 
-As of 13 October 2026 the registry verifies **38 records and 929 file references**.
+As of 22 October 2026 the registry verifies **44 records and 1,128 file
+references**. The latest entry, `membrane-exchange-2026-10-20`, retains
+[qualification and transfer](membrane-exchange-results-2026-10-22.md) together:
+56 later chamber observations follow a committed forecast seal. Exchange
+kinetics beats persistence and immediate mixing, but empirical interpolation
+has slightly lower error. A separate stock test is compatible under the
+declared optical-error model. All previous 43 entries remain byte-for-byte
+unchanged. The reference measure is compartment volume; no log-orthopolic or
+linear-orthopolic size allocation or unique mechanism is established.
+
+As of 13 October 2026 the registry verified **38 records and 929 file references**.
 The latest entry, `cantilever-transfer-2026-10-13`, records the
 [physics extrapolation](cantilever-results-2026-10-13.md): 10/11 primary modes
 physically admissible, conditional thermal MAE 74.00 K versus 78.94 K for uniform

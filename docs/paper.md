@@ -2,7 +2,7 @@
 
 **Capacity, physical realizations, and effective-resource inference**
 
-> Research manuscript, revised 19 October 2026. Detailed derivations, complete
+> Research manuscript, revised 22 October 2026. Detailed derivations, complete
 > comparisons and analysis histories are retained in the [supporting material](supporting-material.md).
 > Empirical studies include exploration, locally frozen forecasts and retrospective
 > reanalyses; none is externally preregistered. Authorship and submission declarations
@@ -489,39 +489,40 @@ can leave gaps that invalidate a uniform-bin correction. Neither attempt
 produces a real b--dimension hypothesis comparison. These are eligibility and
 measurement findings, not physical evidence against either relation.
 
-### 4.6 Independent constraints in chemical and sediment transport
+### 4.6 Independent constraints and transport kinetics
 
-For CO2 and CH4 on reference zeolite RM8850, we calibrated a shared-capacity
-Langmuir model from pure gases and sealed predictions before evaluating 45
-mixture conditions at three temperatures (Wedler et al., 2024). Counting measure
-over species and vacancies defines the comparison; calibrated binding affinities
-and reservoir fugacities specify the unequal allocation. Capacity is effective
-within each temperature. Balanced component MAE is 0.247 mmol/g, versus 0.620
-when competition is omitted: a 60% improvement. All temperatures pass the frozen
-tolerance, defined relative to maximum pure loading. Established IAST gives
-0.243 mmol/g, so no predictive advantage over adsorption theory is demonstrated.
-Only 39/90 component predictions lie within reported observation uncertainties;
-calibration-range extrapolations also remain. This supports transferable
-constraints at finite accuracy, with the retrospective chronology, established
-mechanisms and complete diagnostics in supporting section S5.14.
+Pure-gas calibration predicts 45 CO2/CH4 mixture conditions on reference
+zeolite RM8850 (Wedler et al., 2024). Shared-capacity Langmuir gives balanced
+component MAE 0.247 mmol/g, versus 0.620 without competition and 0.243 for
+established IAST. The frozen maximum-loading tolerance passes, but only 39/90
+component predictions lie within reported observation uncertainties.
+Species/vacancy counting measure, calibrated affinities and fugacities define
+the unequal allocation; capacity is effective within each temperature. This
+supports constraint transfer without an advantage over established adsorption
+theory. Supporting S5.14 retains extrapolation and retrospective-access limits.
 
-A retrospective sediment transfer calibrates 19 narrow-channel sphere runs
-and predicts nine wider-channel runs using separate grain assays (Deal et al.,
-2026). Measured shape reduces balanced flux error by 42.6% versus unit shape;
-the fuller wall correction reduces it by 77.2% versus hydraulic radius.
-The declared accuracy tolerance is permissive, low-flux errors exceed fourfold,
-and separate old-material fits predict better. This tests a constitutive
-constraint transfer under material-balanced counting measure, not neutral
-log-/linear-orthopolic size allocation. One target was exposed before freezing
-forecasts; complete comparisons and limitations are in supporting S5.15.
+Separate grain assays improve a transfer from 19 narrow-channel sphere runs
+to nine wider-channel runs (Deal et al., 2026). Measured shape reduces balanced
+flux error by 42.6% versus unit shape; the fuller wall correction reduces it
+by 77.2% versus hydraulic radius. Yet separate old-material fits predict
+better, low-flux errors exceed fourfold and the accuracy tolerance is permissive.
+One target was exposed before freezing. Material-balanced counting measure,
+all alternatives and qualifications are retained in supporting S5.15.
+
+Four earlier membrane pairs predict 56 later chamber readings without a target
+rate fit (Benstead et al., 2026). Mean contrast error is 4.23% of initial total,
+versus 54.72% for persistence, 46.22% for immediate mixing and 4.14% for empirical
+interpolation. All-benchmark superiority fails. A separate stock test gives
+p=0.309; broad optical uncertainty prevents treating non-rejection as proof of
+conservation. Compartment volume defines the measure. This transfers ordinary
+diffusion kinetics, not a unique law prediction (supporting S5.18). None of
+these transport studies tests neutral log-/linear-orthopolic size allocation.
 
 ## 5. Learning from validity, departures and failure
 
-A general law earns scientific content through its domains, consequences and
-limits. Orthopolity is exact for complete resource hierarchies and is realized
-by the specified exchange and physical models. Its broader empirical reach
-requires determining when comparable concentrations receive comparable resource,
-which effective resource is relevant, and what modifies that allocation.
+Orthopolity's exact accounting and specified physical realizations are established;
+its broader reach requires independently identifying comparable concentrations,
+the effective resource and the constraints on allocation.
 
 Three kinds of finding should remain distinguishable. First, a metric or sampling
 change can alter the apparent distribution without changing the physical system:
@@ -541,47 +542,45 @@ law. An application must state which inputs were independently known, what was
 learned from calibration, what transfers unchanged and what observation would
 contradict the specified model.
 
-An unavailable test cannot decide between physical resource models; a qualified
-forecast that fails should narrow the claimed domain or challenge its assumptions.
-The next comparisons should change independently specified requirements or
-constraints so that rival explanations predict different relaxation rates,
-allocation profiles or cross-environment contrasts such as (4). A success supports
-the specified relation; a failure can identify a missing interaction or a boundary.
+Unavailable tests cannot decide between resource models. Qualified failures
+challenge their assumptions or domain. The next comparisons should change
+independently specified constraints so that rivals predict different relaxation
+rates, allocation profiles or cross-environment contrasts such as (4).
 
 ## 6. Contribution and conclusion
 
 Orthopolity links resource concentration, incidence and allocation as a general
 law. Finite capacity and complete accounting establish its exact core; specified
-symmetries and dynamics realize its allocation extension. Known physical laws
-clarify which equalities hold and how independently specified constraints alter
-the observable profile. Restricted inverse inference then makes abundance
-informative through predictions that transfer between environments.
+symmetries and dynamics realize its allocation extension. Physical laws clarify
+the role of the measure and independently specified constraints. Restricted
+inverse inference then predicts how abundance transfers between environments.
 
-The empirical results establish useful conditional successes, failed forecasts
-and observation boundaries. They do not yet demonstrate a common neutral regime
-across the natural populations examined. This limits the present evidence for
-universal physical reach while preserving the ambition to establish the law.
-The strongest further contribution will be a resource explanation that predicts
-both where the relation holds and how a specified change makes it depart or fail.
+The empirical results establish conditional successes, failures and observation
+boundaries, but not a common neutral regime across the natural populations
+examined. Establishing the law's general physical reach requires a resource
+explanation that predicts both where it holds and how a specified change makes
+it depart or fail.
 
 ## Data and code availability
 
-The repository retains source notices, fixed configurations, forecasts, algorithms
-and outputs. The [supporting material](supporting-material.md) contains the moved
-technical detail, full evidence comparisons and a map to study-specific reports.
-The [run registry](run-registry.md) distinguishes empirical measurements, retrospective
-analyses and simulations; earlier failed results are preserved. Source-specific
-licences and conditions are in [data/NOTICE.md](../data/NOTICE.md).
+The repository and [run registry](run-registry.md) retain sources, configurations,
+forecasts, algorithms and outcomes, including failures. The
+[supporting material](supporting-material.md) contains detailed derivations,
+complete comparisons and study reports. Source licences are in
+[data/NOTICE.md](../data/NOTICE.md). Published FIRAS reconstruction and bacterial
+figure summaries remain identified as such.
 
-The make all target verifies the original frozen inputs, runs the tests and
-regenerates the original analysis suite. Later studies have separate offline
-reproduction targets documented in their reports. The make paper target builds
-this article and its supporting PDF; registry-verify checks retained study
-references. Published FIRAS reconstruction and bacterial figure summaries are
-identified as such, and neither is presented as a new raw-data experiment.
-The supplied 2017 manuscript was inspected privately and is not redistributed.
+The make all target verifies inputs, runs tests and regenerates the original
+analyses; later studies have separate offline targets in their reports.
+The make paper target builds both manuscripts; registry-verify checks retained
+study references. The supplied 2017 manuscript was inspected privately and is
+not redistributed.
 
 ## References
+
+Benstead, C., Politi, M., Bergsman, D., and Pozzo, L. (2026). An automated sampling workflow for
+parallel long-term membrane diffusion cell testing. *Digital Discovery*.
+<https://doi.org/10.1039/D5DD00523J>.
 
 Bishop, C. J., and Peres, Y. (2017). *Fractals in Probability and Analysis*.
 Cambridge University Press. Section 1.1.

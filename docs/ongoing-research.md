@@ -1,5 +1,22 @@
 # Ongoing research: resume here
 
+**22 October — membrane transfer complete:**
+[results](membrane-exchange-results-2026-10-22.md) give primary contrast error
+**0.042285**, compared with 0.547178 for persistence, 0.462221 for immediate
+mixing and **0.041383 for empirical interpolation**. The finite exchange
+forecast transfers, but all-benchmark superiority fails. Target stock p=0.30855
+depends on the declared common optical-error model; measured sampling-adjusted
+recovery spans 94.82–106.51%. The four later pairs supply 56 observations, all
+released after verified forecast commit **68694fd**; design **55b3970** preceded
+calibration and implementation **8c7f60a** preceded target access. All outputs
+replay byte-for-byte, 7,496 independent transfer checks agree, and original CSV
+cells match exactly. **662 tests**, `make all`, **44 registry entries / 1,128
+references**; all earlier records preserved. Main 4.6 and supporting S5.18
+retain the result; PDFs are 12/62 pages. Compartment volume is the measure,
+neither log-orthopolic nor linear-orthopolic size allocation. Next qualify the
+separate pair-to-network topology prediction using independent geometry and
+absolute stocks. Further target fitting here would be exploration.
+
 **21 October — qualification passes; target trajectories still sealed:** the
 [membrane protocol](membrane-exchange-protocol-2026-10-20.md) was frozen at
 **55b3970** before numerical source access. All optical, baseline, finite-rate

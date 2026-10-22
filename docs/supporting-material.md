@@ -2,7 +2,7 @@
 
 **Accounting proofs, physical derivations, observation models and complete comparisons**
 
-Prepared 10 October 2026; revised 19 October 2026 as a companion to
+Prepared 10 October 2026; revised 22 October 2026 as a companion to
 [the main article](paper.md).
 This document preserves the substantive technical material of the article at
 source commit **`f137d4efb050ccfcb5c5f814d32da651c645421c`**, supplemented by
@@ -2786,11 +2786,113 @@ language law nor universal neutral allocation; it supports a capacity relation
 whose independent entropy input predicts better than the declared
 alternatives and whose departures remain visible.
 
+### S5.18. Membrane exchange predicts a later cohort
+
+Benstead et al. (2026) provide raw absorbance in both chambers of membrane
+diffusion cells and separate optical standards. We retained the original public
+ZIP and fixed four automated acid-orange/PEG25-on-PES pairs from 5 May 2025
+as calibration (96 chamber observations), with four manual pairs from 3 June
+as targets. Their eight baseline readings are inputs; all 56 later readings
+were numerically withheld until predictions were verified and committed.
+Published aggregate diffusivities and qualitative method comparisons were
+known. The [protocol](membrane-exchange-protocol-2026-10-20.md) was frozen at
+55b3970 before numerical standards or selected measurements, the remaining
+implementation at 8c7f60a, and forecasts at 68694fd before target release.
+This is a local retrospective freeze, not external preregistration or global
+blinding. The reference measure is compartment volume, neither log-orthopolic
+nor linear-orthopolic size allocation.
+
+Each chamber holds 11 mL; sampling and water replacement remove 0.02 mL per
+collection. With $f=549/550$ and $j$ previous collections, raw contrasts obey
+$d_j=\Delta f^j\exp(-2gt_j/11)$ under constant effective conductance $g$.
+Each run's five independent nominal standards fit the full affine optical
+model $A=aC+b$; source-derived concentrations, fitted diffusivities and
+post-experiment thickness are unused. Source thickness units conflict, and
+conductance therefore transfers without a thickness-based permeability claim.
+Unknown contrast amplitude absorbs the optical slope; subtraction cancels
+the intercept. Raw contrast fits require no concentration conversion.
+
+All optical and baseline qualification gates pass. The four fitted $g$ values
+are 0.18052, 0.16103, 0.15908 and 0.13129 mL/h. Their whole 99% confidence sets,
+obtained by inverting the absolute residual-sum-of-squares $F_{11,3}$ test,
+are respectively [0.09848,0.29711], [0.08697,0.26136], [0.08572,0.25822] and
+[0.06772,0.21193]. Each excludes persistence and instantaneous mixing.
+The separate 44-residual calibration stock test gives $F=0.26688$, p=0.98244.
+It retains shared baseline and optical-intercept covariance. These statements
+assume independent Gaussian absorbance errors with the same variance for
+standards and samples within each run. Five standards do not establish that
+assumption, temporal stability, matrix equivalence or accurate nominal dilution.
+Only three error degrees of freedom produce broad uncertainty.
+
+For measured target baseline total $T_0$ and contrast $D_0$, the fixed forecast is
+
+$$\widehat C_{D,A}(t_j)=\frac{f^j}{2}[T_0\pm K(t_j)D_0],\qquad
+K(t)=\frac14\sum_{k=1}^4\exp(-2\hat g_kt/11).$$
+
+The primary error is mean absolute contrast error divided by each pair's
+initial total, equally averaged over seven later times and four pairs.
+Persistence uses $K=1$; instant mixing uses $K=0$ at positive times. The
+empirical alternative interpolates the mean earlier sampling-adjusted contrast
+and holds its last value beyond 66 h. It is not clipped or refitted to targets.
+
+| Forecast | Primary error | Exchange improvement relative to alternative |
+| --- | ---: | ---: |
+| Exchange kinetics | 0.042285 | -- |
+| Persistence | 0.547178 | 92.27% |
+| Instant mixing | 0.462221 | 90.85% |
+| Empirical trajectory | 0.041383 | -2.18% |
+
+Exchange is better than both limiting models for all four pairs, and better
+than empirical interpolation for only one. Its superiority over every
+benchmark fails; no population equivalence or significance is inferred from
+four membranes. Pairwise exchange errors are 0.049057, 0.064851, 0.044069 and
+0.011163. The largest individual contrast error is 0.090677. Average joint
+chamber absolute error is 0.023254 of initial total; average total-stock
+absolute error is 0.021982, shared by all models' fixed total forecasts.
+
+![Membrane-pair transfer with separate stock recovery](../results/membrane-exchange-transfer-2026-10-22/transfer.png)
+
+*Figure S18. Later-pair normalized contrasts, the four fixed forecasts and
+the conditional envelope over earlier 99% rate sets; lower panels show measured
+total divided by sampling-adjusted initial total. The envelope is not a
+prediction interval for a new membrane. Optical/baseline covariance is retained
+separately in the forecast artifact.*
+
+The independent target stock test gives $F_{28,3}=2.03717$, p=0.30855.
+Observed recovery ratios range from 0.94825 to 1.06511. Non-rejection under
+the declared observation model does not prove conservation. Kinetic comparison
+does not decide this question: all four models share the same total forecast.
+Target recipient baseline estimates are slightly negative (-6.16 to -7.66
+micromolar) and remain unclipped. All eight target baselines extrapolate the
+0--80 micromolar aliquot calibration support slightly, while all 56 later
+measurements lie within it. The prediction artifact retains the full 56 by 56
+shared optical/baseline covariance; conditional standard deviations span
+8.09--11.78 micromolar. A declared elapsed-time shift of ten minutes changes
+point forecasts by at most 1.803 micromolar. These sensitivities exclude
+unmeasured stirring, actual sequential sampling times and temporary volumes.
+Method, date and membrane batch change together, so equivalence of automated
+and manual collection is not identified.
+
+Independent polynomial root isolation and observation-error covariance maps
+verify qualification. Event-based ODE integration, complex-step uncertainty
+derivatives and separately assembled target stock covariance verify transfer:
+5,184 quantities before release and 7,496 afterward, maximum absolute difference
+$4.37\times10^{-11}$. The [full report](membrane-exchange-results-2026-10-22.md)
+retains raw values, all benchmarks and reproduction commands. The result shows
+useful transfer of finite exchange kinetics, while failing to improve on the
+empirical trajectory alternative. Ordinary diffusion gives the same model;
+this does not distinguish a unique orthopolity mechanism or test the proposed
+pair-to-network topology intervention.
+
 ## References
 
 Arranz, I., Fournier, B., Lester, N. P., Shuter, B. J., and Peres-Neto, P. R. (2022).
 Species compositions mediate biomass conservation: The case of lake fish communities.
 *Ecology*, 103, e3608. <https://doi.org/10.1002/ecy.3608>.
+
+Benstead, C., Politi, M., Bergsman, D., and Pozzo, L. (2026). An automated sampling workflow for
+parallel long-term membrane diffusion cell testing. *Digital Discovery*.
+<https://doi.org/10.1039/D5DD00523J>.
 
 Bishop, C. J., and Peres, Y. (2017). *Fractals in Probability and Analysis*.
 Cambridge University Press. Section 1.1.
