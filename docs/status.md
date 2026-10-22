@@ -25,7 +25,9 @@ separate source decoding matches all released cells exactly. **662 tests** and
 `make all` pass; registry **44 runs / 1,128 references**, with the preceding
 43 entries byte-preserved. Main 4.6 and supporting S5.18 retain the result.
 The main article stays **12 pages** after condensing detail retained in the
-supporting material, now **62 pages**. Next seek the separately specified
+supporting material, now **62 pages**. Both PDFs are visually checked, have no
+typesetting warnings and reproduce byte-for-byte from committed sources.
+Next seek the separately specified
 pair-to-network topology intervention with independent geometry and absolute
 stocks; do not refit these exposed targets as confirmation.
 
