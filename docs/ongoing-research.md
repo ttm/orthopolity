@@ -1,14 +1,16 @@
 # Ongoing research: resume here
 
-**21 October — next execution fixed:** the
-[membrane protocol](membrane-exchange-protocol-2026-10-20.md) is ready for a
-pre-data design commit after synthetic verification. Qualify optical standards,
-four earlier pairs and the four later pairs' baselines before any later
-trajectory access. A failed mandatory gate stops the study with all 56 later
-responses unread. A pass requires independently checked, committed forecasts
-before release. Compartment volume is the reference measure; this is neither
-log-orthopolic nor linear-orthopolic size allocation. Published aggregate
-outcomes are known; selected raw numerical values remain uninspected.
+**21 October — qualification passes; target trajectories still sealed:** the
+[membrane protocol](membrane-exchange-protocol-2026-10-20.md) was frozen at
+**55b3970** before numerical source access. All optical, baseline, finite-rate
+and earlier stock gates pass; independent verification checks 2,854 quantities.
+Conductances are 0.131–0.181 mL/h; stock p=0.98244 relies on the declared
+common-error model and only three calibration error degrees of freedom.
+Implement and independently verify the already fixed transfer forecasts, then
+commit their bytes before decoding the **56 later responses**. No heldout
+transfer is established yet. Compartment volume is the reference measure;
+this is neither log-orthopolic nor linear-orthopolic size allocation. Published
+aggregate outcomes were known; numeric target trajectories remain uninspected.
 
 **20 October — raw pair measurements available:** the
 [source follow-up](exchange-source-followup-2026-10-20.md) retains a verified

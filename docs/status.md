@@ -1,21 +1,28 @@
 # Project status and handoff
 
-Last updated 21 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 22 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
-**21 October — membrane qualification protocol prepared for freeze:** the
-[protocol](membrane-exchange-protocol-2026-10-20.md) fixes affine optical
-calibration, sampling removal, finite-rate confidence sets and a separate
-absolute-stock test. It releases 96 earlier measurements and eight later
-baseline inputs only after the design commit. Any mandatory failure stops
-before the 56 later responses. Primary grid/refinement calculations have an
-independent polynomial-root verifier and an independently constructed stock
-covariance; synthetic tests precede numerical source access. This is a
-conditional diffusion-model transfer using compartment volume, neither
-log-orthopolic nor linear-orthopolic size allocation. No empirical result is
-yet available from this design. Next commit the checked implementation, run
-qualification, and retain its decision without a post-result gate change.
+**21 October — membrane qualification passes:** design **55b3970** was
+committed and pushed before numerical optical-standard, earlier-trajectory or
+target-baseline access. The frozen optical, baseline, finite-rate and stock
+gates all pass for the 96 earlier observations and eight later baseline inputs.
+Effective conductances are **0.131–0.181 mL/h**, with broad 99% intervals;
+stock F=**0.26688**, p=**0.98244** under the declared common optical-error model.
+That non-rejection is not precise evidence of conservation: only five standards
+per run supply three error degrees of freedom. Independent polynomial-root,
+observation-covariance and ODE calculations verify **2,854 quantities**, maximum
+absolute difference **5.85e-12**. All **56 later responses remain unread**.
+The 22 October implementation adds the already fixed forecasts, all benchmarks,
+the full shared optical/baseline covariance and separate rate/timing diagnostics.
+Synthetic tests and independent ODE/complex-step checks precede target access.
+Next commit the implementation, verify and commit forecast bytes, then release
+the 56 later observations. This is a conditional
+diffusion-model transfer using compartment volume, neither log-orthopolic nor
+linear-orthopolic size allocation. The registry and manuscripts are unchanged
+pending the transfer result. See the
+[protocol](membrane-exchange-protocol-2026-10-20.md).
 
 **20 October — usable exchange archive located; observation argument refined:**
 the [follow-up audit](exchange-source-followup-2026-10-20.md) identifies raw

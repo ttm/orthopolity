@@ -1,0 +1,12 @@
+{
+  "dependent_checks_skipped_for_optics": false,
+  "integration_max_abs_diff": 4.3021142204224816e-16,
+  "max_abs_diff": 5.8548721426632255e-12,
+  "numeric_checks": 2854,
+  "qualification_passed": true,
+  "qualification_sha256": "747e2fd2e1dafe6f11e920d858819a9fd6792e1ff2f53f17946624b8ae457ab7",
+  "rate_confidence_method": "80-digit Bernstein polynomial root isolation",
+  "source_sha256": "b50871afca499ae8d74873260a35cff5338388d1c4e6d52c4c3b53eace697c07",
+  "target_later_responses_decoded": false,
+  "total_covariance_method": "Independent raw-observation error design G G-transpose"
+}

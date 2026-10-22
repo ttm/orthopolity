@@ -1,0 +1,10 @@
+{
+  "authorized_calibration_observations": 96,
+  "authorized_target_baseline_inputs": 8,
+  "completed_utc": "2026-10-21T19:36:51.534608+00:00",
+  "design_commit": "55b3970965971760cf9bb45f4e066d0cdaaa58b0",
+  "later_target_observations_decoded": 0,
+  "numerical_stage": "qualification",
+  "qualification_sha256": "747e2fd2e1dafe6f11e920d858819a9fd6792e1ff2f53f17946624b8ae457ab7",
+  "started_utc": "2026-10-21T19:36:51.414189+00:00"
+}
