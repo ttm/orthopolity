@@ -129,20 +129,33 @@ def trace_metrics(absorbance, calibration):
     if np.any(recovery[0] <= 0):
         raise ValueError('Nonpositive initial total')
     control_contrast = absorbance[:, :, 0] - absorbance[:, :, 1]
-    if np.any(control_contrast <= 0):
-        raise ValueError('Nonpositive no-pore control contrast')
-    relative_control = (absorbance[:, :, 0::2]+absorbance[:, :, 1::2]
-                        - 2*absorbance[:, :, 1, None])/control_contrast[:, :, None]
-    if np.any(relative_control[0] <= 0):
-        raise ValueError('Nonpositive initial control ratio')
+    relative_control = np.full(recovery.shape, np.nan)
+    invalid_controls = []
+    for replicate in range(3):
+        if np.any(control_contrast[:, replicate] <= 0):
+            invalid_controls.append({'replicate': replicate+1,
+                                     'reason': 'nonpositive no-pore control contrast'})
+            continue
+        values = (absorbance[:, replicate, 0::2]+absorbance[:, replicate, 1::2]
+                  - 2*absorbance[:, replicate, 1, None])/control_contrast[:, replicate, None]
+        for pair in range(5):
+            if values[0, pair] <= 0:
+                invalid_controls.append({'replicate': replicate+1, 'pore_um': PORES[pair],
+                                         'reason': 'nonpositive initial control ratio'})
+            else:
+                relative_control[:, replicate, pair] = values[:, pair]/values[0, pair]
     return dict(recovery_nominal=recovery, recovery_initial=recovery/recovery[0],
-                control_ratio_initial=relative_control/relative_control[0],
+                control_ratio_initial=relative_control, invalid_controls=invalid_controls,
                 concentration_uM=conc)
 
 
 def summary(values):
-    return dict(replicates=values.tolist(), mean=float(values.mean()),
-                minimum=float(values.min()), maximum=float(values.max()))
+    valid = values[np.isfinite(values)]
+    return dict(replicates=[float(v) if np.isfinite(v) else None for v in values],
+                valid_replicates=len(valid),
+                mean=float(valid.mean()) if len(valid) else None,
+                minimum=float(valid.min()) if len(valid) else None,
+                maximum=float(valid.max()) if len(valid) else None)
 
 
 def compute(calibration_blocks, response_blocks):
@@ -162,9 +175,11 @@ def compute(calibration_blocks, response_blocks):
             groups.append(group)
         controls = traces['concentration_uM'][:, :, :2]
         result['dyes'][name] = dict(calibration=calibration, groups=groups,
+            invalid_controls=traces['invalid_controls'],
             no_pore_changes_uM={side: summary(controls[-5:, :, i].mean(axis=0)-controls[0, :, i])
                                for i, side in enumerate(('donor', 'recipient'))},
-            traces={k: v.tolist() for k, v in traces.items() if k != 'concentration_uM'})
+            traces={k: np.where(np.isfinite(traces[k]), traces[k], None).tolist()
+                    for k in ('recovery_nominal', 'recovery_initial', 'control_ratio_initial')})
     return result
 
 

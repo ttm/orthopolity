@@ -71,3 +71,23 @@ class TestBioMeStocks(unittest.TestCase):
         traces = biome.trace_metrics(a, {'intercept': .1, 'slope': .002})
         # 400 micromolar * 0.25 mL = 100 nmol, or unit nominal pair recovery.
         np.testing.assert_allclose(traces['recovery_nominal'], 1)
+
+    def test_invalid_control_preserves_absolute_stock(self):
+        a = np.broadcast_to(np.tile([.9, .1], 5), (289, 3, 10)).copy()
+        a[:, 1, 0:2] = [.3, .4]  # positive calibrated total, reversed control
+        traces = biome.trace_metrics(a, {'intercept': .1, 'slope': .002})
+        self.assertTrue(np.all(np.isfinite(traces['recovery_nominal'])))
+        self.assertTrue(np.all(np.isnan(traces['control_ratio_initial'][:, 1])))
+        np.testing.assert_allclose(traces['control_ratio_initial'][:, 0], 1)
+        self.assertEqual(traces['invalid_controls'][0]['replicate'], 2)
+        report = biome.summary(traces['control_ratio_initial'][-1, :, 1])
+        self.assertEqual(report['valid_replicates'], 2)
+        self.assertIsNone(report['replicates'][1])
+
+    def test_shared_physical_loss_is_hidden_by_control_ratio(self):
+        t = np.linspace(0, 2, 289)
+        concentrations = np.broadcast_to(np.tile([400., 0.], 5), (289, 3, 10))
+        a = .1+.002*concentrations*np.exp(-.2*t)[:, None, None]
+        traces = biome.trace_metrics(a, {'intercept': .1, 'slope': .002})
+        np.testing.assert_allclose(traces['control_ratio_initial'], 1)
+        np.testing.assert_allclose(traces['recovery_initial'][-1], np.exp(-.4))

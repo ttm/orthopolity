@@ -77,6 +77,9 @@ first reading. This is not an estimate of elapsed time since physical loading.
    and optical response is shared across that row. It also masks physical
    losses shared with the no-pore controls. It is not an absolute stock assay.
    Any nonpositive control contrast or initial P stops this ratio report.
+   Suppress only the affected replicate/pair ratios, retain their calibrated
+   stocks, and record the reason and valid-replicate count explicitly. The
+   no-pore P ratio equals one by algebra; it cannot verify stock constancy.
 4. Summarize the first reading and the mean of the final five readings
    (71–72 h). Report each replicate, then the mean and range across the
    three replicates for each dye/pore condition. Plot all time points.
@@ -109,3 +112,10 @@ check the stock and control summaries, and replay outputs byte-for-byte.
 Retain all findings, including unusable controls. Update status and the source
 qualification note; do not rescue a failed qualification by selecting a dye
 or pore group after inspection.
+
+**Pre-access implementation amendment:** the first freeze is `43b1bd2`.
+Independent review found that an invalid control would abort even the absolute
+stock report. Before any numerical calibration or response access, revise that
+behavior as specified above, add a shared-physical-loss synthetic case, and
+commit/push the correction. Use that amended commit as the decoding freeze.
+This changes error handling and disclosure, not the selected data or statistics.
