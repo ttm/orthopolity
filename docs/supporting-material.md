@@ -2894,6 +2894,9 @@ why pair fits and observed stock conservation cannot establish that assumption.
 Reference weights are physical capacities, neither log-orthopolic nor
 linear-orthopolic size allocation. This is an analytic qualification, not a new
 empirical study or a failure of exchange on the complete system.
+Finite tube storage and reservoir-reduction limits are established in the
+continuum memory equations of Lizana and Konkoli (2005). The construction here
+isolates pair indistinguishability and a pre-target calibration requirement.
 
 Let a connector have capacity $c>0$ and conductance $h$ to each of two chambers.
 For chamber concentrations $x_1,x_2$ and connector concentration $y$,
@@ -3106,6 +3109,10 @@ and platinum. *Journal of the American Chemical Society*, 40, 1361--1403.
 Levin, D. A., and Peres, Y. (2017). *Markov Chains and Mixing Times*, second edition,
 with contributions by E. L. Wilmer. American Mathematical Society.
 <https://pages.uoregon.edu/dlevin/MARKOV/mcmt2e.pdf>.
+
+Lizana, L., and Konkoli, Z. (2005). Diffusive transport in networks built of
+containers and tubes. *Physical Review E*, 72, 026305.
+<https://doi.org/10.1103/PhysRevE.72.026305>.
 
 Lolli, B., Randazzo, D., Vannucci, G., and Gasperini, P. (2020). The Homogenized
 Instrumental Seismic Catalog (HORUS) of Italy from 1960 to Present.

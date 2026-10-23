@@ -1,15 +1,21 @@
 # Ongoing research: resume here
 
-**23 October — BioMe stock diagnostic prepared:** follow the
-[protocol](biome-stock-audit-protocol-2026-10-23.md) and independently implemented
-`experiments/audit_biome_stocks.py`. The accessible pinned archive has 30 dye
-pairs, optical standards and no-pore controls. Numerical response cells remain
-undecoded; design headers and five synthetic checks pass. Both source scripts
-misassign the bromocresol-purple mass calculation to the phenol-red optical
-channel. Preserve the scripts, use the documented matching channels, and
-freeze/push before the descriptive stock diagnostic. No network cohort or
-independently assayed connector capacity is supplied. Do not turn this audit
-into a confirmatory law result or add it to the 44-study registry.
+**23–24 October — BioMe stock diagnostic complete:** the
+[result](biome-stock-audit-results-2026-10-23.md) finds **8.22–32.30% apparent
+stock loss even in no-pore controls**. The independently implemented correct
+dye channels avoid a misassignment in both source scripts. Control ratios
+reach **139.73%** despite declining calibrated stock; they cannot establish
+connector capacity. Designs `43b1bd2` and amended `59bd2b7` precede numerical
+access; seven synthetic tests, exact checks of 18,840 optical/628 time cells,
+and 26,799 independent calculation comparisons pass. All 669 tests pass and
+the fixed diagnostic/figure replay byte-for-byte. Registry stays **44 / 1,128**.
+Reference measure: physical volume, neither log-orthopolic nor linear-orthopolic
+size allocation. Supporting S5.19 credits established reservoir/tube diffusion
+memory theory. The [fresh source audit](network-source-followup-2026-10-23.md)
+records the alternatives. Next seek independent connector loading/recovery and
+stable node-stock measurements plus an actual network response. Do not reopen
+these leads without new source information or call fits to exposed curves
+independent evidence.
 
 **23 October — qualify connector storage before network transfer:** the
 [source audit](topology-source-audit-2026-10-23.md) retains eleven public

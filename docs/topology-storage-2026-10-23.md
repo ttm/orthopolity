@@ -15,6 +15,13 @@ or voltage is resource divided by capacity. This is **neither log-orthopolic
 nor linear-orthopolic size allocation**. The calculations below use nonnegative
 concentrations and conserve resource over chambers **and** links.
 
+The underlying reduction issue is established physics. Lizana and Konkoli
+(2005), [*Diffusive transport in networks built of containers and tubes*](https://doi.org/10.1103/PhysRevE.72.026305),
+derive continuum reservoir/tube memory equations and examine finite tube
+volume and well-mixed-reservoir approximations. The construction below isolates
+pair indistinguishability and its consequences for this proposed forecast;
+it does not claim discovery of connector storage or diffusion memory.
+
 ## A link that the usual pair calibration cannot measure
 
 Two well-mixed chambers have equal capacity $w>0$. Their connector contains a
@@ -150,3 +157,9 @@ The [source audit](topology-source-audit-2026-10-23.md) records accessible but
 ineligible datasets and remaining leads. None of these analytic constructions
 adds an empirical result, changes an existing frozen result, or uniquely
 identifies orthopolity over ordinary diffusion/circuit theory.
+
+The subsequent [BioMe raw-stock audit](biome-stock-audit-results-2026-10-23.md)
+finds that an accessible two-chamber archive still cannot independently bound
+connector capacity: its no-pore controls show substantial apparent stock loss.
+The archive is useful for diagnosing observation assumptions, not for validating
+the missing network forecast.

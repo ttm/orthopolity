@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "scope": "independent verification of the released stock diagnostic",
+  "freeze_commit": "59bd2b7",
+  "repository_commit": "c9f6321c4a9dc70bfe6b9553dbecb17b5c228983",
+  "diagnostic_sha256": "97e421f857a51b01bb28df30e3b97fb6a282137ced9d30efdc69e045422b13e6",
+  "workbook_decoders": [
+    "openpyxl",
+    "raw OOXML via Python ElementTree"
+  ],
+  "matching_standard_cells_checked": 1500,
+  "matching_response_cells_checked": 17340,
+  "matching_absorbance_cells_checked": 18840,
+  "time_cells_checked": 628,
+  "time_decoder_tolerance_seconds": 0.00051,
+  "maximum_time_decoder_difference_seconds": 3.836930773104541e-11,
+  "calibration_method": "centered covariance divided by centered sum of squares",
+  "production_analysis_imported": false,
+  "relative_tolerance": 1e-11,
+  "absolute_tolerance": 1e-10,
+  "numerical_comparisons": 26799,
+  "maximum_absolute_difference": 4.547473508864641e-13
+}

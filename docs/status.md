@@ -1,21 +1,29 @@
 # Project status and handoff
 
-Last updated 23 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 24 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
-**23 October — fresh BioMe archive qualified for a stock diagnostic:** the
-[fixed protocol](biome-stock-audit-protocol-2026-10-23.md) retains raw optical
-standards, both-chamber dye measurements, no-pore controls and design files
-at pinned author commit `c9f6321`. All 30 pairs are mapped before numerical
-access. Both deposited scripts use the phenol-red wavelength/calibration in
-the bromocresol-purple mass assignment; the independent implementation uses
-the documented dye-specific measurement. Five synthetic tests pass. Standards
-postdate the diffusion experiment, mixing is unverified, and neither separate
-connector loading/recovery nor a network trajectory is available. Freeze and
-push before decoding; this is a descriptive source qualification, not a 45th
-confirmatory study. Reference measure: physical chamber volume, neither
-log-orthopolic nor linear-orthopolic size allocation.
+**23–24 October — BioMe raw-stock diagnostic complete:** a
+[new accessible archive](biome-stock-audit-results-2026-10-23.md) supplies 30
+pairs, separate standards and no-pore controls. Both deposited scripts assign
+the wrong optical channel/calibration to bromocresol-purple mass; the independent
+implementation uses the documented dye-specific measurement. No-pore controls
+show **8.22–32.30% apparent stock loss**, so porous-pair deficits cannot identify
+connector capacity. Control normalization can turn a declining stock estimate
+into a ratio as high as **139.73%**. This diagnoses measurement assumptions;
+it is not a failure of complete-system conservation or a new network test.
+Design `43b1bd2` and reviewed amendment `59bd2b7` were pushed before numerical
+access. Seven synthetic tests pass; independent decoding matches **18,840**
+optical cells and **628** time cells, with **26,799** calculation comparisons
+agreeing within **4.55e-13**. The diagnostic and figure replay byte-for-byte.
+All **669 tests** pass. Registry **44 / 1,128** remains unchanged; physical
+chamber volume is the measure, neither log-orthopolic nor linear-orthopolic
+size allocation. The [fresh source follow-up](network-source-followup-2026-10-23.md)
+records other leads; none supplies the missing independently characterized
+network cohort. Supporting S5.19 now explicitly credits Lizana and Konkoli's
+established reservoir/tube diffusion theory. Next require separate storage and
+observation qualification; do not refit these exposed dye curves as confirmation.
 
 **23 October — topology prediction qualified more sharply:** the
 [public-source audit](topology-source-audit-2026-10-23.md) retains eleven new

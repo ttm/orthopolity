@@ -42,6 +42,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: speech-capacity-sources speech-capacity speech-capacity-registry
 .PHONY: membrane-exchange-sources membrane-exchange membrane-exchange-registry
 .PHONY: topology-design
+.PHONY: biome-stock-audit
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -82,7 +83,17 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/speech-capacity-2026-10-17/transfer.png \
  results/membrane-exchange-transfer-2026-10-22/transfer.png
 
-all: data test analyses topology-design
+all: data test analyses topology-design biome-stock-audit
+
+biome-stock-audit: ## descriptive source qualification; no new empirical registry entry
+	$(PY) experiments/audit_biome_stocks.py --stage inventory --output $(STUDY_OUTPUT_ROOT)/biome-stock/design-inventory.json
+	cmp data/physics-candidates/2026-10-23/biome/design-inventory.json $(STUDY_OUTPUT_ROOT)/biome-stock/design-inventory.json
+	$(PY) experiments/audit_biome_stocks.py --stage diagnose --freeze-commit 59bd2b7 --output $(STUDY_OUTPUT_ROOT)/biome-stock/diagnostic.json
+	cmp results/biome-stock-audit-2026-10-23/diagnostic.json $(STUDY_OUTPUT_ROOT)/biome-stock/diagnostic.json
+	$(PY) experiments/verify_biome_stocks.py --diagnostic $(STUDY_OUTPUT_ROOT)/biome-stock/diagnostic.json --output $(STUDY_OUTPUT_ROOT)/biome-stock/verification.json
+	cmp results/biome-stock-audit-2026-10-23/verification.json $(STUDY_OUTPUT_ROOT)/biome-stock/verification.json
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/plot_biome_stocks.py --result $(STUDY_OUTPUT_ROOT)/biome-stock/diagnostic.json --output $(STUDY_OUTPUT_ROOT)/biome-stock/stocks.png
+	cmp results/biome-stock-audit-2026-10-23/stocks.png $(STUDY_OUTPUT_ROOT)/biome-stock/stocks.png
 
 topology-design: ## analytic exchange qualifications; no empirical study or verdict
 	$(PY) experiments/audit_topology_sources.py
