@@ -4,6 +4,19 @@ Last updated 23 October 2026. **Read this first in a new session.** It records w
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
+**23 October — fresh BioMe archive qualified for a stock diagnostic:** the
+[fixed protocol](biome-stock-audit-protocol-2026-10-23.md) retains raw optical
+standards, both-chamber dye measurements, no-pore controls and design files
+at pinned author commit `c9f6321`. All 30 pairs are mapped before numerical
+access. Both deposited scripts use the phenol-red wavelength/calibration in
+the bromocresol-purple mass assignment; the independent implementation uses
+the documented dye-specific measurement. Five synthetic tests pass. Standards
+postdate the diffusion experiment, mixing is unverified, and neither separate
+connector loading/recovery nor a network trajectory is available. Freeze and
+push before decoding; this is a descriptive source qualification, not a 45th
+confirmatory study. Reference measure: physical chamber volume, neither
+log-orthopolic nor linear-orthopolic size allocation.
+
 **23 October — topology prediction qualified more sharply:** the
 [public-source audit](topology-source-audit-2026-10-23.md) retains eleven new
 methods/metadata files. Accessible archives still lack a qualifying closed

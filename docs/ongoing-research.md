@@ -1,5 +1,16 @@
 # Ongoing research: resume here
 
+**23 October — BioMe stock diagnostic prepared:** follow the
+[protocol](biome-stock-audit-protocol-2026-10-23.md) and independently implemented
+`experiments/audit_biome_stocks.py`. The accessible pinned archive has 30 dye
+pairs, optical standards and no-pore controls. Numerical response cells remain
+undecoded; design headers and five synthetic checks pass. Both source scripts
+misassign the bromocresol-purple mass calculation to the phenol-red optical
+channel. Preserve the scripts, use the documented matching channels, and
+freeze/push before the descriptive stock diagnostic. No network cohort or
+independently assayed connector capacity is supplied. Do not turn this audit
+into a confirmatory law result or add it to the 44-study registry.
+
 **23 October — qualify connector storage before network transfer:** the
 [source audit](topology-source-audit-2026-10-23.md) retains eleven public
 methods/metadata files but no qualifying closed pair/network dataset. No

@@ -1,0 +1,1050 @@
+{
+  "sha": "c9f6321c4a9dc70bfe6b9553dbecb17b5c228983",
+  "url": "https://api.github.com/repos/segrelab/co_culture_device/git/trees/c9f6321c4a9dc70bfe6b9553dbecb17b5c228983",
+  "tree": [
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+      "size": 66,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/dfe0770424b2a19faf507a501ebfc23be8f54e7b"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bab0759a56aa28612f70692c9c1598a4d76f486",
+      "size": 39,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/5bab0759a56aa28612f70692c9c1598a4d76f486"
+    },
+    {
+      "path": "BioMe - Distribution Files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "077f03ba741daaf606ae054cad6a5b67198b0578",
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/trees/077f03ba741daaf606ae054cad6a5b67198b0578"
+    },
+    {
+      "path": "BioMe - Distribution Files/BioMe - Assembly.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2743dc12e9836c2ff35dbb8dd3e4bc646709f70",
+      "size": 272533,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/a2743dc12e9836c2ff35dbb8dd3e4bc646709f70"
+    },
+    {
+      "path": "BioMe - Distribution Files/BioMe Plate - Assembly Protocol (540p).mov",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d37d444dcf5d4b29cd0738e549048f3a8624dc35",
+      "size": 52399760,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/d37d444dcf5d4b29cd0738e549048f3a8624dc35"
+    },
+    {
+      "path": "BioMe - Distribution Files/Drawings",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "95481c18b515dd096472240ae3744e60daec193c",
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/trees/95481c18b515dd096472240ae3744e60daec193c"
+    },
+    {
+      "path": "BioMe - Distribution Files/Drawings/BioMe - Base.PDF",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c59226614cdd7ecf17bc8249aef2737e4c937b49",
+      "size": 67060,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/c59226614cdd7ecf17bc8249aef2737e4c937b49"
+    },
+    {
+      "path": "BioMe - Distribution Files/Drawings/BioMe - Body_3DPrint.PDF",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd2bfd8c2caf697dbeaa60db5107ec0f0f96a611",
+      "size": 72617,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/cd2bfd8c2caf697dbeaa60db5107ec0f0f96a611"
+    },
+    {
+      "path": "BioMe - Distribution Files/Drawings/BioMe - Gasket.PDF",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4785a2e513f7eff1405141192539656fa3cc020",
+      "size": 89357,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/e4785a2e513f7eff1405141192539656fa3cc020"
+    },
+    {
+      "path": "BioMe - Distribution Files/Fabrication Files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cedd053a65dda2b2fd1a5e47697d3d5d2ce7ef63",
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/trees/cedd053a65dda2b2fd1a5e47697d3d5d2ce7ef63"
+    },
+    {
+      "path": "BioMe - Distribution Files/Fabrication Files/BioMe - Body_3DPrint.STL",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74d44a9c4e9b2e31ab5055c6d0778dab66b24872",
+      "size": 647684,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/74d44a9c4e9b2e31ab5055c6d0778dab66b24872"
+    },
+    {
+      "path": "BioMe - Distribution Files/Fabrication Files/BioMe - Gasket _ LaserCut.DXF",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfab7615c1ed18702586dce2152c7ac241f5d32f",
+      "size": 40735,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/cfab7615c1ed18702586dce2152c7ac241f5d32f"
+    },
+    {
+      "path": "BioMe - Distribution Files/SolidWorks Files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c1020d00214f7abc9097cccb6f29ae5a2d9b498a",
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/trees/c1020d00214f7abc9097cccb6f29ae5a2d9b498a"
+    },
+    {
+      "path": "BioMe - Distribution Files/SolidWorks Files/BioMe - Base.SLDPRT",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f651b46fb4272a98a1b30ad076486eb6a726b56c",
+      "size": 150887,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/f651b46fb4272a98a1b30ad076486eb6a726b56c"
+    },
+    {
+      "path": "BioMe - Distribution Files/SolidWorks Files/BioMe - Body_3D Print.SLDPRT",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7f2d5b21cc96726c4d128938a80549d49af4bc9",
+      "size": 249331,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/a7f2d5b21cc96726c4d128938a80549d49af4bc9"
+    },
+    {
+      "path": "BioMe - Distribution Files/SolidWorks Files/BioMe - Gasket.SLDPRT",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "416b405e9b7288221354867e2c1c69e124c12108",
+      "size": 225558,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/416b405e9b7288221354867e2c1c69e124c12108"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19d2a20a069b3e6cf7f25a426bb1bac9c5272b6b",
+      "size": 1848,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/19d2a20a069b3e6cf7f25a426bb1bac9c5272b6b"
+    },
+    {
+      "path": "modeling",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "222c0d52b1d5cb5337294965f945c2f73344a026",
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/trees/222c0d52b1d5cb5337294965f945c2f73344a026"
+    },
+    {
+      "path": "modeling/analyses",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8006165902178a2bb1f372b97a8104d4595b5e20",
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/trees/8006165902178a2bb1f372b97a8104d4595b5e20"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cb404708aafc17e18a257f9428bbd217430c8e9c",
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/trees/cb404708aafc17e18a257f9428bbd217430c8e9c"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/S_I_10000.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c9699b036fcf3f44fd5cfa8fba3d045aaba2d24",
+      "size": 14822618,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/4c9699b036fcf3f44fd5cfa8fba3d045aaba2d24"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/S_I_10000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc883fea110f363bed6564283a42d1a1d270ced7",
+      "size": 14818136,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/cc883fea110f363bed6564283a42d1a1d270ced7"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/S_I_1000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7e7e9e3e3bd5972052fe337f092e634f3629bbb",
+      "size": 1480103,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/e7e7e9e3e3bd5972052fe337f092e634f3629bbb"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/S_I_100_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "564de089ad78378f2a9492b53328637aa8633b7d",
+      "size": 120960,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/564de089ad78378f2a9492b53328637aa8633b7d"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/S_K_10000.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2cb2d9e99f7f26795e8c57c95d17b01b5f741ac",
+      "size": 14820881,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/b2cb2d9e99f7f26795e8c57c95d17b01b5f741ac"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/S_K_10000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe54a295bca8775befbe7c19190506aeeabfd417",
+      "size": 14819811,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/fe54a295bca8775befbe7c19190506aeeabfd417"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/S_K_1000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89d6287b0de4c64fcdffdb26ab956dfb21f54008",
+      "size": 1479540,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/89d6287b0de4c64fcdffdb26ab956dfb21f54008"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/S_K_100_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ace477179b9e91981b22e3164a71d8bc5c6cbe2",
+      "size": 121026,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/1ace477179b9e91981b22e3164a71d8bc5c6cbe2"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/S_PC_10000.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e003cce6d55a19c04195d81da14c6e77efdda9d",
+      "size": 14821272,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/0e003cce6d55a19c04195d81da14c6e77efdda9d"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/S_PC_10000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af871e76fbb23d9b00f96e02a2994cd184bda130",
+      "size": 14822419,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/af871e76fbb23d9b00f96e02a2994cd184bda130"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/S_PC_1000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dba3477952bd44f947a67dba1dd98d8de24a25f",
+      "size": 1465654,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/6dba3477952bd44f947a67dba1dd98d8de24a25f"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/S_PC_100_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcc1e58f084413eb5338a753ae73d1ff14a0081a",
+      "size": 56351,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/dcc1e58f084413eb5338a753ae73d1ff14a0081a"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/r_10000.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fadcd1d559cd6a14890edbd4ce69c6a990f35300",
+      "size": 838632,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/fadcd1d559cd6a14890edbd4ce69c6a990f35300"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/r_10000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16ae5cfda03e155de212a4d8b7901fa1bf5f53c3",
+      "size": 838576,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/16ae5cfda03e155de212a4d8b7901fa1bf5f53c3"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/r_1000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1cb289d5caa384288ad7861fccaade1ec5acd63",
+      "size": 84670,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/d1cb289d5caa384288ad7861fccaade1ec5acd63"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/r_100_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28d0069544e0db4177d26e569162b95bdfe0aa4e",
+      "size": 8880,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/28d0069544e0db4177d26e569162b95bdfe0aa4e"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/run_analysis_equal_dis.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6760588e6b8060e40c872e4cf6f2f1920cbefe0e",
+      "size": 11902,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/6760588e6b8060e40c872e4cf6f2f1920cbefe0e"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/run_analysis_equal_dis_2.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e21ae6f97a65238813df33ff02af247a42108d1c",
+      "size": 12291,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/e21ae6f97a65238813df33ff02af247a42108d1c"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Dis_Params/run_analysis_equal_dis_3.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "500d485bf9fc76aaeb42bbade7e1b78f0a0a349f",
+      "size": 12335,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/500d485bf9fc76aaeb42bbade7e1b78f0a0a349f"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4d628ed01fb38dbd615447f26e597c3c313dbd0b",
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/trees/4d628ed01fb38dbd615447f26e597c3c313dbd0b"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/S_I_10000.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd143619bccf91931560b372fdd379830368dbef",
+      "size": 13489660,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/fd143619bccf91931560b372fdd379830368dbef"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/S_I_10000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "465ae18e1b97bb68f9a877ba0ad0fb87212981e5",
+      "size": 13573655,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/465ae18e1b97bb68f9a877ba0ad0fb87212981e5"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/S_I_1000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b10c15358f41ed83c1ed537573a8586120634596",
+      "size": 1354156,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/b10c15358f41ed83c1ed537573a8586120634596"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/S_I_100_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f60d2d65e3ce3d149fb4e3b8c9279910bf4ee95",
+      "size": 120246,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/6f60d2d65e3ce3d149fb4e3b8c9279910bf4ee95"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/S_K_10000.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "349eff5b092e68c034a507a0218cd52460bd4c07",
+      "size": 13408588,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/349eff5b092e68c034a507a0218cd52460bd4c07"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/S_K_10000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50ade986fc3fa870d9f10222eb51860c7cfa1d0c",
+      "size": 13519049,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/50ade986fc3fa870d9f10222eb51860c7cfa1d0c"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/S_K_1000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c11eaa50cb36fab901bb548ab45b259cf7aa0f6",
+      "size": 1348451,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/8c11eaa50cb36fab901bb548ab45b259cf7aa0f6"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/S_K_100_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c44884dc651a349c102c260221b0a49396279681",
+      "size": 121987,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/c44884dc651a349c102c260221b0a49396279681"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/S_PC_10000.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1bec762e2ab1eff2592170e97be17f894ff2e99",
+      "size": 12398333,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/e1bec762e2ab1eff2592170e97be17f894ff2e99"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/S_PC_10000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b43270472efa61188591ec089961140c910b913c",
+      "size": 12378297,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/b43270472efa61188591ec089961140c910b913c"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/S_PC_1000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4007fac407e998a8fb922dea97ca512c70d8cd10",
+      "size": 1224806,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/4007fac407e998a8fb922dea97ca512c70d8cd10"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/S_PC_100_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42c24ac822e1217365f8dded7e2febb38ff47eef",
+      "size": 49284,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/42c24ac822e1217365f8dded7e2febb38ff47eef"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/r_10000.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ab0797595a3ae0258b3f97ad46bd64356a9ab6d",
+      "size": 157815,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/6ab0797595a3ae0258b3f97ad46bd64356a9ab6d"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/r_10000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c1a61af720b9c1c7931ce91f6dc7d5fb6e4bfe8",
+      "size": 157738,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/9c1a61af720b9c1c7931ce91f6dc7d5fb6e4bfe8"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/r_1000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "691e5b3750b6b637201eeea6b6881a56c0148005",
+      "size": 16436,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/691e5b3750b6b637201eeea6b6881a56c0148005"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/r_100_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dd9d0a5e9181615980a6931cf2f556e8e4f74cf",
+      "size": 1980,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/4dd9d0a5e9181615980a6931cf2f556e8e4f74cf"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/run_analysis_equal_lit.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "315c9ba9d9e73596d6479b89cca8348e6ac58851",
+      "size": 12231,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/315c9ba9d9e73596d6479b89cca8348e6ac58851"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/run_analysis_equal_lit_2.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5b4e215de3b4f7fd5baa4f09d8d8be727fb928f",
+      "size": 12251,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/c5b4e215de3b4f7fd5baa4f09d8d8be727fb928f"
+    },
+    {
+      "path": "modeling/analyses/Equal_Leakage_Lit_Params/run_analysis_equal_lit_3.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7567b341640b9fe5f9872497146fa50a961bc1cf",
+      "size": 12295,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/7567b341640b9fe5f9872497146fa50a961bc1cf"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29294ea3ecec465a367ee4ecdb17e71d85d1b219",
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/trees/29294ea3ecec465a367ee4ecdb17e71d85d1b219"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/S_I_10000.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0f9bb9340a55ba42d4275b5d5596eedd09a28aa",
+      "size": 14808978,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/f0f9bb9340a55ba42d4275b5d5596eedd09a28aa"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/S_I_10000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b465d1fda0fb23927e39d78557b273f1b936a65f",
+      "size": 14812155,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/b465d1fda0fb23927e39d78557b273f1b936a65f"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/S_I_1000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4083e9a63812314838229b0b7c60ba0b17b2c170",
+      "size": 1480016,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/4083e9a63812314838229b0b7c60ba0b17b2c170"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/S_I_100_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62d8839ae9c8ebcd34c72f97634504890ea6907a",
+      "size": 129926,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/62d8839ae9c8ebcd34c72f97634504890ea6907a"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/S_K_10000.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f596b93aa8115a66326aef68c7dcf8524c8fb53b",
+      "size": 14809859,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/f596b93aa8115a66326aef68c7dcf8524c8fb53b"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/S_K_10000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b8d29237c5f1220fde771efe5e5174a64d94708",
+      "size": 14810949,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/3b8d29237c5f1220fde771efe5e5174a64d94708"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/S_K_1000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad955026752e2cc5fcfbce13e6edf3a3eec7e2fa",
+      "size": 1479051,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/ad955026752e2cc5fcfbce13e6edf3a3eec7e2fa"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/S_K_100_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4012642e2945a7a0d6fcad9a0671bd4390e53ac6",
+      "size": 130075,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/4012642e2945a7a0d6fcad9a0671bd4390e53ac6"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/S_PC_10000.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39eb3055088ef1c0d7a7ea75fced5ef72e0bd681",
+      "size": 14817339,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/39eb3055088ef1c0d7a7ea75fced5ef72e0bd681"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/S_PC_10000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15155fdfb0e5b058acc5ed6e42e6c49f882764e3",
+      "size": 14820090,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/15155fdfb0e5b058acc5ed6e42e6c49f882764e3"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/S_PC_1000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fbb3312d1fbbce0596967de860679062b01702e",
+      "size": 1466235,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/2fbb3312d1fbbce0596967de860679062b01702e"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/S_PC_100_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "beb1586fbcda04fb1aa98086636abe154275b0fb",
+      "size": 64995,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/beb1586fbcda04fb1aa98086636abe154275b0fb"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/r_10000.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03d064b24a0c7007fd16719b09e17dc1a6905b92",
+      "size": 915534,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/03d064b24a0c7007fd16719b09e17dc1a6905b92"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/r_10000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1ab54af3be90eeafda0070784c84207488bf7ea",
+      "size": 915454,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/f1ab54af3be90eeafda0070784c84207488bf7ea"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/r_1000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4605b97b8ff86c27a1c5bed276cae89be9035416",
+      "size": 92361,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/4605b97b8ff86c27a1c5bed276cae89be9035416"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/r_100_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f74d9e0a5eccc09102019126b8cfc8d95bdffba4",
+      "size": 9650,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/f74d9e0a5eccc09102019126b8cfc8d95bdffba4"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/run_analysis_unequal_dis.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e32090712a098cbf23ceaf42cc3bb56176882f51",
+      "size": 13437,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/e32090712a098cbf23ceaf42cc3bb56176882f51"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/run_analysis_unequal_dis_2.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28f0ea090bca9da0722361e306e1a78de6a22f82",
+      "size": 13611,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/28f0ea090bca9da0722361e306e1a78de6a22f82"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Dis_Params/run_analysis_unequal_dis_3.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7d5ee121aea94b5ae00aeab41fe0f1085221d88",
+      "size": 13657,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/f7d5ee121aea94b5ae00aeab41fe0f1085221d88"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb988a9cdecb2a042804bdde0b69d5c42c02c1a8",
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/trees/fb988a9cdecb2a042804bdde0b69d5c42c02c1a8"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/S_I_10000.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73df26e8e027de8bd423600272704e271ca1a13a",
+      "size": 13785264,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/73df26e8e027de8bd423600272704e271ca1a13a"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/S_I_10000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f7e9775c05c5d9916d095f98901770d6577efee",
+      "size": 13798072,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/5f7e9775c05c5d9916d095f98901770d6577efee"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/S_I_1000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83d12f315f8a6f5b32594a1f09e12bc0c1c13fb1",
+      "size": 1371649,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/83d12f315f8a6f5b32594a1f09e12bc0c1c13fb1"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/S_I_100_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc5fc7a733c5d6588eb8da38f521c9ada9f460d2",
+      "size": 127120,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/fc5fc7a733c5d6588eb8da38f521c9ada9f460d2"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/S_K_10000.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58bf00e9d7908c2516af03d2d6e78351ab8e133c",
+      "size": 13750106,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/58bf00e9d7908c2516af03d2d6e78351ab8e133c"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/S_K_10000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96a4c891922b1916a9d190b6eab5208146052ba4",
+      "size": 13762245,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/96a4c891922b1916a9d190b6eab5208146052ba4"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/S_K_1000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cee85e55e1684a0b81c683584ed24a7673d82fe",
+      "size": 1374298,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/3cee85e55e1684a0b81c683584ed24a7673d82fe"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/S_K_100_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33ed80dd3f103d3d8ecf4115e52c27f4f0a79dab",
+      "size": 127146,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/33ed80dd3f103d3d8ecf4115e52c27f4f0a79dab"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/S_PC_10000.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d474d52361f2489c64b59cd4a09ff838a3ce1756",
+      "size": 12644607,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/d474d52361f2489c64b59cd4a09ff838a3ce1756"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/S_PC_10000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a7925da0d1dbeb9e848d0beb1c10e3fc397d2ff",
+      "size": 12631643,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/9a7925da0d1dbeb9e848d0beb1c10e3fc397d2ff"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/S_PC_1000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66dabcf93c8995ed501ba39b05f3b527f8314415",
+      "size": 1255195,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/66dabcf93c8995ed501ba39b05f3b527f8314415"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/S_PC_100_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f380deb6e6c43d111438783306e130bc2dc9708",
+      "size": 49913,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/5f380deb6e6c43d111438783306e130bc2dc9708"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/r_10000.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5c732ca14c91c26db507b5b05fe5097e5ce03d9",
+      "size": 158180,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/e5c732ca14c91c26db507b5b05fe5097e5ce03d9"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/r_10000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "538ccab03c4a13ec4bdcf6dc8438ba73f767a5f1",
+      "size": 158238,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/538ccab03c4a13ec4bdcf6dc8438ba73f767a5f1"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/r_1000_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2214c533b7b34f257d64afb608da2e5b9dcf00f2",
+      "size": 16493,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/2214c533b7b34f257d64afb608da2e5b9dcf00f2"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/r_100_2.mat",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a52c8100f65dabe39559074f903d37099a25a44",
+      "size": 2061,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/9a52c8100f65dabe39559074f903d37099a25a44"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/run_analysis_unequal_lit.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51f2c1d1ca549e2310a173e6132f9c36097104d8",
+      "size": 12821,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/51f2c1d1ca549e2310a173e6132f9c36097104d8"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/run_analysis_unequal_lit_2.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "313d50938c247bf9a9c7c70231ac8d72100d5eef",
+      "size": 13009,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/313d50938c247bf9a9c7c70231ac8d72100d5eef"
+    },
+    {
+      "path": "modeling/analyses/Unequal_Leakage_Lit_Params/run_analysis_unequal_lit_3.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f427d26f485fe5a6daa0d6324637f3cca98ce06a",
+      "size": 13055,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/f427d26f485fe5a6daa0d6324637f3cca98ce06a"
+    },
+    {
+      "path": "modeling/model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b6d22dfc2d65c94deb9db606910a6a190f348ecb",
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/trees/b6d22dfc2d65c94deb9db606910a6a190f348ecb"
+    },
+    {
+      "path": "modeling/model/f_co_culture_model.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e6327cdff3fccf2b724f1a2973b615f307fc335",
+      "size": 2401,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/5e6327cdff3fccf2b724f1a2973b615f307fc335"
+    },
+    {
+      "path": "online_supplement",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eb10dc01d6849b82f264cf9de2b4cac9514a54b9",
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/trees/eb10dc01d6849b82f264cf9de2b4cac9514a54b9"
+    },
+    {
+      "path": "online_supplement/FIgure_S11.tif",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "611569f74fc707da57c1d28ec52655333be0112d",
+      "size": 17923056,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/611569f74fc707da57c1d28ec52655333be0112d"
+    },
+    {
+      "path": "online_supplement/Figure_S09.tif",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "d6aefd8de85a302f9343921d595fbd241a0797d1",
+      "size": 19279128,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/d6aefd8de85a302f9343921d595fbd241a0797d1"
+    },
+    {
+      "path": "online_supplement/Figure_S10.tif",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9cb500de314cf386e94f365a6481f11464f1e406",
+      "size": 19825144,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/9cb500de314cf386e94f365a6481f11464f1e406"
+    },
+    {
+      "path": "online_supplement/Figure_S12.tif",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f60d095fd165eeac09ef90bf971db195dd4d686e",
+      "size": 19732240,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/f60d095fd165eeac09ef90bf971db195dd4d686e"
+    },
+    {
+      "path": "online_supplement/Figure_S13.tif",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "38593b497da2dfacdade16b8f647c60848c8111d",
+      "size": 19690736,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/38593b497da2dfacdade16b8f647c60848c8111d"
+    },
+    {
+      "path": "online_supplement/Figure_S14.tif",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c2786cad53f051b74e5e9d88ca08404c7a92fa5e",
+      "size": 18585496,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/c2786cad53f051b74e5e9d88ca08404c7a92fa5e"
+    },
+    {
+      "path": "online_supplement/Figure_S15.tif",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "8cdc77e8f905640ec038f5dc70c41dd6620577d7",
+      "size": 18959910,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/8cdc77e8f905640ec038f5dc70c41dd6620577d7"
+    },
+    {
+      "path": "online_supplement/Figure_S16.tif",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "397b55777a857d68102c4de289f32a2ae15f7db7",
+      "size": 19405136,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/397b55777a857d68102c4de289f32a2ae15f7db7"
+    },
+    {
+      "path": "online_supplement/Figure_S17.tif",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "3da56876974c171ff8e6bf70c840da7146a707c8",
+      "size": 18877344,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/3da56876974c171ff8e6bf70c840da7146a707c8"
+    },
+    {
+      "path": "online_supplement/Figure_S18.tif",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "241baa12ebba1111f8c3fea7aab015ea68ba7401",
+      "size": 19363128,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/241baa12ebba1111f8c3fea7aab015ea68ba7401"
+    },
+    {
+      "path": "online_supplement/Figure_S19.tif",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f72d9e918b360330cffc90af084af12772b2b68b",
+      "size": 19987192,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/f72d9e918b360330cffc90af084af12772b2b68b"
+    },
+    {
+      "path": "online_supplement/Online_Supplement_Figure_Captions.docx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7e3b7a3bfa74a166ba357f835d8f5d2b96f2c7a",
+      "size": 17053,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/e7e3b7a3bfa74a166ba357f835d8f5d2b96f2c7a"
+    },
+    {
+      "path": "raw_data_and_plots",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f2f551e22372e8f88590c857c42c3bc61abd228c",
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/trees/f2f551e22372e8f88590c857c42c3bc61abd228c"
+    },
+    {
+      "path": "raw_data_and_plots/Figure 2 -- AssayAnalysis-BioMeDiffusion.xlsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0cbbf07d2fe2d60f0bfa9b281e9b21920a68933",
+      "size": 55667,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/d0cbbf07d2fe2d60f0bfa9b281e9b21920a68933"
+    },
+    {
+      "path": "raw_data_and_plots/Figure 2 -- Chemical Dye Diffusion - Calibration Curves.xlsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9872e47ca21119a7f9ba44b12e4c347b1c8d764d",
+      "size": 34419,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/9872e47ca21119a7f9ba44b12e4c347b1c8d764d"
+    },
+    {
+      "path": "raw_data_and_plots/Figure 2 -- Chemical Dye Diffusion - Phenol Red & Bromocresol Purple.xlsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b8b8a624f1ac5ed0fc0a225ae8167c7004c4160",
+      "size": 217940,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/0b8b8a624f1ac5ed0fc0a225ae8167c7004c4160"
+    },
+    {
+      "path": "raw_data_and_plots/Figure 3 -- DM Gut Microbiome CoC.xlsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84e5d9f273892a169789cd4ee542aec7baf13e85",
+      "size": 151390,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/84e5d9f273892a169789cd4ee542aec7baf13e85"
+    },
+    {
+      "path": "raw_data_and_plots/Figure 4 -- Amino Acid Diffusion - Isoleucine.xlsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65647d5ce8ebbcfcb82f3a6363ba83514b4c9a66",
+      "size": 129224,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/65647d5ce8ebbcfcb82f3a6363ba83514b4c9a66"
+    },
+    {
+      "path": "raw_data_and_plots/Figure 4 -- Amino Acid Diffusion - Lysine.xlsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e2781e0c5887f058aabb1e4c0369f9a68e142f3",
+      "size": 126727,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/9e2781e0c5887f058aabb1e4c0369f9a68e142f3"
+    },
+    {
+      "path": "raw_data_and_plots/Figure 4 -- EC NR1 Auxotroph Growth Curves.xlsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "475d24f00f5d9987dec52df8ce029b8974929681",
+      "size": 161448,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/475d24f00f5d9987dec52df8ce029b8974929681"
+    },
+    {
+      "path": "raw_data_and_plots/Figure 5 and 7 -- Syntrophic CoC.xlsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1e4d9b9d4e1410f6f0d15f00b0e0285eb1257be",
+      "size": 235617,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/d1e4d9b9d4e1410f6f0d15f00b0e0285eb1257be"
+    },
+    {
+      "path": "raw_data_and_plots/make_plots_figure_2a.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19e1ce4532842aa1288e6cb454b790c7f6d00e53",
+      "size": 10751,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/19e1ce4532842aa1288e6cb454b790c7f6d00e53"
+    },
+    {
+      "path": "raw_data_and_plots/make_plots_figure_2b.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47c66b5d2c1642fcbe236d66f6f66cd8a20e7882",
+      "size": 10094,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/47c66b5d2c1642fcbe236d66f6f66cd8a20e7882"
+    },
+    {
+      "path": "raw_data_and_plots/make_plots_figure_3.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aff6f3fcede4da9495c91eead021a6e256c480cb",
+      "size": 13081,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/aff6f3fcede4da9495c91eead021a6e256c480cb"
+    },
+    {
+      "path": "raw_data_and_plots/make_plots_figure_4_Isoleucine.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "baa7276463999288416599795831ba5ba7e6a3e3",
+      "size": 2376,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/baa7276463999288416599795831ba5ba7e6a3e3"
+    },
+    {
+      "path": "raw_data_and_plots/make_plots_figure_4_Lysine.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd9a4cad9f2a777b0c25f0c1d9cc47ceb426c6f8",
+      "size": 3390,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/fd9a4cad9f2a777b0c25f0c1d9cc47ceb426c6f8"
+    },
+    {
+      "path": "raw_data_and_plots/make_plots_figure_4_S1.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "794ea99edc75818cf593fe437036349a0cc31ece",
+      "size": 578,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/794ea99edc75818cf593fe437036349a0cc31ece"
+    },
+    {
+      "path": "raw_data_and_plots/make_plots_figure_5.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39b272b303c011082e41e1d9743301dff211edf3",
+      "size": 4899,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/39b272b303c011082e41e1d9743301dff211edf3"
+    },
+    {
+      "path": "raw_data_and_plots/make_plots_figure_6_S1.m",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33528e3158c3baf8b1edd3c93673a0273dd992e4",
+      "size": 10743,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/33528e3158c3baf8b1edd3c93673a0273dd992e4"
+    },
+    {
+      "path": "raw_data_and_plots/make_plots_figure_7_Note.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa446aae8d295942da01761839d02cc15a9f964a",
+      "size": 114,
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/blobs/fa446aae8d295942da01761839d02cc15a9f964a"
+    }
+  ],
+  "truncated": false
+}

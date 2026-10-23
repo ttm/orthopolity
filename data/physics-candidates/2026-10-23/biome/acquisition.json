@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-23",
+  "repository_commit": "c9f6321c4a9dc70bfe6b9553dbecb17b5c228983",
+  "doi": "10.1128/msystems.00017-21",
+  "files": [
+    {
+      "file": "repository.json",
+      "url": "https://api.github.com/repos/segrelab/co_culture_device",
+      "bytes": 19233,
+      "sha256": "d45f1160252aafb5f50a9275519e8125026df6b9d0baf4f45430bb63185ae37a"
+    },
+    {
+      "file": "tree.json",
+      "url": "https://api.github.com/repos/segrelab/co_culture_device/git/trees/c9f6321c4a9dc70bfe6b9553dbecb17b5c228983?recursive=1",
+      "bytes": 43604,
+      "sha256": "4e1b413f0a56e2fdedab7a7afc220a35b10227b627fec43231201051e9714b5f"
+    },
+    {
+      "file": "article.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10134821/fullTextXML",
+      "bytes": 178633,
+      "sha256": "0f74e9eeb60ba11a6770ea759f17e714c3f604c4f186784e429b908cd60b3b4f"
+    },
+    {
+      "file": "lizana-konkoli-2005.pdf",
+      "url": "https://arxiv.org/pdf/cond-mat/0503273",
+      "bytes": 1316543,
+      "sha256": "0ce34dcee0ab478c245042ccde6b6a0b74b2c6786810fd8b49c7727c55763d98"
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/segrelab/co_culture_device/c9f6321c4a9dc70bfe6b9553dbecb17b5c228983/README.md",
+      "bytes": 1848,
+      "sha256": "b9be7519f3243076e65de01b2a60a12e03c0c3d7e360bdb51be06e3851330655"
+    },
+    {
+      "file": "dye-analysis.m",
+      "url": "https://raw.githubusercontent.com/segrelab/co_culture_device/c9f6321c4a9dc70bfe6b9553dbecb17b5c228983/raw_data_and_plots/make_plots_figure_2a.m",
+      "bytes": 10751,
+      "sha256": "3f4545b0212014c3489c022f02553b230ee2e4107c7816ae691fbd745c830a73"
+    },
+    {
+      "file": "dye-rate-analysis.m",
+      "url": "https://raw.githubusercontent.com/segrelab/co_culture_device/c9f6321c4a9dc70bfe6b9553dbecb17b5c228983/raw_data_and_plots/make_plots_figure_2b.m",
+      "bytes": 10094,
+      "sha256": "4c74aa0ce0c6fb7229f7fc7962aa931168ed03e19e4a9e4c0a0c257dc0e9e024"
+    },
+    {
+      "file": "optical-calibration.xlsx",
+      "url": "https://raw.githubusercontent.com/segrelab/co_culture_device/c9f6321c4a9dc70bfe6b9553dbecb17b5c228983/raw_data_and_plots/Figure%202%20--%20Chemical%20Dye%20Diffusion%20-%20Calibration%20Curves.xlsx",
+      "bytes": 34419,
+      "sha256": "fe21237c3636317278a991e449b90e8ffbc8b660599df8b09a641e4a37627c81"
+    },
+    {
+      "file": "dye-diffusion.xlsx",
+      "url": "https://raw.githubusercontent.com/segrelab/co_culture_device/c9f6321c4a9dc70bfe6b9553dbecb17b5c228983/raw_data_and_plots/Figure%202%20--%20Chemical%20Dye%20Diffusion%20-%20Phenol%20Red%20%26%20Bromocresol%20Purple.xlsx",
+      "bytes": 217940,
+      "sha256": "ca3a9b714578f7b8d91f00c95aed2c1b709c9fa0a5b85c5bdeb74b3a200a5f52"
+    },
+    {
+      "file": "body-design.pdf",
+      "url": "https://raw.githubusercontent.com/segrelab/co_culture_device/c9f6321c4a9dc70bfe6b9553dbecb17b5c228983/BioMe%20-%20Distribution%20Files/Drawings/BioMe%20-%20Body_3DPrint.PDF",
+      "bytes": 72617,
+      "sha256": "04bb96e88e609a495211dee728f32250eca22950762819ffc03b5add3156ce01"
+    }
+  ]
+}
