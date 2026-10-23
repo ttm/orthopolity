@@ -21,7 +21,8 @@ linear-orthopolic size allocation. Seven fixed analytic cases agree with
 independent stiff edge-flux integration within **2.05e-12**. `make all` now
 includes the analytic topology checks; **662 tests** pass and the registry
 remains **44 runs / 1,128 references**. Main 3.1 points to new supporting S5.19;
-the PDFs are **12/64 pages**, visually checked without typesetting warnings.
+the PDFs are **12/64 pages**, visually checked without typesetting warnings and
+reproduced byte-for-byte from the committed sources.
 Next require independently bounded connector storage as well as matched kinetics
 and stock observations. Do not reopen already excluded archives without new
 information or count this model qualification as empirical confirmation.
