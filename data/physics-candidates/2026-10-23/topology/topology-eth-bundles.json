@@ -1,0 +1,156 @@
+{
+  "_embedded" : {
+    "bundles" : [ {
+      "uuid" : "23168a71-8864-4912-bfd7-9134b9327414",
+      "name" : "THUMBNAIL",
+      "handle" : null,
+      "metadata" : {
+        "dc.title" : [ {
+          "value" : "THUMBNAIL",
+          "language" : null,
+          "authority" : null,
+          "confidence" : -1,
+          "place" : 0
+        } ]
+      },
+      "type" : "bundle",
+      "_links" : {
+        "item" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/23168a71-8864-4912-bfd7-9134b9327414/item"
+        },
+        "bitstreams" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/23168a71-8864-4912-bfd7-9134b9327414/bitstreams"
+        },
+        "primaryBitstream" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/23168a71-8864-4912-bfd7-9134b9327414/primaryBitstream"
+        },
+        "self" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/23168a71-8864-4912-bfd7-9134b9327414"
+        }
+      }
+    }, {
+      "uuid" : "084598b8-0fc3-4453-ae8f-6b4b79aad3ef",
+      "name" : "TEXT",
+      "handle" : null,
+      "metadata" : {
+        "dc.title" : [ {
+          "value" : "TEXT",
+          "language" : null,
+          "authority" : null,
+          "confidence" : -1,
+          "place" : 0
+        } ]
+      },
+      "type" : "bundle",
+      "_links" : {
+        "item" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/084598b8-0fc3-4453-ae8f-6b4b79aad3ef/item"
+        },
+        "bitstreams" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/084598b8-0fc3-4453-ae8f-6b4b79aad3ef/bitstreams"
+        },
+        "primaryBitstream" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/084598b8-0fc3-4453-ae8f-6b4b79aad3ef/primaryBitstream"
+        },
+        "self" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/084598b8-0fc3-4453-ae8f-6b4b79aad3ef"
+        }
+      }
+    }, {
+      "uuid" : "a340f000-3ad9-41a2-95ad-ece4fb12c49d",
+      "name" : "ORIGINAL",
+      "handle" : null,
+      "metadata" : {
+        "dc.title" : [ {
+          "value" : "ORIGINAL",
+          "language" : null,
+          "authority" : null,
+          "confidence" : -1,
+          "place" : 0
+        } ]
+      },
+      "type" : "bundle",
+      "_links" : {
+        "item" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/a340f000-3ad9-41a2-95ad-ece4fb12c49d/item"
+        },
+        "bitstreams" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/a340f000-3ad9-41a2-95ad-ece4fb12c49d/bitstreams"
+        },
+        "primaryBitstream" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/a340f000-3ad9-41a2-95ad-ece4fb12c49d/primaryBitstream"
+        },
+        "self" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/a340f000-3ad9-41a2-95ad-ece4fb12c49d"
+        }
+      }
+    }, {
+      "uuid" : "ab829f71-379b-462d-8dbc-5671a1ff6515",
+      "name" : "LICENSE",
+      "handle" : null,
+      "metadata" : {
+        "dc.title" : [ {
+          "value" : "LICENSE",
+          "language" : null,
+          "authority" : null,
+          "confidence" : -1,
+          "place" : 0
+        } ]
+      },
+      "type" : "bundle",
+      "_links" : {
+        "item" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/ab829f71-379b-462d-8dbc-5671a1ff6515/item"
+        },
+        "bitstreams" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/ab829f71-379b-462d-8dbc-5671a1ff6515/bitstreams"
+        },
+        "primaryBitstream" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/ab829f71-379b-462d-8dbc-5671a1ff6515/primaryBitstream"
+        },
+        "self" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/ab829f71-379b-462d-8dbc-5671a1ff6515"
+        }
+      }
+    }, {
+      "uuid" : "4fc1921b-e85e-451f-8721-070f3c92d18c",
+      "name" : "METS",
+      "handle" : null,
+      "metadata" : {
+        "dc.title" : [ {
+          "value" : "METS",
+          "language" : null,
+          "authority" : null,
+          "confidence" : -1,
+          "place" : 0
+        } ]
+      },
+      "type" : "bundle",
+      "_links" : {
+        "item" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/4fc1921b-e85e-451f-8721-070f3c92d18c/item"
+        },
+        "bitstreams" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/4fc1921b-e85e-451f-8721-070f3c92d18c/bitstreams"
+        },
+        "primaryBitstream" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/4fc1921b-e85e-451f-8721-070f3c92d18c/primaryBitstream"
+        },
+        "self" : {
+          "href" : "https://www.research-collection.ethz.ch/server/api/core/bundles/4fc1921b-e85e-451f-8721-070f3c92d18c"
+        }
+      }
+    } ]
+  },
+  "page" : {
+    "number" : 0,
+    "size" : 20,
+    "totalPages" : 1,
+    "totalElements" : 5
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://www.research-collection.ethz.ch/server/api/core/items/dded41e0-59e8-45a8-a176-e6bcfede279f/bundles"
+    }
+  }
+}

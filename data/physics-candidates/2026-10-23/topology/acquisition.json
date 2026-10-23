@@ -1,0 +1,83 @@
+{
+  "kind": "Public methods and source inventories; no response arrays decoded",
+  "retained_date": "2026-10-23",
+  "files": [
+    {
+      "file": "figshare-32788554.json",
+      "url": "https://api.figshare.com/v2/articles/32788554",
+      "retrieved_date": "2026-10-23",
+      "bytes": 2746,
+      "sha256": "3334027178e11c24131fb32e6facc77c5191702c25bb02890ae0a579781d627f"
+    },
+    {
+      "file": "thermal-nanoscale.html",
+      "url": "https://www.nature.com/articles/s42005-026-02763-9",
+      "retrieved_date": "2026-10-23",
+      "bytes": 228121,
+      "sha256": "b9efd71e1021e8bcbe23c7a73e085f6509d5b1f0d9d79e4c02e19a703092f23f"
+    },
+    {
+      "file": "thermal-nanoscale.pdf",
+      "url": "https://www.nature.com/articles/s42005-026-02763-9_reference.pdf",
+      "retrieved_date": "2026-10-23",
+      "bytes": 1373046,
+      "sha256": "4c258c1670d394de4cc7cf6d1a01d4f97307cb7a07ce473cb4ad95d63449e5e6"
+    },
+    {
+      "file": "thermal-spatiotemporal.html",
+      "url": "https://www.nature.com/articles/s41567-021-01493-9",
+      "retrieved_date": "2026-10-23",
+      "bytes": 346403,
+      "sha256": "a8f7d4a3d533ebc4b68bec88ca23611d28d7c106b979447dbaee642efd87dcf5"
+    },
+    {
+      "file": "thermal-temporal.html",
+      "url": "https://www.nature.com/articles/s41567-025-03129-8",
+      "retrieved_date": "2026-10-23",
+      "bytes": 391473,
+      "sha256": "a9c1d118d0c416ac82070321bccefa7212052f640bbb1bc146ccccae466d02e5"
+    },
+    {
+      "file": "topology-eth-bundles.json",
+      "url": "https://www.research-collection.ethz.ch/server/api/core/items/dded41e0-59e8-45a8-a176-e6bcfede279f/bundles",
+      "retrieved_date": "2026-10-22",
+      "bytes": 5457,
+      "sha256": "f63f03b8cdecdf220c89ee9a50926ed6416b9ebd4e00444d65ef02757fc252f1"
+    },
+    {
+      "file": "topology-jibes-record.json",
+      "url": "https://zenodo.org/api/records/20414671",
+      "retrieved_date": "2026-10-22",
+      "bytes": 4223,
+      "sha256": "c9e666decda14ae2f4f90fad453929940f7a62b9556daa4093c7781148a633dd"
+    },
+    {
+      "file": "topology-jibes-datacite.json",
+      "url": "https://api.datacite.org/dois/10.5281/zenodo.20414671",
+      "retrieved_date": "2026-10-22",
+      "bytes": 6548,
+      "sha256": "3a82d6a614e39734ce1fe6abb189854d32424e3efb6a3465348f9e7122af934a"
+    },
+    {
+      "file": "topology-droplet-datacite.json",
+      "url": "https://api.datacite.org/dois?query=%22droplet%20networks%22&page%5Bsize%5D=100",
+      "retrieved_date": "2026-10-22",
+      "bytes": 164892,
+      "sha256": "e92c00f822e6b585e6113b725bdcd3736d7c21b4abf656445d1109fa0c42d975"
+    },
+    {
+      "file": "rc-zenodo-18979232-metadata.json",
+      "url": "https://zenodo.org/api/records/18979232",
+      "retrieved_date": "2026-10-23",
+      "bytes": 3954,
+      "sha256": "33c28f237deb43a9a4c5115826c026e33e3c80c7ec7d94c4258df42553c9ced1"
+    },
+    {
+      "file": "thermal-pnas-2408843121-metadata.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11363277/fullTextXML",
+      "retrieved_date": "2026-10-23",
+      "bytes": 104577,
+      "sha256": "c8c8ad39fe0122af7b8c7b1d6fc7d204b1d1fb7668260032242e536dc62aaf76"
+    }
+  ]
+}

@@ -2884,6 +2884,88 @@ empirical trajectory alternative. Ordinary diffusion gives the same model;
 this does not distinguish a unique orthopolity mechanism or test the proposed
 pair-to-network topology intervention.
 
+### S5.19. Hidden link storage limits pair-to-network transfer
+
+The proposed topology test predicts a five-chamber path from an independently
+measured pair. For equal chamber capacities $w$ and direct-link conductances
+$g$, the slow-time ratio is $3+\sqrt5=5.236068$. This assumes negligible
+resource storage in the links. The following constructed counterexample shows
+why pair fits and observed stock conservation cannot establish that assumption.
+Reference weights are physical capacities, neither log-orthopolic nor
+linear-orthopolic size allocation. This is an analytic qualification, not a new
+empirical study or a failure of exchange on the complete system.
+
+Let a connector have capacity $c>0$ and conductance $h$ to each of two chambers.
+For chamber concentrations $x_1,x_2$ and connector concentration $y$,
+
+$$w\dot x_1=h(y-x_1),\qquad
+c\dot y=h(x_1+x_2-2y),\qquad
+w\dot x_2=h(y-x_2).$$
+
+Prepare $(x_1,y,x_2)=(a,\mu,b)$ with $\mu=(a+b)/2$. For every $c>0$,
+
+$$y(t)=\mu,\qquad
+x_{1,2}(t)=\mu\pm\tfrac12(a-b)e^{-ht/w}.$$
+
+The measured chamber curves, constant chamber total and endpoint are identical.
+The full budget $(2w+c)\mu$ differs because of unmeasured storage. A reduced
+pair model fits perfectly with $g=h/2$; it does not identify $c$.
+
+Five chambers joined by four such stores form a nine-node weighted path,
+
+$$W\dot z=-hL_9z,\qquad
+W=\operatorname{diag}(w,c,w,c,w,c,w,c,w).$$
+
+For $c/w\to0$ its slow-time ratio to the measured pair is 5.236068. For $c=w$,
+the homogeneous nine-node path instead gives
+
+$$\frac{\tau_5}{\tau_{\mathrm{pair}}}
+=\frac{1}{2[1-\cos(\pi/9)]}=8.290859,$$
+
+a 58.34% increase. This can occur without changing the observed endpoint or
+chamber total: initialize chamber deviations from $\mu$ as $(A,0,0,0,-A)$
+and link deviations as $(A/2,0,0,-A/2)$, with $\mu\ge |A|>0$. Reflection-odd
+deviations preserve chamber stock $5w\mu$ and full stock $(5w+4c)\mu$.
+Every chamber tends to $\mu$, while the slow mode is excited and visible at the
+endpoints. The reported ratio concerns that mode, not a threshold mixing time.
+
+For $r=c/w$, the dimensionless slow rate $s=\lambda w/h$ is the smallest
+positive root of the reflection-odd characteristic polynomial
+
+$$r^2s^4-(3r^2+4r)s^3+(2r^2+9r+4)s^2-(4r+6)s+1=0.$$
+
+The generalized eigenvalue min--max principle bounds rates using independently
+bounded capacities. In this homogeneous model, requiring the slow time to stay
+within 5% above the massless-link prediction requires $c/w\le0.0912414$.
+This illustrative tolerance is neither a universal threshold nor an empirical
+decision rule. Distributed connectors, unequal capacities and external losses
+require separate qualification.
+
+A second pair preparation can measure the missing capacity before network
+access. The contrast rate is $\lambda_-=h/w$; the common mode has rate
+$\lambda_+=h/w+2h/c$, giving
+
+$$\frac cw=\frac{2}{\lambda_+/\lambda_- -1}.$$
+
+Specifically, prepare both chambers at concentration one and the connector at
+zero. The known full budget is $2w$, and the chamber concentration sum is
+
+$$S(t)=\frac4{2+r}+\frac{2r}{2+r}e^{-\lambda_+t}.$$
+
+Small link capacity makes this signal fast and small. Time resolution,
+independently controlled preparation, stable measurement gain and absence of
+external loss are essential; the target network must not estimate $c$.
+Thus the failure explanation supplies a new calibration requirement and a
+subsequent testable forecast, rather than an unrestricted correction after failure.
+
+The [full derivation](topology-storage-2026-10-23.md) and
+`experiments/check_topology_storage.py` compare generalized spectra, the quartic,
+closed pair formulas and independent stiff edge-flux integration at seven fixed
+capacity ratios. Maximum trajectory difference is $2.05\times10^{-12}$.
+The [public-source audit](topology-source-audit-2026-10-23.md) has not yet qualified
+matched experimental network responses. Ordinary diffusion and circuit theory
+give these same equations; the example does not identify a unique mechanism.
+
 ## References
 
 Arranz, I., Fournier, B., Lester, N. P., Shuter, B. J., and Peres-Neto, P. R. (2022).

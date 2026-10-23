@@ -1,8 +1,30 @@
 # Project status and handoff
 
-Last updated 22 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 23 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**23 October — topology prediction qualified more sharply:** the
+[public-source audit](topology-source-audit-2026-10-23.md) retains eleven new
+methods/metadata files. Accessible archives still lack a qualifying closed
+pair-to-network comparison: some fit conductances to the target response,
+others measure driven flow, terminal discharge or changing geometry. No new
+numerical response arrays were decoded and no empirical study was added.
+The [analytic link-storage counterexample](topology-storage-2026-10-23.md)
+shows identical pair curves, conserved observed totals and identical network
+endpoints with different network slow times: **5.23607 versus 8.29086** relative
+to the pair, a **58.34% increase**. The complete conservative model remains
+valid; omitting connector capacity causes the failed reduced forecast. A
+separate pair common-mode preparation identifies that capacity before network
+access. The reference measure is physical capacity, neither log-orthopolic nor
+linear-orthopolic size allocation. Seven fixed analytic cases agree with
+independent stiff edge-flux integration within **2.05e-12**. `make all` now
+includes the analytic topology checks; **662 tests** pass and the registry
+remains **44 runs / 1,128 references**. Main 3.1 points to new supporting S5.19;
+the PDFs are **12/64 pages**, visually checked without typesetting warnings.
+Next require independently bounded connector storage as well as matched kinetics
+and stock observations. Do not reopen already excluded archives without new
+information or count this model qualification as empirical confirmation.
 
 **22 October — membrane-pair transfer complete:** the
 [result](membrane-exchange-results-2026-10-22.md) predicts all 56 later chamber
@@ -513,8 +535,11 @@ a pair-to-network kinetic forecast and the absolute-stock/loss controls needed
 to identify exchange. The [completed pair transfer](membrane-exchange-results-2026-10-22.md)
 is useful but slightly worse than empirical interpolation. A network topology
 change remains a distinct untested prediction; prioritize its qualification over another capacity fit.
-The [source audit](equalization-source-audit-2026-10-19.md) records the current
-optical-trap, droplet-network and open-chip limitations.
+The [23 October source audit](topology-source-audit-2026-10-23.md) records the
+bounded thermal, electrical and droplet search. The
+[storage qualification](topology-storage-2026-10-23.md) requires independent
+connector capacities or a separate common-mode calibration; matching pair
+contrasts and observed conservation alone do not establish the reduced graph.
 The biological assay transfers information, but its fitted correction fails;
 further work must distinguish an independent resource measurement from an
 inferred workload proxy. Preserve all ten now-exposed outcomes. The
@@ -627,6 +652,7 @@ The existing candidate repairs below remain available in that sequence.
 | Natural transport design qualification | [failed simulation gate](saltation-qualification-results-2026-10-14.md); [protocol](saltation-qualification-protocol-2026-10-14.md); [source audit](natural-source-audit-2026-10-14.md) |
 | Speech-capacity transfer | [results](speech-capacity-results-2026-10-17.md); [protocol](speech-capacity-protocol-2026-10-17.md); [human-source audit](human-source-qualification-2026-10-17.md) |
 | Membrane-pair transfer | [results](membrane-exchange-results-2026-10-22.md); [protocol](membrane-exchange-protocol-2026-10-20.md); [source audit](exchange-source-followup-2026-10-20.md) |
+| Network prediction qualification | [source audit](topology-source-audit-2026-10-23.md); [link-storage counterexample and calibration repair](topology-storage-2026-10-23.md); supporting S5.19 |
 | Next seismic inputs | [source/calibration audit](seismic-candidate-audit-2026-10-10.md); `data/seismic-candidates/2026-10-10/` |
 | Italian magnitude prerequisite | [failed validation](italian-magnitude-validation-results-2026-10-10.md); [frozen design](italian-magnitude-validation-protocol-2026-10-10.md); `results/italian-magnitude-validation-2026-10-10/` |
 | Unified manuscript and programme | [paper.md](paper.md) and `paper.pdf`; [supporting-material.md](supporting-material.md) and `supporting-material.pdf`; [revision map](manuscript-revision-2026-10-11.md); [research-brief.md](research-brief.md); [ongoing-research.md](ongoing-research.md) |

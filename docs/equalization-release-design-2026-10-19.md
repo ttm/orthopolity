@@ -1,5 +1,11 @@
 # Next prediction: transfer exchange kinetics, and distinguish exchange from loss
 
+**23 October qualification:** the [link-storage counterexample](topology-storage-2026-10-23.md)
+shows why matched pair curves and observed conservation do not establish negligible
+connector capacity. Measure or bound that capacity before applying the five-node
+ratio below; a separate pair common-mode preparation can identify it. The
+[new source audit](topology-source-audit-2026-10-23.md) retains the current public-data limits.
+
 19 October 2026. **Design derivation and source qualification, not an executed
 empirical test or a preregistration.** The first cross-domain forecast programme
 is complete. Its next step should connect the [equalizing mechanism](class-exchange.md)

@@ -235,10 +235,11 @@ disconnected components equalize only within their separately conserved budgets.
 These are established reversible-chain tools applied to resource classes (Levin
 and Peres, 2017).
 
-This construction shows how an active equalizing process can have an unequal
-outcome. Identifying that decomposition in a natural system requires evidence
-about its kinetics or response to intervention; a stationary profile alone is
-insufficient.
+An active equalizing process can therefore have an unequal outcome; a stationary
+profile does not identify its kinetics. Even perfect pair trajectories and
+conserved observed totals can conceal storage in links and mispredict network
+relaxation. Supporting S5.19 gives an exact counterexample and a separate
+calibration that resolves it.
 
 ![Equalization, a specified constraint, and recovery](../results/class-exchange-presentation/class-exchange.png)
 

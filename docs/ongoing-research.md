@@ -1,5 +1,22 @@
 # Ongoing research: resume here
 
+**23 October — qualify connector storage before network transfer:** the
+[source audit](topology-source-audit-2026-10-23.md) retains eleven public
+methods/metadata files but no qualifying closed pair/network dataset. No
+numerical response arrays were decoded. An
+[exact counterexample](topology-storage-2026-10-23.md) gives indistinguishable
+pair curves and conserved observed stocks but slow-time ratios **5.23607 and
+8.29086**, depending on storage omitted from the links. A separate pair
+common-mode preparation can identify that capacity before forecasting the
+network. This limits a reduced model; the complete conservative exchange
+mechanism remains valid. Physical capacities define the measure, neither
+log-orthopolic nor linear-orthopolic size allocation. Main 3.1 and supporting
+S5.19 retain the distinction; PDFs are **12/64 pages**. `make all` passes
+**662 tests** and the three analytic exchange checks; source hashes verify and
+the registry remains **44 / 1,128**. Next seek independent connector geometry
+or common-mode calibration plus matched stock trajectories; do not count this
+analytic result as new empirical evidence or repeat excluded-source searches.
+
 **22 October — membrane transfer complete:**
 [results](membrane-exchange-results-2026-10-22.md) give primary contrast error
 **0.042285**, compared with 0.547178 for persistence, 0.462221 for immediate

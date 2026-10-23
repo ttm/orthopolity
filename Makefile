@@ -41,6 +41,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: burden-transfer-sources burden-transfer burden-transfer-registry
 .PHONY: speech-capacity-sources speech-capacity speech-capacity-registry
 .PHONY: membrane-exchange-sources membrane-exchange membrane-exchange-registry
+.PHONY: topology-design
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -81,7 +82,13 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/speech-capacity-2026-10-17/transfer.png \
  results/membrane-exchange-transfer-2026-10-22/transfer.png
 
-all: data test analyses
+all: data test analyses topology-design
+
+topology-design: ## analytic exchange qualifications; no empirical study or verdict
+	$(PY) experiments/audit_topology_sources.py
+	$(PY) experiments/check_equalization_design.py
+	$(PY) experiments/check_exchange_observability.py
+	$(PY) experiments/check_topology_storage.py
 
 membrane-exchange-sources: ## verify original membrane bytes without numerical decoding
 	$(PY) experiments/run_membrane_exchange.py --stage verify
