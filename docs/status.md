@@ -1,8 +1,23 @@
 # Project status and handoff
 
-Last updated 24 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 25 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**24–25 October — independent circuit forecast ready for sealing:** the
+[new protocol](rlc-boundary-protocol-2026-10-24.md) fixes component values before
+80 unexposed impedance observations. One string-encoded response was exposed
+by schema inspection and is excluded from primary scoring; published fitted
+values were already known. The test concerns the boundary of collocated
+passive first-order exchange, not a unique general-law prediction. Capacitance
+weights charge increments; this is neither log-orthopolic nor linear-orthopolic
+size allocation. Eleven synthetic tests pass. Commit/push the design, seal and
+independently verify frequency-specific forecasts, then release responses.
+The [thermal source audit](physics-source-followup-2026-10-24.md) retains
+accessible GEOFIT data and separate material assays, but the sensor-position
+crosswalk and boundary records needed for a spatial forecast remain missing.
+No numerical thermal arrays were decoded. Registry and article remain unchanged
+pending the circuit result.
 
 **23–24 October — BioMe raw-stock diagnostic complete:** a
 [new accessible archive](biome-stock-audit-results-2026-10-23.md) supplies 30

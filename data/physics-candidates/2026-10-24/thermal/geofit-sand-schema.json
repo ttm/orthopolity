@@ -1,0 +1,128 @@
+[
+  {
+    "name": "M24_10dC_10W",
+    "class": "Group",
+    "attribute_names": [
+      "CLASS",
+      "TITLE",
+      "VERSION",
+      "axis0_variety",
+      "axis1_variety",
+      "block0_items_variety",
+      "block1_items_variety",
+      "encoding",
+      "errors",
+      "nblocks",
+      "ndim",
+      "pandas_type",
+      "pandas_version"
+    ]
+  },
+  {
+    "name": "M24_10dC_10W/axis0",
+    "class": "Dataset",
+    "attribute_names": [
+      "CLASS",
+      "FLAVOR",
+      "TITLE",
+      "VERSION",
+      "kind",
+      "name",
+      "transposed"
+    ],
+    "shape": [
+      45
+    ],
+    "dtype": "|S8",
+    "compression": null
+  },
+  {
+    "name": "M24_10dC_10W/axis1",
+    "class": "Dataset",
+    "attribute_names": [
+      "CLASS",
+      "FLAVOR",
+      "TITLE",
+      "VERSION",
+      "kind",
+      "name",
+      "transposed"
+    ],
+    "shape": [
+      652664
+    ],
+    "dtype": "int64",
+    "compression": null
+  },
+  {
+    "name": "M24_10dC_10W/block0_items",
+    "class": "Dataset",
+    "attribute_names": [
+      "CLASS",
+      "FLAVOR",
+      "TITLE",
+      "VERSION",
+      "kind",
+      "name",
+      "transposed"
+    ],
+    "shape": [
+      44
+    ],
+    "dtype": "|S8",
+    "compression": null
+  },
+  {
+    "name": "M24_10dC_10W/block0_values",
+    "class": "Dataset",
+    "attribute_names": [
+      "CLASS",
+      "FLAVOR",
+      "TITLE",
+      "VERSION",
+      "transposed"
+    ],
+    "shape": [
+      652664,
+      44
+    ],
+    "dtype": "float64",
+    "compression": null
+  },
+  {
+    "name": "M24_10dC_10W/block1_items",
+    "class": "Dataset",
+    "attribute_names": [
+      "CLASS",
+      "FLAVOR",
+      "TITLE",
+      "VERSION",
+      "kind",
+      "name",
+      "transposed"
+    ],
+    "shape": [
+      1
+    ],
+    "dtype": "|S4",
+    "compression": null
+  },
+  {
+    "name": "M24_10dC_10W/block1_values",
+    "class": "Dataset",
+    "attribute_names": [
+      "CLASS",
+      "FLAVOR",
+      "TITLE",
+      "VERSION",
+      "transposed",
+      "value_type"
+    ],
+    "shape": [
+      652664,
+      1
+    ],
+    "dtype": "int64",
+    "compression": null
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "accessed": "2026-10-24",
+  "record": "https://doi.org/10.5281/zenodo.10794584",
+  "files": [
+    {
+      "file": "rlc_circuit.json",
+      "url": "https://zenodo.org/api/records/10794584/files/rlc_circuit.json/content",
+      "bytes": 9119,
+      "sha256": "5ba93aeef5570f8eaf13bf84e0d2b3bb5221f2d208ce365c9088b62873ef5cbd",
+      "md5": "0d8f9939685d435c7475aed873a6ba99"
+    },
+    {
+      "file": "rlc_circuit.mat",
+      "url": "https://zenodo.org/api/records/10794584/files/rlc_circuit.mat/content",
+      "bytes": 6574,
+      "sha256": "5623257d2fbb2a4141100f550be58976b87f25aa6d7699cb027dc8061d5ab798",
+      "md5": "9250b5871c4b7a86039214898b2ea91f"
+    },
+    {
+      "file": "source-inventory.json",
+      "url": "https://zenodo.org/api/records/10794584",
+      "bytes": 11304,
+      "sha256": "1e750600b8f89be21fd1da2ad07af9455a1bbf56f0b875c584e1cd7670c8b2ff",
+      "md5": "dff1e9f25609c37ab0fd64cc31ae2fbe"
+    },
+    {
+      "file": "source-supplement.pdf",
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S2666386424003606-mmc1.pdf",
+      "bytes": 1380127,
+      "sha256": "2bbed76fe86fed99c6942fc97c8ea9ed272b389fa51c6a7a376cf2968f8fcb89",
+      "md5": "61ae36d963adb71a1ff417ac9357a8be"
+    }
+  ],
+  "exposure": "Published component fits and first string-encoded response z[0] exposed; primary excludes row 0. Other 80 numerical responses unread before design/forecast seals."
+}

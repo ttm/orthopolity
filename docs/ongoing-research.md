@@ -1,5 +1,18 @@
 # Ongoing research: resume here
 
+**25 October — finish the independent circuit forecast:**
+[protocol](rlc-boundary-protocol-2026-10-24.md), runner and independent verifier
+are ready for the design seal. Eleven synthetic tests pass. Published fitted
+component values and the first string-encoded raw row are exposed; primary
+scoring fixes the other 80 rows before access. Commit/push design, generate and
+independently verify forecasts using only frequency inputs, commit/push forecast
+bytes, then evaluate. Physical capacitance defines charge weights, neither
+log-orthopolic nor linear-orthopolic size allocation. This is a boundary test
+of collocated passive symmetric exchange, not the closed topology test or
+unique general-law confirmation. The
+[GEOFIT audit](physics-source-followup-2026-10-24.md) stops without numerical
+temperature access because sensor mapping and boundary inputs remain unqualified.
+
 **23–24 October — BioMe stock diagnostic complete:** the
 [result](biome-stock-audit-results-2026-10-23.md) finds **8.22–32.30% apparent
 stock loss even in no-pore controls**. The independently implemented correct

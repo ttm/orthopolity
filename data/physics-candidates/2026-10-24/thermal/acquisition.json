@@ -1,0 +1,151 @@
+{
+  "kind": "Public thermal methods and metadata; no numerical material or response arrays decoded",
+  "retained_date": "2026-10-24",
+  "files": [
+    {
+      "file": "geofit-inventory.json",
+      "url": "https://zenodo.org/api/records/7436705",
+      "retrieved_date": "2026-10-24",
+      "bytes": 6376,
+      "sha256": "b96792c38930e29d1ac53c3a3efd8c11c0db084161e82184f168530e03048954",
+      "kind": "metadata"
+    },
+    {
+      "file": "geofit-paper-inventory.json",
+      "url": "https://zenodo.org/api/records/7436458",
+      "retrieved_date": "2026-10-24",
+      "bytes": 7395,
+      "sha256": "b934e18eaceada148a56a74abd412bf73dea3c34c3fff1dc8e49f539f580656b",
+      "kind": "metadata"
+    },
+    {
+      "file": "geofit-conference-data-inventory.json",
+      "url": "https://zenodo.org/api/records/7437077",
+      "retrieved_date": "2026-10-24",
+      "bytes": 7597,
+      "sha256": "8c703180f642d271800135ed9952b20884a1582b0dac8639eecfebf627d55386",
+      "kind": "metadata"
+    },
+    {
+      "file": "wall-inventory.json",
+      "url": "https://zenodo.org/api/records/8204755",
+      "retrieved_date": "2026-10-24",
+      "bytes": 5528,
+      "sha256": "e6ce6fcecad867d60a194ae40c4efd67048e15f1dfdd5356d8e966f5f1c8972f",
+      "kind": "metadata"
+    },
+    {
+      "file": "geofit-methods.pdf",
+      "url": "https://zenodo.org/api/records/7436458/files/Design_Framework_and_Laboratory_Experiments_for_He.pdf/content",
+      "retrieved_date": "2026-10-24",
+      "bytes": 7457430,
+      "sha256": "ae6a9e5608dd2729d112426e8e594995113f42ff7ff33923dbff81a1003bd4fc",
+      "kind": "primary_methods_pdf",
+      "publisher_checksum": "md5:c84f433ffcc477e661f1eaeca37ece4b"
+    },
+    {
+      "file": "geofit-model-report.pdf",
+      "url": "https://geofit-project.eu/download/d3-6-model-environment-for-different-types-of-novel-ground-heat-exchangers/?wpdmdl=7905",
+      "retrieved_date": "2026-10-24",
+      "bytes": 2504698,
+      "sha256": "e2a433a0266483609085a11c7a887e5b49aebf3e84231f5511a262ceef2e5144",
+      "kind": "primary_model_pdf"
+    },
+    {
+      "file": "geofit-materials.xlsx",
+      "url": "https://zenodo.org/api/records/7436705/files/Experimental_material_properties.xlsx/content",
+      "retrieved_date": "2026-10-24",
+      "bytes": 851330,
+      "sha256": "04267bd2d9a047610768ecf7fbb04f6d6ab021ea71e27616df08a9ad3fcb9502",
+      "kind": "independent_material_workbook_numerical_cells_unread",
+      "publisher_checksum": "md5:cde0ea9ee9b8d9691cae80fe501b0328"
+    },
+    {
+      "file": "geofit-deliverables.html",
+      "url": "https://geofit-project.eu/publications-and-results/project-deliverables/",
+      "retrieved_date": "2026-10-24",
+      "bytes": 87259,
+      "sha256": "06f3536151a17e2e2009d2e82a1a21ee1e65e9cdeab41d94148f4a64d84596cd",
+      "kind": "metadata"
+    },
+    {
+      "file": "geofit-deliverables2.html",
+      "url": "https://geofit-project.eu/publications-and-results/project-deliverables/?cp=2",
+      "retrieved_date": "2026-10-24",
+      "bytes": 85546,
+      "sha256": "e039e518d22b528a7e6453b3e4615a61f1b17c11d79b79ac16e5c989b024c7fe",
+      "kind": "metadata"
+    },
+    {
+      "file": "geofit-performance-v1-redirect.html",
+      "url": "https://ec.europa.eu/research/participants/documents/downloadPublic?appId=PPGMS&documentIds=080166e5e9ace03b",
+      "retrieved_date": "2026-10-24",
+      "bytes": 4143,
+      "sha256": "d9a0ba39667a27db0de3a9cf674ff92d877c0fea2873c80b53640819c51f44a5",
+      "kind": "download_redirect_html"
+    },
+    {
+      "file": "geofit-performance-v1-error.html",
+      "url": "https://www.ec.europa.eu/research/participants/documents/downloadPublic/VU9hajhReGRMdm5BN3U5YS91STk3SG1KS1VXVTJYUUx6R2ExYW9CelRlV0YvYUpzd3FiWWxBPT0=/attachment/VFEyQTQ4M3ptUWZ4bVp3NnMxNWRiUVhoNmVtZWNOclo=",
+      "retrieved_date": "2026-10-24",
+      "bytes": 4097,
+      "sha256": "5eb3504264f9ae58220773830cb4cc07a380722efb84489ff8d2912ae02e18ae",
+      "kind": "HDS-010_download_failure_html"
+    },
+    {
+      "file": "geofit-performance-v2-redirect.html",
+      "url": "https://ec.europa.eu/research/participants/documents/downloadPublic?appId=PPGMS&documentIds=080166e5f3d1b761",
+      "retrieved_date": "2026-10-24",
+      "bytes": 4143,
+      "sha256": "4ea32fe76bd6f19f0c1c1a2606f5bebedf7616353dcad7679704076596c0a078",
+      "kind": "download_redirect_html"
+    },
+    {
+      "file": "geofit-performance-v2-error.html",
+      "url": "https://www.ec.europa.eu/research/participants/documents/downloadPublic/NFNXM1htYWVqZXBpdkx4THIvLzBRUU1GR2hyeEFLU0l3cEYwRkkwWmVzQUN6cHNGa1gvVy9BPT0=/attachment/VFEyQTQ4M3ptUWM0NlNxc2E3RjArZDZLR3Nhb3NyanA=",
+      "retrieved_date": "2026-10-24",
+      "bytes": 4097,
+      "sha256": "d109dcc4c3e2ace7c3360a8abeb6c4d409f13812b85d68c77400f8ca2fca2bc7",
+      "kind": "HDS-010_download_failure_html"
+    }
+  ],
+  "derived_files": [
+    {
+      "file": "geofit-sand-schema.json",
+      "source_file": "Experiment_data_M24_Sand.h5",
+      "bytes": 2091,
+      "sha256": "fc5d774536c76c168a58dfa7765b20e5aa160f97fa997e749a4963d34b56e6dc",
+      "kind": "derived_schema_only_no_numerical_response_values"
+    },
+    {
+      "file": "geofit-sand-columns.json",
+      "source_file": "Experiment_data_M24_Sand.h5",
+      "bytes": 1092,
+      "sha256": "604e4831e13d0063ab01470409a18431bc73ac649c59b5de20e57d020954ca2f",
+      "kind": "derived_schema_only_no_numerical_response_values"
+    }
+  ],
+  "external_files": [
+    {
+      "file": "Experiment_data_M24_Sand.h5",
+      "url": "https://zenodo.org/api/records/7436705/files/Experiment_data_M24_Sand.h5/content",
+      "scratch_path": "build/thermal-network-oct24-metadata/Experiment_data_M24_Sand.h5",
+      "git_retained": false,
+      "bytes": 240189640,
+      "sha256": "090b3f04f6ba6462e21bf049c793873c79b39f650a2f54dcb57ffbd366407eb9",
+      "publisher_checksum": "md5:88507dfc20d8e4f4facc90280121517e",
+      "decoded_scope": "HDF5 names, shapes, dtypes, attribute names, and three string-only column label datasets; numerical value blocks and time/index arrays were not read."
+    }
+  ],
+  "failures": [
+    {
+      "url": "https://publications.ait.ac.at/files/25422964/processes-10-00959-v2.pdf",
+      "result": "HTTP 403; public Zenodo copy used instead"
+    },
+    {
+      "url": "https://pure.unileoben.ac.at/files/6087346/AC16129131.pdf",
+      "result": "HTTP 403 from web and curl; thesis not retrieved"
+    }
+  ],
+  "exposure": "Published methods, design settings, unnumbered apparatus diagrams, qualitative findings and some published aggregate summaries were exposed. No raw response curves, numerical input material cells, or numerical temperature/power/time arrays were decoded. These are source qualification records, not a forecast or a claim of global blindness."
+}

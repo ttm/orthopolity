@@ -1,0 +1,57 @@
+{
+  "numerical_responses_decoded": false,
+  "schema": {
+    "class_": "str",
+    "f": {
+      "item_types": [
+        "str"
+      ],
+      "length": 81
+    },
+    "meta_": {
+      "date": "str",
+      "machine": "str",
+      "package": "str",
+      "package_version": "str",
+      "software": "str",
+      "software_version": "str",
+      "user": "str"
+    },
+    "omega": {
+      "item_types": [
+        "str"
+      ],
+      "length": 81
+    },
+    "z": {
+      "item_types": [
+        "str"
+      ],
+      "length": 81
+    },
+    "z_imag": {
+      "item_types": [
+        "str"
+      ],
+      "length": 81
+    },
+    "z_modulus": {
+      "item_types": [
+        "str"
+      ],
+      "length": 81
+    },
+    "z_phase": {
+      "item_types": [
+        "str"
+      ],
+      "length": 81
+    },
+    "z_real": {
+      "item_types": [
+        "str"
+      ],
+      "length": 81
+    }
+  }
+}
