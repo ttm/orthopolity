@@ -6,12 +6,14 @@ stock loss even in no-pore controls**. The independently implemented correct
 dye channels avoid a misassignment in both source scripts. Control ratios
 reach **139.73%** despite declining calibrated stock; they cannot establish
 connector capacity. Designs `43b1bd2` and amended `59bd2b7` precede numerical
-access; seven synthetic tests, exact checks of 18,840 optical/628 time cells,
-and 26,799 independent calculation comparisons pass. All 669 tests pass and
-the fixed diagnostic/figure replay byte-for-byte. Registry stays **44 / 1,128**.
+access; seven synthetic tests, independent checks of 18,840 optical/628 time cells,
+and 26,799 independent calculation comparisons pass. All 669 tests and full
+analysis regeneration pass; the fixed diagnostic/figure replay byte-for-byte.
+Registry stays **44 / 1,128**.
 Reference measure: physical volume, neither log-orthopolic nor linear-orthopolic
 size allocation. Supporting S5.19 credits established reservoir/tube diffusion
-memory theory. The [fresh source audit](network-source-followup-2026-10-23.md)
+memory theory; its 64-page PDF is visually checked and byte-reproducible, and
+the 12-page main PDF is unchanged. The [fresh source audit](network-source-followup-2026-10-23.md)
 records the alternatives. Next seek independent connector loading/recovery and
 stable node-stock measurements plus an actual network response. Do not reopen
 these leads without new source information or call fits to exposed curves

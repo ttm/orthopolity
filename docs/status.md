@@ -17,12 +17,15 @@ Design `43b1bd2` and reviewed amendment `59bd2b7` were pushed before numerical
 access. Seven synthetic tests pass; independent decoding matches **18,840**
 optical cells and **628** time cells, with **26,799** calculation comparisons
 agreeing within **4.55e-13**. The diagnostic and figure replay byte-for-byte.
-All **669 tests** pass. Registry **44 / 1,128** remains unchanged; physical
+All **669 tests**, full analysis regeneration and the new audit replay pass.
+Registry **44 / 1,128** remains unchanged; physical
 chamber volume is the measure, neither log-orthopolic nor linear-orthopolic
 size allocation. The [fresh source follow-up](network-source-followup-2026-10-23.md)
 records other leads; none supplies the missing independently characterized
 network cohort. Supporting S5.19 now explicitly credits Lizana and Konkoli's
-established reservoir/tube diffusion theory. Next require separate storage and
+established reservoir/tube diffusion theory. Its **64-page PDF** is visually
+checked, warning-free and byte-reproducible; the **12-page main PDF** is unchanged.
+Next require separate storage and
 observation qualification; do not refit these exposed dye curves as confirmation.
 
 **23 October — topology prediction qualified more sharply:** the
