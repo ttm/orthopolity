@@ -1,17 +1,23 @@
 # Ongoing research: resume here
 
-**25 October — finish the independent circuit forecast:**
-[protocol](rlc-boundary-protocol-2026-10-24.md), runner and independent verifier
-are ready for the design seal. Eleven synthetic tests pass. Published fitted
-component values and the first string-encoded raw row are exposed; primary
-scoring fixes the other 80 rows before access. Commit/push design, generate and
-independently verify forecasts using only frequency inputs, commit/push forecast
-bytes, then evaluate. Physical capacitance defines charge weights, neither
-log-orthopolic nor linear-orthopolic size allocation. This is a boundary test
-of collocated passive symmetric exchange, not the closed topology test or
-unique general-law confirmation. The
-[GEOFIT audit](physics-source-followup-2026-10-24.md) stops without numerical
-temperature access because sensor mapping and boundary inputs remain unqualified.
+**25 October — circuit forecast complete:** the
+[result](rlc-boundary-results-2026-10-25.md) gives **78/78 separated signs** and
+**12.17% curve error**, below the **39.44% lower bound for every collocated
+passive RC network**. The conditional crossover envelope overlaps the observed
+bracket; the nominal crossing does not. This establishes an applicability
+boundary and an independently specified magnetic-storage extension, not unique
+general-law confirmation. One circuit, known publication fits, an excluded
+exposed row and missing measurement uncertainty remain explicit. Design
+**62d1313**, forecast **e9e7845**, then 80 numerical responses; eleven synthetic
+checks, 254 independent calculations and exact JSON/MAT/released-source checks
+pass. Artifacts replay byte-for-byte; registry **45 / 1,149** preserves prior
+entries. Physical capacitance weights charge increments, neither log-orthopolic
+nor linear-orthopolic size allocation. Main 3.1/supporting S5.20 are updated;
+finish full regeneration and PDF validation. Next seek a separate storage or
+topology intervention with independent component and observation uncertainty.
+The [GEOFIT audit](physics-source-followup-2026-10-24.md) remains stopped at
+missing channel coordinates and boundary inputs, without numerical response
+access. Further fits to these circuit targets would be exploration.
 
 **23–24 October — BioMe stock diagnostic complete:** the
 [result](biome-stock-audit-results-2026-10-23.md) finds **8.22–32.30% apparent

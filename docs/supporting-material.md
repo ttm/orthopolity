@@ -2969,6 +2969,88 @@ The [public-source audit](topology-source-audit-2026-10-23.md) has not yet quali
 matched experimental network responses. Ordinary diffusion and circuit theory
 give these same equations; the example does not identify a unique mechanism.
 
+### S5.20. Independent components predict a boundary of passive exchange
+
+The symmetric first-order exchange mechanism has an observable restriction
+even when its number of hidden stores is unknown. A passive resistor--capacitor
+network, with collocated current injection and voltage measurement, has
+
+$$Z(\omega)=b^T(G+i\omega C)^{-1}b,\qquad
+\operatorname{Im}Z=-\omega v^*Cv\leq0,$$
+
+where $v=(G+i\omega C)^{-1}b$, $G,C$ are real symmetric positive semidefinite,
+and $b$ is real. A shared nullspace is removed and the port must be orthogonal
+to it. Singular $G$ alone is permissible. This elementary passive-circuit
+identity requires collocation; arbitrary transfer measurements need not obey it.
+Additional passive RC stores cannot produce a positive imaginary driving-point
+impedance under the $e^{i\omega t}$ convention.
+
+Danzer, Plank and Rüther (2024) provide an actual circuit with a capacitor in
+parallel with a series resistor/inductor branch. Their supplementary Table S3
+specifies $R\simeq9.7\,\Omega$ by multimeter, $L=5$ mH with 1% tolerance and
+$C=2.2$ microfarads with 10% tolerance. These independent inputs predict
+
+$$Z(\omega)=\frac{R+i\omega L}{1-\omega^2LC+i\omega CR},\qquad
+f_\times=\frac1{2\pi}\sqrt{\frac1{LC}-\frac{R^2}{L^2}}.$$
+
+The nominal crossing is 1485.739 Hz; the component envelope conditional on
+the stated resistance is 1406.852--1577.083 Hz. All published fitted component
+summaries and the qualitative resonant response were already known. A schema
+inspection inadvertently exposed one string-encoded impedance; that row was
+excluded from primary evaluation before the other 80 numerical responses were
+read. Design `62d1313` and verified numerical forecasts `e9e7845` were pushed
+before their release. No target parameter, gain, offset or frequency shift
+was fitted. This is a local retrospective forecast, not global blindness.
+
+| Fixed comparison on 80 unexposed observations | Result |
+| --- | ---: |
+| Separated signs outside the conditional component envelope | 78/78 agree; 2 unclassified |
+| Unique observed positive-to-negative bracket | 1496.4342--1584.4927 Hz |
+| Nominal RLC normalized complex RMS error | 0.121650 |
+| Lower bound for every passive RC network | 0.394413 |
+| Fixed conflicting milliohm-resistance scenario error | 3.372860 |
+
+The observed bracket overlaps the component envelope, but the nominal crossing
+lies below it. Thus the sampled-resolution compatibility rule passes without
+exact nominal agreement. All 80 points enter the curve score, including those
+unclassified by the sign rule. Forty-eight have positive imaginary impedance,
+from 2.9198 to 88.9713 ohms. For every passive RC model, pointwise complex
+error is at least $\max(\operatorname{Im}Z_{\rm obs},0)$. Squaring, integrating
+by the same normalized trapezoid rule in log frequency and dividing by the
+observed squared complex norm gives the reported universal error bound.
+The fixed RLC forecast improves on even this optimistic bound by 69.16%.
+It therefore beats the entire restricted model class on these observations,
+without choosing a particular fitted RC comparator.
+
+![Independently specified circuit forecast and measured response](../results/rlc-boundary-2026-10-25/circuit.png)
+
+*Figure S19. The sealed component forecast and released measurements. Shading
+marks the conditional crossing envelope, not a confidence interval. The open
+point was previously exposed and enters only the separate all-row descriptive
+comparison, whose error is 0.121638 versus an RC lower bound of 0.394371.*
+
+Table S2 and the archive instead print $R=9.7$ milliohms. The protocol chose
+the component-specific multimeter statement before response access and retained
+the alternative. The union of both conditional crossing ranges still predicts
+77/77 separated signs correctly. Resistance uncertainty is unspecified;
+component tolerances are not probability distributions. No instrument-error
+model or repeat circuit is available. These are deterministic comparisons for
+one circuit, not a noise-qualified statistical rejection or population result.
+Eleven synthetic tests pass; independent state-equation, admittance-root and
+quadrature calculations verify 254 quantities within $2.27\times10^{-13}$.
+Separate decoding of the original source representations is retained in the
+[full result](rlc-boundary-results-2026-10-25.md).
+
+The extension is established circuit physics:
+$C\dot V=I_{\rm in}-I_L$, $L\dot I_L=V-RI_L$ and
+$\dot E=VI_{\rm in}-RI_L^2$, with $E=(CV^2+LI_L^2)/2$.
+The source drives the system and the resistor dissipates energy. Capacitance
+weights charge increments; the energy metric includes both electric and magnetic
+storage. This reference measure is neither log-orthopolic nor linear-orthopolic
+size allocation. The empirical value is a specified boundary of the restricted
+exchange mechanism and a successful constitutive extension. It neither
+contradicts complete energy accounting nor uniquely establishes the general law.
+
 ## References
 
 Arranz, I., Fournier, B., Lester, N. P., Shuter, B. J., and Peres-Neto, P. R. (2022).
@@ -3015,6 +3097,11 @@ two sides of the same coin—a trait-based plankton size-spectrum model.
 
 Damuth, J. (1981). Population density and body size in mammals. *Nature*, 290, 699–700.
 <https://doi.org/10.1038/290699a0>.
+
+Danzer, M. A., Plank, C., and Rüther, T. (2024). Electrochemical system analysis
+from impedance data to system identification. *Cell Reports Physical Science*,
+5, 102091. <https://doi.org/10.1016/j.xcrp.2024.102091>.
+Data: <https://doi.org/10.5281/zenodo.10794584>.
 
 Deal, E., et al. (2023). Grain shape effects in bed load sediment transport.
 *Nature*, 613, 298--302. <https://doi.org/10.1038/s41586-022-05564-6>.

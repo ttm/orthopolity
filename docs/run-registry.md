@@ -34,6 +34,18 @@ retained history; neither mechanism proves external preregistration or blinding.
 
 ## Catalogue
 
+As of 25 October 2026 the registry verifies **45 records and 1,149 file
+references**. The latest, `rlc-boundary-2026-10-24`, retains an
+[independent component forecast](rlc-boundary-results-2026-10-25.md) of one
+fabricated circuit: 80 responses follow design and forecast seals, with the
+previously exposed row excluded from primary scoring. All 78 separated sign
+predictions agree; 12.17% curve error beats a 39.44% lower bound for every
+collocated passive RC network. Conditional crossing compatibility, nominal
+crossing discrepancy, known publication fits and absent instrument uncertainty
+remain explicit. This is a boundary of the restricted exchange mechanism,
+neither log-orthopolic nor linear-orthopolic size allocation or unique general-law
+confirmation. All previous 44 entries remain byte-for-byte unchanged.
+
 As of 22 October 2026 the registry verifies **44 records and 1,128 file
 references**. The latest entry, `membrane-exchange-2026-10-20`, retains
 [qualification and transfer](membrane-exchange-results-2026-10-22.md) together:

@@ -241,6 +241,14 @@ conserved observed totals can conceal storage in links and mispredict network
 relaxation. Supporting S5.19 gives an exact counterexample and a separate
 calibration that resolves it.
 
+The mechanism also has a measurable boundary. A passive resistor--capacitor
+network cannot have positive imaginary impedance at its driven port. In a
+fabricated circuit, independently specified inductance predicts that response
+and its sign change: full-curve error is 12.2%, below the 39.4% minimum for any
+passive RC network. This one-circuit comparison requires a magnetic storage
+state while preserving energy accounting (supporting S5.20); it does not
+establish a unique general-law mechanism.
+
 ![Equalization, a specified constraint, and recovery](../results/class-exchange-presentation/class-exchange.png)
 
 *Figure 1. Resource exchange on fixed logarithmic size classes. The model predicts

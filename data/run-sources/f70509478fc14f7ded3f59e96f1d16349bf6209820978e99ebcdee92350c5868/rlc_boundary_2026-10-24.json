@@ -1,0 +1,18 @@
+{
+  "study": "rlc-boundary-2026-10-24",
+  "source": "data/physics-candidates/2026-10-24/rlc",
+  "reference_measure": "Physical capacitance weights charge increments; inductance supplies an additional magnetic storage state. This is neither log-orthopolic nor linear-orthopolic size allocation. Log-frequency quadrature weights the measurement error only.",
+  "resistance_ohm": 9.7,
+  "inductance_henry": 0.005,
+  "capacitance_farad": 0.0000022,
+  "inductance_fractional_tolerance": 0.01,
+  "capacitance_fractional_tolerance": 0.10,
+  "alternative_resistance_ohm": 0.0097,
+  "previously_exposed_zero_based_rows": [0],
+  "expected_rows": 81,
+  "frequency_range_hz": [100.0, 10000.0],
+  "frequency_relative_tolerance": 0.01,
+  "score": "Trapezoid quadrature in log frequency, normalized complex RMS error; primary excludes the single exposed row, descriptive includes all rows",
+  "source_encoding_relative_tolerance": 0.000001,
+  "source_encoding_absolute_tolerance": 0.0000001
+}

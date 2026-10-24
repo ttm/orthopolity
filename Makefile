@@ -43,6 +43,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: membrane-exchange-sources membrane-exchange membrane-exchange-registry
 .PHONY: topology-design
 .PHONY: biome-stock-audit
+.PHONY: rlc-boundary rlc-boundary-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -81,9 +82,29 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/grain-channel-transfer-2026-10-15/transfer.png \
  results/burden-transfer-2026-10-16/transfer.png \
  results/speech-capacity-2026-10-17/transfer.png \
- results/membrane-exchange-transfer-2026-10-22/transfer.png
+ results/membrane-exchange-transfer-2026-10-22/transfer.png \
+ results/rlc-boundary-2026-10-25/circuit.png
 
-all: data test analyses topology-design biome-stock-audit
+all: data test analyses topology-design biome-stock-audit rlc-boundary
+
+rlc-boundary: ## replay independently specified circuit forecast and passive RC boundary comparison
+	$(PY) experiments/run_rlc_boundary.py --stage inventory --output $(STUDY_OUTPUT_ROOT)/rlc-boundary/design-inventory.json
+	cmp data/physics-candidates/2026-10-24/rlc/design-inventory.json $(STUDY_OUTPUT_ROOT)/rlc-boundary/design-inventory.json
+	$(PY) experiments/run_rlc_boundary.py --stage forecast --design-commit 62d1313 --output $(STUDY_OUTPUT_ROOT)/rlc-boundary/predictions.json
+	cmp results/rlc-boundary-forecast-2026-10-25/predictions.json $(STUDY_OUTPUT_ROOT)/rlc-boundary/predictions.json
+	$(PY) experiments/verify_rlc_boundary.py --prediction $(STUDY_OUTPUT_ROOT)/rlc-boundary/predictions.json --output $(STUDY_OUTPUT_ROOT)/rlc-boundary/forecast-verification.json
+	cmp results/rlc-boundary-forecast-2026-10-25/verification.json $(STUDY_OUTPUT_ROOT)/rlc-boundary/forecast-verification.json
+	$(PY) experiments/run_rlc_boundary.py --stage evaluate --prediction results/rlc-boundary-forecast-2026-10-25/predictions.json --prediction-commit e9e7845 --output $(STUDY_OUTPUT_ROOT)/rlc-boundary/result.json
+	cmp results/rlc-boundary-2026-10-25/result.json $(STUDY_OUTPUT_ROOT)/rlc-boundary/result.json
+	$(PY) experiments/verify_rlc_boundary.py --prediction $(STUDY_OUTPUT_ROOT)/rlc-boundary/predictions.json --result $(STUDY_OUTPUT_ROOT)/rlc-boundary/result.json --output $(STUDY_OUTPUT_ROOT)/rlc-boundary/verification.json
+	cmp results/rlc-boundary-2026-10-25/verification.json $(STUDY_OUTPUT_ROOT)/rlc-boundary/verification.json
+	$(PY) experiments/audit_rlc_source.py --result $(STUDY_OUTPUT_ROOT)/rlc-boundary/result.json --output $(STUDY_OUTPUT_ROOT)/rlc-boundary/source-audit.json
+	cmp results/rlc-boundary-2026-10-25/source-audit.json $(STUDY_OUTPUT_ROOT)/rlc-boundary/source-audit.json
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/plot_rlc_boundary.py --prediction $(STUDY_OUTPUT_ROOT)/rlc-boundary/predictions.json --result $(STUDY_OUTPUT_ROOT)/rlc-boundary/result.json --output $(STUDY_OUTPUT_ROOT)/rlc-boundary/circuit.png
+	cmp results/rlc-boundary-2026-10-25/circuit.png $(STUDY_OUTPUT_ROOT)/rlc-boundary/circuit.png
+
+rlc-boundary-registry:
+	$(PY) experiments/register_rlc_boundary.py
 
 biome-stock-audit: ## descriptive source qualification; no new empirical registry entry
 	$(PY) experiments/audit_biome_stocks.py --stage inventory --output $(STUDY_OUTPUT_ROOT)/biome-stock/design-inventory.json

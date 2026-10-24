@@ -4,20 +4,28 @@ Last updated 25 October 2026. **Read this first in a new session.** It records w
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
-**24–25 October — independent circuit forecast ready for sealing:** the
-[new protocol](rlc-boundary-protocol-2026-10-24.md) fixes component values before
-80 unexposed impedance observations. One string-encoded response was exposed
-by schema inspection and is excluded from primary scoring; published fitted
-values were already known. The test concerns the boundary of collocated
-passive first-order exchange, not a unique general-law prediction. Capacitance
-weights charge increments; this is neither log-orthopolic nor linear-orthopolic
-size allocation. Eleven synthetic tests pass. Commit/push the design, seal and
-independently verify frequency-specific forecasts, then release responses.
-The [thermal source audit](physics-source-followup-2026-10-24.md) retains
-accessible GEOFIT data and separate material assays, but the sensor-position
-crosswalk and boundary records needed for a spatial forecast remain missing.
-No numerical thermal arrays were decoded. Registry and article remain unchanged
-pending the circuit result.
+**25 October — independent circuit forecast and mechanism boundary:** the
+[result](rlc-boundary-results-2026-10-25.md) predicts **78/78 separated signs**
+among 80 previously unexposed impedance observations. The observed crossing
+bracket **1496.43–1584.49 Hz** overlaps the conditional component envelope
+**1406.85–1577.08 Hz**; the nominal crossing itself misses. Fixed RLC curve
+error is **12.17%**, below the **39.44% lower bound for every collocated passive
+RC network**. Magnetic storage requires an additional state while preserving
+energy accounting. This is one driven circuit with known publication fits,
+one previously exposed row excluded, no instrument-error model and no unique
+general-law confirmation. Reference weights are physical capacitances, neither
+log-orthopolic nor linear-orthopolic size allocation.
+Design **62d1313** and forecasts **e9e7845** were pushed before the 80 responses.
+Eleven synthetic tests and **254 independent calculation checks** pass, maximum
+difference **2.27e−13**. Separate JSON/MAT decoding exactly matches **486 numeric,
+81 complex and 243 released values**. All circuit artifacts replay byte-for-byte.
+Registry **45 / 1,149**, with the earlier 44 entries byte-preserved. Main 3.1
+and supporting S5.20 retain the result; full regeneration and PDF validation
+are the final checks. The [thermal audit](physics-source-followup-2026-10-24.md)
+retains accessible data but stops at missing sensor maps/boundary inputs without
+numerical temperature access. Next seek a separate component/topology intervention
+with independent storage and instrument uncertainty; do not refit these responses
+as confirmation.
 
 **23–24 October — BioMe raw-stock diagnostic complete:** a
 [new accessible archive](biome-stock-audit-results-2026-10-23.md) supplies 30

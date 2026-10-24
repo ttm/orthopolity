@@ -1,0 +1,59 @@
+{
+  "checksums": [
+    "SHA-256",
+    "MD5"
+  ],
+  "complex_strings_checked": 81,
+  "design_commit": "62d131379d9e992a6a646f4117b435554df01038",
+  "forecast_commit": "e9e7845aa032593e5e827899a15bbc86fe97c2e2",
+  "json_parser": "Decimal numbers and explicit complex-string regular expression",
+  "matlab_complex_values_exact": 81,
+  "matlab_parser": "scipy.io.loadmat; opaque object retained but ordinary numeric arrays decoded",
+  "maximum_complex_string_difference_ohm": 5.656854250283084e-05,
+  "maximum_modulus_identity_difference_ohm": 1.4210854715202004e-14,
+  "maximum_omega_identity_difference_rad_s": 0.0,
+  "maximum_phase_identity_difference": 2.220446049250313e-16,
+  "numeric_json_matlab_comparisons": {
+    "f": {
+      "count": 81,
+      "exactly_equal": true,
+      "maximum_absolute_difference": 0.0
+    },
+    "omega": {
+      "count": 81,
+      "exactly_equal": true,
+      "maximum_absolute_difference": 0.0
+    },
+    "z_imag": {
+      "count": 81,
+      "exactly_equal": true,
+      "maximum_absolute_difference": 0.0
+    },
+    "z_modulus": {
+      "count": 81,
+      "exactly_equal": true,
+      "maximum_absolute_difference": 0.0
+    },
+    "z_phase": {
+      "count": 81,
+      "exactly_equal": true,
+      "maximum_absolute_difference": 0.0
+    },
+    "z_real": {
+      "count": 81,
+      "exactly_equal": true,
+      "maximum_absolute_difference": 0.0
+    }
+  },
+  "numeric_json_matlab_values_exact": 486,
+  "passed": true,
+  "phase_or_impedance_sign_changed": false,
+  "phase_units": "radians",
+  "production_analysis_imported": false,
+  "released_observation_values_exact": 243,
+  "result_sha256": "bd8aa79445f1401d15cdeded7456545265f2e1471bd41b298e7e5408e8957150",
+  "scope": "independent source decoding after response release; no parameter fitting",
+  "source_encoding_absolute_tolerance": 1e-07,
+  "source_encoding_relative_tolerance": 1e-06,
+  "source_files_verified": 4
+}
