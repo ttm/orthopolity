@@ -241,13 +241,12 @@ conserved observed totals can conceal storage in links and mispredict network
 relaxation. Supporting S5.19 gives an exact counterexample and a separate
 calibration that resolves it.
 
-The mechanism also has a measurable boundary. A passive resistor--capacitor
-network cannot have positive imaginary impedance at its driven port. In a
-fabricated circuit, independently specified inductance predicts that response
-and its sign change: full-curve error is 12.2%, below the 39.4% minimum for any
-passive RC network. This one-circuit comparison requires a magnetic storage
-state while preserving energy accounting (supporting S5.20); it does not
-establish a unique general-law mechanism.
+An independent circuit forecast identifies another boundary: passive RC networks
+cannot have positive imaginary impedance at the driven port. Including magnetic
+storage predicts that response and its sign change, with 12.2% curve error
+versus a 39.4% minimum for any passive RC network. This one-circuit comparison
+extends the mechanism while preserving energy accounting (supporting S5.20);
+it does not uniquely establish the general law.
 
 ![Equalization, a specified constraint, and recovery](../results/class-exchange-presentation/class-exchange.png)
 
@@ -308,26 +307,21 @@ Mode density $8\pi\nu^2/c^3$ then gives Planck's spectrum. Equal energy per
 mode is therefore different from equal energy per frequency interval (Planck,
 1901; Tong, n.d.).
 
-Our [FIRAS calculation](thermal-radiation.md) expresses the published microwave
-background spectrum as excitation energy per mode. Its 43 channels span
-$x=1.199$--$11.262$, illustrating quantum suppression rather than the classical
-plateau. The distributed product already contains a fitted blackbody template;
-this calculation preserves established observational evidence and its correlated
-errors, without claiming a new independent confirmation (Fixsen et al., 1996).
-The full derivation and spectrum are retained in the supporting material.
+Our [FIRAS calculation](thermal-radiation.md) converts 43 microwave-background
+channels to excitation energy per mode. Their $x=1.199$--$11.262$ range illustrates
+quantum suppression. The source already incorporates a fitted blackbody template
+and correlated errors (Fixsen et al., 1996); this is established observational
+evidence, not new independent confirmation. Supporting material retains the
+derivation and spectrum.
 
-A nonequilibrium test asks more: can independently fitted damping predict mode
-energy under a temperature gradient? Using Fontana and Bellon's (2023) cantilever
-archive, we fixed a quadratic local-loss model on colder conditions and sealed
-hot-condition forecasts before evaluating fluctuations. Ten of eleven mode fits
-have nonnegative inferred local loss. On their 26 targets, mean absolute error
-is 74.0 K, versus 78.9 K for uniform local loss on the same modes. Individual
-transfers range from close agreement to large errors; one fit requires negative
-local dissipation. Thus measured global damping does not by itself identify an
-adequate spatial energy weighting. The retrospective design, calibration
-conventions, all failures and a source point hidden by the plotting range are
-reported in supporting section S5.13. Equilibrium normalization was inherited,
-so this is not a new test of equipartition.
+For nonequilibrium cantilevers (Fontana and Bellon, 2023), colder-condition
+damping calibrates a quadratic local-loss model before hotter fluctuations are
+evaluated. Ten of eleven mode fits are physically admissible. On their 26
+targets, mean absolute error is 74.0 K versus 78.9 K for uniform local loss.
+Large mode errors and one negative-dissipation fit show that global damping
+does not identify adequate spatial energy weights. Supporting S5.13 retains
+the retrospective design, calibration conventions, plotting omission and all
+failures. Inherited equilibrium normalization precludes a new equipartition test.
 
 ### 3.4 Cell growth and division: a measurable constraint envelope
 
