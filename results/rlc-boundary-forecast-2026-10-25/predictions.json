@@ -1,0 +1,685 @@
+{
+  "config": {
+    "alternative_resistance_ohm": 0.0097,
+    "capacitance_farad": 2.2e-06,
+    "capacitance_fractional_tolerance": 0.1,
+    "expected_rows": 81,
+    "frequency_range_hz": [
+      100.0,
+      10000.0
+    ],
+    "frequency_relative_tolerance": 0.01,
+    "inductance_fractional_tolerance": 0.01,
+    "inductance_henry": 0.005,
+    "previously_exposed_zero_based_rows": [
+      0
+    ],
+    "reference_measure": "Physical capacitance weights charge increments; inductance supplies an additional magnetic storage state. This is neither log-orthopolic nor linear-orthopolic size allocation. Log-frequency quadrature weights the measurement error only.",
+    "resistance_ohm": 9.7,
+    "score": "Trapezoid quadrature in log frequency, normalized complex RMS error; primary excludes the single exposed row, descriptive includes all rows",
+    "source": "data/physics-candidates/2026-10-24/rlc",
+    "source_encoding_absolute_tolerance": 1e-07,
+    "source_encoding_relative_tolerance": 1e-06,
+    "study": "rlc-boundary-2026-10-24"
+  },
+  "crossing_hz_interval": [
+    1406.8515778004191,
+    1577.0832578701188
+  ],
+  "crossing_hz_nominal": 1485.739234186275,
+  "crossing_hz_unit_union": [
+    1406.8515778004191,
+    1607.6256575446223
+  ],
+  "design_commit": "62d131379d9e992a6a646f4117b435554df01038",
+  "rows": [
+    {
+      "frequency_hz": 10002.226,
+      "imag_ohm": -7.402935088518929,
+      "real_ohm": 0.005378648075673839,
+      "row": 0,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 9439.3418,
+      "imag_ohm": -7.8671006317453465,
+      "real_ohm": 0.006819521141474056,
+      "row": 1,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 8914.9326,
+      "imag_ohm": -8.356658008556229,
+      "real_ohm": 0.008625433854324478,
+      "row": 2,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 8410.3125,
+      "imag_ohm": -8.890760086043306,
+      "real_ohm": 0.010968348123300458,
+      "row": 3,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 7943.9951,
+      "imag_ohm": -9.450969262509478,
+      "real_ohm": 0.013889676098154417,
+      "row": 4,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 7498.54,
+      "imag_ohm": -10.0588534353121,
+      "real_ohm": 0.017655545979078084,
+      "row": 5,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 7081.583,
+      "imag_ohm": -10.706315197767433,
+      "real_ohm": 0.022421694582046688,
+      "row": 6,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 6686.1958,
+      "imag_ohm": -11.405979394146495,
+      "real_ohm": 0.028540169827933837,
+      "row": 7,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 6307.7358,
+      "imag_ohm": -12.171618781893262,
+      "real_ohm": 0.03650784866155905,
+      "row": 8,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 5956.5229,
+      "imag_ohm": -12.98558195540638,
+      "real_ohm": 0.04658535647088394,
+      "row": 9,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 5622.5879,
+      "imag_ohm": -13.873828232612928,
+      "real_ohm": 0.05966126523379793,
+      "row": 10,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 5310.0215,
+      "imag_ohm": -14.830646262106585,
+      "real_ohm": 0.07640912337533849,
+      "row": 11,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 5011.603,
+      "imag_ohm": -15.885522734306024,
+      "real_ohm": 0.09837687410500717,
+      "row": 12,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 4731.5137,
+      "imag_ohm": -17.033427910821874,
+      "real_ohm": 0.1268394993814962,
+      "row": 13,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 4466.4292,
+      "imag_ohm": -18.297906611418554,
+      "real_ohm": 0.16417929043642665,
+      "row": 14,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 4216.3506,
+      "imag_ohm": -19.693004449165358,
+      "real_ohm": 0.2132803052286371,
+      "row": 15,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 3981.2773,
+      "imag_ohm": -21.23416179251036,
+      "real_ohm": 0.27795055655565515,
+      "row": 16,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 3758.7957,
+      "imag_ohm": -22.958326000651017,
+      "real_ohm": 0.3642870474794357,
+      "row": 17,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 3548.8679,
+      "imag_ohm": -24.894811020573137,
+      "real_ohm": 0.4801716769158106,
+      "row": 18,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 3348.9316,
+      "imag_ohm": -27.10902808063636,
+      "real_ohm": 0.6389288563804328,
+      "row": 19,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 3163.0398,
+      "imag_ohm": -29.601261155241556,
+      "real_ohm": 0.85334608488134,
+      "row": 20,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 2985.9543,
+      "imag_ohm": -32.50328618551397,
+      "real_ohm": 1.1536870046098153,
+      "row": 21,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 2819.0986,
+      "imag_ohm": -35.88762087199398,
+      "real_ohm": 1.576884303691423,
+      "row": 22,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 2660.8481,
+      "imag_ohm": -39.9165764003237,
+      "real_ohm": 2.188939320194439,
+      "row": 23,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 2512.4104,
+      "imag_ohm": -44.735095749479754,
+      "real_ohm": 3.084159426591268,
+      "row": 24,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 2370.7598,
+      "imag_ohm": -50.71106293579884,
+      "real_ohm": 4.455926403790194,
+      "row": 25,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 2239.2869,
+      "imag_ohm": -58.066390864619386,
+      "real_ohm": 6.568171446179197,
+      "row": 26,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 2112.9697,
+      "imag_ohm": -67.66233736953691,
+      "real_ohm": 10.086704544533003,
+      "row": 27,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 1995.6381,
+      "imag_ohm": -80.05099291866523,
+      "real_ohm": 16.06642431888007,
+      "row": 28,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 1883.1938,
+      "imag_ohm": -96.78513652859532,
+      "real_ohm": 27.289980307218272,
+      "row": 29,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 1778.2897,
+      "imag_ohm": -118.08348471281451,
+      "real_ohm": 49.44259922037347,
+      "row": 30,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 1678.3923,
+      "imag_ohm": -138.86467945019743,
+      "real_ohm": 96.50221986506645,
+      "row": 31,
+      "sign_table_s3": -1,
+      "sign_unit_union": -1
+    },
+    {
+      "frequency_hz": 1584.4927,
+      "imag_ohm": -123.00222344615041,
+      "real_ohm": 182.04075501455887,
+      "row": 32,
+      "sign_table_s3": -1,
+      "sign_unit_union": 0
+    },
+    {
+      "frequency_hz": 1496.4342,
+      "imag_ohm": -15.874403061876103,
+      "real_ohm": 236.48136302161384,
+      "row": 33,
+      "sign_table_s3": 0,
+      "sign_unit_union": 0
+    },
+    {
+      "frequency_hz": 1412.7418,
+      "imag_ohm": 76.01644728029986,
+      "real_ohm": 180.81570739816547,
+      "row": 34,
+      "sign_table_s3": 0,
+      "sign_unit_union": 0
+    },
+    {
+      "frequency_hz": 1333.7209,
+      "imag_ohm": 93.12104991644141,
+      "real_ohm": 115.8218291288102,
+      "row": 35,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 1258.7905,
+      "imag_ohm": 85.05576475845693,
+      "real_ohm": 77.13012438641248,
+      "row": 36,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 1188.8594,
+      "imag_ohm": 73.77156285748511,
+      "real_ohm": 55.563374107298294,
+      "row": 37,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 1121.7966,
+      "imag_ohm": 63.617779385744264,
+      "real_ohm": 42.48842244565524,
+      "row": 38,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 1058.9808,
+      "imag_ohm": 55.37559328086764,
+      "real_ohm": 34.23557479333937,
+      "row": 39,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 999.68164,
+      "imag_ohm": 48.696775247800915,
+      "real_ohm": 28.669508787073983,
+      "row": 40,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 944.0929,
+      "imag_ohm": 43.27509583566716,
+      "real_ohm": 24.762852283603028,
+      "row": 41,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 891.42474,
+      "imag_ohm": 38.766662157281445,
+      "real_ohm": 21.886065984149806,
+      "row": 42,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 841.34937,
+      "imag_ohm": 34.954639005059676,
+      "real_ohm": 19.6986410746973,
+      "row": 43,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 794.23932,
+      "imag_ohm": 31.723956384583854,
+      "real_ohm": 18.012853116336192,
+      "row": 44,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 749.7594,
+      "imag_ohm": 28.942732457457858,
+      "real_ohm": 16.681946601028134,
+      "row": 45,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 707.96161,
+      "imag_ohm": 26.534006690187542,
+      "real_ohm": 15.618154639694291,
+      "row": 46,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 668.50262,
+      "imag_ohm": 24.418220120087003,
+      "real_ohm": 14.751563569474197,
+      "row": 47,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 631.00977,
+      "imag_ohm": 22.532620599542653,
+      "real_ohm": 14.032886772701442,
+      "row": 48,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 595.57184,
+      "imag_ohm": 20.84913696172885,
+      "real_ohm": 13.4342890827861,
+      "row": 49,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 562.33929,
+      "imag_ohm": 19.348066135465054,
+      "real_ohm": 12.935169591505096,
+      "row": 50,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 530.84943,
+      "imag_ohm": 17.98786537308143,
+      "real_ohm": 12.511435319326415,
+      "row": 51,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 501.12231,
+      "imag_ohm": 16.753850459986687,
+      "real_ohm": 12.150815764565806,
+      "row": 52,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 473.03214,
+      "imag_ohm": 15.628265613877021,
+      "real_ohm": 11.841915912587174,
+      "row": 53,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 446.57214,
+      "imag_ohm": 14.600758028161785,
+      "real_ohm": 11.576858402585632,
+      "row": 54,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 421.75427,
+      "imag_ohm": 13.663427552580485,
+      "real_ohm": 11.349351623070241,
+      "row": 55,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 398.08899,
+      "imag_ohm": 12.791479932087025,
+      "real_ohm": 11.15011909326678,
+      "row": 56,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 375.84155,
+      "imag_ohm": 11.989682921927768,
+      "real_ohm": 10.977602844562453,
+      "row": 57,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 354.88681,
+      "imag_ohm": 11.249129005697624,
+      "real_ohm": 10.827469835675593,
+      "row": 58,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 334.89316,
+      "imag_ohm": 10.554804855632826,
+      "real_ohm": 10.694829470324176,
+      "row": 59,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 316.31589,
+      "imag_ohm": 9.919624584995045,
+      "real_ohm": 10.580442616920736,
+      "row": 60,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 298.56711,
+      "imag_ohm": 9.321097184545168,
+      "real_ohm": 10.478796378296604,
+      "row": 61,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 281.8942,
+      "imag_ohm": 8.76575115251768,
+      "real_ohm": 10.389858758124547,
+      "row": 62,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 266.10718,
+      "imag_ohm": 8.245657376674554,
+      "real_ohm": 10.311296464413934,
+      "row": 63,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 251.20601,
+      "imag_ohm": 7.759533852205002,
+      "real_ohm": 10.242032182862596,
+      "row": 64,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 237.20116,
+      "imag_ohm": 7.306612348263695,
+      "real_ohm": 10.181145729072425,
+      "row": 65,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 223.92496,
+      "imag_ohm": 6.880572380673714,
+      "real_ohm": 10.12710353161397,
+      "row": 66,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 211.28432,
+      "imag_ohm": 6.477737769479328,
+      "real_ohm": 10.078901204680122,
+      "row": 67,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 199.55338,
+      "imag_ohm": 6.1061925823495775,
+      "real_ohm": 10.036950968142106,
+      "row": 68,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 188.37228,
+      "imag_ohm": 5.753994644319973,
+      "real_ohm": 9.999417085861191,
+      "row": 69,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 177.78128,
+      "imag_ohm": 5.422017762631731,
+      "real_ohm": 9.96603487919959,
+      "row": 70,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 167.9048,
+      "imag_ohm": 5.113782751800015,
+      "real_ohm": 9.936781090413882,
+      "row": 71,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 158.52898,
+      "imag_ohm": 4.8223019017597775,
+      "real_ohm": 9.910664639446258,
+      "row": 72,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 149.66502,
+      "imag_ohm": 4.547685257106976,
+      "real_ohm": 9.887439199750188,
+      "row": 73,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 141.21979,
+      "imag_ohm": 4.286850420226404,
+      "real_ohm": 9.866622357138132,
+      "row": 74,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 133.33633,
+      "imag_ohm": 4.0440365311003355,
+      "real_ohm": 9.848334692049676,
+      "row": 75,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 125.92673,
+      "imag_ohm": 3.8163733379816027,
+      "real_ohm": 9.83214561827988,
+      "row": 76,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 118.82111,
+      "imag_ohm": 3.598526328630515,
+      "real_ohm": 9.817523794392075,
+      "row": 77,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 112.19009,
+      "imag_ohm": 3.395626027228072,
+      "real_ohm": 9.804671053319101,
+      "row": 78,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 105.91522,
+      "imag_ohm": 3.203955311720842,
+      "real_ohm": 9.793209135679161,
+      "row": 79,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    },
+    {
+      "frequency_hz": 99.968163,
+      "imag_ohm": 3.0225786103075913,
+      "real_ohm": 9.782971529790672,
+      "row": 80,
+      "sign_table_s3": 1,
+      "sign_unit_union": 1
+    }
+  ]
+}

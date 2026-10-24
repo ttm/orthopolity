@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "stage": "prediction",
+  "design_commit": "62d131379d9e992a6a646f4117b435554df01038",
+  "forecast_sha256": "42c84428f473523e823c356cb0423c0fb6b7bf99a7df616ef95e1bfba5da6edb",
+  "raw_source_files_read": false,
+  "production_analysis_imported": false,
+  "forecast_method": "two-state harmonic linear solve",
+  "crossing_method": "admittance susceptance roots; monotonicity and 17x17 interior checks",
+  "error_method": "explicit log-frequency trapezoid loops",
+  "relative_tolerance": 1e-10,
+  "absolute_tolerance": 1e-09,
+  "crossing_hz_interval": [
+    1406.8515778004194,
+    1577.0832578701188
+  ],
+  "crossing_hz_unit_union": [
+    1406.8515778004194,
+    1607.6256575446225
+  ],
+  "numerical_comparisons": 167,
+  "maximum_absolute_difference": 2.2737367544323206e-13
+}
