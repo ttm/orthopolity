@@ -20,6 +20,9 @@ susceptibility checks pass. Main 3.1 points to new supporting S3.7.
 All **680 tests** and the complete `make all` replay pass, including the new
 source/schema audit and analytic intervention checks. Known regeneration noise
 is excluded from the changes.
+The **12-page main article and 66-page supplement** are visually checked,
+warning-free and byte-identical across two forced builds from source commit
+**c5c7c09**. The title and general-law ambition are unchanged.
 The [bounded source audit](storage-source-audit-2026-10-25.md) obtains two
 additional public archives: a 144-node circuit intervention and eleven full-scale
 wall experiments with explicit sensor maps. All source hashes and inventories

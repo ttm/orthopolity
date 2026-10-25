@@ -10,6 +10,8 @@ coordinates within **1.21e−10**; main 3.1/supporting S3.7 retain the result
 as an analytic qualification, not an empirical study or new network theory.
 All **680 tests** and complete `make all` replay pass, including the new source
 inventory and analytic checks.
+The PDFs remain **12/66 pages**, visually checked, warning-free and reproduced
+byte-for-byte from source commit **c5c7c09**.
 The reference weights are physical volumes at a fixed height, neither
 log-orthopolic nor linear-orthopolic size allocation.
 The [source audit](storage-source-audit-2026-10-25.md) retains accessible,
