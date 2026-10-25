@@ -3016,8 +3016,9 @@ exact nominal agreement. All 80 points enter the curve score, including those
 unclassified by the sign rule. Forty-eight have positive imaginary impedance,
 from 2.9198 to 88.9713 ohms. For every passive RC model, pointwise complex
 error is at least $\max(\operatorname{Im}Z_{\rm obs},0)$. Squaring, integrating
-by the same normalized trapezoid rule in log frequency and dividing by the
-observed squared complex norm gives the reported universal error bound.
+by the same normalized trapezoid rule in log frequency, dividing by the
+observed squared complex norm and taking the square root gives the reported
+universal error bound.
 The fixed RLC forecast improves on even this optimistic bound by 69.16%.
 It therefore beats the entire restricted model class on these observations,
 without choosing a particular fitted RC comparator.

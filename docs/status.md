@@ -19,9 +19,11 @@ Design **62d1313** and forecasts **e9e7845** were pushed before the 80 responses
 Eleven synthetic tests and **254 independent calculation checks** pass, maximum
 difference **2.27e−13**. Separate JSON/MAT decoding exactly matches **486 numeric,
 81 complex and 243 released values**. All circuit artifacts replay byte-for-byte.
-Registry **45 / 1,149**, with the earlier 44 entries byte-preserved. Main 3.1
-and supporting S5.20 retain the result; full regeneration and PDF validation
-are the final checks. The [thermal audit](physics-source-followup-2026-10-24.md)
+Registry **45 / 1,149**, with the earlier 44 entries byte-preserved. All **680
+tests** and `make all` pass, including complete circuit replay. Main 3.1 and
+supporting S5.20 retain the result. The main text stays **12 pages** by condensing
+details retained in the supplement, now **65 pages**. Final committed-source
+PDF reproducibility is being checked. The [thermal audit](physics-source-followup-2026-10-24.md)
 retains accessible data but stops at missing sensor maps/boundary inputs without
 numerical temperature access. Next seek a separate component/topology intervention
 with independent storage and instrument uncertainty; do not refit these responses

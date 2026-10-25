@@ -60,7 +60,8 @@ $$Z(\omega)=\frac{R+i\omega L}{1-\omega^2LC+i\omega CR}.$$
 This standard circuit law gives the crossover above. The complex-error lower
 bound follows because every candidate constrained to `Im Z≤0` has pointwise
 error at least `max(Im Zobs,0)`. Integrate squared errors by the same trapezoid
-rule in log frequency, then normalize by the observed squared complex norm.
+rule in log frequency, then normalize by the observed squared complex norm
+and take the square root.
 This half-plane bound is deliberately optimistic: not every pointwise
 projection onto that half-plane can be realized by one physical RC network.
 

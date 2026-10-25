@@ -12,8 +12,9 @@ exposed row and missing measurement uncertainty remain explicit. Design
 checks, 254 independent calculations and exact JSON/MAT/released-source checks
 pass. Artifacts replay byte-for-byte; registry **45 / 1,149** preserves prior
 entries. Physical capacitance weights charge increments, neither log-orthopolic
-nor linear-orthopolic size allocation. Main 3.1/supporting S5.20 are updated;
-finish full regeneration and PDF validation. Next seek a separate storage or
+nor linear-orthopolic size allocation. All **680 tests** and `make all` pass.
+Main 3.1/supporting S5.20 are updated, with **12/65-page PDFs**; finish the
+committed-source PDF reproducibility check. Next seek a separate storage or
 topology intervention with independent component and observation uncertainty.
 The [GEOFIT audit](physics-source-followup-2026-10-24.md) remains stopped at
 missing channel coordinates and boundary inputs, without numerical response

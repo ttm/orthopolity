@@ -241,12 +241,11 @@ conserved observed totals can conceal storage in links and mispredict network
 relaxation. Supporting S5.19 gives an exact counterexample and a separate
 calibration that resolves it.
 
-An independent circuit forecast identifies another boundary: passive RC networks
-cannot have positive imaginary impedance at the driven port. Including magnetic
-storage predicts that response and its sign change, with 12.2% curve error
-versus a 39.4% minimum for any passive RC network. This one-circuit comparison
-extends the mechanism while preserving energy accounting (supporting S5.20);
-it does not uniquely establish the general law.
+Passive RC networks cannot have positive imaginary impedance at their driven
+port. An independent forecast including magnetic storage gives 12.2% curve
+error, below a 39.4% lower bound for any passive RC network. Physical capacitance
+weights define this one-circuit test; the extension preserves energy accounting
+(supporting S5.20), without uniquely establishing the general law.
 
 ![Equalization, a specified constraint, and recovery](../results/class-exchange-presentation/class-exchange.png)
 
@@ -325,13 +324,11 @@ failures. Inherited equilibrium normalization precludes a new equipartition test
 
 ### 3.4 Cell growth and division: a measurable constraint envelope
 
-Let additive cell mass $x$ grow as $\dot x=gx$, with common deterministic $g$,
-conservative symmetric binary division and no death. In a balanced asynchronous
-population with a stationary lineage of physiologically equivalent daughters,
-established growth-fragmentation theory gives
-$p_L(x)=xp_P(x)/E_P[x]$ (Genthon, 2022). For lineage birth mass $B$ and division
-mass $D$, stationarity requires $D\overset d=2B$. The fraction of cycles crossing
-size $x$ is
+Let cell mass grow as $\dot x=gx$, with common deterministic $g$, conservative
+symmetric binary division and no death. For a balanced asynchronous population
+and stationary lineage of physiologically equivalent daughters, growth-fragmentation
+theory gives $p_L(x)=xp_P(x)/E_P[x]$ (Genthon, 2022). Birth mass $B$ and division
+mass $D$ satisfy $D\overset d=2B$. The cycle-crossing fraction is
 
 $$H(x)=P(B\le x<D)=F_B(x)-F_B(x/2),$$
 
@@ -340,25 +337,21 @@ and the population law becomes
 $$p_P(x)=\frac{2H(x)}{E[B^{-1}]x^2},\qquad
 \frac{x^2p_P(x)}{E_P[x]}=\frac{H(x)}{\ln2}.$$
 
-The right-hand side is the normalized mass allocation per logarithmic size.
+The right-hand side is normalized mass allocation per logarithmic size.
 Where every cycle crosses an interval, $H=1$ and allocation is log-orthopolic.
-Fixed birth mass $b$ gives the inverse-square density $2b/x^2$ on $[b,2b)$;
-variable birth masses can remove any exact plateau. Independently measured
-birth events predict that envelope. Growth noise, asymmetric division or
-physiological lineage selection require a different observation model.
-This provides both a realizable ideal relation and a specified route to its
-failure under changed assumptions ([derivation](cell-division.md)).
+Fixed birth mass $b$ gives $2b/x^2$ on $[b,2b)$; variable births can remove
+the plateau. Independent birth observations predict the envelope. Growth noise,
+asymmetric division or lineage selection require a different observation model
+([derivation](cell-division.md)).
 
 ## 4. What the empirical comparisons establish
 
 ### 4.1 Predictions and comparisons
 
-A test specifies its objects, measure, costs, constraints and observation model
-before predicting an additional observable. Independent calibration is distinct
-from an identity evaluated on the same data. The [run registry](run-registry.md)
-preserves inputs, forecasts, comparators and outcomes. Supporting material
-discloses prior access to published summaries or raw outcomes; freezing a later
-analysis does not erase that exposure.
+Forecasts fix objects, measure, costs, constraints and observation models.
+The [registry](run-registry.md) and supporting material retain inputs, comparisons
+and prior access. Identities on the same data provide no independent
+confirmation; later freezing does not erase exposure.
 
 | Evidence | Established outcome | Scope or unresolved limitation |
 |---|---|---|

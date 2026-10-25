@@ -277,3 +277,26 @@ Acquisition receipts distinguish retained raw files from inspected numerical
 values. The design inventory and qualification judgments are this project's
 work, not author-endorsed results. The article has separate CC BY-NC 3.0 terms;
 no article body is retained here, and its terms do not replace the data license.
+
+## Independent circuit forecast and thermal qualification (24–25 October 2026)
+
+`physics-candidates/2026-10-24/rlc/` retains unchanged data by Danzer, M. A.,
+Plank, C., and Rüther, T., *Impedance data for various electrochemical and
+electrical systems*, <https://doi.org/10.5281/zenodo.10794584>, under CC BY 4.0
+as specified in its metadata. The complete supplementary PDF belongs to
+their 2024 article, *Electrochemical system analysis from impedance data to
+system identification*, <https://doi.org/10.1016/j.xcrp.2024.102091>, whose
+separate CC BY-NC 4.0 terms remain applicable. Source files are not relicensed
+as project software. Forecasts, comparisons and source-unit qualifications
+are this project's reanalysis, not author-endorsed findings.
+
+`physics-candidates/2026-10-24/thermal/` retains unchanged metadata, methods and
+the independent material workbook from Kling et al. (2022),
+<https://doi.org/10.3390/pr10050959>, and the GEOFIT records
+<https://doi.org/10.5281/zenodo.7436705> and
+<https://doi.org/10.5281/zenodo.7436458>, which specify CC BY 4.0.
+The project model report, deliverable pages and download-error receipts retain
+their original attribution and rights; no blanket software or data license
+is inferred for them. The large Sand HDF5 is not tracked; its URL and checksums
+are retained. Only its schema and labels were decoded. Qualification notes and
+derived schema inventories are this project's work.
