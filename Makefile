@@ -118,9 +118,11 @@ biome-stock-audit: ## descriptive source qualification; no new empirical registr
 
 topology-design: ## analytic exchange qualifications; no empirical study or verdict
 	$(PY) experiments/audit_topology_sources.py
+	$(PY) experiments/audit_storage_sources.py
 	$(PY) experiments/check_equalization_design.py
 	$(PY) experiments/check_exchange_observability.py
 	$(PY) experiments/check_topology_storage.py
+	$(PY) experiments/check_storage_intervention.py
 
 membrane-exchange-sources: ## verify original membrane bytes without numerical decoding
 	$(PY) experiments/run_membrane_exchange.py --stage verify

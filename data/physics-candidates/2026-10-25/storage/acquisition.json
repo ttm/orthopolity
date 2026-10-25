@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-25",
+  "scope": "Availability and schema audit; no numerical experimental values converted or reported",
+  "files": [
+    {
+      "file": "hotbox-metadata.json",
+      "url": "https://zenodo.org/api/records/8204755",
+      "bytes": 5528,
+      "sha256": "e6ce6fcecad867d60a194ae40c4efd67048e15f1dfdd5356d8e966f5f1c8972f",
+      "md5": "180150a9cb4f43f48cd8add2f404a64d"
+    },
+    {
+      "file": "hotbox-dataset.zip",
+      "url": "https://zenodo.org/api/records/8204755/files/dataset.zip/content",
+      "bytes": 2070317,
+      "sha256": "d1e706a46be13d4aca2c220ce979e3e1da94d6245d349b6100d1aa4c1d769ad0",
+      "md5": "2542d5c27fbb494bd834025c7f28e839"
+    },
+    {
+      "file": "topological-metadata.json",
+      "url": "https://researchdata.ntu.edu.sg/api/datasets/:persistentId/?persistentId=doi:10.21979/N9/KXL3TD",
+      "bytes": 7453,
+      "sha256": "4eb908fcff55ffe6ecb4961973d23c1d14f30c527ce33a728bef5ef7cbb88ebf",
+      "md5": "5aa2f9d0e1ed2dc9346569c8a5a2b034"
+    },
+    {
+      "file": "topological-data_codes.tar.xz",
+      "url": "https://researchdata.ntu.edu.sg/api/access/datafile/26001",
+      "bytes": 439088,
+      "sha256": "f54766df0d4d0b39173fd3b6c5b85c3551ea60ca1fffd490b9c10196d0402e19",
+      "md5": "bbb17f2a2bb8a65ec2270ca999227e69"
+    },
+    {
+      "file": "hotbox-inventory.json",
+      "kind": "derived schema only",
+      "bytes": 17088,
+      "sha256": "9f9a7bb74ec3c809e9e37fb8f5f453caa21cdb4038b32563a5bbb6542e36f8f2"
+    },
+    {
+      "file": "topological-inventory.json",
+      "kind": "derived schema only",
+      "bytes": 51093,
+      "sha256": "94457aac6eab974769a5e9fa5e6a27baaa0cc59ce63e73dc34bd9f511104fdd4"
+    }
+  ],
+  "methods_not_redistributed": [
+    {
+      "file": "hotbox-methods.pdf",
+      "url": "https://vbn.aau.dk/ws/portalfiles/portal/488363266/Tech_report_304_Full_scale_wall_setup_in_large_Hotbox.pdf",
+      "bytes": 3535239,
+      "sha256": "3aba017132f09e29892394db2a781011d5eb91f73e5e62b142db4a4312d6ea1c",
+      "retention": "Ignored build only; repository notice restricts redistribution",
+      "scratch": "build/intervention-source-2026-10-25/hotbox-methods.pdf"
+    },
+    {
+      "file": "hotbox-data-description.pdf",
+      "url": "https://vbn.aau.dk/ws/portalfiles/portal/544775163/Tech_report_317_-_Temperature_measurements_of_full-scale_wall_element.pdf",
+      "bytes": 1100323,
+      "sha256": "a1466af4b286a566a8e83bf2fbb63d8786a99934b54034d5ec07b3a1f97941e9",
+      "retention": "Ignored build only; repository notice restricts redistribution",
+      "scratch": "build/intervention-source-2026-10-25/hotbox-data-description.pdf"
+    }
+  ]
+}

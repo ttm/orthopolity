@@ -2,7 +2,7 @@
 
 **Accounting proofs, physical derivations, observation models and complete comparisons**
 
-Prepared 10 October 2026; revised 22 October 2026 as a companion to
+Prepared 10 October 2026; revised 25 October 2026 as a companion to
 [the main article](paper.md).
 This document preserves the substantive technical material of the article at
 source commit **`f137d4efb050ccfcb5c5f814d32da651c645421c`**, supplemented by
@@ -1104,6 +1104,64 @@ That negative energy representation is distinct from an available positive
 resource budget. The linked derivation retains the source geometry, boundary
 conditions, attribution and interpretation limits. It also separates static
 field accounting from the supported-body analogy and from relativistic propagation.
+
+### S3.7. Storage interventions distinguish potential and resource equality
+
+Nonlinear constitutive relations give a further, independently predictable
+boundary of the linear exchange mechanism. This is established physical-network
+structure (van der Schaft and Maschke, 2013), used here to specify an allocation
+intervention; it is not a new empirical result. Let $R_i=F_i(x_i)$, with
+independently measured, strictly increasing storage curves and positive
+derivatives on the operating interval. Connected symmetric exchange obeys
+
+$$\dot R_i=\sum_jg_{ij}(x_j-x_i),\qquad \sum_iR_i=B.$$
+
+The function $E=\sum_i\int^{R_i}F_i^{-1}(u)\,du$ decreases at rate
+$-\sum_{\{i,j\}}g_{ij}(x_i-x_j)^2$. The unique equilibrium has common
+potential $H$, determined by $\sum_iF_i(H)=B$. For fixed positive reference
+weights $w_i$, neutral allocation $R_i^*/w_i=\mathrm{constant}$ holds for
+every budget in an operating interval if and only if $F_i(H)=w_i f(H)$ for
+a common function $f$. Shared proportional nonlinearity therefore preserves
+the allocation relation; equality at one budget alone does not establish it.
+
+Changing only coupling, preserving connectedness, leaves the complete endpoint
+vector fixed. Changing one storage curve at fixed budget generally changes
+every endpoint. If $C_i=F'_i(H)$ and $s=\partial_\theta F_j(H;\theta)$,
+an untouched store satisfies
+
+$$\frac{dR_i^*}{d\theta}=-\frac{C_i s}{\sum_kC_k},\qquad i\ne j.$$
+
+Thus infinitesimal depletion ratios identify differential capacities, independently
+of coupling rates. Finite losses integrate those capacities over the changed
+common potential; they need not retain their initial ratio.
+
+For a concrete constructed example, compare three linear stores $F_i(h)=h$
+with $F_1(h)=F_2(h)=h$ and $F_3(h)=h+2h(h-1)^2$.
+At $h=1$ both systems have stocks and differential capacities $(1,1,1)$,
+so equal endpoints and local linearized kinetics agree. The nonlinear curve
+is admissible for a vessel: $F'_3(h)=6(h-2/3)^2+1/3>0$ is its cross-sectional
+area in scaled units. Doubling the first storage curve, retaining budget
+$B=3$, predicts:
+
+| Model | Common height | Endpoint stocks |
+|---|---:|---|
+| Linear storage | 0.750000 | (1.500000, 0.750000, 0.750000) |
+| Nonlinear third store | 0.722120 | (1.444240, 0.722120, 0.833640) |
+
+The fixed reference weights are volumes at unit height, $(2,1,1)$, neither
+log-orthopolic nor linear-orthopolic size allocation. Both conserve liquid
+volume and equalize hydrostatic potential; gravitational energy dissipates.
+Only the linear case retains equal resource per these fixed weights after
+intervention. Independent storage curves predict the departure without
+redefining the weights from the outcome.
+
+The [complete design](storage-intervention-design-2026-10-25.md) specifies
+stock, connector, uncertainty and coupling controls before target access.
+Eight constructed cases agree between independent state-coordinate integrations
+within $1.21\times10^{-10}$; separate polynomial and conservation-root
+calculations agree within $2.23\times10^{-16}$. No qualifying experimental
+cohort has been run. This would test a conditional constitutive prediction,
+shared with ordinary hydrostatics, rather than uniquely establish orthopolity.
 
 ## S4. Exploratory sources, methods and results
 
@@ -3261,6 +3319,10 @@ Mathematics, 126. American Mathematical Society. Exercise 1.4.34.
 Tong, D. (n.d.). *Statistical Physics*. University of Cambridge Part II Mathematical
 Tripos lecture notes, Sections 1.3, 2.2.1 and 3.2. Accessed 6 October 2026.
 <https://davidtong.org/pdfs/teaching/statistical-physics/statphys.pdf>.
+
+van der Schaft, A. J., and Maschke, B. M. (2013). Port-Hamiltonian systems on graphs.
+*SIAM Journal on Control and Optimization*, 51(2), 906--937.
+<https://doi.org/10.1137/110840091>.
 
 Visser, M. (2013). Zipf's law, power laws and maximum entropy. *New Journal of Physics*,
 15, 043021. <https://arxiv.org/abs/1212.5567>.

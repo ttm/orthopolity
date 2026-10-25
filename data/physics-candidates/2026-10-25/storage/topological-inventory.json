@@ -1,0 +1,2930 @@
+[
+  {
+    "file": "data_codes/data_exp/m0g00imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g01imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g1011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g1021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g1031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g1041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g1051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g1061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g10imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g11imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g2011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g2021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g2031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g2041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g2051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g2061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g3011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g3021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g3031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g3041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g3051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g3061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g4011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g4021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g4031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g4041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g4051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g4061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g5011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g5021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g5031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g5041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g5051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g3031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g3041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g3051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g3061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g4011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g4021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g4031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g4041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g4051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g4061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g5011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g5021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g5031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g5041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g5051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g5061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g6021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g6031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g6041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g6051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g6061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g00imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g01imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g1011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g1021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g1031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g1041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g1051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g1061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g10imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g11imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g2011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g2021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g2031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g3021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m0g6011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g2041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g5031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g1061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g4031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g01imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g3041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g6031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g3011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g5061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g2021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g5021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g2011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g4061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g1031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g3061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g1031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g3061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g2051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g2061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g3011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g3021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g3031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g3041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g3051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g3061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g4011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g4021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g4031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g4041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g4051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g4061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g5011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g5021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g5041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g5051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g5061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g6011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g6021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g6031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g6041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g6051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m1g6061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g00imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g01imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g1011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g1021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g1031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g1041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g1051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g6011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g6021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g6031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g6041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g6051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g6061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g00imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g01imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g1011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g1021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g1031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g1041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g1051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g1061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g10imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g11imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g2011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g2021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g2031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g2041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g2051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g2061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g3011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g3021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g3031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g3041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g3051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g3061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g4011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g4021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g4031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g4041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g4051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g10imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g11imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g2011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g2021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g2031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g2041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g2051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g2061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g3011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g3021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g3031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g3041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g3051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g3061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g4011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g4021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g4041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g4051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g4061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g5011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g5021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g5031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g5041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g5051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g5061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g6011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g6021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g6031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g6041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g6051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m2g6061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g00imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g5011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g5021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g5031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g5041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g5051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g5061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g6011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g6021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g6031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g6041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g6051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g6061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g00imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g01imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g1011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g1021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g1041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g1051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g1061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g10imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g11imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g2011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g2021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g2031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g2041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g2051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g2061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g3011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g3021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g3031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g3041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g3051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g4011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g4021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g4031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g4041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g4051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g4061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g5011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g5021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g5031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g5041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g5051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g5061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g6011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g6021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g6031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g6041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g6051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g6061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g1011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g1021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g1031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g1041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g1051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g1061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g10imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g11imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g2011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g2021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g2031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g2041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g2051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g2061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g3011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g3021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g3031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g3051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g3061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g4011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g4021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g4031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g4041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g4051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g4061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g5011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g5021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g5031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g5041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g5051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g5061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g6011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g6021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g6041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g6051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m3g6061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g00imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g01imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g1011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g1021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g1031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g1041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g1051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g1061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g10imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g11imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g2011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g2021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g2031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g2041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g2051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m4g2061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g1041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g1051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g1061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g10imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g11imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g2011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g2021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g2031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g2041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g2051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g2061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g3011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g3021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g3031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g3041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g3051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g4011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g4021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g4031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g4041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g4051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g4061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g5011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g5021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g5031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g5041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g5051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g5061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g6011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g6021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g6031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g6041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g6051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m7g6061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g00imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g01imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g1011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m8g1021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g2031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g2041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g2051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g2061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g3011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g3021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g3031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g3041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g3051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g3061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g4011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g4021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g4031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g4041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g4051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g4061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g5011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g5031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g5041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g5051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g5061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g6011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g6021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g6031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g6041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g6051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5g6061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m5wave_data.npy",
+    "shape": [
+      144
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m666g00imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m666g01imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m666g10imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m666g11imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m666wave_data.npy",
+    "shape": [
+      144
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g00imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g01imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g1011imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g1021imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g1031imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g1041imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g1051imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g1061imp_f.npy",
+    "shape": [
+      81
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g10imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  },
+  {
+    "file": "data_codes/data_exp/m6g11imp.npy",
+    "shape": [
+      36
+    ],
+    "dtype": "complex128",
+    "fortran": false
+  }
+]

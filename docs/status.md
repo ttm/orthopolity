@@ -4,6 +4,32 @@ Last updated 25 October 2026. **Read this first in a new session.** It records w
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
+**25 October — next allocation intervention sharpened:** the
+[storage design](storage-intervention-design-2026-10-25.md) separates changing
+capacity from changing coupling. Coupling alone preserves the endpoint when
+the network stays connected; independent nonlinear storage curves predict a
+different allocation after a capacity change. A constructed example matches
+both baseline stocks and local kinetics, yet doubling the first store gives
+**(1.44424, 0.72212, 0.83364)** instead of the linear forecast
+**(1.5, 0.75, 0.75)**. This is an analytic qualification, not new empirical
+evidence or a new network-thermodynamics claim. Reference weights are volumes
+at a fixed reference height, neither log-orthopolic nor linear-orthopolic size
+allocation. Eight fixed cases agree between state-coordinate ODE calculations
+within **1.21e−10**; conservation, energy, endpoint, clock-rescaling and
+susceptibility checks pass. Main 3.1 points to new supporting S3.7.
+All **680 tests** and the complete `make all` replay pass, including the new
+source/schema audit and analytic intervention checks. Known regeneration noise
+is excluded from the changes.
+The [bounded source audit](storage-source-audit-2026-10-25.md) obtains two
+additional public archives: a 144-node circuit intervention and eleven full-scale
+wall experiments with explicit sensor maps. All source hashes and inventories
+replay; no numerical experimental values were converted or reported. Neither
+archive supplies the closed capacity-versus-coupling cohort. The dummy RC
+controls vary external instrument load, not measured storage. Registry remains
+**45 / 1,149**. Next require complete independently measured storage curves,
+whole-budget stocks and qualified endpoint uncertainty; a baseline capacity
+and a fitted decay rate cannot establish the finite intervention forecast.
+
 **25 October — independent circuit forecast and mechanism boundary:** the
 [result](rlc-boundary-results-2026-10-25.md) predicts **78/78 separated signs**
 among 80 previously unexposed impedance observations. The observed crossing
@@ -586,6 +612,14 @@ a pair-to-network kinetic forecast and the absolute-stock/loss controls needed
 to identify exchange. The [completed pair transfer](membrane-exchange-results-2026-10-22.md)
 is useful but slightly worse than empirical interpolation. A network topology
 change remains a distinct untested prediction; prioritize its qualification over another capacity fit.
+The [25 October refinement](storage-intervention-design-2026-10-25.md)
+adds a more direct endpoint contrast: change storage at fixed budget and compare
+the whole allocation vector with a separate coupling-only control. Complete
+independent constitutive curves distinguish models that agree at baseline and
+in local kinetics. The newly accessible circuit/wall archives are retained in
+the [source audit](storage-source-audit-2026-10-25.md), but neither supplies
+that closed intervention. Prefer a genuinely discriminating allocation forecast
+over an additional nominal driven-response fit.
 The [23 October source audit](topology-source-audit-2026-10-23.md) records the
 bounded thermal, electrical and droplet search. The
 [storage qualification](topology-storage-2026-10-23.md) requires independent

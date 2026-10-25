@@ -1,5 +1,26 @@
 # Ongoing research: resume here
 
+**25 October — distinguish storage from coupling:** the
+[new design](storage-intervention-design-2026-10-25.md) predicts the full
+endpoint vector after changing capacity, with a separate coupling control
+that changes kinetics but preserves the endpoint. Nonproportional storage
+curves can match both baseline equality and local kinetics while producing
+a different finite allocation. Eight constructed checks agree between ODE
+coordinates within **1.21e−10**; main 3.1/supporting S3.7 retain the result
+as an analytic qualification, not an empirical study or new network theory.
+All **680 tests** and complete `make all` replay pass, including the new source
+inventory and analytic checks.
+The reference weights are physical volumes at a fixed height, neither
+log-orthopolic nor linear-orthopolic size allocation.
+The [source audit](storage-source-audit-2026-10-25.md) retains accessible,
+checksum-verified circuit and wall archives and replays their schema inventories
+without numerical experimental values. They enable narrower driven-response
+studies but do not supply the closed storage intervention. Keep their response
+values withheld until a suitable separate protocol is fixed. Registry remains
+**45 / 1,149**. Next qualify independent complete storage curves, initial budget,
+connector volume and endpoint observations; do not infer these from the target
+release or treat an additional textbook curve fit as a distinct allocation test.
+
 **25 October — circuit forecast complete:** the
 [result](rlc-boundary-results-2026-10-25.md) gives **78/78 separated signs** and
 **12.17% curve error**, below the **39.44% lower bound for every collocated

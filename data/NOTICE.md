@@ -300,3 +300,22 @@ their original attribution and rights; no blanket software or data license
 is inferred for them. The large Sand HDF5 is not tracked; its URL and checksums
 are retained. Only its schema and labels were decoded. Qualification notes and
 derived schema inventories are this project's work.
+
+## Storage-intervention source qualification (25 October 2026)
+
+`physics-candidates/2026-10-25/storage/` retains the unchanged wall dataset by
+Veit, M., and Johra, H., *Temperature measurements of full-scale wall element
+using Type K thermocouples to observe internal convection in loose-fill wood
+fiber insulation*, <https://doi.org/10.5281/zenodo.8204755>, under CC BY 4.0.
+Its separately published technical-report PDFs are not redistributed here;
+their URLs and checksums are in the receipt.
+
+The same folder retains Wang, Y., *Replication Data for: Circuit Implementation
+of a Four-Dimensional Topological Insulator*, version 2,
+<https://doi.org/10.21979/N9/KXL3TD>, under CC BY-NC 4.0 as identified by the
+original metadata. The archive contains original experimental arrays and source
+code; neither is relicensed as project software. Attribute the related article
+to Wang, Price, Zhang and Chong (2020), <https://doi.org/10.1038/s41467-020-15940-3>.
+Only archive structure, acquisition code and schemas were inspected. Derived
+inventories and qualification decisions are this project's work, not findings
+endorsed by either source's authors.
