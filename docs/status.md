@@ -22,8 +22,9 @@ difference **2.27e−13**. Separate JSON/MAT decoding exactly matches **486 nume
 Registry **45 / 1,149**, with the earlier 44 entries byte-preserved. All **680
 tests** and `make all` pass, including complete circuit replay. Main 3.1 and
 supporting S5.20 retain the result. The main text stays **12 pages** by condensing
-details retained in the supplement, now **65 pages**. Final committed-source
-PDF reproducibility is being checked. The [thermal audit](physics-source-followup-2026-10-24.md)
+details retained in the supplement, now **65 pages**. Both PDFs are visually
+checked, warning-free and byte-reproducible from committed sources. The
+[thermal audit](physics-source-followup-2026-10-24.md)
 retains accessible data but stops at missing sensor maps/boundary inputs without
 numerical temperature access. Next seek a separate component/topology intervention
 with independent storage and instrument uncertainty; do not refit these responses
