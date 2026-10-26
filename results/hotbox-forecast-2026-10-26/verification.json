@@ -1,0 +1,20 @@
+{
+  "independent_methods": [
+    "Exact decimal-rational calibration-box vertices",
+    "Pairwise interval-order feasibility",
+    "Integer-millimetre geometry",
+    "Convex anchor-error envelope"
+  ],
+  "input_summaries_checked": 280,
+  "input_summary_extraction_independently_verified": false,
+  "logical_checks": 636,
+  "maximum_absolute_difference": 1.4210854715202004e-14,
+  "numeric_checks": 2975,
+  "prediction_rows_checked": 210,
+  "prediction_sha256": "6add81e0b7663391a022761d71ab1011d2b6a381f7b87273d8b630acbdc0d86d",
+  "scope": "Summary-to-forecast arithmetic and qualification; marginal conditional bounds only",
+  "source_archive_opened": false,
+  "source_sha256": "d1e706a46be13d4aca2c220ce979e3e1da94d6245d349b6100d1aa4c1d769ad0",
+  "target_interior_temperatures_decoded": false,
+  "verification_source_sha256": "bc4cf9cc2f12facc939075a2bc26a1050c5a512f3f39674d76d6e98fac6c975a"
+}

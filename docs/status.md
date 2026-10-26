@@ -21,8 +21,13 @@ sensor **8_f**; no target interior readings were released. A
 [dated availability amendment](hotbox-transfer-amendment-2026-10-26.md) excludes
 the entire position 8 across all cases, yielding 14 positions and **210 means**.
 The original qualification failure remains recorded; no temperatures are imputed
-and no models or thresholds change. Next seal independently verified forecasts
-before releasing interior targets. Article/PDFs and empirical registry remain unchanged.
+and no models or thresholds change. Operative design **a18fbec** follows a tiny
+verifier roundoff repair. [All 210 forecasts](hotbox-forecast-2026-10-26.md)
+are independently verified (2,975 numerical checks); separate source extraction
+checks 50,680 permitted temperatures and 1,267 clocks within 1.43e−14. Only
+174 forecasts pass input range/drift gates, so the complete-cohort verdict will
+remain qualification incomplete. Next commit/push forecasts before interior
+release, preserving all diagnostic scores. Article/PDFs and registry unchanged.
 
 **25 October — next allocation intervention sharpened:** the
 [storage design](storage-intervention-design-2026-10-25.md) separates changing

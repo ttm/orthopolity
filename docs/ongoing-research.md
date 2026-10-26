@@ -14,8 +14,11 @@ not neutral log-/linear-orthopolic size allocation or a complete energy budget.
 Design **69deda5** stopped at wholly missing calibration/control sensor 8_f
 before target interior release. The [availability amendment](hotbox-transfer-amendment-2026-10-26.md)
 removes position 8 consistently, leaving 14 positions and **210 target means**;
-it preserves the original failed gate and all models/thresholds. Next commit
-the amendment, verify and seal forecasts, then release targets.
+it preserves the original failed gate and all models/thresholds. Operative design
+**a18fbec** also repairs verifier roundoff, without changing predictions. The
+[210 forecasts](hotbox-forecast-2026-10-26.md) pass independent arithmetic/source
+checks; only 174 pass input range/drift qualification. Retain this limitation
+before opening targets. Next commit/push forecasts, then release interiors.
 Registry and manuscripts remain unchanged pending results.
 
 **25 October — distinguish storage from coupling:** the

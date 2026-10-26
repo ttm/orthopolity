@@ -1,0 +1,26 @@
+{
+  "audit_source_sha256": "25858c3eb328665ce31a4c867e823e803f9e116275ffdffdbe76c0ad8bf4c92e",
+  "clock_cells_checked": 1267,
+  "dynamic_files_opened": false,
+  "evaluation_checked": false,
+  "exposure_scope": "Public retrospective archive; local withholding is not external blinding",
+  "independent_methods": [
+    "Allowlisted split-line numeric extraction",
+    "Compensated-sum means and window differences",
+    "Direct full-vector residual and qualification reconstruction",
+    "Explicit equal-weight score aggregation"
+  ],
+  "input_summaries_checked": 280,
+  "logical_checks": 496,
+  "maximum_absolute_difference": 1.4210854715202004e-14,
+  "numeric_checks": 2120,
+  "numeric_source_cells_checked": 51947,
+  "prediction_sha256": "6add81e0b7663391a022761d71ab1011d2b6a381f7b87273d8b630acbdc0d86d",
+  "source_archive_opened": true,
+  "source_sha256": "d1e706a46be13d4aca2c220ce979e3e1da94d6245d349b6100d1aa4c1d769ad0",
+  "steady_files_checked": 7,
+  "target_interior_cells_checked": 0,
+  "target_interior_temperatures_decoded": false,
+  "target_summaries_checked": 0,
+  "temperature_cells_checked": 50680
+}
