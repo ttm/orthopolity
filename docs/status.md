@@ -1,8 +1,23 @@
 # Project status and handoff
 
-Last updated 25 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 26 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**26 October — public data only; thermal transfer designed:** the author asks
+to keep further empirical work limited to existing public data. The closed
+vessel design remains unrun. The [thermal protocol](hotbox-transfer-protocol-2026-10-26.md)
+uses the retained wall archive: calibrate a normalized temperature profile in
+the smallest nonzero forcing case and predict **225 interior temperature means**
+in five stronger-forcing cases. Geometric conduction, a fixed additive correction
+and persistence are frozen comparisons. Published convection conclusions are
+already known; this is a conditional transfer/boundary test, not a new convection
+discovery or a closed allocation test. Physical depth/thermal resistance is
+neither log-orthopolic nor linear-orthopolic size allocation. All numerical
+temperatures remain locally withheld until the design is committed and pushed.
+Range, drift, monotonic-calibration and marginal-envelope qualifications are
+specified before access. Next seal independently verified forecasts before
+releasing interior targets. Article/PDFs and empirical registry remain unchanged.
 
 **25 October — next allocation intervention sharpened:** the
 [storage design](storage-intervention-design-2026-10-25.md) separates changing

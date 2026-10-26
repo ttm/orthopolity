@@ -1,5 +1,19 @@
 # Ongoing research: resume here
 
+**26 October — public-data constraint and concrete thermal transfer:** the
+author requests existing public data only. Keep the communicating-vessel
+experiment as an unrun design; do not assume access to a laboratory or contact
+collaborators without authorization. The [new protocol](hotbox-transfer-protocol-2026-10-26.md)
+uses the already retained hotbox archive. Case 6 calibrates a normalized thermal
+resistance profile; cases 1–5 supply c/g anchors and **225 held-out d/e/f means**.
+Compare geometric interpolation, a fixed additive calibration residual and
+persistence. The source's published convection findings are exposed. Sensor
+range and drift qualifications, full-cohort reporting and conditional marginal
+bounds are fixed before numerical access. This tests a transport representation,
+not neutral log-/linear-orthopolic size allocation or a complete energy budget.
+Next commit/push the design, verify and seal forecasts, then release targets.
+Registry and manuscripts remain unchanged pending results.
+
 **25 October — distinguish storage from coupling:** the
 [new design](storage-intervention-design-2026-10-25.md) predicts the full
 endpoint vector after changing capacity, with a separate coupling control
@@ -632,7 +646,11 @@ result transfers an established account; it does not uniquely identify the
 general law. Preserve failures and source qualifications. The ten speech
 languages and ten new-protein responses are now exposed; fitting corrections
 to them would be exploratory.
-The immediate design is now [pair-to-network kinetic transfer](equalization-release-design-2026-10-19.md).
+**26 October update:** empirical work is limited to existing public data at the
+author's request. Execute the [thermal-profile transfer](hotbox-transfer-protocol-2026-10-26.md)
+using the retained archive, preserving its narrower transport scope. The closed
+storage and [pair-to-network kinetic transfer](equalization-release-design-2026-10-19.md)
+remain unrun designs requiring suitable public observations.
 Resolve absolute-stock or independently justified loss controls, matched
 geometry and separate kinetic calibration before target fitting. The
 [19 October source audit](equalization-source-audit-2026-10-19.md) records why
