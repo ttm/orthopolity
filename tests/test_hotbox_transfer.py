@@ -32,7 +32,7 @@ def synthetic_summary(betas=(.8, .6, .3)):
 class TestHotboxTransfer(unittest.TestCase):
     def test_independent_forecast_verifier(self):
         pred = dict(config=CFG, input_summary=synthetic_summary(), design_commit='a'*40,
-                    numeric_temperature_cells=54300, target_interior_temperatures_decoded=False)
+                    numeric_temperature_cells=50680, target_interior_temperatures_decoded=False)
         pred['predictions'] = h.predict(pred['input_summary'], CFG)
         report = v.verify(pred)
         self.assertLess(report['maximum_absolute_difference'], 1e-12)
@@ -78,7 +78,7 @@ class TestHotboxTransfer(unittest.TestCase):
     def test_synthetic_fixed_resistance_predicts_new_forcing_exactly(self):
         summary = synthetic_summary()
         predictions = h.predict(summary, CFG)
-        self.assertEqual(len(predictions), 225)
+        self.assertEqual(len(predictions), 210)
         for row in predictions:
             beta = {'d': .8, 'e': .6, 'f': .3}[row['sensor']]
             self.assertAlmostEqual(row['transfer_prediction_c'], -5+30*beta)
@@ -127,7 +127,7 @@ class TestHotboxTransfer(unittest.TestCase):
         targets[0]['drift_c'] = 1
         result = h.evaluate(pred, targets)
         self.assertEqual(result['verdict'], 'qualification_incomplete')
-        self.assertEqual(result['groups']['all']['target_means'], 225)
+        self.assertEqual(result['groups']['all']['target_means'], 210)
         self.assertEqual(result['groups']['all']['transfer_outside_all'], 1)
 
 

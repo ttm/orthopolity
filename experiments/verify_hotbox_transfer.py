@@ -115,7 +115,8 @@ def verify(prediction):
     # configuration that uses target channels as calibration inputs.
     fixed = {
         'calibration_case': 6, 'control_case': 7,
-        'target_cases': [1, 2, 3, 4, 5], 'positions': list(range(1, 16)),
+        'target_cases': [1, 2, 3, 4, 5],
+        'positions': [p for p in range(1, 16) if p != 8],
         'anchors': ['c', 'g'], 'interior': ['d', 'e', 'f'],
         'sensor_error_c': 0.15, 'internal_calibration_range_c': [-10, 50],
         'maximum_window_drift_c': 0.30, 'expected_rows': 181,
@@ -135,9 +136,10 @@ def verify(prediction):
     checks.equal(prediction['target_interior_temperatures_decoded'], False,
                  'target_interior_temperatures_decoded')
 
-    expected_inputs = {(case, p, s) for case in (6, 7) for p in range(1, 16) for s in 'cdefg'}
+    positions = cfg['positions']
+    expected_inputs = {(case, p, s) for case in (6, 7) for p in positions for s in 'cdefg'}
     expected_inputs.update((case, p, s) for case in range(1, 6)
-                           for p in range(1, 16) for s in 'cg')
+                           for p in positions for s in 'cg')
     inputs = {}
     for row in prediction['input_summary']:
         if not isinstance(row, dict) or set(row) != SUMMARY_FIELDS:
@@ -156,7 +158,7 @@ def verify(prediction):
         inputs[key] = row
     if set(inputs) != expected_inputs:
         raise ValueError('Incomplete permitted-input partition')
-    checks.equal(prediction['numeric_temperature_cells'], 300*181,
+    checks.equal(prediction['numeric_temperature_cells'], 280*181,
                  'numeric_temperature_cells')
 
     def qualified(row):
@@ -167,9 +169,9 @@ def verify(prediction):
 
     rows = prediction['predictions']
     identities = [(case, p, s) for case in range(1, 6)
-                  for p in range(1, 16) for s in 'def']
+                  for p in positions for s in 'def']
     if len(rows) != len(identities):
-        raise ValueError('Expected 225 complete target forecasts')
+        raise ValueError('Expected 210 complete target forecasts')
     radius = rational(cfg['sensor_error_c'])
     for row, identity in zip(rows, identities):
         if not isinstance(row, dict) or set(row) != ROW_FIELDS:

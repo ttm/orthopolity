@@ -19,7 +19,8 @@ ROOT = Path(__file__).resolve().parents[1]
 CONFIG = 'configs/hotbox_transfer_2026-10-26.json'
 PROTOCOL = 'docs/hotbox-transfer-protocol-2026-10-26.md'
 FROZEN = [CONFIG, PROTOCOL, 'experiments/run_hotbox_transfer.py',
-          'experiments/verify_hotbox_transfer.py', 'tests/test_hotbox_transfer.py']
+          'experiments/verify_hotbox_transfer.py', 'tests/test_hotbox_transfer.py',
+          'docs/hotbox-transfer-amendment-2026-10-26.md']
 
 
 def dump(path, value):

@@ -15,9 +15,14 @@ already known; this is a conditional transfer/boundary test, not a new convectio
 discovery or a closed allocation test. Physical depth/thermal resistance is
 neither log-orthopolic nor linear-orthopolic size allocation. All numerical
 temperatures remain locally withheld until the design is committed and pushed.
-Range, drift, monotonic-calibration and marginal-envelope qualifications are
-specified before access. Next seal independently verified forecasts before
-releasing interior targets. Article/PDFs and empirical registry remain unchanged.
+Range, drift, monotonic-calibration and marginal-envelope qualifications were
+specified before access. Design **69deda5** stopped at missing case-6/control
+sensor **8_f**; no target interior readings were released. A
+[dated availability amendment](hotbox-transfer-amendment-2026-10-26.md) excludes
+the entire position 8 across all cases, yielding 14 positions and **210 means**.
+The original qualification failure remains recorded; no temperatures are imputed
+and no models or thresholds change. Next seal independently verified forecasts
+before releasing interior targets. Article/PDFs and empirical registry remain unchanged.
 
 **25 October — next allocation intervention sharpened:** the
 [storage design](storage-intervention-design-2026-10-25.md) separates changing
