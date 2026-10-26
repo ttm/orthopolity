@@ -40,6 +40,17 @@ class TestHotboxTransfer(unittest.TestCase):
         with self.assertRaises(ValueError):
             v.verify(pred)
 
+    def test_verifier_accepts_roundoff_at_constant_series_extrema(self):
+        summary = synthetic_summary()
+        summary[0]['mean_c'] += 4e-15
+        pred = dict(config=CFG, input_summary=summary, design_commit='a'*40,
+                    numeric_temperature_cells=50680, target_interior_temperatures_decoded=False)
+        pred['predictions'] = h.predict(summary, CFG)
+        v.verify(pred)
+        summary[0]['mean_c'] += .001
+        with self.assertRaises(ValueError):
+            v.verify(pred)
+
     def test_firewall_does_not_parse_unselected_numeric_or_poison_cells(self):
         cfg = dict(CFG, expected_rows=3, expected_columns=4)
         raw = b'Time\t1_c\t1_d\t1_g\n0\t20\tDO_NOT_PARSE\t0\n60\t21\t1e99999\t1\n120\t22\tNaN\t2\n'

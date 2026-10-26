@@ -151,7 +151,9 @@ def verify(prediction):
             raise ValueError('Unexpected or duplicate input identity')
         for name in ('mean_c', 'min_c', 'max_c', 'drift_c'):
             rational(row[name])
-        if not row['min_c'] <= row['mean_c'] <= row['max_c']:
+        # A floating-point sum of a constant series can move its mean a few
+        # ulps outside the identical extrema. This is numerical tolerance only.
+        if not row['min_c']-1e-10 <= row['mean_c'] <= row['max_c']+1e-10:
             raise ValueError('Input mean outside reported range')
         if abs(row['drift_c']) > row['max_c']-row['min_c']+1e-10:
             raise ValueError('Input window drift exceeds the full range')

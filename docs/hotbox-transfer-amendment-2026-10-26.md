@@ -38,3 +38,19 @@ This is an openly amended retrospective study with locally withheld outcomes;
 it is not external preregistration. The reference coordinate remains physical
 depth/thermal resistance, neither log-orthopolic nor linear-orthopolic size
 allocation.
+
+## Verification repair, still before target interior release
+
+The amended design was pushed as **631402e**. Its input stage produced all
+210 forecasts, and independent source extraction agreed within 1.43e−14°C.
+The arithmetic verifier then rejected constant-series means lying up to
+1.43e−14°C outside their identical minimum and maximum because of floating-point
+summation. The verifier now allows 1e−10°C solely for that numerical range check;
+a synthetic check retains rejection of a substantive mismatch. No physical
+error allowance, qualification threshold, coefficient or forecast calculation
+changes. Re-freeze the verifier and rerun the same inputs before target release.
+
+Input inspection also shows constant c/g sequences in case 4 and one input far
+outside the stated calibration range. These remain in the fixed cohort and are
+flagged; flat archived sequences cannot independently establish equilibration.
+No target interior values have been decoded in diagnosing this verifier issue.
