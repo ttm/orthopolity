@@ -2,7 +2,7 @@
 
 **Accounting proofs, physical derivations, observation models and complete comparisons**
 
-Prepared 10 October 2026; revised 25 October 2026 as a companion to
+Prepared 10 October 2026; revised 26 October 2026 as a companion to
 [the main article](paper.md).
 This document preserves the substantive technical material of the article at
 source commit **`f137d4efb050ccfcb5c5f814d32da651c645421c`**, supplemented by
@@ -3110,6 +3110,63 @@ size allocation. The empirical value is a specified boundary of the restricted
 exchange mechanism and a successful constitutive extension. It neither
 contradicts complete energy accounting nor uniquely establishes the general law.
 
+### S5.21. A thermal profile transfers partly but fails its accuracy scenario
+
+Veit and Johra's public full-scale wall archive supplies seven steady
+temperature conditions. A locally frozen transfer uses internal insulation
+sensors c/g as inputs and predicts d/e/f from the profile calibrated at the
+smallest nonzero forcing. The cold-to-hot fraction
+$\widehat\beta=(T_{j,6}-T_{g,6})/(T_{c,6}-T_{g,6})$ predicts
+$\widehat T_{j,s}=T_{g,s}+\widehat\beta(T_{c,s}-T_{g,s})$.
+Steady source-free one-dimensional conduction with a fixed normalized thermal
+resistance profile gives this relation, including heterogeneous conductivity.
+It does not require equal energy per spatial interval or establish unchanged
+total conductance. Physical depth/thermal resistance is the coordinate,
+neither log-orthopolic nor linear-orthopolic size allocation.
+
+The original 15-position qualification stopped at an entirely missing
+calibration sensor. A dated amendment excluded its whole position across
+calibration, targets and control before interior target release. The operative
+design was pushed as **a18fbec**, and the **210 numerical forecasts** as
+**0db6966** before their targets. Geometric interpolation, a fixed additive
+case-6 residual and temperature persistence were frozen competitors. The
+additive and resistance-fraction corrections fit calibration equally well;
+their forecasts differ when forcing changes.
+
+| Prediction | MAE, all 210 target means |
+| --- | ---: |
+| Transferred resistance fraction | 1.7473°C |
+| Geometry plus fixed calibration residual | 1.9096°C |
+| Homogeneous geometric conduction | 2.1873°C |
+| Calibration-temperature persistence | 4.1412°C |
+
+The primary improves mean error over all three comparisons, but **83/210**
+means fall outside its frozen conditional error envelopes, including **61/174**
+whose profiles pass the calibration-range and temporal-drift checks. Only the
+30°C-forcing target experiment passes those checks completely: its MAE is
+0.3329°C versus geometric 0.7576°C, but three of its 42 means still exceed
+the transfer envelope. The complete-cohort verdict is qualification incomplete,
+already determined by input failures before targets. No failed predictions or
+unqualified observations are deleted from the comparisons.
+
+The reported sensor accuracy of $\pm0.15$°C supplies a conditional bounded-error
+scenario, not a confidence interval. It is not reduced by the 181 repeated
+readings. All selected case-4 records are constant in the archive; some inputs
+are outside the documented internal calibration range, including one near
+$-47.8$°C. The preceding window needed to reproduce the source's equilibration
+criterion is absent. Published convection conclusions were already known;
+the observations were locally withheld, not externally blinded. Residuals
+cannot distinguish convection from conductivity changes, observation problems,
+lateral transport or incomplete equilibrium. Temperature-only observations
+also do not establish a complete energy or heat-throughput balance.
+
+Independent forecast arithmetic and separate decoding of 88,690 temperature
+cells plus 1,267 clock cells agree within $1.43\times10^{-14}$. The
+[complete result](hotbox-transfer-results-2026-10-26.md) retains every comparison,
+placement sensitivity, failed qualification and amendment. This study makes
+the distinction between predictive improvement and adequate absolute accuracy
+concrete; it does not uniquely confirm or refute the general law.
+
 ## References
 
 Arranz, I., Fournier, B., Lester, N. P., Shuter, B. J., and Peres-Neto, P. R. (2022).
@@ -3326,6 +3383,16 @@ van der Schaft, A. J., and Maschke, B. M. (2013). Port-Hamiltonian systems on gr
 
 Visser, M. (2013). Zipf's law, power laws and maximum entropy. *New Journal of Physics*,
 15, 043021. <https://arxiv.org/abs/1212.5567>.
+
+Veit, M., and Johra, H. (2023). Temperature measurements of full-scale wall
+element using Type K thermocouples to observe internal convection in loose-fill
+wood fiber insulation. DCE Technical Reports, 317, Aalborg University.
+<https://doi.org/10.54337/aau544775163>. Data: <https://doi.org/10.5281/zenodo.8204755>.
+
+Veit, M., Johra, H., Rask, N., Roesgaard, S. M., and Jensen, R. L. (2026).
+Experimental investigations of internal macro-scale convection in the loose-fill
+wood fiber insulation layer of a full-scale wall element. *Energy and Buildings*,
+350, 116646. <https://doi.org/10.1016/j.enbuild.2025.116646>.
 
 Wedler, C., Ferre, A., Azzan, H., Danaci, D., Petit, C., and Pini, R. (2024).
 Binary adsorption equilibria of three CO2+CH4 mixtures on NIST reference zeolite Y

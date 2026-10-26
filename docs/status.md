@@ -4,30 +4,37 @@ Last updated 26 October 2026. **Read this first in a new session.** It records w
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
-**26 October — public data only; thermal transfer designed:** the author asks
-to keep further empirical work limited to existing public data. The closed
-vessel design remains unrun. The [thermal protocol](hotbox-transfer-protocol-2026-10-26.md)
-uses the retained wall archive: calibrate a normalized temperature profile in
-the smallest nonzero forcing case and predict **225 interior temperature means**
-in five stronger-forcing cases. Geometric conduction, a fixed additive correction
-and persistence are frozen comparisons. Published convection conclusions are
-already known; this is a conditional transfer/boundary test, not a new convection
-discovery or a closed allocation test. Physical depth/thermal resistance is
-neither log-orthopolic nor linear-orthopolic size allocation. All numerical
-temperatures remain locally withheld until the design is committed and pushed.
-Range, drift, monotonic-calibration and marginal-envelope qualifications were
-specified before access. Design **69deda5** stopped at missing case-6/control
-sensor **8_f**; no target interior readings were released. A
-[dated availability amendment](hotbox-transfer-amendment-2026-10-26.md) excludes
-the entire position 8 across all cases, yielding 14 positions and **210 means**.
-The original qualification failure remains recorded; no temperatures are imputed
-and no models or thresholds change. Operative design **a18fbec** follows a tiny
-verifier roundoff repair. [All 210 forecasts](hotbox-forecast-2026-10-26.md)
-are independently verified (2,975 numerical checks); separate source extraction
-checks 50,680 permitted temperatures and 1,267 clocks within 1.43e−14. Only
-174 forecasts pass input range/drift gates, so the complete-cohort verdict will
-remain qualification incomplete. Next commit/push forecasts before interior
-release, preserving all diagnostic scores. Article/PDFs and registry unchanged.
+**26 October — public thermal transfer completed, accuracy scenario fails:** the
+[wall result](hotbox-transfer-results-2026-10-26.md) predicts **210 interior
+means** from one lower-forcing calibration and separate target anchors.
+Mean absolute error is **1.7473°C**, versus geometric **2.1873°C**, fixed-additive
+**1.9096°C**, and persistence **4.1412°C**. Predictive improvement does not supply
+adequate absolute accuracy: **83/210** targets, including **61/174** whose
+profiles pass the frozen range/drift checks, exceed the conditional transfer
+envelopes. The full-cohort verdict is **qualification incomplete**. In the only
+fully gate-qualified target experiment, three of 42 means still exceed bounds.
+All failed/unqualified observations remain in the scores. Published convection
+findings were exposed; the result does not identify convection uniquely or
+measure conserved heat throughput. The reference coordinate is physical depth/
+thermal resistance, neither log-orthopolic nor linear-orthopolic size allocation.
+
+Original design **69deda5** stopped at missing calibration/control sensor 8_f.
+A [dated availability amendment](hotbox-transfer-amendment-2026-10-26.md) excluded
+its whole position before targets; **a18fbec** also repaired numerical verifier
+roundoff without changing predictions. Forecast **0db6966** was pushed before
+all 38,010 target cells. Independent forecast calculations check 2,975 quantities;
+separate parsing verifies **88,690 temperatures and 1,267 clocks**, and 4,934
+result comparisons agree within **1.43e−14**. Registry **46 / 1,168** preserves
+all earlier entries. Supporting S5.21 retains the full qualified result; the
+main article's claims remain unchanged. Complete replay and PDF verification
+are being finished for this session.
+
+**Author constraint:** further empirical work uses **existing public data only**.
+The closed storage experiment remains unrun. Next prioritize an independently
+specified resource/constraint intervention that adds allocation discrimination;
+do not refit these now-exposed wall targets as confirmation or treat another
+transport response alone as unique general-law evidence. The four dynamic wall
+files remain numerically unopened.
 
 **25 October — next allocation intervention sharpened:** the
 [storage design](storage-intervention-design-2026-10-25.md) separates changing

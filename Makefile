@@ -44,6 +44,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: topology-design
 .PHONY: biome-stock-audit
 .PHONY: rlc-boundary rlc-boundary-registry
+.PHONY: hotbox-transfer hotbox-transfer-registry
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -85,7 +86,23 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/membrane-exchange-transfer-2026-10-22/transfer.png \
  results/rlc-boundary-2026-10-25/circuit.png
 
-all: data test analyses topology-design biome-stock-audit rlc-boundary
+all: data test analyses topology-design biome-stock-audit rlc-boundary hotbox-transfer
+
+hotbox-transfer: ## replay amended public wall-profile forecasts and full qualified result
+	$(PY) experiments/run_hotbox_transfer.py --stage forecast --design-commit a18fbec --output $(STUDY_OUTPUT_ROOT)/hotbox/predictions.json
+	cmp results/hotbox-forecast-2026-10-26/predictions.json $(STUDY_OUTPUT_ROOT)/hotbox/predictions.json
+	rm -f $(STUDY_OUTPUT_ROOT)/hotbox/verification.json $(STUDY_OUTPUT_ROOT)/hotbox/input-audit.json $(STUDY_OUTPUT_ROOT)/hotbox/result-audit.json
+	$(PY) experiments/verify_hotbox_transfer.py --prediction $(STUDY_OUTPUT_ROOT)/hotbox/predictions.json --output $(STUDY_OUTPUT_ROOT)/hotbox/verification.json
+	cmp results/hotbox-forecast-2026-10-26/verification.json $(STUDY_OUTPUT_ROOT)/hotbox/verification.json
+	$(PY) experiments/audit_hotbox_transfer.py --prediction $(STUDY_OUTPUT_ROOT)/hotbox/predictions.json --output $(STUDY_OUTPUT_ROOT)/hotbox/input-audit.json
+	cmp results/hotbox-forecast-2026-10-26/source-audit.json $(STUDY_OUTPUT_ROOT)/hotbox/input-audit.json
+	$(PY) experiments/run_hotbox_transfer.py --stage evaluate --design-commit a18fbec --prediction results/hotbox-forecast-2026-10-26/predictions.json --prediction-commit 0db6966 --output $(STUDY_OUTPUT_ROOT)/hotbox/result.json
+	cmp results/hotbox-transfer-2026-10-26/result.json $(STUDY_OUTPUT_ROOT)/hotbox/result.json
+	$(PY) experiments/audit_hotbox_transfer.py --prediction $(STUDY_OUTPUT_ROOT)/hotbox/predictions.json --result $(STUDY_OUTPUT_ROOT)/hotbox/result.json --output $(STUDY_OUTPUT_ROOT)/hotbox/result-audit.json
+	cmp results/hotbox-transfer-2026-10-26/source-audit.json $(STUDY_OUTPUT_ROOT)/hotbox/result-audit.json
+
+hotbox-transfer-registry:
+	$(PY) experiments/register_hotbox_transfer.py
 
 rlc-boundary: ## replay independently specified circuit forecast and passive RC boundary comparison
 	$(PY) experiments/run_rlc_boundary.py --stage inventory --output $(STUDY_OUTPUT_ROOT)/rlc-boundary/design-inventory.json

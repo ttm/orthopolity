@@ -1,25 +1,28 @@
 # Ongoing research: resume here
 
-**26 October — public-data constraint and concrete thermal transfer:** the
-author requests existing public data only. Keep the communicating-vessel
-experiment as an unrun design; do not assume access to a laboratory or contact
-collaborators without authorization. The [new protocol](hotbox-transfer-protocol-2026-10-26.md)
-uses the already retained hotbox archive. Case 6 calibrates a normalized thermal
-resistance profile; cases 1–5 supply c/g anchors and **225 held-out d/e/f means**.
-Compare geometric interpolation, a fixed additive calibration residual and
-persistence. The source's published convection findings are exposed. Sensor
-range and drift qualifications, full-cohort reporting and conditional marginal
-bounds are fixed before numerical access. This tests a transport representation,
-not neutral log-/linear-orthopolic size allocation or a complete energy budget.
-Design **69deda5** stopped at wholly missing calibration/control sensor 8_f
-before target interior release. The [availability amendment](hotbox-transfer-amendment-2026-10-26.md)
-removes position 8 consistently, leaving 14 positions and **210 target means**;
-it preserves the original failed gate and all models/thresholds. Operative design
-**a18fbec** also repairs verifier roundoff, without changing predictions. The
-[210 forecasts](hotbox-forecast-2026-10-26.md) pass independent arithmetic/source
-checks; only 174 pass input range/drift qualification. Retain this limitation
-before opening targets. Next commit/push forecasts, then release interiors.
-Registry and manuscripts remain unchanged pending results.
+**26 October — public wall transfer completed:** the author limits empirical
+work to existing public data. The [thermal result](hotbox-transfer-results-2026-10-26.md)
+uses the retained archive, with a transparent missing-position amendment and
+forecasts **0db6966** pushed before 210 target means. The transferred profile
+has MAE **1.7473°C**, versus geometric **2.1873°C**, fixed-additive **1.9096°C**
+and persistence **4.1412°C**. Yet **61/174** means from profiles passing the
+frozen range/drift gates exceed the conditional error envelopes. The overall
+verdict is qualification incomplete; every unqualified/failed target is retained.
+The original 15-position gate failure, amendment, known published convection
+results, constant case-4 records and calibration-range problems remain explicit.
+Independent verification covers 2,975 forecast quantities, 88,690 temperature
+cells, 1,267 clocks and 4,934 result comparisons within **1.43e−14**.
+Registry **46 / 1,168**; supporting S5.21 retains this boundary result without
+expanding the main article's claim. Physical depth/thermal resistance is neither
+log-orthopolic nor linear-orthopolic size allocation, and temperatures do not
+measure a complete energy budget here. Full replay and PDF checks are in progress.
+
+Next prioritize a public intervention with independently measured resources and
+constraints that discriminates allocation explanations. The closed vessel design
+remains unrun; no laboratory access is assumed and no collaborators are contacted.
+Do not refit the 210 exposed interiors as confirmation. Dynamic wall data remain
+unopened; another response curve has limited value unless its independent inputs
+resolve a new scientific question.
 
 **25 October — distinguish storage from coupling:** the
 [new design](storage-intervention-design-2026-10-25.md) predicts the full
@@ -654,8 +657,7 @@ general law. Preserve failures and source qualifications. The ten speech
 languages and ten new-protein responses are now exposed; fitting corrections
 to them would be exploratory.
 **26 October update:** empirical work is limited to existing public data at the
-author's request. Execute the [thermal-profile transfer](hotbox-transfer-protocol-2026-10-26.md)
-using the retained archive, preserving its narrower transport scope. The closed
+author's request. The [thermal-profile transfer](hotbox-transfer-results-2026-10-26.md) is complete: it improves mean error but fails its conditional accuracy scenario. Seek an independently characterized resource/constraint intervention with greater allocation discrimination. The closed
 storage and [pair-to-network kinetic transfer](equalization-release-design-2026-10-19.md)
 remain unrun designs requiring suitable public observations.
 Resolve absolute-stock or independently justified loss controls, matched

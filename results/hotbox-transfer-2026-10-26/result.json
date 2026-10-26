@@ -1,0 +1,6222 @@
+{
+  "design_commit": "a18fbec2edc35351de8ce7d7789939adc32df3be",
+  "groups": {
+    "all": {
+      "geometry_outside_all": 173,
+      "mae_c": {
+        "additive": 1.9095681473820783,
+        "geometry": 2.187348996565738,
+        "persistence": 4.14124234936885,
+        "transfer": 1.7472961017047983
+      },
+      "maximum_absolute_error_c": {
+        "additive": 42.33674410538685,
+        "geometry": 43.13040113795506,
+        "persistence": 14.384979562707182,
+        "transfer": 38.32697256838546
+      },
+      "qualified_target_means": 174,
+      "target_means": 210,
+      "transfer_envelopes_available": 210,
+      "transfer_outside_all": 83,
+      "transfer_outside_qualified": 61
+    },
+    "case_1": {
+      "geometry_outside_all": 40,
+      "mae_c": {
+        "additive": 1.1534194085582739,
+        "geometry": 1.6214995072674532,
+        "persistence": 3.3692705083149175,
+        "transfer": 0.8590409983005992
+      },
+      "maximum_absolute_error_c": {
+        "additive": 2.5527496051237595,
+        "geometry": 3.407050611508261,
+        "persistence": 9.198664954585633,
+        "transfer": 2.9598967953956645
+      },
+      "qualified_target_means": 39,
+      "target_means": 42,
+      "transfer_envelopes_available": 42,
+      "transfer_outside_all": 13,
+      "transfer_outside_qualified": 13
+    },
+    "case_2": {
+      "geometry_outside_all": 36,
+      "mae_c": {
+        "additive": 3.0589403133588124,
+        "geometry": 3.3940938459997883,
+        "persistence": 4.183457439118653,
+        "transfer": 2.7524428140168338
+      },
+      "maximum_absolute_error_c": {
+        "additive": 42.33674410538685,
+        "geometry": 43.13040113795506,
+        "persistence": 11.591252064585635,
+        "transfer": 38.32697256838546
+      },
+      "qualified_target_means": 30,
+      "target_means": 42,
+      "transfer_envelopes_available": 42,
+      "transfer_outside_all": 23,
+      "transfer_outside_qualified": 15
+    },
+    "case_3": {
+      "geometry_outside_all": 33,
+      "mae_c": {
+        "additive": 2.7699257290543753,
+        "geometry": 3.027935059101645,
+        "persistence": 7.210127907125757,
+        "transfer": 2.648263896302454
+      },
+      "maximum_absolute_error_c": {
+        "additive": 41.22900460392752,
+        "geometry": 42.022661636495734,
+        "persistence": 14.384979562707182,
+        "transfer": 37.38477140141593
+      },
+      "qualified_target_means": 24,
+      "target_means": 42,
+      "transfer_envelopes_available": 42,
+      "transfer_outside_all": 24,
+      "transfer_outside_qualified": 13
+    },
+    "case_4": {
+      "geometry_outside_all": 29,
+      "mae_c": {
+        "additive": 2.190019969265432,
+        "geometry": 2.1356098761988673,
+        "persistence": 2.4432791463299135,
+        "transfer": 2.143808370709151
+      },
+      "maximum_absolute_error_c": {
+        "additive": 35.63830939073577,
+        "geometry": 36.431966423303976,
+        "persistence": 10.314637725414368,
+        "transfer": 32.44410978153847
+      },
+      "qualified_target_means": 39,
+      "target_means": 42,
+      "transfer_envelopes_available": 42,
+      "transfer_outside_all": 20,
+      "transfer_outside_qualified": 17
+    },
+    "case_5": {
+      "geometry_outside_all": 35,
+      "mae_c": {
+        "additive": 0.37553531667349827,
+        "geometry": 0.7576066942609355,
+        "persistence": 3.5000767459550106,
+        "transfer": 0.3329244291949543
+      },
+      "maximum_absolute_error_c": {
+        "additive": 1.6863529086596696,
+        "geometry": 1.8054650356752733,
+        "persistence": 6.551063345856353,
+        "transfer": 1.8391989257216093
+      },
+      "qualified_target_means": 42,
+      "target_means": 42,
+      "transfer_envelopes_available": 42,
+      "transfer_outside_all": 3,
+      "transfer_outside_qualified": 3
+    }
+  },
+  "no_target_refitting": true,
+  "prediction_commit": "0db6966634e183fe9f38e3d64fdbbd7bd18bf249",
+  "prediction_sha256": "6add81e0b7663391a022761d71ab1011d2b6a381f7b87273d8b630acbdc0d86d",
+  "records": [
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.002519839666661028,
+        "max_c": 19.047474,
+        "mean_c": 19.000579245359116,
+        "min_c": 18.95008133,
+        "position": 1,
+        "sensor": "d"
+      },
+      "position": 1,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.003721111691815802,
+      "residual_c": {
+        "additive": 0.9379222133769822,
+        "geometry": 1.1302051011767738,
+        "persistence": 5.6129966454143645,
+        "transfer": 0.7360008593142631
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.0085469653333341,
+        "max_c": 13.37958455,
+        "mean_c": 13.318381041878451,
+        "min_c": 13.26396831,
+        "position": 1,
+        "sensor": "e"
+      },
+      "position": 1,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0067525929604613805,
+      "residual_c": {
+        "additive": 1.450354003522035,
+        "geometry": 1.8065490063830403,
+        "persistence": 2.868422812320441,
+        "transfer": 1.0763041953927104
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.009178018000000954,
+        "max_c": 6.61477965,
+        "mean_c": 6.553999876906077,
+        "min_c": 6.50284251,
+        "position": 1,
+        "sensor": "f"
+      },
+      "position": 1,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.004933557573665205,
+      "residual_c": {
+        "additive": 1.1718607977002469,
+        "geometry": 1.400709950097598,
+        "persistence": -0.6670760167403316,
+        "transfer": 0.9315402405412989
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.013475373166667026,
+        "max_c": 20.45193588,
+        "mean_c": 20.418114628563536,
+        "min_c": 20.38348393,
+        "position": 2,
+        "sensor": "d"
+      },
+      "position": 2,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.007286614873273189,
+      "residual_c": {
+        "additive": 1.5307283917341223,
+        "geometry": 1.9940015734047272,
+        "persistence": 6.764700599502762,
+        "transfer": 1.0616198894195215
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.011034200333334354,
+        "max_c": 14.82437824,
+        "mean_c": 14.76780900447514,
+        "min_c": 14.7076261,
+        "position": 2,
+        "sensor": "e"
+      },
+      "position": 2,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.011482268498746508,
+      "residual_c": {
+        "additive": 2.3301566076754217,
+        "geometry": 2.969412510667608,
+        "persistence": 4.2305369761325995,
+        "transfer": 1.6828487316463399
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.005083715333331185,
+        "max_c": 8.15958273,
+        "mean_c": 8.118990368729282,
+        "min_c": 8.08686114,
+        "position": 2,
+        "sensor": "f"
+      },
+      "position": 2,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.011382896738100109,
+      "residual_c": {
+        "additive": 2.297883092235498,
+        "geometry": 2.9463104362730297,
+        "persistence": 0.8646716213812145,
+        "transfer": 1.6412882530428377
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": 0.041228092333332356,
+        "max_c": 15.9985512,
+        "mean_c": 15.932107934198896,
+        "min_c": 15.87732714,
+        "position": 3,
+        "sensor": "d"
+      },
+      "position": 3,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.00347631671386655,
+      "residual_c": {
+        "additive": 1.6036118227008505,
+        "geometry": 1.282081375787719,
+        "persistence": 4.9611003087845305,
+        "transfer": 2.003085833824496
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": 0.0795877261666682,
+        "max_c": 8.09222397,
+        "mean_c": 7.996171345414365,
+        "min_c": 7.90862365,
+        "position": 3,
+        "sensor": "e"
+      },
+      "position": 3,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.003885132333500095,
+      "residual_c": {
+        "additive": 2.0942888213033264,
+        "geometry": 1.397574364263634,
+        "persistence": 0.9908660985082864,
+        "transfer": 2.9598967953956645
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": 0.13176746799999994,
+        "max_c": -0.87017323,
+        "mean_c": -0.9928677154143648,
+        "min_c": -1.1226946,
+        "position": 3,
+        "sensor": "f"
+      },
+      "position": 3,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0005662347358403889,
+      "residual_c": {
+        "additive": 1.1732338816737642,
+        "geometry": 0.45996488069535313,
+        "persistence": -4.39110005,
+        "transfer": 2.059409457164385
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.025611933499998685,
+        "max_c": 19.66951029,
+        "mean_c": 19.63749602121547,
+        "min_c": 19.60193539,
+        "position": 4,
+        "sensor": "d"
+      },
+      "position": 4,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.006467447780783556,
+      "residual_c": {
+        "additive": 1.2190014498836597,
+        "geometry": 1.8505084182919163,
+        "persistence": 5.372602205856355,
+        "transfer": 0.500400024960328
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.028113591666665272,
+        "max_c": 13.8192368,
+        "mean_c": 13.784845372596685,
+        "min_c": 13.7482171,
+        "position": 4,
+        "sensor": "e"
+      },
+      "position": 4,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.010554995708572604,
+      "residual_c": {
+        "additive": 1.8730790387806362,
+        "geometry": 2.830458730537151,
+        "persistence": 2.3899963916574603,
+        "transfer": 0.7836620646133241
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.028483485499998906,
+        "max_c": 6.9095318,
+        "mean_c": 6.879837025580112,
+        "min_c": 6.84494956,
+        "position": 4,
+        "sensor": "f"
+      },
+      "position": 4,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.010252971557423171,
+      "residual_c": {
+        "additive": 1.8392758763516435,
+        "geometry": 2.758051344384598,
+        "persistence": -1.2804901738674035,
+        "transfer": 0.7937872379962583
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.04160960600000152,
+        "max_c": 22.33403149,
+        "mean_c": 22.29685821640884,
+        "min_c": 22.24557101,
+        "position": 5,
+        "sensor": "d"
+      },
+      "position": 5,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.00804328490328702,
+      "residual_c": {
+        "additive": 0.9561665388266327,
+        "geometry": 1.9132862440825562,
+        "persistence": 6.407968134143644,
+        "transfer": -0.09264107183513914
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.057213711500001097,
+        "max_c": 17.84184042,
+        "mean_c": 17.791853280994474,
+        "min_c": 17.73240489,
+        "position": 5,
+        "sensor": "e"
+      },
+      "position": 5,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.01408289492651757,
+      "residual_c": {
+        "additive": 1.7652036799359898,
+        "geometry": 3.124684309333121,
+        "persistence": 4.228159704861877,
+        "transfer": 0.27549071840239137
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.0704668071666692,
+        "max_c": 11.54427244,
+        "mean_c": 11.482145930331493,
+        "min_c": 11.41212382,
+        "position": 5,
+        "sensor": "f"
+      },
+      "position": 5,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.011124885497690112,
+      "residual_c": {
+        "additive": 1.586202899056394,
+        "geometry": 2.531379959335071,
+        "persistence": 1.0603133535911606,
+        "transfer": 0.5504819868240727
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.052259256666665976,
+        "max_c": 19.7450845,
+        "mean_c": 19.701165293093922,
+        "min_c": 19.65190183,
+        "position": 6,
+        "sensor": "d"
+      },
+      "position": 6,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.006319522359495898,
+      "residual_c": {
+        "additive": 1.3972300801718234,
+        "geometry": 1.8406028158383378,
+        "persistence": 6.152890686795578,
+        "transfer": 0.9140307677511252
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.06724211350000431,
+        "max_c": 14.26476525,
+        "mean_c": 14.208045472320444,
+        "min_c": 14.14819541,
+        "position": 6,
+        "sensor": "e"
+      },
+      "position": 6,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0122868532160359,
+      "residual_c": {
+        "additive": 2.5527496051237595,
+        "geometry": 3.295346734389465,
+        "persistence": 3.6851593392817694,
+        "transfer": 1.7434476490001707
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.07719386283333485,
+        "max_c": 7.09843448,
+        "mean_c": 7.040312461602209,
+        "min_c": 6.96891461,
+        "position": 6,
+        "sensor": "f"
+      },
+      "position": 6,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.011384953802083436,
+      "residual_c": {
+        "additive": 2.347124501954144,
+        "geometry": 3.0754774629958352,
+        "persistence": -0.14371663635359244,
+        "transfer": 1.5533462164087695
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.007918890833337855,
+        "max_c": 17.27809754,
+        "mean_c": 17.250815435248622,
+        "min_c": 17.22247406,
+        "position": 7,
+        "sensor": "d"
+      },
+      "position": 7,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.002632075228721619,
+      "residual_c": {
+        "additive": 0.7113516259610115,
+        "geometry": 0.9506572068773629,
+        "persistence": 3.914338863425419,
+        "transfer": 0.4213860236280773
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.0020455001666661587,
+        "max_c": 10.54328977,
+        "mean_c": 10.517532701657458,
+        "min_c": 10.49339454,
+        "position": 7,
+        "sensor": "e"
+      },
+      "position": 7,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.003894220174263329,
+      "residual_c": {
+        "additive": 1.056897609112129,
+        "geometry": 1.2626633744744087,
+        "persistence": 0.4000649574585644,
+        "transfer": 0.8075720653270562
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": 0.003627049333333243,
+        "max_c": 3.87493601,
+        "mean_c": 3.8384951672375696,
+        "min_c": 3.82130726,
+        "position": 7,
+        "sensor": "f"
+      },
+      "position": 7,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.005375800858788091,
+      "residual_c": {
+        "additive": 1.0496556674013675,
+        "geometry": 1.6289147412427294,
+        "persistence": -3.4669968733701655,
+        "transfer": 0.3477697957469852
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.01992911766666694,
+        "max_c": 18.72776652,
+        "mean_c": 18.699093086740326,
+        "min_c": 18.66778636,
+        "position": 9,
+        "sensor": "d"
+      },
+      "position": 9,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.006614539790431036,
+      "residual_c": {
+        "additive": 1.5125564269902831,
+        "geometry": 2.0111434978148743,
+        "persistence": 5.2708645499999935,
+        "transfer": 0.9618641625479469
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.008067860833335772,
+        "max_c": 12.7465663,
+        "mean_c": 12.722213697845305,
+        "min_c": 12.69351379,
+        "position": 9,
+        "sensor": "e"
+      },
+      "position": 9,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.012010512225858878,
+      "residual_c": {
+        "additive": 2.328578789098499,
+        "geometry": 3.407050611508261,
+        "persistence": 2.217434462320444,
+        "transfer": 1.1374005079652818
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.004844022999999531,
+        "max_c": 4.78883087,
+        "mean_c": 4.754387065690608,
+        "min_c": 4.71975746,
+        "position": 9,
+        "sensor": "f"
+      },
+      "position": 9,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.009710344753671078,
+      "residual_c": {
+        "additive": 2.2563039198807404,
+        "geometry": 2.812010481941976,
+        "persistence": -1.7242928566850821,
+        "transfer": 1.642522851469065
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.031097420166666723,
+        "max_c": 15.82275062,
+        "mean_c": 15.78631693646409,
+        "min_c": 15.7513889,
+        "position": 10,
+        "sensor": "d"
+      },
+      "position": 10,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.002634193423935082,
+      "residual_c": {
+        "additive": 0.7027770535371314,
+        "geometry": 0.9576321328235231,
+        "persistence": 2.760363567182319,
+        "transfer": 0.38366196220344584
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.03687470883333077,
+        "max_c": 8.62158796,
+        "mean_c": 8.581731089005526,
+        "min_c": 8.53764,
+        "position": 10,
+        "sensor": "e"
+      },
+      "position": 10,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0022756998766862743,
+      "residual_c": {
+        "additive": 0.760565663720886,
+        "geometry": 0.8681334369652216,
+        "persistence": -1.137683513149172,
+        "transfer": 0.6258753923731746
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.042471368666666565,
+        "max_c": 0.81865456,
+        "mean_c": 0.778450324640884,
+        "min_c": 0.73026485,
+        "position": 10,
+        "sensor": "f"
+      },
+      "position": 10,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": 0.4288635867223245,
+        "geometry": 0.17993982420084254,
+        "persistence": -5.425221280662981,
+        "transfer": 0.7405518192448566
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.025628786499998668,
+        "max_c": 15.64511732,
+        "mean_c": 15.613778998508286,
+        "min_c": 15.57714451,
+        "position": 11,
+        "sensor": "d"
+      },
+      "position": 11,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0019712128697236208,
+      "residual_c": {
+        "additive": 0.5303042337510675,
+        "geometry": 0.823964864857011,
+        "persistence": 2.5118293616574565,
+        "transfer": 0.16319933514784957
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.023945570833333818,
+        "max_c": 8.59183814,
+        "mean_c": 8.561287003756908,
+        "min_c": 8.52475105,
+        "position": 11,
+        "sensor": "e"
+      },
+      "position": 11,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.003938970125793548,
+      "residual_c": {
+        "additive": 0.8745737045264956,
+        "geometry": 1.347011198707622,
+        "persistence": -1.352681899834252,
+        "transfer": 0.2839800054509496
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.024488410000000016,
+        "max_c": 0.38305739,
+        "mean_c": 0.3472386636464089,
+        "min_c": 0.30682525,
+        "position": 11,
+        "sensor": "f"
+      },
+      "position": 11,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.001536825942945661,
+      "residual_c": {
+        "additive": 0.5274476224289915,
+        "geometry": 0.708501187199114,
+        "persistence": -5.9085887141988955,
+        "transfer": 0.3011127191551948
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.026702435666667412,
+        "max_c": 17.06921498,
+        "mean_c": 17.034114713149172,
+        "min_c": 16.99698931,
+        "position": 12,
+        "sensor": "d"
+      },
+      "position": 12,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.004535292443988269,
+      "residual_c": {
+        "additive": 0.928109785466944,
+        "geometry": 1.451212543668806,
+        "persistence": 3.616282338287295,
+        "transfer": 0.31426693464340616
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.029603474166666643,
+        "max_c": 10.50395748,
+        "mean_c": 10.466973669889503,
+        "min_c": 10.42639266,
+        "position": 12,
+        "sensor": "e"
+      },
+      "position": 12,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.00716352331160692,
+      "residual_c": {
+        "additive": 1.421839224068199,
+        "geometry": 2.118347547602406,
+        "persistence": 0.20418849281768026,
+        "transfer": 0.6045109874321906
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.028398810666665497,
+        "max_c": 3.22118551,
+        "mean_c": 3.177314746187845,
+        "min_c": 3.13828239,
+        "position": 12,
+        "sensor": "f"
+      },
+      "position": 12,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.006945338109633409,
+      "residual_c": {
+        "additive": 1.2693076385258113,
+        "geometry": 2.0629646710940204,
+        "persistence": -3.8541663767955816,
+        "transfer": 0.3379787785471784
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.041717480333332446,
+        "max_c": 13.34880406,
+        "mean_c": 13.311146665414364,
+        "min_c": 13.26065713,
+        "position": 13,
+        "sensor": "d"
+      },
+      "position": 13,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0011699540287449309,
+      "residual_c": {
+        "additive": 0.0016703547752321413,
+        "geometry": 0.628543225375422,
+        "persistence": 0.10937785922651777,
+        "transfer": -0.8399772650189057
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.05404931383333178,
+        "max_c": 5.25114988,
+        "mean_c": 5.196329598121547,
+        "min_c": 5.14151851,
+        "position": 13,
+        "sensor": "e"
+      },
+      "position": 13,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0007728038605783669,
+      "residual_c": {
+        "additive": 0.012935730752547059,
+        "geometry": 0.5170166234731166,
+        "persistence": -4.466252497458564,
+        "transfer": -0.6638497921809456
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.06004047033333482,
+        "max_c": -2.8885704,
+        "mean_c": -2.9418008683977894,
+        "min_c": -3.00165959,
+        "position": 13,
+        "sensor": "f"
+      },
+      "position": 13,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0002926338544052932,
+      "residual_c": {
+        "additive": -0.13258099371212184,
+        "geometry": 0.3821766223442933,
+        "persistence": -9.198664954585633,
+        "transfer": -0.8237012234167209
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.04202377433333204,
+        "max_c": 14.12300826,
+        "mean_c": 14.082992986961326,
+        "min_c": 14.04002947,
+        "position": 14,
+        "sensor": "d"
+      },
+      "position": 14,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.08776693588287898,
+        "geometry": 0.1973220897938539,
+        "persistence": 0.3951475038674044,
+        "transfer": -0.47454089490667073
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.04817574433333327,
+        "max_c": 6.9450485,
+        "mean_c": 6.893507772707184,
+        "min_c": 6.85178736,
+        "position": 14,
+        "sensor": "e"
+      },
+      "position": 14,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0009233575678833564,
+      "residual_c": {
+        "additive": 0.031097205857085974,
+        "geometry": 0.5441658379472827,
+        "persistence": -3.8244559522099424,
+        "transfer": -0.6649716295300196
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.05357762566666667,
+        "max_c": 0.10012147,
+        "mean_c": 0.054965201988950274,
+        "min_c": 0.00928008,
+        "position": 14,
+        "sensor": "f"
+      },
+      "position": 14,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.003562163843769846,
+      "residual_c": {
+        "additive": 0.3364178537848962,
+        "geometry": 1.2419522296366239,
+        "persistence": -7.857602902099448,
+        "transfer": -0.8921005528739937
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.017457332333332687,
+        "max_c": 16.35880359,
+        "mean_c": 16.333913123756904,
+        "min_c": 16.30767902,
+        "position": 15,
+        "sensor": "d"
+      },
+      "position": 15,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0022474707211785194,
+      "residual_c": {
+        "additive": 0.3676849450237274,
+        "geometry": 0.8732110914700488,
+        "persistence": 2.2377593021546947,
+        "transfer": -0.2876998237014554
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.02262557200000259,
+        "max_c": 9.32799998,
+        "mean_c": 9.298266023038673,
+        "min_c": 9.26065272,
+        "position": 15,
+        "sensor": "e"
+      },
+      "position": 15,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0031618027208324666,
+      "residual_c": {
+        "additive": 0.4386005521705183,
+        "geometry": 1.1064088984754292,
+        "persistence": -1.7949045958011052,
+        "transfer": -0.4271734966546088
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 1,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 1,
+        "drift_c": -0.03332245483333418,
+        "max_c": 2.37207964,
+        "mean_c": 2.338442364640884,
+        "min_c": 2.30102975,
+        "position": 15,
+        "sensor": "f"
+      },
+      "position": 15,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.004373426536939455,
+      "residual_c": {
+        "additive": 0.5496547342896796,
+        "geometry": 1.4154301478012514,
+        "persistence": -5.787429918784531,
+        "transfer": -0.5727719159260984
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.058729370333333364,
+        "max_c": 15.58937978,
+        "mean_c": 15.51664581005525,
+        "min_c": 15.45119831,
+        "position": 1,
+        "sensor": "d"
+      },
+      "position": 1,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.005298096239029673,
+      "residual_c": {
+        "additive": 1.125800297838973,
+        "geometry": 1.3180831856387663,
+        "persistence": 2.1290632101104983,
+        "transfer": 0.9785579780308389
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.0831853169999981,
+        "max_c": 10.96822078,
+        "mean_c": 10.877248524364642,
+        "min_c": 10.79992624,
+        "position": 1,
+        "sensor": "e"
+      },
+      "position": 1,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.009654712223449534,
+      "residual_c": {
+        "additive": 1.7990563427950441,
+        "geometry": 2.155251345656046,
+        "persistence": 0.4272902948066317,
+        "transfer": 1.5262968730083895
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.09738720383333366,
+        "max_c": 5.1411581,
+        "mean_c": 5.047586266187845,
+        "min_c": 4.96715469,
+        "position": 1,
+        "sensor": "f"
+      },
+      "position": 1,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.007817199414531914,
+      "residual_c": {
+        "additive": 1.5733053807897877,
+        "geometry": 1.8021545331871378,
+        "persistence": -2.1734896274585633,
+        "transfer": 1.3980621208685182
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.05585378483333159,
+        "max_c": 16.46233322,
+        "mean_c": 16.402085076243093,
+        "min_c": 16.34927944,
+        "position": 2,
+        "sensor": "d"
+      },
+      "position": 2,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0077174763996839145,
+      "residual_c": {
+        "additive": 1.3823243268800294,
+        "geometry": 1.845597508550636,
+        "persistence": 2.7486710471823184,
+        "transfer": 1.0423917027737772
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.0855460706666662,
+        "max_c": 11.76979521,
+        "mean_c": 11.68728695801105,
+        "min_c": 11.5996101,
+        "position": 2,
+        "sensor": "e"
+      },
+      "position": 2,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.012675549730268696,
+      "residual_c": {
+        "additive": 2.199306843168644,
+        "geometry": 2.8385627461608287,
+        "persistence": 1.1500149296685098,
+        "transfer": 1.730244645793153
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.07086397316666648,
+        "max_c": 6.01195925,
+        "mean_c": 5.833579925745856,
+        "min_c": 5.66388584,
+        "position": 2,
+        "sensor": "f"
+      },
+      "position": 2,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.011946823867134084,
+      "residual_c": {
+        "additive": 2.0441917257003412,
+        "geometry": 2.692619069737873,
+        "persistence": -1.4207388216022112,
+        "transfer": 1.5683998661196323
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": 0.0010324278333335712,
+        "max_c": 16.31342354,
+        "mean_c": 16.29510233342541,
+        "min_c": 16.27036834,
+        "position": 3,
+        "sensor": "d"
+      },
+      "position": 3,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.008062164605172532,
+      "residual_c": {
+        "additive": 2.2968037919862656,
+        "geometry": 1.975273345073136,
+        "persistence": 5.324094708011046,
+        "transfer": 2.5056004556457445
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": 0.003415815000000322,
+        "max_c": 11.30767769,
+        "mean_c": 11.283634913922652,
+        "min_c": 11.26143272,
+        "position": 3,
+        "sensor": "e"
+      },
+      "position": 3,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.012444741995713762,
+      "residual_c": {
+        "additive": 3.5826632155599087,
+        "geometry": 2.8859487585202146,
+        "persistence": 4.278329667016574,
+        "transfer": 4.035098297679875
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": 0.017653191000001733,
+        "max_c": 4.83784361,
+        "mean_c": 4.806009663370166,
+        "min_c": 4.77526142,
+        "position": 3,
+        "sensor": "f"
+      },
+      "position": 3,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.009771512161810908,
+      "residual_c": {
+        "additive": 3.043735341895977,
+        "geometry": 2.3304663409175665,
+        "persistence": 1.407777328784531,
+        "transfer": 3.506920676677841
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.06615162466666824,
+        "max_c": 13.95697851,
+        "mean_c": 13.894803284696135,
+        "min_c": 13.82799812,
+        "position": 4,
+        "sensor": "d"
+      },
+      "position": 4,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.004268378384589865,
+      "residual_c": {
+        "additive": 0.5796127890941207,
+        "geometry": 1.2111197575023755,
+        "persistence": -0.3700905306629796,
+        "transfer": 0.00902143275435563
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.09458423916666625,
+        "max_c": 8.65315518,
+        "mean_c": 8.56243724790055,
+        "min_c": 8.47077793,
+        "position": 4,
+        "sensor": "e"
+      },
+      "position": 4,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.007787517479353644,
+      "residual_c": {
+        "additive": 1.0049286600406457,
+        "geometry": 1.9623083517971605,
+        "persistence": -2.8324117330386738,
+        "transfer": 0.13989849540381627
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.09521014833333385,
+        "max_c": 2.56859416,
+        "mean_c": 2.4758399023756903,
+        "min_c": 2.38136025,
+        "position": 4,
+        "sensor": "f"
+      },
+      "position": 4,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.007773263089175275,
+      "residual_c": {
+        "additive": 1.0404901693297157,
+        "geometry": 1.9592656373626696,
+        "persistence": -5.684487297071825,
+        "transfer": 0.21034043749379405
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.0629086026666652,
+        "max_c": 14.93616324,
+        "mean_c": 14.87690690922652,
+        "min_c": 14.82273707,
+        "position": 5,
+        "sensor": "d"
+      },
+      "position": 5,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.005232504859499377,
+      "residual_c": {
+        "additive": 0.4333142763572351,
+        "geometry": 1.3904339816131621,
+        "persistence": -1.0119831730386757,
+        "transfer": -0.6937063150630038
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.09010644683333169,
+        "max_c": 9.91650334,
+        "mean_c": 9.833542309668509,
+        "min_c": 9.75583153,
+        "position": 5,
+        "sensor": "e"
+      },
+      "position": 5,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.009531654353745216,
+      "residual_c": {
+        "additive": 0.926879648786965,
+        "geometry": 2.286360278184098,
+        "persistence": -3.7301512664640875,
+        "transfer": -0.6739260336724033
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.10112056466666619,
+        "max_c": 3.37496385,
+        "mean_c": 3.283208449447514,
+        "min_c": 3.1904689,
+        "position": 5,
+        "sensor": "f"
+      },
+      "position": 5,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.006599532526209575,
+      "residual_c": {
+        "additive": 0.7301402538133708,
+        "geometry": 1.675317314092049,
+        "persistence": -7.138624127292818,
+        "transfer": -0.3828177216859303
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.046457912666664214,
+        "max_c": 16.18977468,
+        "mean_c": 16.138024524088397,
+        "min_c": 16.08843031,
+        "position": 6,
+        "sensor": "d"
+      },
+      "position": 6,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.007829804527684737,
+      "residual_c": {
+        "additive": 1.5663867331401686,
+        "geometry": 2.0097594688066813,
+        "persistence": 2.589749917790053,
+        "transfer": 1.1798000463776486
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.07759081749999908,
+        "max_c": 11.35194288,
+        "mean_c": 11.267446260552486,
+        "min_c": 11.18005691,
+        "position": 6,
+        "sensor": "e"
+      },
+      "position": 6,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.014025102354055024,
+      "residual_c": {
+        "additive": 2.620001875095287,
+        "geometry": 3.36259900436099,
+        "persistence": 0.744560127513811,
+        "transfer": 1.9725146917198195
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.08804344466666691,
+        "max_c": 4.87942854,
+        "mean_c": 4.790654023756906,
+        "min_c": 4.71244237,
+        "position": 6,
+        "sensor": "f"
+      },
+      "position": 6,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.012864779890141658,
+      "residual_c": {
+        "additive": 2.380871605613941,
+        "geometry": 3.1092245666556337,
+        "persistence": -2.3933750741988957,
+        "transfer": 1.7458042337343969
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.08688277950000334,
+        "max_c": 12.33013084,
+        "mean_c": 12.244250609502762,
+        "min_c": 12.16271994,
+        "position": 7,
+        "sensor": "d"
+      },
+      "position": 7,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0014435010941024169,
+      "residual_c": {
+        "additive": 0.3789874521505592,
+        "geometry": 0.618293033066907,
+        "persistence": -1.0922259623204411,
+        "transfer": 0.1461926881816531
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.11774271616666532,
+        "max_c": 6.30860644,
+        "mean_c": 6.192659126243095,
+        "min_c": 6.10139112,
+        "position": 7,
+        "sensor": "e"
+      },
+      "position": 7,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0024987315904295205,
+      "residual_c": {
+        "additive": 0.6452063537357304,
+        "geometry": 0.8509721190980128,
+        "persistence": -3.924808617955799,
+        "transfer": 0.44503888335343156
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.11654719266666658,
+        "max_c": 0.55400654,
+        "mean_c": 0.4301846734254144,
+        "min_c": 0.32735763,
+        "position": 7,
+        "sensor": "f"
+      },
+      "position": 7,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.004865146141730652,
+      "residual_c": {
+        "additive": 0.7935091617297434,
+        "geometry": 1.3727682355711053,
+        "persistence": -6.87530736718232,
+        "transfer": 0.23001006214592462
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.055769510666669575,
+        "max_c": 15.40480202,
+        "mean_c": 15.34568147198895,
+        "min_c": 15.29082782,
+        "position": 9,
+        "sensor": "d"
+      },
+      "position": 9,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0067672152253576675,
+      "residual_c": {
+        "additive": 1.2423324634653312,
+        "geometry": 1.7409195342899224,
+        "persistence": 1.9174529352486172,
+        "transfer": 0.8772769230137936
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.09331406733333303,
+        "max_c": 10.57678504,
+        "mean_c": 10.490882887513813,
+        "min_c": 10.40520693,
+        "position": 9,
+        "sensor": "e"
+      },
+      "position": 9,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.01246686717324036,
+      "residual_c": {
+        "additive": 1.8760547210947554,
+        "geometry": 2.9545265435045156,
+        "persistence": -0.013896348011048332,
+        "transfer": 1.086419094682654
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.1386530705000002,
+        "max_c": 3.99629708,
+        "mean_c": 3.879749594254144,
+        "min_c": 3.76652145,
+        "position": 9,
+        "sensor": "f"
+      },
+      "position": 9,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.00991797039979011,
+      "residual_c": {
+        "additive": 1.8560922818733436,
+        "geometry": 2.4117988439345783,
+        "persistence": -2.598930328121546,
+        "transfer": 1.449214985576385
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.10219397633333216,
+        "max_c": 10.89736566,
+        "mean_c": 10.789653636298343,
+        "min_c": 10.69796311,
+        "position": 10,
+        "sensor": "d"
+      },
+      "position": 10,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0010118052023580983,
+      "residual_c": {
+        "additive": 0.2705317809007699,
+        "geometry": 0.5253868601871634,
+        "persistence": -2.2362997329834275,
+        "transfer": 0.013250460568531963
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.1256332888333338,
+        "max_c": 4.44325134,
+        "mean_c": 4.336929693314918,
+        "min_c": 4.23781294,
+        "position": 10,
+        "sensor": "e"
+      },
+      "position": 10,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0005442795468268404,
+      "residual_c": {
+        "additive": 0.31367439653053,
+        "geometry": 0.4212421697748665,
+        "persistence": -5.38248490883978,
+        "transfer": 0.20508256935175506
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.12077641733333433,
+        "max_c": -2.5131466,
+        "mean_c": -2.625505313314917,
+        "min_c": -2.71852627,
+        "position": 10,
+        "sensor": "f"
+      },
+      "position": 10,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": 0.056310178237644504,
+        "geometry": -0.19261358428383746,
+        "persistence": -8.829176918618783,
+        "transfer": 0.30760371518781504
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.11861829100000243,
+        "max_c": 11.71360614,
+        "mean_c": 11.60733113756906,
+        "min_c": 11.50924262,
+        "position": 11,
+        "sensor": "d"
+      },
+      "position": 11,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0017381196342552763,
+      "residual_c": {
+        "additive": 0.40812538238591856,
+        "geometry": 0.7017860134918621,
+        "persistence": -1.4946184992817688,
+        "transfer": 0.12714861386387177
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.15729605583333406,
+        "max_c": 5.71093252,
+        "mean_c": 5.572575111657459,
+        "min_c": 5.44629802,
+        "position": 11,
+        "sensor": "e"
+      },
+      "position": 11,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.004131865099863053,
+      "residual_c": {
+        "additive": 0.7826898595648277,
+        "geometry": 1.255127353745956,
+        "persistence": -4.341393791933701,
+        "transfer": 0.3306580024386552
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.16084912900000026,
+        "max_c": -1.36399992,
+        "mean_c": -1.5025840539779005,
+        "min_c": -1.63209487,
+        "position": 11,
+        "sensor": "f"
+      },
+      "position": 11,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.002024843829021646,
+      "residual_c": {
+        "additive": 0.5870119895061712,
+        "geometry": 0.7680655542762937,
+        "persistence": -7.758411431823205,
+        "transfer": 0.41377853506960394
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.06067220833333309,
+        "max_c": 13.14269796,
+        "mean_c": 13.080199622596684,
+        "min_c": 13.02193913,
+        "position": 12,
+        "sensor": "d"
+      },
+      "position": 12,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.020504657858857668,
+      "residual_c": {
+        "additive": 14.270238990525229,
+        "geometry": 14.79334174872709,
+        "persistence": -0.3376327522651934,
+        "transfer": 11.627381352160528
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.09012932400000206,
+        "max_c": 7.49690745,
+        "mean_c": 7.404231990441989,
+        "min_c": 7.3168708,
+        "position": 12,
+        "sensor": "e"
+      },
+      "position": 12,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.04097450330009248,
+      "residual_c": {
+        "additive": 28.56556865430963,
+        "geometry": 29.262076977843837,
+        "persistence": -2.858553186629834,
+        "transfer": 25.046618860650494
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.08891726750000029,
+        "max_c": 1.21918244,
+        "mean_c": 1.127853289281768,
+        "min_c": 1.04248686,
+        "position": 12,
+        "sensor": "f"
+      },
+      "position": 12,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.06059490878758369,
+      "residual_c": {
+        "additive": 42.33674410538685,
+        "geometry": 43.13040113795506,
+        "persistence": -5.903627833701658,
+        "transfer": 38.32697256838546
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.07515597799999973,
+        "max_c": 8.92339072,
+        "mean_c": 8.857701910662984,
+        "min_c": 8.7875687,
+        "position": 13,
+        "sensor": "d"
+      },
+      "position": 13,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0003742556884358067,
+      "residual_c": {
+        "additive": -0.23454181902085836,
+        "geometry": 0.39233105157933146,
+        "persistence": -4.344066895524863,
+        "transfer": -0.89780545155309
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.0889491495000001,
+        "max_c": 1.70544259,
+        "mean_c": 1.6308772571823202,
+        "min_c": 1.56103836,
+        "position": 13,
+        "sensor": "e"
+      },
+      "position": 13,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.3074589997339827,
+        "geometry": 0.19662189298658772,
+        "persistence": -8.031704838397792,
+        "transfer": -0.8408024249739774
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.06336276033333288,
+        "max_c": -5.22315228,
+        "mean_c": -5.279510663314917,
+        "min_c": -5.34309119,
+        "position": 13,
+        "sensor": "f"
+      },
+      "position": 13,
+      "qualified": false,
+      "required_equal_position_allowance_m": 7.032451971692963e-05,
+      "residual_c": {
+        "additive": -0.19740814867914303,
+        "geometry": 0.3173494673772721,
+        "persistence": -11.53637474950276,
+        "transfer": -0.7420480945302383
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.06529674366666605,
+        "max_c": 9.12061738,
+        "mean_c": 9.049300144640885,
+        "min_c": 8.98833789,
+        "position": 14,
+        "sensor": "d"
+      },
+      "position": 14,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.552831703126774,
+        "geometry": -0.26774267745004465,
+        "persistence": -4.638545338453037,
+        "transfer": -0.866983104320953
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.07814249300000009,
+        "max_c": 2.55681387,
+        "mean_c": 2.4864240188950277,
+        "min_c": 2.41455567,
+        "position": 14,
+        "sensor": "e"
+      },
+      "position": 14,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.6219702290826752,
+        "geometry": -0.10890159699248025,
+        "persistence": -8.2315397060221,
+        "transfer": -1.1873417978314555
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.06592367500000096,
+        "max_c": -3.21704997,
+        "mean_c": -3.283948403149172,
+        "min_c": -3.34473435,
+        "position": 14,
+        "sensor": "f"
+      },
+      "position": 14,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0022999525805674484,
+      "residual_c": {
+        "additive": -0.06309118868498453,
+        "geometry": 0.8424431871667433,
+        "persistence": -11.19651650723757,
+        "transfer": -1.0609370101017928
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.03776845883333202,
+        "max_c": 9.57262973,
+        "mean_c": 9.503477259723756,
+        "min_c": 9.44087839,
+        "position": 15,
+        "sensor": "d"
+      },
+      "position": 15,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.5392076066186338,
+        "geometry": -0.033681460172314104,
+        "persistence": -4.592676561878454,
+        "transfer": -1.1067673276034586
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.053117544500000946,
+        "max_c": 2.7245626,
+        "mean_c": 2.6703583340883976,
+        "min_c": 2.62275359,
+        "position": 15,
+        "sensor": "e"
+      },
+      "position": 15,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.8156653221656449,
+        "geometry": -0.1478569758607322,
+        "persistence": -8.42281228475138,
+        "transfer": -1.56542103977698
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 2,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 2,
+        "drift_c": -0.03628077149999953,
+        "max_c": -3.41814545,
+        "mean_c": -3.4653797811602214,
+        "min_c": -3.49948915,
+        "position": 15,
+        "sensor": "f"
+      },
+      "position": 15,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0005741121559620024,
+      "residual_c": {
+        "additive": -0.43042709467398144,
+        "geometry": 0.4353483188375904,
+        "persistence": -11.591252064585635,
+        "transfer": -1.402442598881593
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.02929056649999673,
+        "max_c": 11.24212863,
+        "mean_c": 11.168542335911601,
+        "min_c": 11.10386073,
+        "position": 1,
+        "sensor": "d"
+      },
+      "position": 1,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.004856331728642968,
+      "residual_c": {
+        "additive": 0.984856472478155,
+        "geometry": 1.1771393602779465,
+        "persistence": -2.2190402640331506,
+        "transfer": 0.8580084608629246
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.03440290233333432,
+        "max_c": 6.80931681,
+        "mean_c": 6.737362407955802,
+        "min_c": 6.67154668,
+        "position": 1,
+        "sensor": "e"
+      },
+      "position": 1,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.008822853180104655,
+      "residual_c": {
+        "additive": 1.5373682515968543,
+        "geometry": 1.8935632544578578,
+        "persistence": -3.712595821602209,
+        "transfer": 1.3023882781982712
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.03773337916666697,
+        "max_c": 1.25217753,
+        "mean_c": 1.1841103127624308,
+        "min_c": 1.11570685,
+        "position": 1,
+        "sensor": "f"
+      },
+      "position": 1,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.006576958549980091,
+      "residual_c": {
+        "additive": 1.2590658290028476,
+        "geometry": 1.487914981400199,
+        "persistence": -6.036965580883978,
+        "transfer": 1.108095244601911
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.039132525166662546,
+        "max_c": 11.84942946,
+        "mean_c": 11.768110155193371,
+        "min_c": 11.69493983,
+        "position": 2,
+        "sensor": "d"
+      },
+      "position": 2,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0065701483710932235,
+      "residual_c": {
+        "additive": 1.064421610881059,
+        "geometry": 1.527694792551662,
+        "persistence": -1.8853038738674037,
+        "transfer": 0.7782822168274013
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.05345260750000147,
+        "max_c": 7.26169613,
+        "mean_c": 7.154930930386741,
+        "min_c": 7.05655515,
+        "position": 2,
+        "sensor": "e"
+      },
+      "position": 2,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.010382194855847722,
+      "residual_c": {
+        "additive": 1.6007560784510941,
+        "geometry": 2.2400119814432795,
+        "persistence": -3.3823410979557993,
+        "transfer": 1.2059214453134794
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.05201526583333327,
+        "max_c": 1.82361839,
+        "mean_c": 1.6812071695580109,
+        "min_c": 1.52982622,
+        "position": 2,
+        "sensor": "f"
+      },
+      "position": 2,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.00958893934217345,
+      "residual_c": {
+        "additive": 1.4433572902752685,
+        "geometry": 2.0917846343127993,
+        "persistence": -5.573111577790057,
+        "transfer": 1.0428579420469806
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": 0.02988593199999734,
+        "max_c": 12.31516728,
+        "mean_c": 12.269818851823203,
+        "min_c": 12.22397059,
+        "position": 3,
+        "sensor": "d"
+      },
+      "position": 3,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.007682043643210321,
+      "residual_c": {
+        "additive": 2.0564878658157024,
+        "geometry": 1.734957418902571,
+        "persistence": 1.2988112264088372,
+        "transfer": 2.2116869499300265
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": 0.05048784133333051,
+        "max_c": 7.72523492,
+        "mean_c": 7.667344789502762,
+        "min_c": 7.60031568,
+        "position": 3,
+        "sensor": "e"
+      },
+      "position": 3,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.011542701633655034,
+      "residual_c": {
+        "additive": 3.1528184981865275,
+        "geometry": 2.4561040411468333,
+        "persistence": 0.6620395425966832,
+        "transfer": 3.4891146302009926
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": 0.0684061703333334,
+        "max_c": 1.87972943,
+        "mean_c": 1.8121909730939227,
+        "min_c": 1.7451909,
+        "position": 3,
+        "sensor": "f"
+      },
+      "position": 3,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.00869713934528992,
+      "residual_c": {
+        "additive": 2.6378399102811114,
+        "geometry": 1.9245709093027001,
+        "persistence": -1.5860413614917126,
+        "transfer": 2.982126732079032
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.03251206016667041,
+        "max_c": 9.08076795,
+        "mean_c": 9.018254309834253,
+        "min_c": 8.94120565,
+        "position": 4,
+        "sensor": "d"
+      },
+      "position": 4,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0023469509362475396,
+      "residual_c": {
+        "additive": 0.12923412225667796,
+        "geometry": 0.760741090664931,
+        "persistence": -5.246639505524861,
+        "transfer": -0.3448139649232598
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.04684136166666608,
+        "max_c": 4.00025615,
+        "mean_c": 3.9022588203314914,
+        "min_c": 3.8108675,
+        "position": 4,
+        "sensor": "e"
+      },
+      "position": 4,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0047867825527450215,
+      "residual_c": {
+        "additive": 0.282336337268724,
+        "geometry": 1.2397160290252387,
+        "persistence": -7.492590160607733,
+        "transfer": -0.4363319186430523
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.05138089599999951,
+        "max_c": -1.65027831,
+        "mean_c": -1.7492901081767955,
+        "min_c": -1.84384154,
+        "position": 4,
+        "sensor": "f"
+      },
+      "position": 4,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.004498579551642741,
+      "residual_c": {
+        "additive": 0.2643620603470682,
+        "geometry": 1.183137528380023,
+        "persistence": -9.90961730762431,
+        "transfer": -0.4253274838026726
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.022163043999999132,
+        "max_c": 10.0270154,
+        "mean_c": 9.98813093320442,
+        "min_c": 9.93972447,
+        "position": 5,
+        "sensor": "d"
+      },
+      "position": 5,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.003938659688191991,
+      "residual_c": {
+        "additive": 0.10066140343368524,
+        "geometry": 1.0577811086896123,
+        "persistence": -5.900759149060775,
+        "transfer": -0.8663405581299237
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.03777177116666497,
+        "max_c": 5.17608743,
+        "mean_c": 5.115937881767956,
+        "min_c": 5.05922242,
+        "position": 5,
+        "sensor": "e"
+      },
+      "position": 5,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0071148423684834535,
+      "residual_c": {
+        "additive": 0.30938430562245944,
+        "geometry": 1.6688649350195925,
+        "persistence": -8.447755694364641,
+        "transfer": -1.064132954669704
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.03644630233333335,
+        "max_c": -0.93124543,
+        "mean_c": -0.9923400172375693,
+        "min_c": -1.04772184,
+        "position": 5,
+        "sensor": "f"
+      },
+      "position": 5,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.00386632337110438,
+      "residual_c": {
+        "additive": 0.09868685350183781,
+        "geometry": 1.0438639137805148,
+        "persistence": -11.414172593977902,
+        "transfer": -0.8562491553331483
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.00373815083333362,
+        "max_c": 11.39427799,
+        "mean_c": 11.351236415966852,
+        "min_c": 11.31369375,
+        "position": 6,
+        "sensor": "d"
+      },
+      "position": 6,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0064074043803513635,
+      "residual_c": {
+        "additive": 1.147263332205318,
+        "geometry": 1.5906360678718325,
+        "persistence": -2.197038190331492,
+        "transfer": 0.8250492869696142
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.013827916833331066,
+        "max_c": 6.76144937,
+        "mean_c": 6.696933694143648,
+        "min_c": 6.63942438,
+        "position": 6,
+        "sensor": "e"
+      },
+      "position": 6,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.011800968422408825,
+      "residual_c": {
+        "additive": 1.9344583174738963,
+        "geometry": 2.677055446739601,
+        "persistence": -3.825952438895027,
+        "transfer": 1.3947877293818536
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.00633682416666681,
+        "max_c": 0.70162656,
+        "mean_c": 0.6489970545303867,
+        "min_c": 0.58399759,
+        "position": 6,
+        "sensor": "f"
+      },
+      "position": 6,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.010275791936643849,
+      "residual_c": {
+        "additive": 1.6414879467756218,
+        "geometry": 2.3698409078173137,
+        "persistence": -6.5350320434254145,
+        "transfer": 1.1121690801478639
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.030825940999998913,
+        "max_c": 7.91190176,
+        "mean_c": 7.8457121526519344,
+        "min_c": 7.76518083,
+        "position": 7,
+        "sensor": "d"
+      },
+      "position": 7,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.00029588168377671115,
+      "residual_c": {
+        "additive": 0.11946567906929317,
+        "geometry": 0.35877125998564097,
+        "persistence": -5.490764419171269,
+        "transfer": -0.06650508080502959
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.03854792449999955,
+        "max_c": 2.15845962,
+        "mean_c": 2.0916370214917124,
+        "min_c": 2.01246461,
+        "position": 7,
+        "sensor": "e"
+      },
+      "position": 7,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": 0.059912443228512746,
+        "geometry": 0.2656782085907943,
+        "persistence": -8.025830722707182,
+        "transfer": -0.09999362997719397
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.03650810600000032,
+        "max_c": -2.85382297,
+        "mean_c": -2.9257620115469614,
+        "min_c": -3.00044861,
+        "position": 7,
+        "sensor": "f"
+      },
+      "position": 7,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.003067302728022122,
+      "residual_c": {
+        "additive": 0.3300021814761358,
+        "geometry": 0.9092612553174977,
+        "persistence": -10.231254052154696,
+        "transfer": -0.12015551945950831
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.011155556000000288,
+        "max_c": 10.7981149,
+        "mean_c": 10.749320580276242,
+        "min_c": 10.68799691,
+        "position": 9,
+        "sensor": "d"
+      },
+      "position": 9,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.005423974479019928,
+      "residual_c": {
+        "additive": 0.8616687540063754,
+        "geometry": 1.3602558248309684,
+        "persistence": -2.6789079564640907,
+        "transfer": 0.5673942851313694
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.011384315666667533,
+        "max_c": 6.28085708,
+        "mean_c": 6.232698052209944,
+        "min_c": 6.1812416,
+        "position": 9,
+        "sensor": "e"
+      },
+      "position": 9,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.010818187413427825,
+      "residual_c": {
+        "additive": 1.3362221651018586,
+        "geometry": 2.414693987511621,
+        "persistence": -4.272081183314917,
+        "transfer": 0.6996899698096435
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.013363886166666672,
+        "max_c": 0.02300137,
+        "mean_c": -0.035814219060773485,
+        "min_c": -0.09200849,
+        "position": 9,
+        "sensor": "f"
+      },
+      "position": 9,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.007250218735947449,
+      "residual_c": {
+        "additive": 1.1615358449266207,
+        "geometry": 1.7172424069878558,
+        "persistence": -6.514494141436463,
+        "transfer": 0.8335484923254597
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.009686448500000111,
+        "max_c": 6.7102052,
+        "mean_c": 6.64986747801105,
+        "min_c": 6.57873437,
+        "position": 10,
+        "sensor": "d"
+      },
+      "position": 10,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.09629692082945773,
+        "geometry": 0.15855815845693755,
+        "persistence": -6.376085891270721,
+        "transfer": -0.30038217579563575
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.01987471750000014,
+        "max_c": 0.6606532,
+        "mean_c": 0.5989353885082873,
+        "min_c": 0.53437976,
+        "position": 10,
+        "sensor": "e"
+      },
+      "position": 10,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.31079505044247435,
+        "geometry": -0.2032272771981387,
+        "persistence": -9.12047921364641,
+        "transfer": -0.39693418681041903
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.017146093666665863,
+        "max_c": -5.60411742,
+        "mean_c": -5.663961514254143,
+        "min_c": -5.72224339,
+        "position": 10,
+        "sensor": "f"
+      },
+      "position": 10,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.00238943734822221,
+      "residual_c": {
+        "additive": -0.528053763591398,
+        "geometry": -0.77697752611288,
+        "persistence": -11.867633119558008,
+        "transfer": -0.32871824442661346
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.053203413666665256,
+        "max_c": 7.10240376,
+        "mean_c": 7.031824313535911,
+        "min_c": 6.94740157,
+        "position": 11,
+        "sensor": "d"
+      },
+      "position": 11,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.058263315044905006,
+        "geometry": 0.23539731606103853,
+        "persistence": -6.070125323314918,
+        "transfer": -0.28412203588334517
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.06968683166666678,
+        "max_c": 1.43893931,
+        "mean_c": 1.3591618346961325,
+        "min_c": 1.26754206,
+        "position": 11,
+        "sensor": "e"
+      },
+      "position": 11,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0010474979913627544,
+      "residual_c": {
+        "additive": 0.046477843008735586,
+        "geometry": 0.5189153371898638,
+        "persistence": -8.554807068895027,
+        "transfer": -0.3168807989379583
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.07758491766666697,
+        "max_c": -4.90489193,
+        "mean_c": -4.990172786685083,
+        "min_c": -5.08303058,
+        "position": 11,
+        "sensor": "f"
+      },
+      "position": 11,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.05529234899286983,
+        "geometry": 0.12576121577725274,
+        "persistence": -11.246000164530386,
+        "transfer": -0.19454331494024402
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.033862081166667224,
+        "max_c": 8.44555764,
+        "mean_c": 8.391299294198896,
+        "min_c": 8.32738398,
+        "position": 12,
+        "sensor": "d"
+      },
+      "position": 12,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.02037328291075979,
+      "residual_c": {
+        "additive": 13.681101880346104,
+        "geometry": 14.204204638547965,
+        "persistence": -5.026533080662981,
+        "transfer": 11.147351269080437
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.04598211216666703,
+        "max_c": 2.91291531,
+        "mean_c": 2.852869416353591,
+        "min_c": 2.76754078,
+        "position": 12,
+        "sensor": "e"
+      },
+      "position": 12,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.040758039952531085,
+      "residual_c": {
+        "additive": 27.41973173205394,
+        "geometry": 28.116240055588147,
+        "persistence": -7.409915760718232,
+        "transfer": 24.04605731945334
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.050354715833333064,
+        "max_c": -2.62278825,
+        "mean_c": -2.6911742976243094,
+        "min_c": -2.76820024,
+        "position": 12,
+        "sensor": "f"
+      },
+      "position": 12,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.06113457126153181,
+      "residual_c": {
+        "additive": 41.22900460392752,
+        "geometry": 42.022661636495734,
+        "persistence": -9.722655420607737,
+        "transfer": 37.38477140141593
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.0019791848333348128,
+        "max_c": 5.27170859,
+        "mean_c": 5.225141705469613,
+        "min_c": 5.17139421,
+        "position": 13,
+        "sensor": "d"
+      },
+      "position": 13,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.42131009358945715,
+        "geometry": 0.20556277701073444,
+        "persistence": -7.976627100718233,
+        "transfer": -0.9427863319527097
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.0063730629999996236,
+        "max_c": -1.45283672,
+        "mean_c": -1.5038243158563538,
+        "min_c": -1.55884578,
+        "position": 13,
+        "sensor": "e"
+      },
+      "position": 13,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.7690958238846863,
+        "geometry": -0.2650149311641159,
+        "persistence": -11.166406411436466,
+        "transfer": -1.1884251968643045
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.007425594666667479,
+        "max_c": -7.32295002,
+        "mean_c": -7.3700975580662975,
+        "min_c": -7.42486373,
+        "position": 13,
+        "sensor": "f"
+      },
+      "position": 13,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.3876574762793563,
+        "geometry": 0.1271001397770588,
+        "persistence": -13.626961644254141,
+        "transfer": -0.8158684866440673
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.01926014233333273,
+        "max_c": 4.95466862,
+        "mean_c": 4.8899726472375695,
+        "min_c": 4.82015637,
+        "position": 14,
+        "sensor": "d"
+      },
+      "position": 14,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0017406327537128083,
+      "residual_c": {
+        "additive": -0.9557028422337916,
+        "geometry": -0.6706138165570605,
+        "persistence": -8.797872835856353,
+        "transfer": -1.2115925367328328
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.02461198050000024,
+        "max_c": -1.23633528,
+        "mean_c": -1.2891874467403315,
+        "min_c": -1.36519066,
+        "position": 14,
+        "sensor": "e"
+      },
+      "position": 14,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.00226180781386356,
+      "residual_c": {
+        "additive": -1.2946505306420497,
+        "geometry": -0.7815818985518539,
+        "persistence": -12.007151171657458,
+        "transfer": -1.7551697498962926
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.016167541166665522,
+        "max_c": -6.08751724,
+        "mean_c": -6.141612773259667,
+        "min_c": -6.20765539,
+        "position": 14,
+        "sensor": "f"
+      },
+      "position": 14,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0006302151315313979,
+      "residual_c": {
+        "additive": -0.47134958893980805,
+        "geometry": 0.43418478691191975,
+        "persistence": -14.054180877348065,
+        "transfer": -1.2841375040306806
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.010893196666668103,
+        "max_c": 5.40445719,
+        "mean_c": 5.320165303370166,
+        "min_c": 5.21654646,
+        "position": 15,
+        "sensor": "d"
+      },
+      "position": 15,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0004974177461992275,
+      "residual_c": {
+        "additive": -0.9106182362138853,
+        "geometry": -0.4050920897675647,
+        "persistence": -8.775988518232044,
+        "transfer": -1.3667643850959648
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.014387127,
+        "max_c": -0.97126236,
+        "mean_c": -1.0086584093370166,
+        "min_c": -1.05777731,
+        "position": 15,
+        "sensor": "e"
+      },
+      "position": 15,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0019527572415857202,
+      "residual_c": {
+        "additive": -1.3803777427429582,
+        "geometry": -0.7125693964380464,
+        "persistence": -12.101829028176795,
+        "transfer": -1.982954300849123
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 3,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 3,
+        "drift_c": -0.008581303833332221,
+        "max_c": -6.22808722,
+        "mean_c": -6.259107279281768,
+        "min_c": -6.29804328,
+        "position": 15,
+        "sensor": "f"
+      },
+      "position": 15,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.807447273857667,
+        "geometry": 0.05832813965390482,
+        "persistence": -14.384979562707182,
+        "transfer": -1.588653396322849
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 18.0880453,
+        "mean_c": 18.0880453,
+        "min_c": 18.0880453,
+        "position": 1,
+        "sensor": "d"
+      },
+      "position": 1,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0013174089606382737,
+      "residual_c": {
+        "additive": 0.2691555051076939,
+        "geometry": 0.461438392907489,
+        "persistence": 4.700462700055249,
+        "transfer": 0.24491999045362434
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 14.86473206,
+        "mean_c": 14.864732059999998,
+        "min_c": 14.86473206,
+        "position": 1,
+        "sensor": "e"
+      },
+      "position": 1,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0035137418536858077,
+      "residual_c": {
+        "additive": 0.3743871890773214,
+        "geometry": 0.7305821919383249,
+        "persistence": 4.4147738304419875,
+        "transfer": 0.32949203844627206
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 11.12813902,
+        "mean_c": 11.128139020000004,
+        "min_c": 11.12813902,
+        "position": 1,
+        "sensor": "f"
+      },
+      "position": 1,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0015214836956436307,
+      "residual_c": {
+        "additive": 0.2575970385718165,
+        "geometry": 0.48644619096916664,
+        "persistence": 3.907063126353596,
+        "transfer": 0.22875267779711628
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 18.47507822,
+        "mean_c": 18.475078219999997,
+        "min_c": 18.47507822,
+        "position": 2,
+        "sensor": "d"
+      },
+      "position": 2,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0018379625220187447,
+      "residual_c": {
+        "additive": 0.05607474947476376,
+        "geometry": 0.5193479311453686,
+        "persistence": 4.821664190939222,
+        "transfer": 0.040714938991925465
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 15.25034424,
+        "mean_c": 15.25034424,
+        "min_c": 15.25034424,
+        "position": 2,
+        "sensor": "e"
+      },
+      "position": 2,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.003317237194126901,
+      "residual_c": {
+        "additive": 0.0566330811047262,
+        "geometry": 0.6958889840969142,
+        "persistence": 4.71307221165746,
+        "transfer": 0.03543856799997691
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 11.79760109,
+        "mean_c": 11.79760109,
+        "min_c": 11.79760109,
+        "position": 2,
+        "sensor": "f"
+      },
+      "position": 2,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0028859749993116347,
+      "residual_c": {
+        "additive": -0.004006476989076191,
+        "geometry": 0.6444208670484564,
+        "persistence": 4.543282342651933,
+        "transfer": -0.02550506898698046
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 19.66512504,
+        "mean_c": 19.665125039999996,
+        "min_c": 19.66512504,
+        "position": 3,
+        "sensor": "d"
+      },
+      "position": 3,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0032459067004089715,
+      "residual_c": {
+        "additive": 0.9612057342258957,
+        "geometry": 0.639675287312766,
+        "persistence": 8.69411741458563,
+        "transfer": 0.9067530505316306
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 16.93023906,
+        "mean_c": 16.93023906,
+        "min_c": 16.93023906,
+        "position": 3,
+        "sensor": "e"
+      },
+      "position": 3,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.005611580598661665,
+      "residual_c": {
+        "additive": 1.5839510685815412,
+        "geometry": 0.887236611541848,
+        "persistence": 9.924933813093922,
+        "transfer": 1.4659592195400908
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 13.71287006,
+        "mean_c": 13.712870060000004,
+        "min_c": 13.71287006,
+        "position": 3,
+        "sensor": "f"
+      },
+      "position": 3,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0033666898607842663,
+      "residual_c": {
+        "additive": 1.3655839167493369,
+        "geometry": 0.6523149157709263,
+        "persistence": 10.314637725414368,
+        "transfer": 1.2447884783325947
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 15.62639827,
+        "mean_c": 15.626398269999997,
+        "min_c": 15.62639827,
+        "position": 4,
+        "sensor": "d"
+      },
+      "position": 4,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.3775103645316076,
+        "geometry": 0.25399660387664724,
+        "persistence": 1.3615044546408832,
+        "transfer": -0.6016022330161004
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 11.4821228,
+        "mean_c": 11.482122799999999,
+        "min_c": 11.4821228,
+        "position": 4,
+        "sensor": "e"
+      },
+      "position": 4,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0009196241294743182,
+      "residual_c": {
+        "additive": -0.5176614525054166,
+        "geometry": 0.4397182392510981,
+        "persistence": 0.08727381906077447,
+        "transfer": -0.8573900932131906
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 7.14309846,
+        "mean_c": 7.143098460000001,
+        "min_c": 7.14309846,
+        "position": 4,
+        "sensor": "f"
+      },
+      "position": 4,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0008602069565370065,
+      "residual_c": {
+        "additive": -0.48808446340740375,
+        "geometry": 0.430691004625551,
+        "persistence": -1.0172287394475141,
+        "transfer": -0.8141142962502235
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 16.04465718,
+        "mean_c": 16.044657180000005,
+        "min_c": 16.04465718,
+        "position": 5,
+        "sensor": "d"
+      },
+      "position": 5,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.00043393112215377915,
+      "residual_c": {
+        "additive": -0.5913592536259635,
+        "geometry": 0.36576045162995996,
+        "persistence": 0.15576709773480957,
+        "transfer": -1.149827700808686
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 11.90865221,
+        "mean_c": 11.908652209999994,
+        "min_c": 11.90865221,
+        "position": 5,
+        "sensor": "e"
+      },
+      "position": 5,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.001641824188872882,
+      "residual_c": {
+        "additive": -0.8106690216438377,
+        "geometry": 0.5488116077532954,
+        "persistence": -1.6550413661326022,
+        "transfer": -1.6039104854912392
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 7.27083526,
+        "mean_c": 7.27083526,
+        "min_c": 7.27083526,
+        "position": 5,
+        "sensor": "f"
+      },
+      "position": 5,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.7151262764020263,
+        "geometry": 0.230050783876651,
+        "persistence": -3.150997316740332,
+        "transfer": -1.266626326257775
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 16.49436055,
+        "mean_c": 16.494360550000003,
+        "min_c": 16.49436055,
+        "position": 6,
+        "sensor": "d"
+      },
+      "position": 6,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0017243295371596346,
+      "residual_c": {
+        "additive": 0.12648627424538006,
+        "geometry": 0.5698590099118928,
+        "persistence": 2.946085943701659,
+        "transfer": -0.02496626945854885
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 12.41415598,
+        "mean_c": 12.414155980000002,
+        "min_c": 12.41415598,
+        "position": 6,
+        "sensor": "e"
+      },
+      "position": 6,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0041528737054576745,
+      "residual_c": {
+        "additive": 0.2073310673422224,
+        "geometry": 0.9499281966079263,
+        "persistence": 1.8912698469613272,
+        "transfer": -0.04633411124719444
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 7.80616652,
+        "mean_c": 7.8061665200000006,
+        "min_c": 7.80616652,
+        "position": 6,
+        "sensor": "f"
+      },
+      "position": 6,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.003209008424129864,
+      "residual_c": {
+        "additive": 0.07385953226227038,
+        "geometry": 0.8022124933039629,
+        "persistence": 0.6221374220441991,
+        "transfer": -0.17493995356588332
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 14.8703645,
+        "mean_c": 14.870364499999997,
+        "min_c": 14.8703645,
+        "position": 7,
+        "sensor": "d"
+      },
+      "position": 7,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.2607169006520387,
+        "geometry": -0.02141131973568733,
+        "persistence": 1.533887928176794,
+        "transfer": -0.3554847863760422
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 10.28535609,
+        "mean_c": 10.28535609,
+        "min_c": 10.28535609,
+        "position": 7,
+        "sensor": "e"
+      },
+      "position": 7,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.36523247518606716,
+        "geometry": -0.1594667098237874,
+        "persistence": 0.16788834580110645,
+        "transfer": -0.4467181909102713
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 6.26454056,
+        "mean_c": 6.264540560000001,
+        "min_c": 6.26454056,
+        "position": 7,
+        "sensor": "f"
+      },
+      "position": 7,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.31258829375325536,
+        "geometry": 0.2666707800881065,
+        "persistence": -1.0409514806077338,
+        "transfer": -0.5419818478199288
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 15.36858946,
+        "mean_c": 15.368589460000003,
+        "min_c": 15.36858946,
+        "position": 9,
+        "sensor": "d"
+      },
+      "position": 9,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.000689436377622588,
+      "residual_c": {
+        "additive": -0.08580214434881483,
+        "geometry": 0.41278492647577636,
+        "persistence": 1.9403609232596697,
+        "transfer": -0.2507460275459312
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 11.07962722,
+        "mean_c": 11.079627220000003,
+        "min_c": 11.07962722,
+        "position": 9,
+        "sensor": "e"
+      },
+      "position": 9,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0029716900625531588,
+      "residual_c": {
+        "additive": -0.292332918092578,
+        "geometry": 0.786138904317184,
+        "persistence": 0.5748479844751415,
+        "transfer": -0.6491157965830592
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 6.05240652,
+        "mean_c": 6.052406519999998,
+        "min_c": 6.05240652,
+        "position": 9,
+        "sensor": "f"
+      },
+      "position": 9,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0007410868053732083,
+      "residual_c": {
+        "additive": -0.13447213990264562,
+        "geometry": 0.4212344221585891,
+        "persistence": -0.426273402375692,
+        "transfer": -0.3183124430876134
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 14.11034674,
+        "mean_c": 14.110346740000002,
+        "min_c": 14.11034674,
+        "position": 10,
+        "sensor": "d"
+      },
+      "position": 10,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.2933105135154612,
+        "geometry": -0.038455434229069496,
+        "persistence": 1.0843933707182316,
+        "transfer": -0.399254716868926
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 9.31907684,
+        "mean_c": 9.319076839999997,
+        "min_c": 9.31907684,
+        "position": 10,
+        "sensor": "e"
+      },
+      "position": 10,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0003642423269765818,
+      "residual_c": {
+        "additive": -0.46472907606371905,
+        "geometry": -0.3571613028193834,
+        "persistence": -0.4003377621547006,
+        "transfer": -0.5094453990610361
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 4.5722856,
+        "mean_c": 4.5722856,
+        "min_c": 4.5722856,
+        "position": 10,
+        "sensor": "f"
+      },
+      "position": 10,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0021116684990643703,
+      "residual_c": {
+        "additive": -0.3824647488882098,
+        "geometry": -0.6313885114096909,
+        "persistence": -1.6313860053038658,
+        "transfer": -0.2789862159512646
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 14.07328557,
+        "mean_c": 14.073285570000001,
+        "min_c": 14.07328557,
+        "position": 11,
+        "sensor": "d"
+      },
+      "position": 11,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.3804280829561648,
+        "geometry": -0.08676745185021772,
+        "persistence": 0.971335933149172,
+        "transfer": -0.49609023056646784
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 9.42152917,
+        "mean_c": 9.42152917,
+        "min_c": 9.42152917,
+        "position": 11,
+        "sensor": "e"
+      },
+      "position": 11,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.5181614654146074,
+        "geometry": -0.04572397123348004,
+        "persistence": -0.49243973359116033,
+        "transfer": -0.7042372597178126
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 4.50968144,
+        "mean_c": 4.509681440000001,
+        "min_c": 4.50968144,
+        "position": 11,
+        "sensor": "f"
+      },
+      "position": 11,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.4458253853868621,
+        "geometry": -0.26477182061673865,
+        "persistence": -1.746145937845303,
+        "transfer": -0.5171357413407653
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 14.44977176,
+        "mean_c": 14.449771759999999,
+        "min_c": 14.44977176,
+        "position": 12,
+        "sensor": "d"
+      },
+      "position": 12,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.02005977334637136,
+      "residual_c": {
+        "additive": 11.548354451710033,
+        "geometry": 12.071457209911895,
+        "persistence": 1.0319393851381218,
+        "transfer": 9.443043773101742
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 9.7585561,
+        "mean_c": 9.758556099999998,
+        "min_c": 9.7585561,
+        "position": 12,
+        "sensor": "e"
+      },
+      "position": 12,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.04056545954303789,
+      "residual_c": {
+        "additive": 23.408076253073727,
+        "geometry": 24.104584576607934,
+        "persistence": -0.504229077071825,
+        "transfer": 20.604867154508312
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 5.36159492,
+        "mean_c": 5.361594920000002,
+        "min_c": 5.36159492,
+        "position": 12,
+        "sensor": "f"
+      },
+      "position": 12,
+      "qualified": false,
+      "required_equal_position_allowance_m": 0.061572585626856566,
+      "residual_c": {
+        "additive": 35.63830939073577,
+        "geometry": 36.431966423303976,
+        "persistence": -1.6698862029834247,
+        "transfer": 32.44410978153847
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 13.48050398,
+        "mean_c": 13.48050398,
+        "min_c": 13.48050398,
+        "position": 13,
+        "sensor": "d"
+      },
+      "position": 13,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.6816248580010758,
+        "geometry": -0.05475198740088594,
+        "persistence": 0.2787351738121533,
+        "transfer": -0.9351778329932969
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 8.38259398,
+        "mean_c": 8.38259398,
+        "min_c": 8.38259398,
+        "position": 13,
+        "sensor": "e"
+      },
+      "position": 13,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0003232899080059936,
+      "residual_c": {
+        "additive": -0.858509677654494,
+        "geometry": -0.3544287849339245,
+        "persistence": -1.279988115580112,
+        "transfer": -1.0623966473739905
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 3.67921793,
+        "mean_c": 3.6792179299999996,
+        "min_c": 3.67921793,
+        "position": 13,
+        "sensor": "f"
+      },
+      "position": 13,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.7743292485233781,
+        "geometry": -0.2595716324669626,
+        "persistence": -2.577646156187844,
+        "transfer": -0.9825346615699568
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 13.04472905,
+        "mean_c": 13.044729050000004,
+        "min_c": 13.04472905,
+        "position": 14,
+        "sensor": "d"
+      },
+      "position": 14,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0016497579167337212,
+      "residual_c": {
+        "additive": -0.854472763914611,
+        "geometry": -0.5693837382378799,
+        "persistence": -0.6431164330939172,
+        "transfer": -0.9842583718931053
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 8.27929092,
+        "mean_c": 8.279290919999998,
+        "min_c": 8.27929092,
+        "position": 14,
+        "sensor": "e"
+      },
+      "position": 14,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.002334219210124247,
+      "residual_c": {
+        "additive": -1.1942158842487878,
+        "geometry": -0.681147252158592,
+        "persistence": -2.438672804917129,
+        "transfer": -1.4277882716546308
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 4.33796985,
+        "mean_c": 4.3379698499999995,
+        "min_c": 4.33796985,
+        "position": 14,
+        "sensor": "f"
+      },
+      "position": 14,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.874328081931024,
+        "geometry": 0.03120629392070473,
+        "persistence": -3.5745982540883983,
+        "transfer": -1.286568887189543
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 13.28164492,
+        "mean_c": 13.28164492,
+        "min_c": 13.28164492,
+        "position": 15,
+        "sensor": "d"
+      },
+      "position": 15,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0004151122780005815,
+      "residual_c": {
+        "additive": -0.8734201079881707,
+        "geometry": -0.3678939615418493,
+        "persistence": -0.8145089016022098,
+        "transfer": -1.112358341470701
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 8.28196851,
+        "mean_c": 8.281968509999999,
+        "min_c": 8.28196851,
+        "position": 15,
+        "sensor": "e"
+      },
+      "position": 15,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.002483766937245852,
+      "residual_c": {
+        "additive": -1.374042480666148,
+        "geometry": -0.7062341343612353,
+        "persistence": -2.8112021088397796,
+        "transfer": -1.6896838133502712
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 4,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 4,
+        "drift_c": 0.0,
+        "max_c": 4.06423292,
+        "mean_c": 4.064232920000001,
+        "min_c": 4.06423292,
+        "position": 15,
+        "sensor": "f"
+      },
+      "position": 15,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -1.1284089006921878,
+        "geometry": -0.26263348718061597,
+        "persistence": -4.061639363425413,
+        "transfer": -1.537619876922137
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.015001589833333995,
+        "max_c": 11.61357084,
+        "mean_c": 11.566847604917129,
+        "min_c": 11.52968099,
+        "position": 1,
+        "sensor": "d"
+      },
+      "position": 1,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.001102794055356332,
+      "residual_c": {
+        "additive": 0.26917222441478117,
+        "geometry": 0.4614551122145727,
+        "persistence": -1.8207349950276228,
+        "transfer": 0.20277324567319255
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.019144709999999066,
+        "max_c": 7.72399647,
+        "mean_c": 7.669399502983425,
+        "min_c": 7.61159311,
+        "position": 1,
+        "sensor": "e"
+      },
+      "position": 1,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0029818804223449027,
+      "residual_c": {
+        "additive": 0.38036868358775155,
+        "geometry": 0.7365636864487559,
+        "persistence": -2.7805587265745855,
+        "transfer": 0.25736769949886895
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.02165558133333345,
+        "max_c": 3.34210923,
+        "mean_c": 3.2916826598895033,
+        "min_c": 3.2468059,
+        "position": 1,
+        "sensor": "f"
+      },
+      "position": 1,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0015805657821416255,
+      "residual_c": {
+        "additive": 0.30255436712536943,
+        "geometry": 0.5314035195227214,
+        "persistence": -3.929393233756905,
+        "transfer": 0.2235283540519455
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.016462280833335896,
+        "max_c": 12.12264102,
+        "mean_c": 12.087883371270715,
+        "min_c": 12.06038237,
+        "position": 2,
+        "sensor": "d"
+      },
+      "position": 2,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.003875042109449196,
+      "residual_c": {
+        "additive": 0.43866687970501417,
+        "geometry": 0.9019400613756172,
+        "persistence": -1.5655306577900596,
+        "transfer": 0.27894792911164146
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.024166626333332886,
+        "max_c": 8.06412718,
+        "mean_c": 8.032074127016575,
+        "min_c": 7.99349612,
+        "position": 2,
+        "sensor": "e"
+      },
+      "position": 2,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.006265413231349155,
+      "residual_c": {
+        "additive": 0.6339988690851133,
+        "geometry": 1.2732547720772995,
+        "persistence": -2.5051979013259658,
+        "transfer": 0.41360777798343573
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.028829372666666853,
+        "max_c": 3.5532684,
+        "mean_c": 3.5205935827071824,
+        "min_c": 3.48232766,
+        "position": 2,
+        "sensor": "f"
+      },
+      "position": 2,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.00572236026490005,
+      "residual_c": {
+        "additive": 0.5404708386862009,
+        "geometry": 1.1888981827237326,
+        "persistence": -3.733725164640885,
+        "transfer": 0.31691778398043846
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.0346442671666658,
+        "max_c": 11.86536115,
+        "mean_c": 11.829285441546961,
+        "min_c": 11.79859583,
+        "position": 3,
+        "sensor": "d"
+      },
+      "position": 3,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.003149770733451479,
+      "residual_c": {
+        "additive": 1.1054026928237608,
+        "geometry": 0.7838722459106293,
+        "persistence": 0.8582778161325955,
+        "transfer": 1.1759404112222427
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.05096535533333313,
+        "max_c": 7.70206159,
+        "mean_c": 7.656841239116022,
+        "min_c": 7.61089099,
+        "position": 3,
+        "sensor": "e"
+      },
+      "position": 3,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.004489207698795353,
+      "residual_c": {
+        "additive": 1.6863529086596696,
+        "geometry": 0.9896384516199763,
+        "persistence": 0.6515359922099435,
+        "transfer": 1.8391989257216093
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.05134388949999913,
+        "max_c": 3.00066721,
+        "mean_c": 2.9392175848618782,
+        "min_c": 2.88705599,
+        "position": 3,
+        "sensor": "f"
+      },
+      "position": 3,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0022797941228147153,
+      "residual_c": {
+        "additive": 1.363494206484532,
+        "geometry": 0.6502252055061208,
+        "persistence": -0.4590147497237571,
+        "transfer": 1.5199719783920074
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": true
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.009176141333334442,
+        "max_c": 12.26035837,
+        "mean_c": 12.237002766629836,
+        "min_c": 12.21720237,
+        "position": 4,
+        "sensor": "d"
+      },
+      "position": 4,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0035530813013879394,
+      "residual_c": {
+        "additive": 0.19526781733808818,
+        "geometry": 0.8267747857463448,
+        "persistence": -2.0278910487292787,
+        "transfer": -0.008149845687771773
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.01587236816666504,
+        "max_c": 8.44970603,
+        "mean_c": 8.426330294198895,
+        "min_c": 8.40362573,
+        "position": 4,
+        "sensor": "e"
+      },
+      "position": 4,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.00635020129674816,
+      "residual_c": {
+        "additive": 0.28409213052741755,
+        "geometry": 1.2414718222839332,
+        "persistence": -2.96851868674033,
+        "transfer": -0.02429391945774917
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.020605328500000297,
+        "max_c": 4.20782255,
+        "mean_c": 4.177229083038674,
+        "min_c": 4.1506015,
+        "position": 4,
+        "sensor": "f"
+      },
+      "position": 4,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.006190131624491668,
+      "residual_c": {
+        "additive": 0.298964652059289,
+        "geometry": 1.2177401200922433,
+        "persistence": -3.983098116408841,
+        "transfer": 0.0030135891219549293
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": -0.007872862333334396,
+        "max_c": 13.62909953,
+        "mean_c": 13.606519177955803,
+        "min_c": 13.57807406,
+        "position": 5,
+        "sensor": "d"
+      },
+      "position": 5,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.006842647469027511,
+      "residual_c": {
+        "additive": 0.2910415417090544,
+        "geometry": 1.2481612469649814,
+        "persistence": -2.282370904309392,
+        "transfer": -0.1376218158626905
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": -0.015623298333338198,
+        "max_c": 10.1860928,
+        "mean_c": 10.149607797292818,
+        "min_c": 10.12543119,
+        "position": 5,
+        "sensor": "e"
+      },
+      "position": 5,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.010394964798740488,
+      "residual_c": {
+        "additive": 0.38091255618541275,
+        "geometry": 1.740393185582544,
+        "persistence": -3.4140857788397785,
+        "transfer": -0.22795541294212818
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": -0.020662997000002292,
+        "max_c": 5.73508992,
+        "mean_c": 5.7051609364088405,
+        "min_c": 5.67846095,
+        "position": 5,
+        "sensor": "f"
+      },
+      "position": 5,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.006820480462661925,
+      "residual_c": {
+        "additive": 0.2999125837004408,
+        "geometry": 1.2450896439791181,
+        "persistence": -4.716671640331492,
+        "transfer": -0.12340204448445657
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.01640767683333344,
+        "max_c": 11.85268395,
+        "mean_c": 11.823111149060775,
+        "min_c": 11.78430612,
+        "position": 6,
+        "sensor": "d"
+      },
+      "position": 6,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.004067926303324555,
+      "residual_c": {
+        "additive": 0.5277896463535949,
+        "geometry": 0.9711623820201076,
+        "persistence": -1.725163457237569,
+        "transfer": 0.34407611136425054
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.012248995500000248,
+        "max_c": 7.73457848,
+        "mean_c": 7.706250850276243,
+        "min_c": 7.67629344,
+        "position": 6,
+        "sensor": "e"
+      },
+      "position": 6,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.007615567909619978,
+      "residual_c": {
+        "additive": 0.8138864738121558,
+        "geometry": 1.5564836030778597,
+        "persistence": -2.816635282762432,
+        "transfer": 0.5061879332484089
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.009159608666667207,
+        "max_c": 2.78990547,
+        "mean_c": 2.770868597513812,
+        "min_c": 2.74038826,
+        "position": 6,
+        "sensor": "f"
+      },
+      "position": 6,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.006202134408557034,
+      "residual_c": {
+        "additive": 0.5949299091160221,
+        "geometry": 1.3232828701577142,
+        "persistence": -4.41316050044199,
+        "transfer": 0.29313350525782544
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": -0.009998038833334277,
+        "max_c": 10.7550815,
+        "mean_c": 10.727322200331491,
+        "min_c": 10.7073727,
+        "position": 7,
+        "sensor": "d"
+      },
+      "position": 7,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0001469926092367954,
+      "residual_c": {
+        "additive": 0.08317388067685094,
+        "geometry": 0.3224794615932023,
+        "persistence": -2.6091543714917123,
+        "transfer": -0.004947703959043537
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": -0.013055613999998883,
+        "max_c": 6.33562288,
+        "mean_c": 6.311016067624308,
+        "min_c": 6.29187969,
+        "position": 7,
+        "sensor": "e"
+      },
+      "position": 7,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": 0.058889658186041416,
+        "geometry": 0.26465542354832117,
+        "persistence": -3.8064516765745857,
+        "transfer": -0.016881267164339242
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": -0.013145702666668146,
+        "max_c": 2.4394174,
+        "mean_c": 2.410688767790055,
+        "min_c": 2.39231683,
+        "position": 7,
+        "sensor": "f"
+      },
+      "position": 7,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.002764744918531141,
+      "residual_c": {
+        "additive": 0.14355114453500928,
+        "geometry": 0.7228102183763707,
+        "persistence": -4.89480327281768,
+        "transfer": -0.06975448463652878
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.02216095216666858,
+        "max_c": 11.58838964,
+        "mean_c": 11.55564659845304,
+        "min_c": 11.51650497,
+        "position": 9,
+        "sensor": "d"
+      },
+      "position": 9,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.003949168631868644,
+      "residual_c": {
+        "additive": 0.46105346177671613,
+        "geometry": 0.9596405326013091,
+        "persistence": -1.8725819382872935,
+        "transfer": 0.28214571613153083
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": true
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.026874400166665424,
+        "max_c": 7.67967712,
+        "mean_c": 7.641037468121547,
+        "min_c": 7.60667164,
+        "position": 9,
+        "sensor": "e"
+      },
+      "position": 9,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.009012992685301218,
+      "residual_c": {
+        "additive": 0.7269932132655113,
+        "geometry": 1.8054650356752733,
+        "persistence": -2.8637417674033143,
+        "transfer": 0.34000571643756494
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.02969895983333304,
+        "max_c": 2.19868735,
+        "mean_c": 2.162517030497238,
+        "min_c": 2.12083961,
+        "position": 9,
+        "sensor": "f"
+      },
+      "position": 9,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0047139150179591905,
+      "residual_c": {
+        "additive": 0.5316716693951866,
+        "geometry": 1.0873782314564218,
+        "persistence": -4.316162891878452,
+        "transfer": 0.33226776569149497
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.008553553166667172,
+        "max_c": 10.38458653,
+        "mean_c": 10.358433932265193,
+        "min_c": 10.3348342,
+        "position": 10,
+        "sensor": "d"
+      },
+      "position": 10,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.00028358678031663244,
+      "residual_c": {
+        "additive": 0.08825303237641968,
+        "geometry": 0.3431081116628132,
+        "persistence": -2.667519437016578,
+        "transfer": -0.006375629222150181
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.010786307499999204,
+        "max_c": 5.84540202,
+        "mean_c": 5.818295936629835,
+        "min_c": 5.79108298,
+        "position": 10,
+        "sensor": "e"
+      },
+      "position": 10,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": 0.027695903923139475,
+        "geometry": 0.13526367716747512,
+        "persistence": -3.901118665524863,
+        "transfer": -0.012244419972900822
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.00926332766666682,
+        "max_c": 1.01171212,
+        "mean_c": 0.9852406688950277,
+        "min_c": 0.95228441,
+        "position": 10,
+        "sensor": "f"
+      },
+      "position": 10,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0004308788895153194,
+      "residual_c": {
+        "additive": -0.11657426690582962,
+        "geometry": -0.3654980294273116,
+        "persistence": -5.218430936408838,
+        "transfer": -0.024147925812517235
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.00668814466666845,
+        "max_c": 10.1412756,
+        "mean_c": 10.107325656132597,
+        "min_c": 10.06173326,
+        "position": 11,
+        "sensor": "d"
+      },
+      "position": 11,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.04403304462725188,
+        "geometry": 0.24962758647869165,
+        "persistence": -2.9946239807182327,
+        "transfer": -0.15128723689034196
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.005818707333332007,
+        "max_c": 5.73194757,
+        "mean_c": 5.700072083259669,
+        "min_c": 5.66819977,
+        "position": 11,
+        "sensor": "e"
+      },
+      "position": 11,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0008604955956513456,
+      "residual_c": {
+        "additive": -0.03365904604984582,
+        "geometry": 0.43877844813128153,
+        "persistence": -4.213896820331491,
+        "transfer": -0.20620822856151833
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.007182692833333171,
+        "max_c": 0.72670978,
+        "mean_c": 0.6992078957458564,
+        "min_c": 0.66961013,
+        "position": 11,
+        "sensor": "f"
+      },
+      "position": 11,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.14673486962713345,
+        "geometry": 0.03431869514298913,
+        "persistence": -5.556619482099448,
+        "transfer": -0.21286138366695984
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.009242481500001176,
+        "max_c": 11.19046776,
+        "mean_c": 11.164563344640886,
+        "min_c": 11.13616741,
+        "position": 12,
+        "sensor": "d"
+      },
+      "position": 12,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.002820480254975058,
+      "residual_c": {
+        "additive": 0.22082760517244182,
+        "geometry": 0.7439303633743055,
+        "persistence": -2.2532690302209915,
+        "transfer": 0.038943119826171824
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.01118063833333327,
+        "max_c": 6.97045391,
+        "mean_c": 6.944878346740331,
+        "min_c": 6.91653704,
+        "position": 12,
+        "sensor": "e"
+      },
+      "position": 12,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.004511009219180972,
+      "residual_c": {
+        "additive": 0.313503369801885,
+        "geometry": 1.0100116933360912,
+        "persistence": -3.3179068303314923,
+        "transfer": 0.07132522032914235
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.010265727166667737,
+        "max_c": 2.53346471,
+        "mean_c": 2.502712875138122,
+        "min_c": 2.47393376,
+        "position": 12,
+        "sensor": "f"
+      },
+      "position": 12,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.004788024184426818,
+      "residual_c": {
+        "additive": 0.2599555170280139,
+        "geometry": 1.0536125495962234,
+        "persistence": -4.528768247845305,
+        "transfer": -0.016001546181377613
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.010015817999995846,
+        "max_c": 9.63267792,
+        "mean_c": 9.597187405027624,
+        "min_c": 9.56844803,
+        "position": 13,
+        "sensor": "d"
+      },
+      "position": 13,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.001401853150396266,
+      "residual_c": {
+        "additive": -0.09407435902329198,
+        "geometry": 0.5327985115768978,
+        "persistence": -3.604581401160223,
+        "transfer": -0.33562979082489797
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.007857908999998386,
+        "max_c": 4.54661767,
+        "mean_c": 4.510703827734806,
+        "min_c": 4.4822975,
+        "position": 13,
+        "sensor": "e"
+      },
+      "position": 13,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.3249181718718823,
+        "geometry": 0.17916272084868634,
+        "persistence": -5.151878267845305,
+        "transfer": -0.5191576794573285
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.008410007499999983,
+        "max_c": -0.05617626,
+        "mean_c": -0.08000496243093921,
+        "min_c": -0.10392935,
+        "position": 13,
+        "sensor": "f"
+      },
+      "position": 13,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0001282734980994999,
+      "residual_c": {
+        "additive": -0.19345589880886757,
+        "geometry": 0.32130171724754797,
+        "persistence": -6.336869048618783,
+        "transfer": -0.3918095109226317
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.013590999833329676,
+        "max_c": 9.70686104,
+        "mean_c": 9.674153983038675,
+        "min_c": 9.64423751,
+        "position": 14,
+        "sensor": "d"
+      },
+      "position": 14,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.3426957858738753,
+        "geometry": -0.05760676019714239,
+        "persistence": -4.013691500055247,
+        "transfer": -0.46392487678160776
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": false,
+      "geometry_sensitivity_outside": {
+        "0.0005": false,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.010403473666668717,
+        "max_c": 5.23707478,
+        "mean_c": 5.200118001933702,
+        "min_c": 5.17604329,
+        "position": 14,
+        "sensor": "e"
+      },
+      "position": 14,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0,
+      "residual_c": {
+        "additive": -0.4870157424426198,
+        "geometry": 0.026052889647576905,
+        "persistence": -5.517845722983425,
+        "transfer": -0.7051891487809527
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.009499030166666644,
+        "max_c": 1.39365051,
+        "mean_c": 1.3615047582320443,
+        "min_c": 1.3352481,
+        "position": 14,
+        "sensor": "f"
+      },
+      "position": 14,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.002783502106936762,
+      "residual_c": {
+        "additive": -0.16039909895611526,
+        "geometry": 0.7451352768956121,
+        "persistence": -6.551063345856353,
+        "transfer": -0.5454616558525927
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.012738582999995529,
+        "max_c": 10.76284732,
+        "mean_c": 10.739384956187845,
+        "min_c": 10.70728055,
+        "position": 15,
+        "sensor": "d"
+      },
+      "position": 15,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0006744726280621477,
+      "residual_c": {
+        "additive": -0.09997690111787172,
+        "geometry": 0.4055492453284497,
+        "persistence": -3.356768865414365,
+        "transfer": -0.3067609409199399
+      },
+      "sensor": "d",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": false,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.014088531166667195,
+        "max_c": 6.29840375,
+        "mean_c": 6.273614613756906,
+        "min_c": 6.2547202,
+        "position": 15,
+        "sensor": "e"
+      },
+      "position": 15,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.0006376522101758525,
+      "residual_c": {
+        "additive": -0.26802118406016273,
+        "geometry": 0.3997871622447482,
+        "persistence": -4.819556005082872,
+        "transfer": -0.5411862985319109
+      },
+      "sensor": "e",
+      "transfer_outside_envelope": false
+    },
+    {
+      "case": 5,
+      "geometry_outside_envelope": true,
+      "geometry_sensitivity_outside": {
+        "0.0005": true,
+        "0.001": true,
+        "0.005": false
+      },
+      "observed": {
+        "case": 5,
+        "drift_c": 0.012887571833333222,
+        "max_c": 2.16808875,
+        "mean_c": 2.1415171122651935,
+        "min_c": 2.12239817,
+        "position": 15,
+        "sensor": "f"
+      },
+      "position": 15,
+      "qualified": true,
+      "required_equal_position_allowance_m": 0.002733042186034394,
+      "residual_c": {
+        "additive": -0.13807749341129716,
+        "geometry": 0.7276979201002747,
+        "persistence": -5.984355171160221,
+        "transfer": -0.49222047657001644
+      },
+      "sensor": "f",
+      "transfer_outside_envelope": false
+    }
+  ],
+  "scope": "Conditional thermal-resistance profile transfer; no unique convection or general-law identification",
+  "verdict": "qualification_incomplete"
+}
