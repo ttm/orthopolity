@@ -15,7 +15,12 @@ cells, 1,267 clocks and 4,934 result comparisons within **1.43e−14**.
 Registry **46 / 1,168**; supporting S5.21 retains this boundary result without
 expanding the main article's claim. Physical depth/thermal resistance is neither
 log-orthopolic nor linear-orthopolic size allocation, and temperatures do not
-measure a complete energy budget here. Full replay and PDF checks are in progress.
+measure a complete energy budget here. **692 tests pass**; thermal and circuit
+replays are byte-identical. Full `make all` stops at old BioMe numerical byte
+differences up to **2.27e−13**; its independent verification passes and original
+artifacts are preserved. The **67-page supplement** is visually checked and
+byte-reproducible; the **12-page main PDF** is unchanged. The
+[validation record](reproduction-2026-10-26.md) preserves this limitation.
 
 Next prioritize a public intervention with independently measured resources and
 constraints that discriminates allocation explanations. The closed vessel design

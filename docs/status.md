@@ -26,8 +26,14 @@ all 38,010 target cells. Independent forecast calculations check 2,975 quantitie
 separate parsing verifies **88,690 temperatures and 1,267 clocks**, and 4,934
 result comparisons agree within **1.43e−14**. Registry **46 / 1,168** preserves
 all earlier entries. Supporting S5.21 retains the full qualified result; the
-main article's claims remain unchanged. Complete replay and PDF verification
-are being finished for this session.
+main article's claims remain unchanged. **692 tests pass**; the new thermal and
+preceding circuit studies replay byte-for-byte. Full `make all` stops at the
+older BioMe exact-byte comparison: maximum numerical difference **2.27e−13**,
+no nonnumeric changes, and its independent verifier still passes. Historical
+regeneration noise is restored rather than committed. The **67-page supplement**
+is visually checked, warning-free and byte-identical across two forced builds
+from source **942f5b6**; the **12-page main PDF is unchanged**. See the
+[validation record](reproduction-2026-10-26.md) for this environment limitation.
 
 **Author constraint:** further empirical work uses **existing public data only**.
 The closed storage experiment remains unrun. Next prioritize an independently
