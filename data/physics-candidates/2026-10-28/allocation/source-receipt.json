@@ -1,0 +1,48 @@
+{
+  "audit_date": "2026-10-28",
+  "source": "Pourbeyram et al. (2022)",
+  "doi": "10.1038/s41567-022-01579-y",
+  "article": "https://www.nature.com/articles/s41567-022-01579-y",
+  "public_preprint": "https://arxiv.org/abs/2012.12110v2",
+  "files": [
+    {
+      "file": "41567_2022_1579_MOESM1_ESM.pdf",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41567-022-01579-y/MediaObjects/41567_2022_1579_MOESM1_ESM.pdf",
+      "bytes": 6790627,
+      "sha256": "5e49d2c62d2def502e953cde2c4f17d66df0ff302ab39c5078b887133d271342",
+      "original_redistributed": false
+    },
+    {
+      "file": "41567_2022_1579_MOESM2_ESM.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41567-022-01579-y/MediaObjects/41567_2022_1579_MOESM2_ESM.xlsx",
+      "bytes": 41727,
+      "sha256": "9edc8b68151d4b7b147193b0c324c8794fd19139b90b9ae0bb608fea415353a6",
+      "original_redistributed": false
+    },
+    {
+      "file": "41567_2022_1579_MOESM3_ESM.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41567-022-01579-y/MediaObjects/41567_2022_1579_MOESM3_ESM.xlsx",
+      "bytes": 27479,
+      "sha256": "f8a34c28388f357befb5fe7dbe47c896883dadb46520e7ed6d7e9f7d760c37fe",
+      "original_redistributed": false
+    },
+    {
+      "file": "41567_2022_1579_MOESM4_ESM.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41567-022-01579-y/MediaObjects/41567_2022_1579_MOESM4_ESM.xlsx",
+      "bytes": 12893,
+      "sha256": "d3aa5b6545633e71c976f0668b841bcc70a1eb6778687d90ef6f03a821508e80",
+      "original_redistributed": false
+    },
+    {
+      "file": "41567_2022_1579_MOESM5_ESM.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41567-022-01579-y/MediaObjects/41567_2022_1579_MOESM5_ESM.xlsx",
+      "bytes": 47911,
+      "sha256": "c9192a760d2779756ff6a87c943ea59e09308859d84ef9075788870c193ea64d",
+      "original_redistributed": false
+    }
+  ],
+  "exposure": "Published captions, methods and parameters read. Workbook XML parsed for schema and header strings only; no numerical experimental cell values converted or reported.",
+  "eligibility": "Initial experimental allocations/invariants are not supplied in the four inspected source workbooks. No confirmatory run selected.",
+  "retention": "Originals remain in ignored build directory; repository retains derived schemas and provenance only. Source copyright and terms are not replaced by the package MIT license.",
+  "schema_correction": "Initial provisional schema paired sheet names with XML members by position. Relationship-ID verification corrected the Fig4 and Fig5 mappings before any analysis or committed receipt. Retained inventory follows workbook relationships, not ZIP order."
+}

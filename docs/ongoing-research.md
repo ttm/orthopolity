@@ -1,5 +1,33 @@
 # Ongoing research: resume here
 
+**28 October — independent allocation design complete; no new cohort selected:**
+start with the [specification](allocation-prediction-specification-2026-10-28.md).
+It predicts full allocations from fixed costs/constraints and adds absolute
+amounts when independent budget and absolute cost measurements exist. Reference
+measure, calibration identifiability, rivals, observation uncertainty and a
+scoped falsifier are explicit; a dataset-specific protocol remains necessary.
+The [optical audit](physics-allocation-source-audit-2026-10-28.md) verifies four
+accessible workbooks/ten schemas but lacks independently deposited initial
+experimental inputs. Its related follow-up is simulation-only with request-only
+data. Three [chemistry source families](chemistry-allocation-source-audit-2026-10-27.md)
+also fail the present input/observation qualification. This bounded search is
+finished, not an empirical rejection or proof that suitable data do not exist.
+
+Numerical experimental cells remain unconverted/unreported; published results
+and fitted parameters were exposed. Use mode/species/volume measures explicitly,
+neither log-orthopolic nor linear-orthopolic size allocation. Reproduce the optical
+inventory with `experiments/audit_optical_allocation_schema.py --source-dir ...`;
+the receipt gives fresh-download URLs. Sheet relationships, not archive order,
+determine the verified mapping. No authors were contacted, and no laboratory
+work is assumed. Registry stays **46 / 1,168**, with article/PDFs unchanged.
+All **692 tests**, registry verification and optical schema replay pass;
+the previously recorded full-`make all` BioMe byte-comparison limitation remains.
+Next seek a specifically identified public source with measured initial budget,
+independent requirements and final allocation; do not reopen these candidates
+without new input information or substitute their fitted theory curves. Follow
+the author's physics, chemistry, broader nature, biology, human-phenomena order
+when advancing to a new bounded search.
+
 **26 October — public wall transfer completed:** the author limits empirical
 work to existing public data. The [thermal result](hotbox-transfer-results-2026-10-26.md)
 uses the retained archive, with a transparent missing-position amendment and

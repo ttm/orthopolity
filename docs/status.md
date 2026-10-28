@@ -1,8 +1,44 @@
 # Project status and handoff
 
-Last updated 26 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 28 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**28 October — allocation prediction specified; public-source round closed:**
+the [new specification](allocation-prediction-specification-2026-10-28.md)
+predicts a complete class allocation from independently fixed requirements,
+reference weights and constraints, without requiring a power-law spectrum.
+An independently measured resource budget and absolute cost scale additionally
+predict absolute amounts. Calibration identifiability uses within-condition
+contrasts; the specification fixes the meaning of failure and requires
+dataset-specific uncertainty, power and acceptance thresholds before targets.
+This is a design, not a registered empirical test or new evidence.
+
+The [physics audit](physics-allocation-source-audit-2026-10-28.md) verifies four
+public optical workbooks and ten sheet schemas. They contain final mode
+allocations, theory and simulations, but do not supply the measured initial
+inputs needed for the proposed independent forecast. Active-mode coverage and
+shared image-calibration uncertainty also need qualification. A related optical
+paper supplies simulations and request-only data. The
+[chemistry audit](chemistry-allocation-source-audit-2026-10-27.md) examines three
+families; none establishes both independent resource inputs and target allocation
+observations. No new numerical target arrays were decoded or authors contacted.
+Published summaries and fitted parameters were exposed. Mode/species/volume
+weights are neither log-orthopolic nor linear-orthopolic size allocation.
+
+The source audit caught and repaired a provisional XLSX sheet-order mapping
+error by following relationship IDs. URLs, hashes and corrected schemas are
+retained; originals stay in ignored `build/` because redistribution terms are
+unverified. The mathematical specification received independent review.
+Registry remains **46 runs / 1,168 references**; article, PDFs and prior results
+are unchanged. **692 tests**, registry verification, the four-workbook schema
+replay and local documentation links pass. Full `make all` was not rerun for
+this design/source-audit change; its previously recorded BioMe byte-comparison
+limitation remains unresolved. Stop this bounded search round: further progress
+requires a specific public deposition with independent initial inputs and a separate final
+allocation, not another fit to these exposed curves. The title and ambition to
+establish the general law are retained; this round improves testability, not
+the empirical strength of the claim.
 
 **26 October — public thermal transfer completed, accuracy scenario fails:** the
 [wall result](hotbox-transfer-results-2026-10-26.md) predicts **210 interior

@@ -1,5 +1,15 @@
 # Third-party data notice
 
+`data/physics-candidates/2026-10-28/allocation/` contains derived workbook schemas
+and source URLs/checksums for Pourbeyram et al. (2022), *Direct observations of
+thermalization to a Rayleigh–Jeans distribution in multimode optical fibres*,
+DOI [10.1038/s41567-022-01579-y](https://doi.org/10.1038/s41567-022-01579-y).
+The original methods PDF and four workbooks are not redistributed: their license
+for redistribution was not established in this audit. Header/schema extraction
+is identified as derived inspection in the [audit](../docs/physics-allocation-source-audit-2026-10-28.md).
+Source rights and terms are not replaced by the package's MIT license. No
+numerical experimental cells were converted or reported.
+
 `data/cell-division/2026-10-08/` retains the XML and original Figure 1/2 images
 of Gangan, M. S., and Athale, C. A. (2017), *Threshold effect of growth rate on
 population variability of Escherichia coli cell lengths*, Royal Society Open

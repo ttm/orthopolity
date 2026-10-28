@@ -1,0 +1,336 @@
+[
+  {
+    "file": "41567_2022_1579_MOESM2_ESM.xlsx",
+    "bytes": 41727,
+    "sha256": "9edc8b68151d4b7b147193b0c324c8794fd19139b90b9ae0bb608fea415353a6",
+    "sheets": [
+      {
+        "name": "Experimental",
+        "dimension": "B1:D16",
+        "stored_rows": 16,
+        "first_three_row_string_labels": [
+          {
+            "cell": "C1",
+            "label": "Ic_iI^2"
+          },
+          {
+            "cell": "B2",
+            "label": "beta"
+          },
+          {
+            "cell": "C2",
+            "label": "mode group "
+          },
+          {
+            "cell": "D2",
+            "label": "error"
+          }
+        ]
+      },
+      {
+        "name": "RJ theory",
+        "dimension": "A1:B1002",
+        "stored_rows": 1002,
+        "first_three_row_string_labels": [
+          {
+            "cell": "B1",
+            "label": "Ic_iI^2"
+          },
+          {
+            "cell": "A2",
+            "label": "beta"
+          },
+          {
+            "cell": "B2",
+            "label": "mode group energy fraction "
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "41567_2022_1579_MOESM3_ESM.xlsx",
+    "bytes": 27479,
+    "sha256": "f8a34c28388f357befb5fe7dbe47c896883dadb46520e7ed6d7e9f7d760c37fe",
+    "sheets": [
+      {
+        "name": "Experiment",
+        "dimension": "A1:B29",
+        "stored_rows": 29,
+        "first_three_row_string_labels": [
+          {
+            "cell": "A1",
+            "label": "Beta"
+          },
+          {
+            "cell": "B1",
+            "label": "|Ci|^2"
+          }
+        ]
+      },
+      {
+        "name": "Theory",
+        "dimension": "A1:B1001",
+        "stored_rows": 1001,
+        "first_three_row_string_labels": [
+          {
+            "cell": "A1",
+            "label": "Beta"
+          },
+          {
+            "cell": "B1",
+            "label": "|Ci|^2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "41567_2022_1579_MOESM4_ESM.xlsx",
+    "bytes": 12893,
+    "sha256": "d3aa5b6545633e71c976f0668b841bcc70a1eb6778687d90ef6f03a821508e80",
+    "sheets": [
+      {
+        "name": "(a) IC_1I^2",
+        "dimension": "A1:I21",
+        "stored_rows": 21,
+        "first_three_row_string_labels": [
+          {
+            "cell": "A1",
+            "label": "IC_1I^2"
+          },
+          {
+            "cell": "A2",
+            "label": "Red"
+          },
+          {
+            "cell": "E2",
+            "label": "Black"
+          },
+          {
+            "cell": "H2",
+            "label": "RJ Theory"
+          },
+          {
+            "cell": "A3",
+            "label": "L/L_NL"
+          },
+          {
+            "cell": "B3",
+            "label": "IC_1I^2"
+          },
+          {
+            "cell": "C3",
+            "label": "Err"
+          },
+          {
+            "cell": "E3",
+            "label": "L/L_NL"
+          },
+          {
+            "cell": "F3",
+            "label": "IC_1I^2"
+          },
+          {
+            "cell": "G3",
+            "label": "Err"
+          },
+          {
+            "cell": "H3",
+            "label": "IC_1I^2"
+          }
+        ]
+      },
+      {
+        "name": "(b) NMSE",
+        "dimension": "A1:G21",
+        "stored_rows": 21,
+        "first_three_row_string_labels": [
+          {
+            "cell": "A1",
+            "label": "NMSE"
+          },
+          {
+            "cell": "A2",
+            "label": "Red"
+          },
+          {
+            "cell": "E2",
+            "label": "Black"
+          },
+          {
+            "cell": "A3",
+            "label": "L/L_NL"
+          },
+          {
+            "cell": "B3",
+            "label": "NMSE"
+          },
+          {
+            "cell": "C3",
+            "label": "Err"
+          },
+          {
+            "cell": "E3",
+            "label": "L/L_NL"
+          },
+          {
+            "cell": "F3",
+            "label": "NMSE"
+          },
+          {
+            "cell": "G3",
+            "label": "Err"
+          }
+        ]
+      },
+      {
+        "name": "(c) CV_mean",
+        "dimension": "A1:G21",
+        "stored_rows": 21,
+        "first_three_row_string_labels": [
+          {
+            "cell": "A1",
+            "label": "CV_mean"
+          },
+          {
+            "cell": "A2",
+            "label": "Red"
+          },
+          {
+            "cell": "E2",
+            "label": "Black"
+          },
+          {
+            "cell": "A3",
+            "label": "L/L_NL"
+          },
+          {
+            "cell": "B3",
+            "label": "CV_mean"
+          },
+          {
+            "cell": "C3",
+            "label": "Err"
+          },
+          {
+            "cell": "E3",
+            "label": "L/L_NL"
+          },
+          {
+            "cell": "F3",
+            "label": "CV_mean"
+          },
+          {
+            "cell": "G3",
+            "label": "Err"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "41567_2022_1579_MOESM5_ESM.xlsx",
+    "bytes": 47911,
+    "sha256": "c9192a760d2779756ff6a87c943ea59e09308859d84ef9075788870c193ea64d",
+    "sheets": [
+      {
+        "name": "5(a)",
+        "dimension": "A1:K42",
+        "stored_rows": 42,
+        "first_three_row_string_labels": [
+          {
+            "cell": "A1",
+            "label": "Z"
+          },
+          {
+            "cell": "B1",
+            "label": "i=1"
+          },
+          {
+            "cell": "C1",
+            "label": "i=2"
+          },
+          {
+            "cell": "D1",
+            "label": "i=3"
+          },
+          {
+            "cell": "E1",
+            "label": "i=4"
+          },
+          {
+            "cell": "F1",
+            "label": "i=5"
+          },
+          {
+            "cell": "G1",
+            "label": "i=6"
+          },
+          {
+            "cell": "H1",
+            "label": "i=7"
+          },
+          {
+            "cell": "I1",
+            "label": "i=8"
+          },
+          {
+            "cell": "J1",
+            "label": "i=9"
+          },
+          {
+            "cell": "K1",
+            "label": "i=10"
+          }
+        ]
+      },
+      {
+        "name": "5 (b)",
+        "dimension": "A1:F17",
+        "stored_rows": 17,
+        "first_three_row_string_labels": [
+          {
+            "cell": "A1",
+            "label": "X"
+          },
+          {
+            "cell": "B1",
+            "label": "Y sim"
+          },
+          {
+            "cell": "C1",
+            "label": "Y exp"
+          },
+          {
+            "cell": "A2",
+            "label": "beta"
+          },
+          {
+            "cell": "B2",
+            "label": "Ic_kI^2"
+          },
+          {
+            "cell": "C2",
+            "label": "Ic_kI^2"
+          }
+        ]
+      },
+      {
+        "name": "5 (b) RJ",
+        "dimension": "A1:B1001",
+        "stored_rows": 1001,
+        "first_three_row_string_labels": [
+          {
+            "cell": "A1",
+            "label": "beta"
+          },
+          {
+            "cell": "B1",
+            "label": "Ic_kI^2"
+          }
+        ]
+      }
+    ]
+  }
+]
