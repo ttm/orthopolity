@@ -520,23 +520,26 @@ Orthopolity's exact accounting and specified physical realizations are establish
 its broader reach requires independently identifying comparable concentrations,
 the effective resource and the constraints on allocation.
 
-Three kinds of finding should remain distinguishable. First, a metric or sampling
-change can alter the apparent distribution without changing the physical system:
-radial power and flux density, mode energy and spectral radiance, or lineage
-and population sampling are examples. The correction is justified independently
-of the desired result. Second, a physical constraint can produce a predicted
-non-neutral profile: measured absorption, quantum level spacing, birth-cycle
-crossings and pure-calibrated adsorption affinities supply such explanations.
-Third, a specified resource model can fail
-its own forecast. The chemostat reweighting, bacterial variability and cantilever
-spatial-loss errors remain failures until a revised explanation succeeds on additional evidence.
+Uniform spatial cuts of a homogeneous rod conserve every realization's mass
+and give labeled fragments equal expected mass. Yet expected resource per
+logarithmic fragment mass is nonconstant. This analytic failure of log-orthopolic
+size-class equality follows before outcomes, without fitting a correction.
+Supporting S3.8 gives the finite-bin prediction and distinguishes this partition
+mechanism from exchange under class symmetry.
 
-Observed inequality is therefore not by itself a diagnosis. Conversely, an
-arbitrary choice of resource, measure or constraint can make any positive profile
-satisfy an allocation identity. Such a construction does not establish a physical
-law. An application must state which inputs were independently known, what was
-learned from calibration, what transfers unchanged and what observation would
-contradict the specified model.
+Three kinds of finding remain distinct. A metric or sampling change can alter
+a distribution without changing the system: power versus flux density, mode
+energy versus radiance, or lineage versus population sampling. Corrections
+require independent justification. A physical constraint can predict a non-neutral
+profile: measured absorption, quantum levels, birth-cycle crossings and
+pure-calibrated adsorption affinities do so. A specified resource model can also
+fail its forecast. Chemostat reweighting, bacterial variability and cantilever
+spatial-loss errors remain failures until a revised explanation succeeds on
+additional evidence.
+
+An application must distinguish independently known inputs, calibration,
+transferred predictions and falsifying observations. Unrestricted resource or
+constraint fitting supplies an identity, not a physical explanation (section 2.3).
 
 Unavailable tests cannot decide between resource models. Qualified failures
 challenge their assumptions or domain. The next comparisons should change

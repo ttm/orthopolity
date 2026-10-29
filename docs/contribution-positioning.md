@@ -116,6 +116,18 @@ Neither outcome automatically determines the status of the unrestricted
 general-law proposal. Identifying a previously omitted constraint requires
 additional evidence or a subsequent test, rather than renaming the residual.
 
+Supporting S3.8 now supplies an explicit boundary even in expectation.
+Uniform spatial cuts conserve a rod's mass in every realization and give
+exchangeable fragment labels equal expected mass, but the expected resource
+per logarithmic fragment mass is nonconstant. This **log-orthopolic**
+counterexample uses established random-spacing theory, not a new empirical
+result. It shows why symmetry of objects cannot be transferred automatically
+to classes defined by their realized sizes. The allocation claim needs a
+mechanism or symmetry justified for the actual comparison classes. The
+[three-archive fragmentation search](fragmentation-source-audit-2026-10-28.md)
+closed without a qualified complete-budget experiment; that limitation remains
+separate from the analytic result.
+
 The contribution should therefore be judged on the coherence and reach of the
 general-law proposal, the explanatory connections that its worked realizations
 establish, and the predictive usefulness of its inferred effective resources.

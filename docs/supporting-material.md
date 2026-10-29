@@ -1163,6 +1163,80 @@ calculations agree within $2.23\times10^{-16}$. No qualifying experimental
 cohort has been run. This would test a conditional constitutive prediction,
 shared with ordinary hydrostatics, rather than uniquely establish orthopolity.
 
+### S3.8. Fragmentation conserves mass without equal logarithmic allocation
+
+Independent uniform cuts give a concrete applicability boundary before any
+fragment observations. Take a homogeneous rod of mass $B$, choose $n-1$
+independent uniform positions, and make zero-width cuts without material loss
+into $n\ge2$ pieces. Every realization
+has total mass $B$. Its normalized spacings have the standard
+Dirichlet$(1,\ldots,1)$ distribution (Rao and Sobel, 1980, equations 1.2--1.3).
+A labeled piece has a Beta$(1,n-1)$ mass fraction, so the expected number
+density and resource per logarithmic mass are
+
+$$\nu(m)=\frac{n(n-1)}{B}(1-m/B)^{n-2},\qquad
+\frac{dE[R]}{d\log m}=m^2\nu(m),\qquad 0<m<B.$$
+
+The latter is nonconstant: **log-orthopolic physical-mass allocation fails even
+in expectation**, although conservation holds exactly. For $n>2$ the profile
+peaks at $m=2B/n$. Spatial uniformity of cuts does not give exchange symmetry
+among logarithmic mass classes. Exchangeable fragment labels have equal expected
+mass $B/n$; that label symmetry does not imply symmetry among size classes.
+This is an irreversible partition mechanism,
+not an equilibrium exchange model; it does not contradict the specified
+class-symmetric mechanism in S3.1. Nor is it a newly discovered fragmentation
+law or an assertion that real rocks follow uniform cuts.
+
+Set $F_n(x)=1-(1-x)^{n-1}[1+(n-1)x]$. For any fixed $0\le a<b\le B$,
+
+$$E[N_{[a,b]}]=n[(1-a/B)^{n-1}-(1-b/B)^{n-1}],\qquad
+E[R_{[a,b]}]=B[F_n(b/B)-F_n(a/B)].$$
+
+For $n=8$, three equal logarithmic mass intervals give:
+
+| Fragment mass interval | Expected fraction of parent mass | Fraction of expected mass in the window |
+|---|---:|---:|
+| $B/16$ to $B/8$ | 0.178665 | 0.203071 |
+| $B/8$ to $B/4$ | 0.369224 | 0.419662 |
+| $B/4$ to $B/2$ | 0.331924 | 0.377267 |
+
+Log-orthopolic equality predicts one third of the window's expected mass in
+each interval. The total-variation distance is 0.130262. These are ratios of
+expected masses, not expectations of per-run normalized shares; a single run
+may have no pieces in the window. The example uses a fixed finite window,
+so its disagreement does not rely on the divergent logarithmic measure at zero.
+The spatial mechanism and its $B,n$ inputs determine the departure before
+allocation is observed; redefining a resource or measure from that departure
+would not independently validate equality.
+
+Incomplete recovery requires another distinction. Suppose an experiment
+measures recovered masses $y_j$ in fixed sieve-diameter bins $[a_j,b_j]$,
+with $w_j=\log(b_j/a_j)$ and $W=\sum_jw_j$. This is log-orthopolic
+allocation in **sieve diameter**, not necessarily in individual fragment mass.
+The minimum additional mass that can complete the profile to $Cw_j$ is
+
+$$L_{\min}=W\max_j(y_j/w_j)-\sum_jy_j.$$
+
+Indeed $C$ must be at least the largest recovered mass per logarithmic width;
+choosing that value attains the bound. Given an independently justified upper
+bound $L\ge0$ on missing material and $\sum_jy_j>0$, the sharp minimum
+total-variation discrepancy is
+
+$$\operatorname{TV}_{\min}
+=\sum_j\left[\frac{y_j}{\sum_k y_k+L}-\frac{w_j}{W}\right]_+.$$
+
+These bounds give all missing material the allocation most favorable to equality.
+If parent mass and recovered masses share calibration errors, their budget
+constraints must be enforced jointly. A per-run discrepancy does not by itself
+reject an expectation claim across independent experiments. Neither target-window
+normalization nor a fitted $C$ supplies an independent absolute allocation forecast.
+
+Three public archives failed qualification for the complete-budget experiment
+([source audit](fragmentation-source-audit-2026-10-28.md)); no numerical experimental
+worksheet outcomes were decoded. Exact arithmetic, quadrature and independent
+linear programs [verify the formulas](../experiments/check_fragmentation_boundary.py).
+These checks add no empirical evidence.
+
 ## S4. Exploratory sources, methods and results
 
 These convenience sources were inspected before the analyses or governed by locally recorded plans with the exposure qualifications below. They do not constitute a representative sample of natural systems.
@@ -3364,6 +3438,10 @@ by a top-predator modifies size-abundance scaling in stream food webs.
 Poynting, J. H. (1884). On the transfer of energy in the electromagnetic field.
 *Philosophical Transactions of the Royal Society of London*, 175, 343–361.
 <https://doi.org/10.1098/rstl.1884.0016>.
+
+Rao, J. S., and Sobel, M. (1980). Incomplete Dirichlet integrals with applications
+to ordered uniform spacings. *Journal of Multivariate Analysis*, 10, 603--610.
+<https://doi.org/10.1016/0047-259X(80)90073-1>.
 
 Sheldon, R. W., Prakash, A., and Sutcliffe, W. H., Jr. (1972). The size distribution of
 particles in the ocean. *Limnology and Oceanography*, 17, 327–340.

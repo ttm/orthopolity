@@ -1,0 +1,489 @@
+[
+  {
+    "file": "lin/Dataset_S1.xlsx",
+    "bytes": 71452,
+    "sha256": "da678bd2a95393f266559242c8846455d11db10e479f0278470d96ca69283c46",
+    "sheets": [
+      {
+        "name": "Deposit parameters",
+        "dimension": "A1:P14",
+        "stored_rows": 14,
+        "first_three_row_string_labels": [
+          {
+            "cell": "B1",
+            "label": "Ad (m2)"
+          },
+          {
+            "cell": "E1",
+            "label": "Lc (m)"
+          },
+          {
+            "cell": "H1",
+            "label": "Lt (m)"
+          },
+          {
+            "cell": "K1",
+            "label": "Br"
+          },
+          {
+            "cell": "N1",
+            "label": "As "
+          },
+          {
+            "cell": "A3",
+            "label": "D1"
+          }
+        ]
+      },
+      {
+        "name": "Velocity magnitude at t=0.2 s",
+        "dimension": "A1:AB302",
+        "stored_rows": 302,
+        "first_three_row_string_labels": [
+          {
+            "cell": "A1",
+            "label": "distance from x=0 m"
+          },
+          {
+            "cell": "B1",
+            "label": "Velocity magnitude at slide direction (m/s)    t=0.2 "
+          },
+          {
+            "cell": "B2",
+            "label": "D1-1"
+          },
+          {
+            "cell": "C2",
+            "label": "D1-2"
+          },
+          {
+            "cell": "D2",
+            "label": "D2-1"
+          },
+          {
+            "cell": "E2",
+            "label": "D2-2"
+          },
+          {
+            "cell": "F2",
+            "label": "D2-3"
+          },
+          {
+            "cell": "G2",
+            "label": "D3-1"
+          },
+          {
+            "cell": "H2",
+            "label": "D4-1"
+          },
+          {
+            "cell": "I2",
+            "label": "D4-3"
+          },
+          {
+            "cell": "J2",
+            "label": "D5-1"
+          },
+          {
+            "cell": "K2",
+            "label": "D6-1"
+          },
+          {
+            "cell": "L2",
+            "label": "D6-2"
+          },
+          {
+            "cell": "M2",
+            "label": "D7-1"
+          },
+          {
+            "cell": "N2",
+            "label": "D7-2"
+          },
+          {
+            "cell": "O2",
+            "label": "D8-1"
+          },
+          {
+            "cell": "P2",
+            "label": "D8-2"
+          },
+          {
+            "cell": "Q2",
+            "label": "D9-2"
+          },
+          {
+            "cell": "R2",
+            "label": "D10-1"
+          },
+          {
+            "cell": "S2",
+            "label": "D10-2"
+          },
+          {
+            "cell": "T2",
+            "label": "D11-1"
+          },
+          {
+            "cell": "U2",
+            "label": "D11-2"
+          },
+          {
+            "cell": "V2",
+            "label": "D12-1"
+          },
+          {
+            "cell": "W2",
+            "label": "D12-2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "rae/ST1_QSexp.xlsx",
+    "bytes": 10657,
+    "sha256": "5f2609fe360f08ceeadf161f5bc752b8d678483bcc58c5d5767a2db322048e7f",
+    "sheets": [
+      {
+        "name": "HP",
+        "dimension": "A1:H31",
+        "stored_rows": 29,
+        "first_three_row_string_labels": [
+          {
+            "cell": "A1",
+            "label": "Lithology"
+          },
+          {
+            "cell": "B1",
+            "label": "Experiment ID"
+          },
+          {
+            "cell": "C1",
+            "label": "Sample Length (mm)"
+          },
+          {
+            "cell": "D1",
+            "label": "Sample Diameter (mm)"
+          },
+          {
+            "cell": "E1",
+            "label": "Strength (MPa)"
+          },
+          {
+            "cell": "F1",
+            "label": "Strain Rate (/s)"
+          },
+          {
+            "cell": "G1",
+            "label": "Elastic Modulus (GPa)"
+          },
+          {
+            "cell": "H1",
+            "label": "Poisson's Ratio"
+          },
+          {
+            "cell": "A2",
+            "label": "Marlsburg Granite"
+          },
+          {
+            "cell": "B2",
+            "label": "002"
+          },
+          {
+            "cell": "H2",
+            "label": "**"
+          },
+          {
+            "cell": "A3",
+            "label": "Marlsburg Granite"
+          },
+          {
+            "cell": "B3",
+            "label": "003"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "rae/ST2_Dynexp.xlsx",
+    "bytes": 29235,
+    "sha256": "8b2efd8d2796f38354bf2302aa7cc5292c4e6b8986877ddbdc149c0eba38f828",
+    "sheets": [
+      {
+        "name": "SHPB",
+        "dimension": "A1:AG65",
+        "stored_rows": 65,
+        "first_three_row_string_labels": [
+          {
+            "cell": "A1",
+            "label": "Lithology"
+          },
+          {
+            "cell": "B1",
+            "label": "Experiment ID"
+          },
+          {
+            "cell": "C1",
+            "label": "P (bar)"
+          },
+          {
+            "cell": "D1",
+            "label": "Sample Length (mm)"
+          },
+          {
+            "cell": "E1",
+            "label": "Sample Diameter (mm)"
+          },
+          {
+            "cell": "F1",
+            "label": "Calculated Sample Mass (g)"
+          },
+          {
+            "cell": "G1",
+            "label": "Intact or Failed"
+          },
+          {
+            "cell": "H1",
+            "label": "Strength (MPa)"
+          },
+          {
+            "cell": "J1",
+            "label": "Max. Stress (MPa)"
+          },
+          {
+            "cell": "L1",
+            "label": "Strain Rate (/s)"
+          },
+          {
+            "cell": "N1",
+            "label": "Elastic Modulus (GPa)"
+          },
+          {
+            "cell": "P1",
+            "label": "Failure Strain"
+          },
+          {
+            "cell": "Q1",
+            "label": "Max. Strain"
+          },
+          {
+            "cell": "R1",
+            "label": "W (kJ/m^3)"
+          },
+          {
+            "cell": "S1",
+            "label": "Max. Long. Inertial Stress (Pa)"
+          },
+          {
+            "cell": "T1",
+            "label": "Max. Rad. Inertial Stress (Pa)"
+          },
+          {
+            "cell": "U1",
+            "label": "Max. Hoop Inertial Stress (Pa)"
+          },
+          {
+            "cell": "V1",
+            "label": "Mass Recovered (g)"
+          },
+          {
+            "cell": "W1",
+            "label": "Recovery Efficiency"
+          },
+          {
+            "cell": "X1",
+            "label": "s >16 (mm)"
+          },
+          {
+            "cell": "Y1",
+            "label": "6.3 < s < 16 (mm)"
+          },
+          {
+            "cell": "Z1",
+            "label": "2 < s < 6.3 (mm)"
+          },
+          {
+            "cell": "AA1",
+            "label": "1 < s < 2 (mm)"
+          },
+          {
+            "cell": "AB1",
+            "label": "0.63 < s < 1 (mm)"
+          },
+          {
+            "cell": "AC1",
+            "label": "0.4 < s < 0.63 (mm)"
+          },
+          {
+            "cell": "AD1",
+            "label": "0.2 < s < 0.4 (mm)"
+          },
+          {
+            "cell": "AE1",
+            "label": "Residue"
+          },
+          {
+            "cell": "AF1",
+            "label": "s (mm)"
+          },
+          {
+            "cell": "AG1",
+            "label": "D"
+          },
+          {
+            "cell": "G2",
+            "label": "(I/F)"
+          },
+          {
+            "cell": "H2",
+            "label": "\ud835\udf07"
+          },
+          {
+            "cell": "I2",
+            "label": "\ud835\udf0e"
+          },
+          {
+            "cell": "J2",
+            "label": "\ud835\udf07"
+          },
+          {
+            "cell": "K2",
+            "label": "\ud835\udf0e"
+          },
+          {
+            "cell": "L2",
+            "label": "\ud835\udf07"
+          },
+          {
+            "cell": "M2",
+            "label": "\ud835\udf0e"
+          },
+          {
+            "cell": "N2",
+            "label": "\ud835\udf07"
+          },
+          {
+            "cell": "O2",
+            "label": "\ud835\udf0e"
+          },
+          {
+            "cell": "W2",
+            "label": "%"
+          },
+          {
+            "cell": "X2",
+            "label": "%"
+          },
+          {
+            "cell": "Y2",
+            "label": "%"
+          },
+          {
+            "cell": "Z2",
+            "label": "%"
+          },
+          {
+            "cell": "AA2",
+            "label": "%"
+          },
+          {
+            "cell": "AB2",
+            "label": "%"
+          },
+          {
+            "cell": "AC2",
+            "label": "%"
+          },
+          {
+            "cell": "AD2",
+            "label": "%"
+          },
+          {
+            "cell": "AE2",
+            "label": "%"
+          },
+          {
+            "cell": "A3",
+            "label": "Marlsburg Granite"
+          },
+          {
+            "cell": "B3",
+            "label": "001"
+          },
+          {
+            "cell": "G3",
+            "label": "F"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "deepsea/Sieving.xlsx",
+    "bytes": 11808,
+    "sha256": "05a90d8716d76dbafd555b4d2d32b81e880b86fbcda8b04cdeae836ba499a611",
+    "sheets": [
+      {
+        "name": "Sheet1",
+        "dimension": "A1:L28",
+        "stored_rows": 28,
+        "first_three_row_string_labels": [
+          {
+            "cell": "A1",
+            "label": "Sieve aperture range (mm)"
+          },
+          {
+            "cell": "B1",
+            "label": "> 53"
+          },
+          {
+            "cell": "C1",
+            "label": "26.5~53"
+          },
+          {
+            "cell": "D1",
+            "label": "19~26.5"
+          },
+          {
+            "cell": "E1",
+            "label": "16~19"
+          },
+          {
+            "cell": "F1",
+            "label": "13.2~16"
+          },
+          {
+            "cell": "G1",
+            "label": "9.5~13.2"
+          },
+          {
+            "cell": "H1",
+            "label": "4.75~9.5"
+          },
+          {
+            "cell": "I1",
+            "label": "2.36~4.75"
+          },
+          {
+            "cell": "J1",
+            "label": "< 2.36"
+          },
+          {
+            "cell": "K1",
+            "label": "total weight(g)"
+          },
+          {
+            "cell": "A2",
+            "label": "Experimental protocols"
+          },
+          {
+            "cell": "B2",
+            "label": "Weight of debris (g)"
+          }
+        ]
+      }
+    ]
+  }
+]

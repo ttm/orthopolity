@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-28",
+  "candidate": "Rae et al. (2020), Dynamic Compressive Strength and Fragmentation in Felsic Crystalline Rocks",
+  "article_doi": "10.1029/2020JE006561",
+  "article_url": "https://viveins.github.io/publications/pdf/J7-2020.pdf",
+  "archive_url": "https://zenodo.org/records/3987223",
+  "latest_record_id": 3987223,
+  "license": "CC BY 4.0 (archive metadata)",
+  "reference_measure": "logarithmic sieve diameter: log-orthopolic mass allocation, not per-fragment mass or linear-orthopolic allocation",
+  "source_files": [
+    {
+      "file": "ST1_QSexp.xlsx",
+      "bytes": 10657,
+      "sha256": "5f2609fe360f08ceeadf161f5bc752b8d678483bcc58c5d5767a2db322048e7f"
+    },
+    {
+      "file": "ST2_Dynexp.xlsx",
+      "bytes": 29235,
+      "sha256": "8b2efd8d2796f38354bf2302aa7cc5292c4e6b8986877ddbdc149c0eba38f828"
+    },
+    {
+      "file": "article.pdf",
+      "bytes": 1279880,
+      "sha256": "69780028cae33c38ddbf79aff88d60fb85b559d2956d1bad5430954e8e9ecb89"
+    },
+    {
+      "file": "article.txt",
+      "bytes": 75988,
+      "sha256": "200e183640c7158ca31bc460070f99da20aea2a96bdbdda9e799383a4f096709"
+    },
+    {
+      "file": "design-labels.json",
+      "bytes": 10538,
+      "sha256": "af77e759c3e2ec1f9c1e24c9c615dd84c678c0a14f1c4f930a28a2225129de92"
+    },
+    {
+      "file": "formula-lineage.json",
+      "bytes": 4915,
+      "sha256": "7d6a143bb1a7ebafbe46406bb0364804a531aea281af772eb984867897c56e18"
+    },
+    {
+      "file": "latest-metadata.json",
+      "bytes": 6136,
+      "sha256": "0c84c5dfa529b5a497a250f8e74e29d5926e7753451ec17106d97f56f36241d6"
+    },
+    {
+      "file": "metadata.json",
+      "bytes": 6136,
+      "sha256": "0c84c5dfa529b5a497a250f8e74e29d5926e7753451ec17106d97f56f36241d6"
+    },
+    {
+      "file": "schema.json",
+      "bytes": 6316,
+      "sha256": "97b764a33f28c881d5fe29828d2d5ceef97f03b82fe28a2c891398da64b36e8b"
+    }
+  ],
+  "downloaded_workbook_md5_matches": true,
+  "bounded_sieve_edges_mm": [
+    0.2,
+    0.4,
+    0.63,
+    1,
+    2,
+    6.3,
+    16
+  ],
+  "open_tail_fields": [
+    "s >16 (mm)",
+    "Residue (<0.2 mm per methods)"
+  ],
+  "dynamic_design_rows": {
+    "Marlsburg Granite": 16,
+    "Maggia Gneiss (Parallel)": 19,
+    "Maggia Gneiss (Perpendicular)": 25
+  },
+  "quasistatic_design_rows": {
+    "Marlsburg Granite": 5,
+    "Maggia Gneiss (Parallel)": 5,
+    "Maggia Gneiss (Perpendicular)": 7
+  },
+  "budget_provenance": "ST2 F is Calculated Sample Mass (g), formula references D sample length and E diameter; material density is separately characterized by helium pycnometry. No individually weighed pre-fragmentation mass, geometric tolerance, or weighing precision established in inspected methods. V is Mass Recovered (g); W computes recovery from V/F.",
+  "outcome_representation": "Eight per-bin percentages in X:AE, units % in row2, including two open tails. Stored numeric values are not formula expressions. Their initial-versus-recovered-mass denominator is unresolved from header/method inspection.",
+  "controls": "ST2 C is P (bar); strain rate and its uncertainty are L/M, obtained from bar strain gauges, not from fragment profile. Repeated IDs are material-specific experiment identifiers, not a separate replicate identifier.",
+  "quasistatic_limitation": "ST1 has mechanical summaries only, no fragment allocation columns, so does not support a QS-to-dynamic fragment-profile transfer.",
+  "eligible_scope": "Promising conditional recovered-profile test or a nominal geometry-density-budget sensitivity analysis; not qualified as an independently weighed complete-budget absolute allocation forecast.",
+  "proposed_numeric_qualification": "Before any numeric release, fix mutually exclusive closure rules for percentages summing to recovered total versus initial-mass recovery, or carry both interpretations conservatively. Retain unmatched/ambiguous rows. Bound missing material adversarially; do not infer its size distribution from discrepancies.",
+  "statistical_scope": "Whole experiments, not sibling fragments, are observation units. Published sample loss depends on strain rate; no iid or missing-at-random assumption justified. No instrument covariance/distribution established.",
+  "exposure": "Methods text, header labels, experiment ID strings and lithology labels, formula reference lineage, source metadata and published numerical summaries were read. Published recovery range82.2\u201397.8%, mean93.4%; finesbelow0.2mm at most10.1%; published aggregate strain-rate/median/fractal trends appeared in extracted-text snippets. No numerical experimental worksheet outcome values converted or reported; no figures digitized; no per-experiment report PDFs opened.",
+  "decision": "Archive merits a specifically qualified conditional boundary protocol if parent chooses it. Preserve failure of original complete measured-budget gate; do not call this independent absolute-budget confirmation."
+}

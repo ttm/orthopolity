@@ -1,5 +1,21 @@
 # Third-party data notice
 
+`data/fragmentation-candidates/2026-10-28/` retains unchanged small workbooks,
+metadata and explicitly identified derived inspections from three **CC BY 4.0**
+archives: Lin et al., [Zenodo 3692315](https://doi.org/10.5281/zenodo.3692315);
+Rae et al., [Zenodo 3987223](https://doi.org/10.5281/zenodo.3987223); and the
+authors of *A dataset describing chip parameters for rock breaking by chisel
+pick under deep-sea hydrostatic pressure*,
+[Figshare 25102847 version 2](https://doi.org/10.6084/m9.figshare.25102847.v2),
+article [10.1038/s41597-024-03419-5](https://doi.org/10.1038/s41597-024-03419-5).
+Provider metadata retains creator lists and license declarations. Source URLs,
+hashes and the unchanged member extracted from a partial ZIP download are in
+the [receipt](fragmentation-candidates/2026-10-28/source-receipt.json).
+Header/schema, formula-reference and design-label inspections are derived work;
+no numerical experimental outcomes were decoded. The original methods PDFs are
+not redistributed. Source attribution and [CC BY 4.0 terms](https://creativecommons.org/licenses/by/4.0/)
+remain applicable; the package MIT license does not relicense these materials.
+
 `data/physics-candidates/2026-10-28/allocation/` contains derived workbook schemas
 and source URLs/checksums for Pourbeyram et al. (2022), *Direct observations of
 thermalization to a Rayleigh–Jeans distribution in multimode optical fibres*,

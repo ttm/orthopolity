@@ -1,5 +1,30 @@
 # Ongoing research: resume here
 
+**29 October — bounded fragmentation round complete:** the
+[audit](fragmentation-source-audit-2026-10-28.md) stops at three archive families
+without a qualified complete-budget experiment. Four workbooks/13 retained
+source or inspection files verify; numerical worksheet outcomes remain
+undecoded, with published aggregates disclosed. Do not relax those gates
+silently or start another broad search by default.
+
+Main 5/supporting S3.8 add a derived applicability boundary. Independent
+uniform cuts conserve every rod's mass but predict **20.3071%, 41.9662%,
+37.7267%** across three equal log-mass intervals for eight fragments, when
+normalizing the expected bin masses. Exchangeable fragment labels and realized
+size classes have different symmetries. This is **log-orthopolic physical-mass
+allocation**, not new empirical evidence; standard random-spacing theory is
+credited. Separate log-sieve-diameter completion bounds quantify the most
+favorable allocation of missing material without inventing a budget.
+
+`make fragmentation-sources fragmentation-boundary` replays source schemas,
+exact arithmetic, quadrature and independent LP comparisons. All **692 tests**
+and registry verification pass; the analytic output replays byte-for-byte.
+The prior full-`make all` BioMe byte-comparison limitation remains unresolved.
+Registry stays **46 / 1,168**. Next editorial work should make the established mechanisms,
+independent predictions and boundaries distinguishable to readers. New empirical
+work requires specifically identified independent inputs; the user's constraint
+remains existing public data only, with no assumed laboratory or author contact.
+
 **28 October — independent allocation design complete; no new cohort selected:**
 start with the [specification](allocation-prediction-specification-2026-10-28.md).
 It predicts full allocations from fixed costs/constraints and adds absolute

@@ -1,8 +1,45 @@
 # Project status and handoff
 
-Last updated 28 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 29 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**29 October — fragmentation search closed; an analytic boundary added:**
+the [three-archive audit](fragmentation-source-audit-2026-10-28.md) reaches its
+agreed stopping rule. Lin's workbook lacks full fragment distributions; Rae's
+spectra have a geometry-density budget without qualified measurement uncertainty
+and an unresolved percentage denominator; the deep-sea chip archive lacks an
+independently measured removed-mass budget. Four public workbooks are retained,
+but no numerical experimental worksheet outcomes were decoded and no empirical
+run was added. Published aggregate results were exposed. A weaker conditional
+study was not substituted after the original qualification failed.
+
+Main 5 and **supporting S3.8** now state a precise analytic limit: uniform
+spatial cuts conserve mass in every realization and give fragment labels equal
+expected mass, but do not give size classes equal expected mass. For eight
+fragments, three equal logarithmic mass intervals have expected window-mass
+shares **20.3071%, 41.9662%, 37.7267%**, rather than thirds. These are ratios of
+expected masses, not means of per-run normalized shares. The reference measure
+is **log-orthopolic in fragment mass**; the separate missing-mass completion
+bound is log-orthopolic in sieve diameter. The ideal mechanism is specified
+before outcomes and credited to established random-spacing theory. It supplies
+an applicability boundary, not new empirical evidence or a contradiction of
+the conditional class-exchange model. Title and general-law ambition remain.
+
+The [analytic record](../results/fragmentation-boundary-2026-10-28/analytic.json)
+checks exact rational arithmetic, 12 quadrature cases, 4,096 generated
+mass-conserving partitions and 60 independent linear programs for each of two
+missing-mass formulas. Maximum normalized quadrature error is **1.11e-16**;
+missing-mass and TV formulas agree with LPs within **5.68e-14** and **1.11e-16**.
+The source audit verifies 13 retained files, four provider checksums and five
+sheet schemas. Both checks are included in `make all`; **692 tests**, registry
+verification and byte-identical analytic replay pass. Full `make all` was not
+rerun: the previously documented BioMe numerical byte-comparison limitation
+remains unresolved. Registry remains **46 runs / 1,168 references**.
+Next consolidate the article's conditional
+mechanisms, transferred empirical predictions and known boundaries; do not
+default to another open-ended dataset search or reopen these candidates without
+new independent measurement information.
 
 **28 October — allocation prediction specified; public-source round closed:**
 the [new specification](allocation-prediction-specification-2026-10-28.md)

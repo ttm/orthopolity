@@ -1,0 +1,412 @@
+[
+  {
+    "file": "ST1_QSexp.xlsx",
+    "design_string_rows": [
+      {
+        "row": 2,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "002"
+      },
+      {
+        "row": 3,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "003"
+      },
+      {
+        "row": 4,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "004"
+      },
+      {
+        "row": 5,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "005"
+      },
+      {
+        "row": 6,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "006"
+      },
+      {
+        "row": 7,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "001"
+      },
+      {
+        "row": 8,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "002"
+      },
+      {
+        "row": 9,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "005"
+      },
+      {
+        "row": 10,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "006"
+      },
+      {
+        "row": 11,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "007"
+      },
+      {
+        "row": 12,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "001"
+      },
+      {
+        "row": 13,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "002"
+      },
+      {
+        "row": 14,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "003"
+      },
+      {
+        "row": 15,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "004"
+      },
+      {
+        "row": 16,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "005"
+      },
+      {
+        "row": 17,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "006"
+      },
+      {
+        "row": 18,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "007"
+      },
+      {
+        "row": 19,
+        "lithology_label": "* - Transverse Strain not measured",
+        "experiment_id_string": null
+      },
+      {
+        "row": 20,
+        "lithology_label": "** - Transverse Strain Gauge data rejected on quality control",
+        "experiment_id_string": null
+      },
+      {
+        "row": 21,
+        "lithology_label": "*** - Error in acquitision of Transverse Strain Data",
+        "experiment_id_string": null
+      }
+    ]
+  },
+  {
+    "file": "ST2_Dynexp.xlsx",
+    "design_string_rows": [
+      {
+        "row": 3,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "001"
+      },
+      {
+        "row": 4,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "002"
+      },
+      {
+        "row": 5,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "003"
+      },
+      {
+        "row": 6,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "004"
+      },
+      {
+        "row": 7,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "009"
+      },
+      {
+        "row": 8,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "010"
+      },
+      {
+        "row": 9,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "011"
+      },
+      {
+        "row": 10,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "015"
+      },
+      {
+        "row": 11,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "017"
+      },
+      {
+        "row": 12,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "019"
+      },
+      {
+        "row": 13,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "022"
+      },
+      {
+        "row": 14,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "023"
+      },
+      {
+        "row": 15,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "024"
+      },
+      {
+        "row": 16,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "025"
+      },
+      {
+        "row": 17,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "026"
+      },
+      {
+        "row": 18,
+        "lithology_label": "Marlsburg Granite",
+        "experiment_id_string": "027"
+      },
+      {
+        "row": 19,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "001"
+      },
+      {
+        "row": 20,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "002"
+      },
+      {
+        "row": 21,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "003"
+      },
+      {
+        "row": 22,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "004"
+      },
+      {
+        "row": 23,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "005"
+      },
+      {
+        "row": 24,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "006"
+      },
+      {
+        "row": 25,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "007"
+      },
+      {
+        "row": 26,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "008"
+      },
+      {
+        "row": 27,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "009"
+      },
+      {
+        "row": 28,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "010"
+      },
+      {
+        "row": 29,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "011"
+      },
+      {
+        "row": 30,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "012"
+      },
+      {
+        "row": 31,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "013"
+      },
+      {
+        "row": 32,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "014"
+      },
+      {
+        "row": 33,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "015"
+      },
+      {
+        "row": 34,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "016"
+      },
+      {
+        "row": 35,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "017"
+      },
+      {
+        "row": 36,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "018"
+      },
+      {
+        "row": 37,
+        "lithology_label": "Maggia Gneiss (Parallel)",
+        "experiment_id_string": "019"
+      },
+      {
+        "row": 38,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "001"
+      },
+      {
+        "row": 39,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "002"
+      },
+      {
+        "row": 40,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "003"
+      },
+      {
+        "row": 41,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "004"
+      },
+      {
+        "row": 42,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "005"
+      },
+      {
+        "row": 43,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "006"
+      },
+      {
+        "row": 44,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "007"
+      },
+      {
+        "row": 45,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "008"
+      },
+      {
+        "row": 46,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "009"
+      },
+      {
+        "row": 47,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "010"
+      },
+      {
+        "row": 48,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "011"
+      },
+      {
+        "row": 49,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "012"
+      },
+      {
+        "row": 50,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "013"
+      },
+      {
+        "row": 51,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "014"
+      },
+      {
+        "row": 52,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "015"
+      },
+      {
+        "row": 53,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "016"
+      },
+      {
+        "row": 54,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "017"
+      },
+      {
+        "row": 55,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "019"
+      },
+      {
+        "row": 56,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "020"
+      },
+      {
+        "row": 57,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "021"
+      },
+      {
+        "row": 58,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "022"
+      },
+      {
+        "row": 59,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "023"
+      },
+      {
+        "row": 60,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "024"
+      },
+      {
+        "row": 61,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "025"
+      },
+      {
+        "row": 62,
+        "lithology_label": "Maggia Gneiss (Perpendicular)",
+        "experiment_id_string": "026"
+      }
+    ]
+  }
+]

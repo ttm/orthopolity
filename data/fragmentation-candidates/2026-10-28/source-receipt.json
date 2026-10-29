@@ -1,0 +1,109 @@
+{
+  "started": "2026-10-28",
+  "completed": "2026-10-29",
+  "archive_families": 3,
+  "files": [
+    {
+      "file": "lin/record-v2.json",
+      "url": "https://zenodo.org/api/records/3692315",
+      "bytes": 5719,
+      "sha256": "dff4b6870094c7d63f0e9df5a5cf768a57643cb20648439e88d033c57a531a96",
+      "kind": "original bytes"
+    },
+    {
+      "file": "lin/Dataset_S1.xlsx",
+      "url": "https://zenodo.org/api/records/3692315/files/Dataset_S1.xlsx/content",
+      "bytes": 71452,
+      "sha256": "da678bd2a95393f266559242c8846455d11db10e479f0278470d96ca69283c46",
+      "kind": "original bytes"
+    },
+    {
+      "file": "lin/eligibility.json",
+      "url": null,
+      "bytes": 2131,
+      "sha256": "1362333f198c2d8e657c9de705fda87e189de1cfab02aae2a3f7bc076af9fefc",
+      "kind": "derived inspection"
+    },
+    {
+      "file": "rae/metadata.json",
+      "url": "https://zenodo.org/api/records/3987223",
+      "bytes": 6136,
+      "sha256": "0c84c5dfa529b5a497a250f8e74e29d5926e7753451ec17106d97f56f36241d6",
+      "kind": "original bytes"
+    },
+    {
+      "file": "rae/ST1_QSexp.xlsx",
+      "url": "https://zenodo.org/api/records/3987223/files/ST1_QSexp.xlsx/content",
+      "bytes": 10657,
+      "sha256": "5f2609fe360f08ceeadf161f5bc752b8d678483bcc58c5d5767a2db322048e7f",
+      "kind": "original bytes"
+    },
+    {
+      "file": "rae/ST2_Dynexp.xlsx",
+      "url": "https://zenodo.org/api/records/3987223/files/ST2_Dynexp.xlsx/content",
+      "bytes": 29235,
+      "sha256": "8b2efd8d2796f38354bf2302aa7cc5292c4e6b8986877ddbdc149c0eba38f828",
+      "kind": "original bytes"
+    },
+    {
+      "file": "rae/eligibility.json",
+      "url": null,
+      "bytes": 4921,
+      "sha256": "2c5065743eede3d86d97bcc565a31380ae935767532c5e68708bd4927604b64f",
+      "kind": "derived inspection"
+    },
+    {
+      "file": "rae/design-labels.json",
+      "url": null,
+      "bytes": 10538,
+      "sha256": "af77e759c3e2ec1f9c1e24c9c615dd84c678c0a14f1c4f930a28a2225129de92",
+      "kind": "derived inspection"
+    },
+    {
+      "file": "rae/formula-lineage.json",
+      "url": null,
+      "bytes": 4915,
+      "sha256": "7d6a143bb1a7ebafbe46406bb0364804a531aea281af772eb984867897c56e18",
+      "kind": "derived inspection"
+    },
+    {
+      "file": "deepsea/figshare-25102847.json",
+      "url": "https://api.figshare.com/v2/articles/25102847",
+      "bytes": 5361,
+      "sha256": "4a52664ac22adb79fc4ab2aa4f6d9bd9bebdbd8dd6ebd9dcd4b5f809aafc6f3c",
+      "kind": "original bytes"
+    },
+    {
+      "file": "deepsea/README.zip",
+      "url": "https://ndownloader.figshare.com/files/46252084",
+      "bytes": 471368,
+      "sha256": "bd44a34a796a79afeb0ee4d4883efa8421aae1bf9e828dfc69c149eeaf4e06bd",
+      "kind": "original bytes"
+    },
+    {
+      "file": "deepsea/zip-tail.bin",
+      "url": "https://ndownloader.figshare.com/files/46252081",
+      "bytes": 65536,
+      "sha256": "145d4e87369c9d25db19f609425f640e23a9d952f430a96619b7af74d4a3a9a9",
+      "kind": "original bytes",
+      "range": {
+        "start": 1280166666,
+        "end_inclusive": 1280232201,
+        "archive_total_bytes": 1280232202
+      }
+    },
+    {
+      "file": "deepsea/Sieving.xlsx",
+      "url": "https://ndownloader.figshare.com/files/46252081",
+      "bytes": 11808,
+      "sha256": "05a90d8716d76dbafd555b4d2d32b81e880b86fbcda8b04cdeae836ba499a611",
+      "kind": "unchanged member extracted from original archive range",
+      "archive_member": "Sieving and Measuring/Sieving.xlsx",
+      "member_crc32": "06af5e69"
+    }
+  ],
+  "license": "All three source archives declare CC BY 4.0; attribution and details in data/NOTICE.md.",
+  "deepsea_range_qualification": "HTTP206 tail range and member CRC were verified. Full 1.28GB archive was not downloaded, so its publisher MD5 was not independently verified. Numerical worksheet values were not decoded.",
+  "numerical_experimental_outcomes_decoded": false,
+  "decision": "All three fail the original independently qualified complete-budget requirement. No empirical run selected; search closed at three archives."
+}

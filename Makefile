@@ -45,6 +45,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: biome-stock-audit
 .PHONY: rlc-boundary rlc-boundary-registry
 .PHONY: hotbox-transfer hotbox-transfer-registry
+.PHONY: fragmentation-sources fragmentation-boundary
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -86,7 +87,13 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/membrane-exchange-transfer-2026-10-22/transfer.png \
  results/rlc-boundary-2026-10-25/circuit.png
 
-all: data test analyses topology-design biome-stock-audit rlc-boundary hotbox-transfer
+all: data test analyses topology-design biome-stock-audit rlc-boundary hotbox-transfer fragmentation-sources fragmentation-boundary
+
+fragmentation-sources: ## verify three candidate archives without numerical outcomes
+	$(PY) experiments/audit_fragmentation_sources.py
+
+fragmentation-boundary: ## analytic uniform-cut boundary and missing-mass checks
+	$(PY) experiments/check_fragmentation_boundary.py --output $(STUDY_OUTPUT_ROOT)/fragmentation-boundary.json
 
 hotbox-transfer: ## replay amended public wall-profile forecasts and full qualified result
 	$(PY) experiments/run_hotbox_transfer.py --stage forecast --design-commit a18fbec --output $(STUDY_OUTPUT_ROOT)/hotbox/predictions.json

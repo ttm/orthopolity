@@ -1,0 +1,39 @@
+{
+  "audited": "2026-10-28",
+  "archive_family": "Lin et al. (2020), fragmenting rockfalls and rockslides",
+  "versions": [
+    "https://zenodo.org/records/3685912",
+    "https://zenodo.org/records/3692315"
+  ],
+  "selected_version": "v2",
+  "primary_methods": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019JB019296",
+  "license_from_zenodo_metadata": "cc-by-4.0",
+  "downloaded_files": [
+    {
+      "file": "record-v1.json",
+      "url": "https://zenodo.org/api/records/3685912",
+      "bytes": 5809,
+      "sha256": "c85d400ba7e0a7e13444750e097bfdb17c4f43c1dfefb4ba30c5131b27a80dc7"
+    },
+    {
+      "file": "record-v2.json",
+      "url": "https://zenodo.org/api/records/3692315",
+      "bytes": 5719,
+      "sha256": "dff4b6870094c7d63f0e9df5a5cf768a57643cb20648439e88d033c57a531a96"
+    },
+    {
+      "file": "Dataset_S1.xlsx",
+      "url": "https://zenodo.org/api/records/3692315/files/Dataset_S1.xlsx/content",
+      "bytes": 71452,
+      "sha256": "da678bd2a95393f266559242c8846455d11db10e479f0278470d96ca69283c46"
+    }
+  ],
+  "eligibility": "Fails complete fragment outcome gate: workbook contains deposit summaries and velocities, not fragment masses or full mass-class distributions. Nominal parent geometry/density and experimental groups are documented, but no independently measured per-run parent mass ledger is identified.",
+  "methods_qualification": "Methods section 2.2 reports manual fragment measurements/weighing because sieving would cause further breakage, and acknowledges an arbitrary 0.074 mm comminution cutoff. Those measured distributions are not deposited in the inspected workbook.",
+  "exposure": "Article abstract, methods, published parameters and qualitative aggregate results were read. Workbook XML strings/metadata only; no numerical experimental cell payload converted or reported. No movies/images decoded.",
+  "article_retention": "Public web tool served full text; direct curl download returned HTTP403; no article snapshot retained.",
+  "not_downloaded": [
+    "Dataset_S2.rar (videos, 854414995 bytes)",
+    "Dataset_S3.rar (orthophotos/DSM, 299212439 bytes)"
+  ]
+}

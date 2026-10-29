@@ -1,0 +1,62 @@
+{
+  "kind": "Analytic fragmentation boundary only; no experimental data read",
+  "reference_measure": "Log-orthopolic in fragment mass for the rod; logarithmic sieve diameter for the separate completion bound",
+  "interpretation": "Ratio of expected bin masses, not mean of per-realization conditional shares",
+  "uniform_cut_example": {
+    "parent_mass": 1.0,
+    "fragments": 8,
+    "bin_edges_as_parent_mass_fractions": [
+      0.0625,
+      0.125,
+      0.25,
+      0.5
+    ],
+    "expected_bin_counts": [
+      1.9504389464855194,
+      2.0736961364746094,
+      1.00537109375
+    ],
+    "expected_bin_mass_fractions": [
+      0.17866504029370844,
+      0.3692241311073303,
+      0.3319244384765625
+    ],
+    "expected_window_mass_fraction": 0.8798136098776013,
+    "conditional_expected_mass_shares": [
+      0.20307146682871174,
+      0.4196617635395483,
+      0.37726676963173994
+    ],
+    "exact_conditional_expected_mass_shares": [
+      "255786835/1259590227",
+      "528601856/1259590227",
+      "158400512/419863409"
+    ],
+    "equal_mass_per_log_bin_shares": [
+      0.3333333333333334,
+      0.3333333333333333,
+      0.33333333333333337
+    ],
+    "total_variation_from_log_equality": 0.13026186650462163,
+    "expected_log_resource_peak_as_parent_fraction": 0.25
+  },
+  "verification": {
+    "quadrature_cases": 12,
+    "maximum_normalized_quadrature_error": 1.1102230246251565e-16,
+    "maximum_normalized_count_mass_second_moment_error": 2.0816681711721685e-17,
+    "maximum_exact_fraction_error": 0.0,
+    "generated_uniform_cut_realizations": 4096,
+    "maximum_per_realization_mass_conservation_error": 0.0,
+    "linear_program_cases_each": 60,
+    "maximum_missing_mass_formula_vs_lp_error": 5.684341886080802e-14,
+    "maximum_tv_formula_vs_lp_error": 1.1102230246251565e-16,
+    "invalid_input_checks": 11
+  },
+  "generated_seed": 20261028,
+  "qualifications": [
+    "Uniform cuts are a specified ideal mechanism, not a fitted rock-fracture model",
+    "Conservation alone does not imply equal expected mass per logarithmic fragment mass",
+    "Completion bounds concern actual profiles, not an unspecified stochastic mean claim",
+    "Missing-material feasibility is not an independent absolute-budget prediction"
+  ]
+}

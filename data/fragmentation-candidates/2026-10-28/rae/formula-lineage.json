@@ -1,0 +1,289 @@
+[
+  {
+    "cell": "F3",
+    "has_formula": true,
+    "formula_cell_references": [
+      "E3",
+      "D3"
+    ]
+  },
+  {
+    "cell": "V3",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "W3",
+    "has_formula": true,
+    "formula_cell_references": [
+      "V3",
+      "F3"
+    ]
+  },
+  {
+    "cell": "X3",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "Y3",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "Z3",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AA3",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AB3",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AC3",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AD3",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AE3",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "F4",
+    "has_formula": true,
+    "formula_cell_references": [
+      "E4",
+      "D4"
+    ]
+  },
+  {
+    "cell": "V4",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "W4",
+    "has_formula": true,
+    "formula_cell_references": [
+      "V4",
+      "F4"
+    ]
+  },
+  {
+    "cell": "X4",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "Y4",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "Z4",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AA4",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AB4",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AC4",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AD4",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AE4",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "F5",
+    "has_formula": true,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "V5",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "W5",
+    "has_formula": true,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "X5",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "Y5",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "Z5",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AA5",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AB5",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AC5",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AD5",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AE5",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "F6",
+    "has_formula": true,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "V6",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "W6",
+    "has_formula": true,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "X6",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "Y6",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "Z6",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AA6",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AB6",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AC6",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AD6",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AE6",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "F7",
+    "has_formula": true,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "V7",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "W7",
+    "has_formula": true,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "X7",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "Y7",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "Z7",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AA7",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AB7",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AC7",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AD7",
+    "has_formula": false,
+    "formula_cell_references": []
+  },
+  {
+    "cell": "AE7",
+    "has_formula": false,
+    "formula_cell_references": []
+  }
+]
