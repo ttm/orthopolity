@@ -20,6 +20,9 @@ favorable allocation of missing material without inventing a budget.
 exact arithmetic, quadrature and independent LP comparisons. All **692 tests**
 and registry verification pass; the analytic output replays byte-for-byte.
 The prior full-`make all` BioMe byte-comparison limitation remains unresolved.
+Both PDFs are visually checked, warning-free and byte-reproducible from
+**dcb4ca3**: **12 pages main / 69 pages supporting**. See the
+[verification record](reproduction-2026-10-29.md).
 Registry stays **46 / 1,168**. Next editorial work should make the established mechanisms,
 independent predictions and boundaries distinguishable to readers. New empirical
 work requires specifically identified independent inputs; the user's constraint

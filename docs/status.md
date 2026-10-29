@@ -35,7 +35,10 @@ The source audit verifies 13 retained files, four provider checksums and five
 sheet schemas. Both checks are included in `make all`; **692 tests**, registry
 verification and byte-identical analytic replay pass. Full `make all` was not
 rerun: the previously documented BioMe numerical byte-comparison limitation
-remains unresolved. Registry remains **46 runs / 1,168 references**.
+remains unresolved. Registry remains **46 runs / 1,168 references**. The
+**12-page article and 69-page supplement** are visually checked, warning-free
+and byte-identical across two forced builds from **dcb4ca3**; the
+[verification record](reproduction-2026-10-29.md) preserves the commands and hashes.
 Next consolidate the article's conditional
 mechanisms, transferred empirical predictions and known boundaries; do not
 default to another open-ended dataset search or reopen these candidates without
