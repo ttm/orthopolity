@@ -33,6 +33,9 @@ byte-comparison limitation remains unresolved. The title and general-law
 ambition are unchanged. Next develop independent allocation mechanisms or
 predictions within the existing-public-data constraint; terminology alone
 does not strengthen empirical evidence or justify another broad dataset search.
+The **12-page main article and 70-page supplement** are visually checked,
+warning-free and byte-identical across two forced builds from **91476d3**;
+the [verification record](reproduction-2026-10-30.md) retains the checks and hashes.
 
 **29 October — fragmentation search closed; an analytic boundary added:**
 the [three-archive audit](fragmentation-source-audit-2026-10-28.md) reaches its

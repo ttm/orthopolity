@@ -15,6 +15,9 @@ This is conceptual clarification, with no new empirical study or registry entry.
 All **692 tests** and registry verification pass (**46 / 1,168**); the prior
 full-`make all` BioMe byte-comparison limitation remains unresolved.
 Title/general-law ambition and existing-public-data-only constraint persist.
+Both PDFs are visually checked, warning-free and byte-reproducible from
+**91476d3**: **12 pages main / 70 pages supporting**. See the
+[verification record](reproduction-2026-10-30.md).
 
 **29 October — bounded fragmentation round complete:** the
 [audit](fragmentation-source-audit-2026-10-28.md) stops at three archive families
