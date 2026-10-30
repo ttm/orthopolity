@@ -31,6 +31,24 @@ $$\mathcal O_\mu(k)=\bar q(k)\,n_\mu(k)=C .$$
 
 ## Related terms
 
+**Natural (orthopolic) distribution.** The project's name for the normalized
+neutral inverse-resource profile, $p_\mu(k)=1/[Z\bar q(k)]$, where
+$Z=\int_D d\mu/\bar q$ is finite and positive. The physical resource, objects,
+domain and reference measure must be independently specified. Power-law costs
+give a power-law density relative to $dk$: exponent $d+1$ under log-orthopolic allocation and
+$d$ under linear-orthopolic allocation when $\bar q\propto k^d$. Other cost laws
+give other profiles. This is a resource-based family, not a new standard name
+for every power law or every distribution found in nature. Its occurrence is
+a substantive claim to test, not a consequence of naming it natural.
+
+**Normal (Gaussian) distribution.** The bell-shaped density of a Gaussian
+random variable, not a sinusoidal relation. A central limit theorem gives one
+route to it through centered and scaled sums under specified assumptions;
+dependence on many variables alone is insufficient. Normal fluctuations can
+coexist with an orthopolic allocation or a power-law mean relation. The term
+does not assert that most raw observations in nature are Gaussian. See
+supporting S3.9 for the aggregation/allocation distinction and its examples.
+
 **Reference measure.** What "equal" is counted against. It must be stated, because it changes
 the predicted exponent.
 

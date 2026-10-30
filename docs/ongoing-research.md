@@ -1,5 +1,21 @@
 # Ongoing research: resume here
 
+**30 October — author's normal/natural argument incorporated:** main section 5
+states the complementary mechanisms; supporting **S3.9** gives central-limit
+conditions, the normalized inverse-resource family, homogeneous requirements,
+candle sampling, nested boxes, and Gaussian/equipartition coexistence. Definitions
+are in the [glossary](glossary.md). The density relative to linear size has
+exponent d+1 for log-orthopolic allocation and d for linear-orthopolic allocation
+when the resource scales as size^d. Mode counting is neither size measure.
+Do not equate a scaling relation with a probability distribution or treat
+"natural" as proof that power laws predominate. Household inventories need
+independent objects, resource, measure and observations; S3.8's fragmentation
+boundary remains visible. Six analytic sampling checks agree within **8.88e-16**.
+This is conceptual clarification, with no new empirical study or registry entry.
+All **692 tests** and registry verification pass (**46 / 1,168**); the prior
+full-`make all` BioMe byte-comparison limitation remains unresolved.
+Title/general-law ambition and existing-public-data-only constraint persist.
+
 **29 October — bounded fragmentation round complete:** the
 [audit](fragmentation-source-audit-2026-10-28.md) stops at three archive families
 without a qualified complete-budget experiment. Four workbooks/13 retained

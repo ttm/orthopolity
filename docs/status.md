@@ -1,8 +1,38 @@
 # Project status and handoff
 
-Last updated 29 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 30 October 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**30 October — normal aggregation and natural allocation distinguished:** the
+author's argument now appears concisely in main section 5, with the derivation
+and examples in **supporting S3.9** and definitions in the [glossary](glossary.md).
+Normality is a bell-shaped Gaussian form; additive aggregation gives it under
+central-limit conditions. The **natural (orthopolic) distribution** names the
+normalized neutral inverse-resource profile for independently fixed objects,
+resource requirements, domain and reference measure. Homogeneous geometric
+requirements give power-law densities with exponent **d+1 for log-orthopolic**
+and **d for linear-orthopolic** allocation, both expressed relative to linear
+size. The naming does not establish the prevalence of either family in nature.
+
+The same ideal inverse-square candle flux gives intensity densities proportional
+to **I^(-3/2)** under uniform-radius sampling and **I^(-5/2)** under uniform-volume
+sampling. These sampled flux histograms are not object-allocation evidence.
+Nested boxes retain exact complete-level accounting; mixed household inventories
+remain an empirical question. Canonical harmonic modes show coexistence:
+Gaussian coordinates and equal mean energy under mode counting, neither
+log-orthopolic nor linear-orthopolic size allocation. The uniform-cut
+fragmentation boundary in S3.8 remains explicit.
+
+No empirical data, forecasts or registry entries were added. Six analytic
+change-of-variable checks agree in normalization and mean within **8.88e-16**;
+independent scientific review found no remaining blocker after precision edits.
+All **692 tests** and registry verification pass, with **46 runs / 1,168
+references**. Full `make all` was not rerun; the previously documented BioMe
+byte-comparison limitation remains unresolved. The title and general-law
+ambition are unchanged. Next develop independent allocation mechanisms or
+predictions within the existing-public-data constraint; terminology alone
+does not strengthen empirical evidence or justify another broad dataset search.
 
 **29 October — fragmentation search closed; an analytic boundary added:**
 the [three-archive audit](fragmentation-source-audit-2026-10-28.md) reaches its

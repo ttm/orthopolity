@@ -1,5 +1,17 @@
 # Orthopolity: research direction
 
+**30 October author direction:** develop the argument distinguishing normal
+distributions arising through many contributing variables from a natural
+distribution associated with orthopolity. Preserve the motivating examples of
+candle illumination, household objects and nested boxes. The developed wording
+uses **normal** for Gaussian form under appropriate aggregation assumptions and
+**natural (orthopolic)** for the independently specified neutral inverse-resource
+family. Correct the visual description to bell-shaped, distinguish a scaling
+relation from a probability distribution, and keep the claim about prevalence
+in nature separate from the conditional derivations. Both mechanisms can occur
+in one system. These qualifications implement the argument without treating
+the proposed terminology as empirical establishment or removing known boundaries.
+
 **10 October author instruction:** retain the exact title and the claim of a
 general law, with the ambition to establish it. Reorganize the article so the
 central relations, ideal systems, known physical realizations, models and

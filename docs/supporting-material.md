@@ -2,7 +2,7 @@
 
 **Accounting proofs, physical derivations, observation models and complete comparisons**
 
-Prepared 10 October 2026; revised 26 October 2026 as a companion to
+Prepared 10 October 2026; revised 30 October 2026 as a companion to
 [the main article](paper.md).
 This document preserves the substantive technical material of the article at
 source commit **`f137d4efb050ccfcb5c5f814d32da651c645421c`**, supplemented by
@@ -1236,6 +1236,92 @@ Three public archives failed qualification for the complete-budget experiment
 worksheet outcomes were decoded. Exact arithmetic, quadrature and independent
 linear programs [verify the formulas](../experiments/check_fragmentation_boundary.py).
 These checks add no empirical evidence.
+
+### S3.9. Normal aggregation and natural allocation
+
+We use **natural (orthopolic) distribution** as the name for a normalized
+neutral inverse-resource profile. Normal and natural identify explanations here,
+not an exhaustive division of phenomena into mathematical families. Gaussian
+normality is itself natural, and orthopolic allocation can involve stochastic
+dynamics. Neither terminology nor the examples below establish which distribution
+is most prevalent across nature.
+
+For independent identically distributed $X_i$ with mean $m$ and finite,
+positive variance $s^2$, the central limit theorem gives
+
+$$\frac{\sum_{i=1}^nX_i-nm}{s\sqrt n}\ \Rightarrow\ \mathcal N(0,1).$$
+
+It concerns centered, scaled sums, not arbitrary collections of variables.
+Independent variables add through convolution of their distributions; mixing
+densities is a different operation. Extensions permit some nonidentical or
+dependent terms under additional conditions. Infinite-variance Cauchy averages
+provide a counterexample to unrestricted Gaussian convergence (Geyer, 2001,
+sections 6.1.2 and 6.1.9). The Gaussian density is bell-shaped, not sinusoidal.
+Its frequent use for fluctuations does not imply that most raw quantities in
+nature have that shape (NIST/SEMATECH, n.d.). Products of positive variables suggest approximate
+lognormality when their logarithms satisfy an appropriate central limit theorem.
+
+For orthopolity, independently fix objects, a domain $D$, positive mean resource
+requirement $\bar q(k)$ and comparison measure $\mu$. The neutral premise
+$\bar q n_\mu=C$ gives the object-sampling distribution
+
+$$p_\mu(k)=\frac{1}{Z\bar q(k)},\qquad
+Z=\int_D\frac{d\mu(k)}{\bar q(k)}\in(0,\infty).$$
+
+This is the natural distribution in the declared sense. Indifference concerns
+**resource per unit of comparison measure**, not equal probabilities for objects of
+different costs. Increasing cost means fewer objects per equal reference width.
+If $\bar q(k)\propto k^d$, the linear-coordinate count density is
+$k^{-(d+1)}$ for **log-orthopolic** allocation and $k^{-d}$ for
+**linear-orthopolic** allocation. Other requirements yield other profiles.
+Neither the resource nor the comparison measure can be inferred freely from
+the same profile and then counted as independent confirmation.
+
+The name *natural* expresses a physical baseline: when the mechanism treats
+equal reference classes symmetrically in resource, their different per-object
+requirements produce unequal abundances. Scale-homogeneous requirements,
+$\bar q(\lambda k)=\lambda^d\bar q(k)$ within the applicable regime, give
+power laws directly. Length, area and volume requirements supply familiar
+geometric cases. This explains why power laws are candidates when no additional
+scale intervenes; it does not show that nature generally satisfies the allocation
+premise. Boundaries, characteristic scales and constraints can restrict or break
+that regime, as the examples and failures elsewhere in this article demonstrate.
+
+A candle motivates geometric scaling, but its total emitted power is not the
+quantity decreasing with distance. In the ideal steady, isotropic point-source
+approximation with transparent propagation, flux density is
+$I(r)=P/(4\pi r^2)=A/r^2$. A real flame requires finite-source, angular and
+medium qualifications. The scaling relation alone does not specify a probability
+distribution. For $A>0$ and $r\in[a,b]$ with $0<a<b$, a change of variables gives
+
+$$p_I(I)=p_r(\sqrt{A/I})\frac{\sqrt A}{2I^{3/2}},
+\qquad A/b^2\le I\le A/a^2.$$
+
+Uniform radius sampling yields $p_I\propto I^{-3/2}$; uniform spatial sampling
+in a three-dimensional spherical shell yields $p_I\propto I^{-5/2}$. These are
+sampling-induced flux distributions, not tests of log-orthopolic or
+linear-orthopolic object abundance. Likewise, nested boxes have the exact
+complete-level identity $N_j\bar q_j=B$ (S1.1), reusing the same budget at
+different resolutions. An inventory of coexisting household objects requires
+its own resource, classes and measurements; a capacity bound does not determine
+its distribution.
+
+The two mechanisms can coexist. A classical harmonic mode with
+$H=p^2/(2M)+\kappa x^2/2$, with $M,\kappa,T>0$, in canonical equilibrium has Gaussian coordinates,
+$\operatorname{Var}(x)=k_BT/\kappa$ and $\operatorname{Var}(p)=Mk_BT$,
+while $E[H]=k_BT$ for each mode (S3.3; Tong, n.d.). Mode-counting measure is
+neither log-orthopolic nor linear-orthopolic size allocation. Similarly,
+approximately Gaussian measurement fluctuations can surround a power-law mean
+relation without changing the two statements into a single distribution claim.
+
+The proposed natural baseline therefore remains a substantive allocation claim
+whose scope must be established. Uniform-cut fragmentation in S3.8 conserves mass
+and has exchangeable fragment labels while failing log-orthopolic equality
+across size classes, even in expectation. It remains a boundary. A sharper
+argument is that additive aggregation and independently justified resource
+allocation can explain different regularities, with predictable overlap and
+departures; the repository does not establish that all natural relations are
+power laws or that most observations are Gaussian.
 
 ## S4. Exploratory sources, methods and results
 
@@ -3349,6 +3435,9 @@ and parameter inference. *Journal of the Royal Society Interface*, 19, 20220405.
 <https://doi.org/10.1098/rsif.2022.0405>. Revised exposition:
 <https://arxiv.org/abs/2206.06146v2>.
 
+Geyer, C. J. (2001). *Stat 5101 Lecture Notes*. University of Minnesota.
+Sections 6.1.2 and 6.1.9. <https://www.stat.umn.edu/geyer/5101/notes/n1.pdf>.
+
 Harcourt, R., Garcia, N. S., and Martiny, A. C. (2024). *Synechococcus* batch culture data
 (cell quotas and ratios (C, N, P), size, and diameter) from laboratory experiments in 2021 to
 2022 with related isolates cultured across a range of temperatures. BCO-DMO dataset 926311,
@@ -3415,6 +3504,10 @@ Myers, A. L., and Prausnitz, J. M. (1965). Thermodynamics of mixed-gas adsorptio
 
 Newman, M. E. J. (2005). Power laws, Pareto distributions and Zipf's law.
 *Contemporary Physics*, 46, 323–351. <https://arxiv.org/abs/cond-mat/0412004>.
+
+NIST/SEMATECH (n.d.). *e-Handbook of Statistical Methods*, section 1.3.6.6.1,
+Normal Distribution. Accessed 30 October 2026.
+<https://www.itl.nist.gov/div898/handbook/eda/section3/eda3661.htm>.
 
 Piantadosi, S. T., Tily, H., and Gibson, E. (2011). Word lengths are optimized for
 efficient communication. *Proceedings of the National Academy of Sciences*,

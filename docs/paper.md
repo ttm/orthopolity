@@ -2,7 +2,7 @@
 
 **Capacity, physical realizations, and effective-resource inference**
 
-> Research manuscript, revised 25 October 2026. Detailed derivations, complete
+> Research manuscript, revised 30 October 2026. Detailed derivations, complete
 > comparisons and analysis histories are retained in the [supporting material](supporting-material.md).
 > Empirical studies include exploration, locally frozen forecasts and retrospective
 > reanalyses; none is externally preregistered. Authorship and submission declarations
@@ -70,14 +70,12 @@ called a constraint supplies neither. Some departures will instead expose a fail
 resource choice, an inapplicable mechanism or a limitation of the allocation relation
 in the claimed domain.
 
-The paper therefore develops three connected contributions: a precise account of
-capacity and allocation; a way to infer restricted effective resources and predict
-across conditions; and comparisons that preserve both successful forecasts and
-failures. Additivity, reversible dynamics, equipartition and the statistical tools
-have established foundations. The contribution concerns their physical organization,
-the consequences that can be transferred between settings, and the limits revealed
-by testing them. [Supporting material](supporting-material.md) retains the detailed
-proofs, secondary examples, complete comparisons and source qualifications.
+The paper develops capacity and allocation, restricted effective-resource inference,
+and comparisons retaining successes and failures. Additivity, reversible dynamics,
+equipartition and statistical inference are established foundations; the contribution
+concerns their physical organization, transferable predictions and limits.
+[Supporting material](supporting-material.md) retains proofs, complete comparisons
+and source qualifications.
 
 ## 2. Capacity, allocation and inference
 
@@ -516,9 +514,15 @@ these transport studies tests neutral log-/linear-orthopolic size allocation.
 
 ## 5. Learning from validity, departures and failure
 
-Orthopolity's exact accounting and specified physical realizations are established;
-its broader reach requires independently identifying comparable concentrations,
-the effective resource and the constraints on allocation.
+Normal aggregation and natural allocation offer complementary explanations.
+Gaussian normality can emerge from additive aggregation under central-limit
+conditions; we call the
+normalized neutral inverse-resource profile (2) a *natural (orthopolic)
+distribution*. Homogeneous geometric requirements yield power-law abundance under the
+declared log-orthopolic or linear-orthopolic measure. Both mechanisms can coexist:
+canonical harmonic modes have Gaussian coordinates and equal mean energies.
+Supporting S3.9 gives the conditions and distinguishes physical scaling relations
+from sampled distributions.
 
 Uniform spatial cuts of a homogeneous rod conserve every realization's mass
 and give labeled fragments equal expected mass. Yet expected resource per
@@ -527,24 +531,16 @@ size-class equality follows before outcomes, without fitting a correction.
 Supporting S3.8 gives the finite-bin prediction and distinguishes this partition
 mechanism from exchange under class symmetry.
 
-Three kinds of finding remain distinct. A metric or sampling change can alter
-a distribution without changing the system: power versus flux density, mode
-energy versus radiance, or lineage versus population sampling. Corrections
-require independent justification. A physical constraint can predict a non-neutral
-profile: measured absorption, quantum levels, birth-cycle crossings and
-pure-calibrated adsorption affinities do so. A specified resource model can also
-fail its forecast. Chemostat reweighting, bacterial variability and cantilever
-spatial-loss errors remain failures until a revised explanation succeeds on
-additional evidence.
+Departures have distinct explanations. Changing the measure or sampling alters
+the reported distribution; independently specified absorption, quantum levels
+or adsorption affinities predict physical constraints. Chemostat reweighting,
+bacterial variability and cantilever spatial-loss errors instead remain failed
+forecasts until a revised explanation succeeds on additional evidence.
 
-An application must distinguish independently known inputs, calibration,
-transferred predictions and falsifying observations. Unrestricted resource or
-constraint fitting supplies an identity, not a physical explanation (section 2.3).
-
-Unavailable tests cannot decide between resource models. Qualified failures
-challenge their assumptions or domain. The next comparisons should change
-independently specified constraints so that rivals predict different relaxation
-rates, allocation profiles or cross-environment contrasts such as (4).
+Unavailable tests cannot decide between resource models, and unrestricted
+resource fitting supplies an identity (section 2.3). Further comparisons should
+change independently specified constraints so that rivals predict different
+allocation profiles, relaxation rates or cross-environment contrasts such as (4).
 
 ## 6. Contribution and conclusion
 
