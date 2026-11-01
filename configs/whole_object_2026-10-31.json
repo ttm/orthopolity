@@ -1,0 +1,21 @@
+{
+  "kind": "Constructed whole-object mechanism comparison; no empirical observations",
+  "budget": 24,
+  "costs": [1, 2, 4],
+  "reference_measure": "Log-orthopolic in physical object mass: three bins centered on 1, 2, 4, each with width ln(2)",
+  "asymptotic_budgets": [4, 8, 12, 24, 48, 96, 192],
+  "duration": 5.0,
+  "replicates": 4096,
+  "family_error_bound": 0.001,
+  "seed": 20261031,
+  "cases": [
+    {"name": "channel_baseline", "mechanism": "channel", "forward": [1, 1], "reverse": [1, 1]},
+    {"name": "channel_bias", "mechanism": "channel", "forward": [1, 2], "reverse": [1, 1]},
+    {"name": "channel_bias_clock3", "mechanism": "channel", "forward": [3, 6], "reverse": [3, 3]},
+    {"name": "mass_action_baseline", "mechanism": "mass_action", "forward": [1, 1], "reverse": [1, 1]},
+    {"name": "mass_action_bias", "mechanism": "mass_action", "forward": [1, 2], "reverse": [1, 1]}
+  ],
+  "initialization": "Independent draws from the analytic baseline stationary distribution of each mechanism, then switch to the case rates at time zero",
+  "mass_action_convention": "Forward a1*n1*(n1-1) and a2*n2*(n2-1); breakup b1*n2 and b2*n4, with no combinatorial division by two",
+  "interpretation": "Exact stationary predictions and finite-time simulation checks of specified models; no empirical confirmation or simulation-fitted parameters"
+}

@@ -1,5 +1,19 @@
 # Ongoing research: resume here
 
+**1 November — whole-object forecast stage:** the
+[assembly model](whole-object-assembly-2026-10-31.md) derives integer-count
+stationary laws for constant feasible channels and falling-factorial mass
+action on the same closed monomer/dimer/tetramer network. It specifies
+log-orthopolic physical-mass bins before outcomes. Equality emerges only in
+the constant-channel large-budget means; snapshot variance tends to 1/18.
+The exact budget-24 means and rate-change forecasts are in
+[predictions.json](../results/whole-object-assembly-2026-10-31/predictions.json).
+No study-budget stochastic trajectories have yet been run. Freeze and push
+the design/implementation/forecasts before running the five configured
+Gillespie checks; then incorporate all outcomes, including any failures.
+Simulation is mathematical verification, not natural-system confirmation.
+Do not broaden this into another unguided dataset search.
+
 **30 October — author's normal/natural argument incorporated:** main section 5
 states the complementary mechanisms; supporting **S3.9** gives central-limit
 conditions, the normalized inverse-resource family, homogeneous requirements,

@@ -1,8 +1,37 @@
 # Project status and handoff
 
-Last updated 30 October 2026. **Read this first in a new session.** It records what the authors
+Last updated 1 November 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**1 November — whole-object assembly forecasts prepared:** the
+[new model](whole-object-assembly-2026-10-31.md), started 31 October, replaces
+continuous equivalent counts with integer monomers, dimers and tetramers.
+Both assembly and breakup conserve the full material budget. Constant feasible
+channel rates give asymptotic equal expected mass across fixed logarithmic mass
+classes, with an exact finite-budget correction; mass-action kinetics give a
+different allocation despite the same budget and reactions. This is a constructed
+mechanism study using established stationary-distribution theory, not empirical
+evidence or a new general theorem. Reference measure: **log-orthopolic in
+physical object mass**, with three predetermined bins of width ln(2).
+
+At budget 24, analytic baseline shares are **(0.345238, 0.345238, 0.309524)**
+for constant channels and **(0.055882, 0.182557, 0.761562)** for mass action.
+Doubling tetramer association predicts distinct reallocations; multiplying all
+rates by three changes only the clock. High-budget channel snapshots converge
+to a broad Dirichlet(1,1,1) law, with share variance **1/18**, even though the
+mean shares approach thirds. No concentration of individual snapshots is claimed.
+
+The [configuration](../configs/whole_object_2026-10-31.json), implementation
+and [forecasts](../results/whole-object-assembly-2026-10-31/predictions.json)
+are being frozen before the five specified simulation scenarios. All **702
+tests** and registry verification pass. An independent scalar-rate audit checks
+18,547 quantities within **1.21e-13**; scientific and code reviews found no
+blockers after precision edits. No study-budget Gillespie trajectories have
+yet been run. Registry remains **46 runs / 1,168 references**. Next verify the frozen
+forecasts, integrate the result into the manuscripts and retain the analytic/
+empirical distinction. Existing-public-data-only constraint and general-law
+title/ambition persist.
 
 **30 October — normal aggregation and natural allocation distinguished:** the
 author's argument now appears concisely in main section 5, with the derivation
