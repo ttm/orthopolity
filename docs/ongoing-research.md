@@ -22,6 +22,9 @@ Simulation is mathematical verification, not natural-system confirmation.
 A suitable public test must measure both kinetic propensities and the material
 budget before a separate allocation intervention. Do not broaden this into
 another unguided dataset search or treat a matching power-law fit as that test.
+Both PDFs are visually checked, warning-free and byte-reproducible from
+**d0b9cdf**: **12 pages main / 72 pages supporting**. See the
+[verification record](reproduction-2026-11-01.md).
 
 **30 October — author's normal/natural argument incorporated:** main section 5
 states the complementary mechanisms; supporting **S3.9** gives central-limit

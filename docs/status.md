@@ -43,6 +43,10 @@ unresolved. General-law title/ambition and existing-public-data-only constraint
 persist. A future empirical test needs independently measured assembly/breakup
 rates, complete material accounting and a separate intervention; another fitted
 abundance curve does not supply that test.
+The **12-page main article and 72-page supplement** are visually checked,
+warning-free and byte-identical across two forced builds from **d0b9cdf**;
+the [verification record](reproduction-2026-11-01.md) retains the complete checks
+and PDF hashes.
 
 **30 October — normal aggregation and natural allocation distinguished:** the
 author's argument now appears concisely in main section 5, with the derivation
