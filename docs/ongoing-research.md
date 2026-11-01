@@ -1,6 +1,6 @@
 # Ongoing research: resume here
 
-**1 November — whole-object forecast stage:** the
+**1 November — whole-object mechanism study complete:** the
 [assembly model](whole-object-assembly-2026-10-31.md) derives integer-count
 stationary laws for constant feasible channels and falling-factorial mass
 action on the same closed monomer/dimer/tetramer network. It specifies
@@ -8,11 +8,20 @@ log-orthopolic physical-mass bins before outcomes. Equality emerges only in
 the constant-channel large-budget means; snapshot variance tends to 1/18.
 The exact budget-24 means and rate-change forecasts are in
 [predictions.json](../results/whole-object-assembly-2026-10-31/predictions.json).
-No study-budget stochastic trajectories have yet been run. Freeze and push
-the design/implementation/forecasts before running the five configured
-Gillespie checks; then incorporate all outcomes, including any failures.
+Forecasts/implementation were pushed in **895e774** before five Gillespie
+scenarios. All **20,480 trajectories / 894,172 events** conserve integer mass;
+maximum mean-share error **0.003802** passes the frozen **0.035474** bound.
+The intervention comparisons use the predicted transients at time five.
+Independent scalar-rate reconstruction checks 18,547 forecast quantities
+within **1.21e-13**. Main 3.1 and supporting S3.10 retain the derivation,
+rate contrast, figure and snapshot limit. `make whole-object-assembly`
+reproduces forecasts, checks and figures byte-for-byte. All **702 tests** and
+registry verification pass (**46 / 1,168**, unchanged). Full `make all` was
+not rerun; the older BioMe byte-comparison limitation remains unresolved.
 Simulation is mathematical verification, not natural-system confirmation.
-Do not broaden this into another unguided dataset search.
+A suitable public test must measure both kinetic propensities and the material
+budget before a separate allocation intervention. Do not broaden this into
+another unguided dataset search or treat a matching power-law fit as that test.
 
 **30 October — author's normal/natural argument incorporated:** main section 5
 states the complementary mechanisms; supporting **S3.9** gives central-limit

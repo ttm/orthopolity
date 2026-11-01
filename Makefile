@@ -46,6 +46,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: rlc-boundary rlc-boundary-registry
 .PHONY: hotbox-transfer hotbox-transfer-registry
 .PHONY: fragmentation-sources fragmentation-boundary
+.PHONY: whole-object-assembly
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -85,9 +86,21 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/burden-transfer-2026-10-16/transfer.png \
  results/speech-capacity-2026-10-17/transfer.png \
  results/membrane-exchange-transfer-2026-10-22/transfer.png \
- results/rlc-boundary-2026-10-25/circuit.png
+ results/rlc-boundary-2026-10-25/circuit.png \
+ results/whole-object-assembly-2026-10-31/whole-object-assembly.png
 
-all: data test analyses topology-design biome-stock-audit rlc-boundary hotbox-transfer fragmentation-sources fragmentation-boundary
+all: data test analyses topology-design biome-stock-audit rlc-boundary hotbox-transfer fragmentation-sources fragmentation-boundary whole-object-assembly
+
+whole-object-assembly: ## replay frozen whole-object predictions, audit and simulation checks
+	$(PY) experiments/run_whole_object.py --stage forecast --output $(STUDY_OUTPUT_ROOT)/whole-object/predictions.json
+	cmp results/whole-object-assembly-2026-10-31/predictions.json $(STUDY_OUTPUT_ROOT)/whole-object/predictions.json
+	$(PY) experiments/check_whole_object_forecast.py --prediction $(STUDY_OUTPUT_ROOT)/whole-object/predictions.json --output $(STUDY_OUTPUT_ROOT)/whole-object/forecast-audit.json
+	cmp results/whole-object-assembly-2026-10-31/forecast-audit.json $(STUDY_OUTPUT_ROOT)/whole-object/forecast-audit.json
+	$(PY) experiments/run_whole_object.py --stage verify --prediction $(STUDY_OUTPUT_ROOT)/whole-object/predictions.json --output $(STUDY_OUTPUT_ROOT)/whole-object/verification.json
+	cmp results/whole-object-assembly-2026-10-31/verification.json $(STUDY_OUTPUT_ROOT)/whole-object/verification.json
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/report_whole_object.py --prediction $(STUDY_OUTPUT_ROOT)/whole-object/predictions.json --output-dir $(STUDY_OUTPUT_ROOT)/whole-object
+	cmp results/whole-object-assembly-2026-10-31/whole-object-assembly.png $(STUDY_OUTPUT_ROOT)/whole-object/whole-object-assembly.png
+	cmp results/whole-object-assembly-2026-10-31/whole-object-assembly.svg $(STUDY_OUTPUT_ROOT)/whole-object/whole-object-assembly.svg
 
 fragmentation-sources: ## verify three candidate archives without numerical outcomes
 	$(PY) experiments/audit_fragmentation_sources.py

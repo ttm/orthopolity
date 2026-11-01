@@ -2,7 +2,7 @@
 
 **Accounting proofs, physical derivations, observation models and complete comparisons**
 
-Prepared 10 October 2026; revised 30 October 2026 as a companion to
+Prepared 10 October 2026; revised 1 November 2026 as a companion to
 [the main article](paper.md).
 This document preserves the substantive technical material of the article at
 source commit **`f137d4efb050ccfcb5c5f814d32da651c645421c`**, supplemented by
@@ -1323,6 +1323,88 @@ allocation can explain different regularities, with predictable overlap and
 departures; the repository does not establish that all natural relations are
 power laws or that most observations are Gaussian.
 
+### S3.10. Whole-object assembly and a kinetic boundary
+
+The class-stock model in S3.1 leaves object assembly implicit. A
+[whole-object extension](whole-object-assembly-2026-10-31.md) instead conserves
+$B=n_1+2n_2+4n_4$ through the reactions
+$2X_1\rightleftarrows X_2$ and $2X_2\rightleftarrows X_4$.
+Every count is an integer and free monomers remain in the material budget.
+The resource is physical mass in monomer units, not energy. The three mass bins
+centered on 1, 2 and 4 have fixed equal logarithmic width $\ln2$; equal class
+mass is **log-orthopolic**. Linear-bin widths instead have ratios 1:2:4.
+Three discrete masses do not establish a continuous power-law density.
+
+Two rate rules are fixed before deriving abundance. Constant feasible-channel
+rates assign one association or breakup opportunity per reaction direction,
+independent of the number of available objects once the reaction is possible.
+This idealizes saturated processing. Mass action instead assigns association
+propensity $a_j n_j(n_j-1)$ and breakup propensity $b_j n_{2j}$, with the
+falling-factorial convention and $j=1,2$. Every constant is positive.
+Successive breakup reaches the all-monomer state, making the finite reaction
+graph connected. Conservation and irreducibility are shared; rate multiplicity
+is the controlled difference.
+
+For $r=a_1/b_1$ and $\rho=a_2/b_2$, direct detailed balance gives
+
+$$\pi_{\rm channel}(n)\propto r^{n_2+2n_4}\rho^{n_4},\qquad
+\pi_{\rm mass}(n)\propto
+\frac{r^{n_2+2n_4}\rho^{n_4}}{n_1!n_2!n_4!},$$
+
+conditioned on the same exact budget. These are instances of established
+product-form stationary laws (Anderson et al., 2010, Theorems 4.1 and 6.1),
+not new reaction-network theorems. Uniform channel rates give a uniform law
+over count configurations, not labeled microscopic arrangements. The physical
+applicability of that kinetic premise must be established independently.
+
+With all constants one and $B=4m$, the channel model has $(m+1)^2$ states.
+Summing over $n_4$ gives the exact stationary mean mass shares
+
+$$\frac{E[R_1]}B=\frac{E[R_2]}B=\frac13+\frac{1}{12(m+1)},\qquad
+\frac{E[R_4]}B=\frac13-\frac{1}{6(m+1)}.$$
+
+Thus inverse-cost mean counts emerge as the budget grows with three fixed
+classes, with a predicted finite-budget departure. The lattice-to-volume limit
+(Beck and Robins, 2015) gives a Dirichlet$(1,1,1)$ law for normalized resource
+fractions: their variance tends to $1/18$ and distinct-class covariance to
+$-1/36$. Equal mean allocation does not imply equal snapshots or shrinking
+relative fluctuations. Equilibrium is taken before the large-budget limit;
+no budget-independent relaxation time is asserted.
+
+At $B=24$, doubling only tetramer association changes $\rho$ from one to two.
+The stationary predictions are:
+
+| Rate rule | Baseline mean mass shares | After rate change |
+|---|---|---|
+| Constant channels | (0.345238, 0.345238, 0.309524) | (0.171662, 0.171662, 0.656676) |
+| Mass action | (0.055882, 0.182557, 0.761562) | (0.044436, 0.132949, 0.822616) |
+
+Multiplying all rates by three instead preserves the stationary allocation
+and rescales the complete trajectory's clock. Mass-action bias towards larger
+objects in this case is an allocation boundary despite exact material
+conservation. It is not a failure of the accounting identity or a universal
+claim about chemical size distributions.
+
+![Whole-object allocation and persistent fluctuations](../results/whole-object-assembly-2026-10-31/whole-object-assembly.png)
+
+*Figure S5. Analytic whole-object predictions under the specified log-mass
+comparison. Rates select different mean allocations; finite-budget channel
+means approach equal mass while snapshot fluctuations remain nonzero. These
+are constructed mechanisms, not measurements of a natural population.*
+
+Configuration, implementation and full finite-time forecasts were pushed in
+**895e774** before 20,480 Gillespie trajectories spanning five fixed scenarios.
+All 894,172 jumps conserve integer material. The maximum mean-share error is
+0.00380, below the frozen simultaneous bound 0.03547 across 15 means.
+Time-five predictions start from baseline equilibrium and retain transients;
+the intervention simulations do not presume a new equilibrium. A separate
+scalar-rate implementation checks 18,547 forecast quantities within 1.21e-13;
+stationary linear solves and clock controls also pass. Matrix evolution and
+Gillespie share one propensity routine, so the independent rate audit supplies
+the additional implementation check. The [complete record](whole-object-assembly-2026-10-31.md)
+retains exact fractions, all cases and the distinction between mathematical
+verification and empirical evidence. No empirical registry entry is added.
+
 ## S4. Exploratory sources, methods and results
 
 These convenience sources were inspected before the analyses or governed by locally recorded plans with the exposure qualifications below. They do not constitute a representative sample of natural systems.
@@ -1611,7 +1693,7 @@ by less than 3%. Controls had mean log capacity 11.89, against 11.72 for small a
 11.70 for large lineages. The unrounded retained means imply about 18% and 21%
 higher geometric-mean capacity, respectively. Thus
 three-percent uniformity does not describe all treatments or all 30 lineages.
-The all-lineage cost exponent $d=1.02$ is a post-hoc descriptive fit (Figure S5),
+The all-lineage cost exponent $d=1.02$ is a post-hoc descriptive fit (Figure S6),
 separate from the frozen equal-biovolume prediction $d=1$. The frozen equal-biovolume law ($d=1$) had held-out errors of 0.124 and 0.179 log
 units. It outperformed a size law fitted within part of the range, whose fitted cost dimension
 was 0.74 in one fold and 1.12 in the other, and an equal-cell-number law, with errors of
@@ -1719,7 +1801,7 @@ The treatment comparison is a retrospective published-experiment validation. Com
 
 ![Size-selected Dunaliella lineages regrown in one shared medium](../results/dunaliella-size-budget/size-budget.png)
 
-*Figure S5. Size-selected Dunaliella lineages regrown in one shared medium, from the data of
+*Figure S6. Size-selected Dunaliella lineages regrown in one shared medium, from the data of
 Malerba et al. (2018). (a) Replete carrying capacity in total biovolume against mean cell
 volume, with the two cross-fitted size laws and the equal-biovolume law. (b) Implied cell
 number at capacity. (c) Held-out errors of the frozen forecasts. (d) Capacity after N or P
@@ -1746,7 +1828,7 @@ declared domain; the excluded mass and unknown missing mass cannot be silently a
 The primary score is equal-plot mean total variation between realized normalized biomass
 and each expected-stock or empirical template. Bounded Pareto scores 0.470, logarithmic
 neutrality 0.493, linear neutrality 0.507, the development histogram 0.510 and bounded
-Weibull 0.531 (Figure S6). Pareto beats logarithmic neutrality in three of five plots;
+Weibull 0.531 (Figure S7). Pareto beats logarithmic neutrality in three of five plots;
 large opposing plot differences leave a mean improvement of only 0.023. Count profiles
 provide a different comparison: the development histogram, Pareto and Weibull score
 0.260–0.271, versus 0.412 for linear and 0.495 for logarithmic neutrality. Their binned
@@ -1769,7 +1851,7 @@ a claim about expected allocation.
 
 ![Plant biomass transfer and finite-census normalization](../results/plant-biomass-profile/mass-profile.png)
 
-*Figure S6. Directly weighed plant profiles and synthetic observation limits. (a) Equal-plot
+*Figure S7. Directly weighed plant profiles and synthetic observation limits. (a) Equal-plot
 mean Colorado biomass shares and transferred stock templates. (b) Count shares and retained
 count forecasts. (c) Each plot's biomass discrepancy and the five means. (d) Mean normalized
 census shares under iid logarithmic neutrality, compared with normalized expected stocks.
@@ -1830,7 +1912,7 @@ exchangeability of documents within each evaluation group. They omit
 training uncertainty and dependence between authors, threads or websites.
 
 The gain demonstrates transferable information in the combined symbolic
-features (Figure S7). Training word frequencies nevertheless predict much
+features (Figure S8). Training word frequencies nevertheless predict much
 better. Only 83 distinct $(L,P)$ pairs occur among the 2,623 vocabulary types,
 so the resource model must give many different words identical probabilities.
 Observed primary letter-resource and inferred-cost shares remain far from
@@ -1844,7 +1926,7 @@ Sonority, duration, context and semantic requirements remain unmeasured here.
 
 ![Linguistic resource transfer and descriptive allocation](../results/linguistic-resources/linguistic-resources.png)
 
-*Figure S7. Frozen linguistic predictions. (a) Loss on withheld review and answer
+*Figure S8. Frozen linguistic predictions. (a) Loss on withheld review and answer
 genres, including all six declared alternatives. (b) Observed letter and
 inferred-cost allocation aggregated by word length. Equal allocation over word
 types gives the dashed type-multiplicity profile, not a flat profile over length.
@@ -1936,7 +2018,7 @@ the M9 mean error to 9.44%; it remains a sensitivity, not a selected winner.
 
 ![Predicted cell-size profiles and all published-summary comparisons](../results/cell-division/cell-division.png)
 
-*Figure S8. Top panels are model predictions, not observed histograms. Bottom panels show
+*Figure S9. Top panels are model predictions, not observed histograms. Bottom panels show
 predicted/published endpoint ratios for every declared model; unity is exact
 agreement.* The [machine-readable results](../results/cell-division/summary.json)
 retain all errors and calibration diagnostics.
@@ -2033,7 +2115,7 @@ method. All follow-up choices were frozen before its fitted outcomes.
 
 ![Geometry and interval comparison](../results/lake-metric-followup-2026-10-09/interval-comparison.png)
 
-*Figure S9. Retained global lake geometry comparisons and their conditional uncertainty intervals.*
+*Figure S10. Retained global lake geometry comparisons and their conditional uncertainty intervals.*
 
 The local-largest-ring comparison attributes most of the exponent change to
 the projection and consequent radius selection; accounting for holes has a
@@ -2082,7 +2164,7 @@ power-law support.
 
 ![Observed and fitted bounded survival](../results/lake-metric-followup-2026-10-09/survival.png)
 
-*Figure S10. Observed lake-radius survival and bounded fitted model; the iid adequacy diagnostic is qualified by spatial dependence.*
+*Figure S11. Observed lake-radius survival and bounded fitted model; the iid adequacy diagnostic is qualified by spatial dependence.*
 
 The declared `Lake_type == 1` point-only sensitivity gives ζ=1.9752 for 66,074
 lakes. This means **not flagged as reservoir or regulated** in this source,
@@ -2223,7 +2305,7 @@ not an inference from that borderline control.
 
 ![Bias and interval coverage in every simulated scenario](../results/italian-magnitude-validation-2026-10-10/validation.png)
 
-*Figure S11. Retained synthetic magnitude-validation cells. Bias and coverage refer to simulated observation models; no real Italian b or dimension was fitted.*
+*Figure S12. Retained synthetic magnitude-validation cells. Bias and coverage refer to simulated observation models; no real Italian b or dimension was fitted.*
 
 #### Why rounding matters
 
@@ -2390,7 +2472,7 @@ vessel are dependent; these are not independent statistical tests.*
 
 ![Chemostat redistribution and conditional capacity bounds](../results/chemostat-capacity-followup-2026-10-10/capacity.png)
 
-*Figure S12. Each vertical range spans all possible observed nitrogen-share
+*Figure S13. Each vertical range spans all possible observed nitrogen-share
 changes over pooled-species mixtures, with the minimum marked by a dot.
 Within each day, vessels run 1–12 from left to right. Dashed segments bound
 all model price choices. These are mixture envelopes, not confidence
@@ -2626,7 +2708,7 @@ below the model's base was excluded from scoring.
 
 ![Heated-cantilever hot-condition forecasts and mode-specific errors](../results/cantilever-transfer-2026-10-13/cantilever-presentation.png)
 
-**Figure S13.** Primary forecasts from colder-condition damping. Points show
+**Figure S14.** Primary forecasts from colder-condition damping. Points show
 archived fluctuation temperatures and reported errors; lines show sealed
 forecasts. Shading marks the allowed temperature envelope for nonnegative local
 loss. The dashed C30C flexural-4 curve is retained algebra with invalid local
@@ -2720,7 +2802,7 @@ is changed by this coverage diagnosis.
 
 ![Primary sealed adsorption forecasts and established comparators](../results/adsorption-transfer-2026-10-13/adsorption.png)
 
-**Figure S14.** All primary component forecasts, with the same observations
+**Figure S15.** All primary component forecasts, with the same observations
 for all models. Blue circles: shared capacity; orange squares: IAST; gray
 crosses: no competition. Horizontal bars show reported expanded observation
 uncertainty, once per observation at the shared forecast. The diagonal is exact
@@ -2798,7 +2880,7 @@ therefore matters. The no-wall model extrapolates and predicts zero throughout.
 
 ![Primary channel-transfer forecasts and calibration-only alternatives](../results/grain-channel-transfer-2026-10-15/transfer.png)
 
-*Figure S15. All nine primary forecasts against observations, and balanced
+*Figure S16. All nine primary forecasts against observations, and balanced
 errors for models fitted without the wider-channel responses. The diagonal
 denotes exact prediction. The material-specific benchmark has additional
 calibration parameters. Shared input uncertainties are not propagated.*
@@ -2883,7 +2965,7 @@ largest miss is an overprediction of atf1 by 0.18446 capacity units.
 
 ![Sealed biological forecasts and declared alternatives](../results/burden-transfer-2026-10-16/transfer.png)
 
-*Figure S16. All ten forecasts from the reciprocal model and direct extract
+*Figure S17. All ten forecasts from the reciprocal model and direct extract
 assays, compared with observed cell capacity. Connecting segments show the
 effect of the fitted correction. The right panel compares family-balanced
 errors; the dashed line is the frozen accuracy limit. Shared input errors are
@@ -2980,7 +3062,7 @@ fully reproduced by transferring the shared message's average duration.
 
 ![Speech-capacity transfer and all declared alternatives](../results/speech-capacity-2026-10-17/transfer.png)
 
-*Figure S17. Observed and forecast geometric speech rates for every target
+*Figure S18. Observed and forecast geometric speech rates for every target
 language, and the five primary error scores. The reference line denotes exact
 prediction. Error bars are omitted because entropy/input uncertainty is not
 propagated; the right-panel dashed line is the frozen average-accuracy limit.*
@@ -3070,7 +3152,7 @@ absolute error is 0.021982, shared by all models' fixed total forecasts.
 
 ![Membrane-pair transfer with separate stock recovery](../results/membrane-exchange-transfer-2026-10-22/transfer.png)
 
-*Figure S18. Later-pair normalized contrasts, the four fixed forecasts and
+*Figure S19. Later-pair normalized contrasts, the four fixed forecasts and
 the conditional envelope over earlier 99% rate sets; lower panels show measured
 total divided by sampling-adjusted initial total. The envelope is not a
 prediction interval for a new membrane. Optical/baseline covariance is retained
@@ -3243,7 +3325,7 @@ without choosing a particular fitted RC comparator.
 
 ![Independently specified circuit forecast and measured response](../results/rlc-boundary-2026-10-25/circuit.png)
 
-*Figure S19. The sealed component forecast and released measurements. Shading
+*Figure S20. The sealed component forecast and released measurements. Shading
 marks the conditional crossing envelope, not a confidence interval. The open
 point was previously exposed and enters only the separate all-row descriptive
 comparison, whose error is 0.121638 versus an RC lower bound of 0.394371.*
@@ -3329,9 +3411,19 @@ concrete; it does not uniquely confirm or refute the general law.
 
 ## References
 
+Anderson, D. F., Craciun, G., and Kurtz, T. G. (2010). Product-form stationary
+distributions for deficiency zero chemical reaction networks. *Bulletin of
+Mathematical Biology*, 72, 1947--1970.
+<https://doi.org/10.1007/s11538-010-9517-4>.
+Author manuscript: <https://arxiv.org/abs/0803.3042>.
+
 Arranz, I., Fournier, B., Lester, N. P., Shuter, B. J., and Peres-Neto, P. R. (2022).
 Species compositions mediate biomass conservation: The case of lake fish communities.
 *Ecology*, 103, e3608. <https://doi.org/10.1002/ecy.3608>.
+
+Beck, M., and Robins, S. (2015). *Computing the Continuous Discretely*, second
+edition. Springer. Author-corrected text:
+<https://matthbeck.github.io/papers/ccdnew.pdf>.
 
 Benstead, C., Politi, M., Bergsman, D., and Pozzo, L. (2026). An automated sampling workflow for
 parallel long-term membrane diffusion cell testing. *Digital Discovery*.

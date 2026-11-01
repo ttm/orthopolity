@@ -1,0 +1,115 @@
+{
+  "all_frozen_mean_bounds_passed": true,
+  "cases": [
+    {
+      "absolute_mean_errors": [
+        0.003801618303571841,
+        0.0018136160714284366,
+        0.001988002232142738
+      ],
+      "events": 64657,
+      "frozen_mean_bound_passed": true,
+      "maximum_detailed_balance_error": 0.0,
+      "maximum_events_per_replicate": 32,
+      "maximum_stationary_linear_solve_error": 1.8388068845354155e-16,
+      "name": "channel_baseline",
+      "observed_mean_shares": [
+        0.3490397135416667,
+        0.3434244791666667,
+        0.3075358072916667
+      ],
+      "replicates": 4096,
+      "whole_state_total_variation_descriptive": 0.042819276147959134
+    },
+    {
+      "absolute_mean_errors": [
+        0.0022771061825904715,
+        0.0017140561247863118,
+        0.0005630500578037712
+      ],
+      "events": 72252,
+      "frozen_mean_bound_passed": true,
+      "maximum_detailed_balance_error": 0.0,
+      "maximum_events_per_replicate": 39,
+      "maximum_stationary_linear_solve_error": 1.6653345369377348e-15,
+      "name": "channel_bias",
+      "observed_mean_shares": [
+        0.3081258138020833,
+        0.17889404296875,
+        0.5129801432291666
+      ],
+      "replicates": 4096,
+      "whole_state_total_variation_descriptive": 0.039820672772781576
+    },
+    {
+      "absolute_mean_errors": [
+        0.0003182395789093073,
+        0.0007009494774599667,
+        0.0010191890563675532
+      ],
+      "events": 209803,
+      "frozen_mean_bound_passed": true,
+      "maximum_detailed_balance_error": 0.0,
+      "maximum_events_per_replicate": 87,
+      "maximum_stationary_linear_solve_error": 1.6653345369377348e-15,
+      "name": "channel_bias_clock3",
+      "observed_mean_shares": [
+        0.2374267578125,
+        0.17110188802083334,
+        0.5914713541666666
+      ],
+      "replicates": 4096,
+      "whole_state_total_variation_descriptive": 0.038483541632780185
+    },
+    {
+      "absolute_mean_errors": [
+        0.001287887052123328,
+        0.0008346163346026336,
+        0.00045327071745560055
+      ],
+      "events": 277322,
+      "frozen_mean_bound_passed": true,
+      "maximum_detailed_balance_error": 5.551115123125783e-17,
+      "maximum_events_per_replicate": 122,
+      "maximum_stationary_linear_solve_error": 2.220446049250313e-16,
+      "name": "mass_action_baseline",
+      "observed_mean_shares": [
+        0.057169596354166664,
+        0.18172200520833334,
+        0.7611083984375
+      ],
+      "replicates": 4096,
+      "whole_state_total_variation_descriptive": 0.01580502012039596
+    },
+    {
+      "absolute_mean_errors": [
+        0.0009542440821649067,
+        0.003452420686758495,
+        0.0024981766047146303
+      ],
+      "events": 270138,
+      "frozen_mean_bound_passed": true,
+      "maximum_detailed_balance_error": 5.551115123125783e-17,
+      "maximum_events_per_replicate": 112,
+      "maximum_stationary_linear_solve_error": 3.3306690738754696e-16,
+      "name": "mass_action_bias",
+      "observed_mean_shares": [
+        0.045389811197916664,
+        0.12949625651041666,
+        0.8251139322916666
+      ],
+      "replicates": 4096,
+      "whole_state_total_variation_descriptive": 0.02150311296112592
+    }
+  ],
+  "clock_control_generator_error": 0.0,
+  "clock_control_transition_error": 0.0,
+  "config_sha256": "4ae814ea631e899e02a1223cdcd2406a8dfc4274a043004e7b3f4cc1f2ca8fd8",
+  "family_error_bound": 0.001,
+  "kind": "Verification of constructed model predictions; not empirical evidence",
+  "prediction_sha256": "be353a282c35967e84728c5cf430856d8279441b83fc323516f59dad645f5c41",
+  "reference_measure": "Log-orthopolic in physical object mass: three bins centered on 1, 2, 4, each with width ln(2)",
+  "simultaneous_mean_absolute_tolerance": 0.03547417473081728,
+  "total_events": 894172,
+  "total_trajectories": 20480
+}

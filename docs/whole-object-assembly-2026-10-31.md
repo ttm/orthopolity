@@ -5,7 +5,7 @@ Started 31 October 2026; forecast frozen 1 November 2026. This constructed model
 assemble and break apart, with every event conserving the material budget.
 The rates are specified before deriving the stationary law. A second mechanism
 uses the same objects, budget and reaction network but different rate dependence.
-No empirical dataset is used. Simulation will check the implementation of the
+No empirical dataset is used. Simulation checks the implementation of the
 analytic predictions; it cannot independently confirm the general law in nature.
 
 The stationary-distribution tools are established, including both the mass-action
@@ -166,9 +166,52 @@ across trajectories only. Whole-state total variation is reported descriptively.
 All case results are retained even if a frozen statistical bound fails.
 An independent linear stationary solve, edge detailed balance, exact budget
 conservation and clock rescaling also check the formulas. The forecast and
-implementation are to be committed and pushed before these study simulations. This
+implementation were committed and pushed in **895e774** before these study simulations. This
 ordering is a computational audit, not empirical preregistration or independent
 natural-system evidence.
+
+## Verification outcome
+
+All five pre-specified scenarios pass the frozen simultaneous mean bound.
+The [retained verification](../results/whole-object-assembly-2026-10-31/verification.json)
+covers **20,480 independent trajectories and 894,172 whole-object jumps**.
+Every jump preserves the integer mass budget. Maximum absolute mean-share
+error is **0.003802**, below the frozen **0.035474** bound; the family error
+bound is 0.001 under the specified independent trajectories. No tolerance or
+rate was changed after observing the simulations.
+
+| Scenario | Predicted shares at time five | Simulated mean shares | Largest absolute error |
+|---|---|---|---|
+| Constant channels, baseline | (0.345238, 0.345238, 0.309524) | (0.349040, 0.343424, 0.307536) | 0.003802 |
+| Constant channels, changed ratio | (0.305849, 0.180608, 0.513543) | (0.308126, 0.178894, 0.512980) | 0.002277 |
+| Changed ratio, clock multiplied by three | (0.237745, 0.171803, 0.590452) | (0.237427, 0.171102, 0.591471) | 0.001019 |
+| Mass action, baseline | (0.055882, 0.182557, 0.761562) | (0.057170, 0.181722, 0.761108) | 0.001288 |
+| Mass action, changed ratio | (0.044436, 0.132949, 0.822616) | (0.045390, 0.129496, 0.825114) | 0.003452 |
+
+The constant-channel interventions have not reached their new stationary law
+at time five; the table compares simulations with the correct transient
+forecasts. Descriptive whole-state total-variation discrepancies range from
+0.01581 to 0.04282. Independent stationary linear solves agree with analytic
+weights within **1.67e-15**; direct detailed-balance error is at most
+**5.56e-17**. The common-clock generator and transition identities agree exactly
+in the retained numerical calculations. The separate scalar-rate audit retains
+its **1.21e-13** maximum error across 18,547 comparisons.
+
+![Analytic whole-object allocation and persistent fluctuations](../results/whole-object-assembly-2026-10-31/whole-object-assembly.png)
+
+The figure presents analytic predictions, not simulated or empirical
+observations. Run the offline forecast/audit/simulation/figure replay with:
+
+```sh
+PATH=/usr/bin:/bin:/usr/sbin:/sbin:$PATH make whole-object-assembly \
+  PY=build/main-venv-2026-10-09/bin/python
+```
+
+The target compares generated JSON and both figure formats byte-for-byte.
+All 702 unit tests and the unchanged empirical registry (46 runs / 1,168
+references) pass. This analytic study adds no empirical registry entry.
+Full `make all` was not rerun; the older BioMe byte-comparison limitation
+documented in [the 26 October record](reproduction-2026-10-26.md) remains unresolved.
 
 ## Interpretation and next empirical requirement
 

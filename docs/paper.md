@@ -2,7 +2,7 @@
 
 **Capacity, physical realizations, and effective-resource inference**
 
-> Research manuscript, revised 30 October 2026. Detailed derivations, complete
+> Research manuscript, revised 1 November 2026. Detailed derivations, complete
 > comparisons and analysis histories are retained in the [supporting material](supporting-material.md).
 > Empirical studies include exploration, locally frozen forecasts and retrospective
 > reanalyses; none is externally preregistered. Authorship and submission declarations
@@ -233,11 +233,12 @@ disconnected components equalize only within their separately conserved budgets.
 These are established reversible-chain tools applied to resource classes (Levin
 and Peres, 2017).
 
-An unequal outcome does not identify its kinetics. Hidden link storage can
-change network relaxation despite identical pair curves (supporting S5.19).
-Nonproportional storage curves can also preserve baseline equality and local
-kinetics while predicting unequal resource per fixed weight after a capacity
-intervention (supporting S3.7).
+Whole-object assembly gives asymptotic inverse-cost mean counts under symmetric saturated
+channels, with finite-budget corrections; mass-action kinetics on the same
+conserved budget instead favor larger objects in the worked case (supporting S3.10).
+Hidden link storage and nonproportional storage curves can also alter relaxation
+or intervention outcomes despite matched baseline measurements
+(supporting S5.19 and S3.7).
 
 Passive RC networks cannot have positive imaginary impedance at their driven
 port. An independent forecast including magnetic storage gives 12.2% curve

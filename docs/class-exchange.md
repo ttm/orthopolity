@@ -30,6 +30,12 @@ number is not conserved, and the model supplies no individual-object collision
 or demographic mechanism. The stochastic implementation below tracks equal-resource
 packets, not integer objects of unequal cost.
 
+A [subsequent whole-object model](whole-object-assembly-2026-10-31.md) supplies
+explicit integer assembly and breakup. Its stationary means approach the
+inverse-cost relation under constant feasible-channel rates, while mass action
+on the same reaction network produces a different allocation. This is a separate
+mechanistic qualification, not an assumption added to the packet dynamics below.
+
 For size classes, $w_i$ can be their linear or logarithmic widths. The worked
 run chooses logarithmic widths $\Delta\ln k$. Nothing in conservation alone
 selects that measure. It is a constitutive choice of this model, expressed in

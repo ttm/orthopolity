@@ -4,7 +4,7 @@ Last updated 1 November 2026. **Read this first in a new session.** It records w
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
-**1 November — whole-object assembly forecasts prepared:** the
+**1 November — whole-object assembly derived and verified:** the
 [new model](whole-object-assembly-2026-10-31.md), started 31 October, replaces
 continuous equivalent counts with integer monomers, dimers and tetramers.
 Both assembly and breakup conserve the full material budget. Constant feasible
@@ -24,14 +24,25 @@ mean shares approach thirds. No concentration of individual snapshots is claimed
 
 The [configuration](../configs/whole_object_2026-10-31.json), implementation
 and [forecasts](../results/whole-object-assembly-2026-10-31/predictions.json)
-are being frozen before the five specified simulation scenarios. All **702
-tests** and registry verification pass. An independent scalar-rate audit checks
-18,547 quantities within **1.21e-13**; scientific and code reviews found no
-blockers after precision edits. No study-budget Gillespie trajectories have
-yet been run. Registry remains **46 runs / 1,168 references**. Next verify the frozen
-forecasts, integrate the result into the manuscripts and retain the analytic/
-empirical distinction. Existing-public-data-only constraint and general-law
-title/ambition persist.
+were pushed in **895e774** before the five specified simulation scenarios.
+All **20,480 trajectories / 894,172 jumps** conserve integer mass. Maximum
+mean-share error is **0.003802**, below the frozen simultaneous bound **0.035474**;
+time-five comparisons use transient forecasts rather than presumed equilibrium.
+Stationary linear solves agree within **1.67e-15**; an independently coded
+scalar-rate audit checks 18,547 quantities within **1.21e-13**. The
+[verification artifact](../results/whole-object-assembly-2026-10-31/verification.json)
+retains every scenario. Mathematical verification is not empirical confirmation.
+
+Main 3.1 and new **supporting S3.10** state the mechanism, kinetic boundary and
+snapshot qualification; a three-panel analytic figure shows all three.
+`make whole-object-assembly` replays forecasts, audit, simulations and both
+figure formats byte-for-byte, and is included in `make all`. All **702 tests**
+and registry verification pass; registry remains **46 runs / 1,168 references**.
+Full `make all` was not rerun: the older BioMe byte-comparison limitation remains
+unresolved. General-law title/ambition and existing-public-data-only constraint
+persist. A future empirical test needs independently measured assembly/breakup
+rates, complete material accounting and a separate intervention; another fitted
+abundance curve does not supply that test.
 
 **30 October — normal aggregation and natural allocation distinguished:** the
 author's argument now appears concisely in main section 5, with the derivation
