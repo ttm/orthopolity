@@ -11,6 +11,8 @@ venv/
 
 # Interactive viewer scratch output (regenerated on demand)
 results/exploration/
+.playwright-mcp/
+output/playwright/
 
 # Large public chemostat bundle and its extracted R workspace (~193 MB together).
 # Their checksums are retained in acquisition.json and archive-members.json;

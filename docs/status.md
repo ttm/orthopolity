@@ -1,8 +1,48 @@
 # Project status and handoff
 
-Last updated 1 November 2026. **Read this first in a new session.** It records what the authors
+Last updated 4 November 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**4 November — interactive TV allocation example:** the
+[Portuguese model](tv-distribution-model.md) and dependency-free
+[web interface](../site/index.html) illustrate equal direct gifts alongside
+unequal supply-chain receipts. The default has 100 million citizens, a R$2,000
+TV each, and 10% of the R$200 billion procurement budget allocated once to
+selected commissions/profits. Five disjoint geometric groups receive R$4 billion
+each: 10,000 sellers share one pool, while the single factory owner receives
+another. Remaining production costs are separate; successive gross sales are
+never counted repeatedly as profit.
+
+Equal level pools give **discrete orthopolity by predefined level**, and a
+finite **log-orthopolic grid in positive additional receipts**, not
+linear-orthopolic allocation or orthopolity in TV-plus-money benefits.
+The default additional-receipt Gini is **0.999972842**; the gross-benefit
+Gini is **0.090906622**. The interface compares equal-level pools, top-weighted
+pools and a universal dividend, with optional uniform financing, Lorenz curves,
+full tables, CSV export and shareable scenarios. All-zero balances are identified
+as having undefined Gini/Lorenz measures in the interface.
+
+This is a constructed teaching example, not empirical confirmation or a forecast
+of national wealth inequality. Costs' recipients, initial wealth, subjective
+utility and complete fiscal incidence are outside the individual account.
+No empirical registry entries, manuscript revisions or regenerated historical
+results were added. Next use it to explain the distinction between equal objects,
+equal resource per class and equal individual receipts; any empirical use needs
+independently fixed inputs and a separate prediction.
+
+The [GitHub Pages workflow](../.github/workflows/pages.yml) tests and publishes
+only `site/` to **https://ttm.github.io/orthopolity/** from `main`.
+Validation: **10 Node model tests and all 702 Python tests pass** using the
+existing Python 3.11 environment; registry verification remains **46 runs /
+1,168 references**. Browser checks cover all allocation rules, financing, zero
+receipts, invalid inputs, shared-link reload/fallback, CSV export, and desktop /
+390px mobile layout without page overflow or console errors. `make test` now
+includes `make tv-model-test` and needs Node.js 18+; no npm packages are required.
+The first attempt with global Python lacked pandas/pyproj/shapely; rerunning in
+`build/main-venv-2026-10-09` resolved it. Full `make all` was not rerun for this
+standalone interface; the previously recorded BioMe byte-comparison limitation
+remains unresolved.
 
 **1 November — whole-object assembly derived and verified:** the
 [new model](whole-object-assembly-2026-10-31.md), started 31 October, replaces

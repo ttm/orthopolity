@@ -1,5 +1,20 @@
 # Orthopolity
 
+**Interactive example:** [Uma TV para cada pessoa](https://ttm.github.io/orthopolity/)
+explores how an equal gift can coexist with unequal receipts along a supply chain.
+Change population, price, commissions/profits, group sizes, allocation rules and
+uniform financing. The constructed equal-level case is discretely orthopolic;
+its geometric grid is **log-orthopolic in positive additional receipts**, not
+linear-orthopolic or orthopolic in the total TV-plus-money benefit. See the
+[Portuguese mathematical derivation](docs/tv-distribution-model.md).
+This is a teaching model, not empirical evidence or a national wealth forecast.
+
+The dependency-free interface lives in [`site/`](site/). Preview with
+`python3 -m http.server 4173 --directory site`, then open `http://localhost:4173`.
+`make tv-model-test` checks the model with Node.js 18+; it is also part of
+`make test` / `make all`. The [Pages workflow](.github/workflows/pages.yml)
+tests and publishes only `site/` when its sources change on `main`.
+
 The revised [article](docs/paper.md) retains the title **Orthopolity: a general
 law of resource allocation** and the ambition to establish it. Detailed
 derivations, observation models and full empirical comparisons now reside in

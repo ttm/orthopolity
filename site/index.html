@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#143e38">
+  <meta name="description" content="Um experimento interativo sobre ortopolidade: uma TV para cada cidadão, mas ganhos muito diferentes ao longo da cadeia de produção.">
+  <title>Uma TV para cada pessoa · Orthopolity</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#simulador">Ir ao simulador</a>
+  <header class="masthead wrap">
+    <a class="brand" href="./" aria-label="Orthopolity, início"><span class="brand-icon" aria-hidden="true">⊥</span> orthopolity<span class="brand-sub">laboratório de ideias</span></a>
+    <nav aria-label="Navegação"><a href="#modelo">O modelo</a><a href="https://github.com/ttm/orthopolity">Repositório <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section class="hero wrap" aria-labelledby="title">
+      <div>
+        <p class="eyebrow">EXPERIMENTO INTERATIVO / 01</p>
+        <h1 id="title">Uma TV para cada pessoa.<br><em>O mesmo ganho para todos?</em></h1>
+        <p class="intro">Todo cidadão recebe o mesmo aparelho. Mas a compra também remunera quem vende, administra e possui a produção. Descubra como uma distribuição igual pode alimentar ganhos desiguais.</p>
+        <a class="jump" href="#simulador">Explore a distribuição <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="Todos recebem uma TV igual; a cadeia divide a renda entre grupos de tamanhos diferentes" role="img">
+        <svg viewBox="0 0 360 245" aria-hidden="true"><defs><g id="tv"><rect x="-20" y="-15" width="40" height="28" rx="4"/><path d="M-7 18h14M0 13v5"/></g></defs>
+          <text x="180" y="26" text-anchor="middle" class="svg-label">MESMO APARELHO</text>
+          <g class="tv-line"><use href="#tv" x="50" y="66"/><use href="#tv" x="115" y="66"/><use href="#tv" x="180" y="66"/><use href="#tv" x="245" y="66"/><use href="#tv" x="310" y="66"/></g>
+          <path d="M40 110h280" class="art-divider"/>
+          <text x="180" y="137" text-anchor="middle" class="svg-label">DIFERENTES GANHOS</text>
+          <g class="art-bars"><rect x="31" y="207" width="38" height="7"/><rect x="96" y="198" width="38" height="16"/><rect x="161" y="184" width="38" height="30"/><rect x="226" y="165" width="38" height="49"/><rect x="291" y="145" width="38" height="69" class="art-top"/></g>
+          <text x="180" y="239" text-anchor="middle" class="svg-caption">Esquema ilustrativo, sem escala</text>
+        </svg>
+      </div>
+    </section>
+    <section class="experiment wrap" id="simulador" aria-labelledby="experiment-title">
+      <div class="section-top"><div><p class="eyebrow">MUDE AS HIPÓTESES. OBSERVE A DISTRIBUIÇÃO.</p><h2 id="experiment-title">Quem fica com quanto?</h2></div><span class="tag"><span></span> Modelo hipotético</span></div>
+      <div class="workspace">
+        <aside class="controls" aria-label="Parâmetros do modelo">
+          <form id="parameters">
+            <div class="control-heading"><h3>Monte o cenário</h3><button type="button" id="reset" class="text-button">Restaurar</button></div>
+            <label class="field" for="population">População <span>milhões de pessoas</span><input id="population" name="population" type="number" min="1" max="1000" step="1" value="100" required></label>
+            <label class="field" for="price">Preço de cada TV <span>R$ por aparelho</span><input id="price" name="price" type="number" min="1" max="1000000" step="1" value="2000" required></label>
+            <label class="range-label" for="margin">Comissões e lucros <output id="margin-output" for="margin">10%</output></label>
+            <input id="margin" name="margin" type="range" min="0" max="100" step="1" value="10" aria-describedby="margin-help">
+            <p class="help" id="margin-help">Parcela do preço destinada aos ganhos que estamos modelando. O restante cobre os demais custos.</p>
+            <div class="control-rule"></div>
+            <label class="field" for="owners">Donos de fábricas <span>no topo da cadeia</span><input id="owners" name="owners" type="number" min="1" max="1000000" step="1" value="1" required></label>
+            <label class="range-label" for="branching">Pessoas por nível abaixo <output id="branching-output" for="branching">10×</output></label>
+            <input id="branching" name="branching" type="range" min="2" max="20" step="1" value="10" aria-describedby="branching-help">
+            <p class="help" id="branching-help">Cada nível tem este múltiplo de pessoas do nível acima. São cinco grupos sem sobreposição.</p>
+            <label class="check"><input type="checkbox" name="tax" id="tax"><span>Descontar imposto uniforme<small>Cada pessoa financia o preço de uma TV.</small></span></label>
+            <p class="error" id="error" role="alert" hidden></p>
+          </form>
+          <p class="local-note">Cálculo local, sem dados pessoais.</p>
+        </aside>
+        <div class="results" id="results">
+          <fieldset class="scenario-selector"><legend>Como dividir as comissões e os lucros?</legend>
+            <label><input type="radio" name="allocation" value="levels" checked><span>Igual por nível<small>Ortopolidade</small></span></label>
+            <label><input type="radio" name="allocation" value="top"><span>Mais para o topo<small>Peso 5× na indústria</small></span></label>
+            <label><input type="radio" name="allocation" value="people"><span>Igual por cidadão<small>Dividendo universal</small></span></label>
+          </fieldset>
+          <div class="metrics" aria-live="polite" aria-atomic="true">
+            <div><span>Compra pública</span><strong id="budget">—</strong><small id="budget-note">Uma TV por cidadão</small></div>
+            <div><span>Comissões e lucros</span><strong id="capture">—</strong><small id="capture-note">Divididos entre cinco níveis</small></div>
+            <div class="metric-accent"><span>Maior ganho / menor ganho</span><strong id="ratio">—</strong><small id="ratio-note">TV + recebimento adicional</small></div>
+          </div>
+          <div class="chart-card">
+            <div class="chart-heading"><div><p class="eyebrow">A MESMA TV. OUTRA ESCALA DE RENDA.</p><h3 id="chart-title">Valor recebido por pessoa</h3></div><label class="scale-control" for="scale">Escala <select id="scale"><option value="log">Logarítmica</option><option value="linear">Linear</option></select></label></div>
+            <div class="legend"><span><i class="key base"></i> TV</span><span><i class="key extra"></i> TV + ganho adicional</span></div>
+            <div id="person-chart" class="person-chart" role="img" aria-label="Gráfico do valor recebido por pessoa. Valores sem abreviação na tabela abaixo."></div>
+            <p class="chart-caption" id="chart-caption"></p>
+          </div>
+          <div class="insight" aria-live="polite"><span class="insight-icon" aria-hidden="true">↳</span><p id="insight"></p></div>
+        </div>
+      </div>
+      <div class="secondary-grid">
+        <section class="detail-card" aria-labelledby="pool-title"><p class="eyebrow">OLHE PARA OS GRUPOS</p><h3 id="pool-title">A verba total de cada nível</h3><div id="pool-chart" class="pool-chart"></div><p id="pool-caption" class="help"></p></section>
+        <section class="detail-card distribution" aria-labelledby="lorenz-title"><div><p class="eyebrow">OLHE PARA A POPULAÇÃO</p><h3 id="lorenz-title">A desigualdade tem duas leituras</h3></div><div class="lorenz-body"><svg id="lorenz-chart" viewBox="0 0 280 220" role="img" aria-label="Curva de Lorenz: parcela acumulada do valor recebido em função da população, da menor para a maior recebedora"></svg><div class="gini"><span>Índice de Gini</span><strong id="gini">—</strong><small>0 = igualdade<br>1 = concentração limite</small></div></div><p id="gini-note" class="help"></p></section>
+      </div>
+      <details class="table-details"><summary>Veja os valores e a contabilidade do modelo <span aria-hidden="true">+</span></summary><div class="table-scroll"><table><caption id="table-caption">Cada cidadão aparece uma única vez e recebe uma TV.</caption><thead><tr><th scope="col">Grupo</th><th scope="col">Pessoas</th><th scope="col">Verba adicional do grupo</th><th scope="col">Adicional por pessoa</th><th scope="col">Valor por pessoa*</th></tr></thead><tbody id="table-body"></tbody></table></div><p id="accounting" class="help accounting"></p></details>
+      <div class="utilities"><button id="share" type="button">Copiar link deste cenário <span aria-hidden="true">↗</span></button><button id="download" type="button">Baixar os valores (.csv) <span aria-hidden="true">↓</span></button><span id="utility-status" role="status"></span></div>
+    </section>
+    <section class="explanation wrap" id="modelo" aria-labelledby="model-title">
+      <div class="model-intro"><p class="eyebrow">DO EXEMPLO À MATEMÁTICA</p><h2 id="model-title">Igual em qual medida?</h2><p>Dar uma TV a cada cidadão iguala a distribuição de aparelhos. Dividir o mesmo montante entre níveis da cadeia iguala outra coisa: o recurso total por classe. Essas duas igualdades convivem com ganhos individuais diferentes.</p><a href="https://github.com/ttm/orthopolity/blob/main/docs/tv-distribution-model.md">Leia a derivação completa <span aria-hidden="true">↗</span></a></div>
+      <div class="equations"><article><span class="step">01</span><div><h3>A compra gera um fluxo</h3><p class="formula">B = Np <span>e</span> M = mB</p><p>N pessoas, uma TV de preço p para cada uma. A fração m da compra remunera os grupos modelados; os demais custos somam B − M.</p></div></article><article><span class="step">02</span><div><h3>Mesma verba, menos recebedores</h3><p class="formula">n<sub>j</sub> y<sub>j</sub> = M/5</p><p>Na regra igual por nível, n<sub>j</sub> pessoas dividem M/5. Portanto, o adicional y<sub>j</sub> de cada pessoa cresce quando o grupo encolhe.</p></div></article><article><span class="step">03</span><div><h3>O elo com a ortopolidade</h3><p class="formula">n<sub>j</sub> ∝ 1/y<sub>j</sub></p><p>É uma alocação <strong>discretamente ortopólica</strong> nos cinco níveis. Com tamanhos de grupo em progressão geométrica, os ganhos positivos também formam uma grade <strong>log-orthopolic</strong>, com a mesma verba por intervalo logarítmico. Não é uma alocação linear-orthopolic.</p></div></article></div>
+      <div class="scope-note"><h3>O que este exemplo demonstra</h3><p>Uma possibilidade matemática, construída com regras explícitas. A igualdade das verbas é uma hipótese do cenário, não um resultado observado no mercado. Na regra igual por nível, com adicional positivo, a ortopolidade vale para o recebimento adicional nos cinco níveis, não para o valor total incluindo a TV. Quem recebe adicional zero fica fora da coordenada logarítmica.</p><p>O modelo acompanha uma rodada da compra. Custos de produção são separados das comissões e lucros; o faturamento não é somado novamente em cada etapa. O preço também é usado como valor contábil do aparelho. Não se estima bem-estar, patrimônio prévio, inflação, esforço de trabalho ou a incidência completa dos tributos. A desigualdade medida é a dos recebimentos deste programa.</p></div>
+    </section>
+  </main>
+  <footer class="wrap"><a class="brand" href="https://github.com/ttm/orthopolity">⊥ orthopolity</a><p>Um exemplo para pensar a distribuição de recursos.</p><a href="https://github.com/ttm/orthopolity/blob/main/docs/glossary.md">Conceitos e medidas ↗</a></footer>
+  <noscript><p class="noscript">Ative o JavaScript para usar o simulador. A explicação matemática continua disponível abaixo.</p></noscript>
+</body>
+</html>
