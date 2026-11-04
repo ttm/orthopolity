@@ -41,7 +41,11 @@ analyses, manuscripts and empirical registry entries were not changed.
 This is constructed exploration, not new empirical confirmation or a claim that
 every process increases individual inequality. The next scientific step remains
 a separately specified resource/constraint intervention and an independent
-prediction. Publication uses the existing main-branch GitHub Pages workflow.
+prediction. Publication of **0e0ab5a** succeeded in
+[Actions run 41921224635](https://github.com/ttm/orthopolity/actions/runs/41921224635)
+at **https://ttm.github.io/orthopolity/**. The deployed laboratory was opened,
+its diffusion/ensemble/analytic-target calculations checked, and the retained
+TV page verified. No browser console errors or warnings were reported.
 
 **4 November — interactive TV allocation example:** the
 [Portuguese model](tv-distribution-model.md) and dependency-free
