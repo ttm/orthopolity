@@ -33,6 +33,9 @@ independently fixed inputs and a separate prediction.
 
 The [GitHub Pages workflow](../.github/workflows/pages.yml) tests and publishes
 only `site/` to **https://ttm.github.io/orthopolity/** from `main`.
+Publication of **fe66c7b** succeeded in
+[Actions run 41851376791](https://github.com/ttm/orthopolity/actions/runs/41851376791);
+the public page was opened and its live calculations verified without console errors.
 Validation: **10 Node model tests and all 702 Python tests pass** using the
 existing Python 3.11 environment; registry verification remains **46 runs /
 1,168 references**. Browser checks cover all allocation rules, financing, zero
