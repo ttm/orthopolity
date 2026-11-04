@@ -1,6 +1,17 @@
 # Orthopolity
 
-**Interactive example:** [Uma TV para cada pessoa](https://ttm.github.io/orthopolity/)
+**Interactive laboratory:** [Processos da ortopolidade](https://ttm.github.io/orthopolity/)
+transforms any admissible finite vector of class abundances while conserving its
+resource budget. Compare global relaxation, neighbor diffusion, balancing pair
+meetings and random pair divisions. Choose **log-orthopolic**, **linear-orthopolic**
+or predefined-class weights, inspect trajectories and analytic targets, share a
+scenario, or export its values. The first three mechanisms converge per trajectory;
+random division approaches the target in ensemble mean while snapshots fluctuate.
+Equivalent object counts can change and be fractional. These constructed mechanisms
+are not empirical confirmation. The [Portuguese process catalogue](docs/orthopolity-processes.md)
+connects them to the repository's assembly, storage, radiation and allocation studies.
+
+**Interactive example:** [Uma TV para cada pessoa](https://ttm.github.io/orthopolity/tv.html)
 explores how an equal gift can coexist with unequal receipts along a supply chain.
 Change population, price, commissions/profits, group sizes, allocation rules and
 uniform financing. The constructed equal-level case is discretely orthopolic;
@@ -11,7 +22,7 @@ This is a teaching model, not empirical evidence or a national wealth forecast.
 
 The dependency-free interface lives in [`site/`](site/). Preview with
 `python3 -m http.server 4173 --directory site`, then open `http://localhost:4173`.
-`make tv-model-test` checks the model with Node.js 18+; it is also part of
+`make tv-model-test process-model-test` checks both models with Node.js 18+; both are part of
 `make test` / `make all`. The [Pages workflow](.github/workflows/pages.yml)
 tests and publishes only `site/` when its sources change on `main`.
 

@@ -3,93 +3,81 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#143e38">
-  <meta name="description" content="Um experimento interativo sobre ortopolidade: uma TV para cada cidadão, mas ganhos muito diferentes ao longo da cadeia de produção.">
-  <title>Uma TV para cada pessoa · Orthopolity</title>
+  <meta name="theme-color" content="#183b35">
+  <meta name="description" content="Transforme uma distribuição e explore os processos da ortopolidade: recurso equilibrado entre classes, quantidades diferentes de objetos.">
+  <title>Processos da ortopolidade · Orthopolity</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./style.css">
-  <script type="module" src="./app.mjs"></script>
+  <link rel="stylesheet" href="./process-style.css">
+  <script type="module" src="./process-app.mjs"></script>
 </head>
-<body>
-  <a class="skip" href="#simulador">Ir ao simulador</a>
+<body class="process-page">
+  <a class="skip" href="#laboratorio">Ir ao laboratório</a>
   <header class="masthead wrap">
-    <a class="brand" href="./" aria-label="Orthopolity, início"><span class="brand-icon" aria-hidden="true">⊥</span> orthopolity<span class="brand-sub">laboratório de ideias</span></a>
-    <nav aria-label="Navegação"><a href="#modelo">O modelo</a><a href="https://github.com/ttm/orthopolity">Repositório <span aria-hidden="true">↗</span></a></nav>
+    <a class="brand" href="./"><span class="brand-icon" aria-hidden="true">⊥</span> orthopolity<span class="brand-sub">laboratório de processos</span></a>
+    <nav aria-label="Navegação"><a href="#processos">Os processos</a><a href="./tv.html">O exemplo das TVs</a><a href="https://github.com/ttm/orthopolity">Repositório ↗</a></nav>
   </header>
   <main>
-    <section class="hero wrap" aria-labelledby="title">
-      <div>
-        <p class="eyebrow">EXPERIMENTO INTERATIVO / 01</p>
-        <h1 id="title">Uma TV para cada pessoa.<br><em>O mesmo ganho para todos?</em></h1>
-        <p class="intro">Todo cidadão recebe o mesmo aparelho. Mas a compra também remunera quem vende, administra e possui a produção. Descubra como uma distribuição igual pode alimentar ganhos desiguais.</p>
-        <a class="jump" href="#simulador">Explore a distribuição <span aria-hidden="true">↓</span></a>
-      </div>
-      <div class="hero-art" aria-label="Todos recebem uma TV igual; a cadeia divide a renda entre grupos de tamanhos diferentes" role="img">
-        <svg viewBox="0 0 360 245" aria-hidden="true"><defs><g id="tv"><rect x="-20" y="-15" width="40" height="28" rx="4"/><path d="M-7 18h14M0 13v5"/></g></defs>
-          <text x="180" y="26" text-anchor="middle" class="svg-label">MESMO APARELHO</text>
-          <g class="tv-line"><use href="#tv" x="50" y="66"/><use href="#tv" x="115" y="66"/><use href="#tv" x="180" y="66"/><use href="#tv" x="245" y="66"/><use href="#tv" x="310" y="66"/></g>
-          <path d="M40 110h280" class="art-divider"/>
-          <text x="180" y="137" text-anchor="middle" class="svg-label">DIFERENTES GANHOS</text>
-          <g class="art-bars"><rect x="31" y="207" width="38" height="7"/><rect x="96" y="198" width="38" height="16"/><rect x="161" y="184" width="38" height="30"/><rect x="226" y="165" width="38" height="49"/><rect x="291" y="145" width="38" height="69" class="art-top"/></g>
-          <text x="180" y="239" text-anchor="middle" class="svg-caption">Esquema ilustrativo, sem escala</text>
-        </svg>
-      </div>
+    <section class="hero wrap process-hero" aria-labelledby="title">
+      <div><p class="eyebrow">IGUALDADE ENTRE CLASSES · DIFERENÇA ENTRE OBJETOS</p><h1 id="title">O mesmo recurso.<br><em>Muitas formas de distribuí-lo.</em></h1><p class="intro">Mais recurso em cada objeto, menor abundância por unidade da medida. Explore como diferentes regras de redistribuição levam a essa relação — e o que precisa ser definido para que isso aconteça.</p><a class="jump" href="#laboratorio">Transforme uma distribuição <span aria-hidden="true">↓</span></a></div>
+      <div class="principle"><p class="eyebrow">A CONDIÇÃO COMUM</p><p class="principle-equation">q<sub>j</sub> n<sub>j</sub> / w<sub>j</sub> = C</p><p>recurso por objeto × quantidade<br>÷ peso da classe</p><div class="principle-rule"></div><p><strong>Igualdade em uma medida declarada.</strong><br>Não implica igualdade entre indivíduos.</p><a href="#leitura">Entenda cada termo ↓</a></div>
     </section>
-    <section class="experiment wrap" id="simulador" aria-labelledby="experiment-title">
-      <div class="section-top"><div><p class="eyebrow">MUDE AS HIPÓTESES. OBSERVE A DISTRIBUIÇÃO.</p><h2 id="experiment-title">Quem fica com quanto?</h2></div><span class="tag"><span></span> Modelo hipotético</span></div>
-      <div class="workspace">
-        <aside class="controls" aria-label="Parâmetros do modelo">
-          <form id="parameters">
-            <div class="control-heading"><h3>Monte o cenário</h3><button type="button" id="reset" class="text-button">Restaurar</button></div>
-            <label class="field" for="population">População <span>milhões de pessoas</span><input id="population" name="population" type="number" min="1" max="1000" step="1" value="100" required></label>
-            <label class="field" for="price">Preço de cada TV <span>R$ por aparelho</span><input id="price" name="price" type="number" min="1" max="1000000" step="1" value="2000" required></label>
-            <label class="range-label" for="margin">Comissões e lucros <output id="margin-output" for="margin">10%</output></label>
-            <input id="margin" name="margin" type="range" min="0" max="100" step="1" value="10" aria-describedby="margin-help">
-            <p class="help" id="margin-help">Parcela do preço destinada aos ganhos que estamos modelando. O restante cobre os demais custos.</p>
+    <section class="experiment wrap" id="laboratorio" aria-labelledby="lab-title">
+      <div class="section-top"><div><p class="eyebrow">01 / UM ESTADO INICIAL. DIFERENTES CAMINHOS.</p><h2 id="lab-title">Da distribuição ao equilíbrio</h2></div><span class="tag"><span></span> Modelos construídos</span></div>
+      <div class="process-workspace">
+        <aside class="process-controls" aria-label="Configuração da distribuição">
+          <form id="process-parameters">
+            <div class="control-heading"><h3>Defina o sistema</h3><button type="button" id="restore" class="text-button">Restaurar</button></div>
+            <label class="field" for="measure">Igualdade em qual medida?<span>O peso w de cada classe</span><select id="measure"><option value="log">Logarítmica · log-orthopolic</option><option value="linear">Linear · linear-orthopolic</option><option value="classes">Contagem das classes · discreta</option></select></label>
+            <label class="range-label" for="exponent">Recurso por objeto: q = kᵈ <output id="exponent-value" for="exponent">d = 1</output></label><input id="exponent" type="range" min="0" max="3" step="0.25" value="1"><p class="help">d = 0: custo constante; 1: comprimento; 2: área; 3: volume, se k for uma extensão e a geometria for semelhante.</p>
+            <label class="field max-size" for="max-size">Maior limite de tamanho<span>Classes geométricas entre k = 1 e este valor</span><input id="max-size" type="number" min="2" max="10000" step="any" value="64" required></label>
             <div class="control-rule"></div>
-            <label class="field" for="owners">Donos de fábricas <span>no topo da cadeia</span><input id="owners" name="owners" type="number" min="1" max="1000000" step="1" value="1" required></label>
-            <label class="range-label" for="branching">Pessoas por nível abaixo <output id="branching-output" for="branching">10×</output></label>
-            <input id="branching" name="branching" type="range" min="2" max="20" step="1" value="10" aria-describedby="branching-help">
-            <p class="help" id="branching-help">Cada nível tem este múltiplo de pessoas do nível acima. São cinco grupos sem sobreposição.</p>
-            <label class="check"><input type="checkbox" name="tax" id="tax"><span>Descontar imposto uniforme<small>Cada pessoa financia o preço de uma TV.</small></span></label>
-            <p class="error" id="error" role="alert" hidden></p>
+            <label class="field" for="preset">Distribuição inicial<select id="preset"><option value="uniform">Mesma quantidade por classe</option><option value="bell">Concentrada no meio</option><option value="small">Só na menor classe</option><option value="large">Só na maior classe</option><option value="irregular">Irregular</option><option value="custom">Personalizada</option></select></label>
+            <label class="field" for="counts">Quantidades por classe n<sub>j</sub><span>Do menor ao maior tamanho. Entre 2 e 24 valores.</span><textarea id="counts" rows="3" spellcheck="false" aria-describedby="counts-help">100 100 100 100 100 100 100 100</textarea></label><p class="help" id="counts-help">Cole qualquer vetor finito não negativo, separado por espaços, vírgulas ou ponto e vírgula. Use ponto para decimais. Pelo menos um valor deve ser positivo; máximo 1 milhão por classe.</p>
+            <button class="apply-button" type="submit">Aplicar distribuição <span aria-hidden="true">↗</span></button>
+            <p id="input-error" class="error" role="alert" hidden></p>
+            <p class="local-note">Tudo é calculado neste navegador.</p>
           </form>
-          <p class="local-note">Cálculo local, sem dados pessoais.</p>
         </aside>
-        <div class="results" id="results">
-          <fieldset class="scenario-selector"><legend>Como dividir as comissões e os lucros?</legend>
-            <label><input type="radio" name="allocation" value="levels" checked><span>Igual por nível<small>Ortopolidade</small></span></label>
-            <label><input type="radio" name="allocation" value="top"><span>Mais para o topo<small>Peso 5× na indústria</small></span></label>
-            <label><input type="radio" name="allocation" value="people"><span>Igual por cidadão<small>Dividendo universal</small></span></label>
+        <div class="process-results" id="process-results">
+          <fieldset class="mechanisms"><legend>Escolha o processo</legend>
+            <label><input type="radio" name="mechanism" value="relaxation" checked><span><b>01</b> Redistribuição global<small>Todas as classes juntas</small></span></label>
+            <label><input type="radio" name="mechanism" value="diffusion"><span><b>02</b> Difusão local<small>Troca entre vizinhas</small></span></label>
+            <label><input type="radio" name="mechanism" value="pairwise"><span><b>03</b> Equilíbrio por pares<small>Encontros aleatórios</small></span></label>
+            <label><input type="radio" name="mechanism" value="stochastic"><span><b>04</b> Partilha aleatória<small>Equilíbrio na média</small></span></label>
           </fieldset>
-          <div class="metrics" aria-live="polite" aria-atomic="true">
-            <div><span>Compra pública</span><strong id="budget">—</strong><small id="budget-note">Uma TV por cidadão</small></div>
-            <div><span>Comissões e lucros</span><strong id="capture">—</strong><small id="capture-note">Divididos entre cinco níveis</small></div>
-            <div class="metric-accent"><span>Maior ganho / menor ganho</span><strong id="ratio">—</strong><small id="ratio-note">TV + recebimento adicional</small></div>
-          </div>
-          <div class="chart-card">
-            <div class="chart-heading"><div><p class="eyebrow">A MESMA TV. OUTRA ESCALA DE RENDA.</p><h3 id="chart-title">Valor recebido por pessoa</h3></div><label class="scale-control" for="scale">Escala <select id="scale"><option value="log">Logarítmica</option><option value="linear">Linear</option></select></label></div>
-            <div class="legend"><span><i class="key base"></i> TV</span><span><i class="key extra"></i> TV + ganho adicional</span></div>
-            <div id="person-chart" class="person-chart" role="img" aria-label="Gráfico do valor recebido por pessoa. Valores sem abreviação na tabela abaixo."></div>
-            <p class="chart-caption" id="chart-caption"></p>
-          </div>
-          <div class="insight" aria-live="polite"><span class="insight-icon" aria-hidden="true">↳</span><p id="insight"></p></div>
+          <div class="process-description"><p id="mechanism-description"></p><p id="mechanism-formula" class="small-formula"></p></div>
+          <div class="timeline"><button type="button" id="play" class="play-button" aria-label="Animar o processo">▶ Executar</button><button type="button" id="restart" title="Voltar ao estado inicial">↺ Início</button><label for="time">Evolução <output id="time-value" for="time">0</output></label><input id="time" type="range" min="0" max="200" step="0.25" value="0" aria-describedby="time-help"><button type="button" id="target">Ver alvo</button></div>
+          <p id="time-help" class="help time-help">Tempo do modelo em unidades arbitrárias. As velocidades não são comparáveis entre mecanismos.</p>
+          <div class="seed-row" id="seed-row" hidden><label for="seed">Semente dos encontros <input id="seed" type="number" min="0" max="4294967295" step="1" value="42"></label><button id="new-seed" type="button">Outra realização</button><span class="help">A mesma semente reproduz o mesmo caminho.</span></div>
+          <div class="metrics process-metrics" aria-live="polite" aria-atomic="true"><div><span>Recurso total conservado</span><strong id="resource-budget">—</strong><small id="budget-check">Σ qⱼnⱼ</small></div><div class="metric-accent"><span id="distance-label">Distância ao alvo</span><strong id="distance">—</strong><small>0% = alocação do alvo</small></div><div><span>Quantidade equivalente de objetos</span><strong id="object-count">—</strong><small id="count-note">Pode variar durante a redistribuição</small></div></div>
+          <div class="chart-heading"><div><p class="eyebrow">O QUE SE IGUALA?</p><h3>Recurso por unidade da medida</h3></div><span class="axis-note">Rⱼ / wⱼ · escala linear</span></div>
+          <div class="legend process-legend"><span><i class="key initial"></i> Inicial</span><span><i class="key current"></i> Atual</span><span class="mean-legend" hidden><i class="key mean"></i> Média prevista</span><span><i class="key target-key"></i> Alvo</span></div>
+          <div id="resource-chart" class="process-chart"></div>
+          <p id="measure-caption" class="chart-caption"></p>
+          <div class="chart-heading count-heading"><div><p class="eyebrow">O QUE CONTINUA DIFERENTE?</p><h3>Quantidade de objetos por classe</h3></div><label class="scale-control" for="count-scale">Escala vertical<select id="count-scale"><option value="linear">Linear</option><option value="log">Logarítmica · log(1 + n)</option></select></label></div>
+          <div id="count-chart" class="process-chart"></div><p id="count-caption" class="chart-caption"></p>
+          <div class="insight" aria-live="polite"><span class="insight-icon" aria-hidden="true">↳</span><p id="process-insight"></p></div>
         </div>
       </div>
-      <div class="secondary-grid">
-        <section class="detail-card" aria-labelledby="pool-title"><p class="eyebrow">OLHE PARA OS GRUPOS</p><h3 id="pool-title">A verba total de cada nível</h3><div id="pool-chart" class="pool-chart"></div><p id="pool-caption" class="help"></p></section>
-        <section class="detail-card distribution" aria-labelledby="lorenz-title"><div><p class="eyebrow">OLHE PARA A POPULAÇÃO</p><h3 id="lorenz-title">A desigualdade tem duas leituras</h3></div><div class="lorenz-body"><svg id="lorenz-chart" viewBox="0 0 280 220" role="img" aria-label="Curva de Lorenz: parcela acumulada do valor recebido em função da população, da menor para a maior recebedora"></svg><div class="gini"><span>Índice de Gini</span><strong id="gini">—</strong><small>0 = igualdade<br>1 = concentração limite</small></div></div><p id="gini-note" class="help"></p></section>
-      </div>
-      <details class="table-details"><summary>Veja os valores e a contabilidade do modelo <span aria-hidden="true">+</span></summary><div class="table-scroll"><table><caption id="table-caption">Cada cidadão aparece uma única vez e recebe uma TV.</caption><thead><tr><th scope="col">Grupo</th><th scope="col">Pessoas</th><th scope="col">Verba adicional do grupo</th><th scope="col">Adicional por pessoa</th><th scope="col">Valor por pessoa*</th></tr></thead><tbody id="table-body"></tbody></table></div><p id="accounting" class="help accounting"></p></details>
-      <div class="utilities"><button id="share" type="button">Copiar link deste cenário <span aria-hidden="true">↗</span></button><button id="download" type="button">Baixar os valores (.csv) <span aria-hidden="true">↓</span></button><span id="utility-status" role="status"></span></div>
+      <details class="table-details"><summary>Inspecione todas as classes e valores <span aria-hidden="true">+</span></summary><div class="table-scroll"><table><caption id="process-table-caption">Intervalos de tamanho, recursos e quantidades equivalentes.</caption><thead><tr><th scope="col">Classe k</th><th scope="col">Peso w</th><th scope="col">Custo q</th><th scope="col">n inicial</th><th scope="col">n atual</th><th scope="col">n alvo</th><th scope="col">R atual</th><th scope="col">R alvo</th><th scope="col">R / w atual</th><th scope="col" id="mean-header" hidden>R médio previsto</th></tr></thead><tbody id="process-table"></tbody></table></div></details>
+      <div class="utilities"><button id="share-process" type="button">Copiar link do cenário ↗</button><button id="download-process" type="button">Baixar valores (.csv) ↓</button><span id="utility-status" role="status"></span></div>
+      <p class="scope-line">A interface aceita uma distribuição discretizada em classes. Conserva recurso, não número de indivíduos: n pode ser fracionário. Os custos q e a medida são hipóteses explícitas, e não estimativas inferidas do resultado.</p>
     </section>
-    <section class="explanation wrap" id="modelo" aria-labelledby="model-title">
-      <div class="model-intro"><p class="eyebrow">DO EXEMPLO À MATEMÁTICA</p><h2 id="model-title">Igual em qual medida?</h2><p>Dar uma TV a cada cidadão iguala a distribuição de aparelhos. Dividir o mesmo montante entre níveis da cadeia iguala outra coisa: o recurso total por classe. Essas duas igualdades convivem com ganhos individuais diferentes.</p><a href="https://github.com/ttm/orthopolity/blob/main/docs/tv-distribution-model.md">Leia a derivação completa <span aria-hidden="true">↗</span></a></div>
-      <div class="equations"><article><span class="step">01</span><div><h3>A compra gera um fluxo</h3><p class="formula">B = Np <span>e</span> M = mB</p><p>N pessoas, uma TV de preço p para cada uma. A fração m da compra remunera os grupos modelados; os demais custos somam B − M.</p></div></article><article><span class="step">02</span><div><h3>Mesma verba, menos recebedores</h3><p class="formula">n<sub>j</sub> y<sub>j</sub> = M/5</p><p>Na regra igual por nível, n<sub>j</sub> pessoas dividem M/5. Portanto, o adicional y<sub>j</sub> de cada pessoa cresce quando o grupo encolhe.</p></div></article><article><span class="step">03</span><div><h3>O elo com a ortopolidade</h3><p class="formula">n<sub>j</sub> ∝ 1/y<sub>j</sub></p><p>É uma alocação <strong>discretamente ortopólica</strong> nos cinco níveis. Com tamanhos de grupo em progressão geométrica, os ganhos positivos também formam uma grade <strong>log-orthopolic</strong>, com a mesma verba por intervalo logarítmico. Não é uma alocação linear-orthopolic.</p></div></article></div>
-      <div class="scope-note"><h3>O que este exemplo demonstra</h3><p>Uma possibilidade matemática, construída com regras explícitas. A igualdade das verbas é uma hipótese do cenário, não um resultado observado no mercado. Na regra igual por nível, com adicional positivo, a ortopolidade vale para o recebimento adicional nos cinco níveis, não para o valor total incluindo a TV. Quem recebe adicional zero fica fora da coordenada logarítmica.</p><p>O modelo acompanha uma rodada da compra. Custos de produção são separados das comissões e lucros; o faturamento não é somado novamente em cada etapa. O preço também é usado como valor contábil do aparelho. Não se estima bem-estar, patrimônio prévio, inflação, esforço de trabalho ou a incidência completa dos tributos. A desigualdade medida é a dos recebimentos deste programa.</p></div>
+    <section class="wrap reading-section" id="leitura" aria-labelledby="reading-title"><div><p class="eyebrow">02 / COMO LER O RESULTADO</p><h2 id="reading-title">Equânime entre quais concentrações?</h2><p>Ortopolidade é a condição comum a esses modelos: cada unidade de uma medida de referência recebe o mesmo recurso. Os objetos que concentram mais recurso tornam-se menos abundantes <em>por unidade dessa medida</em>.</p><p>“Indivíduo” pode ser uma pessoa, mas também um objeto, uma partícula ou uma unidade modelada. A condição de equilíbrio não determina, por si só, qual processo a produz.</p></div><div class="reading-equations"><article><h3>Primeiro, declare o recurso e as classes</h3><p class="formula">R<sub>j</sub> = q<sub>j</sub> n<sub>j</sub> <span>e</span> B = Σ R<sub>j</sub></p><p>k é o tamanho representativo (média geométrica dos limites), q = kᵈ é o custo fixo de cada objeto; n é sua quantidade equivalente.</p></article><article><h3>Depois, escolha o sentido de “igual”</h3><p class="formula">R<sub>j</sub>* = B w<sub>j</sub> / Σw <span>→</span> n<sub>j</sub>* = R<sub>j</sub>* / q<sub>j</sub></p><p>Em <strong>log-orthopolic</strong>, w = ln(k<sub>alto</sub>/k<sub>baixo</sub>). Em <strong>linear-orthopolic</strong>, w = k<sub>alto</sub> − k<sub>baixo</sub>. Na versão discreta, w = 1 por classe predefinida.</p></article><article><h3>O expoente depende da medida</h3><p>Se q ∝ kᵈ, a densidade contínua relativa a dk tem expoente <strong>d + 1</strong> na leitura log-orthopolic e <strong>d</strong> na linear-orthopolic. O laboratório usa custos representativos constantes dentro de cada classe: seus valores são uma discretização, não uma integral exata da lei contínua.</p></article></div></section>
+    <section class="wrap catalogue-section" id="processos" aria-labelledby="catalogue-title"><div class="section-top"><div><p class="eyebrow">03 / UM MAPA DOS PROCESSOS</p><h2 id="catalogue-title">A mesma condição, mecanismos distintos</h2></div><a class="catalogue-source" href="https://github.com/ttm/orthopolity/blob/main/docs/orthopolity-processes.md">Derivações e limites ↗</a></div>
+      <div class="catalogue">
+        <article><span class="catalogue-number">01</span><div><h3>Redistribuição global</h3><p>Cada classe cede ou recebe recurso em direção ao alvo proporcional ao seu peso. O desvio cai exponencialmente e o orçamento total permanece fixo.</p><span class="catalogue-tag">Operador didático · explore acima</span></div><span class="catalogue-symbol" aria-hidden="true">⇄</span></article>
+        <article><span class="catalogue-number">02</span><div><h3>Difusão e troca local</h3><p>O recurso flui entre classes vizinhas com diferentes valores de R/w. Uma rede conectada permite que todas atinjam o mesmo nível normalizado.</p><span class="catalogue-tag">Mecanismo de troca · explore acima</span></div><span class="catalogue-symbol" aria-hidden="true">↔</span></article>
+        <article><span class="catalogue-number">03</span><div><h3>Encontros que equilibram pares</h3><p>Dois reservatórios de classe são sorteados e repartem seu recurso conforme seus pesos. Encontros repetidos fazem o equilíbrio se espalhar pelo sistema.</p><span class="catalogue-tag">Convergência por realização · explore acima</span></div><span class="catalogue-symbol" aria-hidden="true">⋈</span></article>
+        <article><span class="catalogue-number">04</span><div><h3>Partilhas aleatórias entre classes</h3><p>Cada encontro conserva o recurso, mas sorteia a divisão. A regra escolhida equilibra as classes na média; uma realização continua flutuando.</p><span class="catalogue-tag">Equilíbrio estatístico · explore acima</span></div><span class="catalogue-symbol" aria-hidden="true">∿</span></article>
+        <article><span class="catalogue-number">05</span><div><h3>Montagem e desmontagem de objetos</h3><p>Monômeros, dímeros e tetrâmeros trocam massa por associação e quebra. Taxas constantes por canal viável aproximam massas médias iguais em três classes logarítmicas, no limite de grande orçamento. Outras taxas mudam o resultado.</p><a href="https://github.com/ttm/orthopolity/blob/main/docs/whole-object-assembly-2026-10-31.md">Objetos inteiros · log-orthopolic ↗</a></div><span class="catalogue-symbol" aria-hidden="true">⁙</span></article>
+        <article><span class="catalogue-number">06</span><div><h3>Divisão de verbas entre grupos</h3><p>Uma mesma verba por nível é dividida entre grupos de tamanhos diferentes. Grupos menores recebem mais por pessoa. Aqui, fixam-se as pessoas e calculam-se os ganhos.</p><a href="./tv.html">Explore a cadeia das TVs · discreta e log-orthopolic ↗</a></div><span class="catalogue-symbol" aria-hidden="true">⊥</span></article>
+      </div>
+      <div class="scope-note"><h3>Uma coleção de mecanismos, com condições de aplicação</h3><p>Equalização de potenciais em reservatórios, transporte radial e equipartição de energia também ajudam a explorar a ideia, mas exigem seus próprios recursos e medidas. Conservação, fragmentação ou crescimento, isoladamente, não garantem ortopolidade.</p><p>Estes modelos demonstram possibilidades matemáticas. Para constituir evidência de um fenômeno real, o recurso e a medida precisam ser fixados independentemente, e uma segunda previsão precisa passar. Escolher uma leitura depois de observar um expoente produz uma hipótese a testar.</p></div>
     </section>
   </main>
-  <footer class="wrap"><a class="brand" href="https://github.com/ttm/orthopolity">⊥ orthopolity</a><p>Um exemplo para pensar a distribuição de recursos.</p><a href="https://github.com/ttm/orthopolity/blob/main/docs/glossary.md">Conceitos e medidas ↗</a></footer>
-  <noscript><p class="noscript">Ative o JavaScript para usar o simulador. A explicação matemática continua disponível abaixo.</p></noscript>
+  <footer class="wrap"><a class="brand" href="https://github.com/ttm/orthopolity">⊥ orthopolity</a><p>Modelos explícitos. Recursos contados. Hipóteses exploráveis.</p><a href="https://github.com/ttm/orthopolity/blob/main/docs/glossary.md">Glossário e medidas ↗</a></footer>
+  <noscript><p class="noscript">Ative o JavaScript para transformar as distribuições. As explicações e os processos podem ser lidos sem ele.</p></noscript>
 </body>
 </html>

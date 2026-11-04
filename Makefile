@@ -311,13 +311,18 @@ data: grain-channel-sources burden-transfer-sources speech-capacity-sources memb
 restore-data:    ## explicitly permit network restoration of missing snapshots
 	$(PY) experiments/fetch_data.py --restore
 
-test: tv-model-test ## accounting, estimator, goodness-of-fit and meta-analysis checks
+test: tv-model-test process-model-test ## accounting, estimator, goodness-of-fit and meta-analysis checks
 	MPLCONFIGDIR=build/matplotlib $(PY) -m unittest discover -s tests -v
 
 .PHONY: tv-model-test
 tv-model-test:   ## dependency-free checks for the interactive TV allocation model (Node 18+)
 	$(NODE) --test tests/tv-model.test.mjs
 	$(NODE) --check site/app.mjs
+
+.PHONY: process-model-test
+process-model-test: ## conservative dynamics for the interactive process laboratory (Node 18+)
+	$(NODE) --test tests/process-model.test.mjs
+	$(NODE) --check site/process-app.mjs
 
 analyses: pilot gof independent ensemble strata variance theory resource gibrat catalogue aftershocks
 

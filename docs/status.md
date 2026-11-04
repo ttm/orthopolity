@@ -4,9 +4,48 @@ Last updated 4 November 2026. **Read this first in a new session.** It records w
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
+**4 November — interactive process laboratory:** the new
+[Portuguese process catalogue](orthopolity-processes.md) distinguishes the common
+allocation relation from its mechanisms and accounting constructions. The
+[public home page](../site/index.html) now accepts arbitrary admissible nonnegative
+vectors over 2–24 geometric size classes, declares representative costs q=k^d,
+and compares **log-orthopolic**, **linear-orthopolic** and predefined-class
+reference weights. All four implemented dynamics conserve total resource;
+equivalent object counts may change and be fractional.
+
+Global exponential relaxation, connected neighbor diffusion and randomly
+scheduled proportional pair balancing converge to the declared allocation.
+Beta-distributed pair division instead converges in ensemble mean and invariant
+law; individual snapshots remain noisy. The interface shows the exact ensemble
+expectation separately, identifies its direct analytic-target view, and includes
+animation, editable initial counts, deterministic seeds, reference-normalized
+resource charts, abundance charts, class tables, CSV export and shareable links.
+The [TV interface](../site/tv.html) is retained; previous root URLs carrying its
+scenario parameters redirect to that page. The catalogue also covers whole-object
+assembly, fixed-group receipts, storage equalization, radial transport and thermal
+equipartition with their distinct reference measures and limits.
+
+Validation: **17 new model tests**, **10 existing TV model tests** and all
+**702 Python tests** pass in the existing Python 3.11 environment. Independent
+analytic checks include two-reservoir diffusion, short-time local flux,
+exponential distance decay, inverse-cost targets, conservation, seeded paths,
+and stochastic means/variance. Registry verification remains **46 runs / 1,168
+references**. Browser checks cover all four dynamics under three measures,
+custom and invalid inputs, analytic targets, shared-link reload/fallback,
+CSV export, playback, and responsive 320px/390px/desktop layouts.
+`make test` and the Pages workflow now include both JavaScript models.
+Full `make all` was not rerun for this standalone interface; the previously
+recorded BioMe byte-comparison limitation remains unresolved. Historical
+analyses, manuscripts and empirical registry entries were not changed.
+
+This is constructed exploration, not new empirical confirmation or a claim that
+every process increases individual inequality. The next scientific step remains
+a separately specified resource/constraint intervention and an independent
+prediction. Publication uses the existing main-branch GitHub Pages workflow.
+
 **4 November — interactive TV allocation example:** the
 [Portuguese model](tv-distribution-model.md) and dependency-free
-[web interface](../site/index.html) illustrate equal direct gifts alongside
+[web interface](../site/tv.html) illustrate equal direct gifts alongside
 unequal supply-chain receipts. The default has 100 million citizens, a R$2,000
 TV each, and 10% of the R$200 billion procurement budget allocated once to
 selected commissions/profits. Five disjoint geometric groups receive R$4 billion

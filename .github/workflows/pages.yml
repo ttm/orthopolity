@@ -1,4 +1,4 @@
-name: Publish interactive model
+name: Publish interactive models
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
     paths:
       - 'site/**'
       - 'tests/tv-model.test.mjs'
+      - 'tests/process-model.test.mjs'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -30,9 +31,11 @@ jobs:
         with:
           node-version: '22'
       - name: Check the mathematical model
-        run: node --test tests/tv-model.test.mjs
+        run: node --test tests/tv-model.test.mjs tests/process-model.test.mjs
       - name: Check browser script syntax
-        run: node --check site/app.mjs
+        run: |
+          node --check site/app.mjs
+          node --check site/process-app.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
