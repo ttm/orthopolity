@@ -1,6 +1,6 @@
 # Ortopolidade: processos, distribuições e exploração interativa
 
-4 de novembro de 2026. Síntese dos mecanismos e exemplos do repositório,
+4 de novembro de 2026; interface e guia revisados em 5 de novembro. Síntese dos mecanismos e exemplos do repositório,
 acompanhada de um laboratório didático na
 [página pública](https://ttm.github.io/orthopolity/).
 
@@ -40,6 +40,90 @@ Há duas leituras que convém separar:
 
 A definição e suas fronteiras estão no [glossário](glossary.md) e em
 [conceitos e limites](concept.md).
+
+## O que esta interface é, faz e cobre
+
+A interface é um **laboratório didático de modelos matemáticos de alocação**.
+Ela permite escolher uma distribuição inicial de quantidades por classe,
+declarar o recurso por objeto e a medida de referência, e acompanhar as
+consequências de quatro regras de troca. Conserva o recurso total e compara
+cada etapa com um alvo calculado a partir dessas hipóteses.
+
+Ela **não é uma simulação validada de uma economia, população ou material
+específico**, nem uma prova de que os mecanismos ocorrem espontaneamente na
+natureza. Não estima requisitos a partir de dados, ajusta uma lei de potência,
+identifica qual mecanismo gerou uma distribuição observada ou recomenda uma
+política de distribuição. O indicador de distância ao alvo compara alocações
+de recurso entre classes; não é Gini nem uma medida de justiça ou desigualdade
+individual.
+
+O escopo computacional desta página é um recurso conservado, custos positivos
+fixos $q=k^d$, classes geométricas fixas durante cada execução e as medidas
+**log-orthopolic**, **linear-orthopolic** ou discreta. As quantidades são
+contínuas e podem ser fracionárias. Não há conservação simultânea obrigatória
+do número de objetos, rastreamento de indivíduos, preços, entradas e perdas,
+vários recursos concorrentes ou prazos físicos calibrados. Recursos arbitrários
+$q(k)$, limites de classe escolhidos individualmente e redes de troca
+personalizadas também ficam fora dos controles atuais. Essas limitações são
+da interface; não delimitam todas as formulações possíveis da ortopolidade.
+
+| Processo ou exemplo | Cobertura disponível |
+| --- | --- |
+| Redistribuição global | Simulada nesta página; aproximação exponencial ao alvo |
+| Difusão local | Simulada nesta página; cadeia conectada de classes vizinhas |
+| Equilíbrio por pares | Simulado nesta página; encontros aleatórios com partilha proporcional |
+| Partilha aleatória | Simulada nesta página; uma realização e sua média matemática prevista |
+| Verbas na cadeia das TVs | [Interface própria](https://ttm.github.io/orthopolity/tv.html), com grupos de pessoas fixos e ganhos variáveis |
+| Montagem e desmontagem de objetos inteiros | [Modelo e resultados documentados](whole-object-assembly-2026-10-31.md); não executados por este laboratório |
+| Equalização em reservatórios | [Discussão e modelo documentados](storage-intervention-design-2026-10-25.md); não simulados nos controles desta página |
+| Transporte radial | [Realização documentada](physical-realizations.md); não simulada nesta página |
+| Equipartição térmica | [Realização documentada](thermal-radiation.md); não simulada nesta página |
+
+A presença de um processo no catálogo não significa que ele seja executado
+pelos controles. Em particular, os quatro modelos contínuos não implementam
+as reações de montagem de objetos inteiros descritas no item 5 abaixo.
+
+## Um primeiro percurso pelo laboratório
+
+1. **Comece pelo exemplo guiado.** Três classes cobrem tamanhos 1–4, 4–16 e
+   16–64, com representantes geométricos 2, 8 e 32. Com $q=k$ e 30 objetos
+   equivalentes por classe, os recursos iniciais são 60, 240 e 960, somando
+   **1.260 unidades de recurso**.
+2. **Anime uma regra de troca e acompanhe os dois gráficos.** Na referência
+   **log-orthopolic**, as três classes têm a mesma largura logarítmica. O alvo
+   recebe 420 unidades por classe, o que corresponde a **210, 52,5 e 13,125
+   objetos equivalentes**. O total de recurso permanece 1.260; o número de
+   objetos muda. Isso traduz uma redistribuição contínua de recurso, sem
+   afirmar que pessoas ou objetos indivisíveis são criados ou fracionados.
+3. **Mude a medida ou experimente flutuações.** Na referência
+   **linear-orthopolic**, as larguras são 3, 12 e 48. A mesma condição inicial
+   já tem recurso por largura igual a 20 e, portanto, já está no alvo. Alterar
+   a referência muda o sentido de igualdade; não constitui uma correção de uma
+   medida pela outra. Na partilha aleatória, a média se aproxima do alvo,
+   enquanto a realização continua flutuando.
+
+O exemplo linear começa em equilíbrio por causa da combinação particular da
+grade geométrica, de $q=k$ e das quantidades iguais. Isso não vale para toda
+entrada nem para todo expoente. Comparar os modos com as mesmas hipóteses
+permite distinguir o que muda a trajetória do que muda o alvo.
+
+Por padrão, o gráfico principal mostra a **cota atendida**, $100R_i/R_i^*$,
+com alvo de 100% por classe. Esse percentual tem como denominador a cota
+própria da classe; não é a parcela do orçamento inteiro. A comparação é
+equivalente a normalizar $R_i/w_i$ pelo valor comum $B/W$. Os controles também
+permitem mostrar o recurso total $R_i$ ou o recurso por unidade da medida
+$R_i/w_i$; a igualdade desta última razão é a condição em questão. O recurso total da classe $R_i$ pode ser diferente
+entre classes de larguras diferentes. O outro gráfico mostra quantidades de
+objetos, $N_i=R_i/q_i$. Quando forem exibidas proporções de objetos, elas são
+$N_i/\sum_jN_j$ e devem ser distinguidas das parcelas de recurso $R_i/B$.
+Escolher uma escala visual logarítmica não troca a medida de referência do modelo.
+
+A inspeção de uma classe permite relacionar seu tamanho, custo por objeto,
+quantidade e recurso total. A edição por classe e a entrada de um vetor
+personalizado representam a mesma distribuição inicial. O alvo mostrado
+diretamente é uma **referência analítica**, e não uma etapa que a animação
+acabou de executar. Compartilhar um cenário preserva suas hipóteses; exportar
+CSV fornece os valores do estado exibido para análise externa.
 
 ## Igual em qual medida?
 

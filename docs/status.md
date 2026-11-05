@@ -1,8 +1,50 @@
 # Project status and handoff
 
-Last updated 4 November 2026. **Read this first in a new session.** It records what the authors
+Last updated 5 November 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**5 November — guided interface and explicit scope:** the
+[public laboratory](../site/index.html) now begins with three guided scenarios,
+a concrete three-class example and a three-step interaction: choose an input,
+execute a rule, inspect the change. The default has 30 objects per class and
+representative costs **(2, 8, 32)**, giving budget **1,260**. The **log-orthopolic**
+target has resource **(420, 420, 420)** and equivalent counts
+**(210, 52.5, 13.125)**. Changing only to **linear-orthopolic** weights makes this
+particular initial state already neutral; a third guide separates a random
+realization from its exact ensemble expectation.
+
+The default resource chart shows **100 R_i/R_i***, so 100% means that class's
+own quota, not the entire budget. Raw class stocks and reference-normalized
+resource remain selectable. A per-class numeric editor complements bulk input;
+an inspection table distinguishes object quantities, resource shares and object
+shares. A one-step control, explicit initial/evolution/analytic-preview states,
+and visible pending/invalid-edit notices clarify what the graphs represent.
+Technical controls and formulas use expandable sections. Essential text is
+larger; tables include mobile scrolling guidance, and playback suppresses
+continuous screen-reader announcements. Shared links preserve the view and
+selected class while remaining compatible with previous laboratory and TV links.
+
+An explicit **purpose, capabilities, coverage and limits** section distinguishes
+the four simulations, the separate TV interface, and documented assembly,
+storage, radial transport and thermal-mode models. It records the finite grid,
+power-law representative costs, closed single-resource budget, fractional
+counts, model-time conventions, unsupported constraints and lack of empirical
+inference. FAQs and a short glossary explain common misreadings. The
+[Portuguese catalogue](orthopolity-processes.md) and README carry the same guide.
+This changes presentation and interaction, not the four mathematical engines,
+the research claims, manuscripts or empirical registry.
+
+Validation: all **27 JavaScript model tests**, browser-script syntax and the
+Python terminology test pass. Browser checks cover all four mechanisms under
+all three measures; exact guided-example budgets; quota/raw/density views;
+quick and bulk edits, including invalid and 24-class extreme cases; inspector
+and view restoration in shared links; analytic preview, stepping, playback,
+CSV export and previous laboratory/TV URLs. Desktop and 320px/390px layouts
+were checked without page overflow; the browser console reports no warnings
+or errors. The full Python suite and `make all` were not rerun for this UI-only
+revision; the existing BioMe byte-comparison limitation is unchanged.
+Publication uses the existing main-branch Pages workflow.
 
 **4 November — interactive process laboratory:** the new
 [Portuguese process catalogue](orthopolity-processes.md) distinguishes the common

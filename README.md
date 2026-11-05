@@ -5,7 +5,11 @@ transforms any admissible finite vector of class abundances while conserving its
 resource budget. Compare global relaxation, neighbor diffusion, balancing pair
 meetings and random pair divisions. Choose **log-orthopolic**, **linear-orthopolic**
 or predefined-class weights, inspect trajectories and analytic targets, share a
-scenario, or export its values. The first three mechanisms converge per trajectory;
+scenario, or export its values. Three guided examples begin with concrete costs
+of 2, 8 and 32 and a fixed resource budget of 1,260. A quota-percentage view,
+per-class input editor and inspection table explain the calculations; the
+[coverage and limits section](https://ttm.github.io/orthopolity/#escopo) explicitly
+separates implemented simulations, linked interfaces and documented models. The first three mechanisms converge per trajectory;
 random division approaches the target in ensemble mean while snapshots fluctuate.
 Equivalent object counts can change and be fractional. These constructed mechanisms
 are not empirical confirmation. The [Portuguese process catalogue](docs/orthopolity-processes.md)
