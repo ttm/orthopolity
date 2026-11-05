@@ -44,7 +44,11 @@ CSV export and previous laboratory/TV URLs. Desktop and 320px/390px layouts
 were checked without page overflow; the browser console reports no warnings
 or errors. The full Python suite and `make all` were not rerun for this UI-only
 revision; the existing BioMe byte-comparison limitation is unchanged.
-Publication uses the existing main-branch Pages workflow.
+Publication of **d8ce33b** succeeded in
+[Actions run 42006677664](https://github.com/ttm/orthopolity/actions/runs/42006677664).
+The live page at **https://ttm.github.io/orthopolity/** was opened and its
+three-class input, linear-measure guide, stochastic mean markers and analytic
+preview verified; no browser warnings or errors were reported.
 
 **4 November — interactive process laboratory:** the new
 [Portuguese process catalogue](orthopolity-processes.md) distinguishes the common
