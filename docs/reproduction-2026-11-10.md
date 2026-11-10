@@ -120,7 +120,8 @@ retained archive supplies the complete closed storage intervention and coupling
 control. Its empirical test remains unrun; the review adds no new observations
 or confirmations and does not reopen the completed bounded searches.
 
-Both manuscripts are rebuilt from the reviewed working tree with the Makefile's
+Both manuscripts were reviewed from the working tree, then rebuilt with the
+manuscript sources fixed at commit **632f869**, using the Makefile's
 last-source-commit timestamps:
 
 ```sh
@@ -130,22 +131,28 @@ PATH=/usr/bin:/bin:/usr/sbin:/sbin:$PATH \
 ```
 
 The final **12-page article and 74-page supplement** are byte-identical across
-two forced builds, with no TeX warnings or overfull/underfull boxes in either
+two forced builds from **632f869**, with no TeX warnings or overfull/underfull boxes in either
 pass. All pages were visually reviewed through contact sheets; changed main
 page 8 and supporting pages 1, 31–33, 35 and 50 were inspected at full size, along
 with the corrected figures S9, S14 and S15 on pages 42, 57 and 59. Every one
 of the 20 supplement figures now has its caption on the same page as its
 image. No clipped or overlapping content, blank pages or page-flow defect
 remains. Text-bound checks find no out-of-page spans. The repeated final build
-matches the inspected PDF hashes.
+matches the committed-source PDF hashes. Raster comparisons of all 86 pages
+find no pixel differences between these PDFs and the visually inspected
+working-tree PDFs; the source-commit timestamp change preserves the layout.
 
 | PDF | SHA-256 |
 | --- | --- |
-| `docs/paper.pdf` | `16c1cb42d75e718d651b85025794df3f736d3e9e2f4a18c2da2cec1a4a50b0e5` |
-| `docs/supporting-material.pdf` | `163b0a927f549f904b9689b7ea01fe8729b7d5390b40ccbdfd815dff734db671` |
+| `docs/paper.pdf` | `a5174b2df6a2ccce077be0746af0a418e4fc831d01fafe095317cff38d753798` |
+| `docs/supporting-material.pdf` | `e8c3a2b92e6c0f639bd893e3f005d6ffbfe15434310f84ad63987ad407267d04` |
 
-Final PDF images and first/second-build records are in
-`build/review-pdf-qa-2026-11-10/final/`. Seven manuscript-converter tests and
+Reviewed PDF images and working-tree build records are in
+`build/review-pdf-qa-2026-11-10/final/`; the committed-source byte/pixel checks
+are in `build/review-pdf-qa-2026-11-10/committed-first-build.json` and
+`committed-second-build.json`. Build logs are
+`build/paper-committed-build-2026-11-10.log` and
+`build/paper-committed-rebuild-2026-11-10.log`. Seven manuscript-converter tests and
 the terminology test pass after the source corrections; a separate check
 covers terminology in the new untracked files. All **435 local links** in
 the eight changed/new Markdown documents resolve, and `git diff --check`

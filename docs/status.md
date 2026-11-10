@@ -28,7 +28,9 @@ synthesis and registry guide. Three detached figure captions were repaired in
 the supporting source. The general-law title and ambition remain unchanged;
 no new observations or empirical confirmations are claimed. The rebuilt
 **12-page article and 74-page supplement** are visually checked, warning-free
-and byte-identical across two forced final builds, as recorded with the replay.
+and byte-identical across two forced final builds from manuscript-source commit
+**632f869**, as recorded with the replay. All 86 pages render identically to the
+reviewed working-tree PDFs after fixing their build timestamps to that commit.
 
 The [storage-intervention readiness decision](storage-intervention-readiness-2026-11-10.md)
 now supplies the input/target manifest, divergent forecasts, uncertainty and
