@@ -351,6 +351,12 @@ make all PY=/path/to/python
 ~~~
 
 The pipeline verifies frozen input checksums, runs the test suite, and regenerates analyses.
+Use Python 3.11 for the retained results; other versions can introduce numerical
+regeneration noise. BioMe replay compares computed floats using its independent
+verifier's existing tolerances, with exact metadata and provenance checks;
+its inventory and figure still require byte identity. The replay report records
+both numerical differences and file hashes without replacing frozen artifacts.
+See the [10 November reproduction record](docs/reproduction-2026-11-10.md).
 Data verification is offline; restoring missing snapshots is an explicit separate action:
 
 ~~~bash

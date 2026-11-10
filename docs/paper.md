@@ -2,7 +2,7 @@
 
 **Capacity, physical realizations, and effective-resource inference**
 
-> Research manuscript, revised 1 November 2026. Detailed derivations, complete
+> Research manuscript, revised 10 November 2026. Detailed derivations, complete
 > comparisons and analysis histories are retained in the [supporting material](supporting-material.md).
 > Empirical studies include exploration, locally frozen forecasts and retrospective
 > reanalyses; none is externally preregistered. Authorship and submission declarations
@@ -376,7 +376,7 @@ The complete mean-cost curves predict CPU and job profiles before 16 allocation
 trials: maximum CPU-share errors are 0.0035--0.0063 and job-share total-variation
 errors are 0.0021--0.0124. Replacing the largest-class thread with a second
 smallest-class thread produces the predicted allocation change within 0.0078.
-A unit-cost alternative has job-share errors of 0.126--0.273
+A linear-cost alternative ($q_j\propto k_j$) has job-share errors of 0.126--0.273
 ([intervention report](dimensionality-intervention.md)).
 
 The system supplies competition and the intervention changes the independently

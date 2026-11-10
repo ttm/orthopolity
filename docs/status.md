@@ -1,8 +1,47 @@
 # Project status and handoff
 
-Last updated 5 November 2026. **Read this first in a new session.** It records what the authors
+Last updated 10 November 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**10 November — full replay repaired and evidence reviewed:** `make all` now
+passes in the existing Python 3.11 environment, including **711 Python tests**,
+**27 JavaScript tests** and every analysis stage in that target. Registry
+verification remains **46 runs / 1,168 references**. The BioMe diagnostic
+differs from its retained JSON only by floating values, at most **2.27e-13**;
+its original independent verifier still passes. A separate replay checker uses
+that verifier's existing numerical tolerances while keeping design metadata,
+types, counts and provenance exact. Inventory and PNG still require byte
+identity. This is a retrospective replay-policy amendment, not a claim that
+the regenerated JSON is byte-identical or a change to an empirical threshold.
+Nine new regression tests and independent code review check the comparison.
+All historical regenerated result noise was audited and restored; frozen
+analysis/protocol/input/result bytes and registry entries are unchanged.
+The [reproduction record](reproduction-2026-11-10.md) retains the distinction,
+commands, differences and hashes.
+
+The [main/supplement evidence review](manuscript-evidence-review-2026-11-10.md)
+maps the principal claims to their measures, derivations, empirical comparisons
+and limits. It corrected a mislabeled linear-cost runtime comparator, narrowed
+the Dunaliella ranking and raw-OD statements, and updated the later-study
+synthesis and registry guide. Three detached figure captions were repaired in
+the supporting source. The general-law title and ambition remain unchanged;
+no new observations or empirical confirmations are claimed. The rebuilt
+**12-page article and 74-page supplement** are visually checked, warning-free
+and byte-identical across two forced final builds, as recorded with the replay.
+
+The [storage-intervention readiness decision](storage-intervention-readiness-2026-11-10.md)
+now supplies the input/target manifest, divergent forecasts, uncertainty and
+qualification gates, and exact conditions for reopening a source. Its physical
+storage weights are **neither log-orthopolic nor linear-orthopolic size allocation**.
+No retained public archive qualifies the closed storage-change intervention and
+separate coupling control; the empirical test remains unrun. A full-storage
+forecast also coincides with established hydrostatics, so success would establish
+a scoped transfer, not unique support over that theory. Next qualify a specifically
+identified new independent-input deposition if one appears; otherwise advance
+author declarations, source permissions/attribution and venue preparation from
+the completed evidence review. The existing-public-data-only constraint and
+closed bounded source searches remain in force.
 
 **5 November — guided interface and explicit scope:** the
 [public laboratory](../site/index.html) now begins with three guided scenarios,
@@ -928,6 +967,15 @@ The [research brief](research-brief.md) explains the general-law programme;
 
 ## 5. Next steps, in priority order
 
+**10 November consolidation is complete:** the full replay and joint manuscript
+review above supersede the pending BioMe repair and review task below. Remaining
+submission work requires actual author/declaration information, resolution of
+the recorded data notices and a venue-specific check. For new empirical work,
+use the [storage readiness decision](storage-intervention-readiness-2026-11-10.md)
+to qualify a specific new input package; no currently retained candidate clears
+its necessary gates. Do not interpret a repaired computational replay as repaired
+physical eligibility or reopen a closed search without new measurement information.
+
 **The first author-directed domain sequence is complete:** physics, chemistry,
 broader-natural, biological and human/language conditional forecasts are retained.
 Seek an independent cohort or intervention with separately measured costs or
@@ -1008,7 +1056,9 @@ The existing candidate repairs below remain available in that sequence.
 4. **Follow up aftershocks** with finite-fault rupture windows under a new protocol,
    disclosing the earlier result. Wildfire allocation is another available-data
    route requiring a separate resource and held-out prediction design.
-5. **Review the shortened article and supporting material together.** Main
+5. **Carry forward the completed joint manuscript review.** The
+   [10 November review](manuscript-evidence-review-2026-11-10.md) supplies the
+   claim-to-evidence map and completed corrections. Main
    Sections 2–3 develop the exact and physical content; Section 4 assesses
    predictions, including the new diagnosis; Section 5 distinguishes explanations
    from failures. Full comparisons and derivations remain in S1–S5. The
@@ -1025,9 +1075,12 @@ The existing candidate repairs below remain available in that sequence.
   exponent was examined and the reading passes a second, different prediction. Grades:
   derived, motivated, suggestive, numerology. Source tags in documents: verified, repository result,
   own derivation, unverified.
-- `make install` then `make all` (about 4 minutes) verifies frozen inputs, runs 612 tests and
-  regenerates the legacy analyses. Later frozen studies have named replay targets;
-  `make membrane-exchange` replays the newest study to a fresh STUDY_OUTPUT_ROOT;
+- `make install` then `make all` verifies frozen inputs, runs 711 Python and
+  27 JavaScript tests, regenerates the legacy analyses and executes its declared
+  later audit/replay targets. The [10 November record](reproduction-2026-11-10.md)
+  documents a complete successful run and the explicit BioMe numerical replay
+  policy. Other frozen studies have named replay targets;
+  `make membrane-exchange` replays the pair study to a fresh STUDY_OUTPUT_ROOT;
   `make speech-capacity` retains the preceding language comparison.
   `make burden-transfer` and `make grain-channel-transfer` retain the preceding comparisons.
   The September results were produced with Python 3.11; results

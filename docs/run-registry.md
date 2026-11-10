@@ -34,6 +34,17 @@ retained history; neither mechanism proves external preregistration or blinding.
 
 ## Catalogue
 
+As of 10 November 2026 the registry contains **46 records and 1,168 file
+references**. The latest empirical entry remains `hotbox-profile-transfer-2026-10-26`,
+which retains the [thermal-profile transfer](hotbox-transfer-results-2026-10-26.md):
+210 sealed predictions have mean absolute error 1.7473°C, below all three declared
+comparators, but 83 lie outside the conditional error envelopes. The complete-cohort
+verdict is qualification incomplete; the 174 input-qualified observations still
+include 61 envelope failures. Physical depth/thermal resistance defines the coordinate,
+neither log-orthopolic nor linear-orthopolic size allocation. The earlier 45 entries
+are preserved. Later analytic assembly and interface work added no empirical records;
+record count is not a count of independent confirmations.
+
 As of 25 October 2026 the registry verifies **45 records and 1,149 file
 references**. The latest, `rlc-boundary-2026-10-24`, retains an
 [independent component forecast](rlc-boundary-results-2026-10-25.md) of one

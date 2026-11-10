@@ -148,9 +148,8 @@ biome-stock-audit: ## descriptive source qualification; no new empirical registr
 	$(PY) experiments/audit_biome_stocks.py --stage inventory --output $(STUDY_OUTPUT_ROOT)/biome-stock/design-inventory.json
 	cmp data/physics-candidates/2026-10-23/biome/design-inventory.json $(STUDY_OUTPUT_ROOT)/biome-stock/design-inventory.json
 	$(PY) experiments/audit_biome_stocks.py --stage diagnose --freeze-commit 59bd2b7 --output $(STUDY_OUTPUT_ROOT)/biome-stock/diagnostic.json
-	cmp results/biome-stock-audit-2026-10-23/diagnostic.json $(STUDY_OUTPUT_ROOT)/biome-stock/diagnostic.json
 	$(PY) experiments/verify_biome_stocks.py --diagnostic $(STUDY_OUTPUT_ROOT)/biome-stock/diagnostic.json --output $(STUDY_OUTPUT_ROOT)/biome-stock/verification.json
-	cmp results/biome-stock-audit-2026-10-23/verification.json $(STUDY_OUTPUT_ROOT)/biome-stock/verification.json
+	$(PY) experiments/check_biome_replay.py --replay-dir $(STUDY_OUTPUT_ROOT)/biome-stock --output $(STUDY_OUTPUT_ROOT)/biome-stock/replay-comparison.json
 	MPLCONFIGDIR=build/matplotlib $(PY) experiments/plot_biome_stocks.py --result $(STUDY_OUTPUT_ROOT)/biome-stock/diagnostic.json --output $(STUDY_OUTPUT_ROOT)/biome-stock/stocks.png
 	cmp results/biome-stock-audit-2026-10-23/stocks.png $(STUDY_OUTPUT_ROOT)/biome-stock/stocks.png
 

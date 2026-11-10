@@ -2,7 +2,7 @@
 
 **Accounting proofs, physical derivations, observation models and complete comparisons**
 
-Prepared 10 October 2026; revised 1 November 2026 as a companion to
+Prepared 10 October 2026; revised 10 November 2026 as a companion to
 [the main article](paper.md).
 This document preserves the substantive technical material of the article at
 source commit **`f137d4efb050ccfcb5c5f814d32da651c645421c`**, supplemented by
@@ -1614,10 +1614,11 @@ in which the resource, its cost law, the forecasts and the decision rules are fi
 evaluated outcomes are decoded, and in which whole units are held out: launches, a calendar year,
 vessels and selection treatments. Each executed study retains its inputs, frozen protocol,
 archived algorithms, forecasts and results in an append-only [run registry](run-registry.md).
-Three kinds of evidence are kept separate: measurements on engineered systems, an unused
-observation period of a natural catalogue, and published biological experiments reanalysed
-retrospectively. Published summaries of those experiments had been read, so their reanalyses
-are retrospective validations, not blinded tests. A further plant study uses fixed scoring
+Evidence includes measurements on engineered systems, an unused observation period of a
+natural catalogue, and retrospective transfers across published biological, chemical,
+physical and language datasets. Published summaries had been read before the retrospective
+transfers, so withholding numerical targets locally does not make them blinded tests.
+A further plant study uses fixed scoring
 and a development-only geographic split after accidental raw outcome exposure. Its freeze
 cannot establish that those outcomes were unseen.
 
@@ -1638,7 +1639,8 @@ cost degrees 1.870 and 2.686 for the two kernels. The calibrated mean-cost curve
 complete CPU and job profiles before 16 allocation trials, with maximum CPU-share errors of
 0.0035–0.0063 and job-share total-variation errors of 0.0021–0.0124. Replacing the
 largest-class thread with a second smallest-class thread produced the predicted CPU-share change
-within 0.0078. A unit-cost alternative had count errors of 0.126–0.273. This success concerns
+within 0.0078. A linear-cost alternative ($q_j\propto k_j$, with $k_j$ the matrix
+side length) had count errors of 0.126–0.273. This success concerns
 one engineered allocation mechanism; it identifies no geometric dimension and no tendency of
 natural systems.
 
@@ -1664,7 +1666,7 @@ unresolved, as declared before acquisition, and the instrument mix changed betwe
 | Study | Held out | Resource and cost | Frozen comparison | Outcome |
 |---|---|---|---|---|
 | *Synechococcus* quotas (Harcourt et al., 2024) | Ten cultures at 25 °C | C, N and P per cell against measured diameter | Fixed cube, free power, strain means, temperature trends | Fixed cube best for C; strain means best for N and P |
-| Size-selected *Dunaliella* (Malerba et al., 2018) | Large and small treatments in two folds | Biovolume at carrying capacity in one shared medium | Equal biovolume ($d=1$), fitted size law, assigned exponents, equal cell number | Equal-biovolume forecast best; $d=1.02$ describes the post-hoc all-lineage fit |
+| Size-selected *Dunaliella* (Malerba et al., 2018) | Large and small treatments in two folds | Biovolume at carrying capacity in one shared medium | Equal biovolume ($d=1$), fitted size law, assigned exponents, equal cell number | Equal biovolume beats fitted size law and equal counts in both folds; $d=1.02$ describes the post-hoc all-lineage fit |
 | Food-web chemostats (Wojcik et al., 2025) | Twelve polyculture vessels | Algal N stock: biovolume times separately assayed N per volume | Persistence, development response, no-herbivore response, equal stock, two-budget cost ratio | No model beat persistence; the cost-ratio rule failed |
 | Harvested plants (Dillon et al., 2019) | Five Colorado plots; prior raw exposure | Direct aboveground dry mass; $q(m)=m$ by definition | Log and linear neutrality, Ohio histogram, bounded Pareto and Weibull | Pareto best for biomass; trained models better for counts; ecological neutrality unresolved |
 
@@ -1745,7 +1747,8 @@ Frozen verdicts, calibrated biovolume:
 - the fitted size law outperforms equal cell number;
 - the assigned carbon exponent and equal biovolume are not distinguished.
 
-On raw OD, every difference keeps its direction. Two verdicts narrow to "not
+For the first four comparisons, raw-OD point errors keep the same ordering.
+Two verdicts narrow to "not
 distinguished": equal biovolume and the assigned carbon exponent, each against
 the fitted law. Their fold B gaps (0.042 and 0.015) fall under the 0.05 margin.
 
@@ -2020,7 +2023,9 @@ the M9 mean error to 9.44%; it remains a sensitivity, not a selected winner.
 
 *Figure S9. Top panels are model predictions, not observed histograms. Bottom panels show
 predicted/published endpoint ratios for every declared model; unity is exact
-agreement.* The [machine-readable results](../results/cell-division/summary.json)
+agreement.*
+
+The [machine-readable results](../results/cell-division/summary.json)
 retain all errors and calibration diagnostics.
 
 This adds a concrete natural-system mechanism and an independent-experiment
@@ -2356,9 +2361,10 @@ model; the noiseless failures already establish the present stop decision.
 
 ### S5.8. Scope of the retained comparisons
 
-The positive results concern conditional budget closure: a separately measured or geometric
-cost, declared shared resource conditions, and abundance or resource shares predicted from them. The runtime
-experiment and the algal lineages are the clearest cases. In the lineages,
+The earlier comparisons distinguish actual allocation from conditional budget closure.
+The runtime experiment tests CPU and job shares under an independently specified change
+in runnable-thread opportunities. The algal lineages instead test a geometric cost and
+declared shared resource conditions across separate cultures. In the lineages,
 volume scaling supplies the cost exponent; the empirical content is the
 similar attained biovolume at the small and large treatment extremes, together
 with higher intermediate-control capacities and the retained held-out forecast scores.
@@ -2380,6 +2386,18 @@ The bacterial comparison adds a mechanism-derived prediction between separate
 experimental settings: mean length transfers closely, while variability and
 the joint comparison fail. Its resource proxy and unverified growth assumptions
 leave the natural-allocation qualification task open.
+
+Later transfers test different predictions: chemical competition improves on its
+no-competition ablation but not established IAST on loading error (S5.14);
+independent contextual information predicts speech better than the declared alternatives
+(S5.17); and membrane kinetics improves on persistence and immediate mixing but not
+empirical interpolation (S5.18). Independent circuit components predict a boundary of
+passive RC exchange (S5.20), while a transferred thermal profile improves average error
+but fails its conditional accuracy scenario (S5.21). These results use species,
+hierarchical counting, compartment-volume, circuit-storage or spatial measures,
+not neutral log-orthopolic or linear-orthopolic size allocation. They support scoped
+constraint or constitutive transfers and preserve their stronger domain comparators;
+they do not establish a common neutral regime across natural populations.
 
 ### S5.9. Data, code and provenance
 
@@ -2708,12 +2726,12 @@ below the model's base was excluded from scoring.
 
 ![Heated-cantilever hot-condition forecasts and mode-specific errors](../results/cantilever-transfer-2026-10-13/cantilever-presentation.png)
 
-**Figure S14.** Primary forecasts from colder-condition damping. Points show
+*Figure S14. Primary forecasts from colder-condition damping. Points show
 archived fluctuation temperatures and reported errors; lines show sealed
 forecasts. Shading marks the allowed temperature envelope for nonnegative local
 loss. The dashed C30C flexural-4 curve is retained algebra with invalid local
 loss. Its failed case remains visible in the error comparison. Shared errors
-are not independent confidence intervals.
+are not independent confidence intervals.*
 
 The [full report](cantilever-results-2026-10-13.md) includes all mode errors,
 three comparators, four frozen analyses and the raw plotting discrepancy.
@@ -2802,12 +2820,12 @@ is changed by this coverage diagnosis.
 
 ![Primary sealed adsorption forecasts and established comparators](../results/adsorption-transfer-2026-10-13/adsorption.png)
 
-**Figure S15.** All primary component forecasts, with the same observations
+*Figure S15. All primary component forecasts, with the same observations
 for all models. Blue circles: shared capacity; orange squares: IAST; gray
 crosses: no competition. Horizontal bars show reported expanded observation
 uncertainty, once per observation at the shared forecast. The diagonal is exact
 prediction. Gas composition and uptake errors are related, so these are not
-independent uncertainty intervals.
+independent uncertainty intervals.*
 
 Ideal-gas sensitivity gives shared, ablation and IAST component MAEs of
 0.26401, 0.63130 and 0.25912 mmol/g, respectively, also meeting the pragmatic
