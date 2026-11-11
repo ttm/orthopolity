@@ -77,18 +77,22 @@ Verification completed:
 - `git diff --check` passes. The successful 10 November full `make all` remains
   the baseline; it was not rerun for this editorial/theoretical revision.
 
-The builds use the Makefile's fixed timestamps from the last committed source;
-these hashes describe the current working-tree PDFs. Committing manuscript
-sources will change the timestamp basis for a subsequent rebuild.
+The final delivery builds use manuscript-source commit **19a15a2** for the
+Makefile's fixed timestamps. Both PDFs repeat byte-identically, and all 90
+pages match the previously reviewed PDFs in extracted text and rendered pixels.
+The SVG renderer also normalizes Matplotlib's trailing whitespace; its PNG is
+unchanged and both figure formats repeat deterministically.
 
 | Artifact | SHA-256 |
 |---|---|
-| `docs/paper.pdf` | `ede91ba0b1b677d99b89eb98f5dffac1c59741cdfebce31c5e0d857b47ee5523` |
-| `docs/supporting-material.pdf` | `84fdf152607b3e19e7b9bc46b5cfe2c19bd6ec6979b341f645840a283c01006e` |
+| `docs/paper.pdf` | `4fa5a27c85e6d068dbb19cfb126d2a181bbcd674ef1e33808ca60314952e1a67` |
+| `docs/supporting-material.pdf` | `b76f2bd850e45f3c06d4a1aea71da2f7a98245371bd018e12a627395473943cd` |
 
-Build logs are `build/law-cosmos-paper-final-2026-11-11.log` and
-`build/law-cosmos-paper-repeat-2026-11-11.log`. Raster review, bounds/caption
-checks and repeat hashes are in `build/law-cosmos-pdf-qa-2026-11-11/`.
+Delivery build logs are `build/law-cosmos-paper-committed-2026-11-11.log` and
+`build/law-cosmos-paper-committed-repeat-2026-11-11.log`. Raster review, bounds/caption
+checks and repeat hashes are in `build/law-cosmos-pdf-qa-2026-11-11/`; its
+`committed-first-build.json` and `committed-repeat-build.json` record delivery
+hashes and the comparison against the reviewed pages.
 The source/link check is `build/law-cosmos-doc-check-2026-11-11.json`;
 registry output is `build/law-cosmos-registry-2026-11-11.log`. These scratch
 artifacts document this local verification; the manuscript, retained figure

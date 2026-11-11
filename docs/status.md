@@ -30,8 +30,9 @@ new PNG/SVG illustration is deterministic under the existing Python 3.11
 environment. Both final PDFs (**13 main / 77 supporting pages**) are visually
 reviewed, warning-free and byte-identical across two forced builds. The full
 `make all` was not rerun for this editorial/theoretical revision; its successful
-10 November baseline is retained below. Work remains on `main`. Delivery uses
-a source commit followed by a PDF rebuild at that commit's fixed timestamp.
+10 November baseline is retained below. Work remains on `main`. Source revision
+**19a15a2** is committed; the delivery PDFs use its fixed timestamp and repeat
+byte-identically. All 90 pages match the reviewed versions in text and pixels.
 
 The next scientific step for cosmic validation is to qualify a public source
 with independently calibrated assembly/transport inputs and a separate abundance
