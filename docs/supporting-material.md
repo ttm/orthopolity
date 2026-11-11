@@ -2,7 +2,7 @@
 
 **Accounting proofs, physical derivations, observation models and complete comparisons**
 
-Prepared 10 October 2026; revised 10 November 2026 as a companion to
+Prepared 10 October 2026; revised 11 November 2026 as a companion to
 [the main article](paper.md).
 This document preserves the substantive technical material of the article at
 source commit **`f137d4efb050ccfcb5c5f814d32da651c645421c`**, supplemented by
@@ -11,6 +11,8 @@ Dunaliella treatment/control and log-change interpretations corrected explicitly
 No frozen input, protocol, forecast, registry entry or numerical output is changed.
 The general-law claim and the ambition to establish it are retained; each theorem,
 physical realization, simulation and empirical comparison keeps its stated scope.
+The 11 November revision adds the exploratory cosmic conjecture in S6; the
+original study results and comparisons remain unchanged.
 
 The comparison measure is part of every allocation statement. Except where a
 linear, mode-counting or word-type measure is explicitly specified, the size
@@ -26,6 +28,7 @@ Contents:
 - [S3. Exchange dynamics and physical derivations](#s3-exchange-dynamics-and-physical-derivations)
 - [S4. Exploratory sources, methods and results](#s4-exploratory-sources-methods-and-results)
 - [S5. Frozen forecasts, full comparisons and eligibility](#s5-frozen-forecasts-full-comparisons-and-eligibility)
+- [S6. Orthopolity and cosmic structure](#s6-orthopolity-and-cosmic-structure)
 - [References](#references)
 
 Each study's linked report remains the route to its exact source files,
@@ -3427,6 +3430,173 @@ placement sensitivity, failed qualification and amendment. This study makes
 the distinction between predictive improvement and adequate absolute accuracy
 concrete; it does not uniquely confirm or refute the general law.
 
+## S6. Orthopolity and cosmic structure
+
+This exploratory extension develops a specific cosmological conjecture from
+the proposed natural law. Its mathematical implications are derived below;
+the astronomical examples interpret published results. No new catalogue
+analysis or empirical confirmation is reported. The companion
+[cosmic report](cosmological-extension.md) retains the same exposition.
+
+### S6.1. The cosmological conjecture
+
+**We conjecture that gravitational assembly produces finite regimes of
+approximately equal matter allocation per logarithmic host-mass interval.**
+The substantive physical proposal is that these regimes arise when material
+current and residence time per logarithmic interval become approximately
+independent of host mass.
+This is a proposed **log-orthopolic cosmological principle**. Its domain must
+be located from independently specified dynamics and observational eligibility,
+so finding a convenient straight segment in a mass function cannot establish it.
+
+Here "cosmological" concerns the assembly and distribution of cosmic structure.
+The standard cosmological principle concerns approximate spatial homogeneity
+and isotropy on very large scales: sameness across locations and directions
+([ESA, Planck and the cosmic microwave background](https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_and_the_cosmic_microwave_background)).
+Our conjecture concerns allocation across object masses; that spatial symmetry
+does not determine a mass spectrum.
+The allocation constant $C$ below is set by the selected inventory and mass
+range. It is not identified with the cosmological constant $\Lambda$, which
+enters the gravitational description of vacuum energy
+([Carroll, 2001](https://arxiv.org/abs/astro-ph/0004075)).
+
+### S6.2. Stars, galaxies and the question to test
+
+Consider a fixed stellar inventory at one epoch. Assign each included star to
+exactly one galaxy, and let $\bar k$ be the average number of included stars per
+galaxy. Then
+
+$$N_{\rm galaxies}\,\bar k=N_{\rm stars}.$$
+
+Every complete grouping of that same inventory obeys this identity. It is the
+exact accounting content of the framework, with a predefined grouping measure;
+it is neither a log-orthopolic nor a linear-orthopolic size-allocation test.
+Different galaxy-size distributions can have the same total. Diffuse stars
+must be included as an explicit additional component or excluded from the
+declared inventory. Stellar birth and death also prevent this snapshot identity
+from implying conservation of stellar number through time.
+
+The distributional question is sharper. Let $k$ denote stars per galaxy and
+$\phi(k)=dN_{\rm galaxies}/dk$ a smooth richness density over a declared range.
+The number of stars per logarithmic richness interval is
+
+$$\frac{dN_{\rm stars}}{d\ln k}=k^2\phi(k).$$
+
+**Log-orthopolic allocation predicts $k^2\phi(k)=C$: each decade of galaxy
+richness contains the same total number of stars.** Moving to a decade with
+ten times richer galaxies gives ten times fewer galaxies. The corresponding
+linear-orthopolic prediction would instead be $k\phi(k)=C$; it expresses equal
+stars per unit richness, a different physical hypothesis.
+
+Galaxy stellar mass offers an observationally accessible analogue. Turning
+stellar mass into star number additionally requires an independently justified
+mean stellar mass for each population. A stellar mass function therefore does
+not directly measure the richness distribution above.
+
+For either stellar mass or halo mass, define
+$n(M,t)=dN/(dV_c\,dM)$ in comoving volume $V_c$ at epoch $t$. Choose one resource
+and one object definition. The mass density per logarithmic interval is
+
+$$r(M,t)=\frac{d\rho}{d\ln M}=M^2n(M,t).$$
+
+Log-orthopolic mass allocation has $r=C$ and $n=C/M^2$. Over a finite interval
+$I=[M_{\min},M_{\max}]$, its normalization is fixed:
+
+$$\rho_I=C\ln\!\left(\frac{M_{\max}}{M_{\min}}\right).$$
+
+This cannot extend over arbitrarily many decades at fixed positive $C$ and
+finite mass density. Both bounds, the epoch window, completeness and mass
+estimator belong to the hypothesis. A host and its subhalos must not contribute
+the same material twice: use disjoint hosts, an exclusive material assignment,
+or a separately declared subhalo population with its own budget.
+
+### S6.3. Published signs and departures
+
+For $n(M)\propto M^{-\alpha}$, our conversion gives
+$r(M)\propto M^{2-\alpha}$. Thus $\alpha=2$ is neutral in mass under the
+logarithmic measure; a nearby exponent gives a tilted resource profile. The
+following readings were made after seeing the published exponents and remain
+exploratory. Their domains and resource definitions are different.
+
+| Population and published result | Log-orthopolic mass reading |
+|---|---|
+| COSMOS2015 galaxies near $z=5$: low-mass Schechter slope $-2.11_{-0.13}^{+0.30}$. | The fitted low-mass component has $r\propto M^{-0.11}$, compatible with neutrality within the quoted uncertainty. The inferred slope depends on the observational error model used in correcting Eddington bias. [Davidzon et al. (2017)](https://arxiv.org/abs/1701.02734). |
+| Aquarius dark-matter subhalos: simulated $dN/dM\propto M^{-1.9}$ over resolved ranges. | $r\propto M^{0.1}$ is close to flat per decade but differs systematically over a wide range. This is a simulation result, with stripping and subhalo selection relevant to interpretation. [Springel et al. (2008), Section 3.1](https://arxiv.org/html/0809.0898v1). |
+| GAMA nearby galaxies, $z<0.06$: double Schechter fit with low-mass exponent $-1.47$. | Where that component dominates well below the cutoff, $r\propto M^{0.53}$. The full mass function includes a second component and an exponential cutoff; it is not neutral mass allocation. [Baldry et al. (2012)](https://arxiv.org/abs/1111.5707). |
+| Stellar initial mass function: adopted high-mass exponent approximately $-2.3$ in Kroupa's Galactic-field description. | The corresponding birth-mass allocation has $r\propto M^{-0.3}$, with slope changes at lower masses. Birth masses of individual stars are a different population from total stellar masses of galaxies. [Kroupa (2001), Section 2](https://arxiv.org/html/astro-ph/0009005v2). |
+
+The early-to-late galaxy contrast suggests a useful question: can independently
+measured assembly, star formation and loss processes predict the change in
+resource profile? The table itself cannot identify such a mechanism. Replacing
+physical mass by a power of mass chosen to flatten each row would only construct
+a new resource hypothesis.
+
+### S6.4. A conditional mechanism with a further prediction
+
+Equal current through size classes does not by itself imply equal stored mass.
+The amount present also depends on how long material stays in each class.
+To make that distinction explicit, track fixed mass elements by their host-mass
+coordinate $x=\ln(M/M_0)$, where $M_0$ is a fixed reference mass. The assigned
+resource must equal the catalogue mass of each host for $r=M^2n$ to hold;
+tracking only a tracer subset would require its own resource per host. In a
+local transport approximation, let $r(x,t)$ be the mass density per $dx$,
+$J(x,t)$ its current, and $s(x,t)$ its source or loss density:
+
+$$\partial_t r+\partial_x J=s,\qquad J=v(x,t)r(x,t).$$
+
+Here $v$ is the material-weighted drift in log host mass. In a stationary,
+source-free interior, $J$ is constant in $x$. If $v=v_0>0$ is also independent
+of $x$, then
+
+$$r=\frac{J}{v_0}=C,\qquad n(M)=\frac{J}{v_0M^2}.$$
+
+This is an exact conditional derivation within the transport model. It describes
+throughflow maintained at the interval boundaries. Its cosmological hypothesis
+is that gravitational assembly supplies those conditions over a finite regime.
+Tracking material matters: a continuity equation for halo counts would miss
+the mass reassigned by mergers. Large merger jumps can invalidate the local
+approximation, diffusion requires an additional flux term, and accretion from
+an untracked diffuse component introduces sources. These effects require a
+justified transport model before applying the stationary result. Applying it
+to galaxy stellar mass additionally requires the effects of star formation
+and stellar mass loss to be specified independently.
+
+The same model gives a prediction beyond matching an exponent. Independently
+specified positive currents $J_i$ and drifts $v_i$ in two eligible environments
+predict, for $0<a<b$ within the second environment's declared mass interval,
+
+$$\frac{C_2}{C_1}=\frac{J_2/v_2}{J_1/v_1},\qquad
+\frac{N_{[a,b],2}}{V_{c,2}}=\frac{J_2}{v_2}
+\left(\frac1a-\frac1b\right).$$
+
+The target is the second environment's abundance, including its normalization.
+Estimating $J_2$ as $v_2r_2$ from that target would make the test circular.
+Independent development data or a separately calibrated dynamical model must
+supply the inputs before the target mass function is examined. With variable
+$v(x)$, the stationary prediction becomes $r(x)=J/v(x)$, providing a specified
+departure that can also fail.
+
+### S6.5. What would advance the conjecture
+
+Self-similarity alone does not establish the needed residence times. Scale-free
+cosmological simulations retain power-spectrum dependence in fitted halo mass
+functions ([Bagla, Khandai and Kulkarni, 2010](https://arxiv.org/abs/0908.2702));
+calibrated halo mass functions also vary with epoch and mass definition
+([Tinker et al., 2008](https://arxiv.org/abs/0803.2706)). These are substantive
+comparators for any proposed cosmic mechanism.
+
+A next test would fix the resource, disjoint population, mass range, epoch,
+observation model and independent transport inputs before predicting a held-out
+abundance or its change. Established mass-function and assembly models should
+make predictions for the same target. Agreement shared by those models would
+support a common orthopolic interpretation; a distinctive contribution requires
+a successful additional prediction or an independently useful reduction of the
+inputs. Public simulations can first test the transport approximation, while
+observational confirmation requires a separately qualified astronomical sample.
+No such test is claimed here. The appendix establishes a concrete cosmological
+question, conditional mathematical consequences and a route by which the
+conjecture could succeed or fail.
+
 ## References
 
 Anderson, D. F., Craciun, G., and Kurtz, T. G. (2010). Product-form stationary
@@ -3438,6 +3608,14 @@ Author manuscript: <https://arxiv.org/abs/0803.3042>.
 Arranz, I., Fournier, B., Lester, N. P., Shuter, B. J., and Peres-Neto, P. R. (2022).
 Species compositions mediate biomass conservation: The case of lake fish communities.
 *Ecology*, 103, e3608. <https://doi.org/10.1002/ecy.3608>.
+
+Bagla, J. S., Khandai, N., and Kulkarni, G. (2010). Mass function of haloes:
+scale invariant models. Preprint, revised version 2; first posted 2009.
+<https://arxiv.org/abs/0908.2702v2>.
+
+Baldry, I. K., et al. (2012). Galaxy And Mass Assembly (GAMA): The galaxy
+stellar mass function at $z<0.06$. *Monthly Notices of the Royal Astronomical
+Society*, 421, 621--634. <https://doi.org/10.1111/j.1365-2966.2012.20340.x>.
 
 Beck, M., and Robins, S. (2015). *Computing the Continuous Discretely*, second
 edition. Springer. Author-corrected text:
@@ -3457,6 +3635,9 @@ cells. *Nature Communications*, 9, 1457. <https://doi.org/10.1038/s41467-018-039
 
 Boyd, S., and Vandenberghe, L. (2004). *Convex Optimization*. Cambridge University Press.
 Sections 4.7 and 5.6. <https://web.stanford.edu/~boyd/cvxbook/>.
+
+Carroll, S. M. (2001). The cosmological constant. *Living Reviews in Relativity*,
+4, 1. <https://doi.org/10.12942/lrr-2001-1>.
 
 CMU Sphinx contributors (accessed 7 October 2026). *CMU Pronouncing Dictionary*.
 [Pinned source](https://github.com/cmusphinx/cmudict/tree/74790861f652b15e4ac49015a90074ad62a27690).
@@ -3489,6 +3670,10 @@ from impedance data to system identification. *Cell Reports Physical Science*,
 5, 102091. <https://doi.org/10.1016/j.xcrp.2024.102091>.
 Data: <https://doi.org/10.5281/zenodo.10794584>.
 
+Davidzon, I., et al. (2017). The COSMOS2015 galaxy stellar mass function:
+13 billion years of stellar mass assembly in 10 snapshots. *Astronomy &
+Astrophysics*, 605, A70. <https://doi.org/10.1051/0004-6361/201730419>.
+
 Deal, E., et al. (2023). Grain shape effects in bed load sediment transport.
 *Nature*, 613, 298--302. <https://doi.org/10.1038/s41586-022-05564-6>.
 
@@ -3512,6 +3697,9 @@ Eeckhout, J. (2004). Gibrat's law for (all) cities. *American Economic Review*,
 
 Ersoy, Z., et al. (2025). GLOSSAQUA: A global dataset of size spectra across aquatic
 ecosystems. *Ecology*, 106, e70050. <https://doi.org/10.1002/ecy.70050>.
+
+ESA (n.d.). Planck and the cosmic microwave background.
+[Mission science overview](https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_and_the_cosmic_microwave_background).
 
 Fabbri, R., and Oliveira Jr., O. N. (2017). *A simple model that explains why inequality
 is ubiquitous*. Supplied manuscript dated 17 March 2017, 13 pp.; publication status unverified.
@@ -3577,6 +3765,10 @@ Cybernetics*, 4(3), 227–241. <https://bayes.wustl.edu/etj/articles/prior.pdf>.
 Keshavarz, A., Wang, Y., and Boyd, S. (2011). Imputing a Convex Objective Function.
 *Proceedings IEEE Multi-Conference on Systems and Control*, 613–619.
 <https://stanford.edu/~boyd/papers/imputed_objective.html>.
+
+Kroupa, P. (2001). On the variation of the Initial Mass Function. *Monthly
+Notices of the Royal Astronomical Society*, 322, 231--246.
+<https://doi.org/10.1046/j.1365-8711.2001.04022.x>.
 
 Langmuir, I. (1918). The adsorption of gases on plane surfaces of glass, mica
 and platinum. *Journal of the American Chemical Society*, 40, 1361--1403.
@@ -3650,9 +3842,17 @@ Sheldon, R. W., Prakash, A., and Sutcliffe, W. H., Jr. (1972). The size distribu
 particles in the ocean. *Limnology and Oceanography*, 17, 327–340.
 <https://doi.org/10.4319/lo.1972.17.3.0327>.
 
+Springel, V., et al. (2008). The Aquarius Project: the subhalos of galactic
+halos. *Monthly Notices of the Royal Astronomical Society*, 391, 1685--1711.
+<https://doi.org/10.1111/j.1365-2966.2008.14066.x>.
+
 Tao, T. (2011). *An Introduction to Measure Theory*. Graduate Studies in
 Mathematics, 126. American Mathematical Society. Exercise 1.4.34.
 <https://terrytao.wordpress.com/wp-content/uploads/2012/12/gsm-126-tao5-measure-book.pdf>.
+
+Tinker, J. L., et al. (2008). Toward a halo mass function for precision
+cosmology: the limits of universality. *Astrophysical Journal*, 688, 709--728.
+<https://doi.org/10.1086/591439>.
 
 Tong, D. (n.d.). *Statistical Physics*. University of Cambridge Part II Mathematical
 Tripos lecture notes, Sections 1.3, 2.2.1 and 3.2. Accessed 6 October 2026.

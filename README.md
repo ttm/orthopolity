@@ -30,12 +30,25 @@ The dependency-free interface lives in [`site/`](site/). Preview with
 `make test` / `make all`. The [Pages workflow](.github/workflows/pages.yml)
 tests and publishes only `site/` when its sources change on `main`.
 
-The revised [article](docs/paper.md) retains the title **Orthopolity: a general
-law of resource allocation** and the ambition to establish it. Detailed
-derivations, observation models and full empirical comparisons now reside in
-[supporting material](docs/supporting-material.md). `make paper` builds both
-PDFs. The [revision map](docs/manuscript-revision-2026-10-11.md) documents the
-reorganization and interpretation corrections.
+The revised [article](docs/paper.md) explicitly proposes **orthopolity as a
+natural law of resource allocation**. Its opening figure shows the idea:
+counts 8, 4, 2 and 1 times costs 1, 2, 4 and 8 give the same resource in four
+logarithmically spaced classes. The equation follows the picture, with the
+log-orthopolic and linear-orthopolic measures stated separately. Exact accounting,
+allocation mechanisms, predicted constraints and exploratory interpretations
+form the framework; Gaussian aggregation can coexist with these allocations.
+
+Detailed proofs and complete comparisons remain in
+[supporting material](docs/supporting-material.md). New S6 explores a
+[cosmological conjecture](docs/cosmological-extension.md): when cosmic assembly
+can give equal mass per logarithmic host-mass interval. Published stellar,
+galaxy and simulated subhalo distributions provide signs and departures,
+not new empirical confirmation or a universal cosmological constant.
+The [revision roadmap](docs/manuscript-roadmap-2026-11-10.md) records the sequence
+and completion checks; the [review](docs/manuscript-revision-review-2026-11-11.md)
+maps the new claims. `make explanation-figure` reproduces the illustration;
+`make paper` builds both PDFs. The [revision map](docs/manuscript-revision-2026-10-11.md)
+tracks older section references.
 
 The latest [physics prediction](docs/cantilever-results-2026-10-13.md) forecasts
 hot-cantilever thermal motion from colder-condition damping. Ten of eleven mode

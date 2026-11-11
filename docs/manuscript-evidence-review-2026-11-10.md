@@ -9,6 +9,11 @@ against the supplement and selected retained numerical artifacts; it does not
 add observations, rerun empirical fits or independently revalidate the entire
 bibliography.
 
+**11 November navigation update:** section links below follow the clearer
+main-article order. The [conceptual revision review](manuscript-revision-review-2026-11-11.md)
+covers the natural-law proposal, explanatory figure and new supporting S6.
+The numerical findings recorded here are unchanged.
+
 ## Claim-to-evidence map
 
 “Derived” means a consequence of stated mathematical or physical premises.
@@ -20,9 +25,9 @@ These categories are not interchangeable evidence for the law's general reach.
 
 | Claim and manuscript location | Reference measure and evidence | Retained support and limit |
 |---|---|---|
-| Finite capacity and complete-level inverse incidence; main 2.1, S1.1/S1.4 | Additive physical resource over disjoint objects/levels; neither log-orthopolic nor linear-orthopolic allocation follows automatically. Derived. | [Capacity derivation](resource-capacity.md). Complete partitions reuse the same budget; coexisting classes require an additional allocation premise. |
-| Neutral inverse-cost profile and change of exponent; main 2.2, S2.1–S2.3 | Log-orthopolic gives linear-size density exponent d+1; linear-orthopolic gives d. Derived conditional relation. | [Glossary](glossary.md), [main equation (2)](paper.md#22-the-allocation-relation-and-its-measure). Conservation does not choose the measure or imply class symmetry; equal means need not give equal snapshots. |
-| Restricted effective-resource inference; main 2.3, S1.2–S1.5 | Explicit fixed object partition; the exponent example is log-orthopolic. Derived identification plus constructed checks. | [Inverse-resource study](inverse-resources.md), [summary](../results/inverse-resources/summary.json). Unrestricted cost/constraint functions are unidentifiable; a transfer requires independently measured constituent contrasts and adequate rank/conditioning. |
+| Finite capacity and complete-level inverse incidence; main 2.3, S1.1/S1.4 | Additive physical resource over disjoint objects/levels; neither log-orthopolic nor linear-orthopolic allocation follows automatically. Derived. | [Capacity derivation](resource-capacity.md). Complete partitions reuse the same budget; coexisting classes require an additional allocation premise. |
+| Neutral inverse-cost profile and change of exponent; main 2.1--2.2, S2.1–S2.3 | Log-orthopolic gives linear-size density exponent d+1; linear-orthopolic gives d. Derived conditional relation. | [Glossary](glossary.md), [main equation (2)](paper.md#21-the-allocation-relation). Conservation does not choose the measure or imply class symmetry; equal means need not give equal snapshots. |
+| Restricted effective-resource inference; main 2.4, S1.2–S1.5 | Explicit fixed object partition; the exponent example is log-orthopolic. Derived identification plus constructed checks. | [Inverse-resource study](inverse-resources.md), [summary](../results/inverse-resources/summary.json). Unrestricted cost/constraint functions are unidentifiable; a transfer requires independently measured constituent contrasts and adequate rank/conditioning. |
 | Symmetric exchange and release; main 3.1, S3.1 | Predetermined class weights; the plotted size example is log-orthopolic. Derived dynamics and constructed simulations. | [Class-exchange report](class-exchange.md), [summary](../results/class-exchange/summary.json). Connectedness, symmetric conductances and fixed weights are premises, not consequences of conservation. |
 | Integer assembly yields a neutral limiting mean under one kinetic rule; main 3.1, S3.10 | Log-orthopolic in physical mass, three fixed bins of width ln(2). Derived and constructed. | [Forecasts](../results/whole-object-assembly-2026-10-31/predictions.json), [verification](../results/whole-object-assembly-2026-10-31/verification.json). All 20,480 trajectories conserve integer mass; finite-budget corrections, mass-action departures and limiting share variance 1/18 remain. No empirical confirmation. |
 | Gravity, transparent transport and thermal modes; main 3.2–3.3, S3.2–S3.6 | Gravity: solid angle; radiation shell stock: linear-orthopolic in radius, not log-orthopolic; thermal energy: mode counting, neither size measure. Derived established physics. | [Gravity](gravity-realization.md), [transport](physical-realizations.md), [thermal report](thermal-radiation.md). Nested flux surfaces are not disjoint allocations. FIRAS is a retrospective reconstruction with an embedded fitted Planck template. |

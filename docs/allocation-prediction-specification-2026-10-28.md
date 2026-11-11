@@ -2,7 +2,7 @@
 
 28 October 2026. **Predict a complete allocation in a new condition from
 independently specified resource requirements.** This operationalizes article
-[section 2.3](paper.md#23-effective-resources-constraints-and-transferable-predictions)
+[section 2.4](paper.md#24-resources-constraints-and-a-second-prediction)
 without requiring a power-law size distribution. It is a design specification,
 not a dataset-specific registration or new empirical result. The aim remains
 to establish the general law's physical reach; successful accounting alone

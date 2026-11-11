@@ -1,6 +1,17 @@
 # Research roadmap
 
-## Active direction: updated 8 October 2026
+## Active direction: updated 11 November 2026
+
+The author's agreed [manuscript revision roadmap](manuscript-roadmap-2026-11-10.md)
+is complete: the proposed natural law now begins with a concrete allocation
+figure, its orthopolic interpretations are organized, and supporting S6 develops
+a bounded cosmological conjecture. Existing empirical results are preserved.
+The next cosmic step is qualification of independent public assembly inputs and
+a separate abundance target; the new literature exploration is not confirmation.
+The [current status](status.md) records execution and verification. Earlier
+scientific routes below retain their findings and source-qualification requirements.
+
+## Foundation and previous work sequence: 8 October 2026
 
 The [research brief](research-brief.md) sets the current purpose: develop
 orthopolity as a proposed general natural law about Nature's tendency to

@@ -31,6 +31,26 @@ $$\mathcal O_\mu(k)=\bar q(k)\,n_\mu(k)=C .$$
 
 ## Related terms
 
+**Proposed natural law.** The physical proposal that nature tends to distribute
+resources equally among their concentrations, relative to a physically specified
+comparison measure. Exact accounting identities and conditional allocation
+theorems establish particular results; the proposal's general physical reach
+remains a subject of prediction and testing.
+
+**Orthopolic interpretation (the orthopolic umbrella).** A reading that connects
+a phenomenon to specified objects, resource and comparison measure in the
+framework. Complete accounting, a mechanism selecting neutral allocation and
+an independently predicted constrained profile have different evidential roles.
+A reading chosen after seeing the distribution is exploratory until independent
+inputs and a second prediction support it. Arbitrarily defining a resource or
+constraint to fit any profile supplies no new physical evidence.
+
+**Cosmological conjecture.** The proposed finite-regime, log-orthopolic allocation
+of matter across host-mass intervals developed in
+[the cosmic extension](cosmological-extension.md). It concerns structure assembly,
+not an identification of the allocation level with the cosmological constant
+Lambda. Stellar number, stellar mass and halo mass define different resources.
+
 **Natural (orthopolic) distribution.** The project's name for the normalized
 neutral inverse-resource profile, $p_\mu(k)=1/[Z\bar q(k)]$, where
 $Z=\int_D d\mu/\bar q$ is finite and positive. The physical resource, objects,

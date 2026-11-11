@@ -18,12 +18,15 @@ is replaced by this reorganization.
 
 Historical reports retain the section and figure numbers current when written.
 Use this map when following their references into the revised article.
+The current-location column was updated 11 November 2026: the introductory
+allocation figure is now Figure 1, exchange is Figure 2, and Section 2 puts
+the allocation relation before the accounting foundation.
 
 | Previous article | Current main article | Supporting material |
 |---|---|---|
-| Sections 2.1–2.3: definitions, composites, inference | Sections 2.1–2.3 | S1, including expanded proofs |
-| Sections 2.4–2.7: measures, assumptions, ensembles, constraints | Sections 2.2, 2.3 and 5 | S2 |
-| Section 2.8: exchange mechanism | Section 3.1; Figure 1 | S3.1; Figure S3 |
+| Sections 2.1–2.3: definitions, composites, inference | Sections 2.1–2.4 | S1, including expanded proofs |
+| Sections 2.4–2.7: measures, assumptions, ensembles, constraints | Sections 2.1, 2.2, 2.4 and 5 | S2 |
+| Section 2.8: exchange mechanism | Section 3.1; Figure 2 | S3.1; Figure S3 |
 | Sections 2.9–2.11: waves and thermal modes | Sections 3.2–3.3 | S3.2–S3.4 |
 | Section 2.12: growth and division | Section 3.4 | S3.5 |
 | Sections 3–4: exploratory data and analysis | Scope summarized in Sections 4–5 | S4 |

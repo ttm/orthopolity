@@ -167,7 +167,14 @@ establish either priority for the identity or independent confirmation of it.
   Hubble type. *MNRAS* 444, 1647–1655. — Double-Schechter form with characteristic mass and
   exponential cutoff. Curvature to be explained, not called friction.
 
-## Cosmology — why the "third cosmological principle" framing fails
+## Cosmology: spatial principles, allocation and the limits of earlier claims
+
+The original audit rejected an unrestricted "third cosmological principle"
+announcement unsupported by a specific cosmic prediction. The author-approved
+[cosmological extension](cosmological-extension.md), developed 10--11 November
+2026, instead proposes finite-domain log-orthopolic mass allocation with explicit
+conditions and a further prediction. The sources below distinguish spatial
+homogeneity and the cosmological constant from this allocation conjecture.
 
 - **Sylos Labini, F., Montuori, M., & Pietronero, L. (1998).** Scale-invariance of galaxy
   clustering. *Physics Reports* 293, 61–226.
@@ -178,6 +185,38 @@ establish either priority for the identity or independent confirmation of it.
 - **Jacobson, T. (1995).** Thermodynamics of spacetime: the Einstein equation of state. *Physical
   Review Letters* 75, 1260–1263. — Context for thermodynamic gravity, not support for orthopolity.
 - **Carroll, S. M. (2001).** The cosmological constant. *Living Reviews in Relativity* 4, 1.
+
+### Sources for the finite-domain cosmic extension (11 November 2026)
+
+Bagla, J. S., Khandai, N., and Kulkarni, G. (2010). Mass function of haloes:
+scale invariant models. Preprint, revised version 2; first posted 2009.
+<https://arxiv.org/abs/0908.2702v2>.
+
+Baldry, I. K., et al. (2012). Galaxy And Mass Assembly (GAMA): The galaxy
+stellar mass function at $z<0.06$. *Monthly Notices of the Royal Astronomical
+Society*, 421, 621--634. <https://doi.org/10.1111/j.1365-2966.2012.20340.x>.
+
+Carroll, S. M. (2001). The cosmological constant. *Living Reviews in Relativity*,
+4, 1. <https://doi.org/10.12942/lrr-2001-1>.
+
+Davidzon, I., et al. (2017). The COSMOS2015 galaxy stellar mass function:
+13 billion years of stellar mass assembly in 10 snapshots. *Astronomy &
+Astrophysics*, 605, A70. <https://doi.org/10.1051/0004-6361/201730419>.
+
+ESA (n.d.). Planck and the cosmic microwave background.
+[Mission science overview](https://www.esa.int/Science_Exploration/Space_Science/Planck/Planck_and_the_cosmic_microwave_background).
+
+Kroupa, P. (2001). On the variation of the Initial Mass Function. *Monthly
+Notices of the Royal Astronomical Society*, 322, 231--246.
+<https://doi.org/10.1046/j.1365-8711.2001.04022.x>.
+
+Springel, V., et al. (2008). The Aquarius Project: the subhalos of galactic
+halos. *Monthly Notices of the Royal Astronomical Society*, 391, 1685--1711.
+<https://doi.org/10.1111/j.1365-2966.2008.14066.x>.
+
+Tinker, J. L., et al. (2008). Toward a halo mass function for precision
+cosmology: the limits of universality. *Astrophysical Journal*, 688, 709--728.
+<https://doi.org/10.1086/591439>.
 
 ## Other domains and deprioritised directions
 

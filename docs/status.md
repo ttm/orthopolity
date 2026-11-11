@@ -1,8 +1,44 @@
 # Project status and handoff
 
-Last updated 10 November 2026. **Read this first in a new session.** It records what the authors
+Last updated 11 November 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**11 November — natural-law revision and cosmic conjecture completed:** the
+[author-approved roadmap](manuscript-roadmap-2026-11-10.md) is implemented.
+The main article explicitly proposes orthopolity as a natural law and begins
+with a reproducible finite log-orthopolic illustration: counts `(8,4,2,1)` times
+costs `(1,2,4,8)` give resource `(8,8,8,8)`, total 32. The picture leads to the
+allocation equation, normalized densities and the log/linear distinction before
+accounting proofs and inverse inference. The orthopolic umbrella separates
+accounting, mechanisms, constrained predictions and exploratory interpretations;
+Gaussian aggregation remains complementary.
+
+The new [cosmic report](cosmological-extension.md), mirrored in supporting S6,
+develops a finite-domain log-orthopolic cosmological conjecture. It distinguishes
+stellar inventory from galaxy richness, reviews published stellar/galaxy and
+simulated subhalo signs and departures, and derives a conditional mass-flow
+profile with a further normalization/count prediction. It neither identifies a
+universal cosmological constant nor reports a newly executed empirical test.
+The [revision review](manuscript-revision-review-2026-11-11.md) maps new claims and
+checks. README, glossary, reference catalogue and historical scope notes agree.
+
+Validation: **8 manuscript/terminology tests**, **46 registry runs / 1,168
+references**, and local link/anchor checks pass. Supporting **S1--S5 are
+byte-for-byte unchanged**, as are frozen inputs, forecasts and results. The
+new PNG/SVG illustration is deterministic under the existing Python 3.11
+environment. Both final PDFs (**13 main / 77 supporting pages**) are visually
+reviewed, warning-free and byte-identical across two forced builds. The full
+`make all` was not rerun for this editorial/theoretical revision; its successful
+10 November baseline is retained below. Work remains on `main`. Delivery uses
+a source commit followed by a PDF rebuild at that commit's fixed timestamp.
+
+The next scientific step for cosmic validation is to qualify a public source
+with independently calibrated assembly/transport inputs and a separate abundance
+target, then specify a test before inspecting that target. The published examples
+in S6 are already exposed and remain exploratory. Earlier source-qualification
+stops and the existing-public-data-only constraint remain in force; declarations,
+permissions and venue preparation remain separate submission work.
 
 **10 November — full replay repaired and evidence reviewed:** `make all` now
 passes in the existing Python 3.11 environment, including **711 Python tests**,

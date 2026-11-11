@@ -48,6 +48,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: hotbox-transfer hotbox-transfer-registry
 .PHONY: fragmentation-sources fragmentation-boundary
 .PHONY: whole-object-assembly
+.PHONY: explanation-figure
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -69,7 +70,8 @@ SUPPORT_EPOCH := 0
 endif
 SUPPORT_ENV := SOURCE_DATE_EPOCH=$(SUPPORT_EPOCH) FORCE_SOURCE_DATE=1
 
-PAPER_IMAGES := results/class-exchange-presentation/class-exchange.png
+PAPER_IMAGES := docs/figures/orthopolity-explanation.png \
+ results/class-exchange-presentation/class-exchange.png
 SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/theory.png results/class-exchange-presentation/class-exchange.png \
  results/thermal-radiation/thermal-radiation.png \
@@ -601,6 +603,12 @@ chemostat-capacity: ## reproduce the retrospective diagnosis to an unused direct
 
 chemostat-capacity-registry: ## append/audit the retained conditional follow-up
 	$(PY) experiments/register_chemostat_capacity.py
+
+explanation-figure: ## exact illustrative allocation; no empirical inputs or analysis
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/render_orthopolity_explanation.py
+
+docs/figures/orthopolity-explanation.png: experiments/render_orthopolity_explanation.py
+	MPLCONFIGDIR=build/matplotlib $(PY) experiments/render_orthopolity_explanation.py
 
 paper: $(PAPER_PDF) $(SUPPORT_PDF)  ## typeset both manuscripts; requires a TeX installation
 
