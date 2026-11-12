@@ -29,6 +29,13 @@ an HTTP authentication status or demonstrate successful anonymous data access.
 No API metadata response or HDF5 sample was obtained. Field qualification below
 is therefore documentary, not a verified binary-schema audit.
 
+**12 November follow-up:** the [bounded access probe](cosmic-metadata-access-2026-11-12.md)
+subsequently reached this API with the system CA bundle and retained HTTP 403,
+“Failed session auth (and no API-Key sent).” Its 55-byte response confirms the
+authentication requirement. No successful run/snapshot metadata or binary sample
+was obtained, and the author reports no existing access. The source qualification
+below remains documentary.
+
 The public overview includes global object counts alongside run metadata. Those
 tables were exposed during source selection, but no mass-resolved abundance
 array, particle array, or merger tree was downloaded or inspected. Global counts

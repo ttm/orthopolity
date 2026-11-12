@@ -90,17 +90,21 @@ after seeing target abundance. The design explicitly remains unfrozen.
 
 | ID | Action | Stop/completion condition | Status |
 |---|---|---|---|
-| D1 | Obtain `TNG50-4-Dark` run/snapshot metadata through existing authorized access; cap total response content at 1 MiB | Exact headers/times/fields/chunks/sizes retained with URLs and hashes; no particle or host-mass arrays | Next; access route not established |
+| D1 | Obtain `TNG50-4-Dark` run/snapshot metadata through existing authorized access; cap total response content at 1 MiB | Exact headers/times/fields/chunks/sizes retained with URLs and hashes; no particle or host-mass arrays | Attempted 12 November: HTTP 403; awaits TNG access, manifest incomplete |
 | D2 | Freeze a development-only acquisition manifest for three adjacent epochs and ID/membership/header fields | Exact paths, field selection, bytes, memory/disk bounds and exposure roles known | Depends on D1 |
 | D3 | Implement the reader and measure material closure, jumps, sources and cadence sensitivity | Integrity checks pass and local-closure uncertainty can be bounded, or a specific failure is retained | Depends on D2 |
 | D4 | Qualify Quijote standard fiducial membership inventory and independent seeds if D3 supports further development | Its own cadence/closure gates pass; no unvalidated TNG-to-Quijote transfer | Conditional follow-up |
 | D5 | Freeze and execute a separate absolute-abundance prediction against declared rivals | All G1–G6 pass before target exposure; retain every outcome | Not ready; scientific gates pending |
 
-D1 requires an existing working access route. The audit obtained no successful
-API metadata or binary sample; local DNS failure and a browser retrieval failure
-do not establish an archive HTTP authentication response. No account was created,
-credential solicited in chat, provider contacted or large dataset acquired.
-Access would enable D1; it would not by itself satisfy the scientific gates.
+D1 requires a working access route. The initial audit obtained no successful
+API metadata or binary sample; its DNS and browser failures established no HTTP
+authentication status. The subsequent [12 November access gate](cosmic-metadata-access-2026-11-12.md)
+reached the archive with verified TLS and retained an actual **HTTP 403** response
+requiring session/API-key authentication. The author reports no existing TNG
+access. The operation consumed **55 bytes** of the shared 1 MiB response budget.
+No account was created, credential solicited in chat, provider contacted or large
+dataset acquired. Access would enable D1; it would not by itself satisfy the
+scientific gates.
 
 ## Verification and repository scope
 

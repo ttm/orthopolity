@@ -79,3 +79,11 @@ measurement qualification, independent-seed qualification and validation follow
 only as their dependencies pass; the [D1–D5 queue](cosmic-test-readiness-2026-11-11.md#next-task-queue)
 records those steps. No target has been assigned or opened. Manuscripts and
 frozen study artifacts remain unchanged.
+
+**12 November follow-up:** readiness was committed/pushed as `ad9bd13`. The
+[executed D1 access gate](cosmic-metadata-access-2026-11-12.md) reached TNG with
+verified TLS and received HTTP 403 requiring authentication. The author reports
+no existing TNG access. D1 awaits access; its metadata manifest is incomplete.
+The two recorded attempts consumed 55 response bytes in total. Resume within
+the remaining 1,048,521-byte budget when authorized access is available; retain
+D2–D5 dependencies and the bounded source-search scope.

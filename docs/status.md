@@ -4,6 +4,29 @@ Last updated 12 November 2026. **Read this first in a new session.** It records 
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
+**12 November — readiness pushed; TNG access gate executed:** readiness commit
+**ad9bd13** is on `origin/main`. The subsequent
+[D1 access record](cosmic-metadata-access-2026-11-12.md) retains two anonymous
+requests for `TNG50-4-Dark` run metadata. The first failed local Python certificate
+verification before receiving HTTP; the second used the system CA bundle with
+certificate/hostname verification enabled and received **HTTP 403**:
+“Failed session auth (and no API-Key sent).” Total response content is **55 bytes**
+within the shared **1 MiB** cap. Raw bytes, receipts, hashes and acquisition-code
+snapshots are retained. This establishes the authentication requirement, not
+successful metadata access. The author reports **no existing TNG access**.
+
+D1 now **awaits authorized access**; its exact metadata manifest remains
+incomplete. D2–D5 retain their dependencies. No account was created, no further
+anonymous request is planned, and no particle, halo-mass or target array was
+requested. The candidate remains **log-orthopolic collisionless total-matter
+allocation** in DMO simulations. Resume metadata acquisition only after access
+is available, with **1,048,521 response bytes** remaining in the shared budget.
+Ten new offline probe/evidence tests pass; the probe handles capped and partial
+responses, distinguishes HTTP from transport failure, and preserves receipts.
+Terminology, whitespace and **196 local links / 2 anchors** also pass.
+The earlier full-suite baseline remains below; manuscripts and prior frozen
+studies/results/registry are unchanged.
+
 **12 November — cosmic-test readiness completed:** the author-requested
 [task ledger](cosmic-test-roadmap-2026-11-11.md) now contains a mechanism review,
 bounded three-archive audit, operational input/target design and
@@ -28,11 +51,11 @@ endpoint accounting from physical transport, predicts absolute counts and mass
 stocks, excludes target-endpoint information from calibration, and requires
 mass-compatible rivals. It remains a development design with unresolved
 numerical validation thresholds. No actual validation target has been assigned
-or sealed. Next: obtain a metadata-only `TNG50-4-Dark` manifest through existing
-authorized access, capped at 1 MiB; then freeze the exact development acquisition
-and measure its eligibility. The readiness report's **D1–D5** queue records the
-dependencies and stop rules. Archive access remains unverified; earlier DNS and
-browser failures do not establish an archive authentication response.
+or sealed. The next step at this decision was a metadata-only `TNG50-4-Dark`
+manifest through authorized access, capped at 1 MiB, followed by a bounded
+development acquisition and eligibility measurements. The readiness report's **D1–D5** queue records the
+dependencies and stop rules. At that point archive access was unverified;
+the subsequent access-gate result is recorded above.
 
 Validation: **711 Python tests**, **27 JavaScript tests**, the new manufactured
 transport checker and **46 registry runs / 1,168 references** pass under the

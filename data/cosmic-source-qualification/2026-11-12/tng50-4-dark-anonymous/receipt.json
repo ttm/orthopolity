@@ -1,0 +1,21 @@
+{
+  "kind": "Anonymous run-metadata access probe; no empirical test",
+  "requested_url": "https://www.tng-project.org/api/TNG50-4-Dark/",
+  "started_utc": "2026-11-12T03:56:45.525790+00:00",
+  "credential_used": false,
+  "response_body_cap_bytes": 1048576,
+  "request_limit": 1,
+  "redirects_followed": 0,
+  "retries": 0,
+  "http_status": null,
+  "response_bytes_retained": 0,
+  "body_complete": false,
+  "numerical_arrays_requested": false,
+  "complete_D1_manifest": false,
+  "script_sha256": "c9df0fd5da9e9bd110c998c0c34579b907e9768be7c1bbe363d8b8eddc4267c6",
+  "outcome": "transport_failure",
+  "error_type": "URLError",
+  "reason_type": "SSLCertVerificationError",
+  "reason_errno": 1,
+  "finished_utc": "2026-11-12T03:56:45.799477+00:00"
+}

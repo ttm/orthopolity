@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "purpose": "D1 TNG metadata access qualification; no empirical allocation test",
+  "source_commit": "ad9bd13d11d86a1611dff5502df4dbf5dad3f7dd",
+  "reference_measure": "logarithmic host mass; candidate log-orthopolic collisionless total-matter allocation",
+  "requested_url": "https://www.tng-project.org/api/TNG50-4-Dark/",
+  "aggregate_body_cap_bytes": 1048576,
+  "aggregate_body_bytes": 55,
+  "remaining_body_budget_bytes": 1048521,
+  "request_count": 2,
+  "attempts": [
+    {
+      "attempt": "tng50-4-dark-anonymous",
+      "http_status": null,
+      "response_bytes": 0,
+      "outcome": "transport_failure",
+      "files": [
+        {
+          "path": "tng50-4-dark-anonymous/probe_source.py",
+          "bytes": 4266,
+          "sha256": "c9df0fd5da9e9bd110c998c0c34579b907e9768be7c1bbe363d8b8eddc4267c6"
+        },
+        {
+          "path": "tng50-4-dark-anonymous/receipt.json",
+          "bytes": 745,
+          "sha256": "81ddaaada05baa5ba06829a975f0ea010df8bbeba716ac3a06daa73c36b68fb6"
+        }
+      ]
+    },
+    {
+      "attempt": "tng50-4-dark-system-trust",
+      "http_status": 403,
+      "response_bytes": 55,
+      "outcome": "http_response",
+      "files": [
+        {
+          "path": "tng50-4-dark-system-trust/probe_source.py",
+          "bytes": 5253,
+          "sha256": "39b3fa74a2fb84ba96c7113fea97c77b1ba674d4c31b79fafae6ceb5f119bc68"
+        },
+        {
+          "path": "tng50-4-dark-system-trust/receipt.json",
+          "bytes": 1073,
+          "sha256": "5032db2479e6d0a0a07148c8f0ad8b1340508e69b1b672048e001fee097d1f82"
+        },
+        {
+          "path": "tng50-4-dark-system-trust/response-body.bin",
+          "bytes": 55,
+          "sha256": "cdd472ccde7ca2d86c904a6a2d3ad2aa8d25fb4e89dc4f3d86c46d08cd58542a"
+        }
+      ]
+    }
+  ],
+  "complete_D1_manifest": false,
+  "status": "awaiting_authorized_TNG_access",
+  "user_reports_existing_TNG_access": false,
+  "numerical_arrays_requested": false,
+  "target_assigned": false,
+  "target_exposed": false,
+  "next_operation": "Use a separately specified authenticated metadata request only after access is available; do not repeat this anonymous probe or register automatically."
+}

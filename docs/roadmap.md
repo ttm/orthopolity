@@ -11,6 +11,12 @@ membership closure and temporal/local transport. Quijote remains a candidate
 for later independent-seed prediction; the inspected CosmoSim genealogy-only
 route is closed. The decision's D1–D5 queue states dependencies and stop rules.
 
+The [first D1 request](cosmic-metadata-access-2026-11-12.md) now confirms an
+authentication requirement: TNG returns HTTP 403 without a session/API key.
+The author has no existing TNG access; acquisition awaits that input, with its
+55-byte response and complete attempt record retained. D2–D5 remain dependent
+on a successful metadata manifest and subsequent measurement qualification.
+
 The author's agreed [manuscript revision roadmap](manuscript-roadmap-2026-11-10.md)
 is complete: the proposed natural law now begins with a concrete allocation
 figure, its orthopolic interpretations are organized, and supporting S6 develops
