@@ -49,6 +49,7 @@ STUDY_OUTPUT_ROOT ?= build/reproductions
 .PHONY: fragmentation-sources fragmentation-boundary
 .PHONY: whole-object-assembly
 .PHONY: explanation-figure
+.PHONY: cosmic-transport-design
 
 PAPER_SRC := docs/paper.md
 PAPER_TEX := build/paper.tex
@@ -92,7 +93,10 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/rlc-boundary-2026-10-25/circuit.png \
  results/whole-object-assembly-2026-10-31/whole-object-assembly.png
 
-all: data test analyses topology-design biome-stock-audit rlc-boundary hotbox-transfer fragmentation-sources fragmentation-boundary whole-object-assembly
+all: data test analyses topology-design cosmic-transport-design biome-stock-audit rlc-boundary hotbox-transfer fragmentation-sources fragmentation-boundary whole-object-assembly
+
+cosmic-transport-design: ## manufactured measurement/transport checks; no cosmic catalogue inputs
+	$(PY) experiments/check_cosmic_transport_design.py
 
 whole-object-assembly: ## replay frozen whole-object predictions, audit and simulation checks
 	$(PY) experiments/run_whole_object.py --stage forecast --output $(STUDY_OUTPUT_ROOT)/whole-object/predictions.json

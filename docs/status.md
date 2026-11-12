@@ -1,8 +1,49 @@
 # Project status and handoff
 
-Last updated 11 November 2026. **Read this first in a new session.** It records what the authors
+Last updated 12 November 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**12 November — cosmic-test readiness completed:** the author-requested
+[task ledger](cosmic-test-roadmap-2026-11-11.md) now contains a mechanism review,
+bounded three-archive audit, operational input/target design and
+[readiness decision](cosmic-test-readiness-2026-11-11.md). Proceed with bounded
+material-transport development; a confirmatory cosmic abundance test is not yet
+qualified. The candidate is **log-orthopolic collisionless total-matter mass in
+dark-matter-only simulations**, among disjoint FoF hosts. Those particles
+represent the cosmic total-matter inventory, not cold-dark-matter mass alone.
+
+The conditional constant-current/constant-drift result passes mathematical
+review, with quantitative departure bounds. Self-similarity and main-branch
+growth alone do not imply it: incoming merger material can make long jumps.
+TNG documents particle identities, memberships and a useful output sequence;
+Quijote documents member-ID catalogues and independent standard realizations.
+Actual membership closure, time/locality resolution, source terms, stationarity
+and independently transferred prediction inputs remain unqualified. The inspected
+CosmoSim MDR1 genealogy-only route is closed for lack of complete material-flow
+inputs. No cosmic catalogue arrays, abundance fits or target outcomes were read.
+
+The [measurement design](cosmic-test-design-2026-11-11.md) distinguishes exact
+endpoint accounting from physical transport, predicts absolute counts and mass
+stocks, excludes target-endpoint information from calibration, and requires
+mass-compatible rivals. It remains a development design with unresolved
+numerical validation thresholds. No actual validation target has been assigned
+or sealed. Next: obtain a metadata-only `TNG50-4-Dark` manifest through existing
+authorized access, capped at 1 MiB; then freeze the exact development acquisition
+and measure its eligibility. The readiness report's **D1–D5** queue records the
+dependencies and stop rules. Archive access remains unverified; earlier DNS and
+browser failures do not establish an archive authentication response.
+
+Validation: **711 Python tests**, **27 JavaScript tests**, the new manufactured
+transport checker and **46 registry runs / 1,168 references** pass under the
+existing Python 3.11 environment. `make cosmic-transport-design` is now part of
+`make all`; its largest stationary-cascade error is below **6.2e-11**. Independent
+review checked equations, source claims, measurement identity and target roles.
+The manufactured examples are not empirical evidence. Full analysis regeneration
+was not repeated; the 10 November `make all` baseline is retained. Manuscript
+sources/PDFs, frozen protocols, inputs, forecasts, results and registry are
+unchanged. All **303 local links / 2 anchors** in changed/new Markdown pass,
+as do terminology and whitespace checks including untracked deliverables.
 
 **11 November — natural-law revision and cosmic conjecture completed:** the
 [author-approved roadmap](manuscript-roadmap-2026-11-10.md) is implemented.

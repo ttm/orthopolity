@@ -50,6 +50,13 @@ maps the new claims. `make explanation-figure` reproduces the illustration;
 `make paper` builds both PDFs. The [revision map](docs/manuscript-revision-2026-10-11.md)
 tracks older section references.
 
+The [cosmic-test readiness report](docs/cosmic-test-readiness-2026-11-11.md)
+now supplies the mechanism audit, three-archive qualification and independent
+input/target design. TNG and Quijote remain development candidates; no cosmic
+confirmation is claimed. The [task ledger](docs/cosmic-test-roadmap-2026-11-11.md)
+records completed work and the next bounded metadata operation.
+`make cosmic-transport-design` checks the manufactured transport examples.
+
 The latest [physics prediction](docs/cantilever-results-2026-10-13.md) forecasts
 hot-cantilever thermal motion from colder-condition damping. Ten of eleven mode
 fits are physically admissible; their 74.0 K mean error modestly improves on a

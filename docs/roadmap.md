@@ -1,6 +1,15 @@
 # Research roadmap
 
-## Active direction: updated 11 November 2026
+## Active direction: updated 12 November 2026
+
+The [cosmic-test task ledger](cosmic-test-roadmap-2026-11-11.md) records the
+completed mechanism review, three-archive audit and independent input/target
+design. The [readiness decision](cosmic-test-readiness-2026-11-11.md) permits
+bounded material-transport development and finds that confirmation is not yet
+ready. Next obtain a metadata-only TNG development manifest, then qualify
+membership closure and temporal/local transport. Quijote remains a candidate
+for later independent-seed prediction; the inspected CosmoSim genealogy-only
+route is closed. The decision's D1–D5 queue states dependencies and stop rules.
 
 The author's agreed [manuscript revision roadmap](manuscript-roadmap-2026-11-10.md)
 is complete: the proposed natural law now begins with a concrete allocation
