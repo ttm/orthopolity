@@ -1,0 +1,19 @@
+{
+  "kind": "Fixed-domain development-current figure",
+  "input_sha256": "0196b6371674b4666e94d1d86d4dc1ba729e7d81d1f88334a40a9dd78e8fad88",
+  "plot_source_sha256": "c35eecffef6917887ccb8198ee6bead59d97ab56daa3c3eda86eeee74e036358",
+  "grid": "primary",
+  "pairs": [
+    "97->98",
+    "98->99",
+    "97->99"
+  ],
+  "development_only": true,
+  "log_orthopolic_transport_validated": false,
+  "matplotlib_version": "3.10.8",
+  "numpy_version": "2.3.5",
+  "artifacts": {
+    "endpoint-current-primary.png": "2fd45099aea31dd4f2b32db997c14b6d08983b9b9c68fb0fd0dae3cb020d9724",
+    "endpoint-current-primary.svg": "6bd7d8f4c6827e1e73a9a47ffcfa0bfd7aed70a47c27ab960884730628086a10"
+  }
+}

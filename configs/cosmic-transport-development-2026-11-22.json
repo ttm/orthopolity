@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-22",
+  "kind": "Fixed-bin development diagnostics; not a validation protocol",
+  "development_only": true,
+  "validation_target_assigned": false,
+  "reference_measure": "logarithmic host mass; log-orthopolic collisionless total-matter candidate",
+  "input_commit": "3b198e7a16a2c4b501c14e17df8b23bd1e493fe0",
+  "input_config": {
+    "path": "configs/cosmic-development-2026-11-20.json",
+    "sha256": "3955efd01d4d66d6a43db57c18878e424af4f65f618804f1f28d2502ae17e90d"
+  },
+  "input_directory": "data/cosmic-development/2026-11-20/tng50-4-dark-attempt-02",
+  "inventory_receipt": {
+    "path": "data/cosmic-development/2026-11-20/tng50-4-dark-attempt-02/material-validation.json",
+    "sha256": "2e3268b62b4239b16240a156d4ece679f250621c68d1846a87778ada257704f5"
+  },
+  "helper_sources": [
+    {
+      "path": "experiments/check_cosmic_material_inventory.py",
+      "sha256": "d70f4fe24bc1a5319f83f0b2f54d2489ed5115203b374e445bdd0832153c39b8"
+    },
+    {
+      "path": "experiments/check_cosmic_development_bootstrap.py",
+      "sha256": "1fcac421d168d7734d3d47db672eaad7e44f72e7470f5d444568e9b476b2e9a2"
+    }
+  ],
+  "outputs": [
+    97,
+    98,
+    99
+  ],
+  "pairs": [
+    [
+      97,
+      98
+    ],
+    [
+      98,
+      99
+    ],
+    [
+      97,
+      99
+    ]
+  ],
+  "mass_coordinate": "x=ln(M/m_p)=log2(N)*ln(2); N is the exact integer host particle count",
+  "reference_mass": "verified single DMO particle mass",
+  "bin_rule": "[lower, upper); an exact upper-edge value belongs to the next bin; diffuse is state 0 with no logarithmic mass",
+  "domain_rule": "N from 1 through 2^E exclusive; E is the smallest positive even integer with 2^E > N_total; fail if any positive host lies outside",
+  "upper_log2_edge": 26,
+  "grids": [
+    {
+      "name": "primary",
+      "log2_edges": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "name": "fine",
+      "log2_edges": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0,
+        5.5,
+        6.0,
+        6.5,
+        7.0,
+        7.5,
+        8.0,
+        8.5,
+        9.0,
+        9.5,
+        10.0,
+        10.5,
+        11.0,
+        11.5,
+        12.0,
+        12.5,
+        13.0,
+        13.5,
+        14.0,
+        14.5,
+        15.0,
+        15.5,
+        16.0,
+        16.5,
+        17.0,
+        17.5,
+        18.0,
+        18.5,
+        19.0,
+        19.5,
+        20.0,
+        20.5,
+        21.0,
+        21.5,
+        22.0,
+        22.5,
+        23.0,
+        23.5,
+        24.0,
+        24.5,
+        25.0,
+        25.5,
+        26.0
+      ]
+    },
+    {
+      "name": "coarse",
+      "log2_edges": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26
+      ]
+    }
+  ],
+  "drift_reading": "HH endpoint-conditioned departure-bin mean displacement/dt times its matched HH starting stock per logarithmic width; all-host stock and retained HH fraction reported separately",
+  "current_reading": "Signed HH endpoint boundary crossings; cell averages use exact clipped endpoint integrals, not edge interpolation",
+  "residual_reading": "Finite-time spatial localization residual; not a bound on physical continuum closure",
+  "skip_bin_definition": "Absolute departure/arrival bin-index difference at least 2, evaluated separately for each grid",
+  "physical_tail_absolute_log_threshold": 0.6931471805599453,
+  "stationarity_reading": "Descriptive endpoint stock-rate changes and change divided by mean endpoint stock; no acceptance threshold",
+  "cadence_reading": "Duration-integrated adjacent-minus-coarse currents and sources; gross HH differences on the full population can be signed. The subset hosted at all three outputs separately tests telescoping net currents and nonnegative gross crossing loss.",
+  "reader_max_rss_bytes": 3221225472,
+  "max_derived_scratch_bytes": 1073741824,
+  "new_external_data": false,
+  "scientific_acceptance_thresholds": null,
+  "exposure_note": "Global inventory, jump and cadence diagnostics were already exposed on 21 November; grids and estimands are fixed now before new mass-bin summaries. The entire run remains development-only."
+}

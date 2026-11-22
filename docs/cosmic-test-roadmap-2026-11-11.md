@@ -107,7 +107,7 @@ retained. Coarsening loses 29.10% of absolute log-mass variation among particles
 hosted throughout and 32.30% of gross reservoir exchange. These findings do not
 qualify local drift or an independent prediction.
 
-Remaining D3 tasks, in order:
+D3 tasks recorded on 21 November:
 
 1. Fix a descriptive development mass-bin grid, its represented domain and
    handling of resolved hosts outside that domain, separately from diffuse
@@ -121,3 +121,10 @@ Remaining D3 tasks, in order:
 4. Retain a local-closure qualification or a specific unresolved limitation.
    Advance D4 only if the result supports an independent-source transfer;
    D5 still requires separate inputs, rivals and a target fixed before exposure.
+
+**22 November decision.** All four D3 tasks above are executed for this TNG pilot. The
+three fixed grids retain the matrices, stocks, source terms and currents for every pair.
+The departure-bin model yields large discrepancies, while the midpoint comparison uses
+arrival masses already observed. Finite-time endpoint data leave the physical closure
+error unbounded. Stop this forecast route for the three outputs. D4 and D5 remain
+conditional. [Measured results and qualification decision](cosmic-transport-development-results-2026-11-22.md)

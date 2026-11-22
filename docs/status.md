@@ -1,8 +1,26 @@
 # Project status and handoff
 
-Last updated 21 November 2026. **Read this first in a new session.** It records what the authors
+Last updated 22 November 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**22 November — fixed-bin transport qualification completed.** The acquisition and inventory
+milestone is on `origin/main` as `3b198e7`. Across the three fixed bin widths and all three
+output pairs, every endpoint transfer matrix for TNG50-4-Dark accounts exactly for all
+19,683,000 particles. The proposed **log-orthopolic collisionless total-matter allocation**
+still lacks a qualified local-drift forecast. On the primary grid, allocating each displacement
+to its departure bin gives normalized discrepancies of 0.809 and 0.873 in the adjacent
+intervals (0 is agreement, 1 is maximal). Factor-two or larger changes account for 74.84%
+and 85.09% of boundary crossings. Omitting the middle output hides 28.58% of gross crossings
+among particles hosted at all three outputs.
+
+**D3 decision for these data: stop the local-drift abundance forecast.** Reopening requires a
+separately justified way to bound cadence, diffuse exchange and spatial assignment errors.
+D4 independent-source transfer and D5 abundance validation remain conditional. The analysis
+used three predeclared grids after the initial inventory diagnostics had been exposed. It
+includes no validation target. All 839 Python and 27 JavaScript tests pass.
+[Results and figure](cosmic-transport-development-results-2026-11-22.md) ·
+[Development plan](cosmic-transport-development-plan-2026-11-22.md)
 
 **21 November — TNG acquisition and inventory checks pass; cadence losses
 measured:** the [development report](cosmic-development-results-2026-11-21.md)

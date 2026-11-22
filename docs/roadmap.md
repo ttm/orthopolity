@@ -1,16 +1,17 @@
 # Research roadmap
 
-## Active direction: updated 21 November 2026
+## Active direction: updated 22 November 2026
 
 The [cosmic-test task ledger](cosmic-test-roadmap-2026-11-11.md) records the
 completed mechanism review, three-archive audit and independent input/target
 design. The [readiness decision](cosmic-test-readiness-2026-11-11.md) permits
 bounded material-transport development and finds that confirmation is not yet
-ready. The [TNG development pilot](cosmic-development-results-2026-11-21.md)
-now has verified binary inputs and exact whole-inventory closure. Coarsening
-loses measured mass-change and reservoir-exchange information. Next fix
-development mass bins, construct stocks/transfers/currents/source terms and
-qualify the local drift approximation and stationarity.
+ready. The [fixed-bin development result](cosmic-transport-development-results-2026-11-22.md)
+completes the D3 decision for the three TNG outputs. Mass transfers balance exactly.
+Large endpoint jumps carry most of the primary-grid boundary crossings, and departure-bin
+drift disagrees with the measured current at all three bin widths. Stop the local-drift
+abundance forecast for these data. Reopen with evidence that bounds the spatial and
+temporal approximation and accounts for diffuse sources.
 Quijote remains a candidate
 for later independent-seed prediction; the inspected CosmoSim genealogy-only
 route is closed. The decision's D1–D5 queue states dependencies and stop rules.
@@ -23,8 +24,7 @@ arrays. The [D2 plan](cosmic-development-acquisition-2026-11-20.md) and
 [executable manifest](../configs/cosmic-development-2026-11-20.json) specify
 27 selected-ID, groupcat and offset files under a separate 768 MiB budget.
 All are acquired, consuming 505,904,305 bytes including the initial error.
-D2 is complete; D3's inventory and endpoint diagnostics are complete, while
-its local-transport qualification remains pending.
+D2 and the bounded D3 diagnostic are complete. Physical local-flow eligibility remains unqualified.
 The resource remains **log-orthopolic collisionless total-matter mass**.
 No independent target is assigned. The author's interim CAMELS/Abacus pivot is
 preserved in the [alternative-source handoff](cosmic-source-pivot-2026-11-19.md).
