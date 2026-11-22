@@ -1,21 +1,33 @@
 # Research roadmap
 
-## Active direction: updated 12 November 2026
+## Active direction: updated 21 November 2026
 
 The [cosmic-test task ledger](cosmic-test-roadmap-2026-11-11.md) records the
 completed mechanism review, three-archive audit and independent input/target
 design. The [readiness decision](cosmic-test-readiness-2026-11-11.md) permits
 bounded material-transport development and finds that confirmation is not yet
-ready. Next obtain a metadata-only TNG development manifest, then qualify
-membership closure and temporal/local transport. Quijote remains a candidate
+ready. The [TNG development pilot](cosmic-development-results-2026-11-21.md)
+now has verified binary inputs and exact whole-inventory closure. Coarsening
+loses measured mass-change and reservoir-exchange information. Next fix
+development mass bins, construct stocks/transfers/currents/source terms and
+qualify the local drift approximation and stationarity.
+Quijote remains a candidate
 for later independent-seed prediction; the inspected CosmoSim genealogy-only
 route is closed. The decision's D1–D5 queue states dependencies and stop rules.
 
-The [first D1 request](cosmic-metadata-access-2026-11-12.md) now confirms an
-authentication requirement: TNG returns HTTP 403 without a session/API key.
-The author has no existing TNG access; acquisition awaits that input, with its
-55-byte response and complete attempt record retained. D2–D5 remain dependent
-on a successful metadata manifest and subsequent measurement qualification.
+The [authenticated D1 record](cosmic-metadata-qualification-2026-11-20.md)
+resolves the earlier access block: eleven JSON requests succeeded, using
+19,587 response bytes cumulatively under the original 1 MiB cap. The whole
+`TNG50-4-Dark` run is development-only, with outputs 97/98/99 selected before
+arrays. The [D2 plan](cosmic-development-acquisition-2026-11-20.md) and
+[executable manifest](../configs/cosmic-development-2026-11-20.json) specify
+27 selected-ID, groupcat and offset files under a separate 768 MiB budget.
+All are acquired, consuming 505,904,305 bytes including the initial error.
+D2 is complete; D3's inventory and endpoint diagnostics are complete, while
+its local-transport qualification remains pending.
+The resource remains **log-orthopolic collisionless total-matter mass**.
+No independent target is assigned. The author's interim CAMELS/Abacus pivot is
+preserved in the [alternative-source handoff](cosmic-source-pivot-2026-11-19.md).
 
 The author's agreed [manuscript revision roadmap](manuscript-roadmap-2026-11-10.md)
 is complete: the proposed natural law now begins with a concrete allocation

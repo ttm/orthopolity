@@ -41,3 +41,7 @@ data/seismic-regional/2026-10-09/raw/
 
 # Candidate catalogues for the next seismic design; receipts are tracked.
 data/seismic-candidates/2026-10-10/raw/
+
+# TNG development material; bounded acquisition receipts and hashes are tracked.
+data/cosmic-development/2026-11-20/tng50-4-dark/raw/
+data/cosmic-development/2026-11-20/tng50-4-dark-attempt-02/raw/

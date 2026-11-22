@@ -1,0 +1,50 @@
+{
+  "acquisition_source_sha256": "bcdaec02741c917bd39864816d6c4d19814542bd6206f96b53aae5c0735e6f75",
+  "aggregate_body_bytes": 57,
+  "aggregate_byte_cap": 805306368,
+  "ca_bundle_sha256": "9dae8d76e55cb08991f2b672d58999ea15560d910759c16b544f843bdffbb994",
+  "config_sha256": "3955efd01d4d66d6a43db57c18878e424af4f65f618804f1f28d2502ae17e90d",
+  "credential_retained": false,
+  "development_only": true,
+  "outcome": "unapproved_http_status",
+  "reference_measure": "logarithmic host mass; log-orthopolic collisionless total-matter candidate",
+  "remaining_body_bytes": 805306311,
+  "requests": [
+    {
+      "body_bytes": 57,
+      "file_bytes": 0,
+      "finished_utc": "2026-11-20T16:29:27.747753+00:00",
+      "id": "offsets-97",
+      "outcome": "unapproved_http_status",
+      "relative_path": "raw/offsets-97.hdf5",
+      "responses": [
+        {
+          "authenticated": true,
+          "body_bytes": 57,
+          "body_complete": true,
+          "body_sha256": "a5d55bea935e8c7176837edb49d58892bb4356c604fe8028bfa71c96ad81edd3",
+          "content_length": 57,
+          "host": "www.tng-project.org",
+          "http_status": 406,
+          "path": "/api/TNG50-4-Dark/files/offsets.97.hdf5"
+        }
+      ],
+      "retained": false,
+      "started_utc": "2026-11-20T16:29:27.286894+00:00",
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/offsets.97.hdf5"
+    }
+  ],
+  "retries": 0,
+  "run": "TNG50-4-Dark",
+  "schema_version": 1,
+  "stages": [
+    {
+      "finished_utc": "2026-11-20T16:29:27.748650+00:00",
+      "outcome": "unapproved_http_status",
+      "stage": "bootstrap",
+      "started_utc": "2026-11-20T16:29:27.286358+00:00"
+    }
+  ],
+  "tls_certificate_verification": true,
+  "tls_hostname_verification": true
+}

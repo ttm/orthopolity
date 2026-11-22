@@ -1,0 +1,443 @@
+{
+  "acquisition_receipt_sha256": "2bc3486ef74df5ae4de83ef302bd5a3159dab0eaeb6ce1ee86686a4bf4524ec1",
+  "acquisition_source_sha256": "ba201aa6f2ccdfe48b21ebc8de94b1c132973c9260ad5e8b35b278ee07ea25ce",
+  "config_sha256": "3955efd01d4d66d6a43db57c18878e424af4f65f618804f1f28d2502ae17e90d",
+  "development_only": true,
+  "files": {
+    "groupcat-97-0": "fde70750f0182551f98ededfe5a58e6b3ae0da849af7fc1313c331aafb350033",
+    "offsets-97": "108822f7127992b8dcba6985f4ac243b303425a65bcecbe116bd8018ace21fb5",
+    "particle_ids-97-0": "6cdd8082d4f7432ff892d582f95c97f5f48204035c9ba76bc9c6c55e9a1b4af9"
+  },
+  "finished_utc": "2026-11-20T22:43:27.299818+00:00",
+  "observations": {
+    "checks": {
+      "group_mass_rounding_comparison_tested": false,
+      "groups_in_bootstrap_chunk": 9,
+      "ids_in_bootstrap_chunk": 4921240,
+      "log_orthopolic_transport_tested": false,
+      "particle_ids_values_read": false,
+      "units": {
+        "Time": "scale factor",
+        "box": "comoving kpc / h",
+        "mass": "1e10 solar masses / h"
+      },
+      "whole_inventory_closure_tested": false
+    },
+    "groupcat": {
+      "datasets": {
+        "Group/GroupCM": {
+          "dtype": "float32",
+          "shape": [
+            9,
+            3
+          ]
+        },
+        "Group/GroupFirstSub": {
+          "dtype": "int32",
+          "shape": [
+            9
+          ]
+        },
+        "Group/GroupLen": {
+          "dtype": "int32",
+          "shape": [
+            9
+          ]
+        },
+        "Group/GroupLenType": {
+          "dtype": "int32",
+          "shape": [
+            9,
+            6
+          ]
+        },
+        "Group/GroupMass": {
+          "dtype": "float32",
+          "shape": [
+            9
+          ]
+        },
+        "Group/GroupMassType": {
+          "dtype": "float32",
+          "shape": [
+            9,
+            6
+          ]
+        },
+        "Group/GroupNsubs": {
+          "dtype": "int32",
+          "shape": [
+            9
+          ]
+        },
+        "Group/GroupPos": {
+          "dtype": "float32",
+          "shape": [
+            9,
+            3
+          ]
+        },
+        "Group/GroupVel": {
+          "dtype": "float32",
+          "shape": [
+            9,
+            3
+          ]
+        },
+        "Group/Group_M_Crit200": {
+          "dtype": "float32",
+          "shape": [
+            9
+          ]
+        },
+        "Group/Group_M_Crit500": {
+          "dtype": "float32",
+          "shape": [
+            9
+          ]
+        },
+        "Group/Group_M_Mean200": {
+          "dtype": "float32",
+          "shape": [
+            9
+          ]
+        },
+        "Group/Group_M_TopHat200": {
+          "dtype": "float32",
+          "shape": [
+            9
+          ]
+        },
+        "Group/Group_R_Crit200": {
+          "dtype": "float32",
+          "shape": [
+            9
+          ]
+        },
+        "Group/Group_R_Crit500": {
+          "dtype": "float32",
+          "shape": [
+            9
+          ]
+        },
+        "Group/Group_R_Mean200": {
+          "dtype": "float32",
+          "shape": [
+            9
+          ]
+        },
+        "Group/Group_R_TopHat200": {
+          "dtype": "float32",
+          "shape": [
+            9
+          ]
+        },
+        "Subhalo/SubhaloCM": {
+          "dtype": "float32",
+          "shape": [
+            1333,
+            3
+          ]
+        },
+        "Subhalo/SubhaloGrNr": {
+          "dtype": "int32",
+          "shape": [
+            1333
+          ]
+        },
+        "Subhalo/SubhaloHalfmassRad": {
+          "dtype": "float32",
+          "shape": [
+            1333
+          ]
+        },
+        "Subhalo/SubhaloHalfmassRadType": {
+          "dtype": "float32",
+          "shape": [
+            1333,
+            6
+          ]
+        },
+        "Subhalo/SubhaloIDMostbound": {
+          "dtype": "uint64",
+          "shape": [
+            1333
+          ]
+        },
+        "Subhalo/SubhaloLen": {
+          "dtype": "int32",
+          "shape": [
+            1333
+          ]
+        },
+        "Subhalo/SubhaloLenType": {
+          "dtype": "int32",
+          "shape": [
+            1333,
+            6
+          ]
+        },
+        "Subhalo/SubhaloMass": {
+          "dtype": "float32",
+          "shape": [
+            1333
+          ]
+        },
+        "Subhalo/SubhaloMassInHalfRad": {
+          "dtype": "float32",
+          "shape": [
+            1333
+          ]
+        },
+        "Subhalo/SubhaloMassInHalfRadType": {
+          "dtype": "float32",
+          "shape": [
+            1333,
+            6
+          ]
+        },
+        "Subhalo/SubhaloMassInMaxRad": {
+          "dtype": "float32",
+          "shape": [
+            1333
+          ]
+        },
+        "Subhalo/SubhaloMassInMaxRadType": {
+          "dtype": "float32",
+          "shape": [
+            1333,
+            6
+          ]
+        },
+        "Subhalo/SubhaloMassInRad": {
+          "dtype": "float32",
+          "shape": [
+            1333
+          ]
+        },
+        "Subhalo/SubhaloMassInRadType": {
+          "dtype": "float32",
+          "shape": [
+            1333,
+            6
+          ]
+        },
+        "Subhalo/SubhaloMassType": {
+          "dtype": "float32",
+          "shape": [
+            1333,
+            6
+          ]
+        },
+        "Subhalo/SubhaloParent": {
+          "dtype": "int32",
+          "shape": [
+            1333
+          ]
+        },
+        "Subhalo/SubhaloPos": {
+          "dtype": "float32",
+          "shape": [
+            1333,
+            3
+          ]
+        },
+        "Subhalo/SubhaloSpin": {
+          "dtype": "float32",
+          "shape": [
+            1333,
+            3
+          ]
+        },
+        "Subhalo/SubhaloVel": {
+          "dtype": "float32",
+          "shape": [
+            1333,
+            3
+          ]
+        },
+        "Subhalo/SubhaloVelDisp": {
+          "dtype": "float32",
+          "shape": [
+            1333
+          ]
+        },
+        "Subhalo/SubhaloVmax": {
+          "dtype": "float32",
+          "shape": [
+            1333
+          ]
+        },
+        "Subhalo/SubhaloVmaxRad": {
+          "dtype": "float32",
+          "shape": [
+            1333
+          ]
+        }
+      },
+      "header": {
+        "BoxSize": 35000.0,
+        "HubbleParam": 0.6774,
+        "Ngroups_ThisFile": 9,
+        "Ngroups_Total": 18976,
+        "Nsubgroups_ThisFile": 1333,
+        "Nsubgroups_Total": 23101,
+        "NumFiles": 4,
+        "Omega0": 0.3089,
+        "OmegaLambda": 0.6911,
+        "Redshift": 0.023974428382762536,
+        "Time": 0.9765868876036025
+      }
+    },
+    "offsets": {
+      "datasets": {
+        "FileOffsets/Group": {
+          "dtype": "int64",
+          "shape": [
+            4
+          ]
+        },
+        "FileOffsets/SnapByType": {
+          "dtype": "int64",
+          "shape": [
+            4,
+            6
+          ]
+        },
+        "FileOffsets/SubLink": {
+          "dtype": "int64",
+          "shape": [
+            12
+          ]
+        },
+        "FileOffsets/Subhalo": {
+          "dtype": "int64",
+          "shape": [
+            4
+          ]
+        },
+        "Group/SnapByType": {
+          "dtype": "int64",
+          "shape": [
+            18976,
+            6
+          ]
+        },
+        "Subhalo/LHaloTree/File": {
+          "dtype": "int32",
+          "shape": [
+            23101
+          ]
+        },
+        "Subhalo/LHaloTree/Index": {
+          "dtype": "int32",
+          "shape": [
+            23101
+          ]
+        },
+        "Subhalo/LHaloTree/Num": {
+          "dtype": "int32",
+          "shape": [
+            23101
+          ]
+        },
+        "Subhalo/SnapByType": {
+          "dtype": "int64",
+          "shape": [
+            23101,
+            6
+          ]
+        },
+        "Subhalo/SubLink/LastProgenitorID": {
+          "dtype": "int64",
+          "shape": [
+            23101
+          ]
+        },
+        "Subhalo/SubLink/RowNum": {
+          "dtype": "int32",
+          "shape": [
+            23101
+          ]
+        },
+        "Subhalo/SubLink/SubhaloID": {
+          "dtype": "int64",
+          "shape": [
+            23101
+          ]
+        }
+      },
+      "header": {},
+      "normalized_snapshot_offset_layout": "type_by_chunk",
+      "snapshot_offset_layout": "chunk_by_type"
+    },
+    "particle_ids": {
+      "datasets": {
+        "PartType1/ParticleIDs": {
+          "dtype": "uint64",
+          "shape": [
+            4921240
+          ]
+        }
+      },
+      "header": {
+        "BoxSize": 35000.0,
+        "CutoutRequest": "PartType1=ParticleIDs",
+        "HubbleParam": 0.6774,
+        "MassTable": [
+          0.0,
+          0.01867548721463465,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "NumFilesPerSnapshot": 4,
+        "NumPart_ThisFile": [
+          0,
+          4921240,
+          0,
+          0,
+          0,
+          0
+        ],
+        "NumPart_Total": [
+          0,
+          19683000,
+          0,
+          0,
+          0,
+          0
+        ],
+        "NumPart_Total_HighWord": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Omega0": 0.3089,
+        "OmegaBaryon": 0.0486,
+        "OmegaLambda": 0.6911,
+        "Redshift": 0.023974428382762536,
+        "Time": 0.9765868876036025,
+        "UnitLength_in_cm": 3.085678e+21,
+        "UnitMass_in_g": 1.989e+43,
+        "UnitVelocity_in_cm_per_s": 100000.0
+      }
+    }
+  },
+  "outcome": "passed",
+  "prior_body_bytes": 57,
+  "reference_measure": "logarithmic host mass; log-orthopolic collisionless total-matter candidate",
+  "schema_version": 1,
+  "started_utc": "2026-11-20T22:43:27.161257+00:00",
+  "validator_source_sha256": "1fcac421d168d7734d3d47db672eaad7e44f72e7470f5d444568e9b476b2e9a2",
+  "versions": {
+    "h5py": "3.12.1",
+    "hdf5": "1.12.2",
+    "numpy": "2.3.5",
+    "python": "3.11.6"
+  }
+}

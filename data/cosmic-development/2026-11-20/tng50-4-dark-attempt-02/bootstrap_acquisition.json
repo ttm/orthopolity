@@ -1,0 +1,132 @@
+{
+  "acquisition_source_sha256": "ba201aa6f2ccdfe48b21ebc8de94b1c132973c9260ad5e8b35b278ee07ea25ce",
+  "aggregate_body_bytes": 42515925,
+  "aggregate_byte_cap": 805306368,
+  "ca_bundle_sha256": "9dae8d76e55cb08991f2b672d58999ea15560d910759c16b544f843bdffbb994",
+  "config_sha256": "3955efd01d4d66d6a43db57c18878e424af4f65f618804f1f28d2502ae17e90d",
+  "credential_retained": false,
+  "development_only": true,
+  "manual_continuation": true,
+  "outcome": "bootstrap_downloaded",
+  "prior_acquisition_sha256": "c9c7b69b5aeefe147d8cc807ae36cd5f881e5badb43dcb71bdf95f32f59d401d",
+  "prior_body_bytes": 57,
+  "reference_measure": "logarithmic host mass; log-orthopolic collisionless total-matter candidate",
+  "remaining_body_bytes": 762790443,
+  "requests": [
+    {
+      "body_bytes": 2771664,
+      "file_bytes": 2771664,
+      "finished_utc": "2026-11-20T22:39:29.779430+00:00",
+      "id": "offsets-97",
+      "outcome": "complete",
+      "relative_path": "raw/offsets-97.hdf5",
+      "responses": [
+        {
+          "authenticated": true,
+          "body_bytes": 0,
+          "body_complete": true,
+          "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "content_length": 0,
+          "host": "www.tng-project.org",
+          "http_status": 302,
+          "path": "/api/TNG50-4-Dark/files/offsets.97.hdf5"
+        },
+        {
+          "authenticated": false,
+          "body_bytes": 2771664,
+          "body_complete": true,
+          "body_sha256": "108822f7127992b8dcba6985f4ac243b303425a65bcecbe116bd8018ace21fb5",
+          "content_length": 2771664,
+          "host": "data-eu.tng-project.org",
+          "http_status": 200,
+          "path": "/file/offsets/L35n270TNG_DM/97/"
+        }
+      ],
+      "retained": true,
+      "sha256": "108822f7127992b8dcba6985f4ac243b303425a65bcecbe116bd8018ace21fb5",
+      "started_utc": "2026-11-20T22:39:07.253214+00:00",
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/offsets.97.hdf5"
+    },
+    {
+      "body_bytes": 357068,
+      "file_bytes": 357068,
+      "finished_utc": "2026-11-20T22:39:51.323245+00:00",
+      "id": "groupcat-97-0",
+      "outcome": "complete",
+      "relative_path": "raw/groupcat-97-0.hdf5",
+      "responses": [
+        {
+          "authenticated": true,
+          "body_bytes": 0,
+          "body_complete": true,
+          "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "content_length": 0,
+          "host": "www.tng-project.org",
+          "http_status": 302,
+          "path": "/api/TNG50-4-Dark/files/groupcat-97.0.hdf5"
+        },
+        {
+          "authenticated": false,
+          "body_bytes": 357068,
+          "body_complete": true,
+          "body_sha256": "fde70750f0182551f98ededfe5a58e6b3ae0da849af7fc1313c331aafb350033",
+          "content_length": 357068,
+          "host": "data-eu.tng-project.org",
+          "http_status": 200,
+          "path": "/file/groupcat/L35n270TNG_DM/97/0/"
+        }
+      ],
+      "retained": true,
+      "sha256": "fde70750f0182551f98ededfe5a58e6b3ae0da849af7fc1313c331aafb350033",
+      "started_utc": "2026-11-20T22:39:29.780419+00:00",
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/groupcat-97.0.hdf5"
+    },
+    {
+      "body_bytes": 39387136,
+      "file_bytes": 39387136,
+      "finished_utc": "2026-11-20T22:40:30.014250+00:00",
+      "id": "particle_ids-97-0",
+      "outcome": "complete",
+      "relative_path": "raw/particle_ids-97-0.hdf5",
+      "responses": [
+        {
+          "authenticated": true,
+          "body_bytes": 0,
+          "body_complete": true,
+          "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "content_length": 0,
+          "host": "www.tng-project.org",
+          "http_status": 302,
+          "path": "/api/TNG50-4-Dark/files/snapshot-97.0.hdf5"
+        },
+        {
+          "authenticated": false,
+          "body_bytes": 39387136,
+          "body_complete": true,
+          "body_sha256": "6cdd8082d4f7432ff892d582f95c97f5f48204035c9ba76bc9c6c55e9a1b4af9",
+          "content_length": 39387136,
+          "host": "data-eu.tng-project.org",
+          "http_status": 200,
+          "path": "/file/snapshot/L35n270TNG_DM/97/0/0.2.0.0.0.0/"
+        }
+      ],
+      "retained": true,
+      "sha256": "6cdd8082d4f7432ff892d582f95c97f5f48204035c9ba76bc9c6c55e9a1b4af9",
+      "started_utc": "2026-11-20T22:39:51.323960+00:00",
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/snapshot-97.0.hdf5?dm=ParticleIDs"
+    }
+  ],
+  "retries": 0,
+  "run": "TNG50-4-Dark",
+  "schema_version": 1,
+  "stages": [
+    {
+      "finished_utc": "2026-11-20T22:40:30.015105+00:00",
+      "outcome": "bootstrap_downloaded",
+      "stage": "bootstrap",
+      "started_utc": "2026-11-20T22:39:07.252735+00:00"
+    }
+  ],
+  "tls_certificate_verification": true,
+  "tls_hostname_verification": true
+}

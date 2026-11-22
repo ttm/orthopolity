@@ -1,0 +1,19 @@
+{
+  "requested_url": "https://users.flatironinstitute.org/~camels/Sims/IllustrisTNG_DM/L25n256/CV/CV_0/",
+  "final_url": "https://users.flatironinstitute.org/~camels/Sims/IllustrisTNG_DM/L25n256/CV/CV_0/",
+  "http_status": 200,
+  "content_type": "text/html;charset=utf-8",
+  "advertised_content_length": null,
+  "bytes": 18571,
+  "byte_cap": 65536,
+  "complete": true,
+  "sha256": "5f6c291d0bac2a6e7ba1212ba1332b0976d7a7f3ee06bd46223afc428baf827f",
+  "source_sha256": "d598cd27307334be28b67ad52bfd65cb78fd3b2ef3d41e0c108055e9c444dd7d",
+  "started_utc": "2026-11-16T16:13:41.018163+00:00",
+  "finished_utc": "2026-11-16T16:13:42.104100+00:00",
+  "credentials_used": false,
+  "redirects_followed": 0,
+  "tls_certificate_verification": true,
+  "tls_hostname_verification": true,
+  "numerical_file_bodies_requested": false
+}

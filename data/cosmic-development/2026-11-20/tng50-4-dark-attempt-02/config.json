@@ -1,0 +1,462 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-20",
+  "run": "TNG50-4-Dark",
+  "run_name_alt": "L35n270TNG_DM",
+  "development_only": true,
+  "validation_target_assigned": false,
+  "reference_measure": "logarithmic host mass; log-orthopolic collisionless total-matter candidate",
+  "selection_rule": "Last three stored outputs selected from schedule before numerical arrays; whole run development-only",
+  "outputs": [
+    97,
+    98,
+    99
+  ],
+  "aggregate_byte_cap": 805306368,
+  "min_free_disk_bytes": 4294967296,
+  "reader_max_rss_bytes": 3221225472,
+  "max_derived_scratch_bytes": 1073741824,
+  "uncompressed_id_payload_bytes": 472392000,
+  "head_inventory": {
+    "complete": false,
+    "http_200_with_length": 23,
+    "timeouts": 4,
+    "body_bytes_read": 0,
+    "unknown_lengths_policy": "Enforce per-file and aggregate streaming caps; no automatic retries"
+  },
+  "expected": {
+    "num_dm": 19683000,
+    "mass_dm": 0.0186754872146347,
+    "boxsize": 35000.0,
+    "hubble": 0.6774,
+    "omega_0": 0.3089,
+    "omega_L": 0.6911,
+    "omega_B": 0.0486,
+    "num_files_snapshot": 4,
+    "num_files_groupcat": 4,
+    "snapshots": {
+      "97": {
+        "redshift": 0.0239744283827625,
+        "num_groups": 18976,
+        "num_subgroups": 23101
+      },
+      "98": {
+        "redshift": 0.00952166696794476,
+        "num_groups": 18888,
+        "num_subgroups": 23055
+      },
+      "99": {
+        "redshift": 2.22044604925031e-16,
+        "num_groups": 18824,
+        "num_subgroups": 22963
+      }
+    }
+  },
+  "sources": [
+    {
+      "path": "data/cosmic-source-qualification/2026-11-19/tng50-4-dark-metadata/acquisition.json",
+      "sha256": "5229e7a199d6bb9ef1cd331a9790f37db81254f858895ccf4672facca467c07e"
+    },
+    {
+      "path": "data/cosmic-source-qualification/2026-11-19/tng50-4-dark-metadata/01-run.json",
+      "sha256": "94830a67dd8b66039db825f159544f0dd47971a73bbdf3376c20f76a87d76daa"
+    },
+    {
+      "path": "data/cosmic-source-qualification/2026-11-19/tng50-4-dark-file-lists/acquisition.json",
+      "sha256": "382f6c202180c81eff4793781291a86459b9005df6bdb0a851ba9fb7f14e04d3"
+    },
+    {
+      "path": "data/cosmic-source-qualification/2026-11-20/tng-selected-file-headers/acquisition.json",
+      "sha256": "412a2904e3aeae24a591583cc8b09e79573ae2b0835ba35567b9cfba82ef1382"
+    },
+    {
+      "path": "data/cosmic-source-qualification/2026-11-19/tng50-4-dark-file-lists/01-snapshot-97-files.json",
+      "sha256": "de329da293f6e2abc5bc1d8ae6068d4065c2e0b0f96b85abb8d5b9751ed355ec"
+    },
+    {
+      "path": "data/cosmic-source-qualification/2026-11-19/tng50-4-dark-file-lists/02-groupcat-97-files.json",
+      "sha256": "02c0c20ac35015dd6b24567968e204fc829109fe9c174e4be9b78ae6c1e64030"
+    },
+    {
+      "path": "data/cosmic-source-qualification/2026-11-19/tng50-4-dark-file-lists/03-snapshot-98-files.json",
+      "sha256": "6b91e8f37572543927042a27762e2abf836534df380ac07261857d5cf4d73f34"
+    },
+    {
+      "path": "data/cosmic-source-qualification/2026-11-19/tng50-4-dark-file-lists/04-groupcat-98-files.json",
+      "sha256": "15fcaa02497bbcf2001e73281bed35b84db6fc820773c61bc15a2137b5c2d44a"
+    },
+    {
+      "path": "data/cosmic-source-qualification/2026-11-19/tng50-4-dark-file-lists/05-snapshot-99-files.json",
+      "sha256": "d96b0ef5b2e8a4ce86331c1514d82f613fb182db66ad32ebccd4774fcc794090"
+    },
+    {
+      "path": "data/cosmic-source-qualification/2026-11-19/tng50-4-dark-file-lists/06-groupcat-99-files.json",
+      "sha256": "4edb2f0c7bcdf0c169cb2fa9c9574dbbd4ca7dca3cc180ba2286fb10bcf62a18"
+    },
+    {
+      "path": "data/cosmic-source-qualification/2026-11-19/tng50-4-dark-metadata/03-snapshot-97.json",
+      "sha256": "66709dee63b73599b2e87fcd2d3a82ed2bab06653acc800d52dcc832a46479cb"
+    },
+    {
+      "path": "data/cosmic-source-qualification/2026-11-19/tng50-4-dark-metadata/04-snapshot-98.json",
+      "sha256": "35dccdd32c1fb098105a98722d4b1282ab5663bb987a00ed13cb15921b8e6e01"
+    },
+    {
+      "path": "data/cosmic-source-qualification/2026-11-19/tng50-4-dark-metadata/05-snapshot-99.json",
+      "sha256": "a3b3d8a2d595e08200ca54e92681cc09c9dfc5d695063b1f280c5e0ec73d9e4d"
+    }
+  ],
+  "files": [
+    {
+      "id": "particle_ids-97-0",
+      "kind": "particle_ids",
+      "output": 97,
+      "chunk": 0,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/snapshot-97.0.hdf5?dm=ParticleIDs",
+      "redirect_path": "/file/snapshot/L35n270TNG_DM/97/0/0.2.0.0.0.0/",
+      "byte_cap": 67108864,
+      "relative_path": "raw/particle_ids-97-0.hdf5",
+      "bootstrap": true,
+      "observed_head_content_length": 39387136,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "particle_ids-97-1",
+      "kind": "particle_ids",
+      "output": 97,
+      "chunk": 1,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/snapshot-97.1.hdf5?dm=ParticleIDs",
+      "redirect_path": "/file/snapshot/L35n270TNG_DM/97/1/0.2.0.0.0.0/",
+      "byte_cap": 67108864,
+      "relative_path": "raw/particle_ids-97-1.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 39387136,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "particle_ids-97-2",
+      "kind": "particle_ids",
+      "output": 97,
+      "chunk": 2,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/snapshot-97.2.hdf5?dm=ParticleIDs",
+      "redirect_path": "/file/snapshot/L35n270TNG_DM/97/2/0.2.0.0.0.0/",
+      "byte_cap": 67108864,
+      "relative_path": "raw/particle_ids-97-2.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 39452672,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "particle_ids-97-3",
+      "kind": "particle_ids",
+      "output": 97,
+      "chunk": 3,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/snapshot-97.3.hdf5?dm=ParticleIDs",
+      "redirect_path": "/file/snapshot/L35n270TNG_DM/97/3/0.2.0.0.0.0/",
+      "byte_cap": 67108864,
+      "relative_path": "raw/particle_ids-97-3.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 39387136,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "groupcat-97-0",
+      "kind": "groupcat",
+      "output": 97,
+      "chunk": 0,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/groupcat-97.0.hdf5",
+      "redirect_path": "/file/groupcat/L35n270TNG_DM/97/0/",
+      "byte_cap": 16777216,
+      "relative_path": "raw/groupcat-97-0.hdf5",
+      "bootstrap": true,
+      "observed_head_content_length": 357068,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "groupcat-97-1",
+      "kind": "groupcat",
+      "output": 97,
+      "chunk": 1,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/groupcat-97.1.hdf5",
+      "redirect_path": "/file/groupcat/L35n270TNG_DM/97/1/",
+      "byte_cap": 16777216,
+      "relative_path": "raw/groupcat-97-1.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 1504432,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "groupcat-97-2",
+      "kind": "groupcat",
+      "output": 97,
+      "chunk": 2,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/groupcat-97.2.hdf5",
+      "redirect_path": "/file/groupcat/L35n270TNG_DM/97/2/",
+      "byte_cap": 16777216,
+      "relative_path": "raw/groupcat-97-2.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 3252600,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "groupcat-97-3",
+      "kind": "groupcat",
+      "output": 97,
+      "chunk": 3,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/groupcat-97.3.hdf5",
+      "redirect_path": "/file/groupcat/L35n270TNG_DM/97/3/",
+      "byte_cap": 16777216,
+      "relative_path": "raw/groupcat-97-3.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 3147332,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "particle_ids-98-0",
+      "kind": "particle_ids",
+      "output": 98,
+      "chunk": 0,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/snapshot-98.0.hdf5?dm=ParticleIDs",
+      "redirect_path": "/file/snapshot/L35n270TNG_DM/98/0/0.2.0.0.0.0/",
+      "byte_cap": 67108864,
+      "relative_path": "raw/particle_ids-98-0.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 39518208,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "particle_ids-98-1",
+      "kind": "particle_ids",
+      "output": 98,
+      "chunk": 1,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/snapshot-98.1.hdf5?dm=ParticleIDs",
+      "redirect_path": "/file/snapshot/L35n270TNG_DM/98/1/0.2.0.0.0.0/",
+      "byte_cap": 67108864,
+      "relative_path": "raw/particle_ids-98-1.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 39452672,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "particle_ids-98-2",
+      "kind": "particle_ids",
+      "output": 98,
+      "chunk": 2,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/snapshot-98.2.hdf5?dm=ParticleIDs",
+      "redirect_path": "/file/snapshot/L35n270TNG_DM/98/2/0.2.0.0.0.0/",
+      "byte_cap": 67108864,
+      "relative_path": "raw/particle_ids-98-2.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 39321600,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "particle_ids-98-3",
+      "kind": "particle_ids",
+      "output": 98,
+      "chunk": 3,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/snapshot-98.3.hdf5?dm=ParticleIDs",
+      "redirect_path": "/file/snapshot/L35n270TNG_DM/98/3/0.2.0.0.0.0/",
+      "byte_cap": 67108864,
+      "relative_path": "raw/particle_ids-98-3.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 39321600,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "groupcat-98-0",
+      "kind": "groupcat",
+      "output": 98,
+      "chunk": 0,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/groupcat-98.0.hdf5",
+      "redirect_path": "/file/groupcat/L35n270TNG_DM/98/0/",
+      "byte_cap": 16777216,
+      "relative_path": "raw/groupcat-98-0.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 366096,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "groupcat-98-1",
+      "kind": "groupcat",
+      "output": 98,
+      "chunk": 1,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/groupcat-98.1.hdf5",
+      "redirect_path": "/file/groupcat/L35n270TNG_DM/98/1/",
+      "byte_cap": 16777216,
+      "relative_path": "raw/groupcat-98-1.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 1414524,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "groupcat-98-2",
+      "kind": "groupcat",
+      "output": 98,
+      "chunk": 2,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/groupcat-98.2.hdf5",
+      "redirect_path": "/file/groupcat/L35n270TNG_DM/98/2/",
+      "byte_cap": 16777216,
+      "relative_path": "raw/groupcat-98-2.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 3293032,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "groupcat-98-3",
+      "kind": "groupcat",
+      "output": 98,
+      "chunk": 3,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/groupcat-98.3.hdf5",
+      "redirect_path": "/file/groupcat/L35n270TNG_DM/98/3/",
+      "byte_cap": 16777216,
+      "relative_path": "raw/groupcat-98-3.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 3164940,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "particle_ids-99-0",
+      "kind": "particle_ids",
+      "output": 99,
+      "chunk": 0,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/snapshot-99.0.hdf5?dm=ParticleIDs",
+      "redirect_path": "/file/snapshot/L35n270TNG_DM/99/0/0.2.0.0.0.0/",
+      "byte_cap": 67108864,
+      "relative_path": "raw/particle_ids-99-0.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 39387136,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "particle_ids-99-1",
+      "kind": "particle_ids",
+      "output": 99,
+      "chunk": 1,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/snapshot-99.1.hdf5?dm=ParticleIDs",
+      "redirect_path": "/file/snapshot/L35n270TNG_DM/99/1/0.2.0.0.0.0/",
+      "byte_cap": 67108864,
+      "relative_path": "raw/particle_ids-99-1.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 39452672,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "particle_ids-99-2",
+      "kind": "particle_ids",
+      "output": 99,
+      "chunk": 2,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/snapshot-99.2.hdf5?dm=ParticleIDs",
+      "redirect_path": "/file/snapshot/L35n270TNG_DM/99/2/0.2.0.0.0.0/",
+      "byte_cap": 67108864,
+      "relative_path": "raw/particle_ids-99-2.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": null,
+      "head_outcome": "TimeoutError"
+    },
+    {
+      "id": "particle_ids-99-3",
+      "kind": "particle_ids",
+      "output": 99,
+      "chunk": 3,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/snapshot-99.3.hdf5?dm=ParticleIDs",
+      "redirect_path": "/file/snapshot/L35n270TNG_DM/99/3/0.2.0.0.0.0/",
+      "byte_cap": 67108864,
+      "relative_path": "raw/particle_ids-99-3.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": null,
+      "head_outcome": "TimeoutError"
+    },
+    {
+      "id": "groupcat-99-0",
+      "kind": "groupcat",
+      "output": 99,
+      "chunk": 0,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/groupcat-99.0.hdf5",
+      "redirect_path": "/file/groupcat/L35n270TNG_DM/99/0/",
+      "byte_cap": 16777216,
+      "relative_path": "raw/groupcat-99-0.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 362436,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "groupcat-99-1",
+      "kind": "groupcat",
+      "output": 99,
+      "chunk": 1,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/groupcat-99.1.hdf5",
+      "redirect_path": "/file/groupcat/L35n270TNG_DM/99/1/",
+      "byte_cap": 16777216,
+      "relative_path": "raw/groupcat-99-1.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 1374364,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "groupcat-99-2",
+      "kind": "groupcat",
+      "output": 99,
+      "chunk": 2,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/groupcat-99.2.hdf5",
+      "redirect_path": "/file/groupcat/L35n270TNG_DM/99/2/",
+      "byte_cap": 16777216,
+      "relative_path": "raw/groupcat-99-2.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 3268388,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "groupcat-99-3",
+      "kind": "groupcat",
+      "output": 99,
+      "chunk": 3,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/groupcat-99.3.hdf5",
+      "redirect_path": "/file/groupcat/L35n270TNG_DM/99/3/",
+      "byte_cap": 16777216,
+      "relative_path": "raw/groupcat-99-3.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 3202508,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "offsets-97",
+      "kind": "offsets",
+      "output": 97,
+      "chunk": null,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/offsets.97.hdf5",
+      "redirect_path": "/file/offsets/L35n270TNG_DM/97/",
+      "byte_cap": 8388608,
+      "relative_path": "raw/offsets-97.hdf5",
+      "bootstrap": true,
+      "observed_head_content_length": null,
+      "head_outcome": "TimeoutError"
+    },
+    {
+      "id": "offsets-98",
+      "kind": "offsets",
+      "output": 98,
+      "chunk": null,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/offsets.98.hdf5",
+      "redirect_path": "/file/offsets/L35n270TNG_DM/98/",
+      "byte_cap": 8388608,
+      "relative_path": "raw/offsets-98.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": 2763760,
+      "head_outcome": "http_200"
+    },
+    {
+      "id": "offsets-99",
+      "kind": "offsets",
+      "output": 99,
+      "chunk": null,
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/offsets.99.hdf5",
+      "redirect_path": "/file/offsets/L35n270TNG_DM/99/",
+      "byte_cap": 8388608,
+      "relative_path": "raw/offsets-99.hdf5",
+      "bootstrap": false,
+      "observed_head_content_length": null,
+      "head_outcome": "TimeoutError"
+    }
+  ]
+}

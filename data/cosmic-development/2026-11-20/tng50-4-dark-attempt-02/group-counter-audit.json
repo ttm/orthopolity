@@ -1,0 +1,133 @@
+{
+  "kind": "Development schema audit; no scientific acceptance threshold",
+  "source_sha256": "c04a4a392a78cbec50a62025197364bbeba994a4a5a6de6a728dc3f81301a732",
+  "outputs": [
+    {
+      "output": 97,
+      "chunks": [
+        {
+          "chunk": 0,
+          "sha256": "fde70750f0182551f98ededfe5a58e6b3ae0da849af7fc1313c331aafb350033",
+          "groups_this_file": 9,
+          "sum_group_lengths": 2742688,
+          "Nids_ThisFile": 2530229,
+          "Nids_Total": 10025728
+        },
+        {
+          "chunk": 1,
+          "sha256": "bfdc91a4a2520b5ccffe8e52cc392a342370b2fefa9aa9273170e9c5d40e7d4b",
+          "groups_this_file": 3042,
+          "sum_group_lengths": 6092089,
+          "Nids_ThisFile": 2498082,
+          "Nids_Total": 10025728
+        },
+        {
+          "chunk": 2,
+          "sha256": "e54f22050b753922bf6ad547b845cc10a13007ac86c3bd7becbf8e3a5b8fe6a4",
+          "groups_this_file": 7986,
+          "sum_group_lengths": 860875,
+          "Nids_ThisFile": 2465855,
+          "Nids_Total": 10025728
+        },
+        {
+          "chunk": 3,
+          "sha256": "136a72ee47bf368ef2bcdfaa6451f880f2fbb0c71ba07d9071d8a9ac5664cc85",
+          "groups_this_file": 7939,
+          "sum_group_lengths": 330076,
+          "Nids_ThisFile": 2531562,
+          "Nids_Total": 10025728
+        }
+      ],
+      "sum_group_lengths": 10025728,
+      "sum_Nids_ThisFile": 10025728,
+      "all_Nids_Total": [
+        10025728
+      ]
+    },
+    {
+      "output": 98,
+      "chunks": [
+        {
+          "chunk": 0,
+          "sha256": "ab246798588afa01f391cdca7abb3a46c22442514b66c465fec52f4c999ab8f5",
+          "groups_this_file": 9,
+          "sum_group_lengths": 2756946,
+          "Nids_ThisFile": 2528649,
+          "Nids_Total": 10068046
+        },
+        {
+          "chunk": 1,
+          "sha256": "2b8715e57ec000e517078ad72d806b9ef745d3f758c984868253382ac76fb857",
+          "groups_this_file": 2823,
+          "sum_group_lengths": 6073061,
+          "Nids_ThisFile": 2510722,
+          "Nids_Total": 10068046
+        },
+        {
+          "chunk": 2,
+          "sha256": "a11214ac1e8b783b1f34b60e3ad9190a0e855b1d043ccd2e5306e2e980fea9df",
+          "groups_this_file": 8052,
+          "sum_group_lengths": 904571,
+          "Nids_ThisFile": 2504956,
+          "Nids_Total": 10068046
+        },
+        {
+          "chunk": 3,
+          "sha256": "05eb17a52adaac9b7b95cf2ef702fdf3c6a57b8bb553bb4c7221fc9a97e08475",
+          "groups_this_file": 8004,
+          "sum_group_lengths": 333468,
+          "Nids_ThisFile": 2523719,
+          "Nids_Total": 10068046
+        }
+      ],
+      "sum_group_lengths": 10068046,
+      "sum_Nids_ThisFile": 10068046,
+      "all_Nids_Total": [
+        10068046
+      ]
+    },
+    {
+      "output": 99,
+      "chunks": [
+        {
+          "chunk": 0,
+          "sha256": "63f1b16b37af9f2e0d29c116407947df4bdedd4ffdea2c02d1bce1eb99664ce8",
+          "groups_this_file": 9,
+          "sum_group_lengths": 2766952,
+          "Nids_ThisFile": 2521353,
+          "Nids_Total": 10095112
+        },
+        {
+          "chunk": 1,
+          "sha256": "7f1f539958628fa7e50dc1a957de85414384b1c9de6579d0df744a3c2551a10d",
+          "groups_this_file": 2711,
+          "sum_group_lengths": 6065364,
+          "Nids_ThisFile": 2510231,
+          "Nids_Total": 10095112
+        },
+        {
+          "chunk": 2,
+          "sha256": "ee28e3678fc7683fb468c94522c9922e92983acdf8efe8dc8358051189b6f518",
+          "groups_this_file": 8052,
+          "sum_group_lengths": 925404,
+          "Nids_ThisFile": 2546383,
+          "Nids_Total": 10095112
+        },
+        {
+          "chunk": 3,
+          "sha256": "4716455236014580dee58ce5b81d71ba0420869c689154c56300a26a181dc2b9",
+          "groups_this_file": 8052,
+          "sum_group_lengths": 337392,
+          "Nids_ThisFile": 2517145,
+          "Nids_Total": 10095112
+        }
+      ],
+      "sum_group_lengths": 10095112,
+      "sum_Nids_ThisFile": 10095112,
+      "all_Nids_Total": [
+        10095112
+      ]
+    }
+  ],
+  "finding": "Per-chunk Nids_ThisFile differs from the membership sum of groups stored in that groupcat chunk. Their whole-output sums agree exactly with each Nids_Total. The per-chunk header semantics are not assumed."
+}

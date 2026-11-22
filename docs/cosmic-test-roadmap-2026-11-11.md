@@ -37,6 +37,11 @@ fails, fit a mass-function slope to choose its interval, or download large
 particle catalogues before their input/target role is settled. Existing
 closed source searches elsewhere in the repository stay closed.
 
+On 16 November the author explicitly authorized a bounded alternative-source
+extension to CAMELS and Abacus while TNG registration was pending. The
+[preserved handoff](cosmic-source-pivot-2026-11-19.md) records that incomplete
+qualification. This does not reopen unrelated searches.
+
 ## Qualification gates
 
 | Gate | Required evidence |
@@ -87,3 +92,32 @@ no existing TNG access. D1 awaits access; its metadata manifest is incomplete.
 The two recorded attempts consumed 55 response bytes in total. Resume within
 the remaining 1,048,521-byte budget when authorized access is available; retain
 D2–D5 dependencies and the bounded source-search scope.
+
+**19–20 November follow-up:** TNG access now works. The
+[authenticated record](cosmic-metadata-qualification-2026-11-20.md) retains
+the successful metadata/file-list requests; D1 has 1,028,989 response bytes
+remaining. The [D2 plan](cosmic-development-acquisition-2026-11-20.md) prepares
+a bounded schema bootstrap and three-output reader pilot. Binary field checks
+remain explicit, and the whole selected run is development-only.
+
+**21 November follow-up:** [D2 and the first D3 milestone are executed](cosmic-development-results-2026-11-21.md).
+All 27 files were acquired under the fixed cap. The three inventories contain
+identical unique IDs and close exactly; endpoint and cadence diagnostics are
+retained. Coarsening loses 29.10% of absolute log-mass variation among particles
+hosted throughout and 32.30% of gross reservoir exchange. These findings do not
+qualify local drift or an independent prediction.
+
+Remaining D3 tasks, in order:
+
+1. Fix a descriptive development mass-bin grid, its represented domain and
+   handling of resolved hosts outside that domain, separately from diffuse
+   material. Record the choices before computing the new summaries.
+2. Compute bin stocks and the full endpoint transfer table; verify row/column
+   conservation, cumulative boundary balances and explicit reservoir sources.
+3. Compare direct boundary currents with the declared drift approximation.
+   Quantify large-jump contributions, stock changes, source terms and the
+   effect of omitting the middle output; do not infer fine-cadence convergence
+   from a coarse-versus-fine comparison.
+4. Retain a local-closure qualification or a specific unresolved limitation.
+   Advance D4 only if the result supports an independent-source transfer;
+   D5 still requires separate inputs, rivals and a target fixed before exposure.

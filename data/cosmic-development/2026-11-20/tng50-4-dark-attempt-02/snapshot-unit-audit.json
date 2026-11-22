@@ -1,0 +1,146 @@
+{
+  "kind": "All-chunk unit consistency audit",
+  "source_sha256": "10ff253f9fb90b67bb762486b302d1fd11821972807250c435a276a683860a1e",
+  "bootstrap_validation_sha256": "ac1d6e264ffaf4489866844f6d395163ab42bd6d05f378c77db4802113b934aa",
+  "reference": {
+    "UnitLength_in_cm": 3.085678e+21,
+    "UnitMass_in_g": 1.989e+43,
+    "UnitVelocity_in_cm_per_s": 100000.0
+  },
+  "chunks": [
+    {
+      "output": 97,
+      "chunk": 0,
+      "sha256": "6cdd8082d4f7432ff892d582f95c97f5f48204035c9ba76bc9c6c55e9a1b4af9",
+      "units": {
+        "UnitLength_in_cm": 3.085678e+21,
+        "UnitMass_in_g": 1.989e+43,
+        "UnitVelocity_in_cm_per_s": 100000.0
+      },
+      "identical_to_bootstrap": true
+    },
+    {
+      "output": 97,
+      "chunk": 1,
+      "sha256": "83732935b37171b1a621ca2403cd83b1923d1b1b8a4a0cae25c289da8dc39216",
+      "units": {
+        "UnitLength_in_cm": 3.085678e+21,
+        "UnitMass_in_g": 1.989e+43,
+        "UnitVelocity_in_cm_per_s": 100000.0
+      },
+      "identical_to_bootstrap": true
+    },
+    {
+      "output": 97,
+      "chunk": 2,
+      "sha256": "994d1c7961253e8b89578b3521199ac9be416d4130f4dc4a022d79529d1d3fdc",
+      "units": {
+        "UnitLength_in_cm": 3.085678e+21,
+        "UnitMass_in_g": 1.989e+43,
+        "UnitVelocity_in_cm_per_s": 100000.0
+      },
+      "identical_to_bootstrap": true
+    },
+    {
+      "output": 97,
+      "chunk": 3,
+      "sha256": "4a304f695e1497e8d8aa9793d5d9b5a0c4c5adacb133b65853c55dd71e9a9cf4",
+      "units": {
+        "UnitLength_in_cm": 3.085678e+21,
+        "UnitMass_in_g": 1.989e+43,
+        "UnitVelocity_in_cm_per_s": 100000.0
+      },
+      "identical_to_bootstrap": true
+    },
+    {
+      "output": 98,
+      "chunk": 0,
+      "sha256": "e4d1634f58cec05bc30ee1b9db112c5b921345549c5b6f579fbc847f95985d58",
+      "units": {
+        "UnitLength_in_cm": 3.085678e+21,
+        "UnitMass_in_g": 1.989e+43,
+        "UnitVelocity_in_cm_per_s": 100000.0
+      },
+      "identical_to_bootstrap": true
+    },
+    {
+      "output": 98,
+      "chunk": 1,
+      "sha256": "6ebfcf7d5ba6bc5114745b56aa874b233e54abeada04b6fb3f795cc61bb34abe",
+      "units": {
+        "UnitLength_in_cm": 3.085678e+21,
+        "UnitMass_in_g": 1.989e+43,
+        "UnitVelocity_in_cm_per_s": 100000.0
+      },
+      "identical_to_bootstrap": true
+    },
+    {
+      "output": 98,
+      "chunk": 2,
+      "sha256": "6d1137dbdc7596ca56f8db96c44594f2ba0f3d80f33285a3ebe871b0acfa6b4a",
+      "units": {
+        "UnitLength_in_cm": 3.085678e+21,
+        "UnitMass_in_g": 1.989e+43,
+        "UnitVelocity_in_cm_per_s": 100000.0
+      },
+      "identical_to_bootstrap": true
+    },
+    {
+      "output": 98,
+      "chunk": 3,
+      "sha256": "cbb80407c6164031dd22be97e962eacf5b49ae08fb605645c79e4ac8e096726f",
+      "units": {
+        "UnitLength_in_cm": 3.085678e+21,
+        "UnitMass_in_g": 1.989e+43,
+        "UnitVelocity_in_cm_per_s": 100000.0
+      },
+      "identical_to_bootstrap": true
+    },
+    {
+      "output": 99,
+      "chunk": 0,
+      "sha256": "b402c802fc3a2631817c5ad843a8be0cb4d9add86d6548f71f3e16f9f882a3b4",
+      "units": {
+        "UnitLength_in_cm": 3.085678e+21,
+        "UnitMass_in_g": 1.989e+43,
+        "UnitVelocity_in_cm_per_s": 100000.0
+      },
+      "identical_to_bootstrap": true
+    },
+    {
+      "output": 99,
+      "chunk": 1,
+      "sha256": "060315428878ab1396db46f4ea3ace646f9f9a080fd86bbd542704975800a0a7",
+      "units": {
+        "UnitLength_in_cm": 3.085678e+21,
+        "UnitMass_in_g": 1.989e+43,
+        "UnitVelocity_in_cm_per_s": 100000.0
+      },
+      "identical_to_bootstrap": true
+    },
+    {
+      "output": 99,
+      "chunk": 2,
+      "sha256": "745be15585a5305947b4b6240cac06144f4e87ad7cacef4ab2d107bf8097ac5e",
+      "units": {
+        "UnitLength_in_cm": 3.085678e+21,
+        "UnitMass_in_g": 1.989e+43,
+        "UnitVelocity_in_cm_per_s": 100000.0
+      },
+      "identical_to_bootstrap": true
+    },
+    {
+      "output": 99,
+      "chunk": 3,
+      "sha256": "842e2d072698ce50000f131961765329b0003f1e1b07587dc8ee1ad57b532bfd",
+      "units": {
+        "UnitLength_in_cm": 3.085678e+21,
+        "UnitMass_in_g": 1.989e+43,
+        "UnitVelocity_in_cm_per_s": 100000.0
+      },
+      "identical_to_bootstrap": true
+    }
+  ],
+  "outcome": "passed",
+  "note": "Exact equality to already verified bootstrap cgs code-unit factors. Documented cosmological h and scale-factor conventions remain separate."
+}

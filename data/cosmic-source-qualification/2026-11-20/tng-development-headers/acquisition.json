@@ -1,0 +1,65 @@
+{
+  "kind": "TNG development HEAD metadata, no numerical file bodies",
+  "requests": [
+    {
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/snapshot-97.0.hdf5?dm=ParticleIDs",
+      "method": "HEAD",
+      "started_utc": "2026-11-20T10:23:50.343264+00:00",
+      "http_status": 302,
+      "content_length": null,
+      "content_type": "text/html; charset=utf-8",
+      "accept_ranges": null,
+      "redirect_destination": {
+        "scheme": "https",
+        "host": "data-eu.tng-project.org",
+        "path": "/file/snapshot/L35n270TNG_DM/97/0/0.2.0.0.0.0/",
+        "query_present": true
+      },
+      "finished_utc": "2026-11-20T10:23:50.692183+00:00",
+      "body_bytes_read": 0
+    },
+    {
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/groupcat-97.0.hdf5",
+      "method": "HEAD",
+      "started_utc": "2026-11-20T10:23:50.692193+00:00",
+      "http_status": 302,
+      "content_length": null,
+      "content_type": "text/html; charset=utf-8",
+      "accept_ranges": null,
+      "redirect_destination": {
+        "scheme": "https",
+        "host": "data-eu.tng-project.org",
+        "path": "/file/groupcat/L35n270TNG_DM/97/0/",
+        "query_present": true
+      },
+      "finished_utc": "2026-11-20T10:23:51.037059+00:00",
+      "body_bytes_read": 0
+    },
+    {
+      "url": "https://www.tng-project.org/api/TNG50-4-Dark/files/offsets.97.hdf5",
+      "method": "HEAD",
+      "started_utc": "2026-11-20T10:23:51.037071+00:00",
+      "http_status": 302,
+      "content_length": null,
+      "content_type": "text/html; charset=utf-8",
+      "accept_ranges": null,
+      "redirect_destination": {
+        "scheme": "https",
+        "host": "data-eu.tng-project.org",
+        "path": "/file/offsets/L35n270TNG_DM/97/",
+        "query_present": true
+      },
+      "finished_utc": "2026-11-20T10:23:51.383999+00:00",
+      "body_bytes_read": 0
+    }
+  ],
+  "credential_used": true,
+  "credential_retained": false,
+  "redirects_followed": 0,
+  "tls_certificate_verification": true,
+  "tls_hostname_verification": true,
+  "prior_receipt_sha256": "382f6c202180c81eff4793781291a86459b9005df6bdb0a851ba9fb7f14e04d3",
+  "aggregate_body_bytes": 19587,
+  "remaining_body_budget_bytes": 1028989,
+  "source_sha256": "0cd08555d8df012a49ea86cc2c681a921c7900641d5ba1551f597915ad12d240"
+}

@@ -1,0 +1,1086 @@
+{
+  "acquisition_receipt_sha256": "c4feb4fec05f39ae93f16ee470e41a61e1ee3227d87f56a7914f59a96fa1db86",
+  "acquisition_source_sha256": "ba201aa6f2ccdfe48b21ebc8de94b1c132973c9260ad5e8b35b278ee07ea25ce",
+  "bootstrap_acquisition_snapshot_sha256": "2bc3486ef74df5ae4de83ef302bd5a3159dab0eaeb6ce1ee86686a4bf4524ec1",
+  "bootstrap_helper_source_sha256": "1fcac421d168d7734d3d47db672eaad7e44f72e7470f5d444568e9b476b2e9a2",
+  "bootstrap_validation_sha256": "ac1d6e264ffaf4489866844f6d395163ab42bd6d05f378c77db4802113b934aa",
+  "cadence": {
+    "diffuse_host_diffuse_particles": 87336,
+    "host_diffuse_host_particles": 99430,
+    "mean_resolved_minus_coarsened_absolute_log_change": 0.036760210857789806,
+    "particles_hosted_at_all_three_outputs": 9569584,
+    "particles_with_host_mass_direction_reversal": 3198908,
+    "scope": "Three endpoints can reveal missed reversals or diffuse excursions, but cannot establish cadence convergence or residence times.",
+    "summed_particle_weighted_coarsened_absolute_log_change": 857001.5083508776,
+    "summed_particle_weighted_resolved_absolute_log_change": 1208781.4340122098
+  },
+  "config_sha256": "3955efd01d4d66d6a43db57c18878e424af4f65f618804f1f28d2502ae17e90d",
+  "cosmic_age_gyr": {
+    "97": 13.462643721151078,
+    "98": 13.66622999423518,
+    "99": 13.802718326812727
+  },
+  "development_only": true,
+  "epochs": [
+    {
+      "diffuse_particles": 9657272,
+      "group_headers": [
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "Ngroups_ThisFile": 9,
+          "Ngroups_Total": 18976,
+          "Nids_ThisFile": 2530229,
+          "Nids_Total": 10025728,
+          "Nsubgroups_ThisFile": 1333,
+          "Nsubgroups_Total": 23101,
+          "NumFiles": 4,
+          "Omega0": 0.3089,
+          "OmegaLambda": 0.6911,
+          "Redshift": 0.023974428382762536,
+          "Time": 0.9765868876036025
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "Ngroups_ThisFile": 3042,
+          "Ngroups_Total": 18976,
+          "Nids_ThisFile": 2498082,
+          "Nids_Total": 10025728,
+          "Nsubgroups_ThisFile": 4398,
+          "Nsubgroups_Total": 23101,
+          "NumFiles": 4,
+          "Omega0": 0.3089,
+          "OmegaLambda": 0.6911,
+          "Redshift": 0.023974428382762536,
+          "Time": 0.9765868876036025
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "Ngroups_ThisFile": 7986,
+          "Ngroups_Total": 18976,
+          "Nids_ThisFile": 2465855,
+          "Nids_Total": 10025728,
+          "Nsubgroups_ThisFile": 8888,
+          "Nsubgroups_Total": 23101,
+          "NumFiles": 4,
+          "Omega0": 0.3089,
+          "OmegaLambda": 0.6911,
+          "Redshift": 0.023974428382762536,
+          "Time": 0.9765868876036025
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "Ngroups_ThisFile": 7939,
+          "Ngroups_Total": 18976,
+          "Nids_ThisFile": 2531562,
+          "Nids_Total": 10025728,
+          "Nsubgroups_ThisFile": 8482,
+          "Nsubgroups_Total": 23101,
+          "NumFiles": 4,
+          "Omega0": 0.3089,
+          "OmegaLambda": 0.6911,
+          "Redshift": 0.023974428382762536,
+          "Time": 0.9765868876036025
+        }
+      ],
+      "group_mass_comparison": {
+        "catalogue_accumulation_algorithm_verified": false,
+        "conditional_bound": "gamma_N=N*u/(1-N*u), u=stored dtype epsilon/2, plus final-rounding allowance; assumes at most N same-precision rounded additions",
+        "final_rounding_only_relative_bound": 5.960464655174746e-08,
+        "interpretation": "Diagnostic only. Neither envelope establishes the undocumented accumulation algorithm; material mass uses exact integer counts times snapshot particle mass.",
+        "max_relative_difference": 5.273301393547615e-08,
+        "median_relative_difference": 2.0536580424562155e-08,
+        "outside_conditional_summation_bound_count": 0,
+        "outside_final_rounding_only_count": 0,
+        "stored_dtype": "float32",
+        "unbounded_conditional_summation_bound_count": 0
+      },
+      "groupcat_id_counter_comparison": {
+        "global_agreement_checked": true,
+        "interpretation": "The supplied counters agree with membership totals over the whole output. Per-file counter semantics are not established; equality to that file's group-row membership sum is not assumed.",
+        "per_file_Nids_ThisFile": [
+          2530229,
+          2498082,
+          2465855,
+          2531562
+        ],
+        "per_file_counter_minus_group_length_sum": [
+          -212459,
+          -3594007,
+          1604980,
+          2201486
+        ],
+        "per_file_group_length_sum": [
+          2742688,
+          6092089,
+          860875,
+          330076
+        ],
+        "summed_Nids_ThisFile": 10025728
+      },
+      "groupcat_total_id_headers_checked": 4,
+      "grouped_particles": 10025728,
+      "hosts": 18976,
+      "integer_closure_residual": 0,
+      "output": 97,
+      "particle_headers": [
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "MassTable": [
+            0.0,
+            0.01867548721463465,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "NumFilesPerSnapshot": 4,
+          "NumPart_ThisFile": [
+            0,
+            4921240,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total": [
+            0,
+            19683000,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total_HighWord": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Omega0": 0.3089,
+          "OmegaBaryon": 0.0486,
+          "OmegaLambda": 0.6911,
+          "Redshift": 0.023974428382762536,
+          "Time": 0.9765868876036025,
+          "UnitLength_in_cm": 3.085678e+21,
+          "UnitMass_in_g": 1.989e+43,
+          "UnitVelocity_in_cm_per_s": 100000.0
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "MassTable": [
+            0.0,
+            0.01867548721463465,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "NumFilesPerSnapshot": 4,
+          "NumPart_ThisFile": [
+            0,
+            4914552,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total": [
+            0,
+            19683000,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total_HighWord": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Omega0": 0.3089,
+          "OmegaBaryon": 0.0486,
+          "OmegaLambda": 0.6911,
+          "Redshift": 0.023974428382762536,
+          "Time": 0.9765868876036025,
+          "UnitLength_in_cm": 3.085678e+21,
+          "UnitMass_in_g": 1.989e+43,
+          "UnitVelocity_in_cm_per_s": 100000.0
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "MassTable": [
+            0.0,
+            0.01867548721463465,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "NumFilesPerSnapshot": 4,
+          "NumPart_ThisFile": [
+            0,
+            4928893,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total": [
+            0,
+            19683000,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total_HighWord": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Omega0": 0.3089,
+          "OmegaBaryon": 0.0486,
+          "OmegaLambda": 0.6911,
+          "Redshift": 0.023974428382762536,
+          "Time": 0.9765868876036025,
+          "UnitLength_in_cm": 3.085678e+21,
+          "UnitMass_in_g": 1.989e+43,
+          "UnitVelocity_in_cm_per_s": 100000.0
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "MassTable": [
+            0.0,
+            0.01867548721463465,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "NumFilesPerSnapshot": 4,
+          "NumPart_ThisFile": [
+            0,
+            4918315,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total": [
+            0,
+            19683000,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total_HighWord": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Omega0": 0.3089,
+          "OmegaBaryon": 0.0486,
+          "OmegaLambda": 0.6911,
+          "Redshift": 0.023974428382762536,
+          "Time": 0.9765868876036025,
+          "UnitLength_in_cm": 3.085678e+21,
+          "UnitMass_in_g": 1.989e+43,
+          "UnitVelocity_in_cm_per_s": 100000.0
+        }
+      ],
+      "particle_ids_unique": true,
+      "particles": 19683000,
+      "stored_snapshot_offset_layout": "chunk_by_type"
+    },
+    {
+      "diffuse_particles": 9614954,
+      "group_headers": [
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "Ngroups_ThisFile": 9,
+          "Ngroups_Total": 18888,
+          "Nids_ThisFile": 2528649,
+          "Nids_Total": 10068046,
+          "Nsubgroups_ThisFile": 1370,
+          "Nsubgroups_Total": 23055,
+          "NumFiles": 4,
+          "Omega0": 0.3089,
+          "OmegaLambda": 0.6911,
+          "Redshift": 0.009521666967944764,
+          "Time": 0.99056814006128
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "Ngroups_ThisFile": 2823,
+          "Ngroups_Total": 18888,
+          "Nids_ThisFile": 2510722,
+          "Nids_Total": 10068046,
+          "Nsubgroups_ThisFile": 4148,
+          "Nsubgroups_Total": 23055,
+          "NumFiles": 4,
+          "Omega0": 0.3089,
+          "OmegaLambda": 0.6911,
+          "Redshift": 0.009521666967944764,
+          "Time": 0.99056814006128
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "Ngroups_ThisFile": 8052,
+          "Ngroups_Total": 18888,
+          "Nids_ThisFile": 2504956,
+          "Nids_Total": 10068046,
+          "Nsubgroups_ThisFile": 9018,
+          "Nsubgroups_Total": 23055,
+          "NumFiles": 4,
+          "Omega0": 0.3089,
+          "OmegaLambda": 0.6911,
+          "Redshift": 0.009521666967944764,
+          "Time": 0.99056814006128
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "Ngroups_ThisFile": 8004,
+          "Ngroups_Total": 18888,
+          "Nids_ThisFile": 2523719,
+          "Nids_Total": 10068046,
+          "Nsubgroups_ThisFile": 8519,
+          "Nsubgroups_Total": 23055,
+          "NumFiles": 4,
+          "Omega0": 0.3089,
+          "OmegaLambda": 0.6911,
+          "Redshift": 0.009521666967944764,
+          "Time": 0.99056814006128
+        }
+      ],
+      "group_mass_comparison": {
+        "catalogue_accumulation_algorithm_verified": false,
+        "conditional_bound": "gamma_N=N*u/(1-N*u), u=stored dtype epsilon/2, plus final-rounding allowance; assumes at most N same-precision rounded additions",
+        "final_rounding_only_relative_bound": 5.960464655174746e-08,
+        "interpretation": "Diagnostic only. Neither envelope establishes the undocumented accumulation algorithm; material mass uses exact integer counts times snapshot particle mass.",
+        "max_relative_difference": 5.670163336380185e-08,
+        "median_relative_difference": 2.0536580424562155e-08,
+        "outside_conditional_summation_bound_count": 0,
+        "outside_final_rounding_only_count": 0,
+        "stored_dtype": "float32",
+        "unbounded_conditional_summation_bound_count": 0
+      },
+      "groupcat_id_counter_comparison": {
+        "global_agreement_checked": true,
+        "interpretation": "The supplied counters agree with membership totals over the whole output. Per-file counter semantics are not established; equality to that file's group-row membership sum is not assumed.",
+        "per_file_Nids_ThisFile": [
+          2528649,
+          2510722,
+          2504956,
+          2523719
+        ],
+        "per_file_counter_minus_group_length_sum": [
+          -228297,
+          -3562339,
+          1600385,
+          2190251
+        ],
+        "per_file_group_length_sum": [
+          2756946,
+          6073061,
+          904571,
+          333468
+        ],
+        "summed_Nids_ThisFile": 10068046
+      },
+      "groupcat_total_id_headers_checked": 4,
+      "grouped_particles": 10068046,
+      "hosts": 18888,
+      "integer_closure_residual": 0,
+      "output": 98,
+      "particle_headers": [
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "MassTable": [
+            0.0,
+            0.01867548721463465,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "NumFilesPerSnapshot": 4,
+          "NumPart_ThisFile": [
+            0,
+            4936357,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total": [
+            0,
+            19683000,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total_HighWord": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Omega0": 0.3089,
+          "OmegaBaryon": 0.0486,
+          "OmegaLambda": 0.6911,
+          "Redshift": 0.009521666967944764,
+          "Time": 0.99056814006128,
+          "UnitLength_in_cm": 3.085678e+21,
+          "UnitMass_in_g": 1.989e+43,
+          "UnitVelocity_in_cm_per_s": 100000.0
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "MassTable": [
+            0.0,
+            0.01867548721463465,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "NumFilesPerSnapshot": 4,
+          "NumPart_ThisFile": [
+            0,
+            4923862,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total": [
+            0,
+            19683000,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total_HighWord": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Omega0": 0.3089,
+          "OmegaBaryon": 0.0486,
+          "OmegaLambda": 0.6911,
+          "Redshift": 0.009521666967944764,
+          "Time": 0.99056814006128,
+          "UnitLength_in_cm": 3.085678e+21,
+          "UnitMass_in_g": 1.989e+43,
+          "UnitVelocity_in_cm_per_s": 100000.0
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "MassTable": [
+            0.0,
+            0.01867548721463465,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "NumFilesPerSnapshot": 4,
+          "NumPart_ThisFile": [
+            0,
+            4911054,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total": [
+            0,
+            19683000,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total_HighWord": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Omega0": 0.3089,
+          "OmegaBaryon": 0.0486,
+          "OmegaLambda": 0.6911,
+          "Redshift": 0.009521666967944764,
+          "Time": 0.99056814006128,
+          "UnitLength_in_cm": 3.085678e+21,
+          "UnitMass_in_g": 1.989e+43,
+          "UnitVelocity_in_cm_per_s": 100000.0
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "MassTable": [
+            0.0,
+            0.01867548721463465,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "NumFilesPerSnapshot": 4,
+          "NumPart_ThisFile": [
+            0,
+            4911727,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total": [
+            0,
+            19683000,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total_HighWord": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Omega0": 0.3089,
+          "OmegaBaryon": 0.0486,
+          "OmegaLambda": 0.6911,
+          "Redshift": 0.009521666967944764,
+          "Time": 0.99056814006128,
+          "UnitLength_in_cm": 3.085678e+21,
+          "UnitMass_in_g": 1.989e+43,
+          "UnitVelocity_in_cm_per_s": 100000.0
+        }
+      ],
+      "particle_ids_unique": true,
+      "particles": 19683000,
+      "stored_snapshot_offset_layout": "chunk_by_type"
+    },
+    {
+      "diffuse_particles": 9587888,
+      "group_headers": [
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "Ngroups_ThisFile": 9,
+          "Ngroups_Total": 18824,
+          "Nids_ThisFile": 2521353,
+          "Nids_Total": 10095112,
+          "Nsubgroups_ThisFile": 1355,
+          "Nsubgroups_Total": 22963,
+          "NumFiles": 4,
+          "Omega0": 0.3089,
+          "OmegaLambda": 0.6911,
+          "Redshift": 2.220446049250313e-16,
+          "Time": 0.9999999999999998
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "Ngroups_ThisFile": 2711,
+          "Ngroups_Total": 18824,
+          "Nids_ThisFile": 2510231,
+          "Nids_Total": 10095112,
+          "Nsubgroups_ThisFile": 4044,
+          "Nsubgroups_Total": 22963,
+          "NumFiles": 4,
+          "Omega0": 0.3089,
+          "OmegaLambda": 0.6911,
+          "Redshift": 2.220446049250313e-16,
+          "Time": 0.9999999999999998
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "Ngroups_ThisFile": 8052,
+          "Ngroups_Total": 18824,
+          "Nids_ThisFile": 2546383,
+          "Nids_Total": 10095112,
+          "Nsubgroups_ThisFile": 8917,
+          "Nsubgroups_Total": 22963,
+          "NumFiles": 4,
+          "Omega0": 0.3089,
+          "OmegaLambda": 0.6911,
+          "Redshift": 2.220446049250313e-16,
+          "Time": 0.9999999999999998
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "Ngroups_ThisFile": 8052,
+          "Ngroups_Total": 18824,
+          "Nids_ThisFile": 2517145,
+          "Nids_Total": 10095112,
+          "Nsubgroups_ThisFile": 8647,
+          "Nsubgroups_Total": 22963,
+          "NumFiles": 4,
+          "Omega0": 0.3089,
+          "OmegaLambda": 0.6911,
+          "Redshift": 2.220446049250313e-16,
+          "Time": 0.9999999999999998
+        }
+      ],
+      "group_mass_comparison": {
+        "catalogue_accumulation_algorithm_verified": false,
+        "conditional_bound": "gamma_N=N*u/(1-N*u), u=stored dtype epsilon/2, plus final-rounding allowance; assumes at most N same-precision rounded additions",
+        "final_rounding_only_relative_bound": 5.960464655174746e-08,
+        "interpretation": "Diagnostic only. Neither envelope establishes the undocumented accumulation algorithm; material mass uses exact integer counts times snapshot particle mass.",
+        "max_relative_difference": 5.663552876886954e-08,
+        "median_relative_difference": 2.0536580424562155e-08,
+        "outside_conditional_summation_bound_count": 0,
+        "outside_final_rounding_only_count": 0,
+        "stored_dtype": "float32",
+        "unbounded_conditional_summation_bound_count": 0
+      },
+      "groupcat_id_counter_comparison": {
+        "global_agreement_checked": true,
+        "interpretation": "The supplied counters agree with membership totals over the whole output. Per-file counter semantics are not established; equality to that file's group-row membership sum is not assumed.",
+        "per_file_Nids_ThisFile": [
+          2521353,
+          2510231,
+          2546383,
+          2517145
+        ],
+        "per_file_counter_minus_group_length_sum": [
+          -245599,
+          -3555133,
+          1620979,
+          2179753
+        ],
+        "per_file_group_length_sum": [
+          2766952,
+          6065364,
+          925404,
+          337392
+        ],
+        "summed_Nids_ThisFile": 10095112
+      },
+      "groupcat_total_id_headers_checked": 4,
+      "grouped_particles": 10095112,
+      "hosts": 18824,
+      "integer_closure_residual": 0,
+      "output": 99,
+      "particle_headers": [
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "MassTable": [
+            0.0,
+            0.01867548721463465,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "NumFilesPerSnapshot": 4,
+          "NumPart_ThisFile": [
+            0,
+            4918001,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total": [
+            0,
+            19683000,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total_HighWord": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Omega0": 0.3089,
+          "OmegaBaryon": 0.0486,
+          "OmegaLambda": 0.6911,
+          "Redshift": 2.220446049250313e-16,
+          "Time": 0.9999999999999998,
+          "UnitLength_in_cm": 3.085678e+21,
+          "UnitMass_in_g": 1.989e+43,
+          "UnitVelocity_in_cm_per_s": 100000.0
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "MassTable": [
+            0.0,
+            0.01867548721463465,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "NumFilesPerSnapshot": 4,
+          "NumPart_ThisFile": [
+            0,
+            4926117,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total": [
+            0,
+            19683000,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total_HighWord": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Omega0": 0.3089,
+          "OmegaBaryon": 0.0486,
+          "OmegaLambda": 0.6911,
+          "Redshift": 2.220446049250313e-16,
+          "Time": 0.9999999999999998,
+          "UnitLength_in_cm": 3.085678e+21,
+          "UnitMass_in_g": 1.989e+43,
+          "UnitVelocity_in_cm_per_s": 100000.0
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "MassTable": [
+            0.0,
+            0.01867548721463465,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "NumFilesPerSnapshot": 4,
+          "NumPart_ThisFile": [
+            0,
+            4915788,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total": [
+            0,
+            19683000,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total_HighWord": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Omega0": 0.3089,
+          "OmegaBaryon": 0.0486,
+          "OmegaLambda": 0.6911,
+          "Redshift": 2.220446049250313e-16,
+          "Time": 0.9999999999999998,
+          "UnitLength_in_cm": 3.085678e+21,
+          "UnitMass_in_g": 1.989e+43,
+          "UnitVelocity_in_cm_per_s": 100000.0
+        },
+        {
+          "BoxSize": 35000.0,
+          "HubbleParam": 0.6774,
+          "MassTable": [
+            0.0,
+            0.01867548721463465,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "NumFilesPerSnapshot": 4,
+          "NumPart_ThisFile": [
+            0,
+            4923094,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total": [
+            0,
+            19683000,
+            0,
+            0,
+            0,
+            0
+          ],
+          "NumPart_Total_HighWord": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "Omega0": 0.3089,
+          "OmegaBaryon": 0.0486,
+          "OmegaLambda": 0.6911,
+          "Redshift": 2.220446049250313e-16,
+          "Time": 0.9999999999999998,
+          "UnitLength_in_cm": 3.085678e+21,
+          "UnitMass_in_g": 1.989e+43,
+          "UnitVelocity_in_cm_per_s": 100000.0
+        }
+      ],
+      "particle_ids_unique": true,
+      "particles": 19683000,
+      "stored_snapshot_offset_layout": "chunk_by_type"
+    }
+  ],
+  "files": {
+    "groupcat-97-0": "fde70750f0182551f98ededfe5a58e6b3ae0da849af7fc1313c331aafb350033",
+    "groupcat-97-1": "bfdc91a4a2520b5ccffe8e52cc392a342370b2fefa9aa9273170e9c5d40e7d4b",
+    "groupcat-97-2": "e54f22050b753922bf6ad547b845cc10a13007ac86c3bd7becbf8e3a5b8fe6a4",
+    "groupcat-97-3": "136a72ee47bf368ef2bcdfaa6451f880f2fbb0c71ba07d9071d8a9ac5664cc85",
+    "groupcat-98-0": "ab246798588afa01f391cdca7abb3a46c22442514b66c465fec52f4c999ab8f5",
+    "groupcat-98-1": "2b8715e57ec000e517078ad72d806b9ef745d3f758c984868253382ac76fb857",
+    "groupcat-98-2": "a11214ac1e8b783b1f34b60e3ad9190a0e855b1d043ccd2e5306e2e980fea9df",
+    "groupcat-98-3": "05eb17a52adaac9b7b95cf2ef702fdf3c6a57b8bb553bb4c7221fc9a97e08475",
+    "groupcat-99-0": "63f1b16b37af9f2e0d29c116407947df4bdedd4ffdea2c02d1bce1eb99664ce8",
+    "groupcat-99-1": "7f1f539958628fa7e50dc1a957de85414384b1c9de6579d0df744a3c2551a10d",
+    "groupcat-99-2": "ee28e3678fc7683fb468c94522c9922e92983acdf8efe8dc8358051189b6f518",
+    "groupcat-99-3": "4716455236014580dee58ce5b81d71ba0420869c689154c56300a26a181dc2b9",
+    "offsets-97": "108822f7127992b8dcba6985f4ac243b303425a65bcecbe116bd8018ace21fb5",
+    "offsets-98": "12c852f0b5addfc05430281c3548ea909c04c1013c4f91d5a9e397a4184cb618",
+    "offsets-99": "8dc50bb75509cd03b374412982386f18fb8cf599f3840c3814461b9aacceeacf",
+    "particle_ids-97-0": "6cdd8082d4f7432ff892d582f95c97f5f48204035c9ba76bc9c6c55e9a1b4af9",
+    "particle_ids-97-1": "83732935b37171b1a621ca2403cd83b1923d1b1b8a4a0cae25c289da8dc39216",
+    "particle_ids-97-2": "994d1c7961253e8b89578b3521199ac9be416d4130f4dc4a022d79529d1d3fdc",
+    "particle_ids-97-3": "4a304f695e1497e8d8aa9793d5d9b5a0c4c5adacb133b65853c55dd71e9a9cf4",
+    "particle_ids-98-0": "e4d1634f58cec05bc30ee1b9db112c5b921345549c5b6f579fbc847f95985d58",
+    "particle_ids-98-1": "6ebfcf7d5ba6bc5114745b56aa874b233e54abeada04b6fb3f795cc61bb34abe",
+    "particle_ids-98-2": "6d1137dbdc7596ca56f8db96c44594f2ba0f3d80f33285a3ebe871b0acfa6b4a",
+    "particle_ids-98-3": "cbb80407c6164031dd22be97e962eacf5b49ae08fb605645c79e4ac8e096726f",
+    "particle_ids-99-0": "b402c802fc3a2631817c5ad843a8be0cb4d9add86d6548f71f3e16f9f882a3b4",
+    "particle_ids-99-1": "060315428878ab1396db46f4ea3ace646f9f9a080fd86bbd542704975800a0a7",
+    "particle_ids-99-2": "745be15585a5305947b4b6240cac06144f4e87ad7cacef4ab2d107bf8097ac5e",
+    "particle_ids-99-3": "842e2d072698ce50000f131961765329b0003f1e1b07587dc8ee1ad57b532bfd"
+  },
+  "finished_utc": "2026-11-21T15:30:24.413044+00:00",
+  "identical_particle_id_sets": true,
+  "interpretation": "Exact inventory and endpoint accounting only. Catalogue mass construction, local current closure, stationarity, cadence convergence and an independent prediction remain unqualified.",
+  "log_orthopolic_transport_validated": false,
+  "memory": {
+    "limit_bytes": 3221225472,
+    "planned_upper_estimate_bytes": 2158003456,
+    "scratch_bytes_written": 0
+  },
+  "outcome": "inventory_checks_passed",
+  "pairs": {
+    "97->98": {
+      "absolute_jump_histogram": {
+        "absolute_host_mass_ratio_edges": [
+          1.0,
+          1.25,
+          2.0,
+          4.0,
+          10.0,
+          "infinity"
+        ],
+        "measure": "particle-count weighted; equal particle masses",
+        "particle_counts": [
+          9516621,
+          90768,
+          19817,
+          22353,
+          83303
+        ]
+      },
+      "interval_gyr": 0.2035862730841025,
+      "mass_solar": {
+        "diffuse_to_diffuse": 2570040378767339.0,
+        "diffuse_to_host": 92408097232803.61,
+        "host_mass_decreased": 875774484008374.8,
+        "host_mass_equal": 80050405486290.69,
+        "host_mass_increased": 1727463268798867.2,
+        "host_to_diffuse": 80741293749648.73,
+        "host_to_host": 2683288158293532.5
+      },
+      "maximum_absolute_log_mass_jump_given_both_hosted": 10.210570057443999,
+      "mean_absolute_log_mass_jump_given_both_hosted": 0.07533085787391475,
+      "mean_signed_log_mass_jump_given_both_hosted": 0.014434509582819185,
+      "particle_counts": {
+        "diffuse_to_diffuse": 9322088,
+        "diffuse_to_host": 335184,
+        "host_mass_decreased": 3176622,
+        "host_mass_equal": 290360,
+        "host_mass_increased": 6265880,
+        "host_to_diffuse": 292866,
+        "host_to_host": 9732862
+      },
+      "scope": "Endpoint size changes, not tracked host identity or an instantaneous physical current. Diffuse material has no logarithmic host mass."
+    },
+    "97->99": {
+      "absolute_jump_histogram": {
+        "absolute_host_mass_ratio_edges": [
+          1.0,
+          1.25,
+          2.0,
+          4.0,
+          10.0,
+          "infinity"
+        ],
+        "measure": "particle-count weighted; equal particle masses",
+        "particle_counts": [
+          9339794,
+          159296,
+          31629,
+          33746,
+          104549
+        ]
+      },
+      "interval_gyr": 0.3400746056616484,
+      "mass_solar": {
+        "diffuse_to_diffuse": 2544975967125306.0,
+        "diffuse_to_host": 117472508874836.36,
+        "host_mass_decreased": 732383188899268.4,
+        "host_mass_equal": 54456662054294.85,
+        "host_mass_increased": 1878845819774572.2,
+        "host_to_diffuse": 98343781315045.78,
+        "host_to_host": 2665685670728135.5
+      },
+      "maximum_absolute_log_mass_jump_given_both_hosted": 10.210570057443999,
+      "mean_absolute_log_mass_jump_given_both_hosted": 0.09814731082271606,
+      "mean_signed_log_mass_jump_given_both_hosted": 0.026104273323576625,
+      "particle_counts": {
+        "diffuse_to_diffuse": 9231174,
+        "diffuse_to_host": 426098,
+        "host_mass_decreased": 2656511,
+        "host_mass_equal": 197526,
+        "host_mass_increased": 6814977,
+        "host_to_diffuse": 356714,
+        "host_to_host": 9669014
+      },
+      "scope": "Endpoint size changes, not tracked host identity or an instantaneous physical current. Diffuse material has no logarithmic host mass."
+    },
+    "98->99": {
+      "absolute_jump_histogram": {
+        "absolute_host_mass_ratio_edges": [
+          1.0,
+          1.25,
+          2.0,
+          4.0,
+          10.0,
+          "infinity"
+        ],
+        "measure": "particle-count weighted; equal particle masses",
+        "particle_counts": [
+          9587494,
+          106422,
+          20304,
+          24990,
+          78222
+        ]
+      },
+      "interval_gyr": 0.1364883325775459,
+      "mass_solar": {
+        "diffuse_to_diffuse": 2574227062393578.0,
+        "diffuse_to_host": 76554610123409.55,
+        "host_mass_decreased": 934281085643168.2,
+        "host_mass_equal": 103974272537137.38,
+        "host_mass_increased": 1668348211299256.8,
+        "host_to_diffuse": 69092686046773.84,
+        "host_to_host": 2706603569479562.5
+      },
+      "maximum_absolute_log_mass_jump_given_both_hosted": 10.2042817219884,
+      "mean_absolute_log_mass_jump_given_both_hosted": 0.06950952602672059,
+      "mean_signed_log_mass_jump_given_both_hosted": 0.01114585577727449,
+      "particle_counts": {
+        "diffuse_to_diffuse": 9337274,
+        "diffuse_to_host": 277680,
+        "host_mass_decreased": 3388838,
+        "host_mass_equal": 377137,
+        "host_mass_increased": 6051457,
+        "host_to_diffuse": 250614,
+        "host_to_host": 9817432
+      },
+      "scope": "Endpoint size changes, not tracked host identity or an instantaneous physical current. Diffuse material has no logarithmic host mass."
+    }
+  },
+  "peak_resident_bytes": 1035517952,
+  "prior_body_bytes": 57,
+  "reader_source_sha256": "d70f4fe24bc1a5319f83f0b2f54d2489ed5115203b374e445bdd0832153c39b8",
+  "reference_measure": "logarithmic host mass; log-orthopolic collisionless total-matter candidate",
+  "schema_version": 1,
+  "started_utc": "2026-11-21T15:30:18.388461+00:00",
+  "units": {
+    "box_side_comoving_mpc": 51.668142899320934,
+    "box_volume_comoving_mpc3": 137933.11879725818,
+    "particle_mass_solar": 275693640.6057676,
+    "time_convention": "Flat matter+Lambda cosmic age; radiation omitted at z<0.024; Julian year=365.25 days",
+    "total_inventory_mass_solar": 5426477928043324.0
+  },
+  "validation_target_assigned": false,
+  "versions": {
+    "h5py": "3.12.1",
+    "hdf5": "1.12.2",
+    "numpy": "2.3.5",
+    "python": "3.11.6"
+  }
+}

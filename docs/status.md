@@ -1,8 +1,52 @@
 # Project status and handoff
 
-Last updated 12 November 2026. **Read this first in a new session.** It records what the authors
+Last updated 21 November 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**21 November — TNG acquisition and inventory checks pass; cadence losses
+measured:** the [development report](cosmic-development-results-2026-11-21.md)
+retains the first material diagnostics for outputs **97/98/99**. All three
+contain the same **19,683,000 unique particle IDs**, with exact host/diffuse
+inventory closure and consistent global catalogue counters. The hosted fraction
+rises from **50.9360% to 51.2885%**. All catalogue mass differences fit the stated
+float32 final-rounding allowance. A separate audit verifies unit consistency
+across all twelve snapshot chunks.
+
+Among particles hosted at all three outputs, **33.43%** reverse their host-mass
+change direction. Omitting the middle output loses **29.10%** of resolved
+absolute log-mass variation and **32.30%** of resolved gross host/diffuse exchange.
+These are measured coarsening losses; the finer cadence is not established as
+converged. Being hosted at both endpoints does not imply a change of host
+identity. The reading remains **log-orthopolic collisionless total-matter mass**;
+the entire **TNG50-4-Dark run is development-only**, with no validation target.
+
+The [fixed D2 plan](cosmic-development-acquisition-2026-11-20.md) acquired all
+**27 files** within its unchanged 768 MiB cap: **505,904,305 cumulative response
+bytes**, leaving **299,402,063**. The 57-byte initial API format error and the
+first reader's incorrect per-file-counter assumption remain retained with their
+sources and explicit corrections. No physical tolerance was loosened. Binary
+schema, hashes, units and inventory pass. Raw files remain outside Git; keys
+and signed download queries are absent from retained records. The
+[authenticated metadata record](cosmic-metadata-qualification-2026-11-20.md)
+keeps the separate D1 total at **19,587 / 1,048,576 bytes**.
+
+**D2 is complete; D3 is partial.** Next fix development mass bins and measure
+class stocks, transfer matrices, boundary currents and diffuse source terms;
+compare direct endpoint current with the drift approximation and quantify
+stationarity/nonlocal/cadence residuals. D4 remains conditional and D5 is not
+ready. No abundance forecast, natural-law confirmation or empirical registry
+entry is produced. All **819 Python tests**, **27 JavaScript tests** and the
+**46-run / 1,168-reference registry** pass. Independent review checked the
+material accounting and interpretation. Manuscripts, PDFs and prior frozen
+studies/results remain unchanged; the historical `make all` baseline is retained.
+
+The [alternative-source handoff](cosmic-source-pivot-2026-11-19.md) preserves
+the 16 November pivot requested while TNG registration was pending. CAMELS
+listing/snapshot access worked anonymously, but selected group files returned
+403; it was not a fully qualified replacement. Abacus requires its own sampled
+material observation model. Both remain fallbacks; unrelated closed searches
+stay closed.
 
 **12 November — readiness pushed; TNG access gate executed:** readiness commit
 **ad9bd13** is on `origin/main`. The subsequent

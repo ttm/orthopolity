@@ -1,10 +1,11 @@
 # Cosmic-test readiness decision
 
-12 November 2026; work began 11 November. The
+Decision dated 12 November 2026; execution updated 21 November. The
 [author-requested task ledger](cosmic-test-roadmap-2026-11-11.md) is complete
 through the readiness decision. **Proceed with bounded material-transport
-development; do not yet run a confirmatory cosmic abundance test.** The exact
-next operation is a metadata manifest for a small TNG development run.
+development; do not yet run a confirmatory cosmic abundance test.** Metadata,
+bounded acquisition and the first inventory/endpoint diagnostics now pass.
+The next operation is D3's mass-bin/current qualification below.
 
 The positive result is a usable test design: measure material flow independently,
 then predict the absolute host counts and mass per logarithmic interval in a
@@ -35,31 +36,36 @@ mass, stars per galaxy and observed galaxy counts require separate mappings.
 - **There are two promising, complementary archives.** TNG's documented output
   sequence makes it the first technical transport candidate. Quijote's member-ID
   catalogues and many standard realizations make it a possible independent-seed
-  prediction candidate. Actual cadence adequacy, file access and material closure
-  remain unverified for both. Their calibrations are not interchangeable.
+  prediction candidate. TNG access and selected-output inventory closure now pass;
+  its cadence and local-transport adequacy remain unqualified. Quijote's own
+  access and material checks remain pending. Their calibrations are not
+  interchangeable.
 - **The inspected CosmoSim route fails this input requirement.** MDR1 FoF trees
   supply selected genealogy without complete particle-transfer weights. Close
   that route unless a specific public membership-history product is identified;
   do not broaden the archive search merely to find a convenient slope.
 
-## Gate matrix
+## Gate matrix: TNG development update 21 November
 
 “Documented” below means the official schema supports a candidate, not that
 downloaded files passed a measurement or scientific check. Detailed evidence is
-in the [TNG audit](cosmic-source-tng-2026-11-11.md) and
-[Quijote/CosmoSim audit](cosmic-source-alternatives-2026-11-11.md).
+in the [TNG audit](cosmic-source-tng-2026-11-11.md),
+[Quijote/CosmoSim audit](cosmic-source-alternatives-2026-11-11.md) and
+[executed TNG development report](cosmic-development-results-2026-11-21.md).
 
 | Gate | IllustrisTNG DMO | Quijote standard fiducial | CosmoSim MDR1 FoF trees |
 |---|---|---|---|
-| G1. Defined material | Particle inventory and disjoint FoF fields documented; actual closure untested | Member-ID schema documented; header mass budget and closure untested | Host mass present; selected descendant population is not a complete earlier inventory |
-| G2. Observable transport | IDs, memberships and 100 outputs documented; locality/residence resolution untested | IDs and memberships documented; five late epochs leave cadence unqualified | No complete transferred-mass weights or member-ID history in inspected product |
-| G3. Model eligibility | Sources, stationarity, jumps and drift unmeasured | Same; sparse cadence is an additional concern | Not assessable through genealogy alone |
-| G4. Separate target | Temporal split can be designed; no actual target sealed, independence limited by common box | Independent standard-seed split can be designed; no actual seeds assigned | No qualified material-input/target pairing |
+| G1. Defined material | Exact ID/membership closure passes for TNG50-4-Dark outputs 97/98/99; catalogue masses compatible with final rounding | Member-ID schema documented; header mass budget and closure untested | Host mass present; selected descendant population is not a complete earlier inventory |
+| G2. Observable transport | Endpoint material joins work; measured coarsening losses leave locality/residence resolution unqualified | IDs and memberships documented; five late epochs leave cadence unqualified | No complete transferred-mass weights or member-ID history in inspected product |
+| G3. Model eligibility | Global jumps and diffuse transfers measured; mass-bin sources, stationarity and local drift residuals remain unmeasured | Sources, stationarity, jumps and drift unmeasured; sparse cadence is an additional concern | Not assessable through genealogy alone |
+| G4. Separate target | Whole TNG50-4-Dark run development-only; no validation target assigned or sealed | Independent standard-seed split can be designed; no actual seeds assigned | No qualified material-input/target pairing |
 | G5. Complete prediction | Absolute count/resource formulas specified; inputs and compatible rival map unfrozen | Same, with within-suite calibration required | Not executable through this product |
-| G6. Reproducibility | Public docs; authorized API/file access and exact field/epoch/byte manifest pending | Public docs; authorized listing/access, exact seed/epoch inventory and sizes pending | Public metadata; bulk access unresolved, but resolving it would not supply absent fields |
-| Decision | Develop measurement first | Retain as candidate after its own measurement gates | Stop genealogy-only route |
+| G6. Reproducibility | Authorized acquisition completed; exact manifest, raw hashes, source snapshots, failure/amendment records and diagnostics retained | Public docs; authorized listing/access, exact seed/epoch inventory and sizes pending | Public metadata; bulk access unresolved, but resolving it would not supply absent fields |
+| Decision | D2 complete; continue D3 mass-bin/current qualification | Retain as candidate after its own measurement gates | Stop genealogy-only route |
 
-The source search is bounded to these three archive families. Earlier closed
+The original source search was bounded to these three archive families. The
+author's later [CAMELS/Abacus extension](cosmic-source-pivot-2026-11-19.md) is
+retained separately; no additional family is opened. Earlier closed
 repository searches stay closed. A simulation success would first establish a
 result within that simulated universe and its host definition; observational
 confirmation remains a separate task.
@@ -90,9 +96,9 @@ after seeing target abundance. The design explicitly remains unfrozen.
 
 | ID | Action | Stop/completion condition | Status |
 |---|---|---|---|
-| D1 | Obtain `TNG50-4-Dark` run/snapshot metadata through existing authorized access; cap total response content at 1 MiB | Exact headers/times/fields/chunks/sizes retained with URLs and hashes; no particle or host-mass arrays | Attempted 12 November: HTTP 403; awaits TNG access, manifest incomplete |
-| D2 | Freeze a development-only acquisition manifest for three adjacent epochs and ID/membership/header fields | Exact paths, field selection, bytes, memory/disk bounds and exposure roles known | Depends on D1 |
-| D3 | Implement the reader and measure material closure, jumps, sources and cadence sensitivity | Integrity checks pass and local-closure uncertainty can be bounded, or a specific failure is retained | Depends on D2 |
+| D1 | Obtain `TNG50-4-Dark` run/snapshot metadata through existing authorized access; cap total response content at 1 MiB | Exact headers/times/fields/chunks/sizes retained with URLs and hashes; no particle or host-mass arrays | Authenticated JSON phase completed 19 November; binary bootstrap verified 20 November |
+| D2 | Freeze a development-only acquisition manifest for three adjacent epochs and ID/membership/header fields | Exact paths, field selection, bytes, memory/disk bounds and exposure roles known | Complete: 27 files acquired within fixed budget; bootstrap passed |
+| D3 | Implement the reader and measure material closure, jumps, sources and cadence sensitivity | Integrity checks pass and local-closure uncertainty can be bounded, or a specific failure is retained | Partial: whole-inventory checks and endpoint/cadence diagnostics pass; mass-bin currents, sources and local-closure residuals still needed |
 | D4 | Qualify Quijote standard fiducial membership inventory and independent seeds if D3 supports further development | Its own cadence/closure gates pass; no unvalidated TNG-to-Quijote transfer | Conditional follow-up |
 | D5 | Freeze and execute a separate absolute-abundance prediction against declared rivals | All G1–G6 pass before target exposure; retain every outcome | Not ready; scientific gates pending |
 
@@ -105,6 +111,21 @@ access. The operation consumed **55 bytes** of the shared 1 MiB response budget.
 No account was created, credential solicited in chat, provider contacted or large
 dataset acquired. Access would enable D1; it would not by itself satisfy the
 scientific gates.
+
+**19–20 November update:** the supplied credential successfully retrieved all
+eleven planned JSON metadata responses. The [new record](cosmic-metadata-qualification-2026-11-20.md)
+and [D2 plan](cosmic-development-acquisition-2026-11-20.md) supersede the access
+wait. Cumulative metadata content is 19,587 bytes. The bounded binary bootstrap
+passed, including the explicitly recorded offset-array transpose relative to
+the online specification. No transport gate is inferred from authentication
+or schema success. The entire selected run is development-only.
+
+**21 November update:** the [development findings](cosmic-development-results-2026-11-21.md)
+establish exact inventory closure and identical particle populations across the
+three acquired outputs. Coarsening loses 29.10% of resolved absolute log-mass
+variation among particles hosted throughout, and 32.30% of gross reservoir
+exchange. D3's next step is fixed development mass-bin accounting and a direct
+current-versus-drift comparison, not D4 or a confirmatory abundance forecast.
 
 ## Verification and repository scope
 
