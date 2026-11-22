@@ -218,6 +218,20 @@ Tinker, J. L., et al. (2008). Toward a halo mass function for precision
 cosmology: the limits of universality. *Astrophysical Journal*, 688, 709--728.
 <https://doi.org/10.1086/591439>.
 
+### Simulation data for the halo transport diagnostic (22 November 2026)
+
+Nelson, D., et al. (2019a). The IllustrisTNG simulations: public data release.
+*Computational Astrophysics and Cosmology*, 6, 2.
+<https://doi.org/10.1186/s40668-019-0028-x>.
+
+Nelson, D., et al. (2019b). First results from the TNG50 simulation: galactic outflows
+driven by supernovae and black hole feedback. *Monthly Notices of the Royal Astronomical
+Society*, 490, 3234--3261. <https://doi.org/10.1093/mnras/stz2306>.
+
+Pillepich, A., et al. (2019). First results from the TNG50 simulation: the evolution
+of stellar and gaseous discs across cosmic time. *Monthly Notices of the Royal
+Astronomical Society*, 490, 3196--3233. <https://doi.org/10.1093/mnras/stz2338>.
+
 ## Other domains and deprioritised directions
 
 - **Gabaix, X. (1999).** Zipf's law for cities: an explanation. *Quarterly Journal of Economics*

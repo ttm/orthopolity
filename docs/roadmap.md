@@ -33,8 +33,10 @@ The author's agreed [manuscript revision roadmap](manuscript-roadmap-2026-11-10.
 is complete: the proposed natural law now begins with a concrete allocation
 figure, its orthopolic interpretations are organized, and supporting S6 develops
 a bounded cosmological conjecture. Existing empirical results are preserved.
-The next cosmic step is qualification of independent public assembly inputs and
-a separate abundance target; the new literature exploration is not confirmation.
+Section 6 reports the TNG finding, and Supporting S6 shows the measured currents in Figure S21. The
+local-drift branch is closed for these outputs. Reopening would require a model
+for large mass jumps and diffuse exchange, a bound on cadence error and an
+abundance prediction in a separately reserved population.
 The [current status](status.md) records execution and verification. Earlier
 scientific routes below retain their findings and source-qualification requirements.
 

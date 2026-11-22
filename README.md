@@ -50,12 +50,12 @@ maps the new claims. `make explanation-figure` reproduces the illustration;
 `make paper` builds both PDFs. The [revision map](docs/manuscript-revision-2026-10-11.md)
 tracks older section references.
 
-The [cosmic-test readiness report](docs/cosmic-test-readiness-2026-11-11.md)
-now supplies the mechanism audit, three-archive qualification and independent
-input/target design. TNG and Quijote remain development candidates; no cosmic
-confirmation is claimed. The [task ledger](docs/cosmic-test-roadmap-2026-11-11.md)
-records completed work and the next bounded metadata operation.
-`make cosmic-transport-design` checks the manufactured transport examples.
+Supporting S6 now reports a [particle transport diagnostic](docs/cosmic-transport-development-results-2026-11-22.md)
+for three outputs of TNG50-4-Dark. Large host-mass changes account for most
+inferred crossings on the primary logarithmic grid. The local drift estimate
+even reverses the sign of the current in one bin. The [research roadmap](docs/roadmap.md)
+records the decision to stop the local-drift abundance forecast for these outputs
+and the evidence required to reopen it.
 
 The latest [physics prediction](docs/cantilever-results-2026-10-13.md) forecasts
 hot-cantilever thermal motion from colder-condition damping. Ten of eleven mode

@@ -4,6 +4,25 @@ Last updated 22 November 2026. **Read this first in a new session.** It records 
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
+**22 November — TNG result integrated into the article.** Section 6 reports
+that in each adjacent interval about 1.3% of particles hosted at both endpoints
+experienced a twofold or larger change in host mass. They accounted for 75%
+and 85% of gross crossings on the primary logarithmic mass grid.
+[Supporting S6.5](supporting-material.md#s65-where-mass-crosses-the-spectrum-in-tng50-4-dark)
+and the [standalone cosmic report](cosmological-extension.md) explain how the
+departure-bin estimate reversed the measured direction of flow in one bin.
+Figure S21 compares the currents. The local-drift abundance forecast is closed
+for these three outputs. A future test of the proposed log-orthopolic allocation
+of collisionless total-matter mass requires independently specified transport
+inputs and a prediction for absolute host counts in a separate population.
+
+Both manuscripts were rebuilt and visually checked. The result appears on
+page 12 of the [article](paper.pdf) and Figure S21 on page 74 of the
+[supporting material](supporting-material.pdf). The six cosmic subsections
+match their standalone counterparts, and the converter and terminology tests
+pass. The next manuscript work is submission preparation, including the author
+declarations, data notices and choice of venue recorded below.
+
 **22 November — fixed-bin transport qualification completed.** The acquisition and inventory
 milestone is on `origin/main` as `3b198e7`. Across the three fixed bin widths and all three
 output pairs, every endpoint transfer matrix for TNG50-4-Dark accounts exactly for all

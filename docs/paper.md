@@ -2,7 +2,7 @@
 
 **A natural-law proposal, physical realizations and cosmic implications**
 
-> Research manuscript, revised 11 November 2026. Detailed derivations, complete
+> Research manuscript, revised 22 November 2026. Detailed derivations, complete
 > comparisons and analysis histories are retained in the [supporting material](supporting-material.md).
 > Empirical studies include exploration, locally frozen forecasts and retrospective
 > reanalyses; none is externally preregistered. Authorship and submission declarations
@@ -506,6 +506,14 @@ galaxy, stellar and simulated subhalo distributions provide exploratory signs
 and departures. Stellar mass remains distinct from star number, and this
 allocation constant is not the cosmological constant $\Lambda$.
 
+In the TNG50-4-Dark simulation, we followed particles that belonged to a halo
+at both ends of an interval. In each of two consecutive intervals, about 1.3%
+of those particles ended in a halo at least twice as massive or at most half as
+massive as their starting halo. With each mass bin spanning one doubling, these
+particles accounted for 75% of the inferred boundary crossings in the first
+interval and 85% in the second. Assigning each change to its starting bin gave
+the wrong direction of flow in one bin (Supporting Figure S21).
+
 The natural-law proposal unifies a simple relation with several physical routes
 to it. Exact accounting establishes its mathematical core; specified symmetries
 and dynamics establish allocation realizations. Independently known constraints
@@ -521,7 +529,9 @@ forecasts, algorithms and outcomes, including failures. The
 [supporting material](supporting-material.md) contains detailed derivations,
 complete comparisons and study reports. Source licences are in
 [data/NOTICE.md](../data/NOTICE.md). Published FIRAS reconstruction and bacterial
-figure summaries remain identified as such.
+figure summaries remain identified as such. The halo analysis uses the public
+IllustrisTNG release ([Nelson et al., 2019a](https://doi.org/10.1186/s40668-019-0028-x)) and the TNG50 simulation series
+([Pillepich et al., 2019](https://doi.org/10.1093/mnras/stz2338), [Nelson et al., 2019b](https://doi.org/10.1093/mnras/stz2306)).
 
 The make all target verifies inputs, runs tests and regenerates the original
 analyses; later studies have separate offline targets in their reports.

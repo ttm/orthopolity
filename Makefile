@@ -91,7 +91,8 @@ SUPPORT_IMAGES := results/inverse-resources/inverse-resources.png \
  results/speech-capacity-2026-10-17/transfer.png \
  results/membrane-exchange-transfer-2026-10-22/transfer.png \
  results/rlc-boundary-2026-10-25/circuit.png \
- results/whole-object-assembly-2026-10-31/whole-object-assembly.png
+ results/whole-object-assembly-2026-10-31/whole-object-assembly.png \
+ results/cosmic-binned-transport-2026-11-22/figures/endpoint-current-primary.png
 
 all: data test analyses topology-design cosmic-transport-design biome-stock-audit rlc-boundary hotbox-transfer fragmentation-sources fragmentation-boundary whole-object-assembly
 

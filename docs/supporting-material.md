@@ -2,7 +2,7 @@
 
 **Accounting proofs, physical derivations, observation models and complete comparisons**
 
-Prepared 10 October 2026; revised 11 November 2026 as a companion to
+Prepared 10 October 2026; revised 22 November 2026 as a companion to
 [the main article](paper.md).
 This document preserves the substantive technical material of the article at
 source commit **`f137d4efb050ccfcb5c5f814d32da651c645421c`**, supplemented by
@@ -11,8 +11,8 @@ Dunaliella treatment/control and log-change interpretations corrected explicitly
 No frozen input, protocol, forecast, registry entry or numerical output is changed.
 The general-law claim and the ambition to establish it are retained; each theorem,
 physical realization, simulation and empirical comparison keeps its stated scope.
-The 11 November revision adds the exploratory cosmic conjecture in S6; the
-original study results and comparisons remain unchanged.
+Supporting S6 develops the cosmic conjecture and reports the transport
+diagnostic from three outputs of TNG50-4-Dark.
 
 The comparison measure is part of every allocation statement. Except where a
 linear, mode-counting or word-type measure is explicitly specified, the size
@@ -3432,11 +3432,10 @@ concrete; it does not uniquely confirm or refute the general law.
 
 ## S6. Orthopolity and cosmic structure
 
-This exploratory extension develops a specific cosmological conjecture from
-the proposed natural law. Its mathematical implications are derived below;
-the astronomical examples interpret published results. No new catalogue
-analysis or empirical confirmation is reported. The companion
-[cosmic report](cosmological-extension.md) retains the same exposition.
+This appendix asks whether gravitational assembly can produce the log-orthopolic
+allocation proposed in the [main article](paper.md). Published stellar and galaxy
+distributions motivate the question. A development analysis of three outputs
+from TNG50-4-Dark checks the local transport mechanism against particle histories. The [standalone report](cosmological-extension.md) presents the same analysis.
 
 ### S6.1. The cosmological conjecture
 
@@ -3576,7 +3575,53 @@ supply the inputs before the target mass function is examined. With variable
 $v(x)$, the stationary prediction becomes $r(x)=J/v(x)$, providing a specified
 departure that can also fail.
 
-### S6.5. What would advance the conjecture
+### S6.5. Where mass crosses the spectrum in TNG50-4-Dark
+
+We tracked all 19,683,000 equal-mass particles in the last three outputs (97--99)
+of TNG50-4-Dark, a gravity-only simulation of collisionless total matter.
+Each particle belonged to one friends-of-friends halo or the diffuse population.
+We fixed the bins after inspecting whole-box statistics but before computing
+binned currents. Host mass doubles in each of the 26 primary bins. Two other
+grids cover the same domain in 13 and 52 bins. The data and simulation are described by
+[Nelson et al. (2019a)](https://doi.org/10.1186/s40668-019-0028-x),
+[Pillepich et al. (2019)](https://doi.org/10.1093/mnras/stz2338) and
+[Nelson et al. (2019b)](https://doi.org/10.1093/mnras/stz2306).
+
+Consider a particle whose host mass changes from 64 to 4,096 particle masses.
+Its endpoints span six doublings. The measured current credits each mass bin
+with the signed displacement through it. The local drift estimate credits
+all six doublings to the starting bin. Both calculations recover the same
+total displacement, yet place it at different masses. We compare the two as
+currents averaged over each bin, using particles hosted at both endpoints.
+Entry from and exit to the diffuse population enter the mass balance separately.
+
+In the two consecutive intervals, 1.29% and 1.26% of particles hosted at both
+endpoints underwent at least a twofold change in host mass in either direction.
+They accounted for 74.84% and 85.09% of gross crossings on the primary grid.
+Each particle counts once per boundary crossed. Between outputs 98 and 99, the
+current through the bin for 16,384 to 32,767 particle masses was $+3.45\times10^8$ solar
+masses per comoving cubic megaparsec per Gyr, toward larger hosts. The
+departure-bin estimate gave $-3.45\times10^8$ in the same units (Figure S21).
+
+![Cell-average endpoint current compared with two assignments of each particle's change in log host mass](../results/cosmic-binned-transport-2026-11-22/figures/endpoint-current-primary.png)
+
+*Figure S21. Mass current through equal logarithmic host-mass bins in TNG50-4-Dark.
+Black credits each bin with the displacement between observed endpoints that lies
+inside it. Blue assigns the whole displacement to the starting bin. Orange assigns
+it to the bin containing the geometric mean of the two endpoint masses. The first
+two panels use adjacent outputs. The third omits the middle output.*
+
+At output 99 the 15 occupied primary bins contained between 393,647 and
+1,323,034 particles each, a factor of 3.36 in mass across bins of equal
+logarithmic width. Among particles hosted at all three outputs, omitting
+output 98 hid 28.58% of the gross primary-grid crossings visible in the two
+shorter intervals. Thus a complete inventory can coexist with unresolved
+motion between outputs. The departure-bin estimate disagreed with the measured
+current at all three bin widths. The closer midpoint estimate uses arrival
+masses, which are unknown in an abundance forecast.
+[Development analysis, figure and numerical results](cosmic-transport-development-results-2026-11-22.md)
+
+### S6.6. What would advance the conjecture
 
 Self-similarity alone does not establish the needed residence times. Scale-free
 cosmological simulations retain power-spectrum dependence in fitted halo mass
@@ -3585,17 +3630,14 @@ calibrated halo mass functions also vary with epoch and mass definition
 ([Tinker et al., 2008](https://arxiv.org/abs/0803.2706)). These are substantive
 comparators for any proposed cosmic mechanism.
 
-A next test would fix the resource, disjoint population, mass range, epoch,
-observation model and independent transport inputs before predicting a held-out
-abundance or its change. Established mass-function and assembly models should
-make predictions for the same target. Agreement shared by those models would
-support a common orthopolic interpretation; a distinctive contribution requires
-a successful additional prediction or an independently useful reduction of the
-inputs. Public simulations can first test the transport approximation, while
-observational confirmation requires a separately qualified astronomical sample.
-No such test is claimed here. The appendix establishes a concrete cosmological
-question, conditional mathematical consequences and a route by which the
-conjecture could succeed or fail.
+We therefore stop the local-drift abundance forecast for these three outputs.
+Reopening it requires a model that accounts for large changes in host mass and
+exchange with diffuse matter, and bounds the error from finite output spacing.
+Its decisive prediction would be the absolute host counts in a separate
+population, using transport inputs fixed before inspecting that population.
+Established halo mass-function models should predict the same counts under
+the same mass definition. That comparison would test what the proposed
+log-orthopolic mechanism adds beyond its conditional mathematical result.
 
 ## References
 
@@ -3810,6 +3852,18 @@ Newman, M. E. J. (2005). Power laws, Pareto distributions and Zipf's law.
 NIST/SEMATECH (n.d.). *e-Handbook of Statistical Methods*, section 1.3.6.6.1,
 Normal Distribution. Accessed 30 October 2026.
 <https://www.itl.nist.gov/div898/handbook/eda/section3/eda3661.htm>.
+
+Nelson, D., et al. (2019a). The IllustrisTNG simulations: public data release.
+*Computational Astrophysics and Cosmology*, 6, 2.
+<https://doi.org/10.1186/s40668-019-0028-x>.
+
+Nelson, D., et al. (2019b). First results from the TNG50 simulation: galactic outflows
+driven by supernovae and black hole feedback. *Monthly Notices of the Royal Astronomical
+Society*, 490, 3234--3261. <https://doi.org/10.1093/mnras/stz2306>.
+
+Pillepich, A., et al. (2019). First results from the TNG50 simulation: the evolution
+of stellar and gaseous discs across cosmic time. *Monthly Notices of the Royal
+Astronomical Society*, 490, 3196--3233. <https://doi.org/10.1093/mnras/stz2338>.
 
 Piantadosi, S. T., Tily, H., and Gibson, E. (2011). Word lengths are optimized for
 efficient communication. *Proceedings of the National Academy of Sciences*,
