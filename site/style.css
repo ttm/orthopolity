@@ -9,3 +9,67 @@
 
 [hidden]{display:none!important}
 @media(max-width:480px){.metrics .metric-accent strong{font-size:15px;letter-spacing:-.6px}.metrics .metric-accent{min-width:0}.metrics .metric-accent strong{white-space:normal;overflow-wrap:anywhere}}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 26px;
+}
+.evidence { margin-top: 44px; }
+.evidence-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 24px clamp(24px, 4vw, 64px);
+  padding: clamp(18px, 3.2vw, 48px);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--white);
+}
+.evidence-intro h2 {
+  margin: 0;
+  font: normal clamp(28px, 3vw, 43px)/1.1 var(--serif);
+}
+.evidence-panel p:not(.eyebrow) { margin: 14px 0 0; }
+.evidence-panel table {
+  min-width: 0;
+  font-size: 14px;
+}
+.evidence-panel caption {
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 600;
+}
+.evidence-panel th, .evidence-panel td { padding: 9px 6px; }
+.evidence-panel thead th { vertical-align: bottom; font-size: 12px; }
+.evidence-panel tbody th { color: var(--ink); font-size: inherit; }
+.evidence-numbers th:nth-child(2) { width: 29%; }
+.evidence-numbers td { white-space: nowrap; }
+.evidence-context {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--line);
+}
+.rank-details { margin-top: 12px; }
+.rank-details summary { color: var(--ink); font-weight: 600; }
+.rank-details table { margin-top: 18px; max-width: 840px; }
+.rank-details th:first-child { width: 43%; }
+.rank-details td { position: relative; }
+.rank-details td span { display: inline-block; min-width: 9ch; }
+.rank-details meter {
+  width: calc(100% - 10ch);
+  height: 10px;
+  vertical-align: middle;
+}
+.rank-details meter::-webkit-meter-bar { background: var(--pale); border: 0; }
+.rank-details meter::-webkit-meter-optimum-value { background: var(--teal); }
+.rank-details meter::-moz-meter-bar { background: var(--teal); }
+.rank-details .compared-rank { background: var(--pale); }
+.evidence-sources { font-size: 12px; }
+@media (max-width: 780px) {
+  .evidence-panel { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 480px) {
+  .evidence { margin-top: 28px; }
+  .evidence-panel table { font-size: 12px; }
+  .evidence-panel th, .evidence-panel td { padding: 9px 2px; }
+  .evidence-panel thead th { font-size: 11px; }
+}
