@@ -22,7 +22,10 @@
         <p class="eyebrow">EXPERIMENTO INTERATIVO / 01</p>
         <h1 id="title">Uma TV para cada pessoa.<br><em>O mesmo ganho para todos?</em></h1>
         <p class="intro">Todo cidadão recebe o mesmo aparelho. Mas a compra também remunera quem vende, administra e possui a produção. Descubra como uma distribuição igual pode alimentar ganhos desiguais.</p>
-        <a class="jump" href="#simulador">Explore a distribuição <span aria-hidden="true">↓</span></a>
+        <div class="hero-links">
+          <a class="jump" href="#simulador">Explore a distribuição <span aria-hidden="true">↓</span></a>
+          <a class="jump" href="#dados-reais">Ver dados reais <span aria-hidden="true">↓</span></a>
+        </div>
       </div>
       <div class="hero-art" aria-label="Todos recebem uma TV igual; a cadeia divide a renda entre grupos de tamanhos diferentes" role="img">
         <svg viewBox="0 0 360 245" aria-hidden="true"><defs><g id="tv"><rect x="-20" y="-15" width="40" height="28" rx="4"/><path d="M-7 18h14M0 13v5"/></g></defs>
@@ -82,6 +85,58 @@
       </div>
       <details class="table-details"><summary>Veja os valores e a contabilidade do modelo <span aria-hidden="true">+</span></summary><div class="table-scroll"><table><caption id="table-caption">Cada cidadão aparece uma única vez e recebe uma TV.</caption><thead><tr><th scope="col">Grupo</th><th scope="col">Pessoas</th><th scope="col">Verba adicional do grupo</th><th scope="col">Adicional por pessoa</th><th scope="col">Valor por pessoa*</th></tr></thead><tbody id="table-body"></tbody></table></div><p id="accounting" class="help accounting"></p></details>
       <div class="utilities"><button id="share" type="button">Copiar link deste cenário <span aria-hidden="true">↗</span></button><button id="download" type="button">Baixar os valores (.csv) <span aria-hidden="true">↓</span></button><span id="utility-status" role="status"></span></div>
+    </section>
+    <section class="evidence wrap" id="dados-reais" aria-labelledby="evidence-title">
+      <div class="evidence-panel">
+        <div class="evidence-intro">
+          <p class="eyebrow">DADOS REAIS · REDE DE VENDAS NOS EUA</p>
+          <h2 id="evidence-title">Quase o quádruplo por mês, quase o mesmo total no ano</h2>
+          <p>Em 2025, a LifeVantage pagou em média US$ 1.707 por consultor em um mês remunerado no nível 1 de <i lang="en">Managing Consultant</i> e US$ 6.801 no nível 3. Como o nível 3 teve cerca de um quarto dos meses remunerados do nível 1, a diferença entre os totais anuais foi de apenas <strong>US$ 889</strong>.</p>
+        </div>
+        <div class="evidence-numbers">
+          <table>
+            <caption>Comissões brutas nos três níveis, em dólares dos EUA</caption>
+            <thead><tr><th scope="col">Nível</th><th scope="col">Média por mês pago em 2025</th><th scope="col">Total em 2024</th><th scope="col">Total em 2025</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">1</th><td>1.707</td><td>6.760.908</td><td>6.555.441</td></tr>
+              <tr><th scope="row">2</th><td>3.383</td><td>6.548.280</td><td>6.207.939</td></tr>
+              <tr><th scope="row">3</th><td>6.801</td><td>7.225.417</td><td>6.556.330</td></tr>
+            </tbody>
+          </table>
+          <p>Escolhemos os três níveis ao ver os dados de 2024. Em 2025, eles receberam <strong>33,9%, 32,1% e 33,9%</strong> do total dos três. Cada pagamento entra no nível em que a pessoa foi remunerada naquele mês.</p>
+        </div>
+        <div class="evidence-context">
+          <p>Entre os 15 níveis de 2025, o menor total anual foi de <strong>US$ 6.100</strong> (<i lang="en">Consultant</i>) e o maior, de <strong>US$ 9.634.929</strong> (<i lang="en">Executive Consultant 1</i>).</p>
+          <details class="rank-details">
+            <summary>Comparar os 15 níveis em 2025</summary>
+            <table>
+              <caption>Comissões brutas anuais por nível nos EUA. Cada barra usa a mesma escala de zero a US$ 10 milhões.</caption>
+              <thead><tr><th scope="col">Nível de vendas</th><th scope="col">Total em 2025 (US$)</th></tr></thead>
+              <tbody>
+              <tr><th scope="row" lang="en">Consultant</th><td><meter aria-hidden="true" min="0" max="10000000" value="6100"></meter><span>6.100</span></td></tr>
+              <tr><th scope="row" lang="en">Consultant 1</th><td><meter aria-hidden="true" min="0" max="10000000" value="1560514"></meter><span>1.560.514</span></td></tr>
+              <tr><th scope="row" lang="en">Consultant 2</th><td><meter aria-hidden="true" min="0" max="10000000" value="2214664"></meter><span>2.214.664</span></td></tr>
+              <tr><th scope="row" lang="en">Consultant 3</th><td><meter aria-hidden="true" min="0" max="10000000" value="2121427"></meter><span>2.121.427</span></td></tr>
+              <tr><th scope="row" lang="en">Senior Consultant 1</th><td><meter aria-hidden="true" min="0" max="10000000" value="2561144"></meter><span>2.561.144</span></td></tr>
+              <tr><th scope="row" lang="en">Senior Consultant 2</th><td><meter aria-hidden="true" min="0" max="10000000" value="3349563"></meter><span>3.349.563</span></td></tr>
+              <tr><th scope="row" lang="en">Senior Consultant 3</th><td><meter aria-hidden="true" min="0" max="10000000" value="4427096"></meter><span>4.427.096</span></td></tr>
+              <tr class="compared-rank"><th scope="row" lang="en">Managing Consultant 1</th><td><meter aria-hidden="true" min="0" max="10000000" value="6555441"></meter><span>6.555.441</span></td></tr>
+              <tr class="compared-rank"><th scope="row" lang="en">Managing Consultant 2</th><td><meter aria-hidden="true" min="0" max="10000000" value="6207939"></meter><span>6.207.939</span></td></tr>
+              <tr class="compared-rank"><th scope="row" lang="en">Managing Consultant 3</th><td><meter aria-hidden="true" min="0" max="10000000" value="6556330"></meter><span>6.556.330</span></td></tr>
+              <tr><th scope="row" lang="en">Executive Consultant 1</th><td><meter aria-hidden="true" min="0" max="10000000" value="9634929"></meter><span>9.634.929</span></td></tr>
+              <tr><th scope="row" lang="en">Executive Consultant 2</th><td><meter aria-hidden="true" min="0" max="10000000" value="6146361"></meter><span>6.146.361</span></td></tr>
+              <tr><th scope="row" lang="en">Executive Consultant 3</th><td><meter aria-hidden="true" min="0" max="10000000" value="5178388"></meter><span>5.178.388</span></td></tr>
+              <tr><th scope="row" lang="en">Executive Consultant 4</th><td><meter aria-hidden="true" min="0" max="10000000" value="2513404"></meter><span>2.513.404</span></td></tr>
+              <tr><th scope="row" lang="en">Presidential Consultant</th><td><meter aria-hidden="true" min="0" max="10000000" value="9530135"></meter><span>9.530.135</span></td></tr>
+              </tbody>
+            </table>
+          </details>
+          <p class="evidence-sources">Relatórios da LifeVantage, página 2 de cada documento.
+            <a href="https://www.lifevantage.com/legal/us-en/income-disclosure-statement-20250203.pdf">Comissões de 2024 (PDF)</a> ·
+            <a href="https://cdn.lifevantage.com/wp-content/uploads/sites/1/2026/02/27121010/260226.01-US-EN-Income-Disclosure-Statement.pdf">Comissões de 2025 (PDF)</a>
+          </p>
+        </div>
+      </div>
     </section>
     <section class="explanation wrap" id="modelo" aria-labelledby="model-title">
       <div class="model-intro"><p class="eyebrow">DO EXEMPLO À MATEMÁTICA</p><h2 id="model-title">Igual em qual medida?</h2><p>Dar uma TV a cada cidadão iguala a distribuição de aparelhos. Dividir o mesmo montante entre níveis da cadeia iguala outra coisa: o recurso total por classe. Essas duas igualdades convivem com ganhos individuais diferentes.</p><a href="https://github.com/ttm/orthopolity/blob/main/docs/tv-distribution-model.md">Leia a derivação completa <span aria-hidden="true">↗</span></a></div>
