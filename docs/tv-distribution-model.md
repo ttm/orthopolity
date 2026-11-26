@@ -196,3 +196,7 @@ propriedade, remunerações e financiamento antes de observar o resultado,
 e avaliar outra previsão em dados separados. O exemplo respeita a
 [distinção entre demonstração e conclusão social](not-worth-pursuing.md):
 não extrai do espectro uma avaliação moral ou uma recomendação de política.
+
+A [comparação com dados reais](tv-distribution-evidence.md) examina comissões
+pagas por nível de vendas, biomassa por faixa de tamanho e uma compra pública
+de televisores no México.

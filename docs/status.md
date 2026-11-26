@@ -1,8 +1,51 @@
 # Project status and handoff
 
-Last updated 22 November 2026. **Read this first in a new session.** It records what the authors
+Last updated 26 November 2026. **Read this first in a new session.** It records what the authors
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
+
+**26 November — manuscript and evidence-note release.** The version for journal
+selection includes the TNG result in Section 6 and Figure S21 in the supplement.
+The [article](https://raw.githubusercontent.com/ttm/orthopolity/a1130582d1468dca2034f47e0ecc3314cb50eb27/docs/paper.pdf)
+and [supporting material](https://raw.githubusercontent.com/ttm/orthopolity/a1130582d1468dca2034f47e0ecc3314cb50eb27/docs/supporting-material.pdf)
+are pinned to the reviewed PDF revision. The [TV evidence note](tv-distribution-evidence.md)
+records the calculations behind the simulator comparison. Both PDF checksums
+matched the reviewed builds, and 28 focused Python tests and 27 simulator tests passed.
+The next author decision is the journal. The 23 November shortlist below records
+the funding question and the remaining submission work.
+
+**25 November — observed commissions published beside the TV simulator.**
+The [Portuguese comparison](https://ttm.github.io/orthopolity/tv.html#dados-reais)
+shows the three U.S. Managing Consultant ranks selected in 2024, their 2025
+payments and a table of gross commissions for all 15 ranks on a common scale.
+All 27 model tests passed. Browser checks covered keyboard access, the payout
+controls and layouts at 320, 375 and 1280 pixels. The published HTML and CSS
+matched the tested files after the [Pages deployment](https://github.com/ttm/orthopolity/actions/runs/45587455757)
+of commit `004a632`. At that point the manuscript revisions were still local.
+
+**23 November — real comparisons for the television example.** LifeVantage's
+three U.S. Managing Consultant ranks received 33.93%, 32.13% and 33.94% of
+their combined 2025 gross commissions. The ranks were selected from the 2024
+report. Equal totals failed across the complete hierarchy. The [evidence note](tv-distribution-evidence.md)
+also documents a contractual split across sponsorship levels, the existing
+ocean biomass comparison by logarithmic body mass and Mexico's television
+procurement. These are comparisons for the teaching example.
+
+**23 November — journal shortlist for the authors.** The first recommendation
+for the current interdisciplinary manuscript is *Journal of Physics: Complexity*
+as a Research Paper. Its listed open-access fee is €2,505 before applicable VAT.
+Check the corresponding author's institutional coverage when choosing the venue.
+*The European Physical Journal B* is an alternative for a paper foregrounding the
+physics of equalization. Its subscription route carries no article processing charge.
+[IOP scope, article types and fees](https://publishingsupport.iopscience.iop.org/journals/journal-of-physics-complexity/about-journal-physics-complexity/) ·
+[EPJ B scope](https://link.springer.com/journal/10051/aims-and-scope) ·
+[EPJ B publishing options](https://link.springer.com/journal/10051/how-to-publish-with-us)
+
+The venue decision belongs to the authors. For the submission draft, put the
+worker-replacement prediction from Section 4.2 in the abstract, settle author
+contributions and disclosures, and give readers a public, version-specific route
+to the code and data. The [submission review](manuscript-evidence-review-2026-11-10.md#remaining-priorities-for-submission)
+identifies the outstanding GLOSSAQUA, Hatton and plant-data notices.
 
 **22 November — TNG result integrated into the article.** Section 6 reports
 that in each adjacent interval about 1.3% of particles hosted at both endpoints
