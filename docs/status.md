@@ -4,6 +4,21 @@ Last updated 26 November 2026. **Read this first in a new session.** It records 
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
+**26 November — full revision of the main article.** The [revised draft](paper.md)
+opens with eight units per class, states orthopolity as a proposed natural law
+and derives the distinct predictions for equal mass per gram and per doubling.
+Section 4 tests whether three commission ranks selected in 2024 still received
+similar totals in 2025 and reports predicted and observed job shares for both
+computing workloads. After worker
+replacement, the smallest matrices accounted for 79.0% of multiplications
+against 78.8% predicted. The 0.78-percentage-point bound applies to changes in
+CPU shares. The failed algal response appears in the abstract, a one-cut rod
+gives an explicit counterexample, and Section 6 explains why the TNG results
+stopped the local-drift forecast. The source links point to the public evidence
+revision. The Python suite ran 839 tests with 43 skips, and the registry
+verified 46 runs and 1,168 file references. The remaining submission work is
+the journal choice, author declarations and outstanding data-use notices.
+
 **26 November — manuscript and evidence-note release.** The version for journal
 selection includes the TNG result in Section 6 and Figure S21 in the supplement.
 The [article](https://raw.githubusercontent.com/ttm/orthopolity/a1130582d1468dca2034f47e0ecc3314cb50eb27/docs/paper.pdf)
