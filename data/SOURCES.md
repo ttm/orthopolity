@@ -18,8 +18,8 @@
    [authors' repository](https://github.com/ryanheneghan/sheldon_revisited).
    The included 253-row table is the authors' output for reconstructed upper-200-m
    biomass by group and mass bin. It is not individual-organism raw data.
-   Attribution and original third-party rights are retained; no new license
-   to third-party materials is granted by this package.
+   This table and both companion files in (4) match the CC BY 4.0 Zenodo
+   deposit byte-for-byte. See the [table names and attribution](NOTICE.md#hatton-summary-tables).
 
 4. Hatton et al. (2021), full-water-column companion table
    (`summary_biomass_table_long.csv`) and per-group uncertainty factors
@@ -29,21 +29,18 @@
    interval being exactly [estimate/f, estimate*f]; verified for all 253 rows.
 5. Ersoy, Z., et al. (2025), *GLOSSAQUA: A global dataset of size spectra across
    aquatic ecosystems*, Ecology 106, e70050.
-   [Repository](https://github.com/zeynepersoy/GLOSSAQUA_dataset) and
-   [archived release](https://zenodo.org/records/14701391) declare MIT;
-   Copyright (c) 2023 Zeynep Ersoy. The
-   [published metadata](https://bura.brunel.ac.uk/bitstream/2438/32237/8/Ersoy_et_al_2025_Metadata_S1.pdf)
-   instead describes the dataset as CC BY-NC-SA 4.0. The scope of these differing
-   statements is unresolved; see [NOTICE.md](NOTICE.md). Files `GLOSSAQUA_Size.txt`,
+   All three frozen files match the [authors' January 2026 revision](https://github.com/zeynepersoy/GLOSSAQUA_dataset/tree/93f96e2146925e6f7386f70704d106762dce6b14/data).
+   The [file comparison and attribution](NOTICE.md#glossaqua-differing-source-statements)
+   record the repository MIT licence and the CC BY-NC-SA 4.0 notice on the
+   published supplementary tables. Files `GLOSSAQUA_Size.txt`,
    `GLOSSAQUA_Sample.txt`, `GLOSSAQUA_DataSource.txt`. In this snapshot the Size
    file is quoted, space-separated UTF-8; Sample is tab-separated and decoded
    as Latin-1 by the analysis; DataSource is tab-separated and UTF-8 compatible.
    Do not apply one delimiter/encoding to all three. `GLOSSAQUA_Size.txt`
    holds published size-spectrum *fit parameters* per sample, not individual
-   organism measurements. The historical retrieval URL uses mutable `HEAD`;
-   this local snapshot is identified by its SHA-256 checksums. Upstream does
-   publish a `v1.0.0` release, but no equivalence between this snapshot and that
-   release is asserted. A retrieval URL is not a commit pin.
+   organism measurements. The original download used mutable `HEAD`.
+   Restoration now uses the matching January commit and verifies the original
+   SHA-256 checksums.
 
 All source files are preserved byte-for-byte and hashed. New views, estimates,
 figures and audio are analysis outputs and are labeled separately.

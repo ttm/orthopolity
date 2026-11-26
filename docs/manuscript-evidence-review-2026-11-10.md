@@ -97,6 +97,13 @@ not a claim that every number or proof has received a new independent audit.
 
 ## Remaining priorities for submission
 
+**26 November update.** The [public manuscript revision](https://github.com/ttm/orthopolity/tree/fc6cb30d3438e34e2a31ae938d8e5222511bcd4a)
+includes the worker intervention in the abstract and links to the versioned
+data and code. The [source notices](../data/NOTICE.md) now identify the CC BY 4.0
+deposit matching all three Hatton tables and the author revisions matching
+the GLOSSAQUA and plant files. Reuse terms for the latter two sources remain
+open. The items below record the assessment at the time of this review.
+
 - **Resolve declarations and article packaging with the authors.** Main's
   opening notice still leaves authorship and submission declarations unsettled.
   Contributions, funding, acknowledgements and any venue-required assistance

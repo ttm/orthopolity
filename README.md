@@ -1,5 +1,7 @@
 # Orthopolity
 
+[Read the article (PDF)](https://raw.githubusercontent.com/ttm/orthopolity/main/docs/paper.pdf) · [Supporting material (PDF)](https://raw.githubusercontent.com/ttm/orthopolity/main/docs/supporting-material.pdf)
+
 **Interactive laboratory:** [Processos da ortopolidade](https://ttm.github.io/orthopolity/)
 transforms any admissible finite vector of class abundances while conserving its
 resource budget. Compare global relaxation, neighbor diffusion, balancing pair

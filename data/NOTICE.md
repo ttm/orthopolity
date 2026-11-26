@@ -76,45 +76,58 @@ in the adjacent acquisition receipt. These are methods and metadata, not the
 candidates' nitrogen-stock outcome tables.
 
 `data/plant-sources/2026-10-03/` now retains ten exact third-party CSVs from
-that same pinned `KerkhoffLab/PlantSizeDist` commit, referenced by
-[Dillon et al. (2019)](https://doi.org/10.1002/ecs2.2856). The public data link
-and article's open access do not establish a licence for the separate repository
-files. No explicit source licence was found in the retained repository metadata;
-the package MIT licence is not applied to them. Source attribution, checksums
-and retrieval provenance accompany the files.
+the [data repository](https://github.com/KerkhoffLab/PlantSizeDist/tree/defccc3dcbbbf3ba57ff1572377de88fba83ff7f/Data)
+for Dillon et al. (2019). All ten match their pinned Git blobs and the SHA-256
+values in the [acquisition receipt](plant-sources/2026-10-03/acquisition.json).
+The publisher records CC BY 3.0 for the accepted and published article.
+The authors' repository gives no explicit reuse licence for the CSVs.
+For the journal submission, cite the upstream files and retrieval record.
+[Article](https://doi.org/10.1002/ecs2.2856) · [Publisher's licence metadata](https://api.crossref.org/works/10.1002/ecs2.2856) · [Authors' README](https://github.com/KerkhoffLab/PlantSizeDist/blob/defccc3dcbbbf3ba57ff1572377de88fba83ff7f/README.md)
 
 | Inputs | Source and recorded terms |
 |---|---|
 | NOAA annual flare CSVs and metadata | NOAA NCEI GOES XRS reports; the supplied metadata states redistribution and use are unrestricted. |
 | USGS event catalogue | USGS ComCat. The repository records these as U.S. federal government data. |
-| GLOSSAQUA Size, Sample, and DataSource tables | Ersoy et al. (2025). The author repository/archive and publisher-associated supplements give different licence statements; see below. |
-| Three Sheldon/Hatton summary tables | Hatton et al. (2021), author repository at commit d8af6567faf1912862650423e392e1b3195a8732. Applicable archive/table terms remain unverified here; see below. |
+| GLOSSAQUA Size, Sample, and DataSource tables | Ersoy et al. (2025). All three match the January 2026 author revision. The repository and published supplementary tables carry different notices. |
+| Three Sheldon/Hatton summary tables | Hatton et al. (2021). All three frozen CSVs match the authors' CC BY 4.0 deposit. |
 
 ## GLOSSAQUA: differing source statements
 
-The [author repository](https://github.com/zeynepersoy/GLOSSAQUA_dataset) and
-[archived release](https://zenodo.org/records/14701391) are reported as MIT,
-Copyright (c) 2023 Zeynep Ersoy. The
-[publisher-associated supplement deposited at Brunel](https://bura.brunel.ac.uk/handle/2438/32237)
-instead labels the dataset and its individual tables CC BY-NC-SA 4.0.
+The frozen tables match the files in the authors' 15 January 2026 commit.
+The repository includes the MIT licence, Copyright (c) 2023 Zeynep Ersoy.
+Both earlier Zenodo releases also record MIT. The published supplement hosted
+by Brunel labels the individual tables CC BY-NC-SA 4.0. We verified that
+notice from the deposit listing. We could not compare the deposited Brunel
+files byte-for-byte with the January revision. [Article](https://doi.org/10.1002/ecy.70050) · [Pinned author data](https://github.com/zeynepersoy/GLOSSAQUA_dataset/tree/93f96e2146925e6f7386f70704d106762dce6b14/data) · [Repository licence](https://github.com/zeynepersoy/GLOSSAQUA_dataset/blob/93f96e2146925e6f7386f70704d106762dce6b14/LICENSE) · [Brunel deposit](https://bura.brunel.ac.uk/handle/2438/32237)
 
-These statements are recorded without claiming their scopes are equivalent or that the
-permissive label overrides the dataset-specific notice. Before a release or submission
-relying on a particular redistribution licence, establish which terms apply to the exact
-frozen files and include the corresponding notices. The earlier unqualified statement that
-all GLOSSAQUA data were MIT-licensed is superseded.
+| Frozen table | Matches Zenodo v1.0.0 | Matches Zenodo v2.0.0 | Matches January author revision |
+|---|---|---|---|
+| Size | No | No | Yes |
+| Sample | Yes | Yes | Yes |
+| DataSource | No | Yes | Yes |
+
+For reproduction, use the January files and the project's checksums. For a
+journal submission, cite the source and both notices. Permission to apply
+one licence to all three frozen tables remains unresolved.
+[Zenodo v1](https://zenodo.org/records/14701391) · [Zenodo v2](https://zenodo.org/records/17967304) · [Frozen checksums](snapshot_checksums.json)
 
 ## Hatton summary tables
 
-The existing repository includes three small summary tables from the authors' public
-repository, with citation to [Hatton et al. (2021)](https://doi.org/10.1126/sciadv.abh3732)
-and [the data archive](https://doi.org/10.5281/zenodo.5520055).
+Ian A. Hatton, Ryan F. Heneghan, Yinon M. Bar-On and Eric D. Galbraith
+(2021), *The global ocean size spectrum from bacteria to whales*. The three
+CSVs match the files in `output/summary_output/summary_tables/` of the
+authors' Zenodo v1 archive. The ZIP matches the archive's recorded MD5,
+`df6a39fcb7bb083b9fb266173c30d3e9`. Zenodo and DataCite identify the
+deposit as CC BY 4.0. [Article](https://doi.org/10.1126/sciadv.abh3732) · [Zenodo v1](https://zenodo.org/records/5520055) · [DataCite rights record](https://api.datacite.org/dois/10.5281/zenodo.5520055) · [Licence](https://creativecommons.org/licenses/by/4.0/)
 
-Previous checks found no licence file at the pinned GitHub commit; attempts to retrieve
-archive terms during review were unsuccessful. That establishes an unresolved source-notice
-question, not permission inferred from the absence of a licence and not evidence that the
-archive is permanently unavailable. Open access to an article does not by itself identify
-the terms for every separately deposited table.
+| Archive filename | Local filename under `data/raw/` |
+|---|---|
+| `summary_biomass_top200_table_long.csv` | `sheldon_summary_biomass_top200_table_long.csv` |
+| `summary_biomass_table_long.csv` | `sheldon_summary_biomass_allwater_table_long.csv` |
+| `group_standard_errors.csv` | `sheldon_group_standard_errors.csv` |
+
+Only the filenames changed. The comparisons across mass bins and the figures
+in this project are derived analyses.
 
 The raw snapshots remain unchanged. If missing files need restoring, make restore-data
 explicitly permits retrieval and requires the frozen checksums to match. The default

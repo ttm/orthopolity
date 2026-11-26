@@ -4,6 +4,26 @@ Last updated 26 November 2026. **Read this first in a new session.** It records 
 intend, what has been done and found, the current assessment, and the next steps, with pointers
 to the files that hold the details.
 
+**26 November — revised article published and submission sources checked.**
+The [13-page article](https://raw.githubusercontent.com/ttm/orthopolity/fc6cb30d3438e34e2a31ae938d8e5222511bcd4a/docs/paper.pdf)
+downloads byte-for-byte as reviewed. The editable LaTeX and the two figure
+files also reproduced that PDF in a clean directory. The [supporting material](https://raw.githubusercontent.com/ttm/orthopolity/fc6cb30d3438e34e2a31ae938d8e5222511bcd4a/docs/supporting-material.pdf)
+accompanies this revision.
+
+The [source notices](../data/NOTICE.md) identify the CC BY 4.0 Zenodo archive
+matching all three Hatton biomass tables. Each GLOSSAQUA table now restores
+from a verified January author commit. Its repository and the published
+supplement carry different licence notices. For the ten plant CSVs, the
+upstream files are identified and their redistribution terms remain
+unspecified. For the submission, link readers to the GLOSSAQUA and plant
+sources and their retrieval records. Frozen-input and run-registry checks passed.
+
+The authors still need to choose the journal and confirm the byline,
+affiliations, contributions, funding, interests and the scope of their review
+of AI-assisted work. The first venue on the shortlist requires disclosure of
+material AI assistance in the acknowledgements and a description in the methods
+when it contributed to the research. [IOP author policy](https://publishingsupport.iopscience.iop.org/ethical-policy-journals/)
+
 **26 November — full revision of the main article.** The [revised draft](paper.md)
 opens with eight units per class, states orthopolity as a proposed natural law
 and derives the distinct predictions for equal mass per gram and per doubling.
